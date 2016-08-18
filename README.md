@@ -3,6 +3,8 @@ Repository Permissions Updater
 
 This repository contains both the YAML format definitions for Artifactory upload permissions and the tool that synchronizes them to Artifactory.
 
+**Note:** These permissions are specifically for _uploading_ artifacts to the Jenkins project's Maven repository. It is independent of GitHub repository permissions. You may have one without the other. Typically, you'll either have both, or just the GitHub repository access.
+
 **To request upload permissions to a plugin, file a PR editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR.**
 
 Usage
