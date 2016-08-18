@@ -28,8 +28,6 @@ try {
                     ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater.jar'
         }
     }
-} catch (Exception e) {
-    // TODO handle error
 } finally {
     // Mark the archive 'stage'....
     stage 'Archive'
