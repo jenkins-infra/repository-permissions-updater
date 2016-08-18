@@ -1,0 +1,6 @@
+---
+name: "readonly-parameters"
+paths:
+- "org/jenkins-ci/plugins/readonly-parameters"
+developers:
+- "yangli"

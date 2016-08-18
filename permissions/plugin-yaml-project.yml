@@ -1,0 +1,7 @@
+---
+name: "yaml-project"
+paths:
+- "org/jenkins-ci/plugins/yaml-project"
+developers:
+- "astroilov"
+- "mattmoor"

@@ -1,0 +1,6 @@
+---
+name: "port-allocator"
+paths:
+- "org/jenkins-ci/plugins/port-allocator"
+- "org/jvnet/hudson/plugins/port-allocator"
+developers: []

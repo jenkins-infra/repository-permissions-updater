@@ -1,0 +1,6 @@
+---
+name: "eggplant-plugin"
+paths:
+- "org/jenkins-ci/plugins/eggplant-plugin"
+developers:
+- "iantestplant"

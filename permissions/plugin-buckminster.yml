@@ -1,0 +1,6 @@
+---
+name: "buckminster"
+paths:
+- "org/jenkins-ci/plugins/buckminster"
+- "org/jvnet/hudson/plugins/buckminster"
+developers: []

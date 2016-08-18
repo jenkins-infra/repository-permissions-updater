@@ -1,0 +1,5 @@
+---
+name: "statusmonitor"
+paths:
+- "org/jvnet/hudson/plugins/statusmonitor"
+developers: []

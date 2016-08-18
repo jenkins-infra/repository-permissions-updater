@@ -1,0 +1,6 @@
+---
+name: "next-build-number"
+paths:
+- "org/jenkins-ci/plugins/next-build-number"
+developers:
+- "akom"

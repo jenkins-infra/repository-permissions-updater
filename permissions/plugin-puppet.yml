@@ -1,0 +1,7 @@
+---
+name: "puppet"
+paths:
+- "org/jenkins-ci/plugins/puppet"
+developers:
+- "fbelzunc"
+- "kohsuke"

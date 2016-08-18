@@ -1,0 +1,6 @@
+---
+name: "jenkins-reviewbot"
+paths:
+- "org/jenkins-ci/plugins/jenkins-reviewbot"
+developers:
+- "yardena"

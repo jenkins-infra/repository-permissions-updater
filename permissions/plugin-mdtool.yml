@@ -1,0 +1,6 @@
+---
+name: "mdtool"
+paths:
+- "org/jenkins-ci/plugins/mdtool"
+developers:
+- "fen_x"

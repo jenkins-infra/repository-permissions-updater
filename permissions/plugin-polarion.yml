@@ -1,0 +1,5 @@
+---
+name: "polarion"
+paths:
+- "org/jvnet/hudson/plugins/polarion"
+developers: []

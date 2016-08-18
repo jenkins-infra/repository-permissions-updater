@@ -1,0 +1,7 @@
+---
+name: "mock-security-realm"
+paths:
+- "org/jenkins-ci/plugins/mock-security-realm"
+developers:
+- "jglick"
+- "stephenconnolly"

@@ -1,0 +1,6 @@
+---
+name: "advanced-installer-msi-builder"
+paths:
+- "org/jenkins-ci/plugins/advanced-installer-msi-builder"
+developers:
+- "advinst"

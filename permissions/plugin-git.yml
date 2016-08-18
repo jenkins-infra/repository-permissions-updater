@@ -1,0 +1,10 @@
+---
+name: "git"
+paths:
+- "org/jenkins-ci/plugins/git"
+- "org/jenkinsci/plugins/git"
+- "org/jvnet/hudson/plugins/git"
+developers:
+- "jglick"
+- "markewaite"
+- "ndeloof"

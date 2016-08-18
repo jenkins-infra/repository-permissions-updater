@@ -1,0 +1,6 @@
+---
+name: "clone-workspace-scm"
+paths:
+- "org/jenkins-ci/plugins/clone-workspace-scm"
+- "org/jvnet/hudson/plugins/clone-workspace-scm"
+developers: []

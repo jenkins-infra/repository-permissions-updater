@@ -1,0 +1,7 @@
+---
+name: "cloudbees-registration"
+paths:
+- "com/cloudbees/jenkins/plugins/cloudbees-registration"
+developers:
+- "kohsuke"
+- "ydubreuil"

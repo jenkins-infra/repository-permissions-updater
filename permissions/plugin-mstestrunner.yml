@@ -1,0 +1,7 @@
+---
+name: "mstestrunner"
+paths:
+- "org/jenkins-ci/plugins/mstestrunner"
+developers:
+- "armfergom"
+- "ido_ran"

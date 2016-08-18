@@ -1,0 +1,5 @@
+---
+name: "gitorious"
+paths:
+- "org/jenkins-ci/plugins/gitorious"
+developers: []

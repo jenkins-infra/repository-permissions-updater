@@ -1,0 +1,5 @@
+---
+name: "jenkow-plugin"
+paths:
+- "com/cisco/step/jenkins/plugins/jenkow-plugin"
+developers: []

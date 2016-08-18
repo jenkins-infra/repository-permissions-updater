@@ -1,0 +1,6 @@
+---
+name: "chatter-notifier"
+paths:
+- "org/jenkins-ci/plugins/chatter-notifier"
+developers:
+- "sfell"

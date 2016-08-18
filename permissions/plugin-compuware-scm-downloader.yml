@@ -1,0 +1,6 @@
+---
+name: "compuware-scm-downloader"
+paths:
+- "com/compuware/jenkins/compuware-scm-downloader"
+developers:
+- "cpwr_jenkins"

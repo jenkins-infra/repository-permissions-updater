@@ -1,0 +1,8 @@
+---
+name: "clearcase-ucm-plugin"
+paths:
+- "net/praqma/clearcase-ucm-plugin"
+- "org/jenkins-ci/plugins/clearcase-ucm-plugin"
+- "org/jvnet/hudson/plugins/clearcase-ucm-plugin"
+developers:
+- "madsnielsen"

@@ -1,0 +1,5 @@
+---
+name: "reviewboard"
+paths:
+- "org/jvnet/hudson/plugins/reviewboard"
+developers: []

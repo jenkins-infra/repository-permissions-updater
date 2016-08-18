@@ -1,0 +1,8 @@
+---
+name: "configurationslicing"
+paths:
+- "org/jenkins-ci/plugins/configurationslicing"
+- "org/jvnet/hudson/plugins/configurationslicing"
+developers:
+- "mdonohue"
+- "ninian"

@@ -1,0 +1,6 @@
+---
+name: "jenkins-jira-issue-updater"
+paths:
+- "info/bluefloyd/jenkins/jenkins-jira-issue-updater"
+developers:
+- "laszlomiklosik"

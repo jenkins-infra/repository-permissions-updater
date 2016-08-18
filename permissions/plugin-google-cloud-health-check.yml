@@ -1,0 +1,6 @@
+---
+name: "google-cloud-health-check"
+paths:
+- "org/jenkins-ci/plugins/google-cloud-health-check"
+developers:
+- "astroilov"

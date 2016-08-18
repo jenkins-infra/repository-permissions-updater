@@ -1,0 +1,5 @@
+---
+name: "tusarnotifier"
+paths:
+- "com/thalesgroup/jenkins-ci/plugins/tusarnotifier"
+developers: []

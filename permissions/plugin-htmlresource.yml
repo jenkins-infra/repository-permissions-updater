@@ -1,0 +1,6 @@
+---
+name: "htmlresource"
+paths:
+- "org/jenkins-ci/plugins/htmlresource"
+developers:
+- "vimil"

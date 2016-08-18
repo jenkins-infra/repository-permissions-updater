@@ -1,0 +1,10 @@
+---
+name: "sonar"
+paths:
+- "org/jenkins-ci/plugins/sonar"
+- "org/jvnet/hudson/plugins/sonar"
+developers:
+- "dmeneses"
+- "ehartmann"
+- "henryju"
+- "tomverin"

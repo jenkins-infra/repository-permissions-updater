@@ -1,0 +1,5 @@
+---
+name: "url-change-trigger"
+paths:
+- "com/redfin/hudson/url-change-trigger"
+developers: []

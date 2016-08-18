@@ -1,0 +1,6 @@
+---
+name: "NegotiateSSO"
+paths:
+- "org/jenkins-ci/plugins/NegotiateSSO"
+developers:
+- "farmgeek4life"

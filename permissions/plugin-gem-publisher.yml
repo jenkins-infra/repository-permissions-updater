@@ -1,0 +1,5 @@
+---
+name: "gem-publisher"
+paths:
+- "net/arangamani/jenkins/gem-publisher"
+developers: []

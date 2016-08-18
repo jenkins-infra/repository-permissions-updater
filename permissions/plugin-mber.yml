@@ -1,0 +1,6 @@
+---
+name: "mber"
+paths:
+- "org/jenkins-ci/plugins/mber"
+developers:
+- "onefrankguy"

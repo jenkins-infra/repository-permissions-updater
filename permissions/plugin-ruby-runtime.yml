@@ -1,0 +1,6 @@
+---
+name: "ruby-runtime"
+paths:
+- "org/jenkins-ci/plugins/ruby-runtime"
+developers:
+- "eitoball"

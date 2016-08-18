@@ -1,0 +1,8 @@
+---
+name: "fogbugz"
+paths:
+- "org/jenkins-ci/plugins/fogbugz"
+developers:
+- "bubenkoff"
+- "maikelwever"
+- "pliljenberg"

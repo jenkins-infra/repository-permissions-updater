@@ -1,0 +1,6 @@
+---
+name: "gatling"
+paths:
+- "org/jenkins-ci/plugins/gatling"
+developers:
+- "slandelle"

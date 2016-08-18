@@ -1,0 +1,7 @@
+---
+name: "htmlpublisher"
+paths:
+- "org/jenkins-ci/plugins/htmlpublisher"
+- "org/jvnet/hudson/plugins/htmlpublisher"
+developers:
+- "mcrooney"

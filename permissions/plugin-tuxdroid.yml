@@ -1,0 +1,5 @@
+---
+name: "tuxdroid"
+paths:
+- "org/jvnet/hudson/plugins/tuxdroid"
+developers: []

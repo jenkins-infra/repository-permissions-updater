@@ -1,0 +1,5 @@
+---
+name: "started-by-envvar"
+paths:
+- "org/jenkins-ci/plugins/started-by-envvar"
+developers: []

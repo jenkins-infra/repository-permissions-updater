@@ -1,0 +1,6 @@
+---
+name: "otabuilder"
+paths:
+- "org/jenkins-ci/ruby-plugins/otabuilder"
+developers:
+- "_justin"

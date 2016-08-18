@@ -1,0 +1,6 @@
+---
+name: "openshift-sync"
+paths:
+- "io/fabric8/jenkins/plugins/openshift-sync"
+developers:
+- "jimmi"

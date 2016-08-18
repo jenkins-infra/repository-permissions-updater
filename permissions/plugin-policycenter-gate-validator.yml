@@ -1,0 +1,6 @@
+---
+name: "policycenter-gate-validator"
+paths:
+- "com/parasoft/policycenter-gate-validator"
+developers:
+- "sang_parasoft"

@@ -1,0 +1,6 @@
+---
+name: "custom-tools-plugin"
+paths:
+- "com/cloudbees/jenkins/plugins/custom-tools-plugin"
+developers:
+- "oleg_nenashev"

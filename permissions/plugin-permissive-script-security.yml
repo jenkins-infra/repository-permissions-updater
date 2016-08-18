@@ -1,0 +1,6 @@
+---
+name: "permissive-script-security"
+paths:
+- "org/jenkins-ci/plugins/permissive-script-security"
+developers:
+- "olivergondza"

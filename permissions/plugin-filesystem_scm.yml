@@ -1,0 +1,5 @@
+---
+name: "filesystem_scm"
+paths:
+- "hudson/plugins/filesystem_scm/filesystem_scm"
+developers: []

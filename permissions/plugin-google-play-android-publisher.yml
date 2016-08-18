@@ -1,0 +1,6 @@
+---
+name: "google-play-android-publisher"
+paths:
+- "org/jenkins-ci/plugins/google-play-android-publisher"
+developers:
+- "orrc"

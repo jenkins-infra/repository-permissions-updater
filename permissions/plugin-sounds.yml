@@ -1,0 +1,7 @@
+---
+name: "sounds"
+paths:
+- "org/jenkins-ci/plugins/sounds"
+- "org/jvnet/hudson/plugins/sounds"
+developers:
+- "oxcafebabe"

@@ -1,0 +1,6 @@
+---
+name: "starteam"
+paths:
+- "hudson/plugins/starteam"
+developers:
+- "ravaid"

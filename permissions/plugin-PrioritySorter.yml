@@ -1,0 +1,7 @@
+---
+name: "PrioritySorter"
+paths:
+- "hudson/queueSorter/PrioritySorter"
+- "org/jenkins-ci/plugins/PrioritySorter"
+developers:
+- "emsa23"

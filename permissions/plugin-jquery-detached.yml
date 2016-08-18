@@ -1,0 +1,6 @@
+---
+name: "jquery-detached"
+paths:
+- "org/jenkins-ci/ui/jquery-detached"
+developers:
+- "tfennelly"

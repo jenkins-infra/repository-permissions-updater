@@ -1,0 +1,6 @@
+---
+name: "javadoc"
+paths:
+- "org/jenkins-ci/plugins/javadoc"
+developers:
+- "jglick"

@@ -1,0 +1,5 @@
+---
+name: "growl"
+paths:
+- "org/jenkins-ci/plugins/growl"
+developers: []

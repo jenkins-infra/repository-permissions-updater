@@ -1,0 +1,8 @@
+---
+name: "hello-world"
+paths:
+- "com/examples/jenkins/plugins/hello-world"
+- "org/jenkins-ci/plugins/hello-world"
+developers:
+- "andresrc"
+- "cleclerc"

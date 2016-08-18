@@ -1,0 +1,6 @@
+---
+name: "octoperf-jenkins-plugin"
+paths:
+- "org/jenkinsci/plugins/octoperf-jenkins-plugin"
+developers:
+- "jloisel"

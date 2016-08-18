@@ -1,0 +1,6 @@
+---
+name: "console-badge"
+paths:
+- "me/noroutine/jenkins/plugin/console-badge"
+developers:
+- "oleksii"

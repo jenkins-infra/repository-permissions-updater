@@ -1,0 +1,6 @@
+---
+name: "convertigo-mobile-platform"
+paths:
+- "com/convertigo/jenkins/plugins/convertigo-mobile-platform"
+developers:
+- "opicciotto"

@@ -1,0 +1,11 @@
+---
+name: "gitlab-plugin"
+paths:
+- "com/dabsquared/gitlab-plugin"
+- "org/jenkins-ci/plugins/gitlab-plugin"
+developers:
+- "bass_rock"
+- "batmat"
+- "coderhugo"
+- "owenmehegan"
+- "xaniasd"

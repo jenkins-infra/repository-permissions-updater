@@ -1,0 +1,5 @@
+---
+name: "thread-dump-action-plugin"
+paths:
+- "org/jenkins-ci/plugins/thread-dump-action-plugin"
+developers: []

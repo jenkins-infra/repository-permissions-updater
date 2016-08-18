@@ -1,0 +1,5 @@
+---
+name: "googleanalytics"
+paths:
+- "org/jvnet/hudson/plugins/googleanalytics"
+developers: []

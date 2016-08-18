@@ -1,0 +1,6 @@
+---
+name: "svnmerge"
+paths:
+- "org/jenkins-ci/plugins/svnmerge"
+developers:
+- "hugueschabot"

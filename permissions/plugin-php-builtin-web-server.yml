@@ -1,0 +1,6 @@
+---
+name: "php-builtin-web-server"
+paths:
+- "org/jenkins-ci/plugins/php-builtin-web-server"
+developers:
+- "fengtan"

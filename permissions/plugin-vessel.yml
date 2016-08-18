@@ -1,0 +1,5 @@
+---
+name: "vessel"
+paths:
+- "org/jenkins-ci/plugins/vessel"
+developers: []

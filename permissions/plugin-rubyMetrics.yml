@@ -1,0 +1,6 @@
+---
+name: "rubyMetrics"
+paths:
+- "org/jenkins-ci/plugins/rubyMetrics"
+developers:
+- "pkuczynski"

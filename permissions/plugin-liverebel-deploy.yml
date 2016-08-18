@@ -1,0 +1,5 @@
+---
+name: "liverebel-deploy"
+paths:
+- "org/jenkins-ci/plugins/liverebel-deploy"
+developers: []

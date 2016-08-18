@@ -1,0 +1,6 @@
+---
+name: "export-params"
+paths:
+- "org/jenkins-ci/plugins/export-params"
+developers:
+- "rin_ne"

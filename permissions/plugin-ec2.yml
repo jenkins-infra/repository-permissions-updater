@@ -1,0 +1,7 @@
+---
+name: "ec2"
+paths:
+- "org/jenkins-ci/plugins/ec2"
+developers:
+- "francisu"
+- "ndeloof"

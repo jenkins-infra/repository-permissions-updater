@@ -1,0 +1,7 @@
+---
+name: "runscope"
+paths:
+- "com/runscope/jenkins/runscope"
+developers:
+- "frankstratton"
+- "mansilladev"

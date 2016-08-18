@@ -1,0 +1,6 @@
+---
+name: "jsunit"
+paths:
+- "org/jenkins-ci/plugins/jsunit"
+developers:
+- "gbois"

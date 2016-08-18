@@ -1,0 +1,6 @@
+---
+name: "additional-identities-plugin"
+paths:
+- "com/cloudbees/jenkins/plugins/additional-identities-plugin"
+developers:
+- "jglick"

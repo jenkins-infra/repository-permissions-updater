@@ -1,0 +1,5 @@
+---
+name: "scons"
+paths:
+- "com/thalesgroup/jenkins-ci/plugins/scons"
+developers: []

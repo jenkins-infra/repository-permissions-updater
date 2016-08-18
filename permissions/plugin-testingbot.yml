@@ -1,0 +1,6 @@
+---
+name: "testingbot"
+paths:
+- "testingbot/testingbot"
+developers:
+- "testingbot"

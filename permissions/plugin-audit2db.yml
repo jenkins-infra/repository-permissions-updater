@@ -1,0 +1,5 @@
+---
+name: "audit2db"
+paths:
+- "org/jenkins-ci/plugins/audit2db"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "eclipse-update-site"
+paths:
+- "org/jenkins-ci/plugins/eclipse-update-site"
+developers: []

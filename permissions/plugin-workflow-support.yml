@@ -1,0 +1,7 @@
+---
+name: "workflow-support"
+paths:
+- "org/jenkins-ci/plugins/workflow/workflow-support"
+developers:
+- "jglick"
+- "kohsuke"

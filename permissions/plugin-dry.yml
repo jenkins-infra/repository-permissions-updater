@@ -1,0 +1,6 @@
+---
+name: "dry"
+paths:
+- "org/jvnet/hudson/plugins/dry"
+developers:
+- "drulli"

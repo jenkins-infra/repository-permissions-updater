@@ -1,0 +1,6 @@
+---
+name: "jslint"
+paths:
+- "com/boxuk/jenkins/jslint"
+- "org/jenkins-ci/plugins/jslint"
+developers: []

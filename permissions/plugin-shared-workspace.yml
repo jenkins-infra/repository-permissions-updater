@@ -1,0 +1,6 @@
+---
+name: "shared-workspace"
+paths:
+- "org/jenkins-ci/plugins/shared-workspace"
+developers:
+- "vestnik"

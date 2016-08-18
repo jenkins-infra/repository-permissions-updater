@@ -1,0 +1,6 @@
+---
+name: "pmd"
+paths:
+- "org/jvnet/hudson/plugins/pmd"
+developers:
+- "drulli"

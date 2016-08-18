@@ -1,0 +1,7 @@
+---
+name: "perfpublisher"
+paths:
+- "org/jenkins-ci/plugins/perfpublisher"
+developers:
+- "eschava"
+- "langers2k"

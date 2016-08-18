@@ -1,0 +1,6 @@
+---
+name: "tracking-git"
+paths:
+- "org/jenkins-ci/plugins/tracking-git"
+developers:
+- "deanaldinger"

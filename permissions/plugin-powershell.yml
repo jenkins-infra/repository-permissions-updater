@@ -1,0 +1,6 @@
+---
+name: "powershell"
+paths:
+- "org/jenkins-ci/plugins/powershell"
+developers:
+- "chrisalbrecht"

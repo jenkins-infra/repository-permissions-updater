@@ -1,0 +1,7 @@
+---
+name: "timestamper"
+paths:
+- "org/jenkins-ci/plugins/timestamper"
+- "org/jvnet/hudson/plugins/timestamper"
+developers:
+- "stevengbrown"

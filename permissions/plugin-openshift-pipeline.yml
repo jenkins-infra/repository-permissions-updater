@@ -1,0 +1,6 @@
+---
+name: "openshift-pipeline"
+paths:
+- "com/openshift/jenkins/openshift-pipeline"
+developers:
+- "gmontero"

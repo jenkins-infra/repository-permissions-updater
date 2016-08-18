@@ -1,0 +1,5 @@
+---
+name: "scoring-load-balancer"
+paths:
+- "jp/ikedam/jenkins/plugins/scoring-load-balancer"
+developers: []

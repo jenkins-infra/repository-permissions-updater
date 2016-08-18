@@ -1,0 +1,6 @@
+---
+name: "hp-quality-center"
+paths:
+- "org/jenkins-ci/plugins/qc/hp-quality-center"
+developers:
+- "faziom"

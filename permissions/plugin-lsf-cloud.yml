@@ -1,0 +1,6 @@
+---
+name: "lsf-cloud"
+paths:
+- "org/jenkins-ci/plugins/lsf-cloud"
+developers:
+- "laisvydas"

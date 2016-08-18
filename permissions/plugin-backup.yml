@@ -1,0 +1,5 @@
+---
+name: "backup"
+paths:
+- "org/jvnet/hudson/plugins/backup"
+developers: []

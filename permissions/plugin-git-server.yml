@@ -1,0 +1,7 @@
+---
+name: "git-server"
+paths:
+- "org/jenkins-ci/plugins/git-server"
+developers:
+- "jglick"
+- "kohsuke"

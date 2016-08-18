@@ -1,0 +1,6 @@
+---
+name: "poll-mailbox-trigger-plugin"
+paths:
+- "org/jenkins-ci/plugins/poll-mailbox-trigger-plugin"
+developers:
+- "nickg"

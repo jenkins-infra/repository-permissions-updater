@@ -1,0 +1,6 @@
+---
+name: "preSCMbuildstep"
+paths:
+- "org/jenkins-ci/plugins/preSCMbuildstep"
+developers:
+- "ndeloof"

@@ -1,0 +1,5 @@
+---
+name: "label-verifier"
+paths:
+- "org/jenkins-ci/plugins/label-verifier"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "syslog-logger"
+paths:
+- "org/jenkins-ci/plugins/syslog-logger"
+developers:
+- "cleclerc"

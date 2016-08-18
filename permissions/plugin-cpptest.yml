@@ -1,0 +1,6 @@
+---
+name: "cpptest"
+paths:
+- "com/thalesgroup/jenkins-ci/plugins/cpptest"
+developers:
+- "gbois"

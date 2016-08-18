@@ -1,0 +1,6 @@
+---
+name: "mq-notifier"
+paths:
+- "com/sonymobile/jenkins/plugins/mq/mq-notifier"
+developers:
+- "t_westling"

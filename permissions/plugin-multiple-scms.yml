@@ -1,0 +1,8 @@
+---
+name: "multiple-scms"
+paths:
+- "org/jenkins-ci/plugins/multiple-scms"
+developers:
+- "elksson"
+- "jglick"
+- "rodrigc"

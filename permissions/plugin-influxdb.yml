@@ -1,0 +1,6 @@
+---
+name: "influxdb"
+paths:
+- "org/jenkins-ci/plugins/influxdb"
+developers:
+- "aleksisimell"

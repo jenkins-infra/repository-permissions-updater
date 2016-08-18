@@ -1,0 +1,6 @@
+---
+name: "visualworks-store"
+paths:
+- "org/jenkins-ci/plugins/visualworks-store"
+developers:
+- "randycoulman"

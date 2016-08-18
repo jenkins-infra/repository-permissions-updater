@@ -1,0 +1,6 @@
+---
+name: "buildtriggerbadge"
+paths:
+- "org/jenkins-ci/plugins/buildtriggerbadge"
+developers:
+- "batmat"

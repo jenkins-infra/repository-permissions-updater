@@ -1,0 +1,6 @@
+---
+name: "appthwack"
+paths:
+- "org/jenkins-ci/plugins/appthwack"
+developers:
+- "appthwack"

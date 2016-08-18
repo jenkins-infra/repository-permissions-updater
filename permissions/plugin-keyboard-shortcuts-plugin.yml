@@ -1,0 +1,5 @@
+---
+name: "keyboard-shortcuts-plugin"
+paths:
+- "org/jenkins-ci/plugins/keyboard-shortcuts-plugin"
+developers: []

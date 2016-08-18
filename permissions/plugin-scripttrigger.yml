@@ -1,0 +1,6 @@
+---
+name: "scripttrigger"
+paths:
+- "org/jenkins-ci/plugins/scripttrigger"
+developers:
+- "gbois"

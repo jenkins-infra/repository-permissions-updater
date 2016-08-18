@@ -1,0 +1,5 @@
+---
+name: "metadata"
+paths:
+- "com/sonyericsson/hudson/plugins/metadata/metadata"
+developers: []

@@ -1,0 +1,8 @@
+---
+name: "cloudtest"
+paths:
+- "com/soasta/jenkins/cloudtest"
+developers:
+- "elitecoder"
+- "ltyler"
+- "msolnit"

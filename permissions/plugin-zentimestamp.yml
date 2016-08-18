@@ -1,0 +1,6 @@
+---
+name: "zentimestamp"
+paths:
+- "org/jenkins-ci/plugins/zentimestamp"
+developers:
+- "gbois"

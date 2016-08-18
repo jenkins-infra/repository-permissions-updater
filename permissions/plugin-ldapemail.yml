@@ -1,0 +1,6 @@
+---
+name: "ldapemail"
+paths:
+- "com/mtvi/plateng/hudson/ldapemail"
+developers:
+- "marcomiller"

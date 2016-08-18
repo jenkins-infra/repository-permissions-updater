@@ -1,0 +1,6 @@
+---
+name: "xcode-plugin"
+paths:
+- "org/jenkins-ci/plugins/xcode-plugin"
+developers:
+- "lacostej"

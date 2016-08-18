@@ -1,0 +1,6 @@
+---
+name: "google-analytics-usage-reporter"
+paths:
+- "org/jenkins-ci/plugins/google-analytics-usage-reporter"
+developers:
+- "astroilov"

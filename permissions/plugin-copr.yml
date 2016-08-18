@@ -1,0 +1,6 @@
+---
+name: "copr"
+paths:
+- "org/fedoraproject/jenkins/plugins/copr"
+developers:
+- "msrb"

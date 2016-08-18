@@ -1,0 +1,5 @@
+---
+name: "virtualbox"
+paths:
+- "org/jenkins-ci/plugins/virtualbox"
+developers: []

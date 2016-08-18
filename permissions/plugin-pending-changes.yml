@@ -1,0 +1,5 @@
+---
+name: "pending-changes"
+paths:
+- "org/jenkins-ci/plugins/pending-changes"
+developers: []

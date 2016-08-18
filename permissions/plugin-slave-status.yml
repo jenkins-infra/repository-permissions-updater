@@ -1,0 +1,5 @@
+---
+name: "slave-status"
+paths:
+- "org/jvnet/hudson/plugins/slave-status"
+developers: []

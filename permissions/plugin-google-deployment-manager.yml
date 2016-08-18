@@ -1,0 +1,6 @@
+---
+name: "google-deployment-manager"
+paths:
+- "org/jenkins-ci/plugins/google-deployment-manager"
+developers:
+- "reprogrammer"

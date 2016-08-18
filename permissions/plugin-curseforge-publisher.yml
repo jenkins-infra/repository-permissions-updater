@@ -1,0 +1,6 @@
+---
+name: "curseforge-publisher"
+paths:
+- "org/jenkins-ci/plugins/curseforge-publisher"
+developers:
+- "r04r"

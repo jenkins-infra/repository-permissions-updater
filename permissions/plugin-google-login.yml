@@ -1,0 +1,7 @@
+---
+name: "google-login"
+paths:
+- "org/jenkins-ci/plugins/google-login"
+developers:
+- "recampbell"
+- "vlatombe"

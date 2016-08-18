@@ -1,0 +1,6 @@
+---
+name: "modernstatus"
+paths:
+- "org/jenkins-ci/plugins/modernstatus"
+developers:
+- "ovinn"

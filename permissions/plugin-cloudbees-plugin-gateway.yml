@@ -1,0 +1,6 @@
+---
+name: "cloudbees-plugin-gateway"
+paths:
+- "org/jenkins-ci/plugins/cloudbees-plugin-gateway"
+developers:
+- "stephenconnolly"

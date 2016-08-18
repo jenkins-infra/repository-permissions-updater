@@ -1,0 +1,7 @@
+---
+name: "pam-auth"
+paths:
+- "org/jenkins-ci/plugins/pam-auth"
+developers:
+- "recena"
+- "stephenconnolly"

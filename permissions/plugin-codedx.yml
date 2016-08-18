@@ -1,0 +1,8 @@
+---
+name: "codedx"
+paths:
+- "org/jenkins-ci/plugins/codedx"
+developers:
+- "ademartini"
+- "baf"
+- "leradwan"

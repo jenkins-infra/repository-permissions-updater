@@ -1,0 +1,8 @@
+---
+name: "branch-api"
+paths:
+- "org/jenkins-ci/plugins/branch-api"
+developers:
+- "jglick"
+- "recena"
+- "stephenconnolly"

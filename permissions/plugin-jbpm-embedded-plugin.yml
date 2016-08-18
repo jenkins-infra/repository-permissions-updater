@@ -1,0 +1,5 @@
+---
+name: "jbpm-embedded-plugin"
+paths:
+- "jenkins/plugins/jbpm/jbpm-embedded-plugin"
+developers: []

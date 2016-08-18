@@ -1,0 +1,6 @@
+---
+name: "openid"
+paths:
+- "org/jenkins-ci/plugins/openid"
+developers:
+- "stephenconnolly"

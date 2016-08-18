@@ -1,0 +1,6 @@
+---
+name: "srcclr-installer"
+paths:
+- "com/srcclr/jenkins/srcclr-installer"
+developers:
+- "kickroot"

@@ -1,0 +1,7 @@
+---
+name: "play-autotest-plugin"
+paths:
+- "org/jenkins-ci/plugins/play-autotest-plugin"
+- "org/jvnet/hudson/plugins/play-autotest-plugin"
+developers:
+- "rafaelrezend"

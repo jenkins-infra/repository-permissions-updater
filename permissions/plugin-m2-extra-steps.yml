@@ -1,0 +1,7 @@
+---
+name: "m2-extra-steps"
+paths:
+- "org/jenkins-ci/plugins/m2-extra-steps"
+- "org/jvnet/hudson/plugins/m2-extra-steps"
+developers:
+- "ndeloof"

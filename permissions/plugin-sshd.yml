@@ -1,0 +1,5 @@
+---
+name: "sshd"
+paths:
+- "org/jenkins-ci/modules/sshd"
+developers: []

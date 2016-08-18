@@ -1,0 +1,6 @@
+---
+name: "mantis"
+paths:
+- "org/jenkins-ci/plugins/mantis"
+developers:
+- "sogabe"

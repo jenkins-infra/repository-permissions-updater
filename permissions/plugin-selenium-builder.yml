@@ -1,0 +1,6 @@
+---
+name: "selenium-builder"
+paths:
+- "org/jenkins-ci/plugins/selenium-builder"
+developers:
+- "rossrowe"

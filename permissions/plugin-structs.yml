@@ -1,0 +1,8 @@
+---
+name: "structs"
+paths:
+- "org/jenkins-ci/plugins/structs"
+developers:
+- "jglick"
+- "kohsuke"
+- "oleg_nenashev"

@@ -1,0 +1,5 @@
+---
+name: "build-node-column"
+paths:
+- "org/jenkins-ci/plugins/build-node-column"
+developers: []

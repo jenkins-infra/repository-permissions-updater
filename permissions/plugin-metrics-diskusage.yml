@@ -1,0 +1,6 @@
+---
+name: "metrics-diskusage"
+paths:
+- "org/jenkins-ci/plugins/metrics-diskusage"
+developers:
+- "stephenconnolly"

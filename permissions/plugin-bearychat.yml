@@ -1,0 +1,6 @@
+---
+name: "bearychat"
+paths:
+- "org/jenkins-ci/plugins/bearychat"
+developers:
+- "otbzi"

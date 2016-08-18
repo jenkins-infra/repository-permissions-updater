@@ -1,0 +1,5 @@
+---
+name: "changes-since-last-success"
+paths:
+- "org/jenkins-ci/plugins/changes-since-last-success"
+developers: []

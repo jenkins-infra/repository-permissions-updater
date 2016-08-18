@@ -1,0 +1,6 @@
+---
+name: "build-env-propagator"
+paths:
+- "org/jenkins-ci/plugins/build-env-propagator"
+developers:
+- "vivek"

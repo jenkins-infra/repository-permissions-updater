@@ -1,0 +1,6 @@
+---
+name: "build-name-setter"
+paths:
+- "org/jenkins-ci/plugins/build-name-setter"
+developers:
+- "le0"

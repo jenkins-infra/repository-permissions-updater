@@ -1,0 +1,6 @@
+---
+name: "git-tag-message"
+paths:
+- "org/jenkins-ci/plugins/git-tag-message"
+developers:
+- "orrc"

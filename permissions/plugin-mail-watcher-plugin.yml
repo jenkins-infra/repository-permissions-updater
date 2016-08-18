@@ -1,0 +1,6 @@
+---
+name: "mail-watcher-plugin"
+paths:
+- "org/jenkins-ci/plugins/mail-watcher-plugin"
+developers:
+- "olivergondza"

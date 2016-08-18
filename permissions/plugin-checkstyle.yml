@@ -1,0 +1,6 @@
+---
+name: "checkstyle"
+paths:
+- "org/jvnet/hudson/plugins/checkstyle"
+developers:
+- "drulli"

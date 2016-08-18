@@ -1,0 +1,5 @@
+---
+name: "javancss"
+paths:
+- "org/jenkins-ci/plugins/javancss"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "telerik-appbuilder-plugin"
+paths:
+- "com/telerik/plugins/telerik-appbuilder-plugin"
+developers:
+- "galexandrov"

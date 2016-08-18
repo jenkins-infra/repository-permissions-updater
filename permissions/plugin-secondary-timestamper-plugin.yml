@@ -1,0 +1,6 @@
+---
+name: "secondary-timestamper-plugin"
+paths:
+- "org/jenkins-ci/plugins/secondary-timestamper-plugin"
+developers:
+- "michael1010"

@@ -1,0 +1,6 @@
+---
+name: "release-multi-test"
+paths:
+- "com/tikal/change/release-multi-test"
+developers:
+- "guymi"

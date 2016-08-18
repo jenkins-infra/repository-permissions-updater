@@ -1,0 +1,6 @@
+---
+name: "cron-shelve"
+paths:
+- "org/jenkins-ci/plugins/cron-shelve"
+developers:
+- "itow0001"

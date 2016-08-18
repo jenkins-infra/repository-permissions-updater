@@ -1,0 +1,6 @@
+---
+name: "mdt-deployment"
+paths:
+- "org/jenkins-ci/plugins/mdt-deployment"
+developers:
+- "rgroult"

@@ -1,0 +1,6 @@
+---
+name: "remote-jobs-view-plugin"
+paths:
+- "com/sap/jenkinsci/remote-jobs-view-plugin"
+developers:
+- "doergn"

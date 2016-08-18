@@ -1,0 +1,6 @@
+---
+name: "sinatra-chef-builder"
+paths:
+- "org/jenkins-ci/plugins/sinatra-chef-builder"
+developers:
+- "irfanjs"

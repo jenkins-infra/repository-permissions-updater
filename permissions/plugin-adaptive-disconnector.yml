@@ -1,0 +1,6 @@
+---
+name: "adaptive-disconnector"
+paths:
+- "org/jenkins-ci/plugins/adaptive-disconnector"
+developers:
+- "olivergondza"

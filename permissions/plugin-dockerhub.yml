@@ -1,0 +1,6 @@
+---
+name: "dockerhub"
+paths:
+- "org/jenkins-ci/plugins/dockerhub"
+developers:
+- "ndeloof"

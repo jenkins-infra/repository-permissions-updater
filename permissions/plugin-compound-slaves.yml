@@ -1,0 +1,5 @@
+---
+name: "compound-slaves"
+paths:
+- "ru/yandex/jenkins/plugins/compound-slaves/compound-slaves"
+developers: []

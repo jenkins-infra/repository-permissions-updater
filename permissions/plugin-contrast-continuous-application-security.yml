@@ -1,0 +1,7 @@
+---
+name: "contrast-continuous-application-security"
+paths:
+- "com/contrastsecurity/contrast-continuous-application-security"
+- "org/jenkins-ci/plugins/contrast-continuous-application-security"
+developers:
+- "mgelman08"

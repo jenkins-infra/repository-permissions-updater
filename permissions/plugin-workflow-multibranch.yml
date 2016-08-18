@@ -1,0 +1,7 @@
+---
+name: "workflow-multibranch"
+paths:
+- "org/jenkins-ci/plugins/workflow/workflow-multibranch"
+developers:
+- "jglick"
+- "recena"

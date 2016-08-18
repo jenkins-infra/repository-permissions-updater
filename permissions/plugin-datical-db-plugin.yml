@@ -1,0 +1,6 @@
+---
+name: "datical-db-plugin"
+paths:
+- "com/datical/integration/jenkins/datical-db-plugin"
+developers:
+- "r2datical"

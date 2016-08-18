@@ -1,0 +1,5 @@
+---
+name: "show-build-parameters"
+paths:
+- "org/jenkins-ci/plugins/show-build-parameters"
+developers: []

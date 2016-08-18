@@ -1,0 +1,6 @@
+---
+name: "pipeline-utility-steps"
+paths:
+- "org/jenkins-ci/plugins/pipeline-utility-steps"
+developers:
+- "rsandell"

@@ -1,0 +1,7 @@
+---
+name: "docker-custom-build-environment"
+paths:
+- "com/cloudbees/jenkins/plugins/docker-custom-build-environment"
+developers:
+- "ndeloof"
+- "vlatombe"

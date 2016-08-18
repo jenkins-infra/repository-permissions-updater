@@ -1,0 +1,6 @@
+---
+name: "wwpass-plugin"
+paths:
+- "org/jenkins-ci/plugins/wwpass-plugin"
+developers:
+- "spanyushkin"

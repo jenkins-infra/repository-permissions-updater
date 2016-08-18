@@ -1,0 +1,8 @@
+---
+name: "ez-templates"
+paths:
+- "com/joelj/jenkins/ez-templates"
+- "org/jenkins-ci/plugins/ez-templates"
+developers:
+- "arpitgold"
+- "drekbour"

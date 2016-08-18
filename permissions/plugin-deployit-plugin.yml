@@ -1,0 +1,7 @@
+---
+name: "deployit-plugin"
+paths:
+- "com/xebialabs/deployit/ci/deployit-plugin"
+developers:
+- "bdevic"
+- "ravan"

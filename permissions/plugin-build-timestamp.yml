@@ -1,0 +1,6 @@
+---
+name: "build-timestamp"
+paths:
+- "org/jenkins-ci/plugins/build-timestamp"
+developers:
+- "orctom"

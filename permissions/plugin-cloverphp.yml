@@ -1,0 +1,6 @@
+---
+name: "cloverphp"
+paths:
+- "org/jenkins-ci/plugins/cloverphp"
+developers:
+- "sogabe"

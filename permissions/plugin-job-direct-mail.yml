@@ -1,0 +1,5 @@
+---
+name: "job-direct-mail"
+paths:
+- "org/jenkins-ci/plugins/job-direct-mail"
+developers: []

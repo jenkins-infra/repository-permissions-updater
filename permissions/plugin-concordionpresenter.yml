@@ -1,0 +1,5 @@
+---
+name: "concordionpresenter"
+paths:
+- "org/jenkins-ci/plugins/concordionpresenter"
+developers: []

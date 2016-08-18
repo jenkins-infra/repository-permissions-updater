@@ -1,0 +1,6 @@
+---
+name: "imagecomparison"
+paths:
+- "org/jenkins-ci/plugins/imagecomparison"
+developers:
+- "tbaum"

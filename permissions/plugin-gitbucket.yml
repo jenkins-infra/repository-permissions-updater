@@ -1,0 +1,6 @@
+---
+name: "gitbucket"
+paths:
+- "org/jenkins-ci/plugins/gitbucket"
+developers:
+- "sogabe"

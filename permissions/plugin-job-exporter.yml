@@ -1,0 +1,6 @@
+---
+name: "job-exporter"
+paths:
+- "org/jenkins-ci/plugins/job-exporter"
+- "org/jvnet/hudson/plugins/job-exporter"
+developers: []

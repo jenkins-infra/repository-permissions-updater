@@ -1,0 +1,5 @@
+---
+name: "smart-jenkins"
+paths:
+- "org/jenkins-ci/plugins/smart-jenkins"
+developers: []

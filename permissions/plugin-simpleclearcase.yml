@@ -1,0 +1,5 @@
+---
+name: "simpleclearcase"
+paths:
+- "jenkins/plugins/simpleclearcase"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "tmpcleaner"
+paths:
+- "org/jenkins-ci/plugins/tmpcleaner"
+developers:
+- "olivergondza"

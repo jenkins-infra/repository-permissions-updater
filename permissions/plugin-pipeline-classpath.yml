@@ -1,0 +1,6 @@
+---
+name: "pipeline-classpath"
+paths:
+- "cprice404/pipeline-classpath"
+developers:
+- "cprice404"

@@ -1,0 +1,6 @@
+---
+name: "parasoft-findings"
+paths:
+- "com/parasoft/parasoft-findings"
+developers:
+- "jacekmarzecparasoft"

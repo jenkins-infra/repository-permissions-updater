@@ -1,0 +1,6 @@
+---
+name: "appaloosa-plugin"
+paths:
+- "org/jenkins-ci/plugins/appaloosa-plugin"
+developers:
+- "rsfez"

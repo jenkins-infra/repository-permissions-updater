@@ -1,0 +1,6 @@
+---
+name: "build-blocker-plugin"
+paths:
+- "org/jenkins-ci/plugins/build-blocker-plugin"
+developers:
+- "ffromm"

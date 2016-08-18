@@ -1,0 +1,6 @@
+---
+name: "doxygen"
+paths:
+- "org/jenkins-ci/plugins/doxygen"
+developers:
+- "gbois"

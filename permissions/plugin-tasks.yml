@@ -1,0 +1,6 @@
+---
+name: "tasks"
+paths:
+- "org/jvnet/hudson/plugins/tasks"
+developers:
+- "drulli"

@@ -1,0 +1,5 @@
+---
+name: "buildcontext-capture"
+paths:
+- "org/jenkins-ci/plugins/buildcontext-capture"
+developers: []

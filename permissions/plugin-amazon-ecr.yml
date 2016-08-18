@@ -1,0 +1,8 @@
+---
+name: "amazon-ecr"
+paths:
+- "com/cloudbees/jenkins/plugins/amazon-ecr"
+developers:
+- "aheritier"
+- "fbelzunc"
+- "ndeloof"

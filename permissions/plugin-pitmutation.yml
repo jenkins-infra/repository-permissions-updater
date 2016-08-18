@@ -1,0 +1,6 @@
+---
+name: "pitmutation"
+paths:
+- "org/jenkins-ci/plugins/pitmutation"
+developers:
+- "edwardk"

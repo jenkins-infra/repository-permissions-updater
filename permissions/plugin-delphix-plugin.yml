@@ -1,0 +1,6 @@
+---
+name: "delphix-plugin"
+paths:
+- "org/jenkins-ci/plugins/delphix-plugin"
+developers:
+- "peterlvilim"

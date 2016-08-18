@@ -1,0 +1,6 @@
+---
+name: "koji-plugin"
+paths:
+- "org/jenkins-ci/plugins/koji-plugin"
+developers:
+- "vtunka"

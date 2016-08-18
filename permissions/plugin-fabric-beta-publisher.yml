@@ -1,0 +1,6 @@
+---
+name: "fabric-beta-publisher"
+paths:
+- "egor-n/fabric-beta-publisher"
+developers:
+- "egor"

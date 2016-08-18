@@ -1,0 +1,5 @@
+---
+name: "twitter"
+paths:
+- "org/jenkins-ci/plugins/twitter"
+developers: []

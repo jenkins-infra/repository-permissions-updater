@@ -1,0 +1,7 @@
+---
+name: "customize-build-now"
+paths:
+- "org/jenkins-ci/plugins/customize-build-now"
+developers:
+- "jglick"
+- "uday"

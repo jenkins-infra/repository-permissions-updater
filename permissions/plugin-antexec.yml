@@ -1,0 +1,6 @@
+---
+name: "antexec"
+paths:
+- "org/jenkins-ci/plugins/antexec"
+developers:
+- "svasek"

@@ -1,0 +1,7 @@
+---
+name: "scm-api"
+paths:
+- "org/jenkins-ci/plugins/scm-api"
+developers:
+- "jglick"
+- "recena"

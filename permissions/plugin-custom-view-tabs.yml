@@ -1,0 +1,6 @@
+---
+name: "custom-view-tabs"
+paths:
+- "org/jenkins-ci/plugins/custom-view-tabs"
+developers:
+- "todderz"

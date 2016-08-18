@@ -1,0 +1,6 @@
+---
+name: "dtkit"
+paths:
+- "org/jenkins-ci/plugins/dtkit"
+developers:
+- "gbois"

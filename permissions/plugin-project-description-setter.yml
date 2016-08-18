@@ -1,0 +1,5 @@
+---
+name: "project-description-setter"
+paths:
+- "org/jenkins-ci/plugins/project-description-setter"
+developers: []

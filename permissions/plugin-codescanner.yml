@@ -1,0 +1,5 @@
+---
+name: "codescanner"
+paths:
+- "org/jvnet/hudson/plugins/codescanner"
+developers: []

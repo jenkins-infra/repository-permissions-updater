@@ -1,0 +1,6 @@
+---
+name: "wix"
+paths:
+- "org/jenkins-ci/plugins/wix"
+developers:
+- "rollinhand"

@@ -1,0 +1,5 @@
+---
+name: "bugzilla"
+paths:
+- "org/jvnet/hudson/plugins/bugzilla"
+developers: []

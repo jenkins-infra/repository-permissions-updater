@@ -1,0 +1,7 @@
+---
+name: "ifttt-build-notifier"
+paths:
+- "org/jenkins-ci/plugins/ifttt-build-notifier"
+- "org/jenkinsci/plugins/ifttt-build-notifier"
+developers:
+- "upgundecha"

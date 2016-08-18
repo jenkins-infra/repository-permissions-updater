@@ -1,0 +1,7 @@
+---
+name: "javatest-report"
+paths:
+- "org/jenkins-ci/plugins/javatest-report"
+- "org/jvnet/hudson/plugins/javatest-report"
+developers:
+- "lvotypkova"

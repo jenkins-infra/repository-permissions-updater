@@ -1,0 +1,7 @@
+---
+name: "cucumber-reports"
+paths:
+- "net/masterthought/jenkins/cucumber-reports"
+developers:
+- "dszczepanik"
+- "kingsleyh"

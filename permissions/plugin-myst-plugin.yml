@@ -1,0 +1,6 @@
+---
+name: "myst-plugin"
+paths:
+- "com/rubiconred/jenkins/myst-plugin"
+developers:
+- "fdouek"

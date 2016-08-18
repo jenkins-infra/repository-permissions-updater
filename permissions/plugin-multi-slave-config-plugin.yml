@@ -1,0 +1,6 @@
+---
+name: "multi-slave-config-plugin"
+paths:
+- "com/sonyericsson/hudson/plugins/multi-slave-config-plugin/multi-slave-config-plugin"
+developers:
+- "rsandell"

@@ -1,0 +1,7 @@
+---
+name: "slave-setup"
+paths:
+- "org/jenkins-ci/plugins/slave-setup"
+developers:
+- "peppe"
+- "wolfs"

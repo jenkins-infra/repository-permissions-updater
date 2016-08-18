@@ -1,0 +1,6 @@
+---
+name: "sse-gateway"
+paths:
+- "org/jenkins-ci/plugins/sse-gateway"
+developers:
+- "tfennelly"

@@ -1,0 +1,6 @@
+---
+name: "jclouds-jenkins"
+paths:
+- "org/jenkins-ci/plugins/jclouds-jenkins"
+developers:
+- "mikefero"

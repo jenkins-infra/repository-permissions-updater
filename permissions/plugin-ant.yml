@@ -1,0 +1,6 @@
+---
+name: "ant"
+paths:
+- "org/jenkins-ci/plugins/ant"
+developers:
+- "armfergom"

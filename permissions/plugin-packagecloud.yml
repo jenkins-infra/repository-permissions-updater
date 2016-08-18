@@ -1,0 +1,6 @@
+---
+name: "packagecloud"
+paths:
+- "org/jenkins-ci/plugins/packagecloud"
+developers:
+- "jdamato"

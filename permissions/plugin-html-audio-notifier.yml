@@ -1,0 +1,5 @@
+---
+name: "html-audio-notifier"
+paths:
+- "jenkins/plugins/htmlaudio/html-audio-notifier"
+developers: []

@@ -1,0 +1,7 @@
+---
+name: "artifactdeployer"
+paths:
+- "org/jenkins-ci/plugins/artifactdeployer"
+developers:
+- "alecharp"
+- "gbois"

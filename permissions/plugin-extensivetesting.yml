@@ -1,0 +1,6 @@
+---
+name: "extensivetesting"
+paths:
+- "jenkins/xtc/extensivetesting"
+developers:
+- "cadorb"

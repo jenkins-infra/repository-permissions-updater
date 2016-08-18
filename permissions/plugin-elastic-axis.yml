@@ -1,0 +1,6 @@
+---
+name: "elastic-axis"
+paths:
+- "org/jenkins-ci/plugins/elastic-axis"
+developers:
+- "taksan"

@@ -1,0 +1,6 @@
+---
+name: "clover"
+paths:
+- "org/jenkins-ci/plugins/clover"
+developers:
+- "mparfianowicz"

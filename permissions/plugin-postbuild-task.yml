@@ -1,0 +1,5 @@
+---
+name: "postbuild-task"
+paths:
+- "org/jvnet/hudson/plugins/postbuild-task"
+developers: []

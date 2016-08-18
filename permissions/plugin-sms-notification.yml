@@ -1,0 +1,5 @@
+---
+name: "sms-notification"
+paths:
+- "com/hoiio/jenkins/sms-notification"
+developers: []

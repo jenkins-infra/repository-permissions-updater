@@ -1,0 +1,6 @@
+---
+name: "extra-columns"
+paths:
+- "org/jenkins-ci/plugins/extra-columns"
+developers:
+- "fredg"

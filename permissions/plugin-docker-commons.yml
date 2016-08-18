@@ -1,0 +1,10 @@
+---
+name: "docker-commons"
+paths:
+- "org/jenkins-ci/plugins/docker-commons"
+developers:
+- "jglick"
+- "kohsuke"
+- "ndeloof"
+- "oleg_nenashev"
+- "rsandell"

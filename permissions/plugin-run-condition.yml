@@ -1,0 +1,5 @@
+---
+name: "run-condition"
+paths:
+- "org/jenkins-ci/plugins/run-condition"
+developers: []

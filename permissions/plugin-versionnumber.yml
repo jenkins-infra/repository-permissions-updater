@@ -1,0 +1,7 @@
+---
+name: "versionnumber"
+paths:
+- "org/jvnet/hudson/tools/versionnumber"
+developers:
+- "bahadir"
+- "rosberglinhares"

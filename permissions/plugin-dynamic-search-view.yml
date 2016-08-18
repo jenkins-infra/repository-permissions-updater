@@ -1,0 +1,6 @@
+---
+name: "dynamic-search-view"
+paths:
+- "com/synopsys/arc/jenkinsci/dynamic-search-view"
+developers:
+- "oleg_nenashev"

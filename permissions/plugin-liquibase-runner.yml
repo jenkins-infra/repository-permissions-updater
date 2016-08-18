@@ -1,0 +1,6 @@
+---
+name: "liquibase-runner"
+paths:
+- "org/jenkins-ci/plugins/liquibase-runner"
+developers:
+- "prospero238"

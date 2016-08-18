@@ -1,0 +1,5 @@
+---
+name: "daily-quote"
+paths:
+- "org/jenkins-ci/plugins/daily-quote"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "console-column-plugin"
+paths:
+- "org/jenkins-ci/plugins/console-column-plugin"
+developers: []

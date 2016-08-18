@@ -1,0 +1,6 @@
+---
+name: "artifact-promotion"
+paths:
+- "org/jenkins-ci/plugins/artifact-promotion"
+developers:
+- "hcguersoy"

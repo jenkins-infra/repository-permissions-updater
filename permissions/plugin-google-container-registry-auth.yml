@@ -1,0 +1,6 @@
+---
+name: "google-container-registry-auth"
+paths:
+- "org/jenkins-ci/plugins/google-container-registry-auth"
+developers:
+- "wzheng2310"

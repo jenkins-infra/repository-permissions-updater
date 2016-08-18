@@ -1,0 +1,6 @@
+---
+name: "release-helper"
+paths:
+- "org/jenkins-ci/plugins/release-helper"
+developers:
+- "novatec"

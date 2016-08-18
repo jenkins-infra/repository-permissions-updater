@@ -1,0 +1,5 @@
+---
+name: "async-job"
+paths:
+- "org/jenkins-ci/plugins/async-job"
+developers: []

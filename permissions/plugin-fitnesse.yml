@@ -1,0 +1,7 @@
+---
+name: "fitnesse"
+paths:
+- "org/jenkins-ci/plugins/fitnesse"
+developers:
+- "antoine_aumjaud"
+- "lessonz"

@@ -1,0 +1,6 @@
+---
+name: "first-plugin"
+paths:
+- "net/praqma/first-plugin"
+developers:
+- "praqma"

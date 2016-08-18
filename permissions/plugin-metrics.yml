@@ -1,0 +1,7 @@
+---
+name: "metrics"
+paths:
+- "org/jenkins-ci/plugins/metrics"
+developers:
+- "kohsuke"
+- "stephenconnolly"

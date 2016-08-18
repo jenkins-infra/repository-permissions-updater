@@ -1,0 +1,6 @@
+---
+name: "qftest"
+paths:
+- "org/jenkins-ci/plugins/qftest"
+developers:
+- "qfs"

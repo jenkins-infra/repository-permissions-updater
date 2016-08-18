@@ -1,0 +1,7 @@
+---
+name: "rally-plugin"
+paths:
+- "org/jenkins-ci/plugins/rally-plugin"
+developers:
+- "mikerogers_"
+- "tushar686"

@@ -1,0 +1,5 @@
+---
+name: "pom2config"
+paths:
+- "org/jenkins-ci/plugins/pom2config"
+developers: []

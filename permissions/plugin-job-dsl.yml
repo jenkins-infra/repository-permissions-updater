@@ -1,0 +1,8 @@
+---
+name: "job-dsl"
+paths:
+- "job-dsl-plugin-root/job-dsl"
+- "org/jenkins-ci/plugins/job-dsl"
+- "org/jenkinsci/plugins/job-dsl"
+developers:
+- "daspilker"

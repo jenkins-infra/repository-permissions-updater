@@ -1,0 +1,6 @@
+---
+name: "http-post"
+paths:
+- "org/jenkins-ci/plugins/http-post"
+developers:
+- "christianbecker"

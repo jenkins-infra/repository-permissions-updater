@@ -1,0 +1,7 @@
+---
+name: "collapsing-console-sections"
+paths:
+- "org/jenkins-ci/plugins/collapsing-console-sections"
+- "org/jvnet/hudson/plugins/collapsing-console-sections"
+developers:
+- "oleg_nenashev"

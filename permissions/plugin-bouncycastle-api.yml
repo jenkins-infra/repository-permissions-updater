@@ -1,0 +1,7 @@
+---
+name: "bouncycastle-api"
+paths:
+- "org/jenkins-ci/plugins/bouncycastle-api"
+developers:
+- "alobato"
+- "stephenconnolly"

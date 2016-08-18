@@ -1,0 +1,5 @@
+---
+name: "weibo"
+paths:
+- "org/jenkins-ci/plugins/weibo"
+developers: []

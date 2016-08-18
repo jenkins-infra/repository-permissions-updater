@@ -1,0 +1,6 @@
+---
+name: "harvest"
+paths:
+- "org/jenkins-ci/plugins/harvest"
+developers:
+- "abedwards"

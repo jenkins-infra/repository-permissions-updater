@@ -1,0 +1,7 @@
+---
+name: "Parameterized-Remote-Trigger"
+paths:
+- "org/jenkins-ci/plugins/Parameterized-Remote-Trigger"
+developers:
+- "kutzi"
+- "morficus"

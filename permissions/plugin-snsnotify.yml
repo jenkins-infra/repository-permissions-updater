@@ -1,0 +1,6 @@
+---
+name: "snsnotify"
+paths:
+- "org/jenkins-ci/plugins/snsnotify"
+developers:
+- "nikos"

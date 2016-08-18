@@ -1,0 +1,5 @@
+---
+name: "junit-realtime-test-reporter"
+paths:
+- "org/jenkins-ci/plugins/junit-realtime-test-reporter"
+developers: []

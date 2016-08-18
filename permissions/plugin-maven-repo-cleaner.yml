@@ -1,0 +1,5 @@
+---
+name: "maven-repo-cleaner"
+paths:
+- "org/jenkins-ci/plugins/maven-repo-cleaner"
+developers: []

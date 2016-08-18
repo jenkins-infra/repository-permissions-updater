@@ -1,0 +1,6 @@
+---
+name: "neoload-jenkins-plugin"
+paths:
+- "org/jenkins-ci/plugins/neoload-jenkins-plugin"
+developers:
+- "neotyspluginsupport"

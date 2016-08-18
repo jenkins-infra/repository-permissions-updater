@@ -1,0 +1,6 @@
+---
+name: "pipeline-rest-api"
+paths:
+- "org/jenkins-ci/plugins/pipeline-stage-view/pipeline-rest-api"
+developers:
+- "svanoort"

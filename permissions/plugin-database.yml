@@ -1,0 +1,6 @@
+---
+name: "database"
+paths:
+- "org/jenkins-ci/plugins/database"
+developers:
+- "davidvanlaatum"

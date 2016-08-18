@@ -1,0 +1,6 @@
+---
+name: "parameter-separator"
+paths:
+- "org/jenkins-ci/plugins/parameter-separator"
+developers:
+- "olhado"

@@ -1,0 +1,6 @@
+---
+name: "container-slaves"
+paths:
+- "com/cloudbees/jenkins/plugins/container-slaves"
+developers:
+- "ndeloof"

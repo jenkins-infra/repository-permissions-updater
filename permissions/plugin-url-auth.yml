@@ -1,0 +1,5 @@
+---
+name: "url-auth"
+paths:
+- "org/jenkins-ci/plugins/url-auth"
+developers: []

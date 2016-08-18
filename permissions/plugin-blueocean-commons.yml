@@ -1,0 +1,7 @@
+---
+name: "blueocean-commons"
+paths:
+- "io/jenkins/blueocean/blueocean-commons"
+developers:
+- "michaelneale"
+- "vivek"

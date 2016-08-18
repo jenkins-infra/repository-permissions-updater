@@ -1,0 +1,6 @@
+---
+name: "housekeeper"
+paths:
+- "org/jenkins-ci/plugins/housekeeper"
+developers:
+- "scarytom"

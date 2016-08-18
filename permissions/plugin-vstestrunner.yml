@@ -1,0 +1,6 @@
+---
+name: "vstestrunner"
+paths:
+- "org/jenkins-ci/plugins/vstestrunner"
+developers:
+- "yasu_s"

@@ -1,0 +1,6 @@
+---
+name: "global-build-stats"
+paths:
+- "org/jenkins-ci/plugins/global-build-stats"
+developers:
+- "dhinske"

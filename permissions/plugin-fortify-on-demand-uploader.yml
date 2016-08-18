@@ -1,0 +1,6 @@
+---
+name: "fortify-on-demand-uploader"
+paths:
+- "org/jenkins-ci/plugins/fortify-on-demand-uploader"
+developers:
+- "ryanblack"

@@ -1,0 +1,5 @@
+---
+name: "blink1"
+paths:
+- "org/jenkins-ci/plugins/blink1"
+developers: []

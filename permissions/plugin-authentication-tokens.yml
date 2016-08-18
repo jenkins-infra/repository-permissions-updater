@@ -1,0 +1,6 @@
+---
+name: "authentication-tokens"
+paths:
+- "org/jenkins-ci/plugins/authentication-tokens"
+developers:
+- "stephenconnolly"

@@ -1,0 +1,6 @@
+---
+name: "relution-publisher"
+paths:
+- "org/jenkins-ci/plugins/relution-publisher"
+developers:
+- "mway_solutions"

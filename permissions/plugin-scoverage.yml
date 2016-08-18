@@ -1,0 +1,6 @@
+---
+name: "scoverage"
+paths:
+- "org/jenkins-ci/plugins/scoverage"
+developers:
+- "shanbin"

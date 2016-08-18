@@ -1,0 +1,6 @@
+---
+name: "chromedriver"
+paths:
+- "org/jenkins-ci/plugins/chromedriver"
+developers:
+- "ndeloof"

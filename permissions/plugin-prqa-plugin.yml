@@ -1,0 +1,7 @@
+---
+name: "prqa-plugin"
+paths:
+- "com/programmingresearch/prqa-plugin"
+- "net/praqma/prqa-plugin"
+developers:
+- "igorkostenko"

@@ -1,0 +1,6 @@
+---
+name: "jobtype-column"
+paths:
+- "org/jenkins-ci/plugins/jobtype-column"
+- "org/jvnet/hudson/plugins/jobtype-column"
+developers: []

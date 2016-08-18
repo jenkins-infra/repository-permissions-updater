@@ -1,0 +1,5 @@
+---
+name: "delta-cloud"
+paths:
+- "org/jenkins-ci/plugins/delta-cloud"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "sourcemonitor"
+paths:
+- "com/thalesgroup/hudson/plugins/sourcemonitor"
+developers: []

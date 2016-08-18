@@ -1,0 +1,6 @@
+---
+name: "scm2job"
+paths:
+- "org/jenkins-ci/plugins/scm2job"
+developers:
+- "stefanbrausch"

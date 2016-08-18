@@ -1,0 +1,6 @@
+---
+name: "mypeople"
+paths:
+- "org/jenkins-ci/plugins/mypeople"
+developers:
+- "linugee"

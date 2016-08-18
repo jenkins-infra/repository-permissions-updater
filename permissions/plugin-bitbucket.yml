@@ -1,0 +1,9 @@
+---
+name: "bitbucket"
+paths:
+- "org/jenkins-ci/plugins/bitbucket"
+developers:
+- "aheritier"
+- "domi"
+- "fbelzunc"
+- "ndeloof"

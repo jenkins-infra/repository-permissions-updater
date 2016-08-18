@@ -1,0 +1,6 @@
+---
+name: "terminal"
+paths:
+- "org/jenkins-ci/plugins/terminal"
+- "org/jvnet/hudson/plugins/terminal"
+developers: []

@@ -1,0 +1,7 @@
+---
+name: "deployment-notification"
+paths:
+- "org/jenkins-ci/plugins/deployment-notification"
+developers:
+- "fbelzunc"
+- "kohsuke"

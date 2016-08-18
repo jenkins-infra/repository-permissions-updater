@@ -1,0 +1,6 @@
+---
+name: "qc"
+paths:
+- "org/jenkins-ci/plugins/qc"
+- "org/jvnet/hudson/plugins/qc"
+developers: []

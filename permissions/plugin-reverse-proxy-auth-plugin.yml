@@ -1,0 +1,6 @@
+---
+name: "reverse-proxy-auth-plugin"
+paths:
+- "org/jenkins-ci/plugins/reverse-proxy-auth-plugin"
+developers:
+- "wilder_rodrigues"

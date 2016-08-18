@@ -1,0 +1,6 @@
+---
+name: "gitlab-logo"
+paths:
+- "org/jenkins-ci/plugins/gitlab-logo"
+developers:
+- "sue445"

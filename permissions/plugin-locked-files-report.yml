@@ -1,0 +1,5 @@
+---
+name: "locked-files-report"
+paths:
+- "org/jvnet/hudson/plugins/locked-files-report"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "dumpinfo-buildwrapper-plugin"
+paths:
+- "org/jvnet/hudson/plugins/dumpinfo-buildwrapper-plugin"
+developers: []

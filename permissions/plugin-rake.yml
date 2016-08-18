@@ -1,0 +1,6 @@
+---
+name: "rake"
+paths:
+- "org/jenkins-ci/plugins/rake"
+developers:
+- "oli_at_jsi"

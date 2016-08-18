@@ -1,0 +1,5 @@
+---
+name: "any-buildstep"
+paths:
+- "org/jenkins-ci/plugins/any-buildstep"
+developers: []

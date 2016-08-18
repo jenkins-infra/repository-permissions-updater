@@ -1,0 +1,6 @@
+---
+name: "ezwall"
+paths:
+- "org/jenkins-ci/plugins/ezwall"
+developers:
+- "ndeloof"

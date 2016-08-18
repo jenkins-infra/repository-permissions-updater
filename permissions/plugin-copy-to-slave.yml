@@ -1,0 +1,7 @@
+---
+name: "copy-to-slave"
+paths:
+- "org/jenkins-ci/plugins/copy-to-slave"
+- "org/jvnet/hudson/plugins/copy-to-slave"
+developers:
+- "svvivek"

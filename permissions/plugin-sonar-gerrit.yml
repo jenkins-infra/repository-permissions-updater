@@ -1,0 +1,6 @@
+---
+name: "sonar-gerrit"
+paths:
+- "org/jenkins-ci/plugins/sonar-gerrit"
+developers:
+- "aquarellian"

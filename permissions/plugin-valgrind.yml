@@ -1,0 +1,7 @@
+---
+name: "valgrind"
+paths:
+- "org/jenkins-ci/plugins/valgrind"
+- "org/jenkinsci/plugins/valgrind/valgrind"
+developers:
+- "existence"

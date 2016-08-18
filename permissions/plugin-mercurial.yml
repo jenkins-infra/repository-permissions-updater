@@ -1,0 +1,7 @@
+---
+name: "mercurial"
+paths:
+- "org/jenkins-ci/plugins/mercurial"
+- "org/jvnet/hudson/plugins/mercurial"
+developers:
+- "jglick"

@@ -1,0 +1,5 @@
+---
+name: "vss"
+paths:
+- "org/jenkins-ci/plugins/vss"
+developers: []

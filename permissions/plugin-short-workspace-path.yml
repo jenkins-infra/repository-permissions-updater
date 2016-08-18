@@ -1,0 +1,6 @@
+---
+name: "short-workspace-path"
+paths:
+- "org/jenkins-ci/plugins/short-workspace-path"
+developers:
+- "olivergondza"

@@ -1,0 +1,6 @@
+---
+name: "vsts-cd"
+paths:
+- "org/jenkins-ci/plugins/vsts-cd"
+developers:
+- "angoya"

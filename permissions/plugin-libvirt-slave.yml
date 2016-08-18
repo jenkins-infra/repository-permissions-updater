@@ -1,0 +1,8 @@
+---
+name: "libvirt-slave"
+paths:
+- "hudson/plugins/libvirt/libvirt-slave"
+- "org/jenkins-ci/plugins/libvirt-slave"
+developers:
+- "gkr"
+- "magnayn"

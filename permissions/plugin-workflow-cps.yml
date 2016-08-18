@@ -1,0 +1,7 @@
+---
+name: "workflow-cps"
+paths:
+- "org/jenkins-ci/plugins/workflow/workflow-cps"
+developers:
+- "jglick"
+- "kohsuke"

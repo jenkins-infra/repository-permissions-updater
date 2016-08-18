@@ -1,0 +1,6 @@
+---
+name: "cisco-spark"
+paths:
+- "org/jenkins-ci/plugins/cisco-spark"
+developers:
+- "fujian"

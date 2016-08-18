@@ -1,0 +1,6 @@
+---
+name: "StashBranchParameter"
+paths:
+- "org/jenkins-ci/plugins/StashBranchParameter"
+developers:
+- "eernie"

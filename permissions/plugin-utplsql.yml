@@ -1,0 +1,7 @@
+---
+name: "utplsql"
+paths:
+- "hudson/plugins/utplsql/utplsql"
+- "org/jenkins-ci/plugins/utplsql"
+developers:
+- "kusemuckl"

@@ -1,0 +1,8 @@
+---
+name: "clearcase"
+paths:
+- "org/jenkins-ci/plugins/clearcase"
+- "org/jvnet/hudson/plugins/clearcase"
+developers:
+- "madsnielsen"
+- "vlatombe"

@@ -1,0 +1,6 @@
+---
+name: "stepcounter"
+paths:
+- "org/jenkins-ci/plugins/stepcounter"
+developers:
+- "takuma0214"

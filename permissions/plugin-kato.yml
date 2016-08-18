@@ -1,0 +1,6 @@
+---
+name: "kato"
+paths:
+- "org/jvnet/hudson/plugins/kato"
+developers:
+- "jlarky"

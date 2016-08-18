@@ -1,0 +1,6 @@
+---
+name: "google-cloud-backup"
+paths:
+- "org/jenkins-ci/plugins/google-cloud-backup"
+developers:
+- "astroilov"

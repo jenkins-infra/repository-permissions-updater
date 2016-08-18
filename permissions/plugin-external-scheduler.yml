@@ -1,0 +1,5 @@
+---
+name: "external-scheduler"
+paths:
+- "org/jenkins-ci/plugins/external-scheduler"
+developers: []

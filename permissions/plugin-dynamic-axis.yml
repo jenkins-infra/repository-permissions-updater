@@ -1,0 +1,6 @@
+---
+name: "dynamic-axis"
+paths:
+- "org/jenkins-ci/plugins/dynamic-axis"
+developers:
+- "oleg_nenashev"

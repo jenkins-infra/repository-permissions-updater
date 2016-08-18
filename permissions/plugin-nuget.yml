@@ -1,0 +1,6 @@
+---
+name: "nuget"
+paths:
+- "org/jenkins-ci/plugins/nuget"
+developers:
+- "greybird"

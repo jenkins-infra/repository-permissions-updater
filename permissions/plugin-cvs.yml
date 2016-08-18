@@ -1,0 +1,7 @@
+---
+name: "cvs"
+paths:
+- "org/jenkins-ci/plugins/cvs"
+- "org/jvnet/hudson/plugins/cvs"
+developers:
+- "mc1arke"

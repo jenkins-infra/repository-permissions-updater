@@ -1,0 +1,6 @@
+---
+name: "prometheus"
+paths:
+- "org/jenkins-ci/plugins/prometheus"
+developers:
+- "lsjostro"

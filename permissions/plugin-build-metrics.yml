@@ -1,0 +1,6 @@
+---
+name: "build-metrics"
+paths:
+- "org/jenkins-ci/plugins/build-metrics"
+developers:
+- "ydubreuil"

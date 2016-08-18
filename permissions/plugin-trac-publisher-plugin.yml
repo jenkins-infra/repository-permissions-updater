@@ -1,0 +1,5 @@
+---
+name: "trac-publisher-plugin"
+paths:
+- "org/jenkins-ci/plugins/trac-publisher-plugin"
+developers: []

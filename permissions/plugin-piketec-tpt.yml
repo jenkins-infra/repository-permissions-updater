@@ -1,0 +1,6 @@
+---
+name: "piketec-tpt"
+paths:
+- "com/piketec/jenkins/plugins/piketec-tpt"
+developers:
+- "piketec"

@@ -1,0 +1,6 @@
+---
+name: "walti"
+paths:
+- "org/jenkins-ci/plugins/walti"
+developers:
+- "walti_io"

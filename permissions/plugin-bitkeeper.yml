@@ -1,0 +1,6 @@
+---
+name: "bitkeeper"
+paths:
+- "org/jenkins-ci/plugins/bitkeeper"
+developers:
+- "mdonohue"

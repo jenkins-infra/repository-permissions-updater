@@ -1,0 +1,6 @@
+---
+name: "flexible-publish"
+paths:
+- "org/jenkins-ci/plugins/flexible-publish"
+developers:
+- "ikedam"

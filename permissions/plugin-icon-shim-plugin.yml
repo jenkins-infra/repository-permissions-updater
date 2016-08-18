@@ -1,0 +1,6 @@
+---
+name: "icon-shim-plugin"
+paths:
+- "org/jenkins-ci/plugins/icon-shim/icon-shim-plugin"
+developers:
+- "tfennelly"

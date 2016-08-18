@@ -1,0 +1,6 @@
+---
+name: "AntepediaReporter-CI-plugin"
+paths:
+- "com/antelink/reporter/jenkins/plugin/AntepediaReporter-CI-plugin"
+developers:
+- "antelink"

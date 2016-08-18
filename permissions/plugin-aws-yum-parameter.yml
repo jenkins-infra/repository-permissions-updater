@@ -1,0 +1,6 @@
+---
+name: "aws-yum-parameter"
+paths:
+- "com/viviquity/jenkins/aws-yum-parameter"
+developers:
+- "d3clan"

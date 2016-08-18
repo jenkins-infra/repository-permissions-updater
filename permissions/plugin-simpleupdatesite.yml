@@ -1,0 +1,5 @@
+---
+name: "simpleupdatesite"
+paths:
+- "org/jenkins-ci/plugins/simpleupdatesite"
+developers: []

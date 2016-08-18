@@ -1,0 +1,6 @@
+---
+name: "cucumber-living-documentation"
+paths:
+- "org/jenkins-ci/plugins/cucumber-living-documentation"
+developers:
+- "rmpestano"

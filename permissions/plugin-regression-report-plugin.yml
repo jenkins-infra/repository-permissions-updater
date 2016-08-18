@@ -1,0 +1,6 @@
+---
+name: "regression-report-plugin"
+paths:
+- "org/jenkins-ci/plugins/regression-report-plugin"
+developers:
+- "eller86"

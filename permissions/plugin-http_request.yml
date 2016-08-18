@@ -1,0 +1,6 @@
+---
+name: "http_request"
+paths:
+- "org/jenkins-ci/plugins/http_request"
+developers:
+- "janario"

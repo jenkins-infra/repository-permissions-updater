@@ -1,0 +1,7 @@
+---
+name: "xlrelease-plugin"
+paths:
+- "com/xebialabs/ci/xlrelease-plugin"
+developers:
+- "jdewinne"
+- "mbigorne"

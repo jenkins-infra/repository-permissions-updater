@@ -1,0 +1,6 @@
+---
+name: "CustomHistory"
+paths:
+- "CustomHistory/CustomHistory"
+- "org/jenkins-ci/plugins/CustomHistory"
+developers: []

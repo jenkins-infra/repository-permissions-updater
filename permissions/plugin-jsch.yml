@@ -1,0 +1,6 @@
+---
+name: "jsch"
+paths:
+- "org/jenkins-ci/plugins/jsch"
+developers:
+- "zregvart"

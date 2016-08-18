@@ -1,0 +1,6 @@
+---
+name: "unleash"
+paths:
+- "com/itemis/jenkins/plugins/unleash"
+developers:
+- "shillner"

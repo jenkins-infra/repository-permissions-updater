@@ -1,0 +1,6 @@
+---
+name: "config-rotator"
+paths:
+- "net/praqma/config-rotator"
+developers:
+- "madsnielsen"

@@ -1,0 +1,6 @@
+---
+name: "appetize"
+paths:
+- "org/jenkins-ci/plugins/appetize"
+developers:
+- "weiyin"

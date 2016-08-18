@@ -1,0 +1,7 @@
+---
+name: "workflow-step-api"
+paths:
+- "org/jenkins-ci/plugins/workflow/workflow-step-api"
+developers:
+- "jglick"
+- "kohsuke"

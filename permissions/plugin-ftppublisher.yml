@@ -1,0 +1,5 @@
+---
+name: "ftppublisher"
+paths:
+- "org/jvnet/hudson/plugins/ftppublisher"
+developers: []

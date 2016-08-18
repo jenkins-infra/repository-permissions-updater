@@ -1,0 +1,5 @@
+---
+name: "tag-profiler"
+paths:
+- "org/jenkins-ci/plugins/tag-profiler"
+developers: []

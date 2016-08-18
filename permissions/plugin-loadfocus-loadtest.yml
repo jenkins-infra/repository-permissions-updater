@@ -1,0 +1,6 @@
+---
+name: "loadfocus-loadtest"
+paths:
+- "com/loadfocus/loadfocus-loadtest"
+developers:
+- "loadfocus"

@@ -1,0 +1,9 @@
+---
+name: "ssh-slaves"
+paths:
+- "org/jenkins-ci/plugins/ssh-slaves"
+developers:
+- "andresrc"
+- "jglick"
+- "kohsuke"
+- "stephenconnolly"

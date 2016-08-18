@@ -1,0 +1,6 @@
+---
+name: "installshield"
+paths:
+- "org/jenkins-ci/plugins/installshield"
+developers:
+- "bambas"

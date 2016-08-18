@@ -1,0 +1,5 @@
+---
+name: "gcal"
+paths:
+- "org/jvnet/hudson/plugins/gcal"
+developers: []

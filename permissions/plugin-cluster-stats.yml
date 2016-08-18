@@ -1,0 +1,6 @@
+---
+name: "cluster-stats"
+paths:
+- "org/zeroturnaround/cluster-stats"
+developers:
+- "toomasr"

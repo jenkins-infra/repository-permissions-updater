@@ -1,0 +1,7 @@
+---
+name: "Office-365-Connector"
+paths:
+- "jenkins/plugins/office365connector/Office-365-Connector"
+- "org/jenkins-ci/plugins/Office-365-Connector"
+developers:
+- "outconn"

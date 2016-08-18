@@ -1,0 +1,6 @@
+---
+name: "parameter-pool"
+paths:
+- "org/jenkins-ci/plugins/parameter-pool"
+developers:
+- "damienbiggs"

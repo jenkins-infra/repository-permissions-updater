@@ -1,0 +1,6 @@
+---
+name: "labeled-test-groups-publisher"
+paths:
+- "org/jvnet/hudson/plugins/labeled-test-groups-publisher"
+developers:
+- "lbordowitz"

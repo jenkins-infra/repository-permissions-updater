@@ -1,0 +1,5 @@
+---
+name: "pathignore"
+paths:
+- "org/jenkins-ci/ruby-plugins/pathignore"
+developers: []

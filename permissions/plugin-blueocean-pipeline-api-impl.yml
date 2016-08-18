@@ -1,0 +1,7 @@
+---
+name: "blueocean-pipeline-api-impl"
+paths:
+- "io/jenkins/blueocean/blueocean-pipeline-api-impl"
+developers:
+- "michaelneale"
+- "vivek"

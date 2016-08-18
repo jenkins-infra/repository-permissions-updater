@@ -1,0 +1,9 @@
+---
+name: "saml"
+paths:
+- "org/jenkins-ci/plugins/saml"
+developers:
+- "0xcfff"
+- "chengas123"
+- "mdonohue"
+- "sbower"

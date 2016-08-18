@@ -1,0 +1,6 @@
+---
+name: "environment-manager"
+paths:
+- "com/parasoft/environment-manager"
+developers:
+- "mattloveparasoft"

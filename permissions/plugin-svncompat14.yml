@@ -1,0 +1,5 @@
+---
+name: "svncompat14"
+paths:
+- "org/jvnet/hudson/plugins/svncompat14"
+developers: []

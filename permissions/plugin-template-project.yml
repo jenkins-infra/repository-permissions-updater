@@ -1,0 +1,8 @@
+---
+name: "template-project"
+paths:
+- "org/jenkins-ci/plugins/template-project"
+developers:
+- "brantone"
+- "ctapobep"
+- "ndeloof"

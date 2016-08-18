@@ -1,0 +1,5 @@
+---
+name: "buildheroes"
+paths:
+- "org/jenkins-ci/plugins/buildheroes"
+developers: []

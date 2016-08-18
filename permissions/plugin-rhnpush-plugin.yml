@@ -1,0 +1,6 @@
+---
+name: "rhnpush-plugin"
+paths:
+- "org/jenkins-ci/plugins/rhnpush-plugin"
+developers:
+- "mtizzoni"

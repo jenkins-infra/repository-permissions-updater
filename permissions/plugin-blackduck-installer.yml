@@ -1,0 +1,6 @@
+---
+name: "blackduck-installer"
+paths:
+- "org/jenkins-ci/plugins/blackduck-installer"
+developers:
+- "jrichard"

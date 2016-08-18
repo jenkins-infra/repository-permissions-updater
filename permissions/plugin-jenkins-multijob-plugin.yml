@@ -1,0 +1,6 @@
+---
+name: "jenkins-multijob-plugin"
+paths:
+- "org/jenkins-ci/plugins/jenkins-multijob-plugin"
+developers:
+- "hagzag"

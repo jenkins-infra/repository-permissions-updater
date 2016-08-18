@@ -1,0 +1,6 @@
+---
+name: "url-auth-sso"
+paths:
+- "cf/pgmann/plugins/url-auth-sso"
+developers:
+- "pgmann"

@@ -1,0 +1,5 @@
+---
+name: "lastfailureversioncolumn"
+paths:
+- "org/jvnet/hudson/plugins/lastfailureversioncolumn"
+developers: []

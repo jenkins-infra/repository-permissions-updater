@@ -1,0 +1,7 @@
+---
+name: "upstream-downstream-view"
+paths:
+- "org/jenkins-ci/plugins/upstream-downstream-view"
+developers:
+- "lvotypkova"
+- "olivergondza"

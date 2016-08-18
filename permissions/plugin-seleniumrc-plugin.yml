@@ -1,0 +1,5 @@
+---
+name: "seleniumrc-plugin"
+paths:
+- "org/jvnet/hudson/plugins/seleniumrc-plugin"
+developers: []

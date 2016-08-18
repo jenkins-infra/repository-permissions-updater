@@ -1,0 +1,7 @@
+---
+name: "token-macro"
+paths:
+- "org/jenkins-ci/plugins/token-macro"
+developers:
+- "oleg_nenashev"
+- "slide_o_mix"

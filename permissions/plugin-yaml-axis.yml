@@ -1,0 +1,6 @@
+---
+name: "yaml-axis"
+paths:
+- "org/jenkins-ci/plugins/yaml-axis"
+developers:
+- "sue445"

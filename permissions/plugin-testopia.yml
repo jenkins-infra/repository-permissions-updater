@@ -1,0 +1,5 @@
+---
+name: "testopia"
+paths:
+- "jenkins/plugins/testopia/testopia"
+developers: []

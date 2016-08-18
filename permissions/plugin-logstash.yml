@@ -1,0 +1,6 @@
+---
+name: "logstash"
+paths:
+- "org/jenkins-ci/plugins/logstash"
+developers:
+- "rgerard"

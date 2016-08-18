@@ -1,0 +1,5 @@
+---
+name: "monitor-remote-job"
+paths:
+- "org/ukiuni/monitor-remote-job-plugin/monitor-remote-job"
+developers: []

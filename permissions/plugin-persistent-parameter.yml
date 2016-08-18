@@ -1,0 +1,6 @@
+---
+name: "persistent-parameter"
+paths:
+- "org/jenkins-ci/plugins/persistent-parameter"
+developers:
+- "greg2001"

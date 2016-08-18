@@ -1,0 +1,5 @@
+---
+name: "scp"
+paths:
+- "org/jvnet/hudson/plugins/scp"
+developers: []

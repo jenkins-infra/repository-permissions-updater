@@ -1,0 +1,9 @@
+---
+name: "ssh-agent"
+paths:
+- "org/jenkins-ci/plugins/ssh-agent"
+developers:
+- "jglick"
+- "kohsuke"
+- "recena"
+- "stephenconnolly"

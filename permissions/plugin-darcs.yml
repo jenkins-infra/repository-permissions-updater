@@ -1,0 +1,5 @@
+---
+name: "darcs"
+paths:
+- "org/jenkins-ci/plugins/darcs"
+developers: []

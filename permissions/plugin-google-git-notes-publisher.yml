@@ -1,0 +1,7 @@
+---
+name: "google-git-notes-publisher"
+paths:
+- "org/jenkins-ci/plugins/google-git-notes-publisher"
+developers:
+- "astroilov"
+- "wzheng2310"

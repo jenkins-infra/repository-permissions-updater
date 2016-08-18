@@ -1,0 +1,6 @@
+---
+name: "upload-artifacts-to-nexus"
+paths:
+- "sp/sd/upload-artifacts-to-nexus"
+developers:
+- "pskumar448"

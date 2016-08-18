@@ -1,0 +1,6 @@
+---
+name: "cloudbees-bitbucket-branch-source"
+paths:
+- "org/jenkins-ci/plugins/cloudbees-bitbucket-branch-source"
+developers:
+- "amuniz"

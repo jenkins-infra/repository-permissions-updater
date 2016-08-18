@@ -1,0 +1,5 @@
+---
+name: "JDK_Parameter_Plugin"
+paths:
+- "org/jenkins-ci/plugins/JDK_Parameter_Plugin"
+developers: []

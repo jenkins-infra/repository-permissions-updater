@@ -1,0 +1,5 @@
+---
+name: "mongodb"
+paths:
+- "org/jenkins-ci/plugins/mongodb"
+developers: []

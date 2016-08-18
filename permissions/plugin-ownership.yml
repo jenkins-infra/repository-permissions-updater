@@ -1,0 +1,6 @@
+---
+name: "ownership"
+paths:
+- "com/synopsys/jenkinsci/ownership"
+developers:
+- "oleg_nenashev"

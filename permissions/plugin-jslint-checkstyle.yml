@@ -1,0 +1,5 @@
+---
+name: "jslint-checkstyle"
+paths:
+- "org/jvnet/hudson/plugins/jslint-checkstyle"
+developers: []

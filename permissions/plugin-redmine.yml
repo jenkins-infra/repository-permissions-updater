@@ -1,0 +1,5 @@
+---
+name: "redmine"
+paths:
+- "org/jenkins-ci/plugins/redmine"
+developers: []

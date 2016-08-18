@@ -1,0 +1,5 @@
+---
+name: "versioncolumn"
+paths:
+- "org/jenkins-ci/plugins/versioncolumn"
+developers: []

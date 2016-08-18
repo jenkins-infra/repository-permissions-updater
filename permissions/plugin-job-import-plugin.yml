@@ -1,0 +1,6 @@
+---
+name: "job-import-plugin"
+paths:
+- "org/jenkins-ci/plugins/job-import-plugin"
+developers:
+- "escoem"

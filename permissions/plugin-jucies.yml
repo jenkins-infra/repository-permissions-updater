@@ -1,0 +1,6 @@
+---
+name: "jucies"
+paths:
+- "org/jenkins-ci/plugins/jucies"
+developers:
+- "bsideup"

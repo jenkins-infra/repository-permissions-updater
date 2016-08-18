@@ -1,0 +1,6 @@
+---
+name: "emailext-template"
+paths:
+- "org/jenkinsci/plugins/emailext-template"
+developers:
+- "slide_o_mix"

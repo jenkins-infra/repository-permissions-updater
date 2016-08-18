@@ -1,0 +1,6 @@
+---
+name: "maintenance-jobs-scheduler"
+paths:
+- "org/jenkins-ci/plugins/maintenance-jobs-scheduler"
+developers:
+- "v2v"

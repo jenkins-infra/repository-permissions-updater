@@ -1,0 +1,6 @@
+---
+name: "job-fan-in"
+paths:
+- "org/jenkins-ci/plugins/job-fan-in"
+developers:
+- "lonkaryogeshr"

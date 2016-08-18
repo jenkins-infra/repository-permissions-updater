@@ -1,0 +1,6 @@
+---
+name: "vncviewer"
+paths:
+- "org/jenkins-ci/plugins/vncviewer"
+developers:
+- "tbaum"

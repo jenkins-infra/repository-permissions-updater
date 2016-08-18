@@ -1,0 +1,8 @@
+---
+name: "s3"
+paths:
+- "org/jenkins-ci/plugins/s3"
+developers:
+- "dmbeer"
+- "jimilian"
+- "ndeloof"

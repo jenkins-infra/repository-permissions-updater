@@ -1,0 +1,5 @@
+---
+name: "jobtemplates"
+paths:
+- "com/unitedinternet/jenkins/plugins/jobtemplates/jobtemplates"
+developers: []

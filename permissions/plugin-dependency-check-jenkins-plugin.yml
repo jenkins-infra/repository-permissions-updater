@@ -1,0 +1,7 @@
+---
+name: "dependency-check-jenkins-plugin"
+paths:
+- "org/jenkins-ci/plugins/dependency-check-jenkins-plugin"
+- "org/owasp/dependency-check/dependency-check-jenkins-plugin"
+developers:
+- "sspringett"

@@ -1,0 +1,7 @@
+---
+name: "browserstack-integration"
+paths:
+- "com/browserstack/browserstack-integration"
+- "org/jenkins-ci/plugins/browserstack-integration"
+developers:
+- "browserstack"

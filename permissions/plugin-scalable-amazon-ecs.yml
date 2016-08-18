@@ -1,0 +1,6 @@
+---
+name: "scalable-amazon-ecs"
+paths:
+- "com/cloudbees/jenkins/plugins/scalable-amazon-ecs"
+developers:
+- "roehrijn2"

@@ -1,0 +1,7 @@
+---
+name: "jenkins-flowdock-plugin"
+paths:
+- "com/flowdock/jenkins/jenkins-flowdock-plugin"
+developers:
+- "anttipitkanen"
+- "arcivanov"

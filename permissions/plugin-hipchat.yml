@@ -1,0 +1,7 @@
+---
+name: "hipchat"
+paths:
+- "org/jvnet/hudson/plugins/hipchat"
+developers:
+- "aldaris"
+- "darrinholst"

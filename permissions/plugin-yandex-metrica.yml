@@ -1,0 +1,6 @@
+---
+name: "yandex-metrica"
+paths:
+- "org/jenkins-ci/plugins/yandex-metrica"
+developers:
+- "vbauer"

@@ -1,0 +1,5 @@
+---
+name: "jenkins-tag-cloud-plugin"
+paths:
+- "org/jenkins-ci/plugins/jenkins-tag-cloud-plugin"
+developers: []

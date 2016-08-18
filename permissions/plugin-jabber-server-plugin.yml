@@ -1,0 +1,6 @@
+---
+name: "jabber-server-plugin"
+paths:
+- "de/e-nexus/jabber-server-plugin"
+developers:
+- "peter_rader"

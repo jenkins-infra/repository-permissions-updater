@@ -1,0 +1,6 @@
+---
+name: "mailmap-resolver"
+paths:
+- "org/jenkins-ci/plugins/mailmap-resolver"
+developers:
+- "slide_o_mix"

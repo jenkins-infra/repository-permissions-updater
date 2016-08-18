@@ -1,0 +1,6 @@
+---
+name: "logging"
+paths:
+- "net/praqma/logging"
+developers:
+- "madsnielsen"

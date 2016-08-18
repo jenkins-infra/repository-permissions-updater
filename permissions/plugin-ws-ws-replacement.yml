@@ -1,0 +1,6 @@
+---
+name: "ws-ws-replacement"
+paths:
+- "org/jenkins-ci/plugins/ws-ws-replacement"
+developers:
+- "leewinder"

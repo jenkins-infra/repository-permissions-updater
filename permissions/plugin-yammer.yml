@@ -1,0 +1,5 @@
+---
+name: "yammer"
+paths:
+- "org/jenkins-ci/ruby-plugins/yammer"
+developers: []

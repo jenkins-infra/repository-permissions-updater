@@ -1,0 +1,7 @@
+---
+name: "cppcheck"
+paths:
+- "com/thalesgroup/jenkins-ci/plugins/cppcheck"
+- "org/jenkins-ci/plugins/cppcheck"
+developers:
+- "mixalturek"

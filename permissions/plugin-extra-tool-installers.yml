@@ -1,0 +1,6 @@
+---
+name: "extra-tool-installers"
+paths:
+- "com/synopsys/arc/jenkinsci/extra-tool-installers"
+developers:
+- "oleg_nenashev"

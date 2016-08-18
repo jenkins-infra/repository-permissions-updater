@@ -1,0 +1,5 @@
+---
+name: "externalresource-dispatcher"
+paths:
+- "com/sonyericsson/jenkins/plugins/externalresource/externalresource-dispatcher"
+developers: []

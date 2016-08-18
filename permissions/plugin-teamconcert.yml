@@ -1,0 +1,8 @@
+---
+name: "teamconcert"
+paths:
+- "org/jenkins-ci/plugins/teamconcert"
+developers:
+- "clkkishore"
+- "hfraserdube"
+- "lvaikunt"

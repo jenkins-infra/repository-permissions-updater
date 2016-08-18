@@ -1,0 +1,8 @@
+---
+name: "workflow-api"
+paths:
+- "org/jenkins-ci/plugins/workflow/workflow-api"
+developers:
+- "jglick"
+- "kohsuke"
+- "svanoort"

@@ -1,0 +1,6 @@
+---
+name: "cucumber-testresult-plugin"
+paths:
+- "org/jenkins-ci/plugins/cucumber-testresult-plugin"
+developers:
+- "teilo"

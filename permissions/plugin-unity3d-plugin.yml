@@ -1,0 +1,6 @@
+---
+name: "unity3d-plugin"
+paths:
+- "org/jenkins-ci/plugins/unity3d-plugin"
+developers:
+- "lacostej"

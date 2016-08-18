@@ -1,0 +1,6 @@
+---
+name: "copado"
+paths:
+- "com/copado/jenkins/copado"
+developers:
+- "larsenfed"

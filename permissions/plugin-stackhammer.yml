@@ -1,0 +1,6 @@
+---
+name: "stackhammer"
+paths:
+- "org/cloudsmith/hammer/jenkins/stackhammer"
+- "org/jenkins-ci/plugins/stackhammer"
+developers: []

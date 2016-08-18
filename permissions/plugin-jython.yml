@@ -1,0 +1,5 @@
+---
+name: "jython"
+paths:
+- "org/jvnet/hudson/plugins/jython"
+developers: []

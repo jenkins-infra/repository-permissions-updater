@@ -1,0 +1,6 @@
+---
+name: "momentjs"
+paths:
+- "org/jenkins-ci/ui/momentjs"
+developers:
+- "tfennelly"

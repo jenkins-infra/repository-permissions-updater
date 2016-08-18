@@ -1,0 +1,7 @@
+---
+name: "docker-plugin"
+paths:
+- "com/nirima/docker-plugin"
+developers:
+- "integer"
+- "magnayn"

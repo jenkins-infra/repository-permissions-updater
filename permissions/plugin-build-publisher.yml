@@ -1,0 +1,7 @@
+---
+name: "build-publisher"
+paths:
+- "org/jenkins-ci/plugins/build-publisher"
+developers:
+- "olivergondza"
+- "vjuranek"

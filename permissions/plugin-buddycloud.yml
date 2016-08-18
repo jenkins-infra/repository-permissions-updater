@@ -1,0 +1,6 @@
+---
+name: "buddycloud"
+paths:
+- "org/jenkins-ci/ruby-plugins/buddycloud"
+developers:
+- "lloydwatkin"

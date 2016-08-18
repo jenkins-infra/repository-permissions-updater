@@ -1,0 +1,8 @@
+---
+name: "codedeploy"
+paths:
+- "com/amazonaws/codedeploy"
+developers:
+- "jmcfar"
+- "michaelneale"
+- "suryanb"

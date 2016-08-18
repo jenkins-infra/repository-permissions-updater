@@ -1,0 +1,6 @@
+---
+name: "plot"
+paths:
+- "org/jenkins-ci/plugins/plot"
+developers:
+- "ericbn"

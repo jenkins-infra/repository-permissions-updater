@@ -1,0 +1,5 @@
+---
+name: "remote-terminal-access"
+paths:
+- "org/jenkins-ci/plugins/remote-terminal-access"
+developers: []

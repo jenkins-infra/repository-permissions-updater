@@ -1,0 +1,6 @@
+---
+name: "ironmq-notifier"
+paths:
+- "org/jenkins-ci/plugins/ironmq-notifier"
+developers:
+- "mikecaspar"

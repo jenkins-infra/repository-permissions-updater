@@ -1,0 +1,7 @@
+---
+name: "blueocean-analytics-tools"
+paths:
+- "io/jenkins/blueocean/blueocean-analytics-tools"
+developers:
+- "michaelneale"
+- "vivek"

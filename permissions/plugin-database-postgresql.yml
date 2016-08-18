@@ -1,0 +1,5 @@
+---
+name: "database-postgresql"
+paths:
+- "org/jenkins-ci/plugins/database-postgresql"
+developers: []

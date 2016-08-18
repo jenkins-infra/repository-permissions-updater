@@ -1,0 +1,5 @@
+---
+name: "trial-balloon"
+paths:
+- "org/jenkins-ci/plugins/trial-balloon"
+developers: []

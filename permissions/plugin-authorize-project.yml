@@ -1,0 +1,6 @@
+---
+name: "authorize-project"
+paths:
+- "org/jenkins-ci/plugins/authorize-project"
+developers:
+- "ikedam"

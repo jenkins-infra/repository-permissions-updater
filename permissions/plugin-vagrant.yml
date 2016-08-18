@@ -1,0 +1,7 @@
+---
+name: "vagrant"
+paths:
+- "org/jenkins-ci/plugins/vagrant"
+- "org/jenkins-ci/ruby-plugins/vagrant"
+developers:
+- "shimitanaka"

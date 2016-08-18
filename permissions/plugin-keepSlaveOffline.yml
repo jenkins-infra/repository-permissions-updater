@@ -1,0 +1,5 @@
+---
+name: "keepSlaveOffline"
+paths:
+- "hudson/plugins/keepSlaveOffline/keepSlaveOffline"
+developers: []

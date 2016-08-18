@@ -1,0 +1,6 @@
+---
+name: "gogs-webhook"
+paths:
+- "org/jenkins-ci/plugins/gogs-webhook"
+developers:
+- "sanderv43"

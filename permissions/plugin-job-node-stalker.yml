@@ -1,0 +1,6 @@
+---
+name: "job-node-stalker"
+paths:
+- "org/jenkins-ci/plugins/job-node-stalker"
+developers:
+- "daspilker"

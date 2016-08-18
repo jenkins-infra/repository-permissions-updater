@@ -1,0 +1,7 @@
+---
+name: "doclinks"
+paths:
+- "org/jenkinsci/plugins/doclinks"
+- "org/jvnet/hudson/plugins/doclinks"
+developers:
+- "ikedam"

@@ -1,0 +1,5 @@
+---
+name: "jqs-monitoring"
+paths:
+- "org/jenkins-ci/plugins/jqs-monitoring"
+developers: []

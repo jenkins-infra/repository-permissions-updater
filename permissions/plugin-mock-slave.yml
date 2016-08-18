@@ -1,0 +1,7 @@
+---
+name: "mock-slave"
+paths:
+- "org/jenkinci/plugins/mock-slave"
+- "org/jenkins-ci/plugins/mock-slave"
+developers:
+- "jglick"

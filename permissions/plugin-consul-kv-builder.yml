@@ -1,0 +1,6 @@
+---
+name: "consul-kv-builder"
+paths:
+- "org/jenkins-ci/plugins/consul-kv-builder"
+developers:
+- "jimmyraywv"

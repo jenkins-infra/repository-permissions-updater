@@ -1,0 +1,5 @@
+---
+name: "suite-test-groups-publisher"
+paths:
+- "org/jenkins-ci/plugins/suite-test-groups-publisher"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "list-command"
+paths:
+- "org/jenkins-ci/plugins/list-command"
+developers: []

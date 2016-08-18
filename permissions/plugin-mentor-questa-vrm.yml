@@ -1,0 +1,6 @@
+---
+name: "mentor-questa-vrm"
+paths:
+- "com/mentor/questa/vrm/jenkins/mentor-questa-vrm"
+developers:
+- "questa_vrm"

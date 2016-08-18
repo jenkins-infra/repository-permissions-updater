@@ -1,0 +1,5 @@
+---
+name: "hudson-pview-plugin"
+paths:
+- "de/fspengler/hudson/pview/hudson-pview-plugin"
+developers: []

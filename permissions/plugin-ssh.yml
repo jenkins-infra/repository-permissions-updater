@@ -1,0 +1,7 @@
+---
+name: "ssh"
+paths:
+- "org/jenkins-ci/plugins/ssh"
+- "org/jvnet/hudson/plugins/ssh"
+developers:
+- "edmund_wagner"

@@ -1,0 +1,6 @@
+---
+name: "project-build-times"
+paths:
+- "org/jenkins-ci/plugins/project-build-times"
+developers:
+- "therhino04"

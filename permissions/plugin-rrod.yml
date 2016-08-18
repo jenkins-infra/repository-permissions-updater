@@ -1,0 +1,5 @@
+---
+name: "rrod"
+paths:
+- "org/jenkins-ci/plugins/rrod"
+developers: []

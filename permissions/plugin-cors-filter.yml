@@ -1,0 +1,6 @@
+---
+name: "cors-filter"
+paths:
+- "org/jenkins-ci/plugins/cors-filter"
+developers:
+- "uday"

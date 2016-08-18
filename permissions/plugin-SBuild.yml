@@ -1,0 +1,6 @@
+---
+name: "SBuild"
+paths:
+- "org/jenkins-ci/plugins/SBuild"
+developers:
+- "tobiasroeser"

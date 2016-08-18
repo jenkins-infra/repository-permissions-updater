@@ -1,0 +1,6 @@
+---
+name: "metrics-ganglia"
+paths:
+- "org/jenkins-ci/plugins/metrics-ganglia"
+developers:
+- "stephenconnolly"

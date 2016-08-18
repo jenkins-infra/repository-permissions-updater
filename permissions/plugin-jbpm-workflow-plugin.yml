@@ -1,0 +1,5 @@
+---
+name: "jbpm-workflow-plugin"
+paths:
+- "jenkins/plugins/jbpm/jbpm-workflow-plugin"
+developers: []

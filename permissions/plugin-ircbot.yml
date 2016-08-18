@@ -1,0 +1,6 @@
+---
+name: "ircbot"
+paths:
+- "org/jvnet/hudson/plugins/ircbot"
+developers:
+- "kutzi"

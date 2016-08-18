@@ -1,0 +1,6 @@
+---
+name: "rqm-plugin"
+paths:
+- "net/praqma/rqm-plugin"
+developers:
+- "madsnielsen"

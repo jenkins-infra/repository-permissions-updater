@@ -1,0 +1,7 @@
+---
+name: "blueocean-rest-impl"
+paths:
+- "io/jenkins/blueocean/blueocean-rest-impl"
+developers:
+- "michaelneale"
+- "vivek"

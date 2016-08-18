@@ -1,0 +1,6 @@
+---
+name: "publish-over-dropbox"
+paths:
+- "org/jenkins-ci/plugins/publish-over-dropbox"
+developers:
+- "rcgroot"

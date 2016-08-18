@@ -1,0 +1,5 @@
+---
+name: "pry"
+paths:
+- "org/jenkins-ci/plugins/pry"
+developers: []

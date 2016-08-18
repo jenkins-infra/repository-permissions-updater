@@ -1,0 +1,5 @@
+---
+name: "excludeMatrixParent"
+paths:
+- "hudson/plugins/excludeMatrixParent/excludeMatrixParent"
+developers: []

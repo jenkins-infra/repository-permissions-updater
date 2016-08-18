@@ -1,0 +1,6 @@
+---
+name: "openstack-cloud"
+paths:
+- "org/jenkins-ci/plugins/openstack-cloud"
+developers:
+- "olivergondza"

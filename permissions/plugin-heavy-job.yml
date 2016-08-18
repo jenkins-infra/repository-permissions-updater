@@ -1,0 +1,5 @@
+---
+name: "heavy-job"
+paths:
+- "org/jenkins-ci/plugins/heavy-job"
+developers: []

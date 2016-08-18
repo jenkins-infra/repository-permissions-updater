@@ -1,0 +1,5 @@
+---
+name: "shared-objects"
+paths:
+- "org/jenkins-ci/plugins/shared-objects"
+developers: []

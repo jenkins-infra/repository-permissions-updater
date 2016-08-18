@@ -1,0 +1,6 @@
+---
+name: "saltstack"
+paths:
+- "org/jenkins-ci/plugins/saltstack"
+developers:
+- "mchugh19"

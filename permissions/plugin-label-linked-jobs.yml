@@ -1,0 +1,6 @@
+---
+name: "label-linked-jobs"
+paths:
+- "org/jenkins-ci/plugins/label-linked-jobs"
+developers:
+- "dominiquebrice"

@@ -1,0 +1,8 @@
+---
+name: "hockeyapp"
+paths:
+- "org/jenkins-ci/plugins/hockeyapp"
+developers:
+- "brantone"
+- "dkochetkov"
+- "ohoeltke"

@@ -1,0 +1,6 @@
+---
+name: "crap4j"
+paths:
+- "org/jenkins-ci/plugins/crap4j"
+developers:
+- "dlindner"

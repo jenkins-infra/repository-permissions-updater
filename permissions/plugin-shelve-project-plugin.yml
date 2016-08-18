@@ -1,0 +1,6 @@
+---
+name: "shelve-project-plugin"
+paths:
+- "org/jenkins-ci/plugins/shelve-project-plugin"
+developers:
+- "bpatterson"

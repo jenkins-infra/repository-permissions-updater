@@ -1,0 +1,5 @@
+---
+name: "configure-job-column-plugin"
+paths:
+- "org/jenkins-ci/plugins/configure-job-column-plugin"
+developers: []

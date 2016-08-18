@@ -1,0 +1,6 @@
+---
+name: "nerrvana-plugin"
+paths:
+- "com/deepshiftlabs/nerrvana/nerrvana-plugin"
+- "org/jenkins-ci/plugins/nerrvana-plugin"
+developers: []

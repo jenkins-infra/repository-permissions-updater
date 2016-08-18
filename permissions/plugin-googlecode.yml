@@ -1,0 +1,6 @@
+---
+name: "googlecode"
+paths:
+- "org/jenkins-ci/plugins/googlecode"
+- "org/jvnet/hudson/plugins/googlecode"
+developers: []

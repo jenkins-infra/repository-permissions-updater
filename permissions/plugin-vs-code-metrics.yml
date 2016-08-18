@@ -1,0 +1,6 @@
+---
+name: "vs-code-metrics"
+paths:
+- "org/jenkins-ci/plugins/vs-code-metrics"
+developers:
+- "yasu_s"

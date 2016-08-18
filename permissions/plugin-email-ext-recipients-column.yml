@@ -1,0 +1,5 @@
+---
+name: "email-ext-recipients-column"
+paths:
+- "org/jenkins-ci/plugins/email-ext-recipients-column"
+developers: []

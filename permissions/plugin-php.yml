@@ -1,0 +1,5 @@
+---
+name: "php"
+paths:
+- "org/jenkins-ci/plugins/php"
+developers: []

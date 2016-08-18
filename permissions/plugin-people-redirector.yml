@@ -1,0 +1,5 @@
+---
+name: "people-redirector"
+paths:
+- "com/cisco/step/jenkins/plugins/people-redirector"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "notification"
+paths:
+- "com/tikalk/hudson/plugins/notification"
+developers:
+- "hagzag"

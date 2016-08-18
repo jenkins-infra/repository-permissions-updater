@@ -1,0 +1,5 @@
+---
+name: "sms"
+paths:
+- "com/hoiio/jenkins/sms"
+developers: []

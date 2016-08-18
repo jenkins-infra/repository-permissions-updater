@@ -1,0 +1,5 @@
+---
+name: "mailcommander"
+paths:
+- "org/jenkins-ci/plugins/mailcommander"
+developers: []

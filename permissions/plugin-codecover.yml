@@ -1,0 +1,5 @@
+---
+name: "codecover"
+paths:
+- "org/jenkins-ci/plugins/codecover"
+developers: []

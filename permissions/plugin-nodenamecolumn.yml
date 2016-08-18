@@ -1,0 +1,6 @@
+---
+name: "nodenamecolumn"
+paths:
+- "org/jenkins-ci/plugins/nodenamecolumn"
+developers:
+- "stephenconnolly"

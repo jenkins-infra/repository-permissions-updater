@@ -1,0 +1,10 @@
+---
+name: "parameterized-trigger"
+paths:
+- "org/jenkins-ci/plugins/parameterized-trigger"
+developers:
+- "ikedam"
+- "oleg_nenashev"
+- "olivergondza"
+- "svanoort"
+- "wolfs"

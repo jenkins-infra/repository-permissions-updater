@@ -1,0 +1,8 @@
+---
+name: "redgate-sql-ci"
+paths:
+- "com/redgate/plugins/redgatesqlci/redgate-sql-ci"
+developers:
+- "chrisheppell"
+- "jasoncrease"
+- "petergerrard"

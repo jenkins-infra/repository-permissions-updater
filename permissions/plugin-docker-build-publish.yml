@@ -1,0 +1,8 @@
+---
+name: "docker-build-publish"
+paths:
+- "org/jenkins-ci/plugins/docker-build-publish"
+developers:
+- "csanchez"
+- "michaelneale"
+- "oleg_nenashev"

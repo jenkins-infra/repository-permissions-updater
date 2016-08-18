@@ -1,0 +1,5 @@
+---
+name: "BlameSubversion"
+paths:
+- "org/jvnet/hudson/plugins/BlameSubversion"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "jenkins-tracker"
+paths:
+- "org/jenkins-ci/ruby-plugins/jenkins-tracker"
+developers: []

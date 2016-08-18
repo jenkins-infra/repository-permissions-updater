@@ -1,0 +1,5 @@
+---
+name: "ci-skip"
+paths:
+- "org/jenkins-ci/ruby-plugins/ci-skip"
+developers: []

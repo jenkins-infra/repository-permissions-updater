@@ -1,0 +1,7 @@
+---
+name: "sidebar-link"
+paths:
+- "org/jenkins-ci/plugins/sidebar-link"
+- "org/jvnet/hudson/plugins/sidebar-link"
+developers:
+- "lvotypkova"

@@ -1,0 +1,5 @@
+---
+name: "skype-notifier"
+paths:
+- "org/jenkins-ci/plugins/skype-notifier"
+developers: []

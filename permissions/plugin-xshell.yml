@@ -1,0 +1,7 @@
+---
+name: "xshell"
+paths:
+- "org/jenkins-ci/plugins/xshell"
+- "org/jvnet/hudson/plugins/xshell"
+developers:
+- "mambu"

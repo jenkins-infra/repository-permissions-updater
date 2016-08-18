@@ -1,0 +1,6 @@
+---
+name: "chef-tracking"
+paths:
+- "org/jenkins-ci/plugins/chef-tracking"
+developers:
+- "kohsuke"

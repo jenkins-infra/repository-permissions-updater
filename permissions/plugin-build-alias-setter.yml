@@ -1,0 +1,6 @@
+---
+name: "build-alias-setter"
+paths:
+- "org/jenkins-ci/plugins/build-alias-setter"
+developers:
+- "olivergondza"

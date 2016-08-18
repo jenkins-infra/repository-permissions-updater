@@ -1,0 +1,6 @@
+---
+name: "gitlab-merge-request-jenkins"
+paths:
+- "com/switchfly/gitlab-merge-request-jenkins"
+developers:
+- "timols"

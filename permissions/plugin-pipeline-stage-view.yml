@@ -1,0 +1,6 @@
+---
+name: "pipeline-stage-view"
+paths:
+- "org/jenkins-ci/plugins/pipeline-stage-view/pipeline-stage-view"
+developers:
+- "svanoort"

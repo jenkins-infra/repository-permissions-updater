@@ -1,0 +1,7 @@
+---
+name: "dependencyanalyzer"
+paths:
+- "org/jenkins-ci/plugins/dependencyanalyzer"
+- "org/jvnet/hudson/plugins/dependencyanalyzer"
+developers:
+- "ejouvin"

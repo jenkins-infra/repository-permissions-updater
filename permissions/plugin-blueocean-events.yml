@@ -1,0 +1,7 @@
+---
+name: "blueocean-events"
+paths:
+- "io/jenkins/blueocean/blueocean-events"
+developers:
+- "michaelneale"
+- "vivek"

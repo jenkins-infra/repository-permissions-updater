@@ -1,0 +1,6 @@
+---
+name: "build-view-column"
+paths:
+- "org/jenkins-ci/plugins/build-view-column"
+developers:
+- "jglick"

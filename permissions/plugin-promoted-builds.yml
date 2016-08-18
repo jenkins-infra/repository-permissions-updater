@@ -1,0 +1,11 @@
+---
+name: "promoted-builds"
+paths:
+- "org/jenkins-ci/plugins/promoted-builds"
+- "org/jvnet/hudson/plugins/promoted-builds"
+developers:
+- "dnozay"
+- "jglick"
+- "oleg_nenashev"
+- "stephenconnolly"
+- "wolfs"

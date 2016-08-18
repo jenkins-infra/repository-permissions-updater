@@ -1,0 +1,5 @@
+---
+name: "vboxwrapper"
+paths:
+- "org/jenkins-ci/plugins/vboxwrapper"
+developers: []

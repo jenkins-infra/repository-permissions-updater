@@ -1,0 +1,6 @@
+---
+name: "openshift-deployer"
+paths:
+- "org/jenkins-ci/plugins/openshift-deployer"
+developers:
+- "siamaksade"

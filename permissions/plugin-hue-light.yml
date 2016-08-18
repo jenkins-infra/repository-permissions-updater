@@ -1,0 +1,6 @@
+---
+name: "hue-light"
+paths:
+- "org/jenkins-ci/plugins/hue-light"
+developers:
+- "mmore"

@@ -1,0 +1,8 @@
+---
+name: "git-client"
+paths:
+- "org/jenkins-ci/plugins/git-client"
+- "org/jenkinsci/plugins/git-client"
+developers:
+- "markewaite"
+- "ndeloof"

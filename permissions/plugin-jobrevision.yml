@@ -1,0 +1,7 @@
+---
+name: "jobrevision"
+paths:
+- "com/thalesgroup/jenkins-ci/plugins/jobrevision"
+- "org/jenkins-ci/plugins/jobrevision"
+- "org/jvnet/hudson/plugins/jobrevision"
+developers: []

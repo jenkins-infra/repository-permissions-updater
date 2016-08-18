@@ -1,0 +1,6 @@
+---
+name: "instant-messaging"
+paths:
+- "org/jvnet/hudson/plugins/instant-messaging"
+developers:
+- "kutzi"

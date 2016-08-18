@@ -1,0 +1,5 @@
+---
+name: "post-completed-build-result"
+paths:
+- "org/terracotta/jenkins/plugins/post-completed-build-result"
+developers: []

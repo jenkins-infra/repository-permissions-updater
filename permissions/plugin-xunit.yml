@@ -1,0 +1,7 @@
+---
+name: "xunit"
+paths:
+- "com/thalesgroup/jenkins-ci/plugins/xunit"
+- "org/jenkins-ci/plugins/xunit"
+developers:
+- "gbois"

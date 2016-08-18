@@ -1,0 +1,5 @@
+---
+name: "storable-configs-plugin"
+paths:
+- "org/jvnet/hudson/plugins/storable-configs-plugin"
+developers: []

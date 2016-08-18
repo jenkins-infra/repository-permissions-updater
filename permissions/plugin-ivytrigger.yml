@@ -1,0 +1,6 @@
+---
+name: "ivytrigger"
+paths:
+- "org/jenkins-ci/plugins/ivytrigger"
+developers:
+- "gbois"

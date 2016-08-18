@@ -1,0 +1,6 @@
+---
+name: "couchdb-statistics"
+paths:
+- "org/jenkins-ci/plugins/couchdb-statistics"
+developers:
+- "garethjevans"

@@ -1,0 +1,7 @@
+---
+name: "rapiddeploy-jenkins"
+paths:
+- "org/jenkins-ci/plugins/rapiddeploy-jenkins"
+developers:
+- "midvision"
+- "sepsyk"

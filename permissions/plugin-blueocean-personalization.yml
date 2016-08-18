@@ -1,0 +1,7 @@
+---
+name: "blueocean-personalization"
+paths:
+- "io/jenkins/blueocean/blueocean-personalization"
+developers:
+- "michaelneale"
+- "vivek"

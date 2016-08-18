@@ -1,0 +1,6 @@
+---
+name: "jenkinsci-appspider-plugin"
+paths:
+- "com/rapid7/jenkinsci-appspider-plugin"
+developers:
+- "nbugash"

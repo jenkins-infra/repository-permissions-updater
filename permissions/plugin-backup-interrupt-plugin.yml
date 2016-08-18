@@ -1,0 +1,5 @@
+---
+name: "backup-interrupt-plugin"
+paths:
+- "jenkins/ci/plugins/backup/backup-interrupt-plugin"
+developers: []

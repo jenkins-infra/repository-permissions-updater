@@ -1,0 +1,7 @@
+---
+name: "google-source-plugin"
+paths:
+- "org/jenkins-ci/plugins/google-source-plugin"
+developers:
+- "astroilov"
+- "tcnghia"

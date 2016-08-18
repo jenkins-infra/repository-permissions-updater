@@ -1,0 +1,6 @@
+---
+name: "workplace-notifier"
+paths:
+- "jenkins/plugins/elanceodesk/workplace-notifier"
+developers:
+- "sameerelance"

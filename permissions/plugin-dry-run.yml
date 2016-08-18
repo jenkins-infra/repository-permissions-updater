@@ -1,0 +1,5 @@
+---
+name: "dry-run"
+paths:
+- "org/jenkins-ci/plugins/dry-run"
+developers: []

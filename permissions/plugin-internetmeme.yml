@@ -1,0 +1,6 @@
+---
+name: "internetmeme"
+paths:
+- "org/jenkins-ci/plugins/internetmeme"
+developers:
+- "harpreet1002"

@@ -1,0 +1,5 @@
+---
+name: "confluence-publisher"
+paths:
+- "org/jenkins-ci/plugins/confluence-publisher"
+developers: []

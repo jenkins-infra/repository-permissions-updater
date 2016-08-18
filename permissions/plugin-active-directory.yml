@@ -1,0 +1,8 @@
+---
+name: "active-directory"
+paths:
+- "org/jenkins-ci/plugins/active-directory"
+developers:
+- "fbelzunc"
+- "kohsuke"
+- "stephenconnolly"

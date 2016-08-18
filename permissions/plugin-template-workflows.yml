@@ -1,0 +1,5 @@
+---
+name: "template-workflows"
+paths:
+- "org/jenkins/plugin/templateWorkflows/template-workflows"
+developers: []

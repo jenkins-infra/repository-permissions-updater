@@ -1,0 +1,5 @@
+---
+name: "tepco-epuw"
+paths:
+- "org/jenkins-ci/plugins/tepco-epuw"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "jquery"
+paths:
+- "org/jenkins-ci/plugins/jquery"
+developers:
+- "kohsuke"

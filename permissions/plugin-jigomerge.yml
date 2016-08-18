@@ -1,0 +1,6 @@
+---
+name: "jigomerge"
+paths:
+- "org/jenkins-ci/plugins/jigomerge"
+developers:
+- "smrutimo"

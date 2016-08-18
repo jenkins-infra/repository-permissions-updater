@@ -1,0 +1,6 @@
+---
+name: "categorized-view"
+paths:
+- "org/jenkins-ci/plugins/categorized-view"
+developers:
+- "taksan"

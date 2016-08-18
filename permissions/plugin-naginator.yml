@@ -1,0 +1,9 @@
+---
+name: "naginator"
+paths:
+- "org/jenkins-ci/plugins/naginator"
+developers:
+- "galunto"
+- "ikedam"
+- "integer"
+- "ndeloof"

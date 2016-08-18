@@ -1,0 +1,5 @@
+---
+name: "nopmdcheck"
+paths:
+- "org/jenkins-ci/plugins/nopmdcheck"
+developers: []

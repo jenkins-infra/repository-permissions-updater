@@ -1,0 +1,6 @@
+---
+name: "veracode-scanner"
+paths:
+- "org/jenkins-ci/plugins/veracode-scanner"
+developers:
+- "mbockus"

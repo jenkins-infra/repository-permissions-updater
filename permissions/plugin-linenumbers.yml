@@ -1,0 +1,6 @@
+---
+name: "linenumbers"
+paths:
+- "org/jenkins-ci/plugins/linenumbers"
+developers:
+- "vlatombe"

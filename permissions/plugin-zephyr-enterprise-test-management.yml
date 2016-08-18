@@ -1,0 +1,6 @@
+---
+name: "zephyr-enterprise-test-management"
+paths:
+- "org/jenkins-ci/plugins/zephyr-enterprise-test-management"
+developers:
+- "zeedeveloper"

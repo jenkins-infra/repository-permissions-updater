@@ -1,0 +1,6 @@
+---
+name: "chosen-views-tabbar"
+paths:
+- "org/jenkins-ci/plugins/chosen-views-tabbar"
+developers:
+- "taksan"

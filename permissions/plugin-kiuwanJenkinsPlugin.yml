@@ -1,0 +1,6 @@
+---
+name: "kiuwanJenkinsPlugin"
+paths:
+- "org/jenkins-ci/plugins/kiuwanJenkinsPlugin"
+developers:
+- "jptejela"

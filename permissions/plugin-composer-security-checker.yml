@@ -1,0 +1,6 @@
+---
+name: "composer-security-checker"
+paths:
+- "org/jenkins-ci/plugins/composer-security-checker"
+developers:
+- "easylo"

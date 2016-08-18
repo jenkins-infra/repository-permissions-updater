@@ -1,0 +1,6 @@
+---
+name: "mattermost"
+paths:
+- "org/jenkins-ci/plugins/mattermost"
+developers:
+- "jovandeginste"

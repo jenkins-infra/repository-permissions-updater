@@ -1,0 +1,8 @@
+---
+name: "gradle"
+paths:
+- "com/zenika/jenkins-ci/plugins/gradle"
+- "org/jenkins-ci/plugins/gradle"
+developers:
+- "gbois"
+- "wolfs"

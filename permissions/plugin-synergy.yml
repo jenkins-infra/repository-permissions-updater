@@ -1,0 +1,6 @@
+---
+name: "synergy"
+paths:
+- "org/jenkins-ci/plugins/synergy"
+- "org/jvnet/hudson/plugins/synergy"
+developers: []

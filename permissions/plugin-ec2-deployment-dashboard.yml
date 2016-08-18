@@ -1,0 +1,6 @@
+---
+name: "ec2-deployment-dashboard"
+paths:
+- "org/jenkins-ci/plugins/ec2-deployment-dashboard"
+developers:
+- "marcelbirkner"

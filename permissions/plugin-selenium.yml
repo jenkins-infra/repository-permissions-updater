@@ -1,0 +1,7 @@
+---
+name: "selenium"
+paths:
+- "org/jenkins-ci/plugins/selenium"
+developers:
+- "darkrift"
+- "mobrockers"

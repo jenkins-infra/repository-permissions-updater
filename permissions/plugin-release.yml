@@ -1,0 +1,7 @@
+---
+name: "release"
+paths:
+- "org/jenkins-ci/plugins/release"
+- "org/jvnet/hudson/plugins/release"
+developers:
+- "avalanche123"

@@ -1,0 +1,5 @@
+---
+name: "appio"
+paths:
+- "org/jenkins-ci/plugins/appio"
+developers: []

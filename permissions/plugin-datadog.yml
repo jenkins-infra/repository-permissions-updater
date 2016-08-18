@@ -1,0 +1,6 @@
+---
+name: "datadog"
+paths:
+- "org/datadog/jenkins/plugins/datadog"
+developers:
+- "datadog"

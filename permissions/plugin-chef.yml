@@ -1,0 +1,6 @@
+---
+name: "chef"
+paths:
+- "org/jenkins-ci/ruby-plugins/chef"
+developers:
+- "melezhik"

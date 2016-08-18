@@ -1,0 +1,6 @@
+---
+name: "ccm"
+paths:
+- "org/jvnet/hudson/plugins/ccm"
+developers:
+- "kinow"

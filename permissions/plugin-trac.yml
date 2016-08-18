@@ -1,0 +1,6 @@
+---
+name: "trac"
+paths:
+- "org/jenkins-ci/plugins/trac"
+- "org/jvnet/hudson/plugins/trac"
+developers: []

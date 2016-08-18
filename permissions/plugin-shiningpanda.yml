@@ -1,0 +1,6 @@
+---
+name: "shiningpanda"
+paths:
+- "org/jenkins-ci/plugins/shiningpanda"
+developers:
+- "mansion"

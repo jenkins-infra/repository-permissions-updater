@@ -1,0 +1,8 @@
+---
+name: "throttle-concurrents"
+paths:
+- "org/jenkins-ci/plugins/throttle-concurrents"
+- "org/jvnet/hudson/plugins/throttle-concurrents"
+developers:
+- "abayer"
+- "oleg_nenashev"

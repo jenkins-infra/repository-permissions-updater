@@ -1,0 +1,6 @@
+---
+name: "simple-parameterized-builds-report"
+paths:
+- "org/jenkins-ci/plugins/simple-parameterized-builds-report"
+developers:
+- "nullin"

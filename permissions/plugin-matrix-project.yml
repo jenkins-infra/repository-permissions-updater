@@ -1,0 +1,9 @@
+---
+name: "matrix-project"
+paths:
+- "org/jenkins-ci/plugins/matrix-project"
+developers:
+- "amuniz"
+- "jglick"
+- "oleg_nenashev"
+- "olivergondza"

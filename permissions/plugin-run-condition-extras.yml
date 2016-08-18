@@ -1,0 +1,6 @@
+---
+name: "run-condition-extras"
+paths:
+- "com/synopsys/arc/jenkinsci/plugins/run-condition-extras"
+developers:
+- "oleg_nenashev"

@@ -1,0 +1,6 @@
+---
+name: "deploy"
+paths:
+- "org/jenkins-ci/plugins/deploy"
+developers:
+- "kohsuke"

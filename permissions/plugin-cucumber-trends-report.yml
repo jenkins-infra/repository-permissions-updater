@@ -1,0 +1,6 @@
+---
+name: "cucumber-trends-report"
+paths:
+- "trends/cucumber-trends-report"
+developers:
+- "thanhqle"

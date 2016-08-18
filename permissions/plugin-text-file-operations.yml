@@ -1,0 +1,6 @@
+---
+name: "text-file-operations"
+paths:
+- "com/etas/jenkins/plugins/text-file-operations"
+developers:
+- "sankethpb"

@@ -1,0 +1,6 @@
+---
+name: "TestExecuter"
+paths:
+- "org/jenkins-ci/plugins/TestExecuter"
+developers:
+- "tamarca"

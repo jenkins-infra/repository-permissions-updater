@@ -1,0 +1,7 @@
+---
+name: "form-element-path"
+paths:
+- "org/jenkins-ci/plugins/form-element-path"
+developers:
+- "olivergondza"
+- "vlatombe"

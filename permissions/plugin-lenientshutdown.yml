@@ -1,0 +1,6 @@
+---
+name: "lenientshutdown"
+paths:
+- "com/sonymobile/jenkins/plugins/lenientshutdown/lenientshutdown"
+developers:
+- "rsandell"

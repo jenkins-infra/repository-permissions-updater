@@ -1,0 +1,6 @@
+---
+name: "mock-load-builder"
+paths:
+- "org/jenkins-ci/plugins/mock-load-builder"
+developers:
+- "stephenconnolly"

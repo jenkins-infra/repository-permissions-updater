@@ -1,0 +1,6 @@
+---
+name: "golang"
+paths:
+- "org/jenkins-ci/plugins/golang"
+developers:
+- "orrc"

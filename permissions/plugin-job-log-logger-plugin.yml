@@ -1,0 +1,5 @@
+---
+name: "job-log-logger-plugin"
+paths:
+- "org/jenkins-ci/plugins/job-log-logger-plugin"
+developers: []

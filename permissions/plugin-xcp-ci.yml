@@ -1,0 +1,6 @@
+---
+name: "xcp-ci"
+paths:
+- "com/viltgroup/xcp/jenkins/xcp-ci"
+developers:
+- "joaori"

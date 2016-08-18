@@ -1,0 +1,6 @@
+---
+name: "postbuildscript"
+paths:
+- "org/jenkins-ci/plugins/postbuildscript"
+developers:
+- "gbois"

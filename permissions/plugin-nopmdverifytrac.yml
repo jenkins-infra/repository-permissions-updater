@@ -1,0 +1,5 @@
+---
+name: "nopmdverifytrac"
+paths:
+- "org/jenkins-ci/plugins/nopmdverifytrac"
+developers: []

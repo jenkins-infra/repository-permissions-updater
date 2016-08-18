@@ -1,0 +1,8 @@
+---
+name: "audit-trail"
+paths:
+- "org/jenkins-ci/plugins/audit-trail"
+developers:
+- "cleclerc"
+- "ndeloof"
+- "olivergondza"

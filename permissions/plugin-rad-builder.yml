@@ -1,0 +1,5 @@
+---
+name: "rad-builder"
+paths:
+- "org/jvnet/hudson/plugins/rad-builder"
+developers: []

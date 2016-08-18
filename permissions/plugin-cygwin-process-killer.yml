@@ -1,0 +1,5 @@
+---
+name: "cygwin-process-killer"
+paths:
+- "com/synopsys/arc/jenkinsci/plugins/cygwin-process-killer"
+developers: []

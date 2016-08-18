@@ -1,0 +1,7 @@
+---
+name: "phabricator-plugin"
+paths:
+- "org/jenkins-ci/plugins/phabricator-plugin"
+developers:
+- "ai"
+- "kageiit"

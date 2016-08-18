@@ -1,0 +1,6 @@
+---
+name: "database-mysql"
+paths:
+- "org/jenkins-ci/plugins/database-mysql"
+developers:
+- "davidvanlaatum"

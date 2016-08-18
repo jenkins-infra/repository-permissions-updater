@@ -1,0 +1,6 @@
+---
+name: "cron_column"
+paths:
+- "org/jenkins-ci/plugins/cron_column"
+developers:
+- "jglick"

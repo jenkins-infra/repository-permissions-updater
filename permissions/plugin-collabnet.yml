@@ -1,0 +1,7 @@
+---
+name: "collabnet"
+paths:
+- "org/jenkins-ci/plugins/collabnet"
+developers:
+- "dharmsheta"
+- "jmcnally"

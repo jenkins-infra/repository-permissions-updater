@@ -1,0 +1,11 @@
+---
+name: "maven-plugin"
+paths:
+- "org/jenkins-ci/main/maven-plugin"
+- "org/jvnet/hudson/main/maven-plugin"
+developers:
+- "integer"
+- "jglick"
+- "kohsuke"
+- "olamy"
+- "olivergondza"

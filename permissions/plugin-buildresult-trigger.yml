@@ -1,0 +1,6 @@
+---
+name: "buildresult-trigger"
+paths:
+- "org/jenkins-ci/plugins/buildresult-trigger"
+developers:
+- "gbois"

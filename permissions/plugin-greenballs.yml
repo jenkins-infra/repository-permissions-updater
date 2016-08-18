@@ -1,0 +1,8 @@
+---
+name: "greenballs"
+paths:
+- "org/jenkins-ci/plugins/greenballs"
+- "org/jvnet/hudson/plugins/greenballs"
+developers:
+- "asgeirn"
+- "stephenconnolly"

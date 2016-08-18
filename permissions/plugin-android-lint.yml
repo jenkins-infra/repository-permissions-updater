@@ -1,0 +1,6 @@
+---
+name: "android-lint"
+paths:
+- "org/jvnet/hudson/plugins/android-lint"
+developers:
+- "orrc"

@@ -1,0 +1,7 @@
+---
+name: "android-emulator"
+paths:
+- "org/jenkins-ci/plugins/android-emulator"
+- "org/jvnet/hudson/plugins/android-emulator"
+developers:
+- "orrc"

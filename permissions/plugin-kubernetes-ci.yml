@@ -1,0 +1,6 @@
+---
+name: "kubernetes-ci"
+paths:
+- "com/elasticbox/jenkins-ci/plugins/kubernetes-ci"
+developers:
+- "gsanchezu"

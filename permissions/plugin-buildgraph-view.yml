@@ -1,0 +1,6 @@
+---
+name: "buildgraph-view"
+paths:
+- "org/jenkins-ci/plugins/buildgraph-view"
+developers:
+- "pskumar448"

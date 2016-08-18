@@ -1,0 +1,6 @@
+---
+name: "job-parameter-summary"
+paths:
+- "org/jenkins-ci/plugins/job-parameter-summary"
+developers:
+- "olivergondza"

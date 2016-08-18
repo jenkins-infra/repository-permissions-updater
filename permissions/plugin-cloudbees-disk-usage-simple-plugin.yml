@@ -1,0 +1,6 @@
+---
+name: "cloudbees-disk-usage-simple-plugin"
+paths:
+- "org/jenkins-ci/plugins/cloudbees-disk-usage-simple-plugin"
+developers:
+- "recena"

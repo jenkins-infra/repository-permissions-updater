@@ -1,0 +1,5 @@
+---
+name: "ion-deployer-plugin"
+paths:
+- "org/jenkins-ci/plugins/ion-deployer-plugin"
+developers: []

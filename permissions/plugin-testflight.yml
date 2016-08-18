@@ -1,0 +1,5 @@
+---
+name: "testflight"
+paths:
+- "org/jenkins-ci/plugins/testflight"
+developers: []

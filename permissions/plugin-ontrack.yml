@@ -1,0 +1,6 @@
+---
+name: "ontrack"
+paths:
+- "org/jenkins-ci/plugins/ontrack"
+developers:
+- "damien_coraboeuf"

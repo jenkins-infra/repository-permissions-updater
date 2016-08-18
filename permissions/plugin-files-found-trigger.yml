@@ -1,0 +1,7 @@
+---
+name: "files-found-trigger"
+paths:
+- "org/jenkins-ci/plugins/files-found-trigger"
+- "org/jvnet/hudson/plugins/files-found-trigger"
+developers:
+- "stevengbrown"

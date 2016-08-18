@@ -1,0 +1,6 @@
+---
+name: "kubernetes-pipeline-aggregator"
+paths:
+- "io/fabric8/pipeline/kubernetes-pipeline-aggregator"
+developers:
+- "iocanel"

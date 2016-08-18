@@ -1,0 +1,6 @@
+---
+name: "docker-traceability"
+paths:
+- "org/jenkins-ci/plugins/docker-traceability"
+developers:
+- "oleg_nenashev"

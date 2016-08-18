@@ -1,0 +1,8 @@
+---
+name: "build-user-vars-plugin"
+paths:
+- "org/jenkins-ci/plugins/build-user-vars-plugin"
+developers:
+- "abayer"
+- "clifford_jenkins"
+- "oleg_nenashev"

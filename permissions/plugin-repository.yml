@@ -1,0 +1,6 @@
+---
+name: "repository"
+paths:
+- "jenkins/repository"
+developers:
+- "magnayn"

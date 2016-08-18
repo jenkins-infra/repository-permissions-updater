@@ -1,0 +1,5 @@
+---
+name: "git-notes"
+paths:
+- "org/jenkins-ci/ruby-plugins/git-notes"
+developers: []

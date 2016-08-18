@@ -1,0 +1,7 @@
+---
+name: "periodic-reincarnation"
+paths:
+- "org/jenkins-ci/plugins/periodic-reincarnation"
+developers:
+- "boev"
+- "stefanbrausch"

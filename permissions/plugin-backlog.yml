@@ -1,0 +1,7 @@
+---
+name: "backlog"
+paths:
+- "org/jenkins-ci/plugins/backlog"
+- "org/jvnet/hudson/plugins/backlog"
+developers:
+- "ikikko"

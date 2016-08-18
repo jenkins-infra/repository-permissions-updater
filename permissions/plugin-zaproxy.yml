@@ -1,0 +1,7 @@
+---
+name: "zaproxy"
+paths:
+- "fr/novia/zaproxy"
+developers:
+- "johannol"
+- "ludovicroucoux"

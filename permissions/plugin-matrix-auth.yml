@@ -1,0 +1,7 @@
+---
+name: "matrix-auth"
+paths:
+- "org/jenkins-ci/plugins/matrix-auth"
+developers:
+- "jglick"
+- "kohsuke"

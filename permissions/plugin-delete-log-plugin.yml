@@ -1,0 +1,5 @@
+---
+name: "delete-log-plugin"
+paths:
+- "org/jenkins-ci/plugins/delete-log-plugin"
+developers: []

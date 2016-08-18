@@ -1,0 +1,7 @@
+---
+name: "envinject"
+paths:
+- "org/jenkins-ci/plugins/envinject"
+developers:
+- "ndeloof"
+- "oleg_nenashev"

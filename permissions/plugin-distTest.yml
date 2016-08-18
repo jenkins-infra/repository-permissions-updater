@@ -1,0 +1,5 @@
+---
+name: "distTest"
+paths:
+- "org/jvnet/hudson/plugins/distTest"
+developers: []

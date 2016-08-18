@@ -1,0 +1,5 @@
+---
+name: "devstack"
+paths:
+- "org/jenkins-ci/ruby-plugins/devstack"
+developers: []

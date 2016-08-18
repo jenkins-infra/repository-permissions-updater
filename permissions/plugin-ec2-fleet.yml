@@ -1,0 +1,6 @@
+---
+name: "ec2-fleet"
+paths:
+- "com/amazon/jenkins/fleet/ec2-fleet"
+developers:
+- "cyberax"

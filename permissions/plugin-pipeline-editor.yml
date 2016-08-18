@@ -1,0 +1,6 @@
+---
+name: "pipeline-editor"
+paths:
+- "org/jenkins-ci/plugins/pipeline-editor"
+developers:
+- "michaelneale"

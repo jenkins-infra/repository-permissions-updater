@@ -1,0 +1,7 @@
+---
+name: "violations"
+paths:
+- "org/jenkins-ci/plugins/violations"
+- "org/jvnet/hudson/plugins/violations"
+developers:
+- "tomasbjerre"

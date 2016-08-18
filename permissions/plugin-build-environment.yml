@@ -1,0 +1,6 @@
+---
+name: "build-environment"
+paths:
+- "org/jenkins-ci/plugins/build-environment"
+developers:
+- "stefanbrausch"

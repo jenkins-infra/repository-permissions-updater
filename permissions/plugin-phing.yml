@@ -1,0 +1,7 @@
+---
+name: "phing"
+paths:
+- "org/jenkins-ci/plugins/phing"
+- "org/jvnet/hudson/plugins/phing"
+developers:
+- "sogabe"

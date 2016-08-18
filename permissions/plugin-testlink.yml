@@ -1,0 +1,7 @@
+---
+name: "testlink"
+paths:
+- "org/jenkins-ci/plugins/testlink"
+- "org/jvnet/hudson/plugins/testlink"
+developers:
+- "kinow"

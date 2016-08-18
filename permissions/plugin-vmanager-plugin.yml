@@ -1,0 +1,6 @@
+---
+name: "vmanager-plugin"
+paths:
+- "org/jenkins-ci/plugins/vmanager-plugin"
+developers:
+- "tyanai"

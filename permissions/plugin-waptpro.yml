@@ -1,0 +1,6 @@
+---
+name: "waptpro"
+paths:
+- "org/jenkins-ci/plugins/waptpro"
+developers:
+- "waptpro"

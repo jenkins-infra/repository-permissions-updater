@@ -1,0 +1,6 @@
+---
+name: "bazaar"
+paths:
+- "org/jenkins-ci/plugins/bazaar"
+- "org/jvnet/hudson/plugins/bazaar"
+developers: []

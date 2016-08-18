@@ -1,0 +1,7 @@
+---
+name: "exclusive-execution"
+paths:
+- "org/jenkins-ci/plugins/exclusive-execution"
+- "org/jvnet/hudson/plugins/exclusive-execution"
+developers:
+- "fmiguelez"

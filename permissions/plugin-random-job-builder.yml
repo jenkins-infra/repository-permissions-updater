@@ -1,0 +1,6 @@
+---
+name: "random-job-builder"
+paths:
+- "org/jenkins-ci/plugins/random-job-builder"
+developers:
+- "stephenconnolly"

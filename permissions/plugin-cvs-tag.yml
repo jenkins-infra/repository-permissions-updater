@@ -1,0 +1,5 @@
+---
+name: "cvs-tag"
+paths:
+- "org/jenkins-ci/plugins/cvs-tag"
+developers: []

@@ -1,0 +1,7 @@
+---
+name: "diskcheck"
+paths:
+- "com/cloudera/diskrecycler/diskcheck"
+- "org/jenkins-ci/plugins/diskcheck"
+developers:
+- "mthakkar"

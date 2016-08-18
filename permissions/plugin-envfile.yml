@@ -1,0 +1,5 @@
+---
+name: "envfile"
+paths:
+- "org/jenkins-ci/plugins/envfile"
+developers: []

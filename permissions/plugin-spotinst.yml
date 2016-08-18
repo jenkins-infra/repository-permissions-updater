@@ -1,0 +1,6 @@
+---
+name: "spotinst"
+paths:
+- "org/jenkins-ci/plugins/spotinst"
+developers:
+- "spotinst"

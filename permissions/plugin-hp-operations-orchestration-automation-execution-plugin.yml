@@ -1,0 +1,6 @@
+---
+name: "hp-operations-orchestration-automation-execution-plugin"
+paths:
+- "org/jenkins-ci/plugins/hp-operations-orchestration-automation-execution-plugin"
+developers:
+- "franky4ro"

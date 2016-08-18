@@ -1,0 +1,9 @@
+---
+name: "github-oauth"
+paths:
+- "org/jenkins-ci/plugins/github-oauth"
+developers:
+- "kohsuke"
+- "sag47"
+- "skottler"
+- "surya548"

@@ -1,0 +1,6 @@
+---
+name: "ibm-security-appscansource-scanner"
+paths:
+- "com/aspectsecurity/automationservices/plugins/jenkins/ibm-security-appscansource-scanner"
+developers:
+- "kevinfealey"

@@ -1,0 +1,5 @@
+---
+name: "AnchorChain"
+paths:
+- "org/jenkins-ci/plugins/AnchorChain"
+developers: []

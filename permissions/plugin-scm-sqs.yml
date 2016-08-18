@@ -1,0 +1,6 @@
+---
+name: "scm-sqs"
+paths:
+- "io/relution/jenkins/scm-sqs"
+developers:
+- "mway_solutions"

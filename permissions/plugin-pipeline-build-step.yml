@@ -1,0 +1,6 @@
+---
+name: "pipeline-build-step"
+paths:
+- "org/jenkins-ci/plugins/pipeline-build-step"
+developers:
+- "jglick"

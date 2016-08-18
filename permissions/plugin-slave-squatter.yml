@@ -1,0 +1,5 @@
+---
+name: "slave-squatter"
+paths:
+- "org/jenkins-ci/plugins/slave-squatter"
+developers: []

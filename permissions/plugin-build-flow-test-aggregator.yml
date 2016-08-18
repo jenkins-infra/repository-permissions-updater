@@ -1,0 +1,6 @@
+---
+name: "build-flow-test-aggregator"
+paths:
+- "org/zeroturnaround/jenkins/build-flow-test-aggregator"
+developers:
+- "tonis_pool"

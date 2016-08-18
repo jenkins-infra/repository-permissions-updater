@@ -1,0 +1,6 @@
+---
+name: "extreme-feedback"
+paths:
+- "org/jenkins-ci/plugins/extreme-feedback"
+developers:
+- "dvaske"

@@ -1,0 +1,8 @@
+---
+name: "build-timeout"
+paths:
+- "org/jenkins-ci/plugins/build-timeout"
+developers:
+- "ikedam"
+- "mhschroe"
+- "oleg_nenashev"

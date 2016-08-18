@@ -1,0 +1,6 @@
+---
+name: "analysis-core"
+paths:
+- "org/jvnet/hudson/plugins/analysis-core"
+developers:
+- "drulli"

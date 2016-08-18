@@ -1,0 +1,6 @@
+---
+name: "lotus-connections-plugin"
+paths:
+- "org/jenkins-ci/plugins/lotus-connections-plugin"
+developers:
+- "philrumble"

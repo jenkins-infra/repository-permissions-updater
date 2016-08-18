@@ -1,0 +1,9 @@
+---
+name: "publish-over-ssh"
+paths:
+- "org/jenkins-ci/plugins/publish-over-ssh"
+- "org/jvnet/hudson/plugins/publish-over-ssh"
+developers:
+- "r2b2_nz"
+- "slide_o_mix"
+- "stephenconnolly"

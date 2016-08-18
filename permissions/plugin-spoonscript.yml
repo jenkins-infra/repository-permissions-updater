@@ -1,0 +1,6 @@
+---
+name: "spoonscript"
+paths:
+- "org/jenkinsci/plugins/spoonscript/spoonscript"
+developers:
+- "mateusz"

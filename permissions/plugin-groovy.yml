@@ -1,0 +1,7 @@
+---
+name: "groovy"
+paths:
+- "org/jenkins-ci/plugins/groovy"
+- "org/jvnet/hudson/plugins/groovy"
+developers:
+- "vjuranek"

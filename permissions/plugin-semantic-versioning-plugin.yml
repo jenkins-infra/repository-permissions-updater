@@ -1,0 +1,6 @@
+---
+name: "semantic-versioning-plugin"
+paths:
+- "org/jenkins-ci/plugins/semantic-versioning-plugin"
+developers:
+- "ciroque"

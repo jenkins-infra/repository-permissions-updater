@@ -1,0 +1,5 @@
+---
+name: "Matrix-sorter-plugin"
+paths:
+- "org/jenkins-ci/plugins/Matrix-sorter-plugin"
+developers: []

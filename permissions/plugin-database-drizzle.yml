@@ -1,0 +1,5 @@
+---
+name: "database-drizzle"
+paths:
+- "org/jenkins-ci/plugins/database-drizzle"
+developers: []

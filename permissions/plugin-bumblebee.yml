@@ -1,0 +1,6 @@
+---
+name: "bumblebee"
+paths:
+- "org/jenkins-ci/plugins/bumblebee"
+developers:
+- "agiletestware"

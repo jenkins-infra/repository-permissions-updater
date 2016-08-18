@@ -1,0 +1,8 @@
+---
+name: "sectioned-view"
+paths:
+- "org/jenkins-ci/plugins/sectioned-view"
+- "org/jvnet/hudson/plugins/sectioned-view"
+developers:
+- "recena"
+- "tbingaman"

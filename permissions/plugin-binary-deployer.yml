@@ -1,0 +1,6 @@
+---
+name: "binary-deployer"
+paths:
+- "org/jenkins-ci/plugins/binary-deployer"
+developers:
+- "alecharp"

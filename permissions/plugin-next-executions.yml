@@ -1,0 +1,6 @@
+---
+name: "next-executions"
+paths:
+- "org/jenkins-ci/plugins/next-executions"
+developers:
+- "ialbors"

@@ -1,0 +1,6 @@
+---
+name: "nodejs"
+paths:
+- "org/jenkins-ci/plugins/nodejs"
+developers:
+- "fcamblor"

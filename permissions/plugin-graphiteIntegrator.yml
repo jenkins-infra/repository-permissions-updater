@@ -1,0 +1,6 @@
+---
+name: "graphiteIntegrator"
+paths:
+- "org/jenkins-ci/plugins/graphiteIntegrator"
+developers:
+- "patelm5"

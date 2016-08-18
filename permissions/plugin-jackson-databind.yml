@@ -1,0 +1,6 @@
+---
+name: "jackson-databind"
+paths:
+- "org/jenkins-ci/plugins/jackson-databind"
+developers:
+- "tfennelly"

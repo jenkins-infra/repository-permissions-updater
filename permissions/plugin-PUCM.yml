@@ -1,0 +1,5 @@
+---
+name: "PUCM"
+paths:
+- "org/jvnet/hudson/plugins/PUCM"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "fortify360"
+paths:
+- "org/jvnet/hudson/plugins/fortify360/fortify360"
+developers: []

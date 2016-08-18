@@ -1,0 +1,6 @@
+---
+name: "azure-batch-parallel"
+paths:
+- "com/microsoft/azurebatch/azure-batch-parallel"
+developers:
+- "azurebatch"

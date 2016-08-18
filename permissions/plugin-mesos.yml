@@ -1,0 +1,8 @@
+---
+name: "mesos"
+paths:
+- "org/jenkins-ci/plugins/mesos"
+developers:
+- "maselvaraj"
+- "vinodkone"
+- "vlatombe"

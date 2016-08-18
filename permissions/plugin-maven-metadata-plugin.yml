@@ -1,0 +1,7 @@
+---
+name: "maven-metadata-plugin"
+paths:
+- "eu/markov/jenkins/plugin/mvnmeta/maven-metadata-plugin"
+developers:
+- "gesh"
+- "marcrohlfs"

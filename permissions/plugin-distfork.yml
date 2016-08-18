@@ -1,0 +1,6 @@
+---
+name: "distfork"
+paths:
+- "org/jenkins-ci/plugins/distfork"
+developers:
+- "teilo"

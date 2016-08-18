@@ -1,0 +1,7 @@
+---
+name: "stashNotifier"
+paths:
+- "org/jenkins-ci/plugins/stashNotifier"
+developers:
+- "gruetter"
+- "scaytrase"

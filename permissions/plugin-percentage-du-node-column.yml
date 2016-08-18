@@ -1,0 +1,6 @@
+---
+name: "percentage-du-node-column"
+paths:
+- "org/jenkins-ci/plugins/percentage-du-node-column"
+developers:
+- "v2v"

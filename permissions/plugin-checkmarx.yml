@@ -1,0 +1,6 @@
+---
+name: "checkmarx"
+paths:
+- "com/checkmarx/jenkins/checkmarx"
+developers:
+- "sergeyk"

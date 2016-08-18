@@ -1,0 +1,8 @@
+---
+name: "coverity"
+paths:
+- "org/jenkins-ci/plugins/coverity"
+developers:
+- "frossi"
+- "kdang"
+- "oleg_nenashev"

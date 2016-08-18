@@ -1,0 +1,6 @@
+---
+name: "marathon"
+paths:
+- "com/mesosphere/velocity/marathon"
+developers:
+- "titosand"

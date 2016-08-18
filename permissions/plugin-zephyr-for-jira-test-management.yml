@@ -1,0 +1,6 @@
+---
+name: "zephyr-for-jira-test-management"
+paths:
+- "org/jenkins-ci/plugins/zephyr-for-jira-test-management"
+developers:
+- "zeedeveloper"

@@ -1,0 +1,6 @@
+---
+name: "build-token-root"
+paths:
+- "org/jenkins-ci/plugins/build-token-root"
+developers:
+- "jglick"

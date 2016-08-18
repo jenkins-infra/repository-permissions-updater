@@ -1,0 +1,8 @@
+---
+name: "lockable-resources"
+paths:
+- "org/6wind/jenkins/lockable-resources"
+developers:
+- "abayer"
+- "amuniz"
+- "robinjarry"

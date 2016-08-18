@@ -1,0 +1,5 @@
+---
+name: "project-health-report"
+paths:
+- "org/jvnet/hudson/plugins/project-health-report"
+developers: []

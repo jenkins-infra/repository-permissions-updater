@@ -1,0 +1,6 @@
+---
+name: "mysql-job-databases"
+paths:
+- "org/jenkins-ci/ruby-plugins/mysql-job-databases"
+developers:
+- "tfischbach"

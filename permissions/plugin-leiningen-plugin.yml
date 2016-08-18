@@ -1,0 +1,5 @@
+---
+name: "leiningen-plugin"
+paths:
+- "org/jenkins-ci/plugins/leiningen-plugin"
+developers: []

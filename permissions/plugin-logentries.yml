@@ -1,0 +1,5 @@
+---
+name: "logentries"
+paths:
+- "org/jenkins-ci/plugins/logentries"
+developers: []

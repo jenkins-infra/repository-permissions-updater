@@ -1,0 +1,5 @@
+---
+name: "cmvc"
+paths:
+- "org/jenkins-ci/plugins/cmvc"
+developers: []

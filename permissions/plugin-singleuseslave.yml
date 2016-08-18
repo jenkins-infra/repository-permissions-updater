@@ -1,0 +1,6 @@
+---
+name: "singleuseslave"
+paths:
+- "org/jenkins-ci/ruby-plugins/singleuseslave"
+developers:
+- "claytononeill"

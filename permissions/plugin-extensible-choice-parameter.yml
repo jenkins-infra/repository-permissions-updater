@@ -1,0 +1,6 @@
+---
+name: "extensible-choice-parameter"
+paths:
+- "jp/ikedam/jenkins/plugins/extensible-choice-parameter"
+developers:
+- "ikedam"

@@ -1,0 +1,6 @@
+---
+name: "build-steps-from-json"
+paths:
+- "com/spcow/plugins/build-steps-from-json"
+developers:
+- "pskumar448"

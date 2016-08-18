@@ -1,0 +1,6 @@
+---
+name: "kubernetes-pipeline-devops-steps"
+paths:
+- "io/fabric8/pipeline/kubernetes-pipeline-devops-steps"
+developers:
+- "iocanel"

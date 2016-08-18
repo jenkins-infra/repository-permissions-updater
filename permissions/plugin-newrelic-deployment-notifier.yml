@@ -1,0 +1,6 @@
+---
+name: "newrelic-deployment-notifier"
+paths:
+- "org/jenkins-ci/plugins/newrelic-deployment-notifier"
+developers:
+- "mmchr"

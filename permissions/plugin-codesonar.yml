@@ -1,0 +1,7 @@
+---
+name: "codesonar"
+paths:
+- "org/jenkins-ci/plugins/codesonar"
+developers:
+- "madsnielsen"
+- "praqma"

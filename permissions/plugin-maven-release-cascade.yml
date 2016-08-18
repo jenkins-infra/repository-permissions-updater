@@ -1,0 +1,5 @@
+---
+name: "maven-release-cascade"
+paths:
+- "com/barchart/jenkins/maven-release-cascade"
+developers: []

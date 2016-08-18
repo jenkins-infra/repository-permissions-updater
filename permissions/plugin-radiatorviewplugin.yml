@@ -1,0 +1,7 @@
+---
+name: "radiatorviewplugin"
+paths:
+- "org/jenkins-ci/plugins/radiatorviewplugin"
+developers:
+- "batmat"
+- "david_resnick"

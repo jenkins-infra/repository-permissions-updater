@@ -1,0 +1,7 @@
+---
+name: "kubernetes"
+paths:
+- "org/csanchez/jenkins/plugins/kubernetes"
+developers:
+- "csanchez"
+- "ndeloof"

@@ -1,0 +1,7 @@
+---
+name: "tinfoil-scan"
+paths:
+- "com/tinfoilsecurity/plugins/tinfoil-scan"
+developers:
+- "angelman"
+- "bsedat"

@@ -1,0 +1,5 @@
+---
+name: "project-stats-plugin"
+paths:
+- "org/jenkins-ci/plugins/project-stats-plugin"
+developers: []

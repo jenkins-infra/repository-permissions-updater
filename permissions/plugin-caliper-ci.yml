@@ -1,0 +1,5 @@
+---
+name: "caliper-ci"
+paths:
+- "com/brianfromoregon/caliper-ci"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "ibm-security-appscanstandard-scanner"
+paths:
+- "appscanstandard-integration/ibm-security-appscanstandard-scanner"
+developers:
+- "tlopespt"

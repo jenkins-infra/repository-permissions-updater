@@ -1,0 +1,5 @@
+---
+name: "netio-plugin"
+paths:
+- "org/jenkins-ci/plugins/netio-plugin"
+developers: []

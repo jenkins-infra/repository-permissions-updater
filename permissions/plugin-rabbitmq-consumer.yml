@@ -1,0 +1,6 @@
+---
+name: "rabbitmq-consumer"
+paths:
+- "org/jenkins-ci/plugins/rabbitmq-consumer"
+developers:
+- "rin_ne"

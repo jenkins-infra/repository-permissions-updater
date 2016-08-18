@@ -1,0 +1,6 @@
+---
+name: "jprt"
+paths:
+- "org/jenkins-ci/plugins/jprt"
+- "org/jvnet/hudson/plugins/jprt"
+developers: []

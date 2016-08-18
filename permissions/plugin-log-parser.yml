@@ -1,0 +1,6 @@
+---
+name: "log-parser"
+paths:
+- "org/jenkins-ci/plugins/log-parser"
+developers:
+- "recena"

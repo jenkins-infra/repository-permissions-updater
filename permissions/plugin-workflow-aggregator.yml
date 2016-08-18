@@ -1,0 +1,7 @@
+---
+name: "workflow-aggregator"
+paths:
+- "org/jenkins-ci/plugins/workflow/workflow-aggregator"
+developers:
+- "jglick"
+- "kohsuke"

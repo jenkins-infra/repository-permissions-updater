@@ -1,0 +1,6 @@
+---
+name: "read-only-configurations"
+paths:
+- "org/jenkins-ci/plugins/read-only-configurations"
+developers:
+- "lvotypkova"

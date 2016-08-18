@@ -1,0 +1,8 @@
+---
+name: "parallel-test-executor"
+paths:
+- "org/jenkins-ci/plugins/parallel-test-executor"
+developers:
+- "jglick"
+- "vlatombe"
+- "wolfs"

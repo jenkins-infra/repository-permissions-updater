@@ -1,0 +1,6 @@
+---
+name: "deployer-framework"
+paths:
+- "org/jenkins-ci/plugins/deployer-framework"
+developers:
+- "stephenconnolly"

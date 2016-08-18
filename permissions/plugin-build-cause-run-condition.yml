@@ -1,0 +1,5 @@
+---
+name: "build-cause-run-condition"
+paths:
+- "org/jenkins-ci/plugins/build-cause-run-condition"
+developers: []

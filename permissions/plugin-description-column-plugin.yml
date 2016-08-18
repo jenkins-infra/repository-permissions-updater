@@ -1,0 +1,5 @@
+---
+name: "description-column-plugin"
+paths:
+- "org/jenkins-ci/plugins/description-column-plugin"
+developers: []

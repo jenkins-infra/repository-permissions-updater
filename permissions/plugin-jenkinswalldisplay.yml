@@ -1,0 +1,6 @@
+---
+name: "jenkinswalldisplay"
+paths:
+- "org/jenkins-ci/plugins/jenkinswalldisplay"
+developers:
+- "pelle"

@@ -1,0 +1,6 @@
+---
+name: "gearman-plugin"
+paths:
+- "org/jenkins-ci/plugins/gearman-plugin"
+developers:
+- "openstackjenkins"

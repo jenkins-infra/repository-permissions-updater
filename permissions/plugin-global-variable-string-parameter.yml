@@ -1,0 +1,5 @@
+---
+name: "global-variable-string-parameter"
+paths:
+- "org/jenkins-ci/plugins/global-variable-string-parameter"
+developers: []

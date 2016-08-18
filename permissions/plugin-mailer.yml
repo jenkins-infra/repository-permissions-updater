@@ -1,0 +1,10 @@
+---
+name: "mailer"
+paths:
+- "org/jenkins-ci/plugins/mailer"
+developers:
+- "andresrc"
+- "jglick"
+- "kohsuke"
+- "rsandell"
+- "tfennelly"

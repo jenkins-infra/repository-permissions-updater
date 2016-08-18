@@ -1,0 +1,5 @@
+---
+name: "sametime"
+paths:
+- "org/jenkins-ci/plugins/sametime"
+developers: []

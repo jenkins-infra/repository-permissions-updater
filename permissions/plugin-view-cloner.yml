@@ -1,0 +1,6 @@
+---
+name: "view-cloner"
+paths:
+- "org/jenkins-ci/plugins/view-cloner"
+developers:
+- "agukov"

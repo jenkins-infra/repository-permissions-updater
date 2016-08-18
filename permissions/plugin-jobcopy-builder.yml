@@ -1,0 +1,6 @@
+---
+name: "jobcopy-builder"
+paths:
+- "jp/ikedam/jenkins/plugins/jobcopy-builder"
+developers:
+- "ikedam"

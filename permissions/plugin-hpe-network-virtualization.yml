@@ -1,0 +1,6 @@
+---
+name: "hpe-network-virtualization"
+paths:
+- "org/jenkins-ci/plugins/hpe-network-virtualization"
+developers:
+- "itay_karo_hpe"

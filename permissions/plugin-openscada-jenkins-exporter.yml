@@ -1,0 +1,5 @@
+---
+name: "openscada-jenkins-exporter"
+paths:
+- "org/openscada/jenkins/openscada-jenkins-exporter"
+developers: []

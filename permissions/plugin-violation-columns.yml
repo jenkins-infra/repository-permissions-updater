@@ -1,0 +1,5 @@
+---
+name: "violation-columns"
+paths:
+- "org/jenkins-ci/plugins/violation-columns"
+developers: []

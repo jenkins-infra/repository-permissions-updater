@@ -1,0 +1,6 @@
+---
+name: "violation-comments-to-stash"
+paths:
+- "org/jenkins-ci/plugins/violation-comments-to-stash"
+developers:
+- "tomasbjerre"

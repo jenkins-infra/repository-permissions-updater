@@ -1,0 +1,6 @@
+---
+name: "emma"
+paths:
+- "org/jenkins-ci/plugins/emma"
+- "org/jvnet/hudson/plugins/emma"
+developers: []

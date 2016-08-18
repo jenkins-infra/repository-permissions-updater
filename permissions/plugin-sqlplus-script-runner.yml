@@ -1,0 +1,6 @@
+---
+name: "sqlplus-script-runner"
+paths:
+- "org/jenkins-ci/plugins/sqlplus-script-runner"
+developers:
+- "boaglio"

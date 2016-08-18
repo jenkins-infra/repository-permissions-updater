@@ -1,0 +1,6 @@
+---
+name: "node-iterator-api"
+paths:
+- "org/jenkins-ci/plugins/node-iterator-api"
+developers:
+- "stephenconnolly"

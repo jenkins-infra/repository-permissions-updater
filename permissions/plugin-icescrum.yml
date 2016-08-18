@@ -1,0 +1,6 @@
+---
+name: "icescrum"
+paths:
+- "org/jenkins-ci/plugins/icescrum"
+developers:
+- "vbarrier"

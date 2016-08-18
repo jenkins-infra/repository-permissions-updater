@@ -1,0 +1,5 @@
+---
+name: "custom-job-icon"
+paths:
+- "org/jenkins-ci/plugins/custom-job-icon"
+developers: []

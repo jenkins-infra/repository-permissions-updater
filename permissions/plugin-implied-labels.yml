@@ -1,0 +1,6 @@
+---
+name: "implied-labels"
+paths:
+- "org/jenkins-ci/plugins/implied-labels"
+developers:
+- "olivergondza"

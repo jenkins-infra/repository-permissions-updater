@@ -1,0 +1,7 @@
+---
+name: "rbenv"
+paths:
+- "org/jenkins-ci/ruby-plugins/rbenv"
+developers:
+- "hsbt"
+- "yyuu"

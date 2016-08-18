@@ -1,0 +1,7 @@
+---
+name: "JiraTestResultReporter"
+paths:
+- "com/maplesteve/jenkins-ci/plugins/JiraTestResultReporter"
+- "org/jenkins-ci/plugins/JiraTestResultReporter"
+developers:
+- "andreituicu"

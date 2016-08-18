@@ -1,0 +1,6 @@
+---
+name: "jabber"
+paths:
+- "org/jvnet/hudson/plugins/jabber"
+developers:
+- "kutzi"

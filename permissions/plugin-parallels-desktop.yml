@@ -1,0 +1,6 @@
+---
+name: "parallels-desktop"
+paths:
+- "com/parallels/parallels-desktop"
+developers:
+- "romankulikov"

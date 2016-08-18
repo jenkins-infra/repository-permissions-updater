@@ -1,0 +1,5 @@
+---
+name: "flexteam"
+paths:
+- "org/jvnet/hudson/plugins/flexteam"
+developers: []

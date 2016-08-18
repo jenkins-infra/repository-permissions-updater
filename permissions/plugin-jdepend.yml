@@ -1,0 +1,7 @@
+---
+name: "jdepend"
+paths:
+- "org/jenkins-ci/plugins/jdepend"
+- "org/jvnet/hudson/plugins/jdepend"
+developers:
+- "ndeloof"

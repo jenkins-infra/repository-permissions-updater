@@ -1,0 +1,7 @@
+---
+name: "seleniumhtmlreport"
+paths:
+- "org/jenkins-ci/plugins/seleniumhtmlreport"
+- "org/jvnet/hudson/plugins/seleniumhtmlreport"
+developers:
+- "slorenz"

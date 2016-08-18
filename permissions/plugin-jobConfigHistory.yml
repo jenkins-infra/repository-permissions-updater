@@ -1,0 +1,8 @@
+---
+name: "jobConfigHistory"
+paths:
+- "org/jenkins-ci/plugins/jobConfigHistory"
+- "org/jvnet/hudson/plugins/jobConfigHistory"
+developers:
+- "jochenafuerbacher"
+- "stefanbrausch"

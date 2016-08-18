@@ -1,0 +1,6 @@
+---
+name: "one-shot-executor"
+paths:
+- "org/jenkins-ci/plugins/one-shot-executor"
+developers:
+- "ndeloof"

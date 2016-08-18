@@ -1,0 +1,9 @@
+---
+name: "mansion-cloud"
+paths:
+- "com/cloudbees/jenkins/plugins/mansion-cloud"
+developers:
+- "michaelneale"
+- "recampbell"
+- "stephenconnolly"
+- "ydubreuil"

@@ -1,0 +1,6 @@
+---
+name: "serenity"
+paths:
+- "org/jenkins-ci/plugins/serenity"
+developers:
+- "michael_couck"

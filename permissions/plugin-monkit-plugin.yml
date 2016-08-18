@@ -1,0 +1,6 @@
+---
+name: "monkit-plugin"
+paths:
+- "net/praqma/monkit-plugin"
+developers:
+- "madsnielsen"

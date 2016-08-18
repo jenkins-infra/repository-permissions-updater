@@ -1,0 +1,6 @@
+---
+name: "teamconcert-git"
+paths:
+- "org/jenkins-ci/plugins/teamconcert-git"
+developers:
+- "clkkishore"

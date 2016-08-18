@@ -1,0 +1,6 @@
+---
+name: "computer-queue-plugin"
+paths:
+- "jenkins/ci/plugins/computerqueue/computer-queue-plugin"
+developers:
+- "olivergondza"

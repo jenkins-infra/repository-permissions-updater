@@ -1,0 +1,5 @@
+---
+name: "sonatype-ci"
+paths:
+- "org/jenkins-ci/plugins/sonatype-ci"
+developers: []

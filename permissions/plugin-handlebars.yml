@@ -1,0 +1,6 @@
+---
+name: "handlebars"
+paths:
+- "org/jenkins-ci/ui/handlebars"
+developers:
+- "tfennelly"

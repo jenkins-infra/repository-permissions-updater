@@ -1,0 +1,6 @@
+---
+name: "bitbucket-oauth"
+paths:
+- "org/jenkins-ci/plugins/bitbucket-oauth"
+developers:
+- "mallowlabs"

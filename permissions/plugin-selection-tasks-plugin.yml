@@ -1,0 +1,5 @@
+---
+name: "selection-tasks-plugin"
+paths:
+- "org/jvnet/hudson/plugins/selection-tasks-plugin"
+developers: []

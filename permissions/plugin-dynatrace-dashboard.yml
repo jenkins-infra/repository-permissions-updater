@@ -1,0 +1,7 @@
+---
+name: "dynatrace-dashboard"
+paths:
+- "org/jenkins-ci/plugins/dynatrace-dashboard"
+developers:
+- "dynatrace"
+- "wgottesheim"

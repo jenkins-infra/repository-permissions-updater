@@ -1,0 +1,8 @@
+---
+name: "DotCi"
+paths:
+- "com/groupon/jenkins-ci/plugins/DotCi"
+developers:
+- "surya548"
+- "suryagaddipati"
+- "vvitayau"

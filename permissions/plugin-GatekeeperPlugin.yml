@@ -1,0 +1,7 @@
+---
+name: "GatekeeperPlugin"
+paths:
+- "org/paylogic/GatekeeperPlugin"
+developers:
+- "bubenkoff"
+- "maikelwever"

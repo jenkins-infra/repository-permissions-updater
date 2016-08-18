@@ -1,0 +1,6 @@
+---
+name: "aws-lambda-jenkins-plugin"
+paths:
+- "com/xti/jenkins/plugins/aws-lambda-jenkins-plugin"
+developers:
+- "cast"

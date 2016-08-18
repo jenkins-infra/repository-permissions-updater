@@ -1,0 +1,6 @@
+---
+name: "crx-content-package-deployer"
+paths:
+- "org/jenkins-ci/plugins/crx-content-package-deployer"
+developers:
+- "madamcin"

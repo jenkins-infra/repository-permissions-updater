@@ -1,0 +1,7 @@
+---
+name: "paaslane-estimate"
+paths:
+- "com/cloudtp/jenkins/paaslane-estimate"
+developers:
+- "ctp_alan_zall"
+- "ushatil_ctp"

@@ -1,0 +1,5 @@
+---
+name: "persistent-build-queue-plugin"
+paths:
+- "org/jenkins-ci/plugins/persistent-build-queue-plugin"
+developers: []

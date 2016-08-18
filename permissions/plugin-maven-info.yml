@@ -1,0 +1,6 @@
+---
+name: "maven-info"
+paths:
+- "org/tomfolga/maven-info"
+developers:
+- "emenaceb"

@@ -1,0 +1,8 @@
+---
+name: "rebuild"
+paths:
+- "com/sonyericsson/hudson/plugins/rebuild/rebuild"
+developers:
+- "hagzag"
+- "ragesh_nair"
+- "rsandell"

@@ -1,0 +1,5 @@
+---
+name: "random-string-parameter"
+paths:
+- "org/jenkins-ci/plugins/random-string-parameter"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "humbug"
+paths:
+- "org/jenkins-ci/plugins/humbug"
+developers:
+- "wdaher"

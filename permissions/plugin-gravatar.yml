@@ -1,0 +1,6 @@
+---
+name: "gravatar"
+paths:
+- "org/jenkins-ci/plugins/gravatar"
+developers:
+- "cappuccino"

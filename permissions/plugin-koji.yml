@@ -1,0 +1,7 @@
+---
+name: "koji"
+paths:
+- "org/jenkins-ci/plugins/koji"
+developers:
+- "orrc"
+- "vtunka"

@@ -1,0 +1,5 @@
+---
+name: "skip-certificate-check"
+paths:
+- "org/jenkins-ci/plugins/skip-certificate-check"
+developers: []

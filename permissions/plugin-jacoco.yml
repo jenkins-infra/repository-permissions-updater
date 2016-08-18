@@ -1,0 +1,7 @@
+---
+name: "jacoco"
+paths:
+- "org/jenkins-ci/plugins/jacoco"
+developers:
+- "centic"
+- "ognjenb"

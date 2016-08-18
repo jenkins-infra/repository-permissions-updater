@@ -1,0 +1,6 @@
+---
+name: "sra-deploy"
+paths:
+- "com/urbancode/ds/jenkins/plugins/sra-deploy"
+developers:
+- "tpayne"

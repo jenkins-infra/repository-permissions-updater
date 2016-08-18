@@ -1,0 +1,5 @@
+---
+name: "collabnet-uc4-deploy"
+paths:
+- "org/jenkins-ci/plugins/collabnet-uc4-deploy"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "dumpling"
+paths:
+- "org/jenkins-ci/plugins/dumpling"
+developers:
+- "olivergondza"

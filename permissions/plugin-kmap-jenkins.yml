@@ -1,0 +1,6 @@
+---
+name: "kmap-jenkins"
+paths:
+- "org/jenkins-ci/plugins/kmap-jenkins"
+developers:
+- "adminkeivox"

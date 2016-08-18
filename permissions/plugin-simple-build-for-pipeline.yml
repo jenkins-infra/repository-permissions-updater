@@ -1,0 +1,6 @@
+---
+name: "simple-build-for-pipeline"
+paths:
+- "org/jenkins-ci/plugins/simple-build-for-pipeline"
+developers:
+- "michaelneale"

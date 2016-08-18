@@ -1,0 +1,9 @@
+---
+name: "google-storage-plugin"
+paths:
+- "org/jenkins-ci/plugins/google-storage-plugin"
+developers:
+- "astroilov"
+- "mattmoor"
+- "reprogrammer"
+- "tcnghia"

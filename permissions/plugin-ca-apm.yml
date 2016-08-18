@@ -1,0 +1,6 @@
+---
+name: "ca-apm"
+paths:
+- "org/jenkins-ci/plugins/ca-apm"
+developers:
+- "srikns"

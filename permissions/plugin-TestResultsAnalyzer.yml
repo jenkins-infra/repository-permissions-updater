@@ -1,0 +1,6 @@
+---
+name: "TestResultsAnalyzer"
+paths:
+- "org/jenkins-ci/plugins/TestResultsAnalyzer"
+developers:
+- "menonvarun"

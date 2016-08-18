@@ -1,0 +1,5 @@
+---
+name: "windows-exe-runner"
+paths:
+- "org/jenkins-ci/plugins/windows-exe-runner"
+developers: []

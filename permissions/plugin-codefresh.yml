@@ -1,0 +1,6 @@
+---
+name: "codefresh"
+paths:
+- "org/jenkins-ci/plugins/codefresh"
+developers:
+- "antweiss"

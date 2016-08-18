@@ -1,0 +1,6 @@
+---
+name: "compact-columns"
+paths:
+- "org/jenkins-ci/plugins/compact-columns"
+- "org/jvnet/hudson/plugins/compact-columns"
+developers: []

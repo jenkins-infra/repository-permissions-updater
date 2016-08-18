@@ -1,0 +1,7 @@
+---
+name: "gitlab-hook"
+paths:
+- "org/jenkins-ci/ruby-plugins/gitlab-hook"
+developers:
+- "elvanja"
+- "javiplx"

@@ -1,0 +1,6 @@
+---
+name: "last-changes"
+paths:
+- "org/jenkins-ci/plugins/last-changes"
+developers:
+- "rmpestano"

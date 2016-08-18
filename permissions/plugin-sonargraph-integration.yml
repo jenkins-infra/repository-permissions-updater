@@ -1,0 +1,7 @@
+---
+name: "sonargraph-integration"
+paths:
+- "org/jenkins-ci/plugins/sonargraph-integration"
+developers:
+- "andreashoyerh2m"
+- "builderh2m"

@@ -1,0 +1,5 @@
+---
+name: "collabnet-automic-deploy"
+paths:
+- "org/jenkins-ci/plugins/collabnet-automic-deploy"
+developers: []

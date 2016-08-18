@@ -1,0 +1,6 @@
+---
+name: "figlet-buildstep"
+paths:
+- "org/jenkins-ci/plugins/figlet-buildstep"
+developers:
+- "slide_o_mix"

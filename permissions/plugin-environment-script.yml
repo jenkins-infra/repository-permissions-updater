@@ -1,0 +1,6 @@
+---
+name: "environment-script"
+paths:
+- "com/lookout/jenkins/environment-script"
+developers:
+- "dawidmalina"

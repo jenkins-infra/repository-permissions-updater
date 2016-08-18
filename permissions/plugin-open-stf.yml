@@ -1,0 +1,6 @@
+---
+name: "open-stf"
+paths:
+- "org/jenkins-ci/plugins/open-stf"
+developers:
+- "justice3120"

@@ -1,0 +1,6 @@
+---
+name: "sumologic-publisher"
+paths:
+- "org/jenkins-ci/plugins/sumologic-publisher"
+developers:
+- "devennorton"

@@ -1,0 +1,6 @@
+---
+name: "queue-cleanup"
+paths:
+- "org/jenkins-ci/plugins/queue-cleanup"
+developers:
+- "olivergondza"

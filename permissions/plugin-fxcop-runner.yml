@@ -1,0 +1,5 @@
+---
+name: "fxcop-runner"
+paths:
+- "org/jenkins-ci/plugins/fxcop-runner"
+developers: []

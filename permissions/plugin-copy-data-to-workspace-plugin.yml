@@ -1,0 +1,5 @@
+---
+name: "copy-data-to-workspace-plugin"
+paths:
+- "org/jvnet/hudson/plugins/copy-data-to-workspace-plugin"
+developers: []

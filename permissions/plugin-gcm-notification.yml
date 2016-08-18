@@ -1,0 +1,5 @@
+---
+name: "gcm-notification"
+paths:
+- "org/jenkins-ci/plugins/gcm-notification"
+developers: []

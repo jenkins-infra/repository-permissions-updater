@@ -1,0 +1,6 @@
+---
+name: "Exclusion"
+paths:
+- "org/jenkins-ci/plugins/Exclusion"
+developers:
+- "anthonyroux"

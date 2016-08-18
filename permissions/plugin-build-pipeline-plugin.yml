@@ -1,0 +1,11 @@
+---
+name: "build-pipeline-plugin"
+paths:
+- "au/com/centrumsystems/build-pipeline-plugin"
+- "org/jenkins-ci/plugins/build-pipeline-plugin"
+- "org/jvnet/hudson/plugins/build-pipeline-plugin"
+developers:
+- "dalvizu"
+- "geoffbullen"
+- "integer"
+- "recena"

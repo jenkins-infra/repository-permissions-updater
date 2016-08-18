@@ -1,0 +1,5 @@
+---
+name: "groovy-remote"
+paths:
+- "org/jenkinsci/plugins/groovy-remote"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "keep-slave-disconnected"
+paths:
+- "org/jenkins-ci/plugins/keep-slave-disconnected"
+developers:
+- "ndeloof"

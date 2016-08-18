@@ -1,0 +1,8 @@
+---
+name: "cloudbees-disk-usage-simple"
+paths:
+- "org/jenkins-ci/plugins/cloudbees-disk-usage-simple"
+developers:
+- "aheritier"
+- "ndeloof"
+- "recena"

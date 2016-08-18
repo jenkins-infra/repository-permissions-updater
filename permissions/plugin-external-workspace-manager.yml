@@ -1,0 +1,7 @@
+---
+name: "external-workspace-manager"
+paths:
+- "org/jenkins-ci/plugins/external-workspace-manager"
+developers:
+- "alexsomai"
+- "oleg_nenashev"

@@ -1,0 +1,7 @@
+---
+name: "script-security"
+paths:
+- "org/jenkins-ci/plugins/script-security"
+developers:
+- "jglick"
+- "kohsuke"

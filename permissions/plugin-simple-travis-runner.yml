@@ -1,0 +1,6 @@
+---
+name: "simple-travis-runner"
+paths:
+- "org/jenkins-ci/plugins/simple-travis-runner"
+developers:
+- "abayer"

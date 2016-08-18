@@ -1,0 +1,6 @@
+---
+name: "rabbitmq-build-trigger"
+paths:
+- "org/jenkins-ci/plugins/rabbitmq-build-trigger"
+developers:
+- "rin_ne"

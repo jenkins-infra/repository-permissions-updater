@@ -1,0 +1,6 @@
+---
+name: "multi-module-tests-publisher"
+paths:
+- "org/jenkins-ci/plugins/multi-module-tests-publisher"
+developers:
+- "vimil"

@@ -1,0 +1,5 @@
+---
+name: "livescreenshot"
+paths:
+- "org/jenkins-ci/plugins/livescreenshot"
+developers: []

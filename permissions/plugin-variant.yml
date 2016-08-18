@@ -1,0 +1,6 @@
+---
+name: "variant"
+paths:
+- "org/jenkins-ci/plugins/variant"
+developers:
+- "kohsuke"

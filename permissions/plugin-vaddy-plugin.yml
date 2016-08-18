@@ -1,0 +1,6 @@
+---
+name: "vaddy-plugin"
+paths:
+- "org/jenkins-ci/plugins/vaddy-plugin"
+developers:
+- "kanatoko"

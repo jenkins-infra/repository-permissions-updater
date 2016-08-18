@@ -1,0 +1,7 @@
+---
+name: "ghprb"
+paths:
+- "org/jenkins-ci/plugins/ghprb"
+developers:
+- "davidtanner"
+- "valdisrigdon"

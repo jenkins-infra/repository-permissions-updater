@@ -1,0 +1,5 @@
+---
+name: "downstream-buildview"
+paths:
+- "org/jvnet/hudson/plugins/downstream-buildview"
+developers: []

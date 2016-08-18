@@ -1,0 +1,6 @@
+---
+name: "artifact-diff-plugin"
+paths:
+- "org/jenkins-ci/plugins/artifact-diff-plugin"
+developers:
+- "olivergondza"

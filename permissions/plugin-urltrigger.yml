@@ -1,0 +1,6 @@
+---
+name: "urltrigger"
+paths:
+- "org/jenkins-ci/plugins/urltrigger"
+developers:
+- "gbois"

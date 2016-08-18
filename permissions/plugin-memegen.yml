@@ -1,0 +1,6 @@
+---
+name: "memegen"
+paths:
+- "hudson/plugins/memegen/memegen"
+developers:
+- "joonty"

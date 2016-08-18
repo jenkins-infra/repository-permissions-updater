@@ -1,0 +1,7 @@
+---
+name: "extreme-notification"
+paths:
+- "org/jenkins-ci/plugins/extreme-notification"
+developers:
+- "bkmeneguello"
+- "danielburgmann"

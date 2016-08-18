@@ -1,0 +1,5 @@
+---
+name: "logfilesizechecker"
+paths:
+- "org/jenkins-ci/plugins/logfilesizechecker"
+developers: []

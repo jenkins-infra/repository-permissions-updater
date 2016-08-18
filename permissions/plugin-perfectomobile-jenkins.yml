@@ -1,0 +1,7 @@
+---
+name: "perfectomobile-jenkins"
+paths:
+- "com/perfectomobile/perfectomobile-jenkins"
+- "org/jenkins-ci/plugins/perfectomobile-jenkins"
+developers:
+- "hagzag"

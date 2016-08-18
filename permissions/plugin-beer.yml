@@ -1,0 +1,5 @@
+---
+name: "beer"
+paths:
+- "org/jenkins-ci/plugins/beer"
+developers: []

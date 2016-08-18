@@ -1,0 +1,5 @@
+---
+name: "search-all-results-plugin"
+paths:
+- "org/jenkins-ci/plugins/search-all-results-plugin"
+developers: []

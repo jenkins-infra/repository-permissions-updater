@@ -1,0 +1,5 @@
+---
+name: "crowd"
+paths:
+- "com/ds/tools/hudson/crowd"
+developers: []

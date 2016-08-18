@@ -1,0 +1,6 @@
+---
+name: "windows-azure-storage"
+paths:
+- "org/jenkins-ci/plugins/windows-azure-storage"
+developers:
+- "snallami"

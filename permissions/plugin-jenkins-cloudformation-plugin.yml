@@ -1,0 +1,7 @@
+---
+name: "jenkins-cloudformation-plugin"
+paths:
+- "org/jenkins-ci/plugins/jenkins-cloudformation-plugin"
+developers:
+- "edovale"
+- "nathanagood"

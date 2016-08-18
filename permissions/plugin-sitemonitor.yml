@@ -1,0 +1,6 @@
+---
+name: "sitemonitor"
+paths:
+- "org/jvnet/hudson/plugins/sitemonitor"
+developers:
+- "onuba"

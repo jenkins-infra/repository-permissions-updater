@@ -1,0 +1,5 @@
+---
+name: "cppncss"
+paths:
+- "org/jvnet/hudson/plugins/cppncss"
+developers: []

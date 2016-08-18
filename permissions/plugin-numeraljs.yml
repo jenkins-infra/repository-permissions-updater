@@ -1,0 +1,6 @@
+---
+name: "numeraljs"
+paths:
+- "org/jenkins-ci/ui/numeraljs"
+developers:
+- "tfennelly"

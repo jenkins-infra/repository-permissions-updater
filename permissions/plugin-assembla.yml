@@ -1,0 +1,5 @@
+---
+name: "assembla"
+paths:
+- "org/jenkins-ci/plugins/assembla"
+developers: []

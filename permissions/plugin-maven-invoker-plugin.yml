@@ -1,0 +1,5 @@
+---
+name: "maven-invoker-plugin"
+paths:
+- "org/jenkins-ci/plugins/maven-invoker-plugin"
+developers: []

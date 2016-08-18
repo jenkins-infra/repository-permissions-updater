@@ -1,0 +1,8 @@
+---
+name: "performance"
+paths:
+- "org/jenkins-ci/plugins/performance"
+- "org/jvnet/hudson/plugins/performance"
+developers:
+- "manolo"
+- "undera"

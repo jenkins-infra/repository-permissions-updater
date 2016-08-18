@@ -1,0 +1,6 @@
+---
+name: "perl-smoke-test"
+paths:
+- "org/jenkins-ci/ruby-plugins/perl-smoke-test"
+developers:
+- "melezhik"

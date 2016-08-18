@@ -1,0 +1,6 @@
+---
+name: "codescan"
+paths:
+- "com/villagechief/codescan/jenkins/codescan"
+developers:
+- "villagechief"

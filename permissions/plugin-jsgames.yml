@@ -1,0 +1,5 @@
+---
+name: "jsgames"
+paths:
+- "org/jenkins-ci/plugins/jsgames"
+developers: []

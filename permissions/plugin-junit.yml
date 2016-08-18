@@ -1,0 +1,11 @@
+---
+name: "junit"
+paths:
+- "org/jenkins-ci/plugins/junit"
+developers:
+- "abayer"
+- "andresrc"
+- "jglick"
+- "kohsuke"
+- "olivergondza"
+- "wolfs"

@@ -1,0 +1,5 @@
+---
+name: "persona"
+paths:
+- "org/jenkins-ci/plugins/persona"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "nant"
+paths:
+- "org/jenkins-ci/plugins/nant"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "systemloadaverage-monitor"
+paths:
+- "org/jvnet/hudson/plugins/systemloadaverage-monitor"
+developers: []

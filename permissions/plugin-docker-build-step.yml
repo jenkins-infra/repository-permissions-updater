@@ -1,0 +1,6 @@
+---
+name: "docker-build-step"
+paths:
+- "org/jenkins-ci/plugins/docker-build-step"
+developers:
+- "vjuranek"

@@ -1,0 +1,6 @@
+---
+name: "octopusdeploy"
+paths:
+- "hudson/plugins/octopusdeploy/octopusdeploy"
+developers:
+- "badriance"

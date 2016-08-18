@@ -1,0 +1,6 @@
+---
+name: "bitbucket-approve"
+paths:
+- "org/jenkins-ci/plugins/bitbucket-approve"
+developers:
+- "bhurling"

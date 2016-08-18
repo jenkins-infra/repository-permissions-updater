@@ -1,0 +1,6 @@
+---
+name: "selected-tests-executor"
+paths:
+- "org/jenkins-ci/plugins/selected-tests-executor"
+developers:
+- "tamarca"

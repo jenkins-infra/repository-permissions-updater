@@ -1,0 +1,5 @@
+---
+name: "testabilityexplorer"
+paths:
+- "org/jenkins-ci/plugins/testabilityexplorer"
+developers: []

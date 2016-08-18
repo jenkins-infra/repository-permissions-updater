@@ -1,0 +1,5 @@
+---
+name: "grails"
+paths:
+- "org/jvnet/hudson/plugins/grails"
+developers: []

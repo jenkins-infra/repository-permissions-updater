@@ -1,0 +1,5 @@
+---
+name: "tattletale-plugin"
+paths:
+- "org/jenkins-ci/plugins/tattletale-plugin"
+developers: []

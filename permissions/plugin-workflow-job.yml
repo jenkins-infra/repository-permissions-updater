@@ -1,0 +1,7 @@
+---
+name: "workflow-job"
+paths:
+- "org/jenkins-ci/plugins/workflow/workflow-job"
+developers:
+- "jglick"
+- "kohsuke"

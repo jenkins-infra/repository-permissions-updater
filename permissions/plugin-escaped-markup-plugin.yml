@@ -1,0 +1,5 @@
+---
+name: "escaped-markup-plugin"
+paths:
+- "org/jenkins-ci/plugins/escaped-markup-plugin"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "paaslane"
+paths:
+- "com/cloudtp/jenkins/paaslane"
+developers:
+- "ctp_alan_zall"

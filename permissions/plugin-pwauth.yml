@@ -1,0 +1,5 @@
+---
+name: "pwauth"
+paths:
+- "org/jvnet/hudson/plugins/pwauth"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "capitomcat"
+paths:
+- "org/jenkins-ci/ruby-plugins/capitomcat"
+developers:
+- "sunggun"

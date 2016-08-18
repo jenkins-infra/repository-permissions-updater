@@ -1,0 +1,7 @@
+---
+name: "assembla-auth"
+paths:
+- "org/jenkins-ci/plugins/assembla-auth"
+developers:
+- "damir_assembla"
+- "paveld"

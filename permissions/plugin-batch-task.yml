@@ -1,0 +1,6 @@
+---
+name: "batch-task"
+paths:
+- "org/jenkins-ci/plugins/batch-task"
+developers:
+- "fbelzunc"

@@ -1,0 +1,6 @@
+---
+name: "chef-identity"
+paths:
+- "org/jenkins-ci/plugins/chef-identity"
+developers:
+- "tfitch"

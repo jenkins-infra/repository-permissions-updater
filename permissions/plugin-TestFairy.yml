@@ -1,0 +1,7 @@
+---
+name: "TestFairy"
+paths:
+- "org/jenkins-ci/plugins/TestFairy"
+developers:
+- "giltsl"
+- "jenkins3pillar"

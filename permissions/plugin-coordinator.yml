@@ -1,0 +1,6 @@
+---
+name: "coordinator"
+paths:
+- "org/jenkins-ci/plugins/coordinator"
+developers:
+- "ace_jl_han"

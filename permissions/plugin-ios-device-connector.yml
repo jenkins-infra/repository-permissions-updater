@@ -1,0 +1,5 @@
+---
+name: "ios-device-connector"
+paths:
+- "org/jenkins-ci/plugins/ios-device-connector"
+developers: []

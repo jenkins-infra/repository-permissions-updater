@@ -1,0 +1,6 @@
+---
+name: "codebeamer-xunit-importer"
+paths:
+- "org/jenkins-ci/plugins/codebeamer-xunit-importer"
+developers:
+- "balazstar"

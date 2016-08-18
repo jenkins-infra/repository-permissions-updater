@@ -1,0 +1,6 @@
+---
+name: "codecommit-url-helper"
+paths:
+- "br/com/ingenieux/jenkins/plugins/codecommit-url-helper"
+developers:
+- "aldrinleal"

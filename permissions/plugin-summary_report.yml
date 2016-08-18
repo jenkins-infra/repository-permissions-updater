@@ -1,0 +1,6 @@
+---
+name: "summary_report"
+paths:
+- "org/jenkins-ci/plugins/summary_report"
+developers:
+- "deruyter"

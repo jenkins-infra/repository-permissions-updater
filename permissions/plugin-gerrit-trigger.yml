@@ -1,0 +1,6 @@
+---
+name: "gerrit-trigger"
+paths:
+- "com/sonyericsson/hudson/plugins/gerrit/gerrit-trigger"
+developers:
+- "rsandell"

@@ -1,0 +1,6 @@
+---
+name: "jira-ext"
+paths:
+- "org/jenkins-ci/plugins/jira-ext"
+developers:
+- "dalvizu"

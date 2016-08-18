@@ -1,0 +1,5 @@
+---
+name: "jcaptcha-plugin"
+paths:
+- "org/jenkins-ci/plugins/jcaptcha-plugin"
+developers: []

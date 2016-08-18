@@ -1,0 +1,6 @@
+---
+name: "ace-editor"
+paths:
+- "org/jenkins-ci/ui/ace-editor"
+developers:
+- "tfennelly"

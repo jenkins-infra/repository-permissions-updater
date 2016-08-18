@@ -1,0 +1,7 @@
+---
+name: "nunit"
+paths:
+- "org/jenkins-ci/plugins/nunit"
+- "org/jvnet/hudson/plugins/nunit"
+developers:
+- "kinow"

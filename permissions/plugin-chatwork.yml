@@ -1,0 +1,7 @@
+---
+name: "chatwork"
+paths:
+- "com/vexus2/jenkins/chatwork/chatwork"
+- "org/jenkins-ci/plugins/chatwork"
+developers:
+- "sue445"

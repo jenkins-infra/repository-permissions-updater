@@ -1,0 +1,5 @@
+---
+name: "thinBackup"
+paths:
+- "org/jvnet/hudson/plugins/thinBackup"
+developers: []

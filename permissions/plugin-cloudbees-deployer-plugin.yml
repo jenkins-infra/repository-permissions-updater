@@ -1,0 +1,6 @@
+---
+name: "cloudbees-deployer-plugin"
+paths:
+- "org/jenkins-ci/plugins/cloudbees-deployer-plugin"
+developers:
+- "stephenconnolly"

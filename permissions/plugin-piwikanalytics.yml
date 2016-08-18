@@ -1,0 +1,6 @@
+---
+name: "piwikanalytics"
+paths:
+- "org/jenkins-ci/plugins/piwikanalytics"
+developers:
+- "cfurmaniak"

@@ -1,0 +1,5 @@
+---
+name: "sladiator-notifier"
+paths:
+- "org/jenkins-ci/plugins/sladiator-notifier"
+developers: []

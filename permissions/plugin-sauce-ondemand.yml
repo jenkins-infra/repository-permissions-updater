@@ -1,0 +1,9 @@
+---
+name: "sauce-ondemand"
+paths:
+- "org/jenkins-ci/plugins/sauce-ondemand"
+- "org/jvnet/hudson/plugins/sauce-ondemand"
+developers:
+- "halkeye"
+- "moizjv"
+- "rossrowe"

@@ -1,0 +1,5 @@
+---
+name: "cucumber"
+paths:
+- "org/jenkins-ci/ruby-plugins/cucumber"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "statistics-gatherer"
+paths:
+- "org/jenkins/plugins/statistics/gatherer/statistics-gatherer"
+developers:
+- "macha762"

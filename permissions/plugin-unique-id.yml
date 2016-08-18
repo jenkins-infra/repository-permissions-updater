@@ -1,0 +1,9 @@
+---
+name: "unique-id"
+paths:
+- "org/jenkins-ci/plugins/unique-id"
+developers:
+- "andresrc"
+- "oleg_nenashev"
+- "recampbell"
+- "stephenconnolly"

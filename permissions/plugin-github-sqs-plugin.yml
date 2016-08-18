@@ -1,0 +1,5 @@
+---
+name: "github-sqs-plugin"
+paths:
+- "com/base2services/jenkins/github-sqs-plugin"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "openstack-plugin"
+paths:
+- "org/jenkins-ci/plugins/openstack-plugin"
+developers: []

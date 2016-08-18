@@ -1,0 +1,5 @@
+---
+name: "perl"
+paths:
+- "org/jenkins-ci/ruby-plugins/perl"
+developers: []

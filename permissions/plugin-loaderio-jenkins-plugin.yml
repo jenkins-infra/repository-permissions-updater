@@ -1,0 +1,5 @@
+---
+name: "loaderio-jenkins-plugin"
+paths:
+- "io/loader/loaderio-jenkins-plugin"
+developers: []

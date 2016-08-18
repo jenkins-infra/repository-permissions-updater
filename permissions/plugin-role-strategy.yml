@@ -1,0 +1,7 @@
+---
+name: "role-strategy"
+paths:
+- "org/jenkins-ci/plugins/role-strategy"
+- "org/jvnet/hudson/plugins/role-strategy"
+developers:
+- "oleg_nenashev"

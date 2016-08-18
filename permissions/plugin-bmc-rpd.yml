@@ -1,0 +1,6 @@
+---
+name: "bmc-rpd"
+paths:
+- "RPD/bmc-rpd"
+developers:
+- "aivaniuk"

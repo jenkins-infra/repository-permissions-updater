@@ -1,0 +1,5 @@
+---
+name: "dynamicparameter"
+paths:
+- "com/seitenbau/jenkins/plugins/dynamicparameter"
+developers: []

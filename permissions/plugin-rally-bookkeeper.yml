@@ -1,0 +1,6 @@
+---
+name: "rally-bookkeeper"
+paths:
+- "org/jenkins-ci/plugins/rally-bookkeeper"
+developers:
+- "mikerogers_"

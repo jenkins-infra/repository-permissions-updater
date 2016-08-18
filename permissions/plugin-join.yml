@@ -1,0 +1,6 @@
+---
+name: "join"
+paths:
+- "org/jenkins-ci/plugins/join"
+developers:
+- "mdonohue"

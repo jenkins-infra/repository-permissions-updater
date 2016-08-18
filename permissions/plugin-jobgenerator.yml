@@ -1,0 +1,6 @@
+---
+name: "jobgenerator"
+paths:
+- "org/jenkins-ci/plugins/jobgenerator"
+developers:
+- "syl20bnr"

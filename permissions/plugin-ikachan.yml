@@ -1,0 +1,5 @@
+---
+name: "ikachan"
+paths:
+- "org/jenkins-ci/ruby-plugins/ikachan"
+developers: []

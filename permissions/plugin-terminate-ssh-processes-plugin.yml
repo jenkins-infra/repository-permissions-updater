@@ -1,0 +1,5 @@
+---
+name: "terminate-ssh-processes-plugin"
+paths:
+- "org/jenkins-ci/plugins/terminate-ssh-processes-plugin"
+developers: []

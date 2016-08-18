@@ -1,0 +1,5 @@
+---
+name: "simple-theme-plugin"
+paths:
+- "org/codefirst/jenkins/simplethemeplugin/simple-theme-plugin"
+developers: []

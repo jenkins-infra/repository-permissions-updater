@@ -1,0 +1,6 @@
+---
+name: "wildfly-deployer"
+paths:
+- "org/jenkins-ci/plugins/wildfly-deployer"
+developers:
+- "ddilling"

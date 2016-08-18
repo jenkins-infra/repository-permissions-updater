@@ -1,0 +1,6 @@
+---
+name: "bitbucket-build-status-notifier"
+paths:
+- "org/jenkins-ci/plugins/bitbucket-build-status-notifier"
+developers:
+- "flagbit"

@@ -1,0 +1,5 @@
+---
+name: "nodeofflinenotification"
+paths:
+- "org/jenkins-ci/ruby-plugins/nodeofflinenotification"
+developers: []

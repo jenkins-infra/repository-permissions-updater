@@ -1,0 +1,6 @@
+---
+name: "vmware-vrealize-codestream"
+paths:
+- "com/vmware/vcac/vmware-vrealize-codestream"
+developers:
+- "rishisaraf11"

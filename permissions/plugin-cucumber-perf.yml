@@ -1,0 +1,6 @@
+---
+name: "cucumber-perf"
+paths:
+- "com/castlemon/hudson/cucumber-perf"
+developers:
+- "truedub"

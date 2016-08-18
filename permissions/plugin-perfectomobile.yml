@@ -1,0 +1,6 @@
+---
+name: "perfectomobile"
+paths:
+- "org/jenkins-ci/plugins/perfectomobile"
+developers:
+- "perfectomobile"

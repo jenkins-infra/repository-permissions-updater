@@ -1,0 +1,5 @@
+---
+name: "slave-proxy"
+paths:
+- "org/jenkins-ci/plugins/slave-proxy"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "ivy-report"
+paths:
+- "org/jenkins-ci/plugins/ivy-report"
+developers: []

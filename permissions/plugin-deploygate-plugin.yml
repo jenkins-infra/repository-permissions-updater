@@ -1,0 +1,5 @@
+---
+name: "deploygate-plugin"
+paths:
+- "org/jenkins-ci/plugins/deploygate/deploygate-plugin"
+developers: []

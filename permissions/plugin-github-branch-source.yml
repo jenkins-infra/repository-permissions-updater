@@ -1,0 +1,7 @@
+---
+name: "github-branch-source"
+paths:
+- "org/jenkins-ci/plugins/github-branch-source"
+developers:
+- "jglick"
+- "recena"

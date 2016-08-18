@@ -1,0 +1,8 @@
+---
+name: "disk-usage"
+paths:
+- "org/jenkins-ci/plugins/disk-usage"
+- "org/jvnet/hudson/plugins/disk-usage"
+developers:
+- "lvotypkova"
+- "vjuranek"

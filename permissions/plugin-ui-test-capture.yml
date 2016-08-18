@@ -1,0 +1,6 @@
+---
+name: "ui-test-capture"
+paths:
+- "org/jenkins-ci/plugins/ui-test-capture"
+developers:
+- "vbathke"

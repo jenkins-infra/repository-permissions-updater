@@ -1,0 +1,5 @@
+---
+name: "emotional-hudson"
+paths:
+- "org/jvnet/hudson/plugins/emotional-hudson"
+developers: []

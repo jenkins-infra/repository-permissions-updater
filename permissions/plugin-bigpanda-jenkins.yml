@@ -1,0 +1,6 @@
+---
+name: "bigpanda-jenkins"
+paths:
+- "org/jenkins-ci/plugins/bigpanda-jenkins"
+developers:
+- "erikzaadi"

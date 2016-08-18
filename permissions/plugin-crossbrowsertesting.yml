@@ -1,0 +1,6 @@
+---
+name: "crossbrowsertesting"
+paths:
+- "org/jenkins-ci/plugins/crossbrowsertesting"
+developers:
+- "crossbrowsertesting"

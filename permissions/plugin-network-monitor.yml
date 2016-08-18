@@ -1,0 +1,5 @@
+---
+name: "network-monitor"
+paths:
+- "org/jvnet/hudson/plugins/network-monitor"
+developers: []

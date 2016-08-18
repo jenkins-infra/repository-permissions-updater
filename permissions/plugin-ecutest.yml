@@ -1,0 +1,6 @@
+---
+name: "ecutest"
+paths:
+- "de/tracetronic/jenkins/plugins/ecutest"
+developers:
+- "tracetronic"

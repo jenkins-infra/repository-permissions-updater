@@ -1,0 +1,5 @@
+---
+name: "discard-old-build"
+paths:
+- "jp/shiftinc/jenkins/plugins/discard-old-build"
+developers: []

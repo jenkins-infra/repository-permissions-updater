@@ -1,0 +1,6 @@
+---
+name: "boot-clj"
+paths:
+- "org/jenkins-ci/plugins/boot-clj"
+developers:
+- "joelws"

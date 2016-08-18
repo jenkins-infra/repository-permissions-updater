@@ -1,0 +1,5 @@
+---
+name: "tepco"
+paths:
+- "org/jenkins-ci/plugins/tepco"
+developers: []

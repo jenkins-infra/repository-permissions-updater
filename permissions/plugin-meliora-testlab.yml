@@ -1,0 +1,6 @@
+---
+name: "meliora-testlab"
+paths:
+- "org/jenkins-ci/plugins/meliora-testlab"
+developers:
+- "meliora"

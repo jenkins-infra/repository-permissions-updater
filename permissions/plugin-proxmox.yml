@@ -1,0 +1,6 @@
+---
+name: "proxmox"
+paths:
+- "org/jenkins-ci/plugins/proxmox"
+developers:
+- "justnom"

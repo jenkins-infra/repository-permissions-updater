@@ -1,0 +1,7 @@
+---
+name: "compress-artifacts"
+paths:
+- "org/jenkins-ci/plugins/compress-artifacts"
+developers:
+- "jglick"
+- "olivergondza"

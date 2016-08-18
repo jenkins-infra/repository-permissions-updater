@@ -1,0 +1,5 @@
+---
+name: "fail-the-build-plugin"
+paths:
+- "org/jenkins-ci/plugins/fail-the-build-plugin"
+developers: []

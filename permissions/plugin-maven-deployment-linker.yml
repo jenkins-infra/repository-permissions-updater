@@ -1,0 +1,5 @@
+---
+name: "maven-deployment-linker"
+paths:
+- "org/jvnet/hudson/plugins/maven-deployment-linker"
+developers: []

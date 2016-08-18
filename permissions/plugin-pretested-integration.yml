@@ -1,0 +1,7 @@
+---
+name: "pretested-integration"
+paths:
+- "org/jenkins-ci/plugins/pretested-integration"
+developers:
+- "madsnielsen"
+- "praqma"

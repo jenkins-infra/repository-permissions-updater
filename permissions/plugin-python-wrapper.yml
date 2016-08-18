@@ -1,0 +1,6 @@
+---
+name: "python-wrapper"
+paths:
+- "org/jenkins-ci/plugins/python-wrapper"
+developers:
+- "bambas"

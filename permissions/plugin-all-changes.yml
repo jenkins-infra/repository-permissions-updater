@@ -1,0 +1,6 @@
+---
+name: "all-changes"
+paths:
+- "org/jenkins-ci/plugins/all-changes"
+developers:
+- "pskumar448"

@@ -1,0 +1,7 @@
+---
+name: "lucene-search"
+paths:
+- "org/jenkins-ci/plugins/lucene-search"
+developers:
+- "hanabishi"
+- "tobias_"

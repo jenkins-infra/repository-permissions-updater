@@ -1,0 +1,7 @@
+---
+name: "gallio"
+paths:
+- "org/jenkins-ci/plugins/gallio"
+- "org/jvnet/hudson/plugins/gallio"
+developers:
+- "gbois"

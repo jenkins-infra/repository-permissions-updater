@@ -1,0 +1,5 @@
+---
+name: "prereq-buildstep"
+paths:
+- "org/jvnet/hudson/plugins/prereq-buildstep"
+developers: []

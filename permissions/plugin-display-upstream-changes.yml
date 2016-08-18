@@ -1,0 +1,5 @@
+---
+name: "display-upstream-changes"
+paths:
+- "org/jvnet/hudson/plugins/display-upstream-changes"
+developers: []

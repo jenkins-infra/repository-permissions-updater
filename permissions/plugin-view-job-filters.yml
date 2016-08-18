@@ -1,0 +1,7 @@
+---
+name: "view-job-filters"
+paths:
+- "org/jenkins-ci/plugins/view-job-filters"
+- "org/jvnet/hudson/plugins/view-job-filters"
+developers:
+- "jglick"

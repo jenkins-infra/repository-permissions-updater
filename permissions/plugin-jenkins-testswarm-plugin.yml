@@ -1,0 +1,5 @@
+---
+name: "jenkins-testswarm-plugin"
+paths:
+- "com/javaclimber/jenkins/testswarmplugin/jenkins-testswarm-plugin"
+developers: []

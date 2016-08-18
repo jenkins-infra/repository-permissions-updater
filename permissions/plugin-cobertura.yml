@@ -1,0 +1,9 @@
+---
+name: "cobertura"
+paths:
+- "org/jenkins-ci/plugins/cobertura"
+- "org/jvnet/hudson/plugins/cobertura"
+developers:
+- "drulli"
+- "olivergondza"
+- "tamini"

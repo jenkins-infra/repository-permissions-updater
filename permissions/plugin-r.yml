@@ -1,0 +1,6 @@
+---
+name: "r"
+paths:
+- "org/biouno/r/r"
+developers:
+- "kinow"

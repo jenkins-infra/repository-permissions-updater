@@ -1,0 +1,5 @@
+---
+name: "TwilioNotifier"
+paths:
+- "com/twilio/jenkins/TwilioNotifier"
+developers: []

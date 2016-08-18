@@ -1,0 +1,5 @@
+---
+name: "matrixtieparent"
+paths:
+- "org/jenkins-ci/plugins/matrixtieparent"
+developers: []

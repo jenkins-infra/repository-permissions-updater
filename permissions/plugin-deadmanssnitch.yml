@@ -1,0 +1,6 @@
+---
+name: "deadmanssnitch"
+paths:
+- "org/jenkins-ci/plugins/deadmanssnitch"
+developers:
+- "kamatama41"

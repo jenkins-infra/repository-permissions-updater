@@ -1,0 +1,5 @@
+---
+name: "jenkins-ci"
+paths:
+- "org/jenkins-ci"
+developers: []

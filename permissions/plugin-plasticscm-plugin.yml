@@ -1,0 +1,8 @@
+---
+name: "plasticscm-plugin"
+paths:
+- "org/jenkins-ci/plugins/plasticscm-plugin"
+- "org/jvnet/hudson/plugins/plasticscm-plugin"
+developers:
+- "lrodriguez"
+- "mig42"

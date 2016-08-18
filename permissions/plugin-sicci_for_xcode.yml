@@ -1,0 +1,5 @@
+---
+name: "sicci_for_xcode"
+paths:
+- "org/jvnet/hudson/plugins/sicci_for_xcode"
+developers: []

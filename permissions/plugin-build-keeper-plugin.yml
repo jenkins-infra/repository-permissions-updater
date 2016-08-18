@@ -1,0 +1,5 @@
+---
+name: "build-keeper-plugin"
+paths:
+- "org/jenkins-ci/plugins/build-keeper-plugin"
+developers: []

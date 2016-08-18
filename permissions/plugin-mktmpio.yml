@@ -1,0 +1,6 @@
+---
+name: "mktmpio"
+paths:
+- "org/jenkins-ci/plugins/mktmpio"
+developers:
+- "rmgraham"

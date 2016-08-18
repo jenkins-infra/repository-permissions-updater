@@ -1,0 +1,5 @@
+---
+name: "uptime"
+paths:
+- "org/jenkins-ci/plugins/uptime"
+developers: []

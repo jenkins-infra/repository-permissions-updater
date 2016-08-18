@@ -1,0 +1,6 @@
+---
+name: "compatibility-action-storage"
+paths:
+- "org/jenkins-ci/plugins/compatibility-action-storage"
+developers:
+- "madsnielsen"

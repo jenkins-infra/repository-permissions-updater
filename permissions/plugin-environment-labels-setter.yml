@@ -1,0 +1,6 @@
+---
+name: "environment-labels-setter"
+paths:
+- "org/jenkins-ci/plugins/environment-labels-setter"
+developers:
+- "olivergondza"

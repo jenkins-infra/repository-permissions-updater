@@ -1,0 +1,6 @@
+---
+name: "failedJobDeactivator"
+paths:
+- "de/einsundeins/jenkins/plugins/failedjobdeactivator/failedJobDeactivator"
+developers:
+- "jochenafuerbacher"

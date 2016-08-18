@@ -1,0 +1,6 @@
+---
+name: "rpmsign-plugin"
+paths:
+- "org/jenkins-ci/plugins/rpmsign-plugin"
+developers:
+- "mtizzoni"

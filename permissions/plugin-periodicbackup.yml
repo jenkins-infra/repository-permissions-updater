@@ -1,0 +1,5 @@
+---
+name: "periodicbackup"
+paths:
+- "org/jenkins-ci/plugins/periodicbackup"
+developers: []

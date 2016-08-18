@@ -1,0 +1,6 @@
+---
+name: "plugin-usage-plugin"
+paths:
+- "org/jenkins-ci/plugins/plugin-usage-plugin"
+developers:
+- "chrissy25"

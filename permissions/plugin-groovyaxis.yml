@@ -1,0 +1,5 @@
+---
+name: "groovyaxis"
+paths:
+- "org/jenkins-ci/plugins/groovyaxis"
+developers: []

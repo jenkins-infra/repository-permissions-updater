@@ -1,0 +1,6 @@
+---
+name: "metrics-graphite"
+paths:
+- "org/jenkins-ci/plugins/metrics-graphite"
+developers:
+- "stephenconnolly"

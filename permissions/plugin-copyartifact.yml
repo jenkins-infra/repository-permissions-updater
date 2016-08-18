@@ -1,0 +1,8 @@
+---
+name: "copyartifact"
+paths:
+- "org/jenkins-ci/plugins/copyartifact"
+- "org/jvnet/hudson/plugins/copyartifact"
+developers:
+- "ikedam"
+- "wolfs"

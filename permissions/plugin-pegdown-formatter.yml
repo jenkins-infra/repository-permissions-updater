@@ -1,0 +1,5 @@
+---
+name: "pegdown-formatter"
+paths:
+- "org/jenkins-ci/plugins/pegdown-formatter"
+developers: []

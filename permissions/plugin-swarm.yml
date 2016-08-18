@@ -1,0 +1,8 @@
+---
+name: "swarm"
+paths:
+- "org/jenkins-ci/plugins/swarm"
+- "org/jvnet/hudson/plugins/swarm"
+developers:
+- "drulli"
+- "mindjiver"

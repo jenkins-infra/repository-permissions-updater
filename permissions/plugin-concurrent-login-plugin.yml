@@ -1,0 +1,5 @@
+---
+name: "concurrent-login-plugin"
+paths:
+- "hudson/plugins/concurrent_login/concurrent-login-plugin"
+developers: []

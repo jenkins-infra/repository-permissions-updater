@@ -1,0 +1,5 @@
+---
+name: "jenkow-activiti-explorer"
+paths:
+- "com/cisco/step/jenkins/plugins/jenkow-activiti-explorer"
+developers: []

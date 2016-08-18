@@ -1,0 +1,6 @@
+---
+name: "patch-parameter"
+paths:
+- "org/jenkins-ci/plugins/patch-parameter"
+developers:
+- "kohsuke"

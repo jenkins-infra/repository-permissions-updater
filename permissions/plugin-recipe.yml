@@ -1,0 +1,6 @@
+---
+name: "recipe"
+paths:
+- "org/jenkins-ci/plugins/recipe"
+developers:
+- "kohsuke"

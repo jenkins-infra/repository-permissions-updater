@@ -1,0 +1,7 @@
+---
+name: "xfpanel"
+paths:
+- "org/jenkins-ci/plugins/xfpanel"
+developers:
+- "tblue468"
+- "tomaszbech"

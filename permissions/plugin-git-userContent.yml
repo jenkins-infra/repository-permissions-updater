@@ -1,0 +1,6 @@
+---
+name: "git-userContent"
+paths:
+- "org/jenkins-ci/plugins/git-userContent"
+developers:
+- "kohsuke"

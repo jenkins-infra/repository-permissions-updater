@@ -1,0 +1,6 @@
+---
+name: "testcomplete-xunit"
+paths:
+- "org/jenkins-ci/plugins/testcomplete-xunit"
+developers:
+- "fmiguelez"

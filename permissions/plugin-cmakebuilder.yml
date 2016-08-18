@@ -1,0 +1,7 @@
+---
+name: "cmakebuilder"
+paths:
+- "hudson/plugins/cmake/cmakebuilder"
+- "org/jenkins-ci/plugins/cmakebuilder"
+developers:
+- "15knots"

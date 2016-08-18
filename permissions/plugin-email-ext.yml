@@ -1,0 +1,9 @@
+---
+name: "email-ext"
+paths:
+- "org/jenkins-ci/plugins/email-ext"
+- "org/jvnet/hudson/plugins/email-ext"
+developers:
+- "davidvanlaatum"
+- "ndeloof"
+- "slide_o_mix"

@@ -1,0 +1,8 @@
+---
+name: "slack"
+paths:
+- "org/jenkins-ci/plugins/slack"
+developers:
+- "grantmd"
+- "kmadel"
+- "sag47"

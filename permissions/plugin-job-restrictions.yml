@@ -1,0 +1,6 @@
+---
+name: "job-restrictions"
+paths:
+- "com/synopsys/arc/jenkinsci/plugins/job-restrictions"
+developers:
+- "oleg_nenashev"

@@ -1,0 +1,6 @@
+---
+name: "labmanager"
+paths:
+- "org/jenkins-ci/plugins/labmanager"
+- "org/jvnet/hudson/plugins/labmanager"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "mcap-eas-plugin"
+paths:
+- "org/jenkins-ci/plugins/mcap-eas-plugin"
+developers: []

@@ -1,0 +1,6 @@
+---
+name: "pretest-commit"
+paths:
+- "org/jenkins-ci/plugins/pretest-commit"
+developers:
+- "madsnielsen"

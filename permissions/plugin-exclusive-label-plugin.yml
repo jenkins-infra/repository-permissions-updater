@@ -1,0 +1,5 @@
+---
+name: "exclusive-label-plugin"
+paths:
+- "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
+developers: []

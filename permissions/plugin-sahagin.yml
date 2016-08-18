@@ -1,0 +1,6 @@
+---
+name: "sahagin"
+paths:
+- "org/jenkins-ci/plugins/sahagin"
+developers:
+- "nozomiito"

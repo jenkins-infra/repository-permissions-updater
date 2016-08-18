@@ -1,0 +1,6 @@
+---
+name: "unreliable-slave-plugin"
+paths:
+- "jenkinsci/unreliable-slave-plugin"
+developers:
+- "olivergondza"

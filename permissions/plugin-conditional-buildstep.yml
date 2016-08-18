@@ -1,0 +1,6 @@
+---
+name: "conditional-buildstep"
+paths:
+- "org/jenkins-ci/plugins/conditional-buildstep"
+developers:
+- "imod"

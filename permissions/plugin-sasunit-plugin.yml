@@ -1,0 +1,6 @@
+---
+name: "sasunit-plugin"
+paths:
+- "org/jenkins-ci/plugins/sasunit-plugin"
+developers:
+- "hmsanalyticalsoftware"

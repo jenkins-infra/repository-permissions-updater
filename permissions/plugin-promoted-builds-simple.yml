@@ -1,0 +1,5 @@
+---
+name: "promoted-builds-simple"
+paths:
+- "org/jenkins-ci/plugins/promoted-builds-simple"
+developers: []

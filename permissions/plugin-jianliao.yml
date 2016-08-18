@@ -1,0 +1,6 @@
+---
+name: "jianliao"
+paths:
+- "org/jenkins-ci/plugins/jianliao"
+developers:
+- "jianliao"

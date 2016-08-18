@@ -1,0 +1,7 @@
+---
+name: "script-scm"
+paths:
+- "com/cwctravel/script-scm"
+- "org/jenkins-ci/plugins/script-scm"
+developers:
+- "vimil"

@@ -1,0 +1,6 @@
+---
+name: "pollscm"
+paths:
+- "org/jenkins-ci/plugins/pollscm"
+developers:
+- "vlatombe"

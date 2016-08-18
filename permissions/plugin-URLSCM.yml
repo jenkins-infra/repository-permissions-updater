@@ -1,0 +1,5 @@
+---
+name: "URLSCM"
+paths:
+- "org/jvnet/hudson/plugins/URLSCM"
+developers: []

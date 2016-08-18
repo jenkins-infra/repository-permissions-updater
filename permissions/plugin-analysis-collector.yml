@@ -1,0 +1,6 @@
+---
+name: "analysis-collector"
+paths:
+- "org/jvnet/hudson/plugins/analysis-collector"
+developers:
+- "drulli"

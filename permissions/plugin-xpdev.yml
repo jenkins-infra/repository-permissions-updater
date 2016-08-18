@@ -1,0 +1,5 @@
+---
+name: "xpdev"
+paths:
+- "com/cloudbees/jenkins/plugins/xpdev"
+developers: []

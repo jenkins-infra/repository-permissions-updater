@@ -1,0 +1,5 @@
+---
+name: "tibco-builder"
+paths:
+- "org/jenkins-ci/plugins/tibco-builder"
+developers: []

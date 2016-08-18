@@ -1,0 +1,7 @@
+---
+name: "matrix-combinations-parameter"
+paths:
+- "org/jenkins-ci/plugins/matrix-combinations-parameter"
+developers:
+- "ikedam"
+- "omer727"

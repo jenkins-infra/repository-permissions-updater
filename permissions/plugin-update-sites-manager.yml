@@ -1,0 +1,6 @@
+---
+name: "update-sites-manager"
+paths:
+- "jp/ikedam/jenkins/plugins/update-sites-manager"
+developers:
+- "ikedam"

@@ -1,0 +1,6 @@
+---
+name: "sge-cloud-plugin"
+paths:
+- "org/jenkins-ci/plugins/sge-cloud-plugin"
+developers:
+- "jmcgeheeiv"

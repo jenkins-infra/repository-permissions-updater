@@ -1,0 +1,6 @@
+---
+name: "chroot"
+paths:
+- "org/jenkins-ci/plugins/chroot"
+developers:
+- "rmohr"

@@ -1,0 +1,6 @@
+---
+name: "pipeline-graph-analysis"
+paths:
+- "org/jenkins-ci/plugins/pipeline-graph-analysis"
+developers:
+- "svanoort"

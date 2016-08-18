@@ -1,0 +1,6 @@
+---
+name: "jgiven"
+paths:
+- "org/jenkins-ci/plugins/jgiven"
+developers:
+- "wolfs"

@@ -1,0 +1,6 @@
+---
+name: "jenkinslint"
+paths:
+- "org/jenkins-ci/plugins/jenkinslint"
+developers:
+- "v2v"

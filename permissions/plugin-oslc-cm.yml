@@ -1,0 +1,5 @@
+---
+name: "oslc-cm"
+paths:
+- "org/jenkins-ci/plugins/oslc-cm"
+developers: []

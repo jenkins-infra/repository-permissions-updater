@@ -1,0 +1,6 @@
+---
+name: "perforce"
+paths:
+- "org/jvnet/hudson/plugins/perforce"
+developers:
+- "rpetti"

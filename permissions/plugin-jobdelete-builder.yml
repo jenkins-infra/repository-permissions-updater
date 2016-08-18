@@ -1,0 +1,6 @@
+---
+name: "jobdelete-builder"
+paths:
+- "org/jenkins-ci/plugins/jobdelete-builder"
+developers:
+- "sona_tar"

@@ -1,0 +1,7 @@
+---
+name: "windows-slaves"
+paths:
+- "org/jenkins-ci/plugins/windows-slaves"
+developers:
+- "andresrc"
+- "jglick"

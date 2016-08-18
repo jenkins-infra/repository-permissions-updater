@@ -1,0 +1,7 @@
+---
+name: "repository-connector"
+paths:
+- "org/jenkins-ci/plugins/repository-connector"
+- "org/jvnet/hudson/plugins/repository-connector"
+developers:
+- "domi"

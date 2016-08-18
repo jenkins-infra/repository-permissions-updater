@@ -1,0 +1,6 @@
+---
+name: "findbugs"
+paths:
+- "org/jvnet/hudson/plugins/findbugs"
+developers:
+- "drulli"

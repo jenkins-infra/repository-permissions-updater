@@ -1,0 +1,6 @@
+---
+name: "nouvola-divecloud"
+paths:
+- "org/jenkins-ci/plugins/nouvola-divecloud"
+developers:
+- "smacarthur"

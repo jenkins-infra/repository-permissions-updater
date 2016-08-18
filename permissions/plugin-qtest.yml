@@ -1,0 +1,7 @@
+---
+name: "qtest"
+paths:
+- "com/qasymphony/ci/jenkins/qtest"
+developers:
+- "gunivan"
+- "qasymphony"

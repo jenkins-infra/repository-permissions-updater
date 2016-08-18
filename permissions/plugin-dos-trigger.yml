@@ -1,0 +1,6 @@
+---
+name: "dos-trigger"
+paths:
+- "com/tombrus/hudson/dostrigger/dos-trigger"
+- "org/jenkins-ci/plugins/dos-trigger"
+developers: []

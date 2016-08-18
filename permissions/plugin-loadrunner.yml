@@ -1,0 +1,6 @@
+---
+name: "loadrunner"
+paths:
+- "de/tsystems/mms/apm/loadrunner"
+developers:
+- "rpionke"

@@ -1,0 +1,6 @@
+---
+name: "cucumber-slack-notifier"
+paths:
+- "org/jenkins-ci/plugins/cucumber-slack-notifier"
+developers:
+- "garethjevans"

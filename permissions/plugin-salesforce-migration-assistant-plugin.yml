@@ -1,0 +1,6 @@
+---
+name: "salesforce-migration-assistant-plugin"
+paths:
+- "org/jenkins-ci/plugins/salesforce-migration-assistant-plugin"
+developers:
+- "aesanch2"

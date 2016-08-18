@@ -1,0 +1,7 @@
+---
+name: "kerberos-sso"
+paths:
+- "com/sonymobile/jenkins/plugins/kerberos-sso/kerberos-sso"
+developers:
+- "rsandell"
+- "t_westling"

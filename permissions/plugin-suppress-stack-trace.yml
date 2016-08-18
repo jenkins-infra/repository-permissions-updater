@@ -1,0 +1,7 @@
+---
+name: "suppress-stack-trace"
+paths:
+- "org/jenkins-ci/plugins/suppress-stack-trace"
+developers:
+- "jglick"
+- "recena"

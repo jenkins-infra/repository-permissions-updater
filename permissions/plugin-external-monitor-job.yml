@@ -1,0 +1,7 @@
+---
+name: "external-monitor-job"
+paths:
+- "org/jenkins-ci/plugins/external-monitor-job"
+developers:
+- "jglick"
+- "recena"

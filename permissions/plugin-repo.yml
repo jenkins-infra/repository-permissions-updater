@@ -1,0 +1,6 @@
+---
+name: "repo"
+paths:
+- "org/jenkins-ci/plugins/repo"
+developers:
+- "rsandell"

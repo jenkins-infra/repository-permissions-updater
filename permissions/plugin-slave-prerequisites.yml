@@ -1,0 +1,5 @@
+---
+name: "slave-prerequisites"
+paths:
+- "org/jenkins-ci/plugins/slave-prerequisites"
+developers: []

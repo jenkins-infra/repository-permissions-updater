@@ -1,0 +1,6 @@
+---
+name: "bootstrap"
+paths:
+- "org/jenkins-ci/ui/bootstrap"
+developers:
+- "tfennelly"

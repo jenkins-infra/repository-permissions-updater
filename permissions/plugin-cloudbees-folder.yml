@@ -1,0 +1,10 @@
+---
+name: "cloudbees-folder"
+paths:
+- "org/jenkins-ci/plugins/cloudbees-folder"
+developers:
+- "jglick"
+- "kohsuke"
+- "oleg_nenashev"
+- "recena"
+- "stephenconnolly"

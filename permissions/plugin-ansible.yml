@@ -1,0 +1,6 @@
+---
+name: "ansible"
+paths:
+- "org/jenkins-ci/plugins/ansible"
+developers:
+- "sirot"

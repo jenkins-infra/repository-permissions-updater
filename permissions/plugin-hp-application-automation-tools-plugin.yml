@@ -1,0 +1,10 @@
+---
+name: "hp-application-automation-tools-plugin"
+paths:
+- "hp-application-automation-tools-plugin/hp-application-automation-tools-plugin"
+- "org/jenkins-ci/plugins/hp-application-automation-tools-plugin"
+developers:
+- "mrman"
+- "ofirshaked"
+- "shimor"
+- "yafim_kazak"

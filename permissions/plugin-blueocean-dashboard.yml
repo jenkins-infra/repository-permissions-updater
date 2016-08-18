@@ -1,0 +1,7 @@
+---
+name: "blueocean-dashboard"
+paths:
+- "io/jenkins/blueocean/blueocean-dashboard"
+developers:
+- "michaelneale"
+- "vivek"

@@ -1,0 +1,6 @@
+---
+name: "klaros-testmanagement"
+paths:
+- "hudson/plugins/klaros/klaros-testmanagement"
+developers:
+- "stolp"

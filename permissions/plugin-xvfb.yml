@@ -1,0 +1,6 @@
+---
+name: "xvfb"
+paths:
+- "org/jenkins-ci/plugins/xvfb"
+developers:
+- "zregvart"

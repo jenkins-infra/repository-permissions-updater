@@ -1,0 +1,6 @@
+---
+name: "cas-plugin"
+paths:
+- "org/jenkins-ci/plugins/cas-plugin"
+developers:
+- "fcrespel"

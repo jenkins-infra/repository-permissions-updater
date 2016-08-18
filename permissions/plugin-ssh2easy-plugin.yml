@@ -1,0 +1,6 @@
+---
+name: "ssh2easy-plugin"
+paths:
+- "org/jenkins-ci/plugins/ssh2easy-plugin"
+developers:
+- "jerrycai"

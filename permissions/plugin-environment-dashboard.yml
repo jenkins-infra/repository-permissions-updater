@@ -1,0 +1,6 @@
+---
+name: "environment-dashboard"
+paths:
+- "org/jenkins-ci/plugins/environment-dashboard"
+developers:
+- "vipinsthename"

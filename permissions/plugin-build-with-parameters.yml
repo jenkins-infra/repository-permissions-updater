@@ -1,0 +1,6 @@
+---
+name: "build-with-parameters"
+paths:
+- "org/jenkins-ci/plugins/build-with-parameters"
+developers:
+- "olivergondza"

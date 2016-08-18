@@ -1,0 +1,6 @@
+---
+name: "travis-yml"
+paths:
+- "org/jenkins-ci/ruby-plugins/travis-yml"
+developers:
+- "ikasam_a"

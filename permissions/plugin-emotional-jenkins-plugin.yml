@@ -1,0 +1,6 @@
+---
+name: "emotional-jenkins-plugin"
+paths:
+- "org/jenkins-ci/plugins/emotional-jenkins-plugin"
+developers:
+- "kiy0taka"

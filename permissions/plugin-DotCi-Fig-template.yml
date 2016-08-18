@@ -1,0 +1,6 @@
+---
+name: "DotCi-Fig-template"
+paths:
+- "com/groupon/jenkins-ci/plugins/DotCi-Fig-template"
+developers:
+- "vvitayau"

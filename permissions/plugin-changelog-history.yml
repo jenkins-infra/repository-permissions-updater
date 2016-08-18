@@ -1,0 +1,7 @@
+---
+name: "changelog-history"
+paths:
+- "org/jenkins-ci/plugins/changelog-history"
+- "org/jvnet/hudson/plugins/changelog-history"
+developers:
+- "escoem"

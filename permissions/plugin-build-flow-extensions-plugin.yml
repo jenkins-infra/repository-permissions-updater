@@ -1,0 +1,6 @@
+---
+name: "build-flow-extensions-plugin"
+paths:
+- "org/jenkins-ci/plugins/build-flow-extensions-plugin"
+developers:
+- "teilo"

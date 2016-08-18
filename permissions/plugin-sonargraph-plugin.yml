@@ -1,0 +1,7 @@
+---
+name: "sonargraph-plugin"
+paths:
+- "org/jenkins-ci/plugins/sonargraph-plugin"
+developers:
+- "andreashoyerh2m"
+- "ingmarkellner"

@@ -1,0 +1,6 @@
+---
+name: "database-h2"
+paths:
+- "org/jenkins-ci/plugins/database-h2"
+developers:
+- "drulli"

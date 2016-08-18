@@ -1,0 +1,5 @@
+---
+name: "script-realm"
+paths:
+- "org/jvnet/hudson/plugins/script-realm"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "ec2-cloud-axis"
+paths:
+- "org/jenkins-ci/plugins/ec2-cloud-axis"
+developers: []

@@ -1,0 +1,5 @@
+---
+name: "tracking-svn"
+paths:
+- "org/jvnet/hudson/plugins/tracking-svn"
+developers: []

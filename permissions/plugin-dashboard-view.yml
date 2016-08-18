@@ -1,0 +1,10 @@
+---
+name: "dashboard-view"
+paths:
+- "org/jenkins-ci/plugins/dashboard-view"
+- "org/jvnet/hudson/plugins/dashboard-view"
+developers:
+- "ndeloof"
+- "olivergondza"
+- "stephenconnolly"
+- "vandyev"

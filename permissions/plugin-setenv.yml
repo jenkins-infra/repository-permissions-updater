@@ -1,0 +1,5 @@
+---
+name: "setenv"
+paths:
+- "org/jenkins-ci/plugins/setenv"
+developers: []

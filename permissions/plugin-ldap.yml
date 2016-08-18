@@ -1,0 +1,8 @@
+---
+name: "ldap"
+paths:
+- "org/jenkins-ci/plugins/ldap"
+developers:
+- "andresrc"
+- "kohsuke"
+- "stephenconnolly"

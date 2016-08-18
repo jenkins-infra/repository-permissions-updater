@@ -1,0 +1,5 @@
+---
+name: "vertx"
+paths:
+- "org/bravo5/jenkins/plugins/vertx"
+developers: []

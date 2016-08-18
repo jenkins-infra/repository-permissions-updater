@@ -1,0 +1,12 @@
+---
+name: "github-api"
+paths:
+- "org/jenkins-ci/plugins/github-api"
+developers:
+- "andresrc"
+- "integer"
+- "kohsuke"
+- "ndeloof"
+- "ohtake_tomohiro"
+- "recena"
+- "surya548"

@@ -1,0 +1,7 @@
+---
+name: "msbuild"
+paths:
+- "org/jenkins-ci/plugins/msbuild"
+developers:
+- "gbois"
+- "marshall777"

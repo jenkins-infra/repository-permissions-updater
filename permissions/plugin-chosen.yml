@@ -1,0 +1,5 @@
+---
+name: "chosen"
+paths:
+- "org/jenkins-ci/plugins/chosen"
+developers: []

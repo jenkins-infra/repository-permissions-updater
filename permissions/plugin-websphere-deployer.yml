@@ -1,0 +1,6 @@
+---
+name: "websphere-deployer"
+paths:
+- "org/jenkins-ci/plugins/websphere-deployer"
+developers:
+- "gpeters"

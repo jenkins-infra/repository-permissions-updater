@@ -1,0 +1,7 @@
+---
+name: "xltestview-plugin"
+paths:
+- "com/xebialabs/xlt/ci/xltestview-plugin"
+developers:
+- "amolenaar"
+- "klaren"

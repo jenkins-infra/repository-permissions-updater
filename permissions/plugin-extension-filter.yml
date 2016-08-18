@@ -1,0 +1,5 @@
+---
+name: "extension-filter"
+paths:
+- "org/jenkins-ci/plugins/extension-filter"
+developers: []

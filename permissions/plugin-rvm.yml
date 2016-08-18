@@ -1,0 +1,6 @@
+---
+name: "rvm"
+paths:
+- "org/jenkins-ci/ruby-plugins/rvm"
+developers:
+- "eitoball"

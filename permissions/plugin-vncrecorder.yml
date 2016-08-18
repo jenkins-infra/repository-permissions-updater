@@ -1,0 +1,6 @@
+---
+name: "vncrecorder"
+paths:
+- "org/jenkins-ci/plugins/vncrecorder"
+developers:
+- "tbaum"

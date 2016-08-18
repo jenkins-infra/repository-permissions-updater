@@ -1,0 +1,6 @@
+---
+name: "clamav"
+paths:
+- "org/jenkins-ci/plugins/clamav"
+developers:
+- "sogabe"

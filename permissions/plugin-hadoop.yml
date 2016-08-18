@@ -1,0 +1,5 @@
+---
+name: "hadoop"
+paths:
+- "org/jenkins-ci/plugins/hadoop"
+developers: []

@@ -1,0 +1,7 @@
+---
+name: "async-http-client"
+paths:
+- "org/jenkins-ci/plugins/async-http-client"
+- "org/jenkinsci/plugins/async-http-client"
+developers:
+- "stephenconnolly"

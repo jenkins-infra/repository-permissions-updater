@@ -1,0 +1,5 @@
+---
+name: "jenkins-leiningen"
+paths:
+- "org/spootnik/jenkins-leiningen"
+developers: []

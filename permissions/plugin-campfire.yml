@@ -1,0 +1,5 @@
+---
+name: "campfire"
+paths:
+- "org/jenkins-ci/plugins/campfire"
+developers: []

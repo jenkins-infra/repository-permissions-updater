@@ -1,0 +1,6 @@
+---
+name: "drmemory-plugin"
+paths:
+- "net/praqma/drmemory-plugin"
+developers:
+- "madsnielsen"

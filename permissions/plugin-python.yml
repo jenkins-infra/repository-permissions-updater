@@ -1,0 +1,6 @@
+---
+name: "python"
+paths:
+- "org/jenkins-ci/plugins/python"
+developers:
+- "jhasse"

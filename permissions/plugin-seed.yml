@@ -1,0 +1,6 @@
+---
+name: "seed"
+paths:
+- "org/jenkins-ci/plugins/seed"
+developers:
+- "damien_coraboeuf"

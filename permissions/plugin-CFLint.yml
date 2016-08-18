@@ -1,0 +1,7 @@
+---
+name: "CFLint"
+paths:
+- "org/jvnet/hudson/plugins/CFLint"
+developers:
+- "jjames967"
+- "ryaneberly"

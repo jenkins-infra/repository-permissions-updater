@@ -1,0 +1,6 @@
+---
+name: "openJDK-native-plugin"
+paths:
+- "org/jenkinsci/plugins/openjdk_native/openJDK-native-plugin"
+developers:
+- "vjuranek"

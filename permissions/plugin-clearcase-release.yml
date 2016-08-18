@@ -1,0 +1,5 @@
+---
+name: "clearcase-release"
+paths:
+- "org/jvnet/hudson/plugins/clearcase-release"
+developers: []

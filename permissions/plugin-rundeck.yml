@@ -1,0 +1,6 @@
+---
+name: "rundeck"
+paths:
+- "org/jenkins-ci/plugins/rundeck"
+developers:
+- "gschueler"

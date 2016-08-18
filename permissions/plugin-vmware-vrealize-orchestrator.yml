@@ -1,0 +1,6 @@
+---
+name: "vmware-vrealize-orchestrator"
+paths:
+- "org/jenkins-ci/plugins/vmware-vrealize-orchestrator"
+developers:
+- "agovindaraju"

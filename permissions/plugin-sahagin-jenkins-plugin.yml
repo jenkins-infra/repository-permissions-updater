@@ -1,0 +1,6 @@
+---
+name: "sahagin-jenkins-plugin"
+paths:
+- "org/sahagin/sahagin-jenkins-plugin"
+developers:
+- "nozomiito"

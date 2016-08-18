@@ -1,0 +1,9 @@
+---
+name: "ansicolor"
+paths:
+- "org/jenkins-ci/plugins/ansicolor"
+- "org/jvnet/hudson/plugins/ansicolor"
+developers:
+- "anyfoo"
+- "dblock"
+- "qvicksilver"

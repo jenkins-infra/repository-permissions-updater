@@ -1,0 +1,7 @@
+---
+name: "ease-plugin"
+paths:
+- "org/jenkins-ci/plugins/ease-plugin"
+developers:
+- "kwilson6744"
+- "oleksiyp"

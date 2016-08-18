@@ -1,0 +1,5 @@
+---
+name: "offlineonfailure-plugin"
+paths:
+- "org/jenkins-ci/plugins/offlineonfailure-plugin"
+developers: []

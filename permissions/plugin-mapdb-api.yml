@@ -1,0 +1,6 @@
+---
+name: "mapdb-api"
+paths:
+- "org/jenkins-ci/plugins/mapdb-api"
+developers:
+- "stephenconnolly"

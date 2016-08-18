@@ -1,0 +1,6 @@
+---
+name: "warnings"
+paths:
+- "org/jvnet/hudson/plugins/warnings"
+developers:
+- "drulli"

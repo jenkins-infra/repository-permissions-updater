@@ -1,0 +1,5 @@
+---
+name: "was-builder"
+paths:
+- "org/jenkins-ci/plugins/was-builder"
+developers: []

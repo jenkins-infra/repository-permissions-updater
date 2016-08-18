@@ -1,0 +1,7 @@
+---
+name: "amazon-ecs"
+paths:
+- "com/cloudbees/jenkins/plugins/amazon-ecs"
+developers:
+- "ndeloof"
+- "roehrijn2"

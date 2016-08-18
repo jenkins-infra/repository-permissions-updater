@@ -1,0 +1,5 @@
+---
+name: "nested-view"
+paths:
+- "org/jenkins-ci/plugins/nested-view"
+developers: []

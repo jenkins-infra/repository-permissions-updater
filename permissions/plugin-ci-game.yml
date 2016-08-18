@@ -1,0 +1,7 @@
+---
+name: "ci-game"
+paths:
+- "org/jenkins-ci/plugins/ci-game"
+- "org/jvnet/hudson/plugins/ci-game"
+developers:
+- "cappuccino"

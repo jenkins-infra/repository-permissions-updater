@@ -1,0 +1,7 @@
+---
+name: "tfs"
+paths:
+- "org/jenkins-ci/plugins/tfs"
+- "org/jvnet/hudson/plugins/tfs"
+developers:
+- "oli_at_jsi"

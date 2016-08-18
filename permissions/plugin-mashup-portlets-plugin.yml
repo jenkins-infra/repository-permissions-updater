@@ -1,0 +1,6 @@
+---
+name: "mashup-portlets-plugin"
+paths:
+- "javagh/jenkins/mashup-portlets-plugin"
+developers:
+- "ghenzler"

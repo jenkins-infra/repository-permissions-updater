@@ -1,0 +1,6 @@
+---
+name: "jackson2-api"
+paths:
+- "org/jenkins-ci/plugins/jackson2-api"
+developers:
+- "stephenconnolly"

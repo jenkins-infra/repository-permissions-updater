@@ -1,0 +1,6 @@
+---
+name: "deveo"
+paths:
+- "org/jenkins-ci/plugins/deveo"
+developers:
+- "vellu"

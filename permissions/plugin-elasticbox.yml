@@ -1,0 +1,11 @@
+---
+name: "elasticbox"
+paths:
+- "com/elasticbox/jenkins-ci/plugins/elasticbox"
+- "org/jenkins-ci/plugins/elasticbox"
+developers:
+- "gsanchezu"
+- "ignaciofuertes"
+- "oserna3"
+- "riccardoelasticbox"
+- "tphongio"

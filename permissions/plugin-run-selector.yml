@@ -1,0 +1,6 @@
+---
+name: "run-selector"
+paths:
+- "org/jenkins-ci/plugins/run-selector"
+developers:
+- "alexsomai"

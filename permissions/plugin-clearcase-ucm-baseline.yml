@@ -1,0 +1,5 @@
+---
+name: "clearcase-ucm-baseline"
+paths:
+- "org/jvnet/hudson/plugins/clearcase-ucm-baseline"
+developers: []

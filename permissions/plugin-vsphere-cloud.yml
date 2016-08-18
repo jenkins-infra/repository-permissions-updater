@@ -1,0 +1,7 @@
+---
+name: "vsphere-cloud"
+paths:
+- "org/jenkins-ci/plugins/vsphere-cloud"
+developers:
+- "jswager"
+- "jswager1"

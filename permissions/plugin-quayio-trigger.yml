@@ -1,0 +1,6 @@
+---
+name: "quayio-trigger"
+paths:
+- "org/jenkins-ci/plugins/quayio-trigger"
+developers:
+- "sirot"

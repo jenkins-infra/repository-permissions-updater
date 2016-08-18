@@ -1,0 +1,6 @@
+---
+name: "oki-docki"
+paths:
+- "com/cloudbees/jenkins/plugins/oki-docki"
+developers:
+- "ndeloof"

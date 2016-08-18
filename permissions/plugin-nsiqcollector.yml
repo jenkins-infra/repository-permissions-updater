@@ -1,0 +1,5 @@
+---
+name: "nsiqcollector"
+paths:
+- "org/jvnet/hudson/plugins/nsiqcollector"
+developers: []

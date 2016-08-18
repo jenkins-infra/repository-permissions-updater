@@ -1,0 +1,6 @@
+---
+name: "filesystem-list-parameter-plugin"
+paths:
+- "aendter/jenkins/plugins/filesystem-list-parameter-plugin"
+developers:
+- "aendter"

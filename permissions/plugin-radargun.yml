@@ -1,0 +1,6 @@
+---
+name: "radargun"
+paths:
+- "org/jenkins-ci/plugins/radargun"
+developers:
+- "vjuranek"

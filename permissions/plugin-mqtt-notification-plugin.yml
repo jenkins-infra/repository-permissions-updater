@@ -1,0 +1,6 @@
+---
+name: "mqtt-notification-plugin"
+paths:
+- "jenkins/plugins/mqtt-notification-plugin"
+developers:
+- "gareth_western"

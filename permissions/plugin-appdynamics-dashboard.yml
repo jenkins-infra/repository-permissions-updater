@@ -1,0 +1,6 @@
+---
+name: "appdynamics-dashboard"
+paths:
+- "org/jenkins-ci/plugins/appdynamics-dashboard"
+developers:
+- "mdonkers"

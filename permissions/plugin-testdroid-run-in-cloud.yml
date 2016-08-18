@@ -1,0 +1,6 @@
+---
+name: "testdroid-run-in-cloud"
+paths:
+- "testdroid/testdroid-run-in-cloud"
+developers:
+- "bitbar"

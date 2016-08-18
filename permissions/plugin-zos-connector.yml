@@ -1,0 +1,6 @@
+---
+name: "zos-connector"
+paths:
+- "org/jenkins-ci/plugins/zos-connector"
+developers:
+- "candiduslynx"

@@ -1,0 +1,6 @@
+---
+name: "dockerhub-notification"
+paths:
+- "org/jenkins-ci/plugins/dockerhub-notification"
+developers:
+- "rsandell"

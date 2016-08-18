@@ -1,0 +1,7 @@
+---
+name: "digitalocean-plugin"
+paths:
+- "com/dubture/jenkins/digitalocean-plugin"
+developers:
+- "anpieber"
+- "pulse00"

@@ -1,0 +1,6 @@
+---
+name: "fortify-cloudscan-jenkins-plugin"
+paths:
+- "org/jenkins-ci/plugins/fortify-cloudscan-jenkins-plugin"
+developers:
+- "sspringett"

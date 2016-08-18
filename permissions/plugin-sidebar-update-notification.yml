@@ -1,0 +1,6 @@
+---
+name: "sidebar-update-notification"
+paths:
+- "com/exxeta/jenkins/plugins/sidebar-update-notification"
+developers:
+- "asbachb"
