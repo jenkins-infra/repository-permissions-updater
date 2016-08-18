@@ -34,6 +34,7 @@ public class ArtifactoryPermissionsUpdater {
     /**
      * If enabled, will not send PUT/DELETE requests to Artifactory, only GET (i.e. not modifying).
      */
+    // TODO actually implement this
     private static final boolean DRY_RUN_MODE = Boolean.getBoolean('dryRun')
 
     static {
