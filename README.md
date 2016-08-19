@@ -5,7 +5,7 @@ This repository contains both the YAML format definitions for Artifactory upload
 
 **Note:** These permissions are specifically for _uploading_ artifacts to the Jenkins project's Maven repository. It is independent of GitHub repository permissions. You may have one without the other. Typically, you'll either have both, or just the GitHub repository access.
 
-**To request upload permissions to a plugin, file a PR editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR.**
+**To request upload permissions to an artifact (typically a plugin), file a PR editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR.**
 
 Usage
 -----
@@ -33,7 +33,7 @@ The tool runs three steps in sequence:
 Managing Permissions
 --------------------
 
-The directory `permissions/` contains a set of files, typically one per plugin, that define the permissions for the respective artifacts.
+The directory `permissions/` contains a set of files, one per plugin or artifact, that define the permissions for the respective artifacts. Files have a `component` or `plugin` prefix for organization purposes.
 
 Each file contains the following:
 
