@@ -152,9 +152,6 @@ public class ArtifactoryPermissionsUpdater {
             if (!file.name.endsWith('.json'))
                 return
 
-            if (!file.name.startsWith('plugin-A'))
-                return
-
             LOGGER.log(Level.INFO, "Processing ${file.name}")
 
             // https://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplacePermissionTarget
