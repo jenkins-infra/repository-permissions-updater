@@ -1,0 +1,10 @@
+---
+name: "maven3-interceptor"
+paths:
+- "org/jenkins-ci/main/maven/maven3-interceptor"
+- "org/jenkins-ci/main/maven3-interceptor"
+- "org/jvnet/hudson/main/maven3-interceptor"
+developers:
+- "kutzi"
+- "ndeloof"
+- "olamy"

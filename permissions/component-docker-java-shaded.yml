@@ -1,0 +1,7 @@
+---
+name: "docker-java-shaded"
+paths:
+- "com/nirima/docker-java-shaded"
+developers:
+- "integer"
+- "magnayn"

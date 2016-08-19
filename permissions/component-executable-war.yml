@@ -1,0 +1,7 @@
+---
+name: "executable-war"
+paths:
+- "org/jenkins-ci/executable-war"
+developers:
+- "kohsuke"
+- "stephenconnolly"

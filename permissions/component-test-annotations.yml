@@ -1,0 +1,8 @@
+---
+name: "test-annotations"
+paths:
+- "org/jenkins-ci/test-annotations"
+- "org/jvnet/hudson/test-annotations"
+developers:
+- "kohsuke"
+- "olivergondza"

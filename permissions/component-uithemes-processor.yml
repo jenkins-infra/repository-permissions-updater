@@ -1,0 +1,6 @@
+---
+name: "uithemes-processor"
+paths:
+- "org/jenkins-ci/plugins/uithemes/uithemes-processor"
+developers:
+- "tfennelly"

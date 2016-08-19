@@ -1,0 +1,8 @@
+---
+name: "swarm-client"
+paths:
+- "org/jenkins-ci/plugins/swarm-client"
+- "org/jvnet/hudson/plugins/swarm-client"
+developers:
+- "drulli"
+- "mindjiver"

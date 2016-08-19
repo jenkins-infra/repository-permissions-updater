@@ -1,0 +1,6 @@
+---
+name: "analysis-test"
+paths:
+- "org/jvnet/hudson/plugins/analysis-test"
+developers:
+- "drulli"

@@ -1,0 +1,7 @@
+---
+name: "remoting"
+paths:
+- "org/jenkins-ci/main/remoting"
+- "org/jvnet/hudson/main/remoting"
+developers:
+- "kohsuke"

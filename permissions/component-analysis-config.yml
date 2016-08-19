@@ -1,0 +1,6 @@
+---
+name: "analysis-config"
+paths:
+- "org/jvnet/hudson/plugins/analysis-config"
+developers:
+- "drulli"

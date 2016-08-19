@@ -1,0 +1,6 @@
+---
+name: "inedo-buildmaster"
+paths:
+- "com/inedo/buildmaster/inedo-buildmaster"
+developers:
+- "andrewsumner"

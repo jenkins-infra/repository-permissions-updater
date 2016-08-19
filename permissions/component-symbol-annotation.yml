@@ -1,0 +1,8 @@
+---
+name: "symbol-annotation"
+paths:
+- "org/jenkins-ci/symbol-annotation"
+developers:
+- "jglick"
+- "kohsuke"
+- "oleg_nenashev"

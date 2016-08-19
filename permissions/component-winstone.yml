@@ -1,0 +1,7 @@
+---
+name: "winstone"
+paths:
+- "org/jenkins-ci/winstone"
+developers:
+- "jglick"
+- "kohsuke"

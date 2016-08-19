@@ -1,0 +1,6 @@
+---
+name: "typetalk"
+paths:
+- "org/jenkins-ci/plugins/typetalk"
+developers:
+- "ikikko"

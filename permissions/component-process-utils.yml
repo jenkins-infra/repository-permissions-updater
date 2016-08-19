@@ -1,0 +1,7 @@
+---
+name: "process-utils"
+paths:
+- "org/jenkins-ci/process-utils"
+developers:
+- "kohsuke"
+- "olivergondza"

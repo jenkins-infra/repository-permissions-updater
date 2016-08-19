@@ -1,0 +1,6 @@
+---
+name: "jclouds-shaded"
+paths:
+- "org/jenkins-ci/plugins/jclouds-shaded"
+developers:
+- "mikefero"

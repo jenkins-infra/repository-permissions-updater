@@ -1,0 +1,10 @@
+---
+name: "maven3-agent"
+paths:
+- "org/jenkins-ci/main/maven/maven3-agent"
+- "org/jenkins-ci/main/maven3-agent"
+- "org/jvnet/hudson/main/maven3-agent"
+developers:
+- "kutzi"
+- "ndeloof"
+- "olamy"

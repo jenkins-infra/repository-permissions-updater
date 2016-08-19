@@ -1,0 +1,11 @@
+---
+name: "acceptance-test-harness"
+paths:
+- "org/jenkins-ci/acceptance-test-harness"
+developers:
+- "andresrc"
+- "jglick"
+- "kohsuke"
+- "olivergondza"
+- "rsandell"
+- "vlatombe"

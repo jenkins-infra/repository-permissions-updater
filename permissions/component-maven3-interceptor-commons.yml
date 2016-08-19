@@ -1,0 +1,8 @@
+---
+name: "maven3-interceptor-commons"
+paths:
+- "org/jenkins-ci/main/maven/maven3-interceptor-commons"
+developers:
+- "kutzi"
+- "ndeloof"
+- "olamy"

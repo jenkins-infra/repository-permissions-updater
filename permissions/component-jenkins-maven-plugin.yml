@@ -1,0 +1,6 @@
+---
+name: "jenkins-maven-plugin"
+paths:
+- "com/nirima/jenkins/repository/jenkins-maven-plugin"
+developers:
+- "magnayn"

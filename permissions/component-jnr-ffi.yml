@@ -1,0 +1,6 @@
+---
+name: "jnr-ffi"
+paths:
+- "com/github/jnr/jnr-ffi"
+developers:
+- "stephenconnolly"

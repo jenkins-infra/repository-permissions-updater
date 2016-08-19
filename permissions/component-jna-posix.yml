@@ -1,0 +1,6 @@
+---
+name: "jna-posix"
+paths:
+- "org/jruby/ext/posix/jna-posix"
+developers:
+- "rodrigc"

@@ -1,0 +1,7 @@
+---
+name: "mksapi-jar"
+paths:
+- "com/mks/api/mksapi-jar"
+- "com/mks/api/mksapi-jar/mksapi-jar"
+developers:
+- "integrity_jenkins_plugin"
