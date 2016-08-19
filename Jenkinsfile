@@ -12,14 +12,12 @@ try {
         stage 'Checkout source'
         checkout scm
 
-        stage 'Build tool'
+        stage 'Build'
         def mvnHome = tool 'mvn'
         env.JAVA_HOME = tool 'jdk8'
-
-        stage 'Build'
         sh "${mvnHome}/bin/mvn clean verify"
 
-        stage 'Run Permissions Updater'
+        stage 'Run'
         withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'artifactoryAdmin',
                           usernameVariable: 'ARTIFACTORY_USERNAME', passwordVariable: 'ARTIFACTORY_PASSWORD']]) {
             sh '${JAVA_HOME}/bin/java' +
@@ -29,7 +27,6 @@ try {
         }
     }
 } finally {
-    // Mark the archive 'stage'....
     stage 'Archive'
     archive 'permissions/*.yml'
     archive 'json/*.json'
