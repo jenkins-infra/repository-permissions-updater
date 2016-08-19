@@ -6,6 +6,7 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 
+import java.security.MessageDigest
 import java.util.logging.Level
 import java.util.logging.Logger
 
@@ -79,6 +80,31 @@ public class ArtifactoryPermissionsUpdater {
         }
     }
 
+    private static String md5(String str) {
+        try {
+            MessageDigest digest = MessageDigest.getInstance("MD5")
+            digest.update(str.bytes)
+            return digest.digest().encodeHex().toString()
+        } catch (Exception e) {
+            return '0000000000000000'
+        }
+    }
+
+    /**
+     * Determines the name for the JSON API payload file, which is also used as the permission target name (with prefix)
+     * @param pluginName
+     * @return
+     */
+    private static String getApiPayloadFileName(String pluginName) {
+        String name = 'plugin-' + pluginName
+        if ((ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + name).length() > 64) {
+            // Artifactory has an undocumented max length for permission target names of 64 chars
+            // If length is exceeded, use 55 chars of the name, separator, and 8 chars (half of name's MD5)
+            name = name.substring(0, 54 - ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX .length()) + '_' + md5(pluginName).substring(0, 7)
+        }
+        return name
+    }
+
     /**
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
      */
@@ -108,11 +134,13 @@ public class ArtifactoryPermissionsUpdater {
                 return
             }
 
-            File outputFile = new File(apiOutputDir, 'plugin-' + definition.name + '.json')
+            File outputFile = new File(apiOutputDir, getApiPayloadFileName(definition.name) + '.json')
             JsonBuilder json = new JsonBuilder()
 
+            String jsonName = ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + getApiPayloadFileName(definition.name)
+
             json {
-                name  ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + "plugin-${definition.name}"
+                name jsonName
                 includesPattern definition.paths.collect { path ->
                     path + '/*/' + definition.name + '-*'
                 }.join(',')
