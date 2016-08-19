@@ -15,7 +15,7 @@ node('java') {
         stage 'Build'
         def mvnHome = tool 'mvn'
         env.JAVA_HOME = tool 'jdk8'
-        sh "${mvnHome}/bin/mvn clean verify"
+        sh "${mvnHome}/bin/mvn -U clean verify"
 
         stage 'Run'
         withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'artifactoryAdmin',
