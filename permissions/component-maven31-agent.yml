@@ -1,0 +1,8 @@
+---
+name: "maven31-agent"
+paths:
+- "org/jenkins-ci/main/maven/maven31-agent"
+developers:
+- "kutzi"
+- "ndeloof"
+- "olamy"

@@ -1,0 +1,6 @@
+---
+name: "testInProgress-server"
+paths:
+- "org/jenkins-ci/plugins/testInProgress-server"
+developers:
+- "cchabanois"

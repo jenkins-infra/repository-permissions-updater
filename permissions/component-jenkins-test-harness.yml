@@ -1,0 +1,11 @@
+---
+name: "jenkins-test-harness"
+paths:
+- "org/jenkins-ci/main/jenkins-test-harness"
+developers:
+- "andresrc"
+- "jglick"
+- "kohsuke"
+- "olivergondza"
+- "stephenconnolly"
+- "tfennelly"

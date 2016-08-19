@@ -1,0 +1,9 @@
+---
+name: "maven-hpi-plugin"
+paths:
+- "org/jenkins-ci/tools/maven-hpi-plugin"
+- "org/jvnet/hudson/tools/maven-hpi-plugin"
+developers:
+- "jglick"
+- "kohsuke"
+- "stephenconnolly"

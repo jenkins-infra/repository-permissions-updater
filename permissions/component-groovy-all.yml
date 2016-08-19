@@ -1,0 +1,7 @@
+---
+name: "groovy-all"
+paths:
+- "org/codehaus/groovy/groovy-all"
+- "org/jenkins-ci/groovy/groovy-all"
+developers:
+- "daspilker"

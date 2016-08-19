@@ -1,0 +1,8 @@
+---
+name: "instance-identity"
+paths:
+- "org/jenkins-ci/modules/instance-identity"
+developers:
+- "jglick"
+- "oleg_nenashev"
+- "stephenconnolly"

@@ -1,0 +1,6 @@
+---
+name: "xtrigger-lib"
+paths:
+- "org/jenkins-ci/lib/xtrigger-lib"
+developers:
+- "gbois"

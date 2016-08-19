@@ -1,0 +1,6 @@
+---
+name: "memory-monitor"
+paths:
+- "org/jenkins-ci/memory-monitor"
+developers:
+- "jglick"

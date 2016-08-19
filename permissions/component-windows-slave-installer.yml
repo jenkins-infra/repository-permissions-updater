@@ -1,0 +1,7 @@
+---
+name: "windows-slave-installer"
+paths:
+- "org/jenkins-ci/modules/windows-slave-installer"
+developers:
+- "kohsuke"
+- "oleg_nenashev"

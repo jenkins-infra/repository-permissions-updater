@@ -1,0 +1,7 @@
+---
+name: "testInProgress-client"
+paths:
+- "org/jenkins-ci/plugins/testInProgress-client"
+developers:
+- "cchabanois"
+- "menonvarun"

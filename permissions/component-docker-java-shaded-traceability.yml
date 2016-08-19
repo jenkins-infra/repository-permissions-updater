@@ -1,0 +1,6 @@
+---
+name: "docker-java-shaded-traceability"
+paths:
+- "org/jenkins-ci/plugins/docker-java-shaded-traceability"
+developers:
+- "oleg_nenashev"

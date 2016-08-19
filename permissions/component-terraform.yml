@@ -1,0 +1,6 @@
+---
+name: "terraform"
+paths:
+- "org/jenkins-ci/plugins/terraform"
+developers:
+- "dpires"

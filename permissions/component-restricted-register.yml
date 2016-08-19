@@ -1,0 +1,6 @@
+---
+name: "restricted-register"
+paths:
+- "com/infullmobile/jenkins/plugin/restricted-register"
+developers:
+- "adamkobusifm"

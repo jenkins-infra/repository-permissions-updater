@@ -1,0 +1,6 @@
+---
+name: "sshd-core"
+paths:
+- "org/apache/sshd/sshd-core"
+developers:
+- "stephenconnolly"
