@@ -3,8 +3,8 @@
 properties([[$class: 'BuildDiscarderProperty',
              strategy: [$class: 'LogRotator', numToKeepStr: '100']]])
 
-try {
-    node('java') {
+node('java') {
+    try {
         stage 'Clean'
         deleteDir()
         sh 'ls -lah'
@@ -25,10 +25,9 @@ try {
                     ' -DartifactoryApiTempDir=$WORKSPACE/json' +
                     ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater.jar'
         }
+    } finally {
+        stage 'Archive'
+        archiveArtifacts 'permissions/*.yml'
+        archiveArtifacts 'json/*.json'
     }
-} finally {
-    stage 'Archive'
-    archive 'permissions/*.yml'
-    archive 'json/*.json'
-
 }
