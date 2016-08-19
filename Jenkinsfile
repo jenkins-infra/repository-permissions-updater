@@ -21,9 +21,9 @@ node('java') {
         withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'artifactoryAdmin',
                           usernameVariable: 'ARTIFACTORY_USERNAME', passwordVariable: 'ARTIFACTORY_PASSWORD']]) {
             sh '${JAVA_HOME}/bin/java' +
-                    ' -DdefinitionsDir=$WORKSPACE/permissions' +
-                    ' -DartifactoryApiTempDir=$WORKSPACE/json' +
-                    ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater.jar'
+                    ' -DdefinitionsDir=$PWD/permissions' +
+                    ' -DartifactoryApiTempDir=$PWD/json' +
+                    ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar'
         }
     } finally {
         stage 'Archive'
