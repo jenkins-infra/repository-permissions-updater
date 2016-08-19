@@ -95,12 +95,12 @@ public class ArtifactoryPermissionsUpdater {
      * @param pluginName
      * @return
      */
-    private static String getApiPayloadFileName(String pluginName) {
-        String name = 'plugin-' + pluginName
+    private static String getApiPayloadFileName(String fileBaseName) {
+        String name = fileBaseName
         if ((ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + name).length() > 64) {
             // Artifactory has an undocumented max length for permission target names of 64 chars
             // If length is exceeded, use 55 chars of the name, separator, and 8 chars (half of name's MD5)
-            name = name.substring(0, 54 - ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX .length()) + '_' + md5(pluginName).substring(0, 7)
+            name = name.substring(0, 54 - ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX .length()) + '_' + md5(fileBaseName).substring(0, 7)
         }
         return name
     }
@@ -134,10 +134,12 @@ public class ArtifactoryPermissionsUpdater {
                 return
             }
 
-            File outputFile = new File(apiOutputDir, getApiPayloadFileName(definition.name) + '.json')
+            String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
+
+            File outputFile = new File(apiOutputDir, getApiPayloadFileName(fileBaseName) + '.json')
             JsonBuilder json = new JsonBuilder()
 
-            String jsonName = ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + getApiPayloadFileName(definition.name)
+            String jsonName = ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + getApiPayloadFileName(fileBaseName)
 
             json {
                 name jsonName
