@@ -4,12 +4,12 @@ properties([[$class: 'BuildDiscarderProperty',
              strategy: [$class: 'LogRotator', numToKeepStr: '100']]])
 
 try {
-    node('linux') {
-        stage 'Clean workspace'
+    node('java') {
+        stage 'Clean'
         deleteDir()
         sh 'ls -lah'
 
-        stage 'Checkout source'
+        stage 'Checkout'
         checkout scm
 
         stage 'Build'
