@@ -1,0 +1,12 @@
+---
+name: "plugin"
+paths:
+- "org/jenkins-ci/plugins/plugin"
+- "org/jvnet/hudson/plugins/plugin"
+developers:
+- "andresrc"
+- "jglick"
+- "kohsuke"
+- "oleg_nenashev"
+- "stephenconnolly"
+- "tfennelly"

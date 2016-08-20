@@ -1,0 +1,6 @@
+---
+name: "localizer-parent"
+paths:
+- "org/jvnet/localizer/localizer-parent"
+developers:
+- "kohsuke"

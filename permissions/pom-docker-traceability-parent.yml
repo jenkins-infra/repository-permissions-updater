@@ -1,0 +1,6 @@
+---
+name: "docker-traceability-parent"
+paths:
+- "org/jenkins-ci/plugins/docker-traceability-parent"
+developers:
+- "oleg_nenashev"

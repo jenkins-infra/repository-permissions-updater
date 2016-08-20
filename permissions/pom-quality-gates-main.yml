@@ -1,0 +1,6 @@
+---
+name: "quality-gates-main"
+paths:
+- "org/jenkins-ci/plugins/quality-gates-main"
+developers:
+- "ivanash"

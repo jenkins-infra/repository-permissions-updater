@@ -1,0 +1,6 @@
+---
+name: "parent-pom" # file name changed to disambiguate
+paths:
+- "org/jenkins-ci/plugins/pipeline-stage-view/parent-pom"
+developers:
+- "svanoort"

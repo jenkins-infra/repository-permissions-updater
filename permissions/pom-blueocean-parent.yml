@@ -1,0 +1,7 @@
+---
+name: "blueocean-parent"
+paths:
+- "io/jenkins/blueocean/blueocean-parent"
+developers:
+- "michaelneale"
+- "vivek"

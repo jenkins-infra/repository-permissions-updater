@@ -1,0 +1,7 @@
+---
+name: "analysis-pom"
+paths:
+- "org/jvnet/hudson/plugins/analysis-pom"
+developers:
+- "amuniz"
+- "drulli"

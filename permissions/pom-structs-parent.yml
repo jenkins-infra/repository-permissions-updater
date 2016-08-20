@@ -1,0 +1,8 @@
+---
+name: "structs-parent"
+paths:
+- "org/jenkins-ci/plugins/structs-parent"
+developers:
+- "jglick"
+- "kohsuke"
+- "oleg_nenashev"

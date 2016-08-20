@@ -1,0 +1,6 @@
+---
+name: "kubernetes-pipeline-project"
+paths:
+- "io/fabric8/kubernetes-pipeline-project"
+developers:
+- "iocanel"

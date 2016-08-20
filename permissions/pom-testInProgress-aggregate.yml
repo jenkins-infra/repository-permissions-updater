@@ -1,0 +1,6 @@
+---
+name: "testInProgress-aggregate"
+paths:
+- "org/jenkins-ci/plugins/testInProgress-aggregate"
+developers:
+- "cchabanois"

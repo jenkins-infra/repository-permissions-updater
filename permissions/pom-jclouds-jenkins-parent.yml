@@ -1,0 +1,6 @@
+---
+name: "jclouds-jenkins-parent"
+paths:
+- "org/jenkins-ci/plugins/jclouds-jenkins-parent"
+developers:
+- "mikefero"

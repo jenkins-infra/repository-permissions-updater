@@ -1,0 +1,6 @@
+---
+name: "openstack-cloud-parent"
+paths:
+- "org/jenkins-ci/plugins/openstack-cloud-parent"
+developers:
+- "olivergondza"

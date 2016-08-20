@@ -1,0 +1,5 @@
+---
+name: "virtualbox-parent"
+paths:
+- "org/jenkins-ci/plugins/virtualbox-parent"
+developers: []

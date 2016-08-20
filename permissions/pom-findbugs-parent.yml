@@ -1,0 +1,6 @@
+---
+name: "parent" # file name change to disambiguate
+paths:
+- "org/jvnet/hudson/plugins/findbugs/parent"
+developers:
+- "drulli"

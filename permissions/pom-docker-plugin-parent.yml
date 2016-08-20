@@ -1,0 +1,7 @@
+---
+name: "docker-plugin-parent"
+paths:
+- "com/nirima/docker-plugin-parent"
+developers:
+- "integer"
+- "magnayn"

@@ -1,0 +1,6 @@
+---
+name: "uithemes-pom"
+paths:
+- "org/jenkins-ci/plugins/uithemes/uithemes-pom"
+developers:
+- "tfennelly"

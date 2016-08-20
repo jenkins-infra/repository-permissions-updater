@@ -1,0 +1,6 @@
+---
+name: "instant-messaging-parent"
+paths:
+- "org/jvnet/hudson/plugins/instant-messaging-parent"
+developers:
+- "kutzi"

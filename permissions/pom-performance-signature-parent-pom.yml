@@ -1,0 +1,6 @@
+---
+name: "performance-signature-parent-pom"
+paths:
+- "de/tsystems/mms/apm/performance-signature-parent-pom"
+developers:
+- "rpionke"

@@ -1,0 +1,6 @@
+---
+name: "js-module-base"
+paths:
+- "org/jenkins-ci/ui/js-module-base"
+developers:
+- "tfennelly"
