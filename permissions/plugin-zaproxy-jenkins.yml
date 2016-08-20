@@ -1,6 +1,0 @@
----
-name: "zaproxy-jenkins"
-paths:
-- "fr/novia/zaproxy-jenkins"
-developers:
-- "ludovicroucoux"

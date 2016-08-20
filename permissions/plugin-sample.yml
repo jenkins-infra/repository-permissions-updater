@@ -1,6 +1,0 @@
----
-name: "sample"
-paths:
-- "org/jvnet/hudson/plugins/sample"
-developers:
-- "anitha"

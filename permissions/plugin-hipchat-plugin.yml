@@ -1,5 +1,0 @@
----
-name: "hipchat-plugin"
-paths:
-- "com/github/jlewallen/jenkins/plugins/hipchat-plugin"
-developers: []

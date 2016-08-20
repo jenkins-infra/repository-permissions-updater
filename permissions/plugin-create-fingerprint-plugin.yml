@@ -1,5 +1,0 @@
----
-name: "create-fingerprint-plugin"
-paths:
-- "org/jenkins-ci/plugins/create-fingerprint-plugin"
-developers: []

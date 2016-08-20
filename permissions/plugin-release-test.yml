@@ -1,6 +1,0 @@
----
-name: "release-test"
-paths:
-- "com/tikal/release-test"
-developers:
-- "guymi"

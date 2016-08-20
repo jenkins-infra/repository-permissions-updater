@@ -1,6 +1,0 @@
----
-name: "rally-update-plugin-1"
-paths:
-- "org/jenkins-ci/plugins/rally-update-plugin-1"
-developers:
-- "tushar686"

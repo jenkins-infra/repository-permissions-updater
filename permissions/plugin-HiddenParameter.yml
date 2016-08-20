@@ -1,6 +1,0 @@
----
-name: "HiddenParameter"
-paths:
-- "org/jenkins-ci/plugins/HiddenParameter"
-developers:
-- "yangli"

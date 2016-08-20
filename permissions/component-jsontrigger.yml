@@ -1,6 +1,0 @@
----
-name: "jsontrigger"
-paths:
-- "org/jenkins-ci/plugins/jsontrigger"
-developers:
-- "rowell"

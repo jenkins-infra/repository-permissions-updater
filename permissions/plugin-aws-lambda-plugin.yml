@@ -1,6 +1,0 @@
----
-name: "aws-lambda-plugin"
-paths:
-- "org/jenkins-ci/plugins/aws-lambda-plugin"
-developers:
-- "cast"

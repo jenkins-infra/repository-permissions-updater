@@ -1,6 +1,0 @@
----
-name: "datadog-build-reporter"
-paths:
-- "org/datadog/jenkins/plugins/datadog-build-reporter"
-developers:
-- "datadog"

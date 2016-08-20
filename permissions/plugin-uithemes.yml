@@ -1,7 +1,0 @@
----
-name: "uithemes"
-paths:
-- "org/jenkins-ci/plugins/uithemes"
-- "org/jenkins-ci/plugins/uithemes/uithemes"
-developers:
-- "tfennelly"

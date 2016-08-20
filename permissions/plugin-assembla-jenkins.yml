@@ -1,6 +1,0 @@
----
-name: "assembla-jenkins"
-paths:
-- "jenkins/plugin/assembla/assembla-jenkins"
-- "org/jenkins-ci/plugins/assembla-jenkins"
-developers: []

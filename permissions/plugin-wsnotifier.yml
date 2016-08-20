@@ -1,5 +1,0 @@
----
-name: "wsnotifier"
-paths:
-- "org/codefirst/jenkins/wsnotifier/wsnotifier"
-developers: []

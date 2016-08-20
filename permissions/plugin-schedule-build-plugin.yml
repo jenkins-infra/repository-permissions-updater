@@ -1,6 +1,0 @@
----
-name: "schedule-build-plugin"
-paths:
-- "org/jenkins-ci/plugins/schedule-build-plugin"
-developers:
-- "anderl86"

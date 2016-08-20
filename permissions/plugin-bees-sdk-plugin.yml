@@ -1,5 +1,0 @@
----
-name: "bees-sdk-plugin"
-paths:
-- "com/cloudbees/jenkins/plugins/bees-sdk-plugin"
-developers: []

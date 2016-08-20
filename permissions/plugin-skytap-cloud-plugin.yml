@@ -1,5 +1,0 @@
----
-name: "skytap-cloud-plugin"
-paths:
-- "org/jenkins-ci/plugins/skytap-cloud-plugin"
-developers: []

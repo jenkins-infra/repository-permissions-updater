@@ -1,5 +1,0 @@
----
-name: "jshint-checkstyle"
-paths:
-- "org/jvnet/hudson/plugins/jshint-checkstyle"
-developers: []

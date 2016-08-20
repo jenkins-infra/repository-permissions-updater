@@ -1,5 +1,0 @@
----
-name: "weibo4jenkins"
-paths:
-- "org/jenkins-ci/plugins/weibo4jenkins"
-developers: []

@@ -1,6 +1,0 @@
----
-name: "ChatRoom"
-paths:
-- "org/jvnet/hudson/plugins/ChatRoom"
-developers:
-- "anitha"

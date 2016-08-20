@@ -1,5 +1,0 @@
----
-name: "rtc"
-paths:
-- "org/jenkins-ci/plugins/rtc"
-developers: []
