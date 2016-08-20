@@ -48,3 +48,11 @@ Create a new YAML file similar to existing files.
 ### Adding a new uploader to an existing plugin
 
 Edit the `developers` list in the YAML file for the plugin.
+
+### Deprecating a plugin
+
+Remove the YAML file.
+
+### Renaming a plugin
+
+Rename and edit the existing one.
