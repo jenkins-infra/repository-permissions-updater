@@ -144,7 +144,7 @@ public class ArtifactoryPermissionsUpdater {
             json {
                 name jsonName
                 includesPattern definition.paths.collect { path ->
-                    path + '/*/' + definition.name + '-*'
+                    [ path + '/*/' + definition.name + '-*', path + '/maven-metadata.xml' ]
                 }.join(',')
                 excludesPattern ''
                 repositories([ 'releases', 'snapshots' ])
