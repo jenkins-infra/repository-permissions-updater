@@ -35,9 +35,9 @@ Example file:
 
 ![](doc/yml-example.png)
 
-* Red: `artifactId`
-* Green: `groupId` (with slashes replacing periods)
-* Blue: Jenkins community account user name
+* Red (lines 2 and 4): `artifactId`
+* Green (line 4): `groupId` (with slashes replacing periods)
+* Blue (line 6): Jenkins community account user name
 
 ### Adding a new plugin
 
