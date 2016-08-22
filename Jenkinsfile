@@ -1,7 +1,7 @@
-
-/* Only keep the 10 most recent builds. */
-properties([[$class: 'BuildDiscarderProperty',
-             strategy: [$class: 'LogRotator', numToKeepStr: '100']]])
+properties([
+        [$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', numToKeepStr: '100']],
+        [$class: 'PipelineTriggersJobProperty', triggers: [[$class: 'SCMTrigger', spec: 'H/2 * * * *']]]
+])
 
 node('java') {
     try {
