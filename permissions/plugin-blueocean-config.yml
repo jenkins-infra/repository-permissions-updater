@@ -1,0 +1,7 @@
+---
+name: "blueocean-config"
+paths:
+- "io/jenkins/blueocean/blueocean-config"
+developers:
+- "michaelneale"
+- "vivek"
