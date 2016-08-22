@@ -1,7 +1,14 @@
 Repository Permissions Updater
 ==============================
 
-This repository contains both the YAML format definitions for Artifactory upload permissions and the tool that synchronizes them to Artifactory.
+About
+-----
+
+The Jenkins project hosts Maven artifacts such as core and plugin releases on [Artifactory](https://repo.jenkins-ci.org/).
+
+Its permissions system is independent of GitHub's, and we limit which users (identified by the Jenkins LDAP account, same as wiki and JIRA) are allowed to upload which artifacts.
+
+This repository contains both the definitions for Artifactory upload permissions in YAML format, as well as the tool that synchronizes them to Artifactory.
 
 **Note:** These permissions are specifically for _uploading_ artifacts to the Jenkins project's Maven repository. It is independent of GitHub repository permissions. You may have one without the other. Typically, you'll either have both, or just the GitHub repository access.
 
