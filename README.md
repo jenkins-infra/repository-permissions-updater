@@ -8,11 +8,56 @@ The Jenkins project hosts Maven artifacts such as core and plugin releases on [A
 
 Its permissions system is independent of GitHub's, and we limit which users (identified by the Jenkins LDAP account, same as wiki and JIRA) are allowed to upload which artifacts.
 
-This repository contains both the definitions for Artifactory upload permissions in YAML format, as well as the tool that synchronizes them to Artifactory.
+This repository contains both the definitions for Artifactory upload permissions in [YAML format](https://en.wikipedia.org/wiki/YAML), as well as the tool that synchronizes them to Artifactory.
 
 **Note:** These permissions are specifically for _uploading_ artifacts to the Jenkins project's Maven repository. It is independent of GitHub repository permissions. You may have one without the other. Typically, you'll either have both, or just the GitHub repository access.
 
 **To request upload permissions to an artifact (typically a plugin), file a PR editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR.**
+
+Managing Permissions
+--------------------
+
+The directory `permissions/` contains a set of files, one per plugin or artifact, that define the permissions for the respective artifacts. Files typically have a `component`, `plugin`, or `pom` prefix for organization purposes:
+
+* `plugin` is used for Jenkins plugins.
+* `pom` is used for parent POMs and everything else consisting of just a POM file.
+* `component` is used for everything else, usually libraries.
+
+These prefixes, like the rest of the file name, have no semantic meaning and just help in organizing these files. 
+
+Each file contains the following in [YAML format](https://en.wikipedia.org/wiki/YAML):
+
+- A `name` (typically mirrored in the file name), this is also the `artifactId` of the Maven artifact.
+- A set of paths, usually just one. These correspond to the full Maven coordinates (`groupId` and `artifactId`) used for the artifact. Since Jenkins plugins can change group IDs and are still considered the same artifact, multiple entries are possible.
+- A set of user names (Jenkins community user accounts in LDAP, the same as used for wiki and JIRA) allowed to upload this artifact to Artifactory. This set can be empty, which means nobody is currently allowed to upload the plugin in question (except Artifactory admins). This can happen for plugins that haven't seen releases in several years, or permission cleanups.
+
+Example file:
+
+![](doc/yml-example.png)
+
+* Red: `artifactId`
+* Green: `groupId` (with slashes replacing periods)
+* Blue: Jenkins community account user name
+
+### Adding a new plugin
+
+Create a new YAML file similar to existing files.
+
+### Adding a new uploader to an existing plugin
+
+Edit the `developers` list in the YAML file for the plugin.
+
+### Deprecating a plugin
+
+Remove the YAML file. The next synchronization will remove permissions for the plugin.
+
+### Renaming a plugin
+
+Rename and edit the existing permissions file, changing both `name` and the last `path` component.
+
+### Changing a plugin's `groupId`
+
+Change the `paths` to match the new Maven coordinates, or, if further uploads for the old coordinates are expected, add a new list entry.
 
 Usage
 -----
@@ -36,30 +81,3 @@ The tool runs three steps in sequence:
 1. Generate JSON payloads from YAML permission definition files.
 2. Submit generated JSON payloads to Artifactory.
 3. Remove all generated permission targets in Artifactory that have no corresponding generated JSON payload file.
-
-Managing Permissions
---------------------
-
-The directory `permissions/` contains a set of files, one per plugin or artifact, that define the permissions for the respective artifacts. Files have a `component` or `plugin` prefix for organization purposes.
-
-Each file contains the following:
-
-- A `name` (also mirrored in the file name), this is also the `artifactId` of the Maven artifact.
-- A set of paths, usually just one. These are the group IDs used for the artifact. Since Jenkins plugins can change group IDs and are still considered the same artifact, multiple entries are possible.
-- A set of user names (Jenkins community user accounts in LDAP) allowed to upload this artifact to Artifactory. This set can be empty, which means nobody is currently allowed to upload the plugin in question (except Artifactory admins). This can happen for plugins that haven't seen releases in several years, or permission cleanups.
-
-### Adding a new plugin
-
-Create a new YAML file similar to existing files.
-
-### Adding a new uploader to an existing plugin
-
-Edit the `developers` list in the YAML file for the plugin.
-
-### Deprecating a plugin
-
-Remove the YAML file.
-
-### Renaming a plugin
-
-Rename and edit the existing one.
