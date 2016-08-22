@@ -1,6 +1,6 @@
 properties([
         [$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', numToKeepStr: '100']],
-        [$class: 'PipelineTriggersJobProperty', triggers: [[$class: 'SCMTrigger', spec: 'H/2 * * * *']]]
+        [$class: 'PipelineTriggersJobProperty', triggers: [[$class: 'SCMTrigger', scmpoll_spec: 'H/2 * * * *', ignorePostCommitHooks: false]]]
 ])
 
 node('java') {
