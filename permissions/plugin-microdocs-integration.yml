@@ -1,0 +1,6 @@
+---
+name: "microdocs-integration"
+paths:
+- "or/jenkins-ci/plugins/microdocs-integration"
+developers:
+- "steven166"
