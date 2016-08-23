@@ -1,0 +1,7 @@
+---
+name: "help-editor"
+paths:
+- "org/jenkins-ci/plugins/help-editor"
+developers:
+- "samat"
+- "oleg_nenashev"
