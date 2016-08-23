@@ -1,0 +1,7 @@
+---
+name: "blueocean-jwt"
+paths:
+- "io/jenkins/blueocean/blueocean-jwt"
+developers:
+- "michaelneale"
+- "vivek"
