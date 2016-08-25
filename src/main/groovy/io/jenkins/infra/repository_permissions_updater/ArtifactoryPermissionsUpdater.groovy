@@ -146,6 +146,9 @@ public class ArtifactoryPermissionsUpdater {
                 includesPattern definition.paths.collect { path ->
                     [
                             path + '/*/' + definition.name + '-*',
+                            path + '/*/maven-metadata.xml', // used for SNAPSHOTs
+                            path + '/*/maven-metadata.xml.sha1',
+                            path + '/*/maven-metadata.xml.md5',
                             path + '/maven-metadata.xml',
                             path + '/maven-metadata.xml.sha1',
                             path + '/maven-metadata.xml.md5'
