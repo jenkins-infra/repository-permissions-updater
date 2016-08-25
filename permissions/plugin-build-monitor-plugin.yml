@@ -1,7 +1,6 @@
 ---
 name: "build-monitor-plugin"
 paths:
-- "com/smartcodeltd/jenkins-ci/plugins/build-monitor-plugin"
 - "org/jenkins-ci/plugins/build-monitor-plugin"
 developers:
 - "janmolak"

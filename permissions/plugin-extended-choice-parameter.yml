@@ -2,6 +2,5 @@
 name: "extended-choice-parameter"
 paths:
 - "org/jenkins-ci/plugins/extended-choice-parameter"
-- "org/jvnet/hudson/plugins/extended-choice-parameter"
 developers:
 - "vimil"

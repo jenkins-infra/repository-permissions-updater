@@ -1,8 +1,6 @@
 ---
 name: "deployment-sphere"
 paths:
-- "com/epam/jenkins/deployment-sphere/deployment-sphere"
-- "org/jenkins/plugins/deployment-sphere"
 - "org/jenkins-ci/plugins/deployment-sphere"
 developers:
 - "webdizz"
