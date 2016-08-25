@@ -1,0 +1,7 @@
+---
+name: "hyper-build-step"
+paths:
+- "sh/hyper/plugins/hyper-build-step"
+developers:
+- "xjimmyshcn"
+- "xlgao"
