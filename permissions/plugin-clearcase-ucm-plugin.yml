@@ -6,3 +6,4 @@ paths:
 - "org/jvnet/hudson/plugins/clearcase-ucm-plugin"
 developers:
 - "madsnielsen"
+- "praqma"
