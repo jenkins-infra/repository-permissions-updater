@@ -1,0 +1,9 @@
+---
+name: "jenkins"
+paths:
+- "org/jenkins-ci/jenkins"
+developers:
+- "abayer"
+- "jglick"
+- "kohsuke"
+- "oleg_nenashev"
