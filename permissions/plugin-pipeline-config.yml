@@ -1,0 +1,7 @@
+---
+name: "pipeline-config"
+paths:
+- "org/jenkinsci/plugins/pipeline-config"
+developers:
+- "abayer"
+- "oleg-nenashev"
