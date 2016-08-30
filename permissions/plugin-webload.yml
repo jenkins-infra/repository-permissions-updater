@@ -2,4 +2,5 @@
 name: "webload"
 paths:
 - "hudson/plugins/webload"
-developers: []
+developers:
+- "jane_king"
