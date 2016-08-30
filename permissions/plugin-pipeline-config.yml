@@ -1,0 +1,7 @@
+---
+name: "pipeline-model-definition"
+paths:
+- "org/jenkinsci/plugins/pipeline-model-definition"
+developers:
+- "abayer"
+- "oleg_nenashev"
