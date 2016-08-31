@@ -1,0 +1,9 @@
+---
+name: "display-url-api"
+paths:
+- "org/jenkins-ci/plugins"
+developers:
+- "jamesdumay"
+- "michaelneale"
+- "vivek"
+- "imeredith"
