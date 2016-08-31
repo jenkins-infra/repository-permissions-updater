@@ -3,7 +3,7 @@ name: "display-url-api"
 paths:
 - "org/jenkins-ci/plugins"
 developers:
-- "i386"
+- "jamesdumay"
 - "michaelneale"
 - "vivek"
 - "imeredith"
