@@ -2,8 +2,6 @@
 name: "maven-agent"
 paths:
 - "org/jenkins-ci/main/maven/maven-agent"
-- "org/jenkins-ci/main/maven-agent"
-- "org/jvnet/hudson/main/maven-agent"
 developers:
 - "kutzi"
 - "ndeloof"

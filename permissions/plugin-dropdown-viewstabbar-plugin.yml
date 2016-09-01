@@ -2,6 +2,5 @@
 name: "dropdown-viewstabbar-plugin"
 paths:
 - "org/jenkins-ci/plugins/dropdown-viewstabbar-plugin"
-- "org/jvnet/hudson/plugins/dropdown-viewstabbar-plugin"
 developers:
 - "michael1010"

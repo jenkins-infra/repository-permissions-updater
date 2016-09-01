@@ -2,6 +2,5 @@
 name: "validating-string-parameter"
 paths:
 - "org/jenkins-ci/plugins/validating-string-parameter"
-- "org/jvnet/hudson/plugins/validating-string-parameter"
 developers:
 - "vlatombe"
