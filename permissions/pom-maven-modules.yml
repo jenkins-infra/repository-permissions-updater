@@ -1,7 +1,7 @@
 ---
-name: "maven32-agent"
+name: "maven-modules"
 paths:
-- "org/jenkins-ci/main/maven/maven32-agent"
+- "org/jenkins-ci/main/maven/maven-modules"
 developers:
 - "kutzi"
 - "ndeloof"

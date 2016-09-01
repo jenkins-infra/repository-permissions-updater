@@ -1,0 +1,8 @@
+---
+name: "maven33-agent"
+paths:
+- "org/jenkins-ci/main/maven/maven33-agent"
+developers:
+- "ndeloof"
+- "olamy"
+- "aheritier"
