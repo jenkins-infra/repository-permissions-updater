@@ -1,6 +1,9 @@
 properties([
         [$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', numToKeepStr: '100']],
-        [$class: 'PipelineTriggersJobProperty', triggers: [[$class: 'SCMTrigger', scmpoll_spec: 'H/2 * * * *', ignorePostCommitHooks: false]]]
+        [$class: 'PipelineTriggersJobProperty', triggers: [
+            [$class: 'SCMTrigger', scmpoll_spec: 'H/2 * * * *', ignorePostCommitHooks: false],
+            cron('H/30 * * * *')
+        ]]
 ])
 
 node('java') {
