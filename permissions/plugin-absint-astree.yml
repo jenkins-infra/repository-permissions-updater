@@ -4,4 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/absint-astree"
 developers:
 - "jherter"
-- "christoph-cullmann"
+- "absint"

@@ -1,0 +1,6 @@
+---
+name: "absint-a3"
+paths:
+- "org/jenkins-ci/plugins/absint-a3"
+developers:
+- "absint"
