@@ -1,0 +1,7 @@
+---
+name: "hyper-slaves"
+paths:
+- "sh/hyper/plugins/hyper-slaves"
+developers:
+- "xjimmyshcn"
+- "xlgao"
