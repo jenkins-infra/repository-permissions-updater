@@ -3,4 +3,4 @@ name: "managed-scripts"
 paths:
 - "org/jenkinsci/plugins/managed-scripts"
 developers:
-- "domi"
+- "imod"
