@@ -2,4 +2,5 @@
 name: "jobrequeue"
 paths:
 - "org/jenkins-ci/plugins/jobrequeue"
-developers: []
+developers:
+- "dthomas"
