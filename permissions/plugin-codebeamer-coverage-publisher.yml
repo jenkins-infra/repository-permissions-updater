@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/codebeamer-coverage-publisher"
 developers:
 - "abanfi"
+- "balazstar"
