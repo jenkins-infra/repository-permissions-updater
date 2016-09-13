@@ -3,4 +3,4 @@ name: "openstack-heat"
 paths:
 - "org/jenkins-ci/plugins/openstack-heat"
 developers:
-- "draoullig"
+- "methodes_arkea"
