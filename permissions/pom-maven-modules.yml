@@ -1,7 +1,7 @@
 ---
-name: "maven-agent"
+name: "maven-modules"
 paths:
-- "org/jenkins-ci/main/maven/maven-agent"
+- "org/jenkins-ci/main/maven/maven-modules"
 developers:
 - "kutzi"
 - "ndeloof"
