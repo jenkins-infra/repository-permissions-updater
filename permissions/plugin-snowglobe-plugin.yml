@@ -1,0 +1,6 @@
+---
+name: "snowglobe-plugin"
+paths:
+- "com/nirima/snowglobe"
+developers:
+- "magnayn"
