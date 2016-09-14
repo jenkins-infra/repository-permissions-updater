@@ -1,7 +1,7 @@
 ---
 name: "docker-slaves"
 paths:
-- "com/cloudbees/jenkins/plugins/docker-slaves"
 - "xyz/quoidneufdocker/docker-slaves"
+- "it/dockins/docker-slaves"
 developers:
 - "ndeloof"
