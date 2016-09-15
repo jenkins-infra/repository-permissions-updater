@@ -1,6 +1,0 @@
----
-name: "startup-trigger-plugin"
-paths:
-- "org/jenkins-ci/plugins/startup-trigger-plugin"
-developers:
-- "ejpenney"
