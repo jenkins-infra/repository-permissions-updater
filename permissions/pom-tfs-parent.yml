@@ -1,0 +1,6 @@
+---
+name: "tfs-parent"
+paths:
+- "org/jenkins-ci/plugins/tfs-parent"
+developers:
+- "oli_at_jsi"

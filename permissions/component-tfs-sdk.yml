@@ -1,0 +1,6 @@
+---
+name: "tfs-sdk"
+paths:
+- "org/jenkins-ci/plugins/tfs-sdk"
+developers:
+- "oli_at_jsi"
