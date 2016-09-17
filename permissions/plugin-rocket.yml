@@ -1,0 +1,6 @@
+---
+name: "rocket-plugin"
+paths:
+- "org/jenkins-ci/plugins/rocket"
+developers:
+- "hypery2k"
