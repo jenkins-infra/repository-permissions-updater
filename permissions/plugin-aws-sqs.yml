@@ -1,0 +1,6 @@
+---
+name: "aws-sqs-plugin"
+paths:
+- "org/jenkins-ci/plugins/aws-sqs-plugin"
+developers:
+- "nickg"
