@@ -1,6 +1,6 @@
 ---
-name: "aws-sqs-plugin"
+name: "aws-sqs"
 paths:
-- "io/relution/jenkins/aws-sqs-plugin"
+- "io/relution/jenkins/aws-sqs"
 developers:
 - "nickg"
