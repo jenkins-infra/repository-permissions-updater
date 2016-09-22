@@ -4,3 +4,4 @@ paths:
 - "com/checkmarx/jenkins/checkmarx"
 developers:
 - "sergeyk"
+- "cxadmin"
