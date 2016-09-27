@@ -1,0 +1,10 @@
+---
+name: "splunk_for_jenkins"
+paths:
+- "com/splunk/splunkins"
+- "com/splunk/splunkins/pom"
+- "com/splunk/splunkins/splunk-devops"
+- "com/splunk/splunkins/splunk-devops-extend"
+developers:
+- "fengxx"
+- "araza_splunk"
