@@ -1,0 +1,8 @@
+---
+name: "pom"
+paths:
+- "com/splunk/splunkins/pom"
+developers:
+- "fengxx"
+- "araza_splunk"
+- "djenkins"
