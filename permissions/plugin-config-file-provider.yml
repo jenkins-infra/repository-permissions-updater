@@ -3,5 +3,4 @@ name: "config-file-provider"
 paths:
 - "org/jenkins-ci/plugins/config-file-provider"
 developers:
-- "domi"
 - "imod"
