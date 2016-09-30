@@ -1,6 +1,6 @@
 ---
 name: "rocket"
 paths:
-- "org/jenkins-ci/plugins/rocket"
+- "org/jenkins-ci/plugins/rocketchatnotifier"
 developers:
 - "hypery2k"
