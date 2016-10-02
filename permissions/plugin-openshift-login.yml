@@ -1,0 +1,6 @@
+---
+name: "openshift-login"
+paths:
+- "org/openshift/jenkins/openshift-login"
+developers:
+- "gmontero"
