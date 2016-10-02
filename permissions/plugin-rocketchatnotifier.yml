@@ -1,0 +1,6 @@
+---
+name: "rocketchatnotifier"
+paths:
+- "org/jenkins-ci/plugins/rocketchatnotifier"
+developers:
+- "mreinhardt"
