@@ -3,4 +3,4 @@ name: "rocketchatnotifier"
 paths:
 - "org/jenkins-ci/plugins/rocketchatnotifier"
 developers:
-- "hypery2k"
+- "mreinhardt"
