@@ -4,4 +4,9 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-milestone-step"
 developers:
 - "amuniz"
+- "svanoort"
+- "abayer"
 - "jglick"
+- "rsandell"
+- "stephenc"
+- "oleg-nenashev"
