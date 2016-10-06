@@ -1,0 +1,11 @@
+---
+name: "blueocean-display-url"
+paths:
+- "org/jenkins-ci/plugins/blueocean-display-url"
+developers:
+- "michaelneale"
+- "vivek"
+- "tfennelly"
+- "kzantow"
+- "tscherler"
+- "imeredith"
