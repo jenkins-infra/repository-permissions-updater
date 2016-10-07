@@ -3,7 +3,7 @@ name: "docker-slaves"
 paths:
 - "xyz/quoidneufdocker/docker-slaves"
 - "it/dockins/docker-slaves"
-- "io/jenkins/plugins"
+- "io/jenkins/plugins/docker-slaves"
 developers:
 - "ndeloof"
 - "ydubreuil"
