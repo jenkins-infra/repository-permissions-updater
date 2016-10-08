@@ -1,6 +1,6 @@
 ---
 name: "aliyun-container-service-deploy"
 paths:
-- "com/aliyun/www/aliyun-container-service-deploy"
+- "org/jenkins-ci/plugins/aliyun-container-service-deploy"
 developers:
 - "aliyun_containerservice"
