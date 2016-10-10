@@ -1,0 +1,6 @@
+---
+name: "build-time-blame"
+paths:
+- "org/jenkins-ci/build-time-blame"
+developers:
+- "LTegtmeier"
