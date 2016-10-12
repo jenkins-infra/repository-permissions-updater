@@ -1,0 +1,7 @@
+---
+name: "pipeline-model-api"
+paths:
+- "org/jenkinsci/plugins/pipeline-model-api"
+developers:
+- "abayer"
+- "stephenconnolly"

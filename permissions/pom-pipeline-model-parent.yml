@@ -1,0 +1,7 @@
+---
+name: "pipeline-model-parent"
+paths:
+- "org/jenkinsci/plugins/pipeline-model-parent"
+developers:
+- "abayer"
+- "stephenconnolly"
