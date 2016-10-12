@@ -4,4 +4,5 @@ paths:
 - "org/jenkinsci/plugins/pipeline-model-parent"
 developers:
 - "abayer"
+- "oleg_nenashev"
 - "stephenconnolly"
