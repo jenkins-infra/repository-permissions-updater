@@ -4,4 +4,5 @@ paths:
 - "org/jenkins-ci/plugins/google-source-plugin"
 developers:
 - "astroilov"
+- "gunan"
 - "tcnghia"
