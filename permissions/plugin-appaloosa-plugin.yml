@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/appaloosa-plugin"
 developers:
 - "rsfez"
+- "chrsvl"
