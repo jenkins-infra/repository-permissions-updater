@@ -1,0 +1,6 @@
+---
+name: "msginject"
+paths:
+- "org/jenkins-ci/plugins/msginject"
+developers:
+- "zxiiro"
