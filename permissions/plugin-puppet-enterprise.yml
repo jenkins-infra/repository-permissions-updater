@@ -1,0 +1,6 @@
+---
+name: "puppet-enterprise-pipeline"
+paths:
+- "org/puppet/plugins/puppet-enterprise-pipeline"
+developers:
+- "ccaum"
