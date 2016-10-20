@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-input-step"
 developers:
 - "jglick"
+- "svanoort"
