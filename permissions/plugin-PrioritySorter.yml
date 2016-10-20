@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/PrioritySorter"
 developers:
 - "emsa23"
+- "oleg_nenashev"

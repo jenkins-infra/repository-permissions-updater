@@ -3,5 +3,7 @@ name: "maven32-agent"
 paths:
 - "org/jenkins-ci/main/maven/maven32-agent"
 developers:
+- "kutzi"
 - "ndeloof"
 - "olamy"
+- "aheritier"

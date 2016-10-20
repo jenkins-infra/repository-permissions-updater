@@ -1,0 +1,6 @@
+---
+name: "github-pr-coverage-status"
+paths:
+- "org/jenkins-ci/plugins/github-pr-coverage-status"
+developers:
+- "terma"

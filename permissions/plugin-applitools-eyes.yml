@@ -1,0 +1,6 @@
+---
+name: "applitools-eyes"
+paths:
+- "org/jenkins-ci/plugins/applitools-eyes"
+developers:
+- "applitools"

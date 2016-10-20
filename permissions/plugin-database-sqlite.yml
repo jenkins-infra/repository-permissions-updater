@@ -1,0 +1,6 @@
+---
+name: "database-sqlite"
+paths:
+- "org/jenkins-ci/plugins/database-sqlite"
+developers:
+- "jholusa"

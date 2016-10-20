@@ -1,0 +1,6 @@
+---
+name: "openstack-heat"
+paths:
+- "org/jenkins-ci/plugins/openstack-heat"
+developers:
+- "methodes_arkea"
