@@ -1,7 +1,7 @@
 ---
 name: "pipeline-github-lib"
 paths:
-- "org/jenkinsci/plugins/pipeline-github-lib"
+- "org/jenkins-ci/plugins/pipeline-github-lib"
 developers:
 - "jglick"
 - "stephenconnolly"
