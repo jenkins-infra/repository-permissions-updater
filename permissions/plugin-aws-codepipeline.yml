@@ -4,3 +4,5 @@ paths:
 - "com/amazonaws/aws-codepipeline"
 developers:
 - "biagic"
+- "belltimo"
+- "bank"
