@@ -1,0 +1,9 @@
+---
+name: "pipeline-model-declarative-agent"
+paths:
+- "org/jenkinsci/plugins/pipeline-model-declarative-agent"
+developers:
+- "abayer"
+- "oleg_nenashev"
+- "stephenconnolly"
+- "rsandell"
