@@ -1,0 +1,6 @@
+---
+name: "cisco-spark-notifier"
+paths:
+- "org/jenkins-ci/plugins/cisco-spark-notifier"
+developers:
+- "taylorp36"
