@@ -1,0 +1,6 @@
+---
+name: "dingding notifier"
+paths:
+- "org/jenkins-ci/plugins/dingding-notifications"
+developers:
+- "Marvin"
