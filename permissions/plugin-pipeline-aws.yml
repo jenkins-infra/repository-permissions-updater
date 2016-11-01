@@ -1,0 +1,6 @@
+---
+name: "pipeline-aws"
+paths:
+- "de/taimos/pipeline-aws"
+developers:
+- "hoegertn"
