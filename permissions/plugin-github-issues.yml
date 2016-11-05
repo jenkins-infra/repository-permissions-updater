@@ -1,0 +1,6 @@
+---
+name: "github-issues"
+paths:
+- "org/jenkins-ci/plugins/github-issues"
+developers:
+- "daniel15"
