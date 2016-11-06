@@ -1,0 +1,7 @@
+---
+name: "blueocean-autofavorite"
+paths:
+- "org/jenkins-ci/plugins/blueocean-autofavorite"
+developers:
+- "michaelneale"
+- "jamesdumay"
