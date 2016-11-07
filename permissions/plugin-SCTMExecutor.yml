@@ -1,0 +1,6 @@
+---
+name: "SCTMExecutor"
+paths:
+- "hudson/plugins/sctmexecutor/SCTMExecutor"
+developers: 
+- "tofuatjava"
