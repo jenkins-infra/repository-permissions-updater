@@ -1,0 +1,6 @@
+---
+name: "scaleway-plugin"
+paths:
+- "com/github/segator/jenkins/scaleway-cloud"
+developers:
+- "segator"
