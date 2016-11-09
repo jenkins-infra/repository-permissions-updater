@@ -6,6 +6,13 @@ properties([
         ]]
 ])
 
+/* Exit early if we are executing in a pull request, until this ticket is resolved:
+ * https://issues.jenkins-ci.org/browse/INFRA-902
+ */
+if (env.CHANGE_ID) {
+    return
+}
+
 node('java') {
     try {
         stage 'Clean'
