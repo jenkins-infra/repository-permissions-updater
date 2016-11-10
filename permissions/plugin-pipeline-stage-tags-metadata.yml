@@ -1,0 +1,9 @@
+---
+name: "pipeline-stage-tags-metadata"
+paths:
+- "org/jenkinsci/plugins/pipeline-stage-tags-metadata"
+developers:
+- "abayer"
+- "oleg_nenashev"
+- "stephenconnolly"
+- "rsandell"
