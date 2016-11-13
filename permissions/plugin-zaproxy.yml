@@ -1,7 +1,8 @@
 ---
 name: "zaproxy"
 paths:
-- "fr/novia/zaproxy"
+- "com/github/jenkinsci/zaproxy"
 developers:
+- "jordangs"
 - "johannol"
 - "ludovicroucoux"
