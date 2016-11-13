@@ -1,0 +1,6 @@
+---
+name: "pipeline-multibranch-defaults"
+paths:
+- "org/jenkins-ci/plugins/pipeline-multibranch-defaults"
+developers:
+- "vaimr"
