@@ -1,6 +1,6 @@
 ---
 name: "pipeline-multibranch-defaults"
-patchs:
+paths:
 - "org/jenkins-ci/plugins/pipeline-multibranch-defaults"
 developers:
 - "vaimr"
