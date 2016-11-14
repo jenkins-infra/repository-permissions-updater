@@ -1,0 +1,6 @@
+---
+name: "maven-artifact-choicelistprovider"
+paths:
+- "org/jenkins-ci/plugins/maven-artifact-choicelistprovider"
+developers:
+- "phreakadelle"
