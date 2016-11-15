@@ -1,0 +1,6 @@
+---
+name: "zap"
+paths:
+- "org/jenkins-ci/plugins/zap"
+developers:
+- "jordangs"
