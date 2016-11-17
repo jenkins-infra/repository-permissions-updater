@@ -1,0 +1,7 @@
+---
+name: "email-aliases"
+paths:
+- "org/jenkins-ci/plugins/email-aliases"
+developers:
+- "michaelneale"
+- "jamesdumay"
