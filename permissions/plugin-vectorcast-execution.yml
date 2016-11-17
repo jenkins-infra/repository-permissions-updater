@@ -1,0 +1,6 @@
+---
+name: "vectorcast-execution"
+paths:
+- "org/jenkins-ci/plugins/vectorcast-execution"
+developers:
+- "rmkeeble"
