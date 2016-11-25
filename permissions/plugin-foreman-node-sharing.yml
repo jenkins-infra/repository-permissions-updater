@@ -1,0 +1,6 @@
+---
+name: "foreman-node-sharing"
+paths:
+- "org/jenkins-ci/plugins/foreman-node-sharing"
+developers:
+- "scoheb"
