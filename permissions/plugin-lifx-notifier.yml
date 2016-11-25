@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/lifx-notifier"
 developers:
 - "michaelneale"
+- "vgaidarji"
