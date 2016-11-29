@@ -1,0 +1,10 @@
+---
+name: "blueocean-i18n"
+paths:
+- "io/jenkins/blueocean/blueocean-i18n"
+developers:
+- "michaelneale"
+- "vivek"
+- "tfennelly"
+- "kzantow"
+- "tscherler"
