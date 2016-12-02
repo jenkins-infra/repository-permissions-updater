@@ -3,5 +3,4 @@ name: "windocks-start-container"
 paths:
 - "org/jenkins-ci/plugins/windocks-start-container"
 developers:
-- "windocks-github"
-- "rameshpa"
+- "windocks"
