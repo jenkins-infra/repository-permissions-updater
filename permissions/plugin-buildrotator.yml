@@ -1,0 +1,7 @@
+---
+name: "buildrorator"
+paths:
+- "org/jenkins-ci/plugins/BuildRotator"
+developers:
+- "jimilian"
+- "sschuberth"
