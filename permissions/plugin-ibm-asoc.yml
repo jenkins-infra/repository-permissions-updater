@@ -1,6 +1,6 @@
 ---
-name: "ibm-asoc-plugin"
+name: "ibm-application-security"
 paths:
-- "org/jenkins-ci/plugins/ibm-asoc-plugin"
+- "com/ibm/ibm-application-security"
 developers:
 - "mattmurp"
