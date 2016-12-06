@@ -1,0 +1,6 @@
+---
+name: "ibm-asoc-plugin"
+paths:
+- "org/jenkins-ci/plugins/ibm-asoc-plugin"
+developers:
+- "mattmurp"
