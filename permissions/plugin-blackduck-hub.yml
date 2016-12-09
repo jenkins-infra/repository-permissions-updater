@@ -1,0 +1,8 @@
+---
+name: "blackduck-hub"
+paths:
+- "com/blackducksoftware/integration/blackduck-hub"
+developers:
+- "jrichard"
+- "akamen"
+- "bdsoss"
