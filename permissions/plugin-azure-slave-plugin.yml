@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/azure-slave-plugin"
 developers:
 - "snallami"
+- "clguiman"
