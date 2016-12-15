@@ -4,3 +4,5 @@ paths:
 - "org/jenkins-ci/plugins/windows-azure-storage"
 developers:
 - "snallami"
+- "clguiman"
+- "arroyc_microsoft"
