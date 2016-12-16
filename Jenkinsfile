@@ -30,7 +30,7 @@ node('java') {
         stage 'Run'
         withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'artifactoryAdmin',
                           usernameVariable: 'ARTIFACTORY_USERNAME', passwordVariable: 'ARTIFACTORY_PASSWORD']]) {
-            sh 'target/appassembler/bin/repository-permissions-updater -d $PWD/permissions -w $PWD/json'
+            sh 'target/appassembler/bin/repository-permissions-updater --definitionDir $PWD/permissions --workDir $PWD/json'
         }
     } finally {
         stage 'Archive'
