@@ -6,13 +6,6 @@ properties([
         ]]
 ])
 
-/* Exit early if we are executing in a pull request, until this ticket is resolved:
- * https://issues.jenkins-ci.org/browse/INFRA-902
- */
-if (env.CHANGE_ID) {
-    return
-}
-
 node('java') {
     try {
         stage 'Clean'
@@ -28,17 +21,19 @@ node('java') {
         sh "${mvnHome}/bin/mvn -U clean verify"
 
         stage 'Run'
-        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'artifactoryAdmin',
-                          usernameVariable: 'ARTIFACTORY_USERNAME', passwordVariable: 'ARTIFACTORY_PASSWORD']]) {
-            sh '${JAVA_HOME}/bin/java' +
-                    ' -DdefinitionsDir=$PWD/permissions' +
-                    ' -DartifactoryApiTempDir=$PWD/json' +
-                    ' -Djava.util.logging.SimpleFormatter.format="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n"' +
-                    ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar'
+        if (env.CHANGE_ID) {
+            sh 'target/appassembler/bin/repository-permissions-updater -o -d $PWD/permissions -w $PWD/json'
+        } else {
+            withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'artifactoryAdmin',
+                              usernameVariable: 'ARTIFACTORY_USERNAME', passwordVariable: 'ARTIFACTORY_PASSWORD']]) {
+                sh 'target/appassembler/bin/repository-permissions-updater -d $PWD/permissions -w $PWD/json'
+            }
         }
     } finally {
         stage 'Archive'
-        archiveArtifacts 'permissions/*.yml'
-        archiveArtifacts 'json/*.json'
+        if (!env.CHANGE_ID) {
+            archiveArtifacts 'permissions/*.yml'
+            archiveArtifacts 'json/*.json'
+        }
     }
 }

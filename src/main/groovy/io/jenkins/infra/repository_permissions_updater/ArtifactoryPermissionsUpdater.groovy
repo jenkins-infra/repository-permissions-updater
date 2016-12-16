@@ -13,16 +13,6 @@ import java.util.logging.Logger
 public class ArtifactoryPermissionsUpdater {
 
     /**
-     * Directory containing the permissions definition files in YAML format
-     */
-    private static final File DEFINITIONS_DIR = new File(System.getProperty('definitionsDir'))
-
-    /**
-     * Temporary directory that this tool will write Artifactory API JSON payloads to. Must not exist prior to execution.
-     */
-    private static final File ARTIFACTORY_API_DIR = new File(System.getProperty('artifactoryApiTempDir'))
-
-    /**
      * URL to the permissions API of Artifactory
      */
     private static final String ARTIFACTORY_PERMISSIONS_API_URL = 'https://repo.jenkins-ci.org/api/security/permissions'
@@ -32,28 +22,12 @@ public class ArtifactoryPermissionsUpdater {
      */
     private static final String ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX = 'generated-'
 
-    /**
-     * If enabled, will not send PUT/DELETE requests to Artifactory, only GET (i.e. not modifying).
-     */
-    // TODO actually implement this
-    private static final boolean DRY_RUN_MODE = Boolean.getBoolean('dryRun')
-
-    static {
-        /* Make sure all Artifactory API requests are properly authenticated */
-        Authenticator.setDefault (new Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(
-                        System.getenv("ARTIFACTORY_USERNAME"),
-                        System.getenv("ARTIFACTORY_PASSWORD").toCharArray());
-            }
-        });
-    }
-
     /* Because Jackson isn't groovy enough, data type to deserialize YAML permission definitions to */
     private static class Definition {
         private String name = ""
         private String[] paths = new String[0]
         private String[] developers = new String[0]
+        private String[] contributors = new String[0]
 
         String getName() {
             return name
@@ -77,6 +51,14 @@ public class ArtifactoryPermissionsUpdater {
 
         void setDevelopers(String[] developers) {
             this.developers = developers
+        }
+
+        String[] getContributors() {
+            return contributors
+        }
+
+        void setContributors(String[] contributors) {
+            this.contributors = contributors
         }
     }
 
@@ -112,7 +94,7 @@ public class ArtifactoryPermissionsUpdater {
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory())
 
         if (!yamlSourceDirectory.exists()) {
-            throw new IllegalStateException("Directory ${DEFINITIONS_DIR} does not exist")
+            throw new IllegalStateException("Directory ${yamlSourceDirectory} does not exist")
         }
 
         if (apiOutputDir.exists()) {
@@ -176,6 +158,48 @@ public class ArtifactoryPermissionsUpdater {
             } catch (IOException e) {
                 LOGGER.log(Level.WARNING, "Failed to write to ${outputFile.name}, skipping:" + e);
             }
+
+            if (definition.contributors.length > 0) {
+                fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
+                outputFile = new File(apiOutputDir, getApiPayloadFileName('contrib-'+fileBaseName) + '.json')
+                json = new JsonBuilder()
+
+                jsonName = ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + getApiPayloadFileName(fileBaseName)
+
+                json {
+                    name jsonName
+                    includesPattern definition.paths.collect { path ->
+                        [
+                                path + '/*/' + definition.name + '-*',
+                                path + '/*/maven-metadata.xml', // used for SNAPSHOTs
+                                path + '/*/maven-metadata.xml.sha1',
+                                path + '/*/maven-metadata.xml.md5',
+                                path + '/maven-metadata.xml',
+                                path + '/maven-metadata.xml.sha1',
+                                path + '/maven-metadata.xml.md5'
+                        ]
+                    }.flatten().join(',')
+                    excludesPattern ''
+                    repositories(['snapshots'])
+                    principals {
+                        users definition.contributors.collectEntries { developer ->
+                            ["$developer": ["w", "n"]]
+                        }
+                        groups([:])
+                    }
+                }
+
+                pretty = json.toPrettyString()
+
+                try {
+                    outputFile.parentFile.mkdirs()
+                    outputFile.text = pretty
+                } catch (IOException e) {
+                    LOGGER.log(Level.WARNING, "Failed to write to ${outputFile.name}, skipping:" + e);
+                }
+
+
+            }
         }
     }
 
@@ -184,11 +208,13 @@ public class ArtifactoryPermissionsUpdater {
      * affected permission targets.
      *
      * @param jsonApiFileDir
+     * @param dryRun if {@code true} then just log the operations rather than perform them
      */
-    private static void submitPermissionTargets(File jsonApiFileDir) {
+    private static void submitPermissionTargets(File jsonApiFileDir, boolean dryRun) {
         jsonApiFileDir.eachFile { file ->
-            if (!file.name.endsWith('.json'))
+            if (!file.name.endsWith('.json')) {
                 return
+            }
 
             LOGGER.log(Level.INFO, "Processing ${file.name}")
 
@@ -197,7 +223,10 @@ public class ArtifactoryPermissionsUpdater {
 
             try {
                 URL apiUrl = new URL(ARTIFACTORY_PERMISSIONS_API_URL + '/' + ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + file.name.replace('.json', ''))
-
+                if (dryRun) {
+                    LOGGER.log(Level.INFO, "Would PUT {0}", apiUrl);
+                    return
+                }
                 HttpURLConnection conn = (HttpURLConnection) apiUrl.openConnection()
                 conn.setRequestMethod('PUT')
                 conn.setDoOutput(true)
@@ -222,10 +251,15 @@ public class ArtifactoryPermissionsUpdater {
      * Deletes a permission target in Artifactory.
      *
      * @param target Name of the permssion target
+     * @param dryRun if {@code true} then just log the operations rather than perform them
      */
-    private static void deletePermissionsTarget(String target) {
+    private static void deletePermissionsTarget(String target, boolean dryRun) {
         try {
             URL apiUrl = new URL(ARTIFACTORY_PERMISSIONS_API_URL + '/' + target)
+            if (dryRun) {
+                LOGGER.log(Level.INFO, "Would DELETE {0}", apiUrl);
+                return
+            }
 
             HttpURLConnection conn = (HttpURLConnection) apiUrl.openConnection()
             conn.setRequestMethod('DELETE')
@@ -244,8 +278,9 @@ public class ArtifactoryPermissionsUpdater {
      * and that have no corresponding payload file.
      *
      * @param jsonApiFileDir
+     * @param dryRun if {@code true} then just log the operations rather than perform them
      */
-    private static void removeExtraPermissionTargets(File jsonApiFileDir) {
+    private static void removeExtraPermissionTargets(File jsonApiFileDir, boolean dryRun) {
         try {
             URL apiUrl = new URL(ARTIFACTORY_PERMISSIONS_API_URL)
             HttpURLConnection conn = (HttpURLConnection) apiUrl.openConnection()
@@ -267,7 +302,7 @@ public class ArtifactoryPermissionsUpdater {
 
                 if (!new File(jsonApiFileDir, fileName + '.json').exists()) {
                     LOGGER.log(Level.INFO, "Permission target ${target} has no corresponding file, deleting...")
-                    deletePermissionsTarget(target)
+                    deletePermissionsTarget(target, dryRun)
                 }
             }
 
@@ -288,9 +323,58 @@ public class ArtifactoryPermissionsUpdater {
      * @param args unused
      */
     public static void main(String[] args) {
-        generateApiPayloads(DEFINITIONS_DIR, ARTIFACTORY_API_DIR)
-        submitPermissionTargets(ARTIFACTORY_API_DIR)
-        removeExtraPermissionTargets(ARTIFACTORY_API_DIR)
+        if (!System.getProperty('java.util.logging.SimpleFormatter.format')) {
+            System.setProperty('java.util.logging.SimpleFormatter.format',
+                    '%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n');
+        }
+        def defDefnDir = System.getProperty('definitionsDir', './permissions');
+        def defWorkDir = System.getProperty('artifactoryApiTempDir', './json');
+        def cli = new CliBuilder(usage: 'repository-permissions-updater -dhwto')
+        cli.with {
+            h longOpt: 'help', 'Show usage information'
+            d longOpt: 'definitionDir', args:1, argName: 'dir', "Definitions directory (defaults to ${defDefnDir})"
+            w longOpt: 'workDir', args:1, argName: 'dir', "Work directory (defaults to ${defWorkDir})"
+            t longOpt: 'dryRun', 'Enable read only dry run mode'
+            o longOpt: 'offline', 'Off-line mode (implies dry run but does not perform any remote operations)'
+        }
+        def options = cli.parse(args)
+        if (!options) {
+            return
+        }
+        if (options.h) {
+            cli.usage()
+            return
+        }
+        boolean dryRun = options.t
+        boolean offline = false
+        if (!System.getenv("ARTIFACTORY_USERNAME")) {
+            LOGGER.log(Level.WARNING, "Environment variable 'ARTIFACTORY_USERNAME' not configured, forcing --offline")
+            dryRun = true
+            offline = true
+        }
+        if (!System.getenv('ARTIFACTORY_PASSWORD')) {
+            LOGGER.log(Level.WARNING, "Environment variable 'ARTIFACTORY_PASSWORD' not configured, forcing --offline")
+            dryRun = true
+            offline = true
+        }
+        if (!offline) {
+            /* Make sure all Artifactory API requests are properly authenticated */
+            Authenticator.setDefault(new Authenticator() {
+                protected PasswordAuthentication getPasswordAuthentication() {
+                    return new PasswordAuthentication(
+                            System.getenv("ARTIFACTORY_USERNAME"),
+                            System.getenv("ARTIFACTORY_PASSWORD").toCharArray());
+                }
+            });
+        }
+
+        File definitionsDir = new File(options.d?:defDefnDir)
+        File workDir = new File(options.w?:defWorkDir)
+        generateApiPayloads(definitionsDir, workDir)
+        submitPermissionTargets(workDir, dryRun)
+        if (!offline) {
+            removeExtraPermissionTargets(workDir, dryRun)
+        }
     }
 
     private static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.name)
