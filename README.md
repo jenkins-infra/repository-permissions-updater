@@ -52,6 +52,10 @@ Create a new YAML file similar to existing files.
 
 Edit the `developers` list in the YAML file for the plugin.
 
+### Adding a `-SNAPSHOT` only uploader to an existing plugin
+
+Create or edit the `contributors` list in the YAML file for the plugin.
+
 ### Deprecating a plugin
 
 Remove the YAML file. The next synchronization will remove permissions for the plugin.
