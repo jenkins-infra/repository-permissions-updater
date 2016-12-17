@@ -1,6 +1,0 @@
----
-name: "kanboard-publisher"
-paths:
-- "org/jenkins-ci/plugins/kanboard-publisher"
-developers:
-- "mably"
