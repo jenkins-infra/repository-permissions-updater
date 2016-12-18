@@ -1,0 +1,6 @@
+---
+name: "kanboard"
+paths:
+- "org/jenkins-ci/plugins/kanboard"
+developers:
+- "mably"
