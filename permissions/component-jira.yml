@@ -1,5 +1,5 @@
 ---
-name: "jira-trigger"
+name: "jira-plugin"
 paths:
 - "org/jenkins-ci/plugins/jira-trigger"
 developers:
