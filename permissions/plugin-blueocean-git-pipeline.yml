@@ -1,0 +1,10 @@
+---
+name: "blueocean-git-pipeline"
+paths:
+- "io/jenkins/blueocean/blueocean-git-pipeline"
+developers:
+- "michaelneale"
+- "vivek"
+- "tfennelly"
+- "kzantow"
+- "tscherler"
