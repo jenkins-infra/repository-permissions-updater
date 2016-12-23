@@ -5,3 +5,4 @@ paths:
 - "org/jvnet/hudson/plugins/ssh"
 developers:
 - "edmund_wagner"
+- "ljader"
