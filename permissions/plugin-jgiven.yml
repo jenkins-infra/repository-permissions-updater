@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/jgiven"
 developers:
 - "wolfs"
+- "janschaefer"
