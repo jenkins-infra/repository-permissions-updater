@@ -1,0 +1,6 @@
+---
+name: "hello-world-scala"
+paths:
+  - "org/jenkins-ci/plugins/hello-world-scala"
+developers: 
+-  "jeremym"
