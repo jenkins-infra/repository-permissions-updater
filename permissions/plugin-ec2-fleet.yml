@@ -4,3 +4,4 @@ paths:
 - "com/amazon/jenkins/fleet/ec2-fleet"
 developers:
 - "cyberax"
+- "schmutze"
