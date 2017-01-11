@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/jenkins-multijob-plugin"
 developers:
 - "hagzag"
+- "cohencil"
