@@ -12,6 +12,8 @@ This repository contains both the definitions for Artifactory upload permissions
 
 **Note:** These permissions are specifically for _uploading_ artifacts to the Jenkins project's Maven repository. It is independent of GitHub repository permissions. You may have one without the other. Typically, you'll either have both, or just the GitHub repository access.
 
+**Note:** There are two levels of permission. Developers have permission to deploy both releases and snapshots. Contributors have permission to deploy snapshots.
+
 Requesting Permissions
 ----------------------
 
@@ -51,6 +53,10 @@ Create a new YAML file similar to existing files.
 ### Adding a new uploader to an existing plugin
 
 Edit the `developers` list in the YAML file for the plugin.
+
+### Adding a `-SNAPSHOT` only uploader to an existing plugin
+
+Create or edit the `contributors` list in the YAML file for the plugin.
 
 ### Deprecating a plugin
 
