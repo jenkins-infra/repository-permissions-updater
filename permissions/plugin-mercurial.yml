@@ -5,4 +5,4 @@ paths:
 - "org/jvnet/hudson/plugins/mercurial"
 developers:
 - "jglick"
-- "stephenc"
+- "stephenconnolly"
