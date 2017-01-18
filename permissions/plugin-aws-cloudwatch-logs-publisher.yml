@@ -1,0 +1,6 @@
+---
+name: "aws-cloudwatch-logs-publisher"
+paths:
+- "org/jenkins-ci/plugins/aws-cloudwatch-logs-publisher"
+developers:
+- "elifarley"
