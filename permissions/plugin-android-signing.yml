@@ -1,0 +1,6 @@
+---
+name: "android-signing"
+paths:
+- "org/jenkins-ci/plugins/android-signing"
+developers:
+- "restjohn"
