@@ -1,0 +1,6 @@
+---
+name: "cctray-xml"
+paths:
+- "org/jenkins-ci/plugins/cctray-xml"
+developers:
+- "danielbeck"
