@@ -1,0 +1,6 @@
+---
+name: "pipeline-dependency-walker"
+paths:
+- "org/jenkins-ci/plugins/workflow/pipeline-dependency-walker"
+developers:
+- "estarter"
