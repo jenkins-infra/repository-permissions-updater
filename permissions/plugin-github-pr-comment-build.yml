@@ -1,0 +1,6 @@
+---
+name: "github-pr-comment-build"
+paths:
+- "org/jenkins-ci/plugins/github-pr-comment-build"
+developers:
+- "bksaville"
