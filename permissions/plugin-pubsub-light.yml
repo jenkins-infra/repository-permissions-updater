@@ -1,6 +1,6 @@
 ---
 name: "pubsub-light"
 paths:
-- "org/jenkins-ci/modules/pubsub-light"
+- "org/jenkins-ci/plugins/pubsub-light"
 developers:
 - "tfennelly"
