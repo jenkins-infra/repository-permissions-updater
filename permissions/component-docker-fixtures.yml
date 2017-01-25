@@ -1,0 +1,11 @@
+---
+name: "docker-fixtures"
+paths:
+- "org/jenkins-ci/test/docker-fixtures"
+developers:
+- "andresrc"
+- "jglick"
+- "kohsuke"
+- "olivergondza"
+- "rsandell"
+- "vlatombe"
