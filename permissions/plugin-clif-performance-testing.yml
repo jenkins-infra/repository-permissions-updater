@@ -1,0 +1,6 @@
+---
+name: "clif-performance-testing"
+paths:
+- "org/jenkins-ci/plugins/clif-performance-testing"
+developers:
+- "dillense"
