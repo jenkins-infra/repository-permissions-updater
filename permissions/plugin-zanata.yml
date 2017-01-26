@@ -1,6 +1,6 @@
 ---
-name: "zanata-plugin"
+name: "zanata"
 paths:
-- "org/jenkins-ci/plugins/zanata-plugin"
+- "org/jenkins-ci/plugins/zanata"
 developers:
 - "yushao"
