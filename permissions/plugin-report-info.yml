@@ -1,0 +1,6 @@
+---
+name: "report-info"
+paths:
+- "org/jenkins-ci/plugins/report-info"
+developers:
+- "gcolin"
