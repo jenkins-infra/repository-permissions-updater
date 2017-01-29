@@ -1,0 +1,6 @@
+---
+name: "pipeline-npm"
+paths:
+- "org/jenkins-ci/plugins/pipeline-npm"
+developers:
+- "timdowney"
