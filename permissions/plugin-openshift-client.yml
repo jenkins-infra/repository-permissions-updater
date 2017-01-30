@@ -1,0 +1,7 @@
+---
+name: "openshift-client"
+paths:
+- "com/openshift/jenkins/plugins/openshift-client"
+developers:
+- "jupierce"
+- "gmontero"
