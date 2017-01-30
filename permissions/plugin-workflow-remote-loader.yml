@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/workflow-remote-loader"
 developers:
 - "oleg_nenashev"
+- "escoem"
