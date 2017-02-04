@@ -4,3 +4,5 @@ paths:
 - "io/fabric8/jenkins/plugins/openshift-sync"
 developers:
 - "jimmi"
+- "gmontero"
+- "bparees"
