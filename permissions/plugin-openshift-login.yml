@@ -4,3 +4,4 @@ paths:
 - "org/openshift/jenkins/openshift-login"
 developers:
 - "gmontero"
+- "bparees"
