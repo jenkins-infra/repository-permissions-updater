@@ -1,0 +1,6 @@
+---
+name: "no-agent-job-purge"
+paths:
+- "org/jenkins-ci/plugins/no-agent-job-purge"
+developers:
+- "sonicwind"
