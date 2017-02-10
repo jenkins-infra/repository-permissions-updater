@@ -1,0 +1,7 @@
+---
+name: "pipeline-model-json-shaded"
+paths:
+- "org/jenkinsci/plugins/pipeline-model-json-shaded"
+developers:
+- "abayer"
+- "rsandell"
