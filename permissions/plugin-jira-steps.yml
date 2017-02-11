@@ -1,0 +1,6 @@
+---
+name: "jira-steps"
+paths:
+- "org/jenkins-ci/plugins/jira-steps"
+developers:
+- "nrayapati"
