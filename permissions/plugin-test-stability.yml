@@ -2,4 +2,5 @@
 name: "test-stability"
 paths:
 - "de/esailors/jenkins/test-stability"
-developers: []
+developers:
+- "seanf"
