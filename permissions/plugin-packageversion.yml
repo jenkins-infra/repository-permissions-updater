@@ -1,0 +1,6 @@
+---
+name: "packageversion"
+paths:
+- "org/lilicurroad/jenkins/packageversion"
+developers:
+- "johnlayton"
