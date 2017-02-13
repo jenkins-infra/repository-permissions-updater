@@ -1,0 +1,6 @@
+---
+name: "icn-plugin-loader"
+paths:
+- "org/jenkins-ci/plugins/icn-plugin-loader"
+developers:
+- "gdelory"
