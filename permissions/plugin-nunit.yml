@@ -5,3 +5,4 @@ paths:
 - "org/jvnet/hudson/plugins/nunit"
 developers:
 - "kinow"
+- "slide_o_mix"
