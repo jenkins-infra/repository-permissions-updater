@@ -2,5 +2,7 @@
 name: "pipeline-maven"
 paths:
 - "org/jenkins-ci/plugins/pipeline-maven"
+- "org/jenkins-ci/plugins/pipeline-maven-parent"
+- "org/jenkins-ci/plugins/pipeline-maven-spy"
 developers:
 - "alobato"
