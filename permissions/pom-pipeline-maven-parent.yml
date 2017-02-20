@@ -1,0 +1,7 @@
+---
+name: "pipeline-maven-parent"
+paths:
+- "org/jenkins-ci/plugins/pipeline-maven-parent"
+developers:
+- "alobato"
+- "cleclerc"

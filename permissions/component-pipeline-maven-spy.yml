@@ -1,0 +1,7 @@
+---
+name: "pipeline-maven-spy"
+paths:
+- "org/jenkins-ci/plugins/pipeline-maven-spy"
+developers:
+- "alobato"
+- "cleclerc"
