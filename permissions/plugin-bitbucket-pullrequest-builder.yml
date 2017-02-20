@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/bitbucket-pullrequest-builder"
 developers:
 - "nishio_dens"
+- "damovsky"
