@@ -4,6 +4,7 @@ paths:
 - "org/jenkins-ci/plugins/parameterized-trigger"
 developers:
 - "ikedam"
+- "kwhetstone"
 - "oleg_nenashev"
 - "olivergondza"
 - "svanoort"
