@@ -1,0 +1,9 @@
+---
+name: "plugins-compat-tester-cli"
+paths:
+- "org/jenkins-ci/tests/plugins-compat-tester-cli"
+developers:
+- "kwhetstone"
+- "jglick"
+- "andresrc"
+

@@ -1,0 +1,9 @@
+---
+name: "plugins-compat-tester-aggregator"
+paths:
+- "org/jenkins-ci/tests/plugins-compat-tester-aggregator"
+developers:
+- "kwhetstone"
+- "jglick"
+- "andresrc"
+
