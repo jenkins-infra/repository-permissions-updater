@@ -1,0 +1,9 @@
+---
+name: "pipeline-model-extensions"
+paths:
+- "org/jenkinsci/plugins/pipeline-model-extensions"
+developers:
+- "abayer"
+- "oleg_nenashev"
+- "stephenconnolly"
+- "rsandell"
