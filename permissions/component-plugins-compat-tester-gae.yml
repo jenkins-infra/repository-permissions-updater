@@ -1,7 +1,7 @@
 ---
 name: "plugins-compat-tester-gae"
 paths:
-- "org/jenkins-ci/tests/plugins-compat-testeri-gae"
+- "org/jenkins-ci/tests/plugins-compat-tester-gae"
 developers:
 - "kwhetstone"
 - "jglick"
