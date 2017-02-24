@@ -1,0 +1,9 @@
+---
+name: "plugins-compat-tester-gae-client"
+paths:
+- "org/jenkins-ci/tests/plugins-compat-tester-gae-client"
+developers:
+- "kwhetstone"
+- "jglick"
+- "andresrc"
+
