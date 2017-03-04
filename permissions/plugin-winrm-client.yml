@@ -1,0 +1,6 @@
+---
+name: "winrm-client"
+paths:
+- "com/spcow/plugins/winrm-client"
+developers:
+- "pskumar448"
