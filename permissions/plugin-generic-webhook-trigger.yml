@@ -1,6 +1,6 @@
 ---
-name: "generic-webhook-trigger-plugin"
+name: "generic-webhook-trigger"
 paths:
-- "org/jenkins-ci/plugins/generic-webhook-trigger-plugin"
+- "org/jenkins-ci/plugins/generic-webhook-trigger"
 developers:
 - "tomasbjerre"
