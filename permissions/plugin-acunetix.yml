@@ -1,0 +1,6 @@
+---
+name: "acunetix"
+paths:
+- "com/acunetix/acunetix"
+developers: 
+- "acunetix"
