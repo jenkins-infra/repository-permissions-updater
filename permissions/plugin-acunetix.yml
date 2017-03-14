@@ -1,0 +1,6 @@
+---
+name: "acunetix"
+paths:
+- "org/jenkinsci/acunetix-plugin"
+developers: 
+- "acunetix"
