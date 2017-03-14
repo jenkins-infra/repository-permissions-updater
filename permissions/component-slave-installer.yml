@@ -1,0 +1,8 @@
+---
+name: "slave-installer"
+paths:
+- "org/jenkins-ci/modules/slave-installer"
+developers:
+- "kohsuke"
+- "jglick"
+- "oleg_nenashev"
