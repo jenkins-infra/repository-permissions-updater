@@ -1,0 +1,6 @@
+---
+name: "app-detector"
+paths:
+- "org/jenkins-ci/plugins/app-detector"
+developers:
+- "justice3120"
