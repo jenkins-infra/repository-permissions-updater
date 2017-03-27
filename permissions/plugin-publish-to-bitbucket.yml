@@ -3,5 +3,4 @@ name: "publish-to-bitbucket"
 paths:
 - "org/jenkins-ci/plugins/publish-to-bitbucket"
 developers:
-- "ali-himindz"
 - "himindz"
