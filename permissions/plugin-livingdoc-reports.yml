@@ -1,0 +1,6 @@
+---
+name: "livingdoc-reports"
+paths:
+- "info/novatec/testit/livingdoc/jenkins/livingdoc-reports"
+developers:
+- "aqe_admin"
