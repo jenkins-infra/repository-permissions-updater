@@ -1,0 +1,6 @@
+---
+name: "consul"
+paths:
+- "com/inneractive/jenkins/plugins/consul"
+developers:
+- "liozN"
