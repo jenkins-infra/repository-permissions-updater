@@ -1,0 +1,6 @@
+---
+name: "webhook-step"
+paths:
+- "org/jenkins-ci/plugins/webhook-step"
+developers:
+- "cpitman"
