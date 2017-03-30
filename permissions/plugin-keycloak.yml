@@ -1,0 +1,6 @@
+---
+name: "keycloak"
+paths:
+- "org/jenkins-ci/plugins/keycloak"
+developers:
+- "devlauer"
