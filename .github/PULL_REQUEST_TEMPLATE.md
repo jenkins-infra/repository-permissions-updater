@@ -1,10 +1,14 @@
-_(This PR template only applies to permission changes -- ignore for changes to the tool)_
+<!-- This PR template only applies to permission changes. Ignore it for changes to the tool updating permissions in Artifactory -->
 
 # Description
 
-_(fill in description here)_
+<!-- fill in description here, this will at least be a link to a GitHub repository, and often also links to hosting request, and @mentioning other committers/maintainers as per the checklist below -->
 
 # Permissions pull request checklist
+
+<!--
+Make sure to implement all relevant entries (see section headers to when they apply) and mark them as checked (by replacing the space between brackets with an "x"). Remove sections that don't apply, e.g. the second and third when adding a new uploader to an existing permissions file.
+-->
 
 ### Always
 
