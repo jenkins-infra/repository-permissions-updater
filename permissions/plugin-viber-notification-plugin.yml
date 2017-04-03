@@ -3,4 +3,4 @@ name: "viber-notification"
 paths:
 - "org/jenkins-ci/plugins/viber-notification"
 developers:
-- "vinaypuranik"
+- "vpuranik"
