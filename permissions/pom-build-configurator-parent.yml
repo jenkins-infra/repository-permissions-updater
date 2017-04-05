@@ -1,3 +1,6 @@
+
 name: "build-configurator-parent"
-paths: "com/amcbridge/build-configurator-parent"
-developers: "AMCBridgeDevTeam"
+paths: 
+  "com/amcbridge/build-configurator-parent"
+developers: 
+  "AMCBridgeDevTeam"
