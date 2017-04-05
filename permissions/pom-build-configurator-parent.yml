@@ -1,5 +1,5 @@
 name: "build-configurator-parent"
-paths: "org/jenkins-ci/plugins/build-configurator"
+paths: "com/amcbridge/build-configurator-parent"
 developers:
 "AMCBridgeDevTeam"
 "roman-bilyi"
