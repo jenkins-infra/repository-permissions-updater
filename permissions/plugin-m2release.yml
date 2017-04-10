@@ -5,3 +5,4 @@ paths:
 - "org/jvnet/hudson/plugins/m2release/m2release"
 developers:
 - "imod"
+- "teilo"
