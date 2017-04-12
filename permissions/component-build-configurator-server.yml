@@ -3,4 +3,4 @@ name: "build-configurator-server"
 paths: 
 - "com/amcbridge/build-configurator-server"
 developers: 
-- "AMCBridgeDevTeam"
+- "amcbridgedevteam"
