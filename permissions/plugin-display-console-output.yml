@@ -1,0 +1,6 @@
+---
+name: "display-console-output"
+paths:
+- "org/jenkins-ci/plugins/display-console-output"
+developers:
+- "lyenliang"
