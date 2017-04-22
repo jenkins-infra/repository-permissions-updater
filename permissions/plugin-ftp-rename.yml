@@ -3,4 +3,4 @@ name: "ftp-rename"
 paths:
 - "org/jenkins-ci/plugins/ftp-rename"
 developers:
-- "brunocantisano"
+- "bruno_cantisano"
