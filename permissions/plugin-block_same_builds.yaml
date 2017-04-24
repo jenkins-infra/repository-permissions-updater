@@ -1,6 +1,0 @@
----
-name: "block_same_builds"
-paths:
-- "org/jenkins-ci/plugins/block_same_builds"
-developers:
-- "cashlalala"
