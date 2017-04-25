@@ -3,4 +3,4 @@ name: "codebeamer-result-trend-updater"
 paths:
 - "org/jenkins-ci/plugins/codebeamer-result-trend-updater"
 developers:
-- "balazstar"
+- "intland_support"
