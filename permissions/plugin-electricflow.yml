@@ -1,0 +1,6 @@
+---
+name: "electricflow"
+paths:
+- "org/jenkins-ci/plugins/electricflow"
+developers:
+- "efpluginsdev"
