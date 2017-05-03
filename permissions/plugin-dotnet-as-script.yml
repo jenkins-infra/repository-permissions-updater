@@ -1,0 +1,6 @@
+---
+name: "dotnet-as-script"
+paths:
+- "org/jenkins-ci/plugins/dotnet-as-script"
+developers:
+- "ariel_lenis"
