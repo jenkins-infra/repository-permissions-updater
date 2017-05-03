@@ -1,0 +1,7 @@
+---
+name: "flexdeploy"
+paths:
+- "org/jenkins-ci/plugins/flexdeploy"
+developers:
+- "bhoffman20"
+- "flexagon9"
