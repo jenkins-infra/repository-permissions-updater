@@ -1,0 +1,6 @@
+---
+name: "ranorex-integration"
+paths: 
+- "org/jenkins-ci/plugins/ranorex-integration"
+developers: 
+- "mstoegerer"
