@@ -1,0 +1,6 @@
+---
+name: "maven-jenkins-dev-plugin"
+paths:
+- "org/jenkins-ci/tools/maven-jenkins-dev-plugin"
+developers:
+- "olamy"
