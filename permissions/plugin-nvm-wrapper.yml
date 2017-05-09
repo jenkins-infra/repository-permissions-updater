@@ -1,0 +1,6 @@
+---
+name: "nvm-wrapper"
+paths:
+- "org/jenkins-ci/plugins/nvm-wrapper"
+developers: 
+- "atoms"
