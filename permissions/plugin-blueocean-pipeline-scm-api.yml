@@ -1,7 +1,7 @@
 ---
-name: "blueocean-pipeline-api"
+name: "blueocean-pipeline-scm-api"
 paths:
-- "io/jenkins/blueocean/blueocean-pipeline-api"
+- "io/jenkins/blueocean/blueocean-pipeline-scm-api"
 developers:
 - "michaelneale"
 - "vivek"
