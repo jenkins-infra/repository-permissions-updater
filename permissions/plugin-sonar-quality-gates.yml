@@ -1,0 +1,6 @@
+---
+name: "sonar-quality-gates"
+paths:
+- "org/jenkins-ci/plugins/sonar-quality-gates"
+developers:
+- "arkanjoms"
