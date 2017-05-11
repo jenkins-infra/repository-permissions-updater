@@ -1,0 +1,8 @@
+---
+name: "ibm-cloud-devops"
+paths:
+- "com/ibm/devops/ibm-cloud-devops"
+developers:
+- "xunrongl"
+- "imvijay2007"
+- "patjoy"
