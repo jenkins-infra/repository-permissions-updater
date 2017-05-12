@@ -5,3 +5,4 @@ paths:
 - "org/jvnet/hudson/main/remoting"
 developers:
 - "kohsuke"
+- "oleg_nenashev"
