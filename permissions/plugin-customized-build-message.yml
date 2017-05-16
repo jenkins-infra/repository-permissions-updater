@@ -1,0 +1,6 @@
+---
+name: "customized-build-message"
+paths:
+- "org/jenkins-ci/plugins/customized-build-message"
+developers:
+- "cashlalala"
