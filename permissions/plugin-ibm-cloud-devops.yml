@@ -1,7 +1,7 @@
 ---
 name: "ibm-cloud-devops"
 paths:
-- "com/ibm/devops/ibm-cloud-devops"
+- "org/jenkins-ci/plugins/ibm-cloud-devops"
 developers:
 - "xunrongl"
 - "imvijay2007"
