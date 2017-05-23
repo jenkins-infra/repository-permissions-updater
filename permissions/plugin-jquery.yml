@@ -4,3 +4,5 @@ paths:
 - "org/jenkins-ci/plugins/jquery"
 developers:
 - "kohsuke"
+- "andresrc"
+
