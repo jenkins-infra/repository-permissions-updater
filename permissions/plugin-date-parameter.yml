@@ -1,7 +1,7 @@
 ---
 name: "date-parameter"
 paths:
-- "org/jenkins-ci/plugins/date-parameter"
+- "me/leejay/jenkins/date-parameter"
 developers:
 - "leejaycoke"
 ---
