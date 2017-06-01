@@ -3,4 +3,5 @@ name: "aws-device-farm"
 paths:
 - "org/jenkins-ci/plugins/aws-device-farm"
 developers:
-- "ahawker"
+- "chabom2017"
+- "nikhil-dabhade"
