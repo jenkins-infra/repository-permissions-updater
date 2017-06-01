@@ -1,6 +1,6 @@
+---
 name: "easyqa"
 paths:
-- "org/jenkins-ci/plugins/easyqa"
 - "com/geteasyqa/easyqa"
 developers:
 - "yana_gusti"
