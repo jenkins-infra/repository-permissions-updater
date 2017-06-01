@@ -4,7 +4,7 @@
 
 <!-- fill in description here, this will at least be a link to a GitHub repository, and often also links to hosting request, and @mentioning other committers/maintainers as per the checklist below -->
 
-# Permissions pull request checklist
+# Submitter checklist for changing permissions
 
 <!--
 Make sure to implement all relevant entries (see section headers to when they apply) and mark them as checked (by replacing the space between brackets with an "x"). Remove sections that don't apply, e.g. the second and third when adding a new uploader to an existing permissions file.
