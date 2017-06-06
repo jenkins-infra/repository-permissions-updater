@@ -29,4 +29,5 @@ Make sure to implement all relevant entries (see section headers to when they ap
 
 - [ ] [Make sure to `@`mention an existing maintainer to confirm the permissions request, if applicable](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
 - [ ] Use the Jenkins community (LDAP) account name in the YAML file, not the GitHub account name
+  (**check that https://issues.jenkins-ci.org/secure/ViewProfile.jspa?name=the-id-you-put does exist**)
 - [ ] [All newly added users have logged in to Artifactory at least once](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
