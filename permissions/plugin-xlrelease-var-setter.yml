@@ -1,6 +1,6 @@
 ---
 name: "xlrelease-var-setter"
 paths:
-- "org/jenkins-ci/plugins/xlrelease-var-setter"
+- "com/arkea/satd/xlrelease-var-setter"
 developers:
 - "obeautier"
