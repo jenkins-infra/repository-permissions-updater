@@ -1,0 +1,6 @@
+---
+name: "monitor-pro"
+paths:
+- "org/jenkins-ci/plugins/monitor-pro"
+developers:
+- "frdiaz"
