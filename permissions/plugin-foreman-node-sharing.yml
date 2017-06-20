@@ -1,7 +1,10 @@
 ---
 name: "foreman-node-sharing"
 paths:
-- "org/jenkins-ci/plugins/foreman-node-sharing"
+- "org/jenkins-ci/plugins/nodesharing/foreman-node-sharing"
+- "org/jenkins-ci/plugins/nodesharing/parent"
+- "org/jenkins-ci/plugins/nodesharing/configurator"
 developers:
 - "scoheb"
 - "pajasoft"
+- "olivergondza"
