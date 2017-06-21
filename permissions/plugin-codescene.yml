@@ -1,0 +1,6 @@
+---
+name: "codescene"
+paths:
+- "org/jenkins-ci/plugins/codescene"
+developers:
+- "empear_jenkins"
