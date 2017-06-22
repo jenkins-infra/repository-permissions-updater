@@ -1,0 +1,9 @@
+---
+name: "cerberus-testing"
+paths:
+- "org/jenkins-ci/plugins/cerberus-testing"
+developers:
+- "nicodeur"
+- "bcivel"
+- "vertigo17"
+- "abourdon"
