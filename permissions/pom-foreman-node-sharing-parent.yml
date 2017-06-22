@@ -1,0 +1,8 @@
+---
+name: "parent"
+paths:
+- "org/jenkins-ci/plugins/nodesharing/parent"
+developers:
+- "scoheb"
+- "pajasoft"
+- "olivergondza"
