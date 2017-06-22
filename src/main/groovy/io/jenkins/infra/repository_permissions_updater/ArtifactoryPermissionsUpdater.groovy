@@ -288,7 +288,12 @@ public class ArtifactoryPermissionsUpdater {
      * @param args unused
      */
     public static void main(String[] args) {
+        if (DRY_RUN_MODE) System.err.println("Running in dry run mode")
         generateApiPayloads(DEFINITIONS_DIR, ARTIFACTORY_API_DIR)
+        if (DRY_RUN_MODE) {
+            System.err.println("Payloads generated in " + ARTIFACTORY_API_DIR + ". Nothing was sent.")
+            return
+        }
         submitPermissionTargets(ARTIFACTORY_API_DIR)
         removeExtraPermissionTargets(ARTIFACTORY_API_DIR)
     }
