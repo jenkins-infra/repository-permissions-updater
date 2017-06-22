@@ -15,12 +15,12 @@ public class ArtifactoryPermissionsUpdater {
     /**
      * Directory containing the permissions definition files in YAML format
      */
-    private static final File DEFINITIONS_DIR = new File(System.getProperty('definitionsDir'))
+    private static final File DEFINITIONS_DIR = new File(System.getProperty('definitionsDir', './permissions'))
 
     /**
      * Temporary directory that this tool will write Artifactory API JSON payloads to. Must not exist prior to execution.
      */
-    private static final File ARTIFACTORY_API_DIR = new File(System.getProperty('artifactoryApiTempDir'))
+    private static final File ARTIFACTORY_API_DIR = new File(System.getProperty('artifactoryApiTempDir', './json'))
 
     /**
      * URL to the permissions API of Artifactory
@@ -288,7 +288,12 @@ public class ArtifactoryPermissionsUpdater {
      * @param args unused
      */
     public static void main(String[] args) {
+        if (DRY_RUN_MODE) System.err.println("Running in dry run mode")
         generateApiPayloads(DEFINITIONS_DIR, ARTIFACTORY_API_DIR)
+        if (DRY_RUN_MODE) {
+            System.err.println("Payloads generated in " + ARTIFACTORY_API_DIR + ". Nothing was sent.")
+            return
+        }
         submitPermissionTargets(ARTIFACTORY_API_DIR)
         removeExtraPermissionTargets(ARTIFACTORY_API_DIR)
     }
