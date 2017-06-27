@@ -1,0 +1,12 @@
+---
+name: "incapptic-connect-uploader"
+paths:
+- "com/incapptic/plugins/incapptic-connect-uploader"
+developers:
+- "tjurkiewicz"
+- "javidgon"
+- "DariuszAniszewski"
+- "thiemoscherle"
+- "incapptic_connect"
+
+
