@@ -1,0 +1,6 @@
+---
+name: "aws-batch"
+paths:
+- "org/jenkins-ci/plugins/aws-batch"
+developers:
+- "nfultz"
