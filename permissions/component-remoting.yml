@@ -3,6 +3,7 @@ name: "remoting"
 paths:
 - "org/jenkins-ci/main/remoting"
 - "org/jvnet/hudson/main/remoting"
+- "org/jenkins-ci/remoting-test-client"
 developers:
 - "kohsuke"
 - "oleg_nenashev"
