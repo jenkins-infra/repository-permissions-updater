@@ -1,0 +1,8 @@
+---
+name: "aws-codecommit-trigger"
+paths:
+  - "org/jenkins-ci/plugins/aws-codecommit-trigger"
+developers:
+  - "ronaldtse"
+  - "phuonghqh"
+
