@@ -3,4 +3,8 @@ name: "pubsub-light"
 paths:
 - "org/jenkins-ci/plugins/pubsub-light"
 developers:
+- "michaelneale"
+- "vivek"
 - "tfennelly"
+- "kzantow"
+- "tscherler"
