@@ -1,0 +1,6 @@
+---
+name: "rancher"
+paths:
+- "org/jenkins-ci/plugins/rancher"
+developers:
+- "yunlzheng"
