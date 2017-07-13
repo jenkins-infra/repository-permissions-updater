@@ -3,4 +3,4 @@ name: "jmh-report"
 paths:
 - "io/morethan/jenkins/jmh-report"
 developers:
-- "jzillmann"
+- "oae"
