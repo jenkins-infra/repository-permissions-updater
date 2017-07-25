@@ -1,0 +1,6 @@
+---
+name: "coding-webhook"
+paths:
+- "org/jenkins-ci/plugins/coding-webhook"
+developers:
+- "tsl0922"
