@@ -1,0 +1,10 @@
+---
+name: "blueocean-bitbucket-pipeline"
+paths:
+- "io/jenkins/blueocean/blueocean-bitbucket-pipeline"
+developers:
+- "michaelneale"
+- "vivek"
+- "tfennelly"
+- "kzantow"
+- "tscherler"
