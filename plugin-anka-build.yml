@@ -1,0 +1,7 @@
+---
+name: "anka-build"
+paths:
+- "org/jenkinsci/anka-build-plugin"
+developers:
+- "asafg6"
+- "alexf123"
