@@ -1,0 +1,6 @@
+---
+name: "git-prebuildmerge-trait"
+paths:
+- "org/jenkins-ci/plugins/git-prebuildmerge-trait"
+developers:
+- "arty13"
