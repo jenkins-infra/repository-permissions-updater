@@ -1,0 +1,6 @@
+---
+name: "opsgenie"
+paths:
+- "com/opsgenie/integration/opsgenie"
+developers:
+- "opsgenieplugin"
