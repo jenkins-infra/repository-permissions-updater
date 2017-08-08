@@ -1,6 +1,7 @@
 ---
 name: "opsgenie"
 paths:
+- "com/opsgenie/integration"
 - "org/jenkins-ci/plugins/opsgenie"
 developers:
 - "opsgenieplugin"
