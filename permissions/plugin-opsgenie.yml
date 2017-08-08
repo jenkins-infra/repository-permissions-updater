@@ -4,5 +4,4 @@ paths:
 - "com/opsgenie/integration/opsgenie"
 - "org/jenkins-ci/plugins/opsgenie"
 developers:
-- "bkaganyildiz"
-- "omerozkan"
+- "opsgenieplugin"
