@@ -3,4 +3,5 @@ name: "compress-buildlog"
 paths:
 - "org/jenkins-ci/plugins/compress-buildlog"
 developers:
+- "danielbeck"
 - "oleg_nenashev"
