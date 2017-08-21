@@ -3,7 +3,7 @@ name: "cloudbees-jenkins-advisor"
 paths:
 - "org/jenkins-ci/plugins/cloudbees-jenkins-advisor"
 developers:
-- "evildethow"
+- "owood"
 - "kwhetstone"
 - "kohsuke"
 
