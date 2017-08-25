@@ -1,0 +1,7 @@
+---
+name: "squashtm-publisher-plugin"
+paths:
+- "org/jenkins-ci/plugins/squashtm-publisher-plugin"
+developers:
+- "dev_squash"
+- "bsiri"
