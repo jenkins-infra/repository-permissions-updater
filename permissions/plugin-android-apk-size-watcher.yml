@@ -1,0 +1,6 @@
+---
+name: "android-apk-size-watcher"
+paths:
+- "org/jenkins-ci/plugins/android-apk-size-watcher"
+developers:
+- "xgleich1"
