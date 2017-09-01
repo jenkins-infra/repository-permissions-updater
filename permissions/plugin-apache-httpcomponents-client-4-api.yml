@@ -1,0 +1,7 @@
+---
+name: "apache-httpcomponents-client-4-api"
+paths:
+- "org/jenkins-ci/plugins/apache-httpcomponents-client-4-api"
+developers:
+- "oleg_nenashev"
+

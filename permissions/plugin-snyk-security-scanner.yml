@@ -1,0 +1,7 @@
+---
+name: "snyk-security-scanner"
+paths:
+- "io/snyk/plugins/snyk-security-scanner"
+developers:
+- "assaf"
+- "adrukh"

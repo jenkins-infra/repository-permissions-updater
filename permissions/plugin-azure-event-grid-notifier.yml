@@ -1,0 +1,6 @@
+---
+name: "azure-event-grid-notifier"
+paths:
+- "org/jenkins-ci/plugins/azure-event-grid-notifier"
+developers:
+- "torosent"

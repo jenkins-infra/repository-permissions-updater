@@ -1,0 +1,8 @@
+---
+name: "deployhub"
+paths:
+- "com/openmake/deployhub"
+developers:
+- "sbtaylor15"
+- "philgibbs"
+
