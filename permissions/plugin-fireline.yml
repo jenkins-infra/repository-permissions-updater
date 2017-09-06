@@ -1,0 +1,7 @@
+---
+name: "fireline"
+paths:
+- "com/qihoo/jenkins/plugins/fireline"
+developers:
+- "weihao"
+- "AnneWei"
