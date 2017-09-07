@@ -1,0 +1,7 @@
+---
+name: "ecs-publisher"
+paths:
+- "de/eacg/ecs-publisher"
+developers:
+- "prizrack13"
+- "jthdev"
