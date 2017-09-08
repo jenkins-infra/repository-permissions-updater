@@ -1,0 +1,6 @@
+---
+name: "git-bisect"
+paths:
+- "org/jenkins-ci/plugins/git-bisect"
+developers:
+- "dorav"
