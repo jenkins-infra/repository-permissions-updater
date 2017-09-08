@@ -1,0 +1,6 @@
+---
+name: "argus-notifier"
+paths:
+- "org/jenkins-ci/plugins/argus-notifier"
+developers:
+- "justinharringa"
