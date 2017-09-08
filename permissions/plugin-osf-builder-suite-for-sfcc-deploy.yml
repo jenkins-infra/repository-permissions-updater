@@ -1,0 +1,6 @@
+---
+name: "osf-builder-suite-for-sfcc-deploy"
+paths:
+  - "org/jenkins-ci/plugins/osf-builder-suite-for-sfcc-deploy"
+developers:
+  - "danechitoaie"
