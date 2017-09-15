@@ -1,6 +1,6 @@
 ---
 name: "smalltest"
 paths:
-- "com/smalltest"
+- "com/smalltest/smalltest"
 developers:
 - "smalltest"
