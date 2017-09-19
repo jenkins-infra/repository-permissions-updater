@@ -1,6 +1,6 @@
 ---
 name: "fireline"
 paths:
-- "com/qihoo/jenkins/plugins/fireline"
+- "org/jenkins-ci/plugins/plugin/fireline"
 developers:
 - "weihao"
