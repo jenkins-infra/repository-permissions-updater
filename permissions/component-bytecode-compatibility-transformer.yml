@@ -1,5 +1,5 @@
 ---
-name: "lib-jenkins-bytecode-compatibility-transformer"
+name: "bytecode-compatibility-transformer"
 paths:
 - "org/jenkins-ci/bytecode-compatibility-transformer"
 developers:
