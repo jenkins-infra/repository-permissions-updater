@@ -1,5 +1,5 @@
 ---
-name: "compuware-xoediter-code-coverage"
+name: "compuware-xpediter-code-coverage"
 paths:
 - "com/compuware/jenkins/compuware-xpediter-code-coverage"
 developers:
