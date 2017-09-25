@@ -1,0 +1,6 @@
+---
+name: "azure-acs"
+paths:
+- "org/jenkins-ci/plugins/azure-acs"
+developers:
+- "chenkennt"
