@@ -1,0 +1,6 @@
+---
+name: "gitflow"
+paths:
+- "de/silpion/jenkins/plugins/gitflow"
+developers:
+- "marcrohlfs"
