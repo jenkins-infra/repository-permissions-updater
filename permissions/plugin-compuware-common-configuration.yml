@@ -1,0 +1,6 @@
+---
+name: "compuware-common-configuration"
+paths:
+- "com/compuware/jenkins/compuware-common-configuration"
+developers:
+- "cpwr_jenkins"
