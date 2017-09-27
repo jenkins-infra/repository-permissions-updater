@@ -1,0 +1,10 @@
+---
+name: "blueocean-executor-info"
+paths:
+- "org/jenkins-ci/plugins/blueocean-executor-info"
+developers:
+- "jamesdumay"
+- "michaelneale"
+- "vivek"
+- "kzantow"
+---
