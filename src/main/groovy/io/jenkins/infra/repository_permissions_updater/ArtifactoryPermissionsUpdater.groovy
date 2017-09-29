@@ -161,7 +161,7 @@ public class ArtifactoryPermissionsUpdater {
                         users [:]
                     } else {
                         users definition.developers.collectEntries { developer ->
-                            ["$developer": ["w", "n"]]
+                            ["${developer.toLowerCase()}": ["w", "n"]]
                         }
                     }
                     groups([:])
