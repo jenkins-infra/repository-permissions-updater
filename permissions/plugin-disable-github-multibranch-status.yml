@@ -1,0 +1,6 @@
+---
+name: "disable-github-multibranch-status"
+paths:
+- "org/jenkins-ci/plugins/disable-github-multibranch-status"
+developers:
+- "bksaville"
