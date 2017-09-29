@@ -1,0 +1,6 @@
+---
+name: "bitbucket-source-aged-refs-trait"
+paths:
+- "org/jenkins-ci/plugins/bitbucket-source-aged-refs-trait"
+developers:
+- "witokondoria"

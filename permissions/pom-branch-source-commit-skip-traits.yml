@@ -1,0 +1,6 @@
+---
+name: "branch-source-commit-skip-traits"
+paths:
+- "org/jenkins-ci/plugins/branch-source-commit-skip-traits"
+developers:
+- "witokondoria"
