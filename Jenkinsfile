@@ -1,19 +1,26 @@
-properties([
-        [$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', numToKeepStr: '10']],
-        [$class: 'PipelineTriggersJobProperty', triggers: [
-            [$class: 'SCMTrigger', scmpoll_spec: 'H/2 * * * *', ignorePostCommitHooks: false],
-            cron('H/30 * * * *')
-        ]]
-])
+def props = [
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+]
+
+def triggers = [
+        pollSCM('H/2 * * * *')
+]
 
 def dryRun = true
 
-/* Exit early if we are executing in a pull request or branch in trusted.ci, until this ticket is resolved:
- * https://issues.jenkins-ci.org/browse/INFRA-902
- */
-if (!env.CHANGE_ID && (!env.BRANCH_NAME || env.BRANCH_NAME == 'master') && infra.isTrusted()) {
-    dryRun = false
+if (!env.CHANGE_ID && (!env.BRANCH_NAME || env.BRANCH_NAME == 'master')) {
+    if (infra.isTrusted()) {
+        // only on trusted.ci, running on master is not a dry-run
+        dryRun = false
+    }
+    // elsewhere, it still should get built periodically
+    triggers += cron('H/30 * * * *')
 }
+
+props += pipelineTriggers(triggers)
+
+properties(props)
+
 
 node('java') {
     try {
