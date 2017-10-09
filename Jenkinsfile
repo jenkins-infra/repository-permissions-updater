@@ -1,17 +1,26 @@
-properties([
-        [$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', numToKeepStr: '10']],
-        [$class: 'PipelineTriggersJobProperty', triggers: [
-            [$class: 'SCMTrigger', scmpoll_spec: 'H/2 * * * *', ignorePostCommitHooks: false],
-            cron('H/30 * * * *')
-        ]]
-])
+def props = [
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+]
 
-/* Exit early if we are executing in a pull request, until this ticket is resolved:
- * https://issues.jenkins-ci.org/browse/INFRA-902
- */
-if (env.CHANGE_ID) {
-    return
+def triggers = [
+        pollSCM('H/2 * * * *')
+]
+
+def dryRun = true
+
+if (!env.CHANGE_ID && (!env.BRANCH_NAME || env.BRANCH_NAME == 'master')) {
+    if (infra.isTrusted()) {
+        // only on trusted.ci, running on master is not a dry-run
+        dryRun = false
+    }
+    // elsewhere, it still should get built periodically
+    triggers += cron('H/30 * * * *')
 }
+
+props += pipelineTriggers(triggers)
+
+properties(props)
+
 
 node('java') {
     try {
@@ -28,13 +37,19 @@ node('java') {
         sh "${mvnHome}/bin/mvn -U clean verify"
 
         stage 'Run'
-        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'artifactoryAdmin',
-                          usernameVariable: 'ARTIFACTORY_USERNAME', passwordVariable: 'ARTIFACTORY_PASSWORD']]) {
-            sh '${JAVA_HOME}/bin/java' +
-                    ' -DdefinitionsDir=$PWD/permissions' +
-                    ' -DartifactoryApiTempDir=$PWD/json' +
-                    ' -Djava.util.logging.SimpleFormatter.format="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n"' +
-                    ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar'
+
+        def javaArgs = ' -DdefinitionsDir=$PWD/permissions' +
+                       ' -DartifactoryApiTempDir=$PWD/json' +
+                       ' -Djava.util.logging.SimpleFormatter.format="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n"' +
+                       ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar'
+
+
+        if (dryRun) {
+            sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
+        } else {
+            withCredentials([usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME')]) {
+                sh '${JAVA_HOME}/bin/java ' + javaArgs
+            }
         }
     } finally {
         stage 'Archive'
