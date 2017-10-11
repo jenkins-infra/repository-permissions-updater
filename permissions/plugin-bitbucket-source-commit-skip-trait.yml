@@ -1,6 +1,0 @@
----
-name: "bitbucket-source-commit-skip-trait"
-paths:
-- "org/jenkins-ci/plugins/bitbucket-source-commit-skip-trait"
-developers:
-- "witokondoria"
