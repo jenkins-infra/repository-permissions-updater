@@ -3,4 +3,4 @@ name: "skytap"
 paths:
 - "org/jenkins-ci/plugins/skytap"
 developers:
-- "tmilligan"
+- "jchenry"
