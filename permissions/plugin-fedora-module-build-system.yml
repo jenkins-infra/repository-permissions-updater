@@ -1,0 +1,6 @@
+---
+name: "fedora-module-build-system"
+paths:
+- "org/jenkins-ci/plugins/fedora-module-build-system"
+developers:
+- "scoheb"

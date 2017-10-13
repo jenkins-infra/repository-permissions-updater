@@ -1,0 +1,9 @@
+---
+name: "maven33-interceptor"
+paths:
+- "org/jenkins-ci/main/maven/maven33-interceptor"
+developers:
+- "kutzi"
+- "ndeloof"
+- "olamy"
+- "aheritier"

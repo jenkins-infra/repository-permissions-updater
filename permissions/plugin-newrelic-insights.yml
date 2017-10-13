@@ -1,0 +1,6 @@
+---
+name: "newrelic-insights"
+paths:
+- "org/jenkins-ci/plugins/newrelic-insights"
+developers:
+- "tiny_dancer"

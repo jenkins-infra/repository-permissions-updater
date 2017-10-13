@@ -1,0 +1,9 @@
+---
+name: "zanata"
+paths:
+- "org/jenkins-ci/plugins/zanata"
+developers:
+- "yushao"
+- "huangp"
+- "seanf"
+

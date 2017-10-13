@@ -1,0 +1,6 @@
+---
+name: "pipeline-github"
+paths:
+- "org/jenkins-ci/plugins/pipeline-github"
+developers:
+- "aaronjwhiteside"

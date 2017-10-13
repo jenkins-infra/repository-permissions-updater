@@ -1,0 +1,9 @@
+---
+name: "pipeline-milestone-step"
+paths:
+- "org/jenkins-ci/plugins/pipeline-milestone-step"
+developers:
+- "amuniz"
+- "svanoort"
+- "jglick"
+- "abayer"

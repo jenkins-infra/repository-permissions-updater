@@ -1,0 +1,7 @@
+---
+name: "github-source-aged-refs-trait"
+paths:
+- "org/jenkins-ci/plugins/github-source-aged-refs-trait"
+developers:
+- "witokondoria"
+

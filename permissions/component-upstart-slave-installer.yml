@@ -1,0 +1,8 @@
+---
+name: "upstart-slave-installer"
+paths:
+- "org/jenkins-ci/modules/upstart-slave-installer"
+developers:
+- "kohsuke"
+- "jglick"
+- "oleg_nenashev"

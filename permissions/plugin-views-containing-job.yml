@@ -1,0 +1,7 @@
+---
+name: "views-containing-job"
+paths:
+- "com/oneandone/access/views-containing-job"
+developers:
+- "jochenafuerbacher"
+- "stefanbrausch"

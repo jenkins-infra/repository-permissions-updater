@@ -1,0 +1,6 @@
+---
+name: "slack-uploader"
+paths:
+- "org/jenkins-ci/plugins/slack-uploader"
+developers:
+- "masterlittle"

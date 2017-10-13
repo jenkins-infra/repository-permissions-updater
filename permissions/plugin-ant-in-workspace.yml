@@ -1,0 +1,6 @@
+---
+name: "ant-in-workspace"
+paths:
+- "org/jenkins-ci/plugins/ant-in-workspace"
+developers:
+- "phreakadelle"

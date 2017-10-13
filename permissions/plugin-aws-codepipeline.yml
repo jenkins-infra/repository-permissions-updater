@@ -3,4 +3,8 @@ name: "aws-codepipeline"
 paths:
 - "com/amazonaws/aws-codepipeline"
 developers:
-- "biagic"
+- "belltimo"
+- "bank"
+- "maggiecopyaws"
+- "fgalmeida"
+- "wwna"

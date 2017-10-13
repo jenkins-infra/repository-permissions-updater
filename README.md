@@ -17,7 +17,7 @@ Requesting Permissions
 
 **Prerequisite**: You need to have logged in once to [Artifactory](https://repo.jenkins-ci.org/) with your Jenkins community account before you can be added to a permissions target.
 
-To request upload permissions to an artifact (typically a plugin), file a PR editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR, approving it.
+To request upload permissions to an artifact (typically a plugin), [file a PR](https://help.github.com/articles/creating-a-pull-request/) editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR, approving it.
 
 Managing Permissions
 --------------------

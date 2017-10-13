@@ -3,4 +3,4 @@ name: "nodelabelparameter"
 paths:
 - "org/jenkins-ci/plugins/nodelabelparameter"
 developers:
-- "domi"
+- "imod"

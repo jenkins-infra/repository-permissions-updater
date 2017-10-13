@@ -1,0 +1,6 @@
+---
+name: "extended-read-permission"
+paths:
+- "org/jvnet/hudson/plugins/extended-read-permission"
+developers:
+- "batmat"

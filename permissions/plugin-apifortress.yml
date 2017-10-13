@@ -1,0 +1,6 @@
+---
+name: "apifortress"
+paths:
+- "com/apifortress/jenkins/apifortress"
+developers:
+- "theirish81"

@@ -1,0 +1,6 @@
+---
+name: "security-inspector"
+paths:
+- "org/jenkins-ci/plugins/security-inspector"
+developers:
+- "ks_nenasheva"

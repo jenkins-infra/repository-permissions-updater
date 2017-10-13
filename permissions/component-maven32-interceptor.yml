@@ -3,5 +3,7 @@ name: "maven32-interceptor"
 paths:
 - "org/jenkins-ci/main/maven/maven32-interceptor"
 developers:
+- "kutzi"
 - "ndeloof"
 - "olamy"
+- "aheritier"

@@ -1,0 +1,6 @@
+---
+name: "svn-partial-release-mgr"
+paths:
+- "org/jenkins-ci/plugins/svn-partial-release-mgr"
+developers:
+- "giliadis"

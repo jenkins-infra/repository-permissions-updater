@@ -1,0 +1,6 @@
+---
+name: "rpi-build-status"
+paths:
+- "net/sleepymouse/jenkins/plugins/rpi-build-status"
+developers:
+- "havelaptopwillcode"

@@ -1,0 +1,6 @@
+---
+name: "block-build-final-project"
+paths:
+- "org/jenkins-ci/plugins/block-build-final-project"
+developers:
+- "chadrosenquist"

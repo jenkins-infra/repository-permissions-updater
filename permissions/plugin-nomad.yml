@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/nomad"
 developers:
 - "iverberk"
+- "antweiss"

@@ -4,3 +4,5 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-build-step"
 developers:
 - "jglick"
+- "abayer"
+- "svanoort"

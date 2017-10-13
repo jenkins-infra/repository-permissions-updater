@@ -1,0 +1,6 @@
+---
+name: "github-source-commit-skip-trait"
+paths:
+- "org/jenkins-ci/plugins/github-source-commit-skip-trait"
+developers:
+- "witokondoria"

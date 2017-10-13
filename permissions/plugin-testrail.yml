@@ -1,0 +1,6 @@
+---
+name: "testrail"
+paths:
+- "org/jenkins-ci/plugins/testrail"
+developers:
+- "xirsoi"

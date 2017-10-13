@@ -1,0 +1,6 @@
+---
+name: "build-notifications"
+paths:
+- "tools/devnull/build-notifications"
+developers:
+- "ataxexe"

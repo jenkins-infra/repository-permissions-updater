@@ -1,0 +1,6 @@
+---
+name: "device-watcher"
+paths:
+- "org/jenkins-ci/plugins/device-watcher"
+developers:
+- "sonicwind"

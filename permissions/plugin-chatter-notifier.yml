@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/chatter-notifier"
 developers:
 - "sfell"
+- "justinharringa"

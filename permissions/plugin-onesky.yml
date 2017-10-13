@@ -1,0 +1,6 @@
+---
+name: "onesky"
+paths: 
+- "org/jenkins-ci/plugins/onesky"
+developers:
+- "ricardoespsanto"

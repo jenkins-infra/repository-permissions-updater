@@ -1,0 +1,8 @@
+---
+name: "systemd-slave-installer"
+paths:
+- "org/jenkins-ci/modules/systemd-slave-installer"
+developers:
+- "kohsuke"
+- "jglick"
+- "oleg_nenashev"

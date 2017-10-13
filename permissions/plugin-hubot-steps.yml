@@ -1,0 +1,6 @@
+---
+name: "hubot-steps"
+paths:
+- "org/jenkins-ci/plugins/hubot-steps"
+developers:
+- "nrayapati"

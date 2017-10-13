@@ -1,0 +1,6 @@
+---
+name: "diawi-upload"
+paths:
+- "org/jenkins-ci/plugins/diawi-upload"
+developers:
+- "m_adawi"

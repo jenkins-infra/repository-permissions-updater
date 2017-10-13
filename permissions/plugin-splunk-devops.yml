@@ -1,0 +1,8 @@
+---
+name: "splunk-devops"
+paths:
+- "com/splunk/splunkins/splunk-devops"
+developers:
+- "fengxx"
+- "araza_splunk"
+- "djenkins"

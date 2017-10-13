@@ -1,0 +1,6 @@
+---
+name: "branch-source-jira-validator-traits"
+paths:
+- "org/jenkins-ci/plugins/branch-source-jira-validator-traits"
+developers:
+- "witokondoria"

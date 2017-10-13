@@ -1,0 +1,6 @@
+---
+name: "impersonation"
+paths:
+- "org/jenkins-ci/plugins/impersonation"
+developers:
+- "stephenconnolly"

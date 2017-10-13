@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/zephyr-enterprise-test-management"
 developers:
 - "zeedeveloper"
+- "mohanzephyr"

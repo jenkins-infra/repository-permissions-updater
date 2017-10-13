@@ -5,3 +5,4 @@ paths:
 - "org/jvnet/hudson/plugins/jira"
 developers:
 - "warden"
+- "olamy"

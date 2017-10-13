@@ -1,0 +1,8 @@
+---
+name: "incapptic-connect-uploader"
+paths:
+- "com/incapptic/plugins/incapptic-connect-uploader"
+developers:
+- "incapptic_connect"
+
+

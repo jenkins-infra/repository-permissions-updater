@@ -1,0 +1,6 @@
+---
+name: "violation-comments-to-gitlab"
+paths:
+- "org/jenkins-ci/plugins/violation-comments-to-gitlab"
+developers:
+- "tomasbjerre"

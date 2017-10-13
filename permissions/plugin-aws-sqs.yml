@@ -1,0 +1,6 @@
+---
+name: "aws-sqs"
+paths:
+- "io/relution/jenkins/aws-sqs"
+developers:
+- "nickg"

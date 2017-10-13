@@ -1,0 +1,6 @@
+---
+name: "vectorcast-coverage"
+paths:
+- "org/jenkins-ci/plugins/vectorcast-coverage"
+developers:
+- "rmkeeble"

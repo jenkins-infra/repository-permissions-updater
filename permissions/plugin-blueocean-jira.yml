@@ -1,0 +1,10 @@
+---
+name: "blueocean-jira"
+paths:
+- "io/jenkins/blueocean/blueocean-jira"
+developers:
+- "michaelneale"
+- "vivek"
+- "tfennelly"
+- "kzantow"
+- "tscherler"

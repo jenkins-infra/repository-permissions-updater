@@ -1,0 +1,6 @@
+---
+name: "catalogic-ecx"
+paths:
+- "com/catalogic/ecxjenkins/catalogic-ecx"
+developers:
+- "neethapai"

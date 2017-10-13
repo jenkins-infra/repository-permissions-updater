@@ -1,0 +1,6 @@
+---
+name: "scm-filter-branch-pr"
+paths:
+- "org/jenkins-ci/plugins/scm-filter-branch-pr"
+developers:
+- "sag47"

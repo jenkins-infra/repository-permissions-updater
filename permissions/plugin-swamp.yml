@@ -1,0 +1,6 @@
+---
+name: "swamp"
+paths:
+- "org/continuousassurance/swamp/jenkins/swamp"
+developers:
+- "swamp_jenkins_plugin"

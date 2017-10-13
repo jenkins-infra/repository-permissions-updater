@@ -1,0 +1,6 @@
+---
+name: "kubernetes-pipeline-arquillian-steps"
+paths:
+- "io/fabric8/pipeline/kubernetes-pipeline-arquillian-steps"
+developers:
+- "iocanel"

@@ -2,4 +2,6 @@
 name: "favorite"
 paths:
 - "org/jvnet/hudson/plugins/favorite"
-developers: []
+developers:
+- "michaelneale"
+- "jamesdumay"

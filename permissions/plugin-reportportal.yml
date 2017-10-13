@@ -1,0 +1,6 @@
+---
+name: "reportportal"
+paths:
+- "org/jenkins-ci/plugins/reportportal"
+developers:
+- "avarabyeu"

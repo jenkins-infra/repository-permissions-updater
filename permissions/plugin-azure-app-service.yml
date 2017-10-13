@@ -1,0 +1,6 @@
+---
+name: "azure-app-service"
+paths:
+- "org/jenkins-ci/plugins/azure-app-service"
+developers:
+- "chenkennt"

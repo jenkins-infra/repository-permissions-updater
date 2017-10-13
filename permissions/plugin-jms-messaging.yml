@@ -1,0 +1,7 @@
+---
+name: "jms-messaging"
+paths:
+- "org/jenkins-ci/plugins/jms-messaging"
+developers:
+- "scoheb"
+- "ggallen"

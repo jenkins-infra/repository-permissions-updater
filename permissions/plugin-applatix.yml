@@ -1,0 +1,6 @@
+---
+name: "applatix"
+paths:
+- "com/applatix/jenkins/applatix"
+developers:
+- "applatix_jenkins"

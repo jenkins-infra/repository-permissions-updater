@@ -1,0 +1,7 @@
+---
+name: "pipeline-githubnotify-step"
+paths:
+- "org/jenkins-ci/plugins/pipeline-githubnotify-step"
+developers:
+- "rarabaolaza"
+- "recena"

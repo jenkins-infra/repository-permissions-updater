@@ -2,4 +2,7 @@
 name: "secure-requester-whitelist"
 paths:
 - "org/jenkins-ci/plugins/secure-requester-whitelist"
-developers: []
+developers:
+- "jglick"
+- "andresrc"
+  

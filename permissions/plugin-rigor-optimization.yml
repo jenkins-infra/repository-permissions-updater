@@ -1,0 +1,6 @@
+---
+name: "rigor-optimization"
+paths:
+- "org/jenkins-ci/plugins/rigor-optimization"
+developers:
+- "mtisham"

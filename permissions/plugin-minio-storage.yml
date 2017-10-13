@@ -1,0 +1,6 @@
+---
+name: "minio-storage"
+paths:
+- "org/jenkins-ci/plugins/minio-storage"
+developers:
+- "minio"

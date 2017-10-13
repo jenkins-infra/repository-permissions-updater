@@ -1,0 +1,6 @@
+---
+name: "compuware-xpediter-code-coverage"
+paths:
+- "com/compuware/jenkins/compuware-xpediter-code-coverage"
+developers:
+- "cpwr_jenkins"

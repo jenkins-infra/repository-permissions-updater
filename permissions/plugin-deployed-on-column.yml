@@ -2,4 +2,5 @@
 name: "deployed-on-column"
 paths:
 - "org/jenkins-ci/plugins/deployed-on-column"
-developers: []
+developers:
+- "recena"

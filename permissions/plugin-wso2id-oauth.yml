@@ -1,0 +1,6 @@
+---
+name: "wso2id-oauth"
+paths:
+- "org/jenkins-ci/plugins/wso2id-oauth"
+developers:
+- "mohamedelhabib"

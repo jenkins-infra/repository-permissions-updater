@@ -1,0 +1,8 @@
+---
+name: "splunk-devops-shaded"
+paths:
+- "com/splunk/splunkins/splunk-devops-shaded"
+developers:
+- "fengxx"
+- "araza_splunk"
+- "djenkins"

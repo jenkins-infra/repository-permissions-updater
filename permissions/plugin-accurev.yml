@@ -2,9 +2,5 @@
 name: "accurev"
 paths:
 - "org/jenkins-ci/plugins/accurev"
-- "org/jvnet/hudson/plugins/accurev"
 developers:
-- "jsherwood_accurev"
-- "ndeloof"
-- "rym0021"
 - "casz"

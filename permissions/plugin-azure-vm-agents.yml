@@ -1,0 +1,8 @@
+---
+name: "azure-vm-agents"
+paths:
+- "org/jenkins-ci/plugins/azure-vm-agents"
+developers:
+- "clguiman"
+- "arroyc_microsoft"
+- "chenkennt"

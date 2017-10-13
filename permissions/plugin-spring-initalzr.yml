@@ -1,0 +1,6 @@
+---
+name: "spring-initalzr"
+paths:
+- "org/jenkins-ci/plugins/spring-initalzr"
+developers:
+- "migger"

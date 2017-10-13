@@ -4,3 +4,5 @@ paths:
 - "com/openshift/jenkins/openshift-pipeline"
 developers:
 - "gmontero"
+- "bparees"
+- "rymurphy"
