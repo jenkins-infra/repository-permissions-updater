@@ -1,0 +1,6 @@
+---
+name: "scm-trait-commit-skip-parent"
+paths:
+- "org/jenkins-ci/plugins/scm-trait-commit-skip-parent"
+developers:
+- "witokondoria"
