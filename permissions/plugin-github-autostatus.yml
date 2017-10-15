@@ -1,0 +1,6 @@
+---
+name: "github-autostatus"
+paths:
+- "org/jenkins-ci/plugins/github-autostatus"
+developers:
+- "jeffpearce"
