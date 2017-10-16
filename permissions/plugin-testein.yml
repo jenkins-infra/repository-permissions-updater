@@ -3,5 +3,4 @@ name: "testein"
 paths:
 - "com/testein/testein"
 developers:
-- "dbondarchuk"
-- "ViTaLESs"
+- "testein"
