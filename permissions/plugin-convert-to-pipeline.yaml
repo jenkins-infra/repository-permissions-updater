@@ -1,6 +1,6 @@
 ---
-2	name: "convert-to-pipeline"
-3	paths:
-4	- "org/jenkins-ci/plugins/convert-to-pipeline"
-5	developers:
-6	- "mohit_dharamshi"
+name: "convert-to-pipeline"
+paths:
+- "org/jenkins-ci/plugins/convert-to-pipeline"
+developers:
+- "mohit_dharamshi"
