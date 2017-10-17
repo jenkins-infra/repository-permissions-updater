@@ -1,0 +1,8 @@
+---
+name: "command-launcher"
+paths:
+- "org/jenkins-ci/plugins/command-launcher"
+developers:
+- "jglick"
+- "oleg_nenashev"
+- "danielbeck"
