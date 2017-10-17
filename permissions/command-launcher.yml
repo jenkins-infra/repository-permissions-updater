@@ -4,5 +4,5 @@ paths:
 - "org/jenkins-ci/plugins/command-launcher"
 developers:
 - "jglick"
-- "oleg-nenashev"
-- "daniel-beck"
+- "oleg_nenashev"
+- "danielbeck"
