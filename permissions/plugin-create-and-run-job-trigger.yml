@@ -1,0 +1,6 @@
+---
+name: "create-and-run-job-trigger"
+paths:
+- "org/jenkins-ci/plugins/create-and-run-job-trigger"
+developers:
+- "culmat"
