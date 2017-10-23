@@ -2,4 +2,5 @@
 name: "jsoup"
 paths:
 - "org/jenkins-ci/plugins/jsoup"
-developers: []
+developers:
+- "stephenconnolly"
