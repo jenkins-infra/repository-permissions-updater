@@ -1,0 +1,11 @@
+---
+name: "jenkins-design-language"
+paths:
+- "io/jenkins/blueocean/jenkins-design-language"
+developers:
+- "michaelneale"
+- "vivek"
+- "tfennelly"
+- "kzantow"
+- "tscherler"
+
