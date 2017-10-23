@@ -1,0 +1,6 @@
+---
+name: "pipeline-bamboo"
+paths:
+- "com/logmeine/pipeline-bamboo"
+developers:
+- "kflavin"
