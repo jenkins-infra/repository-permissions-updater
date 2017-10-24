@@ -1,0 +1,6 @@
+---
+name: "scm-filter-aged-refs-parent"
+paths:
+- "org/jenkins-ci/plugins/scm-filter-aged-refs-parent"
+developers:
+- "witokondoria"
