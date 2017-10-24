@@ -1,6 +1,0 @@
----
-name: "branch-source-aged-refs-traits"
-paths:
-- "org/jenkins-ci/plugins/branch-source-aged-refs-traits"
-developers:
-- "witokondoria"

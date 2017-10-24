@@ -1,0 +1,7 @@
+---
+name: "github-scm-filter-aged-refs"
+paths:
+- "org/jenkins-ci/plugins/github-scm-filter-aged-refs"
+developers:
+- "witokondoria"
+
