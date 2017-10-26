@@ -1,0 +1,6 @@
+---
+name: "scm-filter-jira-validator-parent"
+paths:
+- "org/jenkins-ci/plugins/scm-filter-jira-validator-parent"
+developers:
+- "witokondoria"

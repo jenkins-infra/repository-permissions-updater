@@ -1,6 +1,0 @@
----
-name: "bitbucket-source-jira-validator-trait"
-paths:
-- "org/jenkins-ci/plugins/bitbucket-source-jira-validator-trait"
-developers:
-- "witokondoria"
