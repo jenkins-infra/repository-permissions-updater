@@ -1,0 +1,6 @@
+---
+name: "github-scm-filter-jira-validator"
+paths:
+- "org/jenkins-ci/plugins/github-scm-filter-jira-validator"
+developers:
+- "witokondoria"
