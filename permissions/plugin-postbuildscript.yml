@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/postbuildscript"
 developers:
 - "gbois"
+- "dheid"
