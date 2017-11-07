@@ -1,7 +1,7 @@
 ---
 name: "cloudcoreo-deploytime"
 paths:
-- "com/cloudcoreo/plugins"
+- "com/cloudcoreo/plugins/cloudcoreo-deploytime"
 developers:
 - "pauldallen"
 - "smattes"
