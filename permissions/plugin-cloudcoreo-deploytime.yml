@@ -1,0 +1,7 @@
+---
+name: "cloudcoreo-deploytime"
+paths:
+- "com/cloudcoreo/plugins/cloudcoreo-deploytime"
+developers:
+- "pauldallen"
+- "armaneous"
