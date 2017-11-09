@@ -1,0 +1,6 @@
+---
+name: "ansible-tower"
+paths:
+- "org/jenkins-ci/plugins/ansible-tower"
+developers:
+- "johnwestcottiv"
