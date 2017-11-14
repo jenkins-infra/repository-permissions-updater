@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/xunit"
 developers:
 - "gbois"
+- "abayer"
