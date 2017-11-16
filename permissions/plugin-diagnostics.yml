@@ -1,0 +1,8 @@
+---
+name: "diagnostics"
+path:
+- "org/jenkins-ci/plugins/diagnostics"
+developers:
+- "alecharp"
+- "aheritier"
+- "escoem"
