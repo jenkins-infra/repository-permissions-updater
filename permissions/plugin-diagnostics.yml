@@ -1,6 +1,6 @@
 ---
 name: "diagnostics"
-path:
+paths:
 - "org/jenkins-ci/plugins/diagnostics"
 developers:
 - "alecharp"
