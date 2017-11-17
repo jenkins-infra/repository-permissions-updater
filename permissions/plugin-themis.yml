@@ -1,0 +1,6 @@
+---
+name: themis
+paths:
+    - org/jenkins-ci/plugins/themis
+developers:
+    - rdelamare
