@@ -1,0 +1,6 @@
+---
+name: "continuum"
+paths:
+- "org/jenkins-ci/plugins/continuum"
+developers:
+- "BoraAksoy"
