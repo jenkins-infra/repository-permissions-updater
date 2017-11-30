@@ -1,12 +1,6 @@
-
 ---
-
 name: "service-fabric"
-
 paths:
-
 - "org/jenkins-ci/plugins/service-fabric"
-
 developers:
-
 - "rapatchi"
