@@ -1,0 +1,6 @@
+---
+name: "benchmark"
+paths:
+- "org/jenkins-ci/plugins/benchmark"
+developers:
+- "damercie"
