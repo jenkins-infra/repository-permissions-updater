@@ -2,6 +2,7 @@
 name: "docker-plugin"
 paths:
 - "com/nirima/docker-plugin"
+- "io/jenkins/docker"
 developers:
 - "integer"
 - "magnayn"
