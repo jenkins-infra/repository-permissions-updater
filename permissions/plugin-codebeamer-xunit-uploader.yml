@@ -1,0 +1,6 @@
+---
+name: "codebeamer-xunit-uploader"
+paths:
+- "org/jenkins-ci/plugins/codebeamer-xunit-uploader"
+developers:
+- "intland_support"
