@@ -1,0 +1,6 @@
+---
+name: "log-cli"
+paths:
+- "org/jenkins-ci/plugins/log-cli"
+developers:
+- "jglick"
