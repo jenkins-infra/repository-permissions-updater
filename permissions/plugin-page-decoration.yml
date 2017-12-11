@@ -1,6 +1,0 @@
----
-name: "page-decoration"
-paths:
-- "org/jenkins-ci/plugins/page-decoration"
-developers:
-- "tvon"
