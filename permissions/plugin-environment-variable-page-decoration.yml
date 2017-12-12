@@ -1,0 +1,6 @@
+---
+name: "environment-variable-page-decoration"
+paths:
+- "org/jenkins-ci/plugins/environment-variable-page-decoration"
+developers:
+- "tvon"
