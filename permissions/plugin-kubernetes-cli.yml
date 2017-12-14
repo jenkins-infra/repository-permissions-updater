@@ -1,0 +1,6 @@
+---
+name: "kubernetes-cli"
+paths:
+- "org/jenkins-ci/plugins/kubernetes-cli"
+developers:
+- "max_laverse"
