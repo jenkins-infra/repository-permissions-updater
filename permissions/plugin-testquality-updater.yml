@@ -1,0 +1,6 @@
+---
+name: "testquality-updater"
+paths:
+- "org/jenkins-ci/plugins/testquality-updater"
+developers:
+- "jbpitts"
