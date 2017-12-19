@@ -1,0 +1,8 @@
+---
+name: "azure-commons-core"
+paths:
+- "org/jenkins-ci/plugins/azure-commons-core"
+developers:
+- "chenkennt"
+- "arieshout"
+- "azure_devops"
