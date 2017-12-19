@@ -1,0 +1,9 @@
+---
+name: "azure-ad"
+paths:
+- "org/jenkins-ci/plugins/azure-ad"
+developers:
+- "chenkennt"
+- "arieshout"
+- "raphaelyu"
+- "azure_devops"
