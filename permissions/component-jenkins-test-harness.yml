@@ -3,10 +3,12 @@ name: "jenkins-test-harness"
 paths:
 - "org/jenkins-ci/main/jenkins-test-harness"
 developers:
+- "abayer"
 - "andresrc"
 - "jglick"
 - "kohsuke"
 - "olivergondza"
 - "stephenconnolly"
+- "svanoort"
 - "tfennelly"
 - "olamy"
