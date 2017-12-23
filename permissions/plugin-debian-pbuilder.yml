@@ -1,0 +1,6 @@
+---
+name: "debian-pbuilder"
+paths:
+- "com/rm5248/debian-pbuilder"
+developers:
+- "rm5248"
