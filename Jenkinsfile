@@ -14,7 +14,8 @@ if (!env.CHANGE_ID && (!env.BRANCH_NAME || env.BRANCH_NAME == 'master')) {
         dryRun = false
     }
     // elsewhere, it still should get built periodically
-    triggers += cron('H/30 * * * *')
+    // apparently this spikes load on Artifactory pretty badly, so don't run often
+    triggers += cron('H H * * *')
 }
 
 props += pipelineTriggers(triggers)
