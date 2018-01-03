@@ -1,0 +1,6 @@
+---
+name: "pipeline-deploymon"
+paths:
+- "de/taimos/pipeline-deploymon"
+developers:
+- "hoegertn"
