@@ -1,0 +1,6 @@
+---
+name: "oracle-cloud-infrastructure-compute"
+paths:
+- "org/jenkins-ci/plugins/oracle-cloud-infrastructure-compute"
+developers:
+- "cheshi"
