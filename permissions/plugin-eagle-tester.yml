@@ -1,0 +1,6 @@
+---
+name: "eagle-tester"
+paths:
+- "com/mobileenerlytics/eagle/tester/eagle-tester"
+developers:
+- "mobileenerlytics"
