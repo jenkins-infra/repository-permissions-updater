@@ -1,6 +1,6 @@
 ---
 name: "phoenix-autotest"
 paths:
-- "com/surenpi/jenkins/phoenix"
+- "com/surenpi/jenkins/phoenix-autotest"
 developers:
-- "suren"
+- "surenpi"
