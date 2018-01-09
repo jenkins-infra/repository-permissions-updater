@@ -3,5 +3,5 @@ name: "protecode-sc"
 paths:
 - "com/synopsys/protecode-sc"
 developers:
-- "alatalo"
+- "rukkanen"
 - "mattisii"
