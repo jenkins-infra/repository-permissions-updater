@@ -1,0 +1,6 @@
+---
+name: "non-dynamic-hello-world"
+paths:
+- "io/jenkins/plugins/non-dynamic-hello-world"
+developers:
+- "batmat"
