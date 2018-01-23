@@ -6,3 +6,8 @@ target/
 *.iml
 out/
 lib/
+
+# eclipse
+.classpath
+.project
+.settings
