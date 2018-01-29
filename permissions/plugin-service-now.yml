@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/service-now"
 developers:
 - "james_mcshane"
+- "pdkreid"
