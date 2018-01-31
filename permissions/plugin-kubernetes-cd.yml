@@ -1,0 +1,8 @@
+---
+name: "kubernetes-cd"
+paths:
+- "org/jenkins-ci/plugins/kubernetes-cd"
+developers:
+- "chenkennt"
+- "arieshout"
+- "azure_devops"

@@ -3,4 +3,9 @@ name: "sse-gateway"
 paths:
 - "org/jenkins-ci/plugins/sse-gateway"
 developers:
+- "michaelneale"
+- "vivek"
 - "tfennelly"
+- "kzantow"
+- "tscherler"
+- "jamesdumay"

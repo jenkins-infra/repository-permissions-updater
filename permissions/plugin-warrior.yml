@@ -1,0 +1,6 @@
+---
+name: "warrior"
+paths:
+- "org/jenkins-ci/plugins/warrior"
+developers:
+- "venkat1077"

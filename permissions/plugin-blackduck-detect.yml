@@ -1,0 +1,9 @@
+---
+name: "blackduck-detect"
+paths:
+- "com/blackducksoftware/integration/blackduck-detect"
+developers:
+- "gkillough"
+- "jrichard"
+- "akamen"
+- "bdsoss"

@@ -1,0 +1,6 @@
+---
+name: "global-slack-notifier"
+paths:
+- "org/jenkins-ci/plugins/global-slack-notifier"
+developers:
+- "marimoiro"

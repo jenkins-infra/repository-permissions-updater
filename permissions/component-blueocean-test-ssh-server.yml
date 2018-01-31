@@ -1,0 +1,8 @@
+---
+name: "blueocean-test-ssh-server"
+paths:
+- "io/jenkins/blueocean/blueocean-test-ssh-server"
+developers:
+- "michaelneale"
+- "vivek"
+- "kzantow"

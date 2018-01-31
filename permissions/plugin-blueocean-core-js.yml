@@ -1,0 +1,11 @@
+---
+name: "blueocean-core-js"
+paths:
+- "io/jenkins/blueocean/blueocean-core-js"
+developers:
+- "michaelneale"
+- "vivek"
+- "tfennelly"
+- "kzantow"
+- "tscherler"
+

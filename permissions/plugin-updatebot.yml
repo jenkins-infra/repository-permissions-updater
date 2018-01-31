@@ -1,0 +1,8 @@
+---
+name: "updatebot"
+paths:
+- "org/jenkins-ci/plugins/updatebot"
+developers:
+- "jstrachan"
+- "jrawlings"
+- "fabric8cd"

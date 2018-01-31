@@ -3,4 +3,5 @@ name: "vstestrunner"
 paths:
 - "org/jenkins-ci/plugins/vstestrunner"
 developers:
+- "egoughnour"
 - "yasu_s"

@@ -4,3 +4,4 @@ paths:
 - "hudson/plugins/sloccount/sloccount"
 developers:
 - "mixalturek"
+- "imarinkov"

@@ -1,0 +1,8 @@
+---
+name: "azure-function"
+paths:
+- "org/jenkins-ci/plugins/azure-function"
+developers:
+- "chenkennt"
+- "arieshout"
+- "azure_devops"

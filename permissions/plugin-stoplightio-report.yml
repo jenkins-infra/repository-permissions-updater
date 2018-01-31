@@ -1,0 +1,6 @@
+---
+name: "stoplightio-report"
+paths:
+- "com/arkea/satd/stoplightio-report"
+developers:
+- "ntiss"

@@ -1,0 +1,7 @@
+---
+name: "jx-pipelines"
+paths:
+- "org/jenkins-ci/plugins/jx-pipelines"
+developers:
+- "jstrachan"
+- "jenkinsxbot"

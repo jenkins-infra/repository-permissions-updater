@@ -1,0 +1,6 @@
+---
+name: "sentry"
+paths:
+- 'io/jenkins/plugins/sentry'
+developers:
+- 'rtyler'

@@ -1,0 +1,7 @@
+---
+name: "google-cloudbuild"
+paths:
+- "org/jenkins-ci/plugins/google-cloudbuild"
+developers:
+- "a_goulti"
+- "bwkimmel"

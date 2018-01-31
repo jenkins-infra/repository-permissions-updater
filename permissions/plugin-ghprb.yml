@@ -3,7 +3,8 @@ name: "ghprb"
 paths:
 - "org/jenkins-ci/plugins/ghprb"
 developers:
-- "davidtanner"
-- "valdisrigdon"
+- "bjoernhaeuser"
 - "bpatterson"
-- "mmitche"
+- "jpwku"
+- "papajulio"
+- "sag47"

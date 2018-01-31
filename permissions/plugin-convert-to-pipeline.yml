@@ -1,0 +1,8 @@
+---
+name: "convert-to-pipeline"
+paths:
+- "org/jenkins-ci/plugins/convert-to-pipeline"
+developers:
+- "mohit_dharamshi"
+- "vimal_infostretch"
+- "devenatis"

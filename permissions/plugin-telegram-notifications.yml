@@ -1,0 +1,6 @@
+---
+name: "telegram-notifications"
+paths:
+- "org/jenkins-ci/plugins/telegram-notifications"
+developers:
+- "nikitabelonogov"

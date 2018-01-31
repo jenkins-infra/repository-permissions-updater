@@ -4,3 +4,5 @@ paths:
 - "org/jenkins-ci/plugins/jackson-databind"
 developers:
 - "tfennelly"
+- "oleg_nenashev"
+

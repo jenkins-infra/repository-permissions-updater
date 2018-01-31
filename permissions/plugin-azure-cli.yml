@@ -1,0 +1,6 @@
+---
+name: "azure-cli"
+paths:
+- "org/jenkins-ci/plugins/azure-cli"
+developers:
+- "torosent"

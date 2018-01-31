@@ -1,0 +1,6 @@
+---
+name: "publish-over"
+paths:
+- "org/jenkins-ci/plugins/publish-over"
+developers:
+- "slide_o_mix"

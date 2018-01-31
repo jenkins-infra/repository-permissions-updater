@@ -4,3 +4,5 @@ paths:
 - "org/jenkins-ci/plugins/jackson2-api"
 developers:
 - "stephenconnolly"
+- "oleg_nenashev"
+

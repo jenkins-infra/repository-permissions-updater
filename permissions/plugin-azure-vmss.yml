@@ -1,0 +1,8 @@
+---
+name: "azure-vmss"
+paths:
+- "org/jenkins-ci/plugins/azure-vmss"
+developers:
+- "chenkennt"
+- "arieshout"
+- "azure_devops"

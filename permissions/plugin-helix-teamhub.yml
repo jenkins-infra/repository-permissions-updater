@@ -1,0 +1,6 @@
+---
+name: "helix-teamhub"
+paths:
+- "org/jenkins-ci/plugins/helix-teamhub"
+developers:
+- "sayradley"
