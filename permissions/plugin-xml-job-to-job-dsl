@@ -1,0 +1,6 @@
+---
+name: "xml-job-to-job-dsl-plugin"
+paths:
+- "org/jenkins-ci/plugins/xml-job-to-job-dsl-plugin"
+developers:
+- "alandoni"
