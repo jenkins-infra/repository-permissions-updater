@@ -1,6 +1,0 @@
----
-name: "xmljobtodsl"
-paths:
-- "com/adq/jenkins/xmljobtodsl"
-developers:
-- "alandoni"
