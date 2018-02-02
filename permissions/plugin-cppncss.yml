@@ -2,4 +2,6 @@
 name: "cppncss"
 paths:
 - "org/jvnet/hudson/plugins/cppncss"
-developers: []
+developers:
+- "oleg_nenashev"
+
