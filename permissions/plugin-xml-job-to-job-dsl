@@ -1,5 +1,5 @@
 ---
-name: "xml-job-to-job-dsl-plugin"
+name: "xmljobtodsl"
 paths:
 - "com/adq/jenkins/xmljobtodsl"
 developers:
