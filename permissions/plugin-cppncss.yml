@@ -2,6 +2,7 @@
 name: "cppncss"
 paths:
 - "org/jvnet/hudson/plugins/cppncss"
+- "org/jenkins-ci/plugins/cppncss"
 developers:
 - "oleg_nenashev"
 
