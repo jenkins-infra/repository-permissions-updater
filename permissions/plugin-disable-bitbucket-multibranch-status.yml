@@ -1,0 +1,6 @@
+---
+name: "disable-bitbucket-multibranch-status"
+paths:
+- "org/jenkins-ci/plugins/disable-bitbucket-multibranch-status"
+developers:
+- "bniwredyc"
