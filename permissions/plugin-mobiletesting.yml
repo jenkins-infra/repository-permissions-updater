@@ -1,0 +1,6 @@
+---
+name: "mobiletesting"
+paths:
+- "org/jenkins-ci/plugins/mobiletesting"
+developers:
+- "deyan_kalinov"
