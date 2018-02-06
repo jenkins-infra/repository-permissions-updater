@@ -1,0 +1,6 @@
+---
+name: "xml-job-to-job-dsl"
+paths:
+- "com/adq/jenkins/xml-job-to-job-dsl"
+developers:
+- "alandoni"
