@@ -3,5 +3,4 @@ name: "stackify-deployment-recorder"
 paths:
 - "org/jenkins-ci/plugins/stackify-deployment-recorder"
 developers:
-- "eric-martin"
-- "darinhoward"
+- "emartin"
