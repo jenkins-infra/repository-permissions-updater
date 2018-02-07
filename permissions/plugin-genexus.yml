@@ -1,0 +1,6 @@
+---
+name: "genexus"
+paths:
+- "org/jenkins-ci/plugins/genexus"
+developers:
+- "jlr"
