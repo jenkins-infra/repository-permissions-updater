@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/docker-traceability"
 developers:
 - "oleg_nenashev"
+- "ataylor"
