@@ -1,0 +1,6 @@
+---
+name: "kotlin-v1-stdlib-jdk8"
+paths:
+- "org/jenkins-ci/plugins/kotlin/kotlin-v1-stdlib-jdk8"
+developers:
+- "casz"

@@ -1,0 +1,6 @@
+---
+name: "kotlin-plugin"
+paths:
+- "org/jenkins-ci/plugins/kotlin-plugin"
+developers:
+- "casz"
