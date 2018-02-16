@@ -5,3 +5,4 @@ paths:
 - "org/jvnet/hudson/plugins/junit-attachments"
 developers:
 - "abayer"
+- "jglick"
