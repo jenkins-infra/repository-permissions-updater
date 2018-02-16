@@ -3,4 +3,4 @@ name: "BlazeMeterJenkinsPlugin"
 paths:
 - "com/blazemeter/plugins/BlazeMeterJenkinsPlugin"
 developers:
-- "zmicerkashlach"
+- "sat_blazemeter"
