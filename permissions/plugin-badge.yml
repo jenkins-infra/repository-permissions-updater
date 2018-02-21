@@ -1,0 +1,6 @@
+---
+name: "badge"
+paths:
+- "org/jenkins-ci/plugins/badge"
+developers:
+- "bakito"
