@@ -2,4 +2,7 @@
 name: "cygwin-process-killer"
 paths:
 - "com/synopsys/arc/jenkinsci/plugins/cygwin-process-killer"
-developers: []
+- "org/jenkins-ci/plugins/cygwin-process-killer"
+developers: 
+- "oleg_nenashev"
+
