@@ -5,3 +5,5 @@ paths:
 - "org/jvnet/hudson/plugins/jdepend"
 developers:
 - "ndeloof"
+- "oleg_nenashev"
+
