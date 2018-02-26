@@ -1,0 +1,6 @@
+---
+name: "loadbalance"
+paths:
+- "com/surenpi/jenkins/loadbalance"
+developers:
+- "surenpi"
