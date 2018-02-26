@@ -3,4 +3,4 @@ name: "itest"
 paths:
 - "org/jenkins-ci/plugins/itest"
 developers:
-- "rmstratus"
+- "cwhitty"
