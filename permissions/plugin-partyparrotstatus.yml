@@ -1,0 +1,6 @@
+---
+name: "partyparrotstatus"
+paths:
+- "org/jenkins-ci/plugins/partyparrotstatus"
+developers:
+- "nikitabelonogov"
