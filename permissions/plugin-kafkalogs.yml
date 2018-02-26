@@ -1,0 +1,6 @@
+---
+name: "kafkalogs"
+paths:
+- "org/jenkins-ci/plugins/kafkalogs"
+developers:
+- "trevorlinton"

@@ -2,4 +2,5 @@
 name: "leastload"
 paths:
 - "org/jenkins-ci/plugins/leastload"
-developers: []
+developers:
+- "bstick12"

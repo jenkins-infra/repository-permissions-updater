@@ -1,0 +1,6 @@
+---
+name: "radargun-reporting"
+paths:
+- "org/jenkins-ci/plugins/radargun-reporting"
+developers:
+- "abar"
