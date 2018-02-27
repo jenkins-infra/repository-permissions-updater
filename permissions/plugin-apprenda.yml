@@ -1,0 +1,7 @@
+---
+name: "apprenda"
+paths:
+- "org/jenkins-ci/plugins/apprenda"
+developers:
+- "apprenda"
+- "michmike"
