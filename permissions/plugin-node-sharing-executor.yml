@@ -1,0 +1,8 @@
+---
+name: "node-sharing-executor"
+paths:
+- "org/jenkins-ci/plugins/nodesharing/node-sharing-executor"
+developers:
+- "scoheb"
+- "pajasoft"
+- "olivergondza"
