@@ -1,0 +1,8 @@
+---
+name: "node-sharing-lib"
+paths:
+- "org/jenkins-ci/plugins/nodesharing/node-sharing-lib"
+developers:
+- "scoheb"
+- "pajasoft"
+- "olivergondza"
