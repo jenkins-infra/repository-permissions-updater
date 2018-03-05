@@ -3,9 +3,10 @@ name: "coverity"
 paths:
 - "org/jenkins-ci/plugins/coverity"
 developers:
-- "frossi"
-- "kdang"
+- "gkillough"
+- "jrichard"
+- "akamen"
+- "bdsoss"
 - "shami"
 - "jbriggs"
 - "ahcho0819"
-- "oleg_nenashev"
