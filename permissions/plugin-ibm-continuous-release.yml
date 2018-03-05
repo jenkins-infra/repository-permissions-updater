@@ -1,0 +1,6 @@
+---
+name: "ibm-continuous-release"
+paths:
+- "com/ibm/devops/ibm-continuous-release"
+developers:
+- "aberkIBM"
