@@ -1,0 +1,7 @@
+---
+name: "loadium"
+paths:
+- "com/loadium/jenkins/loadium"
+developers:
+- "loadium"
+- "erhangullu"
