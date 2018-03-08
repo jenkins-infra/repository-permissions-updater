@@ -1,0 +1,6 @@
+---
+name: "gprbuild"
+paths:
+- "io/jenkins/plugins/gprbuild"
+developers:
+- "FeBrex"
