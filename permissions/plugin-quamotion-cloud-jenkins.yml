@@ -1,6 +1,6 @@
 ---
-name: "quamotion-cloud-jenkins"
+name: "quamotion-cloud"
 paths:
-- "org/jenkins-ci/plugins/quamotion-cloud-jenkins"
+- "org/jenkins-ci/plugins/quamotion-cloud"
 developers:
 - "bartsaintgermain"
