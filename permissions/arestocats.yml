@@ -1,0 +1,6 @@
+---
+name: "arestocats"
+paths:
+- "org/jenkins-ci/plugins/arestocats"
+developers:
+- "qacwnfq"
