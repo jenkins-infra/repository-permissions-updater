@@ -1,0 +1,9 @@
+---
+name: "jdk-tool"
+paths:
+- "org/jenkins-ci/plugins/jdk-tool"
+developers:
+- "dnusbaum"
+- "jglick"
+- "oleg_nenashev"
+- "aheritier"
