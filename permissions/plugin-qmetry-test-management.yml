@@ -1,6 +1,6 @@
 ---
 name:"qmetry-test-management"
 paths:
-- "com/qmetry/qmetry-test-management"
+- "org/jenkins-ci/plugins/qmetry-test-management"
 developers:
 - "dharaghodasara"
