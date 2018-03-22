@@ -1,0 +1,7 @@
+---
+name: "gerrit-code-review"
+paths:
+- "org/jenkins-ci/plugins/gerrit-code-review"
+developers:
+- "lucamilanesio"
+- "ssbarnea"
