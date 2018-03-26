@@ -3,4 +3,5 @@ name: "flaky-test-handler"
 paths:
 - "org/jenkins-ci/plugins/flaky-test-handler"
 developers:
+- "scpeters"
 - "seriousamlqz"
