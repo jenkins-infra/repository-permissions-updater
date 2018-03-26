@@ -1,0 +1,9 @@
+---
+name: "custom-war-packager-maven-plugin"
+paths:
+- "io/jenkins/tools/custom-war-packager/custom-war-packager-maven-plugin"
+developers:
+- "oleg_nenashev"
+- "jglick"
+- "csanchez"
+

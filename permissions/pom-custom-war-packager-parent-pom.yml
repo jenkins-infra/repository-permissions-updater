@@ -1,0 +1,9 @@
+---
+name: "parent-pom"
+paths:
+- "io/jenkins/tools/custom-war-packager/parent-pom"
+developers:
+- "oleg_nenashev"
+- "jglick"
+- "csanchez"
+
