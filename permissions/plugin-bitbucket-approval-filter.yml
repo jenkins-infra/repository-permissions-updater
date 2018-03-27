@@ -1,0 +1,6 @@
+---
+name: "bitbucket-approval-filter"
+paths:
+- "org/jenkins-ci/plugins/bitbucket-approval-filter"
+developers:
+- "kylec_32"
