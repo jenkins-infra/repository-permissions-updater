@@ -1,0 +1,8 @@
+---
+name: "artifact-manager-s3"
+paths:
+- "io/jenkins/plugins/artifact-manager-s3"
+developers:
+- "jglick"
+- "csanchez"
+- "oleg_nenashev"
