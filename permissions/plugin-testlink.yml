@@ -5,3 +5,5 @@ paths:
 - "org/jvnet/hudson/plugins/testlink"
 developers:
 - "kinow"
+- "oleg_nenashev"
+
