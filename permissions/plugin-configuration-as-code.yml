@@ -1,0 +1,6 @@
+---
+name: "configuration-as-code"
+paths:
+- "org/jenkins-ci/plugins/configuration-as-code"
+developers:
+- "praqma"

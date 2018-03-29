@@ -2,5 +2,7 @@
 name: "run-condition-extras"
 paths:
 - "com/synopsys/arc/jenkinsci/plugins/run-condition-extras"
+- "org/jenkins-ci/plugins/run-condition-extras"
 developers:
 - "oleg_nenashev"
+

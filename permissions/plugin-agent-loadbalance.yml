@@ -1,0 +1,6 @@
+---
+name: "agent-loadbalance"
+paths:
+- "com/surenpi/jenkins/agent-loadbalance"
+developers:
+- "surenpi"

@@ -1,0 +1,6 @@
+---
+name: "aws-parameter-store"
+paths:
+- "org/jenkins-ci/plugins/aws-parameter-store"
+developers:
+- "rikturnbull"

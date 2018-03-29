@@ -1,0 +1,6 @@
+---
+name: "stackify-deployment-recorder"
+paths:
+- "org/jenkins-ci/plugins/stackify-deployment-recorder"
+developers:
+- "emartin"

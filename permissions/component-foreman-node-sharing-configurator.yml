@@ -1,8 +1,0 @@
----
-name: "configurator"
-paths:
-- "org/jenkins-ci/plugins/nodesharing/configurator"
-developers:
-- "scoheb"
-- "pajasoft"
-- "olivergondza"

@@ -4,3 +4,4 @@ paths:
 - "org/jenkinsci/plugins/change-assembly-version-plugin"
 developers:
 - "lkobus"
+- "slide_o_mix"

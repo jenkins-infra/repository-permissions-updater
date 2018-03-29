@@ -1,0 +1,7 @@
+---
+name: "testinium"
+paths:
+- "com/testinium/jenkins/testinium"
+developers:
+- "erhangullu"
+- "erdoganonur"
