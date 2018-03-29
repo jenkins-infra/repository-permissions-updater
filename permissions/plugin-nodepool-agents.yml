@@ -1,0 +1,7 @@
+---
+name: "nodepool-agents"
+paths:
+- "org/jenkins-ci/plugins/nodepool-agents"
+developers:
+- "nairbttoille"
+- "hughsaunders"
