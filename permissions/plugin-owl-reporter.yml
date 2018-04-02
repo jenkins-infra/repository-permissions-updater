@@ -1,0 +1,6 @@
+---
+name: "owl-reporter"
+paths:
+- "com/atlantbh/jenkins/owl-reporter"
+developers:
+- "tarikabh"
