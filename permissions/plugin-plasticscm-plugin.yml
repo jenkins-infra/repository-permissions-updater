@@ -4,5 +4,7 @@ paths:
 - "org/jenkins-ci/plugins/plasticscm-plugin"
 - "org/jvnet/hudson/plugins/plasticscm-plugin"
 developers:
-- "lrodriguez"
 - "mig42"
+- "miryamgsm"
+- "jemagoga"
+- "rubarax"
