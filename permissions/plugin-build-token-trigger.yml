@@ -1,0 +1,6 @@
+---
+name: "build-token-trigger"
+paths:
+- "org/jenkins-ci/plugins/build-token-trigger"
+developers:
+- "stephenconnolly"
