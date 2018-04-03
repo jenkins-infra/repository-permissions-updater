@@ -1,0 +1,6 @@
+---
+name: "quamotion-cloud"
+paths:
+- "io/jenkins/plugins/quamotion-cloud"
+developers:
+- "bartsaintgermain"
