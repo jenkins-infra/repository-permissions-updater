@@ -1,0 +1,6 @@
+---
+name: "sensedia-api-platform"
+paths:
+- "org/jenkins-ci/plugins/sensedia-api-platform"
+developers:
+- "denisscapinsensedia"
