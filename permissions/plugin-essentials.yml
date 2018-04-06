@@ -1,0 +1,7 @@
+---
+name: "essentials"
+paths:
+- "io/jenkins/plugins/essentials"
+developers:
+- "batmat"
+- "rtyler"
