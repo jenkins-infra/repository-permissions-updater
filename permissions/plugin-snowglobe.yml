@@ -1,0 +1,6 @@
+---
+name: "snowglobe"
+paths:
+- "com/nirima/snowglobe/jenkins/snowglobe"
+developers:
+- "magnayn"
