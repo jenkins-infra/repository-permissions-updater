@@ -2,6 +2,5 @@
 name: "mabl-integration"
 paths:
 - "com/mabl/integration/jenkins/mabl-integration"
-- "org/jenkins-ci/plugins/mabl-integration"
 developers:
 - "mabl"
