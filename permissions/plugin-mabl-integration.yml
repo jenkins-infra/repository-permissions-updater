@@ -1,0 +1,6 @@
+---
+name: "mabl-integration"
+paths:
+- "com/mabl/integration/jenkins/mabl-integration"
+developers:
+- "mabl"
