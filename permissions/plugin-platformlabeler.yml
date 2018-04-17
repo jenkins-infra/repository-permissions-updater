@@ -1,0 +1,6 @@
+---
+name: "platformlabeler"
+paths:
+- "org/jvnet/hudson/plugins/platformlabeler"
+developers:
+- "markewaite"
