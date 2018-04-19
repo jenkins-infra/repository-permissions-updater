@@ -1,0 +1,7 @@
+---
+name: "jenkins-parent"
+github: "jenkinsci/jenkins"
+paths:
+- "org/jenkins-ci/main/jenkins-parent"
+developers:
+- "kohsuke"
