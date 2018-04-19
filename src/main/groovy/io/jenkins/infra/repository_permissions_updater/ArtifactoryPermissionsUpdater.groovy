@@ -119,6 +119,8 @@ public class ArtifactoryPermissionsUpdater {
             println "$apiOutputDir.path already exists" // not fatal
         }
 
+        Map<String, Set<String>> pathsByGithub = new TreeMap()
+
         yamlSourceDirectory.eachFile { file ->
             if (!file.name.endsWith('.yml')) {
                 throw new IOException("Unexpected file: ${file.name}")
@@ -132,11 +134,18 @@ public class ArtifactoryPermissionsUpdater {
                 throw new IOException("Failed to read ${file.name}", e);
             }
 
-            /* TODO once all have been filled in
-            if (!definition.github) {
+            if (definition.github) {
+                Set<String> paths = pathsByGithub[definition.github]
+                if (!paths) {
+                    paths = new TreeSet()
+                    pathsByGithub[definition.github] = paths
+                }
+                paths.addAll(definition.paths)
+            } else {
+                /* TODO once all have been filled in
                 throw new IOException("$definition.name does not specify the `github` field")
+                */
             }
-            */
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
 
@@ -176,6 +185,12 @@ public class ArtifactoryPermissionsUpdater {
 
             outputFile.parentFile.mkdirs()
             outputFile.text = pretty
+        }
+
+        new File(apiOutputDir, 'github-index.txt').withPrintWriter { pw ->
+            pathsByGithub.each { github, paths ->
+                pw.println "$github ${paths.join ' '}"
+            }
         }
     }
 

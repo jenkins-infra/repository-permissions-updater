@@ -56,5 +56,6 @@ node('java') {
         stage 'Archive'
         archiveArtifacts 'permissions/*.yml'
         archiveArtifacts 'json/*.json'
+        archiveArtifacts 'json/github-index.txt'
     }
 }
