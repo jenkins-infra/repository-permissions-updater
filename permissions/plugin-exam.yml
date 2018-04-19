@@ -1,0 +1,7 @@
+---
+name: "exam"
+paths:
+- "org/jenkins-ci/plugins/exam"
+developers:
+- "MicroNovaAG"
+- "tomasch"
