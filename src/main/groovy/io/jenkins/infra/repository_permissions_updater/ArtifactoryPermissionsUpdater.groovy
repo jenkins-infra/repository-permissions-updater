@@ -187,11 +187,9 @@ public class ArtifactoryPermissionsUpdater {
             outputFile.text = pretty
         }
 
-        new File(apiOutputDir, 'github-index.txt').withPrintWriter { pw ->
-            pathsByGithub.each { github, paths ->
-                pw.println "$github ${paths.join ' '}"
-            }
-        }
+        def githubIndex = new JsonBuilder()
+        githubIndex(pathsByGithub)
+        new File(apiOutputDir, 'github-index.json').text = githubIndex.toPrettyString()
     }
 
     /**
@@ -202,6 +200,9 @@ public class ArtifactoryPermissionsUpdater {
      */
     private static void submitPermissionTargets(File jsonApiFileDir) {
         jsonApiFileDir.eachFile { file ->
+            if (file.name == 'github-index.json') {
+                return
+            }
             if (!file.name.endsWith('.json'))
                 return
 
