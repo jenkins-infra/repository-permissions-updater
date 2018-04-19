@@ -53,6 +53,7 @@ public class ArtifactoryPermissionsUpdater {
         private String name = ""
         private String[] paths = new String[0]
         private String[] developers = new String[0]
+        String github
 
         String getName() {
             return name
@@ -115,7 +116,7 @@ public class ArtifactoryPermissionsUpdater {
         }
 
         if (apiOutputDir.exists()) {
-            throw new IOException(apiOutputDir.path + " already exists")
+            println "$apiOutputDir.path already exists" // not fatal
         }
 
         yamlSourceDirectory.eachFile { file ->
@@ -130,6 +131,12 @@ public class ArtifactoryPermissionsUpdater {
             } catch (JsonProcessingException e) {
                 throw new IOException("Failed to read ${file.name}", e);
             }
+
+            /* TODO once all have been filled in
+            if (!definition.github) {
+                throw new IOException("$definition.name does not specify the `github` field")
+            }
+            */
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
 

@@ -1,5 +1,6 @@
 ---
 name: "symbol-annotation"
+github: "jenkinsci/structs-plugin"
 paths:
 - "org/jenkins-ci/symbol-annotation"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "structs"
+github: "jenkinsci/structs-plugin"
 paths:
 - "org/jenkins-ci/plugins/structs"
 developers:
