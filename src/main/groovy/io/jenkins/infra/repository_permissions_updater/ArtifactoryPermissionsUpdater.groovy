@@ -116,7 +116,7 @@ public class ArtifactoryPermissionsUpdater {
         }
 
         if (apiOutputDir.exists()) {
-            println "$apiOutputDir.path already exists" // not fatal
+            throw new IOException(apiOutputDir.path + " already exists")
         }
 
         Map<String, Set<String>> pathsByGithub = new TreeMap()
@@ -189,7 +189,7 @@ public class ArtifactoryPermissionsUpdater {
 
         def githubIndex = new JsonBuilder()
         githubIndex(pathsByGithub)
-        new File(apiOutputDir, 'github-index.json').text = githubIndex.toPrettyString()
+        new File(apiOutputDir, 'github.index.json').text = githubIndex.toPrettyString()
     }
 
     /**
@@ -200,7 +200,7 @@ public class ArtifactoryPermissionsUpdater {
      */
     private static void submitPermissionTargets(File jsonApiFileDir) {
         jsonApiFileDir.eachFile { file ->
-            if (file.name == 'github-index.json') {
+            if (file.name == 'github.index.json') {
                 return
             }
             if (!file.name.endsWith('.json'))
