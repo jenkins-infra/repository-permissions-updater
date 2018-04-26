@@ -53,6 +53,7 @@ public class ArtifactoryPermissionsUpdater {
         private String name = ""
         private String[] paths = new String[0]
         private String[] developers = new String[0]
+        String github
 
         String getName() {
             return name
@@ -118,6 +119,8 @@ public class ArtifactoryPermissionsUpdater {
             throw new IOException(apiOutputDir.path + " already exists")
         }
 
+        Map<String, Set<String>> pathsByGithub = new TreeMap()
+
         yamlSourceDirectory.eachFile { file ->
             if (!file.name.endsWith('.yml')) {
                 throw new IOException("Unexpected file: ${file.name}")
@@ -129,6 +132,19 @@ public class ArtifactoryPermissionsUpdater {
                 definition = mapper.readValue(new FileReader(file), Definition.class)
             } catch (JsonProcessingException e) {
                 throw new IOException("Failed to read ${file.name}", e);
+            }
+
+            if (definition.github) {
+                Set<String> paths = pathsByGithub[definition.github]
+                if (!paths) {
+                    paths = new TreeSet()
+                    pathsByGithub[definition.github] = paths
+                }
+                paths.addAll(definition.paths)
+            } else {
+                /* TODO once all have been filled in
+                throw new IOException("$definition.name does not specify the `github` field")
+                */
             }
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
@@ -170,6 +186,10 @@ public class ArtifactoryPermissionsUpdater {
             outputFile.parentFile.mkdirs()
             outputFile.text = pretty
         }
+
+        def githubIndex = new JsonBuilder()
+        githubIndex(pathsByGithub)
+        new File(apiOutputDir, 'github.index.json').text = githubIndex.toPrettyString()
     }
 
     /**
@@ -180,6 +200,9 @@ public class ArtifactoryPermissionsUpdater {
      */
     private static void submitPermissionTargets(File jsonApiFileDir) {
         jsonApiFileDir.eachFile { file ->
+            if (file.name == 'github.index.json') {
+                return
+            }
             if (!file.name.endsWith('.json'))
                 return
 
