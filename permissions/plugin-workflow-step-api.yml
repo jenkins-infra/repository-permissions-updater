@@ -1,5 +1,6 @@
 ---
 name: "workflow-step-api"
+github: "jenkinsci/workflow-step-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-step-api"
 developers:

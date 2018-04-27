@@ -1,5 +1,6 @@
 ---
 name: "copyartifact"
+github: "jenkinsci/copyartifact-plugin"
 paths:
 - "org/jenkins-ci/plugins/copyartifact"
 - "org/jvnet/hudson/plugins/copyartifact"
