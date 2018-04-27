@@ -11,3 +11,7 @@ lib/
 .classpath
 .project
 .settings
+
+# NetBeans
+nb-configuration.xml
+nbactions-*.xml
