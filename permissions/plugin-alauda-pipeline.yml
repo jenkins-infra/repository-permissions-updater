@@ -1,0 +1,8 @@
+---
+name: "alauda-pipeline"
+paths:
+- "io/alauda/jenkins/plugins/alauda-pipeline"
+developers:
+- "chengjingtao"
+- "danielfbm"
+- "surenpi"
