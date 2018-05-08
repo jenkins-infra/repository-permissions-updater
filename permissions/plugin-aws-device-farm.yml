@@ -4,3 +4,6 @@ paths:
 - "org/jenkins-ci/plugins/aws-device-farm"
 developers:
 - "chabom"
+- "oleg_nenashev"
+- "patcadelina"
+
