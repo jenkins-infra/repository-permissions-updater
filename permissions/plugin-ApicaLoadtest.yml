@@ -1,5 +1,7 @@
 ---
 name: "ApicaLoadtest"
+github: "jenkinsci/apica-loadtest-plugin"
+github: "jenkinsci/apica-loadtest-plugin"
 paths:
 - "com/apica/ApicaLoadtest"
 developers:

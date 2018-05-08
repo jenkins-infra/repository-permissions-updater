@@ -1,5 +1,6 @@
 ---
 name: "maven33-agent"
+github: "jenkinsci/maven-interceptors"
 paths:
 - "org/jenkins-ci/main/maven/maven33-agent"
 developers:

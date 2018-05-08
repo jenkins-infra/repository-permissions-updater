@@ -1,5 +1,6 @@
 ---
 name: "bitbucket-approval-filter"
+github: "jenkinsci/bitbucket-approval-filter-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitbucket-approval-filter"
 developers:

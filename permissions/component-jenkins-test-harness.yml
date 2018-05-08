@@ -1,5 +1,6 @@
 ---
 name: "jenkins-test-harness"
+github: "jenkinsci/jenkins-test-harness"
 paths:
 - "org/jenkins-ci/main/jenkins-test-harness"
 developers:

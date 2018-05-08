@@ -1,5 +1,6 @@
 ---
 name: "caroline"
+github: "jenkinsci/caroline-plugin"
 paths:
 - "org/jvnet/hudson/plugins/caroline"
 developers: []

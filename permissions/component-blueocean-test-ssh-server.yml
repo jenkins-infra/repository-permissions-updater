@@ -1,5 +1,6 @@
 ---
 name: "blueocean-test-ssh-server"
+github: "jenkinsci/blueocean-test-ssh-server"
 paths:
 - "io/jenkins/blueocean/blueocean-test-ssh-server"
 developers:

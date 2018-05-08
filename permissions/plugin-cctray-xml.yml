@@ -1,5 +1,6 @@
 ---
 name: "cctray-xml"
+github: "jenkinsci/cctray-xml-plugin"
 paths:
 - "org/jenkins-ci/plugins/cctray-xml"
 developers:

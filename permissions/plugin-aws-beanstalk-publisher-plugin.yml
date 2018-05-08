@@ -1,5 +1,6 @@
 ---
 name: "aws-beanstalk-publisher-plugin"
+github: "jenkinsci/aws-beanstalk-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/aws-beanstalk-publisher-plugin"
 developers:

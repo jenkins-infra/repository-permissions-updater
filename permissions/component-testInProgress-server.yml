@@ -1,5 +1,6 @@
 ---
 name: "testInProgress-server"
+github: "jenkinsci/testInProgress-plugin"
 paths:
 - "org/jenkins-ci/plugins/testInProgress-server"
 developers:

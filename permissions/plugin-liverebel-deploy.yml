@@ -1,5 +1,6 @@
 ---
 name: "liverebel-deploy"
+github: "jenkinsci/liverebel-deploy-plugin"
 paths:
 - "org/jenkins-ci/plugins/liverebel-deploy"
 developers: []

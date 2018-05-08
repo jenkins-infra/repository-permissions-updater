@@ -1,5 +1,6 @@
 ---
 name: "maven33-interceptor"
+github: "jenkinsci/maven-interceptors"
 paths:
 - "org/jenkins-ci/main/maven/maven33-interceptor"
 developers:

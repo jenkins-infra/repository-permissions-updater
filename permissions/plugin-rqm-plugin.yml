@@ -1,5 +1,6 @@
 ---
 name: "rqm-plugin"
+github: "jenkinsci/rqm-plugin"
 paths:
 - "net/praqma/rqm-plugin"
 developers:

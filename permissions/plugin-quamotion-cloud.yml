@@ -1,5 +1,6 @@
 ---
 name: "quamotion-cloud"
+github: "jenkinsci/quamotion-cloud-plugin"
 paths:
 - "io/jenkins/plugins/quamotion-cloud"
 developers:

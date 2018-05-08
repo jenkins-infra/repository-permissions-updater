@@ -1,5 +1,6 @@
 ---
 name: "pipeline-classpath"
+github: "jenkinsci/pipeline-classpath-step-plugin"
 paths:
 - "cprice404/pipeline-classpath"
 developers:

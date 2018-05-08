@@ -1,5 +1,6 @@
 ---
 name: "jenkins-maven-plugin"
+github: "jenkinsci/maven-repository-plugin"
 paths:
 - "com/nirima/jenkins/repository/jenkins-maven-plugin"
 developers:

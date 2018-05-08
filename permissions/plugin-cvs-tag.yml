@@ -1,5 +1,6 @@
 ---
 name: "cvs-tag"
+github: "jenkinsci/cvs-tag-plugin"
 paths:
 - "org/jenkins-ci/plugins/cvs-tag"
 developers: []

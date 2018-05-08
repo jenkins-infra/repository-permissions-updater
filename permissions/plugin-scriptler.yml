@@ -1,5 +1,6 @@
 ---
 name: "scriptler"
+github: "jenkinsci/scriptler-plugin"
 paths:
 - "org/jenkins-ci/plugins/scriptler"
 - "org/jvnet/hudson/plugins/scriptler"

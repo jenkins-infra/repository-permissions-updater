@@ -1,5 +1,6 @@
 ---
 name: "buildcoin-plugin"
+github: "jenkinsci/buildcoin-plugin"
 paths:
 - "com/buildcoin/plugins/jenkins/buildcoin-plugin"
 developers: []

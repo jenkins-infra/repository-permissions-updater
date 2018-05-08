@@ -1,5 +1,6 @@
 ---
 name: "impersonation"
+github: "jenkinsci/impersonation-plugin"
 paths:
 - "org/jenkins-ci/plugins/impersonation"
 developers:

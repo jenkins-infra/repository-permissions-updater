@@ -1,5 +1,7 @@
 ---
 name: "scm-filter-jira-validator-parent"
+github: "jenkinsci/scm-filter-jira-validator-plugin"
+github: "jenkinsci/branch-source-jira-validator-traits-plugin"
 paths:
 - "org/jenkins-ci/plugins/scm-filter-jira-validator-parent"
 developers:

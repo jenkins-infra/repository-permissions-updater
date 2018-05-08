@@ -1,5 +1,6 @@
 ---
 name: "zubhium"
+github: "jenkinsci/zubhium-plugin"
 paths:
 - "org/jenkins-ci/plugins/zubhium"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "vessel"
+github: "jenkinsci/vessel-plugin"
 paths:
 - "org/jenkins-ci/plugins/vessel"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "build-configurator"
+github: "jenkinsci/build-configurator-plugin"
 paths: 
 - "com/amcbridge/build-configurator"
 developers: 

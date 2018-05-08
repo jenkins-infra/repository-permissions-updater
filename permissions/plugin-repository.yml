@@ -1,5 +1,6 @@
 ---
 name: "repository"
+github: "jenkinsci/maven-repository-plugin"
 paths:
 - "jenkins/repository"
 developers:

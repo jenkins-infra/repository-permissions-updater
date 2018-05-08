@@ -1,5 +1,6 @@
 ---
 name: "loadium"
+github: "jenkinsci/loadium-plugin"
 paths:
 - "com/loadium/jenkins/loadium"
 developers:

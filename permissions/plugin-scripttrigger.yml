@@ -1,5 +1,6 @@
 ---
 name: "scripttrigger"
+github: "jenkinsci/scripttrigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/scripttrigger"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "library"
+github: "jenkinsci/findbugs-plugin"
 paths:
 - "org/jvnet/hudson/plugins/findbugs/library"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "handlebars"
+github: "jenkinsci/js-libs"
 paths:
 - "org/jenkins-ci/ui/handlebars"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "acceptance-test-harness"
+github: "jenkinsci/acceptance-test-harness"
 paths:
 - "org/jenkins-ci/acceptance-test-harness"
 developers:

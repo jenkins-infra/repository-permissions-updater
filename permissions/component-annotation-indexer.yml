@@ -1,5 +1,6 @@
 ---
 name: "annotation-indexer"
+github: "jenkinsci/lib-annotation-indexer"
 paths:
 - "org/jenkins-ci/annotation-indexer"
 developers:

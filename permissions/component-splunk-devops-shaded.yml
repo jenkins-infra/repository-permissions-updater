@@ -1,5 +1,6 @@
 ---
 name: "splunk-devops-shaded"
+github: "jenkinsci/splunk-devops-plugin"
 paths:
 - "com/splunk/splunkins/splunk-devops-shaded"
 developers:

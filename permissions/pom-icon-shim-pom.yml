@@ -1,5 +1,6 @@
 ---
 name: "icon-shim-pom"
+github: "jenkinsci/icon-shim-plugin"
 paths:
 - "org/jenkins-ci/plugins/icon-shim/icon-shim-pom"
 developers:
