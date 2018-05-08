@@ -1,5 +1,6 @@
 ---
 name: "view-cloner"
+github: "jenkinsci/view-cloner-plugin"
 paths:
 - "org/jenkins-ci/plugins/view-cloner"
 developers:

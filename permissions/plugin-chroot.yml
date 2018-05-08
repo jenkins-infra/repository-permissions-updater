@@ -1,5 +1,6 @@
 ---
 name: "chroot"
+github: "jenkinsci/chroot-plugin"
 paths:
 - "org/jenkins-ci/plugins/chroot"
 developers:

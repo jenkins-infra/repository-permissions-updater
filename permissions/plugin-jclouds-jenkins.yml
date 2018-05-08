@@ -1,5 +1,6 @@
 ---
 name: "jclouds-jenkins"
+github: "jenkinsci/jclouds-plugin"
 paths:
 - "org/jenkins-ci/plugins/jclouds-jenkins"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "cloudfoundry"
+github: "jenkinsci/cloudfoundry"
 paths:
 - "org/jenkins-ci/plugins/cloudfoundry"
 developers:

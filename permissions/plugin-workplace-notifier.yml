@@ -1,5 +1,6 @@
 ---
 name: "workplace-notifier"
+github: "jenkinsci/workplace-plugin"
 paths:
 - "jenkins/plugins/elanceodesk/workplace-notifier"
 developers:

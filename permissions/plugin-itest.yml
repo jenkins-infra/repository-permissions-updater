@@ -1,5 +1,6 @@
 ---
 name: "itest"
+github: "jenkinsci/itest-plugin"
 paths:
 - "org/jenkins-ci/plugins/itest"
 developers:

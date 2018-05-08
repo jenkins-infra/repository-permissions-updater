@@ -1,5 +1,6 @@
 ---
 name: "async-job"
+github: "jenkinsci/async-job-plugin"
 paths:
 - "org/jenkins-ci/plugins/async-job"
 developers: []

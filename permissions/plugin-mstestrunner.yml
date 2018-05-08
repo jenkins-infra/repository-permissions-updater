@@ -1,5 +1,6 @@
 ---
 name: "mstestrunner"
+github: "jenkinsci/mstestrunner-plugin"
 paths:
 - "org/jenkins-ci/plugins/mstestrunner"
 developers:

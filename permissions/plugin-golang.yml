@@ -1,5 +1,6 @@
 ---
 name: "golang"
+github: "jenkinsci/golang-plugin"
 paths:
 - "org/jenkins-ci/plugins/golang"
 developers:

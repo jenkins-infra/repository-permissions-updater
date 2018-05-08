@@ -1,5 +1,6 @@
 ---
 name: "started-by-envvar"
+github: "jenkinsci/started-by-envvar-plugin"
 paths:
 - "org/jenkins-ci/plugins/started-by-envvar"
 developers: []

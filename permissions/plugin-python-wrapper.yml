@@ -1,5 +1,6 @@
 ---
 name: "python-wrapper"
+github: "jenkinsci/jenkins.py"
 paths:
 - "org/jenkins-ci/plugins/python-wrapper"
 developers:

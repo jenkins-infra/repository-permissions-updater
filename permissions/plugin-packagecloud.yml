@@ -1,5 +1,6 @@
 ---
 name: "packagecloud"
+github: "jenkinsci/packagecloud-plugin"
 paths:
 - "org/jenkins-ci/plugins/packagecloud"
 developers:

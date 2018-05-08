@@ -1,5 +1,6 @@
 ---
 name: "job-strongauth-simple"
+github: "jenkinsci/job-strongauth-simple-plugin"
 paths:
 - "org/jenkins-ci/plugins/job-strongauth-simple"
 developers: []

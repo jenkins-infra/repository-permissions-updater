@@ -1,5 +1,6 @@
 ---
 name: "prqa-plugin"
+github: "jenkinsci/prqa-plugin"
 paths:
 - "com/programmingresearch/prqa-plugin"
 - "net/praqma/prqa-plugin"

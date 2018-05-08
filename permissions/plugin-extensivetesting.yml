@@ -1,5 +1,6 @@
 ---
 name: "extensivetesting"
+github: "jenkinsci/extensivetesting-plugin"
 paths:
 - "jenkins/xtc/extensivetesting"
 developers:

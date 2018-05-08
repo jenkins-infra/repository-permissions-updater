@@ -1,5 +1,6 @@
 ---
 name: "protecode-sc"
+github: "jenkinsci/protecode-sc-plugin"
 paths:
 - "com/synopsys/protecode-sc"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "vault-scm-plugin"
+github: "jenkinsci/vault-scm-plugin"
 paths:
 - "org/jenkins-ci/plugins/vault-scm-plugin"
 developers: []

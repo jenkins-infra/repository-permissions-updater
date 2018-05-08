@@ -1,5 +1,6 @@
 ---
 name: "humbug"
+github: "jenkinsci/humbug-plugin"
 paths:
 - "org/jenkins-ci/plugins/humbug"
 developers:

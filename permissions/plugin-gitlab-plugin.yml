@@ -1,5 +1,6 @@
 ---
 name: "gitlab-plugin"
+github: "jenkinsci/gitlab-plugin"
 paths:
 - "com/dabsquared/gitlab-plugin"
 - "org/jenkins-ci/plugins/gitlab-plugin"

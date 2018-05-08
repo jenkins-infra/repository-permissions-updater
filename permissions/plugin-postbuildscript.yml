@@ -1,5 +1,6 @@
 ---
 name: "postbuildscript"
+github: "jenkinsci/postbuildscript-plugin"
 paths:
 - "org/jenkins-ci/plugins/postbuildscript"
 developers:

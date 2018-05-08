@@ -1,5 +1,6 @@
 ---
 name: "selenium-builder"
+github: "jenkinsci/selenium-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/selenium-builder"
 developers:

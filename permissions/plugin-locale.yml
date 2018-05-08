@@ -1,5 +1,6 @@
 ---
 name: "locale"
+github: "jenkinsci/locale-plugin"
 paths:
 - "org/jvnet/hudson/plugins/locale"
 developers: []

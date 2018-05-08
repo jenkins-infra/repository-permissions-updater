@@ -1,5 +1,6 @@
 ---
 name: "stash-pullrequest-builder"
+github: "jenkinsci/stash-pullrequest-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/stash-pullrequest-builder"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "github-scm-trait-notification-context"
+github: "jenkinsci/github-scm-trait-notification-context-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-scm-trait-notification-context"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "global-slack-notifier"
+github: "jenkinsci/global-slack-notifier-plugin"
 paths:
 - "org/jenkins-ci/plugins/global-slack-notifier"
 developers:

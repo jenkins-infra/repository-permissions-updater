@@ -1,5 +1,6 @@
 ---
 name: "packer"
+github: "jenkinsci/packer-plugin"
 paths:
 - "biz/neustar/jenkins/plugins/packer"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "pipeline-deploymon"
+github: "jenkinsci/pipeline-deploymon-plugin"
 paths:
 - "de/taimos/pipeline-deploymon"
 developers:

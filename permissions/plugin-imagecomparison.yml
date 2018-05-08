@@ -1,5 +1,6 @@
 ---
 name: "imagecomparison"
+github: "jenkinsci/imagecomparison-plugin"
 paths:
 - "org/jenkins-ci/plugins/imagecomparison"
 developers:

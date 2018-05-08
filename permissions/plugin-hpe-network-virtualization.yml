@@ -1,5 +1,6 @@
 ---
 name: "hpe-network-virtualization"
+github: "jenkinsci/hpe-network-virtualization-plugin"
 paths:
 - "org/jenkins-ci/plugins/hpe-network-virtualization"
 developers:

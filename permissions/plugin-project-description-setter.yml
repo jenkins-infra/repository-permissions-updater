@@ -1,5 +1,6 @@
 ---
 name: "project-description-setter"
+github: "jenkinsci/project-description-setter-plugin"
 paths:
 - "org/jenkins-ci/plugins/project-description-setter"
 developers:

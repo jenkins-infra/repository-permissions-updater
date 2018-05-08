@@ -1,5 +1,6 @@
 ---
 name: "list-command"
+github: "jenkinsci/list-command-plugin"
 paths:
 - "org/jenkins-ci/plugins/list-command"
 developers: []

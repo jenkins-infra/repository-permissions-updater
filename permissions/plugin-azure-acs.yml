@@ -1,5 +1,6 @@
 ---
 name: "azure-acs"
+github: "jenkinsci/azure-acs-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-acs"
 developers:

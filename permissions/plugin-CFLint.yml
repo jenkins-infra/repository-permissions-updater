@@ -1,5 +1,6 @@
 ---
 name: "CFLint"
+github: "jenkinsci/CFLint-plugin"
 paths:
 - "org/jvnet/hudson/plugins/CFLint"
 developers:

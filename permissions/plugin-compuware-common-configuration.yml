@@ -1,5 +1,6 @@
 ---
 name: "compuware-common-configuration"
+github: "jenkinsci/compuware-common-configuration-plugin"
 paths:
 - "com/compuware/jenkins/compuware-common-configuration"
 developers:

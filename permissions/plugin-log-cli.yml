@@ -1,5 +1,6 @@
 ---
 name: "log-cli"
+github: "jenkinsci/log-cli-plugin"
 paths:
 - "org/jenkins-ci/plugins/log-cli"
 developers:

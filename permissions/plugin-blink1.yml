@@ -1,5 +1,6 @@
 ---
 name: "blink1"
+github: "jenkinsci/blink1-plugin"
 paths:
 - "org/jenkins-ci/plugins/blink1"
 developers: []

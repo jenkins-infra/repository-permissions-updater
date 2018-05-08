@@ -1,5 +1,6 @@
 ---
 name: "xunit"
+github: "jenkinsci/xunit-plugin"
 paths:
 - "com/thalesgroup/jenkins-ci/plugins/xunit"
 - "org/jenkins-ci/plugins/xunit"

@@ -1,5 +1,6 @@
 ---
 name: "eggplant-plugin"
+github: "jenkinsci/eggplant-plugin"
 paths:
 - "org/jenkins-ci/plugins/eggplant-plugin"
 developers:

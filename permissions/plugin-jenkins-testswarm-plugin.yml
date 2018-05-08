@@ -1,5 +1,6 @@
 ---
 name: "jenkins-testswarm-plugin"
+github: "jenkinsci/testswarm-plugin"
 paths:
 - "com/javaclimber/jenkins/testswarmplugin/jenkins-testswarm-plugin"
 developers: []

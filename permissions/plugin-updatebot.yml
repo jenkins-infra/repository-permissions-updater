@@ -1,5 +1,6 @@
 ---
 name: "updatebot"
+github: "jenkinsci/updatebot-plugin"
 paths:
 - "org/jenkins-ci/plugins/updatebot"
 developers:

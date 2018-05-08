@@ -1,5 +1,6 @@
 ---
 name: "blitz_io-jenkins"
+github: "jenkinsci/blitz_io-plugin"
 paths:
 - "io/blitz/blitz_io-jenkins"
 developers: []

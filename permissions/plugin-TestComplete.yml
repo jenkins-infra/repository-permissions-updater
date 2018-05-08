@@ -1,5 +1,6 @@
 ---
 name: "TestComplete"
+github: "jenkinsci/testcomplete-plugin"
 paths:
 - "org/jenkins-ci/plugins/TestComplete"
 developers:

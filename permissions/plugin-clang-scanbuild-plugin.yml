@@ -1,5 +1,6 @@
 ---
 name: "clang-scanbuild-plugin"
+github: "jenkinsci/clang-scanbuild-plugin"
 paths:
 - "jenkins/plugins/clangscanbuild/clang-scanbuild-plugin"
 developers:

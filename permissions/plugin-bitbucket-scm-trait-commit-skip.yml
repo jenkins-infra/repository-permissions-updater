@@ -1,5 +1,6 @@
 ---
 name: "bitbucket-scm-trait-commit-skip"
+github: "jenkinsci/scm-trait-commit-skip-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitbucket-scm-trait-commit-skip"
 developers:

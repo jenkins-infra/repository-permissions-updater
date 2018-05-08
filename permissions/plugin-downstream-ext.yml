@@ -1,5 +1,6 @@
 ---
 name: "downstream-ext"
+github: "jenkinsci/downstream-ext-plugin"
 paths:
 - "org/jenkins-ci/plugins/downstream-ext"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "valgrind"
+github: "jenkinsci/valgrind-plugin"
 paths:
 - "org/jenkins-ci/plugins/valgrind"
 - "org/jenkinsci/plugins/valgrind/valgrind"

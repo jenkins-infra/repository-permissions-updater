@@ -1,5 +1,6 @@
 ---
 name: "pipeline-dependency-walker"
+github: "jenkinsci/pipeline-dependency-walker-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-dependency-walker"
 developers:

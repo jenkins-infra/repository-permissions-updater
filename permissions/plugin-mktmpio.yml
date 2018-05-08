@@ -1,5 +1,6 @@
 ---
 name: "mktmpio"
+github: "jenkinsci/mktmpio-plugin"
 paths:
 - "org/jenkins-ci/plugins/mktmpio"
 developers:

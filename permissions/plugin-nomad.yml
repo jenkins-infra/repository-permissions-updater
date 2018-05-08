@@ -1,5 +1,6 @@
 ---
 name: "nomad"
+github: "jenkinsci/nomad-plugin"
 paths:
 - "org/jenkins-ci/plugins/nomad"
 developers:

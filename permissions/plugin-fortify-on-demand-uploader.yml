@@ -1,5 +1,6 @@
 ---
 name: "fortify-on-demand-uploader"
+github: "jenkinsci/fortify-on-demand-uploader-plugin"
 paths:
 - "org/jenkins-ci/plugins/fortify-on-demand-uploader"
 developers:

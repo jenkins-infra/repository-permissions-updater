@@ -1,5 +1,6 @@
 ---
 name: "chef"
+github: "jenkinsci/chef-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/chef"
 developers:

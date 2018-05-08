@@ -1,5 +1,6 @@
 ---
 name: "gitlab-hook"
+github: "jenkinsci/gitlab-hook-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/gitlab-hook"
 developers:

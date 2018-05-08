@@ -1,5 +1,6 @@
 ---
 name: "literate"
+github: "jenkinsci/literate-plugin"
 paths:
 - "org/jenkins-ci/plugins/literate"
 developers:

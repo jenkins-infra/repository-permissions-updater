@@ -1,5 +1,6 @@
 ---
 name: "environment-variable-page-decoration"
+github: "jenkinsci/environment-variable-page-decoration-plugin"
 paths:
 - "org/jenkins-ci/plugins/environment-variable-page-decoration"
 developers:

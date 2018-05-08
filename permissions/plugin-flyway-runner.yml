@@ -1,5 +1,6 @@
 ---
 name: "flyway-runner"
+github: "jenkinsci/flyway-runner-plugin"
 paths:
 - "sp/sd/flyway-runner"
 developers:

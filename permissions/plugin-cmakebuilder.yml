@@ -1,5 +1,6 @@
 ---
 name: "cmakebuilder"
+github: "jenkinsci/cmakebuilder-plugin"
 paths:
 - "hudson/plugins/cmake/cmakebuilder"
 - "org/jenkins-ci/plugins/cmakebuilder"

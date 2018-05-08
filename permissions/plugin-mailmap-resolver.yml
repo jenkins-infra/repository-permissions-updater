@@ -1,5 +1,6 @@
 ---
 name: "mailmap-resolver"
+github: "jenkinsci/mailmap-resolver-plugin"
 paths:
 - "org/jenkins-ci/plugins/mailmap-resolver"
 developers:

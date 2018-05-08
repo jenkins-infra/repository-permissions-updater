@@ -1,5 +1,6 @@
 ---
 name: "datadog"
+github: "jenkinsci/datadog-plugin"
 paths:
 - "org/datadog/jenkins/plugins/datadog"
 developers:

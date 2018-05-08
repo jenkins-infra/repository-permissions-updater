@@ -1,5 +1,6 @@
 ---
 name: "darcs"
+github: "jenkinsci/darcs-plugin"
 paths:
 - "org/jenkins-ci/plugins/darcs"
 developers: []

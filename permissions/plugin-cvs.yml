@@ -1,5 +1,6 @@
 ---
 name: "cvs"
+github: "jenkinsci/cvs-plugin"
 paths:
 - "org/jenkins-ci/plugins/cvs"
 - "org/jvnet/hudson/plugins/cvs"

@@ -1,5 +1,6 @@
 ---
 name: "tmpcleaner"
+github: "jenkinsci/tmpcleaner-plugin"
 paths:
 - "org/jenkins-ci/plugins/tmpcleaner"
 developers:

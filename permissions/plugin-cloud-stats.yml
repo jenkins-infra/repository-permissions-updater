@@ -1,5 +1,6 @@
 ---
 name: "cloud-stats"
+github: "jenkinsci/cloud-stats-plugin"
 paths:
 - "org/jenkins-ci/plugins/cloud-stats"
 developers:

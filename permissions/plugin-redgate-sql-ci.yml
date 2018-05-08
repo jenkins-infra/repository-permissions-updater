@@ -1,5 +1,6 @@
 ---
 name: "redgate-sql-ci"
+github: "jenkinsci/redgate-sql-ci-plugin"
 paths:
 - "com/redgate/plugins/redgatesqlci/redgate-sql-ci"
 developers:

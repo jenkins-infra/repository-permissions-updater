@@ -1,5 +1,6 @@
 ---
 name: "icn-plugin-loader"
+github: "jenkinsci/icn-plugin-loader-plugin"
 paths:
 - "org/jenkins-ci/plugins/icn-plugin-loader"
 developers:

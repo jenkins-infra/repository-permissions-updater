@@ -1,5 +1,6 @@
 ---
 name: "crowd"
+github: "jenkinsci/crowd-plugin"
 paths:
 - "com/ds/tools/hudson/crowd"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "docker-commons"
+github: "jenkinsci/docker-commons-plugin"
 paths:
 - "org/jenkins-ci/plugins/docker-commons"
 developers:

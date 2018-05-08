@@ -1,5 +1,6 @@
 ---
 name: "google-oauth-plugin"
+github: "jenkinsci/google-oauth-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-oauth-plugin"
 developers:

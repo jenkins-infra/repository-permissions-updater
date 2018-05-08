@@ -1,5 +1,6 @@
 ---
 name: "git-userContent"
+github: "jenkinsci/git-userContent-plugin"
 paths:
 - "org/jenkins-ci/plugins/git-userContent"
 developers:

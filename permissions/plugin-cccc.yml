@@ -1,5 +1,6 @@
 ---
 name: "cccc"
+github: "jenkinsci/cccc-plugin"
 paths:
 - "com/thalesgroup/jenkins-ci/plugins/cccc"
 developers: []

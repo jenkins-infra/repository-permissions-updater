@@ -1,5 +1,6 @@
 ---
 name: "jira-steps"
+github: "jenkinsci/jira-steps-plugin"
 paths:
 - "org/jenkins-ci/plugins/jira-steps"
 developers:

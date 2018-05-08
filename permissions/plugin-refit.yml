@@ -1,5 +1,6 @@
 ---
 name: "refit"
+github: "jenkinsci/refit-plugin"
 paths:
 - "com/googlecode/refit/jenkins/refit"
 developers: []

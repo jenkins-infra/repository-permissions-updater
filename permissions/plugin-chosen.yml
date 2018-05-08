@@ -1,5 +1,6 @@
 ---
 name: "chosen"
+github: "jenkinsci/chosen-plugin"
 paths:
 - "org/jenkins-ci/plugins/chosen"
 developers: []

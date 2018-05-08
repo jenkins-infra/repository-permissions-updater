@@ -1,5 +1,6 @@
 ---
 name: "testquality-updater"
+github: "jenkinsci/testquality-updater-plugin"
 paths:
 - "org/jenkins-ci/plugins/testquality-updater"
 developers:

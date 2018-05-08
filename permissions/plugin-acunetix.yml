@@ -1,5 +1,6 @@
 ---
 name: "acunetix"
+github: "jenkinsci/acunetix-plugin"
 paths:
 - "com/acunetix/acunetix"
 developers: 

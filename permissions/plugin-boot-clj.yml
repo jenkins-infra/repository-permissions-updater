@@ -1,5 +1,6 @@
 ---
 name: "boot-clj"
+github: "jenkinsci/boot-clj-plugin"
 paths:
 - "org/jenkins-ci/plugins/boot-clj"
 developers:

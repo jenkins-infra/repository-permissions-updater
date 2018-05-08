@@ -1,5 +1,6 @@
 ---
 name: "pipeline-graph-analysis"
+github: "jenkinsci/pipeline-graph-analysis-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-graph-analysis"
 developers:

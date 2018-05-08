@@ -1,5 +1,6 @@
 ---
 name: "cerberus-testing"
+github: "jenkinsci/cerberus-testing-plugin"
 paths:
 - "org/jenkins-ci/plugins/cerberus-testing"
 developers:

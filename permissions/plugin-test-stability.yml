@@ -1,5 +1,6 @@
 ---
 name: "test-stability"
+github: "jenkinsci/test-stability-plugin"
 paths:
 - "de/esailors/jenkins/test-stability"
 developers:

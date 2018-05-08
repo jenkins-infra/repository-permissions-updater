@@ -1,5 +1,6 @@
 ---
 name: "codebeamer-coverage-publisher"
+github: "jenkinsci/codebeamer-coverage-publisher"
 paths:
 - "org/jenkins-ci/plugins/codebeamer-coverage-publisher"
 developers:

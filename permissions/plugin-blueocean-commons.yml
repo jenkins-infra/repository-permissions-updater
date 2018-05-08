@@ -1,5 +1,6 @@
 ---
 name: "blueocean-commons"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-commons"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "mabl-integration"
+github: "jenkinsci/mabl-integration-plugin"
 paths:
 - "com/mabl/integration/jenkins/mabl-integration"
 developers:

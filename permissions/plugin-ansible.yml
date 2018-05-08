@@ -1,5 +1,6 @@
 ---
 name: "ansible"
+github: "jenkinsci/ansible-plugin"
 paths:
 - "org/jenkins-ci/plugins/ansible"
 developers:

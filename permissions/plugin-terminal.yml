@@ -1,5 +1,6 @@
 ---
 name: "terminal"
+github: "jenkinsci/terminal-plugin"
 paths:
 - "org/jenkins-ci/plugins/terminal"
 - "org/jvnet/hudson/plugins/terminal"

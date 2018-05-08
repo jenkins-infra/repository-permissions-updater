@@ -1,5 +1,6 @@
 ---
 name: "last-changes"
+github: "jenkinsci/last-changes-plugin"
 paths:
 - "org/jenkins-ci/plugins/last-changes"
 developers:

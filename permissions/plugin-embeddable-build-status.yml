@@ -1,5 +1,6 @@
 ---
 name: "embeddable-build-status"
+github: "jenkinsci/git-plugin"
 paths:
 - "org/jenkins-ci/plugins/embeddable-build-status"
 developers:

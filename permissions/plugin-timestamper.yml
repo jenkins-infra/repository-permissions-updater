@@ -1,5 +1,6 @@
 ---
 name: "timestamper"
+github: "jenkinsci/timestamper-plugin"
 paths:
 - "org/jenkins-ci/plugins/timestamper"
 - "org/jvnet/hudson/plugins/timestamper"

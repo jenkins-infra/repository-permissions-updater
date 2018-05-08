@@ -1,5 +1,6 @@
 ---
 name: "gerrit-verify-status-reporter"
+github: "jenkinsci/gerrit-verify-status-reporter"
 paths:
 - "org/jenkins-ci/plugins/gerrit-verify-status-reporter"
 developers:

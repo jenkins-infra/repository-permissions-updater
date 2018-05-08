@@ -1,5 +1,6 @@
 ---
 name: "leastload"
+github: "jenkinsci/leastload-plugin"
 paths:
 - "org/jenkins-ci/plugins/leastload"
 developers:

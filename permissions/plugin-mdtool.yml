@@ -1,5 +1,6 @@
 ---
 name: "mdtool"
+github: "jenkinsci/mdtool-plugin"
 paths:
 - "org/jenkins-ci/plugins/mdtool"
 developers:

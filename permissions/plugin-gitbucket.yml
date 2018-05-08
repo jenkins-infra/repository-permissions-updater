@@ -1,5 +1,6 @@
 ---
 name: "gitbucket"
+github: "jenkinsci/gitbucket-plugin"
 paths:
 - "org/jenkins-ci/plugins/gitbucket"
 developers:

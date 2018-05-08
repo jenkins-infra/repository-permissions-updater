@@ -1,5 +1,6 @@
 ---
 name: "was-builder"
+github: "jenkinsci/was-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/was-builder"
 developers: []

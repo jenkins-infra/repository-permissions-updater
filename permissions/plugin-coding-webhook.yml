@@ -1,5 +1,6 @@
 ---
 name: "coding-webhook"
+github: "jenkinsci/coding-webhook-plugin"
 paths:
 - "org/jenkins-ci/plugins/coding-webhook"
 developers:

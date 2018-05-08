@@ -1,5 +1,6 @@
 ---
 name: "git-chooser-alternative"
+github: "jenkinsci/git-chooser-alternative-plugin"
 paths:
 - "org/jenkins-ci/plugins/git-chooser-alternative"
 developers:

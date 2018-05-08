@@ -1,5 +1,6 @@
 ---
 name: "xcode-plugin"
+github: "jenkinsci/xcode-plugin"
 paths:
 - "org/jenkins-ci/plugins/xcode-plugin"
 developers:

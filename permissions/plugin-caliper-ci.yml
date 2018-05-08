@@ -1,5 +1,6 @@
 ---
 name: "caliper-ci"
+github: "jenkinsci/caliper-ci-plugin"
 paths:
 - "com/brianfromoregon/caliper-ci"
 developers: []

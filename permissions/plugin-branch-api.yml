@@ -1,5 +1,6 @@
 ---
 name: "branch-api"
+github: "jenkinsci/branch-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/branch-api"
 developers:

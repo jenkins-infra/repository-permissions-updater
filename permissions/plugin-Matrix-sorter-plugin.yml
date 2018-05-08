@@ -1,5 +1,6 @@
 ---
 name: "Matrix-sorter-plugin"
+github: "jenkinsci/Matrix-sorter-plugin"
 paths:
 - "org/jenkins-ci/plugins/Matrix-sorter-plugin"
 developers:

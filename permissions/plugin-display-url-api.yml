@@ -1,5 +1,6 @@
 ---
 name: "display-url-api"
+github: "jenkinsci/display-url-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/display-url-api"
 developers:

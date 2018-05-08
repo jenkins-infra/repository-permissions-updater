@@ -1,5 +1,6 @@
 ---
 name: "bearychat"
+github: "jenkinsci/bearychat-plugin"
 paths:
 - "org/jenkins-ci/plugins/bearychat"
 developers:

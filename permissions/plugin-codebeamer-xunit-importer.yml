@@ -1,5 +1,6 @@
 ---
 name: "codebeamer-xunit-importer"
+github: "jenkinsci/codebeamer-xunit-importer-plugin"
 paths:
 - "org/jenkins-ci/plugins/codebeamer-xunit-importer"
 developers:

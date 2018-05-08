@@ -1,5 +1,6 @@
 ---
 name: "rich-text-publisher-plugin"
+github: "jenkinsci/rich-text-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/rich-text-publisher-plugin"
 developers:

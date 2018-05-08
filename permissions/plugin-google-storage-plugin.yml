@@ -1,5 +1,6 @@
 ---
 name: "google-storage-plugin"
+github: "jenkinsci/google-storage-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-storage-plugin"
 developers:

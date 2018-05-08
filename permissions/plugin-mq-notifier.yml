@@ -1,5 +1,6 @@
 ---
 name: "mq-notifier"
+github: "jenkinsci/mq-notifier-plugin"
 paths:
 - "com/sonymobile/jenkins/plugins/mq/mq-notifier"
 developers:

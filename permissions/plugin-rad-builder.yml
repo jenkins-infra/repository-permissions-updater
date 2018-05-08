@@ -1,5 +1,6 @@
 ---
 name: "rad-builder"
+github: "jenkinsci/rad-builder-plugin"
 paths:
 - "org/jvnet/hudson/plugins/rad-builder"
 developers: []

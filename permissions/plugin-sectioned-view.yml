@@ -1,5 +1,6 @@
 ---
 name: "sectioned-view"
+github: "jenkinsci/sectioned-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/sectioned-view"
 - "org/jvnet/hudson/plugins/sectioned-view"

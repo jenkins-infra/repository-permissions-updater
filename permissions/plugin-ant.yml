@@ -1,5 +1,6 @@
 ---
 name: "ant"
+github: "jenkinsci/ant-plugin"
 paths:
 - "org/jenkins-ci/plugins/ant"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "distfork"
+github: "jenkinsci/m2release-plugin/distfork-plugin"
 paths:
 - "org/jenkins-ci/plugins/distfork"
 developers:

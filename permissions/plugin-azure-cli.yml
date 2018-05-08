@@ -1,5 +1,6 @@
 ---
 name: "azure-cli"
+github: "jenkinsci/azure-cli-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-cli"
 developers:

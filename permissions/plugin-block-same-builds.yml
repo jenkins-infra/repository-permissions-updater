@@ -1,5 +1,6 @@
 ---
 name: "block-same-builds"
+github: "jenkinsci/block-same-builds-plugin"
 paths:
 - "org/jenkins-ci/plugins/block-same-builds"
 developers:

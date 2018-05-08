@@ -1,5 +1,6 @@
 ---
 name: "badge"
+github: "jenkinsci/badge-plugin"
 paths:
 - "org/jenkins-ci/plugins/badge"
 developers:

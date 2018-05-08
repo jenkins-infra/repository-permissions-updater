@@ -1,5 +1,6 @@
 ---
 name: "createjobadvanced"
+github: "jenkinsci/createjobadvanced-plugin"
 paths:
 - "org/jenkins-ci/plugins/createjobadvanced"
 developers: []

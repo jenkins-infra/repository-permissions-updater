@@ -1,5 +1,6 @@
 ---
 name: "zephyr-enterprise-test-management"
+github: "jenkinsci/zephyr-enterprise-test-management-plugin"
 paths:
 - "org/jenkins-ci/plugins/zephyr-enterprise-test-management"
 developers:

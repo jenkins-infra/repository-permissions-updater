@@ -1,5 +1,6 @@
 ---
 name: "parameterized-trigger"
+github: "jenkinsci/parameterized-trigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/parameterized-trigger"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "jianliao"
+github: "jenkinsci/jianliao-plugin"
 paths:
 - "org/jenkins-ci/plugins/jianliao"
 developers:

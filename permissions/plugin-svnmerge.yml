@@ -1,5 +1,6 @@
 ---
 name: "svnmerge"
+github: "jenkinsci/svnmerge-plugin"
 paths:
 - "org/jenkins-ci/plugins/svnmerge"
 developers:

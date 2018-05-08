@@ -1,5 +1,6 @@
 ---
 name: "slave-utilization-plugin"
+github: "jenkinsci/slave-utilization-plugin"
 paths:
 - "com/suryagaddipati/jenkins/slave-utilization-plugin"
 developers:

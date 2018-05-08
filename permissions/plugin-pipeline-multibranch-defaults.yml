@@ -1,5 +1,6 @@
 ---
 name: "pipeline-multibranch-defaults"
+github: "jenkinsci/pipeline-multibranch-defaults-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-multibranch-defaults"
 developers:

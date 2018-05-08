@@ -1,5 +1,6 @@
 ---
 name: "azure-vm-agents"
+github: "jenkinsci/azure-vm-agents-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-vm-agents"
 developers:

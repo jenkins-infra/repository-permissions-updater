@@ -1,5 +1,6 @@
 ---
 name: "anything-goes-formatter"
+github: "jenkinsci/anything-goes-formatter"
 paths:
 - "org/jenkins-ci/plugins/anything-goes-formatter"
 developers: []

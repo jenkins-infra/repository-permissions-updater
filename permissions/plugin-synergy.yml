@@ -1,5 +1,6 @@
 ---
 name: "synergy"
+github: "jenkinsci/synergy_scm-plugin"
 paths:
 - "org/jenkins-ci/plugins/synergy"
 - "org/jvnet/hudson/plugins/synergy"

@@ -1,5 +1,6 @@
 ---
 name: "statistics-gatherer"
+github: "jenkinsci/statistics-gatherer-plugin"
 paths:
 - "org/jenkins/plugins/statistics/gatherer/statistics-gatherer"
 developers:

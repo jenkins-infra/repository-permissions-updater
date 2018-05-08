@@ -1,5 +1,6 @@
 ---
 name: "xltestview-plugin"
+github: "jenkinsci/xltestview-plugin"
 paths:
 - "com/xebialabs/xlt/ci/xltestview-plugin"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "collapsing-console-sections"
+github: "jenkinsci/collapsing-console-sections-plugin"
 paths:
 - "org/jenkins-ci/plugins/collapsing-console-sections"
 developers:

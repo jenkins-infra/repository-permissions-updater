@@ -1,5 +1,6 @@
 ---
 name: "syslog-logger"
+github: "jenkinsci/syslog-logger-plugin"
 paths:
 - "org/jenkins-ci/plugins/syslog-logger"
 developers:

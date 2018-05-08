@@ -1,5 +1,6 @@
 ---
 name: "files-found-trigger"
+github: "jenkinsci/files-found-trigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/files-found-trigger"
 - "org/jvnet/hudson/plugins/files-found-trigger"

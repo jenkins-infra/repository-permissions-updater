@@ -1,5 +1,6 @@
 ---
 name: "support-core"
+github: "jenkinsci/support-core-plugin"
 paths:
 - "org/jenkins-ci/plugins/support-core"
 developers:

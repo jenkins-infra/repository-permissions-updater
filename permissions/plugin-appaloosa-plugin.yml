@@ -1,5 +1,6 @@
 ---
 name: "appaloosa-plugin"
+github: "jenkinsci/appaloosa-plugin"
 paths:
 - "org/jenkins-ci/plugins/appaloosa-plugin"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "xlrelease-plugin"
+github: "jenkinsci/XL+Release-plugin"
 paths:
 - "com/xebialabs/ci/xlrelease-plugin"
 developers:

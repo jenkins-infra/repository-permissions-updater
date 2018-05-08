@@ -1,5 +1,6 @@
 ---
 name: "text-finder-run-condition"
+github: "jenkinsci/text-finder-run-condition-plugin"
 paths:
 - "org/jenkins-ci/plugins/text-finder-run-condition"
 developers: []

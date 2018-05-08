@@ -1,5 +1,6 @@
 ---
 name: "flaky-test-handler"
+github: "jenkinsci/flaky-test-handler-plugin"
 paths:
 - "org/jenkins-ci/plugins/flaky-test-handler"
 developers:

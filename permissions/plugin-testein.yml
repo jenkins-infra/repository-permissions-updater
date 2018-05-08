@@ -1,5 +1,6 @@
 ---
 name: "testein"
+github: "jenkinsci/testein-plugin"
 paths:
 - "com/testein/testein"
 developers:

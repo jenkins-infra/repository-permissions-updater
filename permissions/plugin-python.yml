@@ -1,5 +1,6 @@
 ---
 name: "python"
+github: "jenkinsci/scp-plugin"
 paths:
 - "org/jenkins-ci/plugins/python"
 developers:

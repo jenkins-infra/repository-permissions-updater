@@ -1,5 +1,6 @@
 ---
 name: "bitbucket"
+github: "jenkinsci/bitbucket-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitbucket"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "rpmsign-plugin"
+github: "jenkinsci/rpmsign-plugin"
 paths:
 - "org/jenkins-ci/plugins/rpmsign-plugin"
 developers:

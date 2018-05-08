@@ -1,5 +1,6 @@
 ---
 name: "sourcemonitor"
+github: "jenkinsci/sourcemonitor-plugin"
 paths:
 - "com/thalesgroup/hudson/plugins/sourcemonitor"
 developers: []

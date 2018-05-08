@@ -1,5 +1,6 @@
 ---
 name: "rabbitmq-publisher"
+github: "jenkinsci/rabbitmq-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/rabbitmq-publisher"
 developers:

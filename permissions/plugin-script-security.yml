@@ -1,5 +1,6 @@
 ---
 name: "script-security"
+github: "jenkinsci/script-security-plugin"
 paths:
 - "org/jenkins-ci/plugins/script-security"
 developers:

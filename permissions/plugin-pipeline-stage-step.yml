@@ -1,5 +1,6 @@
 ---
 name: "pipeline-stage-step"
+github: "jenkinsci/pipeline-stage-step-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-stage-step"
 developers:

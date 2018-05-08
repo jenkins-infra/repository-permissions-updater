@@ -1,5 +1,6 @@
 ---
 name: "jira-ext"
+github: "jenkinsci/jira-ext-plugin"
 paths:
 - "org/jenkins-ci/plugins/jira-ext"
 developers:

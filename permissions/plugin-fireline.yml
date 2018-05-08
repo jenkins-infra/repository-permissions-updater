@@ -1,5 +1,6 @@
 ---
 name: "fireline"
+github: "jenkinsci/fireline-plugin"
 paths:
 - "org/jenkins-ci/plugins/plugin/fireline"
 developers:

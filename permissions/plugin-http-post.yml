@@ -1,5 +1,6 @@
 ---
 name: "http-post"
+github: "jenkinsci/http-post-plugin"
 paths:
 - "org/jenkins-ci/plugins/http-post"
 developers:

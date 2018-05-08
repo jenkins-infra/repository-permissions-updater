@@ -1,5 +1,6 @@
 ---
 name: "consul-kv-builder"
+github: "jenkinsci/consul-kv-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/consul-kv-builder"
 developers:

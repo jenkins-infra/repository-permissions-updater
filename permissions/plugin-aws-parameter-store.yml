@@ -1,5 +1,6 @@
 ---
 name: "aws-parameter-store"
+github: "jenkinsci/aws-parameter-store-plugin"
 paths:
 - "org/jenkins-ci/plugins/aws-parameter-store"
 developers:

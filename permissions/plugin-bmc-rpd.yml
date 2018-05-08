@@ -1,5 +1,6 @@
 ---
 name: "bmc-rpd"
+github: "jenkinsci/bmc-rpd-plugin"
 paths:
 - "RPD/bmc-rpd"
 developers:

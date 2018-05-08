@@ -1,5 +1,6 @@
 ---
 name: "crx-content-package-deployer"
+github: "jenkinsci/crx-content-package-deployer-plugin"
 paths:
 - "org/jenkins-ci/plugins/crx-content-package-deployer"
 developers:

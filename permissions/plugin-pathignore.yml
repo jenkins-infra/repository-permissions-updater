@@ -1,5 +1,6 @@
 ---
 name: "pathignore"
+github: "jenkinsci/pathignore-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/pathignore"
 developers: []

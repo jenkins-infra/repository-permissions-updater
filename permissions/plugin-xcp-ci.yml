@@ -1,5 +1,6 @@
 ---
 name: "xcp-ci"
+github: "jenkinsci/jenkins-xcp-ci-plugin"
 paths:
 - "com/viltgroup/xcp/jenkins/xcp-ci"
 developers:

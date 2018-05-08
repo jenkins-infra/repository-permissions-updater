@@ -1,5 +1,6 @@
 ---
 name: "monitor-remote-job"
+github: "jenkinsci/monitor-remote-job-plugin"
 paths:
 - "org/ukiuni/monitor-remote-job-plugin/monitor-remote-job"
 developers: []

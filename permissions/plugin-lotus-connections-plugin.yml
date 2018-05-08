@@ -1,5 +1,6 @@
 ---
 name: "lotus-connections-plugin"
+github: "jenkinsci/lotus-connections-plugin"
 paths:
 - "org/jenkins-ci/plugins/lotus-connections-plugin"
 developers:

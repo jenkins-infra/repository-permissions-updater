@@ -1,5 +1,6 @@
 ---
 name: "openshift-sync"
+github: "jenkinsci/openshift-sync-plugin"
 paths:
 - "io/fabric8/jenkins/plugins/openshift-sync"
 developers:

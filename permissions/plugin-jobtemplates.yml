@@ -1,5 +1,6 @@
 ---
 name: "jobtemplates"
+github: "jenkinsci/jobtemplates-plugin"
 paths:
 - "com/unitedinternet/jenkins/plugins/jobtemplates/jobtemplates"
 developers: []

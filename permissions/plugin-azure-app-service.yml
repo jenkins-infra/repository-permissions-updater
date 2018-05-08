@@ -1,5 +1,6 @@
 ---
 name: "azure-app-service"
+github: "jenkinsci/azure-app-service-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-app-service"
 developers:

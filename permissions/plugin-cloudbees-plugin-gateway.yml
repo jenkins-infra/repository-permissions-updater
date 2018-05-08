@@ -1,5 +1,6 @@
 ---
 name: "cloudbees-plugin-gateway"
+github: "jenkinsci/cloudbees-plugin-gateway"
 paths:
 - "org/jenkins-ci/plugins/cloudbees-plugin-gateway"
 developers:

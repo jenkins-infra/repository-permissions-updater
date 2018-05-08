@@ -1,5 +1,6 @@
 ---
 name: "random-string-parameter"
+github: "jenkinsci/random-string-parameter-plugin"
 paths:
 - "org/jenkins-ci/plugins/random-string-parameter"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "artifact-promotion"
+github: "jenkinsci/artifact-promotion-plugin"
 paths:
 - "org/jenkins-ci/plugins/artifact-promotion"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "kanboard"
+github: "jenkinsci/kanboard-plugin"
 paths:
 - "org/jenkins-ci/plugins/kanboard"
 developers:

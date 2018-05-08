@@ -1,5 +1,6 @@
 ---
 name: "filesystem_scm"
+github: "jenkinsci/filesystem_scm-plugin"
 paths:
 - "hudson/plugins/filesystem_scm/filesystem_scm"
 developers:

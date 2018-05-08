@@ -1,5 +1,6 @@
 ---
 name: "vagrant"
+github: "jenkinsci/vagrant-plugin"
 paths:
 - "org/jenkins-ci/plugins/vagrant"
 - "org/jenkins-ci/ruby-plugins/vagrant"

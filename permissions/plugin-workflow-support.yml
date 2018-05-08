@@ -1,5 +1,6 @@
 ---
 name: "workflow-support"
+github: "jenkinsci/workflow-support-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-support"
 developers:

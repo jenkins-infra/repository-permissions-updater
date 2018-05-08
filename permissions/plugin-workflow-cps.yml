@@ -1,5 +1,6 @@
 ---
 name: "workflow-cps"
+github: "jenkinsci/workflow-cps-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-cps"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "azure-vmss"
+github: "jenkinsci/azure-vmss-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-vmss"
 developers:

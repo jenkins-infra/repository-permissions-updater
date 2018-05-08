@@ -1,5 +1,6 @@
 ---
 name: "application-director-plugin"
+github: "jenkinsci/application-director-plugin"
 paths:
 - "org/jenkins-ci/plugins/application-director-plugin"
 developers: []

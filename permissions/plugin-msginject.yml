@@ -1,5 +1,6 @@
 ---
 name: "msginject"
+github: "jenkinsci/msginject-plugin"
 paths:
 - "org/jenkins-ci/plugins/msginject"
 developers:

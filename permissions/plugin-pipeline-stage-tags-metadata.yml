@@ -1,5 +1,6 @@
 ---
 name: "pipeline-stage-tags-metadata"
+github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
 - "org/jenkinsci/plugins/pipeline-stage-tags-metadata"
 developers:

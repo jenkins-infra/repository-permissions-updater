@@ -1,5 +1,6 @@
 ---
 name: "coverity"
+github: "jenkinsci/coverity-plugin"
 paths:
 - "org/jenkins-ci/plugins/coverity"
 developers:

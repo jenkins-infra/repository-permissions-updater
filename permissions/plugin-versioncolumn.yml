@@ -1,5 +1,6 @@
 ---
 name: "versioncolumn"
+github: "jenkinsci/versioncolumn-plugin"
 paths:
 - "org/jenkins-ci/plugins/versioncolumn"
 developers:

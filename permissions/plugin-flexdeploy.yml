@@ -1,5 +1,6 @@
 ---
 name: "flexdeploy"
+github: "jenkinsci/flexdeploy-plugin"
 paths:
 - "org/jenkins-ci/plugins/flexdeploy"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "jobrevision"
+github: "jenkinsci/jobrevision-plugin"
 paths:
 - "org/jenkins-ci/plugins/jobrevision"
 developers: []

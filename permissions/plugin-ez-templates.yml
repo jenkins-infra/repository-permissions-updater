@@ -1,5 +1,6 @@
 ---
 name: "ez-templates"
+github: "jenkinsci/ez-templates-plugin"
 paths:
 - "org/jenkins-ci/plugins/ez-templates"
 developers:

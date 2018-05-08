@@ -1,5 +1,6 @@
 ---
 name: "parasoft-findings"
+github: "jenkinsci/parasoft-findings-plugin"
 paths:
 - "com/parasoft/parasoft-findings"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "next-executions"
+github: "jenkinsci/next-executions-plugin"
 paths:
 - "org/jenkins-ci/plugins/next-executions"
 developers:

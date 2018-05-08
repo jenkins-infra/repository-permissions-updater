@@ -1,5 +1,6 @@
 ---
 name: "custom-view-tabs"
+github: "jenkinsci/custom-view-tabs-plugin"
 paths:
 - "org/jenkins-ci/plugins/custom-view-tabs"
 developers:

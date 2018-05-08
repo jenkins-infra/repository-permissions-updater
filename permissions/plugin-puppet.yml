@@ -1,5 +1,6 @@
 ---
 name: "puppet"
+github: "jenkinsci/puppet-plugin"
 paths:
 - "org/jenkins-ci/plugins/puppet"
 developers:

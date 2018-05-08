@@ -1,5 +1,6 @@
 ---
 name: "Parameterized-Remote-Trigger"
+github: "jenkinsci/parameterized-remote-trigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/Parameterized-Remote-Trigger"
 developers:

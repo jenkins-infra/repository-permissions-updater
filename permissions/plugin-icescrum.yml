@@ -1,5 +1,6 @@
 ---
 name: "icescrum"
+github: "jenkinsci/icescrum-plugin"
 paths:
 - "org/jenkins-ci/plugins/icescrum"
 developers:

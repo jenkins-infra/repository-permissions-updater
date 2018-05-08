@@ -1,5 +1,6 @@
 ---
 name: "plasticscm-plugin"
+github: "jenkinsci/plasticscm-plugin"
 paths:
 - "org/jenkins-ci/plugins/plasticscm-plugin"
 - "org/jvnet/hudson/plugins/plasticscm-plugin"

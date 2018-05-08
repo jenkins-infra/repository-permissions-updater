@@ -1,5 +1,6 @@
 ---
 name: "sonargraph-integration"
+github: "jenkinsci/sonargraph-integration-plugin"
 paths:
 - "org/jenkins-ci/plugins/sonargraph-integration"
 developers:

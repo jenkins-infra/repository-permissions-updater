@@ -1,5 +1,6 @@
 ---
 name: "mentor-questa-vrm"
+github: "jenkinsci/mentor-questa-vrm-plugin"
 paths:
 - "com/mentor/questa/vrm/jenkins/mentor-questa-vrm"
 developers:

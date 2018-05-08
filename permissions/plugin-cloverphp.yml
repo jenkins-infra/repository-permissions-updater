@@ -1,5 +1,6 @@
 ---
 name: "cloverphp"
+github: "jenkinsci/cloverphp-plugin"
 paths:
 - "org/jenkins-ci/plugins/cloverphp"
 developers:

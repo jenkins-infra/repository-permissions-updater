@@ -1,5 +1,6 @@
 ---
 name: "deployhub"
+github: "jenkinsci/deployhub-plugin"
 paths:
 - "com/openmake/deployhub"
 developers:

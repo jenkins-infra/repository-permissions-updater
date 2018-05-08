@@ -1,5 +1,6 @@
 ---
 name: "harvest"
+github: "jenkinsci/harvest-plugin"
 paths:
 - "org/jenkins-ci/plugins/harvest"
 developers:

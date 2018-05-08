@@ -1,5 +1,6 @@
 ---
 name: "mstest"
+github: "jenkinsci/mstest-plugin"
 paths:
 - "org/jvnet/hudson/plugins/mstest"
 developers:

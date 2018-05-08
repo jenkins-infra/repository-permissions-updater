@@ -1,5 +1,6 @@
 ---
 name: "scm-api"
+github: "jenkinsci/scm-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/scm-api"
 developers:

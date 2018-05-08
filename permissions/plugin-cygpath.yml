@@ -1,5 +1,6 @@
 ---
 name: "cygpath"
+github: "jenkinsci/cygpath-plugin"
 paths:
 - "org/jenkins-ci/plugins/cygpath"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "doxygen"
+github: "jenkinsci/doxygen-plugin"
 paths:
 - "org/jenkins-ci/plugins/doxygen"
 developers:

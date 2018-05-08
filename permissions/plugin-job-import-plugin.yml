@@ -1,5 +1,6 @@
 ---
 name: "job-import-plugin"
+github: "jenkinsci/job-import-plugin"
 paths:
 - "org/jenkins-ci/plugins/job-import-plugin"
 developers:

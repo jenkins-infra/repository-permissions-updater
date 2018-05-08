@@ -1,5 +1,6 @@
 ---
 name: "downstream-buildview"
+github: "jenkinsci/downstream-buildview-plugin"
 paths:
 - "org/jvnet/hudson/plugins/downstream-buildview"
 developers: []

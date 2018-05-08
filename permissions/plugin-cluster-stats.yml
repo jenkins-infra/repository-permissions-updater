@@ -1,5 +1,6 @@
 ---
 name: "cluster-stats"
+github: "jenkinsci/cluster-stats"
 paths:
 - "org/zeroturnaround/cluster-stats"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "github-api"
+github: "jenkinsci/github-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-api"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "groovy-remote"
+github: "jenkinsci/groovy-remote-control-plugin"
 paths:
 - "org/jenkinsci/plugins/groovy-remote"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "pipeline-model-declarative-agent"
+github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
 - "org/jenkinsci/plugins/pipeline-model-declarative-agent"
 developers:

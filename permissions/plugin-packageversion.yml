@@ -1,5 +1,6 @@
 ---
 name: "packageversion"
+github: "jenkinsci/packageversion-plugin"
 paths:
 - "org/lilicurroad/jenkins/packageversion"
 developers:

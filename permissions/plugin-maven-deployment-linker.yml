@@ -1,5 +1,6 @@
 ---
 name: "maven-deployment-linker"
+github: "jenkinsci/favorite-plugin"
 paths:
 - "org/jvnet/hudson/plugins/maven-deployment-linker"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "continuum"
+github: "jenkinsci/continuum-plugin"
 paths:
 - "org/jenkins-ci/plugins/continuum"
 developers:

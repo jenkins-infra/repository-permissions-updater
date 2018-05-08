@@ -1,5 +1,6 @@
 ---
 name: "favorite"
+github: "jenkinsci/favorite-plugin"
 paths:
 - "org/jvnet/hudson/plugins/favorite"
 developers:

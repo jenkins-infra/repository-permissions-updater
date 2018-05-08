@@ -1,5 +1,6 @@
 ---
 name: "azure-ad"
+github: "jenkinsci/azure-ad-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-ad"
 developers:
