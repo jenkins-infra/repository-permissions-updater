@@ -1,6 +1,5 @@
 ---
 name: "github-pullrequest"
-github: "KostyaSha/github-integration-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-pullrequest"
 developers:
