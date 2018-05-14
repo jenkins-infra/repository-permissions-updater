@@ -2,5 +2,7 @@
 name: "configuration-as-code"
 paths:
 - "org/jenkins-ci/plugins/configuration-as-code"
+- "io/jenkins/configuration-as-code"
 developers:
 - "praqma"
+- "ndeloof"
