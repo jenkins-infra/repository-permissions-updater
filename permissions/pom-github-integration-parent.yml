@@ -1,7 +1,5 @@
 ---
 name: "github-integration-parent"
-github: "jenkinsci/github-pullrequest-plugin"
-github: "jenkinsci/github-integration-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-integration-parent"
 developers:
