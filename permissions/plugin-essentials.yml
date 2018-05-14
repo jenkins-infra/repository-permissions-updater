@@ -1,5 +1,6 @@
 ---
 name: "essentials"
+github: "jenkinsci/essentials-plugin"
 paths:
 - "io/jenkins/plugins/essentials"
 developers:

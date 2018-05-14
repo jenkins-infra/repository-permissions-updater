@@ -1,5 +1,6 @@
 ---
 name: "configuration-as-code"
+github: "jenkinsci/configuration-as-code-plugin"
 paths:
 - "org/jenkins-ci/plugins/configuration-as-code"
 - "io/jenkins/configuration-as-code"
