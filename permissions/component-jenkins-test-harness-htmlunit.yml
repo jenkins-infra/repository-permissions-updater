@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/main/jenkins-test-harness-htmlunit"
 developers:
 - "andresrc"
+- "drulli"

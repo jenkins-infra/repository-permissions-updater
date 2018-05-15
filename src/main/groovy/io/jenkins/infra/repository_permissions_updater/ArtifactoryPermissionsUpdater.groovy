@@ -23,6 +23,11 @@ public class ArtifactoryPermissionsUpdater {
     private static final File ARTIFACTORY_API_DIR = new File(System.getProperty('artifactoryApiTempDir', './json'))
 
     /**
+     * URL to JSON with a list of valid Artifactory user names.
+     */
+    private static final String ARTIFACTORY_USER_NAMES_URL = System.getProperty('artifactoryUserNamesJsonListUrl')
+
+    /**
      * URL to the permissions API of Artifactory
      */
     private static final String ARTIFACTORY_PERMISSIONS_API_URL = 'https://repo.jenkins-ci.org/api/security/permissions'
@@ -115,6 +120,11 @@ public class ArtifactoryPermissionsUpdater {
             throw new IOException("Directory ${DEFINITIONS_DIR} does not exist")
         }
 
+        def knownUsers = []
+        if (ARTIFACTORY_USER_NAMES_URL) {
+            knownUsers = new JsonSlurper().parse(new URL(ARTIFACTORY_USER_NAMES_URL))
+        }
+
         if (apiOutputDir.exists()) {
             throw new IOException(apiOutputDir.path + " already exists")
         }
@@ -170,6 +180,9 @@ public class ArtifactoryPermissionsUpdater {
                         users [:]
                     } else {
                         users definition.developers.collectEntries { developer ->
+                            if (!knownUsers.contains(developer.toLowerCase())) {
+                                throw new IllegalStateException("User name not known to Artifactory: " + developer)
+                            }
                             ["${developer.toLowerCase()}": ["w", "n"]]
                         }
                     }
