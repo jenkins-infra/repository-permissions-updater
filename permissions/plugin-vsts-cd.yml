@@ -1,6 +1,5 @@
 ---
 name: "vsts-cd"
-github: "jenkinsci/vsts-cd-plugin-plugin"
 paths:
 - "org/jenkins-ci/plugins/vsts-cd"
 developers:

@@ -1,6 +1,5 @@
 ---
 name: "chaos-butler"
-github: "jenkinsci/jamm-plugin"
 paths:
 - "org/jenkins-ci/plugins/chaos-butler"
 developers:

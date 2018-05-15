@@ -1,6 +1,5 @@
 ---
 name: "autocomplete-parameter"
-github: "jenkinsci/autocomplete-parameter"
 paths:
 - "org/jenkins-ci/plugins/autocomplete-parameter"
 developers:

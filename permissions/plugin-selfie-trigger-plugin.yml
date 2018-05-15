@@ -1,6 +1,5 @@
 ---
 name: "selfie-trigger-plugin"
-github: "jenkinsci/selfie-trigger-plugin-plugin"
 paths:
 - "org/jenkins-ci/plugins/selfie-trigger-plugin"
 - "org/jenkinsci/plugins/selfie-trigger-plugin"

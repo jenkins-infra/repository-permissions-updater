@@ -1,6 +1,5 @@
 ---
 name: "validating-string-parameter"
-github: "jenkinsci/validating-string-parameter-pluginn"
 paths:
 - "org/jenkins-ci/plugins/validating-string-parameter"
 developers:

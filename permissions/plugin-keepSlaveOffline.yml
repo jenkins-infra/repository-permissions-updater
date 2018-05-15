@@ -1,6 +1,5 @@
 ---
 name: "keepSlaveOffline"
-github: "jenkinsci/keep-slave-offline"
 paths:
 - "hudson/plugins/keepSlaveOffline/keepSlaveOffline"
 developers: []

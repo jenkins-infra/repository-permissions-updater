@@ -1,6 +1,5 @@
 ---
 name: "drecycler"
-github: "jenkinsci/diskcheck-plugin"
 paths:
 - "com/cloudera/diskrecycler/drecycler"
 developers:

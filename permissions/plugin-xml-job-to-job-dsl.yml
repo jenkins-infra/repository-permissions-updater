@@ -1,6 +1,5 @@
 ---
 name: "xml-job-to-job-dsl"
-github: "jenkinsci/xml-job-to-dsl-plugin"
 paths:
 - "com/adq/jenkins/xml-job-to-job-dsl"
 developers:

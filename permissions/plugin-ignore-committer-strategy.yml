@@ -1,6 +1,5 @@
 ---
 name: "ignore-committer-strategy"
-github: "jenkinsci/jenkins-ignore-committer-strategy-plugin"
 paths:
 - "au/com/versent/jenkins/plugins/ignore-committer-strategy"
 developers:

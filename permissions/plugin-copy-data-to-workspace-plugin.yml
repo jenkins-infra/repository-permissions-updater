@@ -1,6 +1,5 @@
 ---
 name: "copy-data-to-workspace-plugin"
-github: "jenkinsci/copy-data-to-workspace-plugin-plugin"
 paths:
 - "org/jvnet/hudson/plugins/copy-data-to-workspace-plugin"
 developers: []

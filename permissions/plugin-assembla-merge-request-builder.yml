@@ -1,6 +1,5 @@
 ---
 name: "assembla-merge-request-builder"
-github: "jenkinsci/assembla-merge-request-builder"
 paths:
 - "org/jenkins-ci/plugins/assembla-merge-request-builder"
 developers:

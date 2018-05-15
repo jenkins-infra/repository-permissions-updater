@@ -1,6 +1,5 @@
 ---
 name: "pry"
-github: "jenkinsci/git-plugin"
 paths:
 - "org/jenkins-ci/plugins/pry"
 developers: []

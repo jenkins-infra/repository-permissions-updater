@@ -1,6 +1,5 @@
 ---
 name: "google-source-plugin"
-github: "jenkinsci/google-source-plugin-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-source-plugin"
 developers:

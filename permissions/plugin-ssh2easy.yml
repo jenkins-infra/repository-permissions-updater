@@ -1,6 +1,5 @@
 ---
 name: "ssh2easy"
-github: "jenkinsci/ssh2easy"
 paths:
 - "org/jenkins-ci/plugins/ssh2easy"
 developers:

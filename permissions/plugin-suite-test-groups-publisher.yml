@@ -1,6 +1,5 @@
 ---
 name: "suite-test-groups-publisher"
-github: "jenkinsci/suite-test-groups-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/suite-test-groups-publisher"
 developers: []

@@ -1,6 +1,5 @@
 ---
 name: "oki-docki"
-github: "jenkinsci/oki-docki-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/oki-docki"
 developers:

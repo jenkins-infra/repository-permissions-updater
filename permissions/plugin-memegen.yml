@@ -1,6 +1,5 @@
 ---
 name: "memegen"
-github: "jenkinsci/memegen"
 paths:
 - "hudson/plugins/memegen/memegen"
 developers:

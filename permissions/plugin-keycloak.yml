@@ -1,6 +1,5 @@
 ---
 name: "keycloak"
-github: "jenkinsci/jenkins-keycloak-plugin"
 paths:
 - "org/jenkins-ci/plugins/keycloak"
 developers:

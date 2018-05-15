@@ -1,6 +1,5 @@
 ---
 name: "collabnet-uc4-deploy"
-github: "jenkinsci/collabnet-uc4-deploy-plugin"
 paths:
 - "org/jenkins-ci/plugins/collabnet-uc4-deploy"
 developers: []

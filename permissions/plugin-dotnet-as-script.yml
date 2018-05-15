@@ -1,6 +1,5 @@
 ---
 name: "dotnet-as-script"
-github: "jenkinsci/plugin-pom"
 paths:
 - "org/jenkins-ci/plugins/dotnet-as-script"
 developers:
