@@ -2,7 +2,7 @@
 name: "embotics-vcommander-plugin"
 github: "jenkinsci/embotics-vcommander-plugin"
 paths:
-- "io/jenkins/plugins/embotics-vcommander-plugin"
+- "org/jenkins-ci/plugins/embotics-vcommander-plugin"
 developers:
 - "aelliotatemboticsdotcom"
 - "embotics"
