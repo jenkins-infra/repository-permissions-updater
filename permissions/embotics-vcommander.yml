@@ -1,0 +1,8 @@
+---
+name: "embotics-vcommander"
+github: "jenkinsci/embotics-vcommander-plugin"
+paths:
+- "org/jenkins-ci/plugins/embotics-vcommander"
+developers:
+- "aelliotatemboticsdotcom"
+- "embotics"
