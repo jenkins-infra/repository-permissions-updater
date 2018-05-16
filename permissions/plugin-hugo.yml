@@ -1,0 +1,6 @@
+---
+name: "hugo"
+paths:
+- "io/jenkins/plugins/hugo"
+developers:
+- "surenpi"
