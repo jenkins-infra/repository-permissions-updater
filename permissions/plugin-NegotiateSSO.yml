@@ -1,5 +1,6 @@
 ---
 name: "NegotiateSSO"
+github: "jenkinsci/negotiatesso-plugin"
 paths:
 - "org/jenkins-ci/plugins/NegotiateSSO"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "behave-testresults-publisher"
+github: "jenkinsci/behave-testresults-publisher-plugin"
 paths:
 - "net/jenkins/behave-testresults-publisher"
 developers:

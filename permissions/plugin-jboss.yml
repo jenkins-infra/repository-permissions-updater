@@ -1,5 +1,6 @@
 ---
 name: "jboss"
+github: "jenkinsci/jboss-plugin"
 paths:
 - "org/jenkins-ci/plugins/jboss"
 developers: []

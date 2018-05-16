@@ -1,5 +1,6 @@
 ---
 name: "tfs-parent"
+github: "jenkinsci/tfs-plugin"
 paths:
 - "org/jenkins-ci/plugins/tfs-parent"
 developers:

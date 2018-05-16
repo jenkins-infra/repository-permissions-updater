@@ -1,5 +1,6 @@
 ---
 name: "jx-pipelines"
+github: "jenkinsci/jx-pipelines-plugin"
 paths:
 - "org/jenkins-ci/plugins/jx-pipelines"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "image-gallery"
+github: "jenkinsci/image-gallery-plugin"
 paths:
 - "com/tupilabs/image_gallery/image-gallery"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "quality-gates"
+github: "jenkinsci/quality-gates-plugin"
 paths:
 - "org/jenkins-ci/plugins/quality-gates"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "blueocean-git-pipeline"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-git-pipeline"
 developers:

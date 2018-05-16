@@ -1,5 +1,6 @@
 ---
 name: "sauce-ondemand"
+github: "jenkinsci/sauce-ondemand-plugin"
 paths:
 - "org/jenkins-ci/plugins/sauce-ondemand"
 - "org/jvnet/hudson/plugins/sauce-ondemand"

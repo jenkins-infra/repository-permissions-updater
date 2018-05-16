@@ -1,5 +1,6 @@
 ---
 name: "build-token-trigger"
+github: "jenkinsci/build-token-trigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-token-trigger"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "label-verifier"
+github: "jenkinsci/label-verifier-plugin"
 paths:
 - "org/jenkins-ci/plugins/label-verifier"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "jsch"
+github: "jenkinsci/jsch-plugin"
 paths:
 - "org/jenkins-ci/plugins/jsch"
 developers:

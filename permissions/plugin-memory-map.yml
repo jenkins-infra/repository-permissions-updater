@@ -1,5 +1,6 @@
 ---
 name: "memory-map"
+github: "jenkinsci/memory-map-plugin"
 paths:
 - "net/praqma/memory-map"
 developers:

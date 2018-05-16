@@ -1,5 +1,6 @@
 ---
 name: "envinject-lib"
+github: "jenkinsci/envinject-lib"
 paths:
 - "org/jenkins-ci/lib/envinject-lib"
 developers:

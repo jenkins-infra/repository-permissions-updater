@@ -1,5 +1,6 @@
 ---
 name: "convert-to-pipeline"
+github: "jenkinsci/convert-to-pipeline-plugin"
 paths:
 - "org/jenkins-ci/plugins/convert-to-pipeline"
 developers:

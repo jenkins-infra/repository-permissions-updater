@@ -1,5 +1,6 @@
 ---
 name: "fogbugz"
+github: "jenkinsci/fogbugz-plugin"
 paths:
 - "org/jenkins-ci/plugins/fogbugz"
 developers:

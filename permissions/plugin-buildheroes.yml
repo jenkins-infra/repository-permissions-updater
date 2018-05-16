@@ -1,5 +1,6 @@
 ---
 name: "buildheroes"
+github: "jenkinsci/buildheroes-plugin"
 paths:
 - "org/jenkins-ci/plugins/buildheroes"
 developers: []

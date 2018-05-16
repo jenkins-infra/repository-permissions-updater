@@ -1,5 +1,6 @@
 ---
 name: "subversion"
+github: "jenkinsci/subversion-plugin"
 paths:
 - "org/jenkins-ci/plugins/subversion"
 - "org/jvnet/hudson/plugins/subversion"

@@ -1,5 +1,6 @@
 ---
 name: "jprt"
+github: "jenkinsci/jprt-plugin"
 paths:
 - "org/jenkins-ci/plugins/jprt"
 - "org/jvnet/hudson/plugins/jprt"

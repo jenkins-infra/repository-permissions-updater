@@ -1,5 +1,6 @@
 ---
 name: "sensedia-api-platform"
+github: "jenkinsci/sensedia-api-platform-plugin"
 paths:
 - "org/jenkins-ci/plugins/sensedia-api-platform"
 developers:

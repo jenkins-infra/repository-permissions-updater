@@ -1,5 +1,6 @@
 ---
 name: "mansion-cloud"
+github: "jenkinsci/mansion-cloud-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/mansion-cloud"
 developers:

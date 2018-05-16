@@ -1,5 +1,6 @@
 ---
 name: "slave-prerequisites"
+github: "jenkinsci/slave-prerequisites-plugin"
 paths:
 - "org/jenkins-ci/plugins/slave-prerequisites"
 developers: []

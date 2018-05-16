@@ -1,5 +1,6 @@
 ---
 name: "violation-comments-to-gitlab"
+github: "jenkinsci/violation-comments-to-gitlab-plugin"
 paths:
 - "org/jenkins-ci/plugins/violation-comments-to-gitlab"
 developers:

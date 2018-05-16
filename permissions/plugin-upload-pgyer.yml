@@ -1,5 +1,6 @@
 ---
 name: "upload-pgyer"
+github: "jenkinsci/upload-pgyer-plugin"
 paths:
 - "ren/helloworld/upload-pgyer"
 developers:

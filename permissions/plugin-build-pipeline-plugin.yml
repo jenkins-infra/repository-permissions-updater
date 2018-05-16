@@ -1,5 +1,6 @@
 ---
 name: "build-pipeline-plugin"
+github: "jenkinsci/build-pipeline-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-pipeline-plugin"
 developers:

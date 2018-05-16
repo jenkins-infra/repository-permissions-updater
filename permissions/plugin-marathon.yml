@@ -1,5 +1,6 @@
 ---
 name: "marathon"
+github: "jenkinsci/marathon-plugin"
 paths:
 - "com/mesosphere/velocity/marathon"
 developers:

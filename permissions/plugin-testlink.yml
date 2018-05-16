@@ -1,5 +1,6 @@
 ---
 name: "testlink"
+github: "jenkinsci/testlink-plugin"
 paths:
 - "org/jenkins-ci/plugins/testlink"
 - "org/jvnet/hudson/plugins/testlink"

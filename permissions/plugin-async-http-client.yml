@@ -1,5 +1,6 @@
 ---
 name: "async-http-client"
+github: "jenkinsci/async-http-client-plugin"
 paths:
 - "org/jenkins-ci/plugins/async-http-client"
 - "org/jenkinsci/plugins/async-http-client"

@@ -1,5 +1,6 @@
 ---
 name: "maintenance-jobs-scheduler"
+github: "jenkinsci/maintenance-jobs-scheduler-plugin"
 paths:
 - "org/jenkins-ci/plugins/maintenance-jobs-scheduler"
 developers:

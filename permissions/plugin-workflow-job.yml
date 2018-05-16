@@ -1,5 +1,6 @@
 ---
 name: "workflow-job"
+github: "jenkinsci/workflow-job-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-job"
 developers:

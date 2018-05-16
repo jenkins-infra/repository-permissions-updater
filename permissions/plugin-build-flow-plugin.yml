@@ -1,5 +1,6 @@
 ---
 name: "build-flow-plugin"
+github: "jenkinsci/build-flow-plugin"
 paths:
 - "com/cloudbees/plugins/build-flow-plugin"
 developers:

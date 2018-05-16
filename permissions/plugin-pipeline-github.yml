@@ -1,5 +1,6 @@
 ---
 name: "pipeline-github"
+github: "jenkinsci/pipeline-github-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-github"
 developers:

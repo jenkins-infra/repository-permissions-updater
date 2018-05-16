@@ -1,5 +1,6 @@
 ---
 name: "codescene"
+github: "jenkinsci/codescene-plugin"
 paths:
 - "org/jenkins-ci/plugins/codescene"
 developers:

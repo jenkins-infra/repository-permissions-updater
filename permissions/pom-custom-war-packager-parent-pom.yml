@@ -1,5 +1,6 @@
 ---
 name: "parent-pom"
+github: "jenkinsci/custom-war-packager"
 paths:
 - "io/jenkins/tools/custom-war-packager/parent-pom"
 developers:

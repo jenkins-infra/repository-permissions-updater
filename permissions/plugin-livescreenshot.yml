@@ -1,5 +1,6 @@
 ---
 name: "livescreenshot"
+github: "jenkinsci/livescreenshot-plugin"
 paths:
 - "org/jenkins-ci/plugins/livescreenshot"
 developers: []

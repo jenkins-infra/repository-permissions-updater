@@ -1,5 +1,6 @@
 ---
 name: "blueocean-personalization"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-personalization"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "gitlab-logo"
+github: "jenkinsci/gitlab-logo-plugin"
 paths:
 - "org/jenkins-ci/plugins/gitlab-logo"
 developers:

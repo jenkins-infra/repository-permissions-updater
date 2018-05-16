@@ -1,5 +1,6 @@
 ---
 name: "whitesource"
+github: "jenkinsci/whitesource-plugin"
 paths:
 - "org/jenkins-ci/plugins/whitesource"
 developers:

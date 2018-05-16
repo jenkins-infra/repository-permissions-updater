@@ -1,5 +1,6 @@
 ---
 name: "ldap"
+github: "jenkinsci/ldap-plugin"
 paths:
 - "org/jenkins-ci/plugins/ldap"
 developers:

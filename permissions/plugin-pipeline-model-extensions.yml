@@ -1,5 +1,6 @@
 ---
 name: "pipeline-model-extensions"
+github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
 - "org/jenkinsci/plugins/pipeline-model-extensions"
 developers:

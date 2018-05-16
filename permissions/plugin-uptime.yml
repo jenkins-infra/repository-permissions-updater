@@ -1,5 +1,6 @@
 ---
 name: "uptime"
+github: "jenkinsci/uptime-plugin"
 paths:
 - "org/jenkins-ci/plugins/uptime"
 developers: []

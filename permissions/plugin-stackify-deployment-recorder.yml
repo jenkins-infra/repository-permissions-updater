@@ -1,5 +1,6 @@
 ---
 name: "stackify-deployment-recorder"
+github: "jenkinsci/stackify-deployment-recorder-plugin"
 paths:
 - "org/jenkins-ci/plugins/stackify-deployment-recorder"
 developers:

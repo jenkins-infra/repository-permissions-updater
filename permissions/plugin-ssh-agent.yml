@@ -1,5 +1,6 @@
 ---
 name: "ssh-agent"
+github: "jenkinsci/ssh-agent-plugin"
 paths:
 - "org/jenkins-ci/plugins/ssh-agent"
 developers:

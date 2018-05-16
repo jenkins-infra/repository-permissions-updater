@@ -1,5 +1,6 @@
 ---
 name: "bazaar"
+github: "jenkinsci/bazaar-plugin"
 paths:
 - "org/jenkins-ci/plugins/bazaar"
 - "org/jvnet/hudson/plugins/bazaar"

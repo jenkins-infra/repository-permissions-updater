@@ -1,5 +1,6 @@
 ---
 name: "jenkins-test-harness-htmlunit"
+github: "jenkinsci/jenkins-test-harness-htmlunit"
 paths:
 - "org/jenkins-ci/main/jenkins-test-harness-htmlunit"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "transifex"
+github: "jenkinsci/transifex-plugin"
 paths:
 - "com/gurkensalat/jenkins-ci/plugins/transifex"
 developers: []

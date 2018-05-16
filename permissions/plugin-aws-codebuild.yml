@@ -1,5 +1,6 @@
 ---
 name: "aws-codebuild"
+github: "jenkinsci/aws-codebuild-plugin"
 paths:
 - "com/amazonaws/aws-codebuild"
 developers:

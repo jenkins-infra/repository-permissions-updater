@@ -1,5 +1,6 @@
 ---
 name: "loadimpact-plugin"
+github: "jenkinsci/loadimpact-plugin"
 paths:
 - "com/loadimpact/loadimpact-plugin"
 developers:

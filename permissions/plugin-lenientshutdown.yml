@@ -1,5 +1,6 @@
 ---
 name: "lenientshutdown"
+github: "jenkinsci/lenient-shutdown-plugin"
 paths:
 - "com/sonymobile/jenkins/plugins/lenientshutdown/lenientshutdown"
 developers:

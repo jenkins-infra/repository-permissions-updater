@@ -1,5 +1,6 @@
 ---
 name: "composer-security-checker"
+github: "jenkinsci/composer-security-checker-plugin"
 paths:
 - "org/jenkins-ci/plugins/composer-security-checker"
 developers:

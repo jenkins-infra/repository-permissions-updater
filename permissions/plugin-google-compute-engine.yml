@@ -1,5 +1,6 @@
 ---
 name: "google-compute-engine"
+github: "jenkinsci/google-compute-engine-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-compute-engine"
 developers:

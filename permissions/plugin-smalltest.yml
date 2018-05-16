@@ -1,5 +1,6 @@
 ---
 name: "smalltest"
+github: "jenkinsci/smalltest-plugin"
 paths:
 - "com/smalltest/smalltest"
 developers:

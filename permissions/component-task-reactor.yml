@@ -1,5 +1,6 @@
 ---
 name: "task-reactor"
+github: "jenkinsci/lib-task-reactor"
 paths:
 - "org/jenkins-ci/task-reactor"
 developers:

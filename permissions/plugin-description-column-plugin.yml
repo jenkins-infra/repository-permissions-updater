@@ -1,5 +1,6 @@
 ---
 name: "description-column-plugin"
+github: "jenkinsci/description-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/description-column-plugin"
 developers: []

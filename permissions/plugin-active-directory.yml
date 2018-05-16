@@ -1,5 +1,6 @@
 ---
 name: "active-directory"
+github: "jenkinsci/active-directory-plugin"
 paths:
 - "org/jenkins-ci/plugins/active-directory"
 developers:

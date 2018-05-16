@@ -1,5 +1,6 @@
 ---
 name: "google-analytics-usage-reporter"
+github: "jenkinsci/google-analytics-usage-reporter-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-analytics-usage-reporter"
 developers:

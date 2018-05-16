@@ -1,5 +1,6 @@
 ---
 name: "audit-trail"
+github: "jenkinsci/audit-trail-plugin"
 paths:
 - "org/jenkins-ci/plugins/audit-trail"
 developers:

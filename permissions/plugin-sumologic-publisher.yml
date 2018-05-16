@@ -1,5 +1,6 @@
 ---
 name: "sumologic-publisher"
+github: "jenkinsci/sumologic-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/sumologic-publisher"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "hudson-pview-plugin"
+github: "jenkinsci/pview-plugin"
 paths:
 - "de/fspengler/hudson/pview/hudson-pview-plugin"
 developers: []

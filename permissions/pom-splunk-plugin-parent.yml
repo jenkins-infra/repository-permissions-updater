@@ -1,5 +1,6 @@
 ---
 name: "pom"
+github: "jenkinsci/splunk-devops-plugin"
 paths:
 - "com/splunk/splunkins/pom"
 developers:

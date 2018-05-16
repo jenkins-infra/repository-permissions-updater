@@ -151,10 +151,6 @@ public class ArtifactoryPermissionsUpdater {
                     pathsByGithub[definition.github] = paths
                 }
                 paths.addAll(definition.paths)
-            } else {
-                /* TODO once all have been filled in
-                throw new IOException("$definition.name does not specify the `github` field")
-                */
             }
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')

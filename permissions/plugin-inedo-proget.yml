@@ -1,5 +1,6 @@
 ---
 name: "inedo-proget"
+github: "jenkinsci/inedo-proget-plugin"
 paths:
 - "com/inedo/proget/inedo-proget"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "runscope"
+github: "jenkinsci/runscope-plugin"
 paths:
 - "com/runscope/jenkins/runscope"
 developers:

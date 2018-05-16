@@ -1,5 +1,6 @@
 ---
 name: "queue-cleanup"
+github: "jenkinsci/queue-cleanup-plugin"
 paths:
 - "org/jenkins-ci/plugins/queue-cleanup"
 developers:

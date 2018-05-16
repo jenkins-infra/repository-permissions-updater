@@ -1,5 +1,6 @@
 ---
 name: "http_request"
+github: "jenkinsci/http-request-plugin"
 paths:
 - "org/jenkins-ci/plugins/http_request"
 developers:

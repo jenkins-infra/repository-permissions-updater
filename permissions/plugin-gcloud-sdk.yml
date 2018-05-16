@@ -1,5 +1,6 @@
 ---
 name: "gcloud-sdk"
+github: "jenkinsci/gcloud-sdk-plugin"
 paths:
 - "com/byclosure/jenkins/plugins/gcloud-sdk"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "aws-batch"
+github: "jenkinsci/aws-batch-plugin"
 paths:
 - "org/jenkins-ci/plugins/aws-batch"
 developers:

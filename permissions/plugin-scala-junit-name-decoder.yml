@@ -1,5 +1,6 @@
 ---
 name: "scala-junit-name-decoder"
+github: "jenkinsci/scala-junit-name-decoder-plugin"
 paths:
 - "org/jenkins-ci/plugins/scala-junit-name-decoder"
 developers: []

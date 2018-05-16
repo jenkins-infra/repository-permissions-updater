@@ -1,5 +1,6 @@
 ---
 name: "promoted-builds"
+github: "jenkinsci/promoted-builds-plugin"
 paths:
 - "org/jenkins-ci/plugins/promoted-builds"
 - "org/jvnet/hudson/plugins/promoted-builds"

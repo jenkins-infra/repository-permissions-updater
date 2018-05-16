@@ -1,5 +1,6 @@
 ---
 name: "github-pr-comment-build"
+github: "jenkinsci/github-pr-comment-build-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-pr-comment-build"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "srcclr-installer"
+github: "jenkinsci/srcclr-installer-plugin"
 paths:
 - "com/srcclr/jenkins/srcclr-installer"
 developers:

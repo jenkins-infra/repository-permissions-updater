@@ -1,5 +1,6 @@
 ---
 name: "ansible-tower"
+github: "jenkinsci/ansible-tower-plugin"
 paths:
 - "org/jenkins-ci/plugins/ansible-tower"
 developers:

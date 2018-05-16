@@ -1,5 +1,6 @@
 ---
 name: "nvm-wrapper"
+github: "jenkinsci/nvm-wrapper-plugin"
 paths:
 - "org/jenkins-ci/plugins/nvm-wrapper"
 developers: 

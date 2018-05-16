@@ -1,5 +1,6 @@
 ---
 name: "shared-objects"
+github: "jenkinsci/shared-objects-plugin"
 paths:
 - "org/jenkins-ci/plugins/shared-objects"
 developers: []

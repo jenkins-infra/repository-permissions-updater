@@ -1,5 +1,6 @@
 ---
 name: "covcomplplot"
+github: "jenkinsci/covcomplplot-plugin"
 paths:
 - "org/jenkins-ci/plugins/covcomplplot"
 developers: []

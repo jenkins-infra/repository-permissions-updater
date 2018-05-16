@@ -1,5 +1,6 @@
 ---
 name: "managed-scripts"
+github: "jenkinsci/managed-scripts-plugin"
 paths:
 - "org/jenkinsci/plugins/managed-scripts"
 developers:

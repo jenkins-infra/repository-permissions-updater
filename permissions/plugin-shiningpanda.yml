@@ -1,5 +1,6 @@
 ---
 name: "shiningpanda"
+github: "jenkinsci/shiningpanda-plugin"
 paths:
 - "org/jenkins-ci/plugins/shiningpanda"
 developers:

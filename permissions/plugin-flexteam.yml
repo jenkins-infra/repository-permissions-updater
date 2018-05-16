@@ -1,5 +1,6 @@
 ---
 name: "flexteam"
+github: "jenkinsci/flexteam-plugin"
 paths:
 - "org/jvnet/hudson/plugins/flexteam"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "workflow-remote-loader"
+github: "jenkinsci/workflow-remote-loader-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow-remote-loader"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "eagle-tester"
+github: "jenkinsci/eagle-tester-plugin"
 paths:
 - "com/mobileenerlytics/eagle/tester/eagle-tester"
 developers:

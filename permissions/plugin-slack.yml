@@ -1,5 +1,6 @@
 ---
 name: "slack"
+github: "jenkinsci/slack-plugin"
 paths:
 - "org/jenkins-ci/plugins/slack"
 developers:

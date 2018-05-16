@@ -1,5 +1,6 @@
 ---
 name: "waptpro"
+github: "jenkinsci/waptpro-plugin"
 paths:
 - "org/jenkins-ci/plugins/waptpro"
 developers:

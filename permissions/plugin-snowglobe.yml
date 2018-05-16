@@ -1,5 +1,6 @@
 ---
 name: "snowglobe"
+github: "jenkinsci/snowglobe-plugin"
 paths:
 - "com/nirima/snowglobe/jenkins/snowglobe"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "jenkinsci-appspider-plugin"
+github: "jenkinsci/appspider-build-scanner-plugin"
 paths:
 - "com/rapid7/jenkinsci-appspider-plugin"
 developers:

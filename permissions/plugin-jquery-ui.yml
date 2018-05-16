@@ -1,5 +1,6 @@
 ---
 name: "jquery-ui"
+github: "jenkinsci/jquery-ui-plugin"
 paths:
 - "org/jenkins-ci/plugins/jquery-ui"
 developers: []

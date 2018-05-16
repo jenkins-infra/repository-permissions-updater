@@ -1,5 +1,6 @@
 ---
 name: "google-container-registry-auth"
+github: "jenkinsci/google-container-registry-auth-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-container-registry-auth"
 developers:

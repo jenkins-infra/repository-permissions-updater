@@ -1,5 +1,6 @@
 ---
 name: "internetmeme"
+github: "jenkinsci/internet-meme-plugin"
 paths:
 - "org/jenkins-ci/plugins/internetmeme"
 developers:

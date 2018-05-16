@@ -1,5 +1,6 @@
 ---
 name: "google-cloudbuild"
+github: "jenkinsci/google-cloudbuild-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-cloudbuild"
 developers:

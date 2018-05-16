@@ -1,5 +1,6 @@
 ---
 name: "text-finder"
+github: "jenkinsci/text-finder-plugin"
 paths:
 - "org/jenkins-ci/plugins/text-finder"
 - "org/jvnet/hudson/plugins/text-finder"

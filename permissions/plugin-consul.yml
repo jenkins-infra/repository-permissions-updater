@@ -1,5 +1,6 @@
 ---
 name: "consul"
+github: "jenkinsci/consul-plugin"
 paths:
 - "com/inneractive/jenkins/plugins/consul"
 developers:

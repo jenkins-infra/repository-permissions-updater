@@ -1,5 +1,6 @@
 ---
 name: "escaped-markup-plugin"
+github: "jenkinsci/escaped-markup-plugin"
 paths:
 - "org/jenkins-ci/plugins/escaped-markup-plugin"
 developers: []

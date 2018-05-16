@@ -1,5 +1,6 @@
 ---
 name: "electricflow"
+github: "jenkinsci/electricflow-plugin"
 paths:
 - "org/jenkins-ci/plugins/electricflow"
 developers:

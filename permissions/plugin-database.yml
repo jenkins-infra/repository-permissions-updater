@@ -1,5 +1,6 @@
 ---
 name: "database"
+github: "jenkinsci/database-plugin"
 paths:
 - "org/jenkins-ci/plugins/database"
 developers:

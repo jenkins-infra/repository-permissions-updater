@@ -1,5 +1,6 @@
 ---
 name: "azure-function"
+github: "jenkinsci/azure-function-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-function"
 developers:

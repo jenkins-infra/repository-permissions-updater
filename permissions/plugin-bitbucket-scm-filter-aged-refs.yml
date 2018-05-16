@@ -1,5 +1,6 @@
 ---
 name: "bitbucket-scm-filter-aged-refs"
+github: "jenkinsci/scm-filter-aged-refs-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitbucket-scm-filter-aged-refs"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "prometheus"
+github: "jenkinsci/prometheus-plugin"
 paths:
 - "org/jenkins-ci/plugins/prometheus"
 developers:

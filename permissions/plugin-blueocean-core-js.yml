@@ -1,5 +1,6 @@
 ---
 name: "blueocean-core-js"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-core-js"
 developers:

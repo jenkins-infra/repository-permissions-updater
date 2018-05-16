@@ -1,5 +1,6 @@
 ---
 name: "logfilesizechecker"
+github: "jenkinsci/logfilesizechecker-plugin"
 paths:
 - "org/jenkins-ci/plugins/logfilesizechecker"
 developers:

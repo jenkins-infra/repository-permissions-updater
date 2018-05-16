@@ -1,5 +1,6 @@
 ---
 name: "SBuild"
+github: "jenkinsci/sbuild-plugin"
 paths:
 - "org/jenkins-ci/plugins/SBuild"
 developers:

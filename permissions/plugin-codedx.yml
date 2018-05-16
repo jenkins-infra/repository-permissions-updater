@@ -1,5 +1,6 @@
 ---
 name: "codedx"
+github: "jenkinsci/codedx-plugin"
 paths:
 - "org/jenkins-ci/plugins/codedx"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "instant-messaging"
+github: "jenkinsci/instant-messaging-plugin"
 paths:
 - "org/jvnet/hudson/plugins/instant-messaging"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "hp-operations-orchestration-automation-execution-plugin"
+github: "jenkinsci/hp-operations-orchestration-plugin"
 paths:
 - "org/jenkins-ci/plugins/hp-operations-orchestration-automation-execution-plugin"
 developers:

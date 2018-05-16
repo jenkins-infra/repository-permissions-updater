@@ -1,5 +1,6 @@
 ---
 name: "parallels-desktop"
+github: "jenkinsci/parallels-desktop-plugin"
 paths:
 - "com/parallels/parallels-desktop"
 developers:

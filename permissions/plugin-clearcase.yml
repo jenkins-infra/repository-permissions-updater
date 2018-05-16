@@ -1,5 +1,6 @@
 ---
 name: "clearcase"
+github: "jenkinsci/clearcase-plugin"
 paths:
 - "org/jenkins-ci/plugins/clearcase"
 - "org/jvnet/hudson/plugins/clearcase"

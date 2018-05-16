@@ -1,5 +1,6 @@
 ---
 name: "warrior"
+github: "jenkinsci/warrior-plugin"
 paths:
 - "org/jenkins-ci/plugins/warrior"
 developers:

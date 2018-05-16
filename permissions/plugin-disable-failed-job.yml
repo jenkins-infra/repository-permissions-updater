@@ -1,5 +1,6 @@
 ---
 name: "disable-failed-job"
+github: "jenkinsci/disable-failed-job-plugin"
 paths:
 - "org/jenkins-ci/plugins/disable-failed-job"
 developers:

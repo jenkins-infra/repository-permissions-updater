@@ -1,5 +1,6 @@
 ---
 name: "crowd2"
+github: "jenkinsci/crowd2-plugin"
 paths:
 - "org/jenkins-ci/plugins/crowd2"
 developers:

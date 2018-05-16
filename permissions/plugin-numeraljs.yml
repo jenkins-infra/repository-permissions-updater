@@ -1,5 +1,6 @@
 ---
 name: "numeraljs"
+github: "jenkinsci/js-libs"
 paths:
 - "org/jenkins-ci/ui/numeraljs"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "selenium-axis"
+github: "jenkinsci/selenium-axis-plugin"
 paths:
 - "org/jenkins-ci/plugins/selenium-axis"
 developers: 

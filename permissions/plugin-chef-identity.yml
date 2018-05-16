@@ -1,5 +1,6 @@
 ---
 name: "chef-identity"
+github: "jenkinsci/chef-identity-plugin"
 paths:
 - "org/jenkins-ci/plugins/chef-identity"
 developers:

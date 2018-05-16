@@ -1,5 +1,6 @@
 ---
 name: "dependencyanalyzer"
+github: "jenkinsci/dependency-analyzer-plugin"
 paths:
 - "org/jenkins-ci/plugins/dependencyanalyzer"
 - "org/jvnet/hudson/plugins/dependencyanalyzer"

@@ -1,5 +1,6 @@
 ---
 name: "TwilioNotifier"
+github: "jenkinsci/twilio-notifier-plugin"
 paths:
 - "com/twilio/jenkins/TwilioNotifier"
 developers: []

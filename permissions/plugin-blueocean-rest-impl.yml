@@ -1,5 +1,6 @@
 ---
 name: "blueocean-rest-impl"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-rest-impl"
 developers:

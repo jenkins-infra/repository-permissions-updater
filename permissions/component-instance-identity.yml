@@ -1,5 +1,6 @@
 ---
 name: "instance-identity"
+github: "jenkinsci/instance-identity-module"
 paths:
 - "org/jenkins-ci/modules/instance-identity"
 developers:

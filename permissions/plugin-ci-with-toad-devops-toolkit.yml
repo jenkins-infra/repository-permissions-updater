@@ -1,5 +1,6 @@
 ---
 name: "ci-with-toad-devops-toolkit"
+github: "jenkinsci/ci-with-toad-devops-toolkit-plugin"
 paths:
 - "io/jenkins/plugins/ci-with-toad-devops-toolkit"
 developers:

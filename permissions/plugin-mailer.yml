@@ -1,5 +1,6 @@
 ---
 name: "mailer"
+github: "jenkinsci/mailer-plugin"
 paths:
 - "org/jenkins-ci/plugins/mailer"
 developers:

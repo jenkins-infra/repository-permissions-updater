@@ -1,5 +1,6 @@
 ---
 name: "m2release"
+github: "jenkinsci/m2release-plugin"
 paths:
 - "org/jenkins-ci/plugins/m2release/m2release"
 - "org/jvnet/hudson/plugins/m2release/m2release"

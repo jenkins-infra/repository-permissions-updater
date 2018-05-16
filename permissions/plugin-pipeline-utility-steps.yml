@@ -1,5 +1,6 @@
 ---
 name: "pipeline-utility-steps"
+github: "jenkinsci/pipeline-utility-steps-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-utility-steps"
 developers:

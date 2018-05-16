@@ -1,5 +1,6 @@
 ---
 name: "github-organization-folder"
+github: "jenkinsci/github-organization-folder-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-organization-folder"
 developers:

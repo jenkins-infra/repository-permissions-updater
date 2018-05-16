@@ -1,5 +1,6 @@
 ---
 name: "maven-artifact-choicelistprovider"
+github: "jenkinsci/maven-artifact-choicelistprovider-plugin"
 paths:
 - "org/jenkins-ci/plugins/maven-artifact-choicelistprovider"
 developers:

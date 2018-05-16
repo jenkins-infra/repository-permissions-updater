@@ -1,5 +1,6 @@
 ---
 name: "violation-comments-to-github"
+github: "jenkinsci/violation-comments-to-github-plugin"
 paths:
 - "org/jenkins-ci/plugins/violation-comments-to-github"
 developers:

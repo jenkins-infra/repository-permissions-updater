@@ -1,5 +1,6 @@
 ---
 name: "stashNotifier"
+github: "jenkinsci/stashnotifier-plugin"
 paths:
 - "org/jenkins-ci/plugins/stashNotifier"
 developers:

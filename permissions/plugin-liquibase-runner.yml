@@ -1,5 +1,6 @@
 ---
 name: "liquibase-runner"
+github: "jenkinsci/liquibase-runner-plugin"
 paths:
 - "org/jenkins-ci/plugins/liquibase-runner"
 developers:

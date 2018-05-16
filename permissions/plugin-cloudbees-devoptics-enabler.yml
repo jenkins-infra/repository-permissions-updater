@@ -1,5 +1,6 @@
 ---
 name: "cloudbees-devoptics-enabler"
+github: "jenkinsci/cloudbees-devoptics-enabler-plugin"
 paths:
 - "org/jenkins-ci/plugins/cloudbees-devoptics-enabler"
 developers:

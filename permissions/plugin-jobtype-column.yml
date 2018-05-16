@@ -1,5 +1,6 @@
 ---
 name: "jobtype-column"
+github: "jenkinsci/jobtype-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/jobtype-column"
 - "org/jvnet/hudson/plugins/jobtype-column"

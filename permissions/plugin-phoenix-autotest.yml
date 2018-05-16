@@ -1,5 +1,6 @@
 ---
 name: "phoenix-autotest"
+github: "jenkinsci/phoenix-autotest-plugin"
 paths:
 - "com/surenpi/jenkins/phoenix-autotest"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "build-view-column"
+github: "jenkinsci/build-view-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-view-column"
 developers:

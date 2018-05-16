@@ -1,5 +1,6 @@
 ---
 name: "create-and-run-job-trigger"
+github: "jenkinsci/create-and-run-job-trigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/create-and-run-job-trigger"
 developers:

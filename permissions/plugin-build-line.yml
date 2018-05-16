@@ -1,5 +1,6 @@
 ---
 name: "build-line"
+github: "jenkinsci/build-line-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-line"
 developers: []

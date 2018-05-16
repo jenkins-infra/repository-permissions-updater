@@ -1,5 +1,6 @@
 ---
 name: "git-server"
+github: "jenkinsci/git-server-plugin"
 paths:
 - "org/jenkins-ci/plugins/git-server"
 developers:

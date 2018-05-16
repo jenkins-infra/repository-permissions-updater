@@ -1,5 +1,6 @@
 ---
 name: "trilead-ssh2"
+github: "jenkinsci/trilead-ssh2"
 paths:
 - "org/jenkins-ci/trilead-ssh2"
 - "org/jvnet/hudson/trilead-ssh2"

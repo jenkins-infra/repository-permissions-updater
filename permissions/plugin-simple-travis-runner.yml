@@ -1,5 +1,6 @@
 ---
 name: "simple-travis-runner"
+github: "jenkinsci/simple-travis-runner-plugin"
 paths:
 - "org/jenkins-ci/plugins/simple-travis-runner"
 developers:

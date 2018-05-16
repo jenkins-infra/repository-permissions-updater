@@ -1,5 +1,6 @@
 ---
 name: "crittercism-dsym"
+github: "jenkinsci/crittercism-dsym-plugin"
 paths:
 - "org/jenkins-ci/plugins/crittercism-dsym"
 developers: []

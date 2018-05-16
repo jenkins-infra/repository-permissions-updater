@@ -1,5 +1,6 @@
 ---
 name: "blueocean-dashboard"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-dashboard"
 developers:

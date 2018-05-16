@@ -1,5 +1,6 @@
 ---
 name: "hashicorp-vault-plugin"
+github: "jenkinsci/hashicorp-vault-plugin"
 paths:
 - "com/datapipe/jenkins/plugins/hashicorp-vault-plugin"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "testcomplete11-xunit"
+github: "jenkinsci/testcomplete11-xunit-plugin"
 paths:
 - "org/jenkins-ci/plugins/testcomplete11-xunit"
 developers:

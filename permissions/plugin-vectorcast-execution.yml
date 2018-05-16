@@ -1,5 +1,6 @@
 ---
 name: "vectorcast-execution"
+github: "jenkinsci/vectorcast-execution-plugin"
 paths:
 - "org/jenkins-ci/plugins/vectorcast-execution"
 developers:

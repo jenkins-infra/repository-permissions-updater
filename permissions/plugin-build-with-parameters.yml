@@ -1,5 +1,6 @@
 ---
 name: "build-with-parameters"
+github: "jenkinsci/build-with-parameters-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-with-parameters"
 developers:

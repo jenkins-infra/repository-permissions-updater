@@ -1,5 +1,6 @@
 ---
 name: "aws-device-farm"
+github: "jenkinsci/aws-device-farm-plugin"
 paths:
 - "org/jenkins-ci/plugins/aws-device-farm"
 developers:

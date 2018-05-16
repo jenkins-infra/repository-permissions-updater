@@ -1,5 +1,6 @@
 ---
 name: "sloccount"
+github: "jenkinsci/sloccount-plugin"
 paths:
 - "hudson/plugins/sloccount/sloccount"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "plot"
+github: "jenkinsci/plot-plugin"
 paths:
 - "org/jenkins-ci/plugins/plot"
 developers:

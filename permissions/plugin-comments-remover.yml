@@ -1,5 +1,6 @@
 ---
 name: "comments-remover"
+github: "jenkinsci/comments-remover-plugin"
 paths:
 - "com/ste/comments-remover"
 developers:

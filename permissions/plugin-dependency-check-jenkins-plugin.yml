@@ -1,5 +1,6 @@
 ---
 name: "dependency-check-jenkins-plugin"
+github: "jenkinsci/dependency-check-plugin"
 paths:
 - "org/jenkins-ci/plugins/dependency-check-jenkins-plugin"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "simpleclearcase"
+github: "jenkinsci/simpleclearcase-plugin"
 paths:
 - "jenkins/plugins/simpleclearcase"
 developers: []

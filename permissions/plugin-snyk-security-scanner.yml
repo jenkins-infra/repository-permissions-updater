@@ -1,5 +1,6 @@
 ---
 name: "snyk-security-scanner"
+github: "jenkinsci/snyk-security-scanner-plugin"
 paths:
 - "io/snyk/plugins/snyk-security-scanner"
 developers:

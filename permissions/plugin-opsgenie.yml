@@ -1,5 +1,6 @@
 ---
 name: "opsgenie"
+github: "jenkinsci/opsgenie-plugin"
 paths:
 - "org/jenkins-ci/plugins/opsgenie"
 developers:

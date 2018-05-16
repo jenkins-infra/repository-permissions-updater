@@ -1,5 +1,6 @@
 ---
 name: "phabricator-plugin"
+github: "jenkinsci/phabricator-plugin"
 paths:
 - "org/jenkins-ci/plugins/phabricator-plugin"
 developers:

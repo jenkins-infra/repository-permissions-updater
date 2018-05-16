@@ -1,5 +1,6 @@
 ---
 name: "kafkalogs"
+github: "jenkinsci/kafkalogs-plugin"
 paths:
 - "org/jenkins-ci/plugins/kafkalogs"
 developers:

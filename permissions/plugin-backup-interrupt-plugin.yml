@@ -1,5 +1,6 @@
 ---
 name: "backup-interrupt-plugin"
+github: "jenkinsci/backup-jobs-plugin"
 paths:
 - "jenkins/ci/plugins/backup/backup-interrupt-plugin"
 developers: []

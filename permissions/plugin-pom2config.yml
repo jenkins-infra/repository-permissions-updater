@@ -1,5 +1,6 @@
 ---
 name: "pom2config"
+github: "jenkinsci/pom2config-plugin"
 paths:
 - "org/jenkins-ci/plugins/pom2config"
 developers: []

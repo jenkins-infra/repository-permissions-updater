@@ -1,5 +1,6 @@
 ---
 name: "cppncss"
+github: "jenkinsci/cppncss-plugin"
 paths:
 - "org/jvnet/hudson/plugins/cppncss"
 - "org/jenkins-ci/plugins/cppncss"

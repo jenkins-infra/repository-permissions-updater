@@ -1,5 +1,6 @@
 ---
 name: "loaderio-jenkins-plugin"
+github: "jenkinsci/loaderio-plugin"
 paths:
 - "io/loader/loaderio-jenkins-plugin"
 developers: []

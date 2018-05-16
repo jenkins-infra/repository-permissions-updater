@@ -1,5 +1,6 @@
 ---
 name: "permissive-script-security"
+github: "jenkinsci/permissive-script-security-plugin"
 paths:
 - "org/jenkins-ci/plugins/permissive-script-security"
 developers:

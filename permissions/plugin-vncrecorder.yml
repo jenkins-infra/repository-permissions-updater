@@ -1,5 +1,6 @@
 ---
 name: "vncrecorder"
+github: "jenkinsci/vncrecorder-plugin"
 paths:
 - "org/jenkins-ci/plugins/vncrecorder"
 developers:

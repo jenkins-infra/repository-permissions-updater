@@ -1,5 +1,6 @@
 ---
 name: "cucumber-reports"
+github: "jenkinsci/cucumber-reports-plugin"
 paths:
 - "net/masterthought/jenkins/cucumber-reports"
 developers:

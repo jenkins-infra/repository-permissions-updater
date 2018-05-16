@@ -1,5 +1,6 @@
 ---
 name: "logstash"
+github: "jenkinsci/logstash-plugin"
 paths:
 - "org/jenkins-ci/plugins/logstash"
 developers:

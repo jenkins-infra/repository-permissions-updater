@@ -1,5 +1,6 @@
 ---
 name: "publish-over-ssh"
+github: "jenkinsci/publish-over-ssh-plugin"
 paths:
 - "org/jenkins-ci/plugins/publish-over-ssh"
 - "org/jvnet/hudson/plugins/publish-over-ssh"

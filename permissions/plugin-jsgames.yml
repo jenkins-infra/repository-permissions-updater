@@ -1,5 +1,6 @@
 ---
 name: "jsgames"
+github: "jenkinsci/jsgames-plugin"
 paths:
 - "org/jenkins-ci/plugins/jsgames"
 developers: []

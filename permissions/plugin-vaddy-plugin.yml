@@ -1,5 +1,6 @@
 ---
 name: "vaddy-plugin"
+github: "jenkinsci/vaddy-plugin"
 paths:
 - "org/jenkins-ci/plugins/vaddy-plugin"
 developers:

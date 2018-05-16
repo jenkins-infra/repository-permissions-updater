@@ -1,5 +1,6 @@
 ---
 name: "git-prebuildmerge-trait"
+github: "jenkinsci/git-prebuildmerge-trait-plugin"
 paths:
 - "org/jenkins-ci/plugins/git-prebuildmerge-trait"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "pipeline-maven-spy"
+github: "jenkinsci/pipeline-maven-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-maven-spy"
 developers:

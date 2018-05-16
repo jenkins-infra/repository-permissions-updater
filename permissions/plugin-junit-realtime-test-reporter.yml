@@ -1,5 +1,6 @@
 ---
 name: "junit-realtime-test-reporter"
+github: "jenkinsci/junit-realtime-test-reporter-plugin"
 paths:
 - "org/jenkins-ci/plugins/junit-realtime-test-reporter"
 developers: []

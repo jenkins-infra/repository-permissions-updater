@@ -1,5 +1,6 @@
 ---
 name: "weblogic-deployer-plugin"
+github: "jenkinsci/weblogic-deployer-plugin"
 paths:
 - "org/jenkins-ci/plugins/weblogic-deployer-plugin"
 developers:

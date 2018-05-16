@@ -1,5 +1,6 @@
 ---
 name: "cisco-spark-notifier"
+github: "jenkinsci/cisco-spark-notifier-plugin"
 paths:
 - "org/jenkins-ci/plugins/cisco-spark-notifier"
 developers:

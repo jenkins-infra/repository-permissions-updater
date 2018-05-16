@@ -1,5 +1,6 @@
 ---
 name: "lsf-cloud"
+github: "jenkinsci/lsf-cloud-plugin"
 paths:
 - "org/jenkins-ci/plugins/lsf-cloud"
 developers:

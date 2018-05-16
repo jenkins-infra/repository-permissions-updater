@@ -1,5 +1,6 @@
 ---
 name: "codecover"
+github: "jenkinsci/codecover-plugin"
 paths:
 - "org/jenkins-ci/plugins/codecover"
 developers: []

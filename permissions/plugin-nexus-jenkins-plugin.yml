@@ -1,5 +1,6 @@
 ---
 name: "nexus-jenkins-plugin"
+github: "jenkinsci/nexus-platform-plugin"
 paths:
 - "org/sonatype/nexus/ci/nexus-jenkins-plugin"
 developers:

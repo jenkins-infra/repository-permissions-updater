@@ -1,5 +1,6 @@
 ---
 name: "persona"
+github: "jenkinsci/persona-plugin"
 paths:
 - "org/jenkins-ci/plugins/persona"
 developers: []

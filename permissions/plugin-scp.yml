@@ -1,5 +1,6 @@
 ---
 name: "scp"
+github: "jenkinsci/scp-plugin"
 paths:
 - "org/jvnet/hudson/plugins/scp"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "maven-invoker-plugin"
+github: "jenkinsci/maven-invoker-plugin"
 paths:
 - "org/jenkins-ci/plugins/maven-invoker-plugin"
 developers:

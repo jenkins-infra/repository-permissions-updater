@@ -1,5 +1,6 @@
 ---
 name: "scoverage"
+github: "jenkinsci/scoverage-plugin"
 paths:
 - "org/jenkins-ci/plugins/scoverage"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "urltrigger"
+github: "jenkinsci/urltrigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/urltrigger"
 developers:

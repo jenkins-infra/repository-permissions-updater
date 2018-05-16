@@ -1,5 +1,6 @@
 ---
 name: "log-command"
+github: "jenkinsci/log-command-plugin"
 paths:
 - "org/jenkins-ci/plugins/log-command"
 developers: []

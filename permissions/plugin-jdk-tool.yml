@@ -1,5 +1,6 @@
 ---
 name: "jdk-tool"
+github: "jenkinsci/jdk-tool-plugin"
 paths:
 - "org/jenkins-ci/plugins/jdk-tool"
 developers:

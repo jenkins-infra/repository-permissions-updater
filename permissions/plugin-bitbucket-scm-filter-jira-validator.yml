@@ -1,5 +1,6 @@
 ---
 name: "bitbucket-scm-filter-jira-validator"
+github: "jenkinsci/scm-filter-jira-validator-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitbucket-scm-filter-jira-validator"
 developers:

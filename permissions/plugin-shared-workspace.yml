@@ -1,5 +1,6 @@
 ---
 name: "shared-workspace"
+github: "jenkinsci/shared-workspace-plugin"
 paths:
 - "org/jenkins-ci/plugins/shared-workspace"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "dry-run"
+github: "jenkinsci/dry-run-plugin"
 paths:
 - "org/jenkins-ci/plugins/dry-run"
 developers: []

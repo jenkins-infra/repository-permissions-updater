@@ -1,5 +1,6 @@
 ---
 name: "aws-codepipeline"
+github: "jenkinsci/aws-codepipeline-plugin"
 paths:
 - "com/amazonaws/aws-codepipeline"
 developers:

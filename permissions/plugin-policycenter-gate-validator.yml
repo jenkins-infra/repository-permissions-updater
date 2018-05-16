@@ -1,5 +1,6 @@
 ---
 name: "policycenter-gate-validator"
+github: "jenkinsci/policycenter-gate-validator-plugin"
 paths:
 - "com/parasoft/policycenter-gate-validator"
 developers:

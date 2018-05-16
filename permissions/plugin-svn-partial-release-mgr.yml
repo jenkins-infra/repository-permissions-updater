@@ -1,5 +1,6 @@
 ---
 name: "svn-partial-release-mgr"
+github: "jenkinsci/svn-partial-release-mgr-plugin"
 paths:
 - "org/jenkins-ci/plugins/svn-partial-release-mgr"
 developers:

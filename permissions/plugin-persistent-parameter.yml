@@ -1,5 +1,6 @@
 ---
 name: "persistent-parameter"
+github: "jenkinsci/persistent-parameter-plugin"
 paths:
 - "org/jenkins-ci/plugins/persistent-parameter"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "performance-signature-dynatrace"
+github: "jenkinsci/performance-signature-dynatrace-plugin"
 paths:
 - "de/tsystems/mms/apm/performance-signature-dynatrace"
 developers:

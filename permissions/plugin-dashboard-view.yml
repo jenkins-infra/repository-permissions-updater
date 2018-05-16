@@ -1,5 +1,6 @@
 ---
 name: "dashboard-view"
+github: "jenkinsci/dashboard-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/dashboard-view"
 - "org/jvnet/hudson/plugins/dashboard-view"

@@ -1,5 +1,6 @@
 ---
 name: "virtualbox"
+github: "jenkinsci/virtualbox-plugin"
 paths:
 - "org/jenkins-ci/plugins/virtualbox"
 developers: []

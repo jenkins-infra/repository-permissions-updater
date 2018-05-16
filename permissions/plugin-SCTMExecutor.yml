@@ -1,5 +1,6 @@
 ---
 name: "SCTMExecutor"
+github: "jenkinsci/SCTMExecutor-plugin"
 paths:
 - "hudson/plugins/sctmexecutor/SCTMExecutor"
 developers: 

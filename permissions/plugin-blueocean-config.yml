@@ -1,5 +1,6 @@
 ---
 name: "blueocean-config"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-config"
 developers:

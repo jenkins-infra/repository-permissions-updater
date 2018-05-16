@@ -1,5 +1,6 @@
 ---
 name: "platformlabeler"
+github: "jenkinsci/platformlabeler-plugin"
 paths:
 - "org/jvnet/hudson/plugins/platformlabeler"
 developers:

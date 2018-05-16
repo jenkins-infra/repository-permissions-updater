@@ -1,5 +1,6 @@
 ---
 name: "campfire"
+github: "jenkinsci/campfire-plugin"
 paths:
 - "org/jenkins-ci/plugins/campfire"
 developers: []

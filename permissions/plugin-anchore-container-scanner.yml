@@ -1,5 +1,6 @@
 ---
 name: "anchore-container-scanner"
+github: "jenkinsci/anchore-container-scanner-plugin"
 paths:
 - "org/jenkins-ci/plugins/anchore-container-scanner"
 developers:

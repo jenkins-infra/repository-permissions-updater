@@ -1,5 +1,6 @@
 ---
 name: "modernstatus"
+github: "jenkinsci/modernstatus-plugin"
 paths:
 - "org/jenkins-ci/plugins/modernstatus"
 developers:

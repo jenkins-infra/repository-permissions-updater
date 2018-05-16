@@ -1,5 +1,6 @@
 ---
 name: "jobdelete-builder"
+github: "jenkinsci/jobdelete-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/jobdelete-builder"
 developers:

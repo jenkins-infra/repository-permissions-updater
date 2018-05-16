@@ -1,5 +1,6 @@
 ---
 name: "docker-traceability"
+github: "jenkinsci/docker-traceability-plugin"
 paths:
 - "org/jenkins-ci/plugins/docker-traceability"
 developers:

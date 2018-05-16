@@ -1,5 +1,6 @@
 ---
 name: "newrelic-insights"
+github: "jenkinsci/newrelic-insights-plugin"
 paths:
 - "org/jenkins-ci/plugins/newrelic-insights"
 developers:

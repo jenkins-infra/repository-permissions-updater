@@ -1,5 +1,6 @@
 ---
 name: "hipchat"
+github: "jenkinsci/hipchat-plugin"
 paths:
 - "org/jvnet/hudson/plugins/hipchat"
 developers:

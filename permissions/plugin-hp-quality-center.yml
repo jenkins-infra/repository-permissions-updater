@@ -1,5 +1,6 @@
 ---
 name: "hp-quality-center"
+github: "jenkinsci/hp-quality-center-plugin"
 paths:
 - "org/jenkins-ci/plugins/qc/hp-quality-center"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "associated-files"
+github: "jenkinsci/associated-files-plugin"
 paths:
 - "org/jenkinsci/plugins/associated-files"
 developers: []

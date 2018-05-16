@@ -1,5 +1,6 @@
 ---
 name: themis
+github: "jenkinsci/themis-plugin"
 paths:
     - org/jenkins-ci/plugins/themis
 developers:

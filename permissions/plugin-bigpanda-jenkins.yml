@@ -1,5 +1,6 @@
 ---
 name: "bigpanda-jenkins"
+github: "jenkinsci/bigpanda-plugin"
 paths:
 - "org/jenkins-ci/plugins/bigpanda-jenkins"
 developers:

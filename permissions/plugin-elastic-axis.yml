@@ -1,5 +1,6 @@
 ---
 name: "elastic-axis"
+github: "jenkinsci/elastic-axis-plugin"
 paths:
 - "org/jenkins-ci/plugins/elastic-axis"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "deployed-on-column"
+github: "jenkinsci/deployed-on-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/deployed-on-column"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "couchdb-statistics"
+github: "jenkinsci/couchdb-statistics-plugin"
 paths:
 - "org/jenkins-ci/plugins/couchdb-statistics"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "create-fingerprint"
+github: "jenkinsci/create-fingerprint-plugin"
 paths:
 - "org/jenkins-ci/plugins/create-fingerprint"
 developers: []

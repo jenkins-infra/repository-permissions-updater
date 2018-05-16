@@ -1,5 +1,6 @@
 ---
 name: "clone-workspace-scm"
+github: "jenkinsci/jenkins-clone-workspace-scm-plugin"
 paths:
 - "org/jenkins-ci/plugins/clone-workspace-scm"
 - "org/jvnet/hudson/plugins/clone-workspace-scm"

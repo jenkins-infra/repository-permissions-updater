@@ -1,5 +1,6 @@
 ---
 name: "seed"
+github: "jenkinsci/seed-plugin"
 paths:
 - "org/jenkins-ci/plugins/seed"
 developers:

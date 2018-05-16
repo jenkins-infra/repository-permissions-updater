@@ -1,5 +1,6 @@
 ---
 name: "pitmutation"
+github: "jenkinsci/pitmutation-plugin"
 paths:
 - "org/jenkins-ci/plugins/pitmutation"
 developers:

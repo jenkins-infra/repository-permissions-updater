@@ -1,5 +1,6 @@
 ---
 name: "block-build-final-project"
+github: "jenkinsci/block-build-final-project-plugin"
 paths:
 - "org/jenkins-ci/plugins/block-build-final-project"
 developers:

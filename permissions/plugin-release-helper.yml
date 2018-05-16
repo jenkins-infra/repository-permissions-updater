@@ -1,5 +1,6 @@
 ---
 name: "release-helper"
+github: "jenkinsci/release-helper-plugin"
 paths:
 - "org/jenkins-ci/plugins/release-helper"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "blueocean-pipeline-scm-api"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-pipeline-scm-api"
 developers:

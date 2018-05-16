@@ -1,5 +1,6 @@
 ---
 name: "dynamic-search-view"
+github: "jenkinsci/dynamic-search-view-plugin"
 paths:
 - "com/synopsys/arc/jenkinsci/dynamic-search-view"
 developers:

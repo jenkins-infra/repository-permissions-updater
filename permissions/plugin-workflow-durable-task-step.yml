@@ -1,5 +1,6 @@
 ---
 name: "workflow-durable-task-step"
+github: "jenkinsci/workflow-durable-task-step-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-durable-task-step"
 developers:
