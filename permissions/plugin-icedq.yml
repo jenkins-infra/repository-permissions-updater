@@ -1,0 +1,7 @@
+---
+name: "icedq"
+github: "jenkinsci/icedq-plugin"
+paths:
+- "com/icedq/ci/plugin/icedq"
+developers:
+- "toranainc"
