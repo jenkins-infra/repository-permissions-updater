@@ -4,5 +4,6 @@ github: "jenkinsci/appaloosa-plugin"
 paths:
 - "org/jenkins-ci/plugins/appaloosa-plugin"
 developers:
-- "rsfez"
-- "chrsvl"
+- "benoittgt"
+- "robertaudi"
+- "benlenem"
