@@ -1,7 +1,7 @@
 ---
 name: "embotics-vcommander"
 paths:
-- "org/jenkins-ci/plugins/embotics-vcommander"
+- "io/jenkins/plugins/embotics-vcommander"
 developers:
 - "aelliotatemboticsdotcom"
 - "embotics"
