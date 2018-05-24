@@ -4,7 +4,5 @@ github: "jenkinsci/icedq-plugin"
 paths:
 - "com/icedq/ci/plugin/icedq"
 developers:
-- "devlopertoranainc"
 - "toranainc"
-- "DevloperToranaInc"
 
