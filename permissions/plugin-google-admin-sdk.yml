@@ -1,0 +1,7 @@
+---
+name: "google-admin-sdk"
+github: "jenkinsci/google-admin-sdk-plugin"
+paths:
+- "org/jenkins-ci/plugins/google-admin-sdk"
+developers:
+- "yacut"
