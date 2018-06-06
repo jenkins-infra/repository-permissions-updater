@@ -2,6 +2,6 @@
 name: "influxdb-query"
 github: "jenkinsci/influxdb-query-plugin"
 paths:
-- "org/jenkinsci/influxdb-query-plugin"
+- "org/joeo/plugins/influxdb-query"
 developers:
 - "joe99000"
