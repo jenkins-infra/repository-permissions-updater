@@ -1,0 +1,7 @@
+---
+name: "clearcase-ucm-api"
+github: "praqma/cool"
+paths:
+- "net/praqma/clearcase-ucm-api"
+developers:
+- "praqma"
