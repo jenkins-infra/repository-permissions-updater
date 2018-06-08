@@ -1,0 +1,7 @@
+---
+name: "netsparker-cloud-scan"
+github: "jenkinsci/netsparker-cloud-scan-plugin"
+paths:
+- "org/jenkins-ci/plugins/netsparker-cloud-scan"
+developers: 
+- "netsparker"
