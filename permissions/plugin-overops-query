@@ -1,0 +1,7 @@
+---
+name: "overops-query"
+github: "jenkinsci/overops-query-plugin"
+paths:
+- "org/overops/plugins/overops-query"
+developers:
+- "joe99000"
