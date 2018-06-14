@@ -1,0 +1,8 @@
+---
+name: "praqmajutils"
+github: "praqma/praqmajutils"
+paths:
+- "net/praqma/praqmajutils"
+developers:
+- "praqma"
+- "madsnielsen"
