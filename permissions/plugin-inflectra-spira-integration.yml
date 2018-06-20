@@ -4,6 +4,4 @@ github: "jenkinsci/inflectra-spira-integration-plugin"
 paths:
 - "org/jenkins-ci/plugins/inflectra-spira-integration"
 developers:
-- "adammarksandman"
-- "peterpie123"
-- "yipmarvel"
+- "inflectra"
