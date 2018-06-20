@@ -1,0 +1,8 @@
+---
+name: "stride-notification"
+github: "jenkinsci/stride-notification-plugin"
+paths:
+- "org/jenkins-ci/plugins/stride-notification"
+
+developers: 
+- "ontash"
