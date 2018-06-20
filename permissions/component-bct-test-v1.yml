@@ -1,8 +1,8 @@
 ---
-name: "bytecode-compatibility-transformer"
+name: "bct-test-v1"
 github: "jenkinsci/bytecode-compatibility-transformer"
 paths:
-- "org/jenkins-ci/bytecode-compatibility-transformer"
+- "org/jenkins-ci/main/bct/bct-test-v1"
 developers:
 - "batmat"
 - "oleg_nenashev"
