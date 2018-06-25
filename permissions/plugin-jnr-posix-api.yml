@@ -1,6 +1,6 @@
 name: "jnr-posix-api"
 github: "jenkinsci/jnr-posix-api-plugin"
 paths:
-- "io/jenkins/plugins/jnr-posix-api-plugin"
+- "io/jenkins/plugins/jnr-posix-api"
 developers:
 - "ndeloof"
