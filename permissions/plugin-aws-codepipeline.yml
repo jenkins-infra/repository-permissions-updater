@@ -5,7 +5,4 @@ paths:
 - "com/amazonaws/aws-codepipeline"
 developers:
 - "belltimo"
-- "bank"
-- "maggiecopyaws"
 - "fgalmeida"
-- "wwna"
