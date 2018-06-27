@@ -49,7 +49,7 @@ node('java') {
         if (dryRun) {
             sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
         } else {
-            withCredentials([usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'Ontash123', usernameVariable: 'ontash')]) {
+            withCredentials([usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ontpass18!!', usernameVariable: 'ontash')]) {
                 sh '${JAVA_HOME}/bin/java ' + javaArgs
             }
         }
