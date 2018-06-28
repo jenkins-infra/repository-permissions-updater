@@ -1,0 +1,10 @@
+---
+name: "kryptowire"
+github: "jenkinsci/kryptowire-plugin"
+paths:
+- "io/jenkins/plugins/kryptowire"
+developers:
+- "lrossett"
+- "mnairn"
+- "jasonmadigan"
+- "maleck13"
