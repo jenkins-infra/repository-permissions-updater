@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/tools/gradle-jpi-plugin"
 developers:
 - "daspilker"
+- "sghill"
