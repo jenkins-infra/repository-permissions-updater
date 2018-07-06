@@ -1,8 +1,8 @@
 ---
-name: "sprp"
+name: "simple-pull-request-job-plugin"
 github: "jenkinsci/simple-pull-request-job-plugin"
 
 paths:
-- "io/jenkins/plugins/sprp"
+- "io/jenkins/plugins/simple-pull-request-job-plugin"
 developers:
 - "gautamabhishek46"
