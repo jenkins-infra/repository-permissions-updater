@@ -6,3 +6,4 @@ paths:
 - "org/jenkins-ci/plugins/cppcheck"
 developers:
 - "mixalturek"
+- "marcosteffan"
