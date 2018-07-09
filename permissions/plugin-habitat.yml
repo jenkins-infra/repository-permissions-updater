@@ -1,0 +1,7 @@
+---
+name: "habitat"
+github: "jenkinsci/habitat-plugin"
+paths:
+- "com/indellient/habitat"
+developers:
+- "skylerto"
