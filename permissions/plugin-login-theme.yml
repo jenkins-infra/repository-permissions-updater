@@ -1,0 +1,7 @@
+---
+name: "login-theme"
+github: "jenkinsci/login-theme-plugin"
+paths:
+- "io/jenkins/plugins/login-theme"
+developers:
+- "danielbeck"
