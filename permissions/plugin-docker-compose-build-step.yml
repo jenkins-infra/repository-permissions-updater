@@ -1,0 +1,6 @@
+---
+name: "docker-compose-build-step"
+paths:
+- "org/jenkins-ci/plugins/docker-compose-build-step"
+developers:
+- "jgalego"
