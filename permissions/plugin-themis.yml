@@ -4,4 +4,4 @@ github: "jenkinsci/themis-plugin"
 paths:
     - org/jenkins-ci/plugins/themis
 developers:
-    - rdelamare
+    - cteyton
