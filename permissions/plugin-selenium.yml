@@ -1,5 +1,6 @@
 ---
 name: "selenium"
+github: "jenkinsci/selenium-plugin"
 paths:
 - "org/jenkins-ci/plugins/selenium"
 developers:

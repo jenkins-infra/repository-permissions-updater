@@ -1,5 +1,6 @@
 ---
 name: "customized-build-message"
+github: "jenkinsci/customized-build-message-plugin"
 paths:
 - "org/jenkins-ci/plugins/customized-build-message"
 developers:

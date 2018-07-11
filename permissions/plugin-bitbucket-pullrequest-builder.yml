@@ -1,5 +1,6 @@
 ---
 name: "bitbucket-pullrequest-builder"
+github: "jenkinsci/bitbucket-pullrequest-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitbucket-pullrequest-builder"
 developers:

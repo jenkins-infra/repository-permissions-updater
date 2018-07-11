@@ -1,5 +1,6 @@
 ---
 name: "tuxdroid"
+github: "jenkinsci/tuxdroid-plugin"
 paths:
 - "org/jvnet/hudson/plugins/tuxdroid"
 developers: []

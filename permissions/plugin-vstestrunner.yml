@@ -1,5 +1,6 @@
 ---
 name: "vstestrunner"
+github: "jenkinsci/vstestrunner-plugin"
 paths:
 - "org/jenkins-ci/plugins/vstestrunner"
 developers:

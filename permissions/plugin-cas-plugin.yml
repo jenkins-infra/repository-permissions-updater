@@ -1,5 +1,6 @@
 ---
 name: "cas-plugin"
+github: "jenkinsci/cas-plugin"
 paths:
 - "org/jenkins-ci/plugins/cas-plugin"
 developers:

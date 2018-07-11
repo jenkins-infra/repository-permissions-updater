@@ -1,5 +1,6 @@
 ---
 name: "jsoup"
+github: "jenkinsci/jsoup-plugin"
 paths:
 - "org/jenkins-ci/plugins/jsoup"
 developers:

@@ -1,6 +1,7 @@
 ---
 name: "BlazeMeterJenkinsPlugin"
+github: "jenkinsci/blazemeter-plugin"
 paths:
 - "com/blazemeter/plugins/BlazeMeterJenkinsPlugin"
 developers:
-- "zmicerkashlach"
+- "sat_blazemeter"

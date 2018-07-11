@@ -1,0 +1,7 @@
+---
+name: "teststudiomobiletesting"
+github: "jenkinsci/teststudiomobiletesting-plugin"
+paths:
+- "org/jenkins-ci/plugins/teststudiomobiletesting"
+developers:
+- "deyan_kalinov"

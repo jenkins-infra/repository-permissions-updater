@@ -1,5 +1,6 @@
 ---
 name: "smart-jenkins"
+github: "jenkinsci/smart-jenkins-plugin"
 paths:
 - "org/jenkins-ci/plugins/smart-jenkins"
 developers: []

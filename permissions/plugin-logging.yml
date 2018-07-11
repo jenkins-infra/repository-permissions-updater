@@ -1,5 +1,6 @@
 ---
 name: "logging"
+github: "jenkinsci/logging-plugin"
 paths:
 - "net/praqma/logging"
 developers:

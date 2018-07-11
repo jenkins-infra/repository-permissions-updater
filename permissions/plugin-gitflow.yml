@@ -1,5 +1,6 @@
 ---
 name: "gitflow"
+github: "jenkinsci/gitflow-plugin"
 paths:
 - "de/silpion/jenkins/plugins/gitflow"
 developers:

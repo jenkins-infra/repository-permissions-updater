@@ -1,0 +1,8 @@
+---
+name: "elastest"
+github: "jenkinsci/elastest-plugin"
+paths:
+- "org/jenkins-ci/plugins/elastest"
+developers:
+- "frdiaz"
+- "elastestci"

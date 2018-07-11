@@ -1,5 +1,6 @@
 ---
 name: "label-linked-jobs"
+github: "jenkinsci/label-linked-jobs-plugin"
 paths:
 - "org/jenkins-ci/plugins/label-linked-jobs"
 developers:

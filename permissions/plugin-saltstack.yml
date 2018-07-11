@@ -1,5 +1,6 @@
 ---
 name: "saltstack"
+github: "jenkinsci/saltstack-plugin"
 paths:
 - "org/jenkins-ci/plugins/saltstack"
 developers:

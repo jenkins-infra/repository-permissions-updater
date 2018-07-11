@@ -1,0 +1,8 @@
+---
+name: "kubernetes-cli"
+github: "jenkinsci/kubernetes-cli-plugin"
+paths:
+- "org/jenkins-ci/plugins/kubernetes-cli"
+developers:
+- "max_laverse"
+- "sirstrahd"

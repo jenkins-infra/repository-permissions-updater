@@ -1,5 +1,6 @@
 ---
 name: "jabber"
+github: "jenkinsci/jabber-plugin"
 paths:
 - "org/jvnet/hudson/plugins/jabber"
 developers:

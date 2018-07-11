@@ -1,5 +1,6 @@
 ---
 name: "avatar"
+github: "jenkinsci/avatar-plugin"
 paths:
 - "net/hurstfrost/jenkins/avatar"
 developers: []

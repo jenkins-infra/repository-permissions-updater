@@ -1,5 +1,6 @@
 ---
 name: "htmlpublisher"
+github: "jenkinsci/htmlpublisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/htmlpublisher"
 - "org/jvnet/hudson/plugins/htmlpublisher"

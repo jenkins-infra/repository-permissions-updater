@@ -1,5 +1,6 @@
 ---
 name: "jenkins-design-language"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/jenkins-design-language"
 developers:

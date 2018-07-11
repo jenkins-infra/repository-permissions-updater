@@ -1,5 +1,6 @@
 ---
 name: "cli-commander"
+github: "jenkinsci/cli-commander-plugin"
 paths:
 - "org/jenkins-ci/plugins/cli-commander"
 developers:

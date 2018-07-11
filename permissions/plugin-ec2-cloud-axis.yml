@@ -1,5 +1,6 @@
 ---
 name: "ec2-cloud-axis"
+github: "jenkinsci/ec2-cloud-axis-plugin"
 paths:
 - "org/jenkins-ci/plugins/ec2-cloud-axis"
 developers: []

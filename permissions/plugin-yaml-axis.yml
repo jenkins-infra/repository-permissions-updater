@@ -1,5 +1,6 @@
 ---
 name: "yaml-axis"
+github: "jenkinsci/yaml-axis-plugin"
 paths:
 - "org/jenkins-ci/plugins/yaml-axis"
 developers:

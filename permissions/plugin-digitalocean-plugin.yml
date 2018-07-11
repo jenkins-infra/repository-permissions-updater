@@ -1,5 +1,6 @@
 ---
 name: "digitalocean-plugin"
+github: "jenkinsci/digitalocean-plugin"
 paths:
 - "com/dubture/jenkins/digitalocean-plugin"
 developers:

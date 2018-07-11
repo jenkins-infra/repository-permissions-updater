@@ -1,5 +1,6 @@
 ---
 name: "paaslane-estimate"
+github: "jenkinsci/paaslane-plugin"
 paths:
 - "com/cloudtp/jenkins/paaslane-estimate"
 developers:

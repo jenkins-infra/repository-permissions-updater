@@ -1,5 +1,6 @@
 ---
 name: "tracking-svn"
+github: "jenkinsci/tracking-svn-plugin"
 paths:
 - "org/jvnet/hudson/plugins/tracking-svn"
 developers: []

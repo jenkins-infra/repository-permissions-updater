@@ -1,0 +1,7 @@
+---
+name: "genexus"
+github: "jenkinsci/genexus-plugin"
+paths:
+- "org/jenkins-ci/plugins/genexus"
+developers:
+- "jlr"

@@ -1,5 +1,6 @@
 ---
 name: "dimensionsscm"
+github: "jenkinsci/dimensionsscm-plugin"
 paths:
 - "hudson/plugins/dimensionsscm"
 - "org/jenkins-ci/plugins/dimensionsscm"

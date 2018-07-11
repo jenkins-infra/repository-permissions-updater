@@ -1,0 +1,7 @@
+---
+name: "inflectra-spira-integration"
+github: "jenkinsci/inflectra-spira-integration-plugin"
+paths:
+- "com/inflectra/spiratest/plugins/inflectra-spira-integration"
+developers:
+- "inflectra"

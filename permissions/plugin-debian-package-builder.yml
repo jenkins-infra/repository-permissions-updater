@@ -1,5 +1,6 @@
 ---
 name: "debian-package-builder"
+github: "jenkinsci/debian-package-builder-plugin"
 paths:
 - "ru/yandex/jenkins/plugins/debuilder/debian-package-builder"
 developers:

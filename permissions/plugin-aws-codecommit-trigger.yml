@@ -1,5 +1,6 @@
 ---
 name: "aws-codecommit-trigger"
+github: "jenkinsci/aws-codecommit-trigger-plugin"
 paths:
   - "org/jenkins-ci/plugins/aws-codecommit-trigger"
 developers:

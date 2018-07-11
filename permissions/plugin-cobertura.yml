@@ -1,5 +1,6 @@
 ---
 name: "cobertura"
+github: "jenkinsci/cobertura-plugin"
 paths:
 - "org/jenkins-ci/plugins/cobertura"
 - "org/jvnet/hudson/plugins/cobertura"

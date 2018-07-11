@@ -1,5 +1,6 @@
 ---
 name: "form-element-path"
+github: "jenkinsci/form-element-path-plugin"
 paths:
 - "org/jenkins-ci/plugins/form-element-path"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "tibco-builder"
+github: "jenkinsci/tibco-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/tibco-builder"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "display-upstream-changes"
+github: "jenkinsci/display-upstream-changes-plugin"
 paths:
 - "org/jvnet/hudson/plugins/display-upstream-changes"
 developers:

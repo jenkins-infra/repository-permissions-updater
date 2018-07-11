@@ -1,5 +1,6 @@
 ---
 name: "emmacoveragecolumn"
+github: "jenkinsci/emmacoveragecolumn-plugin"
 paths:
 - "org/jenkins-ci/plugins/emmacoveragecolumn"
 developers: []

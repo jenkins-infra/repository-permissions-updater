@@ -1,5 +1,6 @@
 ---
 name: "myst-plugin"
+github: "jenkinsci/myst-plugin"
 paths:
 - "com/rubiconred/jenkins/myst-plugin"
 developers:

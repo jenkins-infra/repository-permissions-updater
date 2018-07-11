@@ -1,5 +1,6 @@
 ---
 name: "email-ext"
+github: "jenkinsci/email-ext-plugin"
 paths:
 - "org/jenkins-ci/plugins/email-ext"
 - "org/jvnet/hudson/plugins/email-ext"

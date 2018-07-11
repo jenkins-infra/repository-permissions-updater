@@ -1,5 +1,6 @@
 ---
 name: "build-timestamp"
+github: "jenkinsci/build-timestamp-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-timestamp"
 developers:

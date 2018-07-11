@@ -1,5 +1,6 @@
 ---
 name: "analysis-config"
+github: "jenkinsci/analysis-config-plugin"
 paths:
 - "org/jvnet/hudson/plugins/analysis-config"
 developers:

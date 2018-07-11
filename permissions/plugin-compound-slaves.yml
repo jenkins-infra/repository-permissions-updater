@@ -1,5 +1,6 @@
 ---
 name: "compound-slaves"
+github: "jenkinsci/compound-slaves-plugin"
 paths:
 - "ru/yandex/jenkins/plugins/compound-slaves/compound-slaves"
 developers: []

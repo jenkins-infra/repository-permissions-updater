@@ -1,5 +1,6 @@
 ---
 name: "jobConfigHistory"
+github: "jenkinsci/jobConfigHistory-plugin"
 paths:
 - "org/jenkins-ci/plugins/jobConfigHistory"
 - "org/jvnet/hudson/plugins/jobConfigHistory"

@@ -1,5 +1,6 @@
 ---
 name: "teamconcert"
+github: "jenkinsci/teamconcert-plugin"
 paths:
 - "org/jenkins-ci/plugins/teamconcert"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "tag-profiler"
+github: "jenkinsci/tag-profiler-plugin"
 paths:
 - "org/jenkins-ci/plugins/tag-profiler"
 developers: []

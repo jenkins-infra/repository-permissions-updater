@@ -1,5 +1,6 @@
 ---
 name: "google-cloud-backup"
+github: "jenkinsci/google-cloud-backup-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-cloud-backup"
 developers:

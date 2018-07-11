@@ -1,5 +1,6 @@
 ---
 name: "rusalad-plugin"
+github: "jenkinsci/rusalad-plugin"
 paths:
 - "org/jenkins-ci/plugins/rusalad-plugin"
 developers: []

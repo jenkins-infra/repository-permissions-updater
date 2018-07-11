@@ -1,5 +1,6 @@
 ---
 name: "sonargraph-plugin"
+github: "jenkinsci/sonargraph-plugin"
 paths:
 - "org/jenkins-ci/plugins/sonargraph-plugin"
 developers:

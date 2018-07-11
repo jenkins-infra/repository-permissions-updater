@@ -1,5 +1,6 @@
 ---
 name: "testingbot"
+github: "jenkinsci/testingbot-plugin"
 paths:
 - "testingbot/testingbot"
 developers:

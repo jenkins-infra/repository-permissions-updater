@@ -1,5 +1,6 @@
 ---
 name: "config-rotator"
+github: "jenkinsci/config-rotator-plugin"
 paths:
 - "net/praqma/config-rotator"
 developers:

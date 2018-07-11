@@ -1,5 +1,6 @@
 ---
 name: "testabilityexplorer"
+github: "jenkinsci/testabilityexplorer-plugin"
 paths:
 - "org/jenkins-ci/plugins/testabilityexplorer"
 developers: []

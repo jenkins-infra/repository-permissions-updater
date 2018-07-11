@@ -1,5 +1,6 @@
 ---
 name: "figlet-buildstep"
+github: "jenkinsci/figlet-buildstep-plugin"
 paths:
 - "org/jenkins-ci/plugins/figlet-buildstep"
 developers:

@@ -1,0 +1,7 @@
+---
+name: "inodes-monitor"
+github: "jenkinsci/inodes-monitor-plugin"
+paths:
+- "io/jenkins/plugins/inodes-monitor"
+developers:
+- "batmat"

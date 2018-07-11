@@ -1,5 +1,6 @@
 ---
 name: "fortify360"
+github: "jenkinsci/fortify360-plugin"
 paths:
 - "org/jvnet/hudson/plugins/fortify360/fortify360"
 developers: []

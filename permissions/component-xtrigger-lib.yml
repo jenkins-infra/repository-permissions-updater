@@ -1,5 +1,6 @@
 ---
 name: "xtrigger-lib"
+github: "jenkinsci/xtrigger-lib"
 paths:
 - "org/jenkins-ci/lib/xtrigger-lib"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "ace-editor"
+github: "jenkinsci/js-libs"
 paths:
 - "org/jenkins-ci/ui/ace-editor"
 developers:

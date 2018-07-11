@@ -1,5 +1,6 @@
 ---
 name: "jbpm-workflow-plugin"
+github: "jenkinsci/jbpm-workflow-plugin"
 paths:
 - "jenkins/plugins/jbpm/jbpm-workflow-plugin"
 developers: []

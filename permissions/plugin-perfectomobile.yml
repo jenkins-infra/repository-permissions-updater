@@ -1,5 +1,6 @@
 ---
 name: "perfectomobile"
+github: "jenkinsci/perfectomobile-plugin"
 paths:
 - "org/jenkins-ci/plugins/perfectomobile"
 developers:

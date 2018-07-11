@@ -1,5 +1,6 @@
 ---
 name: "categorized-view"
+github: "jenkinsci/categorized-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/categorized-view"
 developers:

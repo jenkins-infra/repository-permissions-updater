@@ -1,5 +1,6 @@
 ---
 name: "testdroid-run-in-cloud"
+github: "jenkinsci/testdroid-run-in-cloud-plugin"
 paths:
 - "testdroid/testdroid-run-in-cloud"
 developers:

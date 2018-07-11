@@ -1,8 +1,0 @@
----
-name: "foreman-node-sharing"
-paths:
-- "org/jenkins-ci/plugins/nodesharing/foreman-node-sharing"
-developers:
-- "scoheb"
-- "pajasoft"
-- "olivergondza"

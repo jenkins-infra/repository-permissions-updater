@@ -1,5 +1,6 @@
 ---
 name: "blueocean-executor-info"
+github: "jenkinsci/blueocean-executor-info-plugin"
 paths:
 - "org/jenkins-ci/plugins/blueocean-executor-info"
 developers:
@@ -7,4 +8,3 @@ developers:
 - "michaelneale"
 - "vivek"
 - "kzantow"
----

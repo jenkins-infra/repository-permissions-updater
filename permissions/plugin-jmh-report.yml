@@ -1,5 +1,6 @@
 ---
 name: "jmh-report"
+github: "jenkinsci/jmh-report-plugin"
 paths:
 - "io/morethan/jenkins/jmh-report"
 developers:

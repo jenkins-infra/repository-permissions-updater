@@ -1,5 +1,6 @@
 ---
 name: "accurev"
+github: "jenkinsci/accurev-plugin"
 paths:
 - "org/jenkins-ci/plugins/accurev"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "easyqa"
+github: "jenkinsci/easyqa-plugin"
 paths:
 - "com/geteasyqa/easyqa"
 developers:

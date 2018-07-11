@@ -1,5 +1,6 @@
 ---
 name: "hue-light"
+github: "jenkinsci/hue-light-plugin"
 paths:
 - "org/jenkins-ci/plugins/hue-light"
 developers:

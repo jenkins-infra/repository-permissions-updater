@@ -1,5 +1,6 @@
 ---
 name: "workflow-basic-steps"
+github: "jenkinsci/workflow-basic-steps-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-basic-steps"
 developers:

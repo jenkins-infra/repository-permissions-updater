@@ -1,5 +1,6 @@
 ---
 name: "scm2job"
+github: "jenkinsci/scm2job-plugin"
 paths:
 - "org/jenkins-ci/plugins/scm2job"
 developers:

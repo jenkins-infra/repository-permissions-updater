@@ -1,5 +1,6 @@
 ---
 name: "command-launcher"
+github: "jenkinsci/command-launcher-plugin"
 paths:
 - "org/jenkins-ci/plugins/command-launcher"
 developers:

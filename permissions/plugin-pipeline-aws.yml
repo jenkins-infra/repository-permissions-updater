@@ -1,5 +1,6 @@
 ---
 name: "pipeline-aws"
+github: "jenkinsci/pipeline-aws-plugin"
 paths:
 - "de/taimos/pipeline-aws"
 developers:

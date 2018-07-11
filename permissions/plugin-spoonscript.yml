@@ -1,5 +1,6 @@
 ---
 name: "spoonscript"
+github: "jenkinsci/spoonscript-plugin"
 paths:
 - "org/jenkinsci/plugins/spoonscript/spoonscript"
 developers:

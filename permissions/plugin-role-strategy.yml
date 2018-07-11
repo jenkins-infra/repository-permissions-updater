@@ -1,5 +1,6 @@
 ---
 name: "role-strategy"
+github: "jenkinsci/role-strategy-plugin"
 paths:
 - "org/jenkins-ci/plugins/role-strategy"
 - "org/jvnet/hudson/plugins/role-strategy"

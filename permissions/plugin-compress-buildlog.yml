@@ -1,5 +1,6 @@
 ---
 name: "compress-buildlog"
+github: "jenkinsci/compress-buildlog-plugin"
 paths:
 - "org/jenkins-ci/plugins/compress-buildlog"
 developers:

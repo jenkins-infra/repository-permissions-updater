@@ -1,5 +1,6 @@
 ---
 name: "skype-notifier"
+github: "jenkinsci/skype-im-plugin"
 paths:
 - "org/jenkins-ci/plugins/skype-notifier"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "azure-commons"
+github: "jenkinsci/azure-commons-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-commons"
 developers:

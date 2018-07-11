@@ -1,5 +1,6 @@
 ---
 name: "rebuild"
+github: "jenkinsci/rebuild-plugin"
 paths:
 - "com/sonyericsson/hudson/plugins/rebuild/rebuild"
 developers:

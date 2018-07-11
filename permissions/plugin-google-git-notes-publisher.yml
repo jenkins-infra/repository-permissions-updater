@@ -1,5 +1,6 @@
 ---
 name: "google-git-notes-publisher"
+github: "jenkinsci/google-git-notes-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-git-notes-publisher"
 developers:

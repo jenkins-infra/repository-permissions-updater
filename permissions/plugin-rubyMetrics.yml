@@ -1,5 +1,6 @@
 ---
 name: "rubyMetrics"
+github: "jenkinsci/rubyMetrics-plugin"
 paths:
 - "org/jenkins-ci/plugins/rubyMetrics"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "cors-filter"
+github: "jenkinsci/cors-filter-plugin"
 paths:
 - "org/jenkins-ci/plugins/cors-filter"
 developers:

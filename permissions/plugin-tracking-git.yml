@@ -1,5 +1,6 @@
 ---
 name: "tracking-git"
+github: "jenkinsci/tracking-git-plugin"
 paths:
 - "org/jenkins-ci/plugins/tracking-git"
 developers:

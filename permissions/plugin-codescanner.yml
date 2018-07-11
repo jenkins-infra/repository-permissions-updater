@@ -1,5 +1,6 @@
 ---
 name: "codescanner"
+github: "jenkinsci/codescanner-plugin"
 paths:
 - "org/jvnet/hudson/plugins/codescanner"
 developers: []

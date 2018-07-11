@@ -1,5 +1,6 @@
 ---
 name: "cucumber-living-documentation"
+github: "jenkinsci/cucumber-living-documentation-plugin"
 paths:
 - "org/jenkins-ci/plugins/cucumber-living-documentation"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "repo"
+github: "jenkinsci/repo-plugin"
 paths:
 - "org/jenkins-ci/plugins/repo"
 developers:

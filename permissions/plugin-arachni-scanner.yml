@@ -1,0 +1,7 @@
+---
+name: "arachni-scanner"
+github: "jenkinsci/arachni-scanner-plugin"
+paths:
+- "org/jenkins-ci/plugins/arachni-scanner"
+developers:
+- "irissmann"

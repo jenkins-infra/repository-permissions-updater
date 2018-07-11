@@ -1,0 +1,7 @@
+---
+name: "teststudio"
+github: "jenkinsci/teststudio-plugin"
+paths:
+- "org/jenkins-ci/plugins/teststudio"
+developers:
+- "deyan_kalinov"

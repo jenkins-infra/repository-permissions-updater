@@ -1,5 +1,6 @@
 ---
 name: "lucene-search"
+github: "jenkinsci/lucene-search-plugin"
 paths:
 - "org/jenkins-ci/plugins/lucene-search"
 developers:

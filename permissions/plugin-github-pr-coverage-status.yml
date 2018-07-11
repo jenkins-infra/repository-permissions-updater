@@ -1,5 +1,6 @@
 ---
 name: "github-pr-coverage-status"
+github: "jenkinsci/github-pr-coverage-status-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-pr-coverage-status"
 developers:

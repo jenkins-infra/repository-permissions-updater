@@ -1,5 +1,6 @@
 ---
 name: "kerberos-sso"
+github: "jenkinsci/kerberos-sso-plugin"
 paths:
 - "com/sonymobile/jenkins/plugins/kerberos-sso/kerberos-sso"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "network-monitor"
+github: "jenkinsci/network-monitor-plugin"
 paths:
 - "org/jvnet/hudson/plugins/network-monitor"
 developers: []

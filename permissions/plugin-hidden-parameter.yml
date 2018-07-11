@@ -1,5 +1,6 @@
 ---
 name: "hidden-parameter"
+github: "jenkinsci/hidden-parameter-plugin"
 paths:
 - "org/jenkins-ci/plugins/hidden-parameter"
 developers:

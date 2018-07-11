@@ -1,5 +1,6 @@
 ---
 name: "backlog"
+github: "jenkinsci/backlog-plugin"
 paths:
 - "org/jenkins-ci/plugins/backlog"
 - "org/jvnet/hudson/plugins/backlog"

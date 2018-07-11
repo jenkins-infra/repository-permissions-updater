@@ -1,0 +1,7 @@
+---
+name: "gprbuild"
+github: "jenkinsci/gprbuild-plugin"
+paths:
+- "io/jenkins/plugins/gprbuild"
+developers:
+- "FeBrex"

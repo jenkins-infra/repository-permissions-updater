@@ -1,5 +1,6 @@
 ---
 name: "testng-plugin"
+github: "jenkinsci/testng-plugin-plugin"
 paths:
 - "org/jenkins-ci/plugins/testng-plugin"
 - "org/jvnet/hudson/plugins/testng-plugin"

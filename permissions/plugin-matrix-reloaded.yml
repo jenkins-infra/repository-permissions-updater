@@ -1,5 +1,6 @@
 ---
 name: "matrix-reloaded"
+github: "jenkinsci/matrix-reloaded-plugin"
 paths:
 - "net/praqma/matrix-reloaded"
 developers:

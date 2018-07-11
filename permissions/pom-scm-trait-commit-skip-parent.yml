@@ -1,5 +1,6 @@
 ---
 name: "scm-trait-commit-skip-parent"
+github: "jenkinsci/scm-trait-commit-skip-plugin"
 paths:
 - "org/jenkins-ci/plugins/scm-trait-commit-skip-parent"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "custom-job-icon"
+github: "jenkinsci/custom-job-icon-plugin"
 paths:
 - "org/jenkins-ci/plugins/custom-job-icon"
 developers: []

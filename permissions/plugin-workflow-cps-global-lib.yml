@@ -1,5 +1,6 @@
 ---
 name: "workflow-cps-global-lib"
+github: "jenkinsci/workflow-cps-global-lib-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-cps-global-lib"
 developers:

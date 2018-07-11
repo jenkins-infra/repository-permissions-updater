@@ -1,5 +1,6 @@
 ---
 name: "people-redirector"
+github: "jenkinsci/people-redirector-plugin"
 paths:
 - "com/cisco/step/jenkins/plugins/people-redirector"
 developers: []

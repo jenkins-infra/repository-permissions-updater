@@ -1,5 +1,6 @@
 ---
 name: "slave-installer"
+github: "jenkinsci/slave-installer-module"
 paths:
 - "org/jenkins-ci/modules/slave-installer"
 developers:

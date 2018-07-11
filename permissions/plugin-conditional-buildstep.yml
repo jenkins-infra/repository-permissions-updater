@@ -1,5 +1,6 @@
 ---
 name: "conditional-buildstep"
+github: "jenkinsci/conditional-buildstep-plugin"
 paths:
 - "org/jenkins-ci/plugins/conditional-buildstep"
 developers:

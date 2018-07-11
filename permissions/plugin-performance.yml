@@ -1,5 +1,6 @@
 ---
 name: "performance"
+github: "jenkinsci/performance-plugin"
 paths:
 - "org/jenkins-ci/plugins/performance"
 - "org/jvnet/hudson/plugins/performance"

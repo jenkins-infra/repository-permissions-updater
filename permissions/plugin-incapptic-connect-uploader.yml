@@ -1,5 +1,6 @@
 ---
 name: "incapptic-connect-uploader"
+github: "jenkinsci/incapptic-connect-uploader-plugin"
 paths:
 - "com/incapptic/plugins/incapptic-connect-uploader"
 developers:

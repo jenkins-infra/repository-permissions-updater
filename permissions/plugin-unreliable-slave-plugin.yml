@@ -1,5 +1,6 @@
 ---
 name: "unreliable-slave-plugin"
+github: "jenkinsci/unreliable-slave-plugin"
 paths:
 - "jenkinsci/unreliable-slave-plugin"
 developers:

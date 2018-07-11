@@ -14,7 +14,8 @@ if (!env.CHANGE_ID && (!env.BRANCH_NAME || env.BRANCH_NAME == 'master')) {
         dryRun = false
     }
     // elsewhere, it still should get built periodically
-    triggers += cron('H/30 * * * *')
+    // apparently this spikes load on Artifactory pretty badly, so don't run often
+    triggers += cron('H H * * *')
 }
 
 props += pipelineTriggers(triggers)
@@ -40,6 +41,7 @@ node('java') {
 
         def javaArgs = ' -DdefinitionsDir=$PWD/permissions' +
                        ' -DartifactoryApiTempDir=$PWD/json' +
+                       ' -DartifactoryUserNamesJsonListUrl=http://reports.jenkins.io/reports/artifactory-ldap-users-report.json' +
                        ' -Djava.util.logging.SimpleFormatter.format="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n"' +
                        ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar'
 

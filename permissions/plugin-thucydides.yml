@@ -1,5 +1,6 @@
 ---
 name: "thucydides"
+github: "jenkinsci/thucydides-plugin"
 paths:
 - "net/thucydides/jenkins/thucydides"
 developers: []

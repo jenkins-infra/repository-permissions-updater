@@ -1,5 +1,6 @@
 ---
 name: "brakeman"
+github: "jenkinsci/brakeman-plugin"
 paths:
 - "org/jenkins-ci/plugins/brakeman"
 - "org/jvnet/hudson/plugins/brakeman"

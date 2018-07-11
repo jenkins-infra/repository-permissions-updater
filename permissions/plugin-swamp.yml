@@ -1,5 +1,6 @@
 ---
 name: "swamp"
+github: "jenkinsci/swamp-plugin"
 paths:
 - "org/continuousassurance/swamp/jenkins/swamp"
 developers:

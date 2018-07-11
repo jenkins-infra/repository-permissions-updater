@@ -1,5 +1,6 @@
 ---
 name: "influxdb"
+github: "jenkinsci/influxdb-plugin"
 paths:
 - "org/jenkins-ci/plugins/influxdb"
 developers:

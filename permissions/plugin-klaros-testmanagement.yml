@@ -1,5 +1,6 @@
 ---
 name: "klaros-testmanagement"
+github: "jenkinsci/klaros-testmanagement-plugin"
 paths:
 - "hudson/plugins/klaros/klaros-testmanagement"
 developers:

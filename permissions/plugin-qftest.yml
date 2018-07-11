@@ -1,5 +1,6 @@
 ---
 name: "qftest"
+github: "jenkinsci/qftest-plugin"
 paths:
 - "org/jenkins-ci/plugins/qftest"
 developers:

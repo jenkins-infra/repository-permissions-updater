@@ -1,5 +1,6 @@
 ---
 name: "customize-build-now"
+github: "jenkinsci/customize-build-now-plugin"
 paths:
 - "org/jenkins-ci/plugins/customize-build-now"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "copy-project-link"
+github: "jenkinsci/copy-project-link-plugin"
 paths:
 - "hudson/plugins/copyProjectLink/copy-project-link"
 - "org/jenkins-ci/plugins/copy-project-link"

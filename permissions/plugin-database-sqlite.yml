@@ -1,5 +1,6 @@
 ---
 name: "database-sqlite"
+github: "jenkinsci/database-sqlite-plugin"
 paths:
 - "org/jenkins-ci/plugins/database-sqlite"
 developers:

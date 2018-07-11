@@ -1,5 +1,6 @@
 ---
 name: "antexec"
+github: "jenkinsci/antexec-plugin"
 paths:
 - "org/jenkins-ci/plugins/antexec"
 developers:

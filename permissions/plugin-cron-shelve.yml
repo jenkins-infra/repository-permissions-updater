@@ -1,5 +1,6 @@
 ---
 name: "cron-shelve"
+github: "jenkinsci/cron-shelve-plugin"
 paths:
 - "org/jenkins-ci/plugins/cron-shelve"
 developers:

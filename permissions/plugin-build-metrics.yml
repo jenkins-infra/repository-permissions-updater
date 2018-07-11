@@ -1,5 +1,6 @@
 ---
 name: "build-metrics"
+github: "jenkinsci/build-metrics-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-metrics"
 developers:

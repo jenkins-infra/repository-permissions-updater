@@ -1,5 +1,6 @@
 ---
 name: "argus-notifier"
+github: "jenkinsci/argus-notifier-plugin"
 paths:
 - "org/jenkins-ci/plugins/argus-notifier"
 developers:

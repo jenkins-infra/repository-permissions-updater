@@ -1,5 +1,6 @@
 ---
 name: "AnchorChain"
+github: "jenkinsci/anchor-chain-plugin"
 paths:
 - "org/jenkins-ci/plugins/AnchorChain"
 developers: []

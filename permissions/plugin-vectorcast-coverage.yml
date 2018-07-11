@@ -1,5 +1,6 @@
 ---
 name: "vectorcast-coverage"
+github: "jenkinsci/vectorcast-coverage-plugin"
 paths:
 - "org/jenkins-ci/plugins/vectorcast-coverage"
 developers:

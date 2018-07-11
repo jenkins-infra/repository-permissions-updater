@@ -1,5 +1,6 @@
 ---
 name: "storable-configs-plugin"
+github: "jenkinsci/storable-configs-plugin-plugin"
 paths:
 - "org/jvnet/hudson/plugins/storable-configs-plugin"
 developers: []

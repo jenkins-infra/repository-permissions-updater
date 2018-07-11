@@ -1,5 +1,6 @@
 ---
 name: "growl"
+github: "jenkinsci/growl-plugin"
 paths:
 - "org/jenkins-ci/plugins/growl"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "hubot-steps"
+github: "jenkinsci/hubot-steps-plugin"
 paths:
 - "org/jenkins-ci/plugins/hubot-steps"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "metrics-ganglia"
+github: "jenkinsci/metrics-ganglia-plugin"
 paths:
 - "org/jenkins-ci/plugins/metrics-ganglia"
 developers:

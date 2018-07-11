@@ -1,0 +1,7 @@
+---
+name: "owl-reporter"
+github: "jenkinsci/owl-reporter-plugin"
+paths:
+- "com/atlantbh/jenkins/owl-reporter"
+developers:
+- "tarikabh"

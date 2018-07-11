@@ -1,5 +1,6 @@
 ---
 name: "build-history-metrics-plugin"
+github: "jenkinsci/build-history-metrics-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-history-metrics-plugin"
 developers:

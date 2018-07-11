@@ -1,5 +1,6 @@
 ---
 name: "sasunit-plugin"
+github: "jenkinsci/sasunit-plugin"
 paths:
 - "org/jenkins-ci/plugins/sasunit-plugin"
 developers:

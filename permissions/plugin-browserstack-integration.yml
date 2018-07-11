@@ -1,5 +1,6 @@
 ---
 name: "browserstack-integration"
+github: "jenkinsci/browserstack-integration-plugin"
 paths:
 - "com/browserstack/browserstack-integration"
 - "org/jenkins-ci/plugins/browserstack-integration"

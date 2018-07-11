@@ -1,5 +1,6 @@
 ---
 name: "jslint"
+github: "jenkinsci/jslint-jenkins-plugin"
 paths:
 - "com/boxuk/jenkins/jslint"
 - "org/jenkins-ci/plugins/jslint"

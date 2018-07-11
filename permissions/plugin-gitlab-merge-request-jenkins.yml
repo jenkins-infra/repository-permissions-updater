@@ -1,5 +1,6 @@
 ---
 name: "gitlab-merge-request-jenkins"
+github: "jenkinsci/gitlab-merge-request-builder-plugin"
 paths:
 - "com/switchfly/gitlab-merge-request-jenkins"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "report-info"
+github: "jenkinsci/report-info-plugin"
 paths:
 - "org/jenkins-ci/plugins/report-info"
 developers:

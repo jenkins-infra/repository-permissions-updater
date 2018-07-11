@@ -1,5 +1,6 @@
 ---
 name: "environment-manager"
+github: "jenkinsci/environment-manager-tools-plugin"
 paths:
 - "com/parasoft/environment-manager"
 developers:

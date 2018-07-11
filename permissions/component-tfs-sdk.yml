@@ -1,5 +1,6 @@
 ---
 name: "tfs-sdk"
+github: "jenkinsci/tfs-plugin"
 paths:
 - "org/jenkins-ci/plugins/tfs-sdk"
 developers:
@@ -9,3 +10,5 @@ developers:
 - "jpricketmsft"
 - "jeffyoung"
 - "kelliejos"
+- "kalyan"
+- "jenkinssriramb"

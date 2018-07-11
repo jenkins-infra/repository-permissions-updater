@@ -1,5 +1,6 @@
 ---
 name: "version-number"
+github: "jenkinsci/lib-version-number"
 paths:
 - "org/jenkins-ci/version-number"
 developers:

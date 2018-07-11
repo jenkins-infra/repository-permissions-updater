@@ -33,16 +33,26 @@ These prefixes, like the rest of the file name, have no semantic meaning and jus
 Each file contains the following in [YAML format](https://en.wikipedia.org/wiki/YAML):
 
 - A `name` (typically mirrored in the file name), this is also the `artifactId` of the Maven artifact.
+- A `github` field indicating the GitHub organization and repository which is expected to produce these artifacts.
 - A set of paths, usually just one. These correspond to the full Maven coordinates (`groupId` and `artifactId`) used for the artifact. Since Jenkins plugins can change group IDs and are still considered the same artifact, multiple entries are possible.
 - A set of user names (Jenkins community user accounts in LDAP, the same as used for wiki and JIRA) allowed to upload this artifact to Artifactory. This set can be empty, which means nobody is currently allowed to upload the plugin in question (except Artifactory admins). This can happen for plugins that haven't seen releases in several years, or permission cleanups.
 
 Example file:
 
-![](doc/yml-example.png)
+```yaml
+---
+name: "p4"
+github: "jenkinsci/p4-plugin"
+paths:
+- "org/jenkins-ci/plugins/p4"
+developers:
+- "p4paul"
+```
 
-* Red (lines 2 and 4): `artifactId`
-* Green (line 4): `groupId` (with slashes replacing periods)
-* Blue (line 6): Jenkins community account user name
+* `p4` (lines 2 and 5): `artifactId`
+* `p4-plugin` (line 3): GitHub repository name
+* `org/jenkins-ci` (line 5): `groupId` (with slashes replacing periods)
+* `p4paul` (line 7): Jenkins community account user name
 
 ### Adding a new plugin
 

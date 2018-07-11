@@ -1,5 +1,6 @@
 ---
 name: "amazon-ecr"
+github: "jenkinsci/amazon-ecr-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/amazon-ecr"
 developers:

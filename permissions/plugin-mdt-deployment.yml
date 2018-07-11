@@ -1,5 +1,6 @@
 ---
 name: "mdt-deployment"
+github: "jenkinsci/mdt-deployment-plugin"
 paths:
 - "org/jenkins-ci/plugins/mdt-deployment"
 developers:

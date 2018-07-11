@@ -1,5 +1,6 @@
 ---
 name: "hudson-wsclean-plugin"
+github: "jenkinsci/wsclean-plugin"
 paths:
 - "de/jamba/hudson/plugin/wsclean/hudson-wsclean-plugin"
 developers:

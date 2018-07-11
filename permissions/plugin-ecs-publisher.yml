@@ -1,5 +1,6 @@
 ---
 name: "ecs-publisher"
+github: "jenkinsci/ecs-publisher-plugin"
 paths:
 - "de/eacg/ecs-publisher"
 developers:

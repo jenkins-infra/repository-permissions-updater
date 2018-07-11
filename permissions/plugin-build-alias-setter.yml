@@ -1,5 +1,6 @@
 ---
 name: "build-alias-setter"
+github: "jenkinsci/build-alias-setter-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-alias-setter"
 developers:

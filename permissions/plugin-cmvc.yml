@@ -1,5 +1,6 @@
 ---
 name: "cmvc"
+github: "jenkinsci/cmvc-plugin"
 paths:
 - "org/jenkins-ci/plugins/cmvc"
 developers: []

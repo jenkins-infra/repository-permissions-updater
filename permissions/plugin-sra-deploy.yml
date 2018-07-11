@@ -1,5 +1,6 @@
 ---
 name: "sra-deploy"
+github: "jenkinsci/sra-deploy-plugin"
 paths:
 - "com/urbancode/ds/jenkins/plugins/sra-deploy"
 developers:

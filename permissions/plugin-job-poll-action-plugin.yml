@@ -1,5 +1,6 @@
 ---
 name: "job-poll-action-plugin"
+github: "jenkinsci/job-poll-action-plugin"
 paths:
 - "org/jenkins-ci/plugins/job-poll-action-plugin"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "silk-performer-plugin"
+github: "jenkinsci/silk-performer-plugin"
 paths:
 - "org/jenkins-ci/plugins/silk-performer-plugin"
 developers:

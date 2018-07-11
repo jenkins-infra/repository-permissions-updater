@@ -1,5 +1,6 @@
 ---
 name: "openshift-pipeline"
+github: "jenkinsci/openshift-pipeline-plugin"
 paths:
 - "com/openshift/jenkins/openshift-pipeline"
 developers:

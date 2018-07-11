@@ -1,5 +1,6 @@
 ---
 name: "node-iterator-api"
+github: "jenkinsci/node-iterator-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/node-iterator-api"
 developers:

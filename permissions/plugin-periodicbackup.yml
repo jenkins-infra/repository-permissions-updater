@@ -1,5 +1,6 @@
 ---
 name: "periodicbackup"
+github: "jenkinsci/periodicbackup-plugin"
 paths:
 - "org/jenkins-ci/plugins/periodicbackup"
 developers:

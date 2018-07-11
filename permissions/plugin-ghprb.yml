@@ -1,5 +1,6 @@
 ---
 name: "ghprb"
+github: "jenkinsci/ghprb-plugin"
 paths:
 - "org/jenkins-ci/plugins/ghprb"
 developers:

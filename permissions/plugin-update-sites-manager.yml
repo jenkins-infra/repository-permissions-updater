@@ -1,5 +1,6 @@
 ---
 name: "update-sites-manager"
+github: "jenkinsci/update-sites-manager-plugin"
 paths:
 - "jp/ikedam/jenkins/plugins/update-sites-manager"
 developers:

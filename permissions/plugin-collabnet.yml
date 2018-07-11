@@ -1,5 +1,6 @@
 ---
 name: "collabnet"
+github: "jenkinsci/collabnet-plugin"
 paths:
 - "org/jenkins-ci/plugins/collabnet"
 developers:

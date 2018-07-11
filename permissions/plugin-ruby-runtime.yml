@@ -1,5 +1,6 @@
 ---
 name: "ruby-runtime"
+github: "jenkinsci/jenkins.rb"
 paths:
 - "org/jenkins-ci/plugins/ruby-runtime"
 developers:

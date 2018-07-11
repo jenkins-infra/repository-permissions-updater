@@ -1,5 +1,6 @@
 ---
 name: "oic-auth"
+github: "jenkinsci/oic-auth-plugin"
 paths:
 - "org/jenkins-ci/plugins/oic-auth"
 developers:

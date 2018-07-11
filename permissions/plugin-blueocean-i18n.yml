@@ -1,5 +1,6 @@
 ---
 name: "blueocean-i18n"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-i18n"
 developers:

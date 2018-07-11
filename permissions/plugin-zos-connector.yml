@@ -1,5 +1,6 @@
 ---
 name: "zos-connector"
+github: "jenkinsci/zos-connector-plugin"
 paths:
 - "org/jenkins-ci/plugins/zos-connector"
 developers:

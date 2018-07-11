@@ -1,5 +1,6 @@
 ---
 name: "cloudshare-docker"
+github: "jenkinsci/cloudshare-docker-plugin"
 paths:
 - "org/jenkins-ci/plugins/cloudshare-docker"
 developers:

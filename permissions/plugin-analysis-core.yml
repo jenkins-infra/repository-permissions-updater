@@ -1,5 +1,6 @@
 ---
 name: "analysis-core"
+github: "jenkinsci/analysis-core-plugin"
 paths:
 - "org/jvnet/hudson/plugins/analysis-core"
 developers:

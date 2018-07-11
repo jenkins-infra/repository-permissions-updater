@@ -1,5 +1,6 @@
 ---
 name: "fortify-cloudscan-jenkins-plugin"
+github: "jenkinsci/fortify-cloudscan-plugin"
 paths:
 - "org/jenkins-ci/plugins/fortify-cloudscan-jenkins-plugin"
 developers:

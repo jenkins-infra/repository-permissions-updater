@@ -1,5 +1,6 @@
 ---
 name: "dynamicparameter"
+github: "jenkinsci/dynamicparameter-plugin"
 paths:
 - "com/seitenbau/jenkins/plugins/dynamicparameter"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "security-inspector"
+github: "jenkinsci/security-inspector-plugin"
 paths:
 - "org/jenkins-ci/plugins/security-inspector"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "ec2-fleet"
+github: "jenkinsci/ec2-fleet-plugin"
 paths:
 - "com/amazon/jenkins/fleet/ec2-fleet"
 developers:

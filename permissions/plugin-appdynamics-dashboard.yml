@@ -1,5 +1,6 @@
 ---
 name: "appdynamics-dashboard"
+github: "jenkinsci/appdynamics-plugin"
 paths:
 - "org/jenkins-ci/plugins/appdynamics-dashboard"
 developers:

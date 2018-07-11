@@ -1,5 +1,6 @@
 ---
 name: "cloudbees-enterprise-plugins"
+github: "jenkinsci/cloudbees-enterprise-plugins-plugin"
 paths:
 - "org/jenkins-ci/plugins/cloudbees-enterprise-plugins"
 developers:

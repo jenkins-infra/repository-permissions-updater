@@ -1,5 +1,6 @@
 ---
 name: "mock-slave"
+github: "jenkinsci/mock-slave-plugin"
 paths:
 - "org/jenkinci/plugins/mock-slave"
 - "org/jenkins-ci/plugins/mock-slave"

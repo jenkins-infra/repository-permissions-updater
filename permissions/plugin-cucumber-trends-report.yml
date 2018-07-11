@@ -1,5 +1,6 @@
 ---
 name: "cucumber-trends-report"
+github: "jenkinsci/cucumber-trend-report-plugin"
 paths:
 - "trends/cucumber-trends-report"
 developers:

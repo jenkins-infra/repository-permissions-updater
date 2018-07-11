@@ -1,7 +1,9 @@
 ---
 name: "fitnesse"
+github: "jenkinsci/fitnesse-plugin"
 paths:
 - "org/jenkins-ci/plugins/fitnesse"
 developers:
 - "antoine_aumjaud"
 - "lessonz"
+- "CSLTech"

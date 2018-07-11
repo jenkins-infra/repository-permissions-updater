@@ -1,5 +1,6 @@
 ---
 name: "drupal-developer"
+github: "jenkinsci/drupal-developer-plugin"
 paths:
 - "org/jenkins-ci/plugins/drupal-developer"
 developers:

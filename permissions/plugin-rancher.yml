@@ -1,5 +1,6 @@
 ---
 name: "rancher"
+github: "jenkinsci/rancher-plugin"
 paths:
 - "org/jenkins-ci/plugins/rancher"
 developers:

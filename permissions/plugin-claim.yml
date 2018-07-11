@@ -1,5 +1,6 @@
 ---
 name: "claim"
+github: "jenkinsci/claim-plugin"
 paths:
 - "org/jenkins-ci/plugins/claim"
 developers:

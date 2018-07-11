@@ -1,5 +1,6 @@
 ---
 name: "violation-comments-to-stash"
+github: "jenkinsci/violation-comments-to-stash-plugin"
 paths:
 - "org/jenkins-ci/plugins/violation-comments-to-stash"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "walti"
+github: "jenkinsci/walti-plugin"
 paths:
 - "org/jenkins-ci/plugins/walti"
 developers:

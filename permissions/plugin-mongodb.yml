@@ -1,5 +1,6 @@
 ---
 name: "mongodb"
+github: "jenkinsci/mongodb-plugin"
 paths:
 - "org/jenkins-ci/plugins/mongodb"
 developers: []

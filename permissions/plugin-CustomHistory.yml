@@ -1,5 +1,6 @@
 ---
 name: "CustomHistory"
+github: "jenkinsci/custom-history-plugin"
 paths:
 - "CustomHistory/CustomHistory"
 - "org/jenkins-ci/plugins/CustomHistory"

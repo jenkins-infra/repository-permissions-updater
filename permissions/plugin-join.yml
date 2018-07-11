@@ -1,5 +1,6 @@
 ---
 name: "join"
+github: "jenkinsci/join-plugin"
 paths:
 - "org/jenkins-ci/plugins/join"
 developers:

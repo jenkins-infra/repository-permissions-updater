@@ -1,5 +1,6 @@
 ---
 name: "trial-balloon"
+github: "jenkinsci/trial-balloon-plugin"
 paths:
 - "org/jenkins-ci/plugins/trial-balloon"
 developers: []

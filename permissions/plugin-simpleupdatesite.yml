@@ -1,5 +1,6 @@
 ---
 name: "simpleupdatesite"
+github: "jenkinsci/simpleupdatesite-plugin"
 paths:
 - "org/jenkins-ci/plugins/simpleupdatesite"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "leiningen-plugin"
+github: "jenkinsci/leiningen-plugin"
 paths:
 - "org/jenkins-ci/plugins/leiningen-plugin"
 developers: []

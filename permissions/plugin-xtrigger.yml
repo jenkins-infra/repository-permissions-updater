@@ -1,5 +1,6 @@
 ---
 name: "xtrigger"
+github: "jenkinsci/xtrigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/xtrigger"
 developers: []

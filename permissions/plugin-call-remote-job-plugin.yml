@@ -1,5 +1,6 @@
 ---
 name: "call-remote-job-plugin"
+github: "jenkinsci/call-remote-job-plugin"
 paths:
 - "org/ukiuni/callOtherJenkins/call-remote-job-plugin"
 developers: []

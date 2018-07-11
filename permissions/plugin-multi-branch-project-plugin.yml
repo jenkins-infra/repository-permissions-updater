@@ -1,5 +1,6 @@
 ---
 name: "multi-branch-project-plugin"
+github: "jenkinsci/multi-branch-project-plugin"
 paths:
 - "com/github/mjdetullio/jenkins/plugins/multi-branch-project-plugin"
 developers:

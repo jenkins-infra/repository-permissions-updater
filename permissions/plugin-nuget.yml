@@ -1,5 +1,6 @@
 ---
 name: "nuget"
+github: "jenkinsci/nuget-plugin"
 paths:
 - "org/jenkins-ci/plugins/nuget"
 developers:

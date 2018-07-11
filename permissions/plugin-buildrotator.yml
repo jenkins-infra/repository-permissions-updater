@@ -1,5 +1,6 @@
 ---
 name: "buildrotator"
+github: "jenkinsci/buildrotator-plugin"
 paths:
 - "org/jenkins-ci/plugins/buildrotator"
 developers:

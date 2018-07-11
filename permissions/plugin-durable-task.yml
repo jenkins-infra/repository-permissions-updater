@@ -1,5 +1,6 @@
 ---
 name: "durable-task"
+github: "jenkinsci/durable-task-plugin"
 paths:
 - "org/jenkins-ci/plugins/durable-task"
 developers:

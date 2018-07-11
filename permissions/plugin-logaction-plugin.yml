@@ -1,5 +1,6 @@
 ---
 name: "logaction-plugin"
+github: "jenkinsci/logaction-plugin"
 paths:
 - "de/fspengler/hudson/plugin/logaction-plugin"
 developers: []

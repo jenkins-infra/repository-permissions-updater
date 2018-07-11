@@ -1,5 +1,6 @@
 ---
 name: "pipeline-input-step"
+github: "jenkinsci/pipeline-input-step-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-input-step"
 developers:

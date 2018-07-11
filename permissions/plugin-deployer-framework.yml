@@ -1,5 +1,6 @@
 ---
 name: "deployer-framework"
+github: "jenkinsci/deployer-framework-plugin"
 paths:
 - "org/jenkins-ci/plugins/deployer-framework"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "absint-astree"
+github: "jenkinsci/absint-astree-plugin"
 paths:
 - "org/jenkins-ci/plugins/absint-astree"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "copr"
+github: "jenkinsci/copr-plugin"
 paths:
 - "org/fedoraproject/jenkins/plugins/copr"
 developers:

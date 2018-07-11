@@ -1,5 +1,6 @@
 ---
 name: "build-keeper-plugin"
+github: "jenkinsci/build-keeper-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-keeper-plugin"
 developers: []
