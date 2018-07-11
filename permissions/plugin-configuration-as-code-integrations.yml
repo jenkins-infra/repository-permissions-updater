@@ -1,0 +1,8 @@
+---
+name: "integrations"
+github: "jenkinsci/configuration-as-code-plugin"
+paths:
+- "io/jenkins/configuration-as-code/integrations"
+developers:
+- "praqma"
+- "ndeloof"
