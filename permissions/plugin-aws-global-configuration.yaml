@@ -1,5 +1,5 @@
 ---
-name: "artifact-manager-s3"
+name: "aws-global-configuration"
 github: "jenkinsci/aws-global-configuration-plugin"
 paths:
 - "io/jenkins/plugins/aws-global-configuration"
