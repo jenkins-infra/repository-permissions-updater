@@ -1,0 +1,8 @@
+---
+name: "osf-builder-suite-standalone-sonar-linter"
+github: "jenkinsci/osf-builder-suite-standalone-sonar-linter-plugin"
+paths:
+  - "org/jenkins-ci/plugins/osf-builder-suite-standalone-sonar-linter"
+developers:
+  - "danechitoaie"
+  
