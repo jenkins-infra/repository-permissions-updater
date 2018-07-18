@@ -1,0 +1,7 @@
+---
+name: "urbancode-velocity"
+github: "jenkinsci/urbancode-velocity-plugin"
+paths:
+- "com/ibm/devops/urbancode-velocity"
+developers:
+- "aberkIBM"
