@@ -1,0 +1,7 @@
+---
+name: "testweaver"
+github: "jenkinsci/testweaver-plugin"
+paths:
+- "org/jenkins-ci/plugins/testweaver"
+developers:
+- "qtronic"
