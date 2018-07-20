@@ -1,5 +1,5 @@
 ---
-name: "gitee-plugin"
+name: "gitee"
 github: "jenkinsci/gitee-plugin"
 paths:
 - "org/jenkins-ci/plugins/gitee-plugin"
