@@ -5,6 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/matrix-auth"
 developers:
 - "danielbeck"
-- "jglick"
-- "kohsuke"
-- "mathias_nyman"
