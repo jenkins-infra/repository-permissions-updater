@@ -1,0 +1,7 @@
+---
+name: "gitee-plugin"
+github: "jenkinsci/gitee-plugin"
+paths:
+- "org/jenkins-ci/plugins/gitee-plugin"
+developers:
+- "yashin"
