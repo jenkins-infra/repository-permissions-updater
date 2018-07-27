@@ -2,6 +2,6 @@
 name: "line-notify"
 github: "jenkinsci/line-notify-plugin"
 paths:
-- "org/jenkins-ci/plugins/line-notify"
+- "io/jenkins-ci/plugins/line-notify"
 developers:
 - "wisdomcd"
