@@ -5,3 +5,7 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-stage-view/pipeline-stage-view"
 developers:
 - "svanoort"
+- "abayer"
+- "dnusbaum"
+- "jglick"
+- "rsandell"
