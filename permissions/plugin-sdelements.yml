@@ -2,7 +2,7 @@
 name: "sdelements"
 github: "jenkinsci/sdelements-plugin"
 paths:
-- "org/jenkins-ci/plugins/sdelements"
+- "io/jenkins/plugins/sdelements"
 developers:
 - "geoffwhittington"
 - "RouganStriker"
