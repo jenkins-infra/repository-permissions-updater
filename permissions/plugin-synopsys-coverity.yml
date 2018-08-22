@@ -1,0 +1,10 @@
+---
+name: "synopsys-coverity"
+github: "jenkinsci/synopsys-coverity-plugin"
+paths:
+- "org/jenkins-ci/plugins/synopsys-coverity"
+developers:
+- "gkillough"
+- "jrichard"
+- "akamen"
+- "bdsoss"
