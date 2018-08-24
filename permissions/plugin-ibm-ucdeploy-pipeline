@@ -1,0 +1,7 @@
+---
+name: "urbancode-velocity"
+github: "jenkinsci/ibm-ucdeploy-pipeline-plugin"
+paths:
+- "com/ibm/devops/ibm-ucdeploy-pipeline-plugin"
+developers:
+- "aberkIBM"
