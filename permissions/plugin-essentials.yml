@@ -1,0 +1,8 @@
+---
+name: "essentials"
+github: "jenkinsci/evergreen-plugin"
+paths:
+- "io/jenkins/plugins/essentials"
+developers:
+- "batmat"
+- "rtyler"
