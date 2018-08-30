@@ -3,4 +3,5 @@ name: "run-condition"
 github: "jenkinsci/run-condition-plugin"
 paths:
 - "org/jenkins-ci/plugins/run-condition"
-developers: []
+developers:
+- "imod"
