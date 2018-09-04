@@ -2,6 +2,6 @@
 name: "tanaguru"
 github: "jenkinsci/tanaguru-plugin"
 paths:
-- "org/jenkins-tanaguru/plugins/tanaguru"
+- "org/tanaguru/jenkins/tanaguru"
 developers:
 - "tanaguru"
