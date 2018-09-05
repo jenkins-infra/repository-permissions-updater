@@ -1,0 +1,8 @@
+---
+name: "tricentis-ci"
+github: "jenkinsci/tricentis-ci-plugin"
+paths:
+- "org/jenkins-ci/plugins/tricentis-ci"
+developers:
+- "tricentis"
+- "sergey_oplavin"
