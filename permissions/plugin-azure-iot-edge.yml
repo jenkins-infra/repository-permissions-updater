@@ -1,0 +1,7 @@
+---
+name: "azure-iot-edge"
+github: "jenkinsci/azure-iot-edge-plugin"
+paths:
+- "org/jenkins-ci/plugins/azure-iot-edge"
+developers:
+- "azure_iot_tooling"
