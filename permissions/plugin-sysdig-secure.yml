@@ -1,0 +1,7 @@
+---
+name: "sysdig-secure"
+github: "jenkinsci/sysdig-secure-plugin"
+paths:
+- "org/jenkins-ci/plugins/sysdig-secure"
+developers:
+- "alfredlandrum"
