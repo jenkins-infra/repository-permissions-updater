@@ -1,7 +1,7 @@
 ---
 name: "byteguard-build-actions"
 github: "jenkinsci/byteguard-build-actions-plugin"
-path: 
+paths: 
 - "org/jenkins-ci/plugins/byteguard-build-actions"
 developers:
 - "khushboo"
