@@ -1,0 +1,7 @@
+---
+name: "tanaguru"
+github: "jenkinsci/tanaguru-plugin"
+paths:
+- "org/tanaguru/jenkins/tanaguru"
+developers:
+- "tanaguru"
