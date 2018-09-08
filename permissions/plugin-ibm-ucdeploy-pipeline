@@ -1,0 +1,7 @@
+---
+name: "ibm-ucdeploy-pipeline-plugin"
+github: "jenkinsci/ibm-ucdeploy-pipeline-plugin"
+paths:
+- "com/ibm/devops/ibm-ucdeploy-pipeline-plugin"
+developers:
+- "aberkIBM"
