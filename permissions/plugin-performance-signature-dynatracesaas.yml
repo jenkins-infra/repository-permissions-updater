@@ -1,0 +1,8 @@
+---
+name: "performance-signature-dynatracesaas"
+github: "jenkinsci/performance-signature-dynatrace-plugin"
+paths:
+- "de/tsystems/mms/apm/performance-signature-dynatracesaas"
+developers:
+- "rpionke"
+- "robkuehn"
