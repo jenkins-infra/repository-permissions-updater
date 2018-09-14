@@ -2,7 +2,7 @@
 name: "nowsecure-auto-security-test"
 github: "jenkinsci/nowsecure-auto-security-test-plugin"
 paths:
-- "org/jenkins-ci/plugins/nowsecure-auto-security-test"
+- "org/jenkins-ci/plugins/nowsecure"
 developers:
 - "bhatti"
 - "ekristen"
