@@ -1,5 +1,5 @@
 ---
-name: "nowsecure-auto-security-test"
+name: "auto-security-test"
 github: "jenkinsci/nowsecure-auto-security-test-plugin"
 paths:
 - "org/jenkins-ci/plugins/nowsecure"
