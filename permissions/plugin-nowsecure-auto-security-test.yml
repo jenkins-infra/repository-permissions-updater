@@ -4,9 +4,4 @@ github: "jenkinsci/nowsecure-auto-security-test-plugin"
 paths:
 - "org/jenkins-ci/plugins/nowsecure"
 developers:
-- "bhatti"
-- "ekristen"
-- "dweinstein"
-- "srjefe"
 - "nowsecure"
-- "sttwalker"
