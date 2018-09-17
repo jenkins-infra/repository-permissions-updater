@@ -2,6 +2,6 @@
 name: "auto-security-test"
 github: "jenkinsci/nowsecure-auto-security-test-plugin"
 paths:
-- "com/nowsecure/jenkins/nowsecure"
+- "com/nowsecure/jenkins"
 developers:
 - "nowsecure"
