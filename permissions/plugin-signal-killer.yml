@@ -3,4 +3,5 @@ name: "signal-killer"
 github: "jenkinsci/signal-killer"
 paths:
 - "hudson/plugins/signal_killer/signal-killer"
-developers: []
+developers:
+- "vjuranek"
