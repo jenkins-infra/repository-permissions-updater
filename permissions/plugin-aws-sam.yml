@@ -5,3 +5,4 @@ paths:
 - "io/jenkins/plugins/aws-sam"
 developers:
 - "mikedeck_AWS"
+- "seansummers"
