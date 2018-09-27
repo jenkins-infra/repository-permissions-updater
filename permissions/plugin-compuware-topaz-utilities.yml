@@ -1,0 +1,10 @@
+---
+name: "compuware-topaz-utilities"
+github: "jenkinsci/compuware-topaz-utilities-plugin"
+paths:
+- "com/compuware/jenkins/compuware-topaz-utilities"
+developers:
+- "jgoering41"
+- "dave-dresser"
+- "sallenCPWR"
+- "cpwr_jenkins"
