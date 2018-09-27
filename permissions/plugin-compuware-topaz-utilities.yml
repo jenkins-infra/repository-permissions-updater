@@ -5,6 +5,5 @@ paths:
 - "com/compuware/jenkins/compuware-topaz-utilities"
 developers:
 - "jgoering41"
-- "dave-dresser"
 - "sallenCPWR"
 - "cpwr_jenkins"
