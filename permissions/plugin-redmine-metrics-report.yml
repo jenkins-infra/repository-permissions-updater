@@ -2,6 +2,6 @@
 name: "redmine-metrics-report"
 github: "jenkinsci/redmine-metrics-report-plugin"
 paths:
-- "org/jenkins-ci/plugins/redmine-metrics-report"
+- "io/jenkins/plugins/redmine-metrics-report"
 developers:
 - "bestoak"
