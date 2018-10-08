@@ -4,4 +4,4 @@ github: "jenkinsci/gradle-repo-plugin"
 paths:
 - "org/jenkins-ci/plugins/gradle-repo"
 developers:
-- "EastWoodYang"
+- "eastwoodyang"
