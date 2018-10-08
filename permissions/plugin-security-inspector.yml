@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/security-inspector"
 developers:
 - "ks_nenasheva"
+- "oleg_nenashev"
+
