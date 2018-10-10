@@ -1,5 +1,5 @@
 
-name: "cachet-gating-plugin"
+name: "cachet-gating"
 github: "jenkinsci/cachet-gating-plugin"
 paths:
 - "org/jenkins-ci/plugins/cachet-gating-plugin"
