@@ -1,0 +1,7 @@
+---
+name: "linchpin"
+github: "jenkinsci/linchpin-plugin"
+paths:
+- "org/jenkins-ci/plugins/linchpin-plugin"
+developers:
+- "Avielyo10"
