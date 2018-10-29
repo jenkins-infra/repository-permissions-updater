@@ -4,5 +4,6 @@ github: "jenkinsci/collabnet-plugin"
 paths:
 - "org/jenkins-ci/plugins/collabnet"
 developers:
-- "boraaksoy"
+- "dharmsheta"
 - "jmcnally"
+- "boraaksoy"
