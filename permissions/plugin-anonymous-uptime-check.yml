@@ -1,8 +1,7 @@
 ---
 name: "anonymous-uptime-check"
 github: "jenkinsci/anonymous-uptime-check-plugin"
- paths:
+paths:
 - "io/jenkins/plugins/anonymousuptimecheck"
 developers:
-- "jeff-knurek"
-- "grandvizier"
+- "jknurek"
