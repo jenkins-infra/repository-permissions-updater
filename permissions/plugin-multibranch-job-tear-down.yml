@@ -1,5 +1,5 @@
 ---
-name: "multibranch-job-tear-down-plugin"
+name: "multibranch-job-tear-down"
 github: "jenkinsci/multibranch-job-tear-down-plugin"
 paths:
 - "com/fuzzpro/jenkins-plugins/multibranch-job-tear-down"
