@@ -2,6 +2,6 @@
 name: "in-toto"
 github: "jenkinsci/in-toto-plugin"
 paths:
-- "io/jenkins/plugins/artifactory"
+- "io/jenkins/plugins/in-toto"
 developers:
 - "SantiagoTorres"
