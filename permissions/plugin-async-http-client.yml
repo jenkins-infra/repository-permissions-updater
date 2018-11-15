@@ -6,3 +6,4 @@ paths:
 - "org/jenkinsci/plugins/async-http-client"
 developers:
 - "stephenconnolly"
+- "egutierrez"
