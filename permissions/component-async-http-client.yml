@@ -1,6 +1,6 @@
 ---
 name: "async-http-client"
-github: "jenkinsci/async-http-client"
+github: "jenkinsci/lib-async-http-client"
 paths:
 - "com/ning/async-http-client" # For the 1.7.x branch which is the only needed one at the moment
 developers:
