@@ -1,0 +1,7 @@
+---
+name: "working-hours"
+github: "jenkinsci/working-hours-plugin"
+paths:
+- "org/jenkins-ci/plugins/working-hours"
+developers:
+- "jeffpearce"
