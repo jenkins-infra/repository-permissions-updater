@@ -1,0 +1,8 @@
+---
+name: "aws-sam"
+github: "jenkinsci/aws-sam-plugin"
+paths:
+- "io/jenkins/plugins/aws-sam"
+developers:
+- "mikedeck_AWS"
+- "seansummers"

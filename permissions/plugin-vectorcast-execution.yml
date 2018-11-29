@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/vectorcast-execution"
 developers:
 - "rmkeeble"
+- "chris_overend"

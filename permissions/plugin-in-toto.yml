@@ -1,0 +1,7 @@
+---
+name: "in-toto"
+github: "jenkinsci/in-toto-plugin"
+paths:
+- "io/jenkins/plugins/in-toto"
+developers:
+- "SantiagoTorres"

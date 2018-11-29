@@ -1,0 +1,7 @@
+---
+name: "tuleap-git-branch-source"
+github: "jenkinsci/tuleap-git-branch-source-plugin"
+paths:
+- "org/jenkinsci/plugins/tuleap-git-branch-source"
+developers:
+- "vaceletm"
