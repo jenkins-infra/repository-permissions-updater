@@ -1,0 +1,8 @@
+---
+name: "list-git-branches"
+github: "jenkinsci/list-git-branches-plugin"
+paths:
+- "org/jenkins-ci/plugins/list-git-branches"
+- "org/jenkins-ci/tools/list-git-branches"
+developers:
+- "huangsuoyuan"
