@@ -1,0 +1,9 @@
+---
+name: "jenkinsfile-runner-parent"
+github: "jenkinsci/jenkinsfile-runner"
+paths:
+- "io/jenkins/jenkinsfile-runner-parent"
+developers:
+- "oleg_nenashev"
+- "egutierrez"
+- "fcojfernandez"
