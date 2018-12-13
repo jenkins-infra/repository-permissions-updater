@@ -1,8 +1,8 @@
 ---
-name: "jenkinsfile-runner-bootstrap"
+name: "bootstrap"
 github: "jenkinsci/jenkinsfile-runner"
 paths:
-- "io/jenkins/jenkinsfile-runner-bootstrap"
+- "io/jenkins/jenkinsfile-runner/bootstrap"
 developers:
 - "oleg_nenashev"
 - "egutierrez"
