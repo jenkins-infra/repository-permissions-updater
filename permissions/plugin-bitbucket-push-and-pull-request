@@ -1,0 +1,6 @@
+name: "bitbucket-push-and-pull-request"
+github: "jenkinsci/bitbucket-push-and-pull-request-plugin"
+paths:
+- "io/jenkins/plugins/bitbucketpushandpullrequest"
+developers:
+- "cdelmonte"
