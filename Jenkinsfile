@@ -25,37 +25,41 @@ properties(props)
 
 node('java') {
     try {
-        stage 'Clean'
-        deleteDir()
-        sh 'ls -lah'
+        stage ('Clean') {
+            deleteDir()
+            sh 'ls -lah'
+        }
 
-        stage 'Checkout'
-        checkout scm
+        stage ('Checkout') {
+            checkout scm
+        }
 
-        stage 'Build'
-        def mvnHome = tool 'mvn'
-        env.JAVA_HOME = tool 'jdk8'
-        sh "${mvnHome}/bin/mvn -U clean verify"
+        stage ('Build') {
+            def mvnHome = tool 'mvn'
+            env.JAVA_HOME = tool 'jdk8'
+            sh "${mvnHome}/bin/mvn -U clean verify"
+        }
 
-        stage 'Run'
+        stage ('Run') {
+            def javaArgs = ' -DdefinitionsDir=$PWD/permissions' +
+                        ' -DartifactoryApiTempDir=$PWD/json' +
+                        ' -DartifactoryUserNamesJsonListUrl=https://reports.jenkins.io/artifactory-ldap-users-report.json' +
+                        ' -Djava.util.logging.SimpleFormatter.format="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n"' +
+                        ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar'
 
-        def javaArgs = ' -DdefinitionsDir=$PWD/permissions' +
-                       ' -DartifactoryApiTempDir=$PWD/json' +
-                       ' -DartifactoryUserNamesJsonListUrl=https://reports.jenkins.io/artifactory-ldap-users-report.json' +
-                       ' -Djava.util.logging.SimpleFormatter.format="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n"' +
-                       ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar'
 
-
-        if (dryRun) {
-            sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
-        } else {
-            withCredentials([usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME')]) {
-                sh '${JAVA_HOME}/bin/java ' + javaArgs
+            if (dryRun) {
+                sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
+            } else {
+                withCredentials([usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME')]) {
+                    sh '${JAVA_HOME}/bin/java ' + javaArgs
+                }
             }
         }
     } finally {
-        stage 'Archive'
-        archiveArtifacts 'permissions/*.yml'
-        archiveArtifacts 'json/*.json'
+        stage ('Archive') {
+            archiveArtifacts 'permissions/*.yml'
+            archiveArtifacts 'json/*.json'
+        }
     }
 }
