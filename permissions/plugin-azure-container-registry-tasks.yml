@@ -4,7 +4,6 @@ github: "jenkinsci/azure-container-registry-tasks-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-container-registry-tasks"
 developers:
-- "yungez"
 - "yuwzho"
 - "jieshe"
 - "azure_devops"
