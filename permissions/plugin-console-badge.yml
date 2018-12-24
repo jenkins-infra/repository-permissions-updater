@@ -1,5 +1,6 @@
 ---
 name: "console-badge"
+github: "jenkinsci/console-badge-plugin"
 paths:
 - "me/noroutine/jenkins/plugin/console-badge"
 developers:

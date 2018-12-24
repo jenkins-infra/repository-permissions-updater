@@ -1,5 +1,6 @@
 ---
 name: "codesonar"
+github: "jenkinsci/codesonar-plugin"
 paths:
 - "org/jenkins-ci/plugins/codesonar"
 developers:

@@ -6,3 +6,12 @@ target/
 *.iml
 out/
 lib/
+
+# eclipse
+.classpath
+.project
+.settings
+
+# NetBeans
+nb-configuration.xml
+nbactions-*.xml

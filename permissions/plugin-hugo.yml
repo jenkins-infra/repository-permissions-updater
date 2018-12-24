@@ -1,0 +1,7 @@
+---
+name: "hugo"
+github: "jenkinsci/hugo-plugin"
+paths:
+- "io/jenkins/plugins/hugo"
+developers:
+- "surenpi"

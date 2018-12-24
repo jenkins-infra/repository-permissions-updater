@@ -1,0 +1,8 @@
+---
+name: "cloudcoreo-deploytime"
+github: "jenkinsci/cloudcoreo-deploytime-plugin"
+paths:
+- "com/cloudcoreo/plugins/cloudcoreo-deploytime"
+developers:
+- "pauldallen"
+- "armaneous"

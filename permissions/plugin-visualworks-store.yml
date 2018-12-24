@@ -1,5 +1,6 @@
 ---
 name: "visualworks-store"
+github: "jenkinsci/visualworks-store-plugin"
 paths:
 - "org/jenkins-ci/plugins/visualworks-store"
 developers:

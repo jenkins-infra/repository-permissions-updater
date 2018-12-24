@@ -1,5 +1,6 @@
 ---
 name: "catalogic-ecx"
+github: "jenkinsci/catalogic-ecx-plugin"
 paths:
 - "com/catalogic/ecxjenkins/catalogic-ecx"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "pyenv"
+github: "jenkinsci/pyenv-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/pyenv"
 developers:

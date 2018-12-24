@@ -1,5 +1,6 @@
 ---
 name: "ontrack"
+github: "jenkinsci/ontrack-plugin"
 paths:
 - "org/jenkins-ci/plugins/ontrack"
 developers:

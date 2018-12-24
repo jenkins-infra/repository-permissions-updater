@@ -1,5 +1,6 @@
 ---
 name: "lechat"
+github: "jenkinsci/lechat-plugin"
 paths:
 - "org/jvnet/hudson/plugins/lechat"
 developers: []

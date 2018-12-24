@@ -1,5 +1,6 @@
 ---
 name: "buildresult-trigger"
+github: "jenkinsci/buildresult-trigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/buildresult-trigger"
 developers:

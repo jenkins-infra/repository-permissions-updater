@@ -1,5 +1,6 @@
 ---
 name: "ivy"
+github: "jenkinsci/ivy-plugin"
 paths:
 - "org/jenkins-ci/plugins/ivy"
 - "org/jvnet/hudson/plugins/ivy"

@@ -1,5 +1,6 @@
 ---
 name: "ansicolor"
+github: "jenkinsci/ansicolor-plugin"
 paths:
 - "org/jenkins-ci/plugins/ansicolor"
 - "org/jvnet/hudson/plugins/ansicolor"
@@ -7,3 +8,6 @@ developers:
 - "anyfoo"
 - "dblock"
 - "qvicksilver"
+- "joemerten"
+- "mkobit"
+- "dnusbaum"

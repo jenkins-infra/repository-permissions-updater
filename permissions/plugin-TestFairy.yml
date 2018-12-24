@@ -1,5 +1,6 @@
 ---
 name: "TestFairy"
+github: "jenkinsci/testfairy-plugin"
 paths:
 - "org/jenkins-ci/plugins/TestFairy"
 developers:

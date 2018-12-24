@@ -1,5 +1,6 @@
 ---
 name: "codecommit-url-helper"
+github: "jenkinsci/codecommit-url-helper-plugin"
 paths:
 - "br/com/ingenieux/jenkins/plugins/codecommit-url-helper"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "utplsql"
+github: "jenkinsci/utplsql-plugin"
 paths:
 - "hudson/plugins/utplsql/utplsql"
 - "org/jenkins-ci/plugins/utplsql"

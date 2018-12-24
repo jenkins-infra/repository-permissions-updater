@@ -1,0 +1,9 @@
+---
+name: "nodepool-agents"
+github: "jenkinsci/nodepool-agents-plugin"
+paths:
+- "org/jenkins-ci/plugins/nodepool-agents"
+developers:
+- "nairbttoille"
+- "hughsaunders"
+- "ddeal"

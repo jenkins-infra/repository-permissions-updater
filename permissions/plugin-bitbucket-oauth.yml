@@ -1,5 +1,6 @@
 ---
 name: "bitbucket-oauth"
+github: "jenkinsci/bitbucket-oauth-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitbucket-oauth"
 developers:

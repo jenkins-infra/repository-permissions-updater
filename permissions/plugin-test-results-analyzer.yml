@@ -1,5 +1,6 @@
 ---
 name: "test-results-analyzer"
+github: "jenkinsci/test-results-analyzer-plugin"
 paths:
 - "org/jenkins-ci/plugins/test-results-analyzer"
 developers:

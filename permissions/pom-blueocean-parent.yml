@@ -1,5 +1,6 @@
 ---
 name: "blueocean-parent"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-parent"
 developers:
@@ -7,4 +8,6 @@ developers:
 - "vivek"
 - "tfennelly"
 - "kzantow"
+- "davidbees"
+- "halkeye"
 - "tscherler"

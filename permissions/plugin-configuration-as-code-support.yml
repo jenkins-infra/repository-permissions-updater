@@ -1,0 +1,8 @@
+---
+name: "configuration-as-code-support"
+github: "jenkinsci/configuration-as-code-plugin"
+paths:
+- "io/jenkins/configuration-as-code/configuration-as-code-support"
+developers:
+- "praqma"
+- "ndeloof"

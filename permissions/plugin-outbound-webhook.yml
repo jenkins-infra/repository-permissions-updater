@@ -1,0 +1,7 @@
+---
+name: "outbound-webhook"
+github: "jenkinsci/outbound-webhook-plugin"
+paths:
+- "org/jenkins-ci/plugins/outbound-webhook"
+developers:
+- "tylerlong"

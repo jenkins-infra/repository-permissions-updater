@@ -1,0 +1,7 @@
+---
+name: "folder-properties"
+github: "jenkinsci/folder-properties-plugin"
+paths:
+- "com/mig82/folder-properties"
+developers:
+- "mig82"

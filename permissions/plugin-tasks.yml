@@ -1,5 +1,6 @@
 ---
 name: "tasks"
+github: "jenkinsci/tasks-plugin"
 paths:
 - "org/jvnet/hudson/plugins/tasks"
 developers:

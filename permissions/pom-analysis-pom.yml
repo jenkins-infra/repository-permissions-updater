@@ -1,5 +1,6 @@
 ---
 name: "analysis-pom"
+github: "jenkinsci/analysis-pom-plugin"
 paths:
 - "org/jvnet/hudson/plugins/analysis-pom"
 developers:

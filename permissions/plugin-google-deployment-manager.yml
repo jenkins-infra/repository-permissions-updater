@@ -1,5 +1,6 @@
 ---
 name: "google-deployment-manager"
+github: "jenkinsci/google-deployment-manager-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-deployment-manager"
 developers:

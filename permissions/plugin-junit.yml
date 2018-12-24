@@ -1,5 +1,6 @@
 ---
 name: "junit"
+github: "jenkinsci/junit-plugin"
 paths:
 - "org/jenkins-ci/plugins/junit"
 developers:

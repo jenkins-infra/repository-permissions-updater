@@ -1,5 +1,6 @@
 ---
 name: "variant"
+github: "jenkinsci/variant-plugin"
 paths:
 - "org/jenkins-ci/plugins/variant"
 developers:

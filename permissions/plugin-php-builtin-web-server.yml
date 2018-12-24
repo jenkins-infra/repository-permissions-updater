@@ -1,5 +1,6 @@
 ---
 name: "php-builtin-web-server"
+github: "jenkinsci/php-builtin-web-server-plugin"
 paths:
 - "org/jenkins-ci/plugins/php-builtin-web-server"
 developers:

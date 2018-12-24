@@ -1,5 +1,6 @@
 ---
 name: "codefresh"
+github: "jenkinsci/codefresh-plugin"
 paths:
 - "org/jenkins-ci/plugins/codefresh"
 developers:

@@ -1,0 +1,7 @@
+---
+name: "qualityclouds"
+github: "jenkinsci/qualityclouds-plugin"
+paths:
+- "io/jenkins/plugins/qualityclouds"
+developers:
+- "saleig"

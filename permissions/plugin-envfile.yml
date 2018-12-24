@@ -1,5 +1,6 @@
 ---
 name: "envfile"
+github: "jenkinsci/envfile-plugin"
 paths:
 - "org/jenkins-ci/plugins/envfile"
 developers: []

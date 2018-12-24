@@ -1,8 +1,10 @@
 ---
 name: "hockeyapp"
+github: "jenkinsci/hockeyapp-plugin"
 paths:
 - "org/jenkins-ci/plugins/hockeyapp"
 developers:
 - "brantone"
 - "dkochetkov"
 - "ohoeltke"
+- "mezpahlan"

@@ -1,5 +1,6 @@
 ---
 name: "ownership"
+github: "jenkinsci/ownership-plugin"
 paths:
 - "com/synopsys/jenkinsci/ownership"
 developers:

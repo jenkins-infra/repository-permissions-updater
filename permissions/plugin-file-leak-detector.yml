@@ -1,6 +1,9 @@
 ---
 name: "file-leak-detector"
+github: "jenkinsci/file-leak-detector-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/file-leak-detector"
 developers:
 - "jglick"
+- "dnusbaum"
+- "jthompson"

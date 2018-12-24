@@ -1,5 +1,6 @@
 ---
 name: "crossbrowsertesting"
+github: "jenkinsci/crossbrowsertesting-plugin"
 paths:
 - "org/jenkins-ci/plugins/crossbrowsertesting"
 developers:

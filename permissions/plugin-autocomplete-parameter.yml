@@ -1,0 +1,6 @@
+---
+name: "autocomplete-parameter"
+paths:
+- "org/jenkins-ci/plugins/autocomplete-parameter"
+developers:
+- "taksan"

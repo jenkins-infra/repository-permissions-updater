@@ -1,5 +1,6 @@
 ---
 name: "pretested-integration"
+github: "jenkinsci/pretested-integration-plugin"
 paths:
 - "org/jenkins-ci/plugins/pretested-integration"
 developers:

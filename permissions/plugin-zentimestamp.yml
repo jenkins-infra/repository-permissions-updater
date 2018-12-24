@@ -1,5 +1,6 @@
 ---
 name: "zentimestamp"
+github: "jenkinsci/zentimestamp-plugin"
 paths:
 - "org/jenkins-ci/plugins/zentimestamp"
 developers:

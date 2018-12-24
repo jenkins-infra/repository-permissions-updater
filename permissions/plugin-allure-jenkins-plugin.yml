@@ -1,6 +1,8 @@
 ---
 name: "allure-jenkins-plugin"
+github: "jenkinsci/allure-plugin"
 paths:
 - "ru/yandex/qatools/allure/allure-jenkins-plugin"
 developers:
+- "eroshenkoam"
 - "pupssman"

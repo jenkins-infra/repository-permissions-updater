@@ -1,0 +1,7 @@
+---
+name: "apprenda"
+github: "jenkinsci/apprenda-plugin"
+paths:
+- "org/jenkins-ci/plugins/apprenda"
+developers:
+- "apprenda"

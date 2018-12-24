@@ -1,5 +1,6 @@
 ---
 name: "unleash"
+github: "jenkinsci/unleash-plugin"
 paths:
 - "com/itemis/jenkins/plugins/unleash"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "aws-lambda"
+github: "jenkinsci/aws-lambda-plugin"
 paths:
 - "org/jenkins-ci/plugins/aws-lambda"
 developers:

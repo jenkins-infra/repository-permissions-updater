@@ -1,5 +1,6 @@
 ---
 name: "ibm-application-security"
+github: "jenkinsci/ibm-asoc-plugin"
 paths:
 - "com/ibm/ibm-application-security"
 developers:

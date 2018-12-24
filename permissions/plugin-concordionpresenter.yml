@@ -1,5 +1,6 @@
 ---
 name: "concordionpresenter"
+github: "jenkinsci/concordionpresenter-plugin"
 paths:
 - "org/jenkins-ci/plugins/concordionpresenter"
 developers: []

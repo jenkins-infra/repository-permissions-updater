@@ -1,5 +1,6 @@
 ---
 name: "adaptive-disconnector"
+github: "jenkinsci/adaptive-disconnector-plugin"
 paths:
 - "org/jenkins-ci/plugins/adaptive-disconnector"
 developers:

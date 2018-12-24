@@ -1,5 +1,6 @@
 ---
 name: "octopusdeploy"
+github: "jenkinsci/octopusdeploy-plugin"
 paths:
 - "hudson/plugins/octopusdeploy/octopusdeploy"
 developers:

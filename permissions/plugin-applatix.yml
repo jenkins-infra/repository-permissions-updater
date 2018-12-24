@@ -1,0 +1,7 @@
+---
+name: "applatix"
+github: "jenkinsci/applatix-plugin"
+paths:
+- "com/applatix/jenkins/applatix"
+developers:
+- "applatix_jenkins"

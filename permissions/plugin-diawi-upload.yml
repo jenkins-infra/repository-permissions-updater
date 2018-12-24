@@ -1,0 +1,7 @@
+---
+name: "diawi-upload"
+github: "jenkinsci/diawi-upload-plugin"
+paths:
+- "org/jenkins-ci/plugins/diawi-upload"
+developers:
+- "m_adawi"

@@ -1,5 +1,6 @@
 ---
 name: "xvfb"
+github: "jenkinsci/xvfb-plugin"
 paths:
 - "org/jenkins-ci/plugins/xvfb"
 developers:

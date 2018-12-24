@@ -1,5 +1,6 @@
 ---
 name: "flashlog-plugin"
+github: "jenkinsci/flashlog-plugin"
 paths:
 - "org/jvnet/hudson/plugins/flashlog-plugin"
 developers: []

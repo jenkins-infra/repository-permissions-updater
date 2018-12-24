@@ -1,5 +1,6 @@
 ---
 name: "rvm"
+github: "jenkinsci/rvm-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/rvm"
 developers:

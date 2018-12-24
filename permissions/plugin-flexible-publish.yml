@@ -1,5 +1,6 @@
 ---
 name: "flexible-publish"
+github: "jenkinsci/flexible-publish-plugin"
 paths:
 - "org/jenkins-ci/plugins/flexible-publish"
 developers:

@@ -1,0 +1,8 @@
+---
+name: "snakeyaml"
+github: "jenkinsci/configuration-as-code-plugin"
+paths:
+- "io/jenkins/configuration-as-code/snakeyaml"
+developers:
+- "praqma"
+- "ndeloof"

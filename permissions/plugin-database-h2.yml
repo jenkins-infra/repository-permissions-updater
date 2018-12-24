@@ -1,5 +1,6 @@
 ---
 name: "database-h2"
+github: "jenkinsci/database-h2-plugin"
 paths:
 - "org/jenkins-ci/plugins/database-h2"
 developers:

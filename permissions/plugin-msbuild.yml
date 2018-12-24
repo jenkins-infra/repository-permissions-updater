@@ -1,5 +1,6 @@
 ---
 name: "msbuild"
+github: "jenkinsci/msbuild-plugin"
 paths:
 - "org/jenkins-ci/plugins/msbuild"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "database-postgresql"
+github: "jenkinsci/database-postgresql-plugin"
 paths:
 - "org/jenkins-ci/plugins/database-postgresql"
 developers: []

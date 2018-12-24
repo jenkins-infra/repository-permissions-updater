@@ -1,5 +1,6 @@
 ---
 name: "clamav"
+github: "jenkinsci/clamav-plugin"
 paths:
 - "org/jenkins-ci/plugins/clamav"
 developers:

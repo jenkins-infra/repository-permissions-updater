@@ -1,5 +1,6 @@
 ---
 name: "nant"
+github: "jenkinsci/nant-plugin"
 paths:
 - "org/jenkins-ci/plugins/nant"
 developers: []

@@ -1,0 +1,7 @@
+---
+name: "dingding-json-pusher"
+github: "jenkinsci/dingding-json-pusher-plugin"
+paths:
+- "com/zintow/dingding-json-pusher"
+developers:
+- "huijian_zintow"

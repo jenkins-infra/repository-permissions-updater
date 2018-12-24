@@ -1,5 +1,6 @@
 ---
 name: "twitter"
+github: "jenkinsci/twitter-plugin"
 paths:
 - "org/jenkins-ci/plugins/twitter"
 developers: []

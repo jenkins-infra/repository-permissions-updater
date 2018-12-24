@@ -1,5 +1,6 @@
 ---
 name: "ruby-runtime-parent"
+github: "jenkinsci/jenkins.rb"
 paths:
 - "org/jenkins-ci/plugins/ruby-runtime-parent"
 - "org/jenkins-ci/ruby-runtime-parent"

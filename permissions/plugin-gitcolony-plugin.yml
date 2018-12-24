@@ -1,5 +1,6 @@
 ---
 name: "gitcolony-plugin"
+github: "jenkinsci/gitcolony-plugin"
 paths:
 - "com/gitcolony/jenkins/gitcolony-plugin"
 developers:

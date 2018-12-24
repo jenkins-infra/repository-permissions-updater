@@ -1,12 +1,15 @@
 ---
 name: "support-core"
+github: "jenkinsci/support-core-plugin"
 paths:
 - "org/jenkins-ci/plugins/support-core"
 developers:
 - "jglick"
 - "kohsuke"
 - "schristou"
-- "schristou88"
 - "stephenconnolly"
 - "batmat"
-
+- "owood"
+- "escoem"
+- "dnusbaum"
+- "egutierrez"

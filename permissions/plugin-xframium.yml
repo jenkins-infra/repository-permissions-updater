@@ -1,0 +1,7 @@
+---
+name: "xframium"
+github: "jenkinsci/xframium-plugin"
+paths:
+- "org/jenkins-ci/plugins/xframium"
+developers:
+- "xframium"

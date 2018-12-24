@@ -1,0 +1,7 @@
+---
+name: "influxdb-query"
+github: "jenkinsci/influxdb-query-plugin"
+paths:
+- "org/joeo/plugins/influxdb-query"
+developers:
+- "joe99000"

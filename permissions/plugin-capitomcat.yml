@@ -1,5 +1,6 @@
 ---
 name: "capitomcat"
+github: "jenkinsci/capitomcat-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/capitomcat"
 developers:

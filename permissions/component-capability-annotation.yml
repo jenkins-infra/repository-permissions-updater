@@ -1,5 +1,6 @@
 ---
 name: "capability-annotation"
+github: "jenkinsci/capability-annotation"
 paths:
 - "io/jenkins/blueocean/rest/annotation/capability-annotation"
 developers:

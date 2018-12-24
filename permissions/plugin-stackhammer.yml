@@ -1,5 +1,6 @@
 ---
 name: "stackhammer"
+github: "jenkinsci/stackhammer-plugin"
 paths:
 - "org/cloudsmith/hammer/jenkins/stackhammer"
 - "org/jenkins-ci/plugins/stackhammer"

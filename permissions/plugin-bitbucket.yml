@@ -1,5 +1,6 @@
 ---
 name: "bitbucket"
+github: "jenkinsci/bitbucket-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitbucket"
 developers:
@@ -7,3 +8,4 @@ developers:
 - "imod"
 - "fbelzunc"
 - "ndeloof"
+- "codemonky"

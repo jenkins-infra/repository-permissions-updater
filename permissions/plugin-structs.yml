@@ -1,8 +1,14 @@
 ---
 name: "structs"
+github: "jenkinsci/structs-plugin"
 paths:
 - "org/jenkins-ci/plugins/structs"
 developers:
 - "jglick"
 - "kohsuke"
 - "oleg_nenashev"
+- "stephenconnolly"
+- "abayer"
+- "svanoort"
+- "dnusbaum"
+- "rsandell"

@@ -1,5 +1,6 @@
 ---
 name: "dockerhub-notification"
+github: "jenkinsci/dockerhub-notification-plugin"
 paths:
 - "org/jenkins-ci/plugins/dockerhub-notification"
 developers:

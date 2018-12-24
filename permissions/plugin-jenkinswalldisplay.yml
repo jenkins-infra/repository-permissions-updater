@@ -1,5 +1,6 @@
 ---
 name: "jenkinswalldisplay"
+github: "jenkinsci/walldisplay-plugin"
 paths:
 - "org/jenkins-ci/plugins/jenkinswalldisplay"
 developers:

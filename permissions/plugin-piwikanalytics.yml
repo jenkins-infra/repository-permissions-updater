@@ -1,5 +1,6 @@
 ---
 name: "piwikanalytics"
+github: "jenkinsci/piwikanalytics-plugin"
 paths:
 - "org/jenkins-ci/plugins/piwikanalytics"
 developers:

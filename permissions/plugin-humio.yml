@@ -1,0 +1,7 @@
+---
+name: "humio"
+github: "jenkinsci/humio-plugin"
+paths:
+- "org/jenkins-ci/plugins/humio"
+developers:
+- "anagrius"

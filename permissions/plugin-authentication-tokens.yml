@@ -1,5 +1,6 @@
 ---
 name: "authentication-tokens"
+github: "jenkinsci/authentication-tokens-plugin"
 paths:
 - "org/jenkins-ci/plugins/authentication-tokens"
 developers:

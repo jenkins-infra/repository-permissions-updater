@@ -1,5 +1,6 @@
 ---
 name: "kubernetes-ci"
+github: "jenkinsci/kubernetes-ci-plugin"
 paths:
 - "com/elasticbox/jenkins-ci/plugins/kubernetes-ci"
 developers:

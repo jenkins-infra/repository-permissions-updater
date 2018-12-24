@@ -1,5 +1,6 @@
 ---
 name: "loadfocus-loadtest"
+github: "jenkinsci/loadfocus-loadtest-plugin"
 paths:
 - "com/loadfocus/loadfocus-loadtest"
 developers:

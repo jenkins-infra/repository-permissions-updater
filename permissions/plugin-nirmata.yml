@@ -1,0 +1,7 @@
+---
+name: "nirmata"
+github: "jenkinsci/nirmata-plugin"
+paths:
+- "io/jenkins/plugins/nirmata"
+developers:
+- "dtoledo"

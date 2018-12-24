@@ -1,0 +1,7 @@
+---
+name: "android-signing"
+github: "jenkinsci/android-signing-plugin"
+paths:
+- "org/jenkins-ci/plugins/android-signing"
+developers:
+- "restjohn"

@@ -1,5 +1,6 @@
 ---
 name: "extra-columns"
+github: "jenkinsci/extra-columns-plugin"
 paths:
 - "org/jenkins-ci/plugins/extra-columns"
 developers:

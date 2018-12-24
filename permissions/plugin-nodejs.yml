@@ -1,5 +1,6 @@
 ---
 name: "nodejs"
+github: "jenkinsci/nodejs-plugin"
 paths:
 - "org/jenkins-ci/plugins/nodejs"
 developers:

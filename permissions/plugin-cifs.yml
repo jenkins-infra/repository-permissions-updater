@@ -1,5 +1,6 @@
 ---
 name: "cifs"
+github: "jenkinsci/cifs-plugin"
 paths:
 - "org/jenkins-ci/plugins/cifs"
 - "org/jvnet/hudson/plugins/cifs"

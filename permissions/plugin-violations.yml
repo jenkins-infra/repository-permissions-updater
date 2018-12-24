@@ -1,5 +1,6 @@
 ---
 name: "violations"
+github: "jenkinsci/violations-plugin"
 paths:
 - "org/jenkins-ci/plugins/violations"
 - "org/jvnet/hudson/plugins/violations"

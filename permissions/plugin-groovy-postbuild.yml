@@ -1,5 +1,6 @@
 ---
 name: "groovy-postbuild"
+github: "jenkinsci/groovy-postbuild-plugin"
 paths:
 - "org/jvnet/hudson/plugins/groovy-postbuild"
 developers:

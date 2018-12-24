@@ -1,5 +1,6 @@
 ---
 name: "chucknorris"
+github: "jenkinsci/chucknorris-plugin"
 paths:
 - "org/jvnet/hudson/plugins/chucknorris"
 developers:

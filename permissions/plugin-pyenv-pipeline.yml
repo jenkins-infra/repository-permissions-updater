@@ -1,0 +1,7 @@
+---
+name: "pyenv-pipeline"
+github: "jenkinsci/pyenv-pipeline-plugin"
+paths:
+- "org/jenkins-ci/plugins/pyenv-pipeline"
+developers:
+- "cstarner"

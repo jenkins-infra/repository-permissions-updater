@@ -1,5 +1,6 @@
 ---
 name: "blueocean-jwt"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-jwt"
 developers:
@@ -7,4 +8,6 @@ developers:
 - "vivek"
 - "tfennelly"
 - "kzantow"
+- "davidbees"
+- "halkeye"
 - "tscherler"

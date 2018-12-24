@@ -1,5 +1,7 @@
 ---
 name: "publish-over-cifs"
+github: "jenkinsci/publish-over-cifs-plugin"
 paths:
 - "org/jenkins-ci/plugins/publish-over-cifs"
-developers: []
+developers:
+- "slide_o_mix"

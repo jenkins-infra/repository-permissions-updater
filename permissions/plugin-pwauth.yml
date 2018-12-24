@@ -1,5 +1,6 @@
 ---
 name: "pwauth"
+github: "jenkinsci/pwauth-plugin"
 paths:
 - "org/jvnet/hudson/plugins/pwauth"
 developers: []

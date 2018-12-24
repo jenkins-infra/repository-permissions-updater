@@ -1,5 +1,6 @@
 ---
 name: "aqua-security-scanner"
+github: "jenkinsci/aqua-security-scanner-plugin"
 paths:
 - "org/jenkins-ci/plugins/aqua-security-scanner"
 developers:

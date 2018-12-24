@@ -1,7 +1,8 @@
 ---
 name: "tinfoil-scan"
+github: "jenkinsci/tinfoil-security-plugin"
 paths:
 - "com/tinfoilsecurity/plugins/tinfoil-scan"
 developers:
-- "angelman"
 - "bsedat"
+- "shanewilton"

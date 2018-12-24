@@ -1,5 +1,6 @@
 ---
 name: "chatwork"
+github: "jenkinsci/chatwork-plugin"
 paths:
 - "com/vexus2/jenkins/chatwork/chatwork"
 - "org/jenkins-ci/plugins/chatwork"

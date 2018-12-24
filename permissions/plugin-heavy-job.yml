@@ -1,5 +1,6 @@
 ---
 name: "heavy-job"
+github: "jenkinsci/heavy-job-plugin"
 paths:
 - "org/jenkins-ci/plugins/heavy-job"
 developers: []

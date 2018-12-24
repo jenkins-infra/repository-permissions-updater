@@ -1,5 +1,6 @@
 ---
 name: "tepco"
+github: "jenkinsci/tepco-plugin"
 paths:
 - "org/jenkins-ci/plugins/tepco"
 developers: []

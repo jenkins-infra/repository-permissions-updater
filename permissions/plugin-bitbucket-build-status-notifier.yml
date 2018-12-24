@@ -1,5 +1,6 @@
 ---
 name: "bitbucket-build-status-notifier"
+github: "jenkinsci/bitbucket-build-status-notifier-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitbucket-build-status-notifier"
 developers:

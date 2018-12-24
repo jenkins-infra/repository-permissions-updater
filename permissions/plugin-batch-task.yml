@@ -1,5 +1,6 @@
 ---
 name: "batch-task"
+github: "jenkinsci/batch-task-plugin"
 paths:
 - "org/jenkins-ci/plugins/batch-task"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "kubernetes-pipeline-project"
+github: "jenkinsci/kubernetes-pipeline-plugin"
 paths:
 - "io/fabric8/kubernetes-pipeline-project"
 developers:

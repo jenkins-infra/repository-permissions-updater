@@ -1,5 +1,6 @@
 ---
 name: "testopia"
+github: "jenkinsci/testopia-plugin"
 paths:
 - "jenkins/plugins/testopia/testopia"
 developers: []

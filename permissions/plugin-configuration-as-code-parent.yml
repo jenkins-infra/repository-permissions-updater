@@ -1,0 +1,8 @@
+---
+name: "parent"
+github: "jenkinsci/configuration-as-code-plugin"
+paths:
+- "io/jenkins/configuration-as-code/parent"
+developers:
+- "praqma"
+- "ndeloof"

@@ -1,5 +1,6 @@
 ---
 name: "beer"
+github: "jenkinsci/beer-plugin"
 paths:
 - "org/jenkins-ci/plugins/beer"
 developers: []

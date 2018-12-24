@@ -1,5 +1,6 @@
 ---
 name: "PUCM"
+github: "jenkinsci/pucm-plugin"
 paths:
 - "org/jvnet/hudson/plugins/PUCM"
 developers: []

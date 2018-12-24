@@ -1,5 +1,6 @@
 ---
 name: "graphiteIntegrator"
+github: "jenkinsci/graphite-plugin"
 paths:
 - "org/jenkins-ci/plugins/graphiteIntegrator"
 developers:

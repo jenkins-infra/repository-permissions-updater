@@ -1,0 +1,7 @@
+---
+name: "clever-cloud"
+github: "jenkinsci/clever-cloud-plugin"
+paths:
+- "io/jenkins/plugins/clever-cloud"
+developers:
+- "ndeloof"

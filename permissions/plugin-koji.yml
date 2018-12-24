@@ -1,5 +1,6 @@
 ---
 name: "koji"
+github: "jenkinsci/koji-plugin"
 paths:
 - "org/jenkins-ci/plugins/koji"
 developers:

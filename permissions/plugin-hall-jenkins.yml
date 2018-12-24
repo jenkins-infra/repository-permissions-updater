@@ -1,5 +1,6 @@
 ---
 name: "hall-jenkins"
+github: "jenkinsci/hall-plugin"
 paths:
 - "com/companyline/hall/jenkins/hall-jenkins"
 developers: []

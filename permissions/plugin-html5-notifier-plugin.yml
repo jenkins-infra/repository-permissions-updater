@@ -1,5 +1,6 @@
 ---
 name: "html5-notifier-plugin"
+github: "jenkinsci/html5-notifier-plugin"
 paths:
 - "org/jenkins-ci/plugins/html5-notifier-plugin"
 developers:

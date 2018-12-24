@@ -1,0 +1,8 @@
+---
+name: "soapui-pro-functional-testing"
+github: "jenkinsci/soapui-pro-functional-testing-plugin"
+paths:
+- "org/jenkins-ci/plugins/soapui-pro-functional-testing"
+developers:
+- "olesia_mitina"
+- "ilyaavdeev"

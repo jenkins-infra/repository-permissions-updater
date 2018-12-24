@@ -1,5 +1,6 @@
 ---
 name: "cron_column"
+github: "jenkinsci/cron_column-plugin"
 paths:
 - "org/jenkins-ci/plugins/cron_column"
 developers:

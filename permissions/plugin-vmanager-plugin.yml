@@ -1,5 +1,6 @@
 ---
 name: "vmanager-plugin"
+github: "jenkinsci/vmanager-plugin"
 paths:
 - "org/jenkins-ci/plugins/vmanager-plugin"
 developers:

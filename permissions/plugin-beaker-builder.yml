@@ -1,5 +1,6 @@
 ---
 name: "beaker-builder"
+github: "jenkinsci/beaker-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/beaker-builder"
 developers:

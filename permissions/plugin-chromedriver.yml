@@ -1,5 +1,6 @@
 ---
 name: "chromedriver"
+github: "jenkinsci/chromedriver-plugin"
 paths:
 - "org/jenkins-ci/plugins/chromedriver"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "jacoco"
+github: "jenkinsci/jacoco-plugin"
 paths:
 - "org/jenkins-ci/plugins/jacoco"
 developers:

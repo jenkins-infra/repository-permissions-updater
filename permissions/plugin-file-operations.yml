@@ -1,5 +1,6 @@
 ---
 name: "file-operations"
+github: "jenkinsci/file-operations-plugin"
 paths:
 - "sp/sd/file-operations"
 developers:

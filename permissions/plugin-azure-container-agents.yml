@@ -1,0 +1,9 @@
+---
+name: "azure-container-agents"
+github: "jenkinsci/azure-container-agents-plugin"
+paths:
+- "org/jenkins-ci/plugins/azure-container-agents"
+developers:
+- "chenkennt"
+- "arieshout"
+- "azure_devops"

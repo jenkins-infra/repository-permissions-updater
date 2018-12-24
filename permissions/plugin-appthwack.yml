@@ -1,5 +1,6 @@
 ---
 name: "appthwack"
+github: "jenkinsci/appthwack-plugin"
 paths:
 - "org/jenkins-ci/plugins/appthwack"
 developers:

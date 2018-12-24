@@ -1,5 +1,6 @@
 ---
 name: "chrome-frame-plugin"
+github: "jenkinsci/chrome-frame-plugin"
 paths:
 - "org/jenkins-ci/plugins/chrome-frame-plugin"
 developers: []

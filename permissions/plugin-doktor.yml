@@ -1,0 +1,7 @@
+---
+name: "doktor"
+github: "jenkinsci/doktor-plugin"
+paths:
+- "by/dev/madhead/doktor/doktor"
+developers:
+- "madhead"

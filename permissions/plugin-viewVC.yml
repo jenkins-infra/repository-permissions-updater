@@ -1,5 +1,6 @@
 ---
 name: "viewVC"
+github: "jenkinsci/viewVC-plugin"
 paths:
 - "org/jenkins-ci/plugins/viewVC"
 - "org/jvnet/hudson/plugins/viewVC"

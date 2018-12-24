@@ -1,6 +1,13 @@
 ---
 name: "sse-gateway"
+github: "jenkinsci/sse-gateway-plugin"
 paths:
 - "org/jenkins-ci/plugins/sse-gateway"
 developers:
+- "michaelneale"
+- "vivek"
 - "tfennelly"
+- "kzantow"
+- "tscherler"
+- "jamesdumay"
+- "olamy"

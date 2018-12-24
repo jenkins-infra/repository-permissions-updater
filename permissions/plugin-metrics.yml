@@ -1,7 +1,10 @@
 ---
 name: "metrics"
+github: "jenkinsci/metrics-plugin"
 paths:
 - "org/jenkins-ci/plugins/metrics"
 developers:
 - "kohsuke"
 - "stephenconnolly"
+- "dnusbaum"
+- "sbadger"

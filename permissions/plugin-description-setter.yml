@@ -1,5 +1,6 @@
 ---
 name: "description-setter"
+github: "jenkinsci/description-setter-plugin"
 paths:
 - "org/jenkins-ci/plugins/description-setter"
 - "org/jvnet/hudson/plugins/description-setter"

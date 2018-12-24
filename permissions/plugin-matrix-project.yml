@@ -1,5 +1,6 @@
 ---
 name: "matrix-project"
+github: "jenkinsci/matrix-project-plugin"
 paths:
 - "org/jenkins-ci/plugins/matrix-project"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "jenkins-cloudformation-plugin"
+github: "jenkinsci/jenkins-cloudformation-plugin"
 paths:
 - "org/jenkins-ci/plugins/jenkins-cloudformation-plugin"
 developers:

@@ -1,0 +1,9 @@
+---
+name: "ssh-steps"
+github: "jenkinsci/ssh-steps-plugin"
+paths:
+- "org/jenkins-ci/plugins/ssh-steps"
+developers:
+- "nrayapati"
+- "ghenkes"
+- "wuchenwang"

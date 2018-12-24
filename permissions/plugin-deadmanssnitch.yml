@@ -1,5 +1,6 @@
 ---
 name: "deadmanssnitch"
+github: "jenkinsci/deadmanssnitch-plugin"
 paths:
 - "org/jenkins-ci/plugins/deadmanssnitch"
 developers:

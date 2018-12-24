@@ -1,5 +1,6 @@
 ---
 name: "azure-batch-parallel"
+github: "jenkinsci/azure-batch-parallel-plugin"
 paths:
 - "com/microsoft/azurebatch/azure-batch-parallel"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "spotinst"
+github: "jenkinsci/spotinst-plugin"
 paths:
 - "org/jenkins-ci/plugins/spotinst"
 developers:

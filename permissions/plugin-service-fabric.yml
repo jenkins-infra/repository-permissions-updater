@@ -1,0 +1,7 @@
+---
+name: "service-fabric"
+github: "jenkinsci/service-fabric-plugin"
+paths:
+- "org/jenkins-ci/plugins/service-fabric"
+developers:
+- "rapatchi"

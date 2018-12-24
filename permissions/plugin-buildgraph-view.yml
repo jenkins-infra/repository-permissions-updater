@@ -1,5 +1,6 @@
 ---
 name: "buildgraph-view"
+github: "jenkinsci/buildgraph-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/buildgraph-view"
 developers:

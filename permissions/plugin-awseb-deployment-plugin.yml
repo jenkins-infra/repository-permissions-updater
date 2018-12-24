@@ -1,5 +1,6 @@
 ---
 name: "awseb-deployment-plugin"
+github: "jenkinsci/awseb-deployment-plugin"
 paths:
 - "br/com/ingenieux/jenkins/plugins/awseb-deployment-plugin"
 developers:

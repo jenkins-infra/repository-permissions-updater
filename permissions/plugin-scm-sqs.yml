@@ -1,5 +1,6 @@
 ---
 name: "scm-sqs"
+github: "jenkinsci/scm-sqs-plugin"
 paths:
 - "io/relution/jenkins/scm-sqs"
 developers:

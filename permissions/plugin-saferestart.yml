@@ -1,5 +1,6 @@
 ---
 name: "saferestart"
+github: "jenkinsci/saferestart-plugin"
 paths:
 - "org/jenkins-ci/plugins/saferestart"
 developers: []

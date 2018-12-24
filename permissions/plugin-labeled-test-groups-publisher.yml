@@ -1,6 +1,7 @@
 ---
 name: "labeled-test-groups-publisher"
+github: "jenkinsci/labeled-test-groups-publisher-plugin"
 paths:
-- "org/jvnet/hudson/plugins/labeled-test-groups-publisher"
+- "org/jenkins-ci/plugins/labeled-test-groups-publisher"
 developers:
 - "lbordowitz"

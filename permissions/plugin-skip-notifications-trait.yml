@@ -1,0 +1,7 @@
+---
+name: "skip-notifications-trait"
+github: "jenkinsci/skip-notifications-trait-plugin"
+paths:
+- "org/jenkins-ci/plugins/skip-notifications-trait"
+developers:
+- "alex_dubrouski"

@@ -1,5 +1,6 @@
 ---
 name: "websocket"
+github: "jenkinsci/websocket-plugin"
 paths:
 - "org/codefirst/jenkins/wsnotifier/websocket"
 developers: []

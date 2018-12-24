@@ -1,5 +1,6 @@
 ---
 name: "dumpling"
+github: "jenkinsci/dumpling-plugin"
 paths:
 - "org/jenkins-ci/plugins/dumpling"
 developers:

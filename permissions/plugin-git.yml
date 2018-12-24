@@ -1,5 +1,6 @@
 ---
 name: "git"
+github: "jenkinsci/git-plugin"
 paths:
 - "org/jenkins-ci/plugins/git"
 - "org/jenkinsci/plugins/git"

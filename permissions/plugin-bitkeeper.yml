@@ -1,5 +1,6 @@
 ---
 name: "bitkeeper"
+github: "jenkinsci/bitkeeper-plugin"
 paths:
 - "org/jenkins-ci/plugins/bitkeeper"
 developers:

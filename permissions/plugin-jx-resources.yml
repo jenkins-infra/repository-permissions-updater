@@ -1,0 +1,9 @@
+---
+name: "jx-resources"
+github: "jenkinsci/jx-resources-plugin"
+paths:
+- "org/jenkins-ci/plugins/jx-resources"
+developers:
+- "jstrachan"
+- "jrawlings"
+- "jenkinsxbot"

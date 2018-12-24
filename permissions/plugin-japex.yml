@@ -1,5 +1,6 @@
 ---
 name: "japex"
+github: "jenkinsci/japex-plugin"
 paths:
 - "org/jvnet/hudson/plugins/japex"
 developers: []

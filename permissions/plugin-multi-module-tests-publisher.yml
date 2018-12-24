@@ -1,5 +1,6 @@
 ---
 name: "multi-module-tests-publisher"
+github: "jenkinsci/multi-module-tests-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/multi-module-tests-publisher"
 developers:

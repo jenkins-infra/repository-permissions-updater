@@ -1,7 +1,9 @@
 ---
 name: "kubernetes"
+github: "jenkinsci/kubernetes-plugin"
 paths:
 - "org/csanchez/jenkins/plugins/kubernetes"
 developers:
 - "csanchez"
 - "ndeloof"
+- "vlatombe"

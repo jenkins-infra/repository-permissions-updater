@@ -1,0 +1,7 @@
+---
+name: "publish-to-bitbucket"
+github: "jenkinsci/publish-to-bitbucket-plugin"
+paths:
+- "org/jenkins-ci/plugins/publish-to-bitbucket"
+developers:
+- "himindz"

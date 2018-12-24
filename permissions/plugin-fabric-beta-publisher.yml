@@ -1,5 +1,6 @@
 ---
 name: "fabric-beta-publisher"
+github: "jenkinsci/fabric-beta-publisher-plugin"
 paths:
 - "egor-n/fabric-beta-publisher"
 developers:

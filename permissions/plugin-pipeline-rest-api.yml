@@ -1,5 +1,6 @@
 ---
 name: "pipeline-rest-api"
+github: "jenkinsci/pipeline-stage-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-stage-view/pipeline-rest-api"
 developers:

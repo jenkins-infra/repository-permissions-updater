@@ -1,5 +1,6 @@
 ---
 name: "ecutest"
+github: "jenkinsci/ecutest-plugin"
 paths:
 - "de/tracetronic/jenkins/plugins/ecutest"
 developers:

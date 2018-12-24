@@ -1,6 +1,9 @@
 ---
 name: "semantic-versioning-plugin"
+github: "jenkinsci/semantic-versioning-plugin"
 paths:
 - "org/jenkins-ci/plugins/semantic-versioning-plugin"
 developers:
 - "ciroque"
+- "schristou"
+- "allan_burdajewicz"

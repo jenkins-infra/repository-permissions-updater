@@ -1,7 +1,9 @@
 ---
 name: "periodic-reincarnation"
+github: "jenkinsci/periodic-reincarnation-plugin"
 paths:
 - "org/jenkins-ci/plugins/periodic-reincarnation"
 developers:
 - "boev"
 - "stefanbrausch"
+- "jochenafuerbacher"

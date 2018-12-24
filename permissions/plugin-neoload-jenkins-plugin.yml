@@ -1,5 +1,6 @@
 ---
 name: "neoload-jenkins-plugin"
+github: "jenkinsci/neoload-plugin"
 paths:
 - "org/jenkins-ci/plugins/neoload-jenkins-plugin"
 developers:

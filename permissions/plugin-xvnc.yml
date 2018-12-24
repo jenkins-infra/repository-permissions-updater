@@ -1,5 +1,6 @@
 ---
 name: "xvnc"
+github: "jenkinsci/xvnc-plugin"
 paths:
 - "org/jenkins-ci/plugins/xvnc"
 developers:

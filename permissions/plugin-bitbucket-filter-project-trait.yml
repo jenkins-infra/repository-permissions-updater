@@ -1,0 +1,7 @@
+---
+name: "bitbucket-filter-project-trait"
+github: "jenkinsci/bitbucket-filter-project-trait-plugin"
+paths:
+- "org/jenkins-ci/plugins/bitbucket-filter-project-trait"
+developers:
+- "michelzanini"

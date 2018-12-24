@@ -1,5 +1,6 @@
 ---
 name: "ftppublisher"
+github: "jenkinsci/ftppublisher-plugin"
 paths:
 - "org/jvnet/hudson/plugins/ftppublisher"
 developers: []

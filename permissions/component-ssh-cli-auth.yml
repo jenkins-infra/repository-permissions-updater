@@ -1,5 +1,6 @@
 ---
 name: "ssh-cli-auth"
+github: "jenkinsci/ssh-cli-auth-module"
 paths:
 - "org/jenkins-ci/modules/ssh-cli-auth"
 developers:

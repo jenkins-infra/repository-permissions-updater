@@ -1,6 +1,8 @@
 ---
 name: "docker-traceability-parent"
+github: "jenkinsci/docker-traceability-plugin"
 paths:
 - "org/jenkins-ci/plugins/docker-traceability-parent"
 developers:
 - "oleg_nenashev"
+- "ataylor"

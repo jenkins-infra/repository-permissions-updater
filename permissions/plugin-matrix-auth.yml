@@ -1,7 +1,7 @@
 ---
 name: "matrix-auth"
+github: "jenkinsci/matrix-auth-plugin"
 paths:
 - "org/jenkins-ci/plugins/matrix-auth"
 developers:
-- "jglick"
-- "kohsuke"
+- "danielbeck"

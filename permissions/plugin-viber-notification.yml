@@ -1,0 +1,7 @@
+---
+name: "viber-notification"
+github: "jenkinsci/viber-notification-plugin"
+paths:
+- "org/jenkins-ci/plugins/viber-notification"
+developers:
+- "vpuranik"

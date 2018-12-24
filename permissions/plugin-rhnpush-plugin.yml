@@ -1,5 +1,6 @@
 ---
 name: "rhnpush-plugin"
+github: "jenkinsci/rhnpush-plugin"
 paths:
 - "org/jenkins-ci/plugins/rhnpush-plugin"
 developers:

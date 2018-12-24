@@ -1,5 +1,6 @@
 ---
 name: "blueocean-autofavorite"
+github: "jenkinsci/blueocean-autofavorite-plugin"
 paths:
 - "org/jenkins-ci/plugins/blueocean-autofavorite"
 developers:

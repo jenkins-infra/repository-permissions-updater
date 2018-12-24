@@ -1,8 +1,9 @@
 ---
 name: "jenkins-multijob-plugin"
+github: "jenkinsci/tikal-multijob-plugin"
 paths:
 - "org/jenkins-ci/plugins/jenkins-multijob-plugin"
 developers:
 - "hagzag"
 - "yorammi"
-
+- "cohencil"

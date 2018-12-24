@@ -1,5 +1,6 @@
 ---
 name: "doclinks"
+github: "jenkinsci/doclinks-plugin"
 paths:
 - "org/jenkinsci/plugins/doclinks"
 - "org/jvnet/hudson/plugins/doclinks"

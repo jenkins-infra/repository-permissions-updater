@@ -1,7 +1,10 @@
 ---
 name: "bouncycastle-api"
+github: "jenkinsci/bouncycastle-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/bouncycastle-api"
 developers:
 - "alobato"
 - "stephenconnolly"
+- "dnusbaum"
+- "jthompson"

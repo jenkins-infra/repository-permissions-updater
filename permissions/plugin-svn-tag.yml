@@ -1,5 +1,6 @@
 ---
 name: "svn-tag"
+github: "jenkinsci/svn-tag-plugin"
 paths:
 - "org/jenkins-ci/plugins/svn-tag"
 developers:

@@ -1,7 +1,8 @@
 ---
 name: "docker-custom-build-environment"
+github: "jenkinsci/docker-custom-build-environment-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/docker-custom-build-environment"
 developers:
-- "ndeloof"
 - "vlatombe"
+- "jonhermansen"

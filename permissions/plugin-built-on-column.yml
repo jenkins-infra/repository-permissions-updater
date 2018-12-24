@@ -1,5 +1,6 @@
 ---
 name: "built-on-column"
+github: "jenkinsci/builton-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/built-on-column"
 developers: []

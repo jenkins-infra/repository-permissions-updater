@@ -1,5 +1,6 @@
 ---
 name: "deploygate-plugin"
+github: "jenkinsci/deploygate-plugin"
 paths:
 - "org/jenkins-ci/plugins/deploygate/deploygate-plugin"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "hyper-commons"
+github: "jenkinsci/hyper-commons-plugin"
 paths:
 - "sh/hyper/plugins/hyper-commons"
 developers:

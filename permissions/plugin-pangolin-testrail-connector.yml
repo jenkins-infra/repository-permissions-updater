@@ -1,0 +1,8 @@
+---
+name: "pangolin-testrail-connector"
+github: "jenkinsci/pangolin-testrail-connector-plugin"
+paths:
+- "org/jenkins-ci/plugins/pangolin-testrail-connector"
+developers:
+- "agiletestware"
+- "sergey_oplavin"

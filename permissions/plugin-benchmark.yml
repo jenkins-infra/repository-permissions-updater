@@ -1,0 +1,7 @@
+---
+name: "benchmark"
+github: "jenkinsci/benchmark-plugin"
+paths:
+- "org/jenkins-ci/plugins/benchmark"
+developers:
+- "damercie"

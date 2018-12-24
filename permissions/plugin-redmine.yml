@@ -1,5 +1,6 @@
 ---
 name: "redmine"
+github: "jenkinsci/redmine-plugin"
 paths:
 - "org/jenkins-ci/plugins/redmine"
 developers:

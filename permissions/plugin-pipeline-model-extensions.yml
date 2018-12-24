@@ -1,0 +1,11 @@
+---
+name: "pipeline-model-extensions"
+github: "jenkinsci/pipeline-model-definition-plugin"
+paths:
+- "org/jenkinsci/plugins/pipeline-model-extensions"
+developers:
+- "abayer"
+- "oleg_nenashev"
+- "stephenconnolly"
+- "rsandell"
+- "svanoort"

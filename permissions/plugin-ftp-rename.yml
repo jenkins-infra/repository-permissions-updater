@@ -1,0 +1,7 @@
+---
+name: "ftp-rename"
+github: "jenkinsci/ftp-rename-plugin"
+paths:
+- "org/jenkins-ci/plugins/ftp-rename"
+developers:
+- "bruno_cantisano"

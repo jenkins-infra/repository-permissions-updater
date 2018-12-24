@@ -1,5 +1,6 @@
 ---
 name: "eclipse-update-site"
+github: "jenkinsci/eclipse-update-site-plugin"
 paths:
 - "org/jenkins-ci/plugins/eclipse-update-site"
 developers: []

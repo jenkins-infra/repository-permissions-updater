@@ -1,5 +1,6 @@
 ---
 name: "build-timeout"
+github: "jenkinsci/build-timeout-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-timeout"
 developers:

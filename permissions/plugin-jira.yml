@@ -1,5 +1,6 @@
 ---
 name: "jira"
+github: "jenkinsci/jira-plugin"
 paths:
 - "org/jenkins-ci/plugins/jira"
 - "org/jvnet/hudson/plugins/jira"

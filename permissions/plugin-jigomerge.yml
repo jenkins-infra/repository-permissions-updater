@@ -1,5 +1,6 @@
 ---
 name: "jigomerge"
+github: "jenkinsci/jigomerge-plugin"
 paths:
 - "org/jenkins-ci/plugins/jigomerge"
 developers:

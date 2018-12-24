@@ -1,5 +1,6 @@
 ---
 name: "saml"
+github: "jenkinsci/saml-plugin"
 paths:
 - "org/jenkins-ci/plugins/saml"
 developers:

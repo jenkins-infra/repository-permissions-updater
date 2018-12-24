@@ -1,0 +1,7 @@
+---
+name: "apifortress"
+github: "jenkinsci/apifortress-plugin"
+paths:
+- "com/apifortress/jenkins/apifortress"
+developers:
+- "theirish81"

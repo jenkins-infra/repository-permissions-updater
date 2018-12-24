@@ -1,5 +1,6 @@
 ---
 name: "hyper-build-step"
+github: "jenkinsci/hyper-build-step-plugin"
 paths:
 - "sh/hyper/plugins/hyper-build-step"
 developers:

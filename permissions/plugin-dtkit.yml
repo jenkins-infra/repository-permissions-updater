@@ -1,5 +1,6 @@
 ---
 name: "dtkit"
+github: "jenkinsci/dtkit-plugin"
 paths:
 - "org/jenkins-ci/plugins/dtkit"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "postbuild-task"
+github: "jenkinsci/postbuild-task-plugin"
 paths:
 - "org/jvnet/hudson/plugins/postbuild-task"
 developers:

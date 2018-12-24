@@ -1,0 +1,7 @@
+---
+name: "compuware-topaz-for-total-test"
+github: "jenkinsci/compuware-topaz-for-total-test-plugin"
+paths:
+- "com/compuware/jenkins/compuware-topaz-for-total-test"
+developers:
+- "efhjnw0"

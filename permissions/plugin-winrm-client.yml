@@ -1,0 +1,7 @@
+---
+name: "winrm-client"
+github: "jenkinsci/winrm-client-plugin"
+paths:
+- "com/spcow/plugins/winrm-client"
+developers:
+- "pskumar448"

@@ -1,5 +1,6 @@
 ---
 name: "translation"
+github: "jenkinsci/translation-plugin"
 paths:
 - "org/jenkins-ci/plugins/translation"
 developers:

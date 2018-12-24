@@ -1,5 +1,6 @@
 ---
 name: "job-log-logger-plugin"
+github: "jenkinsci/job-log-logger-plugin"
 paths:
 - "org/jenkins-ci/plugins/job-log-logger-plugin"
 developers: []

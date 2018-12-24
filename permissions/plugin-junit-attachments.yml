@@ -1,7 +1,9 @@
 ---
 name: "junit-attachments"
+github: "jenkinsci/junit-attachments-plugin"
 paths:
 - "org/jenkins-ci/plugins/junit-attachments"
 - "org/jvnet/hudson/plugins/junit-attachments"
 developers:
 - "abayer"
+- "jglick"

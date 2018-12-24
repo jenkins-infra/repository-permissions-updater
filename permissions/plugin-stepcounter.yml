@@ -1,5 +1,6 @@
 ---
 name: "stepcounter"
+github: "jenkinsci/stepcounter-plugin"
 paths:
 - "org/jenkins-ci/plugins/stepcounter"
 developers:

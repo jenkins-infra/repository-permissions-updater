@@ -1,5 +1,6 @@
 ---
 name: "threadfix"
+github: "jenkinsci/threadfix-plugin"
 paths:
 - "me/automationdomination/threadfix"
 - "org/jenkins-ci/plugins/threadfix"

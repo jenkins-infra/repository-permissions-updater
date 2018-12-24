@@ -1,5 +1,6 @@
 ---
 name: "monitoring"
+github: "jenkinsci/monitoring-plugin"
 paths:
 - "org/jvnet/hudson/plugins/monitoring"
 developers:
