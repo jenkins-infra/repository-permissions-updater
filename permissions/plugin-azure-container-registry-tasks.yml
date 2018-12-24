@@ -5,6 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/azure-container-registry-tasks"
 developers:
 - "yuwzho"
-- "gavinfish"
-- "yungezz"
+- "jieshe"
+- "yungez"
 - "azure_devops"
