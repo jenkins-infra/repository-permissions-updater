@@ -1,3 +1,6 @@
+# Dynamically generated each time
+json/
+
 # Apache Maven
 target/
 
