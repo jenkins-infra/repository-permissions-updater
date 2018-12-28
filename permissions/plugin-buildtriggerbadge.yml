@@ -5,4 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/buildtriggerbadge"
 developers:
 - "batmat"
-- "non-existing-user"
