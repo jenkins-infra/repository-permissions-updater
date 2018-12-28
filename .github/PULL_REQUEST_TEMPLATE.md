@@ -13,6 +13,7 @@ Make sure to implement all relevant entries (see section headers to when they ap
 ### Always
 
 - [ ] Add link to plugin/component Git repository in description above
+- [ ] `./update-permissions.sh` runs without error locally after your change
 
 ### For a newly hosted plugin only
 
