@@ -1,0 +1,7 @@
+---
+name: "lambdatest-automation"
+github: "jenkinsci/lambdatest-automation-plugin"
+paths:
+- "org.jenkins-ci.plugins"
+developers:
+- "lambdatest"
