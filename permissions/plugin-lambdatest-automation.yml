@@ -4,5 +4,4 @@ github: "jenkinsci/lambdatest-automation-plugin"
 paths:
 - "org.jenkins-ci.plugins"
 developers:
-- "psych0der"
-- "sushobhit-lt"
+- "lambdatest"
