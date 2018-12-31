@@ -4,5 +4,5 @@ github: "jenkinsci/sofy-ai-plugin"
 paths:
 - "io/jenkins/plugins/sofy-ai"
 developers:
-- "waqas_sofy"
+- "sofyai"
 - "waqasisme"
