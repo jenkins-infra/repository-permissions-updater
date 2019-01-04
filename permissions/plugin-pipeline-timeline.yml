@@ -1,0 +1,7 @@
+---
+name: "pipeline-timeline"
+github: "jenkinsci/pipeline-timeline-plugin"
+paths:
+- "org/jenkins-ci/plugins/pipeline-timeline"
+developers:
+- "mcataford"
