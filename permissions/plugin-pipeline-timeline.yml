@@ -2,6 +2,6 @@
 name: "pipeline-timeline"
 github: "jenkinsci/pipeline-timeline-plugin"
 paths:
-- "org/jenkins-ci/plugins/pipeline-timeline"
+- "io/jenkins/plugins/pipeline-timeline"
 developers:
 - "mcataford"
