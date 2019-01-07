@@ -5,3 +5,4 @@ paths:
 - "io/jenkins/plugins/pipeline-timeline"
 developers:
 - "mcataford"
+- "tophat"
