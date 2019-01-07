@@ -1,0 +1,10 @@
+---
+name: "audit-log"
+github: "jenkinsci/audit-log-plugin"
+paths:
+  - "org/jenkins-ci/plugins/audit-log"
+developers:
+- "jvz"
+- "jthompson"
+- "lathasekar"
+- "mide"
