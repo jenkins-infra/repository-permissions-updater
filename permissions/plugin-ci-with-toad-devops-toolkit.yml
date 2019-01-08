@@ -5,3 +5,4 @@ paths:
 - "io/jenkins/plugins/ci-with-toad-devops-toolkit"
 developers:
 - "hamermike"
+- "kevinmdalton"
