@@ -1,0 +1,7 @@
+---
+name: "rb"
+github: "jenkinsci/rb-plugin"
+paths:
+- "org/jenkins-ci/plugins/rb"
+developers:
+- "trowbrds"
