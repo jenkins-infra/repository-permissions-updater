@@ -1,0 +1,7 @@
+---
+name: "cons3rt"
+github: "jenkinsci/cons3rt-plugin"
+paths:
+- "org/jenkins-ci/plugins/cons3rt"
+developers:
+- "cons3rt"
