@@ -3,5 +3,7 @@ name: "ca-apm"
 github: "jenkinsci/ca-apm-plugin"
 paths:
 - "org/jenkins-ci/plugins/ca-apm"
+#added new developer
 developers:
 - "srikns"
+- "pramodanarase"
