@@ -3,7 +3,12 @@ name: "ca-apm"
 github: "jenkinsci/ca-apm-plugin"
 paths:
 - "org/jenkins-ci/plugins/ca-apm"
-- "org/jenkins-ci/plugins/ca-apm-plugin"
+- "org/jenkins-ci/plugins/ca-apm/ca-apm-api"
+- "org/jenkins-ci/plugins/ca-apm/ca-apm-core"
+- "org/jenkins-ci/plugins/ca-apm/ca-apm-default-strategy"
+- "org/jenkins-ci/plugins/ca-apm/ca-apm-dist"
+- "org/jenkins-ci/plugins/ca-apm/ca-apm-plugin"
+
 #added new developer
 developers:
 - "srikns"
