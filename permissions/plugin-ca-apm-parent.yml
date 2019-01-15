@@ -1,9 +1,8 @@
 ---
-name: "ca-apm"
+name: "ca-apm-parent"
 github: "jenkinsci/ca-apm-plugin"
 paths:
-- "org/jenkins-ci/plugins/ca-apm"
-#added new developer
+- "org/jenkins-ci/plugins/ca-apm/ca-apm-parent"
 developers:
 - "srikns"
 - "pramodanarase"

@@ -1,0 +1,8 @@
+---
+name: "ca-apm-default-strategy"
+github: "jenkinsci/ca-apm-plugin"
+paths:
+- "org/jenkins-ci/plugins/ca-apm/ca-apm-default-strategy"
+developers:
+- "srikns"
+- "pramodanarase"
