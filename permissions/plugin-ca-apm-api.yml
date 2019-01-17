@@ -1,11 +1,8 @@
 ---
-#artifactId
 name: "ca-apm-api"
 github: "jenkinsci/ca-apm-plugin"
-#groupId + artifcatId
 paths:
 - "org/jenkins-ci/plugins/ca-apm/ca-apm-api"
-#added new developer
 developers:
 - "srikns"
 - "pramodanarase"
