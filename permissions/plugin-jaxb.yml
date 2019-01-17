@@ -3,6 +3,4 @@ name: "jaxb"
 github: "jenkinsci/jaxb-plugin"
 paths:
 - "io/jenkins/plugins/jaxb"
-developers:
-- "batmat"
-- "oleg_nenashev"
+developers: []
