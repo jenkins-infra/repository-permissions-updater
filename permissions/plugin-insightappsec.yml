@@ -1,0 +1,7 @@
+---
+name: "insightappsec"
+github: "jenkinsci/insightappsec-plugin"
+paths:
+- "io/jenkins/plugins/insightappsec"
+developers:
+- "ias_developer"
