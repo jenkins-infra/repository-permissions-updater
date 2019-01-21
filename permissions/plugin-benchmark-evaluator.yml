@@ -5,4 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/benchmark-evaluator"
 developers:
 - "lehmann_fabian"
-- "martingrambow"
