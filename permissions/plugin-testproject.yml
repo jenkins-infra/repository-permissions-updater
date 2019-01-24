@@ -1,0 +1,7 @@
+---
+name: "testproject"
+github: "jenkinsci/testproject-plugin"
+paths:
+- "org/jenkins-ci/plugins/testproject"
+developers:
+- "testproject"
