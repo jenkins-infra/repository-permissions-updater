@@ -4,6 +4,5 @@ github: "jenkinsci/google-oauth-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-oauth-plugin"
 developers:
-- "astroilov"
-- "mattmoor"
-- "orrc"
+- "craigbarber"
+- "evanbrown"
