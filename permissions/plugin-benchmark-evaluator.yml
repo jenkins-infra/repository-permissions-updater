@@ -3,6 +3,7 @@ name: "benchmark-evaluator"
 github: "jenkinsci/benchmark-evaluator-plugin"
 paths:
 - "io/jenkins/plugins/benchmark-evaluator"
+- "org/jenkins-ci/plugins/benchmark-evaluator"
 developers:
 - "lehmann_fabian"
 - "martingrambow"
