@@ -4,6 +4,8 @@ github: "jenkinsci/lib-version-number"
 paths:
 - "org/jenkins-ci/version-number"
 developers:
+- "batmat"
 - "jglick"
+- "oleg_nenashev"
 - "stephenconnolly"
 - "kohsuke"
