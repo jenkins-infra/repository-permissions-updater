@@ -1,0 +1,8 @@
+---
+name: "google-kubernetes-engine"
+github: "jenkinsci/google-kubernetes-engine-plugin"
+paths:
+- "org/jenkins-ci/plugins/google-kubernetes-engine"
+developers:
+- "craigbarber"
+- "evanbrown"
