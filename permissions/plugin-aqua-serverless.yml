@@ -1,0 +1,7 @@
+---
+name: "aqua-serverless"
+github: "jenkinsci/aqua-serverless-plugin"
+paths:
+- "org/jenkins-ci/plugins/aqua-serverless"
+developers:
+- "oranmoshai"
