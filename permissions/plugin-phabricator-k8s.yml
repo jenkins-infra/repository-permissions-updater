@@ -1,0 +1,8 @@
+---
+name: "phabricator-k8s"
+github: "jenkinsci/phabricator-k8s-plugin"
+paths:
+- "io/jenkins/plugins/phabricator-k8s"
+developers:
+- "andresrc"
+
