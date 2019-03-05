@@ -1,0 +1,8 @@
+---
+name: "ts-publisher"
+github: "jenkinsci/ts-publisher-plugin"
+paths:
+- "de/eacg/ts-publisher"
+developers:
+- "prizrack13"
+- "jthdev"
