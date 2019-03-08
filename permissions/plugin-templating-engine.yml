@@ -1,0 +1,7 @@
+---
+name: "templating-engine"
+github: "jenkinsci/templating-engine-plugin"
+paths:
+- "org/jenkins-ci/plugins/templating-engine"
+developers:
+- "sterrana"
