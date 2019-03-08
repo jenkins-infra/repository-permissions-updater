@@ -2,6 +2,6 @@
 name: "user1st-utester"
 github: "jenkinsci/user1st-utester-plugin"
 paths:
-- "org/jenkins-ci/plugins/user1st-utester"
+- "io/Jenkins/plugins/user1st-utester"
 developers:
 - "matt_user1st"
