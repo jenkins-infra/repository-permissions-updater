@@ -2,6 +2,6 @@
 name: "console-navigation"
 github: "jenkinsci/console-navigation-plugin"
 paths:
-  - "org/jenkins-ci/plugins/console-navigation"
+  - "io/jenkins/plugins/console-navigation"
 developers:
   - "bnova_stefan"
