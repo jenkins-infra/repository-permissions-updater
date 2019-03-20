@@ -12,3 +12,6 @@ developers:
 - "halkeye"
 - "imeredith"
 - "tscherler"
+security:
+  contacts:
+    jira: "blueocean_security_members"
