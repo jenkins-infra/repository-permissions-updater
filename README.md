@@ -89,8 +89,8 @@ security:
     email: security@acme.org
 ```
 
-The above example will result in the Jira issue being assigned to `some_user_name`, and an email notification being sent to `security@acme.org` to establish contact.
-Both of `jira` and `email` are optional.
+Given the above example, we will assign any security issue in Jira to `some_user_name` rather than one of the developers able to release the plugin, and send an email notification to `security@acme.org` to establish contact.
+Either of `jira` and `email` are optional.
 
 Please note that we generally reject email contacts due to the additional overhead in reaching out via email.
 Unless you represent a large organization with dedicated security team that needs to be involved in the coordination of a release, please refrain from requesting to be contacted via email.
