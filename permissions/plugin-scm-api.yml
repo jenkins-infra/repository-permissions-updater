@@ -11,3 +11,6 @@ developers:
 - "svanoort"
 - "rsandell"
 - "dnusbaum"
+security:
+  contacts:
+    jira: "pipeline_security_members"

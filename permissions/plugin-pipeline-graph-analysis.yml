@@ -10,3 +10,6 @@ developers:
 - "jglick"
 - "rsandell"
 - "carroll"
+security:
+  contacts:
+    jira: "pipeline_security_members"
