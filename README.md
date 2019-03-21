@@ -93,7 +93,7 @@ The above example will result in the Jira issue being assigned to `some_user_nam
 Both of `jira` and `email` are optional.
 
 Please note that we generally reject email contacts due to the additional overhead in reaching out via email.
-Unless you represent a large organization (e.g. cloud providers) in which most developers would not know how you coordinate security issues, please refrain from requesting to be contacted via email.
+Unless you represent a large organization with dedicated security team that needs to be involved in the coordination of a release, please refrain from requesting to be contacted via email.
 
 Usage
 -----
