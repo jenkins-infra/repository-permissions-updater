@@ -1,0 +1,10 @@
+---
+name: "mathworks-polyspace"
+github: "jenkinsci/mathworks-polyspace-plugin"
+paths:
+- "com/mathworks/polyspace/jenkins/mathworks-polyspace"
+developers:
+- "pascal_brand38"
+- "cpreve"
+- "sbobin"
+
