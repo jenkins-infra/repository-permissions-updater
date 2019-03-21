@@ -11,3 +11,6 @@ developers:
 - "olamy"
 - "olivergondza"
 - "aheritier"
+security:
+  contacts:
+    jira: "pipeline_security_members"
