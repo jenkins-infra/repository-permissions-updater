@@ -8,3 +8,6 @@ developers:
 - "johnhankataw"
 - "taoyong"
 - "leobaran_aws"
+security:
+  contacts:
+    email: "aws-security@amazon.com"
