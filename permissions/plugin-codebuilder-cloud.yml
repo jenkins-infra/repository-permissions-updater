@@ -1,0 +1,7 @@
+---
+name: "codebuilder-cloud"
+github: "jenkinsci/codebuilder-cloud-plugin"
+paths:
+- "dev/lsegal/jenkins/codebuilder-cloud"
+developers:
+- "lsegal"
