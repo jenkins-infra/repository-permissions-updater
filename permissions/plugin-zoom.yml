@@ -4,4 +4,4 @@ github: "jenkinsci/zoom-plugin"
 paths:
 - "org/jenkins-ci/plugins/zoom"
 developers:
-- "zoomdevplatform"
+- "zoom_us"
