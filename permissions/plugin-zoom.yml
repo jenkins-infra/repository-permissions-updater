@@ -1,0 +1,8 @@
+---
+name: "zoom"
+github: "jenkinsci/zoom-plugin"
+paths:
+- "org/jenkins-ci/plugins/zoom"
+developers:
+- "zoomdevplatform"
+- "LukasLuZoom"
