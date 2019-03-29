@@ -7,3 +7,6 @@ developers:
 - "praqma"
 - "ndeloof"
 - "casz"
+security:
+  contacts:
+    jira: "ewel"
