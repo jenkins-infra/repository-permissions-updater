@@ -1,0 +1,7 @@
+---
+name: "azure-artifact-manager"
+github: "jenkinsci/azure-artifact-manager-plugin"
+paths:
+- "org/jenkins-ci/plugins/azure-artifact-manager"
+developers:
+- "azure_devops"

@@ -5,6 +5,7 @@ paths:
 - "org/jenkins-ci/plugins/plugin/fireline"
 developers:
 - "weihao"
+- "qtest"
 
 
 

@@ -1,0 +1,7 @@
+---
+name: "additional-metrics"
+github: "jenkinsci/additional-metrics-plugin"
+paths:
+- "org/jenkins-ci/plugins/additional-metrics"
+developers:
+- "chadiem"

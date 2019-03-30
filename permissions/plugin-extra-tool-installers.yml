@@ -6,3 +6,4 @@ paths:
 - "io/jenkins/plugins/extra-tool-installers"
 developers:
 - "oleg_nenashev"
+- "pjdarton"

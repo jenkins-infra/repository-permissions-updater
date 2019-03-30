@@ -6,3 +6,10 @@ paths:
 developers:
 - "jglick"
 - "stephenconnolly"
+- "abayer"
+- "dnusbaum"
+- "rsandell"
+- "svanoort"
+security:
+  contacts:
+    jira: "pipeline_security_members"

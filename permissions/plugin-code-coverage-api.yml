@@ -1,0 +1,7 @@
+---
+name: "code-coverage-api"
+github: "jenkinsci/code-coverage-api-plugin"
+paths:
+- "io/jenkins/plugins/code-coverage-api"
+developers:
+- "cizezsy"

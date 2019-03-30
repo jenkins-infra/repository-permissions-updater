@@ -1,0 +1,7 @@
+---
+name: "dtkit-api"
+github: "jenkinsci/dtkit-libdtkit"
+paths:
+- "org/jenkins-ci/plugins/dtkit-api"
+developers:
+- "nfalco"

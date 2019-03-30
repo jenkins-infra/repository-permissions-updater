@@ -1,0 +1,7 @@
+---
+name: "inline-pipeline"
+github: "jenkinsci/inline-pipeline-plugin"
+paths:
+- "org/jenkins-ci/plugins/inline-pipeline"
+developers:
+- "danielbeck"

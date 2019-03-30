@@ -1,0 +1,7 @@
+---
+name: "google-chat-notification"
+github: "jenkinsci/google-chat-notification-plugin"
+paths:
+- "org/jenkins-ci/plugins/google-chat-notification"
+developers:
+- "cnaik"

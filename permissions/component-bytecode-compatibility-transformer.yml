@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/bytecode-compatibility-transformer"
 developers:
 - "batmat"
+- "oleg_nenashev"
+

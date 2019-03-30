@@ -5,5 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/sidebar-link"
 - "org/jvnet/hudson/plugins/sidebar-link"
 developers:
-- "lvotypkova"
-- "oleg_nenashev"
+- "dszczepanik"

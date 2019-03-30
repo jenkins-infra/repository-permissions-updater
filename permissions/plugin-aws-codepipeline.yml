@@ -5,7 +5,7 @@ paths:
 - "com/amazonaws/aws-codepipeline"
 developers:
 - "belltimo"
-- "bank"
-- "maggiecopyaws"
 - "fgalmeida"
-- "wwna"
+security:
+  contacts:
+    email: "aws-security@amazon.com"

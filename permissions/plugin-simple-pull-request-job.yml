@@ -1,0 +1,8 @@
+---
+name: "simple-pull-request-job"
+github: "jenkinsci/simple-pull-request-job-plugin"
+
+paths:
+- "io/jenkins/plugins/simple-pull-request-job"
+developers:
+- "gautamabhishek46"

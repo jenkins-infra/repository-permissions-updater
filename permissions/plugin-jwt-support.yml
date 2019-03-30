@@ -1,0 +1,10 @@
+---
+name: "jwt-support"
+github: "jenkinsci/jwt-support-plugin"
+paths:
+- "io/jenkins/plugins/jwt-support"
+developers:
+- "teilo"
+- "agentgonzo"
+- "vivek"
+- "tscherler"

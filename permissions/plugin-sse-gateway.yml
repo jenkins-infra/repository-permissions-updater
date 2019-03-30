@@ -10,3 +10,9 @@ developers:
 - "kzantow"
 - "tscherler"
 - "jamesdumay"
+- "olamy"
+- "davidbees"
+- "halkeye"
+security:
+  contacts:
+    jira: "blueocean_security_members"

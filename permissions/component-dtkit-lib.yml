@@ -1,0 +1,8 @@
+---
+name: "dtkit-lib"
+github: "jenkinsci/dtkit-libdtkit"
+paths:
+- "org/jenkins-ci/lib/dtkit"
+developers:
+- "gbois"
+- "nfalco"

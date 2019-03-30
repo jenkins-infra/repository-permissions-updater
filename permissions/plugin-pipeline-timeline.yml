@@ -1,0 +1,8 @@
+---
+name: "pipeline-timeline"
+github: "jenkinsci/pipeline-timeline-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-timeline"
+developers:
+- "tophat"
+- "mcataford"

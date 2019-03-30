@@ -6,7 +6,5 @@ paths:
 - "org/jenkins-ci/plugins/elasticbox"
 developers:
 - "gsanchezu"
-- "ignaciofuertes"
-- "oserna3"
-- "riccardoelasticbox"
-- "tphongio"
+- "julio_castanar"
+- "allyourbotsarebelongtous"

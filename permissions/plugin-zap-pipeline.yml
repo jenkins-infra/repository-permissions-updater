@@ -1,0 +1,7 @@
+---
+name: "zap-pipeline"
+github: "jenkinsci/zap-pipeline-plugin"
+paths:
+- "com/vrondakis/zap/zap-pipeline"
+developers:
+- "vrondakis"

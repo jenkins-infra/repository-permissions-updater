@@ -5,7 +5,8 @@ paths:
 - "com/coravy/hudson/plugins/github/github"
 developers:
 - "integer"
-- "kohsuke"
 - "lanwen"
-- "ndeloof"
 - "oleg_nenashev"
+security:
+  contacts:
+    jira: "integer"

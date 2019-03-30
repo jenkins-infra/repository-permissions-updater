@@ -1,0 +1,7 @@
+---
+name: "pureload"
+github: "jenkinsci/pureload-plugin"
+paths:
+- "org/jenkins-ci/plugins/pureload"
+developers:
+- "JanAndersson"

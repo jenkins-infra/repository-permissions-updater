@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/shelve-project-plugin"
 developers:
 - "bpatterson"
+- "pierrebtz"

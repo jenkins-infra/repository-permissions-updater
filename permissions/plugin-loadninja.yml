@@ -1,0 +1,7 @@
+---
+name: "loadninja"
+github: "jenkinsci/loadninja-plugin"
+paths:
+- "org/jenkins-ci/plugins/loadninja"
+developers:
+- "ctalaverq"

@@ -1,0 +1,7 @@
+---
+name: "kafka-client-lib"
+github: "jenkinsci/remoting-kafka-plugin"
+paths:
+- "io/jenkins/plugins/remoting-kafka/kafka-client-lib"
+developers:
+- "pvtuan10"

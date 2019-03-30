@@ -1,0 +1,7 @@
+---
+name: "fortify"
+github: "jenkinsci/fortify-plugin"
+paths:
+- "org/jenkins-ci/plugins/fortify"
+developers:
+- "akaryakina"

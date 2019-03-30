@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/cerberus-testing"
 developers:
 - "nicodeur"
+- "vertigo17"
+- "gotier"

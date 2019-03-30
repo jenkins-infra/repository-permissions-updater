@@ -6,3 +6,4 @@ paths:
 - "org/jvnet/hudson/plugins/timestamper"
 developers:
 - "stevengbrown"
+- "jglick"
