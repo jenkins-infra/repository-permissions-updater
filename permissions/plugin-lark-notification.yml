@@ -1,0 +1,8 @@
+---
+name: "lark-notification"
+github: "jenkinsci/lark-notification-plugin"
+paths:
+- "com/kaoyaya/jenkins/lark"
+developers:
+- "zhouxinfeng"
+- "zxfrocky"
