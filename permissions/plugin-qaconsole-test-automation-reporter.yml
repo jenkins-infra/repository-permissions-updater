@@ -1,0 +1,7 @@
+---
+name: "qaconsole-test-automation-reporter"
+github: "jenkinsci/qaconsole-test-automation-reporter-plugin"
+paths:
+  - "org/jenkins-ci/plugins/qaconsole-test-automation-reporter"
+developers:
+  - "best4test"
