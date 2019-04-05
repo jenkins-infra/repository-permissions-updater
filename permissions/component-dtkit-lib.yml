@@ -1,6 +1,6 @@
 ---
 name: "dtkit-lib"
-github: "jenkinsci/dtkit-libdtkit"
+github: "jenkinsci/libdtkit"
 paths:
 - "org/jenkins-ci/lib/dtkit"
 developers:
