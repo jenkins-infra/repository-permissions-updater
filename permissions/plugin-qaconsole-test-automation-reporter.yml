@@ -1,5 +1,5 @@
 ---
-name: "com/qaconsole/qaconsole-test-automation-reporter-plugin"
+name: "qaconsole-test-automation-reporter-plugin"
 github: "jenkinsci/qaconsole-test-automation-reporter-plugin"
 paths:
   - "com/qaconsole/qaconsole-test-automation-reporter-plugin"
