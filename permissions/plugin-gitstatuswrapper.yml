@@ -1,0 +1,7 @@
+---
+name: "pipeline-gitstatuswrapper"
+github: "jenkinsci/pipeline-gitstatuswrapper-plugin"
+paths:
+- "org/jenkins-ci/plugins/pipeline-gitstatuswrapper"
+developers:
+- "hello_woof"
