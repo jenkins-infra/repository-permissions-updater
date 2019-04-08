@@ -4,6 +4,6 @@ github: "jenkinsci/matlab-plugin"
 paths:
 - "org/jenkins-ci/plugins/matlab"
 developers:
-- "nbhoski"
-- "mcafaro"
-- "acampbel"
+- "mathworks_ci_team"
+
+
