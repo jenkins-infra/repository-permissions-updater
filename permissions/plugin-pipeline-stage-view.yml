@@ -12,6 +12,7 @@ developers:
 - "carroll"
 - "bitwiseman"
 - "kshultz"
+- "olamy"
 security:
   contacts:
     jira: "pipeline_security_members"
