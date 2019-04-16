@@ -1,0 +1,7 @@
+---
+name: "icq-notification"
+github: "jenkinsci/icq-notification-plugin"
+paths:
+- "org/jenkins-ci/plugins/icq-notification"
+developers:
+- "nolequen"
