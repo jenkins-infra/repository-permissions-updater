@@ -1,0 +1,8 @@
+---
+name: "build-symlink"
+github: "jenkinsci/build-symlink-plugin"
+paths:
+- "io/jenkins/plugins/build-symlink"
+developers:
+- "jglick"
+- "wfollonier"
