@@ -1,0 +1,7 @@
+---
+name: deepsecurity-smartcheck
+github: jenkinsci/deepsecurity-smartcheck-plugin
+paths:
+  - io/jenkins/plugins/deepsecurity-smartcheck
+developers:
+  - gmtm
