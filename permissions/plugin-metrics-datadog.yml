@@ -1,0 +1,7 @@
+---
+name: "metrics-datadog"
+github: "jenkinsci/metrics-datadog-plugin"
+paths:
+- "io/jenkins/plugins/metrics-datadog"
+developers:
+- "mpapo"
