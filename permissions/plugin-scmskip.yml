@@ -2,6 +2,6 @@
 name: "scmskip"
 github: "jenkinsci/scmskip-plugin"
 paths:
-- "net/plavcak/jenkins/scmskip"
+- "net/plavcak/jenkins/plugins/scmskip"
 developers:
 - "plavc"
