@@ -5,3 +5,7 @@ paths:
 - "org/jenkins-ci/plugins/aqua-serverless"
 developers:
 - "oranmoshai"
+- "aqua_maintainers"
+security:
+  contacts:
+    jira: aqua_maintainers
