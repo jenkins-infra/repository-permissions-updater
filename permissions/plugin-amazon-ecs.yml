@@ -4,5 +4,5 @@ github: "jenkinsci/amazon-ecs-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/amazon-ecs"
 developers:
-- "webratz"
+- "webrat"
 - "pgarbe"
