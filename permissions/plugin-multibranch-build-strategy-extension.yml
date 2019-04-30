@@ -5,4 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/multibranch-build-strategy-extension"
 developers:
 - "igalg"
-- "avihuly"
