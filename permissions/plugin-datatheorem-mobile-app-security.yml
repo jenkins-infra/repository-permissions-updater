@@ -1,6 +1,6 @@
 ---
 name: "datatheorem-mobile-app-security"
-github: "datatheorem-mobile-app-security-plugin"
+github: "jenkinsci/datatheorem-mobile-app-security-plugin"
 paths:
 - "com/datatheorem/mobileappsecurity/jenkins/plugin/datatheorem-mobile-app-security-plugin"
 developers:
