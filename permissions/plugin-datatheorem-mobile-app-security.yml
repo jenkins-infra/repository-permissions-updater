@@ -1,0 +1,8 @@
+---
+name: "datatheorem-mobile-app-security"
+github: "datatheorem-mobile-app-security-plugin"
+pahs:
+- "com/datatheorem/mobileappsecurity/jenkins/plugin/datatheorem-mobile-app-security-plugin"
+developers:
+- "magneto_marc"
+- "nabla_c0d3"
