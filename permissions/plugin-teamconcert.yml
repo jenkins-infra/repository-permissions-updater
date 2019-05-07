@@ -4,6 +4,5 @@ github: "jenkinsci/teamconcert-plugin"
 paths:
 - "org/jenkins-ci/plugins/teamconcert"
 developers:
-- "clkkishore"
-- "hfraserdube"
 - "lvaikunt"
+- "ssangaiah"
