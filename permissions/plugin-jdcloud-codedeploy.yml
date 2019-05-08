@@ -4,7 +4,4 @@ github: "jenkinsci/jdcloud-codedeploy-plugin"
 paths:
 - "org/jenkins-ci/plugins/jdcloud-codedeploy"
 developers:
-- "jdclouddevelopers"
-- "wanglei-alive"
-- "remrain"
-- "kujing"
+- "jdcloud_codedeploy"
