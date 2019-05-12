@@ -1,0 +1,12 @@
+---
+name: "gitlab-api"
+github: "jenkinsci/gitlab-api-plugin"
+paths:
+- "org/jenkins-ci/plugins/gitlab-api"
+developers:
+- "baymac"
+- "LinuxSuRen"
+- "casz"
+- "jeffpearce"
+- "justinharringa"
+- "runzexia"
