@@ -5,8 +5,7 @@ paths:
 - "org/jenkins-ci/plugins/gitlab-api"
 developers:
 - "baymac"
-- "LinuxSuRen"
+- "surenpi"
 - "casz"
 - "jeffpearce"
 - "justinharringa"
-- "runzexia"
