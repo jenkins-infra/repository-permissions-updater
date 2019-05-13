@@ -2,7 +2,7 @@
 name: "gitlab-api"
 github: "jenkinsci/gitlab-api-plugin"
 paths:
-- "org/jenkins-ci/plugins/gitlab-api"
+- "io/jenkins/plugins/gitlab-api"
 developers:
 - "baymac"
 - "surenpi"
