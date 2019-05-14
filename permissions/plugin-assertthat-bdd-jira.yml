@@ -1,0 +1,7 @@
+---
+name: "assertthat-bdd-jira"
+github: "jenkinsci/assertthat-bdd-jira-plugin"
+paths:
+- "io/jenkins/plugins/assertthat-bdd-jira"
+developers:
+- "glib_briia"
