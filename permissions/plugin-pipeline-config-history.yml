@@ -1,0 +1,9 @@
+---
+name: "pipeline-config-history"
+github: "jenkinsci/pipeline-config-history-plugin"
+paths:
+- "org/jenkins-ci/plugins/pipeline-config-history"
+developers:
+- "jochenafuerbacher"
+- "robinschulz"
+- "stefanbrausch"
