@@ -3,5 +3,4 @@ name: "preSCMbuildstep"
 github: "jenkinsci/pre-scm-buildstep-plugin"
 paths:
 - "org/jenkins-ci/plugins/preSCMbuildstep"
-developers:
-- "ndeloof"
+developers: []

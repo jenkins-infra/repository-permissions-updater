@@ -6,7 +6,6 @@ paths:
 - "io/jenkins/configuration-as-code"
 developers:
 - "praqma"
-- "ndeloof"
 - "casz"
 security:
   contacts:

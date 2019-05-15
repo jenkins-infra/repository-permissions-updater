@@ -5,6 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/ec2"
 developers:
 - "thoulen"
-- "ndeloof"
 - "julienduchesne"
 - "jvz"

@@ -3,5 +3,4 @@ name: "ezwall"
 github: "jenkinsci/ezwall-plugin"
 paths:
 - "org/jenkins-ci/plugins/ezwall"
-developers:
-- "ndeloof"
+developers: []
