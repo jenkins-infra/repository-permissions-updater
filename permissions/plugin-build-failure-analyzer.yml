@@ -4,7 +4,6 @@ github: "jenkinsci/build-failure-analyzer-plugin"
 paths:
 - "com/sonyericsson/jenkins/plugins/bfa/build-failure-analyzer"
 developers:
-- "ndeloof"
 - "orjanpercy"
 - "rsandell"
 - "t_westling"

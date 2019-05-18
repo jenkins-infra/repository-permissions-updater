@@ -6,5 +6,4 @@ paths:
 - "org/jvnet/hudson/plugins/email-ext"
 developers:
 - "davidvanlaatum"
-- "ndeloof"
 - "slide_o_mix"

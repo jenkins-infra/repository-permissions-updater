@@ -6,4 +6,3 @@ paths:
 - "org/jenkinsci/plugins/git-client"
 developers:
 - "markewaite"
-- "ndeloof"

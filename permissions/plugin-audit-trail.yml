@@ -5,7 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/audit-trail"
 developers:
 - "cleclerc"
-- "ndeloof"
 - "olivergondza"
 - "tsek"
 - "pierrebtz"
