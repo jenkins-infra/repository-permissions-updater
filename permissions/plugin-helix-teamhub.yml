@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/helix-teamhub"
 developers:
 - "sayradley"
+- "p4paul"
