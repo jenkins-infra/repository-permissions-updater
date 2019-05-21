@@ -1,0 +1,7 @@
+---
+name: "h2-api"
+github: "jenkinsci/h2-api-plugin"
+paths:
+- "org/jenkins-ci/plugins/h2-api"
+developers:
+- "cleclerc"
