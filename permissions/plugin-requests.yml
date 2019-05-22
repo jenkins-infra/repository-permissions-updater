@@ -1,0 +1,7 @@
+---
+name: "requests"
+github: "jenkinsci/requests-plugin"
+paths:
+- "org/jenkins-ci/plugins/requests"
+developers:
+- "trixmot"
