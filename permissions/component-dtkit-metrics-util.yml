@@ -1,0 +1,8 @@
+---
+name: "dtkit-metrics-util"
+github: "jenkinsci/libdtkit"
+paths:
+- "org/jenkins-ci/lib/dtkit/dtkit-metrics-util"
+developers:
+- "gbois"
+- "nfalco"

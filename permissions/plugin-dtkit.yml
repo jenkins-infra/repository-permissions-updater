@@ -1,8 +1,8 @@
 ---
-name: "dtkit"
+name: "dtkit-plugin"
 github: "jenkinsci/dtkit-plugin"
 paths:
-- "org/jenkins-ci/plugins/dtkit"
+- "org/jenkins-ci/plugins/dtkit/dtkit-plugin"
 developers:
 - "gbois"
 - "nfalco"
