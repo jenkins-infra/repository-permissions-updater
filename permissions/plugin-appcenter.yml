@@ -1,0 +1,7 @@
+---
+name: "appcenter"
+github: "jenkinsci/appcenter-plugin"
+paths:
+- "io/jenkins/plugins/appcenter"
+developers:
+- "mezpahlan"
