@@ -4,4 +4,4 @@ github: "jenkinsci/git-automerger-plugin"
 paths:
 - "com/vinted/automerger/git-automerger"
 developers:
-- "neworld"
+- "neworldlt"
