@@ -4,8 +4,7 @@ github: "jenkinsci/xooa-plugin"
 paths:
 - "io/jenkins/plugins/xooa"
 developers:
-- "vinay"
-- "kavi"
+- "vinay_bagul"
 security:
   contacts:
     jira: vinay_bagul
