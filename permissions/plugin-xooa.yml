@@ -1,0 +1,12 @@
+---
+name: "xooa"
+github: "jenkinsci/xooa-plugin"
+paths:
+- "io/jenkins/plugins/xooa"
+developers:
+- "vinay"
+- "kavi"
+security:
+  contacts:
+    jira: vinay_bagul
+    email: vinay.bagul@xooa.com
