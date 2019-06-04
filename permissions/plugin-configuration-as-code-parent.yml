@@ -6,6 +6,8 @@ paths:
 developers:
 - "praqma"
 - "casz"
+- "oleg_nenashev"
+- "timja"
 security:
   contacts:
     jira: "ewel"
