@@ -1,0 +1,8 @@
+---
+name: "castecho"
+github: "jenkinsci/castecho-plugin"
+paths:
+- "org/jenkins-ci/plugins/castecho"
+- "io/jenkins/plugins/castecho"
+developers:
+- "castnightlybuild"
