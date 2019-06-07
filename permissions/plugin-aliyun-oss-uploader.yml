@@ -1,0 +1,7 @@
+---
+name: "aliyun-oss-uploader"
+github: "jenkinsci/aliyun-oss-uploader-plugin"
+paths:
+- "io/jenkins/plugins"
+developers:
+- "raylax"
