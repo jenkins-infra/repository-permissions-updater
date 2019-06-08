@@ -1,5 +1,5 @@
 ---
-name: "jenkinsci/variables-replace-plugin"
+name: "variables-replace"
 github: "jenkinsci/aliyun-oss-uploader-plugin"
 paths:
 - "org/jenkins-ci/plugins/variables-replace-plugin"
