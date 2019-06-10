@@ -1,0 +1,7 @@
+---
+name: "variables-replace"
+github: "jenkinsci/variables-replace-plugin"
+paths:
+- "com/jeeday/jenkins/variables-replace-plugin"
+developers:
+- "jeeday"
