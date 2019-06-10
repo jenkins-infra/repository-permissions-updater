@@ -2,7 +2,6 @@
 name: "variables-replace"
 github: "jenkinsci/variables-replace-plugin"
 paths:
-- "org/jenkins-ci/plugins/variables-replace-plugin"
 - "com/jeeday/jenkins/variables-replace-plugin"
 developers:
 - "jeeday"
