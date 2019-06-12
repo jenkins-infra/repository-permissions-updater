@@ -1,0 +1,7 @@
+---
+name: "sdelements"
+github: "jenkinsci/sdelements-plugin"
+paths:
+- "io/jenkins/plugins/sdelements"
+developers:
+- "securitycompass"

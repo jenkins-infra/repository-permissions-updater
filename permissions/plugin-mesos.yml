@@ -7,3 +7,6 @@ developers:
 - "maselvaraj"
 - "vinodkone"
 - "vlatombe"
+security:
+  contacts:
+    jira: "cloud_platform_v2"

@@ -1,0 +1,7 @@
+---
+name: "azure-keyvault"
+github: "jenkinsci/azure-keyvault-plugin"
+paths:
+- "org/jenkins-ci/plugins/azure-keyvault"
+developers:
+- "timja"

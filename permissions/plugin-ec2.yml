@@ -4,5 +4,6 @@ github: "jenkinsci/ec2-plugin"
 paths:
 - "org/jenkins-ci/plugins/ec2"
 developers:
-- "francisu"
-- "ndeloof"
+- "thoulen"
+- "julienduchesne"
+- "jvz"

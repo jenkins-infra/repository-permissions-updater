@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/github-pr-coverage-status"
 developers:
 - "terma"
+- "dmotpan"

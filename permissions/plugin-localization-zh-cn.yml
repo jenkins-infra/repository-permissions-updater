@@ -1,0 +1,7 @@
+---
+name: "localization-zh-cn"
+github: "jenkinsci/localization-zh-cn-plugin"
+paths:
+- "org/jenkins-ci/plugins/localization-zh-cn"
+developers:
+- "surenpi"

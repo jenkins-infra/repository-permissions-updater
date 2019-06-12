@@ -1,0 +1,7 @@
+---
+name: "gatling-check"
+github: "jenkinsci/gatling-check-plugin"
+paths:
+- "org/jenkins-ci/plugins/gatling-check"
+developers:
+- "shull"

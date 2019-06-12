@@ -74,6 +74,27 @@ Rename and edit the existing permissions file, changing both `name` and the last
 
 Change the `paths` to match the new Maven coordinates, or, if further uploads for the old coordinates are expected, add a new list entry.
 
+Managing Security Process
+-------------------------
+
+The Jenkins project acts as a primary contact point for security researchers seeking to report security vulnerabilities in Jenkins and Jenkins plugins ([learn more](https://jenkins.io/security/)).
+
+Through additional metadata in the YAML file described above, you can define who should be contacted in the event of a report being received.
+Add a section like the following to your plugin's YAML file:
+
+```yaml
+security:
+  contacts:
+    jira: some_user_name
+    email: security@acme.org
+```
+
+Given the above example, we will assign any security issue in Jira to `some_user_name` rather than one of the developers able to release the plugin, and send an email notification to `security@acme.org` to establish contact.
+Either of `jira` and `email` are optional.
+
+Please note that we generally reject email contacts due to the additional overhead in reaching out via email.
+Unless you represent a large organization with dedicated security team that needs to be involved in the coordination of a release, please refrain from requesting to be contacted via email.
+
 Usage
 -----
 

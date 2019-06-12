@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/stash-pullrequest-builder"
 developers:
 - "nemccarthy"
+- "jbochenski"
+- "jimklimov"

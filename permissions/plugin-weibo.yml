@@ -3,4 +3,5 @@ name: "weibo"
 github: "jenkinsci/weibo-plugin"
 paths:
 - "org/jenkins-ci/plugins/weibo"
-developers: []
+developers:
+- "surenpi"

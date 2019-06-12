@@ -1,0 +1,10 @@
+---
+name: "plasticscm-mergebot"
+github: "jenkinsci/plasticscm-mergebot-plugin"
+paths:
+- "org/jenkins-ci/plugins/plasticscm-mergebot"
+developers:
+- "mig42"
+- "miryamgsm"
+- "jemagoga"
+- "rubarax"

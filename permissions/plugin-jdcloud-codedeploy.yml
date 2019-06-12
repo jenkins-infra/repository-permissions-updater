@@ -1,0 +1,7 @@
+---
+name: "jdcloud-codedeploy"
+github: "jenkinsci/jdcloud-codedeploy-plugin"
+paths:
+- "org/jenkins-ci/plugins/jdcloud-codedeploy"
+developers:
+- "jdcloud_codedeploy"

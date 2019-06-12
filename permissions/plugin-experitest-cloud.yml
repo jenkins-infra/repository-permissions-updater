@@ -1,0 +1,8 @@
+---
+name: "experitest-cloud"
+github: "jenkinsci/experitest-cloud-plugin"
+paths:
+  - "org/jenkins-ci/plugins/experitest-cloud"
+developers:
+  - "phuonghqh"
+

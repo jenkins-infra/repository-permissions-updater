@@ -1,0 +1,9 @@
+---
+name: "matlab"
+github: "jenkinsci/matlab-plugin"
+paths:
+- "org/jenkins-ci/plugins/matlab"
+developers:
+- "mathworks_ci_team"
+
+

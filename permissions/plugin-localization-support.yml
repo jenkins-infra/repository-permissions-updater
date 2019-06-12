@@ -1,0 +1,7 @@
+---
+name: "localization-support"
+github: "jenkinsci/localization-support-plugin"
+paths:
+- "io/jenkins/plugins/localization-support"
+developers:
+- "danielbeck"

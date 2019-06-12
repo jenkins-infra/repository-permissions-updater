@@ -10,3 +10,6 @@ developers:
 - "yubangxi"
 - "feverlu"
 - "q13117god"
+security:
+  contacts:
+    email: "aws-security@amazon.com"

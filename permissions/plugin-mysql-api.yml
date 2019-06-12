@@ -1,0 +1,7 @@
+---
+name: "mysql-api"
+github: "jenkinsci/mysql-api-plugin"
+paths:
+- "io/jenkins/plugins/mysql-api"
+developers:
+- "cleclerc"

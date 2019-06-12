@@ -1,0 +1,7 @@
+---
+name: "content-replace"
+github: "jenkinsci/content-replace-plugin"
+paths:
+- "org/jenkins-ci/plugins/content-replace"
+developers:
+- "moxun"

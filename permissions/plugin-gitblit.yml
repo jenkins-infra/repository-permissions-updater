@@ -1,0 +1,8 @@
+---
+name: "gitblit"
+github: "jenkinsci/gitblit-plugin"
+paths:
+- "com/tsystems/sbs/gitblit"
+developers:
+- "carlescapdevila"
+- "andreasmandel"

@@ -4,9 +4,5 @@ github: "jenkinsci/google-storage-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-storage-plugin"
 developers:
-- "astroilov"
-- "mattmoor"
-- "reprogrammer"
-- "tcnghia"
-- "a_goulti"
-- "bwkimmel"
+- "craigbarber"
+- "evanbrown"

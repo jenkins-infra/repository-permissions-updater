@@ -1,0 +1,8 @@
+---
+name: "scmskip"
+github: "jenkinsci/scmskip-plugin"
+paths:
+- "net/plavcak/jenkins/scmskip"
+developers:
+- "plavc"
+

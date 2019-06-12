@@ -1,0 +1,9 @@
+---
+name: "jdependency"
+github: "jenkinsci/jdependency"
+paths:
+- "io/jenkins/org/vafer/jdependency"
+developers:
+- "rsandell"
+- "svanoort"
+- "abayer"

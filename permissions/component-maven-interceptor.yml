@@ -5,6 +5,5 @@ paths:
 - "org/jenkins-ci/main/maven/maven-interceptor"
 developers:
 - "kutzi"
-- "ndeloof"
 - "olamy"
 - "aheritier"

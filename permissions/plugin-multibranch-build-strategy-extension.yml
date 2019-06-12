@@ -1,0 +1,7 @@
+---
+name: "multibranch-build-strategy-extension"
+github: "jenkinsci/multibranch-build-strategy-extension-plugin"
+paths:
+- "igalg/jenkins/plugins/multibranch-build-strategy-extension"
+developers:
+- "igalg"

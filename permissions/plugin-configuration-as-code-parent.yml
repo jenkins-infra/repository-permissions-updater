@@ -5,4 +5,9 @@ paths:
 - "io/jenkins/configuration-as-code/parent"
 developers:
 - "praqma"
-- "ndeloof"
+- "casz"
+- "oleg_nenashev"
+- "timja"
+security:
+  contacts:
+    jira: "ewel"
