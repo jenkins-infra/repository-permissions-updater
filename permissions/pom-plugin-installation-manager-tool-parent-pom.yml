@@ -1,0 +1,12 @@
+---
+name: "parent-pom"
+github: "jenkinsci/plugin-installation-manager-tool"
+paths:
+- "io/jenkins/plugin-installation-manager-tool/parent-pom"
+developers:
+- "stopalopa"
+- "oleg_nenashev"
+- "arnabcse28"
+- "batmat"
+- "kwhetstone"
+- "jnz_topdanmark"

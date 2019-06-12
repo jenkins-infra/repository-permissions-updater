@@ -1,0 +1,12 @@
+---
+name: "plugin-management-library"
+github: "jenkinsci/plugin-installation-manager-tool"
+paths:
+- "io/jenkins/plugin-management-library"
+developers:
+- "stopalopa"
+- "oleg_nenashev"
+- "batmat"
+- "kwhetstone"
+- "arnabcse28"
+- "jnz_topdanmark"
