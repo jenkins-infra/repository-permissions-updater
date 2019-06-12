@@ -1,8 +1,8 @@
 ---
-name: "plugin-management-library"
+name: "jenkins-plugin-management-library"
 github: "jenkinsci/plugin-installation-manager-tool"
 paths:
-- "io/jenkins/plugin-management-library"
+- "io/jenkins/plugin-management/jenkins-plugin-management-library"
 developers:
 - "stopalopa"
 - "oleg_nenashev"
