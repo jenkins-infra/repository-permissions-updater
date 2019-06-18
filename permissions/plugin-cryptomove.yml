@@ -1,0 +1,7 @@
+---
+name: "cryptomove"
+github: "jenkinsci/cryptomove-plugin"
+paths:
+  - "org/jenkins-ci/plugins/cryptomove"
+developers:
+  - "cryptomoovin"
