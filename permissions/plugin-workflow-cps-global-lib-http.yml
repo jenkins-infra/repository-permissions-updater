@@ -1,0 +1,7 @@
+---
+name: "workflow-cps-global-lib-http"
+github: "jenkinsci/workflow-cps-global-lib-http-plugin"
+paths:
+- "com/amadeus/jenkins/plugins/workflow-cps-global-lib-http"
+developers:
+- "fabricepipart1a"
