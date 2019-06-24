@@ -1,0 +1,7 @@
+---
+name: "atlassian-jira-software-cloud"
+github: "jenkinsci/atlassian-jira-software-cloud-plugin"
+paths:
+  - "com/atlassian/jira/software/cloud/jenkins"
+developers:
+  - "rafalmyslek"
