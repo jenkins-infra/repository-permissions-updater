@@ -1,0 +1,6 @@
+name: "AutoAction Step Plugin"
+github: "jenkinsci/autoaction-step-plugin"
+paths:
+- "io/jenkins/plugins/autoaction-step"
+developers:
+- "vochithanh"
