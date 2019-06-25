@@ -1,5 +1,5 @@
 ---
-name: "AutoAction Step Plugin"
+name: "autoaction-step-plugin"
 github: "jenkinsci/autoaction-step-plugin"
 paths:
 - "io/jenkins/plugins/autoaction-step"
