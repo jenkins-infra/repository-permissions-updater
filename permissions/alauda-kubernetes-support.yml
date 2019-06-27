@@ -5,3 +5,5 @@ paths:
 - "io/alauda/jenkins/plugins/alauda-kubernetes-support"
 developers:
 - "surenpi"
+- "danielfbm"
+- "chengjingtao"
