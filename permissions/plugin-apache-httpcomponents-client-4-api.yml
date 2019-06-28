@@ -7,3 +7,6 @@ developers:
 - "oleg_nenashev"
 - "dnusbaum"
 - "mramonleon"
+security:
+  contacts:
+    jira: "foundation_security_members"
