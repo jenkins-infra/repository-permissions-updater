@@ -7,3 +7,6 @@ developers:
 - "kohsuke"
 - "oleg_nenashev"
 - "batmat"
+security:
+  contacts:
+    jira: "foundation_security_members"
