@@ -9,3 +9,6 @@ developers:
 - "oleg_nenashev"
 - "aheritier"
 - "mramonleon"
+security:
+  contacts:
+    jira: "foundation_security_members"
