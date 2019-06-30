@@ -13,3 +13,6 @@ developers:
 - "escoem"
 - "dnusbaum"
 - "egutierrez"
+security:
+  contacts:
+    jira: "foundation_security_members"
