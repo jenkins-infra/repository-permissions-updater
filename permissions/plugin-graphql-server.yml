@@ -4,4 +4,4 @@ github: "jenkinsci/graphql-plugin"
 paths:
 - "org/jenkins-ci/plugins/graphql-plugin"
 developers:
-- "halkeye
+- "halkeye"
