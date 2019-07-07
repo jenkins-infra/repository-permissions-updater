@@ -1,7 +1,7 @@
 ---
 name: "graphql-plugin"
-github: "jenkinsci/graphql-plugin"
+github: "jenkinsci/graphql-server"
 paths:
-- "io/jenkins/plugins/graphql-plugin"
+- "io/jenkins/plugins/graphql-server"
 developers:
 - "halkeye"
