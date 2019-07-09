@@ -1,0 +1,12 @@
+---
+name: "acunetix-360-scan"
+github: "jenkinsci/acunetix-360-scan-plugin"
+paths:
+- "org/jenkins-ci/plugins/acunetix-360-scan"
+developers:
+- "alikrc"
+- "acunetix360"
+- "yadazula"
+security:
+  contacts:
+    email: 360@acunetix.com
