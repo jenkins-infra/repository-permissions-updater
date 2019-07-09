@@ -4,8 +4,8 @@ github: "jenkinsci/acunetix-360-scan-plugin"
 paths:
 - "com/acunetix/acunetix-360-scan"
 developers:
-- "alikrc"
 - "acunetix360"
+- "alikrc"
 - "yadazula"
 security:
   contacts:
