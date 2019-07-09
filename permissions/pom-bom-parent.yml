@@ -1,0 +1,7 @@
+---
+name: "parent"
+github: "jenkinsci/bom"
+paths:
+- "io/jenkins/tools/bom/parent"
+developers:
+- "jglick"

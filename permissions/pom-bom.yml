@@ -1,0 +1,7 @@
+---
+name: "bom"
+github: "jenkinsci/bom"
+paths:
+- "io/jenkins/tools/bom/bom"
+developers:
+- "jglick"
