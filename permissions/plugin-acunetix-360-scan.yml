@@ -2,7 +2,7 @@
 name: "acunetix-360-scan"
 github: "jenkinsci/acunetix-360-scan-plugin"
 paths:
-- "com/acunetix/acunetix-360-scan"
+- "org/jenkins-ci/plugins/acunetix-360-scan"
 developers:
 - "acunetix360"
 security:
