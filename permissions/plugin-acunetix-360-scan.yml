@@ -5,8 +5,6 @@ paths:
 - "com/acunetix/acunetix-360-scan"
 developers:
 - "acunetix360"
-- "alikrc"
-- "yadazula"
 security:
   contacts:
     email: 360@acunetix.com
