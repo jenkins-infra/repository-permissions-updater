@@ -1,0 +1,10 @@
+---
+name: "remote-file"
+github: "jenkinsci/remote-file-plugin"
+paths:
+- "io/jenkins/plugins/remote-file"
+developers:
+- "aytuncbeken"
+security:
+  contacts:
+    jira: "aytuncbeken"
