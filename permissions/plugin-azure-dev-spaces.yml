@@ -1,0 +1,7 @@
+---
+name: "azure-dev-spaces"
+github: "jenkinsci/azure-dev-spaces-plugin"
+paths:
+- "org/jenkins-ci/plugins/azure-dev-spaces"
+developers:
+- "azure_devops"

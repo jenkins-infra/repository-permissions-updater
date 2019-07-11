@@ -12,3 +12,6 @@ developers:
 - "dnusbaum"
 - "rsandell"
 - "fcojfernandez"
+security:
+  contacts:
+    jira: "foundation_security_members"

@@ -11,3 +11,6 @@ developers:
 - "tfennelly"
 - "oleg_nenashev"
 - "alecharp"
+security:
+  contacts:
+    jira: "foundation_security_members"
