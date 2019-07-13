@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/google-compute-engine"
 developers:
 - "evanbrown"
+- "stephenshank"
+- "craigbarber"

@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/p4"
 developers:
 - "p4paul"
+- "cbopardikar"
+- "msmeeth"

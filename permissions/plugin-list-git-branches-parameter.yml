@@ -1,0 +1,7 @@
+---
+name: "list-git-branches-parameter"
+github: "jenkinsci/list-git-branches-parameter-plugin"
+paths:
+- "org/jenkins-ci/plugins/list-git-branches-parameter"
+developers:
+- "huangsuoyuan"

@@ -5,3 +5,4 @@ paths:
 - "com/byclosure/jenkins/plugins/gcloud-sdk"
 developers:
 - "jrluis"
+- "jhansche"

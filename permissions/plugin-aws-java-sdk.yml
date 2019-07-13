@@ -5,5 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/aws-java-sdk"
 developers:
 - "andresrc"
-- "ndeloof"
 - "vlatombe"

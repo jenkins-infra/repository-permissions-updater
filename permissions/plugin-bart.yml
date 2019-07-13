@@ -1,0 +1,7 @@
+---
+name: "bart"
+github: "jenkinsci/bart-plugin"
+paths:
+- "org/jenkins-ci/plugins/bart"
+developers:
+- "timotyzemp"

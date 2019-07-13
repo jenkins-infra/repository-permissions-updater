@@ -10,3 +10,11 @@ developers:
 - "stephenconnolly"
 - "abayer"
 - "svanoort"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+security:
+  contacts:
+    jira: "foundation_security_members"

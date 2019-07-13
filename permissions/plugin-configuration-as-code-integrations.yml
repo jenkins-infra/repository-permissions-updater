@@ -5,4 +5,9 @@ paths:
 - "io/jenkins/configuration-as-code/integrations"
 developers:
 - "praqma"
-- "ndeloof"
+- "casz"
+- "oleg_nenashev"
+- "timja"
+security:
+  contacts:
+    jira: "casz"

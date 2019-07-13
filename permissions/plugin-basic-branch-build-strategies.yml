@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/basic-branch-build-strategies"
 developers:
 - "stephenconnolly"
+- "rsandell"
+- "bitwiseman"

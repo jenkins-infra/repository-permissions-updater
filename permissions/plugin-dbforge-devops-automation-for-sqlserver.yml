@@ -1,0 +1,7 @@
+---
+name: "dbforge-devops-automation-for-sqlserver"
+github: "jenkinsci/dbforge-devops-automation-for-sqlserver-plugin"
+paths:
+- "io/jenkins/plugins/dbforge-devops-automation-for-sqlserver"
+developers:
+- "devart"

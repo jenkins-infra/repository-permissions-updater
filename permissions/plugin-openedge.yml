@@ -1,0 +1,7 @@
+---
+name: "openedge"
+github: "jenkinsci/openedge-plugin"
+paths:
+- "io/jenkins/plugins/openedge"
+developers:
+- "gquerret"

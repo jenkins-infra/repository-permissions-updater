@@ -1,0 +1,7 @@
+---
+name: "console-navigation"
+github: "jenkinsci/console-navigation-plugin"
+paths:
+- "io/jenkins/plugins/console-navigation"
+developers:
+- "bnova_stefan"

@@ -1,0 +1,7 @@
+---
+name: "maven-snapshot-check"
+github: "jenkinsci/maven-snapshot-check-plugin"
+paths:
+- "org/jenkins-ci/plugins/maven-snapshot-check"
+developers:
+- "donhui"

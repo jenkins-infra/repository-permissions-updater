@@ -1,0 +1,7 @@
+---
+name: "git-forensics"
+github: "jenkinsci/git-forensics-plugin"
+paths:
+- "io/jenkins/plugins/git-forensics"
+developers:
+- "drulli"

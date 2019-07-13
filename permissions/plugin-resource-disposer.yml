@@ -1,0 +1,7 @@
+---
+name: "resource-disposer"
+github: "jenkinsci/resource-disposer-plugin"
+paths:
+- "org/jenkins-ci/plugins/resource-disposer"
+developers:
+- "olivergondza"

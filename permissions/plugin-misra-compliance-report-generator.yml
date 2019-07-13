@@ -1,0 +1,7 @@
+---
+name: "misra-compliance-report-generator"
+github: "jenkinsci/misra-compliance-report-generator-plugin"
+paths:
+- "io/jenkins/plugins/misra-compliance-report-generator"
+developers:
+- "oyvindlr"

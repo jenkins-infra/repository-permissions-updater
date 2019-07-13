@@ -4,4 +4,5 @@ github: "jenkinsci/log-parser-plugin"
 paths:
 - "org/jenkins-ci/plugins/log-parser"
 developers:
+- "mreinhardt"
 - "recena"

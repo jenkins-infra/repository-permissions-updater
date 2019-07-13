@@ -59,6 +59,7 @@ public class ArtifactoryPermissionsUpdater {
         private String[] paths = new String[0]
         private String[] developers = new String[0]
         String github
+        Object security // unused, just metadata for Jenkins security team
 
         String getName() {
             return name

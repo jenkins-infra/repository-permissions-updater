@@ -5,4 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/contrast-continuous-application-security"
 developers:
 - "gsmoore"
-- "sergii_contrast"

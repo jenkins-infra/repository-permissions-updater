@@ -1,0 +1,7 @@
+---
+name: "eiffel-broadcaster"
+github: "jenkinsci/eiffel-broadcaster-plugin"
+paths:
+- "com/axis/jenkins/plugins/eiffel/eiffel-broadcaster"
+developers:
+- "isacholm"

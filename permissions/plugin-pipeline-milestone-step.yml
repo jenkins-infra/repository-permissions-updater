@@ -10,3 +10,7 @@ developers:
 - "abayer"
 - "dnusbaum"
 - "rsandell"
+- "carroll"
+security:
+  contacts:
+    jira: "pipeline_security_members"

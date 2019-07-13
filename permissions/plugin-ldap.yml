@@ -8,3 +8,6 @@ developers:
 - "kohsuke"
 - "stephenconnolly"
 - "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

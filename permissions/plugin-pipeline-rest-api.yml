@@ -5,3 +5,14 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-stage-view/pipeline-rest-api"
 developers:
 - "svanoort"
+- "abayer"
+- "dnusbaum"
+- "jglick"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+- "olamy"
+security:
+  contacts:
+    jira: "pipeline_security_members"

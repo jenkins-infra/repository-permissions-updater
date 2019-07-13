@@ -9,3 +9,6 @@ developers:
 - "stephenconnolly"
 - "rsandell"
 - "svanoort"
+security:
+  contacts:
+    jira: "pipeline_security_members"

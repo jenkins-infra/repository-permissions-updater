@@ -1,3 +1,6 @@
+# generated directory, not to be committed/pushed
+json/
+
 # Apache Maven
 target/
 

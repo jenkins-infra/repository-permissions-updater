@@ -7,3 +7,6 @@ developers:
 - "integer"
 - "lanwen"
 - "oleg_nenashev"
+security:
+  contacts:
+    jira: "integer"
