@@ -2,6 +2,6 @@
 name: "beagle-security"
 github: "jenkinsci/beagle-security-plugin"
 paths:
-- "org/jenkins-ci/plugins/beagle-security"
+- "io/jenkins/plugins/beagle-security"
 developers:
 - "rejah"
