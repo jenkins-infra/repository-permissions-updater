@@ -1,0 +1,10 @@
+---
+name: "myappci-plugin"
+paths:
+- "org/jenkins-ci/plugins/myappci"
+developers:
+- "carsten.mueller.lemberg"
+security:
+  contacts:
+    jira: carstenmuellerlemberg
+    email: carsten.mueller.lemberg@gmail.com
