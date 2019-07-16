@@ -1,7 +1,8 @@
 ---
 name: "myappci-plugin"
+github: "jenkinsci/myappci-plugin"
 paths:
-- "org/jenkins-ci/plugins/myappci"
+- "io/jenkins/plugins/myappci"
 developers:
 - "carstenmuellerlemberg"
 security:
