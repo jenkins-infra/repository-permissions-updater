@@ -3,4 +3,5 @@ name: "enhanced-old-build-discarder"
 github: "jenkinsci/enhanced-old-build-discarder-plugin"
 paths:
 - "org/jenkins-ci/plugins/enhanced-old-build-discarder"
-developers: [bbeggs]
+developers:
+- "bbeggs"
