@@ -1,0 +1,11 @@
+---
+name: "gitlab-branch-source"
+github: "jenkinsci/gitlab-branch-source-plugin"
+paths:
+- "io/jenkins/plugins/gitlab-branch-source"
+developers:
+- "baymac"
+- "jequals5"
+- "justinharringa"
+- "casz"
+- "surenpi"
