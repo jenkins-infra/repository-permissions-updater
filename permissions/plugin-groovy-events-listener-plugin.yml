@@ -4,4 +4,4 @@ github: "jenkinsci/groovy-events-listener-plugin"
 paths:
 - "org/jenkins-ci/plugins/groovy-events-listener-plugin"
 developers:
-- "nickg"
+- "jequals5"
