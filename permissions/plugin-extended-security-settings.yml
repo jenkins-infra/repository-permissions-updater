@@ -1,0 +1,8 @@
+---
+name: "extended-security-settings"
+github: "jenkinsci/extended-security-settings-plugin"
+paths:
+- "io/jenkins/plugins/extended-security-settings"
+developers:
+- "jvz"
+- "jthompson"

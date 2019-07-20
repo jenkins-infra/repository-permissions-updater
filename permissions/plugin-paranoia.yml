@@ -1,7 +1,0 @@
----
-name: "paranoia"
-github: "jenkinsci/paranoia-plugin"
-paths:
-- "org/jenkins-ci/plugins/paranoia"
-developers:
-- "jvz"
