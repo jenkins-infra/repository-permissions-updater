@@ -1,0 +1,7 @@
+---
+name: "fast-track"
+github: "jenkinsci/fast-track-plugin"
+paths:
+- "nl/arnom/jenkins/fast-track"
+developers:
+- "arnom"
