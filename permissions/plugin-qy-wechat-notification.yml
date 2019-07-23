@@ -1,0 +1,6 @@
+name: "qy-wechat-notification"
+github: "jenkinsci/qy-wechat-notification-plugin"
+paths:
+- "org/jenkins-ci/plugins/qy-wechat-notification"
+developers:
+- "xiaoj313"
