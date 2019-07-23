@@ -1,0 +1,6 @@
+name: "leo-auth"
+github: "jenkinsci/leo-auth-plugin"
+paths:
+- "io/jenkins/plugins/leo-auth"
+developers:
+- "zshi456"
