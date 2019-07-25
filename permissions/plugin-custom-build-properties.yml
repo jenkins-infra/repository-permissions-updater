@@ -1,0 +1,7 @@
+---
+name: "custom-build-properties"
+github: "jenkinsci/custom-build-properties-plugin"
+paths:
+- "io/jenkins/plugins/custom-build-properties"
+developers:
+- "shasait"
