@@ -1,5 +1,5 @@
 ---
-name: "jenkins-plugin-management-parent-pom"
+name: "plugin-management-parent-pom"
 github: "jenkinsci/plugin-installation-manager-tool"
 paths:
 - "io/jenkins/plugin-management/plugin-management-parent-pom"
