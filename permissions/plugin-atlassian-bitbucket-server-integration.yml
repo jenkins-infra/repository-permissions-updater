@@ -4,8 +4,4 @@ github: "jenkinsci/atlassian-bitbucket-server-integration-plugin"
 paths:
 - "io/jenkins/plugins/atlassian-bitbucket-server-integration"
 developers:
-- "dkjellin"
-- "mhenschke_atlassian"
-- "khughes"
-- "justinskariah_atl"
-- "gjoshi"
+- "atlassian_bbs"
