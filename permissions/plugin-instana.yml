@@ -1,0 +1,7 @@
+---
+name: "instana"
+github: "jenkinsci/instana-plugin"
+paths:
+- "com/instana/jenkins/plugins/instana"
+developers:
+- "EWachnowezki"
