@@ -2,6 +2,6 @@
 name: "flock"
 github: "jenkinsci/flock-plugin"
 paths:
-- "org/jenkins-ci/plugins/flock"
+- "io/jenkins/plugins/flock"
 developers:
 - "ajaymann"
