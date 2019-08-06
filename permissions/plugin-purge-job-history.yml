@@ -5,3 +5,7 @@ paths:
 - "org/jenkins-ci/plugins/purge-job-history"
 developers:
 - "stephenconnolly"
+- "aytuncbeken"
+security:
+  contacts:
+    jira: "aytuncbeken"
