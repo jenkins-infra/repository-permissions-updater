@@ -8,6 +8,8 @@ developers:
 - "oleg_nenashev"
 - "stephenconnolly"
 - "rsandell"
+- "bitwiseman"
+- "dnusbaum"
 security:
   contacts:
     jira: "pipeline_security_members"
