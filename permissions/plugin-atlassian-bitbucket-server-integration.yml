@@ -1,0 +1,7 @@
+---
+name: "atlassian-bitbucket-server-integration"
+github: "jenkinsci/atlassian-bitbucket-server-integration-plugin"
+paths:
+- "io/jenkins/plugins/atlassian-bitbucket-server-integration"
+developers:
+- "atlassian_bbs"
