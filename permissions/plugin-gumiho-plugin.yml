@@ -1,0 +1,7 @@
+---
+name: "gumiho-plugin"
+github: "you227/gumiho-plugin"
+paths:
+- "io/jenkins/plugins/gumiho-plugin"
+developers:
+- "you227"
