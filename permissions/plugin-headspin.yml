@@ -1,0 +1,7 @@
+---
+name: "headspin"
+github: "projectxyzio/jenkins-integration"
+paths:
+- "org/jenkins-ci/plugins/headspin"
+developers:
+- "headspin"
