@@ -4,5 +4,5 @@ github: "jenkinsci/hpe-application-automation-tools-plugin"
 paths:
 - "org/jenkins-ci/plugins/hp-application-automation-tools-plugin"
 developers:
+- "NarcisaMGalan"        
 - "gront"
-- "yafim_kazak"
