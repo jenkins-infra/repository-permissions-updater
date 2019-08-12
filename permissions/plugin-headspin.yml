@@ -1,6 +1,6 @@
 ---
 name: "headspin"
-github: "projectxyzio/jenkins-integration"
+github: "projectxyzio/jenkins-headspin-plugin"
 paths:
 - "org/jenkins-ci/plugins/headspin"
 developers:
