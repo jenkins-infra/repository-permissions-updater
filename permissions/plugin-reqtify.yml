@@ -1,0 +1,7 @@
+---
+name: "reqtify"
+github: "jenkinsci/reqtify-plugin"
+paths:
+- "org/jenkins-ci/plugins/reqtify"
+developers:
+- "NKR8"
