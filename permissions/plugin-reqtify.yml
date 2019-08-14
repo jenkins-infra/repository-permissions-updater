@@ -2,6 +2,6 @@
 name: "reqtify"
 github: "jenkinsci/reqtify-plugin"
 paths:
-- "org/jenkins-ci/plugins/reqtify"
+- "io/jenkins/plugins/reqtify"
 developers:
 - "NKR8"
