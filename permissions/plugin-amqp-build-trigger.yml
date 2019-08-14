@@ -3,4 +3,4 @@ github: "jenkinsci/amqp-build-trigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/amqp-build-trigger"
 developers:
-- "kvdr"
+- "kpvdr"
