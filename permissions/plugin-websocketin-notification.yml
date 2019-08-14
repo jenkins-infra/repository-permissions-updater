@@ -1,0 +1,7 @@
+---
+name: "websocketin-notification"
+github: "jenkinsci/websocketin-notification-plugin"
+paths:
+- "io/jenkins/plugins/websocketin-notification"
+developers:
+- "dhobi"
