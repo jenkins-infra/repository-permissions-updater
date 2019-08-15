@@ -2,6 +2,6 @@
 name: "headspin"
 github: "jenkinsci/headspin-plugin"
 paths:
-- "org/jenkins-ci/plugins/headspin"
+- "io/jenkins/plugins/headspin"
 developers:
 - "headspin"
