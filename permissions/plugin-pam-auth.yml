@@ -4,6 +4,7 @@ github: "jenkinsci/pam-auth-plugin"
 paths:
 - "org/jenkins-ci/plugins/pam-auth"
 developers:
+- "danielbeck"
 - "recena"
 - "stephenconnolly"
 - "jvz"

@@ -15,3 +15,6 @@ developers:
 - "carroll"
 - "bitwiseman"
 - "kshultz"
+security:
+  contacts:
+    jira: "foundation_security_members"

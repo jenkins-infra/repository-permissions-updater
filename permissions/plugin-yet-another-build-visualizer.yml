@@ -5,3 +5,4 @@ paths:
 - "com/axis/system/jenkins/plugins/downstream/yet-another-build-visualizer"
 developers:
 - "gustafl"
+- "jons"

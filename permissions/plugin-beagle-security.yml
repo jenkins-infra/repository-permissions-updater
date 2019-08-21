@@ -1,0 +1,7 @@
+---
+name: "beagle-security"
+github: "jenkinsci/beagle-security-plugin"
+paths:
+- "io/jenkins/plugins/beagle-security"
+developers:
+- "rejah"

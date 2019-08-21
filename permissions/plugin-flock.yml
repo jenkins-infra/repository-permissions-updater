@@ -1,0 +1,7 @@
+---
+name: "flock"
+github: "jenkinsci/flock-plugin"
+paths:
+- "io/jenkins/plugins/flock"
+developers:
+- "ajaymann"

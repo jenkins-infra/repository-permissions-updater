@@ -1,0 +1,7 @@
+---
+name: "graphql-server"
+github: "jenkinsci/graphql-server-plugin"
+paths:
+- "io/jenkins/plugins/graphql-server"
+developers:
+- "halkeye"

@@ -1,0 +1,7 @@
+---
+name: "sweagle"
+github: "jenkinsci/sweagle-plugin"
+paths:
+- "io/jenkins/plugins/sweagle"
+developers:
+- "joe99000"

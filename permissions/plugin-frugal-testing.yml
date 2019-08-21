@@ -1,0 +1,8 @@
+---
+name: "frugal-testing"
+github: "jenkinsci/frugal-testing-plugin"
+paths:
+- "io/jenkins/plugins/frugal-testing"
+developers:
+- "frugaltesting"
+- "jakshatdesai"
