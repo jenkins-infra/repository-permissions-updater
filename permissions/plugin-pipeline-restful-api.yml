@@ -1,0 +1,7 @@
+---
+name: "pipeline-restful-api"
+github: "jenkinsci/pipeline-restful-api-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-restful-api"
+developers:
+- "surenpi"
