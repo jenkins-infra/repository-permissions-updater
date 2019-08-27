@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/ant"
 developers:
 - "armfergom"
+- "jglick"
+- "fcojfernandez"
