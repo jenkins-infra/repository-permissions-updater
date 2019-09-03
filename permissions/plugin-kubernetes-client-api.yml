@@ -1,5 +1,5 @@
 ---
-name: "kubernetes-client-api-plugin"
+name: "kubernetes-client-api"
 github: "jenkinsci/kubernetes-client-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/kubernetes-client-api-plugin"
