@@ -1,0 +1,10 @@
+---
+name: "multibranch-action-triggers"
+github: "jenkinsci/multibranch-action-triggers-plugin"
+paths:
+- "io/jenkins/plugins/multibranch-action-triggers"
+developers:
+- "aytuncbeken"
+security:
+  contacts:
+    jira: "aytuncbeken"
