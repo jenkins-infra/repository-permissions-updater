@@ -3,5 +3,4 @@ name: "nested-view"
 github: "jenkinsci/nested-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/nested-view"
-developers:
-- "lvotypkova"
+developers: []

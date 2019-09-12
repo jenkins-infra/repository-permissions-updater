@@ -4,5 +4,4 @@ github: "jenkinsci/smartfrog-plugin"
 paths:
 - "org/jenkins-ci/plugins/smartfrog-plugin"
 developers:
-- "lvotypkova"
 - "vjuranek"
