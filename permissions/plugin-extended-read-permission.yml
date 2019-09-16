@@ -5,3 +5,4 @@ paths:
 - "org/jvnet/hudson/plugins/extended-read-permission"
 developers:
 - "batmat"
+- "oleg_nenashev"
