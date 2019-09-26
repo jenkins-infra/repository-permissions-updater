@@ -2,6 +2,10 @@
 name: "bom"
 github: "jenkinsci/bom"
 paths:
-- "io/jenkins/tools/bom/bom"
+- "io/jenkins/tools/bom/bom-2.190.x"
+- "io/jenkins/tools/bom/bom-2.176.x"
+- "io/jenkins/tools/bom/bom-2.164.x"
+- "io/jenkins/tools/bom/bom-2.150.x"
+- "io/jenkins/tools/bom/bom-2.138.x"
 developers:
 - "jglick"
