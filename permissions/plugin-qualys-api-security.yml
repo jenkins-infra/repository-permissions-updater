@@ -4,4 +4,4 @@ github: "jenkinsci/qualys-api-security-plugin"
 paths:
 - "com/qualys/plugins/qualys-api-security-plugin"
 developers:
-- "qualys-plugins"
+- "qualys"
