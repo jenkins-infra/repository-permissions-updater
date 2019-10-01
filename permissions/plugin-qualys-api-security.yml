@@ -1,0 +1,7 @@
+---
+name: "qualys-api-security"
+github: "jenkinsci/qualys-api-security-plugin"
+paths:
+- "com/qualys/plugins/qualys-api-security"
+developers:
+- "qualys"
