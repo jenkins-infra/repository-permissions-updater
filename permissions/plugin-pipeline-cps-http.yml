@@ -2,6 +2,6 @@
 name: "pipeline-cps-http"
 github: "jenkinsci/pipeline-cps-http-plugin"
 paths:
-- "org/jenkins-ci/plugins/pipeline-cps-http"
+- "io/jenkins/plugins/pipeline-cps-http"
 developers:
 - "julienduchesne"
