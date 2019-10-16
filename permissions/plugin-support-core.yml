@@ -14,6 +14,7 @@ developers:
 - "dnusbaum"
 - "egutierrez"
 - "mramonleon"
+- "allan_burdajewicz"
 security:
   contacts:
     jira: "foundation_security_members"
