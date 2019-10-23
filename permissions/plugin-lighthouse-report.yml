@@ -1,0 +1,7 @@
+---
+name: "lighthouse-report"
+github: "jenkinsci/lighthouse-report-plugin"
+paths:
+- "io/jenkins/plugins/lighthouse-report"
+developers:
+- "halkeye"
