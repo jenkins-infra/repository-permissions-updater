@@ -4,4 +4,4 @@ github: "jenkinsci/test-results-aggregator-plugin"
 paths:
 - "com/jenkins/testresultsaggregator"
 developers:
-- "sdrss"
+- "Socrates"
