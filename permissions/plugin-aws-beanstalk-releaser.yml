@@ -1,0 +1,7 @@
+---
+name: "aws-beanstalk-releaser"
+github: "jenkinsci/aws-beanstalk-releaser-plugin"
+paths:
+- "io/jenkins/plugins/aws-beanstalk-releaser"
+developers:
+- "visiontech"

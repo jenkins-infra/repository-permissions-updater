@@ -1,0 +1,7 @@
+---
+name: "chaos-monkey"
+github: "jenkinsci/chaos-monkey-plugin"
+paths:
+- "io/jenkins/plugins/chaos-monkey"
+developers:
+- "pierrebtz"

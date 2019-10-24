@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/oic-auth"
 developers:
 - "mbischoff"
+- "surenpi"
