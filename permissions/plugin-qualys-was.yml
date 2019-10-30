@@ -1,6 +1,6 @@
 ---
 name: "qualys-was"
-github: "jenkinsci/qualys-was"
+github: "jenkinsci/qualys-was-plugin"
 paths:
 - "com/qualys/plugins/qualys-was"
 developers:
