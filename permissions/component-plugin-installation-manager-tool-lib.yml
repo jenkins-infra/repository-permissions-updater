@@ -1,5 +1,5 @@
 ---
-name: "jenkins-plugin-management-library"
+name: "plugin-management-library"
 github: "jenkinsci/plugin-installation-manager-tool"
 paths:
 - "io/jenkins/plugin-management/plugin-management-library"
