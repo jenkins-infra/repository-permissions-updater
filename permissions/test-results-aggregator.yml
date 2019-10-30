@@ -2,6 +2,7 @@
 name: "test-results-aggregator"
 github: "jenkinsci/test-results-aggregator-plugin"
 paths:
-- "io/jenkins/plugins/tests-results-aggregator"
+- "org/jenkins-ci/plugins/tests-results-aggregator"
 developers:
 - "Socrates"
+- "socrates"
