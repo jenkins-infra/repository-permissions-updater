@@ -4,5 +4,4 @@ github: "jenkinsci/test-results-aggregator-plugin"
 paths:
 - "org/jenkins-ci/plugins/test-results-aggregator"
 developers:
-- "Socrates"
 - "socrates"
