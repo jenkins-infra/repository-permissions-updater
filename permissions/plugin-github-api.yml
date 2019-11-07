@@ -5,9 +5,11 @@ paths:
 - "org/jenkins-ci/plugins/github-api"
 developers:
 - "andresrc"
+- "bitwiseman"
 - "integer"
 - "kohsuke"
 - "ohtake_tomohiro"
 - "recena"
 - "surya548"
 - "stephenconnolly"
+
