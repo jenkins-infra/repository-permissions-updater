@@ -1,0 +1,7 @@
+---
+name: "popper-api"
+github: "jenkinsci/popper-api-plugin"
+paths:
+- "io/jenkins/plugins/popper-api"
+developers:
+- "drulli"
