@@ -1,0 +1,7 @@
+---
+name: "data-tables-api"
+github: "jenkinsci/data-tables-api-plugin"
+paths:
+- "io/jenkins/plugins/data-tables-api"
+developers:
+- "drulli"

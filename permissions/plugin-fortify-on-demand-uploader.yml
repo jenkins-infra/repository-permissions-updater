@@ -5,6 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/fortify-on-demand-uploader"
 developers:
 - "ryanblack"
-- "mtgibbs"
 - "tsotack"
 - "vodriemf"

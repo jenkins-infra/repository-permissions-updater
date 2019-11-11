@@ -1,0 +1,7 @@
+---
+name: "bootstrap4-api"
+github: "jenkinsci/bootstrap4-api-plugin"
+paths:
+- "io/jenkins/plugins/bootstrap4-api"
+developers:
+- "drulli"

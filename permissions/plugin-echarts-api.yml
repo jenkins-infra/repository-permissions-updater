@@ -1,0 +1,7 @@
+---
+name: "echarts-api"
+github: "jenkinsci/echarts-api-plugin"
+paths:
+- "io/jenkins/plugins/echarts-api"
+developers:
+- "drulli"
