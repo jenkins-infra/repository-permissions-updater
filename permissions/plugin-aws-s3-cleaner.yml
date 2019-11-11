@@ -1,0 +1,7 @@
+---
+name: "aws-s3-cleaner"
+github: "jenkinsci/aws-s3-cleaner-plugin"
+paths:
+- "io/jenkins/plugins/aws-s3-cleaner"
+developers:
+- "visiontech"
