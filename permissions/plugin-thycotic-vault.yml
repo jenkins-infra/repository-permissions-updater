@@ -4,5 +4,4 @@ github: "jenkinsci/thycotic-vault-plugin"
 paths:
   - "com.thycotic/plugins/thycotic-vault"
 developers:
-  - "hansboder"
-  - "4killo"
+  - "thycotic_DSV"
