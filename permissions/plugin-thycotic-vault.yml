@@ -1,0 +1,9 @@
+---
+name: "thycotic-vault"
+github: "jenkinsci/thycotic-vault-plugin"
+paths:
+  - "com.thycotic/plugins/thycotic-vault"
+developers:
+  - "thycotic-rd"
+  - "hansboder"
+  - "4killo"
