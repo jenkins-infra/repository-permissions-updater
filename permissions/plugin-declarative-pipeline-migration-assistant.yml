@@ -1,5 +1,5 @@
 ---
-name: "convert-to-declarative"
+name: "declarative-pipeline-migration-assistant-plugin"
 github: "jenkinsci/declarative-pipeline-migration-assistant-plugin"
 paths:
   - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-plugin"
