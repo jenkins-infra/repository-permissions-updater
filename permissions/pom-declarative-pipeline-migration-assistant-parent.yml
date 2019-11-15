@@ -1,8 +1,8 @@
 ---
 name: "convert-to-declarative-parent"
-github: "jenkinsci/convert-to-declarative"
+github: "jenkinsci/declarative-pipeline-migration-assistant-plugin"
 paths:
-- "org/jenkins-ci/plugins/convert-to-declarative/convert-to-declarative-parent"
+- "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-parent"
 developers:
   - "abayer"
   - "dnusbaum"
