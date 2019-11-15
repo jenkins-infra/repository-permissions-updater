@@ -2,6 +2,6 @@
 name: "thycotic-vault"
 github: "jenkinsci/thycotic-vault-plugin"
 paths:
-  - "com.thycotic/plugins/thycotic-vault"
+  - "com/thycotic/thycotic-vault"
 developers:
   - "thycotic_DSV"
