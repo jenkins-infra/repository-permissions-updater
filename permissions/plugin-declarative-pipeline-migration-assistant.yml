@@ -1,0 +1,17 @@
+---
+name: "declarative-pipeline-migration-assistant-plugin"
+github: "jenkinsci/declarative-pipeline-migration-assistant-plugin"
+paths:
+  - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-plugin"
+developers:
+  - "abayer"
+  - "dnusbaum"
+  - "jglick"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "olamy"
+security:
+  contacts:
+    jira: "pipeline_security_members"
