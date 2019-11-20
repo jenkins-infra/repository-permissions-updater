@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/google-metadata-plugin"
 developers:
 - "tcnghia"
+- "alecharp"
