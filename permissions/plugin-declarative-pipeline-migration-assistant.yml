@@ -1,8 +1,8 @@
 ---
-name: "declarative-pipeline-migration-assistant-plugin"
+name: "declarative-pipeline-migration-assistant"
 github: "jenkinsci/declarative-pipeline-migration-assistant-plugin"
 paths:
-  - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-plugin"
+  - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant"
 developers:
   - "abayer"
   - "dnusbaum"
