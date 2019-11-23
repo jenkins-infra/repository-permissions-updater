@@ -1,0 +1,10 @@
+---
+name: "jenkins-pipeline-unit"
+github: "jenkinsci/JenkinsPipelineUnit"
+paths:
+  - "com/lesfurets/jenkins-pipeline-unit"
+developers:
+  - "oleg_nenashev"
+  - "stchar"
+  - "ozangunalp"
+
