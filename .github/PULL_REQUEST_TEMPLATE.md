@@ -32,4 +32,4 @@ Make sure to implement all relevant entries (see section headers to when they ap
 - [ ] [All newly added users have logged in to Artifactory at least once](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
 
 #### Merge permission to GitHub repository
-- [ ] Check this if newly added person also needs to be given merge permission to the GitHub repo.
+- [ ] Check this if newly added person also needs to be given merge permission to the GitHub repo. If needed, it can be done using an [IRC bot command](https://jenkins.io/projects/infrastructure/ircbot/#github-repo-management). Make sure to check that the `$pluginId Developers` team has `Write` permissions or above while granting the access.
