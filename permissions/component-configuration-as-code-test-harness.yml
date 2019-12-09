@@ -1,8 +1,8 @@
 ---
-name: "snakeyaml"
+name: "test-harness"
 github: "jenkinsci/configuration-as-code-plugin"
 paths:
-- "io/jenkins/configuration-as-code/snakeyaml"
+- "io/jenkins/configuration-as-code/test-harness"
 developers:
 - "praqma"
 - "casz"
