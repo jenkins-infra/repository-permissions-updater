@@ -5,5 +5,5 @@ paths:
 - "io/jenkins/plugins/build-health-cache-updater"
 developers:
 - "rsandell"
-- "varyvol"
+- "egutierrez"
 - "alecharp"
