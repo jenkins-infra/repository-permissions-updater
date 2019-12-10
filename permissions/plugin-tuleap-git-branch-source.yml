@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/tuleap-git-branch-source"
 developers:
 - "vaceletm"
+- "crobinson"
+- "tgerbet_enalean"
