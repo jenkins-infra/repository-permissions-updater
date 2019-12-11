@@ -5,6 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/acunetix-360-scan"
 developers:
 - "acunetix360"
-security:
-  contacts:
-    email: 360@acunetix.com
