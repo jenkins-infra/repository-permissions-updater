@@ -1,0 +1,7 @@
+---
+name: "pipeline-global-lib-nexus"
+github: "jenkinsci/pipeline-global-lib-nexus-plugin"
+paths:
+- "com/roylenferink/jenkins/plugins/pipeline-global-lib-nexus"
+developers:
+- "rlenferink"
