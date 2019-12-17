@@ -2,6 +2,6 @@
 name: "redeploy-rancher2-workload"
 github: "jenkinsci/redeploy-rancher2-workload-plugin"
 paths:
-- "org/jenkins-ci/plugins/redeploy-rancher2-workload-plugin"
+- "org/jenkins-ci/plugins/redeploy-rancher2-workload"
 developers:
 - "feg545"
