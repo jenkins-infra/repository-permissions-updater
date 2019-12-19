@@ -4,5 +4,4 @@ github: "jenkinsci/itms-junit-report-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/itms-junit-report-publisher"
 developers:
-- "iTMSJenkins"
-- "hhhtu2013"
+- "itms"
