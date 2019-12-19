@@ -2,6 +2,6 @@
 name: "osf-builder-suite-for-sfcc-run-job"
 github: "jenkinsci/osf-builder-suite-for-sfcc-run-job-plugin"
 paths:
-  - "org/jenkins-ci/plugins/osf-builder-suite-for-sfcc-run-job"
+  - "io/jenkins/plugins/osf-builder-suite-for-sfcc-run-job"
 developers:
   - "danechitoaie"
