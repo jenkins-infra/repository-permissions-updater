@@ -2,6 +2,6 @@
 name: "itms-junit-report-publisher"
 github: "jenkinsci/itms-junit-report-publisher-plugin"
 paths:
-- "org/jenkins-ci/plugins/itms-junit-report-publisher"
+- "io/jenkins/plugins/itms-junit-report-publisher"
 developers:
 - "itms"
