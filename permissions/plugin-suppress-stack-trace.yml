@@ -6,3 +6,12 @@ paths:
 developers:
 - "jglick"
 - "recena"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"
