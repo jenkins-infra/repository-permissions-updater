@@ -5,3 +5,13 @@ paths:
 - "org/jenkins-ci/ui/momentjs"
 developers:
 - "tfennelly"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "fqueiruga"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"
