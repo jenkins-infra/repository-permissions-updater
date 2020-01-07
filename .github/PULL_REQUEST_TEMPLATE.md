@@ -29,7 +29,8 @@ Make sure to implement all relevant entries (see section headers to when they ap
 
 - [ ] [Make sure to `@`mention an existing maintainer to confirm the permissions request, if applicable](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
 - [ ] Use the Jenkins community (LDAP) account name in the YAML file, not the GitHub account name
+- [ ] Make sure to `@`mention the users being added so their GitHub account names are known if they require GitHub merge access (see below).
 - [ ] [All newly added users have logged in to Artifactory at least once](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
 
 #### Merge permission to GitHub repository
-- [ ] Check this if newly added person also needs to be given merge permission to the GitHub repo. If needed, it can be done using an [IRC bot command](https://jenkins.io/projects/infrastructure/ircbot/#github-repo-management). Make sure to check that the `$pluginId Developers` team has `Write` permissions or above while granting the access.
+- [ ] Check this if newly added person also needs to be given merge permission to the GitHub repo (please @ the people/person with their GitHub username in this issue as well). If needed, it can be done using an [IRC bot command](https://jenkins.io/projects/infrastructure/ircbot/#github-repo-management). Make sure to check that the `$pluginId Developers` team has `Write` permissions or above while granting the access.
