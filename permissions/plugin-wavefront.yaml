@@ -2,6 +2,6 @@
 name: "wavefront"
 github: "jenkinsci/wavefront-plugin"
 paths:
-- "org/jenkins-ci/plugins/wavefront"
+- "com/vmware/devops/plugins/wavefront"
 developers:
 - "ddparapanov"
