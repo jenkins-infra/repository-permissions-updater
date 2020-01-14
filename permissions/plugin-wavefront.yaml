@@ -4,4 +4,4 @@ github: "jenkinsci/wavefront-plugin"
 paths:
 - "org/jenkins-ci/plugins/wavefront"
 developers:
-- "dparapanov"
+- "ddparapanov"
