@@ -2,6 +2,6 @@
 name: "dingding-notifications"
 github: "jenkinsci/dingding-notifications-plugin"
 paths:
-  - "org/jenkins-ci/plugins/dingding-notifications"
+  - "io/jenkins/plugins/dingding-notifications"
 developers:
   - "liuweigl"
