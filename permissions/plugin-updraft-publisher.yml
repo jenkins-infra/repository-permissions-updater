@@ -2,6 +2,6 @@
 name: "updraft-publisher"
 github: "jenkinsci/updraft-publisher-plugin"
 paths:
-- "org/jenkins-ci/plugins/updraft-publisher"
+- "com/appswithlove/updraft/updraft-publisher"
 developers:
 - "yannickpulver"
