@@ -12,4 +12,6 @@ developers:
 - "recena"
 - "surya548"
 - "stephenconnolly"
-
+security:
+  contacts:
+    jira: "foundation_security_members"
