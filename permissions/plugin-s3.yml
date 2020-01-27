@@ -10,3 +10,6 @@ developers:
 - "jequals5"
 - "egutierrez"
 - "fcojfernandez"
+security:
+  contacts:
+    jira: "foundation_security_members"
