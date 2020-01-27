@@ -1,0 +1,7 @@
+---
+name: "qiniu"
+github: "jenkinsci/qiniu-plugin"
+paths:
+- "io/jenkins/plugins/qiniu"
+developers:
+- "bachue"
