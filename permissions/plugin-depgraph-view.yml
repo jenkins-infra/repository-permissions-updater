@@ -4,4 +4,7 @@ github: "jenkinsci/depgraph-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/depgraph-view"
 developers:
-- "wolfs"
+- "ggrazioli"
+security:
+  contacts:
+    jira: ggrazioli
