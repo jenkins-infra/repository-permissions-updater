@@ -4,4 +4,6 @@ github: "jenkinsci/appspider-build-scanner-plugin"
 paths:
 - "com/rapid7/jenkinsci-appspider-plugin"
 developers:
-- "nbugash"
+- "tsmoreland"
+- "tmoreland-r7"
+- "rgrimley-r7"
