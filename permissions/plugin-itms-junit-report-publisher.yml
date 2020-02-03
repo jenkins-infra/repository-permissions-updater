@@ -1,6 +1,6 @@
 ---
-name: "itms-junit-report-publisher"
-github: "jenkinsci/itms-junit-report-publisher-plugin"
+name: "itms-for-jira"
+github: "jenkinsci/itms-for-jira-plugin"
 paths:
 - "io/jenkins/plugins/itms-junit-report-publisher"
 developers:
