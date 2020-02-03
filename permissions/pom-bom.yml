@@ -9,3 +9,4 @@ paths:
 - "io/jenkins/tools/bom/bom-2.138.x"
 developers:
 - "jglick"
+- "timja"
