@@ -1,0 +1,7 @@
+---
+name: "sealights-plugin"
+github: "jenkinsci/sealights-plugin"
+paths:
+- "org/jenkins-ci/plugins/sealights-plugin"
+developers:
+- "sealights"
