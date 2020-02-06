@@ -4,4 +4,8 @@ name: "stapler-jrebel"
 github: "stapler/stapler"
 paths:
 - "org/kohsuke/stapler/stapler-jrebel"
-developers: []
+developers: 
+- "jglick"
+- "danielbeck"
+- "jthompson"
+

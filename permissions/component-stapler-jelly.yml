@@ -4,4 +4,8 @@ name: "stapler-jelly"
 github: "stapler/stapler"
 paths:
 - "org/kohsuke/stapler/stapler-jelly"
-developers: []
+developers: 
+- "jglick"
+- "danielbeck"
+- "jthompson"
+

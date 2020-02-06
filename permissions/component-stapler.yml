@@ -4,4 +4,8 @@ name: "stapler"
 github: "stapler/stapler"
 paths:
 - "org/kohsuke/stapler/stapler"
-developers: []
+developers: 
+- "jglick"
+- "danielbeck"
+- "jthompson"
+

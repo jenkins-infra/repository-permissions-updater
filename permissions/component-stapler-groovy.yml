@@ -4,4 +4,8 @@ name: "stapler-groovy"
 github: "stapler/stapler"
 paths:
 - "org/kohsuke/stapler/stapler-groovy"
-developers: []
+developers: 
+- "jglick"
+- "danielbeck"
+- "jthompson"
+

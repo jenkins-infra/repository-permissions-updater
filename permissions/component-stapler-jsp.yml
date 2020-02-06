@@ -4,4 +4,7 @@ name: "stapler-jsp"
 github: "stapler/stapler"
 paths:
 - "org/kohsuke/stapler/stapler-jsp"
-developers: []
+developers: 
+- "jglick"
+- "danielbeck"
+- "jthompson"

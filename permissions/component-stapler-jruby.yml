@@ -4,4 +4,7 @@ name: "stapler-jruby"
 github: "stapler/stapler"
 paths:
 - "org/kohsuke/stapler/stapler-jruby"
-developers: []
+developers: 
+- "jglick"
+- "danielbeck"
+- "jthompson"
