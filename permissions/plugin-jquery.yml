@@ -6,3 +6,6 @@ paths:
 developers:
 - "basil"
 - "kohsuke"
+security:
+  contacts:
+    jira: "foundation_security_members"

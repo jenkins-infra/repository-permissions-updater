@@ -10,3 +10,7 @@ developers:
 - "lubosmichalic"
 - "danielpottenger"
 - "diogoduarterg"
+- "jackdewinter"
+security:
+  contacts:
+    jira: redgate_security

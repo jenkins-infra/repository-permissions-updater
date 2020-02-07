@@ -5,9 +5,13 @@ paths:
 - "org/jenkins-ci/plugins/async-http-client"
 - "org/jenkinsci/plugins/async-http-client"
 developers:
-- "stephenconnolly"
+- "alecharp"
+- "batmat"
 - "egutierrez"
+- "fcojfernandez"
 - "mramonleon"
+- "rsandell"
+- "stephenconnolly"
 security:
   contacts:
     jira: "foundation_security_members"

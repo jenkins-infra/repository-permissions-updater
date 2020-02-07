@@ -1,0 +1,8 @@
+---
+name: "jira-rest-ldap-syncer"
+paths:
+- "io/jenkins/backend/jira-rest-ldap-syncer"
+github: "jenkins-infra/jira-ldap-syncer"
+developers:
+- "oleg_nenashev"
+- "olblak"

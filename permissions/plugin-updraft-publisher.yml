@@ -1,0 +1,7 @@
+---
+name: "updraft-publisher"
+github: "jenkinsci/updraft-publisher-plugin"
+paths:
+- "com/appswithlove/updraft/updraft-publisher"
+developers:
+- "appswithlove"

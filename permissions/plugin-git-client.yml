@@ -8,3 +8,6 @@ developers:
 - "markewaite"
 - "rsandell"
 - "fcojfernandez"
+security:
+    contacts:
+      jira: "foundation_security_members"
