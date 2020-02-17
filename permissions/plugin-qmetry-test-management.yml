@@ -5,3 +5,8 @@ paths:
 - "org/jenkins-ci/plugins/qmetry-test-management"
 developers:
 - "dharaghodasara"
+- "priankashah"
+security:
+  contacts:
+    jira: priankashah
+    email: qtmprofessional@qmetrysupport.atlassian.net
