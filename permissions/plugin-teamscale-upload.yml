@@ -1,0 +1,7 @@
+---
+name: "teamscale-upload"
+github: "jenkinsci/teamscale-upload-plugin"
+paths:
+- "io/jenkins/plugins/teamscale-upload"
+developers:
+- "cqsejenkins"
