@@ -1,0 +1,8 @@
+---
+name: "veracode-scan"
+github: "jenkinsci/veracode-scan-plugin"
+paths:
+- "io/jenkins/plugins/veracode-scan"
+developers:
+- "dennisgu"
+- "sbuhary"
