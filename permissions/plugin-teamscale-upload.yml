@@ -2,6 +2,6 @@
 name: "teamscale-upload"
 github: "jenkinsci/teamscale-upload-plugin"
 paths:
-- "org/jenkins-ci/plugins/teamscale-upload"
+- "io/jenkins/plugins/teamscale-upload"
 developers:
 - "cqsejenkins"
