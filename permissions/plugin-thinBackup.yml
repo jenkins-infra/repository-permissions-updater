@@ -2,7 +2,6 @@
 name: "thinBackup"
 github: "jenkinsci/thin-backup-plugin"
 paths:
-- "org/jenkins-ci/plugins/thin-backup-plugin"
 - "org/jvnet/hudson/plugins/thinBackup"
 developers: 
 - "tofuatjava"
