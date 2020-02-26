@@ -1,0 +1,10 @@
+---
+name: "portshift-scanner"
+github: "jenkinsci/portshift-ci-plugin"
+paths:
+- "org/jenkins-ci/plugins/portshift-scanner"
+developers:
+- "portshift"
+security:
+  contacts:
+    email: naor@portshift.io
