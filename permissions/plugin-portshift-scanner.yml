@@ -7,4 +7,4 @@ developers:
 - "portshift"
 security:
   contacts:
-    email: naor@portshift.io
+    jira: portshift
