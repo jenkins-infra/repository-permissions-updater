@@ -5,6 +5,3 @@ paths:
 - "io/jenkins/plugins/portshift-scanner"
 developers:
 - "portshift"
-security:
-  contacts:
-    jira: portshift
