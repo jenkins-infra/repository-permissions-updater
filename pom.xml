@@ -9,7 +9,7 @@
     <groupId>io.jenkins.infra</groupId>
     <artifactId>repository-permissions-updater</artifactId>
 
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>Artifactory Upload Permissions Updater</name>
     <description>Updates Artifactory upload permissions based on YAML definition files</description>
 
@@ -108,5 +108,6 @@
     <scm>
         <connection>scm:git:git://github.com/jenkins-infra/upload-permissions-updater.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/jenkins-infra/upload-permissions-updater.git</developerConnection>
-    </scm>
+      <tag>repository-permissions-updater-1.0</tag>
+  </scm>
 </project>
