@@ -1,8 +1,8 @@
 ---
 name: "environment-dashboard"
-github: "jenkinsci/js-libs"
+github: "jenkinsci/environment-dashboard-plugin"
 paths:
-- "org/jenkins-ci/plugins/environment-dashboard"
+- "io/jenkins/plugins/environment-dashboard"
 developers:
 - "vipinsthename"
 - "willwh"
