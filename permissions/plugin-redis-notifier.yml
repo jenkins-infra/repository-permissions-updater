@@ -2,6 +2,6 @@
 name: "redis-notifier"
 github: "jenkinsci/redis-notifier-plugin"
 paths:
-- "org/jenkins-ci/plugins/redis-notifier"
+- "io/jenkins/plugins/redis-notifier"
 developers:
 - "d3camp0s"
