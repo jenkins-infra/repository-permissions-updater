@@ -1,6 +1,6 @@
 ---
 name: "zohosprints-plugin"
-github: "https://github.com/jenkinsci/zohosprints-plugin"
+github: "jenkinsci/zohosprints-plugin"
 paths:
   - "io/jenkins/plugins/zohosprints"
 developers:
