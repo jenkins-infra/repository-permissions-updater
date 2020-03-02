@@ -1,0 +1,7 @@
+---
+name: "redis-notifier"
+github: "jenkinsci/redis-notifier-plugin"
+paths:
+- "io/jenkins/plugins/redis-notifier"
+developers:
+- "d3camp0s"
