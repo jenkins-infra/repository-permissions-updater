@@ -4,4 +4,4 @@ github: "jenkinsci/zohosprints-plugin"
 paths:
   - "io/jenkins/plugins/zohosprints"
 developers:
-  - "zsprints"
+  - "zohosprints"
