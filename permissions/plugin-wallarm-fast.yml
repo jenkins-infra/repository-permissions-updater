@@ -2,6 +2,6 @@
 name: "wallarm-fast"
 github: "jenkinsci/wallarm-fast-plugin"
 paths:
-- "org/jenkins-ci/plugins/wallarm-fast"
+- "io/jenkins/plugins/wallarm-fast"
 developers:
 - "mkirichenko"
