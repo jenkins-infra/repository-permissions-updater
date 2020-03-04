@@ -1,0 +1,7 @@
+---
+name: "global-pre-script"
+github: "jenkinsci/global-pre-script-plugin"
+paths:
+- "org/jenkins-ci/plugins/global-pre-script"
+developers:
+- "orekaria"
