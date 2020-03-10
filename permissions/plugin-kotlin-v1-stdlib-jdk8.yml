@@ -4,4 +4,4 @@ github: "jenkinsci/kotlin-v1-stdlib-jdk8-plugin"
 paths:
 - "org/jenkins-ci/plugins/kotlin/kotlin-v1-stdlib-jdk8"
 developers:
-- "casz"
+- "jetersen"

@@ -4,5 +4,5 @@ github: "jenkinsci/dotcoverrunner-plugin"
 paths:
 - "io/jenkins/plugins/dotcoverrunner"
 developers:
-- "casz"
+- "jetersen"
 - "rasmusjelsgaard"
