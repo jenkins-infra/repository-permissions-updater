@@ -1,0 +1,7 @@
+---
+name: "snakeyaml"
+github: "jenkinsci/snakeyaml-plugin"
+paths:
+- "io/jenkins/plugins/snakeyaml"
+developers:
+- "escoem"
