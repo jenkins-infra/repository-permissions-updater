@@ -6,3 +6,4 @@ paths:
 - "org/jvnet/hudson/plugins/view-job-filters"
 developers:
 - "svenschoenung"
+- "jglick"
