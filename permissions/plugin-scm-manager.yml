@@ -2,7 +2,7 @@
 name: "scm-manager"
 github: "jenkinsci/scm-manager-plugin"
 paths:
-- "org/jenkins-ci/plugins/scm-manager"
+- "io/jenkins/plugins/scm-manager"
 developers:
 - "sdorra"
 - "pfeuffer"
