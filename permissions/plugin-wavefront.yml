@@ -1,0 +1,7 @@
+---
+name: "wavefront"
+github: "jenkinsci/wavefront-plugin"
+paths:
+- "com/vmware/devops/wavefront"
+developers:
+- "ddparapanov"

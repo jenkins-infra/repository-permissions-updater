@@ -5,4 +5,4 @@ paths:
 - "com/datapipe/jenkins/plugins/hashicorp-vault-plugin"
 developers:
 - "ptierno"
-- "casz"
+- "jetersen"

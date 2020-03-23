@@ -4,4 +4,4 @@ github: "jenkinsci/handy-uri-templates-2-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/handy-uri-templates-2-api"
 developers:
-- "casz"
+- "jetersen"

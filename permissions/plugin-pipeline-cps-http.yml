@@ -1,0 +1,7 @@
+---
+name: "pipeline-cps-http"
+github: "jenkinsci/pipeline-cps-http-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-cps-http"
+developers:
+- "julienduchesne"

@@ -9,3 +9,8 @@ developers:
 - "jglick"
 - "markewaite"
 - "stephenconnolly"
+- "rsandell"
+- "fcojfernandez"
+security:
+    contacts:
+      jira: "foundation_security_members"

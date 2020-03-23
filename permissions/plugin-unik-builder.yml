@@ -1,0 +1,7 @@
+--- 
+name: "unik-builder"
+github: "jenkinsci/unik-builder-plugin"
+paths:
+- "io/jenkins/plugins/unik-builder"
+developers:
+- "mathiasmah"

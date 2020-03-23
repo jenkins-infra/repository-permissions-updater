@@ -5,3 +5,12 @@ paths:
 - "org/jenkins-ci/ui/handlebars"
 developers:
 - "tfennelly"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

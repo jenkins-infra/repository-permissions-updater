@@ -1,0 +1,7 @@
+---
+name: "font-awesome-api"
+github: "jenkinsci/font-awesome-api-plugin"
+paths:
+- "io/jenkins/plugins/font-awesome-api"
+developers:
+- "drulli"

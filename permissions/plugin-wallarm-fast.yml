@@ -1,0 +1,7 @@
+---
+name: "wallarm-fast"
+github: "jenkinsci/wallarm-fast-plugin"
+paths:
+- "io/jenkins/plugins/wallarm-fast"
+developers:
+- "mkirichenko"

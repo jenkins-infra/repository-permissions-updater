@@ -6,4 +6,5 @@ paths:
 - "org/jvnet/hudson/plugins/throttle-concurrents"
 developers:
 - "abayer"
+- "basil"
 - "oleg_nenashev"

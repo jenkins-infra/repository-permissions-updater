@@ -1,0 +1,7 @@
+---
+name: "zohosprints-plugin"
+github: "jenkinsci/zohosprints-plugin"
+paths:
+  - "io/jenkins/plugins/zohosprints"
+developers:
+  - "zohosprints"
