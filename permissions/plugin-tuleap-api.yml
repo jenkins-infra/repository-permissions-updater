@@ -2,6 +2,6 @@
 name: "tuleap-api"
 github: "jenkinsci/tuleap-api-plugin"
 paths:
-- "org/jenkins-ci/plugins/tuleap-api"
+- "io/jenkins/plugins/tuleap-api"
 developers:
 - "erwyn"
