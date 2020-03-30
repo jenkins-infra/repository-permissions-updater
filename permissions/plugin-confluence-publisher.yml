@@ -5,4 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/confluence-publisher"
 developers:
 - "jhansche"
-- "casz"
+- "jetersen"

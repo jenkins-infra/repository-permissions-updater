@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 name: "sealights"
+=======
+name: "sealights-plugin"
+>>>>>>> 421aeda77b73cab22631c5b58e2c95f0d545a179
 github: "jenkinsci/sealights-plugin"
 paths:
 - "io/sealights/plugins/sealights"

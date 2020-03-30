@@ -9,3 +9,6 @@ developers:
 - "jvz"
 - "fcojfernandez"
 - "raihaan"
+security:
+  contacts:
+    jira: "foundation_security_members"

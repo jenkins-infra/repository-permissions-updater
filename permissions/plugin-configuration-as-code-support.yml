@@ -5,7 +5,7 @@ paths:
 - "io/jenkins/configuration-as-code/configuration-as-code-support"
 developers:
 - "praqma"
-- "casz"
+- "jetersen"
 security:
   contacts:
-    jira: "casz"
+    jira: "jetersen"

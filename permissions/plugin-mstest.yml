@@ -5,4 +5,4 @@ paths:
 - "org/jvnet/hudson/plugins/mstest"
 developers:
 - "nilleb"
-- "casz"
+- "jetersen"

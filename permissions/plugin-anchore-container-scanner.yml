@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/anchore-container-scanner"
 developers:
 - "nurmi"
+- "jequals5"

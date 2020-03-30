@@ -1,0 +1,7 @@
+---
+name: "testflo-test-results-publisher"
+github: "jenkinsci/testflo-test-results-publisher-plugin"
+paths:
+- "io/jenkins/plugins/testflo-test-results-publisher"
+developers:
+- "deviniti"

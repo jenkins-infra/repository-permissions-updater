@@ -5,9 +5,9 @@ paths:
 - "io/jenkins/configuration-as-code/test-harness"
 developers:
 - "praqma"
-- "casz"
+- "jetersen"
 - "oleg_nenashev"
 - "timja"
 security:
   contacts:
-    jira: "casz"
+    jira: "jetersen"

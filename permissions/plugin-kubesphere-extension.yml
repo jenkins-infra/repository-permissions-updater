@@ -1,0 +1,8 @@
+---
+name: "kubesphere-extension"
+github: "jenkinsci/kubesphere-extension-plugin"
+paths:
+  - "io/jenkins/kubesphere/plugins/kubesphere-extension"
+developers:
+  - "runzexia"
+  - "zhuxiaoyang"

@@ -3,4 +3,5 @@ name: "offlineonfailure-plugin"
 github: "jenkinsci/offlineonfailure-plugin"
 paths:
 - "org/jenkins-ci/plugins/offlineonfailure-plugin"
-developers: []
+developers:
+- "johnlengeling"
