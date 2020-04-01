@@ -2,6 +2,6 @@
 name: "dingtalk"
 github: "jenkinsci/dingtalk-plugin"
 paths:
-  - "io/jenkins/plugins/dingtalk"
+  - "io/jenkins/plugins/dingding-notifications"
 developers:
   - "liuweigl"
