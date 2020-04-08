@@ -6,7 +6,3 @@ paths:
 developers:
 - "dharaghodasara"
 - "priankashah"
-security:
-  contacts:
-    jira: priankashah
-    email: qmetryforjira@qmetrysupport.atlassian.net
