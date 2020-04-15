@@ -1,0 +1,7 @@
+---
+name: "deploy-dashboard"
+github: "jenkinsci/deploy-dashboard-plugin"
+paths:
+  - "io/jenkins/plugins/deploy-dashboard"
+developers:
+  - "vetal2409"
