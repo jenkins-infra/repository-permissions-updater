@@ -2,6 +2,6 @@
 name: "aws-lambda-cloud"
 github: "jenkinsci/aws-lambda-cloud-plugin"
 paths:
-- "org/jenkins-ci/plugins/aws-lambda-cloud"
+- "io/jenkins/plugins/aws-lambda-cloud"
 developers:
 - "jlm029"
