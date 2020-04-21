@@ -2,6 +2,6 @@
 name: "screenrecorder"                                                                                                                                                                                             
 github: "jenkinsci/screenrecorder-plugin"
 paths:
-- "org/jenkins-ci/plugins/screenrecorder"
+- "io/jenkins/plugins/screenrecorder"
 developers:
 - "tbaum"
