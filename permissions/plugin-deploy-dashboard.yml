@@ -5,3 +5,6 @@ paths:
   - "io/jenkins/plugins/deploy-dashboard"
 developers:
   - "vetal2409"
+  - "namecheap_jenkins"
+  - "StyleT"
+  - "yuriypuchkov"
