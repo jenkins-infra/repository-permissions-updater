@@ -5,6 +5,3 @@ paths:
 - "io/jenkins/plugins/pipeline-as-yaml"
 developers:
 - "aytuncbeken"
-security:
-  contacts:
-    jira: "aytuncbeken"
