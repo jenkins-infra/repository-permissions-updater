@@ -1,0 +1,11 @@
+---
+name: "synopsys-coverity"
+github: "jenkinsci/synopsys-coverity-plugin"
+paths:
+- "org/jenkins-ci/plugins/synopsys-coverity"
+developers:
+- "gkillough"
+- "jrichard"
+- "akamen"
+- "bdsoss"
+  [HOSTING-598] Requesting permissions for SD Elements plugin
