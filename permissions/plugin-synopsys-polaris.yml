@@ -1,11 +1,10 @@
 ---
-name: "synopsys-coverity"
-github: "jenkinsci/synopsys-coverity-plugin"
+name: "synopsys-polaris"
+github: "jenkinsci/synopsys-polaris-plugin"
 paths:
-- "org/jenkins-ci/plugins/synopsys-coverity"
+- "org/jenkins-ci/plugins/synopsys-polaris"
 developers:
 - "gkillough"
 - "jrichard"
 - "akamen"
 - "bdsoss"
-  [HOSTING-598] Requesting permissions for SD Elements plugin
