@@ -6,3 +6,7 @@ paths:
 developers:
 - "nikdabn"
 - "aws_device_farm_jenkins"
+security:
+  contacts:
+    jira: aws_device_farm_jenkins
+    email: "aws-device-farm-jenkins@amazon.com"
