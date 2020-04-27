@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/liquibase-runner"
 developers:
 - "prospero238"
+- "r2datical"
