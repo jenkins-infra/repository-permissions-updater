@@ -4,4 +4,5 @@ github: "jenkinsci/uipath-automation-package-plugin"
 paths:
 - "org/jenkins-ci/plugins/uipath-automation-package"
 developers:
+- "alvin_stanescu"
 - "rajeevuipath"

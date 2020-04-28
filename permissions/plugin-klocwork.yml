@@ -5,5 +5,5 @@ paths:
 - "com/thalesgroup/jenkins-ci/plugins/klocwork"
 - "org/jenkins-ci/plugins/klocwork"
 developers:
-- "gbois"
 - "michaelbaron"
+- "klocwork"

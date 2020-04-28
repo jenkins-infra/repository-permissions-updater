@@ -5,3 +5,4 @@ paths:
 - "io/jenkins/plugins/code-coverage-api"
 developers:
 - "cizezsy"
+- "asavanchuk"
