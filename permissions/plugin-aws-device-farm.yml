@@ -5,6 +5,7 @@ paths:
 - "org/jenkins-ci/plugins/aws-device-farm"
 developers:
 - "nikdabn"
-- "chabom"
-- "oleg_nenashev"
-- "patcadelina"
+- "aws_device_farm_jenkins"
+security:
+  contacts:
+    email: "aws-security@amazon.com"
