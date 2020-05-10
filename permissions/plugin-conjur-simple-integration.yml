@@ -1,0 +1,7 @@
+---
+name: "conjur-simple-integration"
+github: "jenkinsci/conjur-simple-integration"
+paths:
+- "org/conjur/jenkins/conjur-simple-integration"
+developers:
+- "mcamposv"
