@@ -2,7 +2,7 @@
 name: "preflight-integration"
 github: "jenkinsci/preflight-integration-plugin"
 paths:
-- "org/jenkins-ci/plugins/preflight-integration"
+- "io/jenkins/plugins/preflight-integration"
 developers:
 - "moosebay"
 - "huseyin"
