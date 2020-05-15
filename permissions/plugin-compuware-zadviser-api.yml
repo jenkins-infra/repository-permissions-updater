@@ -1,0 +1,6 @@
+name: "compuware-zadviser-api"
+github: "jenkinsci/compuware-zadviser-api-plugin"
+paths:
+- "com/compuware/jenkins/compuware-zadviser-api"
+developers:
+- "jgoering41"

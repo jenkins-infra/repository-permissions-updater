@@ -2,7 +2,7 @@
 name: "veracode-scan"
 github: "jenkinsci/veracode-scan-plugin"
 paths:
-- "io/jenkins/plugins/veracode-scan"
+- "com/veracode/jenkins/veracode-scan"
 developers:
 - "dennisgu"
 - "sbuhary"

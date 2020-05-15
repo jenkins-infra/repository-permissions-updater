@@ -6,3 +6,4 @@ paths:
 - "org/jvnet/hudson/plugins/android-emulator"
 developers:
 - "orrc"
+- "nfalco"

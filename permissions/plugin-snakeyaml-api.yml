@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/snakeyaml-api"
 developers:
 - "escoem"
+- "timja"
+- "jetersen"
+- "amuniz"

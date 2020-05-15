@@ -4,6 +4,8 @@ github: "jenkinsci/aws-device-farm-plugin"
 paths:
 - "org/jenkins-ci/plugins/aws-device-farm"
 developers:
-- "chabom"
-- "oleg_nenashev"
-- "patcadelina"
+- "nikdabn"
+- "aws_device_farm_jenkins"
+security:
+  contacts:
+    email: "aws-security@amazon.com"

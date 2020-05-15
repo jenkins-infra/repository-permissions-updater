@@ -1,7 +1,0 @@
----
-name: "qualys-cs"
-github: "jenkinsci/qualys-cs-plugin"
-paths:
-- "com/qualys/plugins/qualys-cs"
-developers:
-- "qualys"

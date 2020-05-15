@@ -1,0 +1,7 @@
+---
+name: "screenrecorder"                                                                                                                                                                                             
+github: "jenkinsci/screenrecorder-plugin"
+paths:
+- "io/jenkins/plugins/screenrecorder"
+developers:
+- "tbaum"

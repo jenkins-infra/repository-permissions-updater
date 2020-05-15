@@ -1,5 +1,5 @@
 ---
-name: "sealights-plugin"
+name: "sealights"
 github: "jenkinsci/sealights-plugin"
 paths:
 - "io/sealights/plugins/sealights"

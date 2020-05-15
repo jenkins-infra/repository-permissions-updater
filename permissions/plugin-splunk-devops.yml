@@ -5,5 +5,4 @@ paths:
 - "com/splunk/splunkins/splunk-devops"
 developers:
 - "fengxx"
-- "araza_splunk"
-- "djenkins"
+- "srv_splunk_devops_uploader"
