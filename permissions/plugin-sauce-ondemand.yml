@@ -5,7 +5,9 @@ paths:
 - "org/jenkins-ci/plugins/sauce-ondemand"
 - "org/jvnet/hudson/plugins/sauce-ondemand"
 developers:
+- "alexh_sauce"
 - "halkeye"
 - "moizjv"
 - "rossrowe"
+- "sauce_jenkins_bot"
 - "yfangsl"
