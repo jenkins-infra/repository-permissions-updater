@@ -2,6 +2,6 @@
 name: "adobe-cloud-manager"
 github: "jenkinsci/adobe-cloud-manager-plugin"
 paths:
-- "org/jenkins-ci/plugins/adobe-cloud-manager"
+- "io/jenkins/plugins/adobe-cloud-manager"
 developers:
 - "ahmedmusallam"
