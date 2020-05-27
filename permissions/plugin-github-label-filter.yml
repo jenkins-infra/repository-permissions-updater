@@ -1,0 +1,7 @@
+---
+name: "github-label-filter"
+github: "jenkinsci/github-label-filter-plugin"
+paths:
+- "io/jenkins/plugins/github-label-filter"
+developers:
+- "topikachu"
