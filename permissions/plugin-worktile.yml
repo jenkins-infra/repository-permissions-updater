@@ -1,6 +1,5 @@
----
-name: worktile
-github: jenkinsci/worktile-plugin
+name: "worktile"
+github: "jenkinsci/worktile-plugin"
 path:
 - "io/jenkins/plugins/worktile"
 developers:
