@@ -2,6 +2,6 @@
 name: "dotnet-sdk"
 github: "jenkinsci/dotnet-sdk-plugin"
 paths:
-- "io/jenkins-ci/plugins/dotnet-sdk"
+- "io/jenkins/plugins/dotnet-sdk"
 developers:
 - "Zastai"
