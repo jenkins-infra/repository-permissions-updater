@@ -1,0 +1,8 @@
+---
+name: "preflight-integration"
+github: "jenkinsci/preflight-integration-plugin"
+paths:
+- "io/jenkins/plugins/preflight-integration"
+developers:
+- "moosebay"
+- "huseyin"
