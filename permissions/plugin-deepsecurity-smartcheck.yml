@@ -5,3 +5,4 @@ paths:
   - io/jenkins/plugins/deepsecurity-smartcheck
 developers:
   - gmtm
+  - johanc
