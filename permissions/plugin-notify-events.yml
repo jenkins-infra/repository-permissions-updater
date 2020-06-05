@@ -4,4 +4,4 @@ github: "jenkinsci/notify-events-plugin"
 paths:
 - "events/notify/notify-events"
 developers:
-- "matrozov"
+- "mear"
