@@ -1,0 +1,6 @@
+name: "split-admin"
+github: "jenkinsci/split-admin-plugin"
+paths:
+- "io/split/jenkins/plugins"
+developers:
+- "bilal_split"

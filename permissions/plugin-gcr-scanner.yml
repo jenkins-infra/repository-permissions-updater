@@ -1,0 +1,7 @@
+---
+name: "gcr-scanner"
+github: "jenkinsci/gcr-scanner-plugin"
+paths:
+- "io/jenkins/plugins/gcr-scanner"
+developers:
+- "wilkhu90"

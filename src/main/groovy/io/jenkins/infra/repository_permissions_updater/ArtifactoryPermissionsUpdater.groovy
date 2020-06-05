@@ -139,7 +139,7 @@ public class ArtifactoryPermissionsUpdater {
 
         yamlSourceDirectory.eachFile { file ->
             if (!file.name.endsWith('.yml')) {
-                throw new IOException("Unexpected file: ${file.name}")
+                throw new IOException("Unexpected file: `${file.name}`. YAML files must end with `.yml`")
             }
 
             Definition definition

@@ -1,0 +1,10 @@
+name: "worktile"
+github: "jenkinsci/worktile-plugin"
+paths:
+- "io/jenkins/plugins/worktile"
+developers:
+- "shaunxu"
+- "luodongjia"
+- "sunjingyun"
+- "cheerfyt"
+- "13111179550"

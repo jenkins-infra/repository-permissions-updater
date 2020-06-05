@@ -1,5 +1,5 @@
 ---
-name: "bootstrap"
+name: "vanilla-package"
 github: "jenkinsci/jenkinsfile-runner"
 paths:
 - "io/jenkins/jenkinsfile-runner/vanilla-package"

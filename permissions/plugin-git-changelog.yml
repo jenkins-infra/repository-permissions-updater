@@ -4,5 +4,4 @@ github: "jenkinsci/git-changelog-plugin"
 paths:
 - "de/wellnerbou/jenkins/git-changelog"
 developers:
-- "paulwellnerbou"
 - "tomasbjerre"
