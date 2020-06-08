@@ -1,0 +1,8 @@
+---
+name: "theme-manager"
+github: "jenkinsci/theme-manager-plugin"
+paths:
+- "io/jenkins/plugins/theme-manager"
+developers:
+- "timja"
+
