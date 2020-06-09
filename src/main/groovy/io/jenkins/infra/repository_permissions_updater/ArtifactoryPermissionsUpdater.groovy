@@ -183,12 +183,13 @@ public class ArtifactoryPermissionsUpdater {
                     if (definition.developers.length == 0) {
                         users [:]
                     } else {
-                        users definition.developers.collectEntries { developer ->
-                            if (!knownUsers.contains(developer.toLowerCase())) {
-                                throw new IllegalStateException("User name not known to Artifactory: " + developer)
-                            }
-                            [(developer.toLowerCase(Locale.US)): ["w", "n"]]
-                        }
+                        users [:] // TODO FIXME remove this workaround preventing uploads by anyone and uncommen the following lines once LDAP is fixed:
+//                        users definition.developers.collectEntries { developer ->
+//                            if (!knownUsers.contains(developer.toLowerCase())) {
+//                                throw new IllegalStateException("User name not known to Artifactory: " + developer)
+//                            }
+//                            [(developer.toLowerCase(Locale.US)): ["w", "n"]]
+//                        }
                     }
                     groups([:])
                 }
