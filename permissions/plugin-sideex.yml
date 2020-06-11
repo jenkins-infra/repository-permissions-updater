@@ -2,6 +2,6 @@
 name: "sideex"
 github: "jenkinsci/sideex-plugin"
 paths:
-- "org/jenkins-ci/plugins/sideex"
+- "io/jenkinsi/plugins/sideex"
 developers:
 - "sideexteam"
