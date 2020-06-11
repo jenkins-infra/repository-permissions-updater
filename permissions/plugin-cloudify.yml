@@ -1,0 +1,10 @@
+---
+name: "cloudify"
+github: "jenkinsci/cloudify-plugin"
+paths:
+- "io/jenkins/plugins/cloudify"
+developers:
+- "isaac_s"
+- "cosmo_admin"
+- "earthmant"
+- "alexmolev"
