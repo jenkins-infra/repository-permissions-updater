@@ -2,13 +2,9 @@
 name: "cloudify"
 github: "jenkinsci/cloudify-plugin"
 paths:
-- "io/jenkins/plugins/cloudify-plugin"
+- "io/jenkins/plugins/cloudify"
 developers:
 - "isaac_s"
 - "cosmo_admin"
 - "earthmant"
 - "alexmolev"
-security:
-  contacts:
-    jira: cosmo_admin
-    email: devops@cloudify.co
