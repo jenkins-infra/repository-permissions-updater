@@ -6,6 +6,4 @@ paths:
 developers:
 - "stellargo"
 - "oleg_nenashev"
-# Disabled by oleg-nenashev on Jun 15, 2020. The user needs to re-login to Artifactory
-# Please see https://groups.google.com/forum/#!topic/jenkinsci-dev/3UvrCTflXGk for the context
-#- "ma3oxuct"
+- "ma3oxuct"
