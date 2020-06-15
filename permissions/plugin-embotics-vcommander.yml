@@ -5,7 +5,4 @@ paths:
 developers:
 - "aelliotatemboticsdotcom"
 - "embotics"
-# Disabled by oleg-nenashev on Jun 15, 2020 - No valid email in Jira for password reset.
-# Please contact jenkins-infra@googlegroups.com to get the password reset.
-# See https://groups.google.com/forum/#!topic/jenkinsci-dev/3UvrCTflXGk for more details
-# - "builderatemboticsdotcom"
+- "builderatemboticsdotcom"
