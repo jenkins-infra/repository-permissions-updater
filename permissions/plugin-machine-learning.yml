@@ -2,8 +2,7 @@
 name: "machine-learning"
 github: "jenkinsci/machine-learning-plugin"
 paths:
-  - "io/jenkins-ci/plugins/machine-learning"
+  - "io/jenkins/plugins/machine-learning"
 developers:
   - "loghijiaha"
-
 
