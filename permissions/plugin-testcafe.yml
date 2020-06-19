@@ -1,0 +1,7 @@
+---
+name: "testcafe"
+github: "jenkinsci/testcafe-plugin"
+paths:
+- "io/jenkins/plugins/testcafe"
+developers:
+- "wentwrong"
