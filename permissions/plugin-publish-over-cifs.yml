@@ -5,4 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/publish-over-cifs"
 developers:
 - "slide_o_mix"
-- "blakmajk"
+- "patrickw"
