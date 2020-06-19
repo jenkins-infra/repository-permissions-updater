@@ -2,6 +2,7 @@
 name: "bom"
 github: "jenkinsci/bom"
 paths:
+- "io/jenkins/tools/bom/bom-2.235.x"
 - "io/jenkins/tools/bom/bom-2.222.x"
 - "io/jenkins/tools/bom/bom-2.204.x"
 - "io/jenkins/tools/bom/bom-2.190.x"
