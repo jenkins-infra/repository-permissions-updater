@@ -1,0 +1,7 @@
+---
+name: "appray"
+github: "jenkinsci/appray-plugin"
+paths:
+- "io/jenkins/plugins/appray"
+developers:
+- "marci_appray"
