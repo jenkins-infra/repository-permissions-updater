@@ -1,0 +1,7 @@
+---
+name: "x-developer-client"
+github: "jenkinsci/x-developer-client-plugin"
+paths:
+- "jenkins/plugins/xclient"
+developers:
+- "rcfans"
