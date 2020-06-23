@@ -11,6 +11,7 @@ developers:
 - "fcojfernandez"
 - "mramonleon"
 - "rsandell"
+- "jglick"
 security:
   contacts:
     jira: "foundation_security_members"
