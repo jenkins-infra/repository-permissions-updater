@@ -1,0 +1,7 @@
+---
+name: "teststudioapitesting"
+github: "jenkinsci/teststudioapitesting-plugin"
+paths:
+- "org/jenkins-ci/plugins/teststudioapitesting"
+developers:
+- "deyan_kalinov"

@@ -1,5 +1,6 @@
 ---
 name: "gitlab-oauth"
+github: "jenkinsci/gitlab-oauth-plugin"
 paths:
 - "org/jenkins-ci/plugins/gitlab-oauth"
 developers:

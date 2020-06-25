@@ -1,5 +1,6 @@
 ---
 name: "linenumbers"
+github: "jenkinsci/linenumbers-plugin"
 paths:
 - "org/jenkins-ci/plugins/linenumbers"
 developers:

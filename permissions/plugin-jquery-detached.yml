@@ -1,6 +1,16 @@
 ---
 name: "jquery-detached"
+github: "jenkinsci/js-libs"
 paths:
 - "org/jenkins-ci/ui/jquery-detached"
 developers:
 - "tfennelly"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

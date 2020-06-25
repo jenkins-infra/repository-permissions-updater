@@ -1,0 +1,7 @@
+---
+name: "debian-pbuilder"
+github: "jenkinsci/debian-pbuilder-plugin"
+paths:
+- "com/rm5248/debian-pbuilder"
+developers:
+- "rm5248"

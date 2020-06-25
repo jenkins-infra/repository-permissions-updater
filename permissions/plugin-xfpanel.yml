@@ -1,5 +1,6 @@
 ---
 name: "xfpanel"
+github: "jenkinsci/xfpanel-plugin"
 paths:
 - "org/jenkins-ci/plugins/xfpanel"
 developers:

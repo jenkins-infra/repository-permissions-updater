@@ -1,7 +1,19 @@
 ---
 name: "workflow-aggregator"
+github: "jenkinsci/workflow-aggregator-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-aggregator"
 developers:
 - "jglick"
 - "kohsuke"
+- "abayer"
+- "svanoort"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+- "jtaboada"
+security:
+  contacts:
+    jira: "pipeline_security_members"

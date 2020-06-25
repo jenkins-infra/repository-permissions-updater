@@ -1,5 +1,6 @@
 ---
 name: "gallio"
+github: "jenkinsci/gallio-plugin"
 paths:
 - "org/jenkins-ci/plugins/gallio"
 - "org/jvnet/hudson/plugins/gallio"

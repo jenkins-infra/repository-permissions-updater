@@ -1,5 +1,6 @@
 ---
 name: "percentage-du-node-column"
+github: "jenkinsci/percentage-du-node-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/percentage-du-node-column"
 developers:

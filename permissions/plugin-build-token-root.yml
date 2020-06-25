@@ -1,5 +1,6 @@
 ---
 name: "build-token-root"
+github: "jenkinsci/build-token-root-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-token-root"
 developers:

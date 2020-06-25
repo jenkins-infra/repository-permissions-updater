@@ -1,5 +1,6 @@
 ---
 name: "singleuseslave"
+github: "jenkinsci/singleuseslave-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/singleuseslave"
 developers:

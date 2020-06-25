@@ -1,8 +1,8 @@
 ---
 name: "template-project"
+github: "jenkinsci/template-project-plugin"
 paths:
 - "org/jenkins-ci/plugins/template-project"
 developers:
 - "brantone"
 - "ctapobep"
-- "ndeloof"

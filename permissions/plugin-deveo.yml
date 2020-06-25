@@ -1,5 +1,6 @@
 ---
 name: "deveo"
+github: "jenkinsci/deveo-plugin"
 paths:
 - "org/jenkins-ci/plugins/deveo"
 developers:

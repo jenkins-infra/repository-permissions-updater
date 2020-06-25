@@ -1,6 +1,16 @@
 ---
 name: "numeraljs"
+github: "jenkinsci/js-libs"
 paths:
 - "org/jenkins-ci/ui/numeraljs"
 developers:
 - "tfennelly"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

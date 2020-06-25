@@ -1,0 +1,11 @@
+---
+name: "custom-war-packager-cli"
+github: "jenkinsci/custom-war-packager"
+paths:
+- "io/jenkins/tools/custom-war-packager/custom-war-packager-cli"
+developers:
+- "oleg_nenashev"
+- "jglick"
+- "csanchez"
+- "fcojfernandez"
+- "egutierrez"

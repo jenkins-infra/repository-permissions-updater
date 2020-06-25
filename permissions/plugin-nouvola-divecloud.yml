@@ -1,5 +1,6 @@
 ---
 name: "nouvola-divecloud"
+github: "jenkinsci/nouvola-divecloud-plugin"
 paths:
 - "org/jenkins-ci/plugins/nouvola-divecloud"
 developers:

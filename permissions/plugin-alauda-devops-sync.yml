@@ -1,0 +1,8 @@
+---
+name: "alauda-devops-sync"
+paths:
+- "io/alauda/jenkins/plugins/alauda-devops-sync"
+developers:
+- "surenpi"
+- "danielfbm"
+- "chengjingtao"

@@ -1,5 +1,6 @@
 ---
 name: "blackduck-hub"
+github: "jenkinsci/blackduck-hub-plugin"
 paths:
 - "com/blackducksoftware/integration/blackduck-hub"
 developers:

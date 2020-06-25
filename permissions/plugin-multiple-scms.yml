@@ -1,5 +1,6 @@
 ---
 name: "multiple-scms"
+github: "jenkinsci/multiple-scms-plugin"
 paths:
 - "org/jenkins-ci/plugins/multiple-scms"
 developers:

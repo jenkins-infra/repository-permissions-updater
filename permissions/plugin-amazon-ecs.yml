@@ -1,7 +1,9 @@
 ---
 name: "amazon-ecs"
+github: "jenkinsci/amazon-ecs-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/amazon-ecs"
 developers:
-- "ndeloof"
-- "roehrijn2"
+- "webrat"
+- "pgarbe"
+- "jequals5"

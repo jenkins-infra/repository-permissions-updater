@@ -1,5 +1,6 @@
 ---
 name: "octoperf"
+github: "jenkinsci/octoperf-plugin"
 paths:
 - "org/jenkinsci/plugins/octoperf"
 developers:

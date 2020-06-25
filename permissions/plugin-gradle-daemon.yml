@@ -1,0 +1,7 @@
+---
+name: "gradle-daemon"
+github: "jenkinsci/gradle-daemon-plugin"
+paths:
+- "org/jenkins-ci/plugins/gradle-daemon"
+developers:
+- "deepy"

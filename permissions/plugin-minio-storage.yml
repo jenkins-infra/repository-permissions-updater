@@ -1,5 +1,6 @@
 ---
 name: "minio-storage"
+github: "jenkinsci/minio-storage-plugin"
 paths:
 - "org/jenkins-ci/plugins/minio-storage"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "gem-publisher"
+github: "jenkinsci/gem-publisher-plugin"
 paths:
 - "net/arangamani/jenkins/gem-publisher"
 developers: []

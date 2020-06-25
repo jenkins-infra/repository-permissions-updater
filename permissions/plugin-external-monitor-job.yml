@@ -1,7 +1,17 @@
 ---
 name: "external-monitor-job"
+github: "jenkinsci/external-monitor-job-plugin"
 paths:
 - "org/jenkins-ci/plugins/external-monitor-job"
 developers:
 - "jglick"
 - "recena"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

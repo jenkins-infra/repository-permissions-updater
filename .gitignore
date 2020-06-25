@@ -1,3 +1,6 @@
+# generated directory, not to be committed/pushed
+json/
+
 # Apache Maven
 target/
 
@@ -6,3 +9,12 @@ target/
 *.iml
 out/
 lib/
+
+# eclipse
+.classpath
+.project
+.settings
+
+# NetBeans
+nb-configuration.xml
+nbactions-*.xml

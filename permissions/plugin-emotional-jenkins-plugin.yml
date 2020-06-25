@@ -1,5 +1,6 @@
 ---
 name: "emotional-jenkins-plugin"
+github: "jenkinsci/emotional-jenkins-plugin"
 paths:
 - "org/jenkins-ci/plugins/emotional-jenkins-plugin"
 developers:

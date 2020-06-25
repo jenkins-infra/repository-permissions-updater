@@ -1,7 +1,18 @@
 ---
 name: "workflow-scm-step"
+github: "jenkinsci/workflow-scm-step-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-scm-step"
 developers:
 - "jglick"
 - "kohsuke"
+- "abayer"
+- "svanoort"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+security:
+  contacts:
+    jira: "pipeline_security_members"

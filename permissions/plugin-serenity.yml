@@ -1,5 +1,6 @@
 ---
 name: "serenity"
+github: "jenkinsci/serenity-plugin"
 paths:
 - "org/jenkins-ci/plugins/serenity"
 developers:

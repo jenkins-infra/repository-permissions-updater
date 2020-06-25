@@ -1,5 +1,6 @@
 ---
 name: "analysis-test"
+github: "jenkinsci/analysis-test-plugin"
 paths:
 - "org/jvnet/hudson/plugins/analysis-test"
 developers:

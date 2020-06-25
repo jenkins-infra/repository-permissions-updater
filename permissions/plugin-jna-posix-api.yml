@@ -1,0 +1,5 @@
+name: "jna-posix-api"
+github: "jenkinsci/jna-posix-api-plugin"
+paths:
+- "io/jenkins/plugins/jna-posix-api"
+developers: []

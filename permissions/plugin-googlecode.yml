@@ -1,5 +1,6 @@
 ---
 name: "googlecode"
+github: "jenkinsci/googlecode-plugin"
 paths:
 - "org/jenkins-ci/plugins/googlecode"
 - "org/jvnet/hudson/plugins/googlecode"

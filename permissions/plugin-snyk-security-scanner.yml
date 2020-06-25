@@ -1,0 +1,12 @@
+---
+name: "snyk-security-scanner"
+github: "jenkinsci/snyk-security-scanner-plugin"
+paths:
+- "io/snyk/plugins/snyk-security-scanner"
+developers:
+- "assaf"
+- "adrukh"
+- "levangig"
+- "pavel_snyk"
+- "yuliabaron"
+- "www"

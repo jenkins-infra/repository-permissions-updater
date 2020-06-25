@@ -1,5 +1,6 @@
 ---
 name: "rake"
+github: "jenkinsci/rake-plugin"
 paths:
 - "org/jenkins-ci/plugins/rake"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "cloudbees-folder"
+github: "jenkinsci/cloudbees-folder-plugin"
 paths:
 - "org/jenkins-ci/plugins/cloudbees-folder"
 developers:
@@ -8,3 +9,9 @@ developers:
 - "oleg_nenashev"
 - "recena"
 - "stephenconnolly"
+- "dnusbaum"
+- "rsandell"
+- "fcojfernandez"
+security:
+  contacts:
+    jira: "foundation_security_members"

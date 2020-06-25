@@ -1,5 +1,6 @@
 ---
 name: "svncompat14"
+github: "jenkinsci/svncompat14-plugin"
 paths:
 - "org/jvnet/hudson/plugins/svncompat14"
 developers: []

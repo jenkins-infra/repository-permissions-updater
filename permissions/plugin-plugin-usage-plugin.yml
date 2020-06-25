@@ -1,6 +1,9 @@
 ---
 name: "plugin-usage-plugin"
+github: "jenkinsci/plugin-usage-plugin"
 paths:
 - "org/jenkins-ci/plugins/plugin-usage-plugin"
 developers:
 - "chrissy25"
+- "michallaskowski"
+- "froque"

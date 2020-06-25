@@ -1,0 +1,7 @@
+---
+name: "helix-teamhub"
+github: "jenkinsci/helix-teamhub-plugin"
+paths:
+- "org/jenkins-ci/plugins/helix-teamhub"
+developers:
+- "p4paul"

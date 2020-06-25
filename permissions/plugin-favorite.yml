@@ -1,7 +1,16 @@
 ---
 name: "favorite"
+github: "jenkinsci/favorite-plugin"
 paths:
 - "org/jvnet/hudson/plugins/favorite"
 developers:
 - "michaelneale"
 - "jamesdumay"
+- "vivek"
+- "abayer"
+- "carroll"
+- "dnusbaum"
+- "olamy"
+- "rsandell"
+- "bitwiseman"
+- "kshultz"

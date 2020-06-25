@@ -1,5 +1,6 @@
 ---
 name: "pipeline-model-definition"
+github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
 - "org/jenkinsci/plugins/pipeline-model-definition"
 developers:
@@ -7,3 +8,9 @@ developers:
 - "oleg_nenashev"
 - "stephenconnolly"
 - "rsandell"
+- "svanoort"
+- "bitwiseman"
+- "dnusbaum"
+security:
+  contacts:
+    jira: "pipeline_security_members"

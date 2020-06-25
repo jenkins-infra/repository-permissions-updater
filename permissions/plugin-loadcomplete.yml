@@ -1,0 +1,7 @@
+---
+name: "loadcomplete"
+github: "jenkinsci/loadcomplete-plugin"
+paths:
+- "org/jenkins-ci/plugins/loadcomplete"
+developers:
+- "igor_filin"

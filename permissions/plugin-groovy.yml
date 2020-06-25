@@ -1,5 +1,6 @@
 ---
 name: "groovy"
+github: "jenkinsci/groovy-plugin"
 paths:
 - "org/jenkins-ci/plugins/groovy"
 - "org/jvnet/hudson/plugins/groovy"

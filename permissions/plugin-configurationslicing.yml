@@ -1,8 +1,10 @@
 ---
 name: "configurationslicing"
+github: "jenkinsci/configurationslicing-plugin"
 paths:
 - "org/jenkins-ci/plugins/configurationslicing"
 - "org/jvnet/hudson/plugins/configurationslicing"
 developers:
 - "mdonohue"
 - "ninian"
+- "guysoft"

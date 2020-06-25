@@ -1,7 +1,17 @@
 ---
 name: "git-server"
+github: "jenkinsci/git-server-plugin"
 paths:
 - "org/jenkins-ci/plugins/git-server"
 developers:
 - "jglick"
 - "kohsuke"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

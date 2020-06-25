@@ -1,0 +1,7 @@
+---
+name: "squashtm-publisher"
+github: "jenkinsci/squashtm-publisher-plugin"
+paths:
+- "org/jenkins-ci/plugins/squashtm-publisher"
+developers:
+- "dev_squash"

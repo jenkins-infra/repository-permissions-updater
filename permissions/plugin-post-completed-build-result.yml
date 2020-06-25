@@ -1,5 +1,6 @@
 ---
 name: "post-completed-build-result"
+github: "jenkinsci/post-completed-build-result-plugin"
 paths:
 - "org/terracotta/jenkins/plugins/post-completed-build-result"
 developers: []

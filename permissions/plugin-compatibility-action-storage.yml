@@ -1,5 +1,6 @@
 ---
 name: "compatibility-action-storage"
+github: "jenkinsci/compatibility-action-storage-plugin"
 paths:
 - "org/jenkins-ci/plugins/compatibility-action-storage"
 developers:

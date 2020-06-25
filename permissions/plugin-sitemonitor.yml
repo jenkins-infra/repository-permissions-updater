@@ -1,5 +1,6 @@
 ---
 name: "sitemonitor"
+github: "jenkinsci/sitemonitor-plugin"
 paths:
 - "org/jvnet/hudson/plugins/sitemonitor"
 developers:

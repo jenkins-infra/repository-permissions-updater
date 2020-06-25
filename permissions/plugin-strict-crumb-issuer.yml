@@ -1,0 +1,8 @@
+---
+name: "strict-crumb-issuer"
+github: "jenkinsci/strict-crumb-issuer-plugin"
+paths:
+- "org/jenkins-ci/plugins/strict-crumb-issuer"
+developers:
+- "danielbeck"
+- "wfollonier"

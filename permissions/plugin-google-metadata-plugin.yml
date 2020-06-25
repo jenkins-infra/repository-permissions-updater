@@ -1,6 +1,7 @@
 ---
 name: "google-metadata-plugin"
+github: "jenkinsci/google-metadata-plugin"
 paths:
 - "org/jenkins-ci/plugins/google-metadata-plugin"
 developers:
-- "tcnghia"
+- "alecharp"

@@ -1,7 +1,14 @@
 ---
 name: "ec2"
+github: "jenkinsci/ec2-plugin"
 paths:
 - "org/jenkins-ci/plugins/ec2"
 developers:
-- "francisu"
-- "ndeloof"
+- "thoulen"
+- "julienduchesne"
+- "fcojfernandez"
+- "raihaan"
+- "mramonleon"
+security:
+  contacts:
+    jira: "foundation_security_members"

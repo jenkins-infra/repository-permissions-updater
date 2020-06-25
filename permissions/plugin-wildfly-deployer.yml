@@ -1,5 +1,6 @@
 ---
 name: "wildfly-deployer"
+github: "jenkinsci/wildfly-deployer-plugin"
 paths:
 - "org/jenkins-ci/plugins/wildfly-deployer"
 developers:

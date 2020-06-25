@@ -1,5 +1,6 @@
 ---
 name: "jenkins-flowdock-plugin"
+github: "jenkinsci/flowdock-plugin"
 paths:
 - "com/flowdock/jenkins/jenkins-flowdock-plugin"
 developers:

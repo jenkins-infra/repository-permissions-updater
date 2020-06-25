@@ -1,5 +1,6 @@
 ---
 name: "buddycloud"
+github: "jenkinsci/buddycloud-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/buddycloud"
 developers:

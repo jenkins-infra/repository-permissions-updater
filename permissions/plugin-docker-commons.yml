@@ -1,10 +1,14 @@
 ---
 name: "docker-commons"
+github: "jenkinsci/docker-commons-plugin"
 paths:
 - "org/jenkins-ci/plugins/docker-commons"
 developers:
 - "jglick"
 - "kohsuke"
-- "ndeloof"
 - "oleg_nenashev"
 - "rsandell"
+- "dnusbaum"
+security:
+  contacts:
+    jira: "foundation_security_members"

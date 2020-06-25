@@ -1,8 +1,18 @@
 ---
 name: "mercurial"
+github: "jenkinsci/mercurial-plugin"
 paths:
 - "org/jenkins-ci/plugins/mercurial"
 - "org/jvnet/hudson/plugins/mercurial"
 developers:
 - "jglick"
 - "stephenconnolly"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

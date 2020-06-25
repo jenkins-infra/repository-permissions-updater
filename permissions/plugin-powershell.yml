@@ -1,6 +1,8 @@
 ---
 name: "powershell"
+github: "jenkinsci/powershell-plugin"
 paths:
 - "org/jenkins-ci/plugins/powershell"
 developers:
 - "chrisalbrecht"
+- "froque"

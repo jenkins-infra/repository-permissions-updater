@@ -1,8 +1,10 @@
 ---
 name: "parallel-test-executor"
+github: "jenkinsci/parallel-test-executor-plugin"
 paths:
 - "org/jenkins-ci/plugins/parallel-test-executor"
 developers:
 - "jglick"
 - "vlatombe"
 - "wolfs"
+- "abayer"

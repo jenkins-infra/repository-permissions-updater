@@ -1,9 +1,9 @@
 ---
 name: "naginator"
+github: "jenkinsci/naginator-plugin"
 paths:
 - "org/jenkins-ci/plugins/naginator"
 developers:
 - "galunto"
 - "ikedam"
 - "integer"
-- "ndeloof"

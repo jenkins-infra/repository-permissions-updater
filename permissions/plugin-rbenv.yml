@@ -1,5 +1,6 @@
 ---
 name: "rbenv"
+github: "jenkinsci/rbenv-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/rbenv"
 developers:

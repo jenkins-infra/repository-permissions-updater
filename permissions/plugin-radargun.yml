@@ -1,5 +1,6 @@
 ---
 name: "radargun"
+github: "jenkinsci/radargun-plugin"
 paths:
 - "org/jenkins-ci/plugins/radargun"
 developers:

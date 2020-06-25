@@ -1,0 +1,7 @@
+---
+name: "build-history-manager"
+github: "jenkinsci/build-history-manager-plugin"
+paths:
+- "pl/damianszczepanik/build-history-manager"
+developers:
+- "dszczepanik"

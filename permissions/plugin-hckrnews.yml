@@ -1,5 +1,6 @@
 ---
 name: "hckrnews"
+github: "jenkinsci/hckrnews-plugin"
 paths:
 - "com/lewuathe/plugins/hckrnews"
 developers: []

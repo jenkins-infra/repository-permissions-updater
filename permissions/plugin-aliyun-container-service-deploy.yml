@@ -1,5 +1,6 @@
 ---
 name: "aliyun-container-service-deploy"
+github: "jenkinsci/aliyun-container-service-deploy-plugin"
 paths:
 - "org/jenkins-ci/plugins/aliyun-container-service-deploy"
 developers:

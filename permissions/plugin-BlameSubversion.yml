@@ -1,5 +1,6 @@
 ---
 name: "BlameSubversion"
+github: "jenkinsci/BlameSubversion-plugin"
 paths:
 - "org/jvnet/hudson/plugins/BlameSubversion"
 developers: []

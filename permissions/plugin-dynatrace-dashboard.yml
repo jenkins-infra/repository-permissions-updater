@@ -1,5 +1,6 @@
 ---
 name: "dynatrace-dashboard"
+github: "jenkinsci/dynatrace-plugin"
 paths:
 - "org/jenkins-ci/plugins/dynatrace-dashboard"
 developers:

@@ -1,0 +1,18 @@
+---
+name: "blueocean-maven-plugin"
+github: "jenkinsci/blueocean-maven-plugin"
+paths:
+- "io/jenkins/blueocean/blueocean-maven-plugin"
+developers:
+- "michaelneale"
+- "vivek"
+- "kzantow"
+- "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
+- "halkeye"

@@ -1,0 +1,8 @@
+---
+name: "service-now"
+github: "jenkinsci/service-now-plugin"
+paths:
+- "org/jenkins-ci/plugins/service-now"
+developers:
+- "james_mcshane"
+- "pdkreid"

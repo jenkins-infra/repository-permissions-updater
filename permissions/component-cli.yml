@@ -1,0 +1,8 @@
+---
+name: "cli"
+github: "jenkinsci/jenkins"
+paths:
+- "org/jenkins-ci/main/cli"
+developers:
+- "kohsuke"
+- "releasebot"

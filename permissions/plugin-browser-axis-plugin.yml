@@ -1,5 +1,6 @@
 ---
 name: "browser-axis-plugin"
+github: "jenkinsci/browser-axis-plugin"
 paths:
 - "org/jenkins-ci/plugins/browser-axis-plugin"
 developers: []

@@ -1,0 +1,10 @@
+---
+name: "tuleap-git-branch-source"
+github: "jenkinsci/tuleap-git-branch-source-plugin"
+paths:
+- "org/jenkins-ci/plugins/tuleap-git-branch-source"
+developers:
+- "vaceletm"
+- "crobinson"
+- "tgerbet_enalean"
+- "erwyn"

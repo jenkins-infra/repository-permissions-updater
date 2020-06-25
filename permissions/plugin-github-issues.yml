@@ -1,5 +1,6 @@
 ---
 name: "github-issues"
+github: "jenkinsci/github-issues-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-issues"
 developers:

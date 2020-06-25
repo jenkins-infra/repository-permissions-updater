@@ -1,5 +1,6 @@
 ---
 name: "rapiddeploy-jenkins"
+github: "jenkinsci/rapiddeploy-plugin"
 paths:
 - "org/jenkins-ci/plugins/rapiddeploy-jenkins"
 developers:

@@ -1,0 +1,7 @@
+---
+name: "osf-builder-suite-for-sfcc-data-import"
+github: "jenkinsci/osf-builder-suite-for-sfcc-data-import-plugin"
+paths:
+  - "org/jenkins-ci/plugins/osf-builder-suite-for-sfcc-data-import"
+developers:
+  - "danechitoaie"

@@ -1,7 +1,8 @@
 ---
 name: "sidebar-link"
+github: "jenkinsci/sidebar-link-plugin"
 paths:
 - "org/jenkins-ci/plugins/sidebar-link"
 - "org/jvnet/hudson/plugins/sidebar-link"
 developers:
-- "lvotypkova"
+- "dszczepanik"

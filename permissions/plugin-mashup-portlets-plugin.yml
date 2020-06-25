@@ -1,5 +1,6 @@
 ---
 name: "mashup-portlets-plugin"
+github: "jenkinsci/mashup-portlets-plugin"
 paths:
 - "javagh/jenkins/mashup-portlets-plugin"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "regression-report-plugin"
+github: "jenkinsci/regression-report-plugin"
 paths:
 - "org/jenkins-ci/plugins/regression-report-plugin"
 developers:

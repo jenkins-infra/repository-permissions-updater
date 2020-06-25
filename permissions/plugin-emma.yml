@@ -1,5 +1,6 @@
 ---
 name: "emma"
+github: "jenkinsci/emma-plugin"
 paths:
 - "org/jenkins-ci/plugins/emma"
 - "org/jvnet/hudson/plugins/emma"

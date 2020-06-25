@@ -1,8 +1,11 @@
 ---
 name: "swarm-client"
+github: "jenkinsci/swarm-plugin"
 paths:
 - "org/jenkins-ci/plugins/swarm-client"
 - "org/jvnet/hudson/plugins/swarm-client"
 developers:
+- "basil"
 - "drulli"
 - "mindjiver"
+- "oleg_nenashev"

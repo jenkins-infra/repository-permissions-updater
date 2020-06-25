@@ -1,5 +1,6 @@
 ---
 name: "jobrequeue"
+github: "jenkinsci/jobrequeue-plugin"
 paths:
 - "org/jenkins-ci/plugins/jobrequeue"
 developers:

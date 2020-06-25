@@ -1,5 +1,6 @@
 ---
 name: "cloudtest"
+github: "jenkinsci/cloudtest-plugin"
 paths:
 - "com/soasta/jenkins/cloudtest"
 developers:

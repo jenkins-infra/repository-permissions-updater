@@ -1,5 +1,6 @@
 ---
 name: "labmanager"
+github: "jenkinsci/labmanager-plugin"
 paths:
 - "org/jenkins-ci/plugins/labmanager"
 - "org/jvnet/hudson/plugins/labmanager"

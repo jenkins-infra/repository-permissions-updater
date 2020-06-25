@@ -1,5 +1,6 @@
 ---
 name: "quayio-trigger"
+github: "jenkinsci/quayio-trigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/quayio-trigger"
 developers:

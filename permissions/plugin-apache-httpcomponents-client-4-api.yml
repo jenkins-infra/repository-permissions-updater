@@ -1,0 +1,12 @@
+---
+name: "apache-httpcomponents-client-4-api"
+github: "jenkinsci/apache-httpcomponents-client-4-api-plugin"
+paths:
+- "org/jenkins-ci/plugins/apache-httpcomponents-client-4-api"
+developers:
+- "oleg_nenashev"
+- "dnusbaum"
+- "mramonleon"
+security:
+  contacts:
+    jira: "foundation_security_members"

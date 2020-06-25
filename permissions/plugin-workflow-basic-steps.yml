@@ -1,5 +1,6 @@
 ---
 name: "workflow-basic-steps"
+github: "jenkinsci/workflow-basic-steps-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-basic-steps"
 developers:
@@ -7,3 +8,12 @@ developers:
 - "kohsuke"
 - "abayer"
 - "svanoort"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+- "jtaboada"
+security:
+  contacts:
+    jira: "pipeline_security_members"

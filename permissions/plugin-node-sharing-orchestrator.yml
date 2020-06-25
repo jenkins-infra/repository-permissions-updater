@@ -1,0 +1,8 @@
+---
+name: "node-sharing-orchestrator"
+paths:
+- "org/jenkins-ci/plugins/nodesharing/node-sharing-orchestrator"
+developers:
+- "scoheb"
+- "pajasoft"
+- "olivergondza"

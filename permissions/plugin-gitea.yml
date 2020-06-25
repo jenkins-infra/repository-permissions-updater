@@ -1,0 +1,7 @@
+---
+name: "gitea"
+github: "jenkinsci/gitea-plugin"
+paths:
+- "org/jenkins-ci/plugins/gitea"
+developers:
+- "stephenconnolly"

@@ -1,5 +1,6 @@
 ---
 name: "workflow-api"
+github: "jenkinsci/workflow-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-api"
 developers:
@@ -7,3 +8,12 @@ developers:
 - "kohsuke"
 - "svanoort"
 - "abayer"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+- "jtaboada"
+security:
+  contacts:
+    jira: "pipeline_security_members"

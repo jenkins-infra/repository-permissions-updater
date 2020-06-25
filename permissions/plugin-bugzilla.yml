@@ -1,5 +1,6 @@
 ---
 name: "bugzilla"
+github: "jenkinsci/bugzilla-plugin"
 paths:
 - "org/jvnet/hudson/plugins/bugzilla"
 developers: []

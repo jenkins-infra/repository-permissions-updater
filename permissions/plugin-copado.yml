@@ -1,5 +1,6 @@
 ---
 name: "copado"
+github: "jenkinsci/copado-plugin"
 paths:
 - "com/copado/jenkins/copado"
 developers:

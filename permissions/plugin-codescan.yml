@@ -1,5 +1,6 @@
 ---
 name: "codescan"
+github: "jenkinsci/codescan-plugin"
 paths:
 - "com/villagechief/codescan/jenkins/codescan"
 developers:

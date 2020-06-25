@@ -1,7 +1,19 @@
 ---
 name: "workflow-durable-task-step"
+github: "jenkinsci/workflow-durable-task-step-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-durable-task-step"
 developers:
 - "jglick"
 - "kohsuke"
+- "abayer"
+- "svanoort"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+- "jtaboada"
+security:
+  contacts:
+    jira: "pipeline_security_members"

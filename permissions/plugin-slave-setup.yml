@@ -1,5 +1,6 @@
 ---
 name: "slave-setup"
+github: "jenkinsci/slave-setup-plugin"
 paths:
 - "org/jenkins-ci/plugins/slave-setup"
 developers:

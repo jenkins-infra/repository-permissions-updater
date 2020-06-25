@@ -1,0 +1,7 @@
+---
+name: "build-notifications"
+github: "jenkinsci/build-notifications-plugin"
+paths:
+- "tools/devnull/build-notifications"
+developers:
+- "ataxexe"

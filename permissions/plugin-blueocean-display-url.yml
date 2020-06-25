@@ -1,5 +1,6 @@
 ---
 name: "blueocean-display-url"
+github: "jenkinsci/blueocean-display-url-plugin"
 paths:
 - "org/jenkins-ci/plugins/blueocean-display-url"
 developers:
@@ -7,5 +8,14 @@ developers:
 - "vivek"
 - "tfennelly"
 - "kzantow"
+- "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
+- "halkeye"
 - "imeredith"
 - "jamesdumay"

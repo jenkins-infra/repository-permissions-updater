@@ -1,5 +1,6 @@
 ---
 name: "SECURITY-144-compat"
+github: "jenkinsci/SECURITY-144-compat"
 paths:
 - "org/jenkins-ci/SECURITY-144-compat"
 developers:

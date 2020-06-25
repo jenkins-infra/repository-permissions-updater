@@ -1,5 +1,6 @@
 ---
 name: "extended-choice-parameter"
+github: "jenkinsci/extended-choice-parameter-plugin"
 paths:
 - "org/jenkins-ci/plugins/extended-choice-parameter"
 developers:

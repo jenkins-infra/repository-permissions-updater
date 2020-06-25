@@ -1,5 +1,6 @@
 ---
 name: "kato"
+github: "jenkinsci/kato-plugin"
 paths:
 - "org/jvnet/hudson/plugins/kato"
 developers:

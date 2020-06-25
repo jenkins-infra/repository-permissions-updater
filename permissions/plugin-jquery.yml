@@ -1,6 +1,11 @@
 ---
 name: "jquery"
+github: "jenkinsci/jquery-plugin"
 paths:
 - "org/jenkins-ci/plugins/jquery"
 developers:
+- "basil"
 - "kohsuke"
+security:
+  contacts:
+    jira: "foundation_security_members"

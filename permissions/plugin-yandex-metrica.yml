@@ -1,5 +1,6 @@
 ---
 name: "yandex-metrica"
+github: "jenkinsci/yandex-metrica-plugin"
 paths:
 - "org/jenkins-ci/plugins/yandex-metrica"
 developers:

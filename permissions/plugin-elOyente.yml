@@ -1,5 +1,6 @@
 ---
 name: "elOyente"
+github: "jenkinsci/eloyente-plugin"
 paths:
 - "com/technicolor/elOyente"
 developers: []

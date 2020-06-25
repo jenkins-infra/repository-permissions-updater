@@ -1,9 +1,9 @@
 ---
 name: "maven32-agent"
+github: "jenkinsci/maven-interceptors"
 paths:
 - "org/jenkins-ci/main/maven/maven32-agent"
 developers:
 - "kutzi"
-- "ndeloof"
 - "olamy"
 - "aheritier"

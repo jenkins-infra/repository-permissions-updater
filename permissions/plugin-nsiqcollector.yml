@@ -1,5 +1,6 @@
 ---
 name: "nsiqcollector"
+github: "jenkinsci/nsiqcollector-plugin"
 paths:
 - "org/jvnet/hudson/plugins/nsiqcollector"
 developers: []

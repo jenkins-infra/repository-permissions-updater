@@ -1,5 +1,6 @@
 ---
 name: "job-direct-mail"
+github: "jenkinsci/job-direct-mail-plugin"
 paths:
 - "org/jenkins-ci/plugins/job-direct-mail"
 developers: []

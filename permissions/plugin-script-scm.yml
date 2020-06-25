@@ -1,5 +1,6 @@
 ---
 name: "script-scm"
+github: "jenkinsci/script-scm-plugin"
 paths:
 - "com/cwctravel/script-scm"
 - "org/jenkins-ci/plugins/script-scm"

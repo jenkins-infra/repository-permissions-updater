@@ -1,5 +1,6 @@
 ---
 name: "vss"
+github: "jenkinsci/vss-plugin"
 paths:
 - "org/jenkins-ci/plugins/vss"
 developers: []

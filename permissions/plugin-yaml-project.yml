@@ -1,5 +1,6 @@
 ---
 name: "yaml-project"
+github: "jenkinsci/yaml-project-plugin"
 paths:
 - "org/jenkins-ci/plugins/yaml-project"
 developers:

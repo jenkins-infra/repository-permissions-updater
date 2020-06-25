@@ -1,5 +1,6 @@
 ---
 name: "ivy-report"
+github: "jenkinsci/ivy-report-plugin"
 paths:
 - "org/jenkins-ci/plugins/ivy-report"
 developers: []

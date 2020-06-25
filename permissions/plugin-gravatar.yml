@@ -1,5 +1,6 @@
 ---
 name: "gravatar"
+github: "jenkinsci/gravatar-plugin"
 paths:
 - "org/jenkins-ci/plugins/gravatar"
 developers:

@@ -1,0 +1,8 @@
+---
+name: "results-cache"
+github: "jenkinsci/results-cache-plugin"
+paths:
+- "com/king/jenkins/plugins/results-cache"
+developers:
+- "franciscoord"
+- "kargath"

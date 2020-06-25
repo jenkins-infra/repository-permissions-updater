@@ -1,7 +1,18 @@
 ---
 name: "script-security"
+github: "jenkinsci/script-security-plugin"
 paths:
 - "org/jenkins-ci/plugins/script-security"
 developers:
 - "jglick"
 - "kohsuke"
+- "abayer"
+- "svanoort"
+- "rsandell"
+- "dnusbaum"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+security:
+  contacts:
+    jira: "pipeline_security_members"

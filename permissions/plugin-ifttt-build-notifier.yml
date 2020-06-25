@@ -1,5 +1,6 @@
 ---
 name: "ifttt-build-notifier"
+github: "jenkinsci/ifttt-build-notifier-plugin"
 paths:
 - "org/jenkins-ci/plugins/ifttt-build-notifier"
 - "org/jenkinsci/plugins/ifttt-build-notifier"

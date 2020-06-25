@@ -1,0 +1,7 @@
+---
+name: "dependency-track"
+github: "jenkinsci/dependency-track-plugin"
+paths:
+- "org/jenkins-ci/plugins/dependency-track"
+developers:
+- "sspringett"

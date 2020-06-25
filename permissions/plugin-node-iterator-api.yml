@@ -1,6 +1,16 @@
 ---
 name: "node-iterator-api"
+github: "jenkinsci/node-iterator-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/node-iterator-api"
 developers:
 - "stephenconnolly"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

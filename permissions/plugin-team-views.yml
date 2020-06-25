@@ -1,5 +1,6 @@
 ---
 name: "team-views"
+github: "jenkinsci/team-views-plugin"
 paths:
 - "com/sonymobile/jenkins/plugins/teamviews/team-views"
 developers: []

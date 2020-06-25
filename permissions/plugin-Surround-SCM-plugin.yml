@@ -1,5 +1,6 @@
 ---
 name: "Surround-SCM-plugin"
+github: "jenkinsci/Surround-SCM-plugin"
 paths:
 - "org/jenkins-ci/plugins/Surround-SCM-plugin"
 - "org/jvnet/hudson/plugins/Surround-SCM-plugin"

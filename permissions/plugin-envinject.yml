@@ -1,7 +1,7 @@
 ---
 name: "envinject"
+github: "jenkinsci/envinject-plugin"
 paths:
 - "org/jenkins-ci/plugins/envinject"
 developers:
-- "ndeloof"
 - "oleg_nenashev"

@@ -1,0 +1,7 @@
+---
+name: "karaf-build-step"
+github: "jenkinsci/karaf-build-step-plugin"
+paths:
+- "org/jenkins-ci/plugins/karaf-build-step"
+developers:
+- "jgalego"

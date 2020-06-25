@@ -1,5 +1,6 @@
 ---
 name: "xshell"
+github: "jenkinsci/xshell-plugin"
 paths:
 - "org/jenkins-ci/plugins/xshell"
 - "org/jvnet/hudson/plugins/xshell"

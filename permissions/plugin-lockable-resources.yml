@@ -1,8 +1,10 @@
 ---
 name: "lockable-resources"
+github: "jenkinsci/lockable-resources-plugin"
 paths:
 - "org/6wind/jenkins/lockable-resources"
 developers:
 - "abayer"
 - "amuniz"
+- "tgr"
 - "robinjarry"

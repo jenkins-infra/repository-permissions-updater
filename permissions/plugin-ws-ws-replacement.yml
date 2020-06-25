@@ -1,5 +1,6 @@
 ---
 name: "ws-ws-replacement"
+github: "jenkinsci/ws-ws-replacement-plugin"
 paths:
 - "org/jenkins-ci/plugins/ws-ws-replacement"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "blueocean-events"
+github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-events"
 developers:
@@ -7,4 +8,16 @@ developers:
 - "vivek"
 - "tfennelly"
 - "kzantow"
+- "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
+- "halkeye"
 - "tscherler"
+security:
+  contacts:
+    jira: "blueocean_security_members"

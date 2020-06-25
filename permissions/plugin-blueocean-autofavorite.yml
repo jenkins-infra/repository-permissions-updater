@@ -1,7 +1,18 @@
 ---
 name: "blueocean-autofavorite"
+github: "jenkinsci/blueocean-autofavorite-plugin"
 paths:
 - "org/jenkins-ci/plugins/blueocean-autofavorite"
 developers:
 - "michaelneale"
 - "jamesdumay"
+- "vivek"
+- "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
+- "halkeye"

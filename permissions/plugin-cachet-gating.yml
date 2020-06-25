@@ -1,0 +1,10 @@
+
+name: "cachet-gating"
+github: "jenkinsci/cachet-gating-plugin"
+paths:
+- "org/jenkins-ci/plugins/cachet-gating"
+developers:
+- "ggallen"
+- "olivergondza"
+- "scoheb"
+- "avielyosef"

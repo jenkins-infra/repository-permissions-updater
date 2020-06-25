@@ -1,0 +1,8 @@
+---
+name: "docker-swarm"
+github: "jenkinsci/docker-swarm-plugin"
+paths:
+- "org/jenkins-ci/plugins/docker-swarm"
+developers:
+- "surya548"
+- "roemer"

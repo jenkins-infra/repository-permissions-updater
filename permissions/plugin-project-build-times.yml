@@ -1,5 +1,6 @@
 ---
 name: "project-build-times"
+github: "jenkinsci/project-build-times-plugin"
 paths:
 - "org/jenkins-ci/plugins/project-build-times"
 developers:

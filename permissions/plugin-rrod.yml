@@ -1,5 +1,6 @@
 ---
 name: "rrod"
+github: "jenkinsci/rrod-plugin"
 paths:
 - "org/jenkins-ci/plugins/rrod"
 developers: []

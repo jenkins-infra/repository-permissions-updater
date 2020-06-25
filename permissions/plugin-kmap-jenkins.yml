@@ -1,5 +1,6 @@
 ---
 name: "kmap-jenkins"
+github: "jenkinsci/kmap-plugin"
 paths:
 - "org/jenkins-ci/plugins/kmap-jenkins"
 developers:

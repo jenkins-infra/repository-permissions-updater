@@ -1,7 +1,17 @@
 ---
 name: "antisamy-markup-formatter"
+github: "jenkinsci/antisamy-markup-formatter-plugin"
 paths:
 - "org/jenkins-ci/plugins/antisamy-markup-formatter"
 developers:
 - "jglick"
 - "schristou"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

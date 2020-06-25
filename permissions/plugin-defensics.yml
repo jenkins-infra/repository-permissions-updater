@@ -1,0 +1,8 @@
+---
+name: "defensics"
+github: "jenkinsci/defensics-plugin"
+paths:
+- "com/synopsys/defensics"
+developers:
+- "defensics_oss"
+- "synhal"

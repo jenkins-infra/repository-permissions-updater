@@ -1,0 +1,7 @@
+---
+name: "datetime-constraint"
+github: "jenkinsci/datetime-constraint-plugin"
+paths:
+- "io/jenkins/plugins/datetime-constraint"
+developers:
+- "jouda_hidri"

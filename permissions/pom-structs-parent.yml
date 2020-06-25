@@ -1,8 +1,17 @@
 ---
 name: "structs-parent"
+github: "jenkinsci/structs-plugin"
 paths:
 - "org/jenkins-ci/plugins/structs-parent"
 developers:
 - "jglick"
 - "kohsuke"
 - "oleg_nenashev"
+- "stephenconnolly"
+- "abayer"
+- "svanoort"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"

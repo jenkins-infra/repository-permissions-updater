@@ -1,0 +1,8 @@
+---
+name: "benchmark-evaluator"
+github: "jenkinsci/benchmark-evaluator-plugin"
+paths:
+- "io/jenkins/plugins/benchmark-evaluator"
+developers:
+- "lehmann_fabian"
+- "martingrambow"

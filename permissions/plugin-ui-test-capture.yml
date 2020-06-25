@@ -1,5 +1,6 @@
 ---
 name: "ui-test-capture"
+github: "jenkinsci/ui-test-capture-plugin"
 paths:
 - "org/jenkins-ci/plugins/ui-test-capture"
 developers:

@@ -1,5 +1,8 @@
 ---
 name: "periodicbackup"
+github: "jenkinsci/periodicbackup-plugin"
 paths:
 - "org/jenkins-ci/plugins/periodicbackup"
-developers: []
+developers:
+- "oleg_nenashev"
+- "johno"

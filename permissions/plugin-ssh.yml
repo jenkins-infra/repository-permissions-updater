@@ -1,5 +1,6 @@
 ---
 name: "ssh"
+github: "jenkinsci/ssh-plugin"
 paths:
 - "org/jenkins-ci/plugins/ssh"
 - "org/jvnet/hudson/plugins/ssh"

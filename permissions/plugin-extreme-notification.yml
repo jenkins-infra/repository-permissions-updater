@@ -1,5 +1,6 @@
 ---
 name: "extreme-notification"
+github: "jenkinsci/extreme-notification-plugin"
 paths:
 - "org/jenkins-ci/plugins/extreme-notification"
 developers:

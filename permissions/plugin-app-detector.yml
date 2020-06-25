@@ -1,5 +1,6 @@
 ---
 name: "app-detector"
+github: "jenkinsci/app-detector-plugin"
 paths:
 - "org/jenkins-ci/plugins/app-detector"
 developers:

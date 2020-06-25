@@ -1,7 +1,8 @@
 ---
 name: "checkmarx"
+github: "jenkinsci/checkmarx-plugin"
 paths:
 - "com/checkmarx/jenkins/checkmarx"
 developers:
-- "sergeyk"
+- "sternlir"
 - "cxadmin"

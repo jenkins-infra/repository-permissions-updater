@@ -1,7 +1,17 @@
 ---
 name: "pipeline-input-step"
+github: "jenkinsci/pipeline-input-step-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-input-step"
 developers:
 - "jglick"
 - "svanoort"
+- "abayer"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+security:
+  contacts:
+    jira: "pipeline_security_members"

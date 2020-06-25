@@ -1,5 +1,6 @@
 ---
 name: "mantis"
+github: "jenkinsci/mantis-plugin"
 paths:
 - "org/jenkins-ci/plugins/mantis"
 developers:

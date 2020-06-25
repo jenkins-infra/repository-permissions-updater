@@ -1,0 +1,9 @@
+---
+name: "folder-auth"
+github: "jenkinsci/folder-auth-plugin"
+paths:
+- "io/jenkins/plugins/folder-auth"
+developers:
+- "abhyudaya"
+- "oleg_nenashev"
+- "runzexia"

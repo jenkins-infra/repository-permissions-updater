@@ -1,6 +1,9 @@
 ---
 name: "ivytrigger"
+github: "jenkinsci/ivytrigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/ivytrigger"
 developers:
 - "gbois"
+- "bbergquist"
+- "stealthdj"

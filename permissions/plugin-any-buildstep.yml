@@ -1,5 +1,6 @@
 ---
 name: "any-buildstep"
+github: "jenkinsci/any-buildstep-plugin"
 paths:
 - "org/jenkins-ci/plugins/any-buildstep"
 developers: []

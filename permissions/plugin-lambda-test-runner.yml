@@ -1,0 +1,7 @@
+---
+name: "lambda-test-runner"
+github: "jenkinsci/lambda-test-runner-plugin"
+paths:
+- "org/jenkins-ci/plugins/lambda-test-runner"
+developers:
+- "ipastusiak"

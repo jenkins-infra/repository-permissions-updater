@@ -1,5 +1,6 @@
 ---
 name: "memory-monitor"
+github: "jenkinsci/extras-memory-monitor"
 paths:
 - "org/jenkins-ci/memory-monitor"
 developers:

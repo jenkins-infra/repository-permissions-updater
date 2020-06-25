@@ -1,5 +1,6 @@
 ---
 name: "groovy-label-assignment"
+github: "jenkinsci/groovy-label-assignment-plugin"
 paths:
 - "jp/ikedam/jenkins/plugins/groovy-label-assignment"
 developers:

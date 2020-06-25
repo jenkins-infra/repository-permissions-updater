@@ -1,0 +1,7 @@
+---
+name: "jira-finder"
+github: "jenkinsci/jira-finder-plugin"
+paths:
+- "org/jenkins-ci/plugins/jira-finder"
+developers:
+- "jholusa"

@@ -1,0 +1,8 @@
+---
+name: "pipeline-giphy-api"
+github: "jenkinsci/pipeline-giphy-api-plugin"
+paths:
+- "org/jenkins-ci/plugins/pipeline-giphy-api"
+developers:
+- "aviadlevy"
+

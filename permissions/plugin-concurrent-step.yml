@@ -1,0 +1,7 @@
+---
+name: "concurrent-step"
+github: "jenkinsci/concurrent-step-plugin"
+paths:
+- "io/jenkins/plugins/concurrent-step"
+developers:
+- "topikachu"

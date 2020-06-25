@@ -1,0 +1,23 @@
+---
+name: "jenkins-design-language"
+github: "jenkinsci/blueocean-plugin"
+paths:
+- "io/jenkins/blueocean/jenkins-design-language"
+developers:
+- "michaelneale"
+- "vivek"
+- "tfennelly"
+- "kzantow"
+- "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
+- "halkeye"
+- "tscherler"
+security:
+  contacts:
+    jira: "blueocean_security_members"

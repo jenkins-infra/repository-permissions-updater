@@ -1,5 +1,6 @@
 ---
 name: "display-console-output"
+github: "jenkinsci/display-console-output-plugin"
 paths:
 - "org/jenkins-ci/plugins/display-console-output"
 developers:

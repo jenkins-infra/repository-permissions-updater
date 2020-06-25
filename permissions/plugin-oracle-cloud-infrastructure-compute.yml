@@ -1,0 +1,9 @@
+---
+name: "oracle-cloud-infrastructure-compute"
+github: "jenkinsci/oracle-cloud-infrastructure-compute-plugin"
+paths:
+- "org/jenkins-ci/plugins/oracle-cloud-infrastructure-compute"
+developers:
+- "cheshi"
+- "kennedyjf"
+- "aandrey"

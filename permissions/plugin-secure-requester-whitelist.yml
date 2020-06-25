@@ -1,8 +1,11 @@
 ---
 name: "secure-requester-whitelist"
+github: "jenkinsci/secure-requester-whitelist-plugin"
 paths:
 - "org/jenkins-ci/plugins/secure-requester-whitelist"
 developers:
 - "jglick"
+- "danielbeck"
 - "andresrc"
+- "wfollonier"
   

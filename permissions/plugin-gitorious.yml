@@ -1,5 +1,6 @@
 ---
 name: "gitorious"
+github: "jenkinsci/gitorious-plugin"
 paths:
 - "org/jenkins-ci/plugins/gitorious"
 developers: []

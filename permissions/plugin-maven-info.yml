@@ -1,5 +1,6 @@
 ---
 name: "maven-info"
+github: "jenkinsci/maven-info-plugin"
 paths:
 - "org/tomfolga/maven-info"
 developers:

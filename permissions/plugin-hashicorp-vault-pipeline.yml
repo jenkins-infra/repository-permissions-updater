@@ -1,0 +1,7 @@
+---
+name: "hashicorp-vault-pipeline"
+github: "jenkinsci/hashicorp-vault-pipeline-plugin"
+paths:
+- "io/jenkins/plugins/hashicorp-vault-pipeline"
+developers:
+- "philmadden"

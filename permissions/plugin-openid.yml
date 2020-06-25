@@ -1,6 +1,7 @@
 ---
 name: "openid"
+github: "jenkinsci/openid-plugin"
 paths:
 - "org/jenkins-ci/plugins/openid"
 developers:
-- "stephenconnolly"
+- "wfollonier"

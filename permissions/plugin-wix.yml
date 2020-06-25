@@ -1,5 +1,6 @@
 ---
 name: "wix"
+github: "jenkinsci/wix-plugin"
 paths:
 - "org/jenkins-ci/plugins/wix"
 developers:

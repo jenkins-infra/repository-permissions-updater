@@ -1,8 +1,16 @@
 ---
 name: "pipeline-milestone-step"
+github: "jenkinsci/pipeline-milestone-step-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-milestone-step"
 developers:
 - "amuniz"
 - "svanoort"
 - "jglick"
+- "abayer"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+security:
+  contacts:
+    jira: "pipeline_security_members"

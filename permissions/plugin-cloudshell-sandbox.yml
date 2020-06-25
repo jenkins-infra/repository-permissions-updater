@@ -1,0 +1,7 @@
+---
+name: "cloudshell-sandbox"
+github: "jenkinsci/cloudshell-sandbox-plugin"
+paths:
+- "org/jenkins-ci/plugins/cloudshell-sandbox"
+developers:
+- "tomeradmon"

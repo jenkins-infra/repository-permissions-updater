@@ -1,8 +1,11 @@
 ---
 name: "robot"
+github: "jenkinsci/robot-plugin"
 paths:
 - "org/jenkins-ci/plugins/robot"
 - "org/jvnet/hudson/plugins/robot"
 developers:
 - "jpiironen"
-- "jussi_malinen"
+- "aleksisimell"
+- "tattoo"
+- "hifi"

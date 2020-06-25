@@ -1,5 +1,6 @@
 ---
 name: "php"
+github: "jenkinsci/php-plugin"
 paths:
 - "org/jenkins-ci/plugins/php"
 developers: []

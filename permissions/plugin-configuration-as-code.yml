@@ -1,0 +1,14 @@
+---
+name: "configuration-as-code"
+github: "jenkinsci/configuration-as-code-plugin"
+paths:
+- "org/jenkins-ci/plugins/configuration-as-code"
+- "io/jenkins/configuration-as-code"
+developers:
+- "praqma"
+- "jetersen"
+- "oleg_nenashev"
+- "timja"
+security:
+  contacts:
+    jira: "jetersen"

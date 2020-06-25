@@ -3,24 +3,32 @@ package io.jenkins.infra.repository_permissions_updater
 import com.fasterxml.jackson.core.JsonProcessingException
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
+
 
 import java.security.MessageDigest
 import java.util.logging.Level
 import java.util.logging.Logger
 
+@SuppressFBWarnings("SE_NO_SERIALVERSIONID") // all closures are Serializable...
 public class ArtifactoryPermissionsUpdater {
 
     /**
      * Directory containing the permissions definition files in YAML format
      */
-    private static final File DEFINITIONS_DIR = new File(System.getProperty('definitionsDir'))
+    private static final File DEFINITIONS_DIR = new File(System.getProperty('definitionsDir', './permissions'))
 
     /**
      * Temporary directory that this tool will write Artifactory API JSON payloads to. Must not exist prior to execution.
      */
-    private static final File ARTIFACTORY_API_DIR = new File(System.getProperty('artifactoryApiTempDir'))
+    private static final File ARTIFACTORY_API_DIR = new File(System.getProperty('artifactoryApiTempDir', './json'))
+
+    /**
+     * URL to JSON with a list of valid Artifactory user names.
+     */
+    private static final String ARTIFACTORY_USER_NAMES_URL = System.getProperty('artifactoryUserNamesJsonListUrl')
 
     /**
      * URL to the permissions API of Artifactory
@@ -35,7 +43,6 @@ public class ArtifactoryPermissionsUpdater {
     /**
      * If enabled, will not send PUT/DELETE requests to Artifactory, only GET (i.e. not modifying).
      */
-    // TODO actually implement this
     private static final boolean DRY_RUN_MODE = Boolean.getBoolean('dryRun')
 
     static {
@@ -44,9 +51,9 @@ public class ArtifactoryPermissionsUpdater {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(
                         System.getenv("ARTIFACTORY_USERNAME"),
-                        System.getenv("ARTIFACTORY_PASSWORD").toCharArray());
+                        System.getenv("ARTIFACTORY_PASSWORD").toCharArray())
             }
-        });
+        })
     }
 
     /* Because Jackson isn't groovy enough, data type to deserialize YAML permission definitions to */
@@ -54,6 +61,8 @@ public class ArtifactoryPermissionsUpdater {
         private String name = ""
         private String[] paths = new String[0]
         private String[] developers = new String[0]
+        String github
+        Object security // unused, just metadata for Jenkins security team
 
         String getName() {
             return name
@@ -80,13 +89,15 @@ public class ArtifactoryPermissionsUpdater {
         }
     }
 
-    private static String md5(String str) {
+    private static String sha256(String str) {
+        LOGGER.log(Level.INFO, "Computing sha256 for string: " + str)
         try {
-            MessageDigest digest = MessageDigest.getInstance("MD5")
+            MessageDigest digest = MessageDigest.getInstance("SHA-256")
             digest.update(str.bytes)
             return digest.digest().encodeHex().toString()
         } catch (Exception e) {
-            return '0000000000000000'
+            LOGGER.log(Level.WARNING, "Failed to compute SHA-256 digest", e)
+            return '00000000000000000000000000000000'
         }
     }
 
@@ -99,8 +110,8 @@ public class ArtifactoryPermissionsUpdater {
         String name = fileBaseName
         if ((ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + name).length() > 64) {
             // Artifactory has an undocumented max length for permission target names of 64 chars
-            // If length is exceeded, use 55 chars of the name, separator, and 8 chars (half of name's MD5)
-            name = name.substring(0, 54 - ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX .length()) + '_' + md5(fileBaseName).substring(0, 7)
+            // If length is exceeded, use 55 chars of the name, separator, and 8 chars (prefix of name's SHA-256)
+            name = name.substring(0, 54 - ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX .length()) + '_' + sha256(fileBaseName).substring(0, 7)
         }
         return name
     }
@@ -108,21 +119,27 @@ public class ArtifactoryPermissionsUpdater {
     /**
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
      */
-    private static void generateApiPayloads(File yamlSourceDirectory, File apiOutputDir) {
+    private static void generateApiPayloads(File yamlSourceDirectory, File apiOutputDir) throws IOException {
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory())
 
         if (!yamlSourceDirectory.exists()) {
-            throw new IllegalStateException("Directory ${DEFINITIONS_DIR} does not exist")
+            throw new IOException("Directory ${DEFINITIONS_DIR} does not exist")
+        }
+
+        def knownUsers = []
+        if (ARTIFACTORY_USER_NAMES_URL) {
+            knownUsers = new JsonSlurper().parse(new URL(ARTIFACTORY_USER_NAMES_URL))
         }
 
         if (apiOutputDir.exists()) {
-            throw new IllegalStateException(apiOutputDir.path + " already exists")
+            throw new IOException(apiOutputDir.path + " already exists")
         }
+
+        Map<String, Set<String>> pathsByGithub = new TreeMap()
 
         yamlSourceDirectory.eachFile { file ->
             if (!file.name.endsWith('.yml')) {
-                LOGGER.log(Level.INFO, "Skipping ${file.name}, not a YAML file")
-                return
+                throw new IOException("Unexpected file: `${file.name}`. YAML files must end with `.yml`")
             }
 
             Definition definition
@@ -130,8 +147,16 @@ public class ArtifactoryPermissionsUpdater {
             try {
                 definition = mapper.readValue(new FileReader(file), Definition.class)
             } catch (JsonProcessingException e) {
-                LOGGER.log(Level.WARNING, "Failed to read ${file.name}, skipping:" + e.getMessage());
-                return
+                throw new IOException("Failed to read ${file.name}", e)
+            }
+
+            if (definition.github) {
+                Set<String> paths = pathsByGithub[definition.github]
+                if (!paths) {
+                    paths = new TreeSet()
+                    pathsByGithub[definition.github] = paths
+                }
+                paths.addAll(definition.paths)
             }
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
@@ -147,11 +172,9 @@ public class ArtifactoryPermissionsUpdater {
                     [
                             path + '/*/' + definition.name + '-*',
                             path + '/*/maven-metadata.xml', // used for SNAPSHOTs
-                            path + '/*/maven-metadata.xml.sha1',
-                            path + '/*/maven-metadata.xml.md5',
+                            path + '/*/maven-metadata.xml.*',
                             path + '/maven-metadata.xml',
-                            path + '/maven-metadata.xml.sha1',
-                            path + '/maven-metadata.xml.md5'
+                            path + '/maven-metadata.xml.*'
                     ]
                 }.flatten().join(',')
                 excludesPattern ''
@@ -161,7 +184,10 @@ public class ArtifactoryPermissionsUpdater {
                         users [:]
                     } else {
                         users definition.developers.collectEntries { developer ->
-                            ["$developer": ["w", "n"]]
+                            if (!knownUsers.contains(developer.toLowerCase())) {
+                                throw new IllegalStateException("User name not known to Artifactory: " + developer)
+                            }
+                            [(developer.toLowerCase(Locale.US)): ["w", "n"]]
                         }
                     }
                     groups([:])
@@ -170,13 +196,13 @@ public class ArtifactoryPermissionsUpdater {
 
             String pretty = json.toPrettyString()
 
-            try {
-                outputFile.parentFile.mkdirs()
-                outputFile.text = pretty
-            } catch (IOException e) {
-                LOGGER.log(Level.WARNING, "Failed to write to ${outputFile.name}, skipping:" + e);
-            }
+            outputFile.parentFile.mkdirs()
+            outputFile.text = pretty
         }
+
+        def githubIndex = new JsonBuilder()
+        githubIndex(pathsByGithub)
+        new File(apiOutputDir, 'github.index.json').text = githubIndex.toPrettyString()
     }
 
     /**
@@ -187,6 +213,9 @@ public class ArtifactoryPermissionsUpdater {
      */
     private static void submitPermissionTargets(File jsonApiFileDir) {
         jsonApiFileDir.eachFile { file ->
+            if (file.name == 'github.index.json') {
+                return
+            }
             if (!file.name.endsWith('.json'))
                 return
 
@@ -287,8 +316,13 @@ public class ArtifactoryPermissionsUpdater {
      *
      * @param args unused
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        if (DRY_RUN_MODE) System.err.println("Running in dry run mode")
         generateApiPayloads(DEFINITIONS_DIR, ARTIFACTORY_API_DIR)
+        if (DRY_RUN_MODE) {
+            System.err.println("Payloads generated in " + ARTIFACTORY_API_DIR + ". Nothing was sent.")
+            return
+        }
         submitPermissionTargets(ARTIFACTORY_API_DIR)
         removeExtraPermissionTargets(ARTIFACTORY_API_DIR)
     }

@@ -1,0 +1,7 @@
+---
+name: "link-column"
+github: "jenkinsci/link-column-plugin"
+paths:
+- "org/jenkins-ci/plugins/link-column"
+developers:
+- "KarlGong"

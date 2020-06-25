@@ -1,5 +1,7 @@
 ---
 name: "systemloadaverage-monitor"
+github: "jenkinsci/systemloadaverage-monitor-plugin"
 paths:
 - "org/jvnet/hudson/plugins/systemloadaverage-monitor"
-developers: []
+developers: 
+- "stefanbrausch"

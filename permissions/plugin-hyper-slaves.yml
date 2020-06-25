@@ -1,5 +1,6 @@
 ---
 name: "hyper-slaves"
+github: "jenkinsci/hyper-slaves-plugin"
 paths:
 - "sh/hyper/plugins/hyper-slaves"
 developers:

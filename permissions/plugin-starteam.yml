@@ -1,5 +1,6 @@
 ---
 name: "starteam"
+github: "jenkinsci/starteam-plugin"
 paths:
 - "hudson/plugins/starteam"
 developers:

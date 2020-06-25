@@ -1,5 +1,6 @@
 ---
 name: "strawboss"
+github: "jenkinsci/strawboss-plugin"
 paths:
 - "org/jenkins-ci/plugins/strawboss"
 developers:

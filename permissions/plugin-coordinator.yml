@@ -1,5 +1,6 @@
 ---
 name: "coordinator"
+github: "jenkinsci/coordinator-plugin"
 paths:
 - "org/jenkins-ci/plugins/coordinator"
 developers:

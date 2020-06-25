@@ -1,5 +1,6 @@
 ---
 name: "ssh-slaves"
+github: "jenkinsci/ssh-slaves-plugin"
 paths:
 - "org/jenkins-ci/plugins/ssh-slaves"
 developers:
@@ -7,3 +8,5 @@ developers:
 - "jglick"
 - "kohsuke"
 - "stephenconnolly"
+- "oleg_nenashev"
+- "ifernandezcalvo"

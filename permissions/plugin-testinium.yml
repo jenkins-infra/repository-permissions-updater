@@ -1,0 +1,8 @@
+---
+name: "testinium"
+github: "jenkinsci/testinium-plugin"
+paths:
+- "com/testinium/jenkins/testinium"
+developers:
+- "erhangullu"
+- "erdoganonur"

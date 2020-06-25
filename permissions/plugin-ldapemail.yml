@@ -1,5 +1,6 @@
 ---
 name: "ldapemail"
+github: "jenkinsci/ldapemail-plugin"
 paths:
 - "com/mtvi/plateng/hudson/ldapemail"
 developers:

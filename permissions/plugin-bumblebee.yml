@@ -1,5 +1,6 @@
 ---
 name: "bumblebee"
+github: "jenkinsci/bumblebee-plugin"
 paths:
 - "org/jenkins-ci/plugins/bumblebee"
 developers:

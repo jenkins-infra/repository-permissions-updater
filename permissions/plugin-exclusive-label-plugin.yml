@@ -1,5 +1,6 @@
 ---
 name: "exclusive-label-plugin"
+github: "jenkinsci/exclusive-labels-plugin"
 paths:
 - "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
 developers: []

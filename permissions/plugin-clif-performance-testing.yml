@@ -1,5 +1,6 @@
 ---
 name: "clif-performance-testing"
+github: "jenkinsci/clif-performance-testing-plugin"
 paths:
 - "org/jenkins-ci/plugins/clif-performance-testing"
 developers:

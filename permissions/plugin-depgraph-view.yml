@@ -1,5 +1,8 @@
 ---
 name: "depgraph-view"
+github: "jenkinsci/depgraph-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/depgraph-view"
-developers: []
+developers:
+- "wolfs"
+- "ggrazioli"

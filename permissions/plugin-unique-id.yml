@@ -1,5 +1,6 @@
 ---
 name: "unique-id"
+github: "jenkinsci/unique-id-plugin"
 paths:
 - "org/jenkins-ci/plugins/unique-id"
 developers:
@@ -7,3 +8,4 @@ developers:
 - "oleg_nenashev"
 - "recampbell"
 - "stephenconnolly"
+- "oleg_nenashev"

@@ -1,5 +1,6 @@
 ---
 name: "gogs-webhook"
+github: "jenkinsci/gogs-webhook-plugin"
 paths:
 - "org/jenkins-ci/plugins/gogs-webhook"
 developers:

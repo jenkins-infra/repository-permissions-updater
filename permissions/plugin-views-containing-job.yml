@@ -1,5 +1,6 @@
 ---
 name: "views-containing-job"
+github: "jenkinsci/views-containing-job-plugin"
 paths:
 - "com/oneandone/access/views-containing-job"
 developers:

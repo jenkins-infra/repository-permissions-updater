@@ -1,5 +1,6 @@
 ---
 name: "asakusa-satellite-plugin"
+github: "jenkinsci/asakusa-satellite-plugin"
 paths:
 - "org/codefirst/jenkins/asakusasatellite/asakusa-satellite-plugin"
 developers: []

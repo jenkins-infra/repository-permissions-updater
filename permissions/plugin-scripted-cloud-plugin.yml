@@ -1,5 +1,6 @@
 ---
 name: "scripted-cloud-plugin"
+github: "jenkinsci/scripted-cloud-plugin"
 paths:
 - "org/jenkins-ci/plugins/scripted-cloud-plugin"
 developers: []

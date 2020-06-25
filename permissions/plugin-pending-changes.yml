@@ -1,5 +1,6 @@
 ---
 name: "pending-changes"
+github: "jenkinsci/pendingchanges-plugin"
 paths:
 - "org/jenkins-ci/plugins/pending-changes"
 developers: []

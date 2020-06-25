@@ -1,5 +1,6 @@
 ---
 name: "codedeploy"
+github: "jenkinsci/aws-codedeploy-plugin"
 paths:
 - "com/amazonaws/codedeploy"
 developers:
@@ -9,3 +10,7 @@ developers:
 - "yubangxi"
 - "feverlu"
 - "q13117god"
+- "alena"
+security:
+  contacts:
+    email: "aws-security@amazon.com"

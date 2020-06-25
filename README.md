@@ -18,6 +18,7 @@ Requesting Permissions
 **Prerequisite**: You need to have logged in once to [Artifactory](https://repo.jenkins-ci.org/) with your Jenkins community account before you can be added to a permissions target.
 
 To request upload permissions to an artifact (typically a plugin), [file a PR](https://help.github.com/articles/creating-a-pull-request/) editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR, approving it.
+See [this page](https://jenkins.io/doc/developer/plugin-governance/managing-permissions/) for more information.
 
 Managing Permissions
 --------------------
@@ -33,16 +34,26 @@ These prefixes, like the rest of the file name, have no semantic meaning and jus
 Each file contains the following in [YAML format](https://en.wikipedia.org/wiki/YAML):
 
 - A `name` (typically mirrored in the file name), this is also the `artifactId` of the Maven artifact.
+- A `github` field indicating the GitHub organization and repository which is expected to produce these artifacts.
 - A set of paths, usually just one. These correspond to the full Maven coordinates (`groupId` and `artifactId`) used for the artifact. Since Jenkins plugins can change group IDs and are still considered the same artifact, multiple entries are possible.
 - A set of user names (Jenkins community user accounts in LDAP, the same as used for wiki and JIRA) allowed to upload this artifact to Artifactory. This set can be empty, which means nobody is currently allowed to upload the plugin in question (except Artifactory admins). This can happen for plugins that haven't seen releases in several years, or permission cleanups.
 
 Example file:
 
-![](doc/yml-example.png)
+```yaml
+---
+name: "p4"
+github: "jenkinsci/p4-plugin"
+paths:
+- "org/jenkins-ci/plugins/p4"
+developers:
+- "p4paul"
+```
 
-* Red (lines 2 and 4): `artifactId`
-* Green (line 4): `groupId` (with slashes replacing periods)
-* Blue (line 6): Jenkins community account user name
+* `p4` (lines 2 and 5): `artifactId`
+* `p4-plugin` (line 3): GitHub repository name
+* `org/jenkins-ci` (line 5): `groupId` (with slashes replacing periods)
+* `p4paul` (line 7): Jenkins community account user name
 
 ### Adding a new plugin
 
@@ -63,6 +74,27 @@ Rename and edit the existing permissions file, changing both `name` and the last
 ### Changing a plugin's `groupId`
 
 Change the `paths` to match the new Maven coordinates, or, if further uploads for the old coordinates are expected, add a new list entry.
+
+Managing Security Process
+-------------------------
+
+The Jenkins project acts as a primary contact point for security researchers seeking to report security vulnerabilities in Jenkins and Jenkins plugins ([learn more](https://jenkins.io/security/)).
+
+Through additional metadata in the YAML file described above, you can define who should be contacted in the event of a report being received.
+Add a section like the following to your plugin's YAML file:
+
+```yaml
+security:
+  contacts:
+    jira: some_user_name
+    email: security@acme.org
+```
+
+Given the above example, we will assign any security issue in Jira to `some_user_name` rather than one of the developers able to release the plugin, and send an email notification to `security@acme.org` to establish contact.
+Either of `jira` and `email` are optional.
+
+Please note that we generally reject email contacts due to the additional overhead in reaching out via email.
+Unless you represent a large organization with dedicated security team that needs to be involved in the coordination of a release, please refrain from requesting to be contacted via email.
 
 Usage
 -----

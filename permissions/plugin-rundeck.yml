@@ -1,6 +1,8 @@
 ---
 name: "rundeck"
+github: "jenkinsci/rundeck-plugin"
 paths:
 - "org/jenkins-ci/plugins/rundeck"
 developers:
 - "gschueler"
+- "ltoledo" 

@@ -1,0 +1,7 @@
+---
+name: "nutanix-calm"
+github: "jenkinsci/nutanix-calm-plugin"
+paths:
+- "org/jenkins-ci/plugins/nutanix-calm"
+developers:
+- "nutanix_calm"

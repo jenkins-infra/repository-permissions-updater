@@ -1,5 +1,6 @@
 ---
 name: "scoring-load-balancer"
+github: "jenkinsci/scoring-load-balancer-plugin"
 paths:
 - "jp/ikedam/jenkins/plugins/scoring-load-balancer"
 developers: []

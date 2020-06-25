@@ -1,5 +1,6 @@
 ---
 name: "maven-plugin"
+github: "jenkinsci/maven-plugin"
 paths:
 - "org/jenkins-ci/main/maven-plugin"
 - "org/jvnet/hudson/main/maven-plugin"
@@ -10,3 +11,7 @@ developers:
 - "olamy"
 - "olivergondza"
 - "aheritier"
+- "jtaboada"
+security:
+  contacts:
+    jira: "pipeline_security_members"

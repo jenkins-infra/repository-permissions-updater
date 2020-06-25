@@ -1,5 +1,6 @@
 ---
 name: "youtrack-plugin"
+github: "jenkinsci/youtrack-plugin"
 paths:
 - "org/jenkins-ci/plugins/youtrack-plugin"
 developers:

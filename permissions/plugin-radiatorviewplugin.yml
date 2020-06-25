@@ -1,5 +1,6 @@
 ---
 name: "radiatorviewplugin"
+github: "jenkinsci/radiatorview-plugin"
 paths:
 - "org/jenkins-ci/plugins/radiatorviewplugin"
 developers:

@@ -1,0 +1,8 @@
+---
+name: "exam"
+github: "jenkinsci/exam-plugin"
+paths:
+- "org/jenkins-ci/plugins/exam"
+developers:
+- "MicroNovaAG"
+- "tomasch"

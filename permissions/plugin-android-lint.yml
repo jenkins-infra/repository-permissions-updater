@@ -1,5 +1,6 @@
 ---
 name: "android-lint"
+github: "jenkinsci/android-lint-plugin"
 paths:
 - "org/jvnet/hudson/plugins/android-lint"
 developers:

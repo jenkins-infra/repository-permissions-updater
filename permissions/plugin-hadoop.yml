@@ -1,5 +1,6 @@
 ---
 name: "hadoop"
+github: "jenkinsci/hadoop-plugin"
 paths:
 - "org/jenkins-ci/plugins/hadoop"
 developers: []

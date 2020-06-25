@@ -1,6 +1,17 @@
 ---
 name: "pipeline-build-step"
+github: "jenkinsci/pipeline-build-step-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-build-step"
 developers:
 - "jglick"
+- "abayer"
+- "svanoort"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+security:
+  contacts:
+    jira: "pipeline_security_members"

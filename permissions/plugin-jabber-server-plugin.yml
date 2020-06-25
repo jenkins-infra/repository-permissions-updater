@@ -1,5 +1,6 @@
 ---
 name: "jabber-server-plugin"
+github: "jenkinsci/jabber-server-plugin"
 paths:
 - "de/e-nexus/jabber-server-plugin"
 developers:

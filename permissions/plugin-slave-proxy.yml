@@ -1,5 +1,6 @@
 ---
 name: "slave-proxy"
+github: "jenkinsci/slave-proxy-plugin"
 paths:
 - "org/jenkins-ci/plugins/slave-proxy"
 developers: []

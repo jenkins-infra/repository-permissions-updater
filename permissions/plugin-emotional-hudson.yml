@@ -1,5 +1,6 @@
 ---
 name: "emotional-hudson"
+github: "jenkinsci/emotional-hudson-plugin"
 paths:
 - "org/jvnet/hudson/plugins/emotional-hudson"
 developers: []

@@ -1,5 +1,6 @@
 ---
 name: "gatling"
+github: "jenkinsci/gatling-plugin"
 paths:
 - "org/jenkins-ci/plugins/gatling"
 developers:

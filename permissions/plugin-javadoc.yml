@@ -1,6 +1,9 @@
 ---
 name: "javadoc"
+github: "jenkinsci/javadoc-plugin"
 paths:
 - "org/jenkins-ci/plugins/javadoc"
 developers:
 - "jglick"
+- "oleg_nenashev"
+- "olivergondza"

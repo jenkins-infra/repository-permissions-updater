@@ -1,5 +1,6 @@
 ---
 name: "html-audio-notifier"
+github: "jenkinsci/html-audio-notifier-plugin"
 paths:
 - "jenkins/plugins/htmlaudio/html-audio-notifier"
 developers: []

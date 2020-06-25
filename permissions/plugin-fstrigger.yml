@@ -1,6 +1,8 @@
 ---
 name: "fstrigger"
+github: "jenkinsci/fstrigger-plugin"
 paths:
 - "org/jenkins-ci/plugins/fstrigger"
 developers:
 - "gbois"
+- "stealthdj"

@@ -1,5 +1,6 @@
 ---
 name: "sametime"
+github: "jenkinsci/sametime-plugin"
 paths:
 - "org/jenkins-ci/plugins/sametime"
 developers: []

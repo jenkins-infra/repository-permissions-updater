@@ -1,6 +1,7 @@
 ---
 name: "deploy"
+github: "jenkinsci/deploy-plugin"
 paths:
 - "org/jenkins-ci/plugins/deploy"
 developers:
-- "kohsuke"
+- "jansohn"

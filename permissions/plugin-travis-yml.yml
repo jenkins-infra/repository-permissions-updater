@@ -1,5 +1,6 @@
 ---
 name: "travis-yml"
+github: "jenkinsci/travis-yml-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/travis-yml"
 developers:

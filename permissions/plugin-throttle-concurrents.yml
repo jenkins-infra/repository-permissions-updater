@@ -1,8 +1,10 @@
 ---
 name: "throttle-concurrents"
+github: "jenkinsci/throttle-concurrent-builds-plugin"
 paths:
 - "org/jenkins-ci/plugins/throttle-concurrents"
 - "org/jvnet/hudson/plugins/throttle-concurrents"
 developers:
 - "abayer"
+- "basil"
 - "oleg_nenashev"

@@ -1,6 +1,8 @@
 ---
 name: "proxmox"
+github: "jenkinsci/proxmox-plugin"
 paths:
 - "org/jenkins-ci/plugins/proxmox"
 developers:
 - "justnom"
+- "maxhy"

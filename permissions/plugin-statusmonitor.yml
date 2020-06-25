@@ -1,5 +1,6 @@
 ---
 name: "statusmonitor"
+github: "jenkinsci/statusmonitor-plugin"
 paths:
 - "org/jvnet/hudson/plugins/statusmonitor"
 developers: []

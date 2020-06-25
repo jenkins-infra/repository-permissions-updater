@@ -1,0 +1,8 @@
+---
+name: "remoting-kafka"
+github: "jenkinsci/remoting-kafka-plugin"
+paths:
+- "io/jenkins/plugins/remoting-kafka/remoting-kafka"
+developers:
+- "pvtuan10"
+- "vulong237"

@@ -1,5 +1,6 @@
 ---
 name: "xpdev"
+github: "jenkinsci/xpdev-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/xpdev"
 developers: []

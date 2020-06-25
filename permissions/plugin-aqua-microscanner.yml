@@ -1,0 +1,11 @@
+---
+name: "aqua-microscanner"
+github: "jenkinsci/aqua-microscanner-plugin"
+paths:
+- "org/jenkins-ci/plugins/aqua-microscanner"
+developers:
+- "oranmoshai"
+- "aqua_maintainers"
+security:
+  contacts:
+    jira: aqua_maintainers

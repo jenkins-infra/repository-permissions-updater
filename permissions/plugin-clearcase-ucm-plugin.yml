@@ -1,5 +1,6 @@
 ---
 name: "clearcase-ucm-plugin"
+github: "jenkinsci/clearcase-ucm-plugin"
 paths:
 - "org/jenkins-ci/plugins/clearcase-ucm-plugin"
 developers:

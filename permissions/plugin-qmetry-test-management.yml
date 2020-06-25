@@ -1,0 +1,7 @@
+---
+name: "qmetry-test-management"
+github: "jenkinsci/qmetry-test-management-plugin"
+paths:
+- "org/jenkins-ci/plugins/qmetry-test-management"
+developers:
+- "dharaghodasara"

@@ -1,0 +1,7 @@
+---
+name: "logback-nats-appender"
+github: "jenkinsci/logback-nats-appender-plugin"
+paths:
+- "org/jenkins-ci/plugins/logback-nats-appender"
+developers:
+- "lucamilanesio"

@@ -1,9 +1,16 @@
 ---
 name: "openshift-sync"
+github: "jenkinsci/openshift-sync-plugin"
 paths:
 - "io/fabric8/jenkins/plugins/openshift-sync"
 developers:
-- "jimmi"
 - "gmontero"
 - "bparees"
-- "rymurphy"
+- "waveywaves"
+- "akram"
+- "jkhelil"
+security:
+  contacts:
+    jira: "akram"
+    email: prodsec-openshift@redhat.com
+

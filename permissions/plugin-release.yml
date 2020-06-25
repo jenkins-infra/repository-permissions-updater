@@ -1,5 +1,6 @@
 ---
 name: "release"
+github: "jenkinsci/release-plugin"
 paths:
 - "org/jenkins-ci/plugins/release"
 - "org/jvnet/hudson/plugins/release"

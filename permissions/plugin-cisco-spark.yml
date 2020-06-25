@@ -1,5 +1,6 @@
 ---
 name: "cisco-spark"
+github: "jenkinsci/cisco-spark-plugin"
 paths:
 - "org/jenkins-ci/plugins/cisco-spark"
 developers:

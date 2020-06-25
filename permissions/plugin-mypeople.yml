@@ -1,5 +1,6 @@
 ---
 name: "mypeople"
+github: "jenkinsci/mypeople-plugin"
 paths:
 - "org/jenkins-ci/plugins/mypeople"
 developers:

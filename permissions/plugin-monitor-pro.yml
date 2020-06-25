@@ -1,0 +1,8 @@
+---
+name: "monitor-pro"
+github: "jenkinsci/monitor-pro-plugin"
+paths:
+- "org/jenkins-ci/plugins/monitor-pro"
+developers:
+- "frdiaz"
+- "mmariscalg"

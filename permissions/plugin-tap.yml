@@ -1,5 +1,6 @@
 ---
 name: "tap"
+github: "jenkinsci/tap-plugin"
 paths:
 - "org/tap4j/tap"
 developers:

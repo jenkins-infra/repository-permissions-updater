@@ -1,5 +1,6 @@
 ---
 name: "git"
+github: "jenkinsci/git-plugin"
 paths:
 - "org/jenkins-ci/plugins/git"
 - "org/jenkinsci/plugins/git"
@@ -7,5 +8,9 @@ paths:
 developers:
 - "jglick"
 - "markewaite"
-- "ndeloof"
 - "stephenconnolly"
+- "rsandell"
+- "fcojfernandez"
+security:
+    contacts:
+      jira: "foundation_security_members"

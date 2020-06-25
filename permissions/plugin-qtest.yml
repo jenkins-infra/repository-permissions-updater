@@ -1,5 +1,6 @@
 ---
 name: "qtest"
+github: "jenkinsci/qtest-plugin"
 paths:
 - "com/qasymphony/ci/jenkins/qtest"
 developers:

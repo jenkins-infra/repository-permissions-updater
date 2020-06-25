@@ -1,6 +1,8 @@
 ---
 name: "schedule-build"
+github: "jenkinsci/schedule-build-plugin"
 paths:
 - "org/jenkins-ci/plugins/schedule-build"
 developers:
 - "anderl86"
+- "pingunaut"

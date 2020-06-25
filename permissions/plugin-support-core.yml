@@ -1,5 +1,6 @@
 ---
 name: "support-core"
+github: "jenkinsci/support-core-plugin"
 paths:
 - "org/jenkins-ci/plugins/support-core"
 developers:
@@ -8,4 +9,12 @@ developers:
 - "schristou"
 - "stephenconnolly"
 - "batmat"
-
+- "owood"
+- "escoem"
+- "dnusbaum"
+- "egutierrez"
+- "mramonleon"
+- "allan_burdajewicz"
+security:
+  contacts:
+    jira: "foundation_security_members"

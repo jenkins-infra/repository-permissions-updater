@@ -1,0 +1,8 @@
+---
+name: "ca-apm-dist"
+github: "jenkinsci/ca-apm-plugin"
+paths:
+- "org/jenkins-ci/plugins/ca-apm/ca-apm-dist"
+developers:
+- "srikns"
+- "pramodanarase"

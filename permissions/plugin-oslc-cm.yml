@@ -1,5 +1,6 @@
 ---
 name: "oslc-cm"
+github: "jenkinsci/oslc-cm-plugin"
 paths:
 - "org/jenkins-ci/plugins/oslc-cm"
 developers: []

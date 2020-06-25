@@ -1,5 +1,6 @@
 ---
 name: "process-utils"
+github: "jenkinsci/lib-process-utils"
 paths:
 - "org/jenkins-ci/process-utils"
 developers:

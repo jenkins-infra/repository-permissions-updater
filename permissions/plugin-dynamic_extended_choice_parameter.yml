@@ -1,5 +1,6 @@
 ---
 name: "dynamic_extended_choice_parameter"
+github: "jenkinsci/dynamic-extended-choice-parameter-plugin"
 paths:
 - "com/moded/extendedchoiceparameter/dynamic_extended_choice_parameter"
 developers:

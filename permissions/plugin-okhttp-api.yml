@@ -1,0 +1,11 @@
+---
+name: "okhttp-api"
+github: "jenkinsci/okhttp-api-plugin"
+paths:
+- "io/jenkins/plugins/okhttp-api"
+developers:
+- "bitwiseman"
+- "carroll"
+- "dnusbaum"
+- "kshultz"
+- "oleg_nenashev"

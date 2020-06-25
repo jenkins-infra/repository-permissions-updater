@@ -1,5 +1,6 @@
 ---
 name: "DotCi"
+github: "jenkinsci/DotCi"
 paths:
 - "com/groupon/jenkins-ci/plugins/DotCi"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "r"
+github: "jenkinsci/r-plugin"
 paths:
 - "org/biouno/r/r"
 developers:

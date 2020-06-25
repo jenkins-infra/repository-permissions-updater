@@ -1,7 +1,17 @@
 ---
 name: "suppress-stack-trace"
+github: "jenkinsci/suppress-stack-trace-plugin"
 paths:
 - "org/jenkins-ci/plugins/suppress-stack-trace"
 developers:
 - "jglick"
 - "recena"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

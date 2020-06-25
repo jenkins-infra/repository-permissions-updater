@@ -1,5 +1,6 @@
 ---
 name: "workflow-job"
+github: "jenkinsci/workflow-job-plugin"
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-job"
 developers:
@@ -7,3 +8,13 @@ developers:
 - "kohsuke"
 - "abayer"
 - "svanoort"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+- "jtaboada"
+- "olamy"
+security:
+  contacts:
+    jira: "pipeline_security_members"

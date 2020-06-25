@@ -1,5 +1,6 @@
 ---
 name: "javatest-report"
+github: "jenkinsci/javatest-report-plugin"
 paths:
 - "org/jenkins-ci/plugins/javatest-report"
 - "org/jvnet/hudson/plugins/javatest-report"

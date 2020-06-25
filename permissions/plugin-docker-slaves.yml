@@ -1,7 +1,7 @@
 ---
 name: "docker-slaves"
+github: "jenkinsci/docker-slaves-plugin"
 paths:
 - "io/jenkins/plugins/docker-slaves"
 developers:
-- "ndeloof"
 - "ydubreuil"

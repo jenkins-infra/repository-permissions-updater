@@ -1,5 +1,6 @@
 ---
 name: "trac"
+github: "jenkinsci/trac-plugin"
 paths:
 - "org/jenkins-ci/plugins/trac"
 - "org/jvnet/hudson/plugins/trac"

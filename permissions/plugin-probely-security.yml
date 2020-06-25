@@ -1,0 +1,7 @@
+---
+name: "probely-security"
+github: "jenkinsci/probely-security-plugin"
+paths:
+- "io/jenkins/plugins/probely-security"
+developers: 
+- "poupas"

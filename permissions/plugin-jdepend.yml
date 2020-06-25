@@ -1,7 +1,9 @@
 ---
 name: "jdepend"
+github: "jenkinsci/jdepend-plugin"
 paths:
 - "org/jenkins-ci/plugins/jdepend"
 - "org/jvnet/hudson/plugins/jdepend"
 developers:
-- "ndeloof"
+- "oleg_nenashev"
+

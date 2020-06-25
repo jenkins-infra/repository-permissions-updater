@@ -1,13 +1,17 @@
 ---
 name: "github-api"
+github: "jenkinsci/github-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-api"
 developers:
 - "andresrc"
+- "bitwiseman"
 - "integer"
 - "kohsuke"
-- "ndeloof"
 - "ohtake_tomohiro"
 - "recena"
 - "surya548"
 - "stephenconnolly"
+security:
+  contacts:
+    jira: "foundation_security_members"

@@ -1,0 +1,7 @@
+---
+name: "envinject-api"
+github: "jenkinsci/envinject-api-plugin"
+paths:
+- "org/jenkins-ci/plugins/envinject-api"
+developers:
+- "oleg_nenashev"

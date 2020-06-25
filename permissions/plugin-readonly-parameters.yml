@@ -1,5 +1,6 @@
 ---
 name: "readonly-parameters"
+github: "jenkinsci/readonly-parameter-plugin"
 paths:
 - "org/jenkins-ci/plugins/readonly-parameters"
 developers:

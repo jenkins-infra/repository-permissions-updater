@@ -1,5 +1,6 @@
 ---
 name: "mttr"
+github: "jenkinsci/mttr-plugin"
 paths:
 - "org/jenkins-ci/plugins/mttr"
 developers: []

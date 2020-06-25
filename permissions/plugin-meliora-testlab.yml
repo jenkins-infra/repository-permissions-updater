@@ -1,5 +1,6 @@
 ---
 name: "meliora-testlab"
+github: "jenkinsci/meliora-testlab-plugin"
 paths:
 - "org/jenkins-ci/plugins/meliora-testlab"
 developers:

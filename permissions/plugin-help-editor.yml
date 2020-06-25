@@ -1,5 +1,6 @@
 ---
 name: "help-editor"
+github: "jenkinsci/help-editor-plugin"
 paths:
 - "org/jenkins-ci/plugins/help-editor"
 developers:

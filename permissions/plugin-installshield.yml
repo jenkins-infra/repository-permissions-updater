@@ -1,5 +1,6 @@
 ---
 name: "installshield"
+github: "jenkinsci/installshield-plugin"
 paths:
 - "org/jenkins-ci/plugins/installshield"
 developers:

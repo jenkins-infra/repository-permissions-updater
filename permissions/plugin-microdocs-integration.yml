@@ -1,5 +1,6 @@
 ---
 name: "microdocs-integration"
+github: "jenkinsci/microdocs-integration-plugin"
 paths:
 - "com/maxxton/microdocs-integration"
 developers:

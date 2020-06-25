@@ -1,0 +1,7 @@
+---
+name: "multi-branch-priority-sorter"
+github: "jenkinsci/multi-branch-priority-sorter-plugin"
+paths:
+- "io/jenkins/plugins/multi-branch-priority-sorter"
+developers:
+- "surenpi"

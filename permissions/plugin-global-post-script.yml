@@ -1,5 +1,6 @@
 ---
 name: "global-post-script"
+github: "jenkinsci/global-post-script-plugin"
 paths:
 - "org/jenkins-ci/plugins/global-post-script"
 developers:

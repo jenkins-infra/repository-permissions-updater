@@ -1,5 +1,6 @@
 ---
 name: "maven-release-cascade"
+github: "jenkinsci/maven-release-cascade-plugin"
 paths:
 - "com/barchart/jenkins/maven-release-cascade"
 developers: []

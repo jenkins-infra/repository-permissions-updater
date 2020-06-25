@@ -1,5 +1,6 @@
 ---
 name: "pipeline-model-declarative-agent"
+github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
 - "org/jenkinsci/plugins/pipeline-model-declarative-agent"
 developers:
@@ -7,3 +8,8 @@ developers:
 - "oleg_nenashev"
 - "stephenconnolly"
 - "rsandell"
+- "bitwiseman"
+- "dnusbaum"
+security:
+  contacts:
+    jira: "pipeline_security_members"

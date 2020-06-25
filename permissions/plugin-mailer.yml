@@ -1,5 +1,6 @@
 ---
 name: "mailer"
+github: "jenkinsci/mailer-plugin"
 paths:
 - "org/jenkins-ci/plugins/mailer"
 developers:
@@ -8,3 +9,8 @@ developers:
 - "kohsuke"
 - "rsandell"
 - "tfennelly"
+- "oleg_nenashev"
+- "alecharp"
+security:
+  contacts:
+    jira: "foundation_security_members"

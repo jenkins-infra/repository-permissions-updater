@@ -1,6 +1,24 @@
 ---
 name: "sse-gateway"
+github: "jenkinsci/sse-gateway-plugin"
 paths:
 - "org/jenkins-ci/plugins/sse-gateway"
 developers:
+- "michaelneale"
+- "vivek"
 - "tfennelly"
+- "kzantow"
+- "tscherler"
+- "jamesdumay"
+- "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
+- "halkeye"
+security:
+  contacts:
+    jira: "blueocean_security_members"

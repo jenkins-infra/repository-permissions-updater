@@ -1,5 +1,6 @@
 ---
 name: "webload"
+github: "jenkinsci/webload-plugin"
 paths:
 - "hudson/plugins/webload"
 developers:

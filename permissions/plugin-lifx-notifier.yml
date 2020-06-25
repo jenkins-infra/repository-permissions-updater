@@ -1,5 +1,6 @@
 ---
 name: "lifx-notifier"
+github: "jenkinsci/lifx-notifier-plugin"
 paths:
 - "org/jenkins-ci/plugins/lifx-notifier"
 developers:

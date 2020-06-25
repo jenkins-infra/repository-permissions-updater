@@ -1,5 +1,6 @@
 ---
 name: "delta-cloud"
+github: "jenkinsci/delta-cloud-plugin"
 paths:
 - "org/jenkins-ci/plugins/delta-cloud"
 developers: []

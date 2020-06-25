@@ -1,0 +1,7 @@
+---
+name: "config-driven-pipeline"
+github: "jenkinsci/config-driven-pipeline-plugin"
+paths:
+- "org/jenkins-ci/plugins/config-driven-pipeline"
+developers:
+- "justinharringa"

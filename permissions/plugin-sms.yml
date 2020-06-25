@@ -1,5 +1,6 @@
 ---
 name: "sms"
+github: "jenkinsci/sms-plugin"
 paths:
 - "com/hoiio/jenkins/sms"
 developers: []

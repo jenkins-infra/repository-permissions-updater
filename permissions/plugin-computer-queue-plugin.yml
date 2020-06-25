@@ -1,5 +1,6 @@
 ---
 name: "computer-queue-plugin"
+github: "jenkinsci/computer-queue-plugin"
 paths:
 - "jenkins/ci/plugins/computerqueue/computer-queue-plugin"
 developers:

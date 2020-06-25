@@ -1,5 +1,6 @@
 ---
 name: "jobcacher"
+github: "jenkinsci/jobcacher-plugin"
 paths:
 - "org/jenkins-ci/plugins/jobcacher"
 developers:

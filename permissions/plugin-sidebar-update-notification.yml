@@ -1,5 +1,6 @@
 ---
 name: "sidebar-update-notification"
+github: "jenkinsci/sidebar-update-notification-plugin"
 paths:
 - "com/exxeta/jenkins/plugins/sidebar-update-notification"
 developers:

@@ -4,3 +4,5 @@ paths:
 - "org/jenkins-ci/plugins/cloudfoundry"
 developers:
 - "williamg"
+- "olamy"
+- "sworisbreathing"

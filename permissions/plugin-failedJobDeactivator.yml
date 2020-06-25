@@ -1,5 +1,6 @@
 ---
 name: "failedJobDeactivator"
+github: "jenkinsci/failedjobdeactivator-plugin"
 paths:
 - "de/einsundeins/jenkins/plugins/failedjobdeactivator/failedJobDeactivator"
 developers:

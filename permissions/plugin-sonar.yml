@@ -1,5 +1,6 @@
 ---
 name: "sonar"
+github: "jenkinsci/sonarqube-plugin"
 paths:
 - "org/jenkins-ci/plugins/sonar"
 - "org/jvnet/hudson/plugins/sonar"

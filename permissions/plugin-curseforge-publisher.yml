@@ -1,5 +1,6 @@
 ---
 name: "curseforge-publisher"
+github: "jenkinsci/curseforge-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/curseforge-publisher"
 developers:

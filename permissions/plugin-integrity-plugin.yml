@@ -1,5 +1,6 @@
 ---
 name: "integrity-plugin"
+github: "jenkinsci/integrity-plugin"
 paths:
 - "org/jenkins-ci/plugins/integrity-plugin"
 developers:

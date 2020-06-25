@@ -1,5 +1,6 @@
 ---
 name: "implied-labels"
+github: "jenkinsci/implied-labels-plugin"
 paths:
 - "org/jenkins-ci/plugins/implied-labels"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "vmware-vrealize-codestream"
+github: "jenkinsci/vmware-vrealize-codestream-plugin"
 paths:
 - "com/vmware/vcac/vmware-vrealize-codestream"
 developers:

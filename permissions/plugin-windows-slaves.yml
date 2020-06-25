@@ -1,5 +1,6 @@
 ---
 name: "windows-slaves"
+github: "jenkinsci/windows-slaves-plugin"
 paths:
 - "org/jenkins-ci/plugins/windows-slaves"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "snsnotify"
+github: "jenkinsci/snsnotify-plugin"
 paths:
 - "org/jenkins-ci/plugins/snsnotify"
 developers:

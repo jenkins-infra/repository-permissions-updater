@@ -1,5 +1,6 @@
 ---
 name: "junit"
+github: "jenkinsci/junit-plugin"
 paths:
 - "org/jenkins-ci/plugins/junit"
 developers:
@@ -9,3 +10,13 @@ developers:
 - "kohsuke"
 - "olivergondza"
 - "wolfs"
+- "dnusbaum"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

@@ -1,0 +1,23 @@
+---
+name: "blueocean-pipeline-scm-api"
+github: "jenkinsci/blueocean-plugin"
+paths:
+- "io/jenkins/blueocean/blueocean-pipeline-scm-api"
+developers:
+- "michaelneale"
+- "vivek"
+- "tfennelly"
+- "kzantow"
+- "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
+- "halkeye"
+- "tscherler"
+security:
+  contacts:
+    jira: "blueocean_security_members"

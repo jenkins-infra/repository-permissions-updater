@@ -1,5 +1,6 @@
 ---
 name: "veracode-scanner"
+github: "jenkinsci/veracode-scanner-plugin"
 paths:
 - "org/jenkins-ci/plugins/veracode-scanner"
 developers:

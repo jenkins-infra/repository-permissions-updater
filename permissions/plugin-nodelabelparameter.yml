@@ -1,5 +1,6 @@
 ---
 name: "nodelabelparameter"
+github: "jenkinsci/nodelabelparameter-plugin"
 paths:
 - "org/jenkins-ci/plugins/nodelabelparameter"
 developers:

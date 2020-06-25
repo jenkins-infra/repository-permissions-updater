@@ -1,6 +1,9 @@
 ---
 name: "kiuwanJenkinsPlugin"
+github: "jenkinsci/kiuwan-plugin"
 paths:
 - "org/jenkins-ci/plugins/kiuwanJenkinsPlugin"
 developers:
 - "jptejela"
+- "kwjsalado"
+- "gsimmross"

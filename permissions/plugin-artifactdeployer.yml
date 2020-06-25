@@ -1,7 +1,9 @@
 ---
 name: "artifactdeployer"
+github: "jenkinsci/artifactdeployer-plugin"
 paths:
 - "org/jenkins-ci/plugins/artifactdeployer"
 developers:
 - "alecharp"
 - "gbois"
+- "seanturner83"

@@ -1,7 +1,15 @@
 ---
 name: "pipeline-github-lib"
+github: "jenkinsci/pipeline-github-lib-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-github-lib"
 developers:
 - "jglick"
 - "stephenconnolly"
+- "abayer"
+- "dnusbaum"
+- "rsandell"
+- "svanoort"
+security:
+  contacts:
+    jira: "pipeline_security_members"

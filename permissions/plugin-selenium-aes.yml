@@ -1,5 +1,6 @@
 ---
 name: "selenium-aes"
+github: "jenkinsci/selenium-aes-plugin"
 paths:
 - "org/jvnet/hudson/plugins/selenium-aes"
 developers: []

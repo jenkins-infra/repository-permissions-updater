@@ -1,5 +1,6 @@
 ---
 name: "device-watcher"
+github: "jenkinsci/device-watcher-plugin"
 paths:
 - "org/jenkins-ci/plugins/device-watcher"
 developers:

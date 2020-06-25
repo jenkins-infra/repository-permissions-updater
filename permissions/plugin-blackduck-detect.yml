@@ -1,0 +1,10 @@
+---
+name: "blackduck-detect"
+github: "jenkinsci/blackduck-detect-plugin"
+paths:
+- "com/blackducksoftware/integration/blackduck-detect"
+developers:
+- "gkillough"
+- "jrichard"
+- "akamen"
+- "bdsoss"

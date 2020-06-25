@@ -1,0 +1,12 @@
+---
+name: "kubernetes-client-api"
+github: "jenkinsci/kubernetes-client-api-plugin"
+paths:
+- "org/jenkins-ci/plugins/kubernetes-client-api"
+developers:
+- "csanchez"
+- "vlatombe"
+- "jglick"
+- "teilo"
+- "agentgonzo"
+- "kylecronin"

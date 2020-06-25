@@ -1,0 +1,10 @@
+---
+name: "synopsys-polaris"
+github: "jenkinsci/synopsys-polaris-plugin"
+paths:
+- "org/jenkins-ci/plugins/synopsys-polaris"
+developers:
+- "gkillough"
+- "jrichard"
+- "akamen"
+- "bdsoss"

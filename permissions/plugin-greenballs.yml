@@ -1,5 +1,6 @@
 ---
 name: "greenballs"
+github: "jenkinsci/greenballs-plugin"
 paths:
 - "org/jenkins-ci/plugins/greenballs"
 - "org/jvnet/hudson/plugins/greenballs"

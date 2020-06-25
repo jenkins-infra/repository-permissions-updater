@@ -1,5 +1,6 @@
 ---
 name: "SSSCM"
+github: "jenkinsci/shell-script-scm-plugin"
 paths:
 - "ssscm/SSSCM"
 developers: []

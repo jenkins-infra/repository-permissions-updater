@@ -1,5 +1,6 @@
 ---
 name: "additional-identities-plugin"
+github: "jenkinsci/additional-identities-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/additional-identities-plugin"
 developers:

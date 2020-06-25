@@ -1,5 +1,6 @@
 ---
 name: "vmware-vrealize-orchestrator"
+github: "jenkinsci/vmware-vrealize-orchestrator-plugin"
 paths:
 - "org/jenkins-ci/plugins/vmware-vrealize-orchestrator"
 developers:

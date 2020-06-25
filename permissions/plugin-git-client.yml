@@ -1,8 +1,13 @@
 ---
 name: "git-client"
+github: "jenkinsci/git-client-plugin"
 paths:
 - "org/jenkins-ci/plugins/git-client"
 - "org/jenkinsci/plugins/git-client"
 developers:
 - "markewaite"
-- "ndeloof"
+- "rsandell"
+- "fcojfernandez"
+security:
+    contacts:
+      jira: "foundation_security_members"

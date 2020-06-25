@@ -1,8 +1,8 @@
 ---
 name: "aws-java-sdk"
+github: "jenkinsci/aws-java-sdk-plugin"
 paths:
 - "org/jenkins-ci/plugins/aws-java-sdk"
 developers:
 - "andresrc"
-- "ndeloof"
 - "vlatombe"

@@ -1,7 +1,12 @@
 ---
 name: "variant"
+github: "jenkinsci/variant-plugin"
 paths:
 - "org/jenkins-ci/plugins/variant"
 developers:
 - "kohsuke"
 - "andresrc"
+- "batmat"
+security:
+  contacts:
+    jira: "foundation_security_members"

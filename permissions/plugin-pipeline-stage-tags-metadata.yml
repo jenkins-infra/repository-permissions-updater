@@ -1,5 +1,6 @@
 ---
 name: "pipeline-stage-tags-metadata"
+github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
 - "org/jenkinsci/plugins/pipeline-stage-tags-metadata"
 developers:
@@ -7,3 +8,9 @@ developers:
 - "oleg_nenashev"
 - "stephenconnolly"
 - "rsandell"
+- "svanoort"
+- "bitwiseman"
+- "dnusbaum"
+security:
+  contacts:
+    jira: "pipeline_security_members"

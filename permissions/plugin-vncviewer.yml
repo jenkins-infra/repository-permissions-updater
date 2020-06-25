@@ -1,5 +1,6 @@
 ---
 name: "vncviewer"
+github: "jenkinsci/vncviewer-plugin"
 paths:
 - "org/jenkins-ci/plugins/vncviewer"
 developers:

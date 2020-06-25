@@ -1,5 +1,6 @@
 ---
 name: "gerrit-trigger"
+github: "jenkinsci/gerrit-trigger-plugin"
 paths:
 - "com/sonyericsson/hudson/plugins/gerrit/gerrit-trigger"
 developers:

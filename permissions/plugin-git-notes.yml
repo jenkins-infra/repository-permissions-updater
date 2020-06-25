@@ -1,5 +1,6 @@
 ---
 name: "git-notes"
+github: "jenkinsci/git-notes-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/git-notes"
 developers: []
