@@ -4,4 +4,4 @@ github: "jenkinsci/cloudhub-deployer-plugin"
 paths:
 - "io/jenkins/plugins/cloudhub-deployer"
 developers:
-- "vrnvikas"
+- "vikas_chaudhary"
