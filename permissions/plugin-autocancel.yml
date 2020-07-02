@@ -1,0 +1,7 @@
+---
+name: "autocancel"
+github: "jenkinsci/autocancel-plugin"
+paths:
+- "io/jenkins/plugins/autocancel"
+developers:
+- "recuencojones"
