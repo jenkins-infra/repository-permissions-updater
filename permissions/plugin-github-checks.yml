@@ -4,6 +4,6 @@ github: "jenkinsci/github-checks-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-checks-plugin"
 developers:
-- "XiongKezhi"
+- "xiongkezhi"
 - "timja"
-- "uhafner"
+- "drulli"
