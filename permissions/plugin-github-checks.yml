@@ -1,0 +1,9 @@
+---
+name: "github-checks"
+github: "jenkinsci/github-checks-plugin"
+paths:
+- "io/jenkins/plugins/github-checks"
+developers:
+- "xiongkezhi"
+- "timja"
+- "drulli"
