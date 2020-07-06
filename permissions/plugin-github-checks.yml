@@ -2,7 +2,7 @@
 name: "github-checks"
 github: "jenkinsci/github-checks-plugin"
 paths:
-- "org/jenkins-ci/plugins/github-checks-plugin"
+- "io/jenkins/plugins/github-checks"
 developers:
 - "xiongkezhi"
 - "timja"
