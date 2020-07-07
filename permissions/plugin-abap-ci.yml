@@ -2,6 +2,6 @@
 name: "abap-ci"
 github: "jenkinsci/abap-ci-plugin"
 paths:
-- "io/jenkins/plugins/abap-ci"
+- "org/jenkins-ci/plugins/abap-ci"
 developers:
 - "andau"
