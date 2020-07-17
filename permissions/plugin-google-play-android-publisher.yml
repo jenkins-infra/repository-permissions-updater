@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/google-play-android-publisher"
 developers:
 - "orrc"
+- "donmccasland"
+- "tarahernandez"

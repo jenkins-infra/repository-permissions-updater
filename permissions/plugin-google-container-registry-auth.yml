@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/google-container-registry-auth"
 developers:
 - "wzheng2310"
+- "donmccasland"
+- "tarahernandez"

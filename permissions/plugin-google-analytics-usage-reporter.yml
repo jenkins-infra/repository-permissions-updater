@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/google-analytics-usage-reporter"
 developers:
 - "astroilov"
+- "donmccasland"
+- "tarahernandez"
