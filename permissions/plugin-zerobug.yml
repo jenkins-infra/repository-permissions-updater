@@ -2,6 +2,6 @@
 name: "zerobug"
 github: "jenkinsci/zerobug-plugin"
 paths:
-- "org/jenkins-ci/plugins/zerobug"
+- "io/jenkins/plugins/zerobug"
 developers:
 - "cvfelipeoliveira"
