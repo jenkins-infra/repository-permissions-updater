@@ -1,0 +1,8 @@
+---
+name: "venafi-codesigning"
+github: "jenkinsci/venafi-codesigning-plugin"
+paths:
+- "io/jenkins/plugins/venafi-codesigning"
+developers:
+- "honglilai"
+- "arnold79"
