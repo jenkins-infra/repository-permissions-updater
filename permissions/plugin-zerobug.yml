@@ -1,0 +1,7 @@
+--- 
+name: "zerobug"
+github: "jenkinsci/zerobug-plugin"
+paths:
+- "io/jenkins/plugins/zerobug"
+developers:
+- "cvfelipeoliveira"
