@@ -5,5 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/google-cloud-backup"
 developers:
 - "astroilov"
-- "donmccasland"
-- "tarahernandez"

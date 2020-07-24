@@ -5,5 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/google-chat-notification"
 developers:
 - "cnaik"
-- "donmccasland"
-- "tarahernandez"

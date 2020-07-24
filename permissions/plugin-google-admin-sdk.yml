@@ -5,5 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/google-admin-sdk"
 developers:
 - "yacut"
-- "donmccasland"
-- "tarahernandez"

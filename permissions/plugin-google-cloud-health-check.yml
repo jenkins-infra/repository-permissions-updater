@@ -5,5 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/google-cloud-health-check"
 developers:
 - "astroilov"
-- "donmccasland"
-- "tarahernandez"
