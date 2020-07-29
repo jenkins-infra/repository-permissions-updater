@@ -1,0 +1,12 @@
+---
+name: "uleska"
+github: "jenkinsci/uleska-plugin"
+paths:
+  - "org/jenkins-ci/plugins/uleska"
+developers:
+  - "gavinf17"
+  - "garyarobinson"
+  - "tomjshore"
+security:
+  contacts:
+    email: "developers@uleska.com"
