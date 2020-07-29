@@ -2,7 +2,7 @@
 name: "uleska"
 github: "jenkinsci/uleska-plugin"
 paths:
-  - "org/jenkins-ci/plugins/uleska"
+  - "io/jenkins/plugins/uleska"
 developers:
   - "gavinf17"
   - "garyarobinson"
