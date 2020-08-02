@@ -1,0 +1,9 @@
+---
+name: "bootstrap"
+github: "jenkinsci/jenkinsfile-runner"
+paths:
+- "io/jenkins/jenkinsfile-runner/packaging-parent-pom"
+developers:
+- "oleg_nenashev"
+- "egutierrez"
+- "fcojfernandez"
