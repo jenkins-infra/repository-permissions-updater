@@ -2,6 +2,6 @@
 name: "valid-network"
 github: "jenkinsci/valid-network-plugin"
 paths:
-- "org/jenkins-ci/plugins/valid-network"
+- "io/jenkins/plugins/valid-network"
 developers:
 - "dima"
