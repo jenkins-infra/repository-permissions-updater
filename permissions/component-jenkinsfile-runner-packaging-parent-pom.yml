@@ -1,5 +1,5 @@
 ---
-name: "bootstrap"
+name: "packaging-parent-pom"
 github: "jenkinsci/jenkinsfile-runner"
 paths:
 - "io/jenkins/jenkinsfile-runner/packaging-parent-pom"
