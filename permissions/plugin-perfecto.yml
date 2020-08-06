@@ -4,6 +4,5 @@ github: "jenkinsci/perfecto-plugin"
 paths:
 - "org/jenkins-ci/plugins/perfecto"
 developers:
-- "dsatike-perfecto"
 - "genesisthomas"
 - "perfectojenkins"
