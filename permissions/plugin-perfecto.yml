@@ -1,5 +1,5 @@
---- 
-name: "perfecto-plugin"
+---
+name: "perfecto"
 github: "jenkinsci/perfecto-plugin"
 paths:
 - "io/jenkins/plugins/perfecto"
