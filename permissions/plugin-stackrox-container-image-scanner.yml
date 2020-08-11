@@ -3,4 +3,4 @@ github: "jenkinsci/stackrox-container-image-scanner-plugin"
 paths:
 - "org/jenkins-ci/plugins/stackrox-container-image-scanner"
 developers:
-- "srox_plugin"
+- "stackrox"
