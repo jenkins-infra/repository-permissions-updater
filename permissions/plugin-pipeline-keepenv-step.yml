@@ -1,0 +1,7 @@
+---
+name: "pipeline-keepenv-step"
+github: "jenkinsci/pipeline-keepenv-step"
+paths:
+  - "io/jenkins/plugins/pipeline-keepenv-step"
+developers:
+  - "danielbeck"
