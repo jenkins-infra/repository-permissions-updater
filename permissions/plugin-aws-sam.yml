@@ -4,6 +4,7 @@ github: "jenkinsci/aws-sam-plugin"
 paths:
 - "io/jenkins/plugins/aws-sam"
 developers:
-- "mikedeck_AWS"
-- "seansummers"
-- "modmac"
+- "aws_sae_jenkinsio"
+security:
+  contacts:
+    email: "aws-security@amazon.com"
