@@ -5,4 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/whitesource"
 developers:
 - "edoshor"
+- "itaimarko"
 - "annarozin"
