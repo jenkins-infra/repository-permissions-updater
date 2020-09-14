@@ -2,6 +2,6 @@
 name: "custom-folder-icon"
 github: "jenkinsci/custom-folder-icon-plugin"
 paths:
-- "org/jenkins-ci/plugins/custom-folder-icon"
+- "io/jenkins/plugins/custom-folder-icon"
 developers:
 - strangelookingnerd
