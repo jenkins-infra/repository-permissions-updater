@@ -1,0 +1,7 @@
+---
+name: "custom-folder-icon"
+github: "jenkinsci/custom-folder-icon-plugin"
+paths:
+- "io/jenkins/plugins/custom-folder-icon"
+developers:
+- strangelookingnerd
