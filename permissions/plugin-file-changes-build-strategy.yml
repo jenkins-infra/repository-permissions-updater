@@ -1,0 +1,7 @@
+---
+name: "file-changes-build-strategy"
+github: "jenkinsci/file-changes-build-strategy-plugin"
+paths:
+- "org/jenkins-ci/plugins/file-changes-build-strategy"
+developers:
+- "michelzanini"
