@@ -6,3 +6,6 @@ paths:
 developers:
 - "imod"
 - "egutierrez"
+security:
+  contacts:
+    jira: "foundation_security_members"
