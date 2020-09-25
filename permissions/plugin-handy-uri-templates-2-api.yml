@@ -5,3 +5,8 @@ paths:
 - "org/jenkins-ci/plugins/handy-uri-templates-2-api"
 developers:
 - "jetersen"
+- "dnusbaum"
+- "bitwiseman"
+security:
+  contacts:
+    jira: "pipeline_security_members"
