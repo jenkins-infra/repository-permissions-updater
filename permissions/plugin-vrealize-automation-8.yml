@@ -2,6 +2,6 @@
 name: "vrealize-automation-8-plugin"
 github: "jenkinsci/vrealize-automation-8-plugin"
 paths:
-- "org/jenkins-ci/plugins/vrealize-automation-8"
+- "io/jenkins/plugins/vrealize-automation-8"
 developers:
 - "prydin"
