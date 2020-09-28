@@ -1,0 +1,7 @@
+---
+name: "sematext"
+github: "jenkinsci/sematext-plugin"
+paths:
+- "io/jenkins/plugins/sematext"
+developers:
+- "wawanawna"
