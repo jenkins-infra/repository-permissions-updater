@@ -1,0 +1,7 @@
+---
+name: "qualys-pc"
+github: "jenkinsci/qualys-pc-plugin"
+paths:
+- "com/qualys/plugins/qualys-pc"
+developers:
+- "qualys"
