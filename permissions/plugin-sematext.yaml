@@ -2,7 +2,7 @@
 name: "sematext"
 github: "jenkinsci/sematext-plugin"
 paths:
-- "com.sematext.jenkins.plugins"
+- "com/sematext/jenkins/plugins"
 developers:
 - "wawanawna"
 - "otisg"
