@@ -2,6 +2,6 @@
 name: "sematext"
 github: "jenkinsci/sematext-plugin"
 paths:
-- "com/sematext/jenkins/plugins"
+- "io/jenkins/plugins/sematext"
 developers:
 - "wawanawna"
