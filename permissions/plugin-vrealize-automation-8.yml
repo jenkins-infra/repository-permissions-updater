@@ -1,0 +1,7 @@
+---
+name: "vrealize-automation-8-plugin"
+github: "jenkinsci/vrealize-automation-8-plugin"
+paths:
+- "io/jenkins/plugins/vrealize-automation-8"
+developers:
+- "prydin"
