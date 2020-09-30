@@ -7,3 +7,8 @@ paths:
 developers:
 - "mcrooney"
 - "r2b2_nz"
+- "dnusbaum"
+- "bitwiseman"
+security:
+  contacts:
+    jira: "pipeline_security_members"
