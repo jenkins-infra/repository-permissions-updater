@@ -1,5 +1,5 @@
 ---
-name: "vrealize-automation-8-plugin"
+name: "vrealize-automation-8"
 github: "jenkinsci/vrealize-automation-8-plugin"
 paths:
 - "io/jenkins/plugins/vrealize-automation-8"
