@@ -2,6 +2,6 @@
 name: "mixing-security-realm"
 github: "jenkinsci/mixing-security-realm-plugin"
 paths:
-- "org/jenkins-ci/plugins/mixing-security-realm"
+- "io/jenkins/plugins/mixing-security-realm"
 developers:
 - "promissing"
