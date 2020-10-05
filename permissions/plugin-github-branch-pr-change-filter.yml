@@ -4,4 +4,4 @@ github: "jenkinsci/github-branch-pr-change-filter-plugin"
 paths:
 - "org/jenkins-ci/plugins/github-branch-pr-change-filter"
 developers:
-- "MarkMcCulloh"
+- "mmcculloh"
