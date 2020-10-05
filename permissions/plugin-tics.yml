@@ -1,0 +1,9 @@
+name: "tics"
+github: "jenkinsci/tics-plugin"
+paths:
+- "org/jenkins-ci/plugins/tics"
+developers:
+- "maikelsteneker"
+- "sole6"
+- "dreniers"
+- "ggsklias"
