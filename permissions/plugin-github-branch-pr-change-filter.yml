@@ -1,0 +1,7 @@
+---
+name: "github-branch-pr-change-filter"
+github: "jenkinsci/github-branch-pr-change-filter-plugin"
+paths:
+- "io/jenkins/plugins/github-branch-pr-change-filter"
+developers:
+- "mmcculloh"
