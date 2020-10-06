@@ -1,0 +1,7 @@
+---
+name: "build-discarder"
+github: "jenkinsci/build-discarder-plugin"
+paths:
+- "io/jenkins/plugins/build-discarder"
+developers:
+- "orjan"
