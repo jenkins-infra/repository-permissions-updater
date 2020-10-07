@@ -1,0 +1,7 @@
+---
+name: "material-theme"
+github: "jenkinsci/material-theme-plugin"
+paths:
+- "io/jenkins/plugins/materialtheme"
+developers:
+- "canuck1987"
