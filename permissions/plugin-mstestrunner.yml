@@ -6,3 +6,6 @@ paths:
 developers:
 - "armfergom"
 - "ido_ran"
+security:
+  contacts:
+    jira: "foundation_security_members"
