@@ -7,3 +7,6 @@ developers:
 - "xiongkezhi"
 - "timja"
 - "drulli"
+security:
+  contacts:
+    jira: "foundation_security_members"
