@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/warnings-ng"
 developers:
 - "drulli"
+security:
+  contacts:
+    jira: "foundation_security_members"
