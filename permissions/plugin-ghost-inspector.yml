@@ -1,0 +1,7 @@
+---
+name: "ghost-inspector"
+github: "jenkinsci/ghost-inspector-plugin"
+paths:
+- "com/ghost-inspector/jenkins/ghost-inspector"
+developers:
+- "ghostinspector"
