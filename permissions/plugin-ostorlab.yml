@@ -4,5 +4,5 @@ github: "jenkinsci/ostorlab-plugin"
 paths:
 - "io/jenkins/plugins/ostorlab"
 developers:
-- "amine3"
-- "3asm"
+- "aminemesb"
+
