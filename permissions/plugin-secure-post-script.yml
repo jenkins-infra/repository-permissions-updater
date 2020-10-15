@@ -1,0 +1,7 @@
+---
+name: "secure-post-script"
+github: "jenkinsci/secure-post-script-plugin"
+paths:
+- "io/jenkins/plugins/secure-post-script"
+developers:
+- "geekchow"
