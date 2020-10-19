@@ -53,8 +53,8 @@ node('java') {
                     sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
                 } catch(ignored) {
                     if (fileExists('checks-title.txt')) {
-                        def title = readFile('checks-title.txt', 'utf-8')
-                        def summary = readFile('checks-details.txt', 'utf-8')
+                        def title = readFile file: 'checks-title.txt', encoding: 'utf-8'
+                        def summary = readFile file:'checks-details.txt', encoding:  'utf-8'
                         publishChecks conclusion: 'ACTION_REQUIRED',
                                 name: 'Validation', 
                             summary: summary,
