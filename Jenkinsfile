@@ -62,6 +62,9 @@ node('java') {
                     }
                     throw ignored
                 }
+                publishChecks conclusion: 'SUCCESS',
+                        name: 'Validation',
+                        title: 'All checks passed'
             } else {
                 withCredentials([usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME')]) {
                     sh '${JAVA_HOME}/bin/java ' + javaArgs
