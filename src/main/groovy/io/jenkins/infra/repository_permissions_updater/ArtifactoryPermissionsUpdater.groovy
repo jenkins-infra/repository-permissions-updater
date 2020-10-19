@@ -215,7 +215,6 @@ public class ArtifactoryPermissionsUpdater {
     }
 
     private static void reportChecksApiDetails(String errorMessage, String details) {
-        LOGGER.log(Level.INFO, "Saving checks: " + errorMessage)
         new File('checks-title.txt').text = errorMessage
         new File('checks-details.txt').text = details
     }
