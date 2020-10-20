@@ -49,7 +49,22 @@ node('java') {
 
 
             if (dryRun) {
-                sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
+                try {
+                    sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
+                } catch(ignored) {
+                    if (fileExists('checks-title.txt')) {
+                        def title = readFile file: 'checks-title.txt', encoding: 'utf-8'
+                        def summary = readFile file:'checks-details.txt', encoding:  'utf-8'
+                        publishChecks conclusion: 'ACTION_REQUIRED',
+                                name: 'Validation', 
+                            summary: summary,
+                            title: title
+                    }
+                    throw ignored
+                }
+                publishChecks conclusion: 'SUCCESS',
+                        name: 'Validation',
+                        title: 'All checks passed'
             } else {
                 withCredentials([usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME')]) {
                     sh '${JAVA_HOME}/bin/java ' + javaArgs

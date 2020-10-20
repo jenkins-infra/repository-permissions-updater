@@ -185,6 +185,15 @@ public class ArtifactoryPermissionsUpdater {
                     } else {
                         users definition.developers.collectEntries { developer ->
                             if (!knownUsers.contains(developer.toLowerCase())) {
+                                reportChecksApiDetails(developer + " needs to login to artifactory", 
+                                """
+                                ${developer} needs to login to [artifactory](https://repo.jenkins-ci.org/).
+
+                                We resync our artifactory list hourly, so you will need to wait some time before rebuilding your pull request.
+                                The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+
+                                Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                """.stripIndent())
                                 throw new IllegalStateException("User name not known to Artifactory: " + developer)
                             }
                             [(developer.toLowerCase(Locale.US)): ["w", "n"]]
@@ -203,6 +212,11 @@ public class ArtifactoryPermissionsUpdater {
         def githubIndex = new JsonBuilder()
         githubIndex(pathsByGithub)
         new File(apiOutputDir, 'github.index.json').text = githubIndex.toPrettyString()
+    }
+
+    private static void reportChecksApiDetails(String errorMessage, String details) {
+        new File('checks-title.txt').text = errorMessage
+        new File('checks-details.txt').text = details
     }
 
     /**
