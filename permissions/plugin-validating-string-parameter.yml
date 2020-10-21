@@ -4,4 +4,3 @@ paths:
 - "org/jenkins-ci/plugins/validating-string-parameter"
 developers:
 - "vlatombe"
-- "slide_o_mix"

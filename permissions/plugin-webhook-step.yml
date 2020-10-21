@@ -5,4 +5,3 @@ paths:
 - "org/jenkins-ci/plugins/webhook-step"
 developers:
 - "cpitman"
-- "slide_o_mix"
