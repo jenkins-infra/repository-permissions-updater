@@ -6,3 +6,6 @@ paths:
 developers:
 - "centic"
 - "ognjenb"
+security:
+  contacts:
+    jira: "foundation_security_members"

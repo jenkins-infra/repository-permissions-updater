@@ -6,7 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/email-ext"
 developers:
 - "davidvanlaatum"
-- "slide_o_mix"
 security:
   contacts:
     jira: "foundation_security_members"
