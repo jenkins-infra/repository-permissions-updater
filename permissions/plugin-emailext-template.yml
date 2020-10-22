@@ -3,4 +3,5 @@ name: "emailext-template"
 github: "jenkinsci/emailext-template-plugin"
 paths:
 - "org/jenkinsci/plugins/emailext-template"
-developers: []
+developers:
+- "basil"
