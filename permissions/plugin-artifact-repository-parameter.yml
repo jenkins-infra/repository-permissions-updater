@@ -1,0 +1,8 @@
+---
+name: "artifact-repository-parameter"
+github: "jenkinsci/artifact-repository-parameter-plugin"
+paths:
+- "io/jenkins/plugins/artifact-repository-parameter"
+developers:
+- "fkh"
+
