@@ -80,7 +80,8 @@ Managing Security Process
 
 The Jenkins project acts as a primary contact point for security researchers seeking to report security vulnerabilities in Jenkins and Jenkins plugins ([learn more](https://jenkins.io/security/)).
 
-Through additional metadata in the YAML file described above, you can define who should be contacted in the event of a report being received.
+We generally assign reported issues to maintainers after a basic sanity check ([learn more](https://www.jenkins.io/security/for-maintainers/)).
+Through additional metadata in the YAML file described above, you can define who else should be contacted in the event of a report being received and is authorized to make decisions regarding security updates, e.g. scheduling.
 Add a section like the following to your plugin's YAML file:
 
 ```yaml
@@ -90,11 +91,13 @@ security:
     email: security@acme.org
 ```
 
-Given the above example, we will assign any security issue in Jira to `some_user_name` rather than one of the developers able to release the plugin, and send an email notification to `security@acme.org` to establish contact.
-Either of `jira` and `email` are optional.
+Given the above example, we will primarily assign any security issue in Jira to `some_user_name` and send an email notification to `security@acme.org` to establish contact.
+Regular maintainers are added to the issue as well to give visibility and allow participation/discussion.
+This means that specifying a Jira security contact is only useful when it's an account not already listed as maintainer.
+Either of `jira` and `email` is optional.
 
 Please note that we generally reject email contacts due to the additional overhead in reaching out via email.
-Unless you represent a large organization with dedicated security team that needs to be involved in the coordination of a release, please refrain from requesting to be contacted via email.
+Unless you represent a large organization with dedicated security team that needs to be involved in the coordination of a release, but is not otherwise part of plugin maintenance, please refrain from requesting to be contacted via email.
 
 Usage
 -----
