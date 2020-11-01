@@ -9,6 +9,7 @@ developers:
 - "r2b2_nz"
 - "dnusbaum"
 - "bitwiseman"
+- "olamy"
 security:
   contacts:
     jira: "pipeline_security_members"
