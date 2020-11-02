@@ -1,0 +1,7 @@
+---
+name: "markdown-formatter"
+github: "jenkinsci/markdown-formatter-plugin"
+paths:
+- "io/jenkins/plugins/markdown-formatter"
+developers:
+- "halkeye"
