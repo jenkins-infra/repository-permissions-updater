@@ -1,0 +1,7 @@
+---
+name: "custom-checkbox-parameter"
+github: "jenkinsci/custom-checkbox-parameter-plugin"
+paths:
+- "io/jenkins/plugins/custom-checkbox-parameter"
+developers:
+- "bluersw"

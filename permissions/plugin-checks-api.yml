@@ -1,0 +1,12 @@
+---
+name: "checks-api"
+github: "jenkinsci/checks-api-plugin"
+paths:
+- "io/jenkins/plugins/checks-api"
+developers:
+- "xiongkezhi"
+- "timja"
+- "drulli"
+security:
+  contacts:
+    jira: "foundation_security_members"

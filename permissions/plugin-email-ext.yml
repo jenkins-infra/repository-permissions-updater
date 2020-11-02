@@ -5,5 +5,8 @@ paths:
 - "org/jenkins-ci/plugins/email-ext"
 - "org/jvnet/hudson/plugins/email-ext"
 developers:
+- "basil"
 - "davidvanlaatum"
-- "slide_o_mix"
+security:
+  contacts:
+    jira: "foundation_security_members"

@@ -4,5 +4,5 @@ github: "jenkinsci/periodicbackup-plugin"
 paths:
 - "org/jenkins-ci/plugins/periodicbackup"
 developers:
-- oleg_nenashev
-
+- "oleg_nenashev"
+- "johno"

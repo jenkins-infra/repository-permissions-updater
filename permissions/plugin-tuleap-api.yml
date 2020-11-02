@@ -1,0 +1,8 @@
+---
+name: "tuleap-api"
+github: "jenkinsci/tuleap-api-plugin"
+paths:
+- "io/jenkins/plugins/tuleap-api"
+developers:
+- "erwyn"
+- "crobinson"

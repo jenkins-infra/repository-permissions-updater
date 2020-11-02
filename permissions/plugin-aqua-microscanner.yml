@@ -6,6 +6,7 @@ paths:
 developers:
 - "oranmoshai"
 - "aqua_maintainers"
+- "sudhirbatchu"
 security:
   contacts:
     jira: aqua_maintainers

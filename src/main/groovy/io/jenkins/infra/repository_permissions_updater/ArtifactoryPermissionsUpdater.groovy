@@ -3,13 +3,16 @@ package io.jenkins.infra.repository_permissions_updater
 import com.fasterxml.jackson.core.JsonProcessingException
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
+
 
 import java.security.MessageDigest
 import java.util.logging.Level
 import java.util.logging.Logger
 
+@SuppressFBWarnings("SE_NO_SERIALVERSIONID") // all closures are Serializable...
 public class ArtifactoryPermissionsUpdater {
 
     /**
@@ -48,9 +51,9 @@ public class ArtifactoryPermissionsUpdater {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(
                         System.getenv("ARTIFACTORY_USERNAME"),
-                        System.getenv("ARTIFACTORY_PASSWORD").toCharArray());
+                        System.getenv("ARTIFACTORY_PASSWORD").toCharArray())
             }
-        });
+        })
     }
 
     /* Because Jackson isn't groovy enough, data type to deserialize YAML permission definitions to */
@@ -86,13 +89,15 @@ public class ArtifactoryPermissionsUpdater {
         }
     }
 
-    private static String md5(String str) {
+    private static String sha256(String str) {
+        LOGGER.log(Level.INFO, "Computing sha256 for string: " + str)
         try {
-            MessageDigest digest = MessageDigest.getInstance("MD5")
+            MessageDigest digest = MessageDigest.getInstance("SHA-256")
             digest.update(str.bytes)
             return digest.digest().encodeHex().toString()
         } catch (Exception e) {
-            return '0000000000000000'
+            LOGGER.log(Level.WARNING, "Failed to compute SHA-256 digest", e)
+            return '00000000000000000000000000000000'
         }
     }
 
@@ -105,8 +110,8 @@ public class ArtifactoryPermissionsUpdater {
         String name = fileBaseName
         if ((ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + name).length() > 64) {
             // Artifactory has an undocumented max length for permission target names of 64 chars
-            // If length is exceeded, use 55 chars of the name, separator, and 8 chars (half of name's MD5)
-            name = name.substring(0, 54 - ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX .length()) + '_' + md5(fileBaseName).substring(0, 7)
+            // If length is exceeded, use 55 chars of the name, separator, and 8 chars (prefix of name's SHA-256)
+            name = name.substring(0, 54 - ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX .length()) + '_' + sha256(fileBaseName).substring(0, 7)
         }
         return name
     }
@@ -134,7 +139,7 @@ public class ArtifactoryPermissionsUpdater {
 
         yamlSourceDirectory.eachFile { file ->
             if (!file.name.endsWith('.yml')) {
-                throw new IOException("Unexpected file: ${file.name}")
+                throw new IOException("Unexpected file: `${file.name}`. YAML files must end with `.yml`")
             }
 
             Definition definition
@@ -142,7 +147,7 @@ public class ArtifactoryPermissionsUpdater {
             try {
                 definition = mapper.readValue(new FileReader(file), Definition.class)
             } catch (JsonProcessingException e) {
-                throw new IOException("Failed to read ${file.name}", e);
+                throw new IOException("Failed to read ${file.name}", e)
             }
 
             if (definition.github) {
@@ -167,11 +172,9 @@ public class ArtifactoryPermissionsUpdater {
                     [
                             path + '/*/' + definition.name + '-*',
                             path + '/*/maven-metadata.xml', // used for SNAPSHOTs
-                            path + '/*/maven-metadata.xml.sha1',
-                            path + '/*/maven-metadata.xml.md5',
+                            path + '/*/maven-metadata.xml.*',
                             path + '/maven-metadata.xml',
-                            path + '/maven-metadata.xml.sha1',
-                            path + '/maven-metadata.xml.md5'
+                            path + '/maven-metadata.xml.*'
                     ]
                 }.flatten().join(',')
                 excludesPattern ''
@@ -182,9 +185,18 @@ public class ArtifactoryPermissionsUpdater {
                     } else {
                         users definition.developers.collectEntries { developer ->
                             if (!knownUsers.contains(developer.toLowerCase())) {
+                                reportChecksApiDetails(developer + " needs to login to artifactory", 
+                                """
+                                ${developer} needs to login to [artifactory](https://repo.jenkins-ci.org/).
+
+                                We resync our artifactory list hourly, so you will need to wait some time before rebuilding your pull request.
+                                The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+
+                                Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                """.stripIndent())
                                 throw new IllegalStateException("User name not known to Artifactory: " + developer)
                             }
-                            ["${developer.toLowerCase()}": ["w", "n"]]
+                            [(developer.toLowerCase(Locale.US)): ["w", "n"]]
                         }
                     }
                     groups([:])
@@ -200,6 +212,11 @@ public class ArtifactoryPermissionsUpdater {
         def githubIndex = new JsonBuilder()
         githubIndex(pathsByGithub)
         new File(apiOutputDir, 'github.index.json').text = githubIndex.toPrettyString()
+    }
+
+    private static void reportChecksApiDetails(String errorMessage, String details) {
+        new File('checks-title.txt').text = errorMessage
+        new File('checks-details.txt').text = details
     }
 
     /**

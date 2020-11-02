@@ -1,0 +1,7 @@
+---
+name: "dotcommonitor-loadview"
+github: "jenkinsci/dotcommonitor-loadview-plugin"
+paths:
+- "io/jenkins/plugins/dotcommonitor-loadview"
+developers:
+- "dotcommonitor"

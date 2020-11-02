@@ -5,4 +5,5 @@ paths:
   - "org/jenkins-ci/plugins/experitest-cloud"
 developers:
   - "phuonghqh"
+  - "daniel_akua"
 

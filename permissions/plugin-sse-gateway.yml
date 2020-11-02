@@ -10,9 +10,15 @@ developers:
 - "kzantow"
 - "tscherler"
 - "jamesdumay"
-- "olamy"
 - "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
 - "halkeye"
 security:
   contacts:
-    jira: "blueocean_security_members"
+    jira: "pipeline_security_members"

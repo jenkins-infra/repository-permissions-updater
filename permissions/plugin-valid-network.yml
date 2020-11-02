@@ -1,0 +1,7 @@
+---
+name: "valid-network"
+github: "jenkinsci/valid-network-plugin"
+paths:
+- "io/jenkins/plugins/valid-network"
+developers:
+- "dima"

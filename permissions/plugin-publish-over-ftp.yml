@@ -6,4 +6,3 @@ paths:
 - "org/jvnet/hudson/plugins/publish-over-ftp"
 developers:
 - "drulli"
-- "slide_o_mix"

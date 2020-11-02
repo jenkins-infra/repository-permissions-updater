@@ -5,3 +5,13 @@ paths:
 - "org/jenkins-ci/plugins/authentication-tokens"
 developers:
 - "stephenconnolly"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+- "jglick"
+security:
+  contacts:
+    jira: "foundation_security_members"

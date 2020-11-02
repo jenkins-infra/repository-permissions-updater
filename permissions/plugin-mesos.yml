@@ -4,9 +4,8 @@ github: "jenkinsci/mesos-plugin"
 paths:
 - "org/jenkins-ci/plugins/mesos"
 developers:
+- "kjoshi"
+- "jeschkies"
 - "maselvaraj"
 - "vinodkone"
 - "vlatombe"
-security:
-  contacts:
-    jira: "cloud_platform_v2"

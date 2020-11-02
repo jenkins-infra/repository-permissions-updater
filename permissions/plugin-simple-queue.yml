@@ -1,0 +1,6 @@
+name: "simple-queue"
+github: "jenkinsci/simple-queue-plugin"
+paths:
+- "io/jenkins/plugins/simple-queue"
+developers:
+- "otradovec"

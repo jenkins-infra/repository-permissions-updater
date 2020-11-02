@@ -1,0 +1,6 @@
+name: "breachlock-dast"
+github: "jenkinsci/breachlock-dast-plugin"
+paths:
+- "io/jenkins/plugins/breachlock-dast"
+developers:
+- "mitchelk_breachlock"

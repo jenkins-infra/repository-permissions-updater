@@ -1,0 +1,7 @@
+---
+name: "headspin"
+github: "jenkinsci/headspin-plugin"
+paths:
+- "io/jenkins/plugins/headspin"
+developers:
+- "headspin"

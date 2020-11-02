@@ -6,3 +6,6 @@ paths:
 developers:
 - "gbois"
 - "marshall777"
+security:
+    contacts:
+      jira: "foundation_security_members"

@@ -1,0 +1,7 @@
+---
+name: "validating-email-parameter"
+github: "jenkinsci/validating-email-parameter-plugin"
+paths:
+- "io/jenkins/plugins/validating-email-parameter"
+developers:
+- "szcn"

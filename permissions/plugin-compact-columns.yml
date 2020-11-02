@@ -3,5 +3,5 @@ name: "compact-columns"
 github: "jenkinsci/compact-columns-plugin"
 paths:
 - "org/jenkins-ci/plugins/compact-columns"
-- "org/jvnet/hudson/plugins/compact-columns"
-developers: []
+developers:
+- "tgr"

@@ -3,4 +3,5 @@ name: "toolenv"
 github: "jenkinsci/toolenv-plugin"
 paths:
 - "org/jenkins-ci/plugins/toolenv"
-developers: []
+developers:
+- "skundrik"

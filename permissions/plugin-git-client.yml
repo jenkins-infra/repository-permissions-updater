@@ -6,3 +6,8 @@ paths:
 - "org/jenkinsci/plugins/git-client"
 developers:
 - "markewaite"
+- "rsandell"
+- "fcojfernandez"
+security:
+    contacts:
+      jira: "foundation_security_members"

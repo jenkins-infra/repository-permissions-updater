@@ -1,0 +1,7 @@
+---
+name: "mac"
+github: "jenkinsci/mac-plugin"
+paths:
+- "fr/edf/jenkins/plugins/mac"
+developers:
+- "mat1e"

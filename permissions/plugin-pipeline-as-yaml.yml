@@ -1,0 +1,7 @@
+---
+name: "pipeline-as-yaml"
+github: "jenkinsci/pipeline-as-yaml-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-as-yaml"
+developers:
+- "aytuncbeken"

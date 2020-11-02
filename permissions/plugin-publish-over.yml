@@ -3,5 +3,4 @@ name: "publish-over"
 github: "jenkinsci/publish-over-plugin"
 paths:
 - "org/jenkins-ci/plugins/publish-over"
-developers:
-- "slide_o_mix"
+developers: []

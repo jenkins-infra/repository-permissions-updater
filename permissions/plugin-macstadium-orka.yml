@@ -1,0 +1,7 @@
+---
+name: "macstadium-orka"
+github: "jenkinsci/macstadium-orka-plugin"
+paths:
+- "io/jenkins/plugins/macstadium-orka"
+developers:
+- "ispasov"

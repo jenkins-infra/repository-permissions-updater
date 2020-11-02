@@ -5,3 +5,4 @@ paths:
 - "io/jenkins/plugins/configuration-as-code-groovy"
 developers:
 - "szandala"
+- "jetersen"

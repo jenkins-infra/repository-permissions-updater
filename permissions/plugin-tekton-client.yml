@@ -1,0 +1,7 @@
+---
+name: "tekton-client"
+github: "jenkinsci/tekton-client-plugin"
+paths:
+- "org/waveywaves/jenkins/plugins/tekton-client"
+developers:
+- "waveywaves"

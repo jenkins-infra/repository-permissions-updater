@@ -9,9 +9,16 @@ developers:
 - "tfennelly"
 - "kzantow"
 - "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
 - "halkeye"
 - "imeredith"
 - "tscherler"
 security:
   contacts:
-    jira: "blueocean_security_members"
+    jira: "pipeline_security_members"

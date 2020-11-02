@@ -1,0 +1,6 @@
+name: "amqp-build-trigger"
+github: "jenkinsci/amqp-build-trigger-plugin"
+paths:
+- "io/jenkins/plugins/amqp-build-trigger"
+developers:
+- "kpvdr"

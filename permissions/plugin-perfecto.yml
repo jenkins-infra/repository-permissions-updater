@@ -1,0 +1,8 @@
+---
+name: "perfecto"
+github: "jenkinsci/perfecto-plugin"
+paths:
+- "io/jenkins/plugins/perfecto"
+developers:
+- "perfectojenkins"
+- "genesisthomas"

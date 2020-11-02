@@ -1,0 +1,6 @@
+name: "tics"
+github: "jenkinsci/tics-plugin"
+paths:
+- "io/jenkins/plugins/tics"
+developers:
+- "tiobe"

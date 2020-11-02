@@ -5,5 +5,4 @@ paths:
 - "com/splunk/splunkins/splunk-devops-shaded"
 developers:
 - "fengxx"
-- "araza_splunk"
-- "djenkins"
+- "srv_splunk_devops_uploader"

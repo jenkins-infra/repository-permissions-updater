@@ -5,3 +5,4 @@ paths:
 - "io/jenkins/plugins/bitbucket-push-and-pull-request"
 developers:
 - "cdelmonte"
+- "macghriogair"

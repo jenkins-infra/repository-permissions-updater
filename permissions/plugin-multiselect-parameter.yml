@@ -1,0 +1,7 @@
+---
+name: "multiselect-parameter"
+github: "jenkinsci/multiselect-parameter-plugin"
+paths:
+- "io/jenkins/plugins/multiselect-parameter"
+developers:
+- "swesteme"

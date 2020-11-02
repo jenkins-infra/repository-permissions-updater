@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/silk-performer-plugin"
 developers:
 - "silk"
+- "mihai_virag"

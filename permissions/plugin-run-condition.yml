@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/run-condition"
 developers:
 - "imod"
+security:
+  contacts:
+    jira: "foundation_security_members"

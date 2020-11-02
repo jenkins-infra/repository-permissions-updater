@@ -1,0 +1,8 @@
+---
+name: "dlisting-cov"
+github: "jenkinsci/dlisting-cov-plugin"
+paths:
+  - "io/jenkins/plugins/dlisting-cov"
+developers:
+  - "cizezsy"
+  - "andre2007"

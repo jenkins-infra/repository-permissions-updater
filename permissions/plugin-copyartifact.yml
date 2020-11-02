@@ -7,3 +7,6 @@ paths:
 developers:
 - "ikedam"
 - "wolfs"
+security:
+  contacts:
+    jira: "foundation_security_members"
