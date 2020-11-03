@@ -5,6 +5,7 @@ paths:
 - "org/jenkins-ci/plugins/conditional-buildstep"
 developers:
 - "imod"
+- "oleg_nenashev"
 security:
   contacts:
     jira: "foundation_security_members"
