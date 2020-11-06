@@ -203,7 +203,7 @@ abstract class ArtifactoryAPI {
                 OutputStreamWriter osw = new OutputStreamWriter(getOutputStream())
                 def params = [
                         'username': username,
-                        'scope': 'member-of-groups:' + group,
+                        'scope': 'member-of-groups:readers,' + group,
                         'expires_in': expiresInSeconds
                 ].collect { k, v -> k  + '=' + URLEncoder.encode((String)v, StandardCharsets.UTF_8) }.join('&')
                 LOGGER.log(Level.INFO, "Generating token with request payload: " + params)
