@@ -36,7 +36,7 @@ node('java') {
 
         stage ('Build') {
             def mvnHome = tool 'mvn'
-            env.JAVA_HOME = tool 'jdk8'
+            env.JAVA_HOME = tool 'jdk11'
             sh "${mvnHome}/bin/mvn -U clean verify"
         }
 
