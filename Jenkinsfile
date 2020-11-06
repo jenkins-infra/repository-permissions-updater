@@ -12,10 +12,14 @@ if (!env.CHANGE_ID && (!env.BRANCH_NAME || env.BRANCH_NAME == 'master')) {
     if (infra.isTrusted()) {
         // only on trusted.ci, running on master is not a dry-run
         dryRun = false
+
+        // Run every 3 hours
+        triggers += cron('H H/3 * * *')
+    } else {
+        // elsewhere, it still should get built periodically
+        // apparently this spikes load on Artifactory pretty badly, so don't run often
+        triggers += cron('H H * * *')
     }
-    // elsewhere, it still should get built periodically
-    // apparently this spikes load on Artifactory pretty badly, so don't run often
-    triggers += cron('H H * * *')
 }
 
 props += pipelineTriggers(triggers)

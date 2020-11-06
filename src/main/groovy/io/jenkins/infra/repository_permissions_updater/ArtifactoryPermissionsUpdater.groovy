@@ -253,7 +253,7 @@ class ArtifactoryPermissionsUpdater {
         repos.each { repo ->
             LOGGER.log(Level.INFO, "Processing repository ${repo} for CD")
             def username = ArtifactoryAPI.toTokenUsername(repo)
-            def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, ArtifactoryAPI.getInstance().toGeneratedGroupName(repo), TimeUnit.HOURS.toSeconds(6))
+            def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, ArtifactoryAPI.getInstance().toGeneratedGroupName(repo), TimeUnit.HOURS.toSeconds(4))
             if (!token) {
                 LOGGER.log(Level.INFO, "No token was generated for ${repo}, skipping")
                 return
