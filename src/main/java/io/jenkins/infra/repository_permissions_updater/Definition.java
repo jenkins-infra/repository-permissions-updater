@@ -1,11 +1,27 @@
 package io.jenkins.infra.repository_permissions_updater;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
+@SuppressFBWarnings("UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD")
 public class Definition {
+    public static class CD {
+        public boolean enabled;
+    }
     private String name = "";
     private String[] paths = new String[0];
     private String[] developers = new String[0];
 
     private String github;
+
+    public CD getCd() {
+        return cd;
+    }
+
+    public void setCd(CD cd) {
+        this.cd = cd;
+    }
+
+    private CD cd;
     private Object security; // unused, just metadata for Jenkins security team
 
     public String getName() {

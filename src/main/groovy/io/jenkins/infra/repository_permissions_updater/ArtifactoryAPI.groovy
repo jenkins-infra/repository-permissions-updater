@@ -136,7 +136,8 @@ abstract class ArtifactoryAPI {
 
         @Override
         String toGeneratedGroupName(String baseName) {
-            return toGeneratedName(ARTIFACTORY_GROUP_NAME_PREFIX, baseName)
+            // Add 'cd' to indicate this group is for CD only
+            return toGeneratedName(ARTIFACTORY_GROUP_NAME_PREFIX, "cd-" + baseName)
         }
 
         private static List<String> list(String apiUrl, String prefix) {

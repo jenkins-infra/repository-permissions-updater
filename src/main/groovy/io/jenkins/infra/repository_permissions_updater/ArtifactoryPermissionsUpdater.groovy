@@ -42,6 +42,7 @@ class ArtifactoryPermissionsUpdater {
         }
 
         Map<String, Set<String>> pathsByGithub = new TreeMap()
+        Map<String, List<Definition>> cdEnabledComponentsByGitHub = new TreeMap<>()
 
         yamlSourceDirectory.eachFile { file ->
             if (!file.name.endsWith('.yml')) {
@@ -63,12 +64,26 @@ class ArtifactoryPermissionsUpdater {
                     pathsByGithub[definition.github] = paths
                 }
                 paths.addAll(definition.paths)
+
+                if (definition.cd && definition.getCd().enabled) {
+                    List<Definition> definitions = cdEnabledComponentsByGitHub[definition.github]
+                    if (!definitions) {
+                        definitions = new ArrayList<>()
+                        cdEnabledComponentsByGitHub[definition.github] = definitions
+                    }
+                    LOGGER.log(Level.INFO, "CD-enabled component '${definition.name}' in repository '${definition.github}'")
+                    definitions.add(definition)
+                }
+            } else {
+                if (definition.cd && definition.getCd().enabled) {
+                    throw new Exception("Cannot have CD ('cd') enabled without specifying GitHub repository ('github')")
+                }
             }
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
 
             String jsonName = ArtifactoryAPI.getInstance().toGeneratedPermissionTargetName(fileBaseName)
-            File outputFile = new File(apiOutputDir, jsonName + '.json')
+            File outputFile = new File(new File(apiOutputDir, 'permissions'), jsonName + '.json')
             JsonBuilder json = new JsonBuilder()
 
 
@@ -84,7 +99,7 @@ class ArtifactoryPermissionsUpdater {
                     ]
                 }.flatten().join(',')
                 excludesPattern ''
-                repositories([ 'releases', 'snapshots' ])
+                repositories([ 'snapshots' ]) // TODO switch back to 'releases' to be effective
                 principals {
                     if (definition.developers.length == 0) {
                         users [:]
@@ -105,8 +120,28 @@ class ArtifactoryPermissionsUpdater {
                             [(developer.toLowerCase(Locale.US)): ["w", "n"]]
                         }
                     }
-                    groups([:])
+                    if (definition.cd?.enabled) {
+                        groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
+                    } else {
+                        groups([:])
+                    }
                 }
+            }
+
+            String pretty = json.toPrettyString()
+
+            outputFile.parentFile.mkdirs()
+            outputFile.text = pretty
+        }
+
+        cdEnabledComponentsByGitHub.each { githubRepo, components ->
+            def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName(githubRepo)
+            File outputFile = new File(new File(apiOutputDir, 'groups'), groupName + '.json')
+            JsonBuilder json = new JsonBuilder()
+
+            json {
+                name groupName
+                description "CD group with permissions to deploy from ${githubRepo}"
             }
 
             String pretty = json.toPrettyString()
@@ -118,6 +153,10 @@ class ArtifactoryPermissionsUpdater {
         def githubIndex = new JsonBuilder()
         githubIndex(pathsByGithub)
         new File(apiOutputDir, 'github.index.json').text = githubIndex.toPrettyString()
+
+        def cdRepos = new JsonBuilder()
+        cdRepos(cdEnabledComponentsByGitHub.keySet().toList())
+        new File(apiOutputDir, 'cd.index.json').text = cdRepos.toPrettyString()
     }
 
     // TODO It's a really weird decision to have this in the otherwise invocation agnostic standalone tool
@@ -133,25 +172,42 @@ class ArtifactoryPermissionsUpdater {
      * @param jsonApiFileDir
      */
     private static void submitPermissionTargets(File jsonApiFileDir) {
+        LOGGER.log(Level.INFO, "Submitting permission targets...")
         jsonApiFileDir.eachFile { file ->
-            if (file.name == 'github.index.json') {
-                return
-            }
             if (!file.name.endsWith('.json'))
                 return
 
             ArtifactoryAPI.getInstance().createOrReplacePermissionTarget(file.name.replace('.json', ''), file)
         }
+        LOGGER.log(Level.INFO, "Done")
     }
 
     /**
-     * Compares the list of permission targets returned from Artifactory with the list of permission target JSON payload
-     * files in the specified directory, and deletes all permission targets that match the required 'generated' prefix
-     * and that have no corresponding payload file.
+     * Takes a directory with Artifactory groups API payloads and submits them to Artifactory, creating/updating
+     * affected groups.
+     *
+     * @param jsonApiFileDir
+     */
+    private static void submitGroups(File jsonApiFileDir) {
+        LOGGER.log(Level.INFO, "Submitting groups...")
+        jsonApiFileDir.eachFile { file ->
+            if (!file.name.endsWith('.json'))
+                return
+
+            ArtifactoryAPI.getInstance().createOrReplaceGroup(file.name.replace('.json', ''), file)
+        }
+        LOGGER.log(Level.INFO, "Done")
+    }
+
+    /**
+     * Compares the list of (generated) permission targets returned from Artifactory with the list of permission target
+     * JSON payload files in the specified directory, and deletes all permission targets that match and that have no
+     * corresponding payload file.
      *
      * @param jsonApiFileDir
      */
     private static void removeExtraPermissionTargets(File jsonApiFileDir) {
+        LOGGER.log(Level.INFO, "Removing extra permission targets...")
         def permissionTargets = ArtifactoryAPI.getInstance().listGeneratedPermissionTargets()
 
         permissionTargets.each { target ->
@@ -160,6 +216,26 @@ class ArtifactoryPermissionsUpdater {
                 ArtifactoryAPI.getInstance().deletePermissionTarget(target)
             }
         }
+        LOGGER.log(Level.INFO, "Done")
+    }
+
+    /**
+     * Compares the list of (generated) groups returned from Artifactory with the list of group JSON payload files
+     * in the specified directory, and deletes all groups that match and that have no corresponding payload file.
+     *
+     * @param jsonApiFileDir
+     */
+    private static void removeExtraGroups(File jsonApiFileDir) {
+        LOGGER.log(Level.INFO, "Removing extra groups...")
+        def groups = ArtifactoryAPI.getInstance().listGeneratedGroups()
+
+        groups.each { group ->
+            if (!new File(jsonApiFileDir, group + '.json').exists()) {
+                LOGGER.log(Level.INFO, "Group ${group} has no corresponding file, deleting...")
+                ArtifactoryAPI.getInstance().deleteGroup(group)
+            }
+        }
+        LOGGER.log(Level.INFO, "Done")
     }
 
     /**
@@ -176,8 +252,14 @@ class ArtifactoryPermissionsUpdater {
             System.err.println("Running in dry run mode")
         }
         generateApiPayloads(DEFINITIONS_DIR, ARTIFACTORY_API_DIR)
-        submitPermissionTargets(ARTIFACTORY_API_DIR)
-        removeExtraPermissionTargets(ARTIFACTORY_API_DIR)
+
+        def groupsJsonDir = new File(ARTIFACTORY_API_DIR, "groups")
+        submitGroups(groupsJsonDir)
+        removeExtraGroups(groupsJsonDir)
+
+        def permissionTargetsJsonDir = new File(ARTIFACTORY_API_DIR, "permissions")
+        submitPermissionTargets(permissionTargetsJsonDir)
+        removeExtraPermissionTargets(permissionTargetsJsonDir)
     }
 
     private static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.name)
