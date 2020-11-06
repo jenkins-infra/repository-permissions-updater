@@ -197,6 +197,10 @@ abstract class ArtifactoryAPI {
         }
 
         private static List<String> list(String apiUrl, String prefix) {
+            if (DRY_RUN_MODE) {
+                LOGGER.log(Level.INFO, "Dry-run mode: Skipping GET call to ${apiUrl}")
+                return []
+            }
             // https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetGroups
             URL url = new URL(apiUrl)
             HttpURLConnection conn = (HttpURLConnection) url.openConnection()
