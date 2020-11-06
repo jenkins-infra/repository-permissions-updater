@@ -101,7 +101,7 @@ class ArtifactoryPermissionsUpdater {
                     ]
                 }.flatten().join(',')
                 excludesPattern ''
-                repositories([ 'snapshots' ]) // TODO switch back to 'releases' to be effective
+                repositories([ 'snapshots', 'releases' ])
                 principals {
                     if (definition.developers.length == 0) {
                         users [:]
@@ -253,7 +253,7 @@ class ArtifactoryPermissionsUpdater {
         repos.each { repo ->
             LOGGER.log(Level.INFO, "Processing repository ${repo} for CD")
             def username = ArtifactoryAPI.toTokenUsername(repo)
-            def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, ArtifactoryAPI.getInstance().toGeneratedGroupName(repo), TimeUnit.HOURS.toSeconds(4))
+            def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, ArtifactoryAPI.getInstance().toGeneratedGroupName(repo), TimeUnit.HOURS.toSeconds(Integer.getInteger('artifactoryTokenHoursValid', 4)))
             if (!token) {
                 LOGGER.log(Level.INFO, "No token was generated for ${repo}, skipping")
                 return

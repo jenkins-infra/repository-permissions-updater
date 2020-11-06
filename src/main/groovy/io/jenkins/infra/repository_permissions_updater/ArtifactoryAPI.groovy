@@ -208,10 +208,10 @@ abstract class ArtifactoryAPI {
             conn.connect()
             String text = conn.getInputStream().getText()
 
-            if (conn.getResponseCode() <= 200 || 299 <= conn.getResponseCode()) {
+            if (conn.getResponseCode() < 200 || 299 <= conn.getResponseCode()) {
                 // failure
                 String error = conn.getErrorStream()?.text
-                LOGGER.log(Level.WARNING, "Failed to list {apiUrl}: ${conn.responseCode} ${error}")
+                LOGGER.log(Level.WARNING, "Failed to list ${apiUrl}: ${conn.responseCode} ${error}")
                 return []
             }
 
