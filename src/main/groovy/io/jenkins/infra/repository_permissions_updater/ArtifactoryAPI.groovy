@@ -222,10 +222,11 @@ abstract class ArtifactoryAPI {
         }
 
         private static String toGeneratedName(String prefix, String name) {
-            if ((prefix + name).length() > 64) {
+            name = prefix + name.replaceAll('[ /]', '_')
+            if (name.length() > 64) {
                 // Artifactory has an undocumented max length for permission target names of 64 chars (and possibly other types)
                 // If length is exceeded, use 55 chars of the prefix+name, separator, and 8 hopefully unique chars (prefix of name's SHA-256)
-                name = prefix + name.substring(0, 54 - prefix .length()) + '_' + sha256(name).substring(0, 7)
+                name = name.substring(0, 54) + '_' + sha256(name).substring(0, 7)
             }
             return name
         }
