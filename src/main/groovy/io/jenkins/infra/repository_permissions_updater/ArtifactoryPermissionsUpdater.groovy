@@ -192,6 +192,10 @@ class ArtifactoryPermissionsUpdater {
      */
     private static void submitGroups(File jsonApiFileDir) {
         LOGGER.log(Level.INFO, "Submitting groups...")
+        if (!jsonApiFileDir.exists()) {
+            LOGGER.log(Level.INFO, 'No groups found, skipping')
+            return
+        }
         jsonApiFileDir.eachFile { file ->
             if (!file.name.endsWith('.json'))
                 return
@@ -229,6 +233,10 @@ class ArtifactoryPermissionsUpdater {
      */
     private static void removeExtraGroups(File jsonApiFileDir) {
         LOGGER.log(Level.INFO, "Removing extra groups...")
+        if (!jsonApiFileDir.exists()) {
+            LOGGER.log(Level.INFO, 'No groups found, skipping')
+            return
+        }
         def groups = ArtifactoryAPI.getInstance().listGeneratedGroups()
 
         groups.each { group ->
