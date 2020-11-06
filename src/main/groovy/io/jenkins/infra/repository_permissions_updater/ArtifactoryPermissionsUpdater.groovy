@@ -5,7 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
 import groovy.json.JsonBuilder
+import groovy.json.JsonSlurper
 
+import java.util.concurrent.TimeUnit
 import java.util.logging.Level
 import java.util.logging.Logger
 
@@ -238,6 +240,20 @@ class ArtifactoryPermissionsUpdater {
         LOGGER.log(Level.INFO, "Done")
     }
 
+    private static void generateTokens(File githubReposForCdIndex) {
+        def repos = new JsonSlurper().parse(githubReposForCdIndex)
+        repos.each { repo ->
+            LOGGER.log(Level.INFO, "Processing repository ${repo} for CD")
+            def username = ArtifactoryAPI.toTokenUsername(repo)
+            def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, ArtifactoryAPI.getInstance().toGeneratedGroupName(repo), TimeUnit.HOURS.toSeconds(6))
+            if (!token) {
+                LOGGER.log(Level.INFO, "No token was generated for ${repo}, skipping")
+                return
+            }
+            // TODO submit token to GitHub repo here
+        }
+    }
+
     /**
      * Update Artifactory permission targets:
      *
@@ -260,6 +276,8 @@ class ArtifactoryPermissionsUpdater {
         def permissionTargetsJsonDir = new File(ARTIFACTORY_API_DIR, "permissions")
         submitPermissionTargets(permissionTargetsJsonDir)
         removeExtraPermissionTargets(permissionTargetsJsonDir)
+
+        generateTokens(new File(ARTIFACTORY_API_DIR, "cd.index.json"))
     }
 
     private static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.name)

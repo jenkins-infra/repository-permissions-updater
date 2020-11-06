@@ -1,8 +1,11 @@
 package io.jenkins.infra.repository_permissions_updater
 
+import edu.umd.cs.findbugs.annotations.CheckForNull
+import edu.umd.cs.findbugs.annotations.NonNull
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
 import groovy.json.JsonSlurper
 
+import java.nio.charset.StandardCharsets
 import java.security.MessageDigest
 import java.util.logging.Level
 import java.util.logging.Logger
@@ -18,6 +21,10 @@ abstract class ArtifactoryAPI {
      * URL to the groups API of Artifactory
      */
     private static final String ARTIFACTORY_GROUPS_API_URL = 'https://repo.jenkins-ci.org/api/security/groups'
+    /**
+     * URL to the groups API of Artifactory
+     */
+    private static final String ARTIFACTORY_TOKEN_API_URL = 'https://repo.jenkins-ci.org/api/security/token'
 
     /**
      * True iff this is a dry-run (no API calls resulting in modifications)
@@ -71,6 +78,17 @@ abstract class ArtifactoryAPI {
      */
     abstract String toGeneratedGroupName(String baseName);
 
+    static String toTokenUsername(String baseName) {
+        return 'CD-for-' + baseName.replaceAll('[ /]', '__')
+    }
+
+    /**
+     * Generates a token scoped to the specified group.
+     * @param group the group scope for the token
+     * @return the token
+     */
+    abstract String generateTokenForGroup(String username, String group, long expiresInSeconds);
+
     /* Singleton support */
     private static ArtifactoryAPI INSTANCE = null
     static synchronized ArtifactoryAPI getInstance() {
@@ -88,7 +106,7 @@ abstract class ArtifactoryAPI {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(
                         System.getenv("ARTIFACTORY_USERNAME"),
-                        System.getenv("ARTIFACTORY_PASSWORD").toCharArray())
+                        System.getenv("ARTIFACTORY_PASSWORD")?.toCharArray())
             }
         }
 
@@ -135,9 +153,47 @@ abstract class ArtifactoryAPI {
         }
 
         @Override
-        String toGeneratedGroupName(String baseName) {
+        @NonNull String toGeneratedGroupName(String baseName) {
             // Add 'cd' to indicate this group is for CD only
             return toGeneratedName(ARTIFACTORY_GROUP_NAME_PREFIX, "cd-" + baseName)
+        }
+
+        @Override
+        @CheckForNull String generateTokenForGroup(String username, String group, long expiresInSeconds) {
+            if (DRY_RUN_MODE) {
+                LOGGER.log(Level.INFO, "Dry-run mode: Skipping POST call to ${ARTIFACTORY_TOKEN_API_URL} with username:${username}, group:${group}, expiresInSeconds:${expiresInSeconds}")
+                return null;
+            }
+            // https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateToken
+            URL url = new URL(ARTIFACTORY_TOKEN_API_URL)
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection()
+            conn.setAuthenticator(AUTHENTICATOR)
+            conn.setRequestMethod('POST')
+            conn.setRequestProperty('Content-Type', 'application/x-www-form-urlencoded')
+            conn.setDoOutput(true)
+            OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
+            // -d "username=CD-for-jenkinsci_log-cli-plugin" -d "scope=member-of-groups:generatedv2-cd-jenkinsci_log-cli-plugin" -d "expires_in=3600"
+            def params = [
+                    'username': username,
+                    'scope': 'member-of-groups:' + group,
+                    'expires_in': expiresInSeconds
+            ].collect { k, v -> k  + '=' + URLEncoder.encode((String)v, StandardCharsets.UTF_8) }.join('&')
+            LOGGER.log(Level.INFO, "Generating token with request payload: " + params)
+            osw.write(params)
+            osw.close()
+
+            if (conn.getResponseCode() <= 200 || 299 <= conn.getResponseCode()) {
+                // failure
+                String error = conn.getErrorStream()?.text
+                LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${conn.responseCode} ${error}")
+                return null;
+            }
+            String text = conn.getInputStream().getText()
+
+//            LOGGER.log(Level.INFO, "Response: " + text) // This shouldn't be logged in prod as it contains sensitive information
+
+            def json = new JsonSlurper().parseText(text)
+            return json.access_token
         }
 
         private static List<String> list(String apiUrl, String prefix) {
@@ -148,6 +204,13 @@ abstract class ArtifactoryAPI {
             conn.setRequestMethod('GET')
             conn.connect()
             String text = conn.getInputStream().getText()
+
+            if (conn.getResponseCode() <= 200 || 299 <= conn.getResponseCode()) {
+                // failure
+                String error = conn.getErrorStream()?.text
+                LOGGER.log(Level.WARNING, "Failed to list {apiUrl}: ${conn.responseCode} ${error}")
+                return []
+            }
 
             def json = new JsonSlurper().parseText(text)
 
@@ -186,7 +249,7 @@ abstract class ArtifactoryAPI {
                 if (conn.getResponseCode() <= 200 || 299 <= conn.getResponseCode()) {
                     // failure
                     String error = conn.getErrorStream().text
-                    LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${error}")
+                    LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${conn.responseCode} ${error}")
                 }
             } catch (MalformedURLException ex) {
                 LOGGER.log(Level.WARNING, "Not a valid URL for ${payloadFile.name}", ex)
