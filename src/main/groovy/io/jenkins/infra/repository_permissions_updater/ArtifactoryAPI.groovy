@@ -12,34 +12,43 @@ import java.util.logging.Logger
 
 @SuppressFBWarnings("LI_LAZY_INIT_STATIC") // Something related to Groovy
 abstract class ArtifactoryAPI {
-
+    /**
+     * URL to Artifactory
+     */
+    private static final String ARTIFACTORY_URL = System.getProperty('artifactoryUrl', 'https://repo.jenkins-ci.org')
     /**
      * URL to the permissions API of Artifactory
      */
-    private static final String ARTIFACTORY_PERMISSIONS_API_URL = 'https://repo.jenkins-ci.org/api/security/permissions'
+    private static final String ARTIFACTORY_PERMISSIONS_API_URL = ARTIFACTORY_URL + '/api/security/permissions'
     /**
      * URL to the groups API of Artifactory
      */
-    private static final String ARTIFACTORY_GROUPS_API_URL = 'https://repo.jenkins-ci.org/api/security/groups'
+    private static final String ARTIFACTORY_GROUPS_API_URL = ARTIFACTORY_URL + '/api/security/groups'
     /**
      * URL to the groups API of Artifactory
      */
-    private static final String ARTIFACTORY_TOKEN_API_URL = 'https://repo.jenkins-ci.org/api/security/token'
+    private static final String ARTIFACTORY_TOKEN_API_URL = ARTIFACTORY_URL + '/api/security/token'
 
     /**
      * True iff this is a dry-run (no API calls resulting in modifications)
      */
-    private static final boolean DRY_RUN_MODE = Boolean.getBoolean('dryRun')
+    public static final boolean DRY_RUN_MODE = Boolean.getBoolean('dryRun')
 
     /**
      * Prefix for permission target generated and maintained (i.e. possibly deleted) by this program.
      */
-    private static final String ARTIFACTORY_PERMISSION_TARGET_NAME_PREFIX = 'generatedv2-'
-    private static final String ARTIFACTORY_GROUP_NAME_PREFIX = 'generatedv2-'
+    private static final String ARTIFACTORY_OBJECT_NAME_PREFIX = System.getProperty('artifactoryObjectPrefix', 'generatedv2-')
 
+    /**
+     * List all permission targets whose name starts with the configured prefix.
+     *
+     * @see #toGeneratedPermissionTargetName(java.lang.String)
+     * @link https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetPermissionTargets
+     * @return all permission targets whose name starts with the configured prefix.
+     */
     abstract List<String> listGeneratedPermissionTargets();
     /**
-     * Creates or replaces a permission target
+     * Creates or replaces a permission target.
      *
      * @param name the name of the permission target, used in URL
      * @param payloadFile {@see https://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplacePermissionTarget}
@@ -54,16 +63,24 @@ abstract class ArtifactoryAPI {
     abstract void deletePermissionTarget(String target);
 
     /**
-     * Determines the name for the JSON API payload file, which is also used as the permission target name (with prefix)
+     * Determines the name for the JSON API payload file, which is also used as the permission target name (with prefix).
+     *
      * @param name the expected base name before transformation
      * @return the transformed name, including the prefix, and compatible with Artifactory
      */
     abstract String toGeneratedPermissionTargetName(String baseName);
 
+    /**
+     * List all groups whose name starts with the configured prefix.
+     *
+     * @see #toGeneratedGroupName(java.lang.String)
+     * @link https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetGroups
+     * @return all groups whose name starts with the configured prefix.
+     */
     abstract List<String> listGeneratedGroups();
 
     /**
-     * Created or replaces a group
+     * Creates or replaces a group.
      *
      * @param name the name of the group, used in URL
      * @param payloadFile {@see https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplaceGroup}
@@ -72,18 +89,29 @@ abstract class ArtifactoryAPI {
     abstract void deleteGroup(String group);
 
     /**
-     * Determines the name for the JSON API payload file, which is also used as the group name (with prefix)
+     * Determines the name for the JSON API payload file, which is also used as the group name (with prefix).
+     *
      * @param name the expected base name before transformation
      * @return the transformed name, including the prefix, and compatible with Artifactory
      */
     abstract String toGeneratedGroupName(String baseName);
 
+    /**
+     * Converts the provided base name (expected to be a GitHub repository name of the form 'org/name') to a user name
+     * for a non-existing token user.
+     *
+     * @see https://www.jfrog.com/confluence/display/JFROG/Access+Tokens#AccessTokens-SupportAuthenticationforNon-ExistingUsers
+     * @param baseName
+     * @return
+     */
     static String toTokenUsername(String baseName) {
         return 'CD-for-' + baseName.replaceAll('[ /]', '__')
     }
 
     /**
      * Generates a token scoped to the specified group.
+     *
+     * @link https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateToken
      * @param group the group scope for the token
      * @return the token
      */
@@ -102,15 +130,24 @@ abstract class ArtifactoryAPI {
     private static final class ArtifactoryImpl extends ArtifactoryAPI {
         private static final Logger LOGGER = Logger.getLogger(ArtifactoryImpl.class.getName())
 
-        private static final class AuthenticatorImpl extends Authenticator {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(
-                        System.getenv("ARTIFACTORY_USERNAME"),
-                        System.getenv("ARTIFACTORY_PASSWORD")?.toCharArray())
+        static {
+            String username = System.getenv("ARTIFACTORY_USERNAME")
+            String password = System.getenv("ARTIFACTORY_PASSWORD")
+            if (username == null || password == null) {
+                AUTHENTICATOR = null
+                if (!DRY_RUN_MODE) {
+                    throw new IllegalStateException("ARTIFACTORY_USERNAME and ARTIFACTORY_PASSWORD must be provided unless dry-run mode is used")
+                }
+            } else {
+                AUTHENTICATOR = new Authenticator() {
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication(username, password.toCharArray())
+                    }
+                }
             }
         }
 
-        private static final Authenticator AUTHENTICATOR = new AuthenticatorImpl()
+        private static final Authenticator AUTHENTICATOR
 
         /**
          * Creates or replaces a permission target based on the provided payload.
@@ -129,17 +166,17 @@ abstract class ArtifactoryAPI {
 
         @Override
         List<String> listGeneratedPermissionTargets() {
-            return list(ARTIFACTORY_PERMISSIONS_API_URL, ARTIFACTORY_PERMISSION_TARGET_NAME_PREFIX)
+            return list(ARTIFACTORY_PERMISSIONS_API_URL, ARTIFACTORY_OBJECT_NAME_PREFIX)
         }
 
         @Override
         String toGeneratedPermissionTargetName(String name) {
-            return toGeneratedName(ARTIFACTORY_PERMISSION_TARGET_NAME_PREFIX, name)
+            return toGeneratedName(ARTIFACTORY_OBJECT_NAME_PREFIX, name)
         }
 
         @Override
         List<String> listGeneratedGroups() {
-            return list(ARTIFACTORY_GROUPS_API_URL, ARTIFACTORY_GROUP_NAME_PREFIX)
+            return list(ARTIFACTORY_GROUPS_API_URL, ARTIFACTORY_OBJECT_NAME_PREFIX)
         }
 
         @Override
@@ -155,70 +192,56 @@ abstract class ArtifactoryAPI {
         @Override
         @NonNull String toGeneratedGroupName(String baseName) {
             // Add 'cd' to indicate this group is for CD only
-            return toGeneratedName(ARTIFACTORY_GROUP_NAME_PREFIX, "cd-" + baseName)
+            return toGeneratedName(ARTIFACTORY_OBJECT_NAME_PREFIX, "cd-" + baseName)
         }
 
         @Override
         @CheckForNull String generateTokenForGroup(String username, String group, long expiresInSeconds) {
-            if (DRY_RUN_MODE) {
-                LOGGER.log(Level.INFO, "Dry-run mode: Skipping POST call to ${ARTIFACTORY_TOKEN_API_URL} with username:${username}, group:${group}, expiresInSeconds:${expiresInSeconds}")
-                return null
-            }
-            // https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateToken
-            URL url = new URL(ARTIFACTORY_TOKEN_API_URL)
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection()
-            conn.setAuthenticator(AUTHENTICATOR)
-            conn.setRequestMethod('POST')
-            conn.setRequestProperty('Content-Type', 'application/x-www-form-urlencoded')
-            conn.setDoOutput(true)
-            OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
-            def params = [
-                    'username': username,
-                    'scope': 'member-of-groups:' + group,
-                    'expires_in': expiresInSeconds
-            ].collect { k, v -> k  + '=' + URLEncoder.encode((String)v, StandardCharsets.UTF_8) }.join('&')
-            LOGGER.log(Level.INFO, "Generating token with request payload: " + params)
-            osw.write(params)
-            osw.close()
+            withConnection('POST', ARTIFACTORY_TOKEN_API_URL) {
+                setRequestProperty('Content-Type', 'application/x-www-form-urlencoded')
+                setDoOutput(true)
+                OutputStreamWriter osw = new OutputStreamWriter(getOutputStream())
+                def params = [
+                        'username': username,
+                        'scope': 'member-of-groups:' + group,
+                        'expires_in': expiresInSeconds
+                ].collect { k, v -> k  + '=' + URLEncoder.encode((String)v, StandardCharsets.UTF_8) }.join('&')
+                LOGGER.log(Level.INFO, "Generating token with request payload: " + params)
+                osw.write(params)
+                osw.close()
 
-            if (conn.getResponseCode() < 200 || 299 <= conn.getResponseCode()) {
-                // failure
-                String error = conn.getErrorStream()?.text
-                LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${conn.responseCode} ${error}")
-                return null
-            }
-            String text = conn.getInputStream().getText()
+                if (getResponseCode() < 200 || 299 <= getResponseCode()) {
+                    // failure
+                    String error = getErrorStream()?.text
+                    LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${responseCode} ${error}")
+                    return null
+                }
+                String text = getInputStream().getText()
 
 //            LOGGER.log(Level.INFO, "Response: " + text) // This shouldn't be logged in prod as it contains sensitive information
 
-            def json = new JsonSlurper().parseText(text)
-            return json.access_token
+                def json = new JsonSlurper().parseText(text)
+                return json.access_token
+            }
         }
 
         private static List<String> list(String apiUrl, String prefix) {
-            if (DRY_RUN_MODE) {
-                LOGGER.log(Level.INFO, "Dry-run mode: Skipping GET call to ${apiUrl}")
-                return []
-            }
-            // https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetGroups
-            URL url = new URL(apiUrl)
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection()
-            conn.setAuthenticator(AUTHENTICATOR)
-            conn.setRequestMethod('GET')
-            conn.connect()
-            String text = conn.getInputStream().getText()
+            withConnection('GET', apiUrl) {
+                connect()
+                String text = getInputStream().getText()
 
-            if (conn.getResponseCode() < 200 || 299 <= conn.getResponseCode()) {
-                // failure
-                String error = conn.getErrorStream()?.text
-                LOGGER.log(Level.WARNING, "Failed to list ${apiUrl}: ${conn.responseCode} ${error}")
-                return []
-            }
+                if (getResponseCode() < 200 || 299 <= getResponseCode()) {
+                    // failure
+                    String error = getErrorStream()?.text
+                    LOGGER.log(Level.WARNING, "Failed to list ${apiUrl}: ${responseCode} ${error}")
+                    return []
+                }
 
-            def json = new JsonSlurper().parseText(text)
+                def json = new JsonSlurper().parseText(text)
 
-            return json.collect { (String) it.name }.findAll {
-                it.startsWith(prefix)
+                return json.collect { (String) it.name }.findAll {
+                    it.startsWith(prefix)
+                }
             }
         }
 
@@ -230,34 +253,11 @@ abstract class ArtifactoryAPI {
          * @param payloadFile the file containing the payload
          */
         private static void createOrReplace(String apiUrl, String name, String kind, File payloadFile) {
-            if (DRY_RUN_MODE) {
-                LOGGER.log(Level.INFO, "Dry-run mode: Skipping PUT call for ${kind} ${name} at ${apiUrl}/${name} with payload from ${payloadFile.name}")
-                return
-            }
-            LOGGER.log(Level.INFO, "Processing ${kind} file ${payloadFile.name}")
-
-            // https://www.jfrog.com/confluence/display/RTF/Security+Configuration+JSON
-
-            try {
-                URL url = new URL(apiUrl + '/' + name)
-
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection()
-                conn.setAuthenticator(AUTHENTICATOR)
-                conn.setRequestMethod('PUT')
-                conn.setDoOutput(true)
-                OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
+            withConnection('PUT', apiUrl + '/' + name) {
+                setDoOutput(true)
+                OutputStreamWriter osw = new OutputStreamWriter(getOutputStream())
                 osw.write(payloadFile.text)
                 osw.close()
-
-                if (conn.getResponseCode() < 200 || 299 <= conn.getResponseCode()) {
-                    // failure
-                    String error = conn.getErrorStream().text
-                    LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${conn.responseCode} ${error}")
-                }
-            } catch (MalformedURLException ex) {
-                LOGGER.log(Level.WARNING, "Not a valid URL for ${payloadFile.name}", ex)
-            } catch (IOException ioe) {
-                LOGGER.log(Level.WARNING, "Failed sending PUT for ${payloadFile.name}", ioe)
             }
         }
 
@@ -268,23 +268,9 @@ abstract class ArtifactoryAPI {
          * @param kind the human-readable kind of object being deleted (for a log message)
          */
         private static void delete(String apiUrl, String name, String kind) {
-            if (DRY_RUN_MODE) {
-                LOGGER.log(Level.INFO, "Dry-run mode: Skipping DELETE call for ${kind} ${name} at ${apiUrl}/${name}")
-                return
-            }
-            LOGGER.log(Level.INFO, "Deleting ${kind} ${name}")
-            try {
-                URL url = new URL(apiUrl + '/' + name)
-
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection()
-                conn.setAuthenticator(AUTHENTICATOR)
-                conn.setRequestMethod('DELETE')
-                String response = conn.getInputStream().text
+            withConnection('DELETE', apiUrl + '/' + name) {
+                String response = getInputStream().text
                 LOGGER.log(Level.INFO, response)
-            } catch (MalformedURLException ex) {
-                LOGGER.log(Level.WARNING, "Not a valid URL for ${name}", ex)
-            } catch (IOException ioe) {
-                LOGGER.log(Level.WARNING, "Failed sending DELETE for ${name}", ioe)
             }
         }
 
@@ -307,6 +293,31 @@ abstract class ArtifactoryAPI {
             } catch (Exception e) {
                 LOGGER.log(Level.WARNING, "Failed to compute SHA-256 digest", e)
                 return '00000000000000000000000000000000'
+            }
+        }
+
+        private static withConnection = { String verb, String url, Closure<?> closure ->
+            if (DRY_RUN_MODE) {
+                LOGGER.log(Level.INFO, "Dry-run mode: Skipping ${verb} call to ${url}")
+                return
+            }
+            LOGGER.log(Level.INFO, "Sending ${verb} to ${url}")
+
+            HttpURLConnection conn = null
+            try {
+                URL _url = new URL(url)
+                conn = (HttpURLConnection) _url.openConnection()
+                conn.setAuthenticator(AUTHENTICATOR)
+                conn.setRequestMethod(verb)
+
+                closure.setDelegate(conn)
+                closure.call()
+            } catch (MalformedURLException ex) {
+                LOGGER.log(Level.WARNING, "Not a valid URL: ${url}", ex)
+            } catch (IOException ioe) {
+                LOGGER.log(Level.WARNING, "Failed sending ${verb} to ${url}", ioe)
+            } finally {
+                LOGGER.log(Level.INFO, "${verb} request to ${url} returned: HTTP ${conn.responseCode} ${conn.responseMessage}")
             }
         }
     }
