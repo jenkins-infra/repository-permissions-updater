@@ -258,7 +258,20 @@ class ArtifactoryPermissionsUpdater {
                 LOGGER.log(Level.INFO, "No token was generated for ${repo}, skipping")
                 return
             }
-            // TODO submit token to GitHub repo here
+
+            GitHubAPI.GitHubPublicKey publicKey = GitHubAPI.getInstance().getRepositoryPublicKey(repo)
+            if (publicKey == null) {
+                LOGGER.log(Level.WARNING, "Failed to retrieve public key for ${repo}")
+                return
+            }
+            LOGGER.log(Level.INFO, "Public key of ${repo} is ${publicKey}")
+
+            def encryptedUsername = CryptoUtil.encryptSecret(username, publicKey.key)
+            def encryptedToken = CryptoUtil.encryptSecret(token, publicKey.key)
+            LOGGER.log(Level.INFO, "Encrypted secrets are username:${encryptedUsername}; token:${encryptedToken}")
+
+            GitHubAPI.getInstance().createOrUpdateRepositorySecret('ARTIFACTORY_USERNAME', encryptedUsername, repo, publicKey.keyId)
+            GitHubAPI.getInstance().createOrUpdateRepositorySecret('ARTIFACTORY_TOKEN', encryptedToken, repo, publicKey.keyId)
         }
     }
 

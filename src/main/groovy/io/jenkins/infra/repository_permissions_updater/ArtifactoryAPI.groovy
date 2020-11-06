@@ -181,7 +181,7 @@ abstract class ArtifactoryAPI {
             osw.write(params)
             osw.close()
 
-            if (conn.getResponseCode() <= 200 || 299 <= conn.getResponseCode()) {
+            if (conn.getResponseCode() < 200 || 299 <= conn.getResponseCode()) {
                 // failure
                 String error = conn.getErrorStream()?.text
                 LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${conn.responseCode} ${error}")
@@ -249,7 +249,7 @@ abstract class ArtifactoryAPI {
                 osw.write(payloadFile.text)
                 osw.close()
 
-                if (conn.getResponseCode() <= 200 || 299 <= conn.getResponseCode()) {
+                if (conn.getResponseCode() < 200 || 299 <= conn.getResponseCode()) {
                     // failure
                     String error = conn.getErrorStream().text
                     LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${conn.responseCode} ${error}")
