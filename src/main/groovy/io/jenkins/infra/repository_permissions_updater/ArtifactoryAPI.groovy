@@ -119,7 +119,7 @@ abstract class ArtifactoryAPI {
          */
         @Override
         void createOrReplacePermissionTarget(String name, File payloadFile) {
-            createOrReplace(ARTIFACTORY_PERMISSIONS_API_URL, name, "permission target", payloadFile);
+            createOrReplace(ARTIFACTORY_PERMISSIONS_API_URL, name, "permission target", payloadFile)
         }
 
         @Override
@@ -144,7 +144,7 @@ abstract class ArtifactoryAPI {
 
         @Override
         void createOrReplaceGroup(String name, File payloadFile) {
-            createOrReplace(ARTIFACTORY_GROUPS_API_URL, name, "group", payloadFile);
+            createOrReplace(ARTIFACTORY_GROUPS_API_URL, name, "group", payloadFile)
         }
 
         @Override
@@ -162,7 +162,7 @@ abstract class ArtifactoryAPI {
         @CheckForNull String generateTokenForGroup(String username, String group, long expiresInSeconds) {
             if (DRY_RUN_MODE) {
                 LOGGER.log(Level.INFO, "Dry-run mode: Skipping POST call to ${ARTIFACTORY_TOKEN_API_URL} with username:${username}, group:${group}, expiresInSeconds:${expiresInSeconds}")
-                return null;
+                return null
             }
             // https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateToken
             URL url = new URL(ARTIFACTORY_TOKEN_API_URL)
@@ -172,7 +172,6 @@ abstract class ArtifactoryAPI {
             conn.setRequestProperty('Content-Type', 'application/x-www-form-urlencoded')
             conn.setDoOutput(true)
             OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
-            // -d "username=CD-for-jenkinsci_log-cli-plugin" -d "scope=member-of-groups:generatedv2-cd-jenkinsci_log-cli-plugin" -d "expires_in=3600"
             def params = [
                     'username': username,
                     'scope': 'member-of-groups:' + group,
@@ -186,7 +185,7 @@ abstract class ArtifactoryAPI {
                 // failure
                 String error = conn.getErrorStream()?.text
                 LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${conn.responseCode} ${error}")
-                return null;
+                return null
             }
             String text = conn.getInputStream().getText()
 
