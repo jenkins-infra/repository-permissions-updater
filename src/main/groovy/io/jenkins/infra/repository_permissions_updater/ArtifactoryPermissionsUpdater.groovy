@@ -5,15 +5,12 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
 import groovy.json.JsonBuilder
-import groovy.json.JsonSlurper
 
-
-import java.security.MessageDigest
 import java.util.logging.Level
 import java.util.logging.Logger
 
 @SuppressFBWarnings("SE_NO_SERIALVERSIONID") // all closures are Serializable...
-public class ArtifactoryPermissionsUpdater {
+class ArtifactoryPermissionsUpdater {
 
     /**
      * Directory containing the permissions definition files in YAML format
@@ -26,95 +23,9 @@ public class ArtifactoryPermissionsUpdater {
     private static final File ARTIFACTORY_API_DIR = new File(System.getProperty('artifactoryApiTempDir', './json'))
 
     /**
-     * URL to JSON with a list of valid Artifactory user names.
-     */
-    private static final String ARTIFACTORY_USER_NAMES_URL = System.getProperty('artifactoryUserNamesJsonListUrl')
-
-    /**
-     * URL to the permissions API of Artifactory
-     */
-    private static final String ARTIFACTORY_PERMISSIONS_API_URL = 'https://repo.jenkins-ci.org/api/security/permissions'
-
-    /**
-     * Prefix for permission target generated and maintained (i.e. possibly deleted) by this program.
-     */
-    private static final String ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX = 'generated-'
-
-    /**
      * If enabled, will not send PUT/DELETE requests to Artifactory, only GET (i.e. not modifying).
      */
     private static final boolean DRY_RUN_MODE = Boolean.getBoolean('dryRun')
-
-    static {
-        /* Make sure all Artifactory API requests are properly authenticated */
-        Authenticator.setDefault (new Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(
-                        System.getenv("ARTIFACTORY_USERNAME"),
-                        System.getenv("ARTIFACTORY_PASSWORD").toCharArray())
-            }
-        })
-    }
-
-    /* Because Jackson isn't groovy enough, data type to deserialize YAML permission definitions to */
-    private static class Definition {
-        private String name = ""
-        private String[] paths = new String[0]
-        private String[] developers = new String[0]
-        String github
-        Object security // unused, just metadata for Jenkins security team
-
-        String getName() {
-            return name
-        }
-
-        void setName(String name) {
-            this.name = name
-        }
-
-        String[] getPaths() {
-            return paths
-        }
-
-        void setPaths(String[] paths) {
-            this.paths = paths
-        }
-
-        String[] getDevelopers() {
-            return developers
-        }
-
-        void setDevelopers(String[] developers) {
-            this.developers = developers
-        }
-    }
-
-    private static String sha256(String str) {
-        LOGGER.log(Level.INFO, "Computing sha256 for string: " + str)
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256")
-            digest.update(str.bytes)
-            return digest.digest().encodeHex().toString()
-        } catch (Exception e) {
-            LOGGER.log(Level.WARNING, "Failed to compute SHA-256 digest", e)
-            return '00000000000000000000000000000000'
-        }
-    }
-
-    /**
-     * Determines the name for the JSON API payload file, which is also used as the permission target name (with prefix)
-     * @param pluginName
-     * @return
-     */
-    private static String getApiPayloadFileName(String fileBaseName) {
-        String name = fileBaseName
-        if ((ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + name).length() > 64) {
-            // Artifactory has an undocumented max length for permission target names of 64 chars
-            // If length is exceeded, use 55 chars of the name, separator, and 8 chars (prefix of name's SHA-256)
-            name = name.substring(0, 54 - ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX .length()) + '_' + sha256(fileBaseName).substring(0, 7)
-        }
-        return name
-    }
 
     /**
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
@@ -124,11 +35,6 @@ public class ArtifactoryPermissionsUpdater {
 
         if (!yamlSourceDirectory.exists()) {
             throw new IOException("Directory ${DEFINITIONS_DIR} does not exist")
-        }
-
-        def knownUsers = []
-        if (ARTIFACTORY_USER_NAMES_URL) {
-            knownUsers = new JsonSlurper().parse(new URL(ARTIFACTORY_USER_NAMES_URL))
         }
 
         if (apiOutputDir.exists()) {
@@ -161,10 +67,10 @@ public class ArtifactoryPermissionsUpdater {
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
 
-            File outputFile = new File(apiOutputDir, getApiPayloadFileName(fileBaseName) + '.json')
+            String jsonName = ArtifactoryAPI.getInstance().toGeneratedPermissionTargetName(fileBaseName)
+            File outputFile = new File(apiOutputDir, jsonName + '.json')
             JsonBuilder json = new JsonBuilder()
 
-            String jsonName = ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + getApiPayloadFileName(fileBaseName)
 
             json {
                 name jsonName
@@ -184,7 +90,7 @@ public class ArtifactoryPermissionsUpdater {
                         users [:]
                     } else {
                         users definition.developers.collectEntries { developer ->
-                            if (!knownUsers.contains(developer.toLowerCase())) {
+                            if (!KnownUsers.exists(developer.toLowerCase())) {
                                 reportChecksApiDetails(developer + " needs to login to artifactory", 
                                 """
                                 ${developer} needs to login to [artifactory](https://repo.jenkins-ci.org/).
@@ -214,6 +120,7 @@ public class ArtifactoryPermissionsUpdater {
         new File(apiOutputDir, 'github.index.json').text = githubIndex.toPrettyString()
     }
 
+    // TODO It's a really weird decision to have this in the otherwise invocation agnostic standalone tool
     private static void reportChecksApiDetails(String errorMessage, String details) {
         new File('checks-title.txt').text = errorMessage
         new File('checks-details.txt').text = details
@@ -233,51 +140,7 @@ public class ArtifactoryPermissionsUpdater {
             if (!file.name.endsWith('.json'))
                 return
 
-            LOGGER.log(Level.INFO, "Processing ${file.name}")
-
-            // https://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplacePermissionTarget
-            // https://www.jfrog.com/confluence/display/RTF/Security+Configuration+JSON
-
-            try {
-                URL apiUrl = new URL(ARTIFACTORY_PERMISSIONS_API_URL + '/' + ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + file.name.replace('.json', ''))
-
-                HttpURLConnection conn = (HttpURLConnection) apiUrl.openConnection()
-                conn.setRequestMethod('PUT')
-                conn.setDoOutput(true)
-                OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
-                osw.write(file.text)
-                osw.close()
-
-                if (conn.getResponseCode() <= 200 || 299 <= conn.getResponseCode()) {
-                    // failure
-                    String error = conn.getErrorStream().text
-                    LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${file.name}: ${error}")
-                }
-            } catch (MalformedURLException mfue) {
-                LOGGER.log(Level.WARNING, "Not a valid URL for ${file.name}", mfue)
-            } catch (IOException ioe) {
-                LOGGER.log(Level.WARNING, "Failed sending PUT for ${file.name}", ioe)
-            }
-        }
-    }
-
-    /**
-     * Deletes a permission target in Artifactory.
-     *
-     * @param target Name of the permssion target
-     */
-    private static void deletePermissionsTarget(String target) {
-        try {
-            URL apiUrl = new URL(ARTIFACTORY_PERMISSIONS_API_URL + '/' + target)
-
-            HttpURLConnection conn = (HttpURLConnection) apiUrl.openConnection()
-            conn.setRequestMethod('DELETE')
-            String response = conn.getInputStream().text
-            LOGGER.log(Level.INFO, response)
-        } catch (MalformedURLException mfue) {
-            LOGGER.log(Level.WARNING, "Not a valid URL for ${target}", mfue)
-        } catch (IOException ioe) {
-            LOGGER.log(Level.WARNING, "Failed sending DELETE for ${target}", ioe)
+            ArtifactoryAPI.getInstance().createOrReplacePermissionTarget(file.name.replace('.json', ''), file)
         }
     }
 
@@ -289,35 +152,13 @@ public class ArtifactoryPermissionsUpdater {
      * @param jsonApiFileDir
      */
     private static void removeExtraPermissionTargets(File jsonApiFileDir) {
-        try {
-            URL apiUrl = new URL(ARTIFACTORY_PERMISSIONS_API_URL)
-            HttpURLConnection conn = (HttpURLConnection) apiUrl.openConnection()
-            conn.setRequestMethod('GET')
-            conn.connect()
-            String text = conn.getInputStream().getText()
+        def permissionTargets = ArtifactoryAPI.getInstance().listGeneratedPermissionTargets()
 
-            def json = new JsonSlurper().parseText(text)
-
-            def permissionTargets = json.collect { (String) it.name }
-
-            permissionTargets.each { target ->
-                if (!target.startsWith(ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX)) {
-                    // don't touch manually maintained permission targets
-                    return
-                }
-
-                String fileName = target.replace(ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX, '')
-
-                if (!new File(jsonApiFileDir, fileName + '.json').exists()) {
-                    LOGGER.log(Level.INFO, "Permission target ${target} has no corresponding file, deleting...")
-                    deletePermissionsTarget(target)
-                }
+        permissionTargets.each { target ->
+            if (!new File(jsonApiFileDir, target + '.json').exists()) {
+                LOGGER.log(Level.INFO, "Permission target ${target} has no corresponding file, deleting...")
+                ArtifactoryAPI.getInstance().deletePermissionTarget(target)
             }
-
-        } catch (MalformedURLException mfue) {
-            LOGGER.log(Level.WARNING, "Not a valid URL for ${ARTIFACTORY_PERMISSIONS_API_URL}", mfue)
-        } catch (IOException ioe) {
-            LOGGER.log(Level.WARNING, "Failed sending GET for ${ARTIFACTORY_PERMISSIONS_API_URL}", ioe)
         }
     }
 
@@ -330,13 +171,11 @@ public class ArtifactoryPermissionsUpdater {
      *
      * @param args unused
      */
-    public static void main(String[] args) throws IOException {
-        if (DRY_RUN_MODE) System.err.println("Running in dry run mode")
-        generateApiPayloads(DEFINITIONS_DIR, ARTIFACTORY_API_DIR)
+    static void main(String[] args) throws IOException {
         if (DRY_RUN_MODE) {
-            System.err.println("Payloads generated in " + ARTIFACTORY_API_DIR + ". Nothing was sent.")
-            return
+            System.err.println("Running in dry run mode")
         }
+        generateApiPayloads(DEFINITIONS_DIR, ARTIFACTORY_API_DIR)
         submitPermissionTargets(ARTIFACTORY_API_DIR)
         removeExtraPermissionTargets(ARTIFACTORY_API_DIR)
     }
