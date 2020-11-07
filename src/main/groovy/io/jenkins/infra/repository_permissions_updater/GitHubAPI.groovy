@@ -78,13 +78,6 @@ abstract class GitHubAPI {
             conn.connect()
             String text = conn.getInputStream().getText()
 
-            if (conn.getResponseCode() < 200 || 299 <= conn.getResponseCode()) {
-                // failure
-                String error = conn.getErrorStream()?.text
-                LOGGER.log(Level.WARNING, "Failed to retrieve public key from repository ${repositoryName}: ${conn.responseCode} ${error}")
-                return null
-            }
-
             def json = new JsonSlurper().parseText(text)
             return new GitHubPublicKey(json.key_id, json.key)
         }
@@ -104,19 +97,7 @@ abstract class GitHubAPI {
             osw.write('{"encrypted_value":"' + encryptedSecret + '","key_id":"' + keyId + '"}')
             osw.close()
 
-            try {
-                String text = conn.getInputStream().getText()
-            } catch (IOException ex) {
-                String error = conn.getErrorStream()?.text
-                LOGGER.log(Level.WARNING, "Failed to create or update secret '${name}' in ${repositoryName}: ${conn.responseCode} ${error}", ex)
-                return
-            }
-
-            if (conn.getResponseCode() < 200 || 299 <= conn.getResponseCode()) {
-                // failure
-                String error = conn.getInputStream()?.text + conn.getErrorStream()?.text
-                LOGGER.log(Level.WARNING, "Failed to create or update secret '${name}' in ${repositoryName}: ${conn.responseCode} ${error}")
-            }
+            String text = conn.getInputStream().getText()
         }
     }
 }

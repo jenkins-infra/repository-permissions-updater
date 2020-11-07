@@ -286,14 +286,9 @@ abstract class ArtifactoryAPI {
 
         private static String sha256(String str) {
             LOGGER.log(Level.INFO, "Computing sha256 for string: " + str)
-            try {
-                MessageDigest digest = MessageDigest.getInstance("SHA-256")
-                digest.update(str.bytes)
-                return digest.digest().encodeHex().toString()
-            } catch (Exception e) {
-                LOGGER.log(Level.WARNING, "Failed to compute SHA-256 digest", e)
-                return '00000000000000000000000000000000'
-            }
+            MessageDigest digest = MessageDigest.getInstance("SHA-256")
+            digest.update(str.bytes)
+            return digest.digest().encodeHex().toString()
         }
 
         private static withConnection = { String verb, String url, Closure<?> closure ->
@@ -312,10 +307,6 @@ abstract class ArtifactoryAPI {
 
                 closure.setDelegate(conn)
                 closure.call()
-            } catch (MalformedURLException ex) {
-                LOGGER.log(Level.WARNING, "Not a valid URL: ${url}", ex)
-            } catch (IOException ioe) {
-                LOGGER.log(Level.WARNING, "Failed sending ${verb} to ${url}", ioe)
             } finally {
                 LOGGER.log(Level.INFO, "${verb} request to ${url} returned: HTTP ${conn.responseCode} ${conn.responseMessage}")
             }
