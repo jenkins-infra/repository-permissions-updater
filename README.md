@@ -111,6 +111,7 @@ The following Java system properties can be used to customize the tool's behavio
   - Permissions are only granted to deploy to the `snapshots` repository (rather than both `snapshots` and `releases`)
   - A different, non-colliding set of prefixes (unless overridden, see below) is used.
 * `definitionsDir` - Path to directory containing permission definitions YAML files, defaults to `./permissions`.
+* `artifactoryUserNamesJsonListUrl` - URL to a list containing known Artifactory user names, any permissions assigned to a user not on that list will cause the tool to abort
 * `artifactoryApiTempDir` - Path to directory (that will be created) where this tool stores Artifactory permissions API JSON payloads, defaults to `./json`.
 * `artifactoryObjectPrefix` - Override the prefix for groups and permission targets managed (created, updated, removed) using the tool.
   If unspecified, the value will be `generatedv2-` by default, or `generateddev-` in _development mode_.
