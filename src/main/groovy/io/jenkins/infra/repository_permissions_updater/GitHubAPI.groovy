@@ -39,14 +39,18 @@ abstract class GitHubAPI {
     }
 
     /**
-     * Returns a repository's public key to be used to encrypt secrets
+     * Returns a repository's public key to be used to encrypt secrets.
+     *
+     * @link https://docs.github.com/en/free-pro-team@latest/rest/reference/actions#get-a-repository-public-key
      * @param repository the repository (as org/repo)
      * @return the base64 encoded public key
      */
     abstract GitHubPublicKey getRepositoryPublicKey(String repository)
 
     /**
-     * Creates or update a secret in a repository
+     * Creates or update a secret in a repository.
+     *
+     * @link https://docs.github.com/en/free-pro-team@latest/rest/reference/actions#create-or-update-a-repository-secret
      * @param name the secret name
      * @param encryptedSecret the encrypted, base64 encoded secret value
      * @param repositoryName the repository name

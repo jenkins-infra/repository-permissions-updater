@@ -7,8 +7,11 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
 import groovy.io.FileType
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
+import io.jenkins.lib.support_log_formatter.SupportLogFormatter
 
 import java.util.concurrent.TimeUnit
+import java.util.logging.ConsoleHandler
+import java.util.logging.Handler
 import java.util.logging.Level
 import java.util.logging.Logger
 
@@ -29,6 +32,16 @@ class ArtifactoryPermissionsUpdater {
      * If enabled, will not send PUT/DELETE requests to Artifactory, only GET (i.e. not modifying).
      */
     private static final boolean DRY_RUN_MODE = Boolean.getBoolean('dryRun')
+
+    /**
+     * Set to true during development to prevent collisions with production behavior:
+     *
+     * - Different prefixes for groups and permission targets in {@link ArtifactoryAPI}.
+     * - Different GitHub secret names in {@link #generateTokens(java.io.File)}
+     * - Permissions are only granted for
+     *
+     */
+    private static final boolean DEVELOPMENT = Boolean.getBoolean('development')
 
     /**
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
@@ -105,7 +118,7 @@ class ArtifactoryPermissionsUpdater {
                     ]
                 }.flatten().join(',')
                 excludesPattern ''
-                repositories([ 'snapshots', 'releases' ])
+                repositories(DEVELOPMENT ? ['snapshots'] : [ 'snapshots', 'releases' ])
                 principals {
                     if (definition.developers.length == 0) {
                         users [:]
@@ -217,7 +230,12 @@ class ArtifactoryPermissionsUpdater {
             return
         }
         LOGGER.log(Level.INFO, "Removing extra ${kind}s from Artifactory...")
-        def objects = lister.call()
+        def objects = []
+        try {
+            lister.call()
+        } catch (Exception ex) {
+            LOGGER.log(Level.WARNING, "Failed listing ${kind}s from Artifactory", ex)
+        }
 
         objects.each { object ->
             if (!new File(payloadsDir, object + '.json').exists()) {
@@ -243,9 +261,16 @@ class ArtifactoryPermissionsUpdater {
         repos.each { repo ->
             LOGGER.log(Level.INFO, "Processing repository ${repo} for CD")
             def username = ArtifactoryAPI.toTokenUsername((String) repo)
-            def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, ArtifactoryAPI.getInstance().toGeneratedGroupName((String) repo), TimeUnit.HOURS.toSeconds(Integer.getInteger('artifactoryTokenHoursValid', 4)))
-            if (!token) {
-                LOGGER.log(Level.INFO, "No token was generated for ${repo}, skipping")
+            def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName((String) repo)
+            def validFor = TimeUnit.MINUTES.toSeconds(Integer.getInteger('artifactoryTokenMinutesValid', 240))
+            try {
+                if (DRY_RUN_MODE) {
+                    LOGGER.log(Level.INFO, "Skipped creation of token for GitHub repo: '${repo}', Artifactory user: '${username}', group name: '${groupName}', valid for ${validFor} seconds")
+                    return
+                }
+                def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, groupName, validFor)
+            } catch (Exception ex) {
+                LOGGER.log(Level.WARNING, "Failed to generate token for ${repo}", ex)
                 return
             }
 
@@ -260,14 +285,21 @@ class ArtifactoryPermissionsUpdater {
             def encryptedToken = CryptoUtil.encryptSecret(token, publicKey.key)
             LOGGER.log(Level.INFO, "Encrypted secrets are username:${encryptedUsername}; token:${encryptedToken}")
 
-            GitHubAPI.getInstance().createOrUpdateRepositorySecret('ARTIFACTORY_USERNAME', encryptedUsername, (String) repo, publicKey.keyId)
-            GitHubAPI.getInstance().createOrUpdateRepositorySecret('ARTIFACTORY_TOKEN', encryptedToken, (String) repo, publicKey.keyId)
+            def secretPrefixOverride =
+            GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'USERNAME', encryptedUsername, (String) repo, publicKey.keyId)
+            GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'TOKEN', encryptedToken, (String) repo, publicKey.keyId)
         }
     }
 
     static void main(String[] args) throws IOException {
+        for (Handler h : java.util.logging.Logger.getLogger("").getHandlers()) {
+            if (h instanceof ConsoleHandler) {
+                ((ConsoleHandler) h).setFormatter(new SupportLogFormatter());
+            }
+        }
+
         if (DRY_RUN_MODE) {
-            System.err.println("Running in dry run mode")
+            LOGGER.log(Level.INFO, 'Running in dry run mode')
         }
         def artifactoryApi = ArtifactoryAPI.getInstance()
         /*

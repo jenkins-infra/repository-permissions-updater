@@ -12,6 +12,7 @@ import java.util.logging.Logger
 
 @SuppressFBWarnings("LI_LAZY_INIT_STATIC") // Something related to Groovy
 abstract class ArtifactoryAPI {
+    private static final Logger LOGGER = Logger.getLogger(ArtifactoryAPI.class.getName())
     /**
      * URL to Artifactory
      */
@@ -37,7 +38,7 @@ abstract class ArtifactoryAPI {
     /**
      * Prefix for permission target generated and maintained (i.e. possibly deleted) by this program.
      */
-    private static final String ARTIFACTORY_OBJECT_NAME_PREFIX = System.getProperty('artifactoryObjectPrefix', 'generatedv2-')
+    private static final String ARTIFACTORY_OBJECT_NAME_PREFIX = System.getProperty('artifactoryObjectPrefix', Boolean.getBoolean('development') ? 'generateddev-' : 'generatedv2-')
 
     /**
      * List all permission targets whose name starts with the configured prefix.
@@ -53,22 +54,14 @@ abstract class ArtifactoryAPI {
      * @param name the name of the permission target, used in URL
      * @param payloadFile {@see https://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplacePermissionTarget}
      */
-    abstract void createOrReplacePermissionTarget(String name, File payloadFile);
+    abstract void createOrReplacePermissionTarget(@NonNull String name, @NonNull File payloadFile);
 
     /**
      * Deletes a permission target in Artifactory.
      *
      * @param target Name of the permssion target
      */
-    abstract void deletePermissionTarget(String target);
-
-    /**
-     * Determines the name for the JSON API payload file, which is also used as the permission target name (with prefix).
-     *
-     * @param name the expected base name before transformation
-     * @return the transformed name, including the prefix, and compatible with Artifactory
-     */
-    abstract String toGeneratedPermissionTargetName(String baseName);
+    abstract void deletePermissionTarget(@NonNull String target);
 
     /**
      * List all groups whose name starts with the configured prefix.
@@ -77,7 +70,7 @@ abstract class ArtifactoryAPI {
      * @link https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetGroups
      * @return all groups whose name starts with the configured prefix.
      */
-    abstract List<String> listGeneratedGroups();
+    abstract @NonNull List<String> listGeneratedGroups();
 
     /**
      * Creates or replaces a group.
@@ -89,26 +82,6 @@ abstract class ArtifactoryAPI {
     abstract void deleteGroup(String group);
 
     /**
-     * Determines the name for the JSON API payload file, which is also used as the group name (with prefix).
-     *
-     * @param name the expected base name before transformation
-     * @return the transformed name, including the prefix, and compatible with Artifactory
-     */
-    abstract String toGeneratedGroupName(String baseName);
-
-    /**
-     * Converts the provided base name (expected to be a GitHub repository name of the form 'org/name') to a user name
-     * for a non-existing token user.
-     *
-     * @see https://www.jfrog.com/confluence/display/JFROG/Access+Tokens#AccessTokens-SupportAuthenticationforNon-ExistingUsers
-     * @param baseName
-     * @return
-     */
-    static String toTokenUsername(String baseName) {
-        return 'CD-for-' + baseName.replaceAll('[ /]', '__')
-    }
-
-    /**
      * Generates a token scoped to the specified group.
      *
      * @link https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateToken
@@ -116,6 +89,58 @@ abstract class ArtifactoryAPI {
      * @return the token
      */
     abstract String generateTokenForGroup(String username, String group, long expiresInSeconds);
+
+    /* Public instance-independent API */
+
+    /**
+     * Determines the name for the JSON API payload file, which is also used as the permission target name (with prefix).
+     *
+     * @param name the expected base name before transformation
+     * @return the transformed name, including the prefix, and compatible with Artifactory
+     */
+    static @NonNull String toGeneratedPermissionTargetName(@NonNull String name) {
+        return toGeneratedName(ARTIFACTORY_OBJECT_NAME_PREFIX, name)
+    }
+
+    /**
+     * Determines the name for the JSON API payload file, which is also used as the group name (with prefix).
+     *
+     * @param name the expected base name before transformation
+     * @return the transformed name, including the prefix, and compatible with Artifactory
+     */
+    static @NonNull String toGeneratedGroupName(String baseName) {
+        // Add 'cd' to indicate this group is for CD only
+        return toGeneratedName(ARTIFACTORY_OBJECT_NAME_PREFIX, "cd-" + baseName)
+    }
+
+    /**
+     * Converts the provided base name (expected to be a GitHub repository name of the form 'org/name') to a user name
+     * for a non-existing token user.
+     *
+     * @link https://www.jfrog.com/confluence/display/JFROG/Access+Tokens#AccessTokens-SupportAuthenticationforNon-ExistingUsers
+     * @param baseName
+     * @return
+     */
+    static @NonNull String toTokenUsername(String baseName) {
+        return 'CD-for-' + baseName.replaceAll('[ /]', '__')
+    }
+
+    private static String sha256(String str) {
+        LOGGER.log(Level.INFO, "Computing sha256 for string: " + str)
+        MessageDigest digest = MessageDigest.getInstance("SHA-256")
+        digest.update(str.bytes)
+        return digest.digest().encodeHex().toString()
+    }
+
+    private static String toGeneratedName(String prefix, String name) {
+        name = prefix + name.replaceAll('[ /]', '_')
+        if (name.length() > 64) {
+            // Artifactory has an undocumented max length for permission target names of 64 chars (and possibly other types)
+            // If length is exceeded, use 55 chars of the prefix+name, separator, and 8 hopefully unique chars (prefix of name's SHA-256)
+            name = name.substring(0, 54) + '_' + sha256(name).substring(0, 7)
+        }
+        return name
+    }
 
     /* Singleton support */
     private static ArtifactoryAPI INSTANCE = null
@@ -170,11 +195,6 @@ abstract class ArtifactoryAPI {
         }
 
         @Override
-        String toGeneratedPermissionTargetName(String name) {
-            return toGeneratedName(ARTIFACTORY_OBJECT_NAME_PREFIX, name)
-        }
-
-        @Override
         List<String> listGeneratedGroups() {
             return list(ARTIFACTORY_GROUPS_API_URL, ARTIFACTORY_OBJECT_NAME_PREFIX)
         }
@@ -187,12 +207,6 @@ abstract class ArtifactoryAPI {
         @Override
         void deleteGroup(String group) {
             delete(ARTIFACTORY_GROUPS_API_URL, group, "group")
-        }
-
-        @Override
-        @NonNull String toGeneratedGroupName(String baseName) {
-            // Add 'cd' to indicate this group is for CD only
-            return toGeneratedName(ARTIFACTORY_OBJECT_NAME_PREFIX, "cd-" + baseName)
         }
 
         @Override
@@ -209,17 +223,7 @@ abstract class ArtifactoryAPI {
                 LOGGER.log(Level.INFO, "Generating token with request payload: " + params)
                 osw.write(params)
                 osw.close()
-
-                if (getResponseCode() < 200 || 299 <= getResponseCode()) {
-                    // failure
-                    String error = getErrorStream()?.text
-                    LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${name}: ${responseCode} ${error}")
-                    return null
-                }
                 String text = getInputStream().getText()
-
-//            LOGGER.log(Level.INFO, "Response: " + text) // This shouldn't be logged in prod as it contains sensitive information
-
                 def json = new JsonSlurper().parseText(text)
                 return json.access_token
             }
@@ -229,16 +233,7 @@ abstract class ArtifactoryAPI {
             withConnection('GET', apiUrl) {
                 connect()
                 String text = getInputStream().getText()
-
-                if (getResponseCode() < 200 || 299 <= getResponseCode()) {
-                    // failure
-                    String error = getErrorStream()?.text
-                    LOGGER.log(Level.WARNING, "Failed to list ${apiUrl}: ${responseCode} ${error}")
-                    return []
-                }
-
                 def json = new JsonSlurper().parseText(text)
-
                 return json.collect { (String) it.name }.findAll {
                     it.startsWith(prefix)
                 }
@@ -274,23 +269,6 @@ abstract class ArtifactoryAPI {
             }
         }
 
-        private static String toGeneratedName(String prefix, String name) {
-            name = prefix + name.replaceAll('[ /]', '_')
-            if (name.length() > 64) {
-                // Artifactory has an undocumented max length for permission target names of 64 chars (and possibly other types)
-                // If length is exceeded, use 55 chars of the prefix+name, separator, and 8 hopefully unique chars (prefix of name's SHA-256)
-                name = name.substring(0, 54) + '_' + sha256(name).substring(0, 7)
-            }
-            return name
-        }
-
-        private static String sha256(String str) {
-            LOGGER.log(Level.INFO, "Computing sha256 for string: " + str)
-            MessageDigest digest = MessageDigest.getInstance("SHA-256")
-            digest.update(str.bytes)
-            return digest.digest().encodeHex().toString()
-        }
-
         private static withConnection = { String verb, String url, Closure<?> closure ->
             if (DRY_RUN_MODE) {
                 LOGGER.log(Level.INFO, "Dry-run mode: Skipping ${verb} call to ${url}")
@@ -308,7 +286,11 @@ abstract class ArtifactoryAPI {
                 closure.setDelegate(conn)
                 closure.call()
             } finally {
-                LOGGER.log(Level.INFO, "${verb} request to ${url} returned: HTTP ${conn.responseCode} ${conn.responseMessage}")
+                if (conn.responseCode < 200 || conn.responseCode > 399) {
+                    LOGGER.log(Level.INFO, "${verb} request to ${url} returned error: HTTP ${conn.responseCode} ${conn.responseMessage}")
+                } else {
+                    LOGGER.log(Level.INFO, "${verb} request to ${url} returned: HTTP ${conn.responseCode} ${conn.responseMessage}")
+                }
             }
         }
     }
