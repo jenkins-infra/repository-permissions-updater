@@ -1,5 +1,5 @@
 ---
-name: "pipeline-huaweicloud"
+name: "pipeline-huaweicloud-plugin"
 github: "jenkinsci/pipeline-huaweicloud-plugin"
 paths:
 - "org/jenkins-ci/plugins/pipeline-huaweicloud-plugin"

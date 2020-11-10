@@ -1,5 +1,5 @@
 ---
-name: "myappci-plugin"
+name: "myappci"
 github: "jenkinsci/myappci-plugin"
 paths:
 - "io/jenkins/plugins/myappci"
