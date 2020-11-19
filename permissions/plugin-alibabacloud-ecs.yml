@@ -1,0 +1,8 @@
+---
+name: "alibabacloud-ecs"
+github: "jenkinsci/alibabacloud-ecs-plugin"
+paths:
+  - "com/alibabacloud/jenkins/alibabacloud-ecs"
+developers:
+  - "kunlun"
+  - "xhpy2009"
