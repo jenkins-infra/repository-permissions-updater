@@ -4,5 +4,4 @@ github: "jenkinsci/prisma-cloud-iac-scan-plugin"
 paths:
 - "org/jenkins-ci/plugins/prisma-cloud-iac-scan"
 developers:
-- "jaydeeps-sacumen"
-- "yatin-panw"
+- "shiftleftiacscan"
