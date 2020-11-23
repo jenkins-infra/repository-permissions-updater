@@ -1,0 +1,8 @@
+---
+name: "prisma-cloud-iac-scan"
+github: "jenkinsci/prisma-cloud-iac-scan-plugin"
+paths:
+- "io/jenkins/plugins/prisma-cloud-iac-scan"
+
+developers:
+- "shiftleftiacscan"
