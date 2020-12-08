@@ -5,6 +5,7 @@ paths:
 - "org/jenkins-ci/plugins/ws-cleanup"
 - "org/jvnet/hudson/plugins/ws-cleanup"
 developers:
+- "basil"
 - "olivergondza"
 - "vjuranek"
 - "pajasoft"
