@@ -1,0 +1,7 @@
+---
+name: "file-parameters"
+github: "jenkinsci/file-parameters-plugin"
+paths:
+- "io/jenkins/plugins/file-parameters"
+developers:
+- "jglick"
