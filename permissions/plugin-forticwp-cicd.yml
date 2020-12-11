@@ -1,0 +1,7 @@
+---
+name: "forticwp-cicd"
+github: "jenkinsci/forticwp-cicd-plugin"
+paths:
+- "io/jenkins/plugins/forticwp-cicd"
+developers:
+- "forticontainer"
