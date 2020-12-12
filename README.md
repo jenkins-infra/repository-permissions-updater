@@ -104,15 +104,29 @@ Usage
 
 To see how to run this tool to synchronize Artifactory permission targets with the definitions in this repository, see `Jenkinsfile`.
 
-It expects the following System properties to be set:
+The following Java system properties can be used to customize the tool's behavior:
 
-- `definitionsDir` - Path to directory containing permission definitions YAML files
-- `artifactoryApiTempDir` - Path to directory (that will be created) where this tool stores Artifactory permissions API JSON payloads.
+* `dryRun` - Set to `true` to generate the API payloads without submitting them. No modifications will be executed.
+* `development` - Set to `true` during tool development to ensure production data is not overridden. This will have the following effects:
+  - Permissions are only granted to deploy to the `snapshots` repository (rather than both `snapshots` and `releases`)
+  - A different, non-colliding set of prefixes (unless overridden, see below) is used.
+* `definitionsDir` - Path to directory containing permission definitions YAML files, defaults to `./permissions`.
+* `artifactoryUserNamesJsonListUrl` - URL to a list containing known Artifactory user names, any permissions assigned to a user not on that list will cause the tool to abort
+* `artifactoryApiTempDir` - Path to directory (that will be created) where this tool stores Artifactory permissions API JSON payloads, defaults to `./json`.
+* `artifactoryObjectPrefix` - Override the prefix for groups and permission targets managed (created, updated, removed) using the tool.
+  If unspecified, the value will be `generatedv2-` by default, or `generateddev-` in _development mode_.
+* `artifactoryUrl` - URL to Artifactory, defaults to `https://repo.jenkins-ci.org`
+* `artifactoryTokenMinutesValid` - How long authentication tokens to Artifactory for CD enabled repos should be valid for, default `240` (4 hours).
+  Regular script execution frequency needs to be aligned with this.
+* `gitHubSecretNamePrefix` - Prefix for secrets sent to GitHub repos.
+  If unspecified, the value will be `MAVEN_` by default, or `DEV_MAVEN_` in _development mode_.
 
 It expected the following environment variables to be set:
 
 - `ARTIFACTORY_USERNAME` - Admin user name for Artifactory
 - `ARTIFACTORY_PASSWORD` - Corresponding admin password (or API key) for Artifactory admin user
+- `GITHUB_USERNAME` - GitHub user name for a user with admin access to any CD enabled repos
+- `GITHUB_TOKEN` - Corresponding token for the user with admin access to any CD enabled repos, [requires `repo` scope to create/update secrets](https://docs.github.com/en/free-pro-team@latest/rest/reference/actions#create-or-update-a-repository-secret)
 
 ### How It Works
 

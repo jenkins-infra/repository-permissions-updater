@@ -4,16 +4,19 @@ import com.fasterxml.jackson.core.JsonProcessingException
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
+import groovy.io.FileType
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
+import io.jenkins.lib.support_log_formatter.SupportLogFormatter
 
-
-import java.security.MessageDigest
+import java.util.concurrent.TimeUnit
+import java.util.logging.ConsoleHandler
+import java.util.logging.Handler
 import java.util.logging.Level
 import java.util.logging.Logger
 
 @SuppressFBWarnings("SE_NO_SERIALVERSIONID") // all closures are Serializable...
-public class ArtifactoryPermissionsUpdater {
+class ArtifactoryPermissionsUpdater {
 
     /**
      * Directory containing the permissions definition files in YAML format
@@ -26,95 +29,19 @@ public class ArtifactoryPermissionsUpdater {
     private static final File ARTIFACTORY_API_DIR = new File(System.getProperty('artifactoryApiTempDir', './json'))
 
     /**
-     * URL to JSON with a list of valid Artifactory user names.
-     */
-    private static final String ARTIFACTORY_USER_NAMES_URL = System.getProperty('artifactoryUserNamesJsonListUrl')
-
-    /**
-     * URL to the permissions API of Artifactory
-     */
-    private static final String ARTIFACTORY_PERMISSIONS_API_URL = 'https://repo.jenkins-ci.org/api/security/permissions'
-
-    /**
-     * Prefix for permission target generated and maintained (i.e. possibly deleted) by this program.
-     */
-    private static final String ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX = 'generated-'
-
-    /**
      * If enabled, will not send PUT/DELETE requests to Artifactory, only GET (i.e. not modifying).
      */
     private static final boolean DRY_RUN_MODE = Boolean.getBoolean('dryRun')
 
-    static {
-        /* Make sure all Artifactory API requests are properly authenticated */
-        Authenticator.setDefault (new Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(
-                        System.getenv("ARTIFACTORY_USERNAME"),
-                        System.getenv("ARTIFACTORY_PASSWORD").toCharArray())
-            }
-        })
-    }
-
-    /* Because Jackson isn't groovy enough, data type to deserialize YAML permission definitions to */
-    private static class Definition {
-        private String name = ""
-        private String[] paths = new String[0]
-        private String[] developers = new String[0]
-        String github
-        Object security // unused, just metadata for Jenkins security team
-
-        String getName() {
-            return name
-        }
-
-        void setName(String name) {
-            this.name = name
-        }
-
-        String[] getPaths() {
-            return paths
-        }
-
-        void setPaths(String[] paths) {
-            this.paths = paths
-        }
-
-        String[] getDevelopers() {
-            return developers
-        }
-
-        void setDevelopers(String[] developers) {
-            this.developers = developers
-        }
-    }
-
-    private static String sha256(String str) {
-        LOGGER.log(Level.INFO, "Computing sha256 for string: " + str)
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256")
-            digest.update(str.bytes)
-            return digest.digest().encodeHex().toString()
-        } catch (Exception e) {
-            LOGGER.log(Level.WARNING, "Failed to compute SHA-256 digest", e)
-            return '00000000000000000000000000000000'
-        }
-    }
-
     /**
-     * Determines the name for the JSON API payload file, which is also used as the permission target name (with prefix)
-     * @param pluginName
-     * @return
+     * Set to true during development to prevent collisions with production behavior:
+     *
+     * - Different prefixes for groups and permission targets in {@link ArtifactoryAPI}.
+     * - Different GitHub secret names in {@link #generateTokens(java.io.File)}
+     * - Permissions are only granted for
+     *
      */
-    private static String getApiPayloadFileName(String fileBaseName) {
-        String name = fileBaseName
-        if ((ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + name).length() > 64) {
-            // Artifactory has an undocumented max length for permission target names of 64 chars
-            // If length is exceeded, use 55 chars of the name, separator, and 8 chars (prefix of name's SHA-256)
-            name = name.substring(0, 54 - ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX .length()) + '_' + sha256(fileBaseName).substring(0, 7)
-        }
-        return name
-    }
+    private static final boolean DEVELOPMENT = Boolean.getBoolean('development')
 
     /**
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
@@ -126,16 +53,12 @@ public class ArtifactoryPermissionsUpdater {
             throw new IOException("Directory ${DEFINITIONS_DIR} does not exist")
         }
 
-        def knownUsers = []
-        if (ARTIFACTORY_USER_NAMES_URL) {
-            knownUsers = new JsonSlurper().parse(new URL(ARTIFACTORY_USER_NAMES_URL))
-        }
-
         if (apiOutputDir.exists()) {
             throw new IOException(apiOutputDir.path + " already exists")
         }
 
         Map<String, Set<String>> pathsByGithub = new TreeMap()
+        Map<String, List<Definition>> cdEnabledComponentsByGitHub = new TreeMap<>()
 
         yamlSourceDirectory.eachFile { file ->
             if (!file.name.endsWith('.yml')) {
@@ -157,14 +80,31 @@ public class ArtifactoryPermissionsUpdater {
                     pathsByGithub[definition.github] = paths
                 }
                 paths.addAll(definition.paths)
+
+                if (definition.cd && definition.getCd().enabled) {
+                    if (!definition.github.startsWith('jenkinsci/')) {
+                        throw new Exception("CD is only supported when the GitHub repository is in @jenkinsci")
+                    }
+                    List<Definition> definitions = cdEnabledComponentsByGitHub[definition.github]
+                    if (!definitions) {
+                        definitions = new ArrayList<>()
+                        cdEnabledComponentsByGitHub[definition.github] = definitions
+                    }
+                    LOGGER.log(Level.INFO, "CD-enabled component '${definition.name}' in repository '${definition.github}'")
+                    definitions.add(definition)
+                }
+            } else {
+                if (definition.cd && definition.getCd().enabled) {
+                    throw new Exception("Cannot have CD ('cd') enabled without specifying GitHub repository ('github')")
+                }
             }
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
 
-            File outputFile = new File(apiOutputDir, getApiPayloadFileName(fileBaseName) + '.json')
+            String jsonName = ArtifactoryAPI.getInstance().toGeneratedPermissionTargetName(fileBaseName)
+            File outputFile = new File(new File(apiOutputDir, 'permissions'), jsonName + '.json')
             JsonBuilder json = new JsonBuilder()
 
-            String jsonName = ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + getApiPayloadFileName(fileBaseName)
 
             json {
                 name jsonName
@@ -178,13 +118,13 @@ public class ArtifactoryPermissionsUpdater {
                     ]
                 }.flatten().join(',')
                 excludesPattern ''
-                repositories([ 'releases', 'snapshots' ])
+                repositories(DEVELOPMENT ? ['snapshots'] : [ 'snapshots', 'releases' ])
                 principals {
                     if (definition.developers.length == 0) {
                         users [:]
                     } else {
                         users definition.developers.collectEntries { developer ->
-                            if (!knownUsers.contains(developer.toLowerCase())) {
+                            if (!KnownUsers.exists(developer.toLowerCase())) {
                                 reportChecksApiDetails(developer + " needs to login to artifactory", 
                                 """
                                 ${developer} needs to login to [artifactory](https://repo.jenkins-ci.org/).
@@ -199,8 +139,28 @@ public class ArtifactoryPermissionsUpdater {
                             [(developer.toLowerCase(Locale.US)): ["w", "n"]]
                         }
                     }
-                    groups([:])
+                    if (definition.cd?.enabled) {
+                        groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
+                    } else {
+                        groups([:])
+                    }
                 }
+            }
+
+            String pretty = json.toPrettyString()
+
+            outputFile.parentFile.mkdirs()
+            outputFile.text = pretty
+        }
+
+        cdEnabledComponentsByGitHub.each { githubRepo, components ->
+            def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName(githubRepo)
+            File outputFile = new File(new File(apiOutputDir, 'groups'), groupName + '.json')
+            JsonBuilder json = new JsonBuilder()
+
+            json {
+                name groupName
+                description "CD group with permissions to deploy from ${githubRepo}"
             }
 
             String pretty = json.toPrettyString()
@@ -212,133 +172,159 @@ public class ArtifactoryPermissionsUpdater {
         def githubIndex = new JsonBuilder()
         githubIndex(pathsByGithub)
         new File(apiOutputDir, 'github.index.json').text = githubIndex.toPrettyString()
+
+        def cdRepos = new JsonBuilder()
+        cdRepos(cdEnabledComponentsByGitHub.keySet().toList())
+        new File(apiOutputDir, 'cd.index.json').text = cdRepos.toPrettyString()
     }
 
+    // TODO It's a really weird decision to have this in the otherwise invocation agnostic standalone tool
     private static void reportChecksApiDetails(String errorMessage, String details) {
         new File('checks-title.txt').text = errorMessage
         new File('checks-details.txt').text = details
     }
 
     /**
-     * Takes a directory with Artifactory permissions API payloads and submits them to Artifactory, creating/updating
-     * affected permission targets.
+     * Takes a directory with Artifactory API payloads and submits them to the appropriate Artifactory API,
+     * creating/updating the specified objects identified through the file name.
      *
-     * @param jsonApiFileDir
+     * @param payloadsDir the directory containing the payload file for the objects matching the file name without .json extension
+     * @param kind the kind of object to create (used for log messages only)
+     * @param creator the closure called to create or update an object. Takes two arguments, the {@code String} name and {@code File} payload file.
      */
-    private static void submitPermissionTargets(File jsonApiFileDir) {
-        jsonApiFileDir.eachFile { file ->
-            if (file.name == 'github.index.json') {
-                return
-            }
-            if (!file.name.endsWith('.json'))
-                return
-
-            LOGGER.log(Level.INFO, "Processing ${file.name}")
-
-            // https://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplacePermissionTarget
-            // https://www.jfrog.com/confluence/display/RTF/Security+Configuration+JSON
-
-            try {
-                URL apiUrl = new URL(ARTIFACTORY_PERMISSIONS_API_URL + '/' + ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX + file.name.replace('.json', ''))
-
-                HttpURLConnection conn = (HttpURLConnection) apiUrl.openConnection()
-                conn.setRequestMethod('PUT')
-                conn.setDoOutput(true)
-                OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
-                osw.write(file.text)
-                osw.close()
-
-                if (conn.getResponseCode() <= 200 || 299 <= conn.getResponseCode()) {
-                    // failure
-                    String error = conn.getErrorStream().text
-                    LOGGER.log(Level.WARNING, "Failed to submit permissions target for ${file.name}: ${error}")
-                }
-            } catch (MalformedURLException mfue) {
-                LOGGER.log(Level.WARNING, "Not a valid URL for ${file.name}", mfue)
-            } catch (IOException ioe) {
-                LOGGER.log(Level.WARNING, "Failed sending PUT for ${file.name}", ioe)
-            }
-        }
-    }
-
-    /**
-     * Deletes a permission target in Artifactory.
-     *
-     * @param target Name of the permssion target
-     */
-    private static void deletePermissionsTarget(String target) {
-        try {
-            URL apiUrl = new URL(ARTIFACTORY_PERMISSIONS_API_URL + '/' + target)
-
-            HttpURLConnection conn = (HttpURLConnection) apiUrl.openConnection()
-            conn.setRequestMethod('DELETE')
-            String response = conn.getInputStream().text
-            LOGGER.log(Level.INFO, response)
-        } catch (MalformedURLException mfue) {
-            LOGGER.log(Level.WARNING, "Not a valid URL for ${target}", mfue)
-        } catch (IOException ioe) {
-            LOGGER.log(Level.WARNING, "Failed sending DELETE for ${target}", ioe)
-        }
-    }
-
-    /**
-     * Compares the list of permission targets returned from Artifactory with the list of permission target JSON payload
-     * files in the specified directory, and deletes all permission targets that match the required 'generated' prefix
-     * and that have no corresponding payload file.
-     *
-     * @param jsonApiFileDir
-     */
-    private static void removeExtraPermissionTargets(File jsonApiFileDir) {
-        try {
-            URL apiUrl = new URL(ARTIFACTORY_PERMISSIONS_API_URL)
-            HttpURLConnection conn = (HttpURLConnection) apiUrl.openConnection()
-            conn.setRequestMethod('GET')
-            conn.connect()
-            String text = conn.getInputStream().getText()
-
-            def json = new JsonSlurper().parseText(text)
-
-            def permissionTargets = json.collect { (String) it.name }
-
-            permissionTargets.each { target ->
-                if (!target.startsWith(ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX)) {
-                    // don't touch manually maintained permission targets
-                    return
-                }
-
-                String fileName = target.replace(ARTIFACTORY_PERMISSIONS_TARGET_NAME_PREFIX, '')
-
-                if (!new File(jsonApiFileDir, fileName + '.json').exists()) {
-                    LOGGER.log(Level.INFO, "Permission target ${target} has no corresponding file, deleting...")
-                    deletePermissionsTarget(target)
-                }
-            }
-
-        } catch (MalformedURLException mfue) {
-            LOGGER.log(Level.WARNING, "Not a valid URL for ${ARTIFACTORY_PERMISSIONS_API_URL}", mfue)
-        } catch (IOException ioe) {
-            LOGGER.log(Level.WARNING, "Failed sending GET for ${ARTIFACTORY_PERMISSIONS_API_URL}", ioe)
-        }
-    }
-
-    /**
-     * Update Artifactory permission targets:
-     *
-     * 1. Generate JSON payloads from YAML permission definition files.
-     * 2. Submit generated JSON payloads to Artifactory.
-     * 3. Remove all generated permission targets in Artifactory that have no corresponding generated JSON payload file.
-     *
-     * @param args unused
-     */
-    public static void main(String[] args) throws IOException {
-        if (DRY_RUN_MODE) System.err.println("Running in dry run mode")
-        generateApiPayloads(DEFINITIONS_DIR, ARTIFACTORY_API_DIR)
-        if (DRY_RUN_MODE) {
-            System.err.println("Payloads generated in " + ARTIFACTORY_API_DIR + ". Nothing was sent.")
+    private static void submitArtifactoryObjects(File payloadsDir, String kind, Closure creator) {
+        LOGGER.log(Level.INFO, "Submitting ${kind}s...")
+        if (!payloadsDir.exists() || !payloadsDir.isDirectory()) {
+            LOGGER.log(Level.INFO, "${payloadsDir} does not exist or is not a directory, skipping ${kind} submission")
             return
         }
-        submitPermissionTargets(ARTIFACTORY_API_DIR)
-        removeExtraPermissionTargets(ARTIFACTORY_API_DIR)
+        payloadsDir.eachFile(FileType.FILES) { file ->
+            if (!file.name.endsWith('.json')) {
+                return
+            }
+
+            def name = file.name.replace('.json', '')
+            try {
+                creator.call(name, file)
+            } catch (Exception ex) {
+                LOGGER.log(Level.WARNING, "Failed to create/replace group ${name}", ex)
+            }
+        }
+        LOGGER.log(Level.INFO, "Done submitting ${kind}s")
+    }
+
+
+    /**
+     * Compares the list of (generated) objects returned from Artifactory using the specified {@code lister} with the
+     * list of JSON payload files in the specified directory, and deletes all objects using {@code deleter} that match
+     * and that have no corresponding payload file.
+     *
+     * @param payloadsDir the directory containing payload files whose file names correspond to object names (.json extension is ignored)
+     * @param kind the kind of object to remove (used for log messages only)
+     * @param lister no-argument closure returning a list of {@code String} names of objects
+     * @param deleter removes the specified object identified through the single {@code String} argument
+     */
+    private static void removeExtraArtifactoryObjects(File payloadsDir, String kind, Closure lister, Closure deleter) {
+        if (!payloadsDir.exists() || !payloadsDir.isDirectory()) {
+            LOGGER.log(Level.INFO, "${payloadsDir} does not exist or is not a directory, skipping extra ${kind}s removal")
+            return
+        }
+        LOGGER.log(Level.INFO, "Removing extra ${kind}s from Artifactory...")
+        def objects = []
+        try {
+            lister.call()
+        } catch (Exception ex) {
+            LOGGER.log(Level.WARNING, "Failed listing ${kind}s from Artifactory", ex)
+        }
+
+        objects.each { object ->
+            if (!new File(payloadsDir, object + '.json').exists()) {
+                LOGGER.log(Level.INFO, "${kind.capitalize()} ${object} has no corresponding file, deleting...")
+                try {
+                    deleter.call(object)
+                } catch (Exception ex) {
+                    LOGGER.log(Level.WARNING, "Failed to delete ${kind} ${object} from Artifactory", ex)
+                }
+            }
+        }
+        LOGGER.log(Level.INFO, "Done removing extra ${kind}s from Artifactory")
+    }
+
+    /**
+     * Generates Artifactory access tokens for the Artifactory groups corresponding to the GitHub repo names, and then
+     * attaches the token username and password to the GitHub repo as a secret.
+     *
+     * @param githubReposForCdIndex JSON file containing a list of GitHub repo names in the format 'orgname/reponame'
+     */
+    private static void generateTokens(File githubReposForCdIndex) {
+        def repos = new JsonSlurper().parse(githubReposForCdIndex)
+        repos.each { repo ->
+            LOGGER.log(Level.INFO, "Processing repository ${repo} for CD")
+            def username = ArtifactoryAPI.toTokenUsername((String) repo)
+            def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName((String) repo)
+            def validFor = TimeUnit.MINUTES.toSeconds(Integer.getInteger('artifactoryTokenMinutesValid', 240))
+            try {
+                if (DRY_RUN_MODE) {
+                    LOGGER.log(Level.INFO, "Skipped creation of token for GitHub repo: '${repo}', Artifactory user: '${username}', group name: '${groupName}', valid for ${validFor} seconds")
+                    return
+                }
+                def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, groupName, validFor)
+            } catch (Exception ex) {
+                LOGGER.log(Level.WARNING, "Failed to generate token for ${repo}", ex)
+                return
+            }
+
+            GitHubAPI.GitHubPublicKey publicKey = GitHubAPI.getInstance().getRepositoryPublicKey((String) repo)
+            if (publicKey == null) {
+                LOGGER.log(Level.WARNING, "Failed to retrieve public key for ${repo}")
+                return
+            }
+            LOGGER.log(Level.INFO, "Public key of ${repo} is ${publicKey}")
+
+            def encryptedUsername = CryptoUtil.encryptSecret(username, publicKey.key)
+            def encryptedToken = CryptoUtil.encryptSecret(token, publicKey.key)
+            LOGGER.log(Level.INFO, "Encrypted secrets are username:${encryptedUsername}; token:${encryptedToken}")
+
+            def secretPrefixOverride =
+            GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'USERNAME', encryptedUsername, (String) repo, publicKey.keyId)
+            GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'TOKEN', encryptedToken, (String) repo, publicKey.keyId)
+        }
+    }
+
+    static void main(String[] args) throws IOException {
+        for (Handler h : java.util.logging.Logger.getLogger("").getHandlers()) {
+            if (h instanceof ConsoleHandler) {
+                ((ConsoleHandler) h).setFormatter(new SupportLogFormatter());
+            }
+        }
+
+        if (DRY_RUN_MODE) {
+            LOGGER.log(Level.INFO, 'Running in dry run mode')
+        }
+        def artifactoryApi = ArtifactoryAPI.getInstance()
+        /*
+         * Generate JSON payloads from YAML permission definition files in DEFINITIONS_DIR and writes them to ARTIFACTORY_API_DIR.
+         * Any problems with the input here are fatal so PR builds fails.
+         */
+        generateApiPayloads(DEFINITIONS_DIR, ARTIFACTORY_API_DIR)
+        /*
+         * Submit generated Artifactory group JSON payloads to Artifactory, and delete generated groups no longer relevant.
+         * Any problems here are logged to allow troubleshooting.
+         */
+        def groupsJsonDir = new File(ARTIFACTORY_API_DIR, "groups")
+        submitArtifactoryObjects(groupsJsonDir, 'group', artifactoryApi.&createOrReplaceGroup)
+        removeExtraArtifactoryObjects(groupsJsonDir, 'group', artifactoryApi.&listGeneratedGroups, artifactoryApi.&deleteGroup)
+        /*
+         * Submit generated Artifactory permission target JSON payloads to Artifactory, and delete generated groups no longer relevant.
+         * Any problems here are logged to allow troubleshooting.
+         */
+        def permissionTargetsJsonDir = new File(ARTIFACTORY_API_DIR, "permissions")
+        submitArtifactoryObjects(permissionTargetsJsonDir, 'permission target', artifactoryApi.&createOrReplacePermissionTarget)
+        removeExtraArtifactoryObjects(permissionTargetsJsonDir, 'permission target', artifactoryApi.&listGeneratedPermissionTargets, artifactoryApi.&deletePermissionTarget)
+        /*
+         * For all CD-enabled GitHub repositories, obtain a token from Artifactory and attach it to a GH repo as secret.
+         */
+        generateTokens(new File(ARTIFACTORY_API_DIR, "cd.index.json"))
     }
 
     private static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.name)
