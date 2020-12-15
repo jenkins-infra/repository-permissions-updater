@@ -286,16 +286,15 @@ class ArtifactoryPermissionsUpdater {
             def encryptedToken = CryptoUtil.encryptSecret(token, publicKey.key)
             LOGGER.log(Level.INFO, "Encrypted secrets are username:${encryptedUsername}; token:${encryptedToken}")
 
-            def secretPrefixOverride =
             GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'USERNAME', encryptedUsername, (String) repo, publicKey.keyId)
             GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'TOKEN', encryptedToken, (String) repo, publicKey.keyId)
         }
     }
 
     static void main(String[] args) throws IOException {
-        for (Handler h : java.util.logging.Logger.getLogger("").getHandlers()) {
+        for (Handler h : Logger.getLogger("").getHandlers()) {
             if (h instanceof ConsoleHandler) {
-                ((ConsoleHandler) h).setFormatter(new SupportLogFormatter());
+                ((ConsoleHandler) h).setFormatter(new SupportLogFormatter())
             }
         }
 
