@@ -2,7 +2,7 @@
 name: "access-modifier"
 github: "jenkinsci/access-modifier"
 paths:
-- "org/kohsuke/access-modifier/checker"
+- "org/kohsuke/access-modifier-checker"
 developers:
 - "timja"
 - "oleg_nenashev"
