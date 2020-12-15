@@ -263,12 +263,13 @@ class ArtifactoryPermissionsUpdater {
             def username = ArtifactoryAPI.toTokenUsername((String) repo)
             def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName((String) repo)
             def validFor = TimeUnit.MINUTES.toSeconds(Integer.getInteger('artifactoryTokenMinutesValid', 240))
+            def token
             try {
                 if (DRY_RUN_MODE) {
                     LOGGER.log(Level.INFO, "Skipped creation of token for GitHub repo: '${repo}', Artifactory user: '${username}', group name: '${groupName}', valid for ${validFor} seconds")
                     return
                 }
-                def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, groupName, validFor)
+                token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, groupName, validFor)
             } catch (Exception ex) {
                 LOGGER.log(Level.WARNING, "Failed to generate token for ${repo}", ex)
                 return
