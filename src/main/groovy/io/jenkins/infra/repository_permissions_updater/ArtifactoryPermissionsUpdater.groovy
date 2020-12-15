@@ -226,6 +226,7 @@ class ArtifactoryPermissionsUpdater {
      */
     private static void removeExtraArtifactoryObjects(File payloadsDir, String kind, Closure lister, Closure deleter) {
         if (!payloadsDir.exists() || !payloadsDir.isDirectory()) {
+            // TODO this will not remove objects if there would not be any left
             LOGGER.log(Level.INFO, "${payloadsDir} does not exist or is not a directory, skipping extra ${kind}s removal")
             return
         }
