@@ -1,0 +1,11 @@
+---
+name: "access-modifier"
+github: "jenkinsci/access-modifier"
+paths:
+- "org/kohsuke/access-modifier/suppressions"
+developers:
+- "timja"
+- "oleg_nenashev"
+- "jglick"
+- "batmat"
+- "markewaite"
