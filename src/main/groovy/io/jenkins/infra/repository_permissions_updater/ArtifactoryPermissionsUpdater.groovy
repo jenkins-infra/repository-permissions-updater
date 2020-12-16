@@ -226,6 +226,7 @@ class ArtifactoryPermissionsUpdater {
      */
     private static void removeExtraArtifactoryObjects(File payloadsDir, String kind, Closure lister, Closure deleter) {
         if (!payloadsDir.exists() || !payloadsDir.isDirectory()) {
+            // TODO this will not remove objects if there would not be any left
             LOGGER.log(Level.INFO, "${payloadsDir} does not exist or is not a directory, skipping extra ${kind}s removal")
             return
         }
@@ -263,12 +264,13 @@ class ArtifactoryPermissionsUpdater {
             def username = ArtifactoryAPI.toTokenUsername((String) repo)
             def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName((String) repo)
             def validFor = TimeUnit.MINUTES.toSeconds(Integer.getInteger('artifactoryTokenMinutesValid', 240))
+            def token
             try {
                 if (DRY_RUN_MODE) {
                     LOGGER.log(Level.INFO, "Skipped creation of token for GitHub repo: '${repo}', Artifactory user: '${username}', group name: '${groupName}', valid for ${validFor} seconds")
                     return
                 }
-                def token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, groupName, validFor)
+                token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, groupName, validFor)
             } catch (Exception ex) {
                 LOGGER.log(Level.WARNING, "Failed to generate token for ${repo}", ex)
                 return
@@ -285,16 +287,15 @@ class ArtifactoryPermissionsUpdater {
             def encryptedToken = CryptoUtil.encryptSecret(token, publicKey.key)
             LOGGER.log(Level.INFO, "Encrypted secrets are username:${encryptedUsername}; token:${encryptedToken}")
 
-            def secretPrefixOverride =
             GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'USERNAME', encryptedUsername, (String) repo, publicKey.keyId)
             GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'TOKEN', encryptedToken, (String) repo, publicKey.keyId)
         }
     }
 
     static void main(String[] args) throws IOException {
-        for (Handler h : java.util.logging.Logger.getLogger("").getHandlers()) {
+        for (Handler h : Logger.getLogger("").getHandlers()) {
             if (h instanceof ConsoleHandler) {
-                ((ConsoleHandler) h).setFormatter(new SupportLogFormatter());
+                ((ConsoleHandler) h).setFormatter(new SupportLogFormatter())
             }
         }
 

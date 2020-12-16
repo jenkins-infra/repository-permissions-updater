@@ -70,7 +70,10 @@ node('java') {
                         name: 'Validation',
                         title: 'All checks passed'
             } else {
-                withCredentials([usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME')]) {
+                withCredentials([
+                        usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME'),
+                        usernamePassword(credentialsId: 'jenkins-infra-bot-github-token', passwordVariable: 'GITHUB_TOKEN', usernameVariable: 'GITHUB_USERNAME')
+                ]) {
                     sh '${JAVA_HOME}/bin/java ' + javaArgs
                 }
             }
