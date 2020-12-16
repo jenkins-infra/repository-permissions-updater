@@ -1,6 +1,6 @@
 ---
 name: "access-modifier"
-github: "jenkinsci/access-modifier"
+github: "jenkinsci/lib-access-modifier"
 paths:
 - "org/kohsuke/access-modifier"
 developers:
