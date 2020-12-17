@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-github"
 developers:
 - "aaronjwhiteside"
+- "aaronwalker"
