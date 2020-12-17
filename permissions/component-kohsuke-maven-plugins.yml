@@ -1,0 +1,12 @@
+---
+# this allows publishing one of 'kohsuke's maven plugins e.g. 'access-modifier'
+name: "kohsuke-maven-plugins" # not actually a single artifact
+github: "jenkinsci/lib-access-modifier" # not really true but will it break without?
+paths:
+- "org/kohsuke"
+developers:
+- "timja"
+- "oleg_nenashev"
+- "jglick"
+- "batmat"
+- "markewaite"
