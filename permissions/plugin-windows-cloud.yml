@@ -1,0 +1,7 @@
+---
+name: "windows-cloud"
+github: "jenkinsci/windows-cloud-plugin"
+paths:
+- "fr/edf/jenkins/plugins/windows-cloud"
+developers:
+- "mat1e"
