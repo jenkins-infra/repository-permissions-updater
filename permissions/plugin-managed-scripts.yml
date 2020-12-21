@@ -5,3 +5,4 @@ paths:
 - "org/jenkinsci/plugins/managed-scripts"
 developers:
 - "imod"
+- "gbigenios"
