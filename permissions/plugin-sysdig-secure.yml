@@ -9,3 +9,6 @@ developers:
 - "jequals5"
 - "sethmccombs"
 - "nestorsalceda"
+issues:
+  type: jira
+  value: "sysdig-secure-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "singapore_tech_entrepreneurs"
 - "bisk"
+issues:
+  type: jira
+  value: "comments-remover-plugin"

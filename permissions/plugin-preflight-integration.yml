@@ -6,3 +6,6 @@ paths:
 developers:
 - "moosebay"
 - "huseyin"
+issues:
+  type: jira
+  value: "preflight-integration-plugin"

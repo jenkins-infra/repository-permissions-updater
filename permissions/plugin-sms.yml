@@ -4,3 +4,6 @@ github: "jenkinsci/sms-plugin"
 paths:
 - "com/hoiio/jenkins/sms"
 developers: []
+issues:
+  type: jira
+  value: "sms-plugin"

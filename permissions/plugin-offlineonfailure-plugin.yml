@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/offlineonfailure-plugin"
 developers:
 - "johnlengeling"
+issues:
+  type: jira
+  value: "offlineonfailure-plugin"

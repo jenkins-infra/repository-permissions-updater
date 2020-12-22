@@ -7,3 +7,6 @@ paths:
 developers:
 - "igorkostenko"
 - "marcos_bento"
+issues:
+  type: jira
+  value: "prqa-plugin"

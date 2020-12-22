@@ -5,3 +5,6 @@ paths:
 - "jenkins/xtc/extensivetesting"
 developers:
 - "cadorb"
+issues:
+  type: jira
+  value: "extensivetesting-plugin"

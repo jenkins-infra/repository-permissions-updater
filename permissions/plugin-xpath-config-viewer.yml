@@ -4,3 +4,6 @@ github: "jenkinsci/xpath-config-viewer-plugin"
 paths:
 - "org/jenkins-ci/plugins/xpath-config-viewer"
 developers: []
+issues:
+  type: jira
+  value: "xpath-config-viewer-plugin"

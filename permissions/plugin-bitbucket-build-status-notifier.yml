@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/bitbucket-build-status-notifier"
 developers:
 - "flagbit"
+issues:
+  type: jira
+  value: "bitbucket-build-status-notifier-plugin"

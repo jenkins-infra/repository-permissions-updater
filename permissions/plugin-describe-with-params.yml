@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/describe-with-params"
 developers:
 - "liumazi"
+issues:
+  type: jira
+  value: "describe-with-params-plugin"

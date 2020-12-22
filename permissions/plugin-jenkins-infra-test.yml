@@ -6,4 +6,6 @@ paths:
 developers:
 - "timja"
 - "olblak"
-
+issues:
+  type: github
+  value: "jenkinsci/jenkins-infra-test-plugin"

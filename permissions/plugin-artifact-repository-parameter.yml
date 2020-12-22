@@ -5,4 +5,6 @@ paths:
 - "io/jenkins/plugins/artifact-repository-parameter"
 developers:
 - "fkh"
-
+issues:
+  type: github
+  value: "jenkinsci/artifact-repository-parameter-plugin"

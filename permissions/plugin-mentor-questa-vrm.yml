@@ -5,3 +5,6 @@ paths:
 - "com/mentor/questa/vrm/jenkins/mentor-questa-vrm"
 developers:
 - "questa_vrm"
+issues:
+  type: jira
+  value: "mentor-questa-vrm-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/job-direct-mail-plugin"
 paths:
 - "org/jenkins-ci/plugins/job-direct-mail"
 developers: []
+issues:
+  type: jira
+  value: "job-direct-mail-plugin"

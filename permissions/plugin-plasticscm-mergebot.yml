@@ -8,3 +8,6 @@ developers:
 - "miryamgsm"
 - "jemagoga"
 - "rubarax"
+issues:
+  type: github
+  value: "jenkinsci/plasticscm-mergebot-plugin"

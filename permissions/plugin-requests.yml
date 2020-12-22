@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/requests"
 developers:
 - "trixmot"
+issues:
+  type: jira
+  value: "requests-plugin"

@@ -10,3 +10,6 @@ developers:
 - "pavel_snyk"
 - "yuliabaron"
 - "www"
+issues:
+  type: github
+  value: "jenkinsci/snyk-security-scanner-plugin"

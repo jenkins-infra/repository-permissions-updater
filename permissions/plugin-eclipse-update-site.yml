@@ -4,3 +4,6 @@ github: "jenkinsci/eclipse-update-site-plugin"
 paths:
 - "org/jenkins-ci/plugins/eclipse-update-site"
 developers: []
+issues:
+  type: jira
+  value: "eclipse-update-site-plugin"

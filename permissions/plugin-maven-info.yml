@@ -5,3 +5,6 @@ paths:
 - "org/tomfolga/maven-info"
 developers:
 - "emenaceb"
+issues:
+  type: jira
+  value: "maven-info-plugin"

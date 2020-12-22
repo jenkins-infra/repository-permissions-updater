@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/helix-teamhub"
 developers:
 - "p4paul"
+issues:
+  type: jira
+  value: "helix-teamhub-plugin"

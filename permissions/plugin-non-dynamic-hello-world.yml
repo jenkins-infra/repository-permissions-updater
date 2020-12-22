@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/non-dynamic-hello-world"
 developers:
 - "batmat"
+issues:
+  type: jira
+  value: "non-dynamic-hello-world-plugin"

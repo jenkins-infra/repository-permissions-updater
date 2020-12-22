@@ -7,3 +7,6 @@ developers:
 - "iverberk"
 - "antweiss"
 - "phedoreanu"
+issues:
+  type: github
+  value: "jenkinsci/nomad-plugin"

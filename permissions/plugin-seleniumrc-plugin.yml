@@ -4,3 +4,6 @@ github: "jenkinsci/seleniumrc-plugin-plugin"
 paths:
 - "org/jvnet/hudson/plugins/seleniumrc-plugin"
 developers: []
+issues:
+  type: jira
+  value: "seleniumrc-plugin"

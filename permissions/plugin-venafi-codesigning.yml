@@ -6,3 +6,6 @@ paths:
 developers:
 - "honglilai"
 - "arnold79"
+issues:
+  type: github
+  value: "jenkinsci/venafi-codesigning-plugin"

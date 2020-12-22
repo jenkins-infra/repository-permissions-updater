@@ -4,3 +4,6 @@ github: "jenkinsci/eloyente-plugin"
 paths:
 - "com/technicolor/elOyente"
 developers: []
+issues:
+  type: jira
+  value: "eloyente-plugin"

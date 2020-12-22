@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/misra-compliance-report-generator"
 developers:
 - "oyvindlr"
+issues:
+  type: jira
+  value: "misra-compliance-report-generator-plugin"

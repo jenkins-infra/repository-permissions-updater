@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/copy-to-slave"
 developers:
 - "svvivek"
+issues:
+  type: jira
+  value: "copy-to-slave-plugin"

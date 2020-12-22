@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/openedge"
 developers:
 - "gquerret"
+issues:
+  type: jira
+  value: "openedge-plugin"

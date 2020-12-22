@@ -5,4 +5,7 @@ paths:
 - "org/jenkins-ci/plugins/rundeck"
 developers:
 - "gschueler"
-- "ltoledo" 
+- "ltoledo"
+issues:
+  type: jira
+  value: "rundeck-plugin"

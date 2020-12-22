@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/rest-list-parameter"
 developers:
 - "h1dden_da3m0n"
+issues:
+  type: github
+  value: "jenkinsci/rest-list-parameter-plugin"

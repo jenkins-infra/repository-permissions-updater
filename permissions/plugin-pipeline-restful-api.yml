@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/pipeline-restful-api"
 developers:
 - "surenpi"
+issues:
+  type: github
+  value: "jenkinsci/pipeline-restful-api-plugin"

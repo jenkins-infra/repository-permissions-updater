@@ -4,3 +4,6 @@ github: "jenkinsci/thread-dump-action-plugin"
 paths:
 - "org/jenkins-ci/plugins/thread-dump-action-plugin"
 developers: []
+issues:
+  type: jira
+  value: "thread-dump-action-plugin"

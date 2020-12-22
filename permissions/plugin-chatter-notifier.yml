@@ -6,3 +6,6 @@ paths:
 developers:
 - "sfell"
 - "justinharringa"
+issues:
+  type: jira
+  value: "chatter-notifier-plugin"

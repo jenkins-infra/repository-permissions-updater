@@ -7,3 +7,6 @@ paths:
 developers:
 - "edmund_wagner"
 - "ljader"
+issues:
+  type: jira
+  value: "ssh-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/lingr-plugin"
 paths:
 - "org/jenkins-ci/plugins/lingr-plugin"
 developers: []
+issues:
+  type: jira
+  value: "lingr-plugin"

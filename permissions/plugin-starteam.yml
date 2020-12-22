@@ -5,3 +5,6 @@ paths:
 - "hudson/plugins/starteam"
 developers:
 - "ravaid"
+issues:
+  type: jira
+  value: "starteam-plugin"

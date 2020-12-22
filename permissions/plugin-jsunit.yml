@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jsunit"
 developers:
 - "gbois"
+issues:
+  type: jira
+  value: "jsunit-plugin"

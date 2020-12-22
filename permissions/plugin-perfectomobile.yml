@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/perfectomobile"
 developers:
 - "perfectomobile"
+issues:
+  type: jira
+  value: "perfectomobile-plugin"

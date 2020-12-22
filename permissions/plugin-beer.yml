@@ -4,3 +4,6 @@ github: "jenkinsci/beer-plugin"
 paths:
 - "org/jenkins-ci/plugins/beer"
 developers: []
+issues:
+  type: jira
+  value: "beer-plugin"

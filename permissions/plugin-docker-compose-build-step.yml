@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/docker-compose-build-step"
 developers:
 - "jgalego"
+issues:
+  type: jira
+  value: "docker-compose-build-step-plugin"

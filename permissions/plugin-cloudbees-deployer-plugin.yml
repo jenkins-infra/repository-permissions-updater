@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cloudbees-deployer-plugin"
 developers:
 - "stephenconnolly"
+issues:
+  type: jira
+  value: "cloudbees-deployer-plugin"

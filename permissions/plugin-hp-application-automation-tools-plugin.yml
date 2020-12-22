@@ -6,3 +6,6 @@ paths:
 developers:
 - "ptofan"   
 - "gront"
+issues:
+  type: jira
+  value: "hp-application-automation-tools-plugin"

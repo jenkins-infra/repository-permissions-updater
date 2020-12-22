@@ -4,3 +4,6 @@ github: "jenkinsci/simpleupdatesite-plugin"
 paths:
 - "org/jenkins-ci/plugins/simpleupdatesite"
 developers: []
+issues:
+  type: jira
+  value: "simpleupdatesite-plugin"

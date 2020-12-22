@@ -5,3 +5,6 @@ paths:
 - "com/applatix/jenkins/applatix"
 developers:
 - "applatix_jenkins"
+issues:
+  type: jira
+  value: "applatix-plugin"

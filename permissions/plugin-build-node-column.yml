@@ -4,3 +4,6 @@ github: "jenkinsci/build-node-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-node-column"
 developers: []
+issues:
+  type: jira
+  value: "build-node-column-plugin"

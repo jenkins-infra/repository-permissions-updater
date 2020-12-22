@@ -7,3 +7,6 @@ developers:
 - "ai"
 - "kageiit"
 - "arturas"
+issues:
+  type: jira
+  value: "phabricator-plugin"

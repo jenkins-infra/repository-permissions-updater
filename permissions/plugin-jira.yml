@@ -7,3 +7,6 @@ paths:
 developers:
 - "warden"
 - "olamy"
+issues:
+  type: jira
+  value: "jira-plugin"

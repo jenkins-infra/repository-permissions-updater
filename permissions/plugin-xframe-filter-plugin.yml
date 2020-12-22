@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/xframe-filter-plugin"
 developers:
 - "jglick"
+issues:
+  type: jira
+  value: "xframe-filter-plugin"

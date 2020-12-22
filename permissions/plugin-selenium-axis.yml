@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/selenium-axis"
 developers: 
 -  "jeremym"
+issues:
+  type: github
+  value: "jenkinsci/selenium-axis-plugin"

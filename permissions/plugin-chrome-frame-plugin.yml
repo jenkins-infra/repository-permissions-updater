@@ -4,3 +4,6 @@ github: "jenkinsci/chrome-frame-plugin"
 paths:
 - "org/jenkins-ci/plugins/chrome-frame-plugin"
 developers: []
+issues:
+  type: jira
+  value: "chrome-frame-plugin"

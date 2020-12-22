@@ -4,3 +4,6 @@ github: "jenkinsci/deploygate-plugin"
 paths:
 - "org/jenkins-ci/plugins/deploygate/deploygate-plugin"
 developers: []
+issues:
+  type: jira
+  value: "deploygate-plugin"

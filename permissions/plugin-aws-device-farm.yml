@@ -9,3 +9,6 @@ developers:
 security:
   contacts:
     email: "aws-security@amazon.com"
+issues:
+  type: jira
+  value: "aws-device-farm-plugin"

@@ -4,3 +4,9 @@ github: "jenkinsci/logaction-plugin"
 paths:
 - "de/fspengler/hudson/plugin/logaction-plugin"
 developers: []
+issues:
+  type: jira
+  value: "logaction"
+issues:
+  type: jira
+  value: "logaction-plugin"

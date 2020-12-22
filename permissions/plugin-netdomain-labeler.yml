@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/netdomain-labeler"
 developers:
 - "mcamposv"
+issues:
+  type: jira
+  value: "netdomain-labeler-plugin"

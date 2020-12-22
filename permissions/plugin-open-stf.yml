@@ -6,3 +6,6 @@ paths:
 developers:
 - "justice3120"
 - "lukzeg"
+issues:
+  type: github
+  value: "jenkinsci/open-stf-plugin"

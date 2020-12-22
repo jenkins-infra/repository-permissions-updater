@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/global-build-stats"
 developers:
 - "dhinske"
+issues:
+  type: jira
+  value: "global-build-stats-plugin"

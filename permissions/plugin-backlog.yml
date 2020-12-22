@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/backlog"
 developers:
 - "ikikko"
+issues:
+  type: jira
+  value: "backlog-plugin"

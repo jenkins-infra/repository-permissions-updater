@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/tmpcleaner"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "tmpcleaner-plugin"

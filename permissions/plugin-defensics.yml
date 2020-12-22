@@ -7,3 +7,6 @@ developers:
 - "defensics_oss"
 - "synhal"
 - "synomtv"
+issues:
+  type: jira
+  value: "defensics-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/ci-skip-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/ci-skip"
 developers: []
+issues:
+  type: jira
+  value: "ci-skip-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "jdamick"
 - "jglick"
+issues:
+  type: github
+  value: "jenkinsci/packer-plugin"

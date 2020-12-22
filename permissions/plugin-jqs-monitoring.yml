@@ -4,3 +4,6 @@ github: "jenkinsci/jqs-monitoring-plugin"
 paths:
 - "org/jenkins-ci/plugins/jqs-monitoring"
 developers: []
+issues:
+  type: github
+  value: "jenkinsci/jqs-monitoring-plugin"

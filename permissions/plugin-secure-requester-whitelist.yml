@@ -8,4 +8,6 @@ developers:
 - "danielbeck"
 - "andresrc"
 - "wfollonier"
-  
+issues:
+  type: jira
+  value: "secure-requester-whitelist-plugin"

@@ -7,3 +7,6 @@ developers:
 - "alobato"
 - "cleclerc"
 - "aheritier"
+issues:
+  type: jira
+  value: "pipeline-maven-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/no-agent-job-purge"
 developers:
 - "sonicwind"
+issues:
+  type: jira
+  value: "no-agent-job-purge-plugin"

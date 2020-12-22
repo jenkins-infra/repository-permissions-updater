@@ -5,3 +5,6 @@ paths:
   - "io/jenkins/plugins/solarized-theme"
 developers:
   - "danielbeck"
+issues:
+  type: jira
+  value: "solarized-theme-plugin"

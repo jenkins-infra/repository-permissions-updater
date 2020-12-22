@@ -6,3 +6,6 @@ paths:
 developers:
 - "zeedeveloper"
 - "mohanzephyr"
+issues:
+  type: jira
+  value: "zephyr-for-jira-test-management-plugin"

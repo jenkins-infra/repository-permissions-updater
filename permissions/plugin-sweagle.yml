@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/sweagle"
 developers:
 - "joe99000"
+issues:
+  type: github
+  value: "jenkinsci/sweagle-plugin"

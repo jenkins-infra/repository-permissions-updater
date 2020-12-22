@@ -5,3 +5,6 @@ paths:
 - "igalg/jenkins/plugins/multibranch-build-strategy-extension"
 developers:
 - "igalg"
+issues:
+  type: jira
+  value: "multibranch-build-strategy-extension-plugin"

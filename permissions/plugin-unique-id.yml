@@ -9,3 +9,6 @@ developers:
 - "recampbell"
 - "stephenconnolly"
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "unique-id-plugin"

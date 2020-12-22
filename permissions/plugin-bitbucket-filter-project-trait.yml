@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/bitbucket-filter-project-trait"
 developers:
 - "michelzanini"
+issues:
+  type: jira
+  value: "bitbucket-filter-project-trait-plugin"

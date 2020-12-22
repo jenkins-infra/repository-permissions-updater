@@ -8,3 +8,6 @@ developers:
 - "basil"
 - "stevengbrown"
 - "jglick"
+issues:
+  type: jira
+  value: "timestamper-plugin"

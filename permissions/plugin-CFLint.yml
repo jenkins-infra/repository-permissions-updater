@@ -6,3 +6,6 @@ paths:
 developers:
 - "jjames967"
 - "ryaneberly"
+issues:
+  type: jira
+  value: "cflint-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/database-drizzle-plugin"
 paths:
 - "org/jenkins-ci/plugins/database-drizzle"
 developers: []
+issues:
+  type: jira
+  value: "database-drizzle-plugin"

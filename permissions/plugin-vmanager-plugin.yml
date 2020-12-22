@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/vmanager-plugin"
 developers:
 - "tyanai"
+issues:
+  type: github
+  value: "jenkinsci/vmanager-plugin"

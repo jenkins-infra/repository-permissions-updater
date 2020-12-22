@@ -6,3 +6,6 @@ paths:
 developers:
 - "tricentis"
 - "sergey_oplavin"
+issues:
+  type: jira
+  value: "tricentis-ci-plugin"

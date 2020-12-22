@@ -6,3 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/browserstack-integration"
 developers:
 - "browserstack"
+issues:
+  type: jira
+  value: "browserstack-integration-plugin"

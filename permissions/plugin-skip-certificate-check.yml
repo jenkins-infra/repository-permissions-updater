@@ -4,3 +4,6 @@ github: "jenkinsci/skip-certificate-check-plugin"
 paths:
 - "org/jenkins-ci/plugins/skip-certificate-check"
 developers: []
+issues:
+  type: jira
+  value: "skip-certificate-check-plugin"

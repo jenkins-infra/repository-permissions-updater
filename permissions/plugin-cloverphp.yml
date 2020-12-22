@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cloverphp"
 developers:
 - "sogabe"
+issues:
+  type: jira
+  value: "cloverphp-plugin"

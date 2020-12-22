@@ -5,3 +5,6 @@ paths:
 - "com/surenpi/jenkins/phoenix-autotest"
 developers:
 - "surenpi"
+issues:
+  type: github
+  value: "jenkinsci/phoenix-autotest-plugin"

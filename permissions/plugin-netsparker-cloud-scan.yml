@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/netsparker-cloud-scan"
 developers: 
 - "netsparker"
+issues:
+  type: jira
+  value: "netsparker-cloud-scan-plugin"

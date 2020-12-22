@@ -7,3 +7,6 @@ developers:
 - "madsnielsen"
 - "praqma"
 - "atombrella"
+issues:
+  type: jira
+  value: "codesonar-plugin"

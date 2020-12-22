@@ -5,3 +5,6 @@ paths:
 - "com/ekatechserv/testodyssey-execution"
 developers:
 - "ekateam"
+issues:
+  type: jira
+  value: "testodyssey-execution-plugin"

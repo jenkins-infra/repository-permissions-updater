@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/qmetry-test-management"
 developers:
 - "dharaghodasara"
+issues:
+  type: jira
+  value: "qmetry-test-management-plugin"

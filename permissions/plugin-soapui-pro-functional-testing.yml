@@ -9,3 +9,6 @@ developers:
 - "alexandernikitin"
 - "alexey_bortulev"
 - "alexander_eremeev"
+issues:
+  type: jira
+  value: "soapui-pro-functional-testing-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/docker-slaves"
 developers:
 - "ydubreuil"
+issues:
+  type: jira
+  value: "docker-slaves-plugin"

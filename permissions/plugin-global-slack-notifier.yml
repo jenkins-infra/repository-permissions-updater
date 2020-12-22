@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/global-slack-notifier"
 developers:
 - "marimoiro"
+issues:
+  type: jira
+  value: "global-slack-notifier-plugin"

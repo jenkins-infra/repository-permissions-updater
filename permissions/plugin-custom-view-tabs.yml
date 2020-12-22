@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/custom-view-tabs"
 developers:
 - "todderz"
+issues:
+  type: jira
+  value: "custom-view-tabs-plugin"

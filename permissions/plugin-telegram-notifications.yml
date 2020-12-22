@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/telegram-notifications"
 developers:
 - "nikitabelonogov"
+issues:
+  type: github
+  value: "jenkinsci/telegram-notifications-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/geteasyqa/easyqa"
 developers:
 - "yana_gusti"
+issues:
+  type: jira
+  value: "easyqa-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/testabilityexplorer-plugin"
 paths:
 - "org/jenkins-ci/plugins/testabilityexplorer"
 developers: []
+issues:
+  type: jira
+  value: "testabilityexplorer-plugin"

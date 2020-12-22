@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/multiselect-parameter"
 developers:
 - "swesteme"
+issues:
+  type: jira
+  value: "multiselect-parameter-plugin"

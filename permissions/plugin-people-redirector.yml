@@ -4,3 +4,6 @@ github: "jenkinsci/people-redirector-plugin"
 paths:
 - "com/cisco/step/jenkins/plugins/people-redirector"
 developers: []
+issues:
+  type: jira
+  value: "people-redirector-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
   - "rafalmyslek"
   - "lenin_atlassian"
+issues:
+  type: jira
+  value: "atlassian-jira-software-cloud-plugin"

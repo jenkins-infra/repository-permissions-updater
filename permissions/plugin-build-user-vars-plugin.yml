@@ -8,3 +8,6 @@ developers:
 - "clifford_jenkins"
 - "oleg_nenashev"
 - "zedasvacas"
+issues:
+  type: jira
+  value: "build-user-vars-plugin"

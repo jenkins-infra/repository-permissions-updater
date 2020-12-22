@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/test-results-aggregator"
 developers:
 - "socrates"
+issues:
+  type: jira
+  value: "test-results-aggregator-plugin"

@@ -5,3 +5,6 @@ paths:
 - "javagh/jenkins/mashup-portlets-plugin"
 developers:
 - "ghenzler"
+issues:
+  type: jira
+  value: "mashup-portlets-plugin"

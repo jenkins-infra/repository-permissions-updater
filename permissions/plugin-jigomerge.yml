@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jigomerge"
 developers:
 - "smrutimo"
+issues:
+  type: jira
+  value: "jigomerge-plugin"

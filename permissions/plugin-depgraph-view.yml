@@ -6,3 +6,6 @@ paths:
 developers:
 - "wolfs"
 - "ggrazioli"
+issues:
+  type: github
+  value: "jenkinsci/depgraph-view-plugin"

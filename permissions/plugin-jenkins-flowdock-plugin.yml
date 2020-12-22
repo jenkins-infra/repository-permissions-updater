@@ -6,3 +6,6 @@ paths:
 developers:
 - "anttipitkanen"
 - "arcivanov"
+issues:
+  type: github
+  value: "jenkinsci/flowdock-plugin"

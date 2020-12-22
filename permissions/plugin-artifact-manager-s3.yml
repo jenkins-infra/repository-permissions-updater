@@ -10,3 +10,6 @@ developers:
 security:
   contacts:
     jira: "modern_platforms_security_members"
+issues:
+  type: jira
+  value: "artifact-manager-s3-plugin"

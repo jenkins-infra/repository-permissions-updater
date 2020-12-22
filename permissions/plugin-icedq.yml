@@ -5,3 +5,6 @@ paths:
 - "com/icedq/ci/plugin/icedq"
 developers:
 - "toranainc"
+issues:
+  type: jira
+  value: "icedq-plugin"

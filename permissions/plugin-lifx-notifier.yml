@@ -6,3 +6,6 @@ paths:
 developers:
 - "michaelneale"
 - "vgaidarji"
+issues:
+  type: jira
+  value: "lifx-notifier-plugin"

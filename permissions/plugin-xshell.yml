@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/xshell"
 developers:
 - "mambu"
+issues:
+  type: jira
+  value: "xshell-plugin"

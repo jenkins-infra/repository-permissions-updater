@@ -9,3 +9,6 @@ developers:
 - "oleg_nenashev"
 - "fr123k"
 - "timja"
+issues:
+  type: jira
+  value: "release-plugin"

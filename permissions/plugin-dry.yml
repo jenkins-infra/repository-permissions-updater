@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/dry"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "dry-plugin"

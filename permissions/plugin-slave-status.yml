@@ -4,3 +4,6 @@ github: "jenkinsci/slave-status-plugin"
 paths:
 - "org/jvnet/hudson/plugins/slave-status"
 developers: []
+issues:
+  type: jira
+  value: "slave-status-plugin"

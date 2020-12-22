@@ -6,3 +6,6 @@ paths:
 developers:
 - "perfectojenkins"
 - "genesisthomas"
+issues:
+  type: jira
+  value: "perfecto-plugin"

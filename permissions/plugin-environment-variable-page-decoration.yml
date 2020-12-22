@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/environment-variable-page-decoration"
 developers:
 - "tvon"
+issues:
+  type: jira
+  value: "environment-variable-page-decoration-plugin"

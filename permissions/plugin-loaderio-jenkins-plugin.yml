@@ -4,3 +4,6 @@ github: "jenkinsci/loaderio-plugin"
 paths:
 - "io/loader/loaderio-jenkins-plugin"
 developers: []
+issues:
+  type: jira
+  value: "loaderio-jenkins-plugin"

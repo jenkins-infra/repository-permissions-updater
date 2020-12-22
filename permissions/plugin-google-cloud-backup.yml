@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/google-cloud-backup"
 developers:
 - "astroilov"
+issues:
+  type: jira
+  value: "google-cloud-backup-plugin"

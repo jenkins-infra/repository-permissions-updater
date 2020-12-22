@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/buildtriggerbadge"
 developers:
 - "batmat"
+issues:
+  type: jira
+  value: "buildtriggerbadge-plugin"

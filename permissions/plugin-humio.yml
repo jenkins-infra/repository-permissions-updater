@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/humio"
 developers:
 - "anagrius"
+issues:
+  type: jira
+  value: "humio-plugin"

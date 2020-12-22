@@ -5,3 +5,6 @@ paths:
 - "com/vmware/vcac/vmware-vrealize-codestream"
 developers:
 - "rishisaraf11"
+issues:
+  type: jira
+  value: "vmware-vrealize-codestream-plugin"

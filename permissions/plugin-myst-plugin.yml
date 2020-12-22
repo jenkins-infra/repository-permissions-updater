@@ -5,3 +5,6 @@ paths:
 - "com/rubiconred/jenkins/myst-plugin"
 developers:
 - "fdouek"
+issues:
+  type: jira
+  value: "myst-plugin"

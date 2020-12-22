@@ -4,3 +4,6 @@ github: "jenkinsci/discard-old-build-plugin"
 paths:
 - "jp/shiftinc/jenkins/plugins/discard-old-build"
 developers: []
+issues:
+  type: jira
+  value: "discard-old-build-plugin"

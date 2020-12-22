@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/wso2id-oauth"
 developers:
 - "mohamedelhabib"
+issues:
+  type: jira
+  value: "wso2id-oauth-plugin"

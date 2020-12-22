@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/play-autotest-plugin"
 developers:
 - "rafaelrezend"
+issues:
+  type: jira
+  value: "play-autotest-plugin"

@@ -9,3 +9,6 @@ developers:
 - "jpwku"
 - "papajulio"
 - "sag47"
+issues:
+  type: github
+  value: "jenkinsci/ghprb-plugin"

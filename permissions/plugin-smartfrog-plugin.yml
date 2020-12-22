@@ -6,3 +6,6 @@ paths:
 developers:
 - "lvotypkova"
 - "vjuranek"
+issues:
+  type: jira
+  value: "smartfrog-plugin"

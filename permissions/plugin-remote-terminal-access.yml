@@ -4,3 +4,6 @@ github: "jenkinsci/remote-terminal-access-plugin"
 paths:
 - "org/jenkins-ci/plugins/remote-terminal-access"
 developers: []
+issues:
+  type: jira
+  value: "remote-terminal-access-plugin"

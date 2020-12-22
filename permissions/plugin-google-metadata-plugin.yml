@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/google-metadata-plugin"
 developers:
 - "alecharp"
+issues:
+  type: github
+  value: "jenkinsci/google-metadata-plugin"

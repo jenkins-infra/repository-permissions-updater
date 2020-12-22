@@ -5,3 +5,6 @@ paths:
 - "org/waveywaves/jenkins/plugins/tekton-client"
 developers:
 - "waveywaves"
+issues:
+  type: github
+  value: "jenkinsci/tekton-client-plugin"

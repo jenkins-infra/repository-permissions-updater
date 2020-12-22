@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/file-changes-build-strategy"
 developers:
 - "michelzanini"
+issues:
+  type: jira
+  value: "file-changes-build-strategy-plugin"

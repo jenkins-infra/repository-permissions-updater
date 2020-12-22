@@ -6,4 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/cppncss"
 developers:
 - "oleg_nenashev"
-
+issues:
+  type: jira
+  value: "cppncss-plugin"

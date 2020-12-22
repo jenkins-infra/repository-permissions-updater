@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/working-hours"
 developers:
 - "jeffpearce"
+issues:
+  type: github
+  value: "jenkinsci/working-hours-plugin"

@@ -7,3 +7,6 @@ developers:
 - "orjanpercy"
 - "rsandell"
 - "t_westling"
+issues:
+  type: jira
+  value: "build-failure-analyzer-plugin"

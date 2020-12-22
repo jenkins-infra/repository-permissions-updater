@@ -6,3 +6,6 @@ paths:
 developers:
 - "vlatombe"
 - "jonhermansen"
+issues:
+  type: jira
+  value: "docker-custom-build-environment-plugin"

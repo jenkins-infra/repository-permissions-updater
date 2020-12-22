@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jenkinslint"
 developers:
 - "v2v"
+issues:
+  type: jira
+  value: "jenkinslint-plugin"

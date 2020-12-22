@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/apprenda"
 developers:
 - "apprenda"
+issues:
+  type: jira
+  value: "apprenda-plugin"

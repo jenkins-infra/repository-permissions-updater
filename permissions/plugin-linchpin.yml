@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/linchpin"
 developers:
 - "avielyosef"
+issues:
+  type: jira
+  value: "linchpin-plugin"

@@ -5,3 +5,6 @@ paths:
 - "net/praqma/rqm-plugin"
 developers:
 - "madsnielsen"
+issues:
+  type: jira
+  value: "rqm-plugin"

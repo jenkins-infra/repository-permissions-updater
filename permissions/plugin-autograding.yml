@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/autograding"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "autograding-plugin"

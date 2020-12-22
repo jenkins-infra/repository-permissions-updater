@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/argus-notifier"
 developers:
 - "justinharringa"
+issues:
+  type: jira
+  value: "argus-notifier-plugin"

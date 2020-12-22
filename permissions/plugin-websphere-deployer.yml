@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/websphere-deployer"
 developers:
 - "gpeters"
+issues:
+  type: jira
+  value: "websphere-deployer-plugin"

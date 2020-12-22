@@ -6,3 +6,6 @@ paths:
 developers:
 - "olivergondza"
 - "vjuranek"
+issues:
+  type: jira
+  value: "build-publisher-plugin"

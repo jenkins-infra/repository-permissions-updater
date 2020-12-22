@@ -6,3 +6,6 @@ paths:
 developers:
 - "sternlir"
 - "cxadmin"
+issues:
+  type: jira
+  value: "checkmarx-plugin"

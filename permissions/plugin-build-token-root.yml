@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/build-token-root"
 developers:
 - "jglick"
+issues:
+  type: jira
+  value: "build-token-root-plugin"

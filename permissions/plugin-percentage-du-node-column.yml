@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/percentage-du-node-column"
 developers:
 - "v2v"
+issues:
+  type: jira
+  value: "percentage-du-node-column-plugin"

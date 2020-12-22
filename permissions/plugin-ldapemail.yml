@@ -5,3 +5,6 @@ paths:
 - "com/mtvi/plateng/hudson/ldapemail"
 developers:
 - "marcomiller"
+issues:
+  type: jira
+  value: "ldapemail-plugin"

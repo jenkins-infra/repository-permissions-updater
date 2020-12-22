@@ -4,3 +4,6 @@ github: "jenkinsci/gcal-plugin"
 paths:
 - "org/jvnet/hudson/plugins/gcal"
 developers: []
+issues:
+  type: jira
+  value: "gcal-plugin"

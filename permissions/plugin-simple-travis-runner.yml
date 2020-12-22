@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/simple-travis-runner"
 developers:
 - "abayer"
+issues:
+  type: jira
+  value: "simple-travis-runner-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "midvision"
 - "sepsyk"
+issues:
+  type: jira
+  value: "rapiddeploy-jenkins-plugin"

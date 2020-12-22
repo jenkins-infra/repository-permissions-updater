@@ -4,3 +4,6 @@ github: "jenkinsci/project-stats-plugin"
 paths:
 - "org/jenkins-ci/plugins/project-stats-plugin"
 developers: []
+issues:
+  type: jira
+  value: "project-stats-plugin"

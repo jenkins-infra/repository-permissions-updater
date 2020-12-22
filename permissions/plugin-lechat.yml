@@ -4,3 +4,6 @@ github: "jenkinsci/lechat-plugin"
 paths:
 - "org/jvnet/hudson/plugins/lechat"
 developers: []
+issues:
+  type: jira
+  value: "lechat-plugin"

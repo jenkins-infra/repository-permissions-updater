@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/extended-choice-parameter"
 developers:
 - "vimil"
+issues:
+  type: jira
+  value: "extended-choice-parameter-plugin"

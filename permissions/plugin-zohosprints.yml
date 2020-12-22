@@ -5,3 +5,6 @@ paths:
   - "io/jenkins/plugins/zohosprints"
 developers:
   - "zohosprints"
+issues:
+  type: jira
+  value: "zohosprints-plugin"

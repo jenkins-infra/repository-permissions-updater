@@ -6,3 +6,6 @@ paths:
 developers:
 - "bilal_split"
 - "patricioe"
+issues:
+  type: jira
+  value: "split-admin-plugin"

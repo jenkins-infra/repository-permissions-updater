@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/sideex"
 developers:
 - "sideexteam"
+issues:
+  type: jira
+  value: "sideex-plugin"

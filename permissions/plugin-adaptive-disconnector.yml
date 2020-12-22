@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/adaptive-disconnector"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "adaptive-disconnector-plugin"

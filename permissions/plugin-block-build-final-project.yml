@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/block-build-final-project"
 developers:
 - "chadrosenquist"
+issues:
+  type: jira
+  value: "block-build-final-project-plugin"

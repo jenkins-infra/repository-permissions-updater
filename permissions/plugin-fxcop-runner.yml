@@ -4,3 +4,6 @@ github: "jenkinsci/fxcop-runner-plugin"
 paths:
 - "org/jenkins-ci/plugins/fxcop-runner"
 developers: []
+issues:
+  type: jira
+  value: "fxcop-runner-plugin"

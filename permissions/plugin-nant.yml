@@ -4,3 +4,6 @@ github: "jenkinsci/nant-plugin"
 paths:
 - "org/jenkins-ci/plugins/nant"
 developers: []
+issues:
+  type: jira
+  value: "nant-plugin"

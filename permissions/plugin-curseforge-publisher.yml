@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/curseforge-publisher"
 developers:
 - "r04r"
+issues:
+  type: jira
+  value: "curseforge-publisher-plugin"

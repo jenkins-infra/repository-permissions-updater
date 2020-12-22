@@ -9,3 +9,6 @@ developers:
 - "fbelzunc"
 - "codemonky"
 - "tzach_solomon"
+issues:
+  type: jira
+  value: "bitbucket-plugin"

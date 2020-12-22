@@ -6,3 +6,6 @@ paths:
 developers:
 - "cwhitty"
 - "spirentitestdevter"
+issues:
+  type: jira
+  value: "itest-plugin"

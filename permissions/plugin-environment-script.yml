@@ -5,3 +5,6 @@ paths:
 - "com/lookout/jenkins/environment-script"
 developers:
 - "dawidmalina"
+issues:
+  type: jira
+  value: "environment-script-plugin"

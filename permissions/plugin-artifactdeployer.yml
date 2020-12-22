@@ -7,3 +7,6 @@ developers:
 - "alecharp"
 - "gbois"
 - "seanturner83"
+issues:
+  type: jira
+  value: "artifactdeployer-plugin"

@@ -8,3 +8,6 @@ developers:
 - "vlatombe"
 - "wolfs"
 - "abayer"
+issues:
+  type: github
+  value: "jenkinsci/parallel-test-executor-plugin"

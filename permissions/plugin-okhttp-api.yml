@@ -9,3 +9,6 @@ developers:
 - "dnusbaum"
 - "kshultz"
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "okhttp-api-plugin"

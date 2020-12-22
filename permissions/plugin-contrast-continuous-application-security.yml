@@ -7,3 +7,6 @@ developers:
 - "gsmoore"
 - "bryanateoan"
 - "aliaandersen"
+issues:
+  type: github
+  value: "jenkinsci/contrast-continuous-application-security-plugin"

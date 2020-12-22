@@ -7,3 +7,6 @@ developers:
 - "sdorra"
 - "pfeuffer"
 - "eheimbuch"
+issues:
+  type: jira
+  value: "scm-manager-plugin"

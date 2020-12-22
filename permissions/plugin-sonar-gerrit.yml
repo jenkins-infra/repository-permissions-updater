@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/sonar-gerrit"
 developers:
 - "aquarellian"
+issues:
+  type: jira
+  value: "sonar-gerrit-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "lvaikunt"
 - "ssangaiah"
+issues:
+  type: jira
+  value: "teamconcert-plugin"

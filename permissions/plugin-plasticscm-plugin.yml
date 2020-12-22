@@ -10,3 +10,6 @@ developers:
 - "jemagoga"
 - "rubarax"
 - "fernando_de_francisco"
+issues:
+  type: github
+  value: "jenkinsci/plasticscm-plugin"

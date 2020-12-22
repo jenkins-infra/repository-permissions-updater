@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-huaweicloud-plugin"
 developers:
 - "zhongjun2"
+issues:
+  type: jira
+  value: "pipeline-huaweicloud-plugin"

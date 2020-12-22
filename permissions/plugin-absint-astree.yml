@@ -6,3 +6,6 @@ paths:
 developers:
 - "jherter"
 - "absint"
+issues:
+  type: jira
+  value: "absint-astree-plugin"

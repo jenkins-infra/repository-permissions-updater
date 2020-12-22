@@ -6,3 +6,6 @@ paths:
 developers:
 - "nilleb"
 - "jetersen"
+issues:
+  type: jira
+  value: "mstest-plugin"

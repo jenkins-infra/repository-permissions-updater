@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/next-build-number"
 developers:
 - "akom"
+issues:
+  type: jira
+  value: "next-build-number-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/datical/integration/jenkins/datical-db-plugin"
 developers:
 - "r2datical"
+issues:
+  type: jira
+  value: "datical-db-plugin"

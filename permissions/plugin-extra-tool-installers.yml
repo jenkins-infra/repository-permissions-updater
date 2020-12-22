@@ -7,3 +7,6 @@ paths:
 developers:
 - "oleg_nenashev"
 - "pjdarton"
+issues:
+  type: jira
+  value: "extra-tool-installers-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cucumber-living-documentation"
 developers:
 - "rmpestano"
+issues:
+  type: github
+  value: "jenkinsci/cucumber-living-documentation-plugin"

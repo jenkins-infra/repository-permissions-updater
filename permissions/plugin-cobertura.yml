@@ -12,3 +12,6 @@ developers:
 - "schristou"
 - "jeffpearce"
 - "cizezsy"
+issues:
+  type: github
+  value: "jenkinsci/cobertura-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/cloudsmith/hammer/jenkins/stackhammer"
 - "org/jenkins-ci/plugins/stackhammer"
 developers: []
+issues:
+  type: github
+  value: "jenkinsci/stackhammer-plugin"

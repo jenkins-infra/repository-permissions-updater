@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/xvfb"
 developers:
 - "zregvart"
+issues:
+  type: jira
+  value: "xvfb-plugin"

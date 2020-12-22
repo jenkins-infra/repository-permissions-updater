@@ -6,3 +6,6 @@ paths:
 developers:
 - "elvanja"
 - "javiplx"
+issues:
+  type: github
+  value: "jenkinsci/gitlab-hook-plugin"

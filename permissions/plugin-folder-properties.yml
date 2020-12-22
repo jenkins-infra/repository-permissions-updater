@@ -5,3 +5,6 @@ paths:
 - "com/mig82/folder-properties"
 developers:
 - "mig82"
+issues:
+  type: jira
+  value: "folder-properties-plugin"

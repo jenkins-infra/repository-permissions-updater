@@ -6,4 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/run-condition-extras"
 developers:
 - "oleg_nenashev"
-
+issues:
+  type: jira
+  value: "run-condition-extras-plugin"

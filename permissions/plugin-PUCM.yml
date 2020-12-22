@@ -4,3 +4,6 @@ github: "jenkinsci/pucm-plugin"
 paths:
 - "org/jvnet/hudson/plugins/PUCM"
 developers: []
+issues:
+  type: jira
+  value: "pucm-plugin"

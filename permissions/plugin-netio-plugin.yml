@@ -4,3 +4,6 @@ github: "jenkinsci/netio-plugin"
 paths:
 - "org/jenkins-ci/plugins/netio-plugin"
 developers: []
+issues:
+  type: jira
+  value: "netio-plugin"

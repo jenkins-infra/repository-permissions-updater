@@ -4,3 +4,6 @@ github: "jenkinsci/blink1-plugin"
 paths:
 - "org/jenkins-ci/plugins/blink1"
 developers: []
+issues:
+  type: jira
+  value: "blink1-plugin"

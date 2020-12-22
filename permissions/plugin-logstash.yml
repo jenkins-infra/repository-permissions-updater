@@ -6,3 +6,6 @@ paths:
 developers:
 - "rgerard"
 - "jbochenski"
+issues:
+  type: jira
+  value: "logstash-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/dynamicparameter-plugin"
 paths:
 - "com/seitenbau/jenkins/plugins/dynamicparameter"
 developers: []
+issues:
+  type: jira
+  value: "dynamicparameter-plugin"

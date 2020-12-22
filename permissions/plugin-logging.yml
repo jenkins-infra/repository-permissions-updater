@@ -5,3 +5,6 @@ paths:
 - "net/praqma/logging"
 developers:
 - "madsnielsen"
+issues:
+  type: jira
+  value: "logging-plugin"

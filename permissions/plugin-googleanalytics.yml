@@ -4,3 +4,6 @@ github: "jenkinsci/googleanalytics-plugin"
 paths:
 - "org/jvnet/hudson/plugins/googleanalytics"
 developers: []
+issues:
+  type: jira
+  value: "googleanalytics-plugin"

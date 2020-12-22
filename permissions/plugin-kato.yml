@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/kato"
 developers:
 - "jlarky"
+issues:
+  type: jira
+  value: "kato-plugin"

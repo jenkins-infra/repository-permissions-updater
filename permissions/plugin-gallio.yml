@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/gallio"
 developers:
 - "gbois"
+issues:
+  type: jira
+  value: "gallio-plugin"

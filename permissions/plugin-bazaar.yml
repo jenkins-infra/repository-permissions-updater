@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/bazaar"
 - "org/jvnet/hudson/plugins/bazaar"
 developers: []
+issues:
+  type: jira
+  value: "bazaar-plugin"

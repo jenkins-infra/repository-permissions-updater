@@ -4,3 +4,6 @@ github: "jenkinsci/any-buildstep-plugin"
 paths:
 - "org/jenkins-ci/plugins/any-buildstep"
 developers: []
+issues:
+  type: jira
+  value: "any-buildstep-plugin"

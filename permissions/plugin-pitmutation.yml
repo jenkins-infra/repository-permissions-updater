@@ -6,3 +6,6 @@ paths:
 developers:
 - "edwardk"
 - "gigasproule"
+issues:
+  type: jira
+  value: "pitmutation-plugin"

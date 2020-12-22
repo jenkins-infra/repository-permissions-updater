@@ -5,3 +5,6 @@ paths:
 - "com/ibm/devops/ibm-continuous-release"
 developers:
 - "aberkIBM"
+issues:
+  type: jira
+  value: "ibm-continuous-release-plugin"

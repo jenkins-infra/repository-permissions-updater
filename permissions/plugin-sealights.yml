@@ -5,3 +5,6 @@ paths:
 - "io/sealights/plugins/sealights"
 developers:
 - "sealights"
+issues:
+  type: jira
+  value: "sealights-plugin"

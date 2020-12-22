@@ -12,3 +12,6 @@ developers:
 security:
   contacts:
     jira: "jetersen"
+issues:
+  type: github
+  value: "jenkinsci/configuration-as-code-plugin"

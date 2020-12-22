@@ -5,3 +5,6 @@ paths:
 - "jp/ikedam/jenkins/plugins/groovy-label-assignment"
 developers:
 - "ikedam"
+issues:
+  type: jira
+  value: "groovy-label-assignment-plugin"

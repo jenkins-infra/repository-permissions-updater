@@ -6,3 +6,6 @@ paths:
 developers:
 - "kutzi"
 - "jimklimov"
+issues:
+  type: jira
+  value: "instant-messaging-plugin"

@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/ci-game"
 developers:
 - "cappuccino"
+issues:
+  type: jira
+  value: "ci-game-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/fedora-module-build-system"
 developers:
 - "scoheb"
+issues:
+  type: jira
+  value: "fedora-module-build-system-plugin"

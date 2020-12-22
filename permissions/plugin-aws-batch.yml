@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/aws-batch"
 developers:
 - "nfultz"
+issues:
+  type: jira
+  value: "aws-batch-plugin"

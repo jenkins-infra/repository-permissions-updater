@@ -6,3 +6,6 @@ paths:
 developers:
 - "VinceCapodanno"
 - "pfhjgd0"
+issues:
+  type: jira
+  value: "compuware-strobe-measurement-plugin"

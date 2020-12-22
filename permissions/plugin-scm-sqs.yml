@@ -5,3 +5,6 @@ paths:
 - "io/relution/jenkins/scm-sqs"
 developers:
 - "mway_solutions"
+issues:
+  type: github
+  value: "jenkinsci/scm-sqs-plugin"

@@ -7,3 +7,6 @@ developers:
 - "ericbn"
 - "drulli"
 - "vgaidarji"
+issues:
+  type: jira
+  value: "plot-plugin"

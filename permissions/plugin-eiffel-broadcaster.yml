@@ -5,3 +5,6 @@ paths:
 - "com/axis/jenkins/plugins/eiffel/eiffel-broadcaster"
 developers:
 - "isacholm"
+issues:
+  type: github
+  value: "jenkinsci/eiffel-broadcaster-plugin"

@@ -8,3 +8,6 @@ developers:
 - "crobinson"
 - "tgerbet_enalean"
 - "erwyn"
+issues:
+  type: jira
+  value: "tuleap-git-branch-source-plugin"

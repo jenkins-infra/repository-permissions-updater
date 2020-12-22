@@ -7,3 +7,6 @@ developers:
 - "akaryakina"
 - "youngspark"
 - "hiro0824"
+issues:
+  type: github
+  value: "jenkinsci/fortify-plugin"

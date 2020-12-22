@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/port-allocator"
 - "org/jvnet/hudson/plugins/port-allocator"
 developers: []
+issues:
+  type: jira
+  value: "port-allocator-plugin"

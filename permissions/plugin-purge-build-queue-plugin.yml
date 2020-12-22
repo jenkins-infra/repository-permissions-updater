@@ -4,3 +4,6 @@ github: "jenkinsci/purge-build-queue-plugin"
 paths:
 - "org/jenkins-ci/plugins/purge-build-queue-plugin"
 developers: []
+issues:
+  type: jira
+  value: "purge-build-queue-plugin"

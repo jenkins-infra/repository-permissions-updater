@@ -6,3 +6,6 @@ paths:
 developers:
 - "jstrachan"
 - "jenkinsxbot"
+issues:
+  type: jira
+  value: "jx-pipelines-plugin"

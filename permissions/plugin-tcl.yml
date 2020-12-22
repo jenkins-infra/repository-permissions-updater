@@ -4,3 +4,6 @@ github: "jenkinsci/tcl-plugin"
 paths:
 - "org/jenkins-ci/plugins/tcl"
 developers: []
+issues:
+  type: jira
+  value: "tcl-plugin"

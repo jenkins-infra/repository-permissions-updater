@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/zoom"
 developers:
 - "zoom_us"
+issues:
+  type: jira
+  value: "zoom-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/leastload"
 developers:
 - "bstick12"
+issues:
+  type: jira
+  value: "leastload-plugin"

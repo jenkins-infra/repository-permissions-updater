@@ -4,3 +4,6 @@ github: "jenkinsci/zubhium-plugin"
 paths:
 - "org/jenkins-ci/plugins/zubhium"
 developers: []
+issues:
+  type: jira
+  value: "zubhium-plugin"

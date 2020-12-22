@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/spotinst"
 developers:
 - "spotinst"
+issues:
+  type: jira
+  value: "spotinst-plugin"

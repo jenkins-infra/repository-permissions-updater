@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/icescrum"
 developers:
 - "vbarrier"
+issues:
+  type: jira
+  value: "icescrum-plugin"

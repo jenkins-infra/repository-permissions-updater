@@ -4,3 +4,6 @@ github: "jenkinsci/hadoop-plugin"
 paths:
 - "org/jenkins-ci/plugins/hadoop"
 developers: []
+issues:
+  type: jira
+  value: "hadoop-plugin"

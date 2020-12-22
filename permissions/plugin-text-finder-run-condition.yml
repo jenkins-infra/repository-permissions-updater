@@ -4,3 +4,6 @@ github: "jenkinsci/text-finder-run-condition-plugin"
 paths:
 - "org/jenkins-ci/plugins/text-finder-run-condition"
 developers: []
+issues:
+  type: jira
+  value: "text-finder-run-condition-plugin"

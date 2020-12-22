@@ -4,3 +4,6 @@ github: "jenkinsci/concurrent-login-plugin"
 paths:
 - "hudson/plugins/concurrent_login/concurrent-login-plugin"
 developers: []
+issues:
+  type: jira
+  value: "concurrent-login-plugin"

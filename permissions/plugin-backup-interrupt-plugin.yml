@@ -4,3 +4,6 @@ github: "jenkinsci/backup-jobs-plugin"
 paths:
 - "jenkins/ci/plugins/backup/backup-interrupt-plugin"
 developers: []
+issues:
+  type: jira
+  value: "backup-interrupt-plugin"

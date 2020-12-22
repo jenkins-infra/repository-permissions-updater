@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/vrealize-automation-8"
 developers:
 - "prydin"
+issues:
+  type: jira
+  value: "vrealize-automation-8-plugin"

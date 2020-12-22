@@ -6,3 +6,6 @@ paths:
 developers:
   - gmtm
   - johanc
+issues:
+  type: github
+  value: "jenkinsci/deepsecurity-smartcheck-plugin"

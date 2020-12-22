@@ -5,3 +5,6 @@ paths:
   - "io/jenkins/plugins/dingding-notifications"
 developers:
   - "liuweigl"
+issues:
+  type: jira
+  value: "dingding-notifications-plugin"

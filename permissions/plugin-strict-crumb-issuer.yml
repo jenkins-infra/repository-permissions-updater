@@ -6,3 +6,6 @@ paths:
 developers:
 - "danielbeck"
 - "wfollonier"
+issues:
+  type: jira
+  value: "strict-crumb-issuer-plugin"

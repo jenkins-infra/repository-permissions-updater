@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/agent-server-parameter"
 developers:
 - "bluersw"
+issues:
+  type: github
+  value: "jenkinsci/agent-server-parameter-plugin"

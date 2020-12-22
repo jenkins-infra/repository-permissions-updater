@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/authorize-project"
 developers:
 - "ikedam"
+issues:
+  type: jira
+  value: "authorize-project-plugin"

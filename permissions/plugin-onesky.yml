@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/onesky"
 developers:
 - "ricardoespsanto"
+issues:
+  type: jira
+  value: "onesky-plugin"

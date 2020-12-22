@@ -7,3 +7,6 @@ developers:
 - "xunrongl"
 - "uparulekar"
 - "dlaprod"
+issues:
+  type: jira
+  value: "ibm-cloud-devops-plugin"

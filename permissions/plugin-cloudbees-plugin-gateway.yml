@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cloudbees-plugin-gateway"
 developers:
 - "stephenconnolly"
+issues:
+  type: jira
+  value: "cloudbees-plugin-gateway-plugin"

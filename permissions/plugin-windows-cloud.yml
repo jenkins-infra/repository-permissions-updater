@@ -5,3 +5,6 @@ paths:
 - "fr/edf/jenkins/plugins/windows-cloud"
 developers:
 - "mat1e"
+issues:
+  type: github
+  value: "jenkinsci/windows-cloud-plugin"

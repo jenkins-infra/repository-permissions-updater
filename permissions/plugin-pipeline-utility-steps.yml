@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-utility-steps"
 developers:
 - "rsandell"
+issues:
+  type: jira
+  value: "pipeline-utility-steps-plugin"

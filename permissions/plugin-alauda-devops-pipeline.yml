@@ -7,3 +7,6 @@ developers:
 - "surenpi"
 - "danielfbm"
 - "chengjingtao"
+issues:
+  type: jira
+  value: "alauda-devops-pipeline-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "recampbell"
 - "vlatombe"
+issues:
+  type: jira
+  value: "google-login-plugin"

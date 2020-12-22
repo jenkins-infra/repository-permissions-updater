@@ -6,3 +6,6 @@ paths:
 developers:
 - "mc1arke"
 - "ifernandezcalvo"
+issues:
+  type: jira
+  value: "trilead-api-plugin"

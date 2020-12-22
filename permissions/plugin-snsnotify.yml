@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/snsnotify"
 developers:
 - "nikos"
+issues:
+  type: jira
+  value: "snsnotify-plugin"

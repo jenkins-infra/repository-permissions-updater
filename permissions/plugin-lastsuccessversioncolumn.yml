@@ -4,3 +4,6 @@ github: "jenkinsci/lastsuccessversioncolumn-plugin"
 paths:
 - "org/jvnet/hudson/plugins/lastsuccessversioncolumn"
 developers: []
+issues:
+  type: jira
+  value: "lastsuccessversioncolumn-plugin"

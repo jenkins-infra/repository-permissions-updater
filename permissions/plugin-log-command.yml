@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/log-command"
 developers:
 - "ialbors"
+issues:
+  type: jira
+  value: "log-command-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/atlassian-bitbucket-server-integration"
 developers:
 - "atlassian_bbs"
+issues:
+  type: jira
+  value: "atlassian-bitbucket-server-integration-plugin"

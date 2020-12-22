@@ -4,3 +4,6 @@ github: "jenkinsci/selenium-aes-plugin"
 paths:
 - "org/jvnet/hudson/plugins/selenium-aes"
 developers: []
+issues:
+  type: jira
+  value: "selenium-aes-plugin"

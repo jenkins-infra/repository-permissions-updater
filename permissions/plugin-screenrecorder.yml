@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/screenrecorder"
 developers:
 - "tbaum"
+issues:
+  type: jira
+  value: "screenrecorder-plugin"

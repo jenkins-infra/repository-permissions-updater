@@ -10,3 +10,6 @@ developers:
 - "chenkennt"
 - "arieshout"
 - "azure_devops"
+issues:
+  type: jira
+  value: "windows-azure-storage-plugin"

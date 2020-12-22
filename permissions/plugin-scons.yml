@@ -4,3 +4,6 @@ github: "jenkinsci/scons-plugin"
 paths:
 - "com/thalesgroup/jenkins-ci/plugins/scons"
 developers: []
+issues:
+  type: jira
+  value: "scons-plugin"

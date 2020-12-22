@@ -8,3 +8,6 @@ developers:
 security:
   contacts:
     email: "aws-security@amazon.com"
+issues:
+  type: github
+  value: "jenkinsci/aws-sam-plugin"

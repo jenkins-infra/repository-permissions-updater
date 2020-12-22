@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/wwpass-plugin"
 developers:
 - "spanyushkin"
+issues:
+  type: jira
+  value: "wwpass-plugin"

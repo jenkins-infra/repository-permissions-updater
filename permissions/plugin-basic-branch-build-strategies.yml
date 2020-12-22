@@ -7,3 +7,6 @@ developers:
 - "stephenconnolly"
 - "rsandell"
 - "bitwiseman"
+issues:
+  type: jira
+  value: "basic-branch-build-strategies-plugin"

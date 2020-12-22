@@ -6,4 +6,6 @@ paths:
 developers:
 - "sbtaylor15"
 - "philgibbs"
-
+issues:
+  type: jira
+  value: "deployhub-plugin"

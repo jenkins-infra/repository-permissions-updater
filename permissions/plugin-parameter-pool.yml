@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/parameter-pool"
 developers:
 - "damienbiggs"
+issues:
+  type: jira
+  value: "parameter-pool-plugin"

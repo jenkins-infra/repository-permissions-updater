@@ -5,3 +5,6 @@ paths:
 - "de/wellnerbou/jenkins/git-changelog"
 developers:
 - "tomasbjerre"
+issues:
+  type: github
+  value: "jenkinsci/git-changelog-plugin"

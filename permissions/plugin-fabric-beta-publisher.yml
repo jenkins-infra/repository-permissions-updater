@@ -5,3 +5,6 @@ paths:
 - "egor-n/fabric-beta-publisher"
 developers:
 - "egor"
+issues:
+  type: github
+  value: "jenkinsci/fabric-beta-publisher-plugin"

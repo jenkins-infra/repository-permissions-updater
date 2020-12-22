@@ -9,3 +9,6 @@ developers:
 - "jasonmadigan"
 - "maleck13"
 - "bschulte3"
+issues:
+  type: jira
+  value: "kryptowire-plugin"

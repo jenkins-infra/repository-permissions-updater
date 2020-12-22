@@ -5,3 +5,6 @@ paths:
 - "com/btc/ep/btc-embeddedplatform"
 developers:
 - "thabokrick"
+issues:
+  type: jira
+  value: "btc-embeddedplatform-plugin"

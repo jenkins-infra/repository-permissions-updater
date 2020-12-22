@@ -5,3 +5,6 @@ paths:
 - "com/cloudbees/jenkins/plugins/additional-identities-plugin"
 developers:
 - "jglick"
+issues:
+  type: jira
+  value: "additional-identities-plugin"

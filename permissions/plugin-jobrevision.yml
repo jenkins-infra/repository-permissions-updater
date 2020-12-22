@@ -4,3 +4,6 @@ github: "jenkinsci/jobrevision-plugin"
 paths:
 - "org/jenkins-ci/plugins/jobrevision"
 developers: []
+issues:
+  type: jira
+  value: "jobrevision-plugin"

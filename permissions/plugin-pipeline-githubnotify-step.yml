@@ -6,3 +6,6 @@ paths:
 developers:
 - "rarabaolaza"
 - "recena"
+issues:
+  type: jira
+  value: "pipeline-githubnotify-step-plugin"

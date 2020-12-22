@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/radargun-reporting"
 developers:
 - "abar"
+issues:
+  type: jira
+  value: "radargun-reporting-plugin"

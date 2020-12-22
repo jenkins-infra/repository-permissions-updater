@@ -4,3 +4,6 @@ github: "jenkinsci/URLSCM-plugin"
 paths:
 - "org/jvnet/hudson/plugins/URLSCM"
 developers: []
+issues:
+  type: jira
+  value: "urlscm-plugin"

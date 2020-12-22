@@ -5,3 +5,6 @@ paths:
 - "com/etas/jenkins/plugins/text-file-operations"
 developers:
 - "sankethpb"
+issues:
+  type: jira
+  value: "text-file-operations-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/rabbitmq-publisher"
 developers:
 - "legall_benoit"
+issues:
+  type: jira
+  value: "rabbitmq-publisher-plugin"

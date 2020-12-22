@@ -6,3 +6,6 @@ paths:
 developers:
 - "prospero238"
 - "r2datical"
+issues:
+  type: github
+  value: "jenkinsci/liquibase-runner-plugin"

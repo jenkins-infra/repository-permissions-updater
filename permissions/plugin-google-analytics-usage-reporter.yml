@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/google-analytics-usage-reporter"
 developers:
 - "astroilov"
+issues:
+  type: jira
+  value: "google-analytics-usage-reporter-plugin"

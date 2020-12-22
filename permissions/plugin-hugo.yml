@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/hugo"
 developers:
 - "surenpi"
+issues:
+  type: github
+  value: "jenkinsci/hugo-plugin"

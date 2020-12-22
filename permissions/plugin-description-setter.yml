@@ -7,3 +7,6 @@ paths:
 developers:
 - "marcomiller"
 - "michael1010"
+issues:
+  type: jira
+  value: "description-setter-plugin"

@@ -9,3 +9,6 @@ developers:
 - "justinharringa"
 - "jetersen"
 - "surenpi"
+issues:
+  type: jira
+  value: "gitlab-branch-source-plugin"

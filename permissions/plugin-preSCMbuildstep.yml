@@ -4,3 +4,6 @@ github: "jenkinsci/pre-scm-buildstep-plugin"
 paths:
 - "org/jenkins-ci/plugins/preSCMbuildstep"
 developers: []
+issues:
+  type: jira
+  value: "prescmbuildstep-plugin"

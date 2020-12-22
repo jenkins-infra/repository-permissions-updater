@@ -4,3 +4,6 @@ github: "jenkinsci/avatar-plugin"
 paths:
 - "net/hurstfrost/jenkins/avatar"
 developers: []
+issues:
+  type: jira
+  value: "avatar-plugin"

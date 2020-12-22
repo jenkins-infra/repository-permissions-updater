@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ant-in-workspace"
 developers:
 - "phreakadelle"
+issues:
+  type: jira
+  value: "ant-in-workspace-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/gatling-check"
 developers:
 - "shull"
+issues:
+  type: jira
+  value: "gatling-check-plugin"

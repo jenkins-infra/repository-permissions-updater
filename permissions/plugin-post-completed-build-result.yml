@@ -4,3 +4,6 @@ github: "jenkinsci/post-completed-build-result-plugin"
 paths:
 - "org/terracotta/jenkins/plugins/post-completed-build-result"
 developers: []
+issues:
+  type: jira
+  value: "post-completed-build-result-plugin"

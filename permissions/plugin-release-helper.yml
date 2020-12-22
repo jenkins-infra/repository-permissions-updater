@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/release-helper"
 developers:
 - "novatec"
+issues:
+  type: jira
+  value: "release-helper-plugin"

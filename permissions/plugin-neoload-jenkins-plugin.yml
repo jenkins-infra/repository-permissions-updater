@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/neoload-jenkins-plugin"
 developers:
 - "neotyspluginsupport"
+issues:
+  type: jira
+  value: "neoload-jenkins-plugin"

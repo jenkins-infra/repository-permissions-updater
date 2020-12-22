@@ -6,3 +6,6 @@ paths:
 developers:
 - "surya548"
 - "roemer"
+issues:
+  type: github
+  value: "jenkinsci/docker-swarm-plugin"

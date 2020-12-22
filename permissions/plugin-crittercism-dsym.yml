@@ -4,3 +4,6 @@ github: "jenkinsci/crittercism-dsym-plugin"
 paths:
 - "org/jenkins-ci/plugins/crittercism-dsym"
 developers: []
+issues:
+  type: jira
+  value: "crittercism-dsym-plugin"

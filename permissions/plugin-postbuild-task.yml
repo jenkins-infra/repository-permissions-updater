@@ -7,3 +7,6 @@ developers:
 - "madsnielsen"
 - "praqma"
 - "timja"
+issues:
+  type: jira
+  value: "postbuild-task-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/favorite-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/favorite-view"
 developers: []
+issues:
+  type: jira
+  value: "favorite-view-plugin"

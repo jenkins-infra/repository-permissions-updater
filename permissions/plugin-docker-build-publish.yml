@@ -7,3 +7,6 @@ developers:
 - "csanchez"
 - "michaelneale"
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "docker-build-publish-plugin"

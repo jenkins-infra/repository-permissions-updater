@@ -5,3 +5,6 @@ paths:
 - "nz/co/jammehcow/discord-notifier"
 developers:
 - "kocproz"
+issues:
+  type: github
+  value: "jenkinsci/discord-notifier-plugin"

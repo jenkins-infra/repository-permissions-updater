@@ -7,3 +7,6 @@ developers:
 - "stellargo"
 - "oleg_nenashev"
 - "ma3oxuct"
+issues:
+  type: jira
+  value: "redis-fingerprint-storage-plugin"

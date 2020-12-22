@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/publish-over-ftp"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "publish-over-ftp-plugin"

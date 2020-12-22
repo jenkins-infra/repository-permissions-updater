@@ -7,3 +7,6 @@ developers:
 - "kutzi"
 - "sircmpwn"
 - "jimklimov"
+issues:
+  type: jira
+  value: "ircbot-plugin"

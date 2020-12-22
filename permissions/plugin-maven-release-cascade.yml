@@ -4,3 +4,6 @@ github: "jenkinsci/maven-release-cascade-plugin"
 paths:
 - "com/barchart/jenkins/maven-release-cascade"
 developers: []
+issues:
+  type: jira
+  value: "maven-release-cascade-plugin"

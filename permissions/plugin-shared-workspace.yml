@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/shared-workspace"
 developers:
 - "vestnik"
+issues:
+  type: jira
+  value: "shared-workspace-plugin"

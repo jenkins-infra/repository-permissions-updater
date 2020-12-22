@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/piwikanalytics"
 developers:
 - "cfurmaniak"
+issues:
+  type: jira
+  value: "piwikanalytics-plugin"

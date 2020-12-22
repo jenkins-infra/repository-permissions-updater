@@ -6,3 +6,6 @@ paths:
 developers:
 - "rsandell"
 - "t_westling"
+issues:
+  type: jira
+  value: "kerberos-sso-plugin"

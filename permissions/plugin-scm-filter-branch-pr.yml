@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/scm-filter-branch-pr"
 developers:
 - "sag47"
+issues:
+  type: jira
+  value: "scm-filter-branch-pr-plugin"

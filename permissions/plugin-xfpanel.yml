@@ -6,3 +6,6 @@ paths:
 developers:
 - "tblue468"
 - "tomaszbech"
+issues:
+  type: jira
+  value: "xfpanel-plugin"

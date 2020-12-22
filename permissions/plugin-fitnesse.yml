@@ -8,3 +8,6 @@ developers:
 - "lessonz"
 - "CSLTech"
 - "jaruzafa"
+issues:
+  type: jira
+  value: "fitnesse-plugin"

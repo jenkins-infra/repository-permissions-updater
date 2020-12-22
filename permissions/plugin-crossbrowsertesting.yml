@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/crossbrowsertesting"
 developers:
 - "crossbrowsertesting"
+issues:
+  type: jira
+  value: "crossbrowsertesting-plugin"

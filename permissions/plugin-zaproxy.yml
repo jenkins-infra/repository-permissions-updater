@@ -6,3 +6,6 @@ paths:
 developers:
 - "johannol"
 - "ludovicroucoux"
+issues:
+  type: jira
+  value: "zaproxy-plugin"

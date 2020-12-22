@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/view-cloner"
 developers:
 - "agukov"
+issues:
+  type: jira
+  value: "view-cloner-plugin"

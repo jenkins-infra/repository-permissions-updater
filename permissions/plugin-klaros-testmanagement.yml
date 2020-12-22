@@ -5,3 +5,6 @@ paths:
 - "hudson/plugins/klaros/klaros-testmanagement"
 developers:
 - "stolp"
+issues:
+  type: jira
+  value: "klaros-testmanagement-plugin"

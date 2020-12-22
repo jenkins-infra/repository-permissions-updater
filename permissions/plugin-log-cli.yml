@@ -8,3 +8,6 @@ paths:
 developers:
 - "jglick"
 - "jglick_bot"
+issues:
+  type: jira
+  value: "log-cli-plugin"

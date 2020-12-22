@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/nuget"
 developers:
 - "greybird"
+issues:
+  type: jira
+  value: "nuget-plugin"

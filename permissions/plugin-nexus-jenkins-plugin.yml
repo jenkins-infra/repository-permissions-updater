@@ -5,3 +5,6 @@ paths:
 - "org/sonatype/nexus/ci/nexus-jenkins-plugin"
 developers:
 - "whyjustin"
+issues:
+  type: github
+  value: "jenkinsci/nexus-platform-plugin"

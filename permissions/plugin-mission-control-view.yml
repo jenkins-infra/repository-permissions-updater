@@ -5,3 +5,6 @@ paths:
 - "tech/andrey/jenkins/mission-control-view"
 developers:
 - "ashevtsov"
+issues:
+  type: jira
+  value: "mission-control-view-plugin"

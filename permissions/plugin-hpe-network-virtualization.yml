@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/hpe-network-virtualization"
 developers:
 - "itay_karo_hpe"
+issues:
+  type: jira
+  value: "hpe-network-virtualization-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/grails-plugin"
 paths:
 - "org/jvnet/hudson/plugins/grails"
 developers: []
+issues:
+  type: jira
+  value: "grails-plugin"

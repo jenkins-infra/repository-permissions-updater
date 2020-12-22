@@ -8,3 +8,6 @@ developers:
 - "emizell"
 - "daverted"
 - "ccaspanello"
+issues:
+  type: github
+  value: "jenkinsci/overops-query-plugin"

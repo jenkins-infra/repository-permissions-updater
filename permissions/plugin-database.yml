@@ -6,4 +6,6 @@ paths:
 developers:
 - "davidvanlaatum"
 - "timja"
-
+issues:
+  type: github
+  value: "jenkinsci/database-plugin"

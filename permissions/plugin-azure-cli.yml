@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/azure-cli"
 developers:
 - "torosent"
+issues:
+  type: github
+  value: "jenkinsci/azure-cli-plugin"

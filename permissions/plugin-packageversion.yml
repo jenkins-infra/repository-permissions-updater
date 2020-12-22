@@ -5,3 +5,6 @@ paths:
 - "org/lilicurroad/jenkins/packageversion"
 developers:
 - "johnlayton"
+issues:
+  type: jira
+  value: "packageversion-plugin"

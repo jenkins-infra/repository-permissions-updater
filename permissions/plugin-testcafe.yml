@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/testcafe"
 developers:
 - "wentwrong"
+issues:
+  type: jira
+  value: "testcafe-plugin"

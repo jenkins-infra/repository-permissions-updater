@@ -4,3 +4,6 @@ github: "jenkinsci/createjobadvanced-plugin"
 paths:
 - "org/jenkins-ci/plugins/createjobadvanced"
 developers: []
+issues:
+  type: jira
+  value: "createjobadvanced-plugin"

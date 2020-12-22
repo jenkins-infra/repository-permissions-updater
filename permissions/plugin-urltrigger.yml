@@ -6,3 +6,6 @@ paths:
 developers:
 - "gbois"
 - "stealthdj"
+issues:
+  type: github
+  value: "jenkinsci/urltrigger-plugin"

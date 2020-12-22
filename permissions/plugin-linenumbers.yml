@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/linenumbers"
 developers:
 - "vlatombe"
+issues:
+  type: jira
+  value: "linenumbers-plugin"

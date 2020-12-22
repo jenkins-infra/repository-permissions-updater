@@ -6,3 +6,6 @@ paths:
 developers:
 - "mparfianowicz"
 - "marekparf"
+issues:
+  type: jira
+  value: "clover-plugin"

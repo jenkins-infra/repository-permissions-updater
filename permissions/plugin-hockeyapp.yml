@@ -8,3 +8,6 @@ developers:
 - "dkochetkov"
 - "ohoeltke"
 - "mezpahlan"
+issues:
+  type: jira
+  value: "hockeyapp-plugin"

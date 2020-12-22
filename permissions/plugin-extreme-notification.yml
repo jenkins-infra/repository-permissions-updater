@@ -6,3 +6,6 @@ paths:
 developers:
 - "bkmeneguello"
 - "danielburgmann"
+issues:
+  type: jira
+  value: "extreme-notification-plugin"

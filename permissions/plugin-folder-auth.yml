@@ -7,3 +7,6 @@ developers:
 - "abhyudaya"
 - "oleg_nenashev"
 - "runzexia"
+issues:
+  type: jira
+  value: "folder-auth-plugin"

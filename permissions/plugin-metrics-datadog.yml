@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/metrics-datadog"
 developers:
 - "mpapo"
+issues:
+  type: jira
+  value: "metrics-datadog-plugin"

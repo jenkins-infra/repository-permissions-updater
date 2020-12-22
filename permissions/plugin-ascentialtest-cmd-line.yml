@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/ascentialtest-cmd-line"
 developers:
 - "zeenyxsupport"
+issues:
+  type: jira
+  value: "ascentialtest-cmd-line-plugin"

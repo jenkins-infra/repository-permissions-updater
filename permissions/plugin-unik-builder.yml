@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/unik-builder"
 developers:
 - "mathiasmah"
+issues:
+  type: jira
+  value: "unik-builder-plugin"

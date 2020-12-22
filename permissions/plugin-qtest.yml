@@ -6,3 +6,6 @@ paths:
 developers:
 - "gunivan"
 - "qasymphony"
+issues:
+  type: jira
+  value: "qtest-plugin"

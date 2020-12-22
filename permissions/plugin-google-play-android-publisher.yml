@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/google-play-android-publisher"
 developers:
 - "orrc"
+issues:
+  type: jira
+  value: "google-play-android-publisher-plugin"

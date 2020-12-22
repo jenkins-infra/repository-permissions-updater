@@ -6,3 +6,6 @@ paths:
 - "org/jenkinsci/plugins/ifttt-build-notifier"
 developers:
 - "upgundecha"
+issues:
+  type: jira
+  value: "ifttt-build-notifier-plugin"

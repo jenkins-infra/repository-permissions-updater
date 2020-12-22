@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/sematext"
 developers:
 - "wawanawna"
+issues:
+  type: jira
+  value: "sematext-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "mbischoff"
 - "surenpi"
+issues:
+  type: github
+  value: "jenkinsci/oic-auth-plugin"

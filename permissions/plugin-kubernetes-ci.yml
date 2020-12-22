@@ -5,3 +5,6 @@ paths:
 - "com/elasticbox/jenkins-ci/plugins/kubernetes-ci"
 developers:
 - "gsanchezu"
+issues:
+  type: jira
+  value: "kubernetes-ci-plugin"

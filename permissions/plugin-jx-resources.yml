@@ -8,3 +8,6 @@ developers:
 - "jrawlings"
 - "jenkinsxbot"
 - "jglick"
+issues:
+  type: jira
+  value: "jx-resources-plugin"

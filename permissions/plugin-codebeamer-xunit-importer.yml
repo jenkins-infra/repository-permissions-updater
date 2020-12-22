@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/codebeamer-xunit-importer"
 developers:
 - "intland_support"
+issues:
+  type: jira
+  value: "codebeamer-xunit-importer-plugin"

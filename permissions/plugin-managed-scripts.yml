@@ -6,3 +6,6 @@ paths:
 developers:
 - "imod"
 - "gbigenios"
+issues:
+  type: jira
+  value: "managed-scripts-plugin"

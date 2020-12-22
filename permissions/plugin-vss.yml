@@ -4,3 +4,6 @@ github: "jenkinsci/vss-plugin"
 paths:
 - "org/jenkins-ci/plugins/vss"
 developers: []
+issues:
+  type: jira
+  value: "vss-plugin"

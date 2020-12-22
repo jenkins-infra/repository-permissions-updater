@@ -6,3 +6,6 @@ paths:
 developers:
 - "basil"
 - "olivergondza"
+issues:
+  type: jira
+  value: "resource-disposer-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jira-finder"
 developers:
 - "jholusa"
+issues:
+  type: jira
+  value: "jira-finder-plugin"

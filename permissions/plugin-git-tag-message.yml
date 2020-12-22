@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/git-tag-message"
 developers:
 - "orrc"
+issues:
+  type: jira
+  value: "git-tag-message-plugin"

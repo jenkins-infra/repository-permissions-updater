@@ -6,3 +6,6 @@ paths:
 developers:
 - "a_goulti"
 - "bwkimmel"
+issues:
+  type: github
+  value: "jenkinsci/google-cloudbuild-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/block-same-builds"
 developers:
 - "cashlalala"
+issues:
+  type: jira
+  value: "block-same-builds-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/analysis-collector"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "analysis-collector-plugin"

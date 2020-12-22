@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/labmanager"
 - "org/jvnet/hudson/plugins/labmanager"
 developers: []
+issues:
+  type: jira
+  value: "labmanager-plugin"

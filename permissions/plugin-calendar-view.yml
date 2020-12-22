@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/calendar-view"
 developers:
 - "svenschoenung"
+issues:
+  type: jira
+  value: "calendar-view-plugin"

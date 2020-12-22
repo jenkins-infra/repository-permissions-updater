@@ -6,3 +6,6 @@ paths:
 developers:
 - "aheritier"
 - "pjdarton"
+issues:
+  type: jira
+  value: "hudson-wsclean-plugin"

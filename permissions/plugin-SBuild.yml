@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/SBuild"
 developers:
 - "tobiasroeser"
+issues:
+  type: jira
+  value: "sbuild-plugin"

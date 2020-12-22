@@ -5,3 +5,6 @@ paths:
 - "com/catalogic/ecxjenkins/catalogic-ecx"
 developers:
 - "neethapai"
+issues:
+  type: jira
+  value: "catalogic-ecx-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/kpp-management-plugin"
 paths:
 - "sic/software/kpp-management-plugin"
 developers: []
+issues:
+  type: jira
+  value: "kpp-management-plugin"

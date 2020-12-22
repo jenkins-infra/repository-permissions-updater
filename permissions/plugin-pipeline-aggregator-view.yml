@@ -5,3 +5,6 @@ paths:
 - "com/paul8620/jenkins/plugins/pipeline-aggregator-view"
 developers:
 - "paul8620"
+issues:
+  type: jira
+  value: "pipeline-aggregator-view-plugin"

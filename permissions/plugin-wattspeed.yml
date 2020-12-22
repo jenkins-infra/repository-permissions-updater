@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/wattspeed"
 developers:
 - "wattspeed"
+issues:
+  type: jira
+  value: "wattspeed-plugin"

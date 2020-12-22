@@ -4,3 +4,6 @@ github: "jenkinsci/flashlog-plugin"
 paths:
 - "org/jvnet/hudson/plugins/flashlog-plugin"
 developers: []
+issues:
+  type: jira
+  value: "flashlog-plugin"

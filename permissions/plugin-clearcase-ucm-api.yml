@@ -5,3 +5,6 @@ paths:
 - "net/praqma/clearcase-ucm-api"
 developers:
 - "praqma"
+issues:
+  type: jira
+  value: "clearcase-ucm-api-plugin"

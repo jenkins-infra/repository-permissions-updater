@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/h2-api"
 developers:
 - "cleclerc"
+issues:
+  type: jira
+  value: "h2-api-plugin"

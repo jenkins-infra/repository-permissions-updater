@@ -4,3 +4,6 @@ github: "jenkinsci/build-keeper-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-keeper-plugin"
 developers: []
+issues:
+  type: jira
+  value: "build-keeper-plugin"

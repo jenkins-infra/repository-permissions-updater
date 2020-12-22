@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/scoverage"
 developers:
 - "shanbin"
+issues:
+  type: jira
+  value: "scoverage-plugin"

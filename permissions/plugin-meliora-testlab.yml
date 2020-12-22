@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/meliora-testlab"
 developers:
 - "meliora"
+issues:
+  type: jira
+  value: "meliora-testlab-plugin"

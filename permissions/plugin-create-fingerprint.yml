@@ -4,3 +4,6 @@ github: "jenkinsci/create-fingerprint-plugin"
 paths:
 - "org/jenkins-ci/plugins/create-fingerprint"
 developers: []
+issues:
+  type: jira
+  value: "create-fingerprint-plugin"

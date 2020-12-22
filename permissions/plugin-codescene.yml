@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/codescene"
 developers:
 - "empear_jenkins"
+issues:
+  type: jira
+  value: "codescene-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "kohsuke"
 - "ydubreuil"
+issues:
+  type: jira
+  value: "cloudbees-registration-plugin"

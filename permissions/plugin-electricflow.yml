@@ -6,3 +6,6 @@ paths:
 developers:
 - "efpluginsdev"
 - "flowpluginteam"
+issues:
+  type: jira
+  value: "electricflow-plugin"

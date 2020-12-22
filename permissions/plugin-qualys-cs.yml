@@ -5,3 +5,6 @@ paths:
 - "com/qualys/plugins/qualys-cs"
 developers:
 - "qualys"
+issues:
+  type: jira
+  value: "qualys-cs-plugin"

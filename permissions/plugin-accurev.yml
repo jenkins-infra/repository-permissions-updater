@@ -6,3 +6,6 @@ paths:
 developers:
 - "jetersen"
 - "poojavishal"
+issues:
+  type: github
+  value: "jenkinsci/accurev-plugin"

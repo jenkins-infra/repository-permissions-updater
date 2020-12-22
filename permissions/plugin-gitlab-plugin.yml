@@ -7,3 +7,6 @@ paths:
 developers:
 - "owenmehegan"
 - "jequals5"
+issues:
+  type: github
+  value: "jenkinsci/gitlab-plugin"

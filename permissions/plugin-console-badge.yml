@@ -5,3 +5,6 @@ paths:
 - "me/noroutine/jenkins/plugin/console-badge"
 developers:
 - "oleksii"
+issues:
+  type: jira
+  value: "console-badge-plugin"

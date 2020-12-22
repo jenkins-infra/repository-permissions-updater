@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/kafkalogs"
 developers:
 - "trevorlinton"
+issues:
+  type: jira
+  value: "kafkalogs-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/tuxdroid-plugin"
 paths:
 - "org/jvnet/hudson/plugins/tuxdroid"
 developers: []
+issues:
+  type: jira
+  value: "tuxdroid-plugin"

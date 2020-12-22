@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/popper-api"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "popper-api-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/build-environment"
 developers:
 - "stefanbrausch"
+issues:
+  type: jira
+  value: "build-environment-plugin"

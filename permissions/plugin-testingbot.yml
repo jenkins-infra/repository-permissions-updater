@@ -5,3 +5,6 @@ paths:
 - "testingbot/testingbot"
 developers:
 - "testingbot"
+issues:
+  type: jira
+  value: "testingbot-plugin"

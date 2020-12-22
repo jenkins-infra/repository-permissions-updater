@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/minio-storage"
 developers:
 - "minio"
+issues:
+  type: jira
+  value: "minio-storage-plugin"

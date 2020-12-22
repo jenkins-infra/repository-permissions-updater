@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/nowsecure-auto-security-test"
 developers:
 - "nowsecure"
+issues:
+  type: jira
+  value: "nowsecure-auto-security-test-plugin"

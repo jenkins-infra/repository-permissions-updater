@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/benchmark"
 developers:
 - "damercie"
+issues:
+  type: github
+  value: "jenkinsci/benchmark-plugin"

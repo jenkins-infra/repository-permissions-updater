@@ -4,3 +4,6 @@ github: "jenkinsci/covcomplplot-plugin"
 paths:
 - "org/jenkins-ci/plugins/covcomplplot"
 developers: []
+issues:
+  type: jira
+  value: "covcomplplot-plugin"

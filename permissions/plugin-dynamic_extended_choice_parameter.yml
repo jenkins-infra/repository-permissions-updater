@@ -5,3 +5,6 @@ paths:
 - "com/moded/extendedchoiceparameter/dynamic_extended_choice_parameter"
 developers:
 - "rgssingh"
+issues:
+  type: jira
+  value: "dynamic_extended_choice_parameter-plugin"

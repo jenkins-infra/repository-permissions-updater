@@ -6,3 +6,6 @@ paths:
 developers:
 - "bpatterson"
 - "pierrebtz"
+issues:
+  type: jira
+  value: "shelve-project-plugin"

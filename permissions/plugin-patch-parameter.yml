@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/patch-parameter"
 developers:
 - "kohsuke"
+issues:
+  type: jira
+  value: "patch-parameter-plugin"

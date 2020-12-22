@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/xframium"
 developers:
 - "xframium"
+issues:
+  type: jira
+  value: "xframium-plugin"

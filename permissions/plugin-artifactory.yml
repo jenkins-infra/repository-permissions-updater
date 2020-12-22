@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/artifactory"
 developers:
 - "yossis"
+issues:
+  type: jira
+  value: "artifactory-plugin"

@@ -6,7 +6,6 @@ paths:
 developers:
 - "weihao"
 - "qtest"
-
-
-
-
+issues:
+  type: jira
+  value: "fireline-plugin"

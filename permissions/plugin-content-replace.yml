@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/content-replace"
 developers:
 - "moxun"
+issues:
+  type: jira
+  value: "content-replace-plugin"

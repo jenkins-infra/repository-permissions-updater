@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/disable-github-multibranch-status"
 developers:
 - "bksaville"
+issues:
+  type: jira
+  value: "disable-github-multibranch-status-plugin"

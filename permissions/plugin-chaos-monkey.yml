@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/chaos-monkey"
 developers:
 - "pierrebtz"
+issues:
+  type: jira
+  value: "chaos-monkey-plugin"

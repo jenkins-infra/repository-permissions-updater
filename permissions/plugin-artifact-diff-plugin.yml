@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/artifact-diff-plugin"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "artifact-diff-plugin"

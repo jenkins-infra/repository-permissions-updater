@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/kotlin/kotlin-v1-stdlib-jdk8"
 developers:
 - "jetersen"
+issues:
+  type: jira
+  value: "kotlin-v1-stdlib-jdk8-plugin"

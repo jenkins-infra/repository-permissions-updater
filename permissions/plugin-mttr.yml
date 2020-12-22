@@ -4,3 +4,6 @@ github: "jenkinsci/mttr-plugin"
 paths:
 - "org/jenkins-ci/plugins/mttr"
 developers: []
+issues:
+  type: jira
+  value: "mttr-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/dbforge-devops-automation-for-sqlserver"
 developers:
 - "devart"
+issues:
+  type: jira
+  value: "dbforge-devops-automation-for-sqlserver-plugin"

@@ -7,3 +7,6 @@ developers:
 - "xiongkezhi"
 - "timja"
 - "drulli"
+issues:
+  type: github
+  value: "jenkinsci/github-checks-plugin"

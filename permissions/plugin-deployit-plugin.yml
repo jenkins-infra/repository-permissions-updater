@@ -13,3 +13,6 @@ developers:
 - "wlee1668"
 - "aedsonfellipe"
 - "ashish_thakur"
+issues:
+  type: jira
+  value: "deployit-plugin"

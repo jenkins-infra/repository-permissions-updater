@@ -4,3 +4,6 @@ github: "jenkinsci/smart-jenkins-plugin"
 paths:
 - "org/jenkins-ci/plugins/smart-jenkins"
 developers: []
+issues:
+  type: jira
+  value: "smart-jenkins-plugin"

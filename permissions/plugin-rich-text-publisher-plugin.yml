@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/rich-text-publisher-plugin"
 developers:
 - "masterhard"
+issues:
+  type: jira
+  value: "rich-text-publisher-plugin"

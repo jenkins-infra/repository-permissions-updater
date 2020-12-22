@@ -4,3 +4,6 @@ github: "jenkinsci/gem-publisher-plugin"
 paths:
 - "net/arangamani/jenkins/gem-publisher"
 developers: []
+issues:
+  type: jira
+  value: "gem-publisher-plugin"

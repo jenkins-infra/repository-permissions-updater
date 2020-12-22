@@ -8,3 +8,6 @@ developers:
 - "geoffbullen"
 - "integer"
 - "recena"
+issues:
+  type: jira
+  value: "build-pipeline-plugin"

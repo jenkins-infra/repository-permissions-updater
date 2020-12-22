@@ -6,3 +6,6 @@ paths:
 developers:
 - "EWachnowezki"
 - "cedricziel"
+issues:
+  type: jira
+  value: "instana-plugin"

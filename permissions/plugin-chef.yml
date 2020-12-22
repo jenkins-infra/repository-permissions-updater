@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/ruby-plugins/chef"
 developers:
 - "melezhik"
+issues:
+  type: jira
+  value: "chef-plugin"

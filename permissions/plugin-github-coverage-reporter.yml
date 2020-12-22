@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/github-coverage-reporter"
 developers:
 - "jnewc"
+issues:
+  type: jira
+  value: "github-coverage-reporter-plugin"

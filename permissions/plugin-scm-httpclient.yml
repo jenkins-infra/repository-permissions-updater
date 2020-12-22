@@ -5,3 +5,6 @@ paths:
 - "com/meowlomo/jenkins/scm-httpclient"
 developers:
 - "richchen"
+issues:
+  type: jira
+  value: "scm-httpclient-plugin"

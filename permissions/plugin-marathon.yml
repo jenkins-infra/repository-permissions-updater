@@ -6,3 +6,6 @@ paths:
 developers:
 - "titosand"
 - "colinmsphere"
+issues:
+  type: jira
+  value: "marathon-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "franciscoord"
 - "kargath"
+issues:
+  type: jira
+  value: "results-cache-plugin"

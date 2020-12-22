@@ -4,3 +4,6 @@ github: "jenkinsci/distTest-plugin"
 paths:
 - "org/jvnet/hudson/plugins/distTest"
 developers: []
+issues:
+  type: jira
+  value: "disttest-plugin"

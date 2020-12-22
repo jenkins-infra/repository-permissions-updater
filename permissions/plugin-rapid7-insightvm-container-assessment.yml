@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/rapid7-insightvm-container-assessment"
 developers:
 - "rapid7"
+issues:
+  type: jira
+  value: "rapid7-insightvm-container-assessment-plugin"

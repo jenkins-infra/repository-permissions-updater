@@ -6,3 +6,6 @@ paths:
 developers:
 - "erhangullu"
 - "erdoganonur"
+issues:
+  type: jira
+  value: "testinium-plugin"

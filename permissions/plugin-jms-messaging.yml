@@ -8,3 +8,6 @@ developers:
 - "ggallen"
 - "olivergondza"
 - "pajasoft"
+issues:
+  type: github
+  value: "jenkinsci/jms-messaging-plugin"

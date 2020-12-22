@@ -6,3 +6,6 @@ paths:
 developers:
 - "ikedam"
 - "oleg_nenashev"
+issues:
+  type: github
+  value: "jenkinsci/build-timeout-plugin"

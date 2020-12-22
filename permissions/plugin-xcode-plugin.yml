@@ -7,3 +7,6 @@ developers:
 - "lacostej"
 - "aheritier"
 - "kazuhidet"
+issues:
+  type: jira
+  value: "xcode-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/github/segator/jenkins/scaleway-cloud"
 developers:
 - "segator"
+issues:
+  type: jira
+  value: "scaleway-cloud-plugin"

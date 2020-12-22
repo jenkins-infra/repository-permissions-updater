@@ -6,3 +6,6 @@ paths:
 developers:
 - "frdiaz"
 - "elastestci"
+issues:
+  type: jira
+  value: "elastest-plugin"

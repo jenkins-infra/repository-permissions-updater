@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/lighthouse-report"
 developers:
 - "halkeye"
+issues:
+  type: jira
+  value: "lighthouse-report-plugin"

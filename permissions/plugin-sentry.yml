@@ -5,3 +5,6 @@ paths:
 - 'io/jenkins/plugins/sentry'
 developers:
 - 'rtyler'
+issues:
+  type: jira
+  value: "sentry-plugin"

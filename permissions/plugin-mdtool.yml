@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/mdtool"
 developers:
 - "fen_x"
+issues:
+  type: jira
+  value: "mdtool-plugin"

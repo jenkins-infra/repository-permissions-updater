@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cron-shelve"
 developers:
 - "itow0001"
+issues:
+  type: jira
+  value: "cron-shelve-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/yandex-metrica"
 developers:
 - "vbauer"
+issues:
+  type: jira
+  value: "yandex-metrica-plugin"

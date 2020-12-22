@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/database-mysql"
 developers:
 - "davidvanlaatum"
+issues:
+  type: jira
+  value: "database-mysql-plugin"

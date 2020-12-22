@@ -4,3 +4,6 @@ github: "jenkinsci/console-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/console-column-plugin"
 developers: []
+issues:
+  type: jira
+  value: "console-column-plugin"

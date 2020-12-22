@@ -4,3 +4,6 @@ github: "jenkinsci/leiningen-plugin"
 paths:
 - "org/jenkins-ci/plugins/leiningen-plugin"
 developers: []
+issues:
+  type: github
+  value: "jenkinsci/leiningen-plugin"

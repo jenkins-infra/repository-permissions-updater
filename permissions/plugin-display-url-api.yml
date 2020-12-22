@@ -16,3 +16,6 @@ developers:
 - "rsandell"
 - "bitwiseman"
 - "kshultz"
+issues:
+  type: jira
+  value: "display-url-api-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/cvs-tag-plugin"
 paths:
 - "org/jenkins-ci/plugins/cvs-tag"
 developers: []
+issues:
+  type: jira
+  value: "cvs-tag-plugin"

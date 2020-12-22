@@ -7,3 +7,6 @@ developers:
 - "nrayapati"
 - "ghenkes"
 - "wuchenwang"
+issues:
+  type: jira
+  value: "ssh-steps-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/mantis"
 developers:
 - "sogabe"
+issues:
+  type: jira
+  value: "mantis-plugin"

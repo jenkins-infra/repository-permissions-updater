@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/git-chooser-alternative"
 developers:
 - "kbriggs"
+issues:
+  type: jira
+  value: "git-chooser-alternative-plugin"

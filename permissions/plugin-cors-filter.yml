@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cors-filter"
 developers:
 - "uday"
+issues:
+  type: jira
+  value: "cors-filter-plugin"

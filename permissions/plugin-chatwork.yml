@@ -6,3 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/chatwork"
 developers:
 - "sue445"
+issues:
+  type: jira
+  value: "chatwork-plugin"

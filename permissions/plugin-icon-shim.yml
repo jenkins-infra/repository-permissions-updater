@@ -7,4 +7,6 @@ developers:
 - "jglick"
 - "tfennelly"
 - "andresrc"
-
+issues:
+  type: github
+  value: "jenkinsci/icon-shim-plugin"

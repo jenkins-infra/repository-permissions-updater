@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/database-sqlite"
 developers:
 - "jholusa"
+issues:
+  type: jira
+  value: "database-sqlite-plugin"

@@ -6,4 +6,6 @@ paths:
 developers:
 - "michaeljqzq"
 - "azure_iot_tooling"
-
+issues:
+  type: jira
+  value: "azure-iot-edge-plugin"

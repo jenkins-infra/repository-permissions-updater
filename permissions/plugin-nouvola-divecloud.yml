@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/nouvola-divecloud"
 developers:
 - "smacarthur"
+issues:
+  type: jira
+  value: "nouvola-divecloud-plugin"

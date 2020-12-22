@@ -6,3 +6,6 @@ paths:
 developers:
 - "giltsl"
 - "jenkins3pillar"
+issues:
+  type: jira
+  value: "testfairy-plugin"

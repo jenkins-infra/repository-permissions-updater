@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/redmine"
 developers:
 - "ljader"
+issues:
+  type: jira
+  value: "redmine-plugin"

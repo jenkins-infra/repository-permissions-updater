@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/ccm"
 developers:
 - "kinow"
+issues:
+  type: jira
+  value: "ccm-plugin"

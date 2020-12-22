@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/buckminster"
 - "org/jvnet/hudson/plugins/buckminster"
 developers: []
+issues:
+  type: jira
+  value: "buckminster-plugin"

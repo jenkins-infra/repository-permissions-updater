@@ -4,3 +4,6 @@ github: "jenkinsci/custom-job-icon-plugin"
 paths:
 - "org/jenkins-ci/plugins/custom-job-icon"
 developers: []
+issues:
+  type: jira
+  value: "custom-job-icon-plugin"

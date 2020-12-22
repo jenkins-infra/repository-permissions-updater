@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/42crunch-security-audit"
 developers:
 - "42crunch"
+issues:
+  type: jira
+  value: "42crunch-security-audit-plugin"

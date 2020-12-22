@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/zos-connector"
 developers:
 - "candiduslynx"
+issues:
+  type: jira
+  value: "zos-connector-plugin"

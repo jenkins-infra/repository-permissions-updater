@@ -7,3 +7,6 @@ developers:
 - "hagzag"
 - "yorammi"
 - "cohencil"
+issues:
+  type: github
+  value: "jenkinsci/tikal-multijob-plugin"

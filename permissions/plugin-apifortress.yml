@@ -5,3 +5,6 @@ paths:
 - "com/apifortress/jenkins/apifortress"
 developers:
 - "theirish81"
+issues:
+  type: jira
+  value: "apifortress-plugin"

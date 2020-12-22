@@ -6,4 +6,6 @@ paths:
 developers:
 - "ks_nenasheva"
 - "oleg_nenashev"
-
+issues:
+  type: jira
+  value: "security-inspector-plugin"

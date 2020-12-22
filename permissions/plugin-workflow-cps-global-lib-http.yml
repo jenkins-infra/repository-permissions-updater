@@ -5,3 +5,6 @@ paths:
 - "com/amadeus/jenkins/plugins/workflow-cps-global-lib-http"
 developers:
 - "fabricepipart1a"
+issues:
+  type: jira
+  value: "workflow-cps-global-lib-http-plugin"

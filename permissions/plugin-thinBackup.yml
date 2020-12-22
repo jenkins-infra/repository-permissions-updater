@@ -6,3 +6,6 @@ paths:
 developers: 
 - "tofuatjava"
 - "jeffpearce"
+issues:
+  type: jira
+  value: "thinbackup-plugin"

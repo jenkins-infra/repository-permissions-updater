@@ -4,3 +4,6 @@ github: "jenkinsci/skype-im-plugin"
 paths:
 - "org/jenkins-ci/plugins/skype-notifier"
 developers: []
+issues:
+  type: jira
+  value: "skype-notifier-plugin"

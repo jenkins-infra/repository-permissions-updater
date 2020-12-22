@@ -4,3 +4,6 @@ github: "jenkinsci/thucydides-plugin"
 paths:
 - "net/thucydides/jenkins/thucydides"
 developers: []
+issues:
+  type: jira
+  value: "thucydides-plugin"

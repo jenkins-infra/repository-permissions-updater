@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/ruby-plugins/pyenv"
 developers:
 - "yyuu"
+issues:
+  type: jira
+  value: "pyenv-plugin"

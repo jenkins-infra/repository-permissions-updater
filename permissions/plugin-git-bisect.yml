@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/git-bisect"
 developers:
 - "dorav"
+issues:
+  type: github
+  value: "jenkinsci/git-bisect-plugin"

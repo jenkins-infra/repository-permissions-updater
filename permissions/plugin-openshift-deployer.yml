@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/openshift-deployer"
 developers:
 - "siamaksade"
+issues:
+  type: jira
+  value: "openshift-deployer-plugin"

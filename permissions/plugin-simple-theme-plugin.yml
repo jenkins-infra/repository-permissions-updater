@@ -6,3 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/simple-theme-plugin"
 developers:
 - "tgr"
+issues:
+  type: jira
+  value: "simple-theme-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/rabbitmq-build-trigger"
 developers:
 - "rin_ne"
+issues:
+  type: jira
+  value: "rabbitmq-build-trigger-plugin"

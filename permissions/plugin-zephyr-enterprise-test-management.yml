@@ -8,3 +8,6 @@ developers:
 - "mohanzephyr"
 - "pv_smartbear"
 - "t25garg"
+issues:
+  type: jira
+  value: "zephyr-enterprise-test-management-plugin"

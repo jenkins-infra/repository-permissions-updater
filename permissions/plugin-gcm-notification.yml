@@ -4,3 +4,6 @@ github: "jenkinsci/gcm-notification-plugin"
 paths:
 - "org/jenkins-ci/plugins/gcm-notification"
 developers: []
+issues:
+  type: jira
+  value: "gcm-notification-plugin"

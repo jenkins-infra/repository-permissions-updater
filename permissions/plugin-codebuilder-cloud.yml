@@ -5,3 +5,6 @@ paths:
 - "dev/lsegal/jenkins/codebuilder-cloud"
 developers:
 - "lsegal"
+issues:
+  type: jira
+  value: "codebuilder-cloud-plugin"

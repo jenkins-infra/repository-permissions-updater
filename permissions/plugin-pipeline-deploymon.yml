@@ -5,3 +5,6 @@ paths:
 - "de/taimos/pipeline-deploymon"
 developers:
 - "hoegertn"
+issues:
+  type: jira
+  value: "pipeline-deploymon-plugin"

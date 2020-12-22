@@ -6,3 +6,6 @@ paths:
 developers:
 - "bubenkoff"
 - "maikelwever"
+issues:
+  type: github
+  value: "jenkinsci/gatekeeper-plugin"

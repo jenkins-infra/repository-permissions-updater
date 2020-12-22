@@ -4,3 +4,6 @@ github: "jenkinsci/slave-prerequisites-plugin"
 paths:
 - "org/jenkins-ci/plugins/slave-prerequisites"
 developers: []
+issues:
+  type: jira
+  value: "slave-prerequisites-plugin"

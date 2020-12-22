@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ws-ws-replacement"
 developers:
 - "leewinder"
+issues:
+  type: jira
+  value: "ws-ws-replacement-plugin"

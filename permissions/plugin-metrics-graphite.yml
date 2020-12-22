@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/metrics-graphite"
 developers:
 - "stephenconnolly"
+issues:
+  type: jira
+  value: "metrics-graphite-plugin"

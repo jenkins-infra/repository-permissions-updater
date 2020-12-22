@@ -5,3 +5,6 @@ paths:
 - "com/boxuk/jenkins/jslint"
 - "org/jenkins-ci/plugins/jslint"
 developers: []
+issues:
+  type: jira
+  value: "jslint-plugin"

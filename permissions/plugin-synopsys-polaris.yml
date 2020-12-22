@@ -8,3 +8,6 @@ developers:
 - "jrichard"
 - "akamen"
 - "bdsoss"
+issues:
+  type: jira
+  value: "synopsys-polaris-plugin"

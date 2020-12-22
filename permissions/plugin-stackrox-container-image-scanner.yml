@@ -4,3 +4,6 @@ paths:
 - "org/jenkins-ci/plugins/stackrox-container-image-scanner"
 developers:
 - "stackrox"
+issues:
+  type: jira
+  value: "stackrox-container-image-scanner-plugin"

@@ -13,4 +13,6 @@ security:
   contacts:
     jira: "akram"
     email: prodsec-openshift@redhat.com
-
+issues:
+  type: jira
+  value: "openshift-pipeline-plugin"

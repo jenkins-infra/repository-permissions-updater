@@ -6,3 +6,6 @@ paths:
 developers:
 - "fbelzunc"
 - "kohsuke"
+issues:
+  type: jira
+  value: "puppet-plugin"

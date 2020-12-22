@@ -10,3 +10,6 @@ developers:
 security:
   contacts:
     jira: "pipeline_security_members"
+issues:
+  type: jira
+  value: "handy-uri-templates-2-api-plugin"

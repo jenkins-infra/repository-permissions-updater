@@ -6,3 +6,6 @@ paths:
 - "org/jenkins-ci/ruby-plugins/vagrant"
 developers:
 - "shimitanaka"
+issues:
+  type: jira
+  value: "vagrant-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/switchfly/gitlab-merge-request-jenkins"
 developers:
 - "timols"
+issues:
+  type: jira
+  value: "gitlab-merge-request-jenkins-plugin"

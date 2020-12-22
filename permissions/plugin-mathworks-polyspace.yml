@@ -7,4 +7,6 @@ developers:
 - "pascal_brand38"
 - "cpreve"
 - "sbobin"
-
+issues:
+  type: jira
+  value: "mathworks-polyspace-plugin"

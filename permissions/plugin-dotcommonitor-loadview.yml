@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/dotcommonitor-loadview"
 developers:
 - "dotcommonitor"
+issues:
+  type: jira
+  value: "dotcommonitor-loadview-plugin"

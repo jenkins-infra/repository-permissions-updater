@@ -7,3 +7,6 @@ developers:
 - "andresrc"
 - "jglick"
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "windows-slaves-plugin"

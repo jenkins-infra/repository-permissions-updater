@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/metrics-diskusage"
 developers:
 - "stephenconnolly"
+issues:
+  type: jira
+  value: "metrics-diskusage-plugin"

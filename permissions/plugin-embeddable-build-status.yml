@@ -8,3 +8,6 @@ developers:
 - "jglick"
 - "mgedmin"
 - "thomas_dee"
+issues:
+  type: github
+  value: "jenkinsci/embeddable-build-status-plugin"

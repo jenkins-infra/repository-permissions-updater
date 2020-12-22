@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/build-flow-extensions-plugin"
 developers:
 - "teilo"
+issues:
+  type: jira
+  value: "build-flow-extensions"

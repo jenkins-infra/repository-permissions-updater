@@ -4,3 +4,6 @@ github: "jenkinsci/rad-builder-plugin"
 paths:
 - "org/jvnet/hudson/plugins/rad-builder"
 developers: []
+issues:
+  type: jira
+  value: "rad-builder-plugin"

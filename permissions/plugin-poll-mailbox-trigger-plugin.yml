@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/poll-mailbox-trigger-plugin"
 developers:
 - "nickg"
+issues:
+  type: github
+  value: "jenkinsci/poll-mailbox-trigger-plugin"

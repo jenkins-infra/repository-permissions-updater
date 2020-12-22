@@ -7,3 +7,6 @@ developers:
 - "integer"
 - "mreinhardt"
 - "pingunaut"
+issues:
+  type: jira
+  value: "crowd2-plugin"

@@ -9,3 +9,6 @@ developers:
 - "aleksisimell"
 - "tattoo"
 - "hifi"
+issues:
+  type: jira
+  value: "robot-plugin"

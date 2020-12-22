@@ -5,3 +5,6 @@ paths:
 - "de/esailors/jenkins/test-stability"
 developers:
 - "seanf"
+issues:
+  type: jira
+  value: "test-stability-plugin"

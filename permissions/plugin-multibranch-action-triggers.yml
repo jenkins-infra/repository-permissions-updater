@@ -8,3 +8,6 @@ developers:
 security:
   contacts:
     jira: "aytuncbeken"
+issues:
+  type: github
+  value: "jenkinsci/multibranch-action-triggers-plugin"

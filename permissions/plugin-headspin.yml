@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/headspin"
 developers:
 - "headspin"
+issues:
+  type: jira
+  value: "headspin-plugin"

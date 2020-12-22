@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/list-git-branches-parameter"
 developers:
 - "huangsuoyuan"
+issues:
+  type: jira
+  value: "list-git-branches-parameter-plugin"

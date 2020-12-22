@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/lambdatest-automation"
 developers:
 - "lambdatest"
+issues:
+  type: jira
+  value: "lambdatest-automation-plugin"

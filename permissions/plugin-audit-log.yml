@@ -8,3 +8,6 @@ developers:
 - "jthompson"
 - "lathasekar"
 - "mide"
+issues:
+  type: github
+  value: "jenkinsci/audit-log-plugin"

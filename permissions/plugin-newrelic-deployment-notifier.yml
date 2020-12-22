@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/newrelic-deployment-notifier"
 developers:
 - "mmchr"
+issues:
+  type: jira
+  value: "newrelic-deployment-notifier-plugin"

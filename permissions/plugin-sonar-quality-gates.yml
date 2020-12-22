@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/sonar-quality-gates"
 developers:
 - "arkanjoms"
+issues:
+  type: jira
+  value: "sonar-quality-gates-plugin"

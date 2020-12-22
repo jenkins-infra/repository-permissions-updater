@@ -7,3 +7,6 @@ paths:
 developers:
 - "mixalturek"
 - "marcosteffan"
+issues:
+  type: jira
+  value: "cppcheck-plugin"

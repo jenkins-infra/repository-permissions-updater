@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/image-tag-parameter"
 developers:
 - "maduma"
+issues:
+  type: jira
+  value: "image-tag-parameter-plugin"

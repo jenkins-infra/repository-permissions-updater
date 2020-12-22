@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/icn-plugin-loader"
 developers:
 - "gdelory"
+issues:
+  type: jira
+  value: "icn-plugin-loader-plugin"

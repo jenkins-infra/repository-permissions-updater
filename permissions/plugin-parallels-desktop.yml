@@ -5,3 +5,6 @@ paths:
 - "com/parallels/parallels-desktop"
 developers:
 - "romankulikov"
+issues:
+  type: jira
+  value: "parallels-desktop-plugin"

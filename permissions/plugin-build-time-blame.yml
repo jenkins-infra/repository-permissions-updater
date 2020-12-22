@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/build-time-blame"
 developers:
 - "ltegtmeier"
+issues:
+  type: github
+  value: "jenkinsci/build-time-blame-plugin"

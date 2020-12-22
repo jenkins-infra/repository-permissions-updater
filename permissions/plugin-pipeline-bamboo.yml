@@ -5,3 +5,6 @@ paths:
 - "com/logmein/pipeline-bamboo"
 developers:
 - "kflavin"
+issues:
+  type: jira
+  value: "pipeline-bamboo-plugin"

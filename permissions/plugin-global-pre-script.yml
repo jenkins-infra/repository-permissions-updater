@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/global-pre-script"
 developers:
 - "orekaria"
+issues:
+  type: jira
+  value: "global-pre-script-plugin"

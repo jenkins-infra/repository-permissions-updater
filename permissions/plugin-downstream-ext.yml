@@ -4,3 +4,6 @@ github: "jenkinsci/downstream-ext-plugin"
 paths:
 - "org/jenkins-ci/plugins/downstream-ext"
 developers: []
+issues:
+  type: jira
+  value: "downstream-ext-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "peppe"
 - "wolfs"
+issues:
+  type: jira
+  value: "slave-setup-plugin"

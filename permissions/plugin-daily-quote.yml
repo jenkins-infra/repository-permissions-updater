@@ -4,3 +4,6 @@ github: "jenkinsci/daily-quote-plugin"
 paths:
 - "org/jenkins-ci/plugins/daily-quote"
 developers: []
+issues:
+  type: jira
+  value: "daily-quote-plugin"

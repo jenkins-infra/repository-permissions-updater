@@ -4,3 +4,6 @@ github: "jenkinsci/job-log-logger-plugin"
 paths:
 - "org/jenkins-ci/plugins/job-log-logger-plugin"
 developers: []
+issues:
+  type: jira
+  value: "job-log-logger-plugin"

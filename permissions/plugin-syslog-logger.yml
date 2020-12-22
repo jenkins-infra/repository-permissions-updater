@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/syslog-logger"
 developers:
 - "cleclerc"
+issues:
+  type: jira
+  value: "syslog-logger-plugin"

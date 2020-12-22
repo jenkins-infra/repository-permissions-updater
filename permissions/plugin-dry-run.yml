@@ -4,3 +4,6 @@ github: "jenkinsci/dry-run-plugin"
 paths:
 - "org/jenkins-ci/plugins/dry-run"
 developers: []
+issues:
+  type: jira
+  value: "dry-run-plugin"

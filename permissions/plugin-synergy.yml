@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/synergy"
 - "org/jvnet/hudson/plugins/synergy"
 developers: []
+issues:
+  type: jira
+  value: "synergy-plugin"

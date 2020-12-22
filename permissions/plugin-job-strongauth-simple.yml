@@ -4,3 +4,6 @@ github: "jenkinsci/job-strongauth-simple-plugin"
 paths:
 - "org/jenkins-ci/plugins/job-strongauth-simple"
 developers: []
+issues:
+  type: jira
+  value: "job-strongauth-simple-plugin"

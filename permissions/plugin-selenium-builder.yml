@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/selenium-builder"
 developers:
 - "rossrowe"
+issues:
+  type: jira
+  value: "selenium-builder-plugin"

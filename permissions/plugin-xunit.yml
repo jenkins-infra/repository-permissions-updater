@@ -8,3 +8,6 @@ developers:
 - "gbois"
 - "abayer"
 - "nfalco"
+issues:
+  type: jira
+  value: "xunit-plugin"

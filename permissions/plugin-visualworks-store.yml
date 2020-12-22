@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/visualworks-store"
 developers:
 - "randycoulman"
+issues:
+  type: jira
+  value: "visualworks-store-plugin"

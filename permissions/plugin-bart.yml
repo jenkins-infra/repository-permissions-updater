@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/bart"
 developers:
 - "timotyzemp"
+issues:
+  type: jira
+  value: "bart-plugin"

@@ -4,3 +4,6 @@ paths:
 - "io/jenkins/plugins/sofy-ai"
 developers:
 - "sofy_waqas"
+issues:
+  type: jira
+  value: "sofy-ai-plugin"

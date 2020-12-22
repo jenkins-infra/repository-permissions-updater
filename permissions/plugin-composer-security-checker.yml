@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/composer-security-checker"
 developers:
 - "easylo"
+issues:
+  type: jira
+  value: "composer-security-checker-plugin"

@@ -5,3 +5,6 @@ paths:
 - "sp/sd/flyway-runner"
 developers:
 - "pskumar448"
+issues:
+  type: jira
+  value: "flyway-runner-plugin"

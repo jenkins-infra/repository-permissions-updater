@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/opsgenie"
 developers:
 - "opsgenieplugin"
+issues:
+  type: jira
+  value: "opsgenie-plugin"

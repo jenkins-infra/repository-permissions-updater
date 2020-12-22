@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/Matrix-sorter-plugin"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "matrix-sorter-plugin"

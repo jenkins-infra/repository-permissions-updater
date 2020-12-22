@@ -5,3 +5,6 @@ paths:
 - "hudson/plugins/octopusdeploy/octopusdeploy"
 developers:
 - "octopusdeploy"
+issues:
+  type: jira
+  value: "octopusdeploy-plugin"

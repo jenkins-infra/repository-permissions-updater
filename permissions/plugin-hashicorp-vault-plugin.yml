@@ -7,3 +7,6 @@ developers:
 - "ptierno"
 - "jetersen"
 - "dineshba"
+issues:
+  type: github
+  value: "jenkinsci/hashicorp-vault-plugin"

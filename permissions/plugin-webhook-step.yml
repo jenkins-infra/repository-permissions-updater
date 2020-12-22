@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/webhook-step"
 developers:
 - "cpitman"
+issues:
+  type: jira
+  value: "webhook-step-plugin"

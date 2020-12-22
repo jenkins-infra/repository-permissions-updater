@@ -5,3 +5,6 @@ paths:
 - "org/tanaguru/jenkins/tanaguru"
 developers:
 - "tanaguru"
+issues:
+  type: jira
+  value: "tanaguru-plugin"

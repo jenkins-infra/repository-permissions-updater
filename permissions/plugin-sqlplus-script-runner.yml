@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/sqlplus-script-runner"
 developers:
 - "boaglio"
+issues:
+  type: github
+  value: "jenkinsci/sqlplus-script-runner-plugin"

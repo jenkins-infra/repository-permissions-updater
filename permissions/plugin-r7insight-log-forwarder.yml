@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/r7insight-log-forwarder"
 developers:
 - "donatello_rapid7"
+issues:
+  type: jira
+  value: "r7insight-log-forwarder-plugin"

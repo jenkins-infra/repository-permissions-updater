@@ -4,3 +4,6 @@ github: "jenkinsci/ivy-report-plugin"
 paths:
 - "org/jenkins-ci/plugins/ivy-report"
 developers: []
+issues:
+  type: jira
+  value: "ivy-report-plugin"

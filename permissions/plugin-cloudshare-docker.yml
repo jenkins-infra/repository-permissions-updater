@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cloudshare-docker"
 developers:
 - "cloudshare"
+issues:
+  type: github
+  value: "jenkinsci/cloudshare-docker-plugin"

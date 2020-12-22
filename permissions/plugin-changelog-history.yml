@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/changelog-history"
 developers:
 - "escoem"
+issues:
+  type: jira
+  value: "changelog-history-plugin"

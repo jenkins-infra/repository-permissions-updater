@@ -7,3 +7,6 @@ developers:
 - "danieldanan"
 - "bemh"
 - "danieldananm"
+issues:
+  type: jira
+  value: "micro-focus-performance-center-integration-plugin"

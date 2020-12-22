@@ -4,3 +4,6 @@ github: "jenkinsci/websocket-plugin"
 paths:
 - "org/codefirst/jenkins/wsnotifier/websocket"
 developers: []
+issues:
+  type: jira
+  value: "websocket-plugin"

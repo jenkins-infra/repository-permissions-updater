@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/all-changes"
 developers:
 - "pskumar448"
+issues:
+  type: jira
+  value: "all-changes-plugin"

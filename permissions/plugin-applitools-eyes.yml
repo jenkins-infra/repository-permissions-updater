@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/applitools-eyes"
 developers:
 - "applitools"
+issues:
+  type: jira
+  value: "applitools-eyes-plugin"

@@ -5,3 +5,6 @@ paths:
   - "io/jenkins/plugins/pipeline-keepenv-step"
 developers:
   - "danielbeck"
+issues:
+  type: jira
+  value: "pipeline-keepenv-step-plugin"

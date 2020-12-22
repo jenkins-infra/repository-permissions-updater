@@ -5,3 +5,6 @@ paths:
 - "de/silpion/jenkins/plugins/gitflow"
 developers:
 - "marcrohlfs"
+issues:
+  type: jira
+  value: "gitflow-plugin"

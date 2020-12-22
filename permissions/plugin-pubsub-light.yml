@@ -11,3 +11,6 @@ developers:
 - "tscherler"
 - "jamesdumay"
 - "olamy"
+issues:
+  type: jira
+  value: "pubsub-light-plugin"

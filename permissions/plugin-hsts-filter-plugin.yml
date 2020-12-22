@@ -4,3 +4,6 @@ github: "jenkinsci/hsts-filter-plugin"
 paths:
 - "org/jenkins-ci/plugins/hsts-filter-plugin"
 developers: []
+issues:
+  type: jira
+  value: "hsts-filter-plugin"

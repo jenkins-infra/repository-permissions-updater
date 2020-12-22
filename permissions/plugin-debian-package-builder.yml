@@ -5,3 +5,6 @@ paths:
 - "ru/yandex/jenkins/plugins/debuilder/debian-package-builder"
 developers:
 - "pupssman"
+issues:
+  type: github
+  value: "jenkinsci/debian-package-builder-plugin"

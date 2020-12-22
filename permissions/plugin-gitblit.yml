@@ -6,3 +6,6 @@ paths:
 developers:
 - "carlescapdevila"
 - "andreasmandel"
+issues:
+  type: jira
+  value: "gitblit-plugin"

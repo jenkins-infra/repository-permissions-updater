@@ -6,3 +6,6 @@ paths:
 developers:
 - "zhouqr2000"
 - "cpwr_jenkins"
+issues:
+  type: jira
+  value: "compuware-ispw-operations-plugin"

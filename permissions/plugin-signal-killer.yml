@@ -5,3 +5,6 @@ paths:
 - "hudson/plugins/signal_killer/signal-killer"
 developers:
 - "vjuranek"
+issues:
+  type: jira
+  value: "signal-killer-plugin"

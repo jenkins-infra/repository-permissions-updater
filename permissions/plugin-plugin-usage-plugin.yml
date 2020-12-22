@@ -7,3 +7,6 @@ developers:
 - "chrissy25"
 - "michallaskowski"
 - "froque"
+issues:
+  type: jira
+  value: "plugin-usage-plugin"

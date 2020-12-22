@@ -5,3 +5,6 @@ paths:
 - "jenkins/plugins/mqtt-notification-plugin"
 developers:
 - "gareth_western"
+issues:
+  type: jira
+  value: "mqtt-notification-plugin"

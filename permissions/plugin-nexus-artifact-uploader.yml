@@ -5,3 +5,6 @@ paths:
 - "sp/sd/nexus-artifact-uploader"
 developers:
 - "pskumar448"
+issues:
+  type: jira
+  value: "nexus-artifact-uploader-plugin"

@@ -9,4 +9,6 @@ developers:
 - "oleg_nenashev"
 - "dnusbaum"
 - "jthompson"
-
+issues:
+  type: jira
+  value: "jsch-plugin"

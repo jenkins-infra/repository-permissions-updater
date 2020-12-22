@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/slack-uploader"
 developers:
 - "masterlittle"
+issues:
+  type: jira
+  value: "slack-uploader-plugin"

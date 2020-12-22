@@ -8,3 +8,6 @@ developers:
 - "kohsuke"
 - "recena"
 - "stephenconnolly"
+issues:
+  type: jira
+  value: "github-organization-folder-plugin"

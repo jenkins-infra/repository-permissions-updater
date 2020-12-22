@@ -4,3 +4,6 @@ github: "jenkinsci/config-autorefresh-plugin"
 paths:
 - "org/jenkins-ci/plugins/config-autorefresh-plugin"
 developers: []
+issues:
+  type: jira
+  value: "config-autorefresh-plugin"

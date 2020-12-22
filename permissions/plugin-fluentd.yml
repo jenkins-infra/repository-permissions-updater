@@ -6,3 +6,6 @@ paths:
 developers:
 - "jimilian"
 - "sschuberth"
+issues:
+  type: jira
+  value: "fluentd-plugin"

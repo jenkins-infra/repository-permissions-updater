@@ -9,3 +9,6 @@ developers:
 - "jetersen"
 - "jeffpearce"
 - "justinharringa"
+issues:
+  type: jira
+  value: "gitlab-api-plugin"

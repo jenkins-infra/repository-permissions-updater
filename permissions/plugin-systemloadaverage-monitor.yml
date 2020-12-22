@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/systemloadaverage-monitor"
 developers: 
 - "stefanbrausch"
+issues:
+  type: jira
+  value: "systemloadaverage-monitor-plugin"

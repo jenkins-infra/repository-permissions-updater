@@ -4,3 +4,6 @@ github: "jenkinsci/promoted-builds-simple-plugin"
 paths:
 - "org/jenkins-ci/plugins/promoted-builds-simple"
 developers: []
+issues:
+  type: jira
+  value: "promoted-builds-simple-plugin"

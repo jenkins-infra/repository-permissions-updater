@@ -18,3 +18,6 @@ developers:
 security:
   contacts:
     jira: "pipeline_security_members"
+issues:
+  type: jira
+  value: "workflow-job-plugin"

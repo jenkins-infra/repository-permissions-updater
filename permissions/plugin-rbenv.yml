@@ -6,3 +6,6 @@ paths:
 developers:
 - "hsbt"
 - "yyuu"
+issues:
+  type: github
+  value: "jenkinsci/rbenv-plugin"

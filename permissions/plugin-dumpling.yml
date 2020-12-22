@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/dumpling"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "dumpling-plugin"

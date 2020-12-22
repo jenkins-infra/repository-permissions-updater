@@ -5,3 +5,6 @@ paths:
 - "com/parasoft/policycenter-gate-validator"
 developers:
 - "sang_parasoft"
+issues:
+  type: jira
+  value: "policycenter-gate-validator-plugin"

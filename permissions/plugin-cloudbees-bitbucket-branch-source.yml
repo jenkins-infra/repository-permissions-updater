@@ -13,3 +13,6 @@ developers:
 - "stephenconnolly"
 - "svanoort"
 - "jtaboada"
+issues:
+  type: github
+  value: "jenkinsci/bitbucket-branch-source-plugin"

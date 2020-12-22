@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/azure-dev-spaces"
 developers:
 - "azure_devops"
+issues:
+  type: jira
+  value: "azure-dev-spaces-plugin"

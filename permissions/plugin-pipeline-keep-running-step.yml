@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/pipeline-keep-running-step"
 developers:
 - "hummerstudio"
+issues:
+  type: jira
+  value: "pipeline-keep-running-step-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/concordionpresenter-plugin"
 paths:
 - "org/jenkins-ci/plugins/concordionpresenter"
 developers: []
+issues:
+  type: jira
+  value: "concordionpresenter-plugin"

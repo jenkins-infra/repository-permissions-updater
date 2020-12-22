@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ez-templates"
 developers:
 - "drekbour"
+issues:
+  type: jira
+  value: "ez-templates-plugin"

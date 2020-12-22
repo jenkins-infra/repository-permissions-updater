@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/changes-since-last-success"
 developers: 
 - stealthdj
+issues:
+  type: jira
+  value: "changes-since-last-success-plugin"

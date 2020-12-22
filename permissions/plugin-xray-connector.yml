@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/xray-connector"
 developers:
 - "xpandit"
+issues:
+  type: github
+  value: "jenkinsci/xray-connector-plugin"

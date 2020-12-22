@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/mdt-deployment"
 developers:
 - "rgroult"
+issues:
+  type: jira
+  value: "mdt-deployment-plugin"

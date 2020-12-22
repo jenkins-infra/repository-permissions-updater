@@ -4,3 +4,6 @@ github: "jenkinsci/selection-tasks-plugin-plugin"
 paths:
 - "org/jvnet/hudson/plugins/selection-tasks-plugin"
 developers: []
+issues:
+  type: jira
+  value: "selection-tasks-plugin"

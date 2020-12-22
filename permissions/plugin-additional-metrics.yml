@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/additional-metrics"
 developers:
 - "chadiem"
+issues:
+  type: jira
+  value: "additional-metrics-plugin"

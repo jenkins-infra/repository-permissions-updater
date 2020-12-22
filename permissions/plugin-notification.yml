@@ -6,3 +6,6 @@ paths:
 developers:
 - "hagzag"
 - "cohencil"
+issues:
+  type: jira
+  value: "notification-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "cdsouza"
 - "integrity_jenkins_plugin"
+issues:
+  type: jira
+  value: "integrity-plugin"

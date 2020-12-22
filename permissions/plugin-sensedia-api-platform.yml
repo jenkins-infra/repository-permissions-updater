@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/sensedia-api-platform"
 developers:
 - "denisscapinsensedia"
+issues:
+  type: jira
+  value: "sensedia-api-platform-plugin"

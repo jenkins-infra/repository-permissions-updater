@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cron_column"
 developers:
 - "jglick"
+issues:
+  type: jira
+  value: "cron_column-plugin"

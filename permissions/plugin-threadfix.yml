@@ -7,3 +7,6 @@ paths:
 developers:
 - "automationdomination"
 - "cbaek"
+issues:
+  type: jira
+  value: "threadfix-plugin"

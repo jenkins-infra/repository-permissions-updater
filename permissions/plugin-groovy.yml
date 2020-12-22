@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/groovy"
 developers:
 - "vjuranek"
+issues:
+  type: jira
+  value: "groovy-plugin"

@@ -7,3 +7,6 @@ paths:
 developers:
 - "abayer"
 - "jglick"
+issues:
+  type: github
+  value: "jenkinsci/junit-attachments-plugin"

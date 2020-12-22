@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/groovy-events-listener-plugin"
 developers:
 - "jequals5"
+issues:
+  type: github
+  value: "jenkinsci/groovy-events-listener-plugin"

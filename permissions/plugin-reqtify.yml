@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/reqtify"
 developers:
 - "NKR8"
+issues:
+  type: jira
+  value: "reqtify-plugin"

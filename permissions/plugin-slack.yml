@@ -10,3 +10,6 @@ developers:
 - "gurumaia"
 - "timja"
 - "jetersen"
+issues:
+  type: github
+  value: "jenkinsci/slack-plugin"

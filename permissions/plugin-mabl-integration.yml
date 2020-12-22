@@ -5,3 +5,6 @@ paths:
 - "com/mabl/integration/jenkins/mabl-integration"
 developers:
 - "mabl"
+issues:
+  type: jira
+  value: "mabl-integration-plugin"

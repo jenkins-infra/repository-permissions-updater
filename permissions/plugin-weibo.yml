@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/weibo"
 developers:
 - "surenpi"
+issues:
+  type: jira
+  value: "weibo-plugin"

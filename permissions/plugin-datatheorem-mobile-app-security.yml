@@ -6,3 +6,6 @@ paths:
 developers:
 - "magneto_marc"
 - "nabla_c0d3"
+issues:
+  type: jira
+  value: "datatheorem-mobile-app-security-plugin"

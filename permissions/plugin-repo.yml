@@ -6,3 +6,6 @@ paths:
 developers:
 - "rsandell"
 - "typz"
+issues:
+  type: jira
+  value: "repo-plugin"

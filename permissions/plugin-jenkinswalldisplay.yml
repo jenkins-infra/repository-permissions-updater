@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jenkinswalldisplay"
 developers:
 - "pelle"
+issues:
+  type: jira
+  value: "jenkinswalldisplay-plugin"

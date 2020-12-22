@@ -8,3 +8,6 @@ developers:
 - "asgeirn"
 - "stephenconnolly"
 - "nfalco"
+issues:
+  type: github
+  value: "jenkinsci/greenballs-plugin"

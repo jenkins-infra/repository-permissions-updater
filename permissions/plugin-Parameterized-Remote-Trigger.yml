@@ -7,3 +7,6 @@ developers:
 - "kutzi"
 - "morficus"
 - "cashlalala"
+issues:
+  type: jira
+  value: "parameterized-remote-trigger-plugin"

@@ -8,3 +8,6 @@ developers:
 - "agentgonzo"
 - "vivek"
 - "tscherler"
+issues:
+  type: jira
+  value: "jwt-support-plugin"

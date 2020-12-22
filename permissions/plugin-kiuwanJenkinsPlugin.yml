@@ -7,3 +7,6 @@ developers:
 - "jptejela"
 - "kwjsalado"
 - "gsimmross"
+issues:
+  type: jira
+  value: "kiuwanjenkinsplugin-plugin"

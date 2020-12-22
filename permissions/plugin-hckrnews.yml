@@ -4,3 +4,6 @@ github: "jenkinsci/hckrnews-plugin"
 paths:
 - "com/lewuathe/plugins/hckrnews"
 developers: []
+issues:
+  type: jira
+  value: "hckrnews-plugin"

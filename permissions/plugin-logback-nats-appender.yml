@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/logback-nats-appender"
 developers:
 - "lucamilanesio"
+issues:
+  type: jira
+  value: "logback-nats-appender-plugin"

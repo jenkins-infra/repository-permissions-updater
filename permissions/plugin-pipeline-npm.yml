@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-npm"
 developers:
 - "timdowney"
+issues:
+  type: jira
+  value: "pipeline-npm-plugin"

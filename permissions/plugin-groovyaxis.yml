@@ -4,3 +4,6 @@ github: "jenkinsci/groovyaxis-plugin"
 paths:
 - "org/jenkins-ci/plugins/groovyaxis"
 developers: []
+issues:
+  type: jira
+  value: "groovyaxis-plugin"

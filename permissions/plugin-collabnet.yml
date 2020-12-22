@@ -7,3 +7,6 @@ developers:
 - "dharmsheta"
 - "jmcnally"
 - "boraaksoy"
+issues:
+  type: jira
+  value: "collabnet-plugin"

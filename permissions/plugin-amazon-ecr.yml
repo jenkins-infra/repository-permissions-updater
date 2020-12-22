@@ -7,3 +7,6 @@ developers:
 - "aheritier"
 - "fbelzunc"
 - "ifernandezcalvo"
+issues:
+  type: jira
+  value: "amazon-ecr-plugin"

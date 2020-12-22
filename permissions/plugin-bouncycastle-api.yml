@@ -8,3 +8,6 @@ developers:
 - "stephenconnolly"
 - "dnusbaum"
 - "jthompson"
+issues:
+  type: jira
+  value: "bouncycastle-api-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/acunetix/acunetix"
 developers: 
 - "acunetix"
+issues:
+  type: jira
+  value: "acunetix-plugin"

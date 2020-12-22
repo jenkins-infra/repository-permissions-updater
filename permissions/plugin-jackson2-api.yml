@@ -8,3 +8,6 @@ developers:
 - "oleg_nenashev"
 - "dnusbaum"
 - "jvz"
+issues:
+  type: jira
+  value: "jackson2-api-plugin"

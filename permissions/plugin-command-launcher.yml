@@ -6,3 +6,6 @@ paths:
 developers:
 - "jglick"
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "command-launcher-plugin"

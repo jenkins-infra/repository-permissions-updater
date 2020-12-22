@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/visual-basic-6"
 developers:
 - "froque"
+issues:
+  type: jira
+  value: "visual-basic-6-plugin"

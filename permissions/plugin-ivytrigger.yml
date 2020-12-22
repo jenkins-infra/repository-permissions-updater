@@ -7,3 +7,6 @@ developers:
 - "gbois"
 - "bbergquist"
 - "stealthdj"
+issues:
+  type: github
+  value: "jenkinsci/ivytrigger-plugin"

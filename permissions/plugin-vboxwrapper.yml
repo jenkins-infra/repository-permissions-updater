@@ -4,3 +4,6 @@ github: "jenkinsci/vboxwrapper-plugin"
 paths:
 - "org/jenkins-ci/plugins/vboxwrapper"
 developers: []
+issues:
+  type: jira
+  value: "vboxwrapper-plugin"

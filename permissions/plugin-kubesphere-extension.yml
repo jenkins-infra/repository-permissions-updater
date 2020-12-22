@@ -8,4 +8,6 @@ developers:
   - "runzexia"
   - "zhuxiaoyang"
   - "surenpi"
-  
+issues:
+  type: jira
+  value: "kubesphere-extension-plugin"

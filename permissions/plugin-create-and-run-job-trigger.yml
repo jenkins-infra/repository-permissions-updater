@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/create-and-run-job-trigger"
 developers:
 - "culmat"
+issues:
+  type: jira
+  value: "create-and-run-job-trigger-plugin"

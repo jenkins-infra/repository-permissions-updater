@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/JiraTestResultReporter"
 developers:
 - "andreituicu"
+issues:
+  type: jira
+  value: "jiratestresultreporter-plugin"

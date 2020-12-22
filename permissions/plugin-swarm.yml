@@ -9,3 +9,6 @@ developers:
 - "drulli"
 - "mindjiver"
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "swarm-plugin"

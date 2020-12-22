@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/console-navigation"
 developers:
 - "bnova_stefan"
+issues:
+  type: jira
+  value: "console-navigation-plugin"

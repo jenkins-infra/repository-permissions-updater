@@ -7,3 +7,6 @@ paths:
 developers:
 - "basil"
 - "jglick"
+issues:
+  type: jira
+  value: "text-finder-plugin"

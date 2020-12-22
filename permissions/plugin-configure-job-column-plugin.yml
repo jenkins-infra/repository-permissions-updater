@@ -4,3 +4,6 @@ github: "jenkinsci/configure-job-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/configure-job-column-plugin"
 developers: []
+issues:
+  type: jira
+  value: "configure-job-column-plugin"

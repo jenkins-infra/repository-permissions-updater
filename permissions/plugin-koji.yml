@@ -6,3 +6,6 @@ paths:
 developers:
 - "orrc"
 - "vtunka"
+issues:
+  type: jira
+  value: "koji-plugin"

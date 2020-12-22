@@ -5,4 +5,6 @@ paths:
 - "io/jenkins/plugins/phabricator-k8s"
 developers:
 - "andresrc"
-
+issues:
+  type: jira
+  value: "phabricator-k8s-plugin"

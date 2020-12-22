@@ -6,3 +6,6 @@ paths:
 developers:
 - "wolfs"
 - "janschaefer"
+issues:
+  type: jira
+  value: "jgiven-plugin"

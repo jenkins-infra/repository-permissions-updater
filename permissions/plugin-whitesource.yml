@@ -8,3 +8,6 @@ developers:
 - "itaimarko"
 - "annarozin"
 - "samisalamiws"
+issues:
+  type: jira
+  value: "whitesource-plugin"

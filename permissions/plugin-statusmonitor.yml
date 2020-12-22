@@ -4,3 +4,6 @@ github: "jenkinsci/statusmonitor-plugin"
 paths:
 - "org/jvnet/hudson/plugins/statusmonitor"
 developers: []
+issues:
+  type: jira
+  value: "statusmonitor-plugin"

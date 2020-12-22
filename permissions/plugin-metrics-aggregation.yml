@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/metrics-aggregation"
 developers:
 - "andipabst"
+issues:
+  type: jira
+  value: "metrics-aggregation-plugin"

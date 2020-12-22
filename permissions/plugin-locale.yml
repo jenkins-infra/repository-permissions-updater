@@ -6,4 +6,6 @@ paths:
 - "io/jenkins/plugins/locale"
 developers:
 - "oleg_nenashev"
-
+issues:
+  type: jira
+  value: "locale-plugin"

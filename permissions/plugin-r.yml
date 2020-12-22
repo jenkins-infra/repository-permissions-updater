@@ -5,3 +5,6 @@ paths:
 - "org/biouno/r/r"
 developers:
 - "kinow"
+issues:
+  type: jira
+  value: "r-plugin"

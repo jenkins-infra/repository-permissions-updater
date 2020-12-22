@@ -6,3 +6,6 @@ paths:
 developers:
 - "jchenry"
 - "hanalee_skytap"
+issues:
+  type: jira
+  value: "skytap-plugin"

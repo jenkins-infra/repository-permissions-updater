@@ -5,3 +5,6 @@ paths:
 - "com/roylenferink/jenkins/plugins/pipeline-global-lib-nexus"
 developers:
 - "rlenferink"
+issues:
+  type: github
+  value: "jenkinsci/pipeline-global-lib-nexus-plugin"

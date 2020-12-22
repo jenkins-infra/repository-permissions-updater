@@ -5,3 +5,6 @@ paths:
 - "com/convertigo/jenkins/plugins/convertigo-mobile-platform"
 developers:
 - "opicciotto"
+issues:
+  type: jira
+  value: "convertigo-mobile-platform-plugin"

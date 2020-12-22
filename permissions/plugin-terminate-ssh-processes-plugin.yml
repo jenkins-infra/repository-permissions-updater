@@ -4,3 +4,6 @@ github: "jenkinsci/sshProcess-check-plugin"
 paths:
 - "org/jenkins-ci/plugins/terminate-ssh-processes-plugin"
 developers: []
+issues:
+  type: jira
+  value: "terminate-ssh-processes-plugin"

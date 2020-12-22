@@ -4,3 +4,6 @@ github: "jenkinsci/nsiqcollector-plugin"
 paths:
 - "org/jvnet/hudson/plugins/nsiqcollector"
 developers: []
+issues:
+  type: jira
+  value: "nsiqcollector-plugin"

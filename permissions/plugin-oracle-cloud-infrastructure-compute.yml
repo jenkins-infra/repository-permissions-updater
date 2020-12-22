@@ -7,3 +7,6 @@ developers:
 - "cheshi"
 - "kennedyjf"
 - "aandrey"
+issues:
+  type: jira
+  value: "oracle-cloud-infrastructure-compute-plugin"

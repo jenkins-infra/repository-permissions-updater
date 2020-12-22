@@ -6,3 +6,6 @@ paths:
 developers:
 - "jochenafuerbacher"
 - "stefanbrausch"
+issues:
+  type: jira
+  value: "views-containing-job-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "dszczepanik"
 - "kingsleyh"
+issues:
+  type: github
+  value: "jenkinsci/cucumber-reports-plugin"

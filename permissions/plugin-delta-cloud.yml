@@ -4,3 +4,6 @@ github: "jenkinsci/delta-cloud-plugin"
 paths:
 - "org/jenkins-ci/plugins/delta-cloud"
 developers: []
+issues:
+  type: jira
+  value: "delta-cloud-plugin"

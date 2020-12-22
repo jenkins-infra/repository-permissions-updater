@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/rb"
 developers:
 - "trowbrds"
+issues:
+  type: jira
+  value: "rb-plugin"

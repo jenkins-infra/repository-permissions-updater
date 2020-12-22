@@ -6,3 +6,6 @@ paths:
 developers: 
 - "tofuatjava"
 - "silk"
+issues:
+  type: jira
+  value: "sctmexecutor-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/extension-filter-plugin"
 paths:
 - "org/jenkins-ci/plugins/extension-filter"
 developers: []
+issues:
+  type: jira
+  value: "extension-filter-plugin"

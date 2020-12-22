@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/crap4j"
 developers:
 - "dlindner"
+issues:
+  type: jira
+  value: "crap4j-plugin"

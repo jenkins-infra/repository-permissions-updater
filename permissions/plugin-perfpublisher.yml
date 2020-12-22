@@ -6,3 +6,6 @@ paths:
 developers:
 - "eschava"
 - "langers2k"
+issues:
+  type: github
+  value: "jenkinsci/perfpublisher-plugin"

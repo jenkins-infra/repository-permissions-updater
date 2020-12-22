@@ -6,3 +6,6 @@ paths:
 developers:
 - "jglick"
 - "wfollonier"
+issues:
+  type: jira
+  value: "build-symlink-plugin"

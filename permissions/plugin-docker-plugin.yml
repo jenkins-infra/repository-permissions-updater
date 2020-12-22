@@ -8,3 +8,6 @@ developers:
 - "integer"
 - "magnayn"
 - "pjdarton"
+issues:
+  type: github
+  value: "jenkinsci/docker-plugin"

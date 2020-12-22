@@ -6,3 +6,6 @@ paths:
 developers:
 - "ajayep"
 - "aneeshiad"
+issues:
+  type: jira
+  value: "view26-plugin"

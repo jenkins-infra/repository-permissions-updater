@@ -4,3 +4,6 @@ github: "jenkinsci/emotional-hudson-plugin"
 paths:
 - "org/jvnet/hudson/plugins/emotional-hudson"
 developers: []
+issues:
+  type: jira
+  value: "emotional-hudson-plugin"

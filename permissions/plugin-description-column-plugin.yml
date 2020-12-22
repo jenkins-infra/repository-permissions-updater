@@ -4,3 +4,6 @@ github: "jenkinsci/description-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/description-column-plugin"
 developers: []
+issues:
+  type: jira
+  value: "description-column-plugin"

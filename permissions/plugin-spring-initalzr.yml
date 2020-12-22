@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/spring-initalzr"
 developers:
 - "migger"
+issues:
+  type: jira
+  value: "spring-initalzr-plugin"

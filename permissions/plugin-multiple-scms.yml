@@ -7,3 +7,6 @@ developers:
 - "elksson"
 - "jglick"
 - "rodrigc"
+issues:
+  type: jira
+  value: "multiple-scms-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/clone-workspace-scm"
 - "org/jvnet/hudson/plugins/clone-workspace-scm"
 developers: []
+issues:
+  type: jira
+  value: "clone-workspace-scm-plugin"

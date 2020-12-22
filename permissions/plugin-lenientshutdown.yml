@@ -5,3 +5,6 @@ paths:
 - "com/sonymobile/jenkins/plugins/lenientshutdown/lenientshutdown"
 developers:
 - "rsandell"
+issues:
+  type: jira
+  value: "lenientshutdown-plugin"

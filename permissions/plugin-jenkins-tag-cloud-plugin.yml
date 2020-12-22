@@ -4,3 +4,6 @@ github: "jenkinsci/tag-cloud-plugin"
 paths:
 - "org/jenkins-ci/plugins/jenkins-tag-cloud-plugin"
 developers: []
+issues:
+  type: jira
+  value: "jenkins-tag-cloud-plugin"

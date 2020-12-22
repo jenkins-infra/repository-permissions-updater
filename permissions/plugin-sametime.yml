@@ -4,3 +4,6 @@ github: "jenkinsci/sametime-plugin"
 paths:
 - "org/jenkins-ci/plugins/sametime"
 developers: []
+issues:
+  type: jira
+  value: "sametime-plugin"

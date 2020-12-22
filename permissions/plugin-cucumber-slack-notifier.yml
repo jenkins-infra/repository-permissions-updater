@@ -6,3 +6,6 @@ paths:
 developers:
 - "garethjevans"
 - "ffrangipane"
+issues:
+  type: jira
+  value: "cucumber-slack-notifier-plugin"

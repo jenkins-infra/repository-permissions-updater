@@ -8,3 +8,6 @@ developers:
 - "recena"
 - "tbingaman"
 - "olivergondza"
+issues:
+  type: jira
+  value: "sectioned-view-plugin"

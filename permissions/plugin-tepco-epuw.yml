@@ -4,3 +4,6 @@ github: "jenkinsci/tepco-epuw-plugin"
 paths:
 - "org/jenkins-ci/plugins/tepco-epuw"
 developers: []
+issues:
+  type: jira
+  value: "tepco-epuw-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/stackify-deployment-recorder"
 developers:
 - "emartin"
+issues:
+  type: jira
+  value: "stackify-deployment-recorder-plugin"

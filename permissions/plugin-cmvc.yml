@@ -4,3 +4,6 @@ github: "jenkinsci/cmvc-plugin"
 paths:
 - "org/jenkins-ci/plugins/cmvc"
 developers: []
+issues:
+  type: github
+  value: "jenkinsci/cmvc-plugin"

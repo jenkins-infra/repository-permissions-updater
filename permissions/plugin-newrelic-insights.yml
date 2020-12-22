@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/newrelic-insights"
 developers:
 - "tiny_dancer"
+issues:
+  type: jira
+  value: "newrelic-insights-plugin"

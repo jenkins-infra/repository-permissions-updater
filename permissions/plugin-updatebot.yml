@@ -7,3 +7,6 @@ developers:
 - "jstrachan"
 - "jrawlings"
 - "fabric8cd"
+issues:
+  type: jira
+  value: "updatebot-plugin"

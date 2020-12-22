@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/flock"
 developers:
 - "ajaymann"
+issues:
+  type: jira
+  value: "flock-plugin"

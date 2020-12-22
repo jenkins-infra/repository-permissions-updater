@@ -6,3 +6,6 @@ paths:
 developers:
 - "szandala"
 - "jetersen"
+issues:
+  type: jira
+  value: "configuration-as-code-groovy-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/ion-deployer-plugin"
 paths:
 - "org/jenkins-ci/plugins/ion-deployer-plugin"
 developers: []
+issues:
+  type: jira
+  value: "ion-deployer-plugin"

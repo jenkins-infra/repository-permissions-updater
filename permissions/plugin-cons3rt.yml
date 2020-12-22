@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cons3rt"
 developers:
 - "cons3rt"
+issues:
+  type: github
+  value: "jenkinsci/cons3rt-plugin"

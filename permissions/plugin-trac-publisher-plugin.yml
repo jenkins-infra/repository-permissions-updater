@@ -4,3 +4,6 @@ github: "jenkinsci/trac-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/trac-publisher-plugin"
 developers: []
+issues:
+  type: jira
+  value: "trac-publisher-plugin"

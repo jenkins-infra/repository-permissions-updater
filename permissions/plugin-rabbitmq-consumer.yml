@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/rabbitmq-consumer"
 developers:
 - "rin_ne"
+issues:
+  type: jira
+  value: "rabbitmq-consumer-plugin"

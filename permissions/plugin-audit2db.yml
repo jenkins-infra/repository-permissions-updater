@@ -4,3 +4,6 @@ github: "jenkinsci/audit2db-plugin"
 paths:
 - "org/jenkins-ci/plugins/audit2db"
 developers: []
+issues:
+  type: github
+  value: "jenkinsci/audit2db-plugin"

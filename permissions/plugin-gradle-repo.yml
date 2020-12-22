@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/gradle-repo"
 developers:
 - "eastwoodyang"
+issues:
+  type: jira
+  value: "gradle-repo-plugin"

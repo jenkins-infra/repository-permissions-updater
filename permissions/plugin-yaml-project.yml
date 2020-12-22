@@ -6,3 +6,6 @@ paths:
 developers:
 - "astroilov"
 - "mattmoor"
+issues:
+  type: jira
+  value: "yaml-project-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/sap/jenkinsci/remote-jobs-view-plugin"
 developers:
 - "doergn"
+issues:
+  type: jira
+  value: "remote-jobs-view-plugin"

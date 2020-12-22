@@ -6,3 +6,6 @@ paths:
 developers:
 - "agiletestware"
 - "sergey_oplavin"
+issues:
+  type: jira
+  value: "pangolin-testrail-connector-plugin"

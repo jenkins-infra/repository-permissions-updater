@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/clif-performance-testing"
 developers:
 - "dillense"
+issues:
+  type: github
+  value: "jenkinsci/clif-performance-testing-plugin"

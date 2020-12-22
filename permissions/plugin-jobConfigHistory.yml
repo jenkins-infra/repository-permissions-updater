@@ -8,3 +8,6 @@ developers:
 - "jochenafuerbacher"
 - "stefanbrausch"
 - "robinschulz"
+issues:
+  type: jira
+  value: "jobconfighistory-plugin"

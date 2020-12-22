@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/upstream-downstream-view"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "upstream-downstream-view-plugin"

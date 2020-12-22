@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/icq-notification"
 developers:
 - "nolequen"
+issues:
+  type: jira
+  value: "icq-notification-plugin"

@@ -7,3 +7,6 @@ developers:
 - "alecharp"
 - "aheritier"
 - "escoem"
+issues:
+  type: jira
+  value: "diagnostics-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/logentries-plugin"
 paths:
 - "org/jenkins-ci/plugins/logentries"
 developers: []
+issues:
+  type: jira
+  value: "logentries-plugin"

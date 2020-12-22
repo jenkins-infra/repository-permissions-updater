@@ -4,3 +4,6 @@ github: "jenkinsci/buildcoin-plugin"
 paths:
 - "com/buildcoin/plugins/jenkins/buildcoin-plugin"
 developers: []
+issues:
+  type: jira
+  value: "buildcoin-plugin"

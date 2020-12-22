@@ -6,3 +6,6 @@ paths:
 developers:
 - "lucamilanesio"
 - "ssbarnea"
+issues:
+  type: jira
+  value: "gerrit-code-review-plugin"

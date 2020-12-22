@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/azure-container-registry-tasks"
 developers:
 - "azure_devops"
+issues:
+  type: jira
+  value: "azure-container-registry-tasks-plugin"

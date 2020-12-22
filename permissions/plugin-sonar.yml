@@ -11,3 +11,6 @@ developers:
 - "tomverin"
 - "maeb"
 - "markrekveld"
+issues:
+  type: jira
+  value: "sonar-plugin"

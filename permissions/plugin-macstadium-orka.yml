@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/macstadium-orka"
 developers:
 - "ispasov"
+issues:
+  type: jira
+  value: "macstadium-orka-plugin"

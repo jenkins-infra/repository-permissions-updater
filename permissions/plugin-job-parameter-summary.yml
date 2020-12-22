@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/job-parameter-summary"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "job-parameter-summary-plugin"

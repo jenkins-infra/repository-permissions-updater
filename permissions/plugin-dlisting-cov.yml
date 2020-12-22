@@ -6,3 +6,6 @@ paths:
 developers:
   - "cizezsy"
   - "andre2007"
+issues:
+  type: jira
+  value: "dlisting-cov-plugin"

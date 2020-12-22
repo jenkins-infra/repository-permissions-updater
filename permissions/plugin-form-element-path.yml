@@ -7,3 +7,6 @@ developers:
 - "olivergondza"
 - "vlatombe"
 - "jglick"
+issues:
+  type: jira
+  value: "form-element-path-plugin"

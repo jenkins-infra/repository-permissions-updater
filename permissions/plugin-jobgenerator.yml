@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jobgenerator"
 developers:
 - "syl20bnr"
+issues:
+  type: jira
+  value: "jobgenerator-plugin"

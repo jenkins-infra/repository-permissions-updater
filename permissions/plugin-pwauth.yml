@@ -4,3 +4,6 @@ github: "jenkinsci/pwauth-plugin"
 paths:
 - "org/jvnet/hudson/plugins/pwauth"
 developers: []
+issues:
+  type: jira
+  value: "pwauth-plugin"

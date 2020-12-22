@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/read-only-configurations"
 developers:
 - "lvotypkova"
+issues:
+  type: jira
+  value: "read-only-configurations-plugin"

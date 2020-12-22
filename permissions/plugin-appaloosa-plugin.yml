@@ -7,3 +7,6 @@ developers:
 - "benoittgt"
 - "robertaudi"
 - "benlenem"
+issues:
+  type: jira
+  value: "appaloosa-plugin"

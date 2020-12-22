@@ -9,3 +9,6 @@ developers:
 - "levsa"
 - "olivergondza"
 - "rsandell"
+issues:
+  type: jira
+  value: "xvnc-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/reportportal"
 developers:
 - "avarabyeu"
+issues:
+  type: jira
+  value: "reportportal-plugin"

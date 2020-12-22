@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jira-steps"
 developers:
 - "nrayapati"
+issues:
+  type: jira
+  value: "jira-steps-plugin"

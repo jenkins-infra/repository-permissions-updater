@@ -10,3 +10,6 @@ developers:
 # Please see https://groups.google.com/forum/#!topic/jenkinsci-dev/3UvrCTflXGk for the context
 # - "earthmant"
 - "alexmolev"
+issues:
+  type: github
+  value: "jenkinsci/cloudify-plugin"

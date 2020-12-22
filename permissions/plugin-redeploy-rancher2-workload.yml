@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/redeploy-rancher2-workload"
 developers:
 - "feg545"
+issues:
+  type: jira
+  value: "redeploy-rancher2-workload-plugin"

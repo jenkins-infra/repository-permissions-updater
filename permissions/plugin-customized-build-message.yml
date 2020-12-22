@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/customized-build-message"
 developers:
 - "cashlalala"
+issues:
+  type: jira
+  value: "customized-build-message-plugin"

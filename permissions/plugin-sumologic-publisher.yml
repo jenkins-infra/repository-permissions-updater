@@ -7,3 +7,6 @@ developers:
 - "devennorton"
 - "sour0205"
 - "SumoApps"
+issues:
+  type: github
+  value: "jenkinsci/sumologic-publisher-plugin"

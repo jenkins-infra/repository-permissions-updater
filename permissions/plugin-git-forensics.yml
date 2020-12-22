@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/git-forensics"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "git-forensics-plugin"

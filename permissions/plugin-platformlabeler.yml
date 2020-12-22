@@ -6,3 +6,6 @@ paths:
 developers:
 - "markewaite"
 - "timja"
+issues:
+  type: github
+  value: "jenkinsci/platformlabeler-plugin"

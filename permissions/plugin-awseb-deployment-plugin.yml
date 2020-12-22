@@ -5,3 +5,6 @@ paths:
 - "br/com/ingenieux/jenkins/plugins/awseb-deployment-plugin"
 developers:
 - "aldrinleal"
+issues:
+  type: jira
+  value: "awseb-deployment-plugin"

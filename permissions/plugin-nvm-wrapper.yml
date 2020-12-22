@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/nvm-wrapper"
 developers: 
 - "atoms"
+issues:
+  type: jira
+  value: "nvm-wrapper-plugin"

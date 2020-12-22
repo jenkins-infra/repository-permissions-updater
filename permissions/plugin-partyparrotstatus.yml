@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/partyparrotstatus"
 developers:
 - "nikitabelonogov"
+issues:
+  type: jira
+  value: "partyparrotstatus-plugin"

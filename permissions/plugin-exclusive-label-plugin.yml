@@ -4,3 +4,6 @@ github: "jenkinsci/exclusive-labels-plugin"
 paths:
 - "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
 developers: []
+issues:
+  type: jira
+  value: "exclusive-label-plugin"

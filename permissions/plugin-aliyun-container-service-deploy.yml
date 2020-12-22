@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/aliyun-container-service-deploy"
 developers:
 - "aliyun_containerservice"
+issues:
+  type: jira
+  value: "aliyun-container-service-deploy-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/tombrus/hudson/dostrigger/dos-trigger"
 - "org/jenkins-ci/plugins/dos-trigger"
 developers: []
+issues:
+  type: jira
+  value: "dos-trigger-plugin"

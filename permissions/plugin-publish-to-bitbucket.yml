@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/publish-to-bitbucket"
 developers:
 - "himindz"
+issues:
+  type: jira
+  value: "publish-to-bitbucket-plugin"

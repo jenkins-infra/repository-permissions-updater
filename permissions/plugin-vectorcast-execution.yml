@@ -7,3 +7,6 @@ developers:
 - "rmkeeble"
 - "chris_overend"
 - "nbelliot"
+issues:
+  type: jira
+  value: "vectorcast-execution-plugin"

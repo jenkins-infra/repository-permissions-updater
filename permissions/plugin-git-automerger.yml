@@ -5,3 +5,6 @@ paths:
 - "com/vinted/automerger/git-automerger"
 developers:
 - "neworldlt"
+issues:
+  type: github
+  value: "jenkinsci/git-automerger-plugin"

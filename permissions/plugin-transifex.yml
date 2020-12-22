@@ -4,3 +4,6 @@ github: "jenkinsci/transifex-plugin"
 paths:
 - "com/gurkensalat/jenkins-ci/plugins/transifex"
 developers: []
+issues:
+  type: jira
+  value: "transifex-plugin"

@@ -5,3 +5,6 @@ paths:
 - "net/praqma/matrix-reloaded"
 developers:
 - "madsnielsen"
+issues:
+  type: jira
+  value: "matrix-reloaded-plugin"

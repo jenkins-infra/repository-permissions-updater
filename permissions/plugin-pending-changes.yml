@@ -4,3 +4,6 @@ github: "jenkinsci/pendingchanges-plugin"
 paths:
 - "org/jenkins-ci/plugins/pending-changes"
 developers: []
+issues:
+  type: jira
+  value: "pending-changes-plugin"

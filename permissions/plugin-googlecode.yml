@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/googlecode"
 - "org/jvnet/hudson/plugins/googlecode"
 developers: []
+issues:
+  type: jira
+  value: "googlecode-plugin"

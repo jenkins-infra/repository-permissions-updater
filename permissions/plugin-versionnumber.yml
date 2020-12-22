@@ -6,3 +6,6 @@ paths:
 developers:
 - "bahadir"
 - "rosberglinhares"
+issues:
+  type: jira
+  value: "versionnumber-plugin"

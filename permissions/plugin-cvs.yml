@@ -9,3 +9,6 @@ developers:
 - "kohsuke"
 - "jglick"
 - "mrmoritz01"
+issues:
+  type: jira
+  value: "cvs-plugin"

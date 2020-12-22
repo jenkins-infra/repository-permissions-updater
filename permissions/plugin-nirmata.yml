@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/nirmata"
 developers:
 - "dtoledo"
+issues:
+  type: jira
+  value: "nirmata-plugin"

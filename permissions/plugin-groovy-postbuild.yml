@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/groovy-postbuild"
 developers:
 - "ikedam"
+issues:
+  type: jira
+  value: "groovy-postbuild-plugin"

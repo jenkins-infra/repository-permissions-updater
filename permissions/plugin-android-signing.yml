@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/android-signing"
 developers:
 - "restjohn"
+issues:
+  type: jira
+  value: "android-signing-plugin"

@@ -7,3 +7,6 @@ developers:
 - "rsandell"
 - "egutierrez"
 - "alecharp"
+issues:
+  type: jira
+  value: "build-health-cache-updater-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/tupilabs/image_gallery/image-gallery"
 developers:
 - "kinow"
+issues:
+  type: jira
+  value: "image-gallery-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/emotional-jenkins-plugin"
 developers:
 - "kiy0taka"
+issues:
+  type: jira
+  value: "emotional-jenkins-plugin"

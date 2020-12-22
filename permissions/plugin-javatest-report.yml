@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/javatest-report"
 developers:
 - "lvotypkova"
+issues:
+  type: jira
+  value: "javatest-report-plugin"

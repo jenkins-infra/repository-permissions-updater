@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/probely-security"
 developers: 
 - "poupas"
+issues:
+  type: jira
+  value: "probely-security-plugin"

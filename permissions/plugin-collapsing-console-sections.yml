@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/collapsing-console-sections"
 developers:
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "collapsing-console-sections-plugin"

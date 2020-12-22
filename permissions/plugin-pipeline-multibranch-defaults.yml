@@ -6,3 +6,6 @@ paths:
 developers:
 - "vaimr"
 - "sag47"
+issues:
+  type: jira
+  value: "pipeline-multibranch-defaults-plugin"

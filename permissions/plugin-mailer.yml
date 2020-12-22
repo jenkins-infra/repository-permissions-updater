@@ -14,3 +14,6 @@ developers:
 security:
   contacts:
     jira: "foundation_security_members"
+issues:
+  type: jira
+  value: "mailer-plugin"

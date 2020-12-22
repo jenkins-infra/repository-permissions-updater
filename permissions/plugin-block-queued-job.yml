@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/block-queued-job"
 developers:
 - "integer"
+issues:
+  type: jira
+  value: "block-queued-job-plugin"

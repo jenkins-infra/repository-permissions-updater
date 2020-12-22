@@ -7,4 +7,6 @@ paths:
 developers:
 - "kinow"
 - "oleg_nenashev"
-
+issues:
+  type: jira
+  value: "testlink-plugin"

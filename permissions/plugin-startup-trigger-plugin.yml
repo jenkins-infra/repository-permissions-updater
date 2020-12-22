@@ -7,3 +7,6 @@ paths:
 developers:
 - "gbois"
 - "ejpenney"
+issues:
+  type: jira
+  value: "startup-trigger-plugin"

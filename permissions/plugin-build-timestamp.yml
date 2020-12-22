@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/build-timestamp"
 developers:
 - "orctom"
+issues:
+  type: jira
+  value: "build-timestamp-plugin"

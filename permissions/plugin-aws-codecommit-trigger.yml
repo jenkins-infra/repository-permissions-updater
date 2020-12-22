@@ -6,4 +6,6 @@ paths:
 developers:
   - "ronaldtse"
   - "phuonghqh"
-
+issues:
+  type: github
+  value: "jenkinsci/aws-codecommit-trigger-plugin"

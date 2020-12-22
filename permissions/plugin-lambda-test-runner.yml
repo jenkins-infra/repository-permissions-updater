@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/lambda-test-runner"
 developers:
 - "ipastusiak"
+issues:
+  type: github
+  value: "jenkinsci/lambda-test-runner-plugin"

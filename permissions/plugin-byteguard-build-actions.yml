@@ -6,3 +6,6 @@ paths:
 developers:
 - "khushboo"
 - "victor9000"
+issues:
+  type: jira
+  value: "byteguard-build-actions-plugin"

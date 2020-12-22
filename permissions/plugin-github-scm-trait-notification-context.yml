@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/github-scm-trait-notification-context"
 developers:
 - "stevenfoster"
+issues:
+  type: jira
+  value: "github-scm-trait-notification-context-plugin"

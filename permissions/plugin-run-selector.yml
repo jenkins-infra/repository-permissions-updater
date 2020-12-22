@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/run-selector"
 developers:
 - "alexsomai"
+issues:
+  type: jira
+  value: "run-selector-plugin"

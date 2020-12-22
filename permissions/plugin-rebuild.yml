@@ -8,3 +8,6 @@ developers:
 - "ragesh_nair"
 - "rsandell"
 - "gustafl"
+issues:
+  type: jira
+  value: "rebuild-plugin"

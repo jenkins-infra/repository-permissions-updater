@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/sitemonitor"
 developers:
 - "onuba"
+issues:
+  type: jira
+  value: "sitemonitor-plugin"

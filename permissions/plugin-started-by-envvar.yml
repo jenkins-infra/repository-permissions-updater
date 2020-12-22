@@ -4,3 +4,6 @@ github: "jenkinsci/started-by-envvar-plugin"
 paths:
 - "org/jenkins-ci/plugins/started-by-envvar"
 developers: []
+issues:
+  type: jira
+  value: "started-by-envvar-plugin"

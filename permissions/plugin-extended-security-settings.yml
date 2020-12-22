@@ -7,3 +7,6 @@ developers:
 - "jvz"
 - "jthompson"
 - "wfollonier"
+issues:
+  type: jira
+  value: "extended-security-settings-plugin"

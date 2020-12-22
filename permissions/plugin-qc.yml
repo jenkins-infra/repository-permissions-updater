@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/qc"
 - "org/jvnet/hudson/plugins/qc"
 developers: []
+issues:
+  type: jira
+  value: "qc-plugin"

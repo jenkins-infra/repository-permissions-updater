@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/sahagin"
 developers:
 - "nozomiito"
+issues:
+  type: jira
+  value: "sahagin-plugin"

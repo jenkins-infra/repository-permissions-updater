@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/youtrack-plugin"
 developers:
 - "erikzielke"
+issues:
+  type: jira
+  value: "youtrack-plugin"

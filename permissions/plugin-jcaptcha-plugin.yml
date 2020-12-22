@@ -4,3 +4,6 @@ github: "jenkinsci/jcaptcha-plugin"
 paths:
 - "org/jenkins-ci/plugins/jcaptcha-plugin"
 developers: []
+issues:
+  type: jira
+  value: "jcaptcha-plugin"

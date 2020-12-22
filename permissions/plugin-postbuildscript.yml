@@ -6,3 +6,6 @@ paths:
 developers:
 - "gbois"
 - "dheid"
+issues:
+  type: jira
+  value: "postbuildscript-plugin"

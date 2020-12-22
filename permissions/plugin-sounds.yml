@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/sounds"
 developers:
 - "oxcafebabe"
+issues:
+  type: jira
+  value: "sounds-plugin"

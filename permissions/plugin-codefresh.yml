@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/codefresh"
 developers:
 - "antweiss"
+issues:
+  type: jira
+  value: "codefresh-plugin"

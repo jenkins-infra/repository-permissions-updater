@@ -17,3 +17,6 @@ developers:
 security:
   contacts:
     jira: "pipeline_security_members"
+issues:
+  type: jira
+  value: "scm-api-plugin"

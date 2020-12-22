@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/viewVC"
 developers:
 - "mirumpf"
+issues:
+  type: jira
+  value: "viewVC-plugin"

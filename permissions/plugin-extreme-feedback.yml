@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/extreme-feedback"
 developers:
 - "dvaske"
+issues:
+  type: jira
+  value: "extreme-feedback-plugin"

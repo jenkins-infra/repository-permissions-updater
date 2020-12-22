@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/aws-codecommit-jobs"
 developers:
 - "sjeandeaux"
+issues:
+  type: jira
+  value: "aws-codecommit-jobs-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/xtrigger"
 developers:
 - "stealthdj"
+issues:
+  type: jira
+  value: "xtrigger-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "ydubreuil"
 - "px3"
+issues:
+  type: jira
+  value: "build-metrics-plugin"

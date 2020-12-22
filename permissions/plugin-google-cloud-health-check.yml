@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/google-cloud-health-check"
 developers:
 - "astroilov"
+issues:
+  type: jira
+  value: "google-cloud-health-check-plugin"

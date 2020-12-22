@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/exclusive-execution"
 developers:
 - "fmiguelez"
+issues:
+  type: jira
+  value: "exclusive-execution-plugin"

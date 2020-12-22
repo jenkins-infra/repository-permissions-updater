@@ -4,3 +4,6 @@ github: "jenkinsci/search-all-results-plugin"
 paths:
 - "org/jenkins-ci/plugins/search-all-results-plugin"
 developers: []
+issues:
+  type: jira
+  value: "search-all-results-plugin"

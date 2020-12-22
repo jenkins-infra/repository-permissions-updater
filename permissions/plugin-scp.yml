@@ -4,3 +4,6 @@ github: "jenkinsci/scp-plugin"
 paths:
 - "org/jvnet/hudson/plugins/scp"
 developers: []
+issues:
+  type: github
+  value: "jenkinsci/scp-plugin"

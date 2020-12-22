@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/valid-network"
 developers:
 - "dima"
+issues:
+  type: jira
+  value: "valid-network-plugin"

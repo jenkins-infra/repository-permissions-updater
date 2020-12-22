@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/viber-notification"
 developers:
 - "vpuranik"
+issues:
+  type: jira
+  value: "viber-notification-plugin"

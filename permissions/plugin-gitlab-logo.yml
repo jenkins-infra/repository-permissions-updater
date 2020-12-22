@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/gitlab-logo"
 developers:
 - "sue445"
+issues:
+  type: jira
+  value: "gitlab-logo-plugin"

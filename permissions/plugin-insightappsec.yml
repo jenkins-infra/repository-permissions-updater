@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/insightappsec"
 developers:
 - "ias_developer"
+issues:
+  type: jira
+  value: "insightappsec-plugin"

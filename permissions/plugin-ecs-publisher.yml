@@ -6,3 +6,6 @@ paths:
 developers:
 - "prizrack13"
 - "jthdev"
+issues:
+  type: jira
+  value: "ecs-publisher-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/gravatar"
 developers:
 - "cappuccino"
+issues:
+  type: jira
+  value: "gravatar-plugin"

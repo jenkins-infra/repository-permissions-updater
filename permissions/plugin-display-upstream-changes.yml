@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/display-upstream-changes"
 developers:
 - "rpetti"
+issues:
+  type: jira
+  value: "display-upstream-changes-plugin"

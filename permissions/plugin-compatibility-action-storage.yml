@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/compatibility-action-storage"
 developers:
 - "madsnielsen"
+issues:
+  type: jira
+  value: "compatibility-action-storage-plugin"

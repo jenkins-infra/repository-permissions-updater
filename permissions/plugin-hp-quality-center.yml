@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/qc/hp-quality-center"
 developers:
 - "faziom"
+issues:
+  type: jira
+  value: "hp-quality-center-plugin"

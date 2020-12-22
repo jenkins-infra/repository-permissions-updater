@@ -6,3 +6,6 @@ paths:
 developers:
 - "frdiaz"
 - "mmariscalg"
+issues:
+  type: jira
+  value: "monitor-pro-plugin"

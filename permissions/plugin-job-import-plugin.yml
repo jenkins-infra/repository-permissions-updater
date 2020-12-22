@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/job-import-plugin"
 developers:
 - "escoem"
+issues:
+  type: jira
+  value: "job-import-plugin"

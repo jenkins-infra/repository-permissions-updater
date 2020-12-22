@@ -7,3 +7,6 @@ paths:
 developers:
 - "kinow"
 - "smorita"
+issues:
+  type: jira
+  value: "nunit-plugin"

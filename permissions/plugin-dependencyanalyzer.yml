@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/dependencyanalyzer"
 developers:
 - "ejouvin"
+issues:
+  type: jira
+  value: "dependencyanalyzer-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/mailmap-resolver-plugin"
 paths:
 - "org/jenkins-ci/plugins/mailmap-resolver"
 developers: []
+issues:
+  type: jira
+  value: "mailmap-resolver-plugin"

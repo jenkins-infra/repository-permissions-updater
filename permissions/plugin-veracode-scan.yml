@@ -6,3 +6,6 @@ paths:
 developers:
 - "dennisgu"
 - "sbuhary"
+issues:
+  type: jira
+  value: "veracode-scan-plugin"

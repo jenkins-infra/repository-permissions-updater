@@ -10,3 +10,6 @@ developers:
 - "teilo"
 - "agentgonzo"
 - "kylecronin"
+issues:
+  type: jira
+  value: "kubernetes-client-api-plugin"

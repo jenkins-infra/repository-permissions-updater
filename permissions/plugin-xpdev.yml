@@ -4,3 +4,6 @@ github: "jenkinsci/xpdev-plugin"
 paths:
 - "com/cloudbees/jenkins/plugins/xpdev"
 developers: []
+issues:
+  type: jira
+  value: "xpdev-plugin"

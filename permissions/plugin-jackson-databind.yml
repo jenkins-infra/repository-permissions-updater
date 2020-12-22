@@ -8,3 +8,6 @@ developers:
 - "oleg_nenashev"
 - "dnusbaum"
 - "jvz"
+issues:
+  type: github
+  value: "jenkinsci/jackson-databind-plugin"

@@ -7,3 +7,6 @@ developers:
 - "dnozay"
 - "rodrigc"
 - "teilo"
+issues:
+  type: jira
+  value: "build-flow-plugin"

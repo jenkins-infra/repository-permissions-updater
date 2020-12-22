@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/publish-over-dropbox"
 developers:
 - "rcgroot"
+issues:
+  type: jira
+  value: "publish-over-dropbox-plugin"

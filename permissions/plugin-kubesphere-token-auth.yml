@@ -7,4 +7,6 @@ developers:
   - "shaowenchen"
   - "zhuxiaoyang"
   - "surenpi"
-  
+issues:
+  type: jira
+  value: "kubesphere-token-auth-plugin"

@@ -8,3 +8,6 @@ developers:
 - "recena"
 - "stephenconnolly"
 - "jvz"
+issues:
+  type: jira
+  value: "pam-auth-plugin"

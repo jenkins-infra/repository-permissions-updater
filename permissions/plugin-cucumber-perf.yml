@@ -6,3 +6,6 @@ paths:
 developers:
 - "truedub"
 - "brianjriddle"
+issues:
+  type: jira
+  value: "cucumber-perf-plugin"

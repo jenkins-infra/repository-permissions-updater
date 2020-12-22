@@ -5,3 +5,6 @@ paths:
   - "io/jenkins/plugins/generic-environment-filters"
 developers:
   - "danielbeck"
+issues:
+  type: jira
+  value: "generic-environment-filters-plugin"

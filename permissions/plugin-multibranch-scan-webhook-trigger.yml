@@ -5,3 +5,6 @@ paths:
 - "igalg/jenkins/plugins/multibranch-scan-webhook-trigger"
 developers:
 - "igalg"
+issues:
+  type: jira
+  value: "multibranch-scan-webhook-trigger-plugin"

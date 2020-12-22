@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/vmware-vrealize-orchestrator"
 developers:
 - "agovindaraju"
+issues:
+  type: jira
+  value: "vmware-vrealize-orchestrator-plugin"

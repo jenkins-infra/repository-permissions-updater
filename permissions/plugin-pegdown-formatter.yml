@@ -4,3 +4,6 @@ github: "jenkinsci/pegdown-formatter-plugin"
 paths:
 - "org/jenkins-ci/plugins/pegdown-formatter"
 developers: []
+issues:
+  type: jira
+  value: "pegdown-formatter-plugin"

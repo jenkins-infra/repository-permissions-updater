@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/aws-beanstalk-releaser"
 developers:
 - "visiontech"
+issues:
+  type: jira
+  value: "aws-beanstalk-releaser-plugin"

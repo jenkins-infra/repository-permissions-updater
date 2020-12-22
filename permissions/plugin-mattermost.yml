@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/mattermost"
 developers:
 - "jovandeginste"
+issues:
+  type: jira
+  value: "mattermost-plugin"

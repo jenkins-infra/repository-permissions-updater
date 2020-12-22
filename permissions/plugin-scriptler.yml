@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/scriptler"
 developers:
 - "imod"
+issues:
+  type: jira
+  value: "scriptler-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "michaelneale"
 - "jamesdumay"
+issues:
+  type: jira
+  value: "email-aliases-plugin"

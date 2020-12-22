@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/mixing-security-realm"
 developers:
 - "promissing"
+issues:
+  type: jira
+  value: "mixing-security-realm-plugin"

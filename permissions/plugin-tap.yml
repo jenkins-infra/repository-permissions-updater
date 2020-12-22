@@ -5,3 +5,6 @@ paths:
 - "org/tap4j/tap"
 developers:
 - "kinow"
+issues:
+  type: jira
+  value: "tap-plugin"

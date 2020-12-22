@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/tasks"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "tasks-plugin"

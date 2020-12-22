@@ -6,3 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/utplsql"
 developers:
 - "kusemuckl"
+issues:
+  type: jira
+  value: "utplsql-plugin"

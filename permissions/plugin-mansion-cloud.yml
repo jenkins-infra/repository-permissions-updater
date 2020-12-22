@@ -8,3 +8,6 @@ developers:
 - "recampbell"
 - "stephenconnolly"
 - "ydubreuil"
+issues:
+  type: jira
+  value: "mansion-cloud-plugin"

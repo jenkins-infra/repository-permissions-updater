@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/extra-columns"
 developers:
 - "fredg"
+issues:
+  type: jira
+  value: "extra-columns-plugin"

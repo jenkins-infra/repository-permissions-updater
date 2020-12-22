@@ -5,3 +5,6 @@ paths:
 - "RPD/bmc-rpd"
 developers:
 - "aivaniuk"
+issues:
+  type: jira
+  value: "bmc-rpd-plugin"

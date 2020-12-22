@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/vaddy-plugin"
 developers:
 - "kanatoko"
+issues:
+  type: jira
+  value: "vaddy-plugin"

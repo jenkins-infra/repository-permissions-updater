@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/sinatra-chef-builder"
 developers:
 - "irfanjs"
+issues:
+  type: jira
+  value: "sinatra-chef-builder-plugin"

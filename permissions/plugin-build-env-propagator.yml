@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/build-env-propagator"
 developers:
 - "vivek"
+issues:
+  type: jira
+  value: "build-env-propagator-plugin"

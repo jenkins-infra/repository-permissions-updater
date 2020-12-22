@@ -6,3 +6,6 @@ paths:
 developers:
 - "chrisalbrecht"
 - "froque"
+issues:
+  type: jira
+  value: "powershell-plugin"

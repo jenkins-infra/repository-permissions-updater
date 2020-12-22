@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/elasticsearch-query"
 developers:
 - "mikee805"
+issues:
+  type: jira
+  value: "elasticsearch-query-plugin"

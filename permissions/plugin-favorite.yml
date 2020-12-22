@@ -14,3 +14,6 @@ developers:
 - "rsandell"
 - "bitwiseman"
 - "kshultz"
+issues:
+  type: jira
+  value: "favorite-plugin"

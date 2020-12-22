@@ -6,3 +6,6 @@ paths:
 developers:
 - "batmat"
 - "david_resnick"
+issues:
+  type: jira
+  value: "radiatorviewplugin-plugin"

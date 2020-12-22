@@ -10,3 +10,6 @@ developers:
 - "stephenconnolly"
 - "oleg_nenashev"
 - "ifernandezcalvo"
+issues:
+  type: jira
+  value: "ssh-slaves-plugin"

@@ -8,3 +8,6 @@ developers:
 - "madsnielsen"
 - "vlatombe"
 - "praqma"
+issues:
+  type: jira
+  value: "clearcase-plugin"

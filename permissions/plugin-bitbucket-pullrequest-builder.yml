@@ -8,3 +8,6 @@ developers:
 - "nishio_dens"
 - "damovsky"
 - "codemonky"
+issues:
+  type: jira
+  value: "bitbucket-pullrequest-builder-plugin"

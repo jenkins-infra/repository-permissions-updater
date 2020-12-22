@@ -4,3 +4,6 @@ github: "jenkinsci/jboss-plugin"
 paths:
 - "org/jenkins-ci/plugins/jboss"
 developers: []
+issues:
+  type: jira
+  value: "jboss-plugin"

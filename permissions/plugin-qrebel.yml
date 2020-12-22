@@ -6,3 +6,6 @@ paths:
 developers:
 - "vasilyt"
 - "mastap"
+issues:
+  type: jira
+  value: "qrebel-plugin"

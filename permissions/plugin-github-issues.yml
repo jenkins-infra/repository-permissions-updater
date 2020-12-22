@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/github-issues"
 developers:
 - "daniel15"
+issues:
+  type: github
+  value: "jenkinsci/github-issues-plugin"

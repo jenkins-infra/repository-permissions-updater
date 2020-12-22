@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/gearman-plugin"
 developers:
 - "openstackjenkins"
+issues:
+  type: jira
+  value: "gearman-plugin"

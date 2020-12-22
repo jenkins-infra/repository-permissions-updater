@@ -4,3 +4,6 @@ github: "jenkinsci/sladiator-plugin"
 paths:
 - "org/jenkins-ci/plugins/sladiator-notifier"
 developers: []
+issues:
+  type: jira
+  value: "sladiator-notifier-plugin"

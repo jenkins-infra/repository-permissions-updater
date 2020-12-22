@@ -5,3 +5,6 @@ paths:
 - "jp/ikedam/jenkins/plugins/update-sites-manager"
 developers:
 - "ikedam"
+issues:
+  type: jira
+  value: "update-sites-manager-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/html5-notifier-plugin"
 developers:
 - "halkeye"
+issues:
+  type: jira
+  value: "html5-notifier-plugin"

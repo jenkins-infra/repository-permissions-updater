@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/skip-notifications-trait"
 developers:
 - "alex_dubrouski"
+issues:
+  type: jira
+  value: "skip-notifications-trait-plugin"

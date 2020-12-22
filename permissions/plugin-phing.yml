@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/phing"
 developers:
 - "sogabe"
+issues:
+  type: jira
+  value: "phing-plugin"

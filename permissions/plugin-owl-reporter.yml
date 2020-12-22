@@ -5,3 +5,6 @@ paths:
 - "com/atlantbh/jenkins/owl-reporter"
 developers:
 - "tarikabh"
+issues:
+  type: jira
+  value: "owl-reporter-plugin"

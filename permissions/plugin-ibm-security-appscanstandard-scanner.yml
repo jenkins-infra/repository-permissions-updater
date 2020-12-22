@@ -5,3 +5,6 @@ paths:
 - "appscanstandard-integration/ibm-security-appscanstandard-scanner"
 developers:
 - "tlopespt"
+issues:
+  type: jira
+  value: "ibm-security-appscanstandard-scanner-plugin"

@@ -5,4 +5,6 @@ paths:
 - "hudson/plugins/filesystem_scm/filesystem_scm"
 developers:
 - oleg_nenashev
-
+issues:
+  type: jira
+  value: "filesystem_scm-plugin"

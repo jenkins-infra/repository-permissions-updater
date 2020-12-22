@@ -4,3 +4,6 @@ github: "jenkinsci/chromedriver-plugin"
 paths:
 - "org/jenkins-ci/plugins/chromedriver"
 developers: []
+issues:
+  type: jira
+  value: "chromedriver-plugin"

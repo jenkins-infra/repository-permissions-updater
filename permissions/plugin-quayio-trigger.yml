@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/quayio-trigger"
 developers:
 - "sirot"
+issues:
+  type: jira
+  value: "quayio-trigger-plugin"

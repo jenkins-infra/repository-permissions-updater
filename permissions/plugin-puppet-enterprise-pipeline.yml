@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/workflow/puppet-enterprise-pipeline"
 developers:
 - "ccaum"
+issues:
+  type: jira
+  value: "puppet-enterprise-pipeline-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/telerik/plugins/telerik-appbuilder-plugin"
 developers:
 - "galexandrov"
+issues:
+  type: jira
+  value: "telerik-appbuilder-plugin"

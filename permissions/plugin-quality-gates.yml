@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/quality-gates"
 developers:
 - "ivanash"
+issues:
+  type: jira
+  value: "quality-gates-plugin"

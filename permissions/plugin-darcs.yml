@@ -4,3 +4,6 @@ github: "jenkinsci/darcs-plugin"
 paths:
 - "org/jenkins-ci/plugins/darcs"
 developers: []
+issues:
+  type: jira
+  value: "darcs-plugin"

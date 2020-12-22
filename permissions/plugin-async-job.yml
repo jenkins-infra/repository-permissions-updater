@@ -4,3 +4,6 @@ github: "jenkinsci/async-job-plugin"
 paths:
 - "org/jenkins-ci/plugins/async-job"
 developers: []
+issues:
+  type: jira
+  value: "async-job-plugin"

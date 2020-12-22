@@ -5,3 +5,6 @@ paths:
   - "com/thycotic/thycotic-vault"
 developers:
   - "thycotic_DSV"
+issues:
+  type: jira
+  value: "thycotic-vault-plugin"

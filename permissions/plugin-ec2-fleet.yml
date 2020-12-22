@@ -8,3 +8,6 @@ developers:
 - "schmutze"
 - "terma"
 - "imuqtadir"
+issues:
+  type: github
+  value: "jenkinsci/ec2-fleet-plugin"

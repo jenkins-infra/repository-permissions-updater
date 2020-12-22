@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/envinject-api"
 developers:
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "envinject-api-plugin"

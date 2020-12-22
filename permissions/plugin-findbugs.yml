@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/findbugs"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "findbugs-plugin"

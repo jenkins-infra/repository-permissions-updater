@@ -6,3 +6,6 @@ paths:
 developers:
 - "marci_appray"
 - "jayzsolt"
+issues:
+  type: jira
+  value: "appray-plugin"

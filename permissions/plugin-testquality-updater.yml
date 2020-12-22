@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/testquality-updater"
 developers:
 - "jbpitts"
+issues:
+  type: jira
+  value: "testquality-updater-plugin"

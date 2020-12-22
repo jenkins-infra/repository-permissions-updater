@@ -6,3 +6,6 @@ paths:
 developers:
 - "gustafl"
 - "jons"
+issues:
+  type: jira
+  value: "yet-another-build-visualizer-plugin"

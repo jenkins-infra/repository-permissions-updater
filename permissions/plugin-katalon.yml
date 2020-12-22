@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/katalon"
 developers:
 - "devalex88"
+issues:
+  type: jira
+  value: "katalon-plugin"

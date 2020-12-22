@@ -6,3 +6,6 @@ paths:
 developers:
 - "jhansche"
 - "jetersen"
+issues:
+  type: jira
+  value: "confluence-publisher-plugin"

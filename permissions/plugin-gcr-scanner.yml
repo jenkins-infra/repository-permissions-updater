@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/gcr-scanner"
 developers:
 - "wilkhu90"
+issues:
+  type: jira
+  value: "gcr-scanner-plugin"

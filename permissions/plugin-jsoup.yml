@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jsoup"
 developers:
 - "stephenconnolly"
+issues:
+  type: jira
+  value: "jsoup-plugin"

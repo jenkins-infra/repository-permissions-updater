@@ -6,3 +6,6 @@ paths:
 developers:
 - "evernat"
 - "kohsuke"
+issues:
+  type: jira
+  value: "monitoring-plugin"

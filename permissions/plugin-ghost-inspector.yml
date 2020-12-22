@@ -5,3 +5,6 @@ paths:
 - "com/ghost-inspector/jenkins/ghost-inspector"
 developers:
 - "ghostinspector"
+issues:
+  type: jira
+  value: "ghost-inspector-plugin"

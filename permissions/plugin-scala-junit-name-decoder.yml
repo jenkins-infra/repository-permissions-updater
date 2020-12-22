@@ -4,3 +4,6 @@ github: "jenkinsci/scala-junit-name-decoder-plugin"
 paths:
 - "org/jenkins-ci/plugins/scala-junit-name-decoder"
 developers: []
+issues:
+  type: jira
+  value: "scala-junit-name-decoder-plugin"

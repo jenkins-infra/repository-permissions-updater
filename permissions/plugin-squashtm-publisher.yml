@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/squashtm-publisher"
 developers:
 - "dev_squash"
+issues:
+  type: jira
+  value: "squashtm-publisher-plugin"

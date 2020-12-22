@@ -7,4 +7,6 @@ developers:
 - "yushao"
 - "huangp"
 - "seanf"
-
+issues:
+  type: jira
+  value: "zanata-plugin"

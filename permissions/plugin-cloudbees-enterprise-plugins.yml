@@ -6,3 +6,6 @@ paths:
 developers:
 - "jglick"
 - "stephenconnolly"
+issues:
+  type: github
+  value: "jenkinsci/cloudbees-enterprise-plugins-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/aws-lambda"
 developers:
 - "cast"
+issues:
+  type: jira
+  value: "aws-lambda-plugin"

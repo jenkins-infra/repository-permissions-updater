@@ -4,3 +4,6 @@ github: "jenkinsci/script-realm-plugin"
 paths:
 - "org/jvnet/hudson/plugins/script-realm"
 developers: []
+issues:
+  type: jira
+  value: "script-realm-plugin"

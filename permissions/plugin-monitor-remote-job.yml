@@ -4,3 +4,6 @@ github: "jenkinsci/monitor-remote-job-plugin"
 paths:
 - "org/ukiuni/monitor-remote-job-plugin/monitor-remote-job"
 developers: []
+issues:
+  type: jira
+  value: "monitor-remote-job-plugin"

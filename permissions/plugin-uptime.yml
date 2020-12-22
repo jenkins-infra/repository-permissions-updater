@@ -4,3 +4,6 @@ github: "jenkinsci/uptime-plugin"
 paths:
 - "org/jenkins-ci/plugins/uptime"
 developers: []
+issues:
+  type: jira
+  value: "uptime-plugin"

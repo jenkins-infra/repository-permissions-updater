@@ -4,3 +4,6 @@ paths:
 - "io/jenkins/plugins/tics"
 developers:
 - "tiobe"
+issues:
+  type: jira
+  value: "tics-plugin"

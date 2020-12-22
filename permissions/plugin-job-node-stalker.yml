@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/job-node-stalker"
 developers:
 - "daspilker"
+issues:
+  type: jira
+  value: "job-node-stalker-plugin"

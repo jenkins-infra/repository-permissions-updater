@@ -6,3 +6,6 @@ paths:
 developers:
 - "yuanbohan"
 - "shonenada"
+issues:
+  type: jira
+  value: "bearychat-plugin"

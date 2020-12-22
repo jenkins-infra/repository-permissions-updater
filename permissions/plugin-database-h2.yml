@@ -6,4 +6,6 @@ paths:
 developers:
 - "drulli"
 - "timja"
-
+issues:
+  type: jira
+  value: "database-h2-plugin"

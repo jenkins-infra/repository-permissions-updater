@@ -6,3 +6,6 @@ paths:
 developers:
 - "ikedam"
 - "omer727"
+issues:
+  type: jira
+  value: "matrix-combinations-parameter-plugin"

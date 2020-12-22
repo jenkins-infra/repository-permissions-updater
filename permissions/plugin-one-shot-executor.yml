@@ -7,3 +7,6 @@ developers: []
 security:
   contacts:
     jira: "modern_platforms_security_members"
+issues:
+  type: jira
+  value: "one-shot-executor-plugin"

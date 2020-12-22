@@ -6,3 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/mock-slave"
 developers:
 - "jglick"
+issues:
+  type: jira
+  value: "mock-slave-plugin"

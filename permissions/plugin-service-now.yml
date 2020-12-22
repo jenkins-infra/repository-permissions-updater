@@ -6,3 +6,6 @@ paths:
 developers:
 - "james_mcshane"
 - "pdkreid"
+issues:
+  type: github
+  value: "jenkinsci/service-now-plugin"

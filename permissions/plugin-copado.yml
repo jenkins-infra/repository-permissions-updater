@@ -5,3 +5,6 @@ paths:
 - "com/copado/jenkins/copado"
 developers:
 - "larsenfed"
+issues:
+  type: jira
+  value: "copado-plugin"

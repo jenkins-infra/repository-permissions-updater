@@ -7,3 +7,6 @@ developers:
 - "elitecoder"
 - "ltyler"
 - "msolnit"
+issues:
+  type: github
+  value: "jenkinsci/cloudtest-plugin"

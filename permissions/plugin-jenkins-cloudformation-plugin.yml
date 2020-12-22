@@ -6,3 +6,6 @@ paths:
 developers:
 - "edovale"
 - "nathanagood"
+issues:
+  type: jira
+  value: "jenkins-cloudformation-plugin"

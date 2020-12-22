@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/markdown-formatter"
 developers:
 - "halkeye"
+issues:
+  type: jira
+  value: "markdown-formatter-plugin"

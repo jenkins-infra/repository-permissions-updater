@@ -5,3 +5,6 @@ paths:
 - "com/spcow/plugins/winrm-client"
 developers:
 - "pskumar448"
+issues:
+  type: jira
+  value: "winrm-client-plugin"

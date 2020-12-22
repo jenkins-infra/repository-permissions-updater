@@ -6,3 +6,6 @@ paths:
 developers:
 - "olhado"
 - "ppaczyn"
+issues:
+  type: github
+  value: "jenkinsci/parameter-separator-plugin"

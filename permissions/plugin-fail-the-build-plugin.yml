@@ -4,3 +4,6 @@ github: "jenkinsci/fail-the-build-plugin"
 paths:
 - "org/jenkins-ci/plugins/fail-the-build-plugin"
 developers: []
+issues:
+  type: jira
+  value: "fail-the-build-plugin"

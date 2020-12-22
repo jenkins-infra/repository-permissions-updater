@@ -5,3 +5,6 @@ paths:
 - "com/compuware/jenkins/compuware-topaz-for-total-test"
 developers:
 - "efhjnw0"
+issues:
+  type: jira
+  value: "compuware-topaz-for-total-test-plugin"

@@ -5,3 +5,6 @@ paths:
   - "org/jenkins-ci/plugins/osf-builder-suite-for-sfcc-deploy"
 developers:
   - "danechitoaie"
+issues:
+  type: github
+  value: "jenkinsci/osf-builder-suite-for-sfcc-deploy-plugin"

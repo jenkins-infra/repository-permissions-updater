@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/dynamic-axis"
 developers:
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "dynamic-axis-plugin"

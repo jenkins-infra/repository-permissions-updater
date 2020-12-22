@@ -7,3 +7,6 @@ developers:
 - "jrichard"
 - "akamen"
 - "bdsoss"
+issues:
+  type: jira
+  value: "blackduck-hub-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/url-change-trigger-plugin"
 paths:
 - "com/redfin/hudson/url-change-trigger"
 developers: []
+issues:
+  type: jira
+  value: "url-change-trigger-plugin"

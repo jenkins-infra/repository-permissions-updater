@@ -22,3 +22,6 @@ developers:
 security:
   contacts:
     jira: "pipeline_security_members"
+issues:
+  type: jira
+  value: "blueocean-executor-info-plugin"

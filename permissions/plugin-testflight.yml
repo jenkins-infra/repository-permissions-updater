@@ -4,3 +4,6 @@ github: "jenkinsci/testflight-plugin"
 paths:
 - "org/jenkins-ci/plugins/testflight"
 developers: []
+issues:
+  type: jira
+  value: "testflight-plugin"

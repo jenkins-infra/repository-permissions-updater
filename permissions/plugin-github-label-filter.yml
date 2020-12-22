@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/github-label-filter"
 developers:
 - "topikachu"
+issues:
+  type: github
+  value: "jenkinsci/github-label-filter-plugin"

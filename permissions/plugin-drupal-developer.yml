@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/drupal-developer"
 developers:
 - "fengtan"
+issues:
+  type: jira
+  value: "drupal-developer-plugin"

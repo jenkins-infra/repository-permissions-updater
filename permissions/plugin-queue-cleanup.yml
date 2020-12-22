@@ -6,3 +6,6 @@ paths:
 developers:
 - "olivergondza"
 - "runzexia"
+issues:
+  type: jira
+  value: "queue-cleanup-plugin"

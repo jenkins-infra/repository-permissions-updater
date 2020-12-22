@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/compact-columns"
 developers:
 - "tgr"
+issues:
+  type: jira
+  value: "compact-columns-plugin"

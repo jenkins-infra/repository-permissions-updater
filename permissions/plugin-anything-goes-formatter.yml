@@ -4,3 +4,6 @@ github: "jenkinsci/anything-goes-formatter-plugin"
 paths:
 - "org/jenkins-ci/plugins/anything-goes-formatter"
 developers: []
+issues:
+  type: jira
+  value: "anything-goes-formatter-plugin"

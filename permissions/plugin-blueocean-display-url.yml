@@ -19,3 +19,6 @@ developers:
 - "halkeye"
 - "imeredith"
 - "jamesdumay"
+issues:
+  type: jira
+  value: "blueocean-display-url-plugin"

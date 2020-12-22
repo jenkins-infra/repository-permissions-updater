@@ -8,3 +8,6 @@ developers:
 - "olivergondza"
 - "vjuranek"
 - "pajasoft"
+issues:
+  type: jira
+  value: "proc-cleaner-plugin"

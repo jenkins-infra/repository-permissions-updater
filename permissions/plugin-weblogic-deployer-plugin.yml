@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/weblogic-deployer-plugin"
 developers:
 - "raphc"
+issues:
+  type: jira
+  value: "weblogic-deployer-plugin"

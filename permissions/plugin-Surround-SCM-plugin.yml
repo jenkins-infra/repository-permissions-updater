@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/Surround-SCM-plugin"
 developers:
 - "vincentp"
+issues:
+  type: jira
+  value: "surround-scm-plugin"

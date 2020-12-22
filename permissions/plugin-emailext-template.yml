@@ -5,3 +5,6 @@ paths:
 - "org/jenkinsci/plugins/emailext-template"
 developers:
 - "basil"
+issues:
+  type: jira
+  value: "emailext-template-plugin"

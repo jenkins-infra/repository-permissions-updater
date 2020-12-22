@@ -4,3 +4,6 @@ github: "jenkinsci/matrixtieparent-plugin"
 paths:
 - "org/jenkins-ci/plugins/matrixtieparent"
 developers: []
+issues:
+  type: jira
+  value: "matrixtieparent-plugin"

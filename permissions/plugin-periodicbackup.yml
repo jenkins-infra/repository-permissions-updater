@@ -6,3 +6,6 @@ paths:
 developers:
 - "oleg_nenashev"
 - "johno"
+issues:
+  type: jira
+  value: "periodicbackup-plugin"

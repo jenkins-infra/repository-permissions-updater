@@ -4,3 +4,6 @@ github: "jenkinsci/tepco-plugin"
 paths:
 - "org/jenkins-ci/plugins/tepco"
 developers: []
+issues:
+  type: jira
+  value: "tepco-plugin"

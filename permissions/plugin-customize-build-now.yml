@@ -6,3 +6,6 @@ paths:
 developers:
 - "jglick"
 - "uday"
+issues:
+  type: jira
+  value: "customize-build-now-plugin"

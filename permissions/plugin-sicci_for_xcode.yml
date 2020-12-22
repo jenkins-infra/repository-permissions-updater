@@ -4,3 +4,6 @@ github: "jenkinsci/sicci-for-xcode-plugin"
 paths:
 - "org/jvnet/hudson/plugins/sicci_for_xcode"
 developers: []
+issues:
+  type: jira
+  value: "sicci_for_xcode-plugin"

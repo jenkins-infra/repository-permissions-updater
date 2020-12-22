@@ -5,3 +5,6 @@ paths:
 - "com/gitcolony/jenkins/gitcolony-plugin"
 developers:
 - "mfocaraccio"
+issues:
+  type: jira
+  value: "gitcolony-plugin"

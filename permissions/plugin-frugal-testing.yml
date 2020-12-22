@@ -6,3 +6,6 @@ paths:
 developers:
 - "frugaltesting"
 - "jakshatdesai"
+issues:
+  type: jira
+  value: "frugal-testing-plugin"

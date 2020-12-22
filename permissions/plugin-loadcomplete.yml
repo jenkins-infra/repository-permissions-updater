@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/loadcomplete"
 developers:
 - "igor_filin"
+issues:
+  type: jira
+  value: "loadcomplete-plugin"

@@ -9,3 +9,6 @@ developers:
 - "psiingh"
 - "SubodhBorkar"
 - "techtrash"
+issues:
+  type: jira
+  value: "usemango-runner-plugin"

@@ -11,3 +11,6 @@ developers:
 - "shami"
 - "jbriggs"
 - "ahcho0819"
+issues:
+  type: jira
+  value: "coverity-plugin"

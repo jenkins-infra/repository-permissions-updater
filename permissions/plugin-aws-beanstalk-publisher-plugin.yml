@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/aws-beanstalk-publisher-plugin"
 developers:
 - "davidtanner"
+issues:
+  type: github
+  value: "jenkinsci/aws-beanstalk-publisher-plugin"

@@ -5,3 +5,6 @@ paths:
   - "io/jenkins/plugins/environment-filter-utils"
 developers:
   - "danielbeck"
+issues:
+  type: jira
+  value: "environment-filter-utils-plugin"

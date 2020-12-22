@@ -4,3 +4,6 @@ github: "jenkinsci/buildheroes-plugin"
 paths:
 - "org/jenkins-ci/plugins/buildheroes"
 developers: []
+issues:
+  type: jira
+  value: "buildheroes-plugin"

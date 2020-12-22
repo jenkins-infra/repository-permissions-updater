@@ -4,3 +4,6 @@ github: "jenkinsci/vault-scm-plugin"
 paths:
 - "org/jenkins-ci/plugins/vault-scm-plugin"
 developers: []
+issues:
+  type: jira
+  value: "vault-scm-plugin"

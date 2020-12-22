@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/inline-pipeline"
 developers:
 - "danielbeck"
+issues:
+  type: jira
+  value: "inline-pipeline-plugin"

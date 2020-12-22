@@ -5,3 +5,6 @@ paths:
 - "com/zintow/dingding-json-pusher"
 developers:
 - "huijian_zintow"
+issues:
+  type: jira
+  value: "dingding-json-pusher-plugin"

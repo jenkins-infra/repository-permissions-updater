@@ -6,3 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/script-scm"
 developers:
 - "vimil"
+issues:
+  type: jira
+  value: "script-scm-plugin"

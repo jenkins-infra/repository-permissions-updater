@@ -6,3 +6,6 @@ paths:
 developers:
 - "gustafl"
 - "jons"
+issues:
+  type: jira
+  value: "downstream-build-cache-plugin"

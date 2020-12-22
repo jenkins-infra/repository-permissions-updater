@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/eggplant-plugin"
 developers:
 - "iantestplant"
+issues:
+  type: jira
+  value: "eggplant-plugin"

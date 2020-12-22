@@ -5,3 +5,6 @@ paths:
 - "ws/albors/countjobs-viewstabbar"
 developers:
 - "ialbors"
+issues:
+  type: jira
+  value: "countjobs-viewstabbar-plugin"

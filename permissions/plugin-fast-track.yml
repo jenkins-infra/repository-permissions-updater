@@ -5,3 +5,6 @@ paths:
 - "nl/arnom/jenkins/fast-track"
 developers:
 - "arnom"
+issues:
+  type: jira
+  value: "fast-track-plugin"

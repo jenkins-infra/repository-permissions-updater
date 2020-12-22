@@ -6,3 +6,6 @@ paths:
 developers:
 - "oleg_nenashev"
 - "ataylor"
+issues:
+  type: jira
+  value: "docker-traceability-plugin"

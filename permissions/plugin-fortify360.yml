@@ -4,3 +4,6 @@ github: "jenkinsci/fortify360-plugin"
 paths:
 - "org/jvnet/hudson/plugins/fortify360/fortify360"
 developers: []
+issues:
+  type: jira
+  value: "fortify360-plugin"

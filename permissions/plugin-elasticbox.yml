@@ -8,3 +8,6 @@ developers:
 - "gsanchezu"
 - "julio_castanar"
 - "allyourbotsarebelongtous"
+issues:
+  type: jira
+  value: "elasticbox-plugin"

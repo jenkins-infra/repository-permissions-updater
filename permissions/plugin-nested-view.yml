@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/nested-view"
 developers:
 - "lvotypkova"
+issues:
+  type: jira
+  value: "nested-view-plugin"

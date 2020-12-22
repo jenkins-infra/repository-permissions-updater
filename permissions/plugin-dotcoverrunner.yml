@@ -6,3 +6,6 @@ paths:
 developers:
 - "jetersen"
 - "rasmusjelsgaard"
+issues:
+  type: jira
+  value: "dotcoverrunner-plugin"

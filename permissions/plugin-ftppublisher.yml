@@ -4,3 +4,6 @@ github: "jenkinsci/ftppublisher-plugin"
 paths:
 - "org/jvnet/hudson/plugins/ftppublisher"
 developers: []
+issues:
+  type: jira
+  value: "ftppublisher-plugin"

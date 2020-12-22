@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/terminal"
 - "org/jvnet/hudson/plugins/terminal"
 developers: []
+issues:
+  type: jira
+  value: "terminal-plugin"

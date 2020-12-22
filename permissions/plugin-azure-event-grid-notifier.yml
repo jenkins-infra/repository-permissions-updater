@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/azure-event-grid-notifier"
 developers:
 - "torosent"
+issues:
+  type: jira
+  value: "azure-event-grid-notifier-plugin"

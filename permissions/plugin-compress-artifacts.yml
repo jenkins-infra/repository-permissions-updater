@@ -6,3 +6,6 @@ paths:
 developers:
 - "jglick"
 - "olivergondza"
+issues:
+  type: jira
+  value: "compress-artifacts-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/datetime-constraint"
 developers:
 - "jouda_hidri"
+issues:
+  type: jira
+  value: "datetime-constraint-plugin"

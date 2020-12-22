@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/versioncolumn"
 developers:
 - "batmat"
+issues:
+  type: jira
+  value: "versioncolumn-plugin"

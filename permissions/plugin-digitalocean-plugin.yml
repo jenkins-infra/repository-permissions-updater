@@ -6,3 +6,6 @@ paths:
 developers:
 - "anpieber"
 - "pulse00"
+issues:
+  type: jira
+  value: "digitalocean-plugin"

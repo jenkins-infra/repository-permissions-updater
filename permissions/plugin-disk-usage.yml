@@ -7,3 +7,6 @@ paths:
 developers:
 - "vjuranek"
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "disk-usage-plugin"

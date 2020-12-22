@@ -5,3 +5,6 @@ paths:
 - "org/datadog/jenkins/plugins/datadog"
 developers:
 - "datadog"
+issues:
+  type: github
+  value: "jenkinsci/datadog-plugin"

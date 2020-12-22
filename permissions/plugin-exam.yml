@@ -6,3 +6,6 @@ paths:
 developers:
 - "MicroNovaAG"
 - "tomasch"
+issues:
+  type: jira
+  value: "exam-plugin"

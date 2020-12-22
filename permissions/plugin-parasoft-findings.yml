@@ -6,3 +6,6 @@ paths:
 developers:
 - "jacekmarzecparasoft"
 - "benken_parasoft"
+issues:
+  type: jira
+  value: "parasoft-findings-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ansible-tower"
 developers:
 - "johnwestcottiv"
+issues:
+  type: jira
+  value: "ansible-tower-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/nirima/snowglobe/jenkins/snowglobe"
 developers:
 - "magnayn"
+issues:
+  type: jira
+  value: "snowglobe-plugin"

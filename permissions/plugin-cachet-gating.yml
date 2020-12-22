@@ -1,4 +1,3 @@
-
 name: "cachet-gating"
 github: "jenkinsci/cachet-gating-plugin"
 paths:
@@ -8,3 +7,6 @@ developers:
 - "olivergondza"
 - "scoheb"
 - "avielyosef"
+issues:
+  type: github
+  value: "jenkinsci/cachet-gating-plugin"

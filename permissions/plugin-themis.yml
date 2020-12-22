@@ -5,3 +5,6 @@ paths:
     - org/jenkins-ci/plugins/themis
 developers:
     - cteyton
+issues:
+  type: jira
+  value: "themis-plugin"

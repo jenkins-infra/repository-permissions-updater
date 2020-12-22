@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/unity3d-plugin"
 developers:
 - "lacostej"
+issues:
+  type: github
+  value: "jenkinsci/unity3d-plugin"

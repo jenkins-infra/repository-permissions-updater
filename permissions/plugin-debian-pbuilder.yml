@@ -5,3 +5,6 @@ paths:
 - "com/rm5248/debian-pbuilder"
 developers:
 - "rm5248"
+issues:
+  type: jira
+  value: "debian-pbuilder-plugin"

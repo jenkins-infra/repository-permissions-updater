@@ -7,3 +7,6 @@ developers:
 - "chenkennt"
 - "arieshout"
 - "azure_devops"
+issues:
+  type: jira
+  value: "azure-function-plugin"

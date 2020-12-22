@@ -4,3 +4,6 @@ github: "jenkinsci/simpleclearcase-plugin"
 paths:
 - "jenkins/plugins/simpleclearcase"
 developers: []
+issues:
+  type: jira
+  value: "simpleclearcase-plugin"

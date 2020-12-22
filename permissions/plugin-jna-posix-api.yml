@@ -3,3 +3,6 @@ github: "jenkinsci/jna-posix-api-plugin"
 paths:
 - "io/jenkins/plugins/jna-posix-api"
 developers: []
+issues:
+  type: jira
+  value: "jna-posix-api-plugin"

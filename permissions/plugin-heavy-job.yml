@@ -4,3 +4,6 @@ github: "jenkinsci/heavy-job-plugin"
 paths:
 - "org/jenkins-ci/plugins/heavy-job"
 developers: []
+issues:
+  type: jira
+  value: "heavy-job-plugin"

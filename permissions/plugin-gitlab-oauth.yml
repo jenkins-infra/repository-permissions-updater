@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/gitlab-oauth"
 developers:
 - "elhabib_med"
+issues:
+  type: jira
+  value: "gitlab-oauth-plugin"

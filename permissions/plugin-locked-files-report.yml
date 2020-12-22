@@ -4,3 +4,6 @@ github: "jenkinsci/locked-files-report-plugin"
 paths:
 - "org/jvnet/hudson/plugins/locked-files-report"
 developers: []
+issues:
+  type: jira
+  value: "locked-files-report-plugin"

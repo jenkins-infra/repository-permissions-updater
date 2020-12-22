@@ -6,3 +6,6 @@ paths:
 developers:
 - "dominiquebrice"
 - "surenpi"
+issues:
+  type: jira
+  value: "label-linked-jobs-plugin"

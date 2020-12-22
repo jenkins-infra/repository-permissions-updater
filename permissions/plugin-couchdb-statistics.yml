@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/couchdb-statistics"
 developers:
 - "garethjevans"
+issues:
+  type: jira
+  value: "couchdb-statistics-plugin"

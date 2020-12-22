@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cloudshell-sandbox"
 developers:
 - "tomeradmon"
+issues:
+  type: jira
+  value: "cloudshell-sandbox-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/graphiteIntegrator"
 developers:
 - "patelm5"
+issues:
+  type: jira
+  value: "graphiteintegrator-plugin"

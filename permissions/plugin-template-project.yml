@@ -6,3 +6,6 @@ paths:
 developers:
 - "brantone"
 - "ctapobep"
+issues:
+  type: jira
+  value: "template-project-plugin"

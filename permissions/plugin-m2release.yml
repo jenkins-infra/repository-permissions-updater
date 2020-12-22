@@ -7,3 +7,6 @@ paths:
 developers:
 - "imod"
 - "teilo"
+issues:
+  type: jira
+  value: "m2release-plugin"

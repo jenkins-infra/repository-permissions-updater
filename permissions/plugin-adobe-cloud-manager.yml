@@ -6,3 +6,6 @@ paths:
 developers:
 - "ahmedmusallam"
 - "stopp"
+issues:
+  type: jira
+  value: "adobe-cloud-manager-plugin"

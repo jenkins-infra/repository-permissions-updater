@@ -4,3 +4,6 @@ github: "jenkinsci/shared-objects-plugin"
 paths:
 - "org/jenkins-ci/plugins/shared-objects"
 developers: []
+issues:
+  type: jira
+  value: "shared-objects-plugin"

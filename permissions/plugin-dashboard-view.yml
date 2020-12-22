@@ -9,3 +9,6 @@ developers:
 - "stephenconnolly"
 - "tgr"
 - "vandyev"
+issues:
+  type: jira
+  value: "dashboard-view-plugin"

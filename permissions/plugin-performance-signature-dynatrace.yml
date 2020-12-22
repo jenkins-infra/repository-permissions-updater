@@ -7,3 +7,6 @@ developers:
 - "rpionke"
 - "robkuehn"
 - "dgetzlaf"
+issues:
+  type: jira
+  value: "performance-signature-dynatrace-plugin"

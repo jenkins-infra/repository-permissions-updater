@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/graphql-server"
 developers:
 - "halkeye"
+issues:
+  type: jira
+  value: "graphql-server-plugin"

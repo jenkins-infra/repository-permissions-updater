@@ -7,3 +7,6 @@ developers:
 - "armfergom"
 - "jglick"
 - "fcojfernandez"
+issues:
+  type: jira
+  value: "ant-plugin"

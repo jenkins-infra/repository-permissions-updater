@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/sbt"
 - "org/jvnet/hudson/plugins/sbt"
 developers: []
+issues:
+  type: jira
+  value: "sbt-plugin"

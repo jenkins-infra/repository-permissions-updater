@@ -7,3 +7,6 @@ developers:
 - "mohit_dharamshi"
 - "vimal_infostretch"
 - "devenatis"
+issues:
+  type: jira
+  value: "convert-to-pipeline-plugin"

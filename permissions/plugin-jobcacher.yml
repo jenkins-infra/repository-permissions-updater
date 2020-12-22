@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jobcacher"
 developers:
 - "petehayes"
+issues:
+  type: jira
+  value: "jobcacher-plugin"

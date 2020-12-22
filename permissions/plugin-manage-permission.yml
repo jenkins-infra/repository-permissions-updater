@@ -9,3 +9,6 @@ developers:
 - "ealvarez"
 - "amuniz"
 - "ajard"
+issues:
+  type: jira
+  value: "manage-permission-plugin"

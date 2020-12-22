@@ -5,3 +5,6 @@ paths:
 - "com/jeeday/jenkins/variables-replace-plugin"
 developers:
 - "jeeday"
+issues:
+  type: jira
+  value: "variables-replace-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/maxxton/microdocs-integration"
 developers:
 - "steven166"
+issues:
+  type: jira
+  value: "microdocs-integration-plugin"

@@ -6,4 +6,6 @@ paths:
 developers:
 - "ffromm"
 - "dmone"
-
+issues:
+  type: jira
+  value: "build-blocker-plugin"

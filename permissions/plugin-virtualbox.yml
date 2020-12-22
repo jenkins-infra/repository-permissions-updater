@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/virtualbox"
 developers: 
 - "bjones14"
+issues:
+  type: jira
+  value: "virtualbox-plugin"

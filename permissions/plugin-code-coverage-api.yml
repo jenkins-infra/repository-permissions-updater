@@ -8,3 +8,6 @@ developers:
 - "asavanchuk"
 - "drulli"
 - "timja"
+issues:
+  type: github
+  value: "jenkinsci/code-coverage-api-plugin"

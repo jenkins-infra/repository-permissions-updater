@@ -16,3 +16,6 @@ developers:
 - "bitwiseman"
 - "olamy"
 - "halkeye"
+issues:
+  type: jira
+  value: "blueocean-autofavorite-plugin"

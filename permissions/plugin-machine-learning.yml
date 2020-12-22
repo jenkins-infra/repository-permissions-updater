@@ -5,4 +5,6 @@ paths:
   - "io/jenkins/plugins/machine-learning"
 developers:
   - "loghijiaha"
-
+issues:
+  type: jira
+  value: "machine-learning-plugin"

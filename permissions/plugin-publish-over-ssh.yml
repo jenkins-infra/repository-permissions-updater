@@ -8,3 +8,6 @@ developers:
 - "r2b2_nz"
 - "stephenconnolly"
 - "timja"
+issues:
+  type: jira
+  value: "publish-over-ssh-plugin"

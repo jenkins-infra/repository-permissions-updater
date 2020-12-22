@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/arachni-scanner"
 developers:
 - "irissmann"
+issues:
+  type: jira
+  value: "arachni-scanner-plugin"

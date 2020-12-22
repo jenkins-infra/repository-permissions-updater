@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/carbonetes-serverless-container-scanning-and-policy-compliance"
 developers:
 - "carbonetes"
+issues:
+  type: jira
+  value: "carbonetes-serverless-container-scanning-and-policy-compliance-plugin"

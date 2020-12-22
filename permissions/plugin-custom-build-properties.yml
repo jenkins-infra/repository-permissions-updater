@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/custom-build-properties"
 developers:
 - "shasait"
+issues:
+  type: jira
+  value: "custom-build-properties-plugin"

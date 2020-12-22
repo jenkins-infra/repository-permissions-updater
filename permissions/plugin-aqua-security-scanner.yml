@@ -11,3 +11,6 @@ developers:
 security:
   contacts:
     jira: aqua_maintainers
+issues:
+  type: jira
+  value: "aqua-security-scanner-plugin"

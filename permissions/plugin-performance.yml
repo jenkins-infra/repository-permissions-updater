@@ -8,3 +8,6 @@ developers:
 - "manolo"
 - "undera"
 - "artem_fedorov"
+issues:
+  type: jira
+  value: "performance-plugin"

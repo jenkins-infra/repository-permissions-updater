@@ -4,3 +4,6 @@ github: "jenkinsci/javancss-plugin"
 paths:
 - "org/jenkins-ci/plugins/javancss"
 developers: []
+issues:
+  type: jira
+  value: "javancss-plugin"

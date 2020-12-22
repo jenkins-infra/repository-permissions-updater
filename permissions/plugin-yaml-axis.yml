@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/yaml-axis"
 developers:
 - "sue445"
+issues:
+  type: jira
+  value: "yaml-axis-plugin"

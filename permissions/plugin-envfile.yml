@@ -4,3 +4,6 @@ github: "jenkinsci/envfile-plugin"
 paths:
 - "org/jenkins-ci/plugins/envfile"
 developers: []
+issues:
+  type: github
+  value: "jenkinsci/envfile-plugin"

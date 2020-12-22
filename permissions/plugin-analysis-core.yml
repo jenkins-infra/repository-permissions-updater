@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/analysis-core"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "analysis-core-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/gprbuild"
 developers:
 - "FeBrex"
+issues:
+  type: jira
+  value: "gprbuild-plugin"

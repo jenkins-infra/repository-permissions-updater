@@ -5,3 +5,6 @@ paths:
 - "de/tracetronic/jenkins/plugins/ecutest"
 developers:
 - "tracetronic"
+issues:
+  type: github
+  value: "jenkinsci/ecutest-plugin"

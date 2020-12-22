@@ -4,3 +4,6 @@ github: "jenkinsci/scoring-load-balancer-plugin"
 paths:
 - "jp/ikedam/jenkins/plugins/scoring-load-balancer"
 developers: []
+issues:
+  type: jira
+  value: "scoring-load-balancer-plugin"

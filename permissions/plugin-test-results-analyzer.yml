@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/test-results-analyzer"
 developers:
 - "menonvarun"
+issues:
+  type: jira
+  value: "test-results-analyzer-plugin"

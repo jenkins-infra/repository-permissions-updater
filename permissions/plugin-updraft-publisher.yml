@@ -5,3 +5,6 @@ paths:
 - "com/appswithlove/updraft/updraft-publisher"
 developers:
 - "appswithlove"
+issues:
+  type: jira
+  value: "updraft-publisher-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/wallarm-fast"
 developers:
 - "mkirichenko"
+issues:
+  type: jira
+  value: "wallarm-fast-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/report-info"
 developers:
 - "gcolin"
+issues:
+  type: jira
+  value: "report-info-plugin"

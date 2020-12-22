@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/flexible-publish"
 developers:
 - "ikedam"
+issues:
+  type: jira
+  value: "flexible-publish-plugin"

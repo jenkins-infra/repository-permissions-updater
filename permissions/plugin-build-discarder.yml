@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/build-discarder"
 developers:
 - "orjan"
+issues:
+  type: github
+  value: "jenkinsci/build-discarder-plugin"

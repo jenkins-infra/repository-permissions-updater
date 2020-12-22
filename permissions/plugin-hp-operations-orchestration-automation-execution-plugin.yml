@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/hp-operations-orchestration-automation-execution-plugin"
 developers:
 - "franky4ro"
+issues:
+  type: jira
+  value: "hp-operations-orchestration-automation-execution-plugin"

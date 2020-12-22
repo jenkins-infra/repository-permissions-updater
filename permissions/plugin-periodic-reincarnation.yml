@@ -7,3 +7,6 @@ developers:
 - "boev"
 - "stefanbrausch"
 - "jochenafuerbacher"
+issues:
+  type: github
+  value: "jenkinsci/periodic-reincarnation-plugin"

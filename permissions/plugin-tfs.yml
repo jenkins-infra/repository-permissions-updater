@@ -13,3 +13,6 @@ developers:
 - "kalyan"
 - "jenkinssriramb"
 - "leantk"
+issues:
+  type: jira
+  value: "tfs-plugin"

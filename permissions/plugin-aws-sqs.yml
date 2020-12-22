@@ -7,3 +7,6 @@ developers:
 - "nickg"
 - "mvk"
 - "j_vvt"
+issues:
+  type: github
+  value: "jenkinsci/aws-sqs-plugin"

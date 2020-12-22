@@ -6,3 +6,6 @@ paths:
 developers:
 - "mixalturek"
 - "imarinkov"
+issues:
+  type: jira
+  value: "sloccount-plugin"

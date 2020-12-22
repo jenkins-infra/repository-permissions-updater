@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/export-params"
 developers:
 - "rin_ne"
+issues:
+  type: jira
+  value: "export-params-plugin"

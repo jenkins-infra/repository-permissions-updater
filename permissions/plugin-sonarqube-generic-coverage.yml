@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/sonarqube-generic-coverage"
 developers:
 - "cizezsy"
+issues:
+  type: jira
+  value: "sonarqube-generic-coverage-plugin"

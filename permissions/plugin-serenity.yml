@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/serenity"
 developers:
 - "michael_couck"
+issues:
+  type: jira
+  value: "serenity-plugin"

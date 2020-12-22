@@ -5,3 +5,6 @@ paths:
 - "testdroid/testdroid-run-in-cloud"
 developers:
 - "bitbar"
+issues:
+  type: jira
+  value: "testdroid-run-in-cloud-plugin"

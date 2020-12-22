@@ -9,3 +9,6 @@ developers:
 security:
   contacts:
     jira: "aytuncbeken"
+issues:
+  type: jira
+  value: "purge-job-history-plugin"

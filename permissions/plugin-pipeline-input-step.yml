@@ -15,3 +15,6 @@ developers:
 security:
   contacts:
     jira: "pipeline_security_members"
+issues:
+  type: jira
+  value: "pipeline-input-step-plugin"

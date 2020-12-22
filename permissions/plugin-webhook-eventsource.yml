@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/webhook-eventsource"
 developers:
 - "surenpi"
+issues:
+  type: jira
+  value: "webhook-eventsource-plugin"

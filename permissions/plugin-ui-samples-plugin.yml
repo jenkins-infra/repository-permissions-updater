@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/main/ui-samples-plugin"
 developers:
 - "kohsuke"
+issues:
+  type: jira
+  value: "ui-samples-plugin"

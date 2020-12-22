@@ -4,3 +4,6 @@ github: "jenkinsci/jython-plugin"
 paths:
 - "org/jvnet/hudson/plugins/jython"
 developers: []
+issues:
+  type: jira
+  value: "jython-plugin"

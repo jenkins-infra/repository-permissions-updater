@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/gradle-daemon"
 developers:
 - "deepy"
+issues:
+  type: jira
+  value: "gradle-daemon-plugin"

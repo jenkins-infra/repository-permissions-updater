@@ -6,3 +6,6 @@ paths:
 developers:
 - "tophat"
 - "mcataford"
+issues:
+  type: jira
+  value: "pipeline-timeline-plugin"

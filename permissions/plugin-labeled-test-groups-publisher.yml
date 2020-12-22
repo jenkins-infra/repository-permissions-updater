@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/labeled-test-groups-publisher"
 developers:
 - "lbordowitz"
+issues:
+  type: jira
+  value: "labeled-test-groups-publisher-plugin"

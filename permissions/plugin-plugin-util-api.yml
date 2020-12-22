@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/plugin-util-api"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "plugin-util-api-plugin"

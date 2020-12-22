@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ftp-rename"
 developers:
 - "bruno_cantisano"
+issues:
+  type: jira
+  value: "ftp-rename-plugin"

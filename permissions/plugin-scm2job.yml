@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/scm2job"
 developers:
 - "stefanbrausch"
+issues:
+  type: jira
+  value: "scm2job-plugin"

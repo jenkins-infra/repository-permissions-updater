@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/job-exporter"
 - "org/jvnet/hudson/plugins/job-exporter"
 developers: []
+issues:
+  type: jira
+  value: "job-exporter-plugin"

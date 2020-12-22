@@ -6,3 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/copy-project-link"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "copy-project-link-plugin"

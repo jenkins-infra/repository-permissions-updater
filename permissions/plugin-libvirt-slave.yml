@@ -8,3 +8,6 @@ developers:
 - "gkr"
 - "magnayn"
 - "bgermann"
+issues:
+  type: jira
+  value: "libvirt-slave-plugin"

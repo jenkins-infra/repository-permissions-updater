@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/svn-partial-release-mgr"
 developers:
 - "giliadis"
+issues:
+  type: jira
+  value: "svn-partial-release-mgr-plugin"

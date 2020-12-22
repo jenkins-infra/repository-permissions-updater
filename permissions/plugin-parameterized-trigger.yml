@@ -11,3 +11,6 @@ developers:
 - "svanoort"
 - "wolfs"
 - "olamy"
+issues:
+  type: jira
+  value: "parameterized-trigger-plugin"

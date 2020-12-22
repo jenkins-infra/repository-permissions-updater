@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/tracking-git"
 developers:
 - "deanaldinger"
+issues:
+  type: jira
+  value: "tracking-git-plugin"

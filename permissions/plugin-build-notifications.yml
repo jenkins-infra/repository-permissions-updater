@@ -5,3 +5,6 @@ paths:
 - "tools/devnull/build-notifications"
 developers:
 - "ataxexe"
+issues:
+  type: jira
+  value: "build-notifications-plugin"

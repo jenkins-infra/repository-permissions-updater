@@ -4,3 +4,6 @@ github: "jenkinsci/oslc-cm-plugin"
 paths:
 - "org/jenkins-ci/plugins/oslc-cm"
 developers: []
+issues:
+  type: jira
+  value: "oslc-cm-plugin"

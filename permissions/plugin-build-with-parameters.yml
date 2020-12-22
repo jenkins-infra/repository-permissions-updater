@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/build-with-parameters"
 developers:
 - "sugonyak_ivan"
+issues:
+  type: jira
+  value: "build-with-parameters-plugin"

@@ -6,4 +6,6 @@ paths:
 - "org/jenkins-ci/plugins/cygwin-process-killer"
 developers: 
 - "oleg_nenashev"
-
+issues:
+  type: jira
+  value: "cygwin-process-killer-plugin"

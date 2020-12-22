@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/android-lint"
 developers:
 - "orrc"
+issues:
+  type: jira
+  value: "android-lint-plugin"

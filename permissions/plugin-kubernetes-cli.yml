@@ -6,3 +6,6 @@ paths:
 developers:
 - "max_laverse"
 - "sirstrahd"
+issues:
+  type: github
+  value: "jenkinsci/kubernetes-cli-plugin"

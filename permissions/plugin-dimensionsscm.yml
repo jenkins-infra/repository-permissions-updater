@@ -7,3 +7,6 @@ paths:
 developers:
 - "dconneely"
 - "tpayne"
+issues:
+  type: jira
+  value: "dimensionsscm-plugin"

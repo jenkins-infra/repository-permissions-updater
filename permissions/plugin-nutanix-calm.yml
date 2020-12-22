@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/nutanix-calm"
 developers:
 - "nutanix_calm"
+issues:
+  type: jira
+  value: "nutanix-calm-plugin"

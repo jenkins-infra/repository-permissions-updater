@@ -6,3 +6,6 @@ paths:
 developers:
 - "darkrift"
 - "mobrockers"
+issues:
+  type: github
+  value: "jenkinsci/selenium-plugin"

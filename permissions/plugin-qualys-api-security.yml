@@ -5,3 +5,6 @@ paths:
 - "com/qualys/plugins/qualys-api-security"
 developers:
 - "qualys"
+issues:
+  type: jira
+  value: "qualys-api-security-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/karaf-build-step"
 developers:
 - "jgalego"
+issues:
+  type: jira
+  value: "karaf-build-step-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/console-tail-plugin"
 paths:
 - "org/jenkins-ci/plugins/console-tail"
 developers: []
+issues:
+  type: jira
+  value: "console-tail-plugin"

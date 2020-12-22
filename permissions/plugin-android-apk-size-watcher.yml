@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/android-apk-size-watcher"
 developers:
 - "xgleich1"
+issues:
+  type: jira
+  value: "android-apk-size-watcher-plugin"

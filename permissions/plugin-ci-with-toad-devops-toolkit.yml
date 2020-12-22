@@ -6,3 +6,6 @@ paths:
 developers:
 - "hamermike"
 - "kevinmdalton"
+issues:
+  type: jira
+  value: "ci-with-toad-devops-toolkit-plugin"

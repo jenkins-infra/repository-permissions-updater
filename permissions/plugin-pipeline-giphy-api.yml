@@ -5,4 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-giphy-api"
 developers:
 - "aviadlevy"
-
+issues:
+  type: jira
+  value: "pipeline-giphy-api-plugin"

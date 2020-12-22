@@ -6,3 +6,6 @@ paths:
 - "io/jenkins/plugins/simple-pull-request-job"
 developers:
 - "gautamabhishek46"
+issues:
+  type: jira
+  value: "simple-pull-request-job-plugin"

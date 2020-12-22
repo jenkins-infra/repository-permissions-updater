@@ -5,3 +5,6 @@ paths:
 - "com/inkysea/vmware/vra/vmware-vrealize-automation-plugin"
 developers:
 - "inkysea"
+issues:
+  type: jira
+  value: "vmware-vrealize-automation-plugin"

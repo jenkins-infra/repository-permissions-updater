@@ -6,3 +6,6 @@ paths:
 developers:
 - "silk"
 - "mihai_virag"
+issues:
+  type: jira
+  value: "silk-performer-plugin"

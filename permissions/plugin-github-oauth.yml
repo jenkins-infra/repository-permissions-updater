@@ -8,3 +8,6 @@ developers:
 - "sag47"
 - "skottler"
 - "surya548"
+issues:
+  type: jira
+  value: "github-oauth-plugin"

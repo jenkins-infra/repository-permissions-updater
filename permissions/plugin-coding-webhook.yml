@@ -6,3 +6,6 @@ paths:
 developers:
 - "tsl0922"
 - "wusisu"
+issues:
+  type: github
+  value: "jenkinsci/coding-webhook-plugin"

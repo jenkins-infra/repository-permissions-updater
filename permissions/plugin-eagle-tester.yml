@@ -5,3 +5,6 @@ paths:
 - "com/mobileenerlytics/eagle/tester/eagle-tester"
 developers:
 - "mobileenerlytics"
+issues:
+  type: jira
+  value: "eagle-tester-plugin"

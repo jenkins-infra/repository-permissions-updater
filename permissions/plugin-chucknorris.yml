@@ -6,3 +6,6 @@ paths:
 developers:
 - "batmat"
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "chucknorris-plugin"

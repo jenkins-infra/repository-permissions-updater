@@ -7,3 +7,6 @@ developers:
   - "gavinf17"
   - "garyarobinson"
   - "tomjshore"
+issues:
+  type: jira
+  value: "uleska-plugin"

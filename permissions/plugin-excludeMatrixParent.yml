@@ -4,3 +4,6 @@ github: "jenkinsci/exclude-matrix-parent"
 paths:
 - "hudson/plugins/excludeMatrixParent/excludeMatrixParent"
 developers: []
+issues:
+  type: jira
+  value: "excludematrixparent-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/teamconcert-git"
 developers:
 - "lvaikunt"
+issues:
+  type: jira
+  value: "teamconcert-git-plugin"

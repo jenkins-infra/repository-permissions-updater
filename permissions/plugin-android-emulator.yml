@@ -7,3 +7,6 @@ paths:
 developers:
 - "orrc"
 - "nfalco"
+issues:
+  type: jira
+  value: "android-emulator-plugin"

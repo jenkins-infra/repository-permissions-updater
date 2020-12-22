@@ -4,3 +4,6 @@ github: "jenkinsci/html-audio-notifier-plugin"
 paths:
 - "jenkins/plugins/htmlaudio/html-audio-notifier"
 developers: []
+issues:
+  type: jira
+  value: "html-audio-notifier-plugin"

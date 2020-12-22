@@ -4,3 +4,6 @@ github: "jenkinsci/bulk-builder-plugin"
 paths:
 - "org/jvnet/hudson/plugins/bulk-builder"
 developers: []
+issues:
+  type: jira
+  value: "bulk-builder-plugin"

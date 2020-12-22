@@ -10,3 +10,6 @@ developers:
 - "rossrowe"
 - "sauce_jenkins_bot"
 - "yfangsl"
+issues:
+  type: jira
+  value: "sauce-ondemand-plugin"

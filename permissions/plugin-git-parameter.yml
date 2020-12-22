@@ -7,3 +7,6 @@ paths:
 developers:
 - "klimas7"
 - "ngiger"
+issues:
+  type: jira
+  value: "git-parameter-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/loadninja"
 developers:
 - "ctalaverq"
+issues:
+  type: jira
+  value: "loadninja-plugin"

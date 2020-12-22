@@ -8,3 +8,6 @@ developers:
 - "emsa23"
 - "oleg_nenashev"
 - "fr123k"
+issues:
+  type: jira
+  value: "prioritysorter-plugin"

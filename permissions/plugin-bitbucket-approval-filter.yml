@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/bitbucket-approval-filter"
 developers:
 - "kylec_32"
+issues:
+  type: jira
+  value: "bitbucket-approval-filter-plugin"

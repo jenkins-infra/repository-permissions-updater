@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/mapdb-api"
 developers:
 - "stephenconnolly"
+issues:
+  type: jira
+  value: "mapdb-api-plugin"

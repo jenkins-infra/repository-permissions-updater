@@ -5,3 +5,6 @@ paths:
 - "me/leejay/jenkins/date-parameter"
 developers:
 - "leejaycoke"
+issues:
+  type: github
+  value: "jenkinsci/date-parameter-plugin"

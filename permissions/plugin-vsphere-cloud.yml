@@ -7,3 +7,6 @@ developers:
 - "jswager"
 - "jswager1"
 - "pjdarton"
+issues:
+  type: jira
+  value: "vsphere-cloud-plugin"

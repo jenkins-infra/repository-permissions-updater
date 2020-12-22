@@ -6,3 +6,6 @@ paths:
 developers:
 - "vipinsthename"
 - "willwh"
+issues:
+  type: github
+  value: "jenkinsci/environment-dashboard-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/dotnet-sdk"
 developers:
 - "Zastai"
+issues:
+  type: jira
+  value: "dotnet-sdk-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/beagle-security"
 developers:
 - "rejah"
+issues:
+  type: jira
+  value: "beagle-security-plugin"

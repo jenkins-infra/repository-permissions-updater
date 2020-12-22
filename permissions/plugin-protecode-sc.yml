@@ -7,3 +7,6 @@ developers:
 - "mattisii"
 - "rukkanen"
 - "phietala"
+issues:
+  type: jira
+  value: "protecode-sc-plugin"

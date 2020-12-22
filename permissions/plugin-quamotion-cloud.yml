@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/quamotion-cloud"
 developers:
 - "bartsaintgermain"
+issues:
+  type: jira
+  value: "quamotion-cloud-plugin"

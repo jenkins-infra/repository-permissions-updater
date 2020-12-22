@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/openid"
 developers:
 - "wfollonier"
+issues:
+  type: jira
+  value: "openid-plugin"

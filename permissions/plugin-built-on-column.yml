@@ -4,3 +4,6 @@ github: "jenkinsci/builton-column-plugin"
 paths:
 - "org/jenkins-ci/plugins/built-on-column"
 developers: []
+issues:
+  type: jira
+  value: "built-on-column-plugin"

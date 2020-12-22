@@ -4,3 +4,6 @@ github: "jenkinsci/testopia-plugin"
 paths:
 - "jenkins/plugins/testopia/testopia"
 developers: []
+issues:
+  type: jira
+  value: "testopia-plugin"

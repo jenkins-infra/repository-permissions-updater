@@ -9,3 +9,6 @@ developers:
 - "maselvaraj"
 - "vinodkone"
 - "vlatombe"
+issues:
+  type: github
+  value: "jenkinsci/mesos-plugin"

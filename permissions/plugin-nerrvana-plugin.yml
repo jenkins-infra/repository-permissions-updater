@@ -5,3 +5,6 @@ paths:
 - "com/deepshiftlabs/nerrvana/nerrvana-plugin"
 - "org/jenkins-ci/plugins/nerrvana-plugin"
 developers: []
+issues:
+  type: jira
+  value: "nerrvana-plugin"

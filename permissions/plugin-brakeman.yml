@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/brakeman"
 developers:
 - "presidentbeef"
+issues:
+  type: github
+  value: "jenkinsci/brakeman-plugin"

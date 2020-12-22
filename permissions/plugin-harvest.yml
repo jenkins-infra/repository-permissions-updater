@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/harvest"
 developers:
 - "abedwards"
+issues:
+  type: jira
+  value: "harvest-plugin"

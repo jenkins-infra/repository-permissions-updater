@@ -5,3 +5,6 @@ paths:
 - "cf/pgmann/plugins/url-auth-sso"
 developers:
 - "pgmann"
+issues:
+  type: jira
+  value: "url-auth-sso-plugin"

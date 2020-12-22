@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/rubyMetrics"
 developers:
 - "pkuczynski"
+issues:
+  type: jira
+  value: "rubyMetrics-plugin"

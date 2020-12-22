@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/continuum"
 developers:
 - "boraaksoy"
+issues:
+  type: jira
+  value: "continuum-plugin"

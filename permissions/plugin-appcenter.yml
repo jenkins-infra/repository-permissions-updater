@@ -6,3 +6,6 @@ paths:
 developers:
 - "mezpahlan"
 - "nitin_kumar"
+issues:
+  type: jira
+  value: "appcenter-plugin"

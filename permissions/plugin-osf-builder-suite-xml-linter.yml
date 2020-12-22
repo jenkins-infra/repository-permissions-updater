@@ -5,4 +5,6 @@ paths:
   - "org/jenkins-ci/plugins/osf-builder-suite-xml-linter"
 developers:
   - "danechitoaie"
-  
+issues:
+  type: github
+  value: "jenkinsci/osf-builder-suite-xml-linter-plugin"

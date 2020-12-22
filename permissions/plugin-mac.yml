@@ -5,3 +5,6 @@ paths:
 - "fr/edf/jenkins/plugins/mac"
 developers:
 - "mat1e"
+issues:
+  type: jira
+  value: "mac-plugin"

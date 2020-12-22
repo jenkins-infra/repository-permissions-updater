@@ -4,3 +4,6 @@ github: "jenkinsci/application-director-plugin"
 paths:
 - "org/jenkins-ci/plugins/application-director-plugin"
 developers: []
+issues:
+  type: jira
+  value: "application-director-plugin"

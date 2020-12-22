@@ -6,3 +6,6 @@ paths:
 developers:
 - "lehmann_fabian"
 - "martingrambow"
+issues:
+  type: jira
+  value: "benchmark-evaluator-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ci-with-toad-edge"
 developers:
 - "pchudani"
+issues:
+  type: jira
+  value: "ci-with-toad-edge-plugin"

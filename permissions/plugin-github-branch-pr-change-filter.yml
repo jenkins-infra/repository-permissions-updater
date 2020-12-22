@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/github-branch-pr-change-filter"
 developers:
 - "mmcculloh"
+issues:
+  type: jira
+  value: "github-branch-pr-change-filter-plugin"

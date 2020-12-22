@@ -6,3 +6,6 @@ paths:
 developers:
 - "hanabishi"
 - "tobias_"
+issues:
+  type: github
+  value: "jenkinsci/lucene-search-plugin"

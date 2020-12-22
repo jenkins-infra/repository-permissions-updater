@@ -4,3 +4,6 @@ github: "jenkinsci/livescreenshot-plugin"
 paths:
 - "org/jenkins-ci/plugins/livescreenshot"
 developers: []
+issues:
+  type: jira
+  value: "livescreenshot-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "wdaher"
 - "butchyyyy"
+issues:
+  type: jira
+  value: "humbug-plugin"

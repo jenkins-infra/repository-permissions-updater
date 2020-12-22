@@ -4,3 +4,6 @@ github: "jenkinsci/bugzilla-plugin"
 paths:
 - "org/jvnet/hudson/plugins/bugzilla"
 developers: []
+issues:
+  type: jira
+  value: "bugzilla-plugin"

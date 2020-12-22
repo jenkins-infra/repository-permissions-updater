@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-gitstatuswrapper"
 developers:
 - "hello_woof"
+issues:
+  type: jira
+  value: "pipeline-gitstatuswrapper-plugin"

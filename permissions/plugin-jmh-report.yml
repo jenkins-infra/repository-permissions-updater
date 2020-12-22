@@ -5,3 +5,6 @@ paths:
 - "io/morethan/jenkins/jmh-report"
 developers:
 - "oae"
+issues:
+  type: github
+  value: "jenkinsci/jmh-report-plugin"

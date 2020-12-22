@@ -5,3 +5,6 @@ paths:
 - "ren/helloworld/upload-pgyer"
 developers:
 - "myroid"
+issues:
+  type: jira
+  value: "upload-pgyer-plugin"

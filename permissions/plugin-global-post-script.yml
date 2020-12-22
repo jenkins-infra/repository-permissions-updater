@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/global-post-script"
 developers:
 - "orctom"
+issues:
+  type: jira
+  value: "global-post-script-plugin"

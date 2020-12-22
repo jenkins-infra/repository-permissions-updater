@@ -6,3 +6,6 @@ paths:
 developers:
 - "ki82"
 - "greybird"
+issues:
+  type: jira
+  value: "claim-plugin"

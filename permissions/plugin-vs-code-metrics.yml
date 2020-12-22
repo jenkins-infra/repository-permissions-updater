@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/vs-code-metrics"
 developers:
 - "yasu_s"
+issues:
+  type: jira
+  value: "vs-code-metrics-plugin"

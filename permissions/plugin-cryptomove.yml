@@ -5,3 +5,6 @@ paths:
   - "io/jenkins/plugins/cryptomove"
 developers:
   - "cryptomoovin"
+issues:
+  type: jira
+  value: "cryptomove-plugin"

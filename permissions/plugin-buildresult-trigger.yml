@@ -6,3 +6,6 @@ paths:
 developers:
 - "gbois"
 - "stealthdj"
+issues:
+  type: jira
+  value: "buildresult-trigger-plugin"

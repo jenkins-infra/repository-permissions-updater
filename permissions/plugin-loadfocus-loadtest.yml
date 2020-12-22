@@ -5,3 +5,6 @@ paths:
 - "com/loadfocus/loadfocus-loadtest"
 developers:
 - "loadfocus"
+issues:
+  type: jira
+  value: "loadfocus-loadtest-plugin"

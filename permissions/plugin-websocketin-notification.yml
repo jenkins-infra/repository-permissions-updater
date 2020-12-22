@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/websocketin-notification"
 developers:
 - "dhobi"
+issues:
+  type: jira
+  value: "websocketin-notification-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/next-executions"
 developers:
 - "ialbors"
+issues:
+  type: jira
+  value: "next-executions-plugin"

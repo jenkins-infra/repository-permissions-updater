@@ -4,3 +4,6 @@ github: "jenkinsci/polarion-plugin"
 paths:
 - "org/jvnet/hudson/plugins/polarion"
 developers: []
+issues:
+  type: jira
+  value: "polarion-plugin"

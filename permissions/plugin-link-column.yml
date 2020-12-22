@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/link-column"
 developers:
 - "KarlGong"
+issues:
+  type: jira
+  value: "link-column-plugin"

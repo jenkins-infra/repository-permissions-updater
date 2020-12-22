@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/acunetix-360-scan"
 developers:
 - "acunetix360"
+issues:
+  type: jira
+  value: "acunetix-360-scan-plugin"

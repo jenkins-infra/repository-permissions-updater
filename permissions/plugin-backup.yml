@@ -4,3 +4,6 @@ github: "jenkinsci/backup-plugin"
 paths:
 - "org/jvnet/hudson/plugins/backup"
 developers: []
+issues:
+  type: jira
+  value: "backup-plugin"

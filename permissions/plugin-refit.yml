@@ -4,3 +4,6 @@ github: "jenkinsci/refit-plugin"
 paths:
 - "com/googlecode/refit/jenkins/refit"
 developers: []
+issues:
+  type: jira
+  value: "refit-plugin"

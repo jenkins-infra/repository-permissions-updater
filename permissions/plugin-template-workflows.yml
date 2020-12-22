@@ -4,3 +4,6 @@ github: "jenkinsci/template-workflows-plugin"
 paths:
 - "org/jenkins/plugin/templateWorkflows/template-workflows"
 developers: []
+issues:
+  type: jira
+  value: "template-workflows-plugin"

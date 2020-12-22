@@ -6,3 +6,6 @@ paths:
 developers:
 - "anderl86"
 - "pingunaut"
+issues:
+  type: jira
+  value: "schedule-build-plugin"

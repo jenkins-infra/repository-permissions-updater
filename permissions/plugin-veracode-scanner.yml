@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/veracode-scanner"
 developers:
 - "mbockus"
+issues:
+  type: jira
+  value: "veracode-scanner-plugin"

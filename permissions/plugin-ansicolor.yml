@@ -12,3 +12,6 @@ developers:
 - "mkobit"
 - "dnusbaum"
 - "tszmytka"
+issues:
+  type: github
+  value: "jenkinsci/ansicolor-plugin"

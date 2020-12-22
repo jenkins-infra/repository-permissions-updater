@@ -6,3 +6,6 @@ paths:
 developers:
 - "stephenconnolly"
 - "vlatombe"
+issues:
+  type: jira
+  value: "mock-load-builder-plugin"

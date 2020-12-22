@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/cloudhub-deployer"
 developers:
 - "vikas_chaudhary"
+issues:
+  type: jira
+  value: "cloudhub-deployer-plugin"

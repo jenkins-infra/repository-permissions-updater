@@ -5,3 +5,6 @@ paths:
 - "hudson/plugins/webload"
 developers:
 - "jane_king"
+issues:
+  type: jira
+  value: "webload-plugin"

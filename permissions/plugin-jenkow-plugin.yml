@@ -4,3 +4,6 @@ github: "jenkinsci/jenkow-plugin"
 paths:
 - "com/cisco/step/jenkins/plugins/jenkow-plugin"
 developers: []
+issues:
+  type: jira
+  value: "jenkow-plugin"

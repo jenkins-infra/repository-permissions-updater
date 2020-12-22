@@ -4,3 +4,6 @@ github: "jenkinsci/dependency-queue-plugin"
 paths:
 - "org/jenkins-ci/plugins/dependency-queue-plugin"
 developers: []
+issues:
+  type: jira
+  value: "dependency-queue-plugin"

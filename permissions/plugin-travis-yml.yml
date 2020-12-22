@@ -6,3 +6,6 @@ paths:
 developers:
 - "ikasam_a"
 - "kanekotic"
+issues:
+  type: github
+  value: "jenkinsci/travis-yml-plugin"

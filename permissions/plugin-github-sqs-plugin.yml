@@ -6,3 +6,6 @@ paths:
 developers:
 - "nemo83"
 - "aaronwalker"
+issues:
+  type: jira
+  value: "github-sqs-plugin"

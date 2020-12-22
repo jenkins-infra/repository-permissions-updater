@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/influxdb"
 developers:
 - "aleksisimell"
+issues:
+  type: jira
+  value: "influxdb-plugin"

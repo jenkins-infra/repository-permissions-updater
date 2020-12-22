@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/strawboss"
 developers:
 - "morgandev"
+issues:
+  type: jira
+  value: "strawboss-plugin"

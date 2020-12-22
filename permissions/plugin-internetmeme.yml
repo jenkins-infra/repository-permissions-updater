@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/internetmeme"
 developers:
 - "harpreet1002"
+issues:
+  type: jira
+  value: "internetmeme-plugin"

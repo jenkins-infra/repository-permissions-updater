@@ -6,3 +6,6 @@ paths:
 developers:
 - "t_westling"
 - "gustafl"
+issues:
+  type: jira
+  value: "mq-notifier-plugin"

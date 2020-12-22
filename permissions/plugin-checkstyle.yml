@@ -5,3 +5,6 @@ paths:
 - "org/jvnet/hudson/plugins/checkstyle"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "checkstyle-plugin"

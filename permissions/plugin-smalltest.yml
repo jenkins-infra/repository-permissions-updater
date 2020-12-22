@@ -5,3 +5,6 @@ paths:
 - "com/smalltest/smalltest"
 developers:
 - "smalltest"
+issues:
+  type: jira
+  value: "smalltest-plugin"

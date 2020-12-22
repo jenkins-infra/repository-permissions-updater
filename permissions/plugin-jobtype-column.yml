@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jobtype-column"
 - "org/jvnet/hudson/plugins/jobtype-column"
 developers: []
+issues:
+  type: jira
+  value: "jobtype-column-plugin"

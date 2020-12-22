@@ -6,3 +6,6 @@ paths:
 developers:
 - "alvin_stanescu"
 - "rajeevuipath"
+issues:
+  type: github
+  value: "jenkinsci/uipath-automation-package-plugin"

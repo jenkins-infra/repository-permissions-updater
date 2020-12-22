@@ -4,3 +4,6 @@ github: "jenkinsci/network-monitor-plugin"
 paths:
 - "org/jvnet/hudson/plugins/network-monitor"
 developers: []
+issues:
+  type: jira
+  value: "network-monitor-plugin"

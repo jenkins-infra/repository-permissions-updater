@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/ca-service-virtualization"
 developers:
 - "ca_sv_plugin"
+issues:
+  type: jira
+  value: "ca-service-virtualization-plugin"

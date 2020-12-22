@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/crx-content-package-deployer"
 developers:
 - "madamcin"
+issues:
+  type: jira
+  value: "crx-content-package-deployer-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "andreashoyerh2m"
 - "ingmarkellner"
+issues:
+  type: jira
+  value: "sonargraph-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/sdelements"
 developers:
 - "securitycompass"
+issues:
+  type: jira
+  value: "sdelements-plugin"

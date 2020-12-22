@@ -7,3 +7,6 @@ developers:
 - "ciroque"
 - "schristou"
 - "allan_burdajewicz"
+issues:
+  type: jira
+  value: "semantic-versioning-plugin"

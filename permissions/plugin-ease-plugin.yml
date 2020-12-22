@@ -9,3 +9,6 @@ developers:
 - "rfriedman"
 - "afinley"
 - "jrodriguez"
+issues:
+  type: jira
+  value: "ease-plugin"

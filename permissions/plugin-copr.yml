@@ -5,3 +5,6 @@ paths:
 - "org/fedoraproject/jenkins/plugins/copr"
 developers:
 - "msrb"
+issues:
+  type: jira
+  value: "copr-plugin"

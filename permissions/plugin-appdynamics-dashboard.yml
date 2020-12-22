@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/appdynamics-dashboard"
 developers:
 - "mdonkers"
+issues:
+  type: github
+  value: "jenkinsci/appdynamics-plugin"

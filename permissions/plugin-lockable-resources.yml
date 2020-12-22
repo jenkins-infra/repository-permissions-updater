@@ -8,3 +8,6 @@ developers:
 - "amuniz"
 - "tgr"
 - "robinjarry"
+issues:
+  type: github
+  value: "jenkinsci/lockable-resources-plugin"

@@ -8,3 +8,6 @@ developers:
 - "arieshout"
 - "raphaelyu"
 - "azure_devops"
+issues:
+  type: github
+  value: "jenkinsci/azure-ad-plugin"

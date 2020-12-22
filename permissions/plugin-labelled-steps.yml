@@ -5,3 +5,6 @@ paths:
 - "me/vickychijwani/jenkins/labelled-steps"
 developers:
 - "vickychijwani"
+issues:
+  type: jira
+  value: "labelled-steps-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ruby-runtime"
 developers:
 - "eitoball"
+issues:
+  type: github
+  value: "jenkinsci/jenkins.rb"

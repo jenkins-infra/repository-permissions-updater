@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/gatling"
 developers:
 - "slandelle"
+issues:
+  type: jira
+  value: "gatling-plugin"

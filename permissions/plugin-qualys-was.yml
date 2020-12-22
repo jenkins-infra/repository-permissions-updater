@@ -5,3 +5,6 @@ paths:
 - "com/qualys/plugins/qualys-was"
 developers:
 - "qualys"
+issues:
+  type: jira
+  value: "qualys-was-plugin"

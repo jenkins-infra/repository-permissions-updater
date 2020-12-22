@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/zap"
 developers:
 - "jordangs"
+issues:
+  type: jira
+  value: "zap-plugin"

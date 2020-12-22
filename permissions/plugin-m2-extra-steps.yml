@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/m2-extra-steps"
 - "org/jvnet/hudson/plugins/m2-extra-steps"
 developers: []
+issues:
+  type: jira
+  value: "m2-extra-steps-plugin"

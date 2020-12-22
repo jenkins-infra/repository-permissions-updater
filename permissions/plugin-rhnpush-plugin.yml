@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/rhnpush-plugin"
 developers:
 - "mtizzoni"
+issues:
+  type: jira
+  value: "rhnpush-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/violation-columns-plugin"
 paths:
 - "org/jenkins-ci/plugins/violation-columns"
 developers: []
+issues:
+  type: jira
+  value: "violation-columns-plugin"

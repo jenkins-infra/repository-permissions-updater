@@ -8,3 +8,6 @@ developers:
 security:
   contacts:
     jira: "foundation_security_members"
+issues:
+  type: jira
+  value: "warnings-ng-plugin"

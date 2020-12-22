@@ -6,4 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/jdepend"
 developers:
 - "oleg_nenashev"
-
+issues:
+  type: jira
+  value: "jdepend-plugin"

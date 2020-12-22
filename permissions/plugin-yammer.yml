@@ -4,3 +4,6 @@ github: "jenkinsci/yammer-plugin"
 paths:
 - "org/jenkins-ci/ruby-plugins/yammer"
 developers: []
+issues:
+  type: github
+  value: "jenkinsci/yammer-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/maven-snapshot-check"
 developers:
 - "donhui"
+issues:
+  type: github
+  value: "jenkinsci/maven-snapshot-check-plugin"

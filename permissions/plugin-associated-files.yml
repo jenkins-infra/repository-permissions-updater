@@ -4,3 +4,6 @@ github: "jenkinsci/associated-files-plugin"
 paths:
 - "org/jenkinsci/plugins/associated-files"
 developers: []
+issues:
+  type: jira
+  value: "associated-files-plugin"

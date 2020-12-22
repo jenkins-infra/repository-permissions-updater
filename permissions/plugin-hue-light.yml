@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/hue-light"
 developers:
 - "mmore"
+issues:
+  type: jira
+  value: "hue-light-plugin"

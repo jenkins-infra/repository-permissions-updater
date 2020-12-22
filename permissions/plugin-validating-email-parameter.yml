@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/validating-email-parameter"
 developers:
 - "szcn"
+issues:
+  type: jira
+  value: "validating-email-parameter-plugin"

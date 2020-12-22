@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/autoaction-step"
 developers:
 - "vochithanh"
+issues:
+  type: jira
+  value: "autoaction-step-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/aws-parameter-store"
 developers:
 - "rikturnbull"
+issues:
+  type: jira
+  value: "aws-parameter-store-plugin"

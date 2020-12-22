@@ -7,3 +7,6 @@ developers:
 - "p4paul"
 - "cbopardikar"
 - "msmeeth"
+issues:
+  type: jira
+  value: "p4-plugin"

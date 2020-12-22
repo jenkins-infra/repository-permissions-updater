@@ -4,3 +4,6 @@ github: "jenkinsci/jsgames-plugin"
 paths:
 - "org/jenkins-ci/plugins/jsgames"
 developers: []
+issues:
+  type: jira
+  value: "jsgames-plugin"

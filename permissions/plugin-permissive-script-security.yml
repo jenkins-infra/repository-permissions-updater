@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/permissive-script-security"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "permissive-script-security-plugin"

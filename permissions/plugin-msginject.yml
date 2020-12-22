@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/msginject"
 developers:
 - "zxiiro"
+issues:
+  type: jira
+  value: "msginject-plugin"

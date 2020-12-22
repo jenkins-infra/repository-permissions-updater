@@ -6,3 +6,6 @@ paths:
 developers:
 - "justnom"
 - "maxhy"
+issues:
+  type: github
+  value: "jenkinsci/proxmox-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/was-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/was-builder"
 developers: []
+issues:
+  type: jira
+  value: "was-builder-plugin"

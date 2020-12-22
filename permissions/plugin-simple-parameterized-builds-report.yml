@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/simple-parameterized-builds-report"
 developers:
 - "nullin"
+issues:
+  type: jira
+  value: "simple-parameterized-builds-report-plugin"

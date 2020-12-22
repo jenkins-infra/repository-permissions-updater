@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/rigor-optimization"
 developers:
 - "wcmonty"
+issues:
+  type: jira
+  value: "rigor-optimization-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/deploy"
 developers:
 - "jansohn"
+issues:
+  type: jira
+  value: "deploy-plugin"

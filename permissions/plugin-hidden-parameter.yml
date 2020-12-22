@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/hidden-parameter"
 developers:
 - "yangli"
+issues:
+  type: jira
+  value: "hidden-parameter-plugin"

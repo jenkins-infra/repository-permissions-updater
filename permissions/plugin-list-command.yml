@@ -4,3 +4,6 @@ github: "jenkinsci/list-command-plugin"
 paths:
 - "org/jenkins-ci/plugins/list-command"
 developers: []
+issues:
+  type: jira
+  value: "list-command-plugin"

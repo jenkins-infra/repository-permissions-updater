@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/dropdown-viewstabbar-plugin"
 developers:
 - "michael1010"
+issues:
+  type: jira
+  value: "dropdown-viewstabbar-plugin"

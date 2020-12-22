@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/figlet-buildstep"
 developers:
 - "slide_o_mix"
+issues:
+  type: jira
+  value: "figlet-buildstep-plugin"

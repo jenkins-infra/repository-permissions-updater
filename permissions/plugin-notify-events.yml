@@ -5,3 +5,6 @@ paths:
 - "events/notify/notify-events"
 developers:
 - "mear"
+issues:
+  type: jira
+  value: "notify-events-plugin"

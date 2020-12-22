@@ -5,3 +5,6 @@ paths:
 - "jenkinsci/unreliable-slave-plugin"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "unreliable-slave-plugin"

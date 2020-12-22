@@ -4,3 +4,6 @@ github: "jenkinsci/caroline-plugin"
 paths:
 - "org/jvnet/hudson/plugins/caroline"
 developers: []
+issues:
+  type: jira
+  value: "caroline-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "macha762"
 - "lucamilanesio"
+issues:
+  type: github
+  value: "jenkinsci/statistics-gatherer-plugin"

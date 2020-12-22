@@ -5,3 +5,6 @@ paths:
 - "CustomHistory/CustomHistory"
 - "org/jenkins-ci/plugins/CustomHistory"
 developers: []
+issues:
+  type: jira
+  value: "customhistory-plugin"

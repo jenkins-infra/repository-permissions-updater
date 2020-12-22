@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/git-prebuildmerge-trait"
 developers:
 - "arty13"
+issues:
+  type: jira
+  value: "git-prebuildmerge-trait-plugin"

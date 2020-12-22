@@ -6,3 +6,6 @@ paths:
 developers:
 - "gruetter"
 - "scaytrase"
+issues:
+  type: github
+  value: "jenkinsci/stashnotifier-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/svncompat14-plugin"
 paths:
 - "org/jvnet/hudson/plugins/svncompat14"
 developers: []
+issues:
+  type: jira
+  value: "svncompat14-plugin"

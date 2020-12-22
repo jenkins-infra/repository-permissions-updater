@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/docker-build-step"
 developers:
 - "vjuranek"
+issues:
+  type: jira
+  value: "docker-build-step-plugin"

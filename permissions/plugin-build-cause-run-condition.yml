@@ -4,3 +4,6 @@ github: "jenkinsci/build-cause-run-condition-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-cause-run-condition"
 developers: []
+issues:
+  type: jira
+  value: "build-cause-run-condition-plugin"

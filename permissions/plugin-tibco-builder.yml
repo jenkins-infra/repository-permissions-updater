@@ -4,3 +4,6 @@ github: "jenkinsci/tibco-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/tibco-builder"
 developers: []
+issues:
+  type: jira
+  value: "tibco-builder-plugin"

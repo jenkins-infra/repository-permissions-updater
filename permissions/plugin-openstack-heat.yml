@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/openstack-heat"
 developers:
 - "methodes_arkea"
+issues:
+  type: jira
+  value: "openstack-heat-plugin"

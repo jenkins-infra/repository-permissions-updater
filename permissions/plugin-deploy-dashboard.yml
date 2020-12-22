@@ -8,3 +8,6 @@ developers:
   - "namecheap_jenkins"
   - "StyleT"
   - "yuriypuchkov"
+issues:
+  type: jira
+  value: "deploy-dashboard-plugin"

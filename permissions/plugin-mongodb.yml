@@ -4,3 +4,6 @@ github: "jenkinsci/mongodb-plugin"
 paths:
 - "org/jenkins-ci/plugins/mongodb"
 developers: []
+issues:
+  type: jira
+  value: "mongodb-plugin"

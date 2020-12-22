@@ -4,3 +4,6 @@ github: "jenkinsci/codecover-plugin"
 paths:
 - "org/jenkins-ci/plugins/codecover"
 developers: []
+issues:
+  type: jira
+  value: "codecover-plugin"

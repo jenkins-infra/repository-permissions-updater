@@ -4,3 +4,6 @@ github: "jenkinsci/jquery-ui-plugin"
 paths:
 - "org/jenkins-ci/plugins/jquery-ui"
 developers: []
+issues:
+  type: jira
+  value: "jquery-ui-plugin"

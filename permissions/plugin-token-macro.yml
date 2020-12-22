@@ -6,3 +6,6 @@ paths:
 developers:
 - "oleg_nenashev"
 - "slide_o_mix"
+issues:
+  type: jira
+  value: "token-macro-plugin"

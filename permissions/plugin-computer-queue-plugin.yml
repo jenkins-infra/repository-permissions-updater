@@ -5,3 +5,6 @@ paths:
 - "jenkins/ci/plugins/computerqueue/computer-queue-plugin"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "computer-queue-plugin"

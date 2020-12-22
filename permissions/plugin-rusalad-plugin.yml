@@ -4,3 +4,6 @@ github: "jenkinsci/rusalad-plugin"
 paths:
 - "org/jenkins-ci/plugins/rusalad-plugin"
 developers: []
+issues:
+  type: jira
+  value: "rusalad-plugin"

@@ -9,3 +9,6 @@ developers:
 - "kohsuke"
 - "aheritier"
 - "pierrebtz"
+issues:
+  type: jira
+  value: "cloudbees-jenkins-advisor-plugin"

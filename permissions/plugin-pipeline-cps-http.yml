@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/pipeline-cps-http"
 developers:
 - "julienduchesne"
+issues:
+  type: jira
+  value: "pipeline-cps-http-plugin"

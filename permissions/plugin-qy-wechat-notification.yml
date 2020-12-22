@@ -4,3 +4,6 @@ paths:
 - "org/jenkins-ci/plugins/qy-wechat-notification"
 developers:
 - "xiaoj313"
+issues:
+  type: jira
+  value: "qy-wechat-notification-plugin"

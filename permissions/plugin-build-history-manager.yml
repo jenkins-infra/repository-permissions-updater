@@ -5,3 +5,6 @@ paths:
 - "pl/damianszczepanik/build-history-manager"
 developers:
 - "dszczepanik"
+issues:
+  type: github
+  value: "jenkinsci/build-history-manager-plugin"

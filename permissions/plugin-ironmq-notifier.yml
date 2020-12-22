@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ironmq-notifier"
 developers:
 - "mikecaspar"
+issues:
+  type: jira
+  value: "ironmq-notifier-plugin"

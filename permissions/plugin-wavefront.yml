@@ -5,3 +5,6 @@ paths:
 - "com/vmware/devops/wavefront"
 developers:
 - "ddparapanov"
+issues:
+  type: jira
+  value: "wavefront-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/StashBranchParameter"
 developers:
 - "eernie"
+issues:
+  type: jira
+  value: "stashbranchparameter-plugin"

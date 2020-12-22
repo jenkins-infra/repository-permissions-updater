@@ -6,3 +6,6 @@ paths:
 - "org/jenkinsci/plugins/valgrind/valgrind"
 developers:
 - "existence"
+issues:
+  type: jira
+  value: "valgrind-plugin"

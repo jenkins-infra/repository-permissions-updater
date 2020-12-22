@@ -6,3 +6,6 @@ paths:
 developers:
 - "scpeters"
 - "seriousamlqz"
+issues:
+  type: jira
+  value: "flaky-test-handler-plugin"

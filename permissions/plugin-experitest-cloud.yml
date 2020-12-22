@@ -6,4 +6,6 @@ paths:
 developers:
   - "phuonghqh"
   - "daniel_akua"
-
+issues:
+  type: jira
+  value: "experitest-cloud-plugin"

@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/font-awesome-api"
 developers:
 - "drulli"
+issues:
+  type: jira
+  value: "font-awesome-api-plugin"

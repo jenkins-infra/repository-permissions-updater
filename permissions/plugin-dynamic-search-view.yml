@@ -5,3 +5,6 @@ paths:
 - "com/synopsys/arc/jenkinsci/dynamic-search-view"
 developers:
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "dynamic-search-view-plugin"

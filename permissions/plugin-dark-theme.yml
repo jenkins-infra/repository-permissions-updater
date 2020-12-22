@@ -6,4 +6,6 @@ paths:
 developers:
 - "timja"
 - "oleg_nenashev"
-
+issues:
+  type: github
+  value: "jenkinsci/dark-theme-plugin"

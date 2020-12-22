@@ -4,3 +4,6 @@ github: "jenkinsci/slave-squatter-plugin"
 paths:
 - "org/jenkins-ci/plugins/slave-squatter"
 developers: []
+issues:
+  type: jira
+  value: "slave-squatter-plugin"

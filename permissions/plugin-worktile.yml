@@ -8,3 +8,6 @@ developers:
 - "sunjingyun"
 - "cheerfyt"
 - "13111179550"
+issues:
+  type: jira
+  value: "worktile-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/github-autostatus"
 developers:
 - "jeffpearce"
+issues:
+  type: github
+  value: "jenkinsci/github-autostatus-plugin"

@@ -9,3 +9,6 @@ developers:
 - "olivergondza"
 - "vjuranek"
 - "pajasoft"
+issues:
+  type: jira
+  value: "ws-cleanup-plugin"

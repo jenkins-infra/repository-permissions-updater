@@ -6,3 +6,6 @@ paths:
 developers:
 - "gesh"
 - "marcrohlfs"
+issues:
+  type: jira
+  value: "maven-metadata-plugin"

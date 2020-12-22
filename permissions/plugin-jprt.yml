@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jprt"
 - "org/jvnet/hudson/plugins/jprt"
 developers: []
+issues:
+  type: jira
+  value: "jprt-plugin"

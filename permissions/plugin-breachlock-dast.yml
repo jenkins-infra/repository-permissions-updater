@@ -4,3 +4,6 @@ paths:
 - "io/jenkins/plugins/breachlock-dast"
 developers:
 - "mitchelk_breachlock"
+issues:
+  type: jira
+  value: "breachlock-dast-plugin"

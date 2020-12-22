@@ -6,3 +6,6 @@ paths:
 developers:
 - "alexsomai"
 - "oleg_nenashev"
+issues:
+  type: jira
+  value: "external-workspace-manager-plugin"

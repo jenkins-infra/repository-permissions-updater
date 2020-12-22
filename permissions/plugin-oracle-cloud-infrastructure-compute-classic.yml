@@ -9,3 +9,6 @@ developers:
 - "hhuliu"
 - "line"
 - "zxx"
+issues:
+  type: jira
+  value: "oracle-cloud-infrastructure-compute-classic-plugin"

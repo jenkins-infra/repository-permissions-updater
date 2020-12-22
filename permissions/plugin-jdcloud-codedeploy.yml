@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jdcloud-codedeploy"
 developers:
 - "jdcloud_codedeploy"
+issues:
+  type: jira
+  value: "jdcloud-codedeploy-plugin"

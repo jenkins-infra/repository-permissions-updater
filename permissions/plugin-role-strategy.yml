@@ -7,3 +7,6 @@ paths:
 developers:
 - "oleg_nenashev"
 - "runzexia"
+issues:
+  type: jira
+  value: "role-strategy-plugin"

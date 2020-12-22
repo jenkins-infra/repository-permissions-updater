@@ -5,3 +5,6 @@ paths:
 - "com/microsoft/azurebatch/azure-batch-parallel"
 developers:
 - "azurebatch"
+issues:
+  type: github
+  value: "jenkinsci/azure-batch-parallel-plugin"

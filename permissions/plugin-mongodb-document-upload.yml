@@ -4,3 +4,6 @@ github: "jenkinsci/mongodb-document-upload-plugin"
 paths:
 - "org/jenkins-ci/plugins/mongodb-document-upload"
 developers: []
+issues:
+  type: jira
+  value: "mongodb-document-upload-plugin"

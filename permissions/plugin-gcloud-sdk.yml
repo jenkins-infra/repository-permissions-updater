@@ -6,3 +6,6 @@ paths:
 developers:
 - "jrluis"
 - "jhansche"
+issues:
+  type: jira
+  value: "gcloud-sdk-plugin"

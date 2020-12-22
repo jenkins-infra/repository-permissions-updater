@@ -7,3 +7,6 @@ developers:
 - "egoughnour"
 - "yasu_s"
 - "jetersen"
+issues:
+  type: jira
+  value: "vstestrunner-plugin"

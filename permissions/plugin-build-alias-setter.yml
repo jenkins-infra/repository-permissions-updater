@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/build-alias-setter"
 developers:
 - "olivergondza"
+issues:
+  type: jira
+  value: "build-alias-setter-plugin"

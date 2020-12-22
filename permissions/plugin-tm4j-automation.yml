@@ -5,3 +5,6 @@ paths:
 - "com/adaptavist/tm4j-automation"
 developers:
 - "vpelizza"
+issues:
+  type: jira
+  value: "tm4j-automation-plugin"

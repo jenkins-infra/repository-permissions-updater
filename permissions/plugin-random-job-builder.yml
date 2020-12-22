@@ -6,3 +6,6 @@ paths:
 developers:
 - "stephenconnolly"
 - "svanoort"
+issues:
+  type: jira
+  value: "random-job-builder-plugin"

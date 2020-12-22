@@ -6,3 +6,6 @@ paths:
 developers:
 - "asafgurveertu"
 - "nivkeidan"
+issues:
+  type: jira
+  value: "anka-build-plugin"

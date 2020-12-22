@@ -11,4 +11,6 @@ developers:
 - "stephenconnolly"
 - "wolfs"
 - "dnusbaum"
-
+issues:
+  type: jira
+  value: "promoted-builds-plugin"

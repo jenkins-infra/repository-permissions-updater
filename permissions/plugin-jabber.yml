@@ -6,3 +6,6 @@ paths:
 developers:
 - "kutzi"
 - "flow"
+issues:
+  type: jira
+  value: "jabber-plugin"

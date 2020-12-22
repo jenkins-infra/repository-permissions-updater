@@ -11,3 +11,6 @@ developers:
 security:
   contacts:
     email: "aws-security@amazon.com"
+issues:
+  type: jira
+  value: "aws-codebuild-plugin"

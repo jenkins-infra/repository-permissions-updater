@@ -5,3 +5,6 @@ paths:
 - "com/itemis/jenkins/plugins/unleash"
 developers:
 - "shillner"
+issues:
+  type: jira
+  value: "unleash-plugin"

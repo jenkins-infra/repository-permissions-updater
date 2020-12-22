@@ -4,3 +4,6 @@ github: "jenkinsci/random-string-parameter-plugin"
 paths:
 - "org/jenkins-ci/plugins/random-string-parameter"
 developers: []
+issues:
+  type: jira
+  value: "random-string-parameter-plugin"

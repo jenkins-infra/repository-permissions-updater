@@ -5,3 +5,6 @@ paths:
 - "com/compuware/jenkins/compuware-common-configuration"
 developers:
 - "cpwr_jenkins"
+issues:
+  type: jira
+  value: "compuware-common-configuration-plugin"

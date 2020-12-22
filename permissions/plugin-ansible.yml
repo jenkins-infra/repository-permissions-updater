@@ -6,3 +6,6 @@ paths:
 developers:
 - "sirot"
 - "escoem"
+issues:
+  type: jira
+  value: "ansible-plugin"

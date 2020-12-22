@@ -5,3 +5,6 @@ paths:
 - "com/blazemeter/plugins/BlazeMeterJenkinsPlugin"
 developers:
 - "sat_blazemeter"
+issues:
+  type: jira
+  value: "blazemeterjenkinsplugin-plugin"

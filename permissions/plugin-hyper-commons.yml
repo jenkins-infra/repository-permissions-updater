@@ -6,3 +6,6 @@ paths:
 developers:
 - "xjimmyshcn"
 - "xlgao"
+issues:
+  type: jira
+  value: "hyper-commons-plugin"

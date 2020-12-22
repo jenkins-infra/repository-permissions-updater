@@ -6,3 +6,6 @@ paths:
 developers:
 - "cchabanois"
 - "menonvarun"
+issues:
+  type: jira
+  value: "testInProgress-plugin"

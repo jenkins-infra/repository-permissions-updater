@@ -6,3 +6,6 @@ paths:
 developers:
 - "batmat"
 - "oleg_nenashev"
+issues:
+  type: github
+  value: "jenkinsci/extended-read-permission-plugin"

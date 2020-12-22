@@ -4,3 +4,6 @@ github: "jenkinsci/jbpm-workflow-plugin"
 paths:
 - "jenkins/plugins/jbpm/jbpm-workflow-plugin"
 developers: []
+issues:
+  type: jira
+  value: "jbpm-workflow-plugin"

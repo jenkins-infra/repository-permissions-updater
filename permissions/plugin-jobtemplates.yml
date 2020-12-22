@@ -4,3 +4,6 @@ github: "jenkinsci/jobtemplates-plugin"
 paths:
 - "com/unitedinternet/jenkins/plugins/jobtemplates/jobtemplates"
 developers: []
+issues:
+  type: github
+  value: "jenkinsci/jobtemplates-plugin"

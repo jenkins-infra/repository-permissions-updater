@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jobrequeue"
 developers:
 - "dthomas"
+issues:
+  type: jira
+  value: "jobrequeue-plugin"

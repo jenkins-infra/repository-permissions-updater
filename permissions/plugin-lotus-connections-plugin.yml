@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/lotus-connections-plugin"
 developers:
 - "philrumble"
+issues:
+  type: jira
+  value: "lotus-connections-plugin"

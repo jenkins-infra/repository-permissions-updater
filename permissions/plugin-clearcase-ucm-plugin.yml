@@ -6,3 +6,6 @@ paths:
 developers:
 - "madsnielsen"
 - "praqma"
+issues:
+  type: jira
+  value: "clearcase-ucm-plugin"

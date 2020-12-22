@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/selected-tests-executor"
 developers:
 - "tamarca"
+issues:
+  type: jira
+  value: "selected-tests-executor-plugin"

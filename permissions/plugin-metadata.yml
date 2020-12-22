@@ -4,3 +4,6 @@ github: "jenkinsci/metadata-plugin"
 paths:
 - "com/sonyericsson/hudson/plugins/metadata/metadata"
 developers: []
+issues:
+  type: jira
+  value: "metadata-plugin"

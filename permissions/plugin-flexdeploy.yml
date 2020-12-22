@@ -6,3 +6,6 @@ paths:
 developers:
 - "bhoffman20"
 - "flexagon9"
+issues:
+  type: jira
+  value: "flexdeploy-plugin"

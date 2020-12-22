@@ -5,4 +5,6 @@ paths:
 - "io/jenkins/plugins/sge-cloud-plugin"
 developers:
 - "jmcgeheeiv"
-
+issues:
+  type: github
+  value: "jenkinsci/sge-cloud-plugin"

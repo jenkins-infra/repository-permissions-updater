@@ -4,3 +4,6 @@ github: "jenkinsci/job-poll-action-plugin"
 paths:
 - "org/jenkins-ci/plugins/job-poll-action-plugin"
 developers: []
+issues:
+  type: jira
+  value: "job-poll-action-plugin"

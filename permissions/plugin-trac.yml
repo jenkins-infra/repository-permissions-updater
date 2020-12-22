@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/trac"
 - "org/jvnet/hudson/plugins/trac"
 developers: []
+issues:
+  type: jira
+  value: "trac-plugin"

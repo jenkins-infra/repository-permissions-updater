@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/mypeople"
 developers:
 - "linugee"
+issues:
+  type: jira
+  value: "mypeople-plugin"

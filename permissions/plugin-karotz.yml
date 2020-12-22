@@ -4,3 +4,6 @@ github: "jenkinsci/karotz-plugin"
 paths:
 - "org/jenkins-ci/plugins/karotz"
 developers: []
+issues:
+  type: jira
+  value: "karotz-plugin"

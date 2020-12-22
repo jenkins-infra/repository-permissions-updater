@@ -6,3 +6,6 @@ paths:
 - "org/jvnet/hudson/plugins/testng-plugin"
 developers:
 - "nullin"
+issues:
+  type: jira
+  value: "testng-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/arkea/satd/stoplightio-report"
 developers:
 - "ntiss"
+issues:
+  type: jira
+  value: "stoplightio-report-plugin"

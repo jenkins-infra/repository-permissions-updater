@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/fortify-cloudscan-jenkins-plugin"
 developers:
 - "sspringett"
+issues:
+  type: jira
+  value: "fortify-cloudscan-jenkins-plugin"

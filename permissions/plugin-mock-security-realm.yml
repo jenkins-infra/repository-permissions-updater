@@ -7,3 +7,6 @@ developers:
 - "jglick"
 - "stephenconnolly"
 - "rarabaolaza"
+issues:
+  type: jira
+  value: "mock-security-realm-plugin"

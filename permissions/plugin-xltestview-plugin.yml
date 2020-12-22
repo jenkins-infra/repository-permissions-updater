@@ -6,3 +6,6 @@ paths:
 developers:
 - "amolenaar"
 - "klaren"
+issues:
+  type: github
+  value: "jenkinsci/xltestview-plugin"

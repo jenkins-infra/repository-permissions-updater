@@ -8,3 +8,6 @@ developers:
 - "danielfbm"
 - "chengjingtao"
 - "cizezsy"
+issues:
+  type: jira
+  value: "alauda-kubernetes-support-plugin"

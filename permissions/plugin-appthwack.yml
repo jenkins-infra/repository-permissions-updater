@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/appthwack"
 developers:
 - "appthwack"
+issues:
+  type: jira
+  value: "appthwack-plugin"

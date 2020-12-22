@@ -6,3 +6,6 @@ paths:
 developers:
 - "erwyn"
 - "crobinson"
+issues:
+  type: jira
+  value: "tuleap-api-plugin"

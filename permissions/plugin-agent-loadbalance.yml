@@ -5,3 +5,6 @@ paths:
 - "com/surenpi/jenkins/agent-loadbalance"
 developers:
 - "surenpi"
+issues:
+  type: jira
+  value: "agent-loadbalance-plugin"

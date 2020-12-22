@@ -6,3 +6,6 @@ paths:
 developers:
 - "terma"
 - "dmotpan"
+issues:
+  type: github
+  value: "jenkinsci/github-pr-coverage-status-plugin"

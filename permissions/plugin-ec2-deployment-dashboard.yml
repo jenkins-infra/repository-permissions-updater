@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ec2-deployment-dashboard"
 developers:
 - "marcelbirkner"
+issues:
+  type: jira
+  value: "ec2-deployment-dashboard-plugin"

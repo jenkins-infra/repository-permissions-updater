@@ -5,3 +5,6 @@ paths:
 - "com/testein/testein"
 developers:
 - "testein"
+issues:
+  type: jira
+  value: "testein-plugin"

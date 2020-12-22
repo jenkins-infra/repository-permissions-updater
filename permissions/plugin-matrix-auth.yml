@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/matrix-auth"
 developers:
 - "danielbeck"
+issues:
+  type: jira
+  value: "matrix-auth-plugin"

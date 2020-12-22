@@ -4,3 +4,6 @@ github: "jenkinsci/japex-plugin"
 paths:
 - "org/jvnet/hudson/plugins/japex"
 developers: []
+issues:
+  type: jira
+  value: "japex-plugin"

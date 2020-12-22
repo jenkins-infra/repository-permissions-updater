@@ -4,3 +4,6 @@ github: "jenkinsci/anchor-chain-plugin"
 paths:
 - "org/jenkins-ci/plugins/AnchorChain"
 developers: []
+issues:
+  type: jira
+  value: "anchorchain-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/jianliao"
 developers:
 - "jianliao"
+issues:
+  type: jira
+  value: "jianliao-plugin"

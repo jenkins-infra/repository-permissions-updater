@@ -5,3 +5,6 @@ paths:
 - "com/amcbridge/build-configurator"
 developers: 
 - "amcbridgedevteam"
+issues:
+  type: jira
+  value: "build-configurator-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/flexteam-plugin"
 paths:
 - "org/jvnet/hudson/plugins/flexteam"
 developers: []
+issues:
+  type: jira
+  value: "flexteam-plugin"

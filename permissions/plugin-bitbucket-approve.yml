@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/bitbucket-approve"
 developers:
 - "bhurling"
+issues:
+  type: jira
+  value: "bitbucket-approve-plugin"

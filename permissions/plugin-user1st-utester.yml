@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/user1st-utester"
 developers:
 - "matt_user1st"
+issues:
+  type: jira
+  value: "user1st-utester-plugin"

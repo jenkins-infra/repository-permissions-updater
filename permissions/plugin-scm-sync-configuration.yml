@@ -8,3 +8,6 @@ developers:
 - "fcamblor"
 - "rodrigc"
 - "palacgui"
+issues:
+  type: github
+  value: "jenkinsci/scm-sync-configuration-plugin"

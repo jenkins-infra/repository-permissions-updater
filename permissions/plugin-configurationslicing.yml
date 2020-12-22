@@ -8,3 +8,6 @@ developers:
 - "mdonohue"
 - "ninian"
 - "guysoft"
+issues:
+  type: github
+  value: "jenkinsci/configurationslicing-plugin"

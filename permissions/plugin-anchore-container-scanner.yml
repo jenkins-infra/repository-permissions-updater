@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/anchore-container-scanner"
 developers:
 - "nurmi"
+issues:
+  type: jira
+  value: "anchore-container-scanner-plugin"

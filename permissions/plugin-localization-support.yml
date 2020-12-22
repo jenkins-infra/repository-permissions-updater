@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/localization-support"
 developers:
 - "danielbeck"
+issues:
+  type: jira
+  value: "localization-support-plugin"

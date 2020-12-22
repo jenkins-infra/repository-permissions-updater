@@ -5,3 +5,6 @@ paths:
 - "com/inflectra/spiratest/plugins/inflectra-spira-integration"
 developers:
 - "inflectra"
+issues:
+  type: jira
+  value: "inflectra-spira-integration-plugin"

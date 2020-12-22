@@ -4,3 +4,6 @@ paths:
 - "io/jenkins/plugins/amqp-build-trigger"
 developers:
 - "kpvdr"
+issues:
+  type: jira
+  value: "amqp-build-trigger-plugin"

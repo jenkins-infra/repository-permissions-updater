@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/adoptopenjdk"
 developers:
 - "mmchr"
+issues:
+  type: jira
+  value: "adoptopenjdk-plugin"

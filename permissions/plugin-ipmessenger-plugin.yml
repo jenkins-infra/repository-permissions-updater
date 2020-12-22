@@ -4,3 +4,6 @@ github: "jenkinsci/ipmessenger-plugin"
 paths:
 - "org/jenkins-ci/plugins/ipmessenger-plugin"
 developers: []
+issues:
+  type: jira
+  value: "ipmessenger-plugin"

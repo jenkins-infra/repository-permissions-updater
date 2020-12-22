@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/diawi-upload"
 developers:
 - "m_adawi"
+issues:
+  type: jira
+  value: "diawi-upload-plugin"

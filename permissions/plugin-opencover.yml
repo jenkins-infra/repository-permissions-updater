@@ -6,3 +6,6 @@ paths:
 developers:
 - "asavanchuk"
 - "cizezsy"
+issues:
+  type: github
+  value: "jenkinsci/opencover-plugin"

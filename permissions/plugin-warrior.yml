@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/warrior"
 developers:
 - "venkat1077"
+issues:
+  type: jira
+  value: "warrior-plugin"

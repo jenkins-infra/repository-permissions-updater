@@ -4,3 +4,6 @@ github: "jenkinsci/liverebel-deploy-plugin"
 paths:
 - "org/jenkins-ci/plugins/liverebel-deploy"
 developers: []
+issues:
+  type: jira
+  value: "liverebel-deploy-plugin"

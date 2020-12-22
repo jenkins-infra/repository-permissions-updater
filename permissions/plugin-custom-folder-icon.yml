@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/custom-folder-icon"
 developers:
 - strangelookingnerd
+issues:
+  type: jira
+  value: "custom-folder-icon-plugin"

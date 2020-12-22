@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/display-console-output"
 developers:
 - "lyenliang"
+issues:
+  type: jira
+  value: "display-console-output-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/batch-task"
 developers:
 - "fbelzunc"
+issues:
+  type: jira
+  value: "batch-task-plugin"

@@ -4,3 +4,6 @@ paths:
 - "io/jenkins/plugins/simple-queue"
 developers:
 - "otradovec"
+issues:
+  type: jira
+  value: "simple-queue-plugin"

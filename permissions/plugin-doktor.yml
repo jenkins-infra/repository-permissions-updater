@@ -5,3 +5,6 @@ paths:
 - "by/dev/madhead/doktor/doktor"
 developers:
 - "madhead"
+issues:
+  type: jira
+  value: "doktor-plugin"

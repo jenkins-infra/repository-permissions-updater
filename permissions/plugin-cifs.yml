@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/cifs"
 - "org/jvnet/hudson/plugins/cifs"
 developers: []
+issues:
+  type: jira
+  value: "cifs-plugin"

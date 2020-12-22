@@ -7,3 +7,6 @@ developers:
 - "aheritier"
 - "recena"
 - "ydubreuil"
+issues:
+  type: jira
+  value: "cloudbees-disk-usage-simple-plugin"

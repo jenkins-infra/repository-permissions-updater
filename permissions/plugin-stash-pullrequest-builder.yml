@@ -7,3 +7,6 @@ developers:
 - "nemccarthy"
 - "jbochenski"
 - "jimklimov"
+issues:
+  type: jira
+  value: "stash-pullrequest-builder-plugin"

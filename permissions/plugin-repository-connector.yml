@@ -7,3 +7,6 @@ paths:
 developers:
 - "mikee805"
 - "jgangemi"
+issues:
+  type: jira
+  value: "repository-connector-plugin"

@@ -10,3 +10,6 @@ developers:
 - "jtaboada"
 - "olamy"
 - "vlatombe"
+issues:
+  type: jira
+  value: "cloudbees-enabler-plugin"

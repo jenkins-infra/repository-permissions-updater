@@ -4,3 +4,6 @@ github: "jenkinsci/tattletale-plugin"
 paths:
 - "org/jenkins-ci/plugins/tattletale-plugin"
 developers: []
+issues:
+  type: jira
+  value: "tattletale-plugin"

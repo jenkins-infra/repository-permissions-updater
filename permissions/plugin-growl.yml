@@ -4,3 +4,6 @@ github: "jenkinsci/growl-plugin"
 paths:
 - "org/jenkins-ci/plugins/growl"
 developers: []
+issues:
+  type: jira
+  value: "growl-plugin"

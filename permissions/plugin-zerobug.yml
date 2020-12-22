@@ -6,3 +6,6 @@ paths:
 developers:
 - "cvfelipeoliveira"
 - "fernandomengali"
+issues:
+  type: jira
+  value: "zerobug-plugin"

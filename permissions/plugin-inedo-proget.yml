@@ -5,3 +5,6 @@ paths:
 - "com/inedo/proget/inedo-proget"
 developers:
 - "andrewsumner"
+issues:
+  type: jira
+  value: "inedo-proget-plugin"

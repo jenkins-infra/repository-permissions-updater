@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/toolenv"
 developers:
 - "skundrik"
+issues:
+  type: jira
+  value: "toolenv-plugin"

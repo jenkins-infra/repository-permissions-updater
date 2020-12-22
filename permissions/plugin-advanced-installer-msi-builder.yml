@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/advanced-installer-msi-builder"
 developers:
 - "advinst"
+issues:
+  type: github
+  value: "jenkinsci/advanced-installer-msi-builder-plugin"

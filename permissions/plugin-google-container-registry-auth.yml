@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/google-container-registry-auth"
 developers:
 - "wzheng2310"
+issues:
+  type: jira
+  value: "google-container-registry-auth-plugin"

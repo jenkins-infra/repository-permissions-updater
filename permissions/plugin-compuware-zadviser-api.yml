@@ -4,3 +4,6 @@ paths:
 - "com/compuware/jenkins/compuware-zadviser-api"
 developers:
 - "jgoering41"
+issues:
+  type: jira
+  value: "compuware-zadviser-api-plugin"

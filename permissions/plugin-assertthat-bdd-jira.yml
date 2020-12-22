@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/assertthat-bdd-jira"
 developers:
 - "glib_briia"
+issues:
+  type: jira
+  value: "assertthat-bdd-jira-plugin"

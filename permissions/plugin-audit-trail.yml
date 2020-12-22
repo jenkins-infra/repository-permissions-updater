@@ -8,3 +8,6 @@ developers:
 - "olivergondza"
 - "tsek"
 - "pierrebtz"
+issues:
+  type: jira
+  value: "audit-trail-plugin"

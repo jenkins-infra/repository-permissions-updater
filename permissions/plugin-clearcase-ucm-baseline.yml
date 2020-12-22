@@ -4,3 +4,6 @@ github: "jenkinsci/clearcase-ucm-baseline-plugin"
 paths:
 - "org/jvnet/hudson/plugins/clearcase-ucm-baseline"
 developers: []
+issues:
+  type: jira
+  value: "clearcase-ucm-baseline-plugin"

@@ -6,3 +6,6 @@ paths:
 developers:
 - "mreinhardt"
 - "recena"
+issues:
+  type: jira
+  value: "log-parser-plugin"

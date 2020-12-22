@@ -5,3 +5,6 @@ paths:
 - "org/continuousassurance/swamp/jenkins/swamp"
 developers:
 - "swamp_jenkins_plugin"
+issues:
+  type: jira
+  value: "swamp-plugin"

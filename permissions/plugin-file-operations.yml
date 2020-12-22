@@ -5,3 +5,6 @@ paths:
 - "sp/sd/file-operations"
 developers:
 - "pskumar448"
+issues:
+  type: jira
+  value: "file-operations-plugin"

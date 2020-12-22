@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/qualityclouds"
 developers:
 - "saleig"
+issues:
+  type: jira
+  value: "qualityclouds-plugin"

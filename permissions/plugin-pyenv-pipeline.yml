@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/pyenv-pipeline"
 developers:
 - "cstarner"
+issues:
+  type: github
+  value: "jenkinsci/pyenv-pipeline-plugin"

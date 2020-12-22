@@ -6,3 +6,6 @@ paths:
 developers:
 - "jordanglassman"
 - "tfennelly"
+issues:
+  type: jira
+  value: "cloudbees-devoptics-enabler-plugin"

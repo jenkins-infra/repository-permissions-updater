@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/job-fan-in"
 developers:
 - "lonkaryogeshr"
+issues:
+  type: jira
+  value: "job-fan-in-plugin"

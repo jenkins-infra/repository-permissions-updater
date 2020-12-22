@@ -7,3 +7,6 @@ developers:
 - "surya548"
 - "suryagaddipati"
 - "vvitayau"
+issues:
+  type: jira
+  value: "dotci-plugin"

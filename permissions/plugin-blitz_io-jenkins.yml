@@ -4,3 +4,6 @@ github: "jenkinsci/blitz_io-plugin"
 paths:
 - "io/blitz/blitz_io-jenkins"
 developers: []
+issues:
+  type: jira
+  value: "blitz_io-jenkins-plugin"

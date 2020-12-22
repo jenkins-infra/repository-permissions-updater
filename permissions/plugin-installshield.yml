@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/installshield"
 developers:
 - "bambas"
+issues:
+  type: jira
+  value: "installshield-plugin"

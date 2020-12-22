@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/windocks-start-container"
 developers:
 - "windocks"
+issues:
+  type: jira
+  value: "windocks-start-container-plugin"

@@ -5,3 +5,6 @@ paths:
   - "com/qaconsole/qaconsole-test-automation-reporter-plugin"
 developers:
   - "best4test_com"
+issues:
+  type: jira
+  value: "qaconsole-test-automation-reporter-plugin"

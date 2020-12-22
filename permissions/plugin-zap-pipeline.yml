@@ -5,3 +5,6 @@ paths:
 - "com/vrondakis/zap/zap-pipeline"
 developers:
 - "vrondakis"
+issues:
+  type: github
+  value: "jenkinsci/zap-pipeline-plugin"

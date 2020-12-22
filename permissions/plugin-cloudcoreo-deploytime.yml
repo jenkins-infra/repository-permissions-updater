@@ -6,3 +6,6 @@ paths:
 developers:
 - "pauldallen"
 - "armaneous"
+issues:
+  type: jira
+  value: "cloudcoreo-deploytime-plugin"

@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/multi-module-tests-publisher"
 developers:
 - "vimil"
+issues:
+  type: github
+  value: "jenkinsci/multi-module-tests-publisher-plugin"

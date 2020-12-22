@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/ws-execution-manager"
 developers:
 - "dtheobald"
+issues:
+  type: jira
+  value: "ws-execution-manager-plugin"

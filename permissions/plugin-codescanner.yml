@@ -4,3 +4,6 @@ github: "jenkinsci/codescanner-plugin"
 paths:
 - "org/jvnet/hudson/plugins/codescanner"
 developers: []
+issues:
+  type: jira
+  value: "codescanner-plugin"

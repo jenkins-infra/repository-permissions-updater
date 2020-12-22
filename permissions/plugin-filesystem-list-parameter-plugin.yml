@@ -5,3 +5,6 @@ paths:
 - "aendter/jenkins/plugins/filesystem-list-parameter-plugin"
 developers:
 - "aendter"
+issues:
+  type: jira
+  value: "filesystem-list-parameter-plugin"

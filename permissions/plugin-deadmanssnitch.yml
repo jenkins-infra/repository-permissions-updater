@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/deadmanssnitch"
 developers:
 - "kamatama41"
+issues:
+  type: jira
+  value: "deadmanssnitch-plugin"

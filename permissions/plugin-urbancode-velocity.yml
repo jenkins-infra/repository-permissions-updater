@@ -8,3 +8,6 @@ developers:
 - "urbancode_velocity"
 - "crjenkins89"
 - "anthill"
+issues:
+  type: jira
+  value: "urbancode-velocity-plugin"

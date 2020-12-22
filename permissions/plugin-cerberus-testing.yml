@@ -7,3 +7,6 @@ developers:
 - "nicodeur"
 - "vertigo17"
 - "gotier"
+issues:
+  type: github
+  value: "jenkinsci/cerberus-testing-plugin"

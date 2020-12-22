@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/maven-invoker-plugin"
 developers:
 - "olamy"
+issues:
+  type: jira
+  value: "maven-invoker-plugin"

@@ -5,3 +5,6 @@ paths:
 - "net/jenkins/behave-testresults-publisher"
 developers:
 - "chaitanyachannella"
+issues:
+  type: jira
+  value: "behave-testresults-publisher-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/compuware/jenkins/compuware-topaz-utilities"
 developers:
 - "cpwr_jenkins"
+issues:
+  type: jira
+  value: "compuware-topaz-utilities-plugin"

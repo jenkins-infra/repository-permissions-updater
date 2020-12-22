@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/build-token-trigger"
 developers:
 - "stephenconnolly"
+issues:
+  type: jira
+  value: "build-token-trigger-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/global-variable-string-parameter-plugin"
 paths:
 - "org/jenkins-ci/plugins/global-variable-string-parameter"
 developers: []
+issues:
+  type: jira
+  value: "global-variable-string-parameter-plugin"

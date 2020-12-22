@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/testweaver"
 developers:
 - "qtronic"
+issues:
+  type: jira
+  value: "testweaver-plugin"

@@ -5,3 +5,6 @@ paths:
 - "com/thalesgroup/jenkins-ci/plugins/cpptest"
 developers:
 - "gbois"
+issues:
+  type: jira
+  value: "cpptest-plugin"

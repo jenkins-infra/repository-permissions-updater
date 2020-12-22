@@ -5,3 +5,6 @@ paths:
 - "io/jenkins/plugins/multi-branch-priority-sorter"
 developers:
 - "surenpi"
+issues:
+  type: github
+  value: "jenkinsci/multi-branch-priority-sorter-plugin"

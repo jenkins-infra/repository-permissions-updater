@@ -6,3 +6,6 @@ paths:
 developers:
 - "cdelmonte"
 - "macghriogair"
+issues:
+  type: github
+  value: "jenkinsci/bitbucket-push-and-pull-request-plugin"

@@ -4,3 +4,6 @@ github: "jenkinsci/hall-plugin"
 paths:
 - "com/companyline/hall/jenkins/hall-jenkins"
 developers: []
+issues:
+  type: jira
+  value: "hall-jenkins"

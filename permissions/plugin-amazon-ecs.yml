@@ -7,3 +7,6 @@ developers:
 - "webrat"
 - "pgarbe"
 - "jequals5"
+issues:
+  type: github
+  value: "jenkinsci/amazon-ecs-plugin"

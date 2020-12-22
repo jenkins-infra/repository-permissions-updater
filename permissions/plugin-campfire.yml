@@ -4,3 +4,6 @@ github: "jenkinsci/campfire-plugin"
 paths:
 - "org/jenkins-ci/plugins/campfire"
 developers: []
+issues:
+  type: jira
+  value: "campfire-plugin"

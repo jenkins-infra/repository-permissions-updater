@@ -4,3 +4,6 @@ github: "jenkinsci/build-line-plugin"
 paths:
 - "org/jenkins-ci/plugins/build-line"
 developers: []
+issues:
+  type: jira
+  value: "build-line-plugin"

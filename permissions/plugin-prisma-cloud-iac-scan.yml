@@ -6,3 +6,6 @@ paths:
 
 developers:
 - "shiftleftiacscan"
+issues:
+  type: jira
+  value: "prisma-cloud-iac-scan-plugin"

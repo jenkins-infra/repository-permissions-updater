@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/google-admin-sdk"
 developers:
 - "yacut"
+issues:
+  type: jira
+  value: "google-admin-sdk-plugin"
