@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/validating-string-parameter"
 developers:
 - "vlatombe"
+- "raihaan"
