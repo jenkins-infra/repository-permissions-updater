@@ -7,3 +7,4 @@ paths:
 - "io/jenkins/plugins/jjwt-api"
 developers:
 - "jglick"
+- "bitwiseman"
