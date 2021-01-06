@@ -1,0 +1,10 @@
+---
+name: "jjwt-api"
+github: "jenkinsci/jjwt-api-plugin"
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/jjwt-api"
+developers:
+- "jglick"
+- "bitwiseman"
