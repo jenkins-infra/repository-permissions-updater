@@ -6,6 +6,7 @@ paths:
 developers:
 - "belltimo"
 - "fgalmeida"
+- "madhvidua"
 security:
   contacts:
     email: "aws-security@amazon.com"
