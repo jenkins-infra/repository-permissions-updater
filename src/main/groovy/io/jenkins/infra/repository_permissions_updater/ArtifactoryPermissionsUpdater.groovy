@@ -1,13 +1,12 @@
 package io.jenkins.infra.repository_permissions_updater
 
-import com.fasterxml.jackson.core.JsonProcessingException
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
 import groovy.io.FileType
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import io.jenkins.lib.support_log_formatter.SupportLogFormatter
+import org.yaml.snakeyaml.Yaml
+import org.yaml.snakeyaml.constructor.Constructor
 
 import java.util.concurrent.TimeUnit
 import java.util.logging.ConsoleHandler
@@ -47,7 +46,7 @@ class ArtifactoryPermissionsUpdater {
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
      */
     private static void generateApiPayloads(File yamlSourceDirectory, File apiOutputDir) throws IOException {
-        ObjectMapper mapper = new ObjectMapper(new YAMLFactory())
+        Yaml yaml = new Yaml(new Constructor(Definition.class))
 
         if (!yamlSourceDirectory.exists()) {
             throw new IOException("Directory ${DEFINITIONS_DIR} does not exist")
@@ -58,6 +57,7 @@ class ArtifactoryPermissionsUpdater {
         }
 
         Map<String, Set<String>> pathsByGithub = new TreeMap()
+        Map<String, List> issueTrackersByPlugin = new TreeMap()
         Map<String, List<Definition>> cdEnabledComponentsByGitHub = new TreeMap<>()
 
         yamlSourceDirectory.eachFile { file ->
@@ -68,8 +68,8 @@ class ArtifactoryPermissionsUpdater {
             Definition definition
 
             try {
-                definition = mapper.readValue(new FileReader(file), Definition.class)
-            } catch (JsonProcessingException e) {
+                definition = yaml.loadAs(new FileReader(file), Definition.class)
+            } catch (Exception e) {
                 throw new IOException("Failed to read ${file.name}", e)
             }
 
@@ -96,6 +96,28 @@ class ArtifactoryPermissionsUpdater {
             } else {
                 if (definition.cd && definition.getCd().enabled) {
                     throw new Exception("Cannot have CD ('cd') enabled without specifying GitHub repository ('github')")
+                }
+            }
+
+            if (definition.issues) {
+                if (definition.github) {
+                    issueTrackersByPlugin.put(definition.name, definition.issues.collect { tracker ->
+                        if (tracker.isJira() || tracker.isGitHubIssues()) {
+                            def ret = [type: tracker.getType(), reference: tracker.getReference()]
+                            def viewUrl = tracker.getViewUrl(JiraAPI.getInstance())
+                            if (viewUrl) {
+                                ret += [ viewUrl: viewUrl ]
+                            }
+                            def reportUrl = tracker.getReportUrl(JiraAPI.getInstance())
+                            if (reportUrl) {
+                                ret += [ reportUrl: reportUrl ]
+                            }
+                            return ret
+                        }
+                        return null
+                    }.findAll { it != null })
+                } else {
+                    throw new Exception("Issue trackers ('issues') support requires GitHub repository ('github')")
                 }
             }
 
@@ -172,6 +194,10 @@ class ArtifactoryPermissionsUpdater {
         def githubIndex = new JsonBuilder()
         githubIndex(pathsByGithub)
         new File(apiOutputDir, 'github.index.json').text = githubIndex.toPrettyString()
+
+        def issuesIndex = new JsonBuilder()
+        issuesIndex(issueTrackersByPlugin)
+        new File(apiOutputDir, 'issues.index.json').text = issuesIndex.toPrettyString()
 
         def cdRepos = new JsonBuilder()
         cdRepos(cdEnabledComponentsByGitHub.keySet().toList())
