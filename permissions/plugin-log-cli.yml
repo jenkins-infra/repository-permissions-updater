@@ -7,4 +7,3 @@ paths:
 - "org/jenkins-ci/plugins/log-cli"
 developers:
 - "jglick"
-- "jglick_bot"
