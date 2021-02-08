@@ -1,0 +1,7 @@
+---
+name: "loadfocus-jmeter-load-testing-integration"
+github: "jenkinsci/loadfocus-jmeter-load-testing-integration-plugin"
+paths:
+- "com/loadfocus/loadfocus-jmeter-load-testing-integration"
+developers:
+- "loadfocus"
