@@ -1,0 +1,7 @@
+---
+name: "bitbucket-pullrequests-filter"
+github: "jenkinsci/bitbucket-pullrequests-filter-plugin"
+paths:
+- "io/jenkins/plugins/bitbucket-pullrequests-filter"
+developers:
+- "nuh"
