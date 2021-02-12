@@ -5,3 +5,5 @@ paths:
 - "io/reliza/reliza-integration"
 developers:
 - "reliza"
+issues:
+  - github: *GH
