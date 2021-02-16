@@ -4,4 +4,4 @@ github: "jenkinsci/gearman-plugin"
 paths:
 - "org/jenkins-ci/plugins/gearman-plugin"
 developers:
-- "openstackjenkins"
+- "hashar"
