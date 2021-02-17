@@ -1,0 +1,7 @@
+---
+name: "vdoo-vision"
+github: "jenkinsci/vdoo-vision-plugin"
+paths:
+- "io/jenkins/plugins/vdoo-vision"
+developers:
+- "meirvdoo"
