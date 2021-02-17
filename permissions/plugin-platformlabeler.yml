@@ -3,6 +3,8 @@ name: "platformlabeler"
 github: "jenkinsci/platformlabeler-plugin"
 paths:
 - "org/jvnet/hudson/plugins/platformlabeler"
+cd:
+  enabled: true
 developers:
 - "markewaite"
 - "timja"
