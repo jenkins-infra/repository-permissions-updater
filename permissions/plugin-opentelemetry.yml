@@ -1,7 +1,9 @@
 ---
 name: "opentelemetry"
-github: "jenkinsci/opentelemetry-plugin"
+github: &GH "jenkinsci/opentelemetry-plugin"
 paths:
 - "io/jenkins/plugins/opentelemetry"
 developers:
 - "cleclerc"
+issues:
+  - github: *GH
