@@ -1,7 +1,9 @@
 ---
 name: "smilehubnotifier"
-github: "jenkinsci/smilehubnotifier-plugin"
+github: &GH "jenkinsci/smilehubnotifier-plugin"
 paths:
 - "io/jenkins/plugins/smilehubnotifier"
 developers:
 - "ngoctran_ntq"
+issues:
+  - github: *GH
