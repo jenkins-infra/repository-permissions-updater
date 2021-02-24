@@ -1,0 +1,7 @@
+---
+name: "accelq-ci-connect"
+github: "jenkinsci/accelq-ci-connect-plugin"
+paths:
+- "com/aq/accelq-ci-connect"
+developers:
+- "accelq"
