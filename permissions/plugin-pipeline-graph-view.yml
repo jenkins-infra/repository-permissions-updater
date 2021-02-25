@@ -1,0 +1,9 @@
+---
+name: "pipeline-graph-view"
+github: &GH "jenkinsci/pipeline-graph-view-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-graph-view"
+developers:
+- "timja"
+issues:
+  - github: *GH
