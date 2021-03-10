@@ -6,3 +6,5 @@ paths:
 - "org/jvnet/hudson/plugins/publish-over-ftp"
 developers:
 - "drulli"
+# Not a maintainer, just tables-to-divs fixes
+- "oleg_nenashev"
