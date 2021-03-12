@@ -6,7 +6,10 @@ paths:
 developers:
 - "jdewinne"
 - "mbigorne"
-- "byaminov"
-- "aedsonfellipe"
+# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
+# "byaminov"
+# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
+# "aedsonfellipe"
 - "ashish_thakur"
-- "slal1"
+# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
+# "slal1"

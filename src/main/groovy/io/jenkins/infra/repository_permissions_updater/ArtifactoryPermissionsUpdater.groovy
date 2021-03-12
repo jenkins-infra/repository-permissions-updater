@@ -150,7 +150,7 @@ class ArtifactoryPermissionsUpdater {
                             def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
 
                             if (!existsInArtifactory && !existsInJira) {
-                                reportChecksApiDetails(developer + " needs to log in to Artifactory",
+                                reportChecksApiDetails(developer + " needs to log in to Artifactory and Jira",
                                 """
                                 ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io/).
 
@@ -176,7 +176,7 @@ class ArtifactoryPermissionsUpdater {
                             }
 
                             if (!existsInJira) {
-                                reportChecksApiDetails(developer + " needs to log in to Artifactory",
+                                reportChecksApiDetails(developer + " needs to log in to Jira",
                                         """
                                 ${developer} needs to log in to [Jira](https://issues.jenkins.io/).
                                 """.stripIndent())
