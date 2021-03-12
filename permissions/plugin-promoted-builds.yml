@@ -11,4 +11,7 @@ developers:
 - "stephenconnolly"
 - "wolfs"
 - "dnusbaum"
+security:
+  contacts:
+    jira: "foundation_security_members"
 
