@@ -3,5 +3,6 @@ name: "wix"
 github: "jenkinsci/wix-plugin"
 paths:
 - "org/jenkins-ci/plugins/wix"
-developers:
-- "rollinhand"
+developers: []
+# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
+#- "rollinhand"

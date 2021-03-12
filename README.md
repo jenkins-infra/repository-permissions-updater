@@ -174,6 +174,8 @@ The following Java system properties can be used to customize the tool's behavio
   Regular script execution frequency needs to be aligned with this.
 * `gitHubSecretNamePrefix` - Prefix for secrets sent to GitHub repos.
   If unspecified, the value will be `MAVEN_` by default, or `DEV_MAVEN_` in _development mode_.
+* `jiraUserNamesJsonListUrl` - URL to a list containing known Jira user names of (potential) maintainers.
+  This is essentially a workaround to reduce the number of individual user lookups via Jira API.
 
 It expected the following environment variables to be set:
 
@@ -181,6 +183,8 @@ It expected the following environment variables to be set:
 - `ARTIFACTORY_PASSWORD` - Corresponding admin password (or API key) for Artifactory admin user
 - `GITHUB_USERNAME` - GitHub user name for a user with admin access to any CD enabled repos
 - `GITHUB_TOKEN` - Corresponding token for the user with admin access to any CD enabled repos, [requires `repo` scope to create/update secrets](https://docs.github.com/en/free-pro-team@latest/rest/reference/actions#create-or-update-a-repository-secret)
+- `JIRA_USERNAME` - User name (does not need admin permissions) for Jira
+- `JIRA_PASSWORD` - Corresponding password for Jira user
 
 ### How It Works
 

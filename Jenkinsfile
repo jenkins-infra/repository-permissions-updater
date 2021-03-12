@@ -54,7 +54,11 @@ node('java') {
 
             if (dryRun) {
                 try {
-                    sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
+                    withCredentials([
+                            usernamePassword(credentialsId: 'jiraUser', passwordVariable: 'JIRA_PASSWORD', usernameVariable: 'JIRA_USERNAME')
+                            ]) {
+                        sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
+                    }
                 } catch(ignored) {
                     if (fileExists('checks-title.txt')) {
                         def title = readFile file: 'checks-title.txt', encoding: 'utf-8'
@@ -71,6 +75,7 @@ node('java') {
                         title: 'All checks passed'
             } else {
                 withCredentials([
+                        usernamePassword(credentialsId: 'jiraUser', passwordVariable: 'JIRA_PASSWORD', usernameVariable: 'JIRA_USERNAME'),
                         usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME'),
                         usernamePassword(credentialsId: 'jenkins-infra-bot-github-token', passwordVariable: 'GITHUB_TOKEN', usernameVariable: 'GITHUB_USERNAME')
                 ]) {
