@@ -8,3 +8,6 @@ developers:
 - "basil"
 - "stevengbrown"
 - "jglick"
+security:
+  contacts:
+    jira: "foundation_security_members"
