@@ -9,3 +9,6 @@ developers:
 - "recampbell"
 - "stephenconnolly"
 - "oleg_nenashev"
+security:
+  contacts:
+    jira: "foundation_security_members"
