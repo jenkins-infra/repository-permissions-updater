@@ -3,6 +3,5 @@ name: "sasunit-plugin"
 github: "jenkinsci/sasunit-plugin"
 paths:
 - "org/jenkins-ci/plugins/sasunit-plugin"
-developers: []
-# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
-#- "hmsanalyticalsoftware"
+developers:
+- "hmsanalyticalsoftware"

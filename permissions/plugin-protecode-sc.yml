@@ -6,5 +6,4 @@ paths:
 developers:
 - "mattisii"
 - "rukkanen"
-# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
-# "phietala"
+- "phietala"

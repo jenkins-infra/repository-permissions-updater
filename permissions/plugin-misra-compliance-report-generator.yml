@@ -3,6 +3,5 @@ name: "misra-compliance-report-generator"
 github: "jenkinsci/misra-compliance-report-generator-plugin"
 paths:
 - "io/jenkins/plugins/misra-compliance-report-generator"
-developers: []
-# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
-# "oyvindlr"
+developers:
+- "oyvindlr"

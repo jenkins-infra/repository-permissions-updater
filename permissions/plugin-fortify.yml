@@ -5,6 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/fortify"
 developers:
 - "akaryakina"
-# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
-# "youngspark"
-# "hiro0824"
+- "youngspark"
+- "hiro0824"

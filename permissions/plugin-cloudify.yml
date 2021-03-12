@@ -9,5 +9,4 @@ developers:
 # Disabled by oleg-nenashev on Jun 15, 2020. The user needs to re-login to Artifactory
 # Please see https://groups.google.com/forum/#!topic/jenkinsci-dev/3UvrCTflXGk for the context
 # - "earthmant"
-# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
-#- "alexmolev"
+- "alexmolev"

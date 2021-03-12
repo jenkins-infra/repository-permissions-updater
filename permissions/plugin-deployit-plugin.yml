@@ -5,10 +5,7 @@ paths:
 - "com/xebialabs/deployit/ci/deployit-plugin"
 developers:
 - "bdevic"
-# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
-# "meena02"
-# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
-# "aedsonfellipe"
+- "meena02"
+- "aedsonfellipe"
 - "ashish_thakur"
-# Removed 2021-03-12 due to lack of corresponding Jira account, see INFRA-2835
-# "slal1"
+- "slal1"
