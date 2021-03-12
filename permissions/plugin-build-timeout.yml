@@ -6,3 +6,6 @@ paths:
 developers:
 - "ikedam"
 - "oleg_nenashev"
+security:
+  contacts:
+    jira: "foundation_security_members"
