@@ -164,6 +164,10 @@ abstract class ArtifactoryAPI {
                     throw new IllegalStateException("ARTIFACTORY_USERNAME and ARTIFACTORY_PASSWORD must be provided unless dry-run mode is used")
                 }
             } else {
+                if (System.getProperty("java.version").startsWith("1.")) {
+                    // HttpUrlConnection#setAuthenticator exists since Java 9
+                    throw new IllegalStateException("You need at least Java 9 to run this unless dry-run mode is used")
+                }
                 AUTHENTICATOR = new Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(username, password.toCharArray())
