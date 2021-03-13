@@ -87,6 +87,11 @@ node('java') {
         stage ('Archive') {
             archiveArtifacts 'permissions/*.yml'
             archiveArtifacts 'json/*.json'
+            if (infra.isTrusted()) {
+                dir('json') {
+                    publishReports ([ 'issues.index.json' ])
+                }
+            }
         }
     }
 }
