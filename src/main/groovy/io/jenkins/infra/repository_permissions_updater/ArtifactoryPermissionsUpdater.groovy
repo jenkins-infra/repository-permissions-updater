@@ -283,10 +283,12 @@ class ArtifactoryPermissionsUpdater {
         LOGGER.log(Level.INFO, "Removing extra ${kind}s from Artifactory...")
         def objects = []
         try {
-            lister.call()
+            objects = lister.call()
         } catch (Exception ex) {
             LOGGER.log(Level.WARNING, "Failed listing ${kind}s from Artifactory", ex)
         }
+
+        LOGGER.log(Level.INFO, "Discovered ${objects.size()} ${kind}s")
 
         objects.each { object ->
             if (!new File(payloadsDir, object + '.json').exists()) {
