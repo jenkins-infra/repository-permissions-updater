@@ -89,7 +89,7 @@ node('java') {
             archiveArtifacts 'json/*.json'
             if (infra.isTrusted()) {
                 dir('json') {
-                    publishReports ([ 'issues.index.json' ])
+                    publishReports ([ 'issues.index.json', 'maintainers.index.json' ])
                 }
             }
         }

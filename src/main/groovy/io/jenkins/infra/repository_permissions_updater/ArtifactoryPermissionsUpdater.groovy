@@ -59,6 +59,7 @@ class ArtifactoryPermissionsUpdater {
         Map<String, Set<String>> pathsByGithub = new TreeMap()
         Map<String, List> issueTrackersByPlugin = new TreeMap()
         Map<String, List<Definition>> cdEnabledComponentsByGitHub = new TreeMap<>()
+        Map<String, List<String>> maintainersByComponent = new HashMap<>()
 
         yamlSourceDirectory.eachFile { file ->
             if (!file.name.endsWith('.yml')) {
@@ -119,6 +120,25 @@ class ArtifactoryPermissionsUpdater {
                 } else {
                     throw new Exception("Issue trackers ('issues') support requires GitHub repository ('github')")
                 }
+            }
+
+            String artifactId = definition.name
+            for (String path : definition.paths) {
+                if (path.substring(path.lastIndexOf('/') + 1) != artifactId) {
+                    // We could throw an exception here, but we actively abuse this for unusually structured components
+                    LOGGER.log(Level.WARNING, "Unexpected path: " + path + " for artifact ID: " + artifactId)
+                }
+                String groupId = path.substring(0, path.lastIndexOf('/')).replace('/', '.')
+
+                String key = groupId + ":" + artifactId
+
+                if (maintainersByComponent.containsKey(key)) {
+                    LOGGER.log(Level.WARNING, "Duplicate maintainers entry for component: " + key)
+                }
+                // A potential issue with this implementation is that groupId changes will result in lack of maintainer information for the old groupId.
+                // In practice this will probably not be a problem when path changes here and subsequent release are close enough in time.
+                // Alternatively, always keep the old groupId around for a while.
+                maintainersByComponent.computeIfAbsent(key, { _ -> new ArrayList<>(Arrays.asList(definition.developers)) })
             }
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
@@ -226,6 +246,10 @@ class ArtifactoryPermissionsUpdater {
         def cdRepos = new JsonBuilder()
         cdRepos(cdEnabledComponentsByGitHub.keySet().toList())
         new File(apiOutputDir, 'cd.index.json').text = cdRepos.toPrettyString()
+
+        def maintainers = new JsonBuilder()
+        maintainers(maintainersByComponent)
+        new File(apiOutputDir, 'maintainers.index.json').text = maintainers.toPrettyString()
     }
 
     // TODO It's a really weird decision to have this in the otherwise invocation agnostic standalone tool
