@@ -4,7 +4,8 @@ github: "jenkinsci/overops-query-plugin"
 paths:
 - "org/overops/plugins/overops-query"
 developers:
-- "joe99000"
-- "emizell"
-- "daverted"
+- "angelorod"
+- "bmorrise"
 - "ccaspanello"
+- "DFieldFL"
+- "mdamour1976"
