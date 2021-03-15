@@ -287,16 +287,17 @@ class ArtifactoryPermissionsUpdater {
         } catch (Exception ex) {
             LOGGER.log(Level.WARNING, "Failed listing ${kind}s from Artifactory", ex)
         }
+        if (objects != null) {
+            LOGGER.log(Level.INFO, "Discovered ${objects.size()} ${kind}s")
 
-        LOGGER.log(Level.INFO, "Discovered ${objects.size()} ${kind}s")
-
-        objects.each { object ->
-            if (!new File(payloadsDir, object + '.json').exists()) {
-                LOGGER.log(Level.INFO, "${kind.capitalize()} ${object} has no corresponding file, deleting...")
-                try {
-                    deleter.call(object)
-                } catch (Exception ex) {
-                    LOGGER.log(Level.WARNING, "Failed to delete ${kind} ${object} from Artifactory", ex)
+            objects.each { object ->
+                if (!new File(payloadsDir, object + '.json').exists()) {
+                    LOGGER.log(Level.INFO, "${kind.capitalize()} ${object} has no corresponding file, deleting...")
+                    try {
+                        deleter.call(object)
+                    } catch (Exception ex) {
+                        LOGGER.log(Level.WARNING, "Failed to delete ${kind} ${object} from Artifactory", ex)
+                    }
                 }
             }
         }
