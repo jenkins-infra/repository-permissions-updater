@@ -7,8 +7,8 @@ paths:
 - "org/jvnet/hudson/plugins/git"
 developers:
 - "markewaite"
+- "mramonleon"
 - "rsandell"
-- "fcojfernandez"
 security:
     contacts:
       jira: "foundation_security_members"
