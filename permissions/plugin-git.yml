@@ -6,9 +6,7 @@ paths:
 - "org/jenkinsci/plugins/git"
 - "org/jvnet/hudson/plugins/git"
 developers:
-- "jglick"
 - "markewaite"
-- "stephenconnolly"
 - "rsandell"
 - "fcojfernandez"
 security:
