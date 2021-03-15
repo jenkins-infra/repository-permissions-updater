@@ -1,5 +1,5 @@
 name: "worktile"
-github: "jenkinsci/worktile-plugin"
+github: "jenkinsci/pingcode-plugin"
 paths:
 - "io/jenkins/plugins/worktile"
 developers:
