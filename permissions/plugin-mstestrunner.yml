@@ -1,6 +1,8 @@
 ---
 name: "mstestrunner"
 github: "jenkinsci/mstestrunner-plugin"
+issues:
+- jira: '17461' # mstestrunner-plugin
 paths:
 - "org/jenkins-ci/plugins/mstestrunner"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "diawi-upload"
 github: "jenkinsci/diawi-upload-plugin"
+issues:
+- jira: '23035' # diawi-upload-plugin
 paths:
 - "org/jenkins-ci/plugins/diawi-upload"
 developers:

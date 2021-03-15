@@ -1,6 +1,8 @@
 ---
 name: "jenkins-jira-issue-updater"
 github: "jenkinsci/jira-issue-updater-plugin"
+issues:
+- jira: '17590' # jira-issue-updater-plugin
 paths:
 - "info/bluefloyd/jenkins/jenkins-jira-issue-updater"
 developers:

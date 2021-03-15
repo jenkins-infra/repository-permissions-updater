@@ -1,6 +1,8 @@
 ---
 name: "metrics-aggregation"
 github: "jenkinsci/metrics-aggregation-plugin"
+issues:
+- jira: '26720' # metrics-aggregation-plugin
 paths:
 - "io/jenkins/plugins/metrics-aggregation"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "beer"
 github: "jenkinsci/beer-plugin"
+issues:
+- jira: '17586' # beer-plugin
 paths:
 - "org/jenkins-ci/plugins/beer"
 developers:

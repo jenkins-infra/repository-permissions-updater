@@ -1,6 +1,8 @@
 ---
 name: "template-workflows"
 github: "jenkinsci/template-workflows-plugin"
+issues:
+- jira: '17584' # template-workflows-plugin
 paths:
 - "org/jenkins/plugin/templateWorkflows/template-workflows"
 developers: []

@@ -1,6 +1,8 @@
 ---
 name: "dingding-json-pusher"
 github: "jenkinsci/dingding-json-pusher-plugin"
+issues:
+- jira: '23030' # dingding-json-pusher-plugin
 paths:
 - "com/zintow/dingding-json-pusher"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "pipeline-maven"
 github: "jenkinsci/pipeline-maven-plugin"
+issues:
+- jira: '21669' # pipeline-maven-plugin
 paths:
 - "org/jenkins-ci/plugins/pipeline-maven"
 developers:

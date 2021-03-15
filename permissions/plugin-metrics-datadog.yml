@@ -1,6 +1,8 @@
 ---
 name: "metrics-datadog"
 github: "jenkinsci/metrics-datadog-plugin"
+issues:
+- jira: '25124' # metrics-datadog-plugin
 paths:
 - "io/jenkins/plugins/metrics-datadog"
 developers:

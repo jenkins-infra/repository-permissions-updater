@@ -1,6 +1,8 @@
 ---
 name: "flock"
 github: "jenkinsci/flock-plugin"
+issues:
+- jira: '25725' # flock-plugin
 paths:
 - "io/jenkins/plugins/flock"
 developers:

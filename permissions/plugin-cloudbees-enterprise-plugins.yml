@@ -1,6 +1,8 @@
 ---
 name: "cloudbees-enterprise-plugins"
 github: "jenkinsci/cloudbees-enterprise-plugins-plugin"
+issues:
+- jira: '17547' # cloudbees-enterprise-plugins
 paths:
 - "org/jenkins-ci/plugins/cloudbees-enterprise-plugins"
 developers:

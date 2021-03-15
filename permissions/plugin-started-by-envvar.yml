@@ -1,6 +1,8 @@
 ---
 name: "started-by-envvar"
 github: "jenkinsci/started-by-envvar-plugin"
+issues:
+- jira: '16048' # started-by-envvar-plugin
 paths:
 - "org/jenkins-ci/plugins/started-by-envvar"
 developers: []

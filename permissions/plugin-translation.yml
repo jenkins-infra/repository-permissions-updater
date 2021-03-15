@@ -1,6 +1,8 @@
 ---
 name: "translation"
 github: "jenkinsci/translation-plugin"
+issues:
+- jira: '16085' # translation-plugin
 paths:
 - "org/jenkins-ci/plugins/translation"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "calendar-view"
 github: "jenkinsci/calendar-view-plugin"
+issues:
+- jira: '23933' # calendar-view-plugin
 paths:
 - "io/jenkins/plugins/calendar-view"
 developers:

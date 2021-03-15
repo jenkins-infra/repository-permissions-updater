@@ -1,6 +1,8 @@
 ---
 name: "quality-gates"
 github: "jenkinsci/quality-gates-plugin"
+issues:
+- jira: '21446' # quality-gates-plugin
 paths:
 - "org/jenkins-ci/plugins/quality-gates"
 developers:

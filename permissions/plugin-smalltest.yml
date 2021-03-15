@@ -1,6 +1,8 @@
 ---
 name: "smalltest"
 github: "jenkinsci/smalltest-plugin"
+issues:
+- jira: '23125' # smalltest-plugin
 paths:
 - "com/smalltest/smalltest"
 developers:

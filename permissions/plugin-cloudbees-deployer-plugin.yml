@@ -1,6 +1,8 @@
 ---
 name: "cloudbees-deployer-plugin"
 github: "jenkinsci/cloudbees-deployer-plugin"
+issues:
+- jira: '15842' # cloudbees-deployer-plugin
 paths:
 - "org/jenkins-ci/plugins/cloudbees-deployer-plugin"
 developers: []

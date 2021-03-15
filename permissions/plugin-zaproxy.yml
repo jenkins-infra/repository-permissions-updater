@@ -1,6 +1,8 @@
 ---
 name: "zaproxy"
 github: "jenkinsci/zaproxy-plugin"
+issues:
+- jira: '20328' # zaproxy-plugin
 paths:
 - "fr/novia/zaproxy"
 developers:

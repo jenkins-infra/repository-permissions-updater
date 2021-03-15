@@ -1,6 +1,8 @@
 ---
 name: "policycenter-gate-validator"
 github: "jenkinsci/policycenter-gate-validator-plugin"
+issues:
+- jira: '21688' # policycenter-gate-validator-plugin
 paths:
 - "com/parasoft/policycenter-gate-validator"
 developers:

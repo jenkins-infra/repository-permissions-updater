@@ -1,6 +1,8 @@
 ---
 name: "crittercism-dsym"
 github: "jenkinsci/crittercism-dsym-plugin"
+issues:
+- jira: '17562' # crittercism-dsym-plugin
 paths:
 - "org/jenkins-ci/plugins/crittercism-dsym"
 developers: []

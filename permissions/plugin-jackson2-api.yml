@@ -1,6 +1,8 @@
 ---
 name: "jackson2-api"
 github: "jenkinsci/jackson2-api-plugin"
+issues:
+- jira: '23528' # jackson2-api-plugin
 paths:
 - "org/jenkins-ci/plugins/jackson2-api"
 developers:

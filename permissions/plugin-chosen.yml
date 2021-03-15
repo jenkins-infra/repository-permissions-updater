@@ -1,6 +1,8 @@
 ---
 name: "chosen"
 github: "jenkinsci/chosen-plugin"
+issues:
+- jira: '17460' # chosen-plugin
 paths:
 - "org/jenkins-ci/plugins/chosen"
 developers: []

@@ -1,6 +1,8 @@
 ---
 name: "cloudbees-registration"
 github: "jenkinsci/cloudbees-registration-plugin"
+issues:
+- jira: '18737' # cloudbees-registration-plugin
 paths:
 - "com/cloudbees/jenkins/plugins/cloudbees-registration"
 developers:

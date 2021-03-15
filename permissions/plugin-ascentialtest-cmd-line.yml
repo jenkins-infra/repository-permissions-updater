@@ -1,6 +1,8 @@
 ---
 name: "ascentialtest-cmd-line"
 github: "jenkinsci/ascentialtest-cmd-line-plugin"
+issues:
+- jira: '28225' # ascentialtest-cmd-line-plugin
 paths:
 - "io/jenkins/plugins/ascentialtest-cmd-line"
 developers:

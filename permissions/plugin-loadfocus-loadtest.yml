@@ -1,6 +1,8 @@
 ---
 name: "loadfocus-loadtest"
 github: "jenkinsci/loadfocus-loadtest-plugin"
+issues:
+- jira: '21223' # loadfocus-loadtest-plugin
 paths:
 - "com/loadfocus/loadfocus-loadtest"
 developers:

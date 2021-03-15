@@ -1,6 +1,8 @@
 ---
 name: "extreme-feedback"
 github: "jenkinsci/extreme-feedback-plugin"
+issues:
+- jira: '17623' # extreme-feedback-plugin
 paths:
 - "org/jenkins-ci/plugins/extreme-feedback"
 developers:

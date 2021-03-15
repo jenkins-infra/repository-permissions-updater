@@ -1,6 +1,8 @@
 ---
 name: "deployer-framework"
 github: "jenkinsci/deployer-framework-plugin"
+issues:
+- jira: '19821' # deployer-framework-plugin
 paths:
 - "org/jenkins-ci/plugins/deployer-framework"
 developers:

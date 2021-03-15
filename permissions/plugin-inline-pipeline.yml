@@ -1,6 +1,8 @@
 ---
 name: "inline-pipeline"
 github: "jenkinsci/inline-pipeline-plugin"
+issues:
+- jira: '24824' # inline-pipeline-plugin
 paths:
 - "org/jenkins-ci/plugins/inline-pipeline"
 developers:

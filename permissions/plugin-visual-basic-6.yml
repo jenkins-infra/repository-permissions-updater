@@ -1,6 +1,8 @@
 ---
 name: "visual-basic-6"
 github: "jenkinsci/visual-basic-6-plugin"
+issues:
+- jira: '21722' # visual-basic-6-plugin
 paths:
 - "org/jenkins-ci/plugins/visual-basic-6"
 developers:

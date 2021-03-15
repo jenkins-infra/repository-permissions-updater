@@ -1,6 +1,8 @@
 ---
 name: "selected-tests-executor"
 github: "jenkinsci/selected-tests-executor-plugin"
+issues:
+- jira: '18720' # selected-tests-executor-plugin
 paths:
 - "org/jenkins-ci/plugins/selected-tests-executor"
 developers:

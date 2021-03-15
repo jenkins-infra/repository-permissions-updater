@@ -1,6 +1,8 @@
 ---
 name: "kato"
 github: "jenkinsci/kato-plugin"
+issues:
+- jira: '18027' # kato-plugin
 paths:
 - "org/jvnet/hudson/plugins/kato"
 developers:

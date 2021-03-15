@@ -1,6 +1,8 @@
 ---
 name: "testinium"
 github: "jenkinsci/testinium-plugin"
+issues:
+- jira: '23431' # testinium-plugin
 paths:
 - "com/testinium/jenkins/testinium"
 developers:

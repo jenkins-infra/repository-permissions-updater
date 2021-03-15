@@ -1,6 +1,8 @@
 ---
 name: "appio"
 github: "jenkinsci/app.io-plugin"
+issues:
+- jira: '18022' # appio-plugin
 paths:
 - "org/jenkins-ci/plugins/appio"
 developers: []

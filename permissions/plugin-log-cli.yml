@@ -3,6 +3,8 @@ name: "log-cli"
 github: "jenkinsci/log-cli-plugin"
 cd:
   enabled: true
+issues:
+- jira: '23228' # log-cli-plugin
 paths:
 - "org/jenkins-ci/plugins/log-cli"
 developers:

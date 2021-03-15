@@ -1,6 +1,8 @@
 ---
 name: "AnchorChain"
 github: "jenkinsci/anchor-chain-plugin"
+issues:
+- jira: '17520' # anchorchain-plugin
 paths:
 - "org/jenkins-ci/plugins/AnchorChain"
 developers: []

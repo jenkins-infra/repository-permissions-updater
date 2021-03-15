@@ -1,6 +1,8 @@
 ---
 name: "shelve-project-plugin"
 github: "jenkinsci/shelve-project-plugin"
+issues:
+- jira: '15678' # shelve-project-plugin
 paths:
 - "org/jenkins-ci/plugins/shelve-project-plugin"
 developers:

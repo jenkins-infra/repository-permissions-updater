@@ -1,6 +1,8 @@
 ---
 name: "dependency-queue-plugin"
 github: "jenkinsci/dependency-queue-plugin"
+issues:
+- jira: '16623' # dependency-queue-plugin
 paths:
 - "org/jenkins-ci/plugins/dependency-queue-plugin"
 developers: []

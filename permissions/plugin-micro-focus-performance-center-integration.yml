@@ -1,6 +1,8 @@
 ---
 name: "micro-focus-performance-center-integration"
 github: "jenkinsci/micro-focus-performance-center-integration-plugin"
+issues:
+- jira: '24525' # micro-focus-performance-center-integration-plugin
 paths:
 - "org/jenkins-ci/plugins/micro-focus-performance-center-integration"
 developers:

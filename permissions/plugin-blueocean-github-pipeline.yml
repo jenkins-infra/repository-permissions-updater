@@ -1,6 +1,8 @@
 ---
 name: "blueocean-github-pipeline"
 github: "jenkinsci/blueocean-plugin"
+issues:
+- jira: '21481' # blueocean-plugin
 paths:
 - "io/jenkins/blueocean/blueocean-github-pipeline"
 developers:

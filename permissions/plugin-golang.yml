@@ -1,6 +1,8 @@
 ---
 name: "golang"
 github: "jenkinsci/golang-plugin"
+issues:
+- jira: '18768' # golang-plugin
 paths:
 - "org/jenkins-ci/plugins/golang"
 developers:

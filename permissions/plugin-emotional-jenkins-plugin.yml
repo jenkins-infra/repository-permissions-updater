@@ -1,6 +1,8 @@
 ---
 name: "emotional-jenkins-plugin"
 github: "jenkinsci/emotional-jenkins-plugin"
+issues:
+- jira: '16052' # emotional-jenkins-plugin
 paths:
 - "org/jenkins-ci/plugins/emotional-jenkins-plugin"
 developers:

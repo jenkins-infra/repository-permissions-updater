@@ -1,6 +1,8 @@
 ---
 name: "xooa"
 github: "jenkinsci/xooa-plugin"
+issues:
+- jira: '25427' # xooa-plugin
 paths:
 - "io/jenkins/plugins/xooa"
 developers:

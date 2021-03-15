@@ -1,6 +1,8 @@
 ---
 name: "perfecto"
 github: "jenkinsci/perfecto-plugin"
+issues:
+- jira: '27530' # perfecto-plugin
 paths:
 - "io/jenkins/plugins/perfecto"
 developers:

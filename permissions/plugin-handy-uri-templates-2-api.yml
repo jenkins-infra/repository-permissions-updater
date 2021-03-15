@@ -1,6 +1,8 @@
 ---
 name: "handy-uri-templates-2-api"
 github: "jenkinsci/handy-uri-templates-2-api-plugin"
+issues:
+- jira: '23421' # handy-uri-templates-2-api-plugin
 paths:
 - "org/jenkins-ci/plugins/handy-uri-templates-2-api"
 developers:

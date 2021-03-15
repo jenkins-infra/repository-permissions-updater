@@ -1,6 +1,8 @@
 ---
 name: "browserstack-integration"
 github: "jenkinsci/browserstack-integration-plugin"
+issues:
+- jira: '21656' # browserstack-integration-plugin
 paths:
 - "com/browserstack/browserstack-integration"
 - "org/jenkins-ci/plugins/browserstack-integration"

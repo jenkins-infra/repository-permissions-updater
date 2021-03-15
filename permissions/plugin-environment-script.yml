@@ -1,6 +1,8 @@
 ---
 name: "environment-script"
 github: "jenkinsci/environment-script-plugin"
+issues:
+- jira: '16821' # environment-script-plugin
 paths:
 - "com/lookout/jenkins/environment-script"
 developers:

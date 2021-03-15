@@ -1,6 +1,8 @@
 ---
 name: "aws-java-sdk"
 github: "jenkinsci/aws-java-sdk-plugin"
+issues:
+- jira: '21126' # aws-java-sdk-plugin
 paths:
 - "org/jenkins-ci/plugins/aws-java-sdk"
 developers:

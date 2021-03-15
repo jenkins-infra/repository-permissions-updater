@@ -1,6 +1,8 @@
 ---
 name: "ldapemail"
 github: "jenkinsci/ldapemail-plugin"
+issues:
+- jira: '15556' # ldapemail-plugin
 paths:
 - "com/mtvi/plateng/hudson/ldapemail"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "simple-parameterized-builds-report"
 github: "jenkinsci/simple-parameterized-builds-report-plugin"
+issues:
+- jira: '17610' # simple-parameterized-builds-report-plugin
 paths:
 - "org/jenkins-ci/plugins/simple-parameterized-builds-report"
 developers:

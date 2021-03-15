@@ -1,6 +1,8 @@
 ---
 name: "git-client"
 github: "jenkinsci/git-client-plugin"
+issues:
+- jira: '17423' # git-client-plugin
 paths:
 - "org/jenkins-ci/plugins/git-client"
 - "org/jenkinsci/plugins/git-client"

@@ -1,6 +1,8 @@
 ---
 name: "slave-setup"
 github: "jenkinsci/slave-setup-plugin"
+issues:
+- jira: '15929' # slave-setup-plugin
 paths:
 - "org/jenkins-ci/plugins/slave-setup"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "viewVC"
 github: "jenkinsci/viewVC-plugin"
+issues:
+- jira: '15586' # viewVC-plugin
 paths:
 - "org/jenkins-ci/plugins/viewVC"
 - "org/jvnet/hudson/plugins/viewVC"

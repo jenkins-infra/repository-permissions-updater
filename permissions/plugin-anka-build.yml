@@ -1,6 +1,8 @@
 ---
 name: "anka-build"
 github: "jenkinsci/anka-build-plugin"
+issues:
+- jira: '23042' # anka-build-plugin
 paths:
 - "org/jenkins-ci/plugins/anka-build"
 developers:

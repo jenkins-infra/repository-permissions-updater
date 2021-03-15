@@ -1,6 +1,8 @@
 ---
 name: "browser-axis-plugin"
 github: "jenkinsci/browser-axis-plugin"
+issues:
+- jira: '17556' # browser-axis-plugin
 paths:
 - "org/jenkins-ci/plugins/browser-axis-plugin"
 developers: []

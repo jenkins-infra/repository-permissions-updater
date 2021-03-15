@@ -1,6 +1,8 @@
 ---
 name: "usemango-runner"
 github: "jenkinsci/usemango-runner-plugin"
+issues:
+- jira: '24627' # usemango-runner-plugin
 paths:
 - "it/infuse/jenkins/usemango-runner"
 developers:

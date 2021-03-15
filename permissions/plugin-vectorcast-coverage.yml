@@ -1,6 +1,8 @@
 ---
 name: "vectorcast-coverage"
 github: "jenkinsci/vectorcast-coverage-plugin"
+issues:
+- jira: '21936' # vectorcast-coverage-plugin
 paths:
 - "org/jenkins-ci/plugins/vectorcast-coverage"
 developers:

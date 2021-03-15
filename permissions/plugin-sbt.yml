@@ -1,6 +1,8 @@
 ---
 name: "sbt"
 github: "jenkinsci/sbt-plugin"
+issues:
+- jira: '15775' # sbt-plugin
 paths:
 - "org/jenkins-ci/plugins/sbt"
 - "org/jvnet/hudson/plugins/sbt"

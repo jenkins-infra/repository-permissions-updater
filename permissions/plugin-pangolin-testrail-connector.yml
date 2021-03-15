@@ -1,6 +1,8 @@
 ---
 name: "pangolin-testrail-connector"
 github: "jenkinsci/pangolin-testrail-connector-plugin"
+issues:
+- jira: '23736' # pangolin-testrail-connector-plugin
 paths:
 - "org/jenkins-ci/plugins/pangolin-testrail-connector"
 developers:

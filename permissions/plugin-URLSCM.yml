@@ -1,6 +1,8 @@
 ---
 name: "URLSCM"
 github: "jenkinsci/URLSCM-plugin"
+issues:
+- jira: '15524' # urlscm-plugin
 paths:
 - "org/jvnet/hudson/plugins/URLSCM"
 developers: []

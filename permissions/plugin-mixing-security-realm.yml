@@ -1,6 +1,8 @@
 ---
 name: "mixing-security-realm"
 github: "jenkinsci/mixing-security-realm-plugin"
+issues:
+- jira: '28024' # mixing-security-realm-plugin
 paths:
 - "io/jenkins/plugins/mixing-security-realm"
 developers:

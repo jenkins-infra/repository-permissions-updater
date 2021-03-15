@@ -1,5 +1,7 @@
 name: "jna-posix-api"
 github: "jenkinsci/jna-posix-api-plugin"
+issues:
+- jira: '23821' # jna-posix-api-plugin
 paths:
 - "io/jenkins/plugins/jna-posix-api"
 developers: []

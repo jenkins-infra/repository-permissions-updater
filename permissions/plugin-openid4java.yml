@@ -1,6 +1,8 @@
 ---
 name: "openid4java"
 github: "jenkinsci/openid4java-plugin"
+issues:
+- jira: '18824' # openid4java-plugin
 paths:
 - "org/jenkins-ci/plugins/openid4java"
 developers: []

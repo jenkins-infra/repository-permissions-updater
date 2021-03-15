@@ -1,6 +1,8 @@
 ---
 name: "gitlab-oauth"
 github: "jenkinsci/gitlab-oauth-plugin"
+issues:
+- jira: '21470' # gitlab-oauth-plugin
 paths:
 - "org/jenkins-ci/plugins/gitlab-oauth"
 developers:

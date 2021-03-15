@@ -1,6 +1,8 @@
 ---
 name: "teamconcert-git"
 github: "jenkinsci/teamconcert-git-plugin"
+issues:
+- jira: '19722' # teamconcert-git-plugin
 paths:
 - "org/jenkins-ci/plugins/teamconcert-git"
 developers:

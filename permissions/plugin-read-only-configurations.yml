@@ -1,6 +1,8 @@
 ---
 name: "read-only-configurations"
 github: "jenkinsci/read-only-configurations-plugin"
+issues:
+- jira: '16820' # read-only-configurations-plugin
 paths:
 - "org/jenkins-ci/plugins/read-only-configurations"
 developers:

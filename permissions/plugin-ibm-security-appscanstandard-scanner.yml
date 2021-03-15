@@ -1,6 +1,8 @@
 ---
 name: "ibm-security-appscanstandard-scanner"
 github: "jenkinsci/ibm-security-appscanstandard-scanner-plugin"
+issues:
+- jira: '21689' # ibm-security-appscanstandard-scanner-plugin
 paths:
 - "appscanstandard-integration/ibm-security-appscanstandard-scanner"
 developers:

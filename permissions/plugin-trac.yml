@@ -1,6 +1,8 @@
 ---
 name: "trac"
 github: "jenkinsci/trac-plugin"
+issues:
+- jira: '15494' # trac-plugin
 paths:
 - "org/jenkins-ci/plugins/trac"
 - "org/jvnet/hudson/plugins/trac"

@@ -1,6 +1,8 @@
 ---
 name: "sourcemonitor"
 github: "jenkinsci/sourcemonitor-plugin"
+issues:
+- jira: '17648' # sourcemonitor-plugin
 paths:
 - "com/thalesgroup/hudson/plugins/sourcemonitor"
 developers: []

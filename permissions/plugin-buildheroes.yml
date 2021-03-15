@@ -1,6 +1,8 @@
 ---
 name: "buildheroes"
 github: "jenkinsci/buildheroes-plugin"
+issues:
+- jira: '17555' # buildheroes-plugin
 paths:
 - "org/jenkins-ci/plugins/buildheroes"
 developers: []

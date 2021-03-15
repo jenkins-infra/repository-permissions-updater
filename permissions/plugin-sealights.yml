@@ -1,6 +1,8 @@
 ---
 name: "sealights"
 github: "jenkinsci/sealights-plugin"
+issues:
+- jira: '22123' # sealights-plugin
 paths:
 - "io/sealights/plugins/sealights"
 developers:

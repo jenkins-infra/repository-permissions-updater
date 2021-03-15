@@ -1,6 +1,8 @@
 ---
 name: "azure-commons"
 github: "jenkinsci/azure-commons-plugin"
+issues:
+- jira: '23148' # azure-commons-plugin
 paths:
 - "org/jenkins-ci/plugins/azure-commons"
 cd:

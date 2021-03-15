@@ -1,6 +1,8 @@
 ---
 name: "JiraTestResultReporter"
 github: "jenkinsci/JiraTestResultReporter-plugin"
+issues:
+- jira: '17491' # jiratestresultreporter-plugin
 paths:
 - "org/jenkins-ci/plugins/JiraTestResultReporter"
 developers:

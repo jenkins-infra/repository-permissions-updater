@@ -1,6 +1,8 @@
 ---
 name: "conjur-simple-integration"
 github: "jenkinsci/conjur-simple-integration-plugin"
+issues:
+- jira: '27236' # conjur-simple-integration-plugin
 paths:
 - "io/jenkins/plugins/conjur-simple-integration"
 developers:

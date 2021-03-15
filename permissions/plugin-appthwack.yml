@@ -1,6 +1,8 @@
 ---
 name: "appthwack"
 github: "jenkinsci/appthwack-plugin"
+issues:
+- jira: '18046' # appthwack-plugin
 paths:
 - "org/jenkins-ci/plugins/appthwack"
 developers:

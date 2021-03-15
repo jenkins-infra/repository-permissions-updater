@@ -1,6 +1,8 @@
 ---
 name: "qmetry-test-management"
 github: "jenkinsci/qmetry-test-management-plugin"
+issues:
+- jira: '23449' # qmetry-test-management-plugin
 paths:
 - "org/jenkins-ci/plugins/qmetry-test-management"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "notify-events"
 github: "jenkinsci/notify-events-plugin"
+issues:
+- jira: '27234' # notify-events-plugin
 paths:
 - "events/notify/notify-events"
 developers:

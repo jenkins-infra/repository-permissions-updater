@@ -1,6 +1,8 @@
 ---
 name: "durable-task"
 github: "jenkinsci/durable-task-plugin"
+issues:
+- jira: '18622' # durable-task-plugin
 paths:
 - "org/jenkins-ci/plugins/durable-task"
 developers:

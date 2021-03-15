@@ -1,6 +1,8 @@
 ---
 name: "nsiqcollector"
 github: "jenkinsci/nsiqcollector-plugin"
+issues:
+- jira: '15946' # nsiqcollector-plugin
 paths:
 - "org/jvnet/hudson/plugins/nsiqcollector"
 developers: []

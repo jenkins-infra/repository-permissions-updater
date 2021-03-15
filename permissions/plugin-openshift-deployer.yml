@@ -1,6 +1,8 @@
 ---
 name: "openshift-deployer"
 github: "jenkinsci/openshift-deployer-plugin"
+issues:
+- jira: '19921' # openshift-deployer-plugin
 paths:
 - "org/jenkins-ci/plugins/openshift-deployer"
 developers:

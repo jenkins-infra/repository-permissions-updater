@@ -1,6 +1,8 @@
 ---
 name: "workflow-multibranch"
 github: "jenkinsci/workflow-multibranch-plugin"
+issues:
+- jira: '21465' # workflow-multibranch-plugin
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-multibranch"
 developers:

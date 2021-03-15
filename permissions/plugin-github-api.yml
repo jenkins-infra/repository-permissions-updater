@@ -1,6 +1,8 @@
 ---
 name: "github-api"
 github: "jenkinsci/github-api-plugin"
+issues:
+- jira: '17496' # github-api-plugin
 paths:
 - "org/jenkins-ci/plugins/github-api"
 developers:
