@@ -9,6 +9,4 @@ developers:
 - "oleg_nenashev"
 security:
   contacts:
-    jira: 
-    - "integer"
-    - "foundation_security_members"
+    jira: "foundation_security_members"
