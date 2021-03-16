@@ -8,3 +8,6 @@ developers:
 - "oleg_nenashev"
 - "dnusbaum"
 - "jvz"
+security:
+  contacts:
+    jira: "foundation_security_members"
