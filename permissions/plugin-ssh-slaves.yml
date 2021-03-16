@@ -10,3 +10,6 @@ developers:
 - "stephenconnolly"
 - "oleg_nenashev"
 - "ifernandezcalvo"
+security:
+  contacts:
+    jira: "foundation_security_members"
