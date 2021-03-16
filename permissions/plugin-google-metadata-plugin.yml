@@ -5,3 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/google-metadata-plugin"
 developers:
 - "alecharp"
+security:
+  contacts:
+    jira: "foundation_security_members"
