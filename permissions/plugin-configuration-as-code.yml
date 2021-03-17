@@ -11,7 +11,7 @@ developers:
 - "timja"
 security:
   contacts:
-    jira: "jetersen"
+    jira: "foundation_security_members"
 issues:
   - github: *GH
   - jira: 23170 # configuration-as-code-plugin
