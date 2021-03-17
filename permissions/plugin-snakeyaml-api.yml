@@ -8,3 +8,6 @@ developers:
 - "timja"
 - "jetersen"
 - "amuniz"
+security:
+  contacts:
+    jira: "foundation_security_members"
