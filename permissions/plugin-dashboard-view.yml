@@ -9,3 +9,6 @@ developers:
 - "stephenconnolly"
 - "tgr"
 - "vandyev"
+security:
+  contacts:
+    jira: "foundation_security_members"
