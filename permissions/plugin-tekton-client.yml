@@ -1,7 +1,10 @@
 ---
 name: "tekton-client"
 github: "jenkinsci/tekton-client-plugin"
+cd:
+  enabled: true
 paths:
 - "org/waveywaves/jenkins/plugins/tekton-client"
 developers:
 - "waveywaves"
+- "garethjevans"
