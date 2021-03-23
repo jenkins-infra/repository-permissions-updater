@@ -3,7 +3,8 @@ name: "jenkins-infra-test"
 github: "jenkinsci/jenkins-infra-test-plugin"
 paths:
 - "io/jenkins/plugins/jenkins-infra-test"
+cd:
+  enabled: true
 developers:
 - "timja"
 - "olblak"
-

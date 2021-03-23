@@ -3,7 +3,10 @@ name: "azure-commons"
 github: "jenkinsci/azure-commons-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-commons"
+cd:
+  enabled: true
 developers:
 - "chenkennt"
 - "arieshout"
 - "azure_devops"
+- "timja"

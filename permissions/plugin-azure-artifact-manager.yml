@@ -3,5 +3,8 @@ name: "azure-artifact-manager"
 github: "jenkinsci/azure-artifact-manager-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-artifact-manager"
+cd:
+  enabled: true
 developers:
 - "azure_devops"
+- "timja"
