@@ -3,5 +3,7 @@ name: "azure-keyvault"
 github: "jenkinsci/azure-keyvault-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-keyvault"
+cd:
+  enabled: true
 developers:
 - "timja"

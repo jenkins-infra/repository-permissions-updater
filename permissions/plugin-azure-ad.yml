@@ -3,8 +3,11 @@ name: "azure-ad"
 github: "jenkinsci/azure-ad-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-ad"
+cd:
+  enabled: true
 developers:
 - "chenkennt"
 - "arieshout"
 - "raphaelyu"
 - "azure_devops"
+- "timja"
