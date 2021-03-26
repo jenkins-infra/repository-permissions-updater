@@ -3,5 +3,4 @@ name: "nodenamecolumn"
 github: "jenkinsci/nodenamecolumn-plugin"
 paths:
 - "org/jenkins-ci/plugins/nodenamecolumn"
-developers:
-- "stephenconnolly"
+developers: []

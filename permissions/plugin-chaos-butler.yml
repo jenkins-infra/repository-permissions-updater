@@ -2,5 +2,4 @@
 name: "chaos-butler"
 paths:
 - "org/jenkins-ci/plugins/chaos-butler"
-developers:
-- "stephenconnolly"
+developers: []
