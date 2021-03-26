@@ -5,5 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/mock-security-realm"
 developers:
 - "jglick"
-- "stephenconnolly"
 - "rarabaolaza"

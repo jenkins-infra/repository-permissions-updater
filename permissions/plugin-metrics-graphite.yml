@@ -3,5 +3,4 @@ name: "metrics-graphite"
 github: "jenkinsci/metrics-graphite-plugin"
 paths:
 - "org/jenkins-ci/plugins/metrics-graphite"
-developers:
-- "stephenconnolly"
+developers: []

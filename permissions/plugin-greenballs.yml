@@ -6,5 +6,4 @@ paths:
 - "org/jvnet/hudson/plugins/greenballs"
 developers:
 - "asgeirn"
-- "stephenconnolly"
 - "nfalco"
