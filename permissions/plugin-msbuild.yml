@@ -4,8 +4,14 @@ github: "jenkinsci/msbuild-plugin"
 paths:
 - "org/jenkins-ci/plugins/msbuild"
 developers:
-- "gbois"
-- "marshall777"
+- mramonleon
+- batmat
+- rsandell
+- alecharp
+- bitwiseman
+- carroll
+- olamy
+- teilo
 security:
     contacts:
       jira: "foundation_security_members"

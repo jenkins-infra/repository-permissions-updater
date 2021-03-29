@@ -4,5 +4,4 @@ github: "jenkinsci/mock-load-builder-plugin"
 paths:
 - "org/jenkins-ci/plugins/mock-load-builder"
 developers:
-- "stephenconnolly"
 - "vlatombe"

@@ -3,5 +3,4 @@ name: "metrics-diskusage"
 github: "jenkinsci/metrics-diskusage-plugin"
 paths:
 - "org/jenkins-ci/plugins/metrics-diskusage"
-developers:
-- "stephenconnolly"
+developers: []

@@ -7,5 +7,7 @@ developers:
 - "andresrc"
 - "oleg_nenashev"
 - "recampbell"
-- "stephenconnolly"
 - "oleg_nenashev"
+security:
+  contacts:
+    jira: "foundation_security_members"

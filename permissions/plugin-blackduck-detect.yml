@@ -1,6 +1,6 @@
 ---
 name: "blackduck-detect"
-github: "jenkinsci/blackduck-detect-plugin"
+github: "jenkinsci/synopsys-detect-plugin"
 paths:
 - "com/blackducksoftware/integration/blackduck-detect"
 developers:

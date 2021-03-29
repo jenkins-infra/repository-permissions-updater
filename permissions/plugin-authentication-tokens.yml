@@ -4,7 +4,6 @@ github: "jenkinsci/authentication-tokens-plugin"
 paths:
 - "org/jenkins-ci/plugins/authentication-tokens"
 developers:
-- "stephenconnolly"
 - "alecharp"
 - "batmat"
 - "egutierrez"

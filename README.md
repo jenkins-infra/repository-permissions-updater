@@ -99,20 +99,92 @@ Either of `jira` and `email` is optional.
 Please note that we generally reject email contacts due to the additional overhead in reaching out via email.
 Unless you represent a large organization with dedicated security team that needs to be involved in the coordination of a release, but is not otherwise part of plugin maintenance, please refrain from requesting to be contacted via email.
 
+Managing Issue Trackers
+-----------------------
+
+The YAML metadata files in this repository also hold information about issue trackers.
+This is used to make issue trackers more accessible, e.g. by adding them to the UI of Jenkins or on https://plugins.jenkins.io.
+
+### Declaring Issue Trackers
+
+The top-level `issues` key contains a sorted list of issue tracker references in descending order of preference.
+
+For GitHub issues, a GitHub repository must be specified as the value for the `github` key, and the value must start with `jenkinsci/`, followed by the repository name.
+For Jira, a component name or ID must be specified as the value for the `jira` key.
+The component name is easier to read, while the component ID is resilient in case of component renames.
+
+Either kind of issue tracker supports the `report:` boolean value that controls whether new issues should be reported in this issue tracker.
+The default is `true`.
+
+A complete example with two trackers:
+
+```yaml
+issues:
+  - github: 'jenkinsci/configuration-as-code-plugin' # The preferred issue tracker
+  - jira: 'configuration-as-code-plugin' # A secondary issue tracker is the Jira component 'configuration-as-code-plugin'
+    report: no # No new issues should be reported here
+```
+
+When GitHub Issues is used, there would be some duplicated content in the file (between `github` and `issues` entries) which can be resolved by using a YAML reference.
+Example:
+
+```yaml
+github: &GH 'jenkinsci/configuration-as-code-plugin' # Declare a reference
+issues:
+  - github: *GH # Use the reference
+```
+
+### Consuming Issue Trackers
+
+A file `issues.index.json` is generated when the tool is executed, containing a map from component names to a list of issue trackers.
+Only plugins are expected to specify an issue tracker here.
+
+If a plugin does not have a corresponding key in this map, the tool did not consider it for inclusion.
+If a plugin has a corresponding key in this map but an empty list of issue trackers, no issue trackers are known or supported.
+
+Each issue tracker entry will have the following keys:
+
+* `type`: Currently `jira` (meaning issues.jenkins.io) or `github` (meaning GitHub issues)
+* `reference` contains a `type`-specific identifier string that provides additional information how issues are tracked; for Jira it is the component name or ID and for GitHub Issues it is the `orgname/reponame` String.
+* `viewUrl` is a URL to a human-readable overview page. This value may not exist if no valid URL could be determined.
+* `reportUrl` is a URL where users can report issues. This value may not exist if no valid URL could be determined, or new issues should not be reported in this tracker.
+
+The list is sorted in descending order of preference.
+The first issue tracker in the list with a `reportUrl` should be presented as the primary (or only) option for reporting issues.
+Further issue trackers are mostly provided as a reference, e.g. when listing existing issues, although a different issue tracker with `reportUrl` can be linked if users provide a preference for a specific kind of issue tracker.
+
 Usage
 -----
 
 To see how to run this tool to synchronize Artifactory permission targets with the definitions in this repository, see `Jenkinsfile`.
 
-It expects the following System properties to be set:
+The following Java system properties can be used to customize the tool's behavior:
 
-- `definitionsDir` - Path to directory containing permission definitions YAML files
-- `artifactoryApiTempDir` - Path to directory (that will be created) where this tool stores Artifactory permissions API JSON payloads.
+* `dryRun` - Set to `true` to generate the API payloads without submitting them. No modifications will be executed.
+* `development` - Set to `true` during tool development to ensure production data is not overridden. This will have the following effects:
+  - Permissions are only granted to deploy to the `snapshots` repository (rather than both `snapshots` and `releases`)
+  - A different, non-colliding set of prefixes (unless overridden, see below) is used.
+* `definitionsDir` - Path to directory containing permission definitions YAML files, defaults to `./permissions`.
+* `artifactoryUserNamesJsonListUrl` - URL to a list containing known Artifactory user names, any permissions assigned to a user not on that list will cause the tool to abort
+* `artifactoryApiTempDir` - Path to directory (that will be created) where this tool stores Artifactory permissions API JSON payloads, defaults to `./json`.
+* `artifactoryObjectPrefix` - Override the prefix for groups and permission targets managed (created, updated, removed) using the tool.
+  If unspecified, the value will be `generatedv2-` by default, or `generateddev-` in _development mode_.
+* `artifactoryUrl` - URL to Artifactory, defaults to `https://repo.jenkins-ci.org`
+* `artifactoryTokenMinutesValid` - How long authentication tokens to Artifactory for CD enabled repos should be valid for, default `240` (4 hours).
+  Regular script execution frequency needs to be aligned with this.
+* `gitHubSecretNamePrefix` - Prefix for secrets sent to GitHub repos.
+  If unspecified, the value will be `MAVEN_` by default, or `DEV_MAVEN_` in _development mode_.
+* `jiraUserNamesJsonListUrl` - URL to a list containing known Jira user names of (potential) maintainers.
+  This is essentially a workaround to reduce the number of individual user lookups via Jira API.
 
 It expected the following environment variables to be set:
 
 - `ARTIFACTORY_USERNAME` - Admin user name for Artifactory
 - `ARTIFACTORY_PASSWORD` - Corresponding admin password (or API key) for Artifactory admin user
+- `GITHUB_USERNAME` - GitHub user name for a user with admin access to any CD enabled repos
+- `GITHUB_TOKEN` - Corresponding token for the user with admin access to any CD enabled repos, [requires `repo` scope to create/update secrets](https://docs.github.com/en/free-pro-team@latest/rest/reference/actions#create-or-update-a-repository-secret)
+- `JIRA_USERNAME` - User name (does not need admin permissions) for Jira
+- `JIRA_PASSWORD` - Corresponding password for Jira user
 
 ### How It Works
 

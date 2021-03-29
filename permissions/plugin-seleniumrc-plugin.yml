@@ -1,6 +1,6 @@
 ---
 name: "seleniumrc-plugin"
-github: "jenkinsci/seleniumrc-plugin-plugin"
+github: "jenkinsci/seleniumrc-plugin"
 paths:
 - "org/jvnet/hudson/plugins/seleniumrc-plugin"
 developers: []

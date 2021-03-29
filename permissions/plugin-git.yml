@@ -6,11 +6,10 @@ paths:
 - "org/jenkinsci/plugins/git"
 - "org/jvnet/hudson/plugins/git"
 developers:
-- "jglick"
 - "markewaite"
-- "stephenconnolly"
+- "mramonleon"
+- "olamy"
 - "rsandell"
-- "fcojfernandez"
 security:
     contacts:
       jira: "foundation_security_members"

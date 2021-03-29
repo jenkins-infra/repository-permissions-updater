@@ -7,3 +7,6 @@ developers:
 - "jglick"
 - "oleg_nenashev"
 - "olivergondza"
+security:
+  contacts:
+    jira: "foundation_security_members"

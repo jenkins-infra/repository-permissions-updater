@@ -1,0 +1,7 @@
+---
+name: "aio-tests"
+github: "jenkinsci/aio-tests-plugin"
+paths:
+- "io/jenkins/plugins/aio-tests"
+developers:
+- "aiotcms"

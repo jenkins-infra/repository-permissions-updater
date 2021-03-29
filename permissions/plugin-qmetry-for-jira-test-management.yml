@@ -4,4 +4,4 @@ github: "jenkinsci/qmetry-for-jira-test-management-plugin"
 paths:
 - "org/jenkins-ci/plugins/qmetry-for-jira-test-management"
 developers:
-- "dharaghodasara"
+- "priankashah"

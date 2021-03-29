@@ -1,6 +1,6 @@
 ---
 name: "relution-publisher"
-github: "jenkinsci/relution-plugin"
+github: "jenkinsci/relution-publisher-plugin"
 paths:
 - "org/jenkins-ci/plugins/relution-publisher"
 developers:

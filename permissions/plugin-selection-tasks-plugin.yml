@@ -1,6 +1,6 @@
 ---
 name: "selection-tasks-plugin"
-github: "jenkinsci/selection-tasks-plugin-plugin"
+github: "jenkinsci/selection-tasks-plugin"
 paths:
 - "org/jvnet/hudson/plugins/selection-tasks-plugin"
 developers: []

@@ -3,5 +3,4 @@ name: "openid4java"
 github: "jenkinsci/openid4java-plugin"
 paths:
 - "org/jenkins-ci/plugins/openid4java"
-developers:
-- "stephenconnolly"
+developers: []

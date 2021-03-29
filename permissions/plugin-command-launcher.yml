@@ -6,3 +6,7 @@ paths:
 developers:
 - "jglick"
 - "oleg_nenashev"
+- "mramonleon"
+security:
+  contacts:
+    jira: "foundation_security_members"

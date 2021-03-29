@@ -6,6 +6,8 @@ paths:
 - "org/jvnet/hudson/plugins/dashboard-view"
 developers:
 - "olivergondza"
-- "stephenconnolly"
 - "tgr"
 - "vandyev"
+security:
+  contacts:
+    jira: "foundation_security_members"

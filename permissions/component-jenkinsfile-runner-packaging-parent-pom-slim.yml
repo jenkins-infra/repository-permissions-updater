@@ -1,0 +1,9 @@
+---
+name: "packaging-parent-pom-slim"
+github: "jenkinsci/jenkinsfile-runner"
+paths:
+- "io/jenkins/jenkinsfile-runner/packaging-parent-pom-slim"
+developers:
+- "oleg_nenashev"
+- "egutierrez"
+- "fcojfernandez"

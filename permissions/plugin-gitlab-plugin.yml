@@ -7,3 +7,6 @@ paths:
 developers:
 - "owenmehegan"
 - "jequals5"
+# Not a maintainer, just tables-to-divs fixes
+- "oleg_nenashev"
+

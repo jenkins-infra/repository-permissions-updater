@@ -8,7 +8,10 @@ developers:
 - "dnozay"
 - "jglick"
 - "oleg_nenashev"
-- "stephenconnolly"
 - "wolfs"
 - "dnusbaum"
+- "teilo"
+security:
+  contacts:
+    jira: "foundation_security_members"
 

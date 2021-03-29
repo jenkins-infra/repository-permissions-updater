@@ -4,5 +4,6 @@ github: "jenkinsci/digitalocean-plugin"
 paths:
 - "com/dubture/jenkins/digitalocean-plugin"
 developers:
+- "halkeye"
 - "anpieber"
 - "pulse00"

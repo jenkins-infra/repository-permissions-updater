@@ -3,10 +3,8 @@ name: "windows-azure-storage"
 github: "jenkinsci/windows-azure-storage-plugin"
 paths:
 - "org/jenkins-ci/plugins/windows-azure-storage"
+cd:
+  enabled: true
 developers:
-- "snallami"
-- "clguiman"
-- "arroyc_microsoft"
-- "chenkennt"
-- "arieshout"
-- "azure_devops"
+- "zooopx"
+- "timja"
