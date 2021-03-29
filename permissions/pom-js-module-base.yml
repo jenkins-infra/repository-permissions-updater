@@ -1,6 +1,14 @@
 ---
-name: "js-module-base"
+name: "jenkins-js-libs"
+github: "jenkinsci/js-libs"
 paths:
-- "org/jenkins-ci/ui/js-module-base"
+- "org/jenkins-ci/ui/jenkins-js-libs"
 developers:
 - "tfennelly"
+- "alecharp"
+- "batmat"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"
