@@ -3,5 +3,4 @@ name: "uithemes-processor"
 github: "jenkinsci/uithemes-plugin"
 paths:
 - "org/jenkins-ci/plugins/uithemes/uithemes-processor"
-developers:
-- "tfennelly"
+developers: []

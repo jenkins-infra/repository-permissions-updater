@@ -4,7 +4,6 @@ github: "jenkinsci/js-libs"
 paths:
 - "org/jenkins-ci/ui/ace-editor"
 developers:
-- "tfennelly"
 - "alecharp"
 - "batmat"
 - "egutierrez"

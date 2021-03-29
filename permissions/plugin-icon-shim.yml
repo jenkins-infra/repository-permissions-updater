@@ -5,6 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/icon-shim/icon-shim"
 developers:
 - "jglick"
-- "tfennelly"
 - "andresrc"
 - "timja"
