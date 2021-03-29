@@ -4,7 +4,6 @@ github: "jenkinsci/jackson-databind-plugin"
 paths:
 - "org/jenkins-ci/plugins/jackson-databind"
 developers:
-- "tfennelly"
 - "oleg_nenashev"
 - "dnusbaum"
 - "jvz"

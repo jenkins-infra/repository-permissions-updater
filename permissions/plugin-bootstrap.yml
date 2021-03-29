@@ -4,7 +4,6 @@ github: "jenkinsci/js-libs"
 paths:
 - "org/jenkins-ci/ui/bootstrap"
 developers:
-- "tfennelly"
 - "alecharp"
 - "batmat"
 - "egutierrez"
