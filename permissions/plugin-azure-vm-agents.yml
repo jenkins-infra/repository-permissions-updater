@@ -6,9 +6,5 @@ paths:
 cd:
   enabled: true
 developers:
-- "clguiman"
-- "arroyc_microsoft"
-- "chenkennt"
-- "arieshout"
-- "azure_devops"
+- "zooopx"
 - "timja"

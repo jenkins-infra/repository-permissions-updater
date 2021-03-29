@@ -4,4 +4,4 @@ github: "jenkinsci/azure-container-registry-tasks-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-container-registry-tasks"
 developers:
-- "azure_devops"
+- "zooopx"

@@ -4,6 +4,4 @@ github: "jenkinsci/azure-acs-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-acs"
 developers:
-- "chenkennt"
-- "arieshout"
-- "azure_devops"
+- "zooopx"

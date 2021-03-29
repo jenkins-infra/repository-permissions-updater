@@ -3,7 +3,5 @@ name: "azure-commons-parent"
 paths:
 - "org/jenkins-ci/plugins/azure-commons-parent"
 developers:
-- "chenkennt"
-- "arieshout"
-- "azure_devops"
+- "zooopx"
 - "timja"

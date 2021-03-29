@@ -6,5 +6,5 @@ paths:
 cd:
   enabled: true
 developers:
-- "azure_devops"
+- "zooopx"
 - "timja"
