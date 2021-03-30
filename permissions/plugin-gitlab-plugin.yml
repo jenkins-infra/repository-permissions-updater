@@ -5,5 +5,5 @@ paths:
 - "com/dabsquared/gitlab-plugin"
 - "org/jenkins-ci/plugins/gitlab-plugin"
 developers:
-- "elbidouilleur" # jenkins.io Username MaximeMazet Github username
+- "elbidouilleur" # jenkins.io/jira Username MaximeMazet Github username
 
