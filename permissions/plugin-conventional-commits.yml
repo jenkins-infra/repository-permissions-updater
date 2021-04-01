@@ -1,0 +1,9 @@
+---
+name: "conventional-commits"
+github: &GH "jenkinsci/conventional-commits-plugin"
+paths:
+- "io/jenkins/plugins/conventional-commits"
+developers:
+- "garethjevans"
+issues:
+  - github: *GH
