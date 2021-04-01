@@ -1,6 +1,8 @@
 ---
 name: "conventional-commits"
 github: &GH "jenkinsci/conventional-commits-plugin"
+cd:
+  enabled: true
 paths:
 - "io/jenkins/plugins/conventional-commits"
 developers:
