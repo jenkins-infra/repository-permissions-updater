@@ -1,0 +1,9 @@
+---
+name: "validating-yaml-parameter"
+github: &GH "jenkinsci/validating-yaml-parameter-plugin"
+paths:
+- "io/jenkins/plugins/validating-yaml-parameter"
+developers:
+- "cesan3"
+issues:
+  - github: *GH
