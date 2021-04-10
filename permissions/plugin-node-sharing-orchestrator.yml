@@ -1,5 +1,6 @@
 ---
 name: "node-sharing-orchestrator"
+github: jenkinsci/node-sharing-plugin
 paths:
 - "org/jenkins-ci/plugins/nodesharing/node-sharing-orchestrator"
 developers:

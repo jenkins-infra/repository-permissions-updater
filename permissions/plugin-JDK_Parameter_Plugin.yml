@@ -1,5 +1,6 @@
 ---
 name: "JDK_Parameter_Plugin"
+github: jenkinsci/JDK_Parameter_Plugin-plugin
 paths:
 - "org/jenkins-ci/plugins/JDK_Parameter_Plugin"
 developers: []

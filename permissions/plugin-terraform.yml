@@ -1,5 +1,6 @@
 ---
 name: "terraform"
+github: jenkinsci/terraform-plugin
 paths:
 - "org/jenkins-ci/plugins/terraform"
 developers:

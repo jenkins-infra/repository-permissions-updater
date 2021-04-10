@@ -1,5 +1,6 @@
 ---
 name: "Office-365-Connector"
+github: jenkinsci/office-365-connector-plugin
 paths:
 - "org/jenkins-ci/plugins/Office-365-Connector"
 developers:

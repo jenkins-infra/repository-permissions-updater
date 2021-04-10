@@ -1,5 +1,6 @@
 ---
 name: "node-sharing-executor"
+github: jenkinsci/node-sharing-plugin
 paths:
 - "org/jenkins-ci/plugins/nodesharing/node-sharing-executor"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "alauda-pipeline"
+github: jenkinsci/alauda-pipeline-plugin
 paths:
 - "io/alauda/jenkins/plugins/alauda-pipeline"
 developers:
