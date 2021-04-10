@@ -1,6 +1,8 @@
 ---
 name: "eiffel-broadcaster"
-github: "jenkinsci/eiffel-broadcaster-plugin"
+github: &gh "jenkinsci/eiffel-broadcaster-plugin"
+issues:
+- github: *gh
 paths:
 - "com/axis/jenkins/plugins/eiffel/eiffel-broadcaster"
 developers:

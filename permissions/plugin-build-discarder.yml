@@ -1,6 +1,8 @@
 ---
 name: "build-discarder"
-github: "jenkinsci/build-discarder-plugin"
+github: &gh "jenkinsci/build-discarder-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/build-discarder"
 developers:

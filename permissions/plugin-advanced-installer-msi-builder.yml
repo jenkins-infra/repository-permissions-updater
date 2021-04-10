@@ -1,6 +1,8 @@
 ---
 name: "advanced-installer-msi-builder"
-github: "jenkinsci/advanced-installer-msi-builder-plugin"
+github: &gh "jenkinsci/advanced-installer-msi-builder-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/advanced-installer-msi-builder"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "dark-theme"
-github: "jenkinsci/dark-theme-plugin"
+github: &gh "jenkinsci/dark-theme-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/dark-theme"
 developers:

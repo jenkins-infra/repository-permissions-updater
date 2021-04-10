@@ -1,6 +1,8 @@
 ---
 name: "windows-cloud"
-github: "jenkinsci/windows-cloud-plugin"
+github: &gh "jenkinsci/windows-cloud-plugin"
+issues:
+- github: *gh
 paths:
 - "fr/edf/jenkins/plugins/windows-cloud"
 developers:

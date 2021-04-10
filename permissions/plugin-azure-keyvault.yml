@@ -1,6 +1,8 @@
 ---
 name: "azure-keyvault"
-github: "jenkinsci/azure-keyvault-plugin"
+github: &gh "jenkinsci/azure-keyvault-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/azure-keyvault"
 cd:
