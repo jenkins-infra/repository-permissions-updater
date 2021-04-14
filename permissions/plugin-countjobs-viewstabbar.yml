@@ -3,4 +3,5 @@ name: "countjobs-viewstabbar"
 github: "jenkinsci/countjobs-viewstabbar-plugin"
 paths:
 - "ws/albors/countjobs-viewstabbar"
-developers: []
+developers:
+- "ialbors"

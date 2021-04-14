@@ -1,0 +1,8 @@
+---
+name: "tuleap-oauth"
+github: "jenkinsci/tuleap-oauth-plugin"
+paths:
+- "io/jenkins/plugins/tuleap-oauth"
+developers:
+- "erwyn"
+- "crobinson"

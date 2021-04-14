@@ -5,7 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/disk-usage"
 - "org/jvnet/hudson/plugins/disk-usage"
 developers:
-- "lvotypkova"
 - "vjuranek"
 - "oleg_nenashev"
-- "olivergondza"

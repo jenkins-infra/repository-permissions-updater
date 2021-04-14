@@ -6,7 +6,6 @@ paths:
 developers:
 - "jglick"
 - "recena"
-- "stephenconnolly"
 - "abayer"
 - "svanoort"
 - "rsandell"
@@ -14,6 +13,7 @@ developers:
 - "carroll"
 - "bitwiseman"
 - "kshultz"
+- "jtaboada"
 security:
   contacts:
     jira: "pipeline_security_members"

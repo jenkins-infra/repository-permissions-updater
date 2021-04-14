@@ -1,0 +1,7 @@
+---
+name: "scm-filter-jervis"
+github: "jenkinsci/scm-filter-jervis-plugin"
+paths:
+- "io/jenkins/plugins/scm-filter-jervis"
+developers:
+- "sag47"

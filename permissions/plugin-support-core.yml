@@ -7,13 +7,13 @@ developers:
 - "jglick"
 - "kohsuke"
 - "schristou"
-- "stephenconnolly"
 - "batmat"
 - "owood"
 - "escoem"
 - "dnusbaum"
 - "egutierrez"
 - "mramonleon"
+- "allan_burdajewicz"
 security:
   contacts:
     jira: "foundation_security_members"

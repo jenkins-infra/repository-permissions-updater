@@ -5,7 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-github-lib"
 developers:
 - "jglick"
-- "stephenconnolly"
 - "abayer"
 - "dnusbaum"
 - "rsandell"

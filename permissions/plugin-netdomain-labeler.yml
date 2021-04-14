@@ -1,0 +1,7 @@
+---
+name: "netdomain-labeler"
+github: "jenkinsci/netdomain-labeler-plugin"
+paths:
+- "io/jenkins/plugins/netdomain-labeler"
+developers:
+- "mcamposv"

@@ -1,0 +1,8 @@
+---
+name: "venafi-vcert"
+github: "jenkinsci/venafi-vcert-plugin"
+paths:
+- "io/jenkins/plugins/venafi-vcert"
+developers:
+- "honglilai"
+- "arnold79"

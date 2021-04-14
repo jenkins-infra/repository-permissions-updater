@@ -1,0 +1,8 @@
+---
+name: "ostorlab"
+github: "jenkinsci/ostorlab-plugin"
+paths:
+- "io/jenkins/plugins/ostorlab"
+developers:
+- "aminemesb"
+

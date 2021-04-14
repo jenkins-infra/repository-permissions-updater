@@ -1,0 +1,7 @@
+---
+name: "cloudhub-deployer"
+github: "jenkinsci/cloudhub-deployer-plugin"
+paths:
+- "io/jenkins/plugins/cloudhub-deployer"
+developers:
+- "vikas_chaudhary"

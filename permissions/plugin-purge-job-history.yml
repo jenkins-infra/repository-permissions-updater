@@ -4,7 +4,6 @@ github: "jenkinsci/purge-job-history-plugin"
 paths:
 - "org/jenkins-ci/plugins/purge-job-history"
 developers:
-- "stephenconnolly"
 - "aytuncbeken"
 security:
   contacts:

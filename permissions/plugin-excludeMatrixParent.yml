@@ -1,6 +1,6 @@
 ---
 name: "excludeMatrixParent"
-github: "jenkinsci/exclude-matrix-parent"
+github: "jenkinsci/exclude-matrix-parent-plugin"
 paths:
 - "hudson/plugins/excludeMatrixParent/excludeMatrixParent"
 developers: []

@@ -7,3 +7,7 @@ developers:
 - "csanchez"
 - "michaelneale"
 - "oleg_nenashev"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

@@ -1,0 +1,11 @@
+---
+name: "manage-permission"
+github: "jenkinsci/manage-permission-plugin"
+paths:
+- "io/jenkins/plugins/manage-permission"
+developers:
+- "escoem"
+- "mikecirioli"
+- "ealvarez"
+- "amuniz"
+- "ajard"

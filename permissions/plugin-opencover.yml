@@ -1,0 +1,8 @@
+---
+name: "opencover"
+github: "jenkinsci/opencover-plugin"
+paths:
+- "io/jenkins/plugins/opencover"
+developers:
+- "asavanchuk"
+- "cizezsy"

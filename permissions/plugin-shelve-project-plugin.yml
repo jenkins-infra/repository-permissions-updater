@@ -1,6 +1,6 @@
 ---
 name: "shelve-project-plugin"
-github: "jenkinsci/shelve-project-plugin-plugin"
+github: "jenkinsci/shelve-project-plugin"
 paths:
 - "org/jenkins-ci/plugins/shelve-project-plugin"
 developers:

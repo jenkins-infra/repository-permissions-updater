@@ -1,7 +1,7 @@
 ---
 name: "dingding-notifications"
-github: "jenkinsci/dingding-notifications-plugin"
+github: "jenkinsci/dingtalk-plugin"
 paths:
-- "com/ztbsuper/dingding-notifications"
+  - "io/jenkins/plugins/dingding-notifications"
 developers:
-- "ztbsuper"
+  - "liuweigl"

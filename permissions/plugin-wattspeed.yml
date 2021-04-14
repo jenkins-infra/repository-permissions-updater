@@ -1,0 +1,7 @@
+---
+name: "wattspeed"
+github: "jenkinsci/wattspeed-plugin"
+paths:
+- "io/jenkins/plugins/wattspeed"
+developers:
+- "wattspeed"

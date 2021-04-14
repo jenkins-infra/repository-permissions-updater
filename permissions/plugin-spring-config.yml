@@ -1,0 +1,7 @@
+---
+name: "spring-config"
+github: "jenkinsci/spring-config-plugin"
+paths:
+- "io/jenkins/plugins/spring-config"
+developers:
+- "topikachu"

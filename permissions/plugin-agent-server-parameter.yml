@@ -1,0 +1,7 @@
+---
+name: "agent-server-parameter"
+github: "jenkinsci/agent-server-parameter-plugin"
+paths:
+- "io/jenkins/plugins/agent-server-parameter"
+developers:
+- "bluersw"

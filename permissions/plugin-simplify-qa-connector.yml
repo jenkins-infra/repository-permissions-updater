@@ -1,0 +1,7 @@
+---
+name: "simplify-qa-connector"
+github: "jenkinsci/simplify-qa-connector-plugin"
+paths:
+- "io/jenkins/plugins/simplify-qa-connector"
+developers:
+- "simplifyadmin"

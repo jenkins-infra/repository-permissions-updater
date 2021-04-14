@@ -7,3 +7,9 @@ developers:
 - "evanbrown"
 - "stephenshank"
 - "craigbarber"
+- "donmccasland"
+- "tarahernandez"
+- "vishalapatel"
+security:
+  contacts:
+    jira: "foundation_security_members"

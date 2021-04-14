@@ -6,7 +6,6 @@ paths:
 developers:
 - "andresrc"
 - "kohsuke"
-- "stephenconnolly"
 - "rsandell"
 security:
   contacts:

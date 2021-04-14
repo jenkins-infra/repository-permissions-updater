@@ -1,0 +1,9 @@
+---
+name: "dark-theme"
+github: "jenkinsci/dark-theme-plugin"
+paths:
+- "io/jenkins/plugins/dark-theme"
+developers:
+- "timja"
+- "oleg_nenashev"
+

@@ -1,0 +1,7 @@
+---
+name: "depbuilder"
+github: "jenkinsci/depbuilder-plugin"
+paths:
+- "io/jenkins/plugins/depbuilder"
+developers:
+- "rsl"

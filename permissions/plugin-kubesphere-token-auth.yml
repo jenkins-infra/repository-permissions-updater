@@ -1,0 +1,10 @@
+---
+name: "kubesphere-token-auth"
+github: "jenkinsci/kubesphere-token-auth-plugin"
+paths:
+- "io/jenkins/plugins/kubesphere-token-auth"
+developers:
+  - "shaowenchen"
+  - "zhuxiaoyang"
+  - "surenpi"
+  

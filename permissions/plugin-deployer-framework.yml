@@ -4,5 +4,13 @@ github: "jenkinsci/deployer-framework-plugin"
 paths:
 - "org/jenkins-ci/plugins/deployer-framework"
 developers:
-- "stephenconnolly"
 - "jvz"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

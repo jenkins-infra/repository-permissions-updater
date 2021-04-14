@@ -5,3 +5,4 @@ paths:
 - "com/axis/system/jenkins/plugins/downstream/downstream-build-cache"
 developers:
 - "gustafl"
+- "jons"

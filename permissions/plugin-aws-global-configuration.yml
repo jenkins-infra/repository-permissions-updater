@@ -8,3 +8,6 @@ developers:
 - "csanchez"
 - "oleg_nenashev"
 - "ifernandezcalvo"
+security:
+  contacts:
+    jira: "modern_platforms_security_members"

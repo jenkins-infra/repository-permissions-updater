@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/plugins/database-mysql"
 developers:
 - "davidvanlaatum"
+- "timja"

@@ -1,0 +1,7 @@
+---
+name: "abap-ci"
+github: "jenkinsci/abap-ci-plugin"
+paths:
+- "io/jenkins/plugins/abap-ci"
+developers:
+- "andau"

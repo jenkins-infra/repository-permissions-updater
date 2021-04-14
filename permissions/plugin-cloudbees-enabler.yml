@@ -1,0 +1,12 @@
+---
+name: "cloudbees-enabler"
+github: "jenkinsci/cloudbees-enabler-plugin"
+paths:
+- "io/jenkins/plugins/cloudbees-enabler"
+developers:
+- "bitwiseman"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "olamy"
+- "vlatombe"

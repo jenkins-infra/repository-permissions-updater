@@ -9,3 +9,9 @@ developers:
 - "petergerrard"
 - "lubosmichalic"
 - "danielpottenger"
+- "diogoduarterg"
+- "jackdewinter"
+- "markan"
+security:
+  contacts:
+    jira: redgate_security

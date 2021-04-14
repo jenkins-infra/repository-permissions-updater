@@ -1,0 +1,7 @@
+---
+name: "minio"
+github: "jenkinsci/minio-plugin"
+paths:
+- "io/jenkins/plugins/minio"
+developers:
+- "sleepy"

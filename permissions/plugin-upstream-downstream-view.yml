@@ -4,5 +4,4 @@ github: "jenkinsci/upstream-downstream-view-plugin"
 paths:
 - "org/jenkins-ci/plugins/upstream-downstream-view"
 developers:
-- "lvotypkova"
 - "olivergondza"

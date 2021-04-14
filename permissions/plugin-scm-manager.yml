@@ -1,0 +1,9 @@
+---
+name: "scm-manager"
+github: "jenkinsci/scm-manager-plugin"
+paths:
+- "io/jenkins/plugins/scm-manager"
+developers:
+- "sdorra"
+- "pfeuffer"
+- "eheimbuch"

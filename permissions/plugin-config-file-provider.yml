@@ -5,3 +5,11 @@ paths:
 - "org/jenkins-ci/plugins/config-file-provider"
 developers:
 - "imod"
+- "egutierrez"
+- "alecharp"
+- "batmat"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "foundation_security_members"

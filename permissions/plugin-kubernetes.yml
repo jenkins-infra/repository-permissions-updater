@@ -7,3 +7,7 @@ developers:
 - "csanchez"
 - "vlatombe"
 - "jglick"
+- "jequals5"
+security:
+  contacts:
+    jira: "modern_platforms_security_members"

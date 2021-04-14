@@ -1,0 +1,6 @@
+name: "testsigma"
+github: "jenkinsci/testsigma-plugin"
+paths:
+- "io/jenkins/plugins/testsigma"
+developers:
+- "testsigma"

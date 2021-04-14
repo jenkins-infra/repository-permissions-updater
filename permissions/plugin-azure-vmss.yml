@@ -4,6 +4,4 @@ github: "jenkinsci/azure-vmss-plugin"
 paths:
 - "org/jenkins-ci/plugins/azure-vmss"
 developers:
-- "chenkennt"
-- "arieshout"
-- "azure_devops"
+- "zooopx"

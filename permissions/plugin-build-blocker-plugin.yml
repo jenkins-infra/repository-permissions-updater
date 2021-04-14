@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/build-blocker-plugin"
 developers:
 - "ffromm"
+- "dmone"
+

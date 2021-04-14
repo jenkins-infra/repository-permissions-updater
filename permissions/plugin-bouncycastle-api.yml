@@ -5,6 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/bouncycastle-api"
 developers:
 - "alobato"
-- "stephenconnolly"
 - "dnusbaum"
 - "jthompson"

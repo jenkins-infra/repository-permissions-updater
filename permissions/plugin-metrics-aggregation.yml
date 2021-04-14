@@ -1,0 +1,7 @@
+---
+name: "metrics-aggregation"
+github: "jenkinsci/metrics-aggregation-plugin"
+paths:
+- "io/jenkins/plugins/metrics-aggregation"
+developers:
+- "andipabst"

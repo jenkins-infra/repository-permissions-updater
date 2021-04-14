@@ -11,3 +11,13 @@ developers:
 - "olivergondza"
 - "wolfs"
 - "dnusbaum"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+- "timja"
+security:
+  contacts:
+    jira: "foundation_security_members"

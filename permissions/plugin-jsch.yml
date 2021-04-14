@@ -9,4 +9,6 @@ developers:
 - "oleg_nenashev"
 - "dnusbaum"
 - "jthompson"
-
+security:
+  contacts:
+    jira: "foundation_security_members"

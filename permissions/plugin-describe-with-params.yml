@@ -1,0 +1,7 @@
+---
+name: "describe-with-params"
+github: "jenkinsci/describe-with-params-plugin"
+paths:
+- "io/jenkins/plugins/describe-with-params"
+developers:
+- "liumazi"

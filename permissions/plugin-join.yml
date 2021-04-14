@@ -5,3 +5,5 @@ paths:
 - "org/jenkins-ci/plugins/join"
 developers:
 - "mdonohue"
+# Not a maintainer, just tables-to-divs fixes
+- "oleg_nenashev"

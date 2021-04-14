@@ -3,5 +3,4 @@ name: "mapdb-api"
 github: "jenkinsci/mapdb-api-plugin"
 paths:
 - "org/jenkins-ci/plugins/mapdb-api"
-developers:
-- "stephenconnolly"
+developers: []
