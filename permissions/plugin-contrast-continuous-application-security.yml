@@ -4,6 +4,5 @@ github: "jenkinsci/contrast-continuous-application-security-plugin"
 paths:
 - "org/jenkins-ci/plugins/contrast-continuous-application-security"
 developers:
-- "gsmoore"
 - "bryanateoan"
 - "aliaandersen"
