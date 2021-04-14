@@ -5,7 +5,6 @@ paths:
 - "com/xebialabs/deployit/ci/deployit-plugin"
 developers:
 - "bdevic"
-- "meena02"
-- "aedsonfellipe"
+- "fellipeavanci"
 - "ashish_thakur"
 - "slal1"
