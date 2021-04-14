@@ -4,5 +4,4 @@ github: "jenkinsci/publish-over-ssh-plugin"
 paths:
 - "org/jenkins-ci/plugins/publish-over-ssh"
 - "org/jvnet/hudson/plugins/publish-over-ssh"
-developers:
-- "r2b2_nz"
+developers: []
