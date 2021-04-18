@@ -1,0 +1,9 @@
+---
+name: "azure-sdk"
+github: &GH "jenkinsci/azure-sdk-plugin"
+paths:
+- "io/jenkins/plugins/azure-sdk"
+developers:
+- "timja"
+issues:
+  - github: *GH
