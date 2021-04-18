@@ -7,3 +7,5 @@ developers:
 - "guysmoilov"
 issues:
   - github: *GH
+cd:
+  enabled: true
