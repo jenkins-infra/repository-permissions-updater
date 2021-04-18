@@ -1,0 +1,9 @@
+---
+name: "bootstrap5-api"
+github: &GH "jenkinsci/bootstrap5-api-plugin"
+paths:
+- "io/jenkins/plugins/bootstrap5-api"
+developers:
+- "drulli"
+issues:
+  - jira: 28620
