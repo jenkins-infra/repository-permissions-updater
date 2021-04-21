@@ -3,5 +3,4 @@ name: "dry"
 github: "jenkinsci/dry-plugin"
 paths:
 - "org/jvnet/hudson/plugins/dry"
-developers:
-- "drulli"
+developers: []

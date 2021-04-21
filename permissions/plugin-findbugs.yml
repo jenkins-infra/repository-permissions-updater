@@ -3,5 +3,4 @@ name: "findbugs"
 github: "jenkinsci/findbugs-plugin"
 paths:
 - "org/jvnet/hudson/plugins/findbugs"
-developers:
-- "drulli"
+developers: []
