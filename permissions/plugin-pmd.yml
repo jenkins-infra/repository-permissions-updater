@@ -3,5 +3,4 @@ name: "pmd"
 github: "jenkinsci/pmd-plugin"
 paths:
 - "org/jvnet/hudson/plugins/pmd"
-developers:
-- "drulli"
+developers: []

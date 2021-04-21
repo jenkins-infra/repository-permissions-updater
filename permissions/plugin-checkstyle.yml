@@ -3,5 +3,4 @@ name: "checkstyle"
 github: "jenkinsci/checkstyle-plugin"
 paths:
 - "org/jvnet/hudson/plugins/checkstyle"
-developers:
-- "drulli"
+developers: []
