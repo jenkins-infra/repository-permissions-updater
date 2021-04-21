@@ -1,0 +1,7 @@
+---
+name: "pull-request-monitoring"
+github: "simonsymhoven/pull-request-monitoring-plugin"
+paths:
+- "io/jenkins/plugins/monitoring"
+developers:
+- "simonsymhoven"
