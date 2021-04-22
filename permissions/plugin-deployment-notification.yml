@@ -4,5 +4,4 @@ github: "jenkinsci/deployment-notification-plugin"
 paths:
 - "org/jenkins-ci/plugins/deployment-notification"
 developers:
-- "fbelzunc"
 - "kohsuke"
