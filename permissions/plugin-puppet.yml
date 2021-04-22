@@ -4,5 +4,4 @@ github: "jenkinsci/puppet-plugin"
 paths:
 - "org/jenkins-ci/plugins/puppet"
 developers:
-- "fbelzunc"
 - "kohsuke"
