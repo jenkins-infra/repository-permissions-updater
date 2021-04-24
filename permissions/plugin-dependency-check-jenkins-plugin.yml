@@ -4,4 +4,4 @@ github: "jenkinsci/dependency-check-plugin"
 paths:
 - "org/jenkins-ci/plugins/dependency-check-jenkins-plugin"
 developers:
-- "sspringett"
+- "kudos_dude"
