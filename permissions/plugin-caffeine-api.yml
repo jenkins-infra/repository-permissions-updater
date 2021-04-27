@@ -13,3 +13,5 @@ developers:
 - "bitwiseman"
 issues:
   - jira: 28622
+cd:
+  enabled: true
