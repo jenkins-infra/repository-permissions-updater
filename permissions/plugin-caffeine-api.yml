@@ -1,0 +1,9 @@
+---
+name: "caffeine-api"
+github: &GH "jenkinsci/caffeine-api-plugin"
+paths:
+- "io/jenkins/plugins/caffeine-api"
+developers:
+- "teilo"
+issues:
+  - jira: 28622
