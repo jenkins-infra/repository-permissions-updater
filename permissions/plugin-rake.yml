@@ -1,6 +1,9 @@
 ---
 name: "rake"
-github: "jenkinsci/rake-plugin"
+github: &gh "jenkinsci/rake-plugin"
+issues:
+- jira: '15569' # rake-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/rake"
 developers:

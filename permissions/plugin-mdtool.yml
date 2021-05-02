@@ -1,6 +1,8 @@
 ---
 name: "mdtool"
 github: "jenkinsci/mdtool-plugin"
+issues:
+- jira: '19024' # mdtool-plugin
 paths:
 - "org/jenkins-ci/plugins/mdtool"
 developers:

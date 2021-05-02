@@ -1,6 +1,8 @@
 ---
 name: "nerrvana-plugin"
 github: "jenkinsci/nerrvana-plugin"
+issues:
+- jira: '17425' # nerrvana-plugin
 paths:
 - "com/deepshiftlabs/nerrvana/nerrvana-plugin"
 - "org/jenkins-ci/plugins/nerrvana-plugin"

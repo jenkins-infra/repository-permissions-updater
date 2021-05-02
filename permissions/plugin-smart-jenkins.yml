@@ -1,6 +1,8 @@
 ---
 name: "smart-jenkins"
 github: "jenkinsci/smart-jenkins-plugin"
+issues:
+- jira: '16000' # smart-jenkins-plugin
 paths:
 - "org/jenkins-ci/plugins/smart-jenkins"
 developers: []

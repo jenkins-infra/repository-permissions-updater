@@ -1,6 +1,9 @@
 ---
 name: "jaxb"
-github: "jenkinsci/jaxb-plugin"
+github: &gh "jenkinsci/jaxb-plugin"
+issues:
+- jira: '24725' # jaxb-plugin
+- github: *gh
 paths:
 - "io/jenkins/plugins/jaxb"
 developers:

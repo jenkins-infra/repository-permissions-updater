@@ -1,6 +1,8 @@
 ---
 name: "git-forensics"
 github: "jenkinsci/git-forensics-plugin"
+issues:
+- jira: '25321' # git-forensics-plugin
 paths:
 - "io/jenkins/plugins/git-forensics"
 developers:

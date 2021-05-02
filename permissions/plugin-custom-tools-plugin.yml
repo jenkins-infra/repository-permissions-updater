@@ -1,6 +1,8 @@
 ---
 name: "custom-tools-plugin"
 github: "jenkinsci/custom-tools-plugin"
+issues:
+- jira: '16520' # customtools-plugin
 paths:
 - "com/cloudbees/jenkins/plugins/custom-tools-plugin"
 developers:

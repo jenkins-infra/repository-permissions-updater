@@ -1,6 +1,8 @@
 ---
 name: "linenumbers"
 github: "jenkinsci/linenumbers-plugin"
+issues:
+- jira: '18929' # linenumbers-plugin
 paths:
 - "org/jenkins-ci/plugins/linenumbers"
 developers:

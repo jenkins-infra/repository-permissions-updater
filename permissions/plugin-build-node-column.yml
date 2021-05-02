@@ -1,6 +1,8 @@
 ---
 name: "build-node-column"
 github: "jenkinsci/build-node-column-plugin"
+issues:
+- jira: '17592' # build-node-column-plugin
 paths:
 - "org/jenkins-ci/plugins/build-node-column"
 developers: []

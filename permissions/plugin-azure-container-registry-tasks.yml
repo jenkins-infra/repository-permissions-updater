@@ -1,6 +1,8 @@
 ---
 name: "azure-container-registry-tasks"
 github: "jenkinsci/azure-container-registry-tasks-plugin"
+issues:
+- jira: '24651' # azure-container-registry-tasks-plugin
 paths:
 - "org/jenkins-ci/plugins/azure-container-registry-tasks"
 developers:

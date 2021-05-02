@@ -1,6 +1,8 @@
 ---
 name: "qualys-api-security"
 github: "jenkinsci/qualys-api-security-plugin"
+issues:
+- jira: '26123' # qualys-api-security-plugin
 paths:
 - "com/qualys/plugins/qualys-api-security"
 developers:

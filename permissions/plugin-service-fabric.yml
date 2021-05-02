@@ -1,6 +1,8 @@
 ---
 name: "service-fabric"
-github: "jenkinsci/service-fabric-plugin"
+github: &gh "jenkinsci/service-fabric-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/service-fabric"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "liverebel-deploy"
 github: "jenkinsci/liverebel-deploy-plugin"
+issues:
+- jira: '15975' # liverebel-deploy-plugin
 paths:
 - "org/jenkins-ci/plugins/liverebel-deploy"
 developers: []

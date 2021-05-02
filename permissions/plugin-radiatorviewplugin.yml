@@ -1,6 +1,8 @@
 ---
 name: "radiatorviewplugin"
 github: "jenkinsci/radiatorview-plugin"
+issues:
+- jira: '15720' # radiatorviewplugin-plugin
 paths:
 - "org/jenkins-ci/plugins/radiatorviewplugin"
 developers:

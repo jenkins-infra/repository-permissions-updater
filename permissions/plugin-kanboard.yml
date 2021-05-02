@@ -1,6 +1,8 @@
 ---
 name: "kanboard"
 github: "jenkinsci/kanboard-plugin"
+issues:
+- jira: '21948' # kanboard-publisher-plugin
 paths:
 - "org/jenkins-ci/plugins/kanboard"
 developers:

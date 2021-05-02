@@ -1,6 +1,8 @@
 ---
 name: "jobcacher"
 github: "jenkinsci/jobcacher-plugin"
+issues:
+- jira: '21953' # jobcacher-plugin
 paths:
 - "org/jenkins-ci/plugins/jobcacher"
 developers:

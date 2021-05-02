@@ -1,6 +1,8 @@
 ---
 name: "ace-editor"
 github: "jenkinsci/js-libs"
+issues:
+- jira: '21133' # js-modules
 paths:
 - "org/jenkins-ci/ui/ace-editor"
 developers:

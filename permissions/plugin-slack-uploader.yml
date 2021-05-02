@@ -1,6 +1,8 @@
 ---
 name: "slack-uploader"
 github: "jenkinsci/slack-uploader-plugin"
+issues:
+- jira: '21733' # slack-uploader-plugin
 paths:
 - "org/jenkins-ci/plugins/slack-uploader"
 developers:

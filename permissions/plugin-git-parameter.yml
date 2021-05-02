@@ -1,6 +1,8 @@
 ---
 name: "git-parameter"
 github: "jenkinsci/git-parameter-plugin"
+issues:
+- jira: '16113' # git-parameter-plugin
 paths:
 - "org/jenkins-ci/plugins/git-parameter"
 - "org/jenkins-ci/tools/git-parameter"

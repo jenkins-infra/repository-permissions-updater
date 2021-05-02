@@ -1,6 +1,8 @@
 ---
 name: "run-condition"
 github: "jenkinsci/run-condition-plugin"
+issues:
+- jira: '16129' # run-condition-plugin
 paths:
 - "org/jenkins-ci/plugins/run-condition"
 developers:

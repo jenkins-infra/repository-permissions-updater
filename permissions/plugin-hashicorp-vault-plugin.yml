@@ -1,6 +1,9 @@
 ---
 name: "hashicorp-vault-plugin"
-github: "jenkinsci/hashicorp-vault-plugin"
+github: &gh "jenkinsci/hashicorp-vault-plugin"
+issues:
+- github: *gh
+- jira: '21682' # hashicorp-vault-plugin
 paths:
 - "com/datapipe/jenkins/plugins/hashicorp-vault-plugin"
 developers:

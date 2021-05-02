@@ -1,6 +1,8 @@
 ---
 name: "database-drizzle"
 github: "jenkinsci/database-drizzle-plugin"
+issues:
+- jira: '17459' # database-drizzle-plugin
 paths:
 - "org/jenkins-ci/plugins/database-drizzle"
 developers: []

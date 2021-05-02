@@ -1,6 +1,9 @@
 ---
 name: "ibm-security-appscansource-scanner"
-github: "jenkinsci/ibm-security-appscansource-scanner-plugin"
+github: &gh "jenkinsci/ibm-security-appscansource-scanner-plugin"
+issues:
+- github: *gh
+- jira: '21460' # ibm-security-appscansource-scanner-plugin
 paths:
 - "com/aspectsecurity/automationservices/plugins/jenkins/ibm-security-appscansource-scanner"
 developers:

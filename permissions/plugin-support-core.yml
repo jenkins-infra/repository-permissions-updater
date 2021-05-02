@@ -1,6 +1,8 @@
 ---
 name: "support-core"
 github: "jenkinsci/support-core-plugin"
+issues:
+- jira: '18146' # support-core-plugin
 paths:
 - "org/jenkins-ci/plugins/support-core"
 developers:

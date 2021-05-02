@@ -1,6 +1,8 @@
 ---
 name: "kpp-management-plugin"
 github: "jenkinsci/kpp-management-plugin"
+issues:
+- jira: '18036' # kpp-management-plugin
 paths:
 - "sic/software/kpp-management-plugin"
 developers: []

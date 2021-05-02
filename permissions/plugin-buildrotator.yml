@@ -1,6 +1,8 @@
 ---
 name: "buildrotator"
 github: "jenkinsci/buildrotator-plugin"
+issues:
+- jira: '21931' # buildrotator-plugin
 paths:
 - "org/jenkins-ci/plugins/buildrotator"
 developers:

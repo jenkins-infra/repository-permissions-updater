@@ -1,8 +1,10 @@
 ---
 name: "jjwt-api"
-github: "jenkinsci/jjwt-api-plugin"
+github: &gh "jenkinsci/jjwt-api-plugin"
 cd:
   enabled: true
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/jjwt-api"
 developers:

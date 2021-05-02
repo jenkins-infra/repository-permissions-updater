@@ -1,6 +1,8 @@
 ---
 name: "sladiator-notifier"
 github: "jenkinsci/sladiator-plugin"
+issues:
+- jira: '17606' # sladiator-notifier-plugin
 paths:
 - "org/jenkins-ci/plugins/sladiator-notifier"
 developers: []

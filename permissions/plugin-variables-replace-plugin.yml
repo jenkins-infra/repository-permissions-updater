@@ -1,6 +1,8 @@
 ---
 name: "variables-replace-plugin"
 github: "jenkinsci/variables-replace-plugin"
+issues:
+- jira: '25434' # variables-replace-plugin
 paths:
 - "com/jeeday/jenkins/variables-replace-plugin"
 developers:

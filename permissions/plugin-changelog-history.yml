@@ -1,6 +1,8 @@
 ---
 name: "changelog-history"
 github: "jenkinsci/changelog-history-plugin"
+issues:
+- jira: '15600' # changelog-history-plugin
 paths:
 - "org/jenkins-ci/plugins/changelog-history"
 - "org/jvnet/hudson/plugins/changelog-history"

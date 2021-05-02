@@ -1,6 +1,8 @@
 ---
 name: "random-job-builder"
 github: "jenkinsci/random-job-builder-plugin"
+issues:
+- jira: '18832' # random-job-builder-plugin
 paths:
 - "org/jenkins-ci/plugins/random-job-builder"
 developers:

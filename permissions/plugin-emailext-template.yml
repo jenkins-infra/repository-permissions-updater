@@ -1,6 +1,8 @@
 ---
 name: "emailext-template"
 github: "jenkinsci/emailext-template-plugin"
+issues:
+- jira: '18764' # emailext-template-plugin
 paths:
 - "org/jenkinsci/plugins/emailext-template"
 developers:

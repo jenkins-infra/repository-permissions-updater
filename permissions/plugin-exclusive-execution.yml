@@ -1,6 +1,8 @@
 ---
 name: "exclusive-execution"
 github: "jenkinsci/exclusive-execution-plugin"
+issues:
+- jira: '15778' # exclusive-execution-plugin
 paths:
 - "org/jenkins-ci/plugins/exclusive-execution"
 - "org/jvnet/hudson/plugins/exclusive-execution"

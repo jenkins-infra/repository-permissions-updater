@@ -1,6 +1,8 @@
 ---
 name: "config-file-provider"
 github: "jenkinsci/config-file-provider-plugin"
+issues:
+- jira: '16140' # config-file-provider-plugin
 paths:
 - "org/jenkins-ci/plugins/config-file-provider"
 developers:

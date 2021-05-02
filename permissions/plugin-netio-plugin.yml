@@ -1,6 +1,8 @@
 ---
 name: "netio-plugin"
 github: "jenkinsci/netio-plugin"
+issues:
+- jira: '17642' # netio-plugin
 paths:
 - "org/jenkins-ci/plugins/netio-plugin"
 developers: []

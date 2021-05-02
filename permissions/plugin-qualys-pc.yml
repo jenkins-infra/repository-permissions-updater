@@ -1,6 +1,8 @@
 ---
 name: "qualys-pc"
 github: "jenkinsci/qualys-pc-plugin"
+issues:
+- jira: '28023' # qualys-pc-plugin
 paths:
 - "com/qualys/plugins/qualys-pc"
 developers:

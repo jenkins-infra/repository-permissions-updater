@@ -1,6 +1,8 @@
 ---
 name: "comments-remover"
 github: "jenkinsci/comments-remover-plugin"
+issues:
+- jira: '23139' # comments-remover-plugin
 paths:
 - "com/ste/comments-remover"
 developers:

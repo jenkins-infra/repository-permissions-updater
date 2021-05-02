@@ -1,6 +1,8 @@
 ---
 name: "webhook-eventsource"
 github: "jenkinsci/webhook-eventsource-plugin"
+issues:
+- jira: '24723' # webhook-eventsource-plugin
 paths:
 - "io/jenkins/plugins/webhook-eventsource"
 developers:

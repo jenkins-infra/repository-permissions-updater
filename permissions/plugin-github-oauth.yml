@@ -1,6 +1,8 @@
 ---
 name: "github-oauth"
 github: "jenkinsci/github-oauth-plugin"
+issues:
+- jira: '15900' # github-oauth-plugin
 paths:
 - "org/jenkins-ci/plugins/github-oauth"
 developers:

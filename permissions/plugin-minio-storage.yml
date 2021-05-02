@@ -1,6 +1,8 @@
 ---
 name: "minio-storage"
 github: "jenkinsci/minio-storage-plugin"
+issues:
+- jira: '21942' # minio-storage-plugin
 paths:
 - "org/jenkins-ci/plugins/minio-storage"
 developers:

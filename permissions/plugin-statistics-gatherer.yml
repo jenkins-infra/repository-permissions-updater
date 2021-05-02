@@ -1,6 +1,9 @@
 ---
 name: "statistics-gatherer"
-github: "jenkinsci/statistics-gatherer-plugin"
+github: &gh "jenkinsci/statistics-gatherer-plugin"
+issues:
+- jira: '21680' # statistics-gatherer-plugin
+- github: *gh
 paths:
 - "org/jenkins/plugins/statistics/gatherer/statistics-gatherer"
 developers:

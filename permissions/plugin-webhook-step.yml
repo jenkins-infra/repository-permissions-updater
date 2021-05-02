@@ -1,6 +1,8 @@
 ---
 name: "webhook-step"
 github: "jenkinsci/webhook-step-plugin"
+issues:
+- jira: '22124' # webhook-step-plugin
 paths:
 - "org/jenkins-ci/plugins/webhook-step"
 developers:

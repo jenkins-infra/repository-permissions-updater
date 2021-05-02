@@ -1,6 +1,8 @@
 ---
 name: "mission-control-view"
 github: "jenkinsci/mission-control-view-plugin"
+issues:
+- jira: '21123' # mission-control-view-plugin
 paths:
 - "tech/andrey/jenkins/mission-control-view"
 developers:

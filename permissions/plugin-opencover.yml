@@ -1,6 +1,8 @@
 ---
 name: "opencover"
-github: "jenkinsci/opencover-plugin"
+github: &gh "jenkinsci/opencover-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/opencover"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "php"
 github: "jenkinsci/php-plugin"
+issues:
+- jira: '17480' # php-plugin
 paths:
 - "org/jenkins-ci/plugins/php"
 developers: []

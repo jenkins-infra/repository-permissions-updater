@@ -1,6 +1,8 @@
 ---
 name: "github-branch-source"
 github: "jenkinsci/github-branch-source-plugin"
+issues:
+- jira: '20858' # github-branch-source-plugin
 paths:
 - "org/jenkins-ci/plugins/github-branch-source"
 developers:

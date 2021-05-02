@@ -1,6 +1,8 @@
 ---
 name: "dry"
 github: "jenkinsci/dry-plugin"
+issues:
+- jira: '15591' # dry-plugin
 paths:
 - "org/jvnet/hudson/plugins/dry"
 developers: []

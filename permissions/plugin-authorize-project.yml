@@ -1,6 +1,8 @@
 ---
 name: "authorize-project"
 github: "jenkinsci/authorize-project-plugin"
+issues:
+- jira: '18155' # authorize-project-plugin
 paths:
 - "org/jenkins-ci/plugins/authorize-project"
 developers:

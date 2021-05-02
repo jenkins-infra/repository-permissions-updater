@@ -1,6 +1,8 @@
 ---
 name: "azure-artifact-manager"
-github: "jenkinsci/azure-artifact-manager-plugin"
+github: &gh "jenkinsci/azure-artifact-manager-plugin"
+issues:
+  - github: *gh
 paths:
 - "org/jenkins-ci/plugins/azure-artifact-manager"
 cd:

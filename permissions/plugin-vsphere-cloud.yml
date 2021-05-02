@@ -1,6 +1,8 @@
 ---
 name: "vsphere-cloud"
 github: "jenkinsci/vsphere-cloud-plugin"
+issues:
+- jira: '16104' # vsphere-cloud-plugin
 paths:
 - "org/jenkins-ci/plugins/vsphere-cloud"
 developers:

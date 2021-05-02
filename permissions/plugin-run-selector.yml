@@ -1,6 +1,8 @@
 ---
 name: "run-selector"
 github: "jenkinsci/run-selector-plugin"
+issues:
+- jira: '21658' # run-selector-plugin
 paths:
 - "org/jenkins-ci/plugins/run-selector"
 developers:

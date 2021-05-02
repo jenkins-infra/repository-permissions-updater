@@ -1,6 +1,8 @@
 ---
 name: "dropdown-viewstabbar-plugin"
 github: "jenkinsci/dropdown-viewstabbar-plugin"
+issues:
+- jira: '15776' # dropdown-viewstabbar-plugin
 paths:
 - "org/jenkins-ci/plugins/dropdown-viewstabbar-plugin"
 developers:

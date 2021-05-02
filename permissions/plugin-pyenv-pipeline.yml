@@ -1,6 +1,9 @@
 ---
 name: "pyenv-pipeline"
-github: "jenkinsci/pyenv-pipeline-plugin"
+github: &gh "jenkinsci/pyenv-pipeline-plugin"
+issues:
+- github: *gh
+- jira: '23146' # pyenv-pipeline-plugin
 paths:
 - "org/jenkins-ci/plugins/pyenv-pipeline"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "btc-embeddedplatform"
 github: "jenkinsci/btc-embeddedplatform-plugin"
+issues:
+- jira: '24430' # btc-embeddedplatform-plugin
 paths:
 - "com/btc/ep/btc-embeddedplatform"
 developers:

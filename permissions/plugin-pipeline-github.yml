@@ -1,6 +1,9 @@
 ---
 name: "pipeline-github"
-github: "jenkinsci/pipeline-github-plugin"
+github: &gh "jenkinsci/pipeline-github-plugin"
+issues:
+- github: *gh
+- jira: '22522' # pipeline-github-plugin
 cd:
   enabled: true
 paths:

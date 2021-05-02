@@ -1,6 +1,8 @@
 ---
 name: "conditional-buildstep"
 github: "jenkinsci/conditional-buildstep-plugin"
+issues:
+- jira: '15947' # conditional-buildstep-plugin
 paths:
 - "org/jenkins-ci/plugins/conditional-buildstep"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "ssh-slaves"
 github: "jenkinsci/ssh-slaves-plugin"
+issues:
+- jira: '15578' # ssh-slaves-plugin
 paths:
 - "org/jenkins-ci/plugins/ssh-slaves"
 developers:

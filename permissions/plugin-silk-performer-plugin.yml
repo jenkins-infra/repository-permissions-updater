@@ -1,6 +1,8 @@
 ---
 name: "silk-performer-plugin"
 github: "jenkinsci/silk-performer-plugin"
+issues:
+- jira: '21040' # silk-performer-plugin
 paths:
 - "org/jenkins-ci/plugins/silk-performer-plugin"
 developers:

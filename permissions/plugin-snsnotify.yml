@@ -1,6 +1,8 @@
 ---
 name: "snsnotify"
 github: "jenkinsci/snsnotify-plugin"
+issues:
+- jira: '15978' # snsnotify-plugin
 paths:
 - "org/jenkins-ci/plugins/snsnotify"
 developers:

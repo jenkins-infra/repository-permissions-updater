@@ -1,6 +1,9 @@
 ---
 name: "templating-engine"
-github: "jenkinsci/templating-engine-plugin"
+github: &gh "jenkinsci/templating-engine-plugin"
+issues:
+- github: *gh
+- jira: '24929' # templating-engine-plugin
 paths:
 - "org/jenkins-ci/plugins/templating-engine"
 developers:

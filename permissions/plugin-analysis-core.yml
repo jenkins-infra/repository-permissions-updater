@@ -1,6 +1,8 @@
 ---
 name: "analysis-core"
 github: "jenkinsci/analysis-core-plugin"
+issues:
+- jira: '15709' # analysis-core-plugin
 paths:
 - "org/jvnet/hudson/plugins/analysis-core"
 developers: []

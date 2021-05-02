@@ -1,6 +1,8 @@
 ---
 name: "carbonetes-serverless-container-scanning-and-policy-compliance"
 github: "jenkinsci/carbonetes-serverless-container-scanning-and-policy-compliance-plugin"
+issues:
+- jira: '28424' # carbonetes-serverless-container-scanning-and-policy-compliance-plugin
 paths:
 - "io/jenkins/plugins/carbonetes-serverless-container-scanning-and-policy-compliance"
 developers:

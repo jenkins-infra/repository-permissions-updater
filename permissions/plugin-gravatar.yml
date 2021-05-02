@@ -1,6 +1,8 @@
 ---
 name: "gravatar"
 github: "jenkinsci/gravatar-plugin"
+issues:
+- jira: '16137' # gravatar-plugin
 paths:
 - "org/jenkins-ci/plugins/gravatar"
 developers:

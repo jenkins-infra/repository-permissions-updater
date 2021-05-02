@@ -1,6 +1,8 @@
 ---
 name: "metrics-graphite"
 github: "jenkinsci/metrics-graphite-plugin"
+issues:
+- jira: '18723' # metrics-graphite-plugin
 paths:
 - "org/jenkins-ci/plugins/metrics-graphite"
 developers: []

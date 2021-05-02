@@ -1,6 +1,8 @@
 ---
 name: "diagnostics"
 github: "jenkinsci/diagnostics-plugin"
+issues:
+- jira: '23220' # diagnostics-plugin
 paths:
 - "org/jenkins-ci/plugins/diagnostics"
 developers:

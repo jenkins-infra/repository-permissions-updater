@@ -1,6 +1,8 @@
 ---
 name: "list-command"
 github: "jenkinsci/list-command-plugin"
+issues:
+- jira: '17469' # list-command-plugin
 paths:
 - "org/jenkins-ci/plugins/list-command"
 developers: []

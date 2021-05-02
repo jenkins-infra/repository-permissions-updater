@@ -1,6 +1,8 @@
 ---
 name: "job-direct-mail"
 github: "jenkinsci/job-direct-mail-plugin"
+issues:
+- jira: '17541' # job-direct-mail-plugin
 paths:
 - "org/jenkins-ci/plugins/job-direct-mail"
 developers: []

@@ -1,6 +1,8 @@
 ---
 name: "newrelic-insights"
 github: "jenkinsci/newrelic-insights-plugin"
+issues:
+- jira: '22027' # newrelic-insights-plugin
 paths:
 - "org/jenkins-ci/plugins/newrelic-insights"
 developers:

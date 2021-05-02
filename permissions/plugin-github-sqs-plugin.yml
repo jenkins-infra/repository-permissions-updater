@@ -1,6 +1,8 @@
 ---
 name: "github-sqs-plugin"
 github: "jenkinsci/github-sqs-plugin"
+issues:
+- jira: '17526' # github-sqs-plugin
 paths:
 - "com/base2services/jenkins/github-sqs-plugin"
 developers:

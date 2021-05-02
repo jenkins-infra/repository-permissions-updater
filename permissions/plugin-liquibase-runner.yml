@@ -1,6 +1,9 @@
 ---
 name: "liquibase-runner"
-github: "jenkinsci/liquibase-runner-plugin"
+github: &gh "jenkinsci/liquibase-runner-plugin"
+issues:
+- jira: '19023' # liquibase-runner-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/liquibase-runner"
 developers:

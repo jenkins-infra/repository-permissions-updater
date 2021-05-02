@@ -1,6 +1,8 @@
 ---
 name: "jobcopy-builder"
 github: "jenkinsci/jobcopy-builder-plugin"
+issues:
+- jira: '17506' # jobcopy-builder-plugin
 paths:
 - "jp/ikedam/jenkins/plugins/jobcopy-builder"
 developers:

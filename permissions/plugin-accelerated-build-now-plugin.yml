@@ -1,6 +1,8 @@
 ---
 name: "accelerated-build-now-plugin"
 github: "jenkinsci/accelerated-build-now-plugin"
+issues:
+- jira: '18026' # accelerated-build-now-plugin
 paths:
 - "org/terracotta/jenkins/plugins/accelerated-build-now-plugin"
 developers: []

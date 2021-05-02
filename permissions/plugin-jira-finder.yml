@@ -1,6 +1,8 @@
 ---
 name: "jira-finder"
 github: "jenkinsci/jira-finder-plugin"
+issues:
+- jira: '22921' # jira-finder-plugin
 paths:
 - "org/jenkins-ci/plugins/jira-finder"
 developers:

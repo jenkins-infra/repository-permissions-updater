@@ -1,6 +1,8 @@
 ---
 name: "swarm"
 github: "jenkinsci/swarm-plugin"
+issues:
+- jira: '15741' # swarm-plugin
 paths:
 - "org/jenkins-ci/plugins/swarm"
 - "org/jvnet/hudson/plugins/swarm"

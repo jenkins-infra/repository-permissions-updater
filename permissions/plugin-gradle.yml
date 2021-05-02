@@ -1,6 +1,8 @@
 ---
 name: "gradle"
 github: "jenkinsci/gradle-plugin"
+issues:
+- jira: '15547' # gradle-plugin
 paths:
 - "com/zenika/jenkins-ci/plugins/gradle"
 - "org/jenkins-ci/plugins/gradle"

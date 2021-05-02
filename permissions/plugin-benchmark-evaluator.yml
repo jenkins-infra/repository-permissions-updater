@@ -1,6 +1,8 @@
 ---
 name: "benchmark-evaluator"
 github: "jenkinsci/benchmark-evaluator-plugin"
+issues:
+- jira: '24727' # benchmark-evaluator-plugin
 paths:
 - "io/jenkins/plugins/benchmark-evaluator"
 developers:

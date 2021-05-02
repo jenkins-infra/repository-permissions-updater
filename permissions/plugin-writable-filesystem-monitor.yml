@@ -1,6 +1,8 @@
 ---
 name: "writable-filesystem-monitor"
 github: "jenkinsci/writable-filesystem-monitor"
+issues:
+- jira: '17641' # writable-filesystem-monitor-plugin
 paths:
 - "org/jenkins-ci/plugins/writable-filesystem-monitor"
 developers: []

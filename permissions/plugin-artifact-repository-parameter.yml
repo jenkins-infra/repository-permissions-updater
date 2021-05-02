@@ -1,6 +1,8 @@
 ---
 name: "artifact-repository-parameter"
-github: "jenkinsci/artifact-repository-parameter-plugin"
+github: &gh "jenkinsci/artifact-repository-parameter-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/artifact-repository-parameter"
 developers:

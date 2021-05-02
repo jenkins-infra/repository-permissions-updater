@@ -1,6 +1,8 @@
 ---
 name: "testodyssey-execution"
 github: "jenkinsci/testodyssey-execution-plugin"
+issues:
+- jira: '21665' # testodyssey-execution-plugin
 paths:
 - "com/ekatechserv/testodyssey-execution"
 developers:

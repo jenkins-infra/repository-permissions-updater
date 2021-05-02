@@ -1,6 +1,8 @@
 ---
 name: "ion-deployer-plugin"
 github: "jenkinsci/ion-deployer-plugin"
+issues:
+- jira: '16522' # ion-deployer-plugin
 paths:
 - "org/jenkins-ci/plugins/ion-deployer-plugin"
 developers: []

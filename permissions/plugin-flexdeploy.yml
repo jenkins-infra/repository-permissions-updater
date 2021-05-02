@@ -1,6 +1,8 @@
 ---
 name: "flexdeploy"
 github: "jenkinsci/flexdeploy-plugin"
+issues:
+- jira: '22426' # flexdeploy-plugin
 paths:
 - "org/jenkins-ci/plugins/flexdeploy"
 developers:

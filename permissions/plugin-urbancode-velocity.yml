@@ -1,6 +1,8 @@
 ---
 name: "urbancode-velocity"
 github: "jenkinsci/urbancode-velocity-plugin"
+issues:
+- jira: '23936' # urbancode-velocity-plugin
 paths:
 - "com/ibm/devops/urbancode-velocity"
 developers:

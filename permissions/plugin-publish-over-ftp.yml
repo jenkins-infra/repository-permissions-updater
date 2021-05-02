@@ -1,6 +1,8 @@
 ---
 name: "publish-over-ftp"
 github: "jenkinsci/publish-over-ftp-plugin"
+issues:
+- jira: '15791' # publish-over-ftp-plugin
 paths:
 - "org/jenkins-ci/plugins/publish-over-ftp"
 - "org/jvnet/hudson/plugins/publish-over-ftp"

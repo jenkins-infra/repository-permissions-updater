@@ -1,6 +1,8 @@
 ---
 name: "sounds"
 github: "jenkinsci/sounds-plugin"
+issues:
+- jira: '16064' # sounds-plugin
 paths:
 - "org/jenkins-ci/plugins/sounds"
 - "org/jvnet/hudson/plugins/sounds"

@@ -1,6 +1,8 @@
 ---
 name: "sentry"
 github: "jenkinsci/sentry-plugin"
+issues:
+- jira: '23122' # sentry-plugin
 paths:
 - 'io/jenkins/plugins/sentry'
 developers:

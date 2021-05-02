@@ -1,6 +1,8 @@
 ---
 name: "robot"
 github: "jenkinsci/robot-plugin"
+issues:
+- jira: '15773' # robot-plugin
 paths:
 - "org/jenkins-ci/plugins/robot"
 - "org/jvnet/hudson/plugins/robot"

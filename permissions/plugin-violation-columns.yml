@@ -1,6 +1,8 @@
 ---
 name: "violation-columns"
 github: "jenkinsci/violation-columns-plugin"
+issues:
+- jira: '17574' # violation-columns-plugin
 paths:
 - "org/jenkins-ci/plugins/violation-columns"
 developers: []

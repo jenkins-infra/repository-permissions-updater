@@ -1,6 +1,9 @@
 ---
 name: "openstack-cloud"
-github: "jenkinsci/openstack-cloud-plugin"
+github: &gh "jenkinsci/openstack-cloud-plugin"
+issues:
+- github: *gh
+- jira: '20631' # openstack-cloud-plugin
 paths:
 - "org/jenkins-ci/plugins/openstack-cloud"
 developers:

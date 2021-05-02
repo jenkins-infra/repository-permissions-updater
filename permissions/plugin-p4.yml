@@ -1,6 +1,8 @@
 ---
 name: "p4"
 github: "jenkinsci/p4-plugin"
+issues:
+- jira: '19224' # p4-plugin
 paths:
 - "org/jenkins-ci/plugins/p4"
 developers:

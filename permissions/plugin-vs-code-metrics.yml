@@ -1,6 +1,8 @@
 ---
 name: "vs-code-metrics"
 github: "jenkinsci/vs-code-metrics-plugin"
+issues:
+- jira: '17432' # vs-code-metrics-plugin
 paths:
 - "org/jenkins-ci/plugins/vs-code-metrics"
 developers:

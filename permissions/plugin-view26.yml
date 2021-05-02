@@ -1,6 +1,8 @@
 ---
 name: "view26"
 github: "jenkinsci/view26-plugin"
+issues:
+- jira: '22720' # view26-plugin
 paths:
 - "org/jenkins-ci/plugins/view26"
 developers:

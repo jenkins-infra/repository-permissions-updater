@@ -1,6 +1,8 @@
 ---
 name: "warnings"
 github: "jenkinsci/warnings-plugin"
+issues:
+- jira: '15513' # warnings-plugin
 paths:
 - "org/jvnet/hudson/plugins/warnings"
 developers: []

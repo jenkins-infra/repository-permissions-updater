@@ -1,6 +1,8 @@
 ---
 name: "view-job-filters"
 github: "jenkinsci/view-job-filters-plugin"
+issues:
+- jira: '15736' # view-job-filters-plugin
 paths:
 - "org/jenkins-ci/plugins/view-job-filters"
 - "org/jvnet/hudson/plugins/view-job-filters"

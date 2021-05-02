@@ -1,6 +1,8 @@
 ---
 name: "environment-dashboard"
-github: "jenkinsci/environment-dashboard-plugin"
+github: &gh "jenkinsci/environment-dashboard-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/environment-dashboard"
 developers:

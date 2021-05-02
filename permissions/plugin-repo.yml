@@ -1,6 +1,8 @@
 ---
 name: "repo"
 github: "jenkinsci/repo-plugin"
+issues:
+- jira: '16077' # repo-plugin
 paths:
 - "org/jenkins-ci/plugins/repo"
 developers:

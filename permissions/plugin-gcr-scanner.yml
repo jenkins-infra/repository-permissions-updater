@@ -1,6 +1,8 @@
 ---
 name: "gcr-scanner"
 github: "jenkinsci/gcr-scanner-plugin"
+issues:
+- jira: '27246' # gcr-scanner-plugin
 paths:
 - "io/jenkins/plugins/gcr-scanner"
 developers:

@@ -1,6 +1,9 @@
 ---
 name: "maven-snapshot-check"
-github: "jenkinsci/maven-snapshot-check-plugin"
+github: &gh "jenkinsci/maven-snapshot-check-plugin"
+issues:
+- github: *gh
+- jira: '25126' # maven-snapshot-check-plugin
 paths:
 - "org/jenkins-ci/plugins/maven-snapshot-check"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "pipeline-deploymon"
 github: "jenkinsci/pipeline-deploymon-plugin"
+issues:
+- jira: '23420' # pipeline-deploymon-plugin
 paths:
 - "de/taimos/pipeline-deploymon"
 developers:

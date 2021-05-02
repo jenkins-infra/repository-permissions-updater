@@ -1,6 +1,8 @@
 ---
 name: "github-scm-trait-notification-context"
 github: "jenkinsci/github-scm-trait-notification-context-plugin"
+issues:
+- jira: '23429' # github-scm-trait-notification-context-plugin
 paths:
 - "org/jenkins-ci/plugins/github-scm-trait-notification-context"
 developers:

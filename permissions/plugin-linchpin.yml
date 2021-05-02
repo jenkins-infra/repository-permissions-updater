@@ -1,6 +1,8 @@
 ---
 name: "linchpin"
 github: "jenkinsci/linchpin-plugin"
+issues:
+- jira: '24531' # linchpin-plugin
 paths:
 - "io/jenkins/plugins/linchpin"
 developers:

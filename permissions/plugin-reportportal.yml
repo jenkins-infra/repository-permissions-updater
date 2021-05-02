@@ -1,6 +1,8 @@
 ---
 name: "reportportal"
 github: "jenkinsci/reportportal-plugin"
+issues:
+- jira: '23047' # reportportal-plugin
 paths:
 - "org/jenkins-ci/plugins/reportportal"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "experitest-cloud"
 github: "jenkinsci/experitest-cloud-plugin"
+issues:
+- jira: '25320' # experitest-cloud-plugin
 paths:
   - "org/jenkins-ci/plugins/experitest-cloud"
 developers:

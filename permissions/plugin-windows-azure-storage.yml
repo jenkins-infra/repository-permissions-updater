@@ -1,6 +1,8 @@
 ---
 name: "windows-azure-storage"
-github: "jenkinsci/windows-azure-storage-plugin"
+github: &gh "jenkinsci/azure-storage-plugin"
+issues:
+  - github: *gh
 paths:
 - "org/jenkins-ci/plugins/windows-azure-storage"
 cd:

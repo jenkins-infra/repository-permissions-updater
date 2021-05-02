@@ -1,6 +1,8 @@
 ---
 name: "dbCharts"
 github: "jenkinsci/dbCharts-plugin"
+issues:
+- jira: '15706' # dbcharts-plugin
 paths:
 - "org/jenkins-ci/plugins/dbCharts"
 - "org/jvnet/hudson/plugins/dbCharts"

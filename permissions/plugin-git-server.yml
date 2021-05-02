@@ -1,6 +1,8 @@
 ---
 name: "git-server"
 github: "jenkinsci/git-server-plugin"
+issues:
+- jira: '17613' # git-server-plugin
 paths:
 - "org/jenkins-ci/plugins/git-server"
 developers:

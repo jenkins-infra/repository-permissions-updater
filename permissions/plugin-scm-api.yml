@@ -1,6 +1,8 @@
 ---
 name: "scm-api"
 github: "jenkinsci/scm-api-plugin"
+issues:
+- jira: '18054' # scm-api-plugin
 paths:
 - "org/jenkins-ci/plugins/scm-api"
 developers:

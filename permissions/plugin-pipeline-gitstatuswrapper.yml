@@ -1,6 +1,8 @@
 ---
 name: "pipeline-gitstatuswrapper"
 github: "jenkinsci/pipeline-gitstatuswrapper-plugin"
+issues:
+- jira: '25031' # pipeline-gitstatuswrapper-plugin
 paths:
 - "org/jenkins-ci/plugins/pipeline-gitstatuswrapper"
 developers:

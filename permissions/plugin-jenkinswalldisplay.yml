@@ -1,6 +1,11 @@
 ---
 name: "jenkinswalldisplay"
 github: "jenkinsci/walldisplay-plugin"
+issues:
+# This should probably be cleaned up:
+- jira: '16045' # jenkinswalldisplay-plugin
+- jira: '15880' # walldisplay-plugin
+- jira: '17579' # jenkinswalldisplay-pom
 paths:
 - "org/jenkins-ci/plugins/jenkinswalldisplay"
 developers:

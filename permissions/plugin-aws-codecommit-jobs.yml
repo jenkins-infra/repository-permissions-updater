@@ -1,6 +1,8 @@
 ---
 name: "aws-codecommit-jobs"
 github: "jenkinsci/aws-codecommit-jobs-plugin"
+issues:
+- jira: '23172' # aws-codecommit-jobs-plugin
 paths:
 - "org/jenkins-ci/plugins/aws-codecommit-jobs"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "run-condition-extras"
 github: "jenkinsci/run-condition-extras-plugin"
+issues:
+- jira: '18740' # run-condition-extras-plugin
 paths:
 - "com/synopsys/arc/jenkinsci/plugins/run-condition-extras"
 - "org/jenkins-ci/plugins/run-condition-extras"

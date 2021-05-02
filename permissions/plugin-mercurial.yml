@@ -1,6 +1,8 @@
 ---
 name: "mercurial"
 github: "jenkinsci/mercurial-plugin"
+issues:
+- jira: '15502' # mercurial-plugin
 paths:
 - "org/jenkins-ci/plugins/mercurial"
 - "org/jvnet/hudson/plugins/mercurial"

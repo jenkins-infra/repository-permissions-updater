@@ -1,6 +1,8 @@
 ---
 name: "gatling"
 github: "jenkinsci/gatling-plugin"
+issues:
+- jira: '17479' # gatling-plugin
 paths:
 - "org/jenkins-ci/plugins/gatling"
 developers:

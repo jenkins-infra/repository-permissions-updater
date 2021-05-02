@@ -1,6 +1,8 @@
 ---
 name: "continuum"
 github: "jenkinsci/continuum-plugin"
+issues:
+- jira: '23180' # continuum-plugin
 paths:
 - "org/jenkins-ci/plugins/continuum"
 developers:

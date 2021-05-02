@@ -1,6 +1,8 @@
 ---
 name: "azure-ad"
-github: "jenkinsci/azure-ad-plugin"
+github: &gh "jenkinsci/azure-ad-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/azure-ad"
 cd:

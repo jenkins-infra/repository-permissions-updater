@@ -1,6 +1,9 @@
 ---
 name: "cucumber-living-documentation"
-github: "jenkinsci/cucumber-living-documentation-plugin"
+github: &gh "jenkinsci/cucumber-living-documentation-plugin"
+issues:
+- github: *gh
+- jira: '21445' # cucumber-living-documentation-plugin
 paths:
 - "org/jenkins-ci/plugins/cucumber-living-documentation"
 developers:

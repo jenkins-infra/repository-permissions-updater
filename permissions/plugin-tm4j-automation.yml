@@ -1,6 +1,8 @@
 ---
 name: "tm4j-automation"
 github: "jenkinsci/tm4j-automation-plugin"
+issues:
+- jira: '24421' # tm4j-automation-plugin
 paths:
 - "com/adaptavist/tm4j-automation"
 developers:

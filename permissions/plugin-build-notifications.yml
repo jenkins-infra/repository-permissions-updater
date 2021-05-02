@@ -1,6 +1,8 @@
 ---
 name: "build-notifications"
 github: "jenkinsci/build-notifications-plugin"
+issues:
+- jira: '22524' # build-notifications-plugin
 paths:
 - "tools/devnull/build-notifications"
 developers:

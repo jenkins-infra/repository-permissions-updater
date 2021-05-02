@@ -1,6 +1,8 @@
 ---
 name: "pipeline-build-step"
 github: "jenkinsci/pipeline-build-step-plugin"
+issues:
+- jira: '21707' # pipeline-build-step-plugin
 paths:
 - "org/jenkins-ci/plugins/pipeline-build-step"
 developers:

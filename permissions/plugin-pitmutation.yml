@@ -1,6 +1,8 @@
 ---
 name: "pitmutation"
 github: "jenkinsci/pitmutation-plugin"
+issues:
+- jira: '18121' # pitmutation-plugin
 paths:
 - "org/jenkins-ci/plugins/pitmutation"
 developers:

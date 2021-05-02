@@ -1,6 +1,8 @@
 ---
 name: "azure-container-agents"
-github: "jenkinsci/azure-container-agents-plugin"
+github: &gh "jenkinsci/azure-container-agents-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/azure-container-agents"
 cd:

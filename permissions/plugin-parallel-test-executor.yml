@@ -1,6 +1,9 @@
 ---
 name: "parallel-test-executor"
-github: "jenkinsci/parallel-test-executor-plugin"
+github: &gh "jenkinsci/parallel-test-executor-plugin"
+issues:
+- jira: '17650' # parallel-test-executor-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/parallel-test-executor"
 developers:

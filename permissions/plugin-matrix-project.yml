@@ -1,6 +1,8 @@
 ---
 name: "matrix-project"
 github: "jenkinsci/matrix-project-plugin"
+issues:
+- jira: '18765' # matrix-project-plugin
 paths:
 - "org/jenkins-ci/plugins/matrix-project"
 developers:

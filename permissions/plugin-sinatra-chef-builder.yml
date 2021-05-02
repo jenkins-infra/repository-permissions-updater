@@ -1,6 +1,8 @@
 ---
 name: "sinatra-chef-builder"
 github: "jenkinsci/sinatra-chef-builder-plugin"
+issues:
+- jira: '21449' # sinatra-chef-builder-plugin
 paths:
 - "org/jenkins-ci/plugins/sinatra-chef-builder"
 developers:

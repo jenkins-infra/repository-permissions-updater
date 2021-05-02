@@ -1,6 +1,8 @@
 ---
 name: "security-inspector"
 github: "jenkinsci/security-inspector-plugin"
+issues:
+- jira: '21938' # security-inspector-plugin
 paths:
 - "org/jenkins-ci/plugins/security-inspector"
 developers:

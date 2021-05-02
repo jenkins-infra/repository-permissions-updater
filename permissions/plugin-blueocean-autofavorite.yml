@@ -1,6 +1,8 @@
 ---
 name: "blueocean-autofavorite"
 github: "jenkinsci/blueocean-autofavorite-plugin"
+issues:
+- jira: '21924' # blueocean-autofavorite-plugin
 paths:
 - "org/jenkins-ci/plugins/blueocean-autofavorite"
 developers:

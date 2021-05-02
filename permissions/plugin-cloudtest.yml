@@ -1,6 +1,9 @@
 ---
 name: "cloudtest"
-github: "jenkinsci/cloudtest-plugin"
+github: &gh "jenkinsci/cloudtest-plugin"
+issues:
+- jira: '17527' # cloudtest-plugin
+- github: *gh
 paths:
 - "com/soasta/jenkins/cloudtest"
 developers:

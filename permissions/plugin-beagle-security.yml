@@ -1,6 +1,8 @@
 ---
 name: "beagle-security"
 github: "jenkinsci/beagle-security-plugin"
+issues:
+- jira: '25629' # beagle-security-plugin
 paths:
 - "io/jenkins/plugins/beagle-security"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "extensible-choice-parameter"
 github: "jenkinsci/extensible-choice-parameter-plugin"
+issues:
+- jira: '17512' # extensible-choice-parameter-plugin
 paths:
 - "jp/ikedam/jenkins/plugins/extensible-choice-parameter"
 developers:

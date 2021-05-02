@@ -1,6 +1,8 @@
 ---
 name: "elastic-axis"
 github: "jenkinsci/elastic-axis-plugin"
+issues:
+- jira: '17588' # elastic-axis-plugin
 paths:
 - "org/jenkins-ci/plugins/elastic-axis"
 cd:
