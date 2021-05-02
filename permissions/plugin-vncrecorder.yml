@@ -1,6 +1,9 @@
 ---
 name: "vncrecorder"
-github: "jenkinsci/vncrecorder-plugin"
+github: &gh "jenkinsci/vncrecorder-plugin"
+issues:
+- jira: '20326' # vncrecorder-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/vncrecorder"
 developers:

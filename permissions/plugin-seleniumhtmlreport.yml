@@ -1,6 +1,9 @@
 ---
 name: "seleniumhtmlreport"
-github: jenkinsci/seleniumhtmlreport-plugin
+github: &gh jenkinsci/seleniumhtmlreport-plugin
+issues:
+- jira: '15781' # seleniumhtmlreport-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/seleniumhtmlreport"
 - "org/jvnet/hudson/plugins/seleniumhtmlreport"

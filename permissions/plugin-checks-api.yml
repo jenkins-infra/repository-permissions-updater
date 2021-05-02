@@ -1,6 +1,9 @@
 ---
 name: "checks-api"
-github: "jenkinsci/checks-api-plugin"
+github: &gh "jenkinsci/checks-api-plugin"
+issues:
+- github: *gh
+- jira: '27529' # checks-api-plugin
 paths:
 - "io/jenkins/plugins/checks-api"
 developers:

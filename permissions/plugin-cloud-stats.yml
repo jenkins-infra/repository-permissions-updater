@@ -1,6 +1,9 @@
 ---
 name: "cloud-stats"
-github: "jenkinsci/cloud-stats-plugin"
+github: &gh "jenkinsci/cloud-stats-plugin"
+issues:
+- jira: '21441' # cloud-stats-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/cloud-stats"
 developers:

@@ -1,6 +1,9 @@
 ---
 name: "azure-acs"
-github: "jenkinsci/azure-acs-plugin"
+github: &gh "jenkinsci/azure-acs-plugin"
+issues:
+- github: *gh
+- jira: '23150' # azure-acs-plugin
 paths:
 - "org/jenkins-ci/plugins/azure-acs"
 developers:

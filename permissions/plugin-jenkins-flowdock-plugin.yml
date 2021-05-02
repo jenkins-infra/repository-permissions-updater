@@ -1,6 +1,9 @@
 ---
 name: "jenkins-flowdock-plugin"
-github: "jenkinsci/flowdock-plugin"
+github: &gh "jenkinsci/flowdock-plugin"
+issues:
+- github: *gh
+- jira: '17564' # jenkins-flowdock-plugin
 paths:
 - "com/flowdock/jenkins/jenkins-flowdock-plugin"
 developers:

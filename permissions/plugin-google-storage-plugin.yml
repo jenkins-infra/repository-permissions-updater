@@ -1,6 +1,9 @@
 ---
 name: "google-storage-plugin"
-github: "jenkinsci/google-storage-plugin"
+github: &gh "jenkinsci/google-storage-plugin"
+issues:
+- github: *gh
+- jira: '18738' # google-storage-plugin
 paths:
 - "org/jenkins-ci/plugins/google-storage-plugin"
 developers:

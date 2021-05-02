@@ -1,6 +1,9 @@
 ---
 name: "sumologic-publisher"
-github: "jenkinsci/sumologic-publisher-plugin"
+github: &gh "jenkinsci/sumologic-publisher-plugin"
+issues:
+- github: *gh
+- jira: '20845' # sumologic-publisher-plugin
 paths:
 - "org/jenkins-ci/plugins/sumologic-publisher"
 developers:

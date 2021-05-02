@@ -1,6 +1,9 @@
 ---
 name: "maven-repo-cleaner"
-github: "jenkinsci/maven-repo-cleaner-plugin"
+github: &gh "jenkinsci/maven-repo-cleaner-plugin"
+issues:
+- jira: '15979' # maven-repo-cleaner-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/maven-repo-cleaner"
 developers: []

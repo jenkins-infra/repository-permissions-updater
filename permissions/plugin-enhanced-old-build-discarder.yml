@@ -1,6 +1,9 @@
 ---
 name: "enhanced-old-build-discarder"
-github: "jenkinsci/enhanced-old-build-discarder-plugin"
+github: &gh "jenkinsci/enhanced-old-build-discarder-plugin"
+issues:
+- github: *gh
+- jira: '17656' # enhanced-old-build-discarder-plugin
 paths:
 - "org/jenkins-ci/plugins/enhanced-old-build-discarder"
 developers:

@@ -1,6 +1,9 @@
 ---
 name: "amazon-ecs"
-github: "jenkinsci/amazon-ecs-plugin"
+github: &gh "jenkinsci/amazon-ecs-plugin"
+issues:
+- github: *gh
+- jira: '20840' # amazon-ecs-plugin
 paths:
 - "com/cloudbees/jenkins/plugins/amazon-ecs"
 developers:

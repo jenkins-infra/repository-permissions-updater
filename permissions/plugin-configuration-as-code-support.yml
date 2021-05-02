@@ -1,6 +1,9 @@
 ---
 name: "configuration-as-code-support"
-github: "jenkinsci/configuration-as-code-plugin"
+github: &gh "jenkinsci/configuration-as-code-plugin"
+issues:
+- github: *gh
+- jira: '23170' # configuration-as-code-plugin
 paths:
 - "io/jenkins/configuration-as-code/configuration-as-code-support"
 developers:
