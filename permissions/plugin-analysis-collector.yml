@@ -5,5 +5,4 @@ issues:
 - jira: '15710' # analysis-collector-plugin
 paths:
 - "org/jvnet/hudson/plugins/analysis-collector"
-developers:
-- "drulli"
+developers: []

@@ -8,6 +8,5 @@ paths:
 - "org/jvnet/hudson/plugins/swarm"
 developers:
 - "basil"
-- "drulli"
 - "mindjiver"
 - "oleg_nenashev"

@@ -7,5 +7,4 @@ paths:
 - "com/cloudbees/jenkins/plugins/amazon-ecr"
 developers:
 - "aheritier"
-- "fbelzunc"
 - "ifernandezcalvo"

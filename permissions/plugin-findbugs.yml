@@ -5,5 +5,4 @@ issues:
 - jira: '15496' # findbugs-plugin
 paths:
 - "org/jvnet/hudson/plugins/findbugs"
-developers:
-- "drulli"
+developers: []

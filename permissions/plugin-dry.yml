@@ -5,5 +5,4 @@ issues:
 - jira: '15591' # dry-plugin
 paths:
 - "org/jvnet/hudson/plugins/dry"
-developers:
-- "drulli"
+developers: []

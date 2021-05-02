@@ -5,5 +5,4 @@ issues:
 - jira: '15513' # warnings-plugin
 paths:
 - "org/jvnet/hudson/plugins/warnings"
-developers:
-- "drulli"
+developers: []

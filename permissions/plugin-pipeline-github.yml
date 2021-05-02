@@ -4,6 +4,8 @@ github: &gh "jenkinsci/pipeline-github-plugin"
 issues:
 - github: *gh
 - jira: '22522' # pipeline-github-plugin
+cd:
+  enabled: true
 paths:
 - "org/jenkins-ci/plugins/pipeline-github"
 developers:

@@ -5,5 +5,4 @@ issues:
 - jira: '15511' # pmd-plugin
 paths:
 - "org/jvnet/hudson/plugins/pmd"
-developers:
-- "drulli"
+developers: []

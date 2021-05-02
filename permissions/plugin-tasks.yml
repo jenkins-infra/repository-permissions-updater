@@ -5,5 +5,4 @@ issues:
 - jira: '15498' # tasks-plugin
 paths:
 - "org/jvnet/hudson/plugins/tasks"
-developers:
-- "drulli"
+developers: []

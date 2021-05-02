@@ -5,5 +5,4 @@ issues:
 - jira: '15505' # batch-task-plugin
 paths:
 - "org/jenkins-ci/plugins/batch-task"
-developers:
-- "fbelzunc"
+developers: []
