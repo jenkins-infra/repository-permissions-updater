@@ -7,4 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/clearcase-ucm-plugin"
 developers:
 - "madsnielsen"
+- "atombrella"
 - "praqma"
