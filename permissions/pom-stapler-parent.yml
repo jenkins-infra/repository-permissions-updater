@@ -1,7 +1,0 @@
----
-# regularly published to OSSRH, this file exists only for incrementals support
-name: "stapler-parent"
-github: "stapler/stapler"
-paths:
-- "org/kohsuke/stapler/stapler-parent"
-developers: []
