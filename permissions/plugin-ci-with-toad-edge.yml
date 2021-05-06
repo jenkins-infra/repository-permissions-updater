@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/ci-with-toad-edge"
 developers:
 - "pchudani"
+- "mkumar_jenkins"
+- "tmajumda"
