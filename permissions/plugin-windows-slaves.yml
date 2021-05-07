@@ -9,6 +9,13 @@ developers:
 - "andresrc"
 - "jglick"
 - "oleg_nenashev"
+- "rsandell"
+- "alecharp"
+- "teilo"
+- "carroll"
+- "bitwiseman"
+- "olamy"
+- "mramonleon"
 security:
   contacts:
     jira: "foundation_security_members"
