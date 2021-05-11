@@ -94,7 +94,7 @@ public class Definition {
             if (isJira()) {
                 final String id = loadComponentId(source);
                 if (id != null) {
-                    return "https://issues.jenkins.io/secure/CreateIssueDetails!init.jspa?pid=10172&issuetype=1&priority=4&components=" + id;
+                    return "https://www.jenkins.io/participate/report-issue/redirect/#" + id;
                 }
                 return null;
             }
