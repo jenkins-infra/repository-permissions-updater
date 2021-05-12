@@ -7,3 +7,4 @@ paths:
 - "net/praqma/clearcase-ucm-api"
 developers:
 - "praqma"
+- "atombrella"
