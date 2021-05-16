@@ -1,6 +1,8 @@
 ---
 name: "jgiven"
 github: "jenkinsci/jgiven-plugin"
+issues:
+- jira: '20025' # jgiven-plugin
 paths:
 - "org/jenkins-ci/plugins/jgiven"
 developers:

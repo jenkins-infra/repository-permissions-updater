@@ -1,6 +1,8 @@
 ---
 name: "wallarm-fast"
 github: "jenkinsci/wallarm-fast-plugin"
+issues:
+- jira: '26520' # wallarm-fast-plugin
 paths:
 - "io/jenkins/plugins/wallarm-fast"
 developers:

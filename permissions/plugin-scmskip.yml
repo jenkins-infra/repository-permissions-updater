@@ -1,6 +1,8 @@
 ---
 name: "scmskip"
 github: "jenkinsci/scmskip-plugin"
+issues:
+- jira: '25120' # scmskip-plugin
 paths:
 - "net/plavcak/jenkins/scmskip"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "vessel"
 github: "jenkinsci/vessel-plugin"
+issues:
+- jira: '18049' # vessel-plugin
 paths:
 - "org/jenkins-ci/plugins/vessel"
 developers: []

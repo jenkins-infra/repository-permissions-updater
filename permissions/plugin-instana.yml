@@ -1,8 +1,11 @@
 ---
 name: "instana"
 github: "jenkinsci/instana-plugin"
+issues:
+- jira: '25724' # instana-plugin
 paths:
 - "com/instana/jenkins/plugins/instana"
 developers:
 - "EWachnowezki"
 - "cedricziel"
+- "timoinstana"

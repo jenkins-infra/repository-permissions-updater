@@ -1,6 +1,8 @@
 ---
 name: "build-configurator"
 github: "jenkinsci/build-configurator-plugin"
+issues:
+- jira: '22131' # build-configurator-plugin
 paths: 
 - "com/amcbridge/build-configurator"
 developers: 

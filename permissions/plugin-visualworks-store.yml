@@ -1,6 +1,8 @@
 ---
 name: "visualworks-store"
 github: "jenkinsci/visualworks-store-plugin"
+issues:
+- jira: '17331' # visualworks-store-plugin
 paths:
 - "org/jenkins-ci/plugins/visualworks-store"
 developers:

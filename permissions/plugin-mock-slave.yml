@@ -1,6 +1,8 @@
 ---
 name: "mock-slave"
 github: "jenkinsci/mock-slave-plugin"
+issues:
+- jira: '17334' # mock-slave-plugin
 paths:
 - "org/jenkinci/plugins/mock-slave"
 - "org/jenkins-ci/plugins/mock-slave"

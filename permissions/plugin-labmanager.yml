@@ -1,6 +1,8 @@
 ---
 name: "labmanager"
 github: "jenkinsci/labmanager-plugin"
+issues:
+- jira: '15779' # labmanager-plugin
 paths:
 - "org/jenkins-ci/plugins/labmanager"
 - "org/jvnet/hudson/plugins/labmanager"

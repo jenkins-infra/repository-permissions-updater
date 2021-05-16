@@ -1,6 +1,8 @@
 ---
 name: "rb"
 github: "jenkinsci/rb-plugin"
+issues:
+- jira: '24655' # rb-plugin
 paths:
 - "org/jenkins-ci/plugins/rb"
 developers:

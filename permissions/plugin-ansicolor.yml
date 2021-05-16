@@ -1,6 +1,9 @@
 ---
 name: "ansicolor"
-github: "jenkinsci/ansicolor-plugin"
+github: &gh "jenkinsci/ansicolor-plugin"
+issues:
+- github: *gh
+- jira: '15995' # ansicolor-plugin
 paths:
 - "org/jenkins-ci/plugins/ansicolor"
 - "org/jvnet/hudson/plugins/ansicolor"

@@ -1,6 +1,8 @@
 ---
 name: "plugin-util-api"
 github: "jenkinsci/plugin-util-api-plugin"
+issues:
+- jira: '26521' # plugin-util-api-plugin
 paths:
 - "io/jenkins/plugins/plugin-util-api"
 developers:

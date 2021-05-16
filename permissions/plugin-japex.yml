@@ -1,6 +1,8 @@
 ---
 name: "japex"
 github: "jenkinsci/japex-plugin"
+issues:
+- jira: '15551' # japex-plugin
 paths:
 - "org/jvnet/hudson/plugins/japex"
 developers: []

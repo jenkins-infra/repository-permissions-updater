@@ -1,6 +1,8 @@
 ---
 name: "script-security"
 github: "jenkinsci/script-security-plugin"
+issues:
+- jira: '18520' # script-security-plugin
 paths:
 - "org/jenkins-ci/plugins/script-security"
 developers:

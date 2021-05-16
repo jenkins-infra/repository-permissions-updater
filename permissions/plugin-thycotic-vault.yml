@@ -1,6 +1,8 @@
 ---
 name: "thycotic-vault"
 github: "jenkinsci/thycotic-vault-plugin"
+issues:
+- jira: '25723' # thycotic-vault-plugin
 paths:
   - "com/thycotic/thycotic-vault"
 developers:

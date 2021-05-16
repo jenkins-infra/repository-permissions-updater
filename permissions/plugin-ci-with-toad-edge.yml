@@ -1,7 +1,11 @@
 ---
 name: "ci-with-toad-edge"
 github: "jenkinsci/ci-with-toad-edge-plugin"
+issues:
+- jira: '23029' # ci-with-toad-edge-plugin
 paths:
 - "org/jenkins-ci/plugins/ci-with-toad-edge"
 developers:
 - "pchudani"
+- "mkumar_jenkins"
+- "tmajumda"

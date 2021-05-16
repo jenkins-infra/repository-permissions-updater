@@ -1,6 +1,8 @@
 ---
 name: "lastsuccessversioncolumn"
 github: "jenkinsci/lastsuccessversioncolumn-plugin"
+issues:
+- jira: '16055' # lastsuccessversioncolumn-plugin
 paths:
 - "org/jvnet/hudson/plugins/lastsuccessversioncolumn"
 developers: []

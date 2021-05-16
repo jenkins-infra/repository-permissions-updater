@@ -1,6 +1,8 @@
 ---
 name: "ci-game"
 github: "jenkinsci/ci-game-plugin"
+issues:
+- jira: '15510' # ci-game-plugin
 paths:
 - "org/jenkins-ci/plugins/ci-game"
 - "org/jvnet/hudson/plugins/ci-game"

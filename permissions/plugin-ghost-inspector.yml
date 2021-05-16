@@ -1,6 +1,8 @@
 ---
 name: "ghost-inspector"
 github: "jenkinsci/ghost-inspector-plugin"
+issues:
+- jira: '28220' # ghost-inspector-plugin
 paths:
 - "com/ghost-inspector/jenkins/ghost-inspector"
 developers:

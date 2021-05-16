@@ -1,6 +1,8 @@
 ---
 name: "sitemonitor"
 github: "jenkinsci/sitemonitor-plugin"
+issues:
+- jira: '15777' # sitemonitor-plugin
 paths:
 - "org/jvnet/hudson/plugins/sitemonitor"
 developers:

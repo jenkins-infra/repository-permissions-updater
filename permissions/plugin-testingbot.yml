@@ -1,6 +1,8 @@
 ---
 name: "testingbot"
 github: "jenkinsci/testingbot-plugin"
+issues:
+- jira: '17570' # testingbot-plugin
 paths:
 - "testingbot/testingbot"
 developers:

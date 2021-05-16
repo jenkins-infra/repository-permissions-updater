@@ -1,6 +1,8 @@
 ---
 name: "agent-server-parameter"
 github: "jenkinsci/agent-server-parameter-plugin"
+issues:
+- jira: '27422' # agent-server-parameter-plugin
 paths:
 - "io/jenkins/plugins/agent-server-parameter"
 developers:

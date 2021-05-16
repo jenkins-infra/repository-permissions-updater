@@ -1,6 +1,8 @@
 ---
 name: "script-realm"
 github: "jenkinsci/script-realm-plugin"
+issues:
+- jira: '15762' # script-realm-plugin
 paths:
 - "org/jvnet/hudson/plugins/script-realm"
 developers: []

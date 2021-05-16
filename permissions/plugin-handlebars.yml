@@ -1,10 +1,11 @@
 ---
 name: "handlebars"
 github: "jenkinsci/js-libs"
+issues:
+- jira: '21133' # js-modules
 paths:
 - "org/jenkins-ci/ui/handlebars"
 developers:
-- "tfennelly"
 - "alecharp"
 - "batmat"
 - "egutierrez"

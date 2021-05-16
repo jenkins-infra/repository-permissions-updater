@@ -1,6 +1,8 @@
 ---
 name: "fedora-module-build-system"
 github: "jenkinsci/fedora-module-build-system-plugin"
+issues:
+- jira: '23127' # fedora-module-build-system-plugin
 paths:
 - "org/jenkins-ci/plugins/fedora-module-build-system"
 developers:

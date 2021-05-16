@@ -1,6 +1,8 @@
 ---
 name: "artifactdeployer"
 github: "jenkinsci/artifactdeployer-plugin"
+issues:
+- jira: '15870' # artifactdeployer-plugin
 paths:
 - "org/jenkins-ci/plugins/artifactdeployer"
 developers:

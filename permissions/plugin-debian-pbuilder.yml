@@ -1,6 +1,8 @@
 ---
 name: "debian-pbuilder"
 github: "jenkinsci/debian-pbuilder-plugin"
+issues:
+- jira: '23320' # debian-pbuilder-plugin
 paths:
 - "com/rm5248/debian-pbuilder"
 developers:

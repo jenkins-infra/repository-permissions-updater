@@ -1,6 +1,8 @@
 ---
 name: "telerik-appbuilder-plugin"
 github: "jenkinsci/telerik-appbuilder-plugin"
+issues:
+- jira: '21038' # telerik-appbuilder-plugin
 paths:
 - "com/telerik/plugins/telerik-appbuilder-plugin"
 developers:

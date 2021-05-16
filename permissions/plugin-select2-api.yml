@@ -1,0 +1,9 @@
+---
+name: "select2-api"
+github: &GH "jenkinsci/select2-api-plugin"
+paths:
+- "io/jenkins/plugins/select2-api"
+developers:
+- "simonsymhoven"
+issues:
+  - github: *GH

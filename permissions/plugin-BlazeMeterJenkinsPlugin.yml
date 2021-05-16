@@ -1,6 +1,8 @@
 ---
 name: "BlazeMeterJenkinsPlugin"
 github: "jenkinsci/blazemeter-plugin"
+issues:
+- jira: '17508' # blazemeterjenkinsplugin-plugin
 paths:
 - "com/blazemeter/plugins/BlazeMeterJenkinsPlugin"
 developers:

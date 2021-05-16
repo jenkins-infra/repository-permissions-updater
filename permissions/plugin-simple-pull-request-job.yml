@@ -2,6 +2,8 @@
 name: "simple-pull-request-job"
 github: "jenkinsci/simple-pull-request-job-plugin"
 
+issues:
+- jira: '23623' # simple-pull-request-job-plugin
 paths:
 - "io/jenkins/plugins/simple-pull-request-job"
 developers:

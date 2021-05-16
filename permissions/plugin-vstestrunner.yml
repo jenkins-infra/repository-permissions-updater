@@ -1,6 +1,8 @@
 ---
 name: "vstestrunner"
 github: "jenkinsci/vstestrunner-plugin"
+issues:
+- jira: '17452' # vstestrunner-plugin
 paths:
 - "org/jenkins-ci/plugins/vstestrunner"
 developers:

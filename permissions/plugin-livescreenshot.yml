@@ -1,6 +1,8 @@
 ---
 name: "livescreenshot"
 github: "jenkinsci/livescreenshot-plugin"
+issues:
+- jira: '17567' # livescreenshot-plugin
 paths:
 - "org/jenkins-ci/plugins/livescreenshot"
 developers: []

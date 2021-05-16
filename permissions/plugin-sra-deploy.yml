@@ -1,6 +1,9 @@
 ---
 name: "sra-deploy"
-github: "jenkinsci/sra-deploy-plugin"
+github: &gh "jenkinsci/sra-deploy-plugin"
+issues:
+- jira: '17634' # sra-deploy-plugin
+- github: *gh
 paths:
 - "com/urbancode/ds/jenkins/plugins/sra-deploy"
 developers:

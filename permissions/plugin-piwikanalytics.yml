@@ -1,6 +1,8 @@
 ---
 name: "piwikanalytics"
 github: "jenkinsci/piwikanalytics-plugin"
+issues:
+- jira: '15994' # piwikanalytics-plugin
 paths:
 - "org/jenkins-ci/plugins/piwikanalytics"
 developers:

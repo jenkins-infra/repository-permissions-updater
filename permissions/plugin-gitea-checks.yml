@@ -1,0 +1,9 @@
+---
+name: "gitea-checks"
+github: &GH "jenkinsci/gitea-checks-plugin"
+paths:
+- "com/github/flozzone/gitea-checks"
+developers:
+- "flozzone"
+issues:
+  - github: *GH

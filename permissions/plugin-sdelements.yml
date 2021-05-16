@@ -1,6 +1,8 @@
 ---
 name: "sdelements"
 github: "jenkinsci/sdelements-plugin"
+issues:
+- jira: '23940' # sdelements-plugin
 paths:
 - "io/jenkins/plugins/sdelements"
 developers:

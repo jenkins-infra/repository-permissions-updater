@@ -1,6 +1,9 @@
 ---
 name: "snyk-security-scanner"
-github: "jenkinsci/snyk-security-scanner-plugin"
+github: &gh "jenkinsci/snyk-security-scanner-plugin"
+issues:
+- jira: '23045' # snyk-security-plugin
+- github: *gh
 paths:
 - "io/snyk/plugins/snyk-security-scanner"
 developers:

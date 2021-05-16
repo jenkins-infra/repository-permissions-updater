@@ -1,6 +1,8 @@
 ---
 name: "pipeline-keep-running-step"
 github: "jenkinsci/pipeline-keep-running-step-plugin"
+issues:
+- jira: '27231' # pipeline-keep-running-step-plugin
 paths:
 - "io/jenkins/plugins/pipeline-keep-running-step"
 developers:

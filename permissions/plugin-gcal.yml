@@ -1,6 +1,8 @@
 ---
 name: "gcal"
 github: "jenkinsci/gcal-plugin"
+issues:
+- jira: '15542' # gcal-plugin
 paths:
 - "org/jvnet/hudson/plugins/gcal"
 developers: []

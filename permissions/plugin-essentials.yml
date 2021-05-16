@@ -1,6 +1,8 @@
 ---
 name: "essentials"
 github: "jenkinsci/evergreen-plugin"
+issues:
+- jira: '23546' # evergreen-plugin
 paths:
 - "io/jenkins/plugins/essentials"
 developers:

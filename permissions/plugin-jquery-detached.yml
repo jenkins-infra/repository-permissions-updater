@@ -1,10 +1,11 @@
 ---
 name: "jquery-detached"
 github: "jenkinsci/js-libs"
+issues:
+- jira: '21133' # js-modules
 paths:
 - "org/jenkins-ci/ui/jquery-detached"
 developers:
-- "tfennelly"
 - "alecharp"
 - "batmat"
 - "egutierrez"

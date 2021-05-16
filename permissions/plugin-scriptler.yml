@@ -1,6 +1,8 @@
 ---
 name: "scriptler"
 github: "jenkinsci/scriptler-plugin"
+issues:
+- jira: '15743' # scriptler-plugin
 paths:
 - "org/jenkins-ci/plugins/scriptler"
 - "org/jvnet/hudson/plugins/scriptler"

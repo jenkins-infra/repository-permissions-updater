@@ -1,6 +1,8 @@
 ---
 name: "DotCi"
 github: "jenkinsci/DotCi"
+issues:
+- jira: '18836' # dotci-plugin
 paths:
 - "com/groupon/jenkins-ci/plugins/DotCi"
 developers:

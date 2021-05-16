@@ -1,6 +1,8 @@
 ---
 name: "play-autotest-plugin"
 github: "jenkinsci/play-plugin"
+issues:
+- jira: '16026' # play-autotest-plugin
 paths:
 - "org/jenkins-ci/plugins/play-autotest-plugin"
 - "org/jvnet/hudson/plugins/play-autotest-plugin"

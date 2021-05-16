@@ -1,6 +1,8 @@
 ---
 name: "mailcommander"
 github: "jenkinsci/mail-commander-plugin"
+issues:
+- jira: '16056' # mailcommander-plugin
 paths:
 - "org/jenkins-ci/plugins/mailcommander"
 developers: []

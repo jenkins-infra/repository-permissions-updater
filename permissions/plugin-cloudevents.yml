@@ -1,0 +1,9 @@
+---
+name: "cloudevents"
+github: &GH "jenkinsci/cloudevents-plugin"
+paths:
+- "io/jenkins/plugins/cloudevents"
+developers:
+- "waveywaves"
+issues:
+  - github: *GH

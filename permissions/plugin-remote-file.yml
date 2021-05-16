@@ -1,6 +1,9 @@
 ---
 name: "remote-file"
-github: "jenkinsci/remote-file-plugin"
+github: &gh "jenkinsci/remote-file-plugin"
+issues:
+- github: *gh
+- jira: '25622' # remote-file-plugin
 paths:
 - "io/jenkins/plugins/remote-file"
 developers:

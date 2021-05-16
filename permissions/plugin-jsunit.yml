@@ -1,6 +1,8 @@
 ---
 name: "jsunit"
 github: "jenkinsci/jsunit-plugin"
+issues:
+- jira: '15677' # jsunit-plugin
 paths:
 - "org/jenkins-ci/plugins/jsunit"
 developers:

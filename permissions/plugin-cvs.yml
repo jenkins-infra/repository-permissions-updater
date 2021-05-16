@@ -1,6 +1,8 @@
 ---
 name: "cvs"
 github: "jenkinsci/cvs-plugin"
+issues:
+- jira: '15486' # cvs-plugin
 paths:
 - "org/jenkins-ci/plugins/cvs"
 - "org/jvnet/hudson/plugins/cvs"

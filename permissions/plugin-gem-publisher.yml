@@ -1,6 +1,8 @@
 ---
 name: "gem-publisher"
 github: "jenkinsci/gem-publisher-plugin"
+issues:
+- jira: '18020' # gem-publisher-plugin
 paths:
 - "net/arangamani/jenkins/gem-publisher"
 developers: []

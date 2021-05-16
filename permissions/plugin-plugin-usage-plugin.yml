@@ -1,6 +1,8 @@
 ---
 name: "plugin-usage-plugin"
 github: "jenkinsci/plugin-usage-plugin"
+issues:
+- jira: '19227' # plugin-usage-plugin
 paths:
 - "org/jenkins-ci/plugins/plugin-usage-plugin"
 developers:

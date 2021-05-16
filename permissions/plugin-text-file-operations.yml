@@ -1,6 +1,8 @@
 ---
 name: "text-file-operations"
 github: "jenkinsci/text-file-operations-plugin"
+issues:
+- jira: '21037' # text-file-operations-plugin
 paths:
 - "com/etas/jenkins/plugins/text-file-operations"
 developers:

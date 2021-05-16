@@ -1,6 +1,9 @@
 ---
 name: "junit-realtime-test-reporter"
-github: "jenkinsci/junit-realtime-test-reporter-plugin"
+github: &gh "jenkinsci/junit-realtime-test-reporter-plugin"
+issues:
+- jira: '18035' # junit-realtime-test-reporter-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/junit-realtime-test-reporter"
 developers: []

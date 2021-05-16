@@ -1,6 +1,8 @@
 ---
 name: "mongodb-document-upload"
 github: "jenkinsci/mongodb-document-upload-plugin"
+issues:
+- jira: '17636' # mongodb-document-upload-plugin
 paths:
 - "org/jenkins-ci/plugins/mongodb-document-upload"
 developers: []

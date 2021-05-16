@@ -1,6 +1,8 @@
 ---
 name: "ftppublisher"
 github: "jenkinsci/ftppublisher-plugin"
+issues:
+- jira: '15522' # ftppublisher-plugin
 paths:
 - "org/jvnet/hudson/plugins/ftppublisher"
 developers: []

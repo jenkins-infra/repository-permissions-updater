@@ -1,9 +1,9 @@
 ---
 name: "azure-function"
 github: "jenkinsci/azure-function-plugin"
+issues:
+- jira: '23160' # azure-function-plugin
 paths:
 - "org/jenkins-ci/plugins/azure-function"
 developers:
-- "chenkennt"
-- "arieshout"
-- "azure_devops"
+- "zooopx"

@@ -1,6 +1,8 @@
 ---
 name: "compuware-topaz-for-total-test"
 github: "jenkinsci/compuware-topaz-for-total-test-plugin"
+issues:
+- jira: '23034' # compuware-topaz-for-total-test-plugin
 paths:
 - "com/compuware/jenkins/compuware-topaz-for-total-test"
 developers:

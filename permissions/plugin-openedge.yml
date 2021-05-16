@@ -1,6 +1,8 @@
 ---
 name: "openedge"
 github: "jenkinsci/openedge-plugin"
+issues:
+- jira: '25432' # openedge-plugin
 paths:
 - "io/jenkins/plugins/openedge"
 developers:

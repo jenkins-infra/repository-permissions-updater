@@ -1,0 +1,15 @@
+---
+name: "lib-durable-task"
+github: "jenkinsci/lib-durable-task"
+paths:
+- "io/jenkins/plugins/lib-durable-task"
+developers:
+- "carroll"
+- "dnusbaum"
+- "bitwiseman"
+- "rsandell"
+- "teilo"
+- "alecharp"
+- "batmat"
+- "olamy"
+- "mramonleon"  

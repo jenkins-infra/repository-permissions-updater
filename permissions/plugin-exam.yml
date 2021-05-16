@@ -1,6 +1,8 @@
 ---
 name: "exam"
 github: "jenkinsci/exam-plugin"
+issues:
+- jira: '23542' # exam-plugin
 paths:
 - "org/jenkins-ci/plugins/exam"
 developers:

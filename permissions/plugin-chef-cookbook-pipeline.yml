@@ -1,6 +1,8 @@
 ---
 name: "chef-cookbook-pipeline"
 github: "jenkinsci/chef-cookbook-pipeline-plugin"
+issues:
+- jira: '23733' # chef-cookbook-pipeline-plugin
 paths:
 - "io/chef/jenkins-ci/plugins/chef-cookbook-pipeline"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "testlink"
 github: "jenkinsci/testlink-plugin"
+issues:
+- jira: '15754' # testlink-plugin
 paths:
 - "org/jenkins-ci/plugins/testlink"
 - "org/jvnet/hudson/plugins/testlink"

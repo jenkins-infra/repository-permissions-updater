@@ -1,6 +1,8 @@
 ---
 name: "subversion"
 github: "jenkinsci/subversion-plugin"
+issues:
+- jira: '15485' # subversion-plugin
 paths:
 - "org/jenkins-ci/plugins/subversion"
 - "org/jvnet/hudson/plugins/subversion"
@@ -9,6 +11,7 @@ developers:
 - "kutzi"
 - "recena"
 - "schristou"
-- "stephenconnolly"
 - "oleg_nenashev"
 - "ifernandezcalvo"
+- "timja"
+- "thebro"

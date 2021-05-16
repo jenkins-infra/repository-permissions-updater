@@ -1,6 +1,8 @@
 ---
 name: "jobgenerator"
 github: "jenkinsci/jobgenerator-plugin"
+issues:
+- jira: '17435' # jobgenerator-plugin
 paths:
 - "org/jenkins-ci/plugins/jobgenerator"
 developers:

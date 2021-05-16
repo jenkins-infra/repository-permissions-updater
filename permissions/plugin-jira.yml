@@ -1,6 +1,9 @@
 ---
 name: "jira"
-github: "jenkinsci/jira-plugin"
+github: &gh "jenkinsci/jira-plugin"
+issues:
+- jira: '15515' # jira-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/jira"
 - "org/jvnet/hudson/plugins/jira"

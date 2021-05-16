@@ -1,6 +1,8 @@
 ---
 name: "overops-query"
-github: "jenkinsci/overops-query-plugin"
+github: &gh "jenkinsci/overops-query-plugin"
+issues:
+- github: *gh
 paths:
 - "org/overops/plugins/overops-query"
 developers:

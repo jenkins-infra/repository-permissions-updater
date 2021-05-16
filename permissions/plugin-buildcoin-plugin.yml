@@ -1,6 +1,8 @@
 ---
 name: "buildcoin-plugin"
 github: "jenkinsci/buildcoin-plugin"
+issues:
+- jira: '17501' # buildcoin-plugin
 paths:
 - "com/buildcoin/plugins/jenkins/buildcoin-plugin"
 developers: []

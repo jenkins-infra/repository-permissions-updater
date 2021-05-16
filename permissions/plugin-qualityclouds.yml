@@ -1,6 +1,8 @@
 ---
 name: "qualityclouds"
 github: "jenkinsci/qualityclouds-plugin"
+issues:
+- jira: '24521' # qualityclouds-plugin
 paths:
 - "io/jenkins/plugins/qualityclouds"
 developers:

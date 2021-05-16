@@ -1,6 +1,8 @@
 ---
 name: "split-admin"
 github: "jenkinsci/split-admin-plugin"
+issues:
+- jira: '27254' # split-admin-plugin
 paths:
 - "io/split/jenkins/plugins/split-admin"
 developers:

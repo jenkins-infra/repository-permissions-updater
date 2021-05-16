@@ -1,6 +1,8 @@
 ---
 name: "openshift-client"
 github: "jenkinsci/openshift-client-plugin"
+issues:
+- jira: '21961' # openshift-client-plugin
 paths:
 - "com/openshift/jenkins/plugins/openshift-client"
 developers:

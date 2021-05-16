@@ -1,6 +1,8 @@
 ---
 name: "ca-service-virtualization"
 github: "jenkinsci/ca-service-virtualization-plugin"
+issues:
+- jira: '23953' # ca-service-virtualization-plugin
 paths:
 - "io/jenkins/plugins/ca-service-virtualization"
 developers:

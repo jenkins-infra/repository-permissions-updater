@@ -1,6 +1,8 @@
 ---
 name: "lingr-plugin"
 github: "jenkinsci/lingr-plugin"
+issues:
+- jira: '16036' # lingr-plugin
 paths:
 - "org/jenkins-ci/plugins/lingr-plugin"
 developers: []

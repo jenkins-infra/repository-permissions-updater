@@ -1,6 +1,8 @@
 ---
 name: "svn-tag"
 github: "jenkinsci/svn-tag-plugin"
+issues:
+- jira: '15518' # svn-tag-plugin
 paths:
 - "org/jenkins-ci/plugins/svn-tag"
 developers:

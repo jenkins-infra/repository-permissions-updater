@@ -1,6 +1,8 @@
 ---
 name: "collabnet"
 github: "jenkinsci/collabnet-plugin"
+issues:
+- jira: '15723' # collabnet-plugin
 paths:
 - "org/jenkins-ci/plugins/collabnet"
 developers:

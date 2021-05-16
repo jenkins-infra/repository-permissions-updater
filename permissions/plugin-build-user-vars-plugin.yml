@@ -1,6 +1,8 @@
 ---
 name: "build-user-vars-plugin"
 github: "jenkinsci/build-user-vars-plugin"
+issues:
+- jira: '17477' # build-user-vars-plugin
 paths:
 - "org/jenkins-ci/plugins/build-user-vars-plugin"
 developers:

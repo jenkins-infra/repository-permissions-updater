@@ -1,6 +1,8 @@
 ---
 name: "smartfrog-plugin"
 github: "jenkinsci/smartfrog-plugin"
+issues:
+- jira: '18055' # smartfrog-plugin
 paths:
 - "org/jenkins-ci/plugins/smartfrog-plugin"
 developers:

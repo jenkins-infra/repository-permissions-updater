@@ -1,15 +1,21 @@
 ---
 name: "deployit-plugin"
 github: "jenkinsci/xldeploy-plugin"
+issues:
+- jira: '18053' # deployit-plugin
 paths:
 - "com/xebialabs/deployit/ci/deployit-plugin"
 developers:
 - "bdevic"
-- "ravan"
-- "msaraswat"
-- "adityakalia"
-- "kmalhotra"
-- "tmehra"
-- "wlee1668"
-- "aedsonfellipe"
+- "fellipeavanci"
 - "ashish_thakur"
+- "slal1"
+- "isaacsatish"
+- "balaji_digital_ai"
+- "nehag_digitalai"
+- "yghotekar"
+- "sgaikwad"
+- "ankur_soni"
+- "vrushnim"
+- "mflynn001"
+- "nvaddey"

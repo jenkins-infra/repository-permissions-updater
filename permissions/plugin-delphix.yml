@@ -1,6 +1,9 @@
 ---
 name: "delphix"
-github: "jenkinsci/delphix-plugin"
+github: &gh "jenkinsci/delphix-plugin"
+issues:
+- github: *gh
+- jira: '21022' # delphix-plugin
 paths:
 - "org/jenkins-ci/plugins/delphix"
 developers:

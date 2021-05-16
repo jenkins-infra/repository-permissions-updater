@@ -1,6 +1,9 @@
 ---
 name: "cisco-spark-notifier"
-github: "jenkinsci/cisco-spark-notifier-plugin"
+github: &gh "jenkinsci/cisco-spark-notifier-plugin"
+issues:
+- github: *gh
+- jira: '21826' # cisco-spark-notifier-plugin
 paths:
 - "org/jenkins-ci/plugins/cisco-spark-notifier"
 developers:

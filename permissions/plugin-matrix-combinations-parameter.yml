@@ -1,6 +1,8 @@
 ---
 name: "matrix-combinations-parameter"
 github: "jenkinsci/matrix-combinations-plugin"
+issues:
+- jira: '18156' # matrix-combinations-parameter-plugin
 paths:
 - "org/jenkins-ci/plugins/matrix-combinations-parameter"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "myst-plugin"
 github: "jenkinsci/myst-plugin"
+issues:
+- jira: '18762' # myst-plugin
 paths:
 - "com/rubiconred/jenkins/myst-plugin"
 developers:

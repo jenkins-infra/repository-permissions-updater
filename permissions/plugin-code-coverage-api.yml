@@ -1,6 +1,9 @@
 ---
 name: "code-coverage-api"
-github: "jenkinsci/code-coverage-api-plugin"
+github: &gh "jenkinsci/code-coverage-api-plugin"
+issues:
+- github: *gh
+- jira: '23723' # code-coverage-api-plugin
 paths:
 - "io/jenkins/plugins/code-coverage-api"
 developers:

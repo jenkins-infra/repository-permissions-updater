@@ -1,6 +1,8 @@
 ---
 name: "one-shot-executor"
 github: "jenkinsci/one-shot-executor-plugin"
+issues:
+- jira: '21690' # one-shot-executor-plugin
 paths:
 - "org/jenkins-ci/plugins/one-shot-executor"
 developers: []

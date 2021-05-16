@@ -1,12 +1,13 @@
 ---
 name: "blueocean-pipeline-editor"
 github: "jenkinsci/blueocean-plugin"
+issues:
+- jira: '21828' # blueocean-pipeline-editor-plugin
 paths:
 - "io/jenkins/blueocean/blueocean-pipeline-editor"
 developers:
 - "michaelneale"
 - "vivek"
-- "tfennelly"
 - "kzantow"
 - "davidbees"
 - "richbg"
@@ -16,7 +17,6 @@ developers:
 - "kshultz"
 - "bitwiseman"
 - "olamy"
-- "halkeye"
 - "tscherler"
 security:
   contacts:

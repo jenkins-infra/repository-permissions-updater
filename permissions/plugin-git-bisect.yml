@@ -1,6 +1,9 @@
 ---
 name: "git-bisect"
-github: "jenkinsci/git-bisect-plugin"
+github: &gh "jenkinsci/git-bisect-plugin"
+issues:
+- github: *gh
+- jira: '23135' # git-bisect-plugin
 paths:
 - "org/jenkins-ci/plugins/git-bisect"
 developers:

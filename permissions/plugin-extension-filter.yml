@@ -1,6 +1,8 @@
 ---
 name: "extension-filter"
 github: "jenkinsci/extension-filter-plugin"
+issues:
+- jira: '17511' # extension-filter-plugin
 paths:
 - "org/jenkins-ci/plugins/extension-filter"
 developers: []

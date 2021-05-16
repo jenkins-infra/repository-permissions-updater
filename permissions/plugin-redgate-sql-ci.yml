@@ -1,6 +1,8 @@
 ---
 name: "redgate-sql-ci"
-github: "jenkinsci/redgate-sql-ci-plugin"
+github: &gh "jenkinsci/redgate-sql-ci-plugin"
+issues:
+- github: *gh
 paths:
 - "com/redgate/plugins/redgatesqlci/redgate-sql-ci"
 developers:
@@ -11,6 +13,7 @@ developers:
 - "danielpottenger"
 - "diogoduarterg"
 - "jackdewinter"
+- "markan"
 security:
   contacts:
     jira: redgate_security

@@ -1,6 +1,8 @@
 ---
 name: "testquality-updater"
 github: "jenkinsci/testquality-updater-plugin"
+issues:
+- jira: '23232' # testquality-updater-plugin
 paths:
 - "org/jenkins-ci/plugins/testquality-updater"
 developers:

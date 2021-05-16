@@ -1,9 +1,13 @@
 ---
 name: "gitlab-plugin"
-github: "jenkinsci/gitlab-plugin"
+github: &gh "jenkinsci/gitlab-plugin"
+issues:
+- github: *gh
+- jira: '19326' # gitlab-plugin
 paths:
 - "com/dabsquared/gitlab-plugin"
 - "org/jenkins-ci/plugins/gitlab-plugin"
 developers:
-- "owenmehegan"
-- "jequals5"
+- "elbidouilleur" # jenkins.io/jira Username MaximeMazet Github username
+# Not a maintainer, just tables-to-divs fixes
+- "oleg_nenashev"

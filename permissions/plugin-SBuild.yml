@@ -1,6 +1,8 @@
 ---
 name: "SBuild"
 github: "jenkinsci/sbuild-plugin"
+issues:
+- jira: '18162' # sbuild-plugin
 paths:
 - "org/jenkins-ci/plugins/SBuild"
 developers:

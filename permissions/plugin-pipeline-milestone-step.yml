@@ -1,6 +1,8 @@
 ---
 name: "pipeline-milestone-step"
 github: "jenkinsci/pipeline-milestone-step-plugin"
+issues:
+- jira: '21448' # pipeline-milestone-step-plugin
 paths:
 - "org/jenkins-ci/plugins/pipeline-milestone-step"
 developers:
