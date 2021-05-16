@@ -5,6 +5,7 @@ paths:
 - "org/jenkins-ci/modules/sshd"
 developers:
 - "danielbeck"
+- "ifernandezcalvo"
 - "jvz"
 - "oleg_nenashev"
 - "timja"
