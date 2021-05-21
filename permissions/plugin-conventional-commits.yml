@@ -7,5 +7,7 @@ paths:
 - "io/jenkins/plugins/conventional-commits"
 developers:
 - "garethjevans"
+- "olblak"
+- "kwhetstone"  
 issues:
   - github: *GH
