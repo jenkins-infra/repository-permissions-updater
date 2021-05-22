@@ -13,3 +13,5 @@ developers:
 - "batmat"
 - "olamy"
 - "mramonleon"  
+cd:
+  enabled: true
