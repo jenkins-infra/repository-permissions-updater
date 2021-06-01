@@ -1,6 +1,8 @@
 ---
 name: "winstone"
 github: "jenkinsci/winstone"
+cd:
+  enabled: true
 paths:
 - "org/jenkins-ci/winstone"
 developers:
