@@ -5,6 +5,8 @@ issues:
 - jira: '27248' # adobe-cloud-manager-plugin
 paths:
 - "io/jenkins/plugins/adobe-cloud-manager"
+cd:
+  enabled: true
 developers:
 - "ahmedmusallam"
 - "stopp"
