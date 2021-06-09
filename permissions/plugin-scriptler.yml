@@ -7,4 +7,4 @@ paths:
 - "org/jenkins-ci/plugins/scriptler"
 - "org/jvnet/hudson/plugins/scriptler"
 developers:
-- "imod"
+- "mtughan"
