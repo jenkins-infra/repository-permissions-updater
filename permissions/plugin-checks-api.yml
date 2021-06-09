@@ -14,4 +14,4 @@ security:
   contacts:
     jira: "foundation_security_members"
 cd:
-  enable: true
+  enabled: true
