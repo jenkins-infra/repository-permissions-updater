@@ -13,3 +13,5 @@ developers:
 security:
   contacts:
     jira: "foundation_security_members"
+cd:
+  enabled: true

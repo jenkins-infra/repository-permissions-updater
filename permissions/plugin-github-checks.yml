@@ -10,3 +10,5 @@ developers:
 - "xiongkezhi"
 - "timja"
 - "drulli"
+cd:
+  enabled: true
