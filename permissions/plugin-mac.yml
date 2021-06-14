@@ -7,3 +7,5 @@ paths:
 - "fr/edf/jenkins/plugins/mac"
 developers:
 - "mat1e"
+cd:
+  enabled: true
