@@ -6,4 +6,4 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/requests"
 developers:
-- "trixmot"
+- "trixmot" 
