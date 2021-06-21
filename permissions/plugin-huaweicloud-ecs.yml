@@ -5,5 +5,8 @@ paths:
 - "io/jenkins/plugins/huaweicloud-ecs"
 developers:
 - "xwz_qmxx"
+- "zengchen1024"
 issues:
   - github: *GH
+cd:
+ enabled: true
