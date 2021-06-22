@@ -1,0 +1,9 @@
+---
+name: "nuclei"
+github: &GH "jenkinsci/nuclei-plugin"
+paths:
+- "io/jenkins/plugins/nuclei"
+developers:
+- "forgedhallpass"
+issues:
+  - github: *GH
