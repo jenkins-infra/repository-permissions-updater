@@ -6,7 +6,6 @@ paths:
 developers:
 - "opslevel"
 - "jasonopslevel"
-- "sergio-opslevel"
 issues:
   - github: *GH
 cd:
