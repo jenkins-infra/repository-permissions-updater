@@ -5,7 +5,7 @@ paths:
 - "io/jenkins/plugins/opslevel"
 developers:
 - "opslevel"
-- "jason-opslevel"
+- "jasonopslevel"
 - "sergio-opslevel"
 issues:
   - github: *GH
