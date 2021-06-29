@@ -1,0 +1,9 @@
+---
+name: "servicenow-devops"
+github: &GH "jenkinsci/servicenow-devops-plugin"
+paths:
+- "io/jenkins/plugins/servicenow-devops"
+developers:
+- "bhavani_velivala"
+issues:
+  - jira: 28628
