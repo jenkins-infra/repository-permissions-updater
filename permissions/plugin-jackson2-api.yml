@@ -9,6 +9,13 @@ developers:
 - "oleg_nenashev"
 - "dnusbaum"
 - "jvz"
+- "teilo"
+- "rsandell"
+- "carroll"
+- "olamy"
+- "mramonleon"
+- "alecharp"
+- "bitwiseman"
 security:
   contacts:
     jira: "foundation_security_members"
