@@ -1,6 +1,8 @@
 ---
 name: "codeql"
 github: &GH "jenkinsci/codeql-plugin"
+cd:
+  enabled: true
 paths:
 - "io/jenkins/plugins/codeql"
 developers:
