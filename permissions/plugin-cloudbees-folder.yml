@@ -13,6 +13,13 @@ developers:
 - "dnusbaum"
 - "rsandell"
 - "fcojfernandez"
+- "alecharp"
+- "batmat"
+- "bitwiseman"
+- "carroll"
+- "mramonleon"
+- "olamy"
+- "teilo"
 security:
   contacts:
     jira: "foundation_security_members"
