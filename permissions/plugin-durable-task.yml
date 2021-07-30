@@ -15,6 +15,11 @@ developers:
 - "carroll"
 - "bitwiseman"
 - "kshultz"
+- "teilo"
+- "alecharp"
+- "batmat"
+- "olamy"
+- "mramonleon"
 security:
   contacts:
     jira: "pipeline_security_members"
