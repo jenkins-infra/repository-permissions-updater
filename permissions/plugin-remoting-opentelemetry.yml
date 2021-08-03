@@ -11,4 +11,4 @@ developers:
 issues:
 - github: *GH
 cd:
-  enables: true
+  enabled: true
