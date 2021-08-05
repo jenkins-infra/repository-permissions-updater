@@ -2,7 +2,7 @@
 name: "remoting-opentelemetry"
 github: &GH "jenkinsci/remoting-opentelemetry-plugin"
 paths:
-- "io/jenkins/plugins/remoting-opentelemetry/"
+- "io/jenkins/plugins/remoting-opentelemetry"
 developers:
 - "aki7m"
 - "oleg_nenashev"
