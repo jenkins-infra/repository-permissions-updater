@@ -1,0 +1,10 @@
+---
+name: "remoting-opentelemetry-parent"
+github: "jenkinsci/remoting-opentelemetry-plugin"
+paths:
+- "io/jenkins/plugins/remoting-opentelemetry-parent"
+developers:
+- "aki7m"
+- "oleg_nenashev"
+- "cleclerc"
+- "stellargo"
