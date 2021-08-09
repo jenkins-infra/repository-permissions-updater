@@ -1,0 +1,9 @@
+---
+name: "oak9"
+github: &GH "jenkinsci/oak9-plugin"
+paths:
+- "io/jenkins/plugins/oak9"
+developers:
+- "oak9_michaelgrosser"
+issues:
+  - jira: 28631
