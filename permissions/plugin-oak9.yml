@@ -2,8 +2,13 @@
 name: "oak9"
 github: &GH "jenkinsci/oak9-plugin"
 paths:
-- "io/jenkins/plugins/oak9"
+  - "io/jenkins/plugins/oak9"
 developers:
-- "oak9_michaelgrosser"
+  - "oak9_michaelgrosser"
+  - "mherro_oak9"
+  - "jreiner_oak9"
+  - "rpateloak9"
 issues:
   - jira: 28631
+cd:
+  enabled: true
