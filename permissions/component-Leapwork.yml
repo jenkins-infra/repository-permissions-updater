@@ -4,6 +4,7 @@ github: "jenkinsci/leapwork-plugin"
 paths:
 - "org/jenkins-ci/plugins/leapwork"
 developers:
+- "bir"
 - "birsikandermahajan"
 - "AntonLiakhovich"
 cd:
