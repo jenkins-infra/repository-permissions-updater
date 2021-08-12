@@ -1,10 +1,11 @@
 ---
 name: "leapwork"
-github: "jenkinsci/leapwork-plugin"
+github: &GH "jenkinsci/leapwork-plugin"
 paths:
-- "org/jenkins-ci/plugins/leapwork"
+- "io/jenkins/plugins/leapwork"
 developers:
-- "birsikandermahajan"
-- "AntonLiakhovich"
+- "bir"
+issues:
+  - github: *GH
 cd:
   enabled: true
