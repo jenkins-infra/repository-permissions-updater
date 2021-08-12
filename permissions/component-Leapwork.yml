@@ -1,0 +1,10 @@
+---
+name: "leapwork"
+github: "jenkinsci/leapwork-plugin"
+paths:
+- "org/jenkins-ci/plugins/leapwork"
+developers:
+- "birsikandermahajan"
+- "AntonLiakhovich"
+cd:
+  enabled: true
