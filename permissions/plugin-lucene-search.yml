@@ -7,5 +7,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/lucene-search"
 developers:
+- "hmarkc"
 - "hanabishi"
 - "tobias_"
