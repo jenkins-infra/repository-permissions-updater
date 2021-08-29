@@ -1,0 +1,9 @@
+---
+name: "aws-kinesis-consumer"
+github: &GH "jenkinsci/aws-kinesis-consumer-plugin"
+paths:
+- "io/jenkins/plugins/aws-kinesis-consumer"
+developers:
+- "ponch"
+issues:
+  - jira: 28634
