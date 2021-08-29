@@ -1,0 +1,9 @@
+---
+name: "logcenter"
+github: &GH "jenkinsci/logcenter-plugin"
+paths:
+- "io/jenkins/plugins/logcenter"
+developers:
+- "xykong"
+issues:
+  - github: *GH
