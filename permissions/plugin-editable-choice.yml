@@ -7,3 +7,5 @@ developers:
 - "ikedam"
 issues:
   - jira: 28633
+cd:
+  enabled: true
