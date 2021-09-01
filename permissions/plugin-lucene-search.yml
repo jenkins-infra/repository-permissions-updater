@@ -9,3 +9,6 @@ paths:
 developers:
 - "hanabishi"
 - "tobias_"
+- "markch"
+cd:
+  enabled: true
