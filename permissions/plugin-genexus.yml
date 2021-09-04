@@ -1,6 +1,8 @@
 ---
 name: "genexus"
 github: &gh "jenkinsci/genexus-plugin"
+cd:
+  enabled: true
 issues:
 - jira: '23446' # genexus-plugin
 - github: *gh
