@@ -160,7 +160,7 @@ class ArtifactoryPermissionsUpdater {
                     ]
                 }.flatten().join(',')
                 excludesPattern ''
-                repositories(['snapshots']/* DEVELOPMENT ? ['snapshots'] : [ 'snapshots' , 'releases' ] */) /* Disallow releases */
+                repositories(DEVELOPMENT ? ['snapshots'] : [ 'snapshots', 'releases' ])
                 principals {
                     if (definition.developers.length == 0) {
                         users [:]
