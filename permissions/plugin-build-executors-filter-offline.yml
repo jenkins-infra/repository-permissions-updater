@@ -1,0 +1,9 @@
+---
+name: "build-executors-filter-offline"
+github: &GH "jenkinsci/build-executors-filter-offline-plugin"
+paths:
+- "io/jenkins/plugins/build-executors-filter-offline"
+developers:
+- "markch"
+issues:
+  - github: *GH
