@@ -11,6 +11,7 @@ developers:
 - "rsandell"
 - "bitwiseman"
 - "dnusbaum"
+- "carroll"
 security:
   contacts:
     jira: "pipeline_security_members"
