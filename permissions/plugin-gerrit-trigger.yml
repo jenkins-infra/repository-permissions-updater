@@ -7,3 +7,4 @@ paths:
 - "com/sonyericsson/hudson/plugins/gerrit/gerrit-trigger"
 developers:
 - "rsandell"
+- "olivergondza"
