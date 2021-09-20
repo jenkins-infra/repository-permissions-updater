@@ -1,5 +1,8 @@
 ---
 name: "build-monitor-plugin"
+github: &gh "jan-molak/jenkins-build-monitor-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/build-monitor-plugin"
 developers:
