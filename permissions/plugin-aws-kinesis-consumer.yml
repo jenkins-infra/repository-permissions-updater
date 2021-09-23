@@ -7,5 +7,7 @@ paths:
 - "io/jenkins/plugins/aws-kinesis-consumer"
 developers:
 - "ponch"
+- "syntonyze"
+- "lucamilanesio"
 issues:
   - jira: 28634
