@@ -5,6 +5,7 @@ issues:
 - jira: '21126' # aws-java-sdk-plugin
 paths:
 - "org/jenkins-ci/plugins/aws-java-sdk"
+- "org/jenkins-ci/plugins/aws-java-sdk/aws-java-sdk-*"
 developers:
 - "andresrc"
 - "vlatombe"
