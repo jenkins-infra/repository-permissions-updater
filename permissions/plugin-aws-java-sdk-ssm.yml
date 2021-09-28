@@ -1,0 +1,13 @@
+---
+name: "aws-java-sdk-ssm"
+github: "jenkinsci/aws-java-sdk-plugin"
+issues:
+- jira: '21126' # aws-java-sdk-plugin
+paths:
+- "org/jenkins-ci/plugins/aws-java-sdk/aws-java-sdk-ssm"
+developers:
+- "andresrc"
+- "vlatombe"
+security:
+  contacts:
+    jira: "modern_platforms_security_members"
