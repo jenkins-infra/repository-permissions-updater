@@ -3,4 +3,5 @@ name: "repository"
 paths:
 - "jenkins/repository"
 developers:
+- "basil"
 - "magnayn"
