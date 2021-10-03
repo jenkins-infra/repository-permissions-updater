@@ -1,7 +1,9 @@
 ---
 name: "jenkins-maven-plugin"
 paths:
+- "com/nirima/jenkins/repository"
 - "com/nirima/jenkins/repository/jenkins-maven-plugin"
+- "com/nirima/jenkins/repository/pom"
 developers:
 - "basil"
 - "magnayn"
