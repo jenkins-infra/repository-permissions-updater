@@ -3,5 +3,4 @@ github: "jenkinsci/autonomiq-plugin"
 paths:
 - "org/jenkins-ci/plugins/autonomiq"
 developers:
-- "puneetchelani"
-- "jameeluddin"
+- "puneetchelani_sauce"
