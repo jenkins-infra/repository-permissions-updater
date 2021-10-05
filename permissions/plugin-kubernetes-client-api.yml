@@ -12,3 +12,6 @@ developers:
 - "teilo"
 - "agentgonzo"
 - "kylecronin"
+security:
+  contacts:
+    jira: "modern_platforms_security_members"

@@ -12,3 +12,6 @@ developers:
 - "maselvaraj"
 - "vinodkone"
 - "vlatombe"
+security:
+  contacts:
+    jira: "modern_platforms_security_members"
