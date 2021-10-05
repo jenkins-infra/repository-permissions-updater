@@ -1,0 +1,6 @@
+name: "autonomiq"
+github: "jenkinsci/autonomiq-plugin"
+paths:
+- "org/jenkins-ci/plugins/autonomiq"
+developers:
+- "puneetchelani_sauce"
