@@ -11,3 +11,6 @@ developers:
 - "kohsuke"
 - "aheritier"
 - "pierrebtz"
+security:
+  contacts:
+    jira: "foundation_security_members"

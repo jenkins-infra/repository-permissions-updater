@@ -11,3 +11,6 @@ developers:
 - "dnusbaum"
 - "kshultz"
 - "oleg_nenashev"
+security:
+  contacts:
+    jira: "pipeline_security_members"

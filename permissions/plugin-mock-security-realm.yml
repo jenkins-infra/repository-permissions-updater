@@ -8,3 +8,6 @@ paths:
 developers:
 - "jglick"
 - "rarabaolaza"
+security:
+  contacts:
+    jira: "foundation_security_members"
