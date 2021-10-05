@@ -6,3 +6,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/mapdb-api"
 developers: []
+security:
+  contacts:
+    jira: "modern_platforms_security_members"
