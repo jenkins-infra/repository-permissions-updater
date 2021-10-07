@@ -9,3 +9,6 @@ developers:
 - "jvz"
 - "oleg_nenashev"
 - "timja"
+security:
+  contacts:
+    jira: "foundation_security_members"
