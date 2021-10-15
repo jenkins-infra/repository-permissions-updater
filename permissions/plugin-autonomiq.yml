@@ -3,6 +3,6 @@ github: "jenkinsci/autonomiq-plugin"
 cd:
   enabled: true
 paths:
-- "org/jenkins-ci/plugins/autonomiq"
+- "io/jenkins/plugins/autonomiq"
 developers:
 - "puneetchelani_sauce"
