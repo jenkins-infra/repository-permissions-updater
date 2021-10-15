@@ -5,5 +5,8 @@ issues:
 - jira: '18828' # mock-load-builder-plugin
 paths:
 - "org/jenkins-ci/plugins/mock-load-builder"
+cd:
+  enabled: true
 developers:
 - "vlatombe"
+- "jglick"
