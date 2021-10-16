@@ -6,6 +6,8 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/aws-java-sdk"
 - "org/jenkins-ci/plugins/aws-java-sdk/aws-java-sdk-*"
+cd:
+  enabled: true
 developers:
 - "andresrc"
 - "vlatombe"
