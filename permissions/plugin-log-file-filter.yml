@@ -8,3 +8,5 @@ paths:
 developers:
 - "carlescapdevila"
 - "andreasmandel"
+cd:
+  enabled: true
