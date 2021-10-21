@@ -8,3 +8,5 @@ paths:
 - "org/jvnet/hudson/plugins/testng-plugin"
 developers:
 - "nullin"
+- "markewaite"
+- "darinpope"
