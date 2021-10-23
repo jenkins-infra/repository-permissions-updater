@@ -1,6 +1,8 @@
 ---
 name: "qiniu"
 github: "jenkinsci/qiniu-plugin"
+issues:
+- jira: '26723' # qiniu-plugin
 paths:
 - "io/jenkins/plugins/qiniu"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "results-cache"
 github: "jenkinsci/results-cache-plugin"
+issues:
+- jira: '25133' # results-cache-plugin
 paths:
 - "com/king/jenkins/plugins/results-cache"
 developers:

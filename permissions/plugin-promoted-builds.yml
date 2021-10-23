@@ -1,6 +1,8 @@
 ---
 name: "promoted-builds"
 github: "jenkinsci/promoted-builds-plugin"
+issues:
+- jira: '15567' # promoted-builds-plugin
 paths:
 - "org/jenkins-ci/plugins/promoted-builds"
 - "org/jvnet/hudson/plugins/promoted-builds"
@@ -8,7 +10,10 @@ developers:
 - "dnozay"
 - "jglick"
 - "oleg_nenashev"
-- "stephenconnolly"
 - "wolfs"
 - "dnusbaum"
+- "teilo"
+security:
+  contacts:
+    jira: "foundation_security_members"
 

@@ -1,6 +1,8 @@
 ---
 name: "elOyente"
 github: "jenkinsci/eloyente-plugin"
+issues:
+- jira: '17504' # eloyente-plugin
 paths:
 - "com/technicolor/elOyente"
 developers: []

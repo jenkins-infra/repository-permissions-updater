@@ -1,7 +1,11 @@
 ---
 name: "mapdb-api"
 github: "jenkinsci/mapdb-api-plugin"
+issues:
+- jira: '18829' # mapdb-api-plugin
 paths:
 - "org/jenkins-ci/plugins/mapdb-api"
-developers:
-- "stephenconnolly"
+developers: []
+security:
+  contacts:
+    jira: "modern_platforms_security_members"

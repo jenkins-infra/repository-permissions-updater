@@ -1,6 +1,9 @@
 
 name: "cachet-gating"
-github: "jenkinsci/cachet-gating-plugin"
+github: &gh "jenkinsci/cachet-gating-plugin"
+issues:
+- github: *gh
+- jira: '23944' # cachet-gating-plugin
 paths:
 - "org/jenkins-ci/plugins/cachet-gating"
 developers:

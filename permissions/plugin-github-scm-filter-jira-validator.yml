@@ -1,6 +1,8 @@
 ---
 name: "github-scm-filter-jira-validator"
 github: "jenkinsci/scm-filter-jira-validator-plugin"
+issues:
+- jira: '23157' # branch-source-jira-validator-traits-plugin
 paths:
 - "org/jenkins-ci/plugins/github-scm-filter-jira-validator"
 developers:

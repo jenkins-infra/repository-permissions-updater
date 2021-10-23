@@ -1,6 +1,8 @@
 ---
 name: "unleash"
 github: "jenkinsci/unleash-plugin"
+issues:
+- jira: '21681' # unleash-plugin
 paths:
 - "com/itemis/jenkins/plugins/unleash"
 developers:

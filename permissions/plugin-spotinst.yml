@@ -1,6 +1,8 @@
 ---
 name: "spotinst"
 github: "jenkinsci/spotinst-plugin"
+issues:
+- jira: '21520' # spotinst-plugin
 paths:
 - "org/jenkins-ci/plugins/spotinst"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "dos-trigger"
 github: "jenkinsci/dos-trigger-plugin"
+issues:
+- jira: '15997' # dos-trigger-plugin
 paths:
 - "com/tombrus/hudson/dostrigger/dos-trigger"
 - "org/jenkins-ci/plugins/dos-trigger"

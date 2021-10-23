@@ -1,7 +1,12 @@
 ---
 name: "app-detector"
 github: "jenkinsci/app-detector-plugin"
+issues:
+- jira: '22025' # app-detector-plugin
 paths:
 - "org/jenkins-ci/plugins/app-detector"
 developers:
 - "justice3120"
+- "kmaeda_dena"
+- "hisashi_iguchi"
+- "kentakase_dena"

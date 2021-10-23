@@ -1,6 +1,8 @@
 ---
 name: "android-apk-size-watcher"
 github: "jenkinsci/android-apk-size-watcher-plugin"
+issues:
+- jira: '23120' # android-apk-size-watcher-plugin
 paths:
 - "org/jenkins-ci/plugins/android-apk-size-watcher"
 developers:

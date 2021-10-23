@@ -1,6 +1,8 @@
 ---
 name: "dynamic-search-view"
 github: "jenkinsci/dynamic-search-view-plugin"
+issues:
+- jira: '17668' # dynamic-search-view-plugin
 paths:
 - "com/synopsys/arc/jenkinsci/dynamic-search-view"
 developers:

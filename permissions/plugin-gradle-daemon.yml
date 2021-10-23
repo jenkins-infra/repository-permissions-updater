@@ -1,6 +1,8 @@
 ---
 name: "gradle-daemon"
 github: "jenkinsci/gradle-daemon-plugin"
+issues:
+- jira: '27227' # gradle-daemon-plugin
 paths:
 - "org/jenkins-ci/plugins/gradle-daemon"
 developers:

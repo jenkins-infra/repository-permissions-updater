@@ -1,6 +1,8 @@
 ---
 name: "wattspeed"
 github: "jenkinsci/wattspeed-plugin"
+issues:
+- jira: '27253' # wattspeed-plugin
 paths:
 - "io/jenkins/plugins/wattspeed"
 developers:

@@ -1,6 +1,9 @@
 ---
 name: "travis-yml"
-github: "jenkinsci/travis-yml-plugin"
+github: &gh "jenkinsci/travis-yml-plugin"
+issues:
+- github: *gh
+- jira: '19324' # travis-yml-plugin
 paths:
 - "org/jenkins-ci/ruby-plugins/travis-yml"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "xfpanel"
 github: "jenkinsci/xfpanel-plugin"
+issues:
+- jira: '15638' # xfpanel-plugin
 paths:
 - "org/jenkins-ci/plugins/xfpanel"
 developers:

@@ -1,0 +1,11 @@
+---
+# Workaround for publishing Maven plugins
+name: "dummy-unused-artifact-name"
+paths:
+- "org/kohsuke"
+developers:
+- "timja"
+- "oleg_nenashev"
+- "jglick"
+- "batmat"
+- "markewaite"

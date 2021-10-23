@@ -6,6 +6,5 @@ paths:
 - "org/jvnet/hudson/trilead-ssh2"
 developers:
 - "kohsuke"
-- "stephenconnolly"
 - "mc1arke"
 - "ifernandezcalvo"

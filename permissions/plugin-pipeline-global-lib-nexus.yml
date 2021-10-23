@@ -1,6 +1,8 @@
 ---
 name: "pipeline-global-lib-nexus"
-github: "jenkinsci/pipeline-global-lib-nexus-plugin"
+github: &gh "jenkinsci/pipeline-global-lib-nexus-plugin"
+issues:
+- github: *gh
 paths:
 - "com/roylenferink/jenkins/plugins/pipeline-global-lib-nexus"
 developers:

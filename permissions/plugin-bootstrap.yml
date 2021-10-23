@@ -1,10 +1,11 @@
 ---
 name: "bootstrap"
 github: "jenkinsci/js-libs"
+issues:
+- jira: '21133' # js-modules
 paths:
 - "org/jenkins-ci/ui/bootstrap"
 developers:
-- "tfennelly"
 - "alecharp"
 - "batmat"
 - "egutierrez"

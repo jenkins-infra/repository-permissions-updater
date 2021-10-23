@@ -1,6 +1,8 @@
 ---
 name: "windows-exe-runner"
 github: "jenkinsci/windows-exe-runner-plugin"
+issues:
+- jira: '17518' # windows-exe-runner-plugin
 paths:
 - "org/jenkins-ci/plugins/windows-exe-runner"
 developers: []

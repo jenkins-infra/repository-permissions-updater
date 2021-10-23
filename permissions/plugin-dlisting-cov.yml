@@ -1,6 +1,8 @@
 ---
 name: "dlisting-cov"
 github: "jenkinsci/dlisting-cov-plugin"
+issues:
+- jira: '25922' # dlisting-cov-plugin
 paths:
   - "io/jenkins/plugins/dlisting-cov"
 developers:

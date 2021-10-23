@@ -1,6 +1,8 @@
 ---
 name: "sms"
 github: "jenkinsci/sms-plugin"
+issues:
+- jira: '17513' # sms-plugin
 paths:
 - "com/hoiio/jenkins/sms"
 developers: []

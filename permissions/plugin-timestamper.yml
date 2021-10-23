@@ -1,6 +1,8 @@
 ---
 name: "timestamper"
 github: "jenkinsci/timestamper-plugin"
+issues:
+- jira: '15749' # timestamper-plugin
 paths:
 - "org/jenkins-ci/plugins/timestamper"
 - "org/jvnet/hudson/plugins/timestamper"
@@ -8,3 +10,6 @@ developers:
 - "basil"
 - "stevengbrown"
 - "jglick"
+security:
+  contacts:
+    jira: "foundation_security_members"

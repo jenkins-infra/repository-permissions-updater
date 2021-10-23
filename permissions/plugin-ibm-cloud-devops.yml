@@ -1,6 +1,8 @@
 ---
 name: "ibm-cloud-devops"
 github: "jenkinsci/ibm-cloud-devops-plugin"
+issues:
+- jira: '22520' # ibm-cloud-devops-plugin
 paths:
 - "com/ibm/devops/ibm-cloud-devops"
 developers:

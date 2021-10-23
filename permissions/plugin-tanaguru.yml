@@ -1,6 +1,8 @@
 ---
 name: "tanaguru"
 github: "jenkinsci/tanaguru-plugin"
+issues:
+- jira: '24120' # tanaguru-plugin
 paths:
 - "org/tanaguru/jenkins/tanaguru"
 developers:

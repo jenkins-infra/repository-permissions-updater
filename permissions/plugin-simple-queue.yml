@@ -1,5 +1,7 @@
 name: "simple-queue"
 github: "jenkinsci/simple-queue-plugin"
+issues:
+- jira: '27232' # simple-queue-plugin
 paths:
 - "io/jenkins/plugins/simple-queue"
 developers:

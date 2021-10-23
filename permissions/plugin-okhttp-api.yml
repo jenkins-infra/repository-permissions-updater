@@ -1,6 +1,8 @@
 ---
 name: "okhttp-api"
 github: "jenkinsci/okhttp-api-plugin"
+issues:
+- jira: '27251' # okhttp-api-plugin
 paths:
 - "io/jenkins/plugins/okhttp-api"
 developers:
@@ -9,3 +11,6 @@ developers:
 - "dnusbaum"
 - "kshultz"
 - "oleg_nenashev"
+security:
+  contacts:
+    jira: "pipeline_security_members"

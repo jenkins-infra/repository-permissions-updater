@@ -1,5 +1,9 @@
 ---
 name: "ssh2easy"
+github: &gh jenkinsci/ssh2easy-plugin
+issues:
+- github: *gh
+- jira: '20647' # ssh2easy-plugin
 paths:
 - "org/jenkins-ci/plugins/ssh2easy"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "nvm-wrapper"
 github: "jenkinsci/nvm-wrapper-plugin"
+issues:
+- jira: '21633' # nvm-wrapper-plugin
 paths:
 - "org/jenkins-ci/plugins/nvm-wrapper"
 developers: 

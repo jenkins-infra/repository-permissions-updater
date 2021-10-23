@@ -1,6 +1,8 @@
 ---
 name: "SSSCM"
 github: "jenkinsci/shell-script-scm-plugin"
+issues:
+- jira: '16063' # ssscm-plugin
 paths:
 - "ssscm/SSSCM"
 developers: []

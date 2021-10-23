@@ -1,6 +1,8 @@
 ---
 name: "toolenv"
 github: "jenkinsci/toolenv-plugin"
+issues:
+- jira: '16058' # toolenv-plugin
 paths:
 - "org/jenkins-ci/plugins/toolenv"
 developers:

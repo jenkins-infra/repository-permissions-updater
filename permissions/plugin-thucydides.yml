@@ -1,6 +1,8 @@
 ---
 name: "thucydides"
 github: "jenkinsci/thucydides-plugin"
+issues:
+- jira: '17607' # thucydides-plugin
 paths:
 - "net/thucydides/jenkins/thucydides"
 developers: []

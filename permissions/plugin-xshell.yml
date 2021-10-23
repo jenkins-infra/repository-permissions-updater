@@ -1,6 +1,8 @@
 ---
 name: "xshell"
 github: "jenkinsci/xshell-plugin"
+issues:
+- jira: '16098' # xshell-plugin
 paths:
 - "org/jenkins-ci/plugins/xshell"
 - "org/jvnet/hudson/plugins/xshell"

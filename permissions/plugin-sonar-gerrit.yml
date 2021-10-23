@@ -1,6 +1,8 @@
 ---
 name: "sonar-gerrit"
 github: "jenkinsci/sonar-gerrit-plugin"
+issues:
+- jira: '20853' # sonar-gerrit-plugin
 paths:
 - "org/jenkins-ci/plugins/sonar-gerrit"
 developers:

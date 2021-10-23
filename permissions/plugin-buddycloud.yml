@@ -1,6 +1,8 @@
 ---
 name: "buddycloud"
 github: "jenkinsci/buddycloud-plugin"
+issues:
+- jira: '17457' # buddycloud-plugin
 paths:
 - "org/jenkins-ci/ruby-plugins/buddycloud"
 developers:

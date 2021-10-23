@@ -1,9 +1,14 @@
 ---
 name: "ant"
 github: "jenkinsci/ant-plugin"
+issues:
+- jira: '15488' # ant-plugin
 paths:
 - "org/jenkins-ci/plugins/ant"
 developers:
 - "armfergom"
 - "jglick"
 - "fcojfernandez"
+security:
+  contacts:
+    jira: "foundation_security_members"

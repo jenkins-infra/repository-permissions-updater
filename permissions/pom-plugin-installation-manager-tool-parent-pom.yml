@@ -3,7 +3,6 @@ name: "plugin-management-parent-pom"
 github: "jenkinsci/plugin-installation-manager-tool"
 paths:
 - "io/jenkins/plugin-management/plugin-management-parent-pom"
-- "io/jenkins/plugin-management/jenkins-plugin-management-parent-pom"
 developers:
 - "stopalopa"
 - "oleg_nenashev"

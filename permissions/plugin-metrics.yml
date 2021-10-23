@@ -1,11 +1,12 @@
 ---
 name: "metrics"
 github: "jenkinsci/metrics-plugin"
+issues:
+- jira: '18751' # metrics-plugin
 paths:
 - "org/jenkins-ci/plugins/metrics"
 developers:
 - "kohsuke"
-- "stephenconnolly"
 - "sbadger"
 - "alecharp"
 - "mramonleon"

@@ -1,6 +1,9 @@
 ---
 name: "sidebar-link"
-github: "jenkinsci/sidebar-link-plugin"
+github: &gh "jenkinsci/sidebar-link-plugin"
+issues:
+- jira: '15618' # sidebar-link-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/sidebar-link"
 - "org/jvnet/hudson/plugins/sidebar-link"

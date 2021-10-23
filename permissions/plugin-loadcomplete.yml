@@ -1,6 +1,8 @@
 ---
 name: "loadcomplete"
 github: "jenkinsci/loadcomplete-plugin"
+issues:
+- jira: '24026' # loadcomplete-plugin
 paths:
 - "org/jenkins-ci/plugins/loadcomplete"
 developers:

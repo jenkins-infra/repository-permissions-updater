@@ -1,6 +1,8 @@
 ---
 name: "appaloosa-plugin"
 github: "jenkinsci/appaloosa-plugin"
+issues:
+- jira: '16121' # appaloosa-plugin
 paths:
 - "org/jenkins-ci/plugins/appaloosa-plugin"
 developers:

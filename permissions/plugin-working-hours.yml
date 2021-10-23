@@ -1,6 +1,9 @@
 ---
 name: "working-hours"
-github: "jenkinsci/working-hours-plugin"
+github: &gh "jenkinsci/working-hours-plugin"
+issues:
+- jira: '23434' # working-hours-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/working-hours"
 developers:

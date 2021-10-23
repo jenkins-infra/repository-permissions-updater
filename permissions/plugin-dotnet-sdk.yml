@@ -1,6 +1,8 @@
 ---
 name: "dotnet-sdk"
 github: "jenkinsci/dotnet-sdk-plugin"
+issues:
+- jira: '27245' # dotnet-sdk-plugin
 paths:
 - "io/jenkins/plugins/dotnet-sdk"
 developers:

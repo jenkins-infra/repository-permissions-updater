@@ -1,6 +1,6 @@
 ---
 name: "environment-labels-setter"
-github: "jenkinsci/environment-labels-setter"
+github: "jenkinsci/environment-labels-setter-plugin"
 paths:
 - "org/jenkins-ci/plugins/environment-labels-setter"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "job-parameter-summary"
 github: "jenkinsci/job-parameter-summary-plugin"
+issues:
+- jira: '17626' # job-parameter-summary-plugin
 paths:
 - "org/jenkins-ci/plugins/job-parameter-summary"
 developers:

@@ -2,5 +2,4 @@
 name: "sshd-pam"
 paths:
 - "org/apache/sshd/sshd-pam"
-developers:
-- "stephenconnolly"
+developers: []

@@ -1,6 +1,8 @@
 ---
 name: "PUCM"
 github: "jenkinsci/pucm-plugin"
+issues:
+- jira: '15830' # pucm-plugin
 paths:
 - "org/jvnet/hudson/plugins/PUCM"
 developers: []

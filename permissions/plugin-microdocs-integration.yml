@@ -1,6 +1,8 @@
 ---
 name: "microdocs-integration"
 github: "jenkinsci/microdocs-integration-plugin"
+issues:
+- jira: '21700' # microdocs-integration-plugin
 paths:
 - "com/maxxton/microdocs-integration"
 developers:

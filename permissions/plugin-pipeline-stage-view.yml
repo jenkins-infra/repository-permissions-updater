@@ -1,6 +1,8 @@
 ---
 name: "pipeline-stage-view"
 github: "jenkinsci/pipeline-stage-view-plugin"
+issues:
+- jira: '21139' # pipeline-stage-view-plugin
 paths:
 - "org/jenkins-ci/plugins/pipeline-stage-view/pipeline-stage-view"
 developers:

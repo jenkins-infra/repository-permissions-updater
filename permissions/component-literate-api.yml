@@ -4,5 +4,4 @@ github: "jenkinsci/literate-api"
 paths:
 - "org/jenkins-ci/literate/literate-api"
 developers:
-- "stephenconnolly"
 - "vlatombe"

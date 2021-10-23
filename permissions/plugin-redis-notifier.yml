@@ -1,6 +1,8 @@
 ---
 name: "redis-notifier"
 github: "jenkinsci/redis-notifier-plugin"
+issues:
+- jira: '27022' # redis-notifier-plugin
 paths:
 - "io/jenkins/plugins/redis-notifier"
 developers:

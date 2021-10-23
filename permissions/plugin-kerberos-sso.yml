@@ -1,6 +1,8 @@
 ---
 name: "kerberos-sso"
 github: "jenkinsci/kerberos-sso-plugin"
+issues:
+- jira: '21725' # kerberos-sso-plugin
 paths:
 - "com/sonymobile/jenkins/plugins/kerberos-sso/kerberos-sso"
 developers:

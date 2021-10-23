@@ -1,6 +1,8 @@
 ---
 name: "test-results-aggregator"
 github: "jenkinsci/test-results-aggregator-plugin"
+issues:
+- jira: '26222' # test-results-aggregator-plugin
 paths:
 - "org/jenkins-ci/plugins/test-results-aggregator"
 developers:

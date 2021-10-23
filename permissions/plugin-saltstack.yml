@@ -1,6 +1,9 @@
 ---
 name: "saltstack"
-github: "jenkinsci/saltstack-plugin"
+github: &gh "jenkinsci/saltstack-plugin"
+issues:
+- github: *gh
+- jira: '20022' # saltstack-plugin
 paths:
 - "org/jenkins-ci/plugins/saltstack"
 developers:

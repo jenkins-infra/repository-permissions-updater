@@ -1,6 +1,8 @@
 ---
 name: "reqtify"
 github: "jenkinsci/reqtify-plugin"
+issues:
+- jira: '25620' # reqtify-plugin
 paths:
 - "io/jenkins/plugins/reqtify"
 developers:

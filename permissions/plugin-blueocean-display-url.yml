@@ -1,12 +1,13 @@
 ---
 name: "blueocean-display-url"
 github: "jenkinsci/blueocean-display-url-plugin"
+issues:
+- jira: '21827' # blueocean-display-url-plugin
 paths:
 - "org/jenkins-ci/plugins/blueocean-display-url"
 developers:
 - "michaelneale"
 - "vivek"
-- "tfennelly"
 - "kzantow"
 - "davidbees"
 - "richbg"
@@ -16,6 +17,8 @@ developers:
 - "kshultz"
 - "bitwiseman"
 - "olamy"
-- "halkeye"
 - "imeredith"
 - "jamesdumay"
+security:
+  contacts:
+    jira: "pipeline_security_members"

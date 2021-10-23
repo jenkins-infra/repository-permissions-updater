@@ -1,6 +1,8 @@
 ---
 name: "groovy-remote"
 github: "jenkinsci/groovy-remote-control-plugin"
+issues:
+- jira: '17604' # groovy-remote-plugin
 paths:
 - "org/jenkinsci/plugins/groovy-remote"
 developers: []

@@ -1,6 +1,9 @@
 ---
 name: "bitbucket-push-and-pull-request"
-github: "jenkinsci/bitbucket-push-and-pull-request-plugin"
+github: &gh "jenkinsci/bitbucket-push-and-pull-request-plugin"
+issues:
+- github: *gh
+- jira: '24647' # bitbucket-push-and-pull-request-plugin
 paths:
 - "io/jenkins/plugins/bitbucket-push-and-pull-request"
 developers:

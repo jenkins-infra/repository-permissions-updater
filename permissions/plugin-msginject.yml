@@ -1,6 +1,8 @@
 ---
 name: "msginject"
 github: "jenkinsci/msginject-plugin"
+issues:
+- jira: '21823' # msginject-plugin
 paths:
 - "org/jenkins-ci/plugins/msginject"
 developers:

@@ -1,5 +1,6 @@
 ---
 name: "timemachine"
+github: jenkinsci/timemachine-plugin
 paths:
 - "io/jenkins/plugins/timemachine"
 developers:

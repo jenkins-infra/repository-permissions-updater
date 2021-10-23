@@ -1,6 +1,8 @@
 ---
 name: "ws-execution-manager"
 github: "jenkinsci/ws-execution-manager-plugin"
+issues:
+- jira: '24640' # ws-execution-manager-plugin
 paths:
 - "org/jenkins-ci/plugins/ws-execution-manager"
 developers:

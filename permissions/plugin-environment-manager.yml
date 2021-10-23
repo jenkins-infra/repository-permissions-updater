@@ -1,6 +1,8 @@
 ---
 name: "environment-manager"
 github: "jenkinsci/environment-manager-tools-plugin"
+issues:
+- jira: '21463' # environment-manager-tools-plugin
 paths:
 - "com/parasoft/environment-manager"
 developers:

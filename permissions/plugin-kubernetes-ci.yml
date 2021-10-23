@@ -1,6 +1,8 @@
 ---
 name: "kubernetes-ci"
 github: "jenkinsci/kubernetes-ci-plugin"
+issues:
+- jira: '21629' # kubernetes-ci-plugin
 paths:
 - "com/elasticbox/jenkins-ci/plugins/kubernetes-ci"
 developers:

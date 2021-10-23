@@ -1,5 +1,6 @@
 ---
 name: "rocketchatnotifier"
+github: jenkinsci/rocketchatnotifier-plugin
 paths:
 - "org/jenkins-ci/plugins/rocketchatnotifier"
 developers:

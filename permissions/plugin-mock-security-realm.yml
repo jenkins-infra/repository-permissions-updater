@@ -1,9 +1,13 @@
 ---
 name: "mock-security-realm"
 github: "jenkinsci/mock-security-realm-plugin"
+issues:
+- jira: '17121' # mock-security-realm-plugin
 paths:
 - "org/jenkins-ci/plugins/mock-security-realm"
 developers:
 - "jglick"
-- "stephenconnolly"
 - "rarabaolaza"
+security:
+  contacts:
+    jira: "foundation_security_members"

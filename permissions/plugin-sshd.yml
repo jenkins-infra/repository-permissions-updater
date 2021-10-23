@@ -1,8 +1,14 @@
 ---
 name: "sshd"
-github: "jenkinsci/sshd-module"
+github: "jenkinsci/sshd-plugin"
 paths:
 - "org/jenkins-ci/modules/sshd"
-developers: 
+developers:
+- "danielbeck"
+- "ifernandezcalvo"
+- "jvz"
 - "oleg_nenashev"
-- "kohsuke"
+- "timja"
+security:
+  contacts:
+    jira: "foundation_security_members"

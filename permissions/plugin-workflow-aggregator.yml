@@ -1,6 +1,8 @@
 ---
 name: "workflow-aggregator"
 github: "jenkinsci/workflow-aggregator-plugin"
+issues:
+- jira: '21710' # workflow-aggregator-plugin
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-aggregator"
 developers:

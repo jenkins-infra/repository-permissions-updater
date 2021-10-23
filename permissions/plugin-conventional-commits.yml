@@ -1,0 +1,16 @@
+---
+name: "conventional-commits"
+github: &GH "jenkinsci/conventional-commits-plugin"
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/conventional-commits"
+developers:
+- "garethjevans"
+- "olblak"
+- "kwhetstone"
+- "kuro"
+- "allan_burdajewicz"
+- "wildagsx"
+issues:
+  - github: *GH

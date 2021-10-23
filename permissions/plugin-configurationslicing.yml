@@ -1,6 +1,9 @@
 ---
 name: "configurationslicing"
-github: "jenkinsci/configurationslicing-plugin"
+github: &gh "jenkinsci/configurationslicing-plugin"
+issues:
+- jira: '15597' # configurationslicing-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/configurationslicing"
 - "org/jvnet/hudson/plugins/configurationslicing"

@@ -1,6 +1,8 @@
 ---
 name: "logentries"
 github: "jenkinsci/logentries-plugin"
+issues:
+- jira: '18032' # logentries-plugin
 paths:
 - "org/jenkins-ci/plugins/logentries"
 developers: []

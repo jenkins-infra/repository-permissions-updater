@@ -1,6 +1,8 @@
 ---
 name: "suppress-stack-trace"
 github: "jenkinsci/suppress-stack-trace-plugin"
+issues:
+- jira: '17630' # suppress-stack-trace-plugin
 paths:
 - "org/jenkins-ci/plugins/suppress-stack-trace"
 developers:

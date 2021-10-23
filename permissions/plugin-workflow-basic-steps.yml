@@ -1,6 +1,8 @@
 ---
 name: "workflow-basic-steps"
 github: "jenkinsci/workflow-basic-steps-plugin"
+issues:
+- jira: '21712' # workflow-basic-steps-plugin
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-basic-steps"
 developers:

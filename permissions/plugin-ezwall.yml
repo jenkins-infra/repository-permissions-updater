@@ -1,6 +1,8 @@
 ---
 name: "ezwall"
 github: "jenkinsci/ezwall-plugin"
+issues:
+- jira: '17519' # ezwall-plugin
 paths:
 - "org/jenkins-ci/plugins/ezwall"
 developers: []

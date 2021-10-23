@@ -1,6 +1,8 @@
 ---
 name: "hall-jenkins"
 github: "jenkinsci/hall-plugin"
+issues:
+- jira: '18050' # hall-jenkins
 paths:
 - "com/companyline/hall/jenkins/hall-jenkins"
 developers: []

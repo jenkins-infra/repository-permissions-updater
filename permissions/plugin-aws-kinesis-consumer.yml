@@ -1,0 +1,13 @@
+---
+name: "aws-kinesis-consumer"
+github: &GH "jenkinsci/aws-kinesis-consumer-plugin"
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/aws-kinesis-consumer"
+developers:
+- "ponch"
+- "syntonyze"
+- "lucamilanesio"
+issues:
+  - jira: 28634

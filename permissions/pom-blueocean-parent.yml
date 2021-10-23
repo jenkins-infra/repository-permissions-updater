@@ -6,7 +6,6 @@ paths:
 developers:
 - "michaelneale"
 - "vivek"
-- "tfennelly"
 - "kzantow"
 - "davidbees"
 - "richbg"
@@ -16,7 +15,6 @@ developers:
 - "kshultz"
 - "bitwiseman"
 - "olamy"
-- "halkeye"
 - "tscherler"
 security:
   contacts:

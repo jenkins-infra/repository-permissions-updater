@@ -1,6 +1,8 @@
 ---
 name: "avatar"
 github: "jenkinsci/avatar-plugin"
+issues:
+- jira: '15959' # avatar-plugin
 paths:
 - "net/hurstfrost/jenkins/avatar"
 developers: []

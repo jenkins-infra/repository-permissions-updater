@@ -1,0 +1,9 @@
+---
+name: "jwt-auth"
+github: &GH "jenkinsci/jwt-auth-plugin"
+paths:
+- "io/jenkins/plugins/jwt-auth"
+developers:
+- "dnuevo"
+issues:
+  - github: *GH
