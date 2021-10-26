@@ -10,3 +10,5 @@ developers:
 - "pingunaut"
 - "markewaite"
 - "darinpope"
+cd:
+  enabled: true
