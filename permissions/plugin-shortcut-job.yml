@@ -1,0 +1,9 @@
+---
+name: "shortcut-job"
+github: &GH "jenkinsci/shortcut-job-plugin"
+paths:
+- "io/jenkins/plugins/shortcut-job"
+developers:
+- "mlasevich"
+issues:
+  - github: *GH
