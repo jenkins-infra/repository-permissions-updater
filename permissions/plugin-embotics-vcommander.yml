@@ -3,6 +3,4 @@ name: "embotics-vcommander"
 paths:
 - "io/jenkins/plugins/embotics-vcommander"
 developers:
-- "aelliotatemboticsdotcom"
-- "embotics"
-- "builderatemboticsdotcom"
+- "commanderjenkinsplugin"
