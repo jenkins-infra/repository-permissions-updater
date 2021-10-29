@@ -11,6 +11,7 @@ cd:
 developers:
 - "andresrc"
 - "vlatombe"
+- "company-cloudbees-developers"
 security:
   contacts:
     jira: "modern_platforms_security_members"
