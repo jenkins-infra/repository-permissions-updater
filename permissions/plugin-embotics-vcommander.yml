@@ -2,5 +2,7 @@
 name: "embotics-vcommander"
 paths:
 - "io/jenkins/plugins/embotics-vcommander"
+cd:
+  enabled: true
 developers:
 - "commanderjenkinsplugin"
