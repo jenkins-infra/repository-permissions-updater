@@ -10,6 +10,10 @@ developers:
 - "vlatombe"
 - "jglick"
 - "jequals5"
+- "amuniz"
+- "kerogers"
+- "aneveux"
+- "ajard"
 security:
   contacts:
     jira: "modern_platforms_security_members"
