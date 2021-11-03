@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/lib/envinject-lib"
 developers:
 - "oleg_nenashev"
+- "jglick"
