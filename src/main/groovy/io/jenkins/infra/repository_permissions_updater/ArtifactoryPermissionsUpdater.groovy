@@ -6,6 +6,7 @@ import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import io.jenkins.lib.support_log_formatter.SupportLogFormatter
 import org.yaml.snakeyaml.Yaml
+import org.yaml.snakeyaml.error.YAMLException;
 import org.yaml.snakeyaml.constructor.Constructor
 
 import java.util.concurrent.TimeUnit
@@ -54,8 +55,14 @@ class ArtifactoryPermissionsUpdater {
 
         teamsDir.eachFile { teamFile ->
             try {
-                   teams.add(yaml.loadAs(new FileReader(teamFile), TeamDefinition.class))
-            } catch (Exception e) {
+                TeamDefinition newTeam = yaml.loadAs(new FileReader(teamFile), TeamDefinition.class)
+                teams.add(newTeam)
+
+                String expectedName = "team-${newTeam.name}.yml"
+                if(teamFile.name != expectedName ) {
+                    throw new Exception("team file should be named $expectedName instead of the current ${teamFile.name}")
+                }
+            } catch (YAMLException e) {
                 throw new IOException("Failed to read ${teamFile.name}", e)
             }
         }
