@@ -58,7 +58,7 @@ class ArtifactoryPermissionsUpdater {
                 TeamDefinition newTeam = yaml.loadAs(new FileReader(teamFile), TeamDefinition.class)
                 teams.add(newTeam)
 
-                String expectedName = "team-${newTeam.name}.yml"
+                String expectedName = "${newTeam.name}.yml"
                 if(teamFile.name != expectedName ) {
                     throw new Exception("team file should be named $expectedName instead of the current ${teamFile.name}")
                 }
