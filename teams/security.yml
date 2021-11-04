@@ -1,5 +1,5 @@
 ---
-name: "security" # using a different name than the file just to show this is the value that is used in the other files
+name: "security"
 developers:
 - "danielbeck"
 - "wfollonier"
