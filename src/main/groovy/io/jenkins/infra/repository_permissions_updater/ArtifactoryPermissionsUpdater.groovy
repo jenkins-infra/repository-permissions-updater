@@ -82,10 +82,10 @@ class ArtifactoryPermissionsUpdater {
                 String teamName = developerName.substring(1)
                 Set teamDevs = teamsByName.get(teamName)?.developers
                 if (teamDevs == null ) {
-                    throw new Exception("Team $developerName not found!")
+                    throw new Exception("Team $teamName not found!")
                 }
                 if (teamDevs.isEmpty()) {
-                    throw new Exception("Team $developerName is empty?!")
+                    throw new Exception("Team $teamName is empty?!")
                 }
                 LOGGER.log(Level.INFO, "[$definition.name]: replacing $developerName with $teamDevs")
                 expandedDevelopers.addAll(teamDevs.toArray())
