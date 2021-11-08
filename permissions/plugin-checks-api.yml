@@ -12,6 +12,6 @@ developers:
 - "drulli"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"
 cd:
   enabled: true
