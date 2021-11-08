@@ -13,4 +13,4 @@ developers:
 - "vlatombe"
 security:
   contacts:
-    jira: "modern_platforms_security_members"
+    jira: "cloudbees_security_members"
