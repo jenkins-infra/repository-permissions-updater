@@ -6,9 +6,7 @@ issues:
 paths:
 - "io/jenkins/plugins/okhttp-api"
 developers:
-- "bitwiseman"
-- "carroll"
-- "dnusbaum"
+- "@cloudbees-developers"
 - "kshultz"
 - "oleg_nenashev"
 security:

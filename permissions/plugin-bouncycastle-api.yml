@@ -7,8 +7,7 @@ paths:
 - "org/jenkins-ci/plugins/bouncycastle-api"
 developers:
 - "alobato"
-- "danielbeck"
 - "dnusbaum"
 - "jthompson"
-- "wfollonier"
 - "teilo"
+- "@security"
