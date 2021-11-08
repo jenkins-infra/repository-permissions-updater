@@ -10,7 +10,7 @@ developers:
 - "csanchez"
 - "oleg_nenashev"
 - "ifernandezcalvo"
-- "company-cloudbees-developers"
+- "@company-cloudbees-developers"
 security:
   contacts:
     jira: "modern_platforms_security_members"
