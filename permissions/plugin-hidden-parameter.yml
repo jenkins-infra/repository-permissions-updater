@@ -7,3 +7,4 @@ paths:
 - "org/jenkins-ci/plugins/hidden-parameter"
 developers:
 - "yangli"
+- "madsjakobsen"
