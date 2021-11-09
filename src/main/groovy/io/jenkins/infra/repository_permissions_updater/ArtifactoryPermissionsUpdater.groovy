@@ -6,6 +6,7 @@ import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import io.jenkins.lib.support_log_formatter.SupportLogFormatter
 import org.yaml.snakeyaml.Yaml
+import org.yaml.snakeyaml.error.YAMLException;
 import org.yaml.snakeyaml.constructor.Constructor
 
 import java.util.concurrent.TimeUnit
@@ -43,6 +44,66 @@ class ArtifactoryPermissionsUpdater {
     private static final boolean DEVELOPMENT = Boolean.getBoolean('development')
 
     /**
+     * Loads all teams from the teams/ folder.
+     * Always returns non null.
+     */
+    private static Map<String, Set<TeamDefinition>>  loadTeams() {
+        Yaml yaml = new Yaml(new Constructor(TeamDefinition.class))
+        File teamsDir = new File('teams/')
+
+        Set<TeamDefinition> teams = [] as Set
+
+        teamsDir.eachFile { teamFile ->
+            try {
+                TeamDefinition newTeam = yaml.loadAs(new FileReader(teamFile), TeamDefinition.class)
+                teams.add(newTeam)
+
+                String expectedName = "${newTeam.name}.yml"
+                if(teamFile.name != expectedName ) {
+                    throw new Exception("team file should be named $expectedName instead of the current ${teamFile.name}")
+                }
+            } catch (YAMLException e) {
+                throw new IOException("Failed to read ${teamFile.name}", e)
+            }
+        }
+        Map<String, Set<TeamDefinition>> result = [:]
+        // TODO: lamba-ify more the conversion
+        teams.each { team ->
+            result.put(team.name, team)
+        }
+        return result
+
+    }
+
+    /**
+     * Checks if any developer has its name starting with `@`.
+     * In which case, for `@some-team` it will replace it with the developers
+     * listed for the team whose name equals `some-team` under the teams/ directory.
+     */
+    private static void expandTeams(Definition definition, Map<String, Set<TeamDefinition>> teamsByName) {
+        Set<String> developers = definition.developers
+        Set<String> expandedDevelopers = [] as Set
+
+        developers.each { developerName ->
+            if (developerName.startsWith('@')) {
+                String teamName = developerName.substring(1)
+                Set teamDevs = teamsByName.get(teamName)?.developers
+                if (teamDevs == null ) {
+                    throw new Exception("Team $teamName not found!")
+                }
+                if (teamDevs.isEmpty()) {
+                    throw new Exception("Team $teamName is empty?!")
+                }
+                LOGGER.log(Level.INFO, "[$definition.name]: replacing $developerName with $teamDevs")
+                expandedDevelopers.addAll(teamDevs.toArray())
+            } else {
+                expandedDevelopers.add(developerName)
+            }
+        }
+        definition.developers = expandedDevelopers
+    }
+
+    /**
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
      */
     private static void generateApiPayloads(File yamlSourceDirectory, File apiOutputDir) throws IOException {
@@ -55,6 +116,8 @@ class ArtifactoryPermissionsUpdater {
         if (apiOutputDir.exists()) {
             throw new IOException(apiOutputDir.path + " already exists")
         }
+
+        Map<String, Set<TeamDefinition>> teamsByName = loadTeams()
 
         Map<String, Set<String>> pathsByGithub = new TreeMap()
         Map<String, List> issueTrackersByPlugin = new TreeMap()
@@ -70,6 +133,9 @@ class ArtifactoryPermissionsUpdater {
 
             try {
                 definition = yaml.loadAs(new FileReader(file), Definition.class)
+
+                expandTeams(definition, teamsByName)
+
             } catch (Exception e) {
                 throw new IOException("Failed to read ${file.name}", e)
             }

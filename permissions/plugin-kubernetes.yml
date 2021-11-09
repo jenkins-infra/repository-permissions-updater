@@ -11,6 +11,10 @@ developers:
 - "jglick"
 - "jequals5"
 - "@company-cloudbees-developers"
+- "amuniz"
+- "kerogers"
+- "aneveux"
+- "ajard"
 security:
   contacts:
-    jira: "modern_platforms_security_members"
+    jira: "cloudbees_security_members"

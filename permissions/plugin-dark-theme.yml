@@ -5,6 +5,8 @@ issues:
 - github: *gh
 paths:
 - "io/jenkins/plugins/dark-theme"
+cd:
+  enabled: true
 developers:
 - "timja"
 - "oleg_nenashev"

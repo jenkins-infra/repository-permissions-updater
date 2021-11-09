@@ -15,4 +15,4 @@ developers:
 - "surya548"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"
