@@ -1,6 +1,8 @@
 ---
 name: "ca-apm-core"
 github: "jenkinsci/ca-apm-plugin"
+issues:
+- jira: '21424' # ca-apm-plugin
 paths:
 - "org/jenkins-ci/plugins/ca-apm/ca-apm-core"
 developers:

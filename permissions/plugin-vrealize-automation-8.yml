@@ -1,6 +1,8 @@
 ---
 name: "vrealize-automation-8"
 github: "jenkinsci/vrealize-automation-8-plugin"
+issues:
+- jira: '28025' # vrealize-automation-8-plugin
 paths:
 - "io/jenkins/plugins/vrealize-automation-8"
 developers:

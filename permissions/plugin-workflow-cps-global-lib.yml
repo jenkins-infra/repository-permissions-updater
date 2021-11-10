@@ -1,6 +1,8 @@
 ---
 name: "workflow-cps-global-lib"
 github: "jenkinsci/workflow-cps-global-lib-plugin"
+issues:
+- jira: '21714' # workflow-cps-global-lib-plugin
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-cps-global-lib"
 developers:
@@ -16,4 +18,6 @@ developers:
 - "jtaboada"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

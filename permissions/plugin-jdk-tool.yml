@@ -1,6 +1,8 @@
 ---
 name: "jdk-tool"
 github: "jenkinsci/jdk-tool-plugin"
+issues:
+- jira: '23529' # jdk-tool-plugin
 paths:
 - "org/jenkins-ci/plugins/jdk-tool"
 developers:
@@ -11,4 +13,4 @@ developers:
 - "mramonleon"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

@@ -1,11 +1,13 @@
 ---
 name: "cobertura"
-github: "jenkinsci/cobertura-plugin"
+github: &gh "jenkinsci/cobertura-plugin"
+issues:
+- jira: '15500' # cobertura-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/cobertura"
 - "org/jvnet/hudson/plugins/cobertura"
 developers:
-- "drulli"
 - "olivergondza"
 - "tamini"
 - "mbarrien"

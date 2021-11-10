@@ -1,5 +1,8 @@
 ---
 name: "maven-deployment-linker"
+github: jenkinsci/maven-deployment-linker-plugin
+issues:
+- jira: '15755' # maven-deployment-linker-plugin
 paths:
 - "org/jvnet/hudson/plugins/maven-deployment-linker"
 developers: []

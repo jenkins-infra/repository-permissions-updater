@@ -1,6 +1,8 @@
 ---
 name: "logback-nats-appender"
 github: "jenkinsci/logback-nats-appender-plugin"
+issues:
+- jira: '23550' # logback-nats-appender-plugin
 paths:
 - "org/jenkins-ci/plugins/logback-nats-appender"
 developers:

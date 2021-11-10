@@ -1,6 +1,8 @@
 ---
 name: "compuware-scm-downloader"
 github: "jenkinsci/compuware-scm-downloader-plugin"
+issues:
+- jira: '21125' # compuware-scm-downloader-plugin
 paths:
 - "com/compuware/jenkins/compuware-scm-downloader"
 developers:

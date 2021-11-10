@@ -1,6 +1,9 @@
 ---
 name: "python-wrapper"
-github: "jenkinsci/jenkins.py"
+github: &gh "jenkinsci/jenkins.py"
+issues:
+- github: *gh
+- jira: '18739' # python-wrapper-plugin
 paths:
 - "org/jenkins-ci/plugins/python-wrapper"
 developers:

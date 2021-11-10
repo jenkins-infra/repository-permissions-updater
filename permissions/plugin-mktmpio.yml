@@ -1,6 +1,8 @@
 ---
 name: "mktmpio"
 github: "jenkinsci/mktmpio-plugin"
+issues:
+- jira: '20722' # mktmpio-plugin
 paths:
 - "org/jenkins-ci/plugins/mktmpio"
 developers:

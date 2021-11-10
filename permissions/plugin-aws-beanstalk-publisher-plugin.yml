@@ -1,6 +1,9 @@
 ---
 name: "aws-beanstalk-publisher-plugin"
-github: "jenkinsci/aws-beanstalk-publisher-plugin"
+github: &gh "jenkinsci/aws-beanstalk-publisher-plugin"
+issues:
+- github: *gh
+- jira: '19525' # aws-beanstalk-publisher-plugin
 paths:
 - "org/jenkins-ci/plugins/aws-beanstalk-publisher-plugin"
 developers:

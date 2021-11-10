@@ -1,6 +1,8 @@
 ---
 name: "compress-buildlog"
 github: "jenkinsci/compress-buildlog-plugin"
+issues:
+- jira: '20220' # compress-build-log-plugin
 paths:
 - "org/jenkins-ci/plugins/compress-buildlog"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "windocks-start-container"
 github: "jenkinsci/windocks-start-container-plugin"
+issues:
+- jira: '21934' # windocks-start-container-plugin
 paths:
 - "org/jenkins-ci/plugins/windocks-start-container"
 developers:

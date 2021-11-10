@@ -1,10 +1,12 @@
 ---
 name: "forensics-api"
 github: "jenkinsci/forensics-api-plugin"
+issues:
+- jira: '25439' # forensics-api-plugin
 paths:
 - "io/jenkins/plugins/forensics-api"
 developers:
 - "drulli"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

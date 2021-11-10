@@ -1,6 +1,8 @@
 ---
 name: "packageversion"
 github: "jenkinsci/packageversion-plugin"
+issues:
+- jira: '21976' # packageversion-plugin
 paths:
 - "org/lilicurroad/jenkins/packageversion"
 developers:

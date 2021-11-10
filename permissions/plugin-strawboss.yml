@@ -1,6 +1,8 @@
 ---
 name: "strawboss"
 github: "jenkinsci/strawboss-plugin"
+issues:
+- jira: '17505' # strawboss-plugin
 paths:
 - "org/jenkins-ci/plugins/strawboss"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "screenrecorder"                                                                                                                                                                                             
 github: "jenkinsci/screenrecorder-plugin"
+issues:
+- jira: '27228' # screenrecorder-plugin
 paths:
 - "io/jenkins/plugins/screenrecorder"
 developers:

@@ -1,7 +1,11 @@
 ---
 name: "disable-github-multibranch-status"
 github: "jenkinsci/disable-github-multibranch-status-plugin"
+issues:
+- jira: '23124' # disable-github-multibranch-status-plugin
 paths:
 - "org/jenkins-ci/plugins/disable-github-multibranch-status"
 developers:
 - "bksaville"
+cd:
+  enabled: true

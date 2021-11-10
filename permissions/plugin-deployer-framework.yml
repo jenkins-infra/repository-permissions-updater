@@ -1,10 +1,11 @@
 ---
 name: "deployer-framework"
 github: "jenkinsci/deployer-framework-plugin"
+issues:
+- jira: '19821' # deployer-framework-plugin
 paths:
 - "org/jenkins-ci/plugins/deployer-framework"
 developers:
-- "stephenconnolly"
 - "jvz"
 - "alecharp"
 - "batmat"
@@ -14,4 +15,4 @@ developers:
 - "rsandell"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

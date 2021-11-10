@@ -1,6 +1,8 @@
 ---
 name: "configuration-as-code-groovy"
 github: "jenkinsci/configuration-as-code-groovy-plugin"
+issues:
+- jira: '24922' # configuration-as-code-groovy-plugin
 paths:
 - "io/jenkins/plugins/configuration-as-code-groovy"
 developers:

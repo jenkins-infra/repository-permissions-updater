@@ -1,6 +1,9 @@
 ---
 name: "pipeline-as-yaml"
-github: "jenkinsci/pipeline-as-yaml-plugin"
+github: &gh "jenkinsci/pipeline-as-yaml-plugin"
+issues:
+- github: *gh
+- jira: '27230' # pipeline-as-yaml-plugin
 paths:
 - "io/jenkins/plugins/pipeline-as-yaml"
 developers:

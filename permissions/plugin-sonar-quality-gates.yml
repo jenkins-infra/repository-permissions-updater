@@ -1,6 +1,8 @@
 ---
 name: "sonar-quality-gates"
 github: "jenkinsci/sonar-quality-gates-plugin"
+issues:
+- jira: '22523' # sonar-quality-gates-plugin
 paths:
 - "org/jenkins-ci/plugins/sonar-quality-gates"
 developers:

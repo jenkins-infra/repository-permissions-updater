@@ -1,6 +1,8 @@
 ---
 name: "pureload"
 github: "jenkinsci/pureload-plugin"
+issues:
+- jira: '24657' # pureload-plugin
 paths:
 - "org/jenkins-ci/plugins/pureload"
 developers:

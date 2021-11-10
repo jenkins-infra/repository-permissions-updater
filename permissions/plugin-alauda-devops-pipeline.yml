@@ -1,6 +1,8 @@
 ---
 name: "alauda-devops-pipeline"
 github: "jenkinsci/alauda-devops-pipeline-plugin"
+issues:
+- jira: '24124' # alauda-devops-pipeline-plugin
 paths:
 - "com/alauda/jenkins/plugins/alauda-devops-pipeline"
 developers:

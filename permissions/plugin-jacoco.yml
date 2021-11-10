@@ -1,6 +1,8 @@
 ---
 name: "jacoco"
 github: "jenkinsci/jacoco-plugin"
+issues:
+- jira: '16541' # jacoco-plugin
 paths:
 - "org/jenkins-ci/plugins/jacoco"
 developers:
@@ -8,4 +10,4 @@ developers:
 - "ognjenb"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

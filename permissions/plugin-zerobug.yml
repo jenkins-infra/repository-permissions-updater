@@ -1,6 +1,8 @@
 ---
 name: "zerobug"
 github: "jenkinsci/zerobug-plugin"
+issues:
+- jira: '27526' # zerobug-plugin
 paths:
 - "io/jenkins/plugins/zerobug"
 developers:

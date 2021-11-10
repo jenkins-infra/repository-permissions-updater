@@ -1,6 +1,9 @@
 ---
 name: "concurrent-step"
-github: "jenkinsci/concurrent-step-plugin"
+github: &gh "jenkinsci/concurrent-step-plugin"
+issues:
+- github: *gh
+- jira: '26322' # concurrent-step-plugin
 paths:
 - "io/jenkins/plugins/concurrent-step"
 developers:

@@ -1,9 +1,11 @@
 ---
 name: "dimensionsscm"
 github: "jenkinsci/dimensionsscm-plugin"
+issues:
+- jira: '15971' # dimensionsscm-plugin
 paths:
 - "hudson/plugins/dimensionsscm"
 - "org/jenkins-ci/plugins/dimensionsscm"
 developers:
 - "dconneely"
-- "tpayne"
+- "praymond"

@@ -1,6 +1,8 @@
 ---
 name: "violation-comments-to-stash"
-github: "jenkinsci/violation-comments-to-stash-plugin"
+github: &gh "jenkinsci/violation-comments-to-stash-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/violation-comments-to-stash"
 developers:

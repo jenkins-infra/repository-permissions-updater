@@ -1,6 +1,8 @@
 ---
 name: "git-tag-message"
 github: "jenkinsci/git-tag-message-plugin"
+issues:
+- jira: '20027' # git-tag-message-plugin
 paths:
 - "org/jenkins-ci/plugins/git-tag-message"
 developers:

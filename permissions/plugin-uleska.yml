@@ -1,6 +1,8 @@
 ---
 name: "uleska"
 github: "jenkinsci/uleska-plugin"
+issues:
+- jira: '27533' # uleska-plugin
 paths:
   - "io/jenkins/plugins/uleska"
 developers:

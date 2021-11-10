@@ -1,6 +1,8 @@
 ---
 name: "versionnumber"
 github: "jenkinsci/versionnumber-plugin"
+issues:
+- jira: '16037' # versionnumber-plugin
 paths:
 - "org/jvnet/hudson/tools/versionnumber"
 developers:

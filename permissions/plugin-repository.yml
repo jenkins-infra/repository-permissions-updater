@@ -1,6 +1,10 @@
 ---
 name: "repository"
+github: "jenkinsci/maven-repository-plugin"
+issues:
+- jira: "maven-repository-plugin"
 paths:
 - "jenkins/repository"
 developers:
+- "basil"
 - "magnayn"

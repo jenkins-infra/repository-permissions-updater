@@ -1,6 +1,8 @@
 ---
 name: "console-badge"
 github: "jenkinsci/console-badge-plugin"
+issues:
+- jira: '21679' # console-badge-plugin
 paths:
 - "me/noroutine/jenkins/plugin/console-badge"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "favorite"
 github: "jenkinsci/favorite-plugin"
+issues:
+- jira: '15752' # favorite-plugin
 paths:
 - "org/jvnet/hudson/plugins/favorite"
 developers:
@@ -14,3 +16,6 @@ developers:
 - "rsandell"
 - "bitwiseman"
 - "kshultz"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

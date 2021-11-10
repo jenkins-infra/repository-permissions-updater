@@ -1,6 +1,8 @@
 ---
 name: "PrioritySorter"
 github: "jenkinsci/priority-sorter-plugin"
+issues:
+- jira: '15771' # prioritysorter-plugin
 paths:
 - "hudson/queueSorter/PrioritySorter"
 - "org/jenkins-ci/plugins/PrioritySorter"

@@ -1,6 +1,8 @@
 ---
 name: "TestFairy"
 github: "jenkinsci/testfairy-plugin"
+issues:
+- jira: '18830' # testfairy-plugin
 paths:
 - "org/jenkins-ci/plugins/TestFairy"
 developers:

@@ -1,6 +1,9 @@
 ---
 name: "rrod"
-github: "jenkinsci/rrod-plugin"
+github: &gh "jenkinsci/rrod-plugin"
+issues:
+- jira: '15974' # rrod-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/rrod"
 developers: []

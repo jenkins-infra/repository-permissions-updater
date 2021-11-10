@@ -1,6 +1,8 @@
 --- 
 name: "unik-builder"
 github: "jenkinsci/unik-builder-plugin"
+issues:
+- jira: '26021' # unik-builder-plugin
 paths:
 - "io/jenkins/plugins/unik-builder"
 developers:

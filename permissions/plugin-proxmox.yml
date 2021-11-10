@@ -1,6 +1,9 @@
 ---
 name: "proxmox"
-github: "jenkinsci/proxmox-plugin"
+github: &gh "jenkinsci/proxmox-plugin"
+issues:
+- github: *gh
+- jira: '18052' # proxmox-plugin
 paths:
 - "org/jenkins-ci/plugins/proxmox"
 developers:

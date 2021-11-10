@@ -1,6 +1,9 @@
 ---
 name: "jenkins-multijob-plugin"
-github: "jenkinsci/tikal-multijob-plugin"
+github: &gh "jenkinsci/tikal-multijob-plugin"
+issues:
+- jira: '16545' # multijob-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/jenkins-multijob-plugin"
 developers:

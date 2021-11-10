@@ -1,6 +1,8 @@
 ---
 name: "elasticbox"
 github: "jenkinsci/elasticbox-plugin"
+issues:
+- jira: '19022' # elasticbox-plugin
 paths:
 - "com/elasticbox/jenkins-ci/plugins/elasticbox"
 - "org/jenkins-ci/plugins/elasticbox"

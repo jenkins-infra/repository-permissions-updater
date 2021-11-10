@@ -1,6 +1,9 @@
 ---
 name: "ruby-runtime"
-github: "jenkinsci/jenkins.rb"
+github: &gh "jenkinsci/jenkins.rb"
+issues:
+- github: *gh
+- jira: '16320' # ruby-runtime-plugin
 paths:
 - "org/jenkins-ci/plugins/ruby-runtime"
 developers:

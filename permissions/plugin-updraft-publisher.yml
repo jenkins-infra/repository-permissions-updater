@@ -1,6 +1,8 @@
 ---
 name: "updraft-publisher"
 github: "jenkinsci/updraft-publisher-plugin"
+issues:
+- jira: '26721' # updraft-publisher-plugin
 paths:
 - "com/appswithlove/updraft/updraft-publisher"
 developers:

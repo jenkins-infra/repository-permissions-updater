@@ -1,8 +1,11 @@
 ---
 name: "digitalocean-plugin"
 github: "jenkinsci/digitalocean-plugin"
+issues:
+- jira: '18831' # digitalocean-plugin
 paths:
 - "com/dubture/jenkins/digitalocean-plugin"
 developers:
+- "halkeye"
 - "anpieber"
 - "pulse00"

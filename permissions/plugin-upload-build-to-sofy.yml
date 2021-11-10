@@ -1,0 +1,11 @@
+---
+name: "upload-build-to-sofy"
+github: &GH "jenkinsci/upload-build-to-sofy-plugin"
+paths:
+- "io/jenkins/plugins/upload-build-to-sofy"
+developers:
+- "sofydevelopers"
+cd:
+  enabled: true
+issues:
+  - jira: 28721

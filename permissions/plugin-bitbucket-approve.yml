@@ -1,6 +1,8 @@
 ---
 name: "bitbucket-approve"
 github: "jenkinsci/bitbucket-approve-plugin"
+issues:
+- jira: '20024' # bitbucket-approve-plugin
 paths:
 - "org/jenkins-ci/plugins/bitbucket-approve"
 developers:

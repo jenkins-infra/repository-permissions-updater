@@ -1,6 +1,8 @@
 ---
 name: "qualys-vm"
 github: "jenkinsci/qualys-vm-plugin"
+issues:
+- jira: '26420' # qualys-vm-plugin
 paths:
 - "com/qualys/plugins/qualys-vm"
 developers:

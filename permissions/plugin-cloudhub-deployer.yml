@@ -1,6 +1,8 @@
 ---
 name: "cloudhub-deployer"
 github: "jenkinsci/cloudhub-deployer-plugin"
+issues:
+- jira: '27424' # cloudhub-deployer-plugin
 paths:
 - "io/jenkins/plugins/cloudhub-deployer"
 developers:

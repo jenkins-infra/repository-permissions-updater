@@ -1,6 +1,8 @@
 ---
 name: "material-theme"
-github: "jenkinsci/material-theme-plugin"
+github: &gh "jenkinsci/material-theme-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/material-theme"
 developers:

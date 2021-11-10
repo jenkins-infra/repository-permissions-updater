@@ -1,6 +1,8 @@
 ---
 name: "environment-filter-utils"
 github: "jenkinsci/environment-filter-utils-plugin"
+issues:
+- jira: '27528' # environment-filter-utils-plugin
 paths:
   - "io/jenkins/plugins/environment-filter-utils"
 developers:

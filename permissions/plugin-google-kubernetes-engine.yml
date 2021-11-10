@@ -1,6 +1,9 @@
 ---
 name: "google-kubernetes-engine"
-github: "jenkinsci/google-kubernetes-engine-plugin"
+github: &gh "jenkinsci/google-kubernetes-engine-plugin"
+issues:
+- github: *gh
+- jira: '24658' # google-kubernetes-engine-plugin
 paths:
 - "org/jenkins-ci/plugins/google-kubernetes-engine"
 developers:
@@ -12,4 +15,4 @@ developers:
 - "vishalapatel"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

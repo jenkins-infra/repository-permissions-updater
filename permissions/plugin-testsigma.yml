@@ -1,5 +1,7 @@
 name: "testsigma"
 github: "jenkinsci/testsigma-plugin"
+issues:
+- jira: '27426' # testsigma-plugin
 paths:
 - "io/jenkins/plugins/testsigma"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "GatekeeperPlugin"
-github: "jenkinsci/gatekeeper-plugin"
+github: &gh "jenkinsci/gatekeeper-plugin"
+issues:
+- github: *gh
 paths:
 - "org/paylogic/GatekeeperPlugin"
 developers:

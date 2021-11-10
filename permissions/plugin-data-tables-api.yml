@@ -1,10 +1,12 @@
 ---
 name: "data-tables-api"
 github: "jenkinsci/data-tables-api-plugin"
+issues:
+- jira: '26333' # data-tables-api-plugin
 paths:
 - "io/jenkins/plugins/data-tables-api"
 developers:
 - "drulli"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

@@ -1,8 +1,12 @@
 ---
 name: "junit-sql-storage"
-github: "jenkinsci/junit-sql-storage-plugin"
+github: &gh "jenkinsci/junit-sql-storage-plugin"
+issues:
+- github: *gh
+- jira: '28020' # junit-sql-storage-plugin
 paths:
 - "io/jenkins/plugins/junit-sql-storage"
 developers:
 - "timja"
-
+cd:
+  enabled: true

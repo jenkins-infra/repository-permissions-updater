@@ -1,6 +1,8 @@
 ---
 name: "countjobs-viewstabbar"
 github: "jenkinsci/countjobs-viewstabbar-plugin"
+issues:
+- jira: '17467' # countjobs-viewstabbar-plugin
 paths:
 - "ws/albors/countjobs-viewstabbar"
 developers:

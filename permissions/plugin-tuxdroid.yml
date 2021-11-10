@@ -1,6 +1,8 @@
 ---
 name: "tuxdroid"
 github: "jenkinsci/tuxdroid-plugin"
+issues:
+- jira: '16069' # tuxdroid-plugin
 paths:
 - "org/jvnet/hudson/plugins/tuxdroid"
 developers: []

@@ -1,10 +1,12 @@
 ---
 name: "icon-shim"
-github: "jenkinsci/icon-shim-plugin"
+github: &gh "jenkinsci/icon-shim-plugin"
+issues:
+- jira: '19825' # icon-shim-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/icon-shim/icon-shim"
 developers:
 - "jglick"
-- "tfennelly"
 - "andresrc"
-
+- "timja"

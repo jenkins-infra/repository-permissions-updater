@@ -1,6 +1,8 @@
 ---
 name: "oracle-cloud-infrastructure-compute-classic"
 github: "jenkinsci/oracle-cloud-infrastructure-compute-classic-plugin"
+issues:
+- jira: '23430' # oracle-cloud-infrastructure-compute-classic-plugin
 paths:
 - "org/jenkins-ci/plugins/oracle-cloud-infrastructure-compute-classic"
 developers:

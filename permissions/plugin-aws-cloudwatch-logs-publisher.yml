@@ -1,6 +1,9 @@
 ---
 name: "aws-cloudwatch-logs-publisher"
-github: "jenkinsci/aws-cloudwatch-logs-publisher-plugin"
+github: &gh "jenkinsci/aws-cloudwatch-logs-publisher-plugin"
+issues:
+- github: *gh
+- jira: '21964' # aws-cloudwatch-logs-publisher-plugin
 paths:
 - "org/jenkins-ci/plugins/aws-cloudwatch-logs-publisher"
 developers:

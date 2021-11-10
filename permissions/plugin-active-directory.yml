@@ -1,12 +1,13 @@
 ---
 name: "active-directory"
 github: "jenkinsci/active-directory-plugin"
+issues:
+- jira: '15526' # active-directory-plugin
 paths:
 - "org/jenkins-ci/plugins/active-directory"
 developers:
 - "fbelzunc"
 - "kohsuke"
-- "stephenconnolly"
 - "alecharp"
 - "batmat"
 - "egutierrez"
@@ -15,4 +16,4 @@ developers:
 - "rsandell"
 security:
     contacts:
-      jira: "foundation_security_members"
+      jira: "cloudbees_security_members"

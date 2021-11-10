@@ -1,6 +1,8 @@
 ---
 name: "sametime"
 github: "jenkinsci/sametime-plugin"
+issues:
+- jira: '15574' # sametime-plugin
 paths:
 - "org/jenkins-ci/plugins/sametime"
 developers: []

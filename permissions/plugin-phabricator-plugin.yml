@@ -1,6 +1,8 @@
 ---
 name: "phabricator-plugin"
 github: "jenkinsci/phabricator-plugin"
+issues:
+- jira: '20921' # phabricator-plugin
 paths:
 - "org/jenkins-ci/plugins/phabricator-plugin"
 developers:

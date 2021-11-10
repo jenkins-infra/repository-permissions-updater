@@ -6,7 +6,6 @@ paths:
 developers:
 - "michaelneale"
 - "vivek"
-- "tfennelly"
 - "kzantow"
 - "davidbees"
 - "richbg"
@@ -16,8 +15,7 @@ developers:
 - "kshultz"
 - "bitwiseman"
 - "olamy"
-- "halkeye"
 - "tscherler"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

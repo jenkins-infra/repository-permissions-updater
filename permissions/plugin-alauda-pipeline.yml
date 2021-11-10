@@ -1,5 +1,8 @@
 ---
 name: "alauda-pipeline"
+github: jenkinsci/alauda-pipeline-plugin
+issues:
+- jira: '23726' # alauda-pipeline-plugin
 paths:
 - "io/alauda/jenkins/plugins/alauda-pipeline"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "xtrigger"
 github: "jenkinsci/xtrigger-plugin"
+issues:
+- jira: '15907' # xtrigger-plugin
 paths:
 - "org/jenkins-ci/plugins/xtrigger"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "maven-plugin"
 github: "jenkinsci/maven-plugin"
+issues:
+- jira: '16033' # maven-plugin
 paths:
 - "org/jenkins-ci/main/maven-plugin"
 - "org/jvnet/hudson/main/maven-plugin"
@@ -14,4 +16,4 @@ developers:
 - "jtaboada"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

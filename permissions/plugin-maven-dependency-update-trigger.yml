@@ -1,6 +1,9 @@
 ---
 name: "maven-dependency-update-trigger"
-github: "jenkinsci/maven-dependency-update-trigger-plugin"
+github: &gh "jenkinsci/maven-dependency-update-trigger-plugin"
+issues:
+- jira: '15756' # maven-dependency-update-trigger-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/maven-dependency-update-trigger"
 developers:

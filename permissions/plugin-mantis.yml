@@ -1,6 +1,8 @@
 ---
 name: "mantis"
 github: "jenkinsci/mantis-plugin"
+issues:
+- jira: '15517' # mantis-plugin
 paths:
 - "org/jenkins-ci/plugins/mantis"
 developers:

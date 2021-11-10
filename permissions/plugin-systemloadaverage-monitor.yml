@@ -1,6 +1,8 @@
 ---
 name: "systemloadaverage-monitor"
 github: "jenkinsci/systemloadaverage-monitor-plugin"
+issues:
+- jira: '16065' # systemloadaverage-monitor-plugin
 paths:
 - "org/jvnet/hudson/plugins/systemloadaverage-monitor"
 developers: 

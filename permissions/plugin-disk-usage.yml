@@ -1,6 +1,8 @@
 ---
 name: "disk-usage"
 github: "jenkinsci/disk-usage-plugin"
+issues:
+- jira: '15537' # disk-usage-plugin
 paths:
 - "org/jenkins-ci/plugins/disk-usage"
 - "org/jvnet/hudson/plugins/disk-usage"

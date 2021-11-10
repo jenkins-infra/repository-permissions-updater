@@ -1,6 +1,8 @@
 ---
 name: "slave-status"
 github: "jenkinsci/slave-status-plugin"
+issues:
+- jira: '15981' # slave-status-plugin
 paths:
 - "org/jvnet/hudson/plugins/slave-status"
 developers: []

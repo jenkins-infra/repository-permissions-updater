@@ -1,6 +1,9 @@
 ---
 name: "plasticscm-plugin"
-github: "jenkinsci/plasticscm-plugin"
+github: &gh "jenkinsci/plasticscm-plugin"
+issues:
+- github: *gh
+- jira: '16103' # plasticscm-plugin
 paths:
 - "org/jenkins-ci/plugins/plasticscm-plugin"
 - "org/jvnet/hudson/plugins/plasticscm-plugin"

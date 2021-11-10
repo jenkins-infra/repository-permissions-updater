@@ -1,9 +1,14 @@
 ---
 name: "github-checks"
-github: "jenkinsci/github-checks-plugin"
+github: &gh "jenkinsci/github-checks-plugin"
+issues:
+- github: *gh
+- jira: '27523' # github-checks-plugin
 paths:
 - "io/jenkins/plugins/github-checks"
 developers:
 - "xiongkezhi"
 - "timja"
 - "drulli"
+cd:
+  enabled: true
