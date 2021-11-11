@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/webhook-step"
 developers:
 - "jm_meessen"
+cd:
+  enabled: true
