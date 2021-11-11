@@ -4,6 +4,7 @@ github: "jenkinsci/lib-access-modifier"
 paths:
 - "org/kohsuke/access-modifier-checker"
 developers:
+- "basil"
 - "timja"
 - "oleg_nenashev"
 - "jglick"

@@ -4,6 +4,7 @@ github: "jenkinsci/lib-access-modifier"
 paths:
 - "org/kohsuke/access-modifier-annotation"
 developers:
+- "basil"
 - "timja"
 - "oleg_nenashev"
 - "jglick"
