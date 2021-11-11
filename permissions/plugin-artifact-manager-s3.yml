@@ -9,7 +9,7 @@ developers:
 - "jglick"
 - "csanchez"
 - "oleg_nenashev"
-- "@company-cloudbees-developers"
+- "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"
