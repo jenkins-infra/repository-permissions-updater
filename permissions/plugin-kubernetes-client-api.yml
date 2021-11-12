@@ -14,7 +14,7 @@ developers:
 - "teilo"
 - "agentgonzo"
 - "kylecronin"
-- "@company-cloudbees-developers"
+- "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"

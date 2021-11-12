@@ -6,7 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/mapdb-api"
 developers:
-- "@company-cloudbees-developers"
+- "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"
