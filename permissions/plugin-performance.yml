@@ -8,5 +8,4 @@ paths:
 - "org/jvnet/hudson/plugins/performance"
 developers:
 - "manolo"
-- "undera"
 - "artem_fedorov"
