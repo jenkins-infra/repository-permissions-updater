@@ -7,5 +7,6 @@ paths:
 - "org/jenkins-ci/plugins/teamconcert"
 developers:
 - "lvaikunt"
-- "ssangaiah"
 - "susandip"
+- "davidjwriter"
+- "sbabno"
