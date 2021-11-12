@@ -5,5 +5,6 @@ paths:
 - "io/jenkins/plugins/wetest-automation"
 developers:
 - "wetest3159"
+- "HEZI0427"
 issues:
   - github: *GH
