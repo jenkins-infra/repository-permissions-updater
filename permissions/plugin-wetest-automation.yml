@@ -1,0 +1,9 @@
+---
+name: "wetest-automation"
+github: &GH "jenkinsci/wetest-automation-plugin"
+paths:
+- "io/jenkins/plugins/wetest-automation"
+developers:
+- "wetest3159"
+issues:
+  - github: *GH
