@@ -6,5 +6,8 @@ paths:
 developers:
 - "wetest3159"
 - "HEZI0427"
+- "WeTestQuality"
+cd:
+  enabled: true
 issues:
   - github: *GH
