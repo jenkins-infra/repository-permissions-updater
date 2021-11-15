@@ -7,3 +7,5 @@ developers:
 - "thundraio"
 issues:
   - github: *GH
+cd:
+  enabled: true
