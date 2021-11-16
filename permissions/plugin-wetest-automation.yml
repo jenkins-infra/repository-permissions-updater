@@ -4,10 +4,9 @@ github: &GH "jenkinsci/wetest-automation-plugin"
 paths:
 - "io/jenkins/plugins/wetest-automation"
 developers:
-- "wetest3159"
 - "HEZI0427"
 - "WeTestQuality"
 cd:
-  enabled: true
+  enabled: false
 issues:
   - github: *GH
