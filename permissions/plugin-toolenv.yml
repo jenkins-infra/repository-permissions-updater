@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/toolenv"
 developers:
 - "skundrik"
+cd:
+  enabled: true
