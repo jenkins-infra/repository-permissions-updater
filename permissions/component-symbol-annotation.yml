@@ -1,9 +1,10 @@
 ---
 name: "symbol-annotation"
-github: "jenkinsci/structs-plugin"
+github: "jenkinsci/lib-symbol-annotation"
 paths:
 - "org/jenkins-ci/symbol-annotation"
 developers:
+- "basil"
 - "jglick"
 - "kohsuke"
 - "oleg_nenashev"
