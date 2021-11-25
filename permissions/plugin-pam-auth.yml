@@ -10,3 +10,6 @@ developers:
 - "recena"
 - "jvz"
 - "wfollonier"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
