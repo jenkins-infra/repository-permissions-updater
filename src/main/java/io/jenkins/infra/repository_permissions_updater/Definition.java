@@ -77,7 +77,7 @@ public class Definition {
             if (isJira()) {
                 final String id = loadComponentId(source);
                 if (id != null) {
-                    return "https://issues.jenkins.io/issues/?jql=component=" + id;
+                    return "https://issues.jenkins.io/issues/?jql=resolution is EMPTY and component=" + id;
                 }
                 return null;
             }
