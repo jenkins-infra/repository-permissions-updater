@@ -7,3 +7,5 @@ developers:
 - "theirix"
 issues:
   - github: *GH
+cd:
+  enabled: true
