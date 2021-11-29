@@ -1,6 +1,8 @@
 ---
 name: "github-api"
 github: "jenkinsci/github-api-plugin"
+cd:
+  enabled: true
 issues:
 - jira: '17496' # github-api-plugin
 paths:
@@ -8,6 +10,7 @@ paths:
 developers:
 - "andresrc"
 - "bitwiseman"
+- "carroll"
 - "integer"
 - "kohsuke"
 - "ohtake_tomohiro"
