@@ -7,3 +7,5 @@ developers:
 - "repolevedavaj"
 issues:
   - github: *GH
+cd:
+  enabled: true
