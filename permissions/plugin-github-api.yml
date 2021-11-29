@@ -8,9 +8,9 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/github-api"
 developers:
+- "@cloudbees-developers"
 - "andresrc"
 - "bitwiseman"
-- "carroll"
 - "integer"
 - "kohsuke"
 - "ohtake_tomohiro"
