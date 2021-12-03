@@ -1,0 +1,7 @@
+---
+name: "metadefender"
+github: "jenkinsci/metadefender-plugin"
+paths:
+- "org/jenkins-ci/plugins/metadefender"
+developers:
+- "vlam"
