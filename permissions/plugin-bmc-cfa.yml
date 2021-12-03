@@ -1,0 +1,9 @@
+---
+name: "bmc-cfa"
+github: &GH "jenkinsci/bmc-cfa-plugin"
+paths:
+- "com/bmc/ims/bmc-cfa"
+developers:
+- "mcohen"
+issues:
+  - github: *GH
