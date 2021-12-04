@@ -1,0 +1,11 @@
+---
+name: "thundra-foresight"
+github: &GH "jenkinsci/thundra-foresight-plugin"
+paths:
+- "io/jenkins/plugins/thundra-foresight"
+developers:
+- "thundraio"
+issues:
+  - github: *GH
+cd:
+  enabled: true

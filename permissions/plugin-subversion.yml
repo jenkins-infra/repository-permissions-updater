@@ -7,11 +7,4 @@ paths:
 - "org/jenkins-ci/plugins/subversion"
 - "org/jvnet/hudson/plugins/subversion"
 developers:
-- "jglick"
-- "kutzi"
-- "recena"
-- "schristou"
-- "oleg_nenashev"
-- "ifernandezcalvo"
-- "timja"
-- "thebro"
+- "didiez"

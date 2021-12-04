@@ -1,6 +1,8 @@
 ---
 name: "build-token-root"
 github: "jenkinsci/build-token-root-plugin"
+cd:
+  enabled: true
 issues:
 - jira: '17622' # build-token-root-plugin
 paths:

@@ -4,3 +4,4 @@ paths:
 - "org/jenkins-ci/plugins/autocomplete-parameter"
 developers:
 - "taksan"
+- "takeuchi"

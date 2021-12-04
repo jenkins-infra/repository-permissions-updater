@@ -8,3 +8,7 @@ paths:
 developers:
 - "anderl86"
 - "pingunaut"
+- "markewaite"
+- "darinpope"
+cd:
+  enabled: true

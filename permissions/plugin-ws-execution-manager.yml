@@ -7,3 +7,4 @@ paths:
 - "org/jenkins-ci/plugins/ws-execution-manager"
 developers:
 - "dtheobald"
+- "rrinehart"

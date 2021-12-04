@@ -6,4 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/gitea"
 developers:
-- "stephenconnolly"
+- "lafriks"
+- "justusbunsi"
+cd:
+  enabled: true

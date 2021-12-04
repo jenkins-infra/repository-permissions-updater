@@ -10,3 +10,6 @@ paths:
 developers:
 - "warden"
 - "olamy"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

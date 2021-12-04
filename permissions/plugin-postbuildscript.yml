@@ -8,3 +8,5 @@ paths:
 developers:
 - "gbois"
 - "dheid"
+cd:
+  enabled: true

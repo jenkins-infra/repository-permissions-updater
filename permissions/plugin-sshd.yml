@@ -5,6 +5,10 @@ paths:
 - "org/jenkins-ci/modules/sshd"
 developers:
 - "danielbeck"
+- "ifernandezcalvo"
 - "jvz"
 - "oleg_nenashev"
 - "timja"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

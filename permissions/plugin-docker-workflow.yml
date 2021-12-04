@@ -12,3 +12,6 @@ developers:
 - "svanoort"
 - "dnusbaum"
 - "carroll"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

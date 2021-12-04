@@ -7,3 +7,6 @@ paths:
 - "io/jenkins/plugins/popper-api"
 developers:
 - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

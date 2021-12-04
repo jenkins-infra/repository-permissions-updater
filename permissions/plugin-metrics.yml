@@ -9,7 +9,7 @@ developers:
 - "kohsuke"
 - "sbadger"
 - "alecharp"
-- "mramonleon"
+- "@cloudbees-developers"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

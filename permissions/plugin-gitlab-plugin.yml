@@ -8,6 +8,5 @@ paths:
 - "com/dabsquared/gitlab-plugin"
 - "org/jenkins-ci/plugins/gitlab-plugin"
 developers:
+- "basil"
 - "elbidouilleur" # jenkins.io/jira Username MaximeMazet Github username
-# Not a maintainer, just tables-to-divs fixes
-- "oleg_nenashev"

@@ -7,3 +7,6 @@ paths:
 - "io/jenkins/plugins/plugin-util-api"
 developers:
 - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

@@ -8,4 +8,5 @@ paths:
 - "io/jenkins/plugins/junit-sql-storage"
 developers:
 - "timja"
-
+cd:
+  enabled: true

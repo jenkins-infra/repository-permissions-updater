@@ -5,6 +5,8 @@ issues:
 - jira: '25921' # kubernetes-client-api-plugin
 paths:
 - "org/jenkins-ci/plugins/kubernetes-client-api"
+cd:
+  enabled: true
 developers:
 - "csanchez"
 - "vlatombe"
@@ -12,3 +14,7 @@ developers:
 - "teilo"
 - "agentgonzo"
 - "kylecronin"
+- "@cloudbees-developers"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

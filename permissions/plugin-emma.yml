@@ -6,4 +6,12 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/emma"
 - "org/jvnet/hudson/plugins/emma"
-developers: []
+developers:
+- "alecharp"
+- "batmat"
+- "bitwiseman"
+- "carroll"
+- "mramonleon"
+- "olamy"
+- "rsandell"
+- "teilo"

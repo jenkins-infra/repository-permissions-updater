@@ -7,3 +7,5 @@ developers:
 - "bksaville"
 issues:
   - github: *GH
+cd:
+  enabled: true

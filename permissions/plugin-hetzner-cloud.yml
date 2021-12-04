@@ -1,0 +1,11 @@
+---
+name: "hetzner-cloud"
+github: &GH "jenkinsci/hetzner-cloud-plugin"
+paths:
+- "io/jenkins/plugins/hetzner-cloud"
+developers:
+- "rkosegi"
+issues:
+  - github: *GH
+cd:
+  enabled: true

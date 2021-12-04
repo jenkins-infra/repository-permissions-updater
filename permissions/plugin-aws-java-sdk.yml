@@ -5,9 +5,13 @@ issues:
 - jira: '21126' # aws-java-sdk-plugin
 paths:
 - "org/jenkins-ci/plugins/aws-java-sdk"
+- "org/jenkins-ci/plugins/aws-java-sdk/aws-java-sdk-*"
+cd:
+  enabled: true
 developers:
 - "andresrc"
 - "vlatombe"
+- "@cloudbees-developers"
 security:
   contacts:
-    jira: "modern_platforms_security_members"
+    jira: "cloudbees_security_members"

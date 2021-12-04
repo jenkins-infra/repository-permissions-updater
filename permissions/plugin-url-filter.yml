@@ -1,0 +1,9 @@
+---
+name: "url-filter"
+github: &GH "jenkinsci/url-filter-plugin"
+paths:
+- "io/jenkins/plugins/url-filter"
+developers:
+- "aytuncbeken"
+issues:
+  - github: *GH

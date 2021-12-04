@@ -1,8 +1,9 @@
 ---
 name: "embotics-vcommander"
+github: "jenkinsci/snowsoftware-commander-plugin"
 paths:
 - "io/jenkins/plugins/embotics-vcommander"
+cd:
+  enabled: true
 developers:
-- "aelliotatemboticsdotcom"
-- "embotics"
-- "builderatemboticsdotcom"
+- "commanderjenkinsplugin"

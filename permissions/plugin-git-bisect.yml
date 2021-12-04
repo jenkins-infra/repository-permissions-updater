@@ -7,4 +7,5 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/git-bisect"
 developers:
+- "basil"
 - "dorav"

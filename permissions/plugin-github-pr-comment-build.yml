@@ -8,3 +8,5 @@ paths:
 - "org/jenkins-ci/plugins/github-pr-comment-build"
 developers:
 - "bksaville"
+cd:
+  enabled: true

@@ -11,3 +11,6 @@ developers:
 - "jequals5"
 - "sethmccombs"
 - "nestorsalceda"
+- "airadier"
+cd:
+  enabled: true

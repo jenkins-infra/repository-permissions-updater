@@ -6,7 +6,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/bitbucket"
 developers:
-- "aheritier"
-- "imod"
-- "codemonky"
 - "tzach_solomon"
+cd:
+  enabled: true

@@ -6,4 +6,5 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/database-sqlite"
 developers:
+- "basil"
 - "jholusa"

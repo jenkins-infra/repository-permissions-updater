@@ -11,3 +11,6 @@ developers:
 - "kohsuke"
 - "aheritier"
 - "pierrebtz"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

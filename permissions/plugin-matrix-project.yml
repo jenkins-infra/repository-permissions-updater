@@ -10,6 +10,10 @@ developers:
 - "jglick"
 - "oleg_nenashev"
 - "olivergondza"
+- "alecharp"
+- "batmat"
+- "mramonleon"
+- "rsandell"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

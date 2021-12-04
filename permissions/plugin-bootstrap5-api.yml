@@ -7,3 +7,6 @@ developers:
 - "drulli"
 issues:
   - jira: 28620
+security:
+  contacts:
+    jira: "cloudbees_security_members"
