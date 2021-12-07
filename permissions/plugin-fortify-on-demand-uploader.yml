@@ -7,6 +7,4 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/fortify-on-demand-uploader"
 developers:
-- "ryanblack"
-- "tsotack"
-- "vodriemf"
+- "makropod"
