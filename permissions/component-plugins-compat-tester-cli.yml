@@ -3,9 +3,12 @@ name: "plugins-compat-tester-cli"
 github: "jenkinsci/plugin-compat-tester"
 paths:
 - "org/jenkins-ci/tests/plugins-compat-tester-cli"
+cd:
+  enabled: true
 developers:
 - "kwhetstone"
 - "jglick"
 - "andresrc"
 - "rarabaolaza"
 - "oleg_nenashev"
+- "imontero"

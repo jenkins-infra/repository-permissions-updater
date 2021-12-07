@@ -1,0 +1,9 @@
+---
+name: "muuri-api"
+github: &GH "jenkinsci/muuri-api-plugin"
+paths:
+- "io/jenkins/plugins/muuri-api"
+developers:
+- "simonsymhoven"
+issues:
+  - github: *GH

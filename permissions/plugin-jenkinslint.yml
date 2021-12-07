@@ -1,6 +1,8 @@
 ---
 name: "jenkinslint"
 github: "jenkinsci/jenkinslint-plugin"
+issues:
+- jira: '20644' # jenkinslint-plugin
 paths:
 - "org/jenkins-ci/plugins/jenkinslint"
 developers:

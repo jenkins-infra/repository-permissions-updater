@@ -1,6 +1,8 @@
 ---
 name: "parameter-pool"
 github: "jenkinsci/parameter-pool-plugin"
+issues:
+- jira: '20642' # parameter-pool-plugin
 paths:
 - "org/jenkins-ci/plugins/parameter-pool"
 developers:

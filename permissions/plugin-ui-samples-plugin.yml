@@ -1,6 +1,8 @@
 ---
 name: "ui-samples-plugin"
 github: "jenkinsci/ui-samples-plugin"
+issues:
+- jira: '15970' # ui-samples-plugin
 paths:
 - "org/jenkins-ci/main/ui-samples-plugin"
 - "org/jvnet/hudson/main/ui-samples-plugin"

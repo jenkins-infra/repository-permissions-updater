@@ -1,7 +1,10 @@
 ---
 name: "nested-view"
 github: "jenkinsci/nested-view-plugin"
+issues:
+- jira: '15701' # nested-view-plugin
 paths:
 - "org/jenkins-ci/plugins/nested-view"
 developers:
 - "lvotypkova"
+- "judovana"

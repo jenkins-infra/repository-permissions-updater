@@ -1,6 +1,8 @@
 ---
 name: "pipeline-githubnotify-step"
 github: "jenkinsci/pipeline-githubnotify-step-plugin"
+issues:
+- jira: '21944' # pipeline-githubnotify-step-plugin
 paths:
 - "org/jenkins-ci/plugins/pipeline-githubnotify-step"
 developers:

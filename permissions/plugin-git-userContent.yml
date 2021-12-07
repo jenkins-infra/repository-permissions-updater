@@ -1,6 +1,8 @@
 ---
 name: "git-userContent"
 github: "jenkinsci/git-userContent-plugin"
+issues:
+- jira: '17593' # git-usercontent-plugin
 paths:
 - "org/jenkins-ci/plugins/git-userContent"
 developers:

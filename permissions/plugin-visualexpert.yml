@@ -1,0 +1,9 @@
+---
+name: "visualexpert"
+github: &GH "jenkinsci/visualexpert-plugin"
+paths:
+- "io/jenkins/plugins/visualexpert"
+developers:
+- "devnovalys"
+issues:
+  - github: *GH

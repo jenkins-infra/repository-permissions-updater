@@ -1,11 +1,13 @@
 ---
 name: "gitlab-api"
 github: "jenkinsci/gitlab-api-plugin"
+issues:
+- jira: '25128' # gitlab-api-plugin
 paths:
 - "io/jenkins/plugins/gitlab-api"
 developers:
 - "baymac"
 - "surenpi"
-- "casz"
+- "jetersen"
 - "jeffpearce"
 - "justinharringa"

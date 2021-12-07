@@ -1,5 +1,8 @@
 ---
 name: "python"
+github: jenkinsci/python-plugin
+issues:
+- jira: '16018' # python-plugin
 paths:
 - "org/jenkins-ci/plugins/python"
 developers:

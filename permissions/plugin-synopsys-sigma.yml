@@ -1,0 +1,9 @@
+---
+name: "synopsys-sigma"
+github: "jenkinsci/synopsys-sigma-plugin"
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/synopsys-sigma"
+developers:
+- "sboyd"

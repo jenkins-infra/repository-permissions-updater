@@ -1,6 +1,8 @@
 ---
 name: "teststudioapitesting"
 github: "jenkinsci/teststudioapitesting-plugin"
+issues:
+- jira: '23442' # teststudioapitesting-plugin
 paths:
 - "org/jenkins-ci/plugins/teststudioapitesting"
 developers:

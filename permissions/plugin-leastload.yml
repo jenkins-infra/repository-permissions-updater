@@ -1,6 +1,8 @@
 ---
 name: "leastload"
 github: "jenkinsci/leastload-plugin"
+issues:
+- jira: '17653' # leastload-plugin
 paths:
 - "org/jenkins-ci/plugins/leastload"
 developers:

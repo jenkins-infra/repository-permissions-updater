@@ -1,6 +1,8 @@
 ---
 name: "openJDK-native-plugin"
 github: "jenkinsci/openJDK-native-plugin"
+issues:
+- jira: '17515' # openjdk-native-plugin
 paths:
 - "org/jenkinsci/plugins/openjdk_native/openJDK-native-plugin"
 developers:

@@ -1,0 +1,7 @@
+---
+name: "s3explorer"
+github: "jenkinsci/s3explorer-plugin"
+paths:
+- "io/jenkins/plugins/s3explorer"
+developers:
+- "ngocson2vn"

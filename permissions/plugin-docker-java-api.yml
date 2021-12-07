@@ -1,7 +1,10 @@
 ---
 name: "docker-java-api"
 github: "jenkinsci/docker-java-api-plugin"
+issues:
+- jira: '23136' # docker-java-api-plugin
 paths:
 - "org/jenkins-ci/plugins/docker-java-api"
 developers:
 - "ydubreuil"
+- "ericcitaire"

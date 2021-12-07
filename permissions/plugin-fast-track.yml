@@ -1,6 +1,8 @@
 ---
 name: "fast-track"
 github: "jenkinsci/fast-track-plugin"
+issues:
+- jira: '25632' # fast-track-plugin
 paths:
 - "nl/arnom/jenkins/fast-track"
 developers:

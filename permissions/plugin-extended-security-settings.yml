@@ -1,6 +1,8 @@
 ---
 name: "extended-security-settings"
 github: "jenkinsci/extended-security-settings-plugin"
+issues:
+- jira: '24621' # extended-security-settings-plugin
 paths:
 - "io/jenkins/plugins/extended-security-settings"
 developers:

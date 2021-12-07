@@ -1,6 +1,8 @@
 ---
 name: "project-build-times"
 github: "jenkinsci/project-build-times-plugin"
+issues:
+- jira: '18742' # project-build-times-plugin
 paths:
 - "org/jenkins-ci/plugins/project-build-times"
 developers:

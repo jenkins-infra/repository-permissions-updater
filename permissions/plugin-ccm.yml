@@ -1,6 +1,8 @@
 ---
 name: "ccm"
 github: "jenkinsci/ccm-plugin"
+issues:
+- jira: '15753' # ccm-plugin
 paths:
 - "org/jvnet/hudson/plugins/ccm"
 developers:

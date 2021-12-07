@@ -1,6 +1,8 @@
 ---
 name: "macstadium-orka"
 github: "jenkinsci/macstadium-orka-plugin"
+issues:
+- jira: '25726' # macstadium-orka-plugin
 paths:
 - "io/jenkins/plugins/macstadium-orka"
 developers:

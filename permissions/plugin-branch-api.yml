@@ -1,12 +1,13 @@
 ---
 name: "branch-api"
 github: "jenkinsci/branch-api-plugin"
+issues:
+- jira: '18621' # branch-api-plugin
 paths:
 - "org/jenkins-ci/plugins/branch-api"
 developers:
 - "jglick"
 - "recena"
-- "stephenconnolly"
 - "abayer"
 - "svanoort"
 - "rsandell"
@@ -14,6 +15,7 @@ developers:
 - "carroll"
 - "bitwiseman"
 - "kshultz"
+- "jtaboada"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

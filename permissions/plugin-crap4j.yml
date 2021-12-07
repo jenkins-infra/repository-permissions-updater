@@ -1,6 +1,8 @@
 ---
 name: "crap4j"
 github: "jenkinsci/crap4j-plugin"
+issues:
+- jira: '15533' # crap4j-plugin
 paths:
 - "org/jenkins-ci/plugins/crap4j"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "config-autorefresh-plugin"
 github: "jenkinsci/config-autorefresh-plugin"
+issues:
+- jira: '15871' # config-autorefresh-plugin
 paths:
 - "org/jenkins-ci/plugins/config-autorefresh-plugin"
 developers: []

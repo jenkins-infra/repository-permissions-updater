@@ -1,6 +1,8 @@
 ---
 name: "phing"
 github: "jenkinsci/phing-plugin"
+issues:
+- jira: '15563' # phing-plugin
 paths:
 - "org/jenkins-ci/plugins/phing"
 - "org/jvnet/hudson/plugins/phing"

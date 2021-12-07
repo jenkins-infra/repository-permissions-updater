@@ -1,6 +1,8 @@
 ---
-name: "myappci-plugin"
+name: "myappci"
 github: "jenkinsci/myappci-plugin"
+issues:
+- jira: '25625' # myappci-plugin
 paths:
 - "io/jenkins/plugins/myappci"
 developers:
@@ -8,4 +10,3 @@ developers:
 security:
   contacts:
     jira: carstenmuellerlemberg
-    email: carsten.mueller.lemberg@gmail.com

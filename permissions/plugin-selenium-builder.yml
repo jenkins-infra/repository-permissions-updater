@@ -1,6 +1,8 @@
 ---
 name: "selenium-builder"
 github: "jenkinsci/selenium-builder-plugin"
+issues:
+- jira: '17433' # selenium-builder-plugin
 paths:
 - "org/jenkins-ci/plugins/selenium-builder"
 developers:

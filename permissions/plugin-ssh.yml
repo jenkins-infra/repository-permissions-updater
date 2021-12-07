@@ -1,6 +1,8 @@
 ---
 name: "ssh"
 github: "jenkinsci/ssh-plugin"
+issues:
+- jira: '16049' # ssh-plugin
 paths:
 - "org/jenkins-ci/plugins/ssh"
 - "org/jvnet/hudson/plugins/ssh"

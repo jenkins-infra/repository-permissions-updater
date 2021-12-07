@@ -1,6 +1,8 @@
 ---
 name: "labeled-test-groups-publisher"
 github: "jenkinsci/labeled-test-groups-publisher-plugin"
+issues:
+- jira: '16071' # labeled-test-groups-publisher-plugin
 paths:
 - "org/jenkins-ci/plugins/labeled-test-groups-publisher"
 developers:

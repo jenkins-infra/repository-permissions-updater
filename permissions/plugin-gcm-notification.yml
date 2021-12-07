@@ -1,6 +1,8 @@
 ---
 name: "gcm-notification"
 github: "jenkinsci/gcm-notification-plugin"
+issues:
+- jira: '17220' # gcm-notification-plugin
 paths:
 - "org/jenkins-ci/plugins/gcm-notification"
 developers: []

@@ -1,8 +1,14 @@
 ---
 name: "schedule-build"
 github: "jenkinsci/schedule-build-plugin"
+issues:
+- jira: '18422' # schedule-build-plugin
 paths:
 - "org/jenkins-ci/plugins/schedule-build"
 developers:
 - "anderl86"
 - "pingunaut"
+- "markewaite"
+- "darinpope"
+cd:
+  enabled: true

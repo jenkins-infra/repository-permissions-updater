@@ -1,6 +1,8 @@
 ---
 name: "application-director-plugin"
 github: "jenkinsci/application-director-plugin"
+issues:
+- jira: '17428' # application-director-plugin
 paths:
 - "org/jenkins-ci/plugins/application-director-plugin"
 developers: []

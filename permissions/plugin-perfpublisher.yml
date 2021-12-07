@@ -1,6 +1,9 @@
 ---
 name: "perfpublisher"
-github: "jenkinsci/perfpublisher-plugin"
+github: &gh "jenkinsci/perfpublisher-plugin"
+issues:
+- jira: '15662' # perfpublisher-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/perfpublisher"
 developers:

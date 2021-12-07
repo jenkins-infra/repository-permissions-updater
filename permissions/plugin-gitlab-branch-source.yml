@@ -1,11 +1,14 @@
 ---
 name: "gitlab-branch-source"
-github: "jenkinsci/gitlab-branch-source-plugin"
+github: &gh "jenkinsci/gitlab-branch-source-plugin"
+issues:
+- jira: '21980' # gitlab-branch-source-plugin
+- github: *gh
 paths:
 - "io/jenkins/plugins/gitlab-branch-source"
 developers:
 - "baymac"
 - "jequals5"
 - "justinharringa"
-- "casz"
+- "jetersen"
 - "surenpi"

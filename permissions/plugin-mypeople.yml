@@ -1,6 +1,8 @@
 ---
 name: "mypeople"
 github: "jenkinsci/mypeople-plugin"
+issues:
+- jira: '18729' # mypeople-plugin
 paths:
 - "org/jenkins-ci/plugins/mypeople"
 developers:

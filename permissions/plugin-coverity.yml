@@ -1,6 +1,8 @@
 ---
 name: "coverity"
 github: "jenkinsci/coverity-plugin"
+issues:
+- jira: '16005' # coverity-plugin
 paths:
 - "org/jenkins-ci/plugins/coverity"
 developers:

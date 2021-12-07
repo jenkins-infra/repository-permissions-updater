@@ -1,6 +1,8 @@
 ---
 name: "consul-kv-builder"
-github: "jenkinsci/consul-kv-builder-plugin"
+github: &gh "jenkinsci/consul-kv-builder-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/consul-kv-builder"
 developers:

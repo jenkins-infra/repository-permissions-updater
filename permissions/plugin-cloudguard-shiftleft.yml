@@ -1,0 +1,9 @@
+---
+name: "cloudguard-shiftleft"
+github: &GH "jenkinsci/cloudguard-shiftleft-plugin"
+paths:
+- "io/jenkins/plugins/cloudguard-shiftleft"
+developers:
+- "ivanmar"
+issues:
+  - github: *GH

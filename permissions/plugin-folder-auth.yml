@@ -1,6 +1,8 @@
 ---
 name: "folder-auth"
 github: "jenkinsci/folder-auth-plugin"
+issues:
+- jira: '25627' # folder-auth-plugin
 paths:
 - "io/jenkins/plugins/folder-auth"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "docker-commons"
 github: "jenkinsci/docker-commons-plugin"
+issues:
+- jira: '20628' # docker-commons-plugin
 paths:
 - "org/jenkins-ci/plugins/docker-commons"
 developers:
@@ -11,4 +13,4 @@ developers:
 - "dnusbaum"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

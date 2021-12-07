@@ -1,6 +1,9 @@
 ---
 name: "buildgraph-view"
-github: "jenkinsci/buildgraph-view-plugin"
+github: &gh "jenkinsci/buildgraph-view-plugin"
+issues:
+- jira: '18031' # buildgraph-view-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/buildgraph-view"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "job-fan-in"
 github: "jenkinsci/job-fan-in-plugin"
+issues:
+- jira: '21443' # job-fan-in-plugin
 paths:
 - "org/jenkins-ci/plugins/job-fan-in"
 developers:

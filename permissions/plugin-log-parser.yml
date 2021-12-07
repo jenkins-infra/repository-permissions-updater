@@ -1,6 +1,8 @@
 ---
 name: "log-parser"
 github: "jenkinsci/log-parser-plugin"
+issues:
+- jira: '15726' # log-parser-plugin
 paths:
 - "org/jenkins-ci/plugins/log-parser"
 developers:

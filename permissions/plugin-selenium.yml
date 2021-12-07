@@ -1,6 +1,9 @@
 ---
 name: "selenium"
-github: "jenkinsci/selenium-plugin"
+github: &gh "jenkinsci/selenium-plugin"
+issues:
+- github: *gh
+- jira: '15660' # selenium-plugin
 paths:
 - "org/jenkins-ci/plugins/selenium"
 developers:

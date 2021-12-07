@@ -1,6 +1,8 @@
 ---
 name: "stoplightio-report"
 github: "jenkinsci/stoplightio-report-plugin"
+issues:
+- jira: '23038' # stoplightio-report-plugin
 paths:
 - "com/arkea/satd/stoplightio-report"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "gitlab-logo"
 github: "jenkinsci/gitlab-logo-plugin"
+issues:
+- jira: '20320' # gitlab-logo-plugin
 paths:
 - "org/jenkins-ci/plugins/gitlab-logo"
 developers:

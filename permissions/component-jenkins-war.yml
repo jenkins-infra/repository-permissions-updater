@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/main/jenkins-war"
 developers:
 - "kohsuke"
+- "releasebot"

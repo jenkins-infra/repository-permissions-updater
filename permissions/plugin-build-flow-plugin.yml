@@ -1,6 +1,8 @@
 ---
 name: "build-flow-plugin"
 github: "jenkinsci/build-flow-plugin"
+issues:
+- jira: '16533' # build-flow-plugin
 paths:
 - "com/cloudbees/plugins/build-flow-plugin"
 developers:

@@ -1,8 +1,11 @@
 ---
 name: "datatheorem-mobile-app-security"
 github: "jenkinsci/datatheorem-mobile-app-security-plugin"
+issues:
+- jira: '25132' # datatheorem-mobile-app-security-plugin
 paths:
 - "com/datatheorem/mobileappsecurity/jenkins/plugin/datatheorem-mobile-app-security"
 developers:
 - "magneto_marc"
 - "nabla_c0d3"
+- "alexis_pierru"

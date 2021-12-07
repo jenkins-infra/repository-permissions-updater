@@ -1,6 +1,8 @@
 ---
 name: "antexec"
 github: "jenkinsci/antexec-plugin"
+issues:
+- jira: '17580' # antexec-plugin
 paths:
 - "org/jenkins-ci/plugins/antexec"
 developers:

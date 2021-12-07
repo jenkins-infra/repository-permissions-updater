@@ -1,6 +1,8 @@
 ---
 name: "rabbitmq-consumer"
 github: "jenkinsci/rabbitmq-consumer-plugin"
+issues:
+- jira: '17497' # rabbitmq-consumer-plugin
 paths:
 - "org/jenkins-ci/plugins/rabbitmq-consumer"
 developers:

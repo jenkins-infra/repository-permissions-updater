@@ -1,6 +1,8 @@
 ---
 name: "katalon"
 github: "jenkinsci/katalon-plugin"
+issues:
+- jira: '24650' # katalon-plugin
 paths:
 - "org/jenkins-ci/plugins/katalon"
 developers:

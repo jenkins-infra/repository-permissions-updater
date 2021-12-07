@@ -1,0 +1,9 @@
+---
+name: "servicenow-cicd"
+github: &gh "jenkinsci/servicenow-cicd-plugin"
+issues:
+- github: *gh
+paths:
+- "io/jenkins/plugins/servicenow-cicd"
+developers:
+- "chiarnglin"

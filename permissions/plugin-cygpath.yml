@@ -1,6 +1,8 @@
 ---
 name: "cygpath"
 github: "jenkinsci/cygpath-plugin"
+issues:
+- jira: '15987' # cygpath-plugin
 paths:
 - "org/jenkins-ci/plugins/cygpath"
 developers: []

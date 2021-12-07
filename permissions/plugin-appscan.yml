@@ -1,0 +1,7 @@
+---
+name: "appscan"
+github: "jenkinsci/appscan-plugin"
+paths:
+- "com/hcl/security/appscan"
+developers:
+- "mattmurp"

@@ -1,7 +1,10 @@
 ---
 name: "bom"
 github: "jenkinsci/bom"
+cd:
+  enabled: true
 paths:
-- "io/jenkins/tools/bom/bom"
+- "io/jenkins/tools/bom/bom-*"
 developers:
 - "jglick"
+- "timja"

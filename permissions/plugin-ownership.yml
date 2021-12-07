@@ -1,6 +1,9 @@
 ---
 name: "ownership"
-github: "jenkinsci/ownership-plugin"
+github: &gh "jenkinsci/ownership-plugin"
+issues:
+- jira: '17721' # ownership-plugin
+- github: *gh
 paths:
 - "com/synopsys/jenkinsci/ownership"
 developers:

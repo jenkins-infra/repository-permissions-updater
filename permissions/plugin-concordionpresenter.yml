@@ -1,6 +1,8 @@
 ---
 name: "concordionpresenter"
 github: "jenkinsci/concordionpresenter-plugin"
+issues:
+- jira: '16094' # concordionpresenter-plugin
 paths:
 - "org/jenkins-ci/plugins/concordionpresenter"
 developers: []

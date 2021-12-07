@@ -1,6 +1,8 @@
 ---
 name: "in-toto"
-github: "jenkinsci/in-toto-plugin"
+github: &gh "jenkinsci/in-toto-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/in-toto"
 developers:

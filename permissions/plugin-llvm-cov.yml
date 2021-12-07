@@ -1,6 +1,8 @@
 ---
 name: "llvm-cov"
-github: "jenkinsci/llvm-cov-plugin"
+github: &gh "jenkinsci/llvm-cov-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/llvm-cov"
 developers:

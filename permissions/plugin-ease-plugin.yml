@@ -1,6 +1,8 @@
 ---
 name: "ease-plugin"
 github: "jenkinsci/ease-plugin"
+issues:
+- jira: '18833' # ease-plugin
 paths:
 - "org/jenkins-ci/plugins/ease-plugin"
 developers:

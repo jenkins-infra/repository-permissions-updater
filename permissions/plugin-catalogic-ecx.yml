@@ -1,6 +1,8 @@
 ---
 name: "catalogic-ecx"
 github: "jenkinsci/catalogic-ecx-plugin"
+issues:
+- jira: '21822' # catalogic-ecx-plugin
 paths:
 - "com/catalogic/ecxjenkins/catalogic-ecx"
 developers:

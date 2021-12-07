@@ -1,7 +1,12 @@
 ---
 name: "git-automerger"
-github: "jenkinsci/git-automerger-plugin"
+github: &gh "jenkinsci/git-automerger-plugin"
+issues:
+- jira: '25431' # git-automerger-plugin
+- github: *gh
 paths:
 - "com/vinted/automerger/git-automerger"
 developers:
 - "neworldlt"
+cd:
+  enabled: true

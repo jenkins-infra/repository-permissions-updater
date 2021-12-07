@@ -1,6 +1,8 @@
 ---
 name: "assembla"
 github: "jenkinsci/assembla-plugin"
+issues:
+- jira: '16091' # assembla-plugin
 paths:
 - "org/jenkins-ci/plugins/assembla"
 developers: []

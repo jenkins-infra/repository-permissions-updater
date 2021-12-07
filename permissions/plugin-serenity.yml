@@ -1,6 +1,8 @@
 ---
 name: "serenity"
 github: "jenkinsci/serenity-plugin"
+issues:
+- jira: '16078' # serenity-plugin
 paths:
 - "org/jenkins-ci/plugins/serenity"
 developers:
