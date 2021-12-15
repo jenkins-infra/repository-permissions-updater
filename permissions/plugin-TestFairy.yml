@@ -6,5 +6,9 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/TestFairy"
 developers:
-- "giltsl"
-- "jenkins3pillar"
+- "diegoperini"
+- "gmegidish"
+- "vijaysharm"
+- "yanpsl"
+cd:
+  enabled: true
