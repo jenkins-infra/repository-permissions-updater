@@ -1,6 +1,8 @@
 ---
 name: "bmc-cfa"
 github: &GH "jenkinsci/bmc-cfa-plugin"
+cd:
+  enabled: true
 paths:
 - "com/bmc/ims/bmc-cfa"
 developers:
