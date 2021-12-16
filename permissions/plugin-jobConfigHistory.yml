@@ -1,6 +1,6 @@
 ---
 name: "jobConfigHistory"
-github: "jenkinsci/jobConfigHistory-plugin"
+github: "jenkinsci/job-config-history-plugin"
 issues:
 - jira: '15683' # jobconfighistory-plugin
 paths:
