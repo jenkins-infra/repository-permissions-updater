@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/structs"
 developers:
+- "@cloudbees-developers"
 - "jglick"
 - "kohsuke"
 - "oleg_nenashev"

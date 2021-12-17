@@ -8,6 +8,7 @@ paths:
 - "org/jenkinsci/plugins/git"
 - "org/jvnet/hudson/plugins/git"
 developers:
+- "@cloudbees-developers"
 - "markewaite"
 - "mramonleon"
 - "olamy"
