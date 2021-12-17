@@ -8,6 +8,7 @@ paths:
 - "org/jenkins-ci/plugins/jira"
 - "org/jvnet/hudson/plugins/jira"
 developers:
+- "@cloudbees-developers"
 - "warden"
 - "olamy"
 security:

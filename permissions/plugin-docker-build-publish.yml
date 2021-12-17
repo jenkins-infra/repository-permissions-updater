@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/docker-build-publish"
 developers:
+- "@cloudbees-developers"
 - "csanchez"
 - "michaelneale"
 - "oleg_nenashev"

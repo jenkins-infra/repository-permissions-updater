@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkinsci/plugins/pipeline-model-definition"
 developers:
+- "@cloudbees-developers"
 - "abayer"
 - "oleg_nenashev"
 - "rsandell"

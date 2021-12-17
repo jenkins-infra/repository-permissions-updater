@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/handy-uri-templates-2-api"
 developers:
+- "@cloudbees-developers"
 - "jetersen"
 - "dnusbaum"
 - "bitwiseman"

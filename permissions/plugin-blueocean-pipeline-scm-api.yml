@@ -6,6 +6,7 @@ issues:
 paths:
 - "io/jenkins/blueocean/blueocean-pipeline-scm-api"
 developers:
+- "@cloudbees-developers"
 - "michaelneale"
 - "vivek"
 - "kzantow"

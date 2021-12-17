@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/pipeline-milestone-step"
 developers:
+- "@cloudbees-developers"
 - "amuniz"
 - "svanoort"
 - "jglick"

@@ -6,6 +6,7 @@ issues:
 paths:
 - "io/jenkins/blueocean/blueocean-executor-info"
 developers:
+- "@cloudbees-developers"
 - "michaelneale"
 - "vivek"
 - "kzantow"

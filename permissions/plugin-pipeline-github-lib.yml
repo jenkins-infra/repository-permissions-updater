@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/pipeline-github-lib"
 developers:
+- "@cloudbees-developers"
 - "jglick"
 - "abayer"
 - "dnusbaum"

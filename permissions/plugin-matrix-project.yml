@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/matrix-project"
 developers:
+- "@cloudbees-developers"
 - "amuniz"
 - "jglick"
 - "oleg_nenashev"

@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/dockerhub-notification"
 developers:
+- "@cloudbees-developers"
 - "rsandell"
 security:
   contacts:

@@ -4,6 +4,7 @@ github: &GH "jenkinsci/caffeine-api-plugin"
 paths:
 - "io/jenkins/plugins/caffeine-api"
 developers:
+- "@cloudbees-developers"
 - "teilo"
 - "rsandell"
 - "carroll"

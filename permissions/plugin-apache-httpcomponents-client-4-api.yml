@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/apache-httpcomponents-client-4-api"
 developers:
+- "@cloudbees-developers"
 - "oleg_nenashev"
 - "dnusbaum"
 - "mramonleon"

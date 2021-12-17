@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/command-launcher"
 developers:
+- "@cloudbees-developers"
 - "jglick"
 - "oleg_nenashev"
 - "mramonleon"

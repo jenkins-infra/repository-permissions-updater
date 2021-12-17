@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/parameterized-trigger"
 developers:
+- "@cloudbees-developers"
 - "ikedam"
 - "kwhetstone"
 - "oleg_nenashev"

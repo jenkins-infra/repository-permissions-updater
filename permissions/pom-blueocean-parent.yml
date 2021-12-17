@@ -4,6 +4,7 @@ github: "jenkinsci/blueocean-plugin"
 paths:
 - "io/jenkins/blueocean/blueocean-parent"
 developers:
+- "@cloudbees-developers"
 - "michaelneale"
 - "vivek"
 - "kzantow"

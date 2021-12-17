@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jvnet/hudson/plugins/favorite"
 developers:
+- "@cloudbees-developers"
 - "michaelneale"
 - "jamesdumay"
 - "vivek"

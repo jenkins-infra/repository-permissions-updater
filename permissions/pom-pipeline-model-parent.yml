@@ -4,6 +4,7 @@ github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
 - "org/jenkinsci/plugins/pipeline-model-parent"
 developers:
+- "@cloudbees-developers"
 - "abayer"
 - "oleg_nenashev"
 - "rsandell"

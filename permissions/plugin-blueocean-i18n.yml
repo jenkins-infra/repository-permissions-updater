@@ -6,6 +6,7 @@ issues:
 paths:
 - "io/jenkins/blueocean/blueocean-i18n"
 developers:
+- "@cloudbees-developers"
 - "michaelneale"
 - "vivek"
 - "kzantow"

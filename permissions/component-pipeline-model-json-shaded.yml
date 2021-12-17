@@ -4,6 +4,7 @@ github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
 - "org/jenkins-ci/lib/pipeline-model-json-shaded"
 developers:
+- "@cloudbees-developers"
 - "abayer"
 - "oleg_nenashev"
 - "rsandell"

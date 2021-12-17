@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/pipeline-stage-step"
 developers:
+- "@cloudbees-developers"
 - "jglick"
 - "svanoort"
 - "abayer"

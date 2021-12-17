@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/pipeline-graph-analysis"
 developers:
+- "@cloudbees-developers"
 - "svanoort"
 - "abayer"
 - "dnusbaum"

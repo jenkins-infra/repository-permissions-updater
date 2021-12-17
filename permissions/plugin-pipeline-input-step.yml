@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/pipeline-input-step"
 developers:
+- "@cloudbees-developers"
 - "jglick"
 - "svanoort"
 - "abayer"

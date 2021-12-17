@@ -9,6 +9,7 @@ paths:
 - "org/jenkins-ci/plugins/github-api"
 developers:
 - "@cloudbees-developers"
+- "@cloudbees-developers"
 - "andresrc"
 - "bitwiseman"
 - "integer"

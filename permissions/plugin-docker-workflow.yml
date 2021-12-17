@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/docker-workflow"
 developers:
+- "@cloudbees-developers"
 - "jglick"
 - "oleg_nenashev"
 - "abayer"
