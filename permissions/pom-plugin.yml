@@ -8,6 +8,7 @@ cd:
   enabled: true
 developers:
 - "andresrc"
+- "basil"
 - "jglick"
 - "kohsuke"
 - "oleg_nenashev"
