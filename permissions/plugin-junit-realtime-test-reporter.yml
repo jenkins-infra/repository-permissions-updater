@@ -6,5 +6,7 @@ issues:
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/junit-realtime-test-reporter"
+cd:
+  enabled: true
 developers:
 - "timja"
