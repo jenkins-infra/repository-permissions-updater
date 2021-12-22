@@ -6,7 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-api"
 developers:
-- "@cloudbees-developers"
+  - "@cloudbees-developers"
   - "abayer"
   - "dnusbaum"
   - "jglick"

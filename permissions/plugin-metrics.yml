@@ -6,7 +6,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/metrics"
 developers:
-- "@cloudbees-developers"
 - "kohsuke"
 - "sbadger"
 - "alecharp"
