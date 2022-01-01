@@ -26,4 +26,3 @@ jobs:
           java -cp target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker ${{ github.event.issue.number }}
         env:
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
-          ORG_NAME: timja
