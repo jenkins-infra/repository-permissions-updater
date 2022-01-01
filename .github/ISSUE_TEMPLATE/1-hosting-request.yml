@@ -16,7 +16,7 @@ body:
     attributes:
       label: New Repository Name
       description: |
-        Name of the repository in the jenkinsci organization on GitHub
+        Name of the repository in the jenkinsci organization on GitHub, plugins should end with `-plugin`, libraries should start with `lib-`
       placeholder: |
         your-cool-plugin
     validations:
