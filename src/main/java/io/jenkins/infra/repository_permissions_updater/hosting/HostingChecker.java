@@ -87,6 +87,7 @@ public class HostingChecker {
                     + "or Info are just recommendations and will not stall the hosting process.\n");
             LOGGER.info("Appending issues to msg");
             appendIssues(msg, hostingIssues, 1);
+            msg.append("\nYou can re-trigger a check by editing your hosting request or by commenting '/hosting re-check'");
         } else {
             msg.append("It looks like you have everything in order for your hosting request. "
                     + "A human volunteer will check over things that I am not able to check for "
@@ -101,11 +102,11 @@ public class HostingChecker {
             issue.comment(msg.toString());
 
             if (hostingIssues.isEmpty()) {
-                issue.addLabels("bot-check-complete");
+                issue.addLabels("hosting-request", "bot-check-complete");
                 issue.removeLabels("needs-fix");
             } else {
                 issue.removeLabels("bot-check-complete");
-                issue.addLabels("needs-fix");
+                issue.addLabels("hosting-request", "needs-fix");
             }
         } else {
             LOGGER.info("Here are the results of the checking:");
