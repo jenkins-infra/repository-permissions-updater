@@ -78,6 +78,7 @@
     <properties>
         <main.class>io.jenkins.infra.repository_permissions_updater.ArtifactoryPermissionsUpdater</main.class>
         <java.level>8</java.level>
+        <spotbugs.excludeFilterFile>${project.basedir}/src/spotbugs/excludesFilter.xml</spotbugs.excludeFilterFile>
     </properties>
 
     <dependencies>

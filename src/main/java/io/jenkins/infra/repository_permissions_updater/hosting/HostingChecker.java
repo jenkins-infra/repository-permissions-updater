@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
@@ -122,7 +123,7 @@ public class HostingChecker {
         return HostingRequestParser.parse(body);
     }
 
-    private void appendIssues(StringBuilder msg, HashSet<VerificationMessage> issues, int level) {
+    private void appendIssues(StringBuilder msg, Set<VerificationMessage> issues, int level) {
         for (VerificationMessage issue : issues.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList())) {
             if (level == 1) {
                 msg.append(String.format("%s %s %s: %s%n", StringUtils.repeat("*", level), issue.getSeverity().getColor(), issue.getSeverity().getMessage(), issue.getMessage()));

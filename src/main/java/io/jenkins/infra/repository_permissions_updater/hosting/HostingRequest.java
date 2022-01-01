@@ -1,5 +1,6 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
@@ -26,8 +27,8 @@ public class HostingRequest {
     ) {
         this.repositoryUrl = repositoryUrl;
         this.newRepoName = newRepoName;
-        this.githubUsers = githubUsers;
-        this.jenkinsProjectUsers = jenkinsProjectUsers;
+        this.githubUsers = Collections.unmodifiableList(githubUsers);
+        this.jenkinsProjectUsers = Collections.unmodifiableList(jenkinsProjectUsers);
         this.issueTracker = issueTracker;
     }
 

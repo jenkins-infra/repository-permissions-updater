@@ -1,7 +1,9 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
+import java.util.Set;
 
 public class VerificationMessage implements Comparable<VerificationMessage> {
     private final String message;
@@ -20,7 +22,7 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
 
     @Override
     public int compareTo(VerificationMessage other) {
-        Comparator<HashSet<VerificationMessage>> subItemComparator = (left, right) -> {
+        Comparator<Set<VerificationMessage>> subItemComparator = (left, right) -> {
             if (left.size() != right.size()) {
                 return left.size() - right.size();
             }
@@ -95,11 +97,11 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
         return severity;
     }
 
-    public HashSet<VerificationMessage> getSubItems() {
+    public Set<VerificationMessage> getSubItems() {
         if(subItems == null) {
             subItems = new HashSet<>();
         }
-        return subItems;
+        return Collections.unmodifiableSet(subItems);
     }
 
     @Override
