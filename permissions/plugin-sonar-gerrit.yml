@@ -5,5 +5,7 @@ issues:
 - github: *GH
 paths:
 - "org/jenkins-ci/plugins/sonar-gerrit"
+cd:
+  enabled: true
 developers:
 - "reda_alaoui"
