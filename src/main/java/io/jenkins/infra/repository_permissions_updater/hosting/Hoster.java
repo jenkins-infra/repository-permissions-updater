@@ -6,7 +6,7 @@ import com.atlassian.jira.rest.client.api.domain.AssigneeType;
 import com.atlassian.jira.rest.client.api.domain.BasicComponent;
 import com.atlassian.jira.rest.client.api.domain.Component;
 import com.atlassian.jira.rest.client.api.domain.input.ComponentInput;
-import com.atlassian.util.concurrent.Promise;
+import io.atlassian.util.concurrent.Promise;
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingRequest.IssueTracker;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
