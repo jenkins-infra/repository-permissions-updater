@@ -162,6 +162,30 @@ public class MavenVerifier implements BuildSystemVerifier {
         }
     }
 
+    public static String getArtifactId(String contents) {
+        String res;
+        MavenXpp3Reader reader = new MavenXpp3Reader();
+        try(StringReader stringReader = new StringReader(contents)) {
+            Model model = reader.read(stringReader);
+            res = model.getArtifactId();
+        } catch(XmlPullParserException | IOException e) {
+            res = null;
+        }
+        return res;
+    }
+
+    public static String getGroupId(String contents) {
+        String res;
+        MavenXpp3Reader reader = new MavenXpp3Reader();
+        try(StringReader stringReader = new StringReader(contents)) {
+            Model model = reader.read(stringReader);
+            res = model.getGroupId();
+        } catch(XmlPullParserException | IOException e) {
+            res = null;
+        }
+        return res;
+    }
+
     private void checkParentInfoAndJenkinsVersion(Model model, HashSet<VerificationMessage> hostingIssues) {
         try {
             Parent parent = model.getParent();

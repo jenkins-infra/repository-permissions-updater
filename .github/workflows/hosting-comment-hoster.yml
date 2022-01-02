@@ -1,0 +1,54 @@
+name: Hosting hoster
+
+on:
+  issue_comment:
+    types:
+      - created
+      - edited
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.comment.body == '/hosting host' }}
+    outputs:
+      actor_in_hosting_team: ${{ steps.checkUserMember.outputs.isTeamMember }}
+    steps:
+      - name: Ack
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const {owner, repo} = context.issue
+            github.reactions.createForIssueComment({
+              owner,
+              repo,
+              comment_id: context.payload.comment.id,
+              content: "+1",
+            });
+      - uses: tspascoal/get-user-teams-membership@v1
+        id: checkUserMember
+        with:
+          username: ${{ github.actor }}
+          team: 'hosting'
+          GITHUB_TOKEN: ${{ secrets.HOSTING_PAT }}
+  hosting:
+    runs-on: ubuntu-latest
+    needs: [validate]
+    if: needs.validate.outputs.actor_in_hosting_team == 'true'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: 'master'
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '11'
+          cache: 'maven'
+      - name: Build with Maven
+        run: mvn -B package -Dspotbugs.skip
+      - name: Run hoster
+        run: |
+          java -cp target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar io.jenkins.infra.repository_permissions_updater.hosting.Hoster ${{ github.event.issue.number }}
+        env:
+          GITHUB_OAUTH: ${{ secrets.HOSTING_PAT }}
+          JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
+          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}

@@ -82,6 +82,65 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencyManagement>
+        <!--
+            This whole section is a mess of Jira client conflicts, a ton of dependencies pulled in by it, maybe there's a lighter client around
+        -->
+        <dependencies>
+            <!-- Fails at Runtime with newer need to update https://github.com/jenkinsci/lib-jira-api  -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>19.0</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>4.5.13</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>2.5.6.SEC03-atlassian-6</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>2.6</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.plugin</groupId>
+                <artifactId>atlassian-plugins-osgi</artifactId>
+                <version>4.0.0-m029</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.util.concurrent</groupId>
+                <artifactId>atlassian-util-concurrent</artifactId>
+                <version>3.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.3.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.event</groupId>
+                <artifactId>atlassian-event</artifactId>
+                <version>3.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.plugins</groupId>
+                <artifactId>atlassian-plugins-core</artifactId>
+                <version>4.0.0-m029</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.yaml</groupId>
@@ -93,6 +152,11 @@
             <artifactId>groovy-all</artifactId>
             <version>2.5.15</version>
             <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci</groupId>
+            <artifactId>jira-api</artifactId>
+            <version>2.1</version>
         </dependency>
         <dependency>
             <groupId>com.github.spotbugs</groupId>
