@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -17,13 +15,15 @@ import org.kohsuke.github.GHFileNotFoundException;
 import org.kohsuke.github.GHIssue;
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GitHub;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_SLUG;
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 public class HostingChecker {
 
-    private static final Logger LOGGER = Logger.getLogger(HostingChecker.class.getName());
+    private static final Logger LOGGER = LoggerFactory.getLogger(HostingChecker.class);
 
     public static final String INVALID_FORK_FROM = "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
@@ -61,7 +61,7 @@ public class HostingChecker {
                     hasBuildSystem |= ((BuildSystemVerifier) verifier.getValue1()).hasBuildFile(hostingRequest);
                 }
             } catch (Exception e) {
-                LOGGER.log(Level.SEVERE, "Error running verification '" + verifier.getValue0(), e);
+                LOGGER.error("Error running verification '" + verifier.getValue0(), e);
             }
         }
 

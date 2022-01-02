@@ -17,8 +17,6 @@ import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 import java.util.function.Consumer;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -34,6 +32,8 @@ import org.kohsuke.github.GHTeam;
 import org.kohsuke.github.GHTeamBuilder;
 import org.kohsuke.github.GHUser;
 import org.kohsuke.github.GitHub;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_NAME;
 import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_SLUG;
@@ -47,7 +47,7 @@ import static java.util.stream.Collectors.joining;
 
 public class Hoster {
 
-    private static final Logger LOGGER = Logger.getLogger(Hoster.class.getName());
+    private static final Logger LOGGER = LoggerFactory.getLogger(Hoster.class);
 
     public static void main(String[] args) {
         new Hoster().run(Integer.parseInt(args[0]));
@@ -76,17 +76,17 @@ public class Hoster {
             Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
             if (m.matches()) {
                 if (!forkGitHub(m.group(1), m.group(2), forkTo, users, issueTrackerChoice == IssueTracker.GITHUB)) {
-                    LOGGER.severe("Hosting request failed to fork repository on Github");
+                    LOGGER.error("Hosting request failed to fork repository on Github");
                     return;
                 }
             } else {
-                LOGGER.severe("ERROR: Cannot parse the source repo: " + forkFrom);
+                LOGGER.error("ERROR: Cannot parse the source repo: " + forkFrom);
                 return;
             }
 
             // create the JIRA component
             if (issueTrackerChoice == IssueTracker.JIRA && !createComponent(forkTo, defaultAssignee)) {
-                LOGGER.severe("Hosting request failed to create component " + forkTo + " in JIRA");
+                LOGGER.error("Hosting request failed to create component " + forkTo + " in JIRA");
                 return;
             }
 
@@ -100,13 +100,13 @@ public class Hoster {
                     }
                 }
             } catch (IOException | TimeoutException | ExecutionException | InterruptedException ex) {
-                LOGGER.severe("Could not get component ID for " + forkTo + " component in Jira");
+                LOGGER.error("Could not get component ID for " + forkTo + " component in Jira");
                 componentId = "";
             }
 
             String prUrl = createUploadPermissionPR(issueID, forkTo, users, Collections.singletonList(defaultAssignee), issueTrackerChoice == IssueTracker.GITHUB, componentId);
             if (StringUtils.isBlank(prUrl)) {
-                LOGGER.severe("Could not create upload permission pull request");
+                LOGGER.error("Could not create upload permission pull request");
             }
 
             String prDescription = "";
@@ -151,10 +151,10 @@ public class Hoster {
 
             LOGGER.info("Hosting setup complete");
         } catch (IOException e) {
-            LOGGER.log(Level.SEVERE, "Failed setting up hosting for " + issueID + ". ", e);
+            LOGGER.error("Failed setting up hosting for " + issueID + ". ", e);
         } finally {
             if (!JiraHelper.close(client)) {
-                LOGGER.warning("Failed to close JIRA client, possible leaked file descriptors");
+                LOGGER.warn("Failed to close JIRA client, possible leaked file descriptors");
             }
         }
     }
@@ -167,7 +167,7 @@ public class Hoster {
             GHOrganization org = github.getOrganization(TARGET_ORG_NAME);
             GHRepository check = org.getRepository(newName);
             if (check != null) {
-                LOGGER.warning("Repository with name " + newName + " already exists in " + TARGET_ORG_NAME);
+                LOGGER.error("Repository with name " + newName + " already exists in " + TARGET_ORG_NAME);
                 return false;
             }
 
@@ -176,7 +176,7 @@ public class Hoster {
             // we just want to make sure we don't fork to a current repository name.
             check = org.getRepository(repo);
             if (check != null && check.getName().equalsIgnoreCase(repo)) {
-                LOGGER.warning("Repository " + repo + " can't be forked, an existing repository with that name already exists in " + TARGET_ORG_NAME);
+                LOGGER.error("Repository " + repo + " can't be forked, an existing repository with that name already exists in " + TARGET_ORG_NAME);
                 return false;
             }
 
@@ -184,12 +184,12 @@ public class Hoster {
 
             GHUser user = github.getUser(owner);
             if (user == null) {
-                LOGGER.warning("No such user: " + owner);
+                LOGGER.warn("No such user: " + owner);
                 return false;
             }
             GHRepository orig = user.getRepository(repo);
             if (orig == null) {
-                LOGGER.warning("No such repository: " + repo);
+                LOGGER.warn("No such repository: " + repo);
                 return false;
             }
 
@@ -227,7 +227,7 @@ public class Hoster {
                 getOrCreateRepoLocalTeam(github, org, r, maintainers.isEmpty() ? singletonList(user.getName()) : maintainers);
             } catch (IOException e) {
                 // if 'user' is an org, the above command would fail
-                LOGGER.warning("Failed to add " + user + " to the new repository. Maybe an org?: " + e.getMessage());
+                LOGGER.warn("Failed to add " + user + " to the new repository. Maybe an org?: " + e.getMessage());
                 // fall through
             }
             setupRepository(r, useGHIssues);
@@ -240,7 +240,7 @@ public class Hoster {
 
             result = true;
         } catch (InterruptedException | IOException e) {
-            LOGGER.log(Level.SEVERE, "Failed to fork a repository: ", e);
+            LOGGER.error("Failed to fork a repository: ", e);
         }
 
         return result;
@@ -299,7 +299,7 @@ public class Hoster {
             try {
                 team.add(github.getUser(user));
             } catch (IOException e) {
-                LOGGER.log(Level.SEVERE, String.format("Failed to add user %s to team %s", user, team.getName()), e);
+                LOGGER.error(String.format("Failed to add user %s to team %s", user, team.getName()), e);
             }
         };
     }
@@ -367,7 +367,7 @@ public class Hoster {
                 prUrl = pr.getHtmlUrl().toString();
                 LOGGER.info("Created PR for repository permissions updater: " + prUrl);
             } catch (Exception e) {
-                LOGGER.log(Level.SEVERE, "Error creating PR", e);
+                LOGGER.error("Error creating PR", e);
             }
         } else {
             LOGGER.info("Can only create PR's for plugin permissions at this time");
@@ -405,7 +405,7 @@ public class Hoster {
                     break;
                 }
             } catch (IOException e) {
-                LOGGER.severe("Could not find supported build file (pom.xml or build.gradle) to get artifact path from or another error occurred.");
+                LOGGER.error("Could not find supported build file (pom.xml or build.gradle) to get artifact path from or another error occurred.");
                 return null;
             }
         }
@@ -431,11 +431,11 @@ public class Hoster {
             LOGGER.info("New component created. URL is " + component.getSelf().toURL());
             result = true;
         } catch (Exception e) {
-            LOGGER.log(Level.SEVERE, "Failed to create a new component: ", e);
+            LOGGER.error("Failed to create a new component: ", e);
             e.printStackTrace();
         } finally {
             if (!JiraHelper.close(client)) {
-                LOGGER.warning("Failed to close JIRA client, possible leaked file descriptors");
+                LOGGER.warn("Failed to close JIRA client, possible leaked file descriptors");
             }
         }
 
