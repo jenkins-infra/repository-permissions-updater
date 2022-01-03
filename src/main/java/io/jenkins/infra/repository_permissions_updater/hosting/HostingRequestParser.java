@@ -1,19 +1,23 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingRequest.IssueTracker;
+import java.io.IOException;
 import java.util.AbstractMap;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
+import org.kohsuke.github.GHIssue;
+import org.kohsuke.github.GitHub;
+
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_SLUG;
 
 public final class HostingRequestParser {
 
     private static final String SEPARATOR = "### ";
 
     private static final String REPO_URL = "Repository URL";
-    private static final String DESCRIPTION = "Description";
     private static final String NEW_REPOSITORY_NAME = "New Repository Name";
     private static final String ISSUE_TRACKER = "Issue tracker";
     private static final String GITHUB_USERS = "GitHub users to have commit permission";
@@ -21,6 +25,16 @@ public final class HostingRequestParser {
 
 
     private HostingRequestParser() {
+    }
+
+    public static HostingRequest retrieveAndParse(int id) throws IOException {
+        GitHub github = GitHub.connect();
+        GHIssue issue = github.getRepository(HOSTING_REPO_SLUG)
+                .getIssue(id);
+
+        String body = issue.getBody();
+
+        return HostingRequestParser.parse(body);
     }
 
     public static HostingRequest parse(String body) {

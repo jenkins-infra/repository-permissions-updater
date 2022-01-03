@@ -7,8 +7,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.HashSet;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
@@ -22,13 +20,15 @@ import org.kohsuke.github.GHContent;
 import org.kohsuke.github.GHFileNotFoundException;
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GitHub;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker.LOWEST_JENKINS_VERSION;
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 public class MavenVerifier implements BuildSystemVerifier {
     private static final int MAX_LENGTH_OF_GROUP_ID_PLUS_ARTIFACT_ID = 100;
-    private final Logger log = Logger.getLogger(MavenVerifier.class.getName());
+    private static final Logger LOGGER = LoggerFactory.getLogger(MavenVerifier.class);
 
     public static final Version LOWEST_PARENT_POM_VERSION = new Version(4, 0, 0);
     public static final Version PARENT_POM_WITH_JENKINS_VERSION = new Version(2);
@@ -68,7 +68,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                             checkRepositories(model, hostingIssues);
                             checkPluginRepositories(model, hostingIssues);
                         } catch(Exception e) {
-                            log.log(Level.SEVERE, "Failed looking at pom.xml", e);
+                            LOGGER.error("Failed looking at pom.xml", e);
                             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
                         }
                     }
@@ -117,7 +117,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The pom.xml file does not contain a valid 'artifactId' for the project"));
             }
         } catch(Exception e) {
-            log.log(Level.SEVERE, "Error trying to access artifactId", e);
+            LOGGER.error("Error trying to access artifactId", e);
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
         }
     }
@@ -141,7 +141,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                 }
             }
         } catch(Exception e) {
-            log.log(Level.SEVERE, "Error trying to access groupId", e);
+            LOGGER.error("Error trying to access groupId", e);
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
         }
     }
@@ -157,9 +157,33 @@ public class MavenVerifier implements BuildSystemVerifier {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The pom.xml file does not contain a valid <name> for the project"));
             }
         } catch(Exception e) {
-            log.log(Level.SEVERE, "Error trying to access <name>", e);
+            LOGGER.error("Error trying to access <name>", e);
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
         }
+    }
+
+    public static String getArtifactId(String contents) {
+        String res;
+        MavenXpp3Reader reader = new MavenXpp3Reader();
+        try(StringReader stringReader = new StringReader(contents)) {
+            Model model = reader.read(stringReader);
+            res = model.getArtifactId();
+        } catch(XmlPullParserException | IOException e) {
+            res = null;
+        }
+        return res;
+    }
+
+    public static String getGroupId(String contents) {
+        String res;
+        MavenXpp3Reader reader = new MavenXpp3Reader();
+        try(StringReader stringReader = new StringReader(contents)) {
+            Model model = reader.read(stringReader);
+            res = model.getGroupId();
+        } catch(XmlPullParserException | IOException e) {
+            res = null;
+        }
+        return res;
     }
 
     private void checkParentInfoAndJenkinsVersion(Model model, HashSet<VerificationMessage> hostingIssues) {
@@ -191,7 +215,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                 }
             }
         } catch(Exception e) {
-            log.log(Level.SEVERE, "Error trying to access the <parent> information", e);
+            LOGGER.error("Error trying to access the <parent> information", e);
         }
     }
 

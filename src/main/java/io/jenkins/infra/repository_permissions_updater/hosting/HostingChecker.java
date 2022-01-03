@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -17,24 +15,19 @@ import org.kohsuke.github.GHFileNotFoundException;
 import org.kohsuke.github.GHIssue;
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GitHub;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_SLUG;
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 public class HostingChecker {
 
-    private static final Logger LOGGER = Logger.getLogger(HostingChecker.class.getName());
+    private static final Logger LOGGER = LoggerFactory.getLogger(HostingChecker.class);
 
     public static final String INVALID_FORK_FROM = "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
     public static final Version LOWEST_JENKINS_VERSION = new Version(2, 277, 1);
-
-    private static final String HOSTING_REPO_SLUG;
-
-    static {
-        String orgOverride = System.getenv("ORG_NAME");
-        String org = orgOverride != null ? orgOverride : "jenkins-infra";
-        HOSTING_REPO_SLUG = org + "/repository-permissions-updater";
-    }
 
     public static void main(String[] args) throws IOException {
         new HostingChecker().checkRequest(Integer.parseInt(args[0]));
@@ -54,7 +47,7 @@ public class HostingChecker {
         verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
         //verifications.add(Triplet.with("Kotlin", new KotlinVerifier(), new FileExistsConditionChecker("build.gradle.kts")));
 
-        final HostingRequest hostingRequest = parseHostingRequest(issueID);
+        final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
         for (Triplet<String, Verifier, ConditionChecker> verifier : verifications) {
             try {
@@ -68,7 +61,7 @@ public class HostingChecker {
                     hasBuildSystem |= ((BuildSystemVerifier) verifier.getValue1()).hasBuildFile(hostingRequest);
                 }
             } catch (Exception e) {
-                LOGGER.log(Level.SEVERE, "Error running verification '" + verifier.getValue0(), e);
+                LOGGER.error("Error running verification '" + verifier.getValue0(), e);
             }
         }
 
@@ -87,12 +80,13 @@ public class HostingChecker {
                     + "or Info are just recommendations and will not stall the hosting process.\n");
             LOGGER.info("Appending issues to msg");
             appendIssues(msg, hostingIssues, 1);
-            msg.append("\nYou can re-trigger a check by editing your hosting request or by commenting '/hosting re-check'");
+            msg.append("\nYou can re-trigger a check by editing your hosting request or by commenting `/hosting re-check`");
         } else {
             msg.append("It looks like you have everything in order for your hosting request. "
                     + "A human volunteer will check over things that I am not able to check for "
                     + "(code review, README content, etc) and process the request as quickly as possible. "
-                    + "Thank you for your patience.");
+                    + "Thank you for your patience.\n")
+                    .append("\nHosting team members can host this request with `/hosting host`");
         }
 
         LOGGER.info(msg.toString());
@@ -114,16 +108,6 @@ public class HostingChecker {
         }
     }
 
-    private HostingRequest parseHostingRequest(int issueID) throws IOException {
-        GitHub github = GitHub.connect();
-        GHIssue issue = github.getRepository(HOSTING_REPO_SLUG)
-                .getIssue(issueID);
-
-        String body = issue.getBody();
-
-        return HostingRequestParser.parse(body);
-    }
-
     private void appendIssues(StringBuilder msg, Set<VerificationMessage> issues, int level) {
         for (VerificationMessage issue : issues.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList())) {
             if (level == 1) {
@@ -143,7 +127,7 @@ public class HostingChecker {
         GitHub github = GitHub.connect();
         String forkFrom = issue.getRepositoryUrl();
         if (StringUtils.isNotBlank(forkFrom)) {
-            Matcher m = Pattern.compile("(?:https:\\/\\/github\\.com/)(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
+            Matcher m = Pattern.compile("https://github\\.com/(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
             if (m.matches()) {
                 String owner = m.group(1);
                 String repoName = m.group(2);
@@ -152,8 +136,7 @@ public class HostingChecker {
                     GHRepository repo = github.getRepository(owner + "/" + repoName);
                     GHContent file = repo.getFileContent(fileName);
                     res = file != null && file.isFile();
-                } catch (GHFileNotFoundException e) {
-                    res = false;
+                } catch (GHFileNotFoundException ignored) {
                 }
             }
         }
