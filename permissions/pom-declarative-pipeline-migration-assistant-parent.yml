@@ -4,7 +4,7 @@ github: "jenkinsci/declarative-pipeline-migration-assistant-plugin"
 paths:
   - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-parent"
 developers:
-- "@cloudbees-developers"
+  - "@cloudbees-developers"
   - "abayer"
   - "dnusbaum"
   - "jglick"
