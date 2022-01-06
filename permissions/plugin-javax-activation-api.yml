@@ -1,0 +1,9 @@
+---
+name: "javax-activation-api"
+github: &GH "jenkinsci/javax-activation-api-plugin"
+paths:
+- "io/jenkins/plugins/javax-activation-api"
+developers:
+- "basil"
+issues:
+  - jira: 28834
