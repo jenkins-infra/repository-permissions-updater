@@ -11,3 +11,5 @@ developers:
 - "jglick"
 - "mgedmin"
 - "thomas_dee"
+cd:
+  enabled: true
