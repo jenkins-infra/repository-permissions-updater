@@ -1,0 +1,15 @@
+---
+name: "jaxb"
+github: &gh "jenkinsci/jaxb-plugin"
+issues:
+- jira: '24725' # jaxb-plugin
+- github: *gh
+paths:
+- "io/jenkins/plugins/jaxb"
+developers:
+- "kohsuke"
+- "oleg_nenashev"
+- "batmat"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

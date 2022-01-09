@@ -1,6 +1,8 @@
 ---
 name: "cucumber-perf"
 github: "jenkinsci/cucumber-performance-plugin"
+issues:
+- jira: '17720' # cucumber-perf-plugin
 paths:
 - "com/castlemon/hudson/cucumber-perf"
 developers:

@@ -4,5 +4,5 @@ github: "jenkinsci/envinject-lib"
 paths:
 - "org/jenkins-ci/lib/envinject-lib"
 developers:
-- "ndeloof"
 - "oleg_nenashev"
+- "jglick"

@@ -1,7 +1,10 @@
 ---
 name: "Exclusion"
 github: "jenkinsci/exclusion-plugin"
+issues:
+- jira: '16022' # exclusion-plugin
 paths:
 - "org/jenkins-ci/plugins/Exclusion"
 developers:
 - "anthonyroux"
+- "basil"

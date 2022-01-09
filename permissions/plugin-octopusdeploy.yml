@@ -1,7 +1,9 @@
 ---
 name: "octopusdeploy"
 github: "jenkinsci/octopusdeploy-plugin"
+issues:
+- jira: '20646' # octopusdeploy-plugin
 paths:
 - "hudson/plugins/octopusdeploy/octopusdeploy"
 developers:
-- "badriance"
+- "octopusdeploy"

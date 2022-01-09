@@ -1,0 +1,11 @@
+---
+name: "servicenow-devops"
+github: "jenkinsci/servicenow-devops-plugin"
+issues:
+- jira: '28628' #servicenow-devops-plugin HOSTING-1111
+paths:
+- "io/jenkins/plugins/servicenow-devops"
+developers:
+- "bhavani_velivala"
+cd:
+  enabled: true

@@ -1,6 +1,9 @@
 ---
 name: "unity3d-plugin"
-github: "jenkinsci/unity3d-plugin"
+github: &gh "jenkinsci/unity3d-plugin"
+issues:
+- jira: '16422' # unity3d-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/unity3d-plugin"
 developers:

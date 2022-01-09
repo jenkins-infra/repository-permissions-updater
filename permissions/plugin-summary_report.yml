@@ -1,6 +1,8 @@
 ---
 name: "summary_report"
 github: "jenkinsci/summary_report-plugin"
+issues:
+- jira: '17534' # summary_report-plugin
 paths:
 - "org/jenkins-ci/plugins/summary_report"
 developers:

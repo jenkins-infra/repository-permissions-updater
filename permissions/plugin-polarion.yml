@@ -1,6 +1,8 @@
 ---
 name: "polarion"
 github: "jenkinsci/polarion-plugin"
+issues:
+- jira: '15565' # polarion-plugin
 paths:
 - "org/jvnet/hudson/plugins/polarion"
 developers: []

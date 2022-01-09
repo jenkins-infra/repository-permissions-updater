@@ -1,6 +1,8 @@
 ---
 name: "SCTMExecutor"
 github: "jenkinsci/SCTMExecutor-plugin"
+issues:
+- jira: '15598' # sctmexecutor-plugin
 paths:
 - "hudson/plugins/sctmexecutor/SCTMExecutor"
 developers: 

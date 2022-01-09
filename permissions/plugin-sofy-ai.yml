@@ -1,0 +1,8 @@
+name: "sofy-ai"
+github: "jenkinsci/sofy-ai-plugin"
+issues:
+- jira: '24649' # sofy-ai-plugin
+paths:
+- "io/jenkins/plugins/sofy-ai"
+developers:
+- "sofy_waqas"

@@ -5,6 +5,6 @@ paths:
 - "org/jenkins-ci/plugins/swarm-client"
 - "org/jvnet/hudson/plugins/swarm-client"
 developers:
-- "drulli"
+- "basil"
 - "mindjiver"
 - "oleg_nenashev"

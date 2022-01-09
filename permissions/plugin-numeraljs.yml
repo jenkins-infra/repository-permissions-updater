@@ -1,7 +1,17 @@
 ---
 name: "numeraljs"
 github: "jenkinsci/js-libs"
+issues:
+- jira: '21133' # js-modules
 paths:
 - "org/jenkins-ci/ui/numeraljs"
 developers:
-- "tfennelly"
+- "alecharp"
+- "batmat"
+- "egutierrez"
+- "fcojfernandez"
+- "mramonleon"
+- "rsandell"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

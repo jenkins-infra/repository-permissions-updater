@@ -1,6 +1,9 @@
 ---
 name: "cloudshare-docker"
-github: "jenkinsci/cloudshare-docker-plugin"
+github: &gh "jenkinsci/cloudshare-docker-plugin"
+issues:
+- jira: '21973' # cloudshare-docker-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/cloudshare-docker"
 developers:

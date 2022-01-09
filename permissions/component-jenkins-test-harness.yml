@@ -1,6 +1,8 @@
 ---
 name: "jenkins-test-harness"
 github: "jenkinsci/jenkins-test-harness"
+cd:
+  enabled: true
 paths:
 - "org/jenkins-ci/main/jenkins-test-harness"
 developers:
@@ -9,8 +11,9 @@ developers:
 - "jglick"
 - "kohsuke"
 - "olivergondza"
-- "stephenconnolly"
 - "svanoort"
-- "tfennelly"
 - "olamy"
 - "batmat"
+- "oleg_nenashev"
+- "timja"
+

@@ -1,6 +1,9 @@
 ---
 name: "open-stf"
-github: "jenkinsci/open-stf-plugin"
+github: &gh "jenkinsci/open-stf-plugin"
+issues:
+- github: *gh
+- jira: '21672' # open-stf-plugin
 paths:
 - "org/jenkins-ci/plugins/open-stf"
 developers:

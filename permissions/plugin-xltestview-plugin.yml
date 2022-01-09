@@ -1,6 +1,8 @@
 ---
 name: "xltestview-plugin"
-github: "jenkinsci/xltestview-plugin"
+github: &gh "jenkinsci/xltestview-plugin"
+issues:
+- github: *gh
 paths:
 - "com/xebialabs/xlt/ci/xltestview-plugin"
 developers:

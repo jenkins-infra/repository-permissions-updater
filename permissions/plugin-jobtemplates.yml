@@ -1,6 +1,9 @@
 ---
 name: "jobtemplates"
-github: "jenkinsci/jobtemplates-plugin"
+github: &gh "jenkinsci/jobtemplates-plugin"
+issues:
+- jira: '18127' # jobtemplates-plugin
+- github: *gh
 paths:
 - "com/unitedinternet/jenkins/plugins/jobtemplates/jobtemplates"
 developers: []

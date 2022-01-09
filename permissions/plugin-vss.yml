@@ -1,6 +1,8 @@
 ---
 name: "vss"
 github: "jenkinsci/vss-plugin"
+issues:
+- jira: '15587' # vss-plugin
 paths:
 - "org/jenkins-ci/plugins/vss"
 developers: []

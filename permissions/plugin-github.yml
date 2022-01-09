@@ -1,9 +1,14 @@
 ---
 name: "github"
 github: "jenkinsci/github-plugin"
+issues:
+- jira: '15896' # github-plugin
 paths:
 - "com/coravy/hudson/plugins/github/github"
 developers:
 - "integer"
 - "lanwen"
 - "oleg_nenashev"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

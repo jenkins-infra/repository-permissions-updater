@@ -1,6 +1,9 @@
 ---
 name: "pipeline-aws"
-github: "jenkinsci/pipeline-aws-plugin"
+github: &gh "jenkinsci/pipeline-aws-plugin"
+issues:
+- github: *gh
+- jira: '21921' # pipeline-aws-plugin
 paths:
 - "de/taimos/pipeline-aws"
 developers:

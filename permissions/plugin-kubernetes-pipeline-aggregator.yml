@@ -1,6 +1,8 @@
 ---
 name: "kubernetes-pipeline-aggregator"
 github: "jenkinsci/kubernetes-pipeline-plugin"
+issues:
+- jira: '21630' # kubernetes-pipeline-plugin
 paths:
 - "io/fabric8/pipeline/kubernetes-pipeline-aggregator"
 developers:

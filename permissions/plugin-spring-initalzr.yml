@@ -1,6 +1,8 @@
 ---
 name: "spring-initalzr"
 github: "jenkinsci/spring-initalzr-plugin"
+issues:
+- jira: '22427' # spring-initalzr-plugin
 paths:
 - "org/jenkins-ci/plugins/spring-initalzr"
 developers:

@@ -4,6 +4,5 @@ github: "jenkinsci/maven-interceptors"
 paths:
 - "org/jenkins-ci/main/maven/maven35-agent"
 developers:
-- "ndeloof"
 - "olamy"
 - "aheritier"

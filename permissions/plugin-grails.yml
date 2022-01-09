@@ -1,6 +1,8 @@
 ---
 name: "grails"
 github: "jenkinsci/grails-plugin"
+issues:
+- jira: '15548' # grails-plugin
 paths:
 - "org/jvnet/hudson/plugins/grails"
 developers: []

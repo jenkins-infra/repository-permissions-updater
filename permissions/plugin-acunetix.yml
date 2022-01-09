@@ -1,6 +1,8 @@
 ---
 name: "acunetix"
 github: "jenkinsci/acunetix-plugin"
+issues:
+- jira: '22024' # acunetix-plugin
 paths:
 - "com/acunetix/acunetix"
 developers: 

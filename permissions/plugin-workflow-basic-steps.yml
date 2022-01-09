@@ -1,6 +1,8 @@
 ---
 name: "workflow-basic-steps"
 github: "jenkinsci/workflow-basic-steps-plugin"
+issues:
+- jira: '21712' # workflow-basic-steps-plugin
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-basic-steps"
 developers:
@@ -10,3 +12,10 @@ developers:
 - "svanoort"
 - "dnusbaum"
 - "rsandell"
+- "carroll"
+- "bitwiseman"
+- "kshultz"
+- "jtaboada"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

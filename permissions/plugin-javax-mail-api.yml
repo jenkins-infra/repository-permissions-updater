@@ -1,0 +1,9 @@
+---
+name: "javax-mail-api"
+github: &GH "jenkinsci/javax-mail-api-plugin"
+paths:
+- "io/jenkins/plugins/javax-mail-api"
+developers:
+- "basil"
+issues:
+  - jira: 28833

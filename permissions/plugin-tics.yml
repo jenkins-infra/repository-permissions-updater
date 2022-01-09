@@ -1,0 +1,8 @@
+name: "tics"
+github: "jenkinsci/tics-plugin"
+issues:
+- jira: '28121' # tics-plugin
+paths:
+- "io/jenkins/plugins/tics"
+developers:
+- "tiobe"

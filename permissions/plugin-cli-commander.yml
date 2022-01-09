@@ -1,6 +1,9 @@
 ---
 name: "cli-commander"
-github: "jenkinsci/cli-commander-plugin"
+github: &gh "jenkinsci/cli-commander-plugin"
+issues:
+- jira: '20324' # cli-commander-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/cli-commander"
 developers:

@@ -1,0 +1,9 @@
+---
+name: "tests"
+github: "jenkinsci/jenkinsfile-runner"
+paths:
+- "io/jenkins/jenkinsfile-runner/tests"
+developers:
+- "oleg_nenashev"
+- "egutierrez"
+- "fcojfernandez"

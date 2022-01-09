@@ -1,0 +1,9 @@
+---
+name: "setup"
+github: "jenkinsci/jenkinsfile-runner"
+paths:
+- "io/jenkins/jenkinsfile-runner/setup"
+developers:
+- "oleg_nenashev"
+- "egutierrez"
+- "fcojfernandez"

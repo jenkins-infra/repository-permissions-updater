@@ -1,6 +1,8 @@
 ---
 name: "testflight"
 github: "jenkinsci/testflight-plugin"
+issues:
+- jira: '16039' # testflight-plugin
 paths:
 - "org/jenkins-ci/plugins/testflight"
 developers: []

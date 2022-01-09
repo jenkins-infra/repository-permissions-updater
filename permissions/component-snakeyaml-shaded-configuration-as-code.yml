@@ -5,4 +5,9 @@ paths:
 - "io/jenkins/configuration-as-code/snakeyaml"
 developers:
 - "praqma"
-- "ndeloof"
+- "jetersen"
+- "oleg_nenashev"
+- "timja"
+security:
+  contacts:
+    jira: "jetersen"

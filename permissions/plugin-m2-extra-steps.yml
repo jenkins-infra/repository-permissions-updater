@@ -1,8 +1,9 @@
 ---
 name: "m2-extra-steps"
 github: "jenkinsci/m2-extra-steps-plugin"
+issues:
+- jira: '15627' # m2-extra-steps-plugin
 paths:
 - "org/jenkins-ci/plugins/m2-extra-steps"
 - "org/jvnet/hudson/plugins/m2-extra-steps"
-developers:
-- "ndeloof"
+developers: []

@@ -1,6 +1,8 @@
 ---
 name: "nis-notification-lamp"
-github: "jenkinsci/nis-notification-lamp-plugin"
+github: &gh "jenkinsci/nis-notification-lamp-plugin"
+issues:
+- github: *gh
 paths:
 - "jenkins/plugins/nis-notification-lamp"
 - "org/jenkins-ci/plugins/nis-notification-lamp"

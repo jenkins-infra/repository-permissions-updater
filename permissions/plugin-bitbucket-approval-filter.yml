@@ -1,6 +1,8 @@
 ---
 name: "bitbucket-approval-filter"
 github: "jenkinsci/bitbucket-approval-filter-plugin"
+issues:
+- jira: '23536' # bitbucket-approval-filter-plugin
 paths:
 - "org/jenkins-ci/plugins/bitbucket-approval-filter"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "remote-terminal-access"
 github: "jenkinsci/remote-terminal-access-plugin"
+issues:
+- jira: '17321' # remote-terminal-access-plugin
 paths:
 - "org/jenkins-ci/plugins/remote-terminal-access"
 developers: []

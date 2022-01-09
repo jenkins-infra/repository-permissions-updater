@@ -1,6 +1,8 @@
 ---
 name: "docker-build-step"
 github: "jenkinsci/docker-build-step-plugin"
+issues:
+- jira: '18721' # docker-build-step-plugin
 paths:
 - "org/jenkins-ci/plugins/docker-build-step"
 developers:

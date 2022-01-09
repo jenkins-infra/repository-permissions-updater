@@ -1,6 +1,8 @@
 ---
 name: "progress-bar-column-plugin"
 github: "jenkinsci/progress-bar-column-plugin"
+issues:
+- jira: '15905' # progress-bar-column-plugin
 paths:
 - "org/jenkins-ci/plugins/progress-bar-column-plugin"
 developers: []

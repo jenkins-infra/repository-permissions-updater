@@ -1,6 +1,8 @@
 ---
 name: "chroot"
 github: "jenkinsci/chroot-plugin"
+issues:
+- jira: '19222' # chroot-plugin
 paths:
 - "org/jenkins-ci/plugins/chroot"
 developers:

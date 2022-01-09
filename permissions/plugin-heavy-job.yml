@@ -1,6 +1,8 @@
 ---
 name: "heavy-job"
 github: "jenkinsci/heavy-job-plugin"
+issues:
+- jira: '16006' # heavy-job-plugin
 paths:
 - "org/jenkins-ci/plugins/heavy-job"
 developers: []

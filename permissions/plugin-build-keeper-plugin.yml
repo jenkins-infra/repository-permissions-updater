@@ -1,6 +1,8 @@
 ---
 name: "build-keeper-plugin"
 github: "jenkinsci/build-keeper-plugin"
+issues:
+- jira: '15894' # build-keeper-plugin
 paths:
 - "org/jenkins-ci/plugins/build-keeper-plugin"
 developers: []

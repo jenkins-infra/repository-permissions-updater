@@ -1,0 +1,11 @@
+---
+name: "build-health-cache-updater"
+github: "jenkinsci/build-health-cache-updater-plugin"
+issues:
+- jira: '26523' # build-health-cache-updater-plugin
+paths:
+- "io/jenkins/plugins/build-health-cache-updater"
+developers:
+- "rsandell"
+- "egutierrez"
+- "alecharp"

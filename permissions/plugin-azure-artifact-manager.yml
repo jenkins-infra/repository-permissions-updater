@@ -1,0 +1,12 @@
+---
+name: "azure-artifact-manager"
+github: &gh "jenkinsci/azure-artifact-manager-plugin"
+issues:
+  - github: *gh
+paths:
+- "org/jenkins-ci/plugins/azure-artifact-manager"
+cd:
+  enabled: true
+developers:
+- "zooopx"
+- "timja"

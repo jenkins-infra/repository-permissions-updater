@@ -1,9 +1,0 @@
----
-name: "pipeline-log-fluentd-cloudwatch"
-github: "jenkinsci/pipeline-log-fluentd-cloudwatch-plugin"
-paths:
-- "io/jenkins/plugins/pipeline-log-fluentd-cloudwatch"
-developers:
-- "jglick"
-- "csanchez"
-- "oleg_nenashev"

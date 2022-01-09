@@ -1,6 +1,8 @@
 ---
 name: "cucumber-testresult-plugin"
 github: "jenkinsci/cucumber-testresult-plugin"
+issues:
+- jira: '18324' # cucumber-testresult-plugin
 paths:
 - "org/jenkins-ci/plugins/cucumber-testresult-plugin"
 developers:

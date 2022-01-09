@@ -1,0 +1,9 @@
+---
+name: "discord-notifier"
+github: &gh "jenkinsci/discord-notifier-plugin"
+issues:
+- github: *gh
+paths:
+- "nz/co/jammehcow/discord-notifier"
+developers:
+- "kocproz"

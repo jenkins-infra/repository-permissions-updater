@@ -4,4 +4,4 @@ github: "jenkinsci/scm-filter-jira-validator-plugin"
 paths:
 - "org/jenkins-ci/plugins/scm-filter-jira-validator-parent"
 developers:
-- "witokondoria"
+- "askalski85"

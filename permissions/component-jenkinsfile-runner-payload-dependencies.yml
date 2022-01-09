@@ -1,0 +1,9 @@
+---
+name: "payload-dependencies"
+github: "jenkinsci/jenkinsfile-runner"
+paths:
+- "io/jenkins/jenkinsfile-runner/payload-dependencies"
+developers:
+- "oleg_nenashev"
+- "egutierrez"
+- "fcojfernandez"

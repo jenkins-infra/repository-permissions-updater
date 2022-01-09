@@ -1,6 +1,8 @@
 ---
 name: "loaderio-jenkins-plugin"
 github: "jenkinsci/loaderio-plugin"
+issues:
+- jira: '17658' # loaderio-jenkins-plugin
 paths:
 - "io/loader/loaderio-jenkins-plugin"
 developers: []

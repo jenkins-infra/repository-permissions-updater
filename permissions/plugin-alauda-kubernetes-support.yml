@@ -1,0 +1,12 @@
+---
+name: "alauda-kubernetes-support"
+github: "jenkinsci/alauda-kubernetes-support-plugin"
+issues:
+- jira: '25521' # alauda-kubernetes-support-plugin
+paths:
+- "io/alauda/jenkins/plugins/alauda-kubernetes-support"
+developers:
+- "surenpi"
+- "danielfbm"
+- "chengjingtao"
+- "cizezsy"

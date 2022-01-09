@@ -1,10 +1,24 @@
 ---
 name: "blueocean-executor-info"
-github: "jenkinsci/blueocean-executor-info-plugin"
+github: "jenkinsci/blueocean-plugin"
+issues:
+- jira: '23156' # blueocean-executor-info-plugin
 paths:
-- "org/jenkins-ci/plugins/blueocean-executor-info"
+- "io/jenkins/blueocean/blueocean-executor-info"
 developers:
-- "jamesdumay"
 - "michaelneale"
 - "vivek"
 - "kzantow"
+- "davidbees"
+- "richbg"
+- "carroll"
+- "dnusbaum"
+- "jtaboada"
+- "kshultz"
+- "bitwiseman"
+- "olamy"
+- "imeredith"
+- "tscherler"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

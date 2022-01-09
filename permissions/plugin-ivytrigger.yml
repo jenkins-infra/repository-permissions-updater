@@ -1,8 +1,11 @@
 ---
 name: "ivytrigger"
 github: "jenkinsci/ivytrigger-plugin"
+issues:
+- jira: '16025' # ivytrigger-plugin
 paths:
 - "org/jenkins-ci/plugins/ivytrigger"
 developers:
 - "gbois"
 - "bbergquist"
+- "stealthdj"

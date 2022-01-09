@@ -1,6 +1,8 @@
 ---
 name: "job-restrictions"
 github: "jenkinsci/job-restrictions-plugin"
+issues:
+- jira: '18044' # job-restrictions-plugin
 paths:
 - "com/synopsys/arc/jenkinsci/plugins/job-restrictions"
 developers:

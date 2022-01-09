@@ -1,6 +1,8 @@
 ---
 name: "shiningpanda"
 github: "jenkinsci/shiningpanda-plugin"
+issues:
+- jira: '15961' # shiningpanda-plugin
 paths:
 - "org/jenkins-ci/plugins/shiningpanda"
 developers:

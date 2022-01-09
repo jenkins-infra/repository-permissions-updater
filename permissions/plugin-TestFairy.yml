@@ -1,8 +1,13 @@
 ---
 name: "TestFairy"
 github: "jenkinsci/testfairy-plugin"
+issues:
+- github: 'jenkinsci/testfairy-plugin'
 paths:
 - "org/jenkins-ci/plugins/TestFairy"
 developers:
-- "giltsl"
-- "jenkins3pillar"
+- "diegoperini"
+- "gilm"
+- "yan123"
+cd:
+  enabled: true

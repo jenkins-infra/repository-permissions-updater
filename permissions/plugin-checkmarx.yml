@@ -1,8 +1,10 @@
 ---
 name: "checkmarx"
 github: "jenkinsci/checkmarx-plugin"
+issues:
+- jira: '21122' # checkmarx-plugin
 paths:
 - "com/checkmarx/jenkins/checkmarx"
 developers:
-- "sergeyk"
+- "sternlir"
 - "cxadmin"

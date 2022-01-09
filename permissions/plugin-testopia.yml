@@ -1,6 +1,8 @@
 ---
 name: "testopia"
 github: "jenkinsci/testopia-plugin"
+issues:
+- jira: '16826' # testopia-plugin
 paths:
 - "jenkins/plugins/testopia/testopia"
 developers: []

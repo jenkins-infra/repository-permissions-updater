@@ -1,6 +1,9 @@
 ---
 name: "azure-cli"
-github: "jenkinsci/azure-cli-plugin"
+github: &gh "jenkinsci/azure-cli-plugin"
+issues:
+- github: *gh
+- jira: '23051' # azure-cli-plugin
 paths:
 - "org/jenkins-ci/plugins/azure-cli"
 developers:

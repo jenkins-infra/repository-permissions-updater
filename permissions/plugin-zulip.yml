@@ -1,0 +1,9 @@
+---
+name: "zulip"
+github: &gh "jenkinsci/zulip-plugin"
+issues:
+- github: *gh
+paths:
+- "org/jenkins-ci/plugins/zulip"
+developers:
+- "butchyyyy"

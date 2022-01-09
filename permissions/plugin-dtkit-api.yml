@@ -1,0 +1,9 @@
+---
+name: "dtkit-api"
+github: "jenkinsci/dtkit-plugin"
+issues:
+- jira: '16031' # dtkit-plugin
+paths:
+- "org/jenkins-ci/plugins/dtkit-api"
+developers:
+- "nfalco"

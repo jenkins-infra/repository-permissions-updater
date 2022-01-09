@@ -1,6 +1,8 @@
 ---
 name: "no-agent-job-purge"
 github: "jenkinsci/no-agent-job-purge-plugin"
+issues:
+- jira: '21972' # no-agent-job-purge-plugin
 paths:
 - "org/jenkins-ci/plugins/no-agent-job-purge"
 developers:

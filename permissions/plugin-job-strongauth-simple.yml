@@ -1,6 +1,8 @@
 ---
 name: "job-strongauth-simple"
 github: "jenkinsci/job-strongauth-simple-plugin"
+issues:
+- jira: '17485' # job-strongauth-simple-plugin
 paths:
 - "org/jenkins-ci/plugins/job-strongauth-simple"
 developers: []

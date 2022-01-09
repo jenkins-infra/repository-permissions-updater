@@ -1,3 +1,7 @@
+# generated files, not to be committed/pushed
+json/
+checks-*.txt
+
 # Apache Maven
 target/
 

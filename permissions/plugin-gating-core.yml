@@ -1,0 +1,7 @@
+---
+name: "gating-core"
+github: "jenkinsci/gating-core-plugin"
+paths:
+- "io/jenkins/plugins/gating-core"
+developers:
+- "olivergondza"

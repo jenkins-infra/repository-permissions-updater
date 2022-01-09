@@ -5,6 +5,5 @@ paths:
 - "org/jenkins-ci/main/maven/maven-agent"
 developers:
 - "kutzi"
-- "ndeloof"
 - "olamy"
 - "aheritier"

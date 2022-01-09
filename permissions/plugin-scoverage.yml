@@ -1,6 +1,8 @@
 ---
 name: "scoverage"
 github: "jenkinsci/scoverage-plugin"
+issues:
+- jira: '18731' # scoverage-plugin
 paths:
 - "org/jenkins-ci/plugins/scoverage"
 developers:

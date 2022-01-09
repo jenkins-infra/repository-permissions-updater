@@ -1,6 +1,8 @@
 ---
 name: "StashBranchParameter"
 github: "jenkinsci/stash-branch-parameters-plugin"
+issues:
+- jira: '18747' # stashbranchparameter-plugin
 paths:
 - "org/jenkins-ci/plugins/StashBranchParameter"
 developers:

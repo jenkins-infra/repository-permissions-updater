@@ -1,6 +1,9 @@
 ---
 name: "azure-slave-plugin"
-github: "jenkinsci/azure-slave-plugin"
+github: &gh "jenkinsci/azure-slave-plugin"
+issues:
+- github: *gh
+- jira: '19320' # azure-slave-plugin
 paths:
 - "org/jenkins-ci/plugins/azure-slave-plugin"
 developers:

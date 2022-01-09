@@ -1,6 +1,9 @@
 ---
 name: "dynatrace-dashboard"
-github: "jenkinsci/dynatrace-plugin"
+github: &gh "jenkinsci/dynatrace-plugin"
+issues:
+- github: *gh
+- jira: '23547' # dynatrace-dashboard-plugin
 paths:
 - "org/jenkins-ci/plugins/dynatrace-dashboard"
 developers:

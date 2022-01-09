@@ -6,4 +6,3 @@ paths:
 - "org/jvnet/hudson/dom4j/dom4j"
 developers:
 - "kohsuke"
-- "ndeloof"

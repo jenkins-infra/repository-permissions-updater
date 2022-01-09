@@ -1,7 +1,12 @@
 ---
 name: "gitea"
 github: "jenkinsci/gitea-plugin"
+issues:
+- jira: '23121' # gitea-plugin
 paths:
 - "org/jenkins-ci/plugins/gitea"
 developers:
-- "stephenconnolly"
+- "lafriks"
+- "justusbunsi"
+cd:
+  enabled: true

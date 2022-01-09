@@ -1,6 +1,8 @@
 ---
 name: "telegram-notifications"
-github: "jenkinsci/telegram-notifications-plugin"
+github: &gh "jenkinsci/telegram-notifications-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/telegram-notifications"
 developers:

@@ -1,0 +1,7 @@
+---
+name: "itms-for-jira"
+github: "jenkinsci/itms-for-jira-plugin"
+paths:
+- "io/jenkins/plugins/itms-for-jira"
+developers:
+- "itms"

@@ -1,0 +1,8 @@
+---
+name: "dtkit-metrics-hudson-api"
+github: "jenkinsci/libdtkit"
+paths:
+- "org/jenkins-ci/lib/dtkit/dtkit-metrics-hudson-api"
+developers:
+- "gbois"
+- "nfalco"

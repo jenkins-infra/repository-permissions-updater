@@ -1,0 +1,11 @@
+---
+name: "deepcrawl-test"
+github: &GH "jenkinsci/deepcrawl-test-plugin"
+paths:
+- "io/jenkins/plugins/deepcrawl-test"
+developers:
+- "deepcrawl_integration"
+issues:
+  - github: *GH
+cd:
+  enabled: true

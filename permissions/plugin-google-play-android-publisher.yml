@@ -1,6 +1,8 @@
 ---
 name: "google-play-android-publisher"
 github: "jenkinsci/google-play-android-publisher-plugin"
+issues:
+- jira: '19721' # google-play-android-publisher-plugin
 paths:
 - "org/jenkins-ci/plugins/google-play-android-publisher"
 developers:

@@ -5,3 +5,4 @@ paths:
 - "org/jenkins-ci/main/jenkins-core"
 developers:
 - "kohsuke"
+- "releasebot"

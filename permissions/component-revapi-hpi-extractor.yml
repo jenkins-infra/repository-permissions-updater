@@ -1,0 +1,7 @@
+---
+name: "revapi-hpi-extractor"
+github: "jenkinsci/lib-revapi-hpi-extractor"
+paths:
+- "io/jenkins/tools/revapi-hpi-extractor"
+developers:
+- "drulli"

@@ -1,6 +1,8 @@
 ---
 name: "script-scm"
 github: "jenkinsci/script-scm-plugin"
+issues:
+- jira: '17582' # script-scm-plugin
 paths:
 - "com/cwctravel/script-scm"
 - "org/jenkins-ci/plugins/script-scm"

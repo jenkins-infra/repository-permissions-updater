@@ -1,6 +1,8 @@
 ---
 name: "ironmq-notifier"
 github: "jenkinsci/ironmq-notifier-plugin"
+issues:
+- jira: '18130' # ironmq-notifier-plugin
 paths:
 - "org/jenkins-ci/plugins/ironmq-notifier"
 developers:

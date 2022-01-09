@@ -5,6 +5,5 @@ paths:
 - "org/jenkins-ci/main/maven/maven3-agent"
 developers:
 - "kutzi"
-- "ndeloof"
 - "olamy"
 - "aheritier"

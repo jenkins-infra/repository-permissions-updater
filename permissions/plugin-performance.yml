@@ -1,10 +1,11 @@
 ---
 name: "performance"
 github: "jenkinsci/performance-plugin"
+issues:
+- jira: '15803' # performance-plugin
 paths:
 - "org/jenkins-ci/plugins/performance"
 - "org/jvnet/hudson/plugins/performance"
 developers:
 - "manolo"
-- "undera"
 - "artem_fedorov"

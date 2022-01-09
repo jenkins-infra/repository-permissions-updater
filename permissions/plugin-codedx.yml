@@ -4,6 +4,5 @@ github: "jenkinsci/codedx-plugin"
 paths:
 - "org/jenkins-ci/plugins/codedx"
 developers:
-- "ademartini"
 - "baf"
-- "leradwan"
+- "tylercamp"
