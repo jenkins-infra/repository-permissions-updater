@@ -1,0 +1,9 @@
+---
+name: "cloudbees-feature-management"
+github: &GH "jenkinsci/cloudbees-feature-management-plugin"
+paths:
+- "io/jenkins/plugins/cloudbees-feature-management"
+developers:
+- "tfennelly"
+issues:
+  - github: *GH
