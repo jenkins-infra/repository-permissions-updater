@@ -8,3 +8,5 @@ paths:
 developers:
 - "ki82"
 - "greybird"
+cd:
+  enabled: true
