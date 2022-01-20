@@ -27,7 +27,7 @@ props += pipelineTriggers(triggers)
 properties(props)
 
 
-node('maven-11') {
+node('maven-11 || java') {
     try {
         stage ('Clean') {
             deleteDir()
@@ -39,7 +39,7 @@ node('maven-11') {
         }
 
         stage ('Build') {
-            sh "mvn -U clean verify"
+            sh "mvn -U -B -ntp clean verify"
         }
 
         stage ('Run') {
