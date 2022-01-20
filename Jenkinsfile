@@ -39,7 +39,7 @@ node('maven-11 || java') {
         }
 
         stage ('Build') {
-            sh "mvn -U clean verify"
+            sh "mvn -U -B -ntp clean verify"
         }
 
         stage ('Run') {
