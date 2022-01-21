@@ -5,6 +5,8 @@ issues:
 - jira: '21833' # pipeline-github-lib-plugin
 paths:
 - "org/jenkins-ci/plugins/pipeline-github-lib"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "abayer"
