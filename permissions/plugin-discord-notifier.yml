@@ -7,3 +7,5 @@ paths:
 - "nz/co/jammehcow/discord-notifier"
 developers:
 - "kocproz"
+cd:
+  enabled: true
