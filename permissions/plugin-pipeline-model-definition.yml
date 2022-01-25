@@ -13,6 +13,11 @@ developers:
 - "bitwiseman"
 - "dnusbaum"
 - "carroll"
+- "teilo"
+- "olamy"
+- "alecharp"
+- "batmat"
+- "rarabaolaza"
 security:
   contacts:
     jira: "cloudbees_security_members"

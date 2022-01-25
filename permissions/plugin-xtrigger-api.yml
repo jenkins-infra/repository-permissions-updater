@@ -1,0 +1,7 @@
+---
+name: "xtrigger-api"
+github: "jenkinsci/xtrigger-api-plugin"
+paths:
+- "org/jenkins-ci/plugins/xtrigger-api"
+developers:
+- "stealthdj"

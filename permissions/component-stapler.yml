@@ -1,6 +1,6 @@
 ---
 name: "stapler"
-github: "stapler/stapler"
+github: "jenkinsci/stapler"
 cd:
   enabled: true
 paths:

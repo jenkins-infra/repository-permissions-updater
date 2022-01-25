@@ -11,3 +11,5 @@ developers:
 - "jthompson"
 - "lathasekar"
 - "mide"
+cd:
+  enabled: true

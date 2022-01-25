@@ -1,0 +1,9 @@
+---
+name: "jersey2-api"
+github: &GH "jenkinsci/jersey2-api-plugin"
+paths:
+- "io/jenkins/plugins/jersey2-api"
+developers:
+- "basil"
+issues:
+  - jira: 28832

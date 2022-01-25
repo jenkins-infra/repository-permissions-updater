@@ -5,6 +5,8 @@ issues:
 - jira: '18054' # scm-api-plugin
 paths:
 - "org/jenkins-ci/plugins/scm-api"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "recena"

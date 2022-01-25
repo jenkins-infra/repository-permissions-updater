@@ -5,6 +5,7 @@ paths:
 - "org/jenkins-ci/tools"
 - "org/jenkins-ci/tools/maven-hpi-plugin"
 developers:
+- "basil"
 - "jglick"
 - "kohsuke"
 - "olamy"
