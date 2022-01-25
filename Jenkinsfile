@@ -27,7 +27,7 @@ props += pipelineTriggers(triggers)
 properties(props)
 
 
-node('maven-11 || java') {
+node('maven-11') {
     try {
         stage ('Clean') {
             deleteDir()
