@@ -8,6 +8,8 @@ developers:
 - "jetersen"
 - "oleg_nenashev"
 - "timja"
+cd:
+  enabled: true
 security:
   contacts:
     jira: "jetersen"
