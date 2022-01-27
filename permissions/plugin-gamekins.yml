@@ -1,0 +1,9 @@
+---
+name: "gamekins"
+github: &GH "jenkinsci/gamekins-plugin"
+paths:
+- "org/gamekins/gamekins"
+developers:
+- "straubin"
+issues:
+  - github: *GH
