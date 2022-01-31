@@ -9,3 +9,5 @@ developers:
 - "andreituicu"
 - "zaikinpv"
 - "imontero"
+cd:
+  enabled: true
