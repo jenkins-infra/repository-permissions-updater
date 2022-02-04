@@ -10,6 +10,7 @@ developers:
 - "fgalmeida"
 - "madhvidua"
 - "oresk"
+- "kybarton_amazon"
 security:
   contacts:
     email: "aws-security@amazon.com"
