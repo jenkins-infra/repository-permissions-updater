@@ -7,9 +7,12 @@ paths:
 - "org/jenkins-ci/plugins/javadoc"
 developers:
 - "jglick"
+- "batmat"
 - "oleg_nenashev"
 - "olivergondza"
 - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true

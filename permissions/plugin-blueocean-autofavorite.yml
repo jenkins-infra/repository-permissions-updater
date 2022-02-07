@@ -6,6 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/blueocean-autofavorite"
 developers:
+- "batmat"
 - "michaelneale"
 - "jamesdumay"
 - "vivek"
@@ -20,3 +21,5 @@ developers:
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true
