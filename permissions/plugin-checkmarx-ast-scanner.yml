@@ -7,3 +7,5 @@ developers:
 - "pedrolopecx"
 issues:
   - github: *GH
+cd:
+  enabled: true
