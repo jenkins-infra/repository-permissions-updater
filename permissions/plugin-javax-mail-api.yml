@@ -7,3 +7,6 @@ developers:
 - "basil"
 issues:
   - jira: 28833
+security:
+  contacts:
+    jira: "cloudbees_security_members"
