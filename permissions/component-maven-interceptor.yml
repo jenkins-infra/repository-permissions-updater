@@ -4,4 +4,6 @@ github: "jenkinsci/maven-interceptors"
 paths:
 - "org/jenkins-ci/main/maven/maven-interceptor"
 developers:
-- "@core"
+- "kutzi"
+- "olamy"
+- "aheritier"
