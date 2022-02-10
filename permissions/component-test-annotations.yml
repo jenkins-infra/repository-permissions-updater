@@ -5,6 +5,4 @@ paths:
 - "org/jenkins-ci/test-annotations"
 - "org/jvnet/hudson/test-annotations"
 developers:
-- "basil"
-- "kohsuke"
-- "olivergondza"
+- "@core"

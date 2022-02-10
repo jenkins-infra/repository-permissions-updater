@@ -4,8 +4,4 @@ github: "jenkinsci/lib-task-reactor"
 paths:
 - "org/jenkins-ci/task-reactor"
 developers:
-- "basil"
-- "kohsuke"
-- "jglick"
-- "oleg_nenashev"
-
+- "@core"
