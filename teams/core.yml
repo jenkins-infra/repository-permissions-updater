@@ -1,0 +1,17 @@
+---
+name: "core"
+developers:
+# not an exhaustive list of core maintainers
+# existing core maintainers send a PR if you want to be added
+- "basil"
+- "batmat"
+- "danielbeck"
+- "jglick"
+- "kohsuke"
+- "markewaite"
+- "olamy"
+- "oleg_nenashev"
+- "raihaan"
+- "teilo"
+- "timja"
+- "vlatombe"

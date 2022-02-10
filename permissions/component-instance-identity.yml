@@ -4,7 +4,4 @@ github: "jenkinsci/instance-identity-module"
 paths:
 - "org/jenkins-ci/modules/instance-identity"
 developers:
-- "jglick"
-- "oleg_nenashev"
-- "batmat"
-- "timja"
+- "@core"

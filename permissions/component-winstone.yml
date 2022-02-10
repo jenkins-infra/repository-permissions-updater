@@ -4,9 +4,4 @@ github: "jenkinsci/winstone"
 paths:
 - "org/jenkins-ci/winstone"
 developers:
-- "basil"
-- "jglick"
-- "kohsuke"
-- "oleg_nenashev"
-- "olamy"
-- "timja"
+- "@core"
