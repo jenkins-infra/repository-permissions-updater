@@ -8,3 +8,4 @@ paths:
 - "org/jvnet/hudson/plugins/publish-over-ssh"
 developers:
 - "gmcdonald"
+- "olamy"
