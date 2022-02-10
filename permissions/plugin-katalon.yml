@@ -6,4 +6,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/katalon"
 developers:
-- "hainguyenkatalon,duyluonganh,HieuBui419"
+- "hainguyenkatalon"
+- "duyluonganh"
+- "HieuBui419"
