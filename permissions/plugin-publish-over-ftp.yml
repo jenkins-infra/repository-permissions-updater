@@ -7,5 +7,6 @@ paths:
 - "org/jenkins-ci/plugins/publish-over-ftp"
 - "org/jvnet/hudson/plugins/publish-over-ftp"
 developers:
+- "gmcdonald"
 # Not a maintainer, just tables-to-divs fixes
 - "oleg_nenashev"
