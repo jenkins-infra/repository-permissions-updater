@@ -5,4 +5,7 @@ issues:
 - jira: '15790' # console-column-plugin
 paths:
 - "org/jenkins-ci/plugins/console-column-plugin"
-developers: []
+developers:
+- "NotMyFault"
+cd:
+  enabled: true
