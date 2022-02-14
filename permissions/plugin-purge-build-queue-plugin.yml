@@ -5,4 +5,7 @@ issues:
 - jira: '15912' # purge-build-queue-plugin
 paths:
 - "org/jenkins-ci/plugins/purge-build-queue-plugin"
-developers: []
+developers:
+  - "NotMyFault"
+cd:
+  enabled: true
