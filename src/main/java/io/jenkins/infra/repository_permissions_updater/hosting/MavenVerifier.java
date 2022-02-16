@@ -28,6 +28,7 @@ import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 public class MavenVerifier implements BuildSystemVerifier {
     private static final int MAX_LENGTH_OF_GROUP_ID_PLUS_ARTIFACT_ID = 100;
+    private static final int MAX_LENGTH_OF_ARTIFACT_ID = 37;
     private static final Logger LOGGER = LoggerFactory.getLogger(MavenVerifier.class);
 
     public static final Version LOWEST_PARENT_POM_VERSION = new Version(4, 0, 0);
@@ -101,9 +102,13 @@ public class MavenVerifier implements BuildSystemVerifier {
                     hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The 'artifactId' from the pom.xml (`%s`) is incorrect, it should be `%s` ('New Repository Name' field with \"-plugin\" removed)", artifactId, forkTo.replace("-plugin", "")));
                 }
 
+                if (artifactId.length() >= MAX_LENGTH_OF_ARTIFACT_ID) {
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The 'artifactId' `%s` from the pom.xml is incorrect, it must have less than %d characters, currently it has %d characters", artifactId, MAX_LENGTH_OF_ARTIFACT_ID, artifactId.length()));
+                }
+                
                 int lengthOfGroupIdAndArtifactId = groupId.length() + artifactId.length();
                 if (lengthOfGroupIdAndArtifactId >= MAX_LENGTH_OF_GROUP_ID_PLUS_ARTIFACT_ID) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The 'artifactId' `%s` and 'groupId' `%s` from the pom.xml is incorrect, combined they must have less than %d characters, currently they have %d characters", artifactId, groupId, MAX_LENGTH_OF_GROUP_ID_PLUS_ARTIFACT_ID, lengthOfGroupIdAndArtifactId, forkTo.replace("-plugin", "")));
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The 'artifactId' `%s` and 'groupId' `%s` from the pom.xml is incorrect, combined they must have less than %d characters, currently they have %d characters", artifactId, groupId, MAX_LENGTH_OF_GROUP_ID_PLUS_ARTIFACT_ID, lengthOfGroupIdAndArtifactId));
                 }
 
                 if(artifactId.toLowerCase().contains("jenkins")) {
