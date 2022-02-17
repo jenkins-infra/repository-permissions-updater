@@ -2,7 +2,7 @@
 name: "gitea-checks"
 github: &GH "jenkinsci/gitea-checks-plugin"
 paths:
-- "com/github/flozzone/gitea-checks"
+- "io/jenkins/plugins/gitea-checks"
 developers:
 - "flozzone"
 issues:
