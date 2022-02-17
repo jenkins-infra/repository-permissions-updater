@@ -7,3 +7,5 @@ developers:
 - "flozzone"
 issues:
   - github: *GH
+cd:
+  enabled: true
