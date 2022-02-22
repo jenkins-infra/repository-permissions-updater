@@ -5,6 +5,8 @@ issues:
 - jira: '20639' # kubernetes-plugin
 paths:
 - "org/csanchez/jenkins/plugins/kubernetes"
+cd:
+  enabled: true
 developers:
 - "csanchez"
 - "vlatombe"
