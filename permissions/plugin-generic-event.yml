@@ -3,6 +3,8 @@ name: "generic-event"
 github: &GH "jenkinsci/generic-event-plugin"
 paths:
 - "io/jenkins/plugins/generic-event"
+cd:
+  enabled: true
 developers:
 - "johnniang"
 issues:
