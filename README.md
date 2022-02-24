@@ -99,6 +99,8 @@ Either of `jira` and `email` is optional.
 Please note that we generally reject email contacts due to the additional overhead in reaching out via email.
 Unless you represent a large organization with dedicated security team that needs to be involved in the coordination of a release, but is not otherwise part of plugin maintenance, please refrain from requesting to be contacted via email.
 
+⚠️ Update from 2022-02-24, note from the security officer, we plan to remove the email support to reduce the overhead of communication.
+
 Managing Issue Trackers
 -----------------------
 
