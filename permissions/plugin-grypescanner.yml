@@ -1,0 +1,9 @@
+---
+name: "grypescanner"
+github: &GH "jenkinsci/grypescanner-plugin"
+paths:
+- "io/jenkins/plugins/grypescanner"
+developers:
+- "tbaum"
+issues:
+  - github: *GH
