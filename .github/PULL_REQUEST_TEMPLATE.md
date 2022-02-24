@@ -17,6 +17,7 @@ Make sure to implement all relevant entries (see section headers to when they ap
 ### For a newly hosted plugin only
 
 - [ ] Add link to resolved HOSTING issue in description above
+- [ ] Ping the `@jenkins-infra/security-hosting` team to determine the need for a security audit
 
 ### For a new permissions file only
 
@@ -37,6 +38,6 @@ Make sure to implement all relevant entries (see section headers to when they ap
 - [ ] Check this if newly added person also needs to be given merge permission to the GitHub repo (please @ the people/person with their GitHub username in this issue as well). If needed, it can be done using an [IRC Bot command](https://jenkins.io/projects/infrastructure/ircbot/#github-repo-management)
 - [ ] Check that the `$pluginId Developers` team has `Admin` permissions while granting the access.
 - [ ] In the case of plugin adoption, ensure that the Jenkins Jira default assignee is either removed or changed to the new maintainer.
-- [ ] If security contacts are changed (this includes add/remove), ping the security officer (currently `@Wadeck`) in this pull request. If an email contact is changed, wait for approval from the security officer.
+- [ ] If security contacts are changed (this includes add/remove), ping the `@jenkins-infra/security-hosting` team in this pull request. If an email contact is changed, wait for approval from the security officer.
 
 There are [IRC Bot commands](https://jenkins.io/projects/infrastructure/ircbot/#issue-tracker-management) for it
