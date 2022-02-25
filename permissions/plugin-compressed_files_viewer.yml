@@ -1,0 +1,9 @@
+---
+name: "compressed_files_viewer"
+github: &GH "jenkinsci/compressed_files_viewer-plugin"
+paths:
+- "io/jenkins/plugins/compressed_files_viewer"
+developers:
+- "ahmed_s"
+issues:
+  - github: *GH
