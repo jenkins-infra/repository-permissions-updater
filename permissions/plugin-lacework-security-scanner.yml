@@ -1,0 +1,9 @@
+---
+name: "lacework-security-scanner"
+github: &GH "jenkinsci/lacework-security-scanner-plugin"
+paths:
+- "io/jenkins/plugins/lacework-security-scanner"
+developers:
+- "alannix_lw"
+issues:
+  - github: *GH
