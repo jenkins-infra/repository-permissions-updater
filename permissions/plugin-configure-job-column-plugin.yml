@@ -5,4 +5,7 @@ issues:
 - jira: '16539' # configure-job-column-plugin
 paths:
 - "org/jenkins-ci/plugins/configure-job-column-plugin"
-developers: []
+developers:
+  - "notmyfault"
+cd:
+  enabled: true
