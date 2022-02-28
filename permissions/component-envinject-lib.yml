@@ -6,3 +6,6 @@ paths:
 developers:
 - "oleg_nenashev"
 - "jglick"
+- "notmyfault"
+cd:
+  enabled: true
