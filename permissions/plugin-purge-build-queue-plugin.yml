@@ -6,6 +6,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/purge-build-queue-plugin"
 developers:
-  - "NotMyFault"
+  - "notmyfault"
 cd:
   enabled: true

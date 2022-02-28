@@ -6,6 +6,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/jobConfigHistory"
 developers:
-- "NotMyFault"
+- "notmyfault"
 cd:
   enabled: true
