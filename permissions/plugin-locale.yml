@@ -9,4 +9,5 @@ paths:
 developers:
 - "oleg_nenashev"
 - "jonesbusy"
-
+cd:
+  enabled: true
