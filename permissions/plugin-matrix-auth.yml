@@ -7,4 +7,3 @@ paths:
 - "org/jenkins-ci/plugins/matrix-auth"
 developers:
 - "danielbeck"
-- "@cloudbees-developers"
