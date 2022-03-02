@@ -4,4 +4,4 @@ github: "jenkinsci/lib-mock-javamail"
 paths:
 - "org/jvnet/mock-javamail/mock-javamail"
 developers:
-- "basil"
+- "@core"

@@ -6,7 +6,7 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/pam-auth"
 developers:
-- "danielbeck"
 - "recena"
 - "jvz"
-- "wfollonier"
+- "@security"
+- "@cloudbees-developers"
