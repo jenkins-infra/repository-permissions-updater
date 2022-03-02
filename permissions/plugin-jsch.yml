@@ -10,7 +10,6 @@ developers:
 - "ljader"
 - "oleg_nenashev"
 - "dnusbaum"
-- "jthompson"
 security:
   contacts:
     jira: "cloudbees_security_members"
