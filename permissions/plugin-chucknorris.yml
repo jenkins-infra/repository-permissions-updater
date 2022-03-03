@@ -8,3 +8,5 @@ paths:
 developers:
 - "batmat"
 - "oleg_nenashev"
+cd:
+  enabled: true
