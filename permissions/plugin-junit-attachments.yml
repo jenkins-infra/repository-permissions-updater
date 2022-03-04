@@ -7,6 +7,8 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/junit-attachments"
 - "org/jvnet/hudson/plugins/junit-attachments"
+cd:
+  enabled: true
 developers:
 - "abayer"
 - "jglick"
