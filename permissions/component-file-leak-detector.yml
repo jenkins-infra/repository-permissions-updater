@@ -1,0 +1,7 @@
+---
+name: "file-leak-detector"
+github: "jenkinsci/file-leak-detector"
+paths:
+- "org/kohsuke/file-leak-detector"
+developers:
+- "@core"
