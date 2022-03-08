@@ -1,6 +1,6 @@
 ---
 name: "file-leak-detector"
-github: "jenkinsci/file-leak-detector"
+github: "jenkinsci/lib-file-leak-detector"
 paths:
 - "org/kohsuke/file-leak-detector"
 developers:
