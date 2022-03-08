@@ -7,3 +7,6 @@ paths:
 - "org/jenkins-ci/plugins/job-import-plugin"
 developers:
 - "escoem"
+- "notmyfault"
+cd:
+  enabled: true
