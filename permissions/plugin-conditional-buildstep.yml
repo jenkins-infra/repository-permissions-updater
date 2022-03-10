@@ -8,6 +8,10 @@ paths:
 developers:
 - "imod"
 - "oleg_nenashev"
+- "carroll"
+- "olamy"
+- "teilo"
+- "rarabaolaza"
 security:
   contacts:
     jira: "cloudbees_security_members"
