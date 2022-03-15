@@ -7,3 +7,5 @@ paths:
 - "io/jenkins/plugins/custom-build-properties"
 developers:
 - "shasait"
+cd:
+  enabled: true
