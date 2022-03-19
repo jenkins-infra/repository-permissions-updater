@@ -4,7 +4,7 @@ github: &GH "jenkinsci/design-library-plugin"
 issues:
   - github: *GH
 paths:
-- "io/jenkins/plugins/design-library-plugin"
+- "io/jenkins/plugins/design-library"
 - "org/jenkins-ci/main/ui-samples-plugin"
 - "org/jvnet/hudson/main/ui-samples-plugin"
 developers:
