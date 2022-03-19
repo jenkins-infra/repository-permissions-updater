@@ -8,3 +8,4 @@ paths:
 - "org/jvnet/hudson/main/ui-samples-plugin"
 developers:
 - "@core"
+- "@ux"
