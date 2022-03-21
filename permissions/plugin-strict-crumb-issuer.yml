@@ -6,5 +6,4 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/strict-crumb-issuer"
 developers:
-- "danielbeck"
-- "wfollonier"
+- "@security"
