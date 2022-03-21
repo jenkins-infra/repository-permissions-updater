@@ -6,4 +6,3 @@ issues:
 paths:
 - "org/jenkinsci/plugins/emailext-template"
 developers:
-- "basil"
