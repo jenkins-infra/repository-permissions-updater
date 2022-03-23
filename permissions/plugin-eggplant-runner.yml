@@ -1,0 +1,9 @@
+---
+name: "eggplant-runner"
+github: &GH "jenkinsci/eggplant-runner-plugin"
+paths:
+- "io/jenkins/plugins/eggplant-runner"
+developers:
+- "pohkheng"
+issues:
+  - github: *GH
