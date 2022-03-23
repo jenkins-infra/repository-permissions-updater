@@ -7,3 +7,5 @@ developers:
 - "mawinter69"
 issues:
   - jira: 28837
+cd:
+  enabled: true
