@@ -1,10 +1,12 @@
 ---
-name: "ui-samples-plugin"
+name: "design-library"
 github: &GH "jenkinsci/design-library-plugin"
 issues:
   - github: *GH
 paths:
-- "org/jenkins-ci/main/ui-samples-plugin"
+- "io/jenkins/plugins/design-library"
 developers:
 - "@core"
 - "@ux"
+cd:
+  enabled: true
