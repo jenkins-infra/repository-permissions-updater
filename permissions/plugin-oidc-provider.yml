@@ -5,6 +5,8 @@ paths:
 - "io/jenkins/plugins/oidc-provider"
 developers:
 - "jglick"
+- "escoem"
+- "fcojfernandez"
 cd:
   enabled: true
 issues:
