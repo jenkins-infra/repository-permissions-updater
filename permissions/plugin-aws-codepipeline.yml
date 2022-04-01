@@ -9,9 +9,5 @@ developers:
 - "belltimo"
 - "fgalmeida"
 - "madhvidua"
-- "oresk"
-- "kybarton_amazon"
 - "haips"
-security:
-  contacts:
-    email: "aws-security@amazon.com"
+- "egoramazon"
