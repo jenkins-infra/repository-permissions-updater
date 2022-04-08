@@ -7,3 +7,4 @@ paths:
 - "org/jenkins-ci/plugins/xray-connector"
 developers:
 - "xpandit"
+- "xrayjenkins"

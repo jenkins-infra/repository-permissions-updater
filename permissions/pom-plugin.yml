@@ -7,11 +7,4 @@ paths:
 cd:
   enabled: true
 developers:
-- "andresrc"
-- "jglick"
-- "kohsuke"
-- "oleg_nenashev"
-- "batmat"
-- "timja"
-- "teilo"
-- "vlatombe"
+- "@core"

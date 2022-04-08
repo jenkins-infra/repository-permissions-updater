@@ -12,6 +12,8 @@ developers:
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true
 issues:
   - github: *GH
   - jira: 23170 # configuration-as-code-plugin

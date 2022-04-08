@@ -1,0 +1,11 @@
+---
+name: "artifactz"
+github: &GH "jenkinsci/artifactz-plugin"
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/artifactz"
+developers:
+- "ikolomiyets"
+issues:
+  - github: *GH

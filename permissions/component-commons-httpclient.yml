@@ -4,7 +4,4 @@ github: "jenkinsci/lib-commons-httpclient"
 paths:
 - "commons-httpclient/commons-httpclient"
 developers:
-- "oleg_nenashev"
-- "olivergondza"
-- "timja"
-- "markewaite"
+- "@core"

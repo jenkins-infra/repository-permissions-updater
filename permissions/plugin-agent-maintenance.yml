@@ -1,0 +1,11 @@
+---
+name: "agent-maintenance"
+github: &GH "jenkinsci/agent-maintenance-plugin"
+paths:
+- "io/jenkins/plugins/agent-maintenance"
+developers:
+- "mawinter69"
+issues:
+  - jira: 28837
+cd:
+  enabled: true

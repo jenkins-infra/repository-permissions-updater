@@ -8,3 +8,5 @@ paths:
 developers:
 - "bilal_split"
 - "patricioe"
+cd:
+  enabled: true

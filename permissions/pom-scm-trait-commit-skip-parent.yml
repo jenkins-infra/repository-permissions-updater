@@ -4,4 +4,4 @@ github: "jenkinsci/scm-trait-commit-skip-plugin"
 paths:
 - "org/jenkins-ci/plugins/scm-trait-commit-skip-parent"
 developers:
-- "witokondoria"
+- "askalski85"

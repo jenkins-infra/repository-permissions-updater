@@ -7,6 +7,7 @@ paths:
 - "org/jenkins-ci/plugins/mstestrunner"
 developers:
 - "armfergom"
+- "batmat"
 - "ido_ran"
 security:
   contacts:

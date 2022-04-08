@@ -7,6 +7,5 @@ paths:
   - "com/atlassian/jira/software/cloud/jenkins/atlassian-jira-software-cloud"
 developers:
   - "lenin_atlassian"
-  - "vikrambollu_atlassian"
   - "bgvozdev"
-  - "nsurendran"
+  - "thombergs"

@@ -8,3 +8,5 @@ paths:
 - "org/sonatype/nexus/ci/nexus-jenkins-plugin"
 developers:
 - "whyjustin"
+cd:
+  enabled: true

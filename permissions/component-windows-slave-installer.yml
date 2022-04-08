@@ -4,5 +4,4 @@ github: "jenkinsci/windows-slave-installer-module"
 paths:
 - "org/jenkins-ci/modules/windows-slave-installer"
 developers:
-- "kohsuke"
-- "oleg_nenashev"
+- "@core"
