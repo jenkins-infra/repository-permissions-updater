@@ -8,3 +8,5 @@ developers:
 - "kohsuke"
 - "mc1arke"
 - "ifernandezcalvo"
+cd:
+  enabled: true
