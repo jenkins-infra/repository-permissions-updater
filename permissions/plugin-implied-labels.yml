@@ -3,7 +3,6 @@ name: "implied-labels"
 github: &gh "jenkinsci/implied-labels-plugin"
 issues:
 - jira: '18330' # implied-labels-plugin
-- github: *gh
 paths:
 - "org/jenkins-ci/plugins/implied-labels"
 developers:
