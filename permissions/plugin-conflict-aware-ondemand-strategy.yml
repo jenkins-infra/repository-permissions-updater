@@ -1,0 +1,9 @@
+---
+name: "conflict-aware-ondemand-strategy"
+github: &GH "jenkinsci/conflict-aware-ondemand-strategy-plugin"
+paths:
+- "io/jenkins/plugins/conflict-aware-ondemand-strategy"
+developers:
+- "jimklimov"
+issues:
+  - jira: 28838
