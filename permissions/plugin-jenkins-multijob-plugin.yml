@@ -10,3 +10,6 @@ developers:
 - "hagzag"
 - "yorammi"
 - "cohencil"
+- "notmyfault"
+cd:
+  enabled: true
