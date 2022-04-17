@@ -8,6 +8,5 @@ paths:
 developers:
 - "praqma"
 - "atombrella"
-- "notmyfault"
 cd:
   enabled: true
