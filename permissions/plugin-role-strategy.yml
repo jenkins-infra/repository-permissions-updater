@@ -10,3 +10,6 @@ developers:
 - "oleg_nenashev"
 - "runzexia"
 - "thomas_nemer"
+- "notmyfault"
+cd:
+  enabled: true
