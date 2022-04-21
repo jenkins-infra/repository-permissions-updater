@@ -5,6 +5,8 @@ issues:
 - jira: '15488' # ant-plugin
 paths:
 - "org/jenkins-ci/plugins/ant"
+cd:
+  enabled: true
 developers:
 - "armfergom"
 - "jglick"
