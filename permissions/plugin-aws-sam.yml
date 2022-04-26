@@ -8,6 +8,3 @@ paths:
 - "io/jenkins/plugins/aws-sam"
 developers:
 - "aws_sae_jenkinsio"
-security:
-  contacts:
-    email: "aws-security@amazon.com"
