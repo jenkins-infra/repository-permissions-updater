@@ -1,0 +1,9 @@
+---
+name: "pipeline-reporter-by-redpen"
+github: &GH "jenkinsci/pipeline-reporter-by-redpen-plugin"
+paths:
+- "org/jenkinsci/plugins/pipeline-reporter-by-redpen"
+developers:
+- "ayushk048"
+issues:
+  - jira: 28920

@@ -7,4 +7,5 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/aws-beanstalk-publisher-plugin"
 developers:
+- "basil"
 - "davidtanner"
