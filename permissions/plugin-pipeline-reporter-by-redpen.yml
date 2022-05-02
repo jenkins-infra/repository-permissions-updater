@@ -7,7 +7,6 @@ paths:
 - "org/jenkinsci/plugins/pipeline-reporter-by-redpen"
 developers:
 - "ayushk048"
-- "heena_2812"
 - "anandpadiya_ai"
 issues:
   - jira: 28920
