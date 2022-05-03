@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/hubot-steps"
 developers:
 - "nrayapati"
+cd:
+  enabled: true
