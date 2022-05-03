@@ -7,3 +7,5 @@ developers:
 - "gabocuadros"
 issues:
   - jira: 28921
+cd:
+  enabled: true  
