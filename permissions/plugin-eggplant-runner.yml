@@ -5,6 +5,8 @@ paths:
 - "io/jenkins/plugins/eggplant-runner"
 developers:
 - "pohkheng"
+- "poasungoh"
+- "tingweichoo"
 issues:
   - github: *GH
 cd:
