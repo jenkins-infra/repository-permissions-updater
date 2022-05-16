@@ -6,5 +6,4 @@ issues:
 paths:
 - "com/compuware/jenkins/compuware-ispw-operations"
 developers:
-- "zhouqr2000"
 - "cpwr_jenkins"

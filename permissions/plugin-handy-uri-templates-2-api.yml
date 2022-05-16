@@ -5,10 +5,12 @@ issues:
 - jira: '23421' # handy-uri-templates-2-api-plugin
 paths:
 - "org/jenkins-ci/plugins/handy-uri-templates-2-api"
+cd:
+  enabled: true
 developers:
 - "jetersen"
 - "dnusbaum"
 - "bitwiseman"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

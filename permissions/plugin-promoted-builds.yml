@@ -7,6 +7,8 @@ paths:
 - "org/jenkins-ci/plugins/promoted-builds"
 - "org/jvnet/hudson/plugins/promoted-builds"
 developers:
+- "batmat"
+- "carroll"
 - "dnozay"
 - "jglick"
 - "oleg_nenashev"
@@ -15,5 +17,6 @@ developers:
 - "teilo"
 security:
   contacts:
-    jira: "foundation_security_members"
-
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

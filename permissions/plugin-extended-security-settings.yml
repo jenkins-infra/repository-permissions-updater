@@ -7,5 +7,4 @@ paths:
 - "io/jenkins/plugins/extended-security-settings"
 developers:
 - "jvz"
-- "jthompson"
 - "wfollonier"

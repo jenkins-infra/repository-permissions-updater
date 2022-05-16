@@ -15,6 +15,9 @@ developers:
 - "rsandell"
 - "svanoort"
 - "jtaboada"
+- "lifeofguenter"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

@@ -4,6 +4,4 @@ github: "jenkinsci/extras-executable-war"
 paths:
 - "org/jenkins-ci/executable-war"
 developers:
-- "kohsuke"
-- "oleg_nenashev"
-- "batmat"
+- "@core"

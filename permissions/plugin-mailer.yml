@@ -5,6 +5,8 @@ issues:
 - jira: '17522' # mailer-plugin
 paths:
 - "org/jenkins-ci/plugins/mailer"
+cd:
+  enabled: true
 developers:
 - "andresrc"
 - "jglick"
@@ -14,4 +16,4 @@ developers:
 - "alecharp"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

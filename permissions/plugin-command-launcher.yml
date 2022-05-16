@@ -5,10 +5,12 @@ issues:
 - jira: '23169' # command-launcher-plugin
 paths:
 - "org/jenkins-ci/plugins/command-launcher"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "oleg_nenashev"
 - "mramonleon"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

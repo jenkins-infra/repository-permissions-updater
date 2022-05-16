@@ -1,0 +1,9 @@
+---
+name: "portscanner"
+github: &GH "jenkinsci/portscanner-plugin"
+paths:
+- "io/jenkins/plugins/portscanner"
+developers:
+- "tbaum"
+issues:
+  - github: *GH

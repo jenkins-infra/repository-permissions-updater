@@ -10,3 +10,5 @@ developers:
 - "bitwiseman"
 - "dnusbaum"
 - "carroll"
+cd:
+  enabled: true

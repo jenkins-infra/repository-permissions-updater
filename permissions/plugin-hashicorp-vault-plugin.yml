@@ -10,3 +10,5 @@ developers:
 - "ptierno"
 - "jetersen"
 - "dineshba"
+cd:
+  enabled: true

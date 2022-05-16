@@ -17,7 +17,6 @@ public class Definition {
     }
 
     public static class SecurityContacts {
-        public String email;
         public String jira;
     }
 

@@ -7,6 +7,7 @@ paths:
 - "org/jenkins-ci/plugins/pipeline-milestone-step"
 developers:
 - "amuniz"
+- "batmat"
 - "svanoort"
 - "jglick"
 - "abayer"
@@ -15,4 +16,6 @@ developers:
 - "carroll"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

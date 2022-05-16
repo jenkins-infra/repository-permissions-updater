@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/antexec"
 developers:
 - "svasek"
+cd:
+  enabled: true

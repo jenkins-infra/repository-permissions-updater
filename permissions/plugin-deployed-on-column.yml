@@ -6,7 +6,8 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/deployed-on-column"
 developers:
+- "batmat"
 - "recena"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

@@ -6,5 +6,4 @@ issues:
 paths:
 - "jenkins/repository"
 developers:
-- "basil"
 - "magnayn"

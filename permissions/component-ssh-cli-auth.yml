@@ -4,8 +4,4 @@ github: "jenkinsci/ssh-cli-auth-module"
 paths:
 - "org/jenkins-ci/modules/ssh-cli-auth"
 developers:
-- "olivergondza"
-- "jglick"
-- "batmat"
-- "oleg_nenashev"
-- "timja"
+- "@core"

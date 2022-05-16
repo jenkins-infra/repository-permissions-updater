@@ -9,7 +9,8 @@ paths:
 - "org/jvnet/hudson/plugins/plasticscm-plugin"
 developers:
 - "mig42"
-- "miryamgsm"
-- "jemagoga"
-- "rubarax"
 - "fernando_de_francisco"
+- "juliomaqueda"
+- "danhomp"
+- "pbayarri"
+- "jgutierrez"

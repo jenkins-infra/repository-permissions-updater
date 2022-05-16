@@ -6,4 +6,4 @@ issues:
 paths:
 - "io/jenkins/plugins/42crunch-security-audit"
 developers:
-- "42crunch"
+- "42crunch_plugins"

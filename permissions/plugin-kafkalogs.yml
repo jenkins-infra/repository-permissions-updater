@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/kafkalogs"
 developers:
 - "trevorlinton"
+cd:
+  enabled: true

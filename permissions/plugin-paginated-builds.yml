@@ -1,0 +1,11 @@
+---
+name: "paginated-builds"
+github: &GH "jenkinsci/paginated-builds-plugin"
+paths:
+- "io/jenkins/plugins/paginated-builds"
+developers:
+- "lineville"
+issues:
+  - github: *GH
+cd:
+  enabled: true

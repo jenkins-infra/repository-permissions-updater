@@ -10,3 +10,5 @@ developers:
 - "nullin"
 - "markewaite"
 - "darinpope"
+cd:
+  enabled: true

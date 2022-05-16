@@ -12,6 +12,7 @@ developers:
 - "batmat"
 - "mramonleon"
 - "rsandell"
+- "jm_meessen"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

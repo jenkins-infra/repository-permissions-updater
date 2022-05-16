@@ -1,0 +1,12 @@
+---
+name: "prism-api"
+github: &GH "jenkinsci/prism-api-plugin"
+paths:
+- "io/jenkins/plugins/prism-api"
+developers:
+- "drulli"
+issues:
+  - jira: 28824
+security:
+  contacts:
+    jira: "cloudbees_security_members"

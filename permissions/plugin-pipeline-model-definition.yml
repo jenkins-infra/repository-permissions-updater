@@ -13,6 +13,13 @@ developers:
 - "bitwiseman"
 - "dnusbaum"
 - "carroll"
+- "teilo"
+- "olamy"
+- "alecharp"
+- "batmat"
+- "rarabaolaza"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

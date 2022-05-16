@@ -7,3 +7,6 @@ paths:
 - "org/jenkins-ci/plugins/envinject"
 developers:
 - "oleg_nenashev"
+- "notmyfault"
+cd:
+  enabled: true
