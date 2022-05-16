@@ -5,6 +5,8 @@ issues:
 - jira: '21710' # workflow-aggregator-plugin
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-aggregator"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "kohsuke"
