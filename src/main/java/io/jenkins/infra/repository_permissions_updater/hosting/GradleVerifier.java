@@ -67,11 +67,11 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
     @Override
     public void verify(HostingRequest issue, HashSet<VerificationMessage> hostingIssues) throws IOException {
         GitHub github = GitHub.connect();
-        forkTo = issue.getRepositoryUrl();
-        forkFrom = issue.getNewRepoName();
+        forkFrom = issue.getRepositoryUrl();
+        forkTo = issue.getNewRepoName();
 
         if(StringUtils.isNotBlank(forkFrom)) {
-            Matcher m = Pattern.compile("(?:https:\\/\\/github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
+            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
             if(m.matches()) {
                 String owner = m.group(1);
                 String repoName = m.group(2);
@@ -179,9 +179,6 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
                                         break;
                                     }
                                 }
-                            }
-                            if(isDone) {
-                                break;
                             }
                         }
                     }
