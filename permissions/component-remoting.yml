@@ -10,3 +10,5 @@ developers:
 - "jthompson"
 - "releasebot"
 - "@core"
+cd:
+  enabled: true
