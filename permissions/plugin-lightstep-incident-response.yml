@@ -7,3 +7,5 @@ developers:
 - "priyajagyasi"
 issues:
   - jira: 28922
+cd:
+  enabled: true
