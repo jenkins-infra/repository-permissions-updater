@@ -5,5 +5,8 @@ paths:
 - "lightstep-plugin/lightstep-incident-response"
 developers:
 - "priyajagyasi"
+- "kirannunnasnow"
 issues:
   - jira: 28922
+cd:
+  enabled: true
