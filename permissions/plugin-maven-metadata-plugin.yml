@@ -6,5 +6,6 @@ issues:
 paths:
 - "eu/markov/jenkins/plugin/mvnmeta/maven-metadata-plugin"
 developers:
+- "basil"
 - "gesh"
 - "marcrohlfs"

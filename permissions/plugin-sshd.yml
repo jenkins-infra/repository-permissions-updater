@@ -1,6 +1,8 @@
 ---
 name: "sshd"
-github: "jenkinsci/sshd-plugin"
+github: &GH "jenkinsci/sshd-plugin"
+issues:
+  - github: *GH
 paths:
 - "org/jenkins-ci/modules/sshd"
 developers:
