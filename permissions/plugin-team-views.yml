@@ -2,7 +2,7 @@
 name: "team-views"
 github: &GH "jenkinsci/team-views-plugin"
 issues:
-  - github; *GH
+  - github: *GH
 paths:
 - "com/sonymobile/jenkins/plugins/teamviews/team-views"
 developers: []
