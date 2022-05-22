@@ -1,5 +1,6 @@
 ---
 name: "collabnet-uc4-deploy"
+github: "jenkinsci/collabnet-automic-deploy-plugin"
 issues:
   - jira: '17660'
 paths:

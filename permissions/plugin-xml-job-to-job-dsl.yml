@@ -1,5 +1,6 @@
 ---
 name: "xml-job-to-job-dsl"
+github: "jenkinsci/xml-job-to-job-dsl-plugin"
 issues:
   - jira: '23400'
 paths:

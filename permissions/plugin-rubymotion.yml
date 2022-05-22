@@ -1,7 +1,5 @@
 ---
 name: "rubymotion"
-issues:
-  - jira: '17611'
 paths:
 - "org/jenkins-ci/ruby-plugins/rubymotion"
 developers:

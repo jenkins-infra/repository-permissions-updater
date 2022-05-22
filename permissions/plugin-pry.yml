@@ -1,5 +1,6 @@
 ---
 name: "pry"
+github: "jenkinsci/pry-plugin"
 issues:
   - jira: '17553'
 paths:

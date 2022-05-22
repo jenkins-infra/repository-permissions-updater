@@ -1,7 +1,5 @@
 ---
 name: "svn-workspace-cleaner"
-issues:
-  - jira: '16922'
 paths:
 - "org/jenkins-ci/plugins/svn-workspace-cleaner"
 developers:

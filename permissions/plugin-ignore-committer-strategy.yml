@@ -1,5 +1,6 @@
 ---
 name: "ignore-committer-strategy"
+github: "jenkinsci/ignore-committer-strategy-plugin"
 issues:
   - jira: '23428'
 paths:

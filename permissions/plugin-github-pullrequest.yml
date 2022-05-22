@@ -1,7 +1,5 @@
 ---
 name: "github-pullrequest"
-issues:
-  - jira: '20620'
 paths:
 - "org/jenkins-ci/plugins/github-pullrequest"
 developers:

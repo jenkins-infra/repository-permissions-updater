@@ -1,5 +1,6 @@
 ---
 name: "keycloak"
+github: "jenkinsci/keycloak-plugin"
 issues:
   - jira: '22128'
 paths:

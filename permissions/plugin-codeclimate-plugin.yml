@@ -1,5 +1,6 @@
 ---
 name: "codeclimate-plugin"
+github: "jenkinsci/codeclimate-plugin"
 issues:
   - jira: '21128'
 paths:

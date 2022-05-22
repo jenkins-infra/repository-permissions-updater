@@ -1,7 +1,5 @@
 ---
 name: "monkit-plugin"
-issues:
-  - jira: '16027'
 paths:
 - "net/praqma/monkit-plugin"
 developers:

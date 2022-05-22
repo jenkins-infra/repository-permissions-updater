@@ -1,7 +1,5 @@
 ---
 name: "nodeofflinenotification"
-issues:
-  - jira: '17614'
 paths:
 - "org/jenkins-ci/ruby-plugins/nodeofflinenotification"
 developers: []

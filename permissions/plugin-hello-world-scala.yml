@@ -1,5 +1,6 @@
 ---
 name: "hello-world-scala"
+github: "jenkinsci/hello-world-scala-plugin"
 issues:
   - jira: '21945'
 paths:

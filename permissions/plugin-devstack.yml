@@ -1,7 +1,5 @@
 ---
 name: "devstack"
-issues:
-  - jira: '17488'
 paths:
 - "org/jenkins-ci/ruby-plugins/devstack"
 developers: []

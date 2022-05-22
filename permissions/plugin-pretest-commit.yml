@@ -1,5 +1,6 @@
 ---
 name: "pretest-commit"
+github: "jenkinsci/pretested-integration-plugin"
 issues:
   - jira: '17627'
 paths:

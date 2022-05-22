@@ -1,5 +1,6 @@
 ---
 name: "distfork"
+github: "jenkinsci/distfork-plugin"
 issues:
   - jira: '15973'
 paths:
