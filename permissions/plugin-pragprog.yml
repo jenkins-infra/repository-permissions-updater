@@ -1,5 +1,7 @@
 ---
 name: "pragprog"
+issues:
+ - jira: '17633'
 paths:
 - "org/jenkins-ci/plugins/pragprog"
 developers:

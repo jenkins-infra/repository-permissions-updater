@@ -1,5 +1,7 @@
 ---
 name: "cluster-stats"
+issues:
+  - jira: '17540'
 paths:
 - "org/zeroturnaround/cluster-stats"
 developers:

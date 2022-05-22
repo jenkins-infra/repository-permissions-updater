@@ -1,5 +1,7 @@
 ---
 name: "pretest-commit"
+issues:
+  - jira: '17627'
 paths:
 - "org/jenkins-ci/plugins/pretest-commit"
 developers:

@@ -1,5 +1,7 @@
 ---
 name: "restricted-register"
+issues:
+  - jira: '21632'
 paths:
 - "com/infullmobile/jenkins/plugin/restricted-register"
 developers:

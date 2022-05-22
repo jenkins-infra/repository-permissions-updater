@@ -1,5 +1,7 @@
 ---
 name: "memegen"
+issues:
+  - jira: '16526'
 paths:
 - "hudson/plugins/memegen/memegen"
 developers:

@@ -1,5 +1,7 @@
 ---
 name: "vsts-cd"
+issues:
+  - jira: '21479'
 paths:
 - "org/jenkins-ci/plugins/vsts-cd"
 developers:

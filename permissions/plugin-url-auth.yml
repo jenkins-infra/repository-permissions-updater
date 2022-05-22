@@ -1,5 +1,7 @@
 ---
 name: "url-auth"
+issues:
+  - jira: '17441'
 paths:
 - "org/jenkins-ci/plugins/url-auth"
 developers: []

@@ -1,5 +1,7 @@
 ---
 name: "xcp-ci"
+issues:
+  - jira: '20635'
 paths:
 - "com/viltgroup/xcp/jenkins/xcp-ci"
 developers:

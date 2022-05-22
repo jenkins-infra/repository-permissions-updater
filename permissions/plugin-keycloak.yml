@@ -1,5 +1,7 @@
 ---
 name: "keycloak"
+issues:
+  - jira: '22128'
 paths:
 - "org/jenkins-ci/plugins/keycloak"
 developers:

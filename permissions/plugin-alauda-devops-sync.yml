@@ -1,5 +1,7 @@
 ---
 name: "alauda-devops-sync"
+issues:
+  - jira: '23724'
 paths:
 - "io/alauda/jenkins/plugins/alauda-devops-sync"
 developers:

@@ -1,5 +1,7 @@
 ---
 name: "inedo-buildmaster"
+issues:
+  - jira: '21830'
 paths:
 - "com/inedo/buildmaster/inedo-buildmaster"
 developers:

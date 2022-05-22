@@ -1,6 +1,8 @@
 ---
 name: "osf-builder-suite-xml-linter"
-github: "jenkinsci/osf-builder-suite-xml-linter-plugin"
+github: &GH "jenkinsci/osf-builder-suite-xml-linter-plugin"
+issues:
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/osf-builder-suite-xml-linter"
 developers:

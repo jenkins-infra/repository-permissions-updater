@@ -1,5 +1,7 @@
 ---
 name: "pry"
+issues:
+  - jira: '17553'
 paths:
 - "org/jenkins-ci/plugins/pry"
 developers: []

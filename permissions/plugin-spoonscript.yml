@@ -1,6 +1,8 @@
 ---
 name: "spoonscript"
 github: "jenkinsci/spoonscript-plugin"
+issues:
+  - jira: '20621'
 paths:
 - "org/jenkinsci/plugins/spoonscript/spoonscript"
 developers:

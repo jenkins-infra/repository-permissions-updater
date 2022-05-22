@@ -1,5 +1,7 @@
 ---
 name: "codeclimate-plugin"
+issues:
+  - jira: '21128'
 paths:
 - "suryagaddipati/codeclimate-plugin"
 developers:

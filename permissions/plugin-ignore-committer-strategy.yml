@@ -1,5 +1,7 @@
 ---
 name: "ignore-committer-strategy"
+issues:
+  - jira: '23428'
 paths:
 - "au/com/versent/jenkins/plugins/ignore-committer-strategy"
 developers:

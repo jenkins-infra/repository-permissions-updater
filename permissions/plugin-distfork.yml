@@ -1,5 +1,7 @@
 ---
 name: "distfork"
+issues:
+  - jira: '15973'
 paths:
 - "org/jenkins-ci/plugins/distfork"
 developers:

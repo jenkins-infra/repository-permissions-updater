@@ -1,5 +1,7 @@
 ---
 name: "xml-job-to-job-dsl"
+issues:
+  - jira: '23400'
 paths:
 - "com/adq/jenkins/xml-job-to-job-dsl"
 developers:

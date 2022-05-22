@@ -1,5 +1,7 @@
 ---
 name: "clang-scanbuild"
+issues:
+  - jira: '16011'
 paths:
 - "org/jenkins-ci/plugins/clang-scanbuild"
 developers:

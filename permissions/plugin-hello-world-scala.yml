@@ -1,5 +1,7 @@
 ---
 name: "hello-world-scala"
+issues:
+  - jira: '21945'
 paths:
   - "org/jenkins-ci/plugins/hello-world-scala"
 developers: 
