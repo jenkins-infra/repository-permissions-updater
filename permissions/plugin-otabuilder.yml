@@ -1,5 +1,8 @@
 ---
 name: "otabuilder"
+github: "jenkinsci/ios-otabuilder-plugin"
+issues:
+  - jira: '17639'
 paths:
 - "org/jenkins-ci/ruby-plugins/otabuilder"
 developers:

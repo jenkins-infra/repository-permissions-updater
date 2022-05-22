@@ -1,5 +1,8 @@
 ---
 name: "reviewboard"
+github: "jenkinsci/reviewboard-plugin"
+issues:
+  - jira: '15722'
 paths:
 - "org/jvnet/hudson/plugins/reviewboard"
 developers: []

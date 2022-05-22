@@ -1,6 +1,8 @@
 ---
 name: "cons3rt"
-github: "jenkinsci/cons3rt-plugin"
+github: &GH "jenkinsci/cons3rt-plugin"
+issues:
+  - github: *GH
 paths:
 - "org/jenkins-ci/plugins/cons3rt"
 developers:

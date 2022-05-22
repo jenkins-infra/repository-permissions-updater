@@ -1,5 +1,8 @@
 ---
 name: "delphix-plugin"
+github: &GH "jenkinsci/delphix-plugin"
+issues:
+  - github: *GH
 paths:
 - "org/jenkins-ci/plugins/delphix-plugin"
 developers:

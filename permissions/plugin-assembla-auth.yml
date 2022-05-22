@@ -1,5 +1,8 @@
 ---
 name: "assembla-auth"
+github: "jenkinsci/assembla-plugin"
+issues:
+  - jira: '17538'
 paths:
 - "org/jenkins-ci/plugins/assembla-auth"
 developers:

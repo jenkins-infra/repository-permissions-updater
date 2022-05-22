@@ -1,6 +1,8 @@
 ---
 name: "clever-cloud"
-github: "jenkinsci/clever-cloud-plugin"
+github: &GH "jenkinsci/clever-cloud-plugin"
+issues:
+  - github: *GH
 paths:
 - "io/jenkins/plugins/clever-cloud"
 developers:

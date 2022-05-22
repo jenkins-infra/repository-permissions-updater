@@ -1,5 +1,8 @@
 ---
 name: "autocomplete-parameter"
+github: &GH "jenkinsci/autocomplete-parameter-plugin"
+issues:
+  - github: *GH
 paths:
 - "org/jenkins-ci/plugins/autocomplete-parameter"
 developers:

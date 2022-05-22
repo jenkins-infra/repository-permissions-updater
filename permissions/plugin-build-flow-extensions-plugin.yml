@@ -1,6 +1,8 @@
 ---
 name: "build-flow-extensions-plugin"
 github: "jenkinsci/buildflow-extensions-plugin"
+issues:
+  - jira: '19325'
 paths:
 - "org/jenkins-ci/plugins/build-flow-extensions-plugin"
 developers:
