@@ -3,6 +3,8 @@ name: "pipeline-groovy-lib"
 github: &GH "jenkinsci/pipeline-groovy-lib-plugin"
 paths:
 - "io/jenkins/plugins/pipeline-groovy-lib"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "dnusbaum"
