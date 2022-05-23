@@ -8,6 +8,5 @@ paths:
 developers:
 - "ks_nenasheva"
 - "oleg_nenashev"
-- "notmyfault"
 cd:
   enabled: true
