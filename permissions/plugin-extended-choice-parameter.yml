@@ -1,6 +1,8 @@
 ---
 name: "extended-choice-parameter"
 github: "jenkinsci/extended-choice-parameter-plugin"
+cd:
+  enabled: true
 issues:
 - jira: '16004' # extended-choice-parameter-plugin
 paths:

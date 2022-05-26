@@ -4,5 +4,4 @@ github: "jenkinsci/lib-crypto-util"
 paths:
 - "org/jenkins-ci/crypto-util"
 developers:
-- "kohsuke"
-- "timja"
+- "@core"

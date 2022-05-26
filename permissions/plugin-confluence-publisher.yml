@@ -8,3 +8,5 @@ paths:
 developers:
 - "jhansche"
 - "jetersen"
+cd:
+  enabled: true

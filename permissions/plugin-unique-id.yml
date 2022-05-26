@@ -10,6 +10,7 @@ developers:
 - "oleg_nenashev"
 - "recampbell"
 - "oleg_nenashev"
+- "teilo"
 security:
   contacts:
     jira: "cloudbees_security_members"

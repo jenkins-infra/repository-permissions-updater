@@ -9,3 +9,5 @@ developers:
 - "nrayapati"
 - "ghenkes"
 - "wuchenwang"
+cd:
+  enabled: true

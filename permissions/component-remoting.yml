@@ -9,3 +9,6 @@ developers:
 - "oleg_nenashev"
 - "jthompson"
 - "releasebot"
+- "@core"
+cd:
+  enabled: true

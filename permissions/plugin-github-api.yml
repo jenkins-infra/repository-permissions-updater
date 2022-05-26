@@ -1,11 +1,14 @@
 ---
 name: "github-api"
 github: "jenkinsci/github-api-plugin"
+cd:
+  enabled: true
 issues:
 - jira: '17496' # github-api-plugin
 paths:
 - "org/jenkins-ci/plugins/github-api"
 developers:
+- "@cloudbees-developers"
 - "andresrc"
 - "bitwiseman"
 - "integer"

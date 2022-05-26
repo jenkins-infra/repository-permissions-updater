@@ -5,6 +5,8 @@ issues:
 - jira: '18765' # matrix-project-plugin
 paths:
 - "org/jenkins-ci/plugins/matrix-project"
+cd:
+  enabled: true
 developers:
 - "amuniz"
 - "jglick"

@@ -9,6 +9,7 @@ paths:
 developers:
 - "svenschoenung"
 - "jglick"
+- "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"

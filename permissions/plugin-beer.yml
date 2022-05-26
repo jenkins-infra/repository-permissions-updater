@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/beer"
 developers:
 - "timja"
+cd:
+  enabled: true

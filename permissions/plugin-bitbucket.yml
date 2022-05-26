@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/bitbucket"
 developers:
 - "tzach_solomon"
+cd:
+  enabled: true

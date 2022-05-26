@@ -1,5 +1,8 @@
 ---
 name: "memegen"
+github: "jenkinsci/memegen-plugin"
+issues:
+  - jira: '16526'
 paths:
 - "hudson/plugins/memegen/memegen"
 developers:

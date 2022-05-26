@@ -1,10 +1,11 @@
 ---
 name: "sshd"
-github: "jenkinsci/sshd-plugin"
+github: &GH "jenkinsci/sshd-plugin"
+issues:
+  - github: *GH
 paths:
 - "org/jenkins-ci/modules/sshd"
 developers:
-- "danielbeck"
 - "ifernandezcalvo"
 - "jvz"
 - "oleg_nenashev"
@@ -12,3 +13,5 @@ developers:
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true

@@ -5,5 +5,4 @@ issues:
 paths:
 - "com/compuware/jenkins/compuware-zadviser-api"
 developers:
-- "jgoering41"
 - "cpwr_jenkins"

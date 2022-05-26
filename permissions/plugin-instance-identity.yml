@@ -1,0 +1,9 @@
+---
+name: "instance-identity"
+github: "jenkinsci/instance-identity-plugin"
+issues:
+  - jira: '23222'
+paths:
+- "org/jenkins-ci/modules/instance-identity"
+developers:
+- "@core"

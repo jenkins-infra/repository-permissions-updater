@@ -1,6 +1,8 @@
 ---
 name: "configurationslicing"
 github: &gh "jenkinsci/configurationslicing-plugin"
+cd:
+  enabled: true
 issues:
 - jira: '15597' # configurationslicing-plugin
 - github: *gh

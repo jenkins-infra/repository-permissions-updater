@@ -1,0 +1,7 @@
+---
+name: "commons-jelly"
+github: "jenkinsci/jelly"
+paths:
+- "org/jenkins-ci/commons-jelly"
+developers:
+- "@core"

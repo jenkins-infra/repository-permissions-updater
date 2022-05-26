@@ -1,0 +1,11 @@
+---
+name: "talend"
+github: &GH "jenkinsci/talend-plugin"
+paths:
+- "io/jenkins/plugins/talend"
+developers:
+- "afkab"
+issues:
+  - jira: 28823
+cd:
+  enabled: true

@@ -4,6 +4,7 @@ name: "dummy-unused-artifact-name"
 paths:
 - "org/kohsuke"
 developers:
+- "basil"
 - "timja"
 - "oleg_nenashev"
 - "jglick"

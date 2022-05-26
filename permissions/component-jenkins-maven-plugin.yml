@@ -5,5 +5,4 @@ paths:
 - "com/nirima/jenkins/repository"
 - "com/nirima/jenkins/repository/jenkins-maven-plugin"
 developers:
-- "basil"
 - "magnayn"

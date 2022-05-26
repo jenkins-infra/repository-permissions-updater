@@ -8,3 +8,5 @@ paths:
 - "com/vinted/automerger/git-automerger"
 developers:
 - "neworldlt"
+cd:
+  enabled: true

@@ -9,6 +9,7 @@ paths:
 developers:
 - "ikedam"
 - "oleg_nenashev"
+- "krisstern"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -6,10 +6,8 @@ issues:
 - jira: '18321' # slack-plugin
 paths:
 - "org/jenkins-ci/plugins/slack"
+cd:
+  enabled: true
 developers:
-- "grantmd"
-- "kmadel"
-- "sag47"
-- "gurumaia"
 - "timja"
 - "jetersen"

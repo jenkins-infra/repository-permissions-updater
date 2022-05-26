@@ -9,3 +9,5 @@ developers:
   - "gavinf17"
   - "garyarobinson"
   - "tomjshore"
+cd:
+  enabled: true

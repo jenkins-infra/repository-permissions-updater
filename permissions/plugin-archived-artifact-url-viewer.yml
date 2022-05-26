@@ -1,5 +1,8 @@
 ---
 name: "archived-artifact-url-viewer"
+github: &GH "jenkinsci/archived-artifact-url-viewer-plugin"
+issues:
+  - github: *GH
 paths:
 - "org/jenkins-ci/plugins/archived-artifact-url-viewer"
 developers: []

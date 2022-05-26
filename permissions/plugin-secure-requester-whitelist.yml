@@ -7,7 +7,6 @@ paths:
 - "org/jenkins-ci/plugins/secure-requester-whitelist"
 developers:
 - "jglick"
-- "danielbeck"
 - "andresrc"
-- "wfollonier"
-  
+- "@security"
+- "@cloudbees-developers"

@@ -1,0 +1,11 @@
+---
+name: "synopsys-sigma"
+github: "jenkinsci/synopsys-sigma-plugin"
+issues:
+  - jira: '28822'
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/synopsys-sigma"
+developers:
+- "sboyd"

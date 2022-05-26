@@ -1,5 +1,8 @@
 ---
 name: "url-auth"
+github: "jenkinsci/url-auth-sso-plugin"
+issues:
+  - jira: '17441'
 paths:
 - "org/jenkins-ci/plugins/url-auth"
 developers: []

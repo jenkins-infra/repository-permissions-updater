@@ -4,4 +4,4 @@ github: "jenkinsci/extras-memory-monitor"
 paths:
 - "org/jenkins-ci/memory-monitor"
 developers:
-- "jglick"
+- "@core"

@@ -5,6 +5,8 @@ issues:
 - jira: '18621' # branch-api-plugin
 paths:
 - "org/jenkins-ci/plugins/branch-api"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "recena"

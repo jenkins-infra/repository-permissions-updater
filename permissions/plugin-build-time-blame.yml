@@ -7,3 +7,6 @@ paths:
 - "org/jenkins-ci/plugins/build-time-blame"
 developers:
 - "ltegtmeier"
+cd:
+  enabled: true
+ 

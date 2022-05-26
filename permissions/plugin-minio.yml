@@ -8,3 +8,5 @@ paths:
 - "io/jenkins/plugins/minio"
 developers:
 - "sleepy"
+cd:
+  enabled: true

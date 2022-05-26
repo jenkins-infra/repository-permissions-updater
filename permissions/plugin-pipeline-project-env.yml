@@ -1,0 +1,11 @@
+---
+name: "pipeline-project-env"
+github: &GH "jenkinsci/pipeline-project-env-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-project-env"
+developers:
+- "repolevedavaj"
+issues:
+  - github: *GH
+cd:
+  enabled: true
