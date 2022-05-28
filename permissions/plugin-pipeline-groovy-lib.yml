@@ -13,3 +13,8 @@ developers:
 - "bitwiseman"
 issues:
   - jira: 28923
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true
