@@ -7,3 +7,5 @@ developers:
 - "nistal97"
 issues:
   - github: *GH
+cd:
+  enabled: true
