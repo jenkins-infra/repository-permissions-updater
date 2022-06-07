@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/jobcacher"
 developers:
 - "repolevedavaj"
+cd:
+  enabled: true
