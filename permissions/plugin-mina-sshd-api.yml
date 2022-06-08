@@ -2,7 +2,7 @@
 name: "mina-sshd-api"
 github: &GH "jenkinsci/mina-sshd-api-plugin"
 paths:
-- "org/jenkins-ci/plugins/mina-sshd-api/mina-sshd-api-parent"
+- "io/jenkins/plugins/mina-sshd-api/mina-sshd-*"
 cd:
   enabled: true
 developers:
