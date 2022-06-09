@@ -9,3 +9,5 @@ developers:
 - "lacostej"
 - "aheritier"
 - "kazuhidet"
+cd:
+  enabled: true

@@ -1,0 +1,20 @@
+---
+name: "pipeline-groovy-lib"
+github: &GH "jenkinsci/pipeline-groovy-lib-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-groovy-lib"
+cd:
+  enabled: true
+developers:
+- "jglick"
+- "dnusbaum"
+- "rsandell"
+- "carroll"
+- "bitwiseman"
+issues:
+  - jira: 28923
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

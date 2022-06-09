@@ -7,6 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/global-build-stats"
 developers:
 - "dhinske"
-- "notmyfault"
 cd:
   enabled: true

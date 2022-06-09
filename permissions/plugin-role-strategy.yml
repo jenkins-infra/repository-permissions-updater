@@ -9,3 +9,6 @@ paths:
 developers:
 - "oleg_nenashev"
 - "runzexia"
+- "thomas_nemer"
+cd:
+  enabled: true
