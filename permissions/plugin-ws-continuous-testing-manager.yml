@@ -1,9 +1,0 @@
----
-name: "ws-continuous-testing-manager"
-github: "jenkinsci/ws-ctm-plugin"
-paths:
-- "org/jenkins-ci/plugins/ws-ctm-plugin"
-developers:
-- "dtheobald"
-- "rrinehart"
-- "glenpgillman"
