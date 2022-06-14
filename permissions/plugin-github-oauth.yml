@@ -6,7 +6,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/github-oauth"
 developers:
-- "basil"
 - "kohsuke"
 - "sag47"
 - "skottler"
