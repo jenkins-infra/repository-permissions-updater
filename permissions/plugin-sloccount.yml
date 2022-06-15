@@ -6,5 +6,6 @@ issues:
 paths:
 - "hudson/plugins/sloccount/sloccount"
 developers:
+- "basil"
 - "mixalturek"
 - "imarinkov"
