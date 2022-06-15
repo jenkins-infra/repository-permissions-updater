@@ -1,5 +1,5 @@
 ---
-name: "ws-execution-manager"
+name: "ws-ctm"
 github: "jenkinsci/ws-ctm-plugin"
 paths:
 - "org/jenkins-ci/plugins/ws-ctm"
