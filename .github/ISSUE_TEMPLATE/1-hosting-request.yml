@@ -1,7 +1,8 @@
 name: '🏠 Hosting request'
 labels: 'hosting-request'
 description: I want to host a plugin or library in the Jenkins organization
-
+assignees:
+  - @jenkins-infra/hosting
 body:
   - type: input
     attributes:
