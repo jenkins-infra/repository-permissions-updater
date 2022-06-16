@@ -7,3 +7,5 @@ developers:
 - "cpwr_jenkins"
 issues:
   - github: *GH
+cd:
+  enabled: true
