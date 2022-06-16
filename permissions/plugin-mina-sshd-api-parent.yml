@@ -1,0 +1,12 @@
+---
+name: "mina-sshd-api-parent"
+github: &GH "jenkinsci/mina-sshd-api-plugin"
+paths:
+- "io/jenkins/plugins/mina-sshd-api/mina-sshd-api-parent"
+cd:
+  enabled: true
+developers:
+- "jglick"
+- "allan_burdajewicz"
+issues:
+  - jira: 28925
