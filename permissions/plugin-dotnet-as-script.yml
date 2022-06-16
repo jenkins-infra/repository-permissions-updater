@@ -1,5 +1,8 @@
 ---
 name: "dotnet-as-script"
+github: &GH "jenkinsci/dotnet-as-script-plugin"
+issues:
+  - github: *GH
 paths:
 - "org/jenkins-ci/plugins/dotnet-as-script"
 developers:

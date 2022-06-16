@@ -6,6 +6,8 @@ issues:
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/parallel-test-executor"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "vlatombe"

@@ -5,5 +5,4 @@ issues:
 - jira: '18764' # emailext-template-plugin
 paths:
 - "org/jenkinsci/plugins/emailext-template"
-developers:
-- "basil"
+developers: []

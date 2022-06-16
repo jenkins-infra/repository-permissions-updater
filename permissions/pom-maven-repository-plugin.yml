@@ -4,5 +4,4 @@ github: "jenkinsci/maven-repository-plugin"
 paths:
 - "com/nirima/jenkins/repository/pom"
 developers:
-- "basil"
 - "magnayn"

@@ -88,18 +88,14 @@ Add a section like the following to your plugin's YAML file:
 security:
   contacts:
     jira: some_user_name
-    email: security@acme.org
 ```
 
-Given the above example, we will primarily assign any security issue in Jira to `some_user_name` and send an email notification to `security@acme.org` to establish contact.
+Given the above example, we will primarily assign any security issue in Jira to `some_user_name`.
 Regular maintainers are added to the issue as well to give visibility and allow participation/discussion.
 This means that specifying a Jira security contact is only useful when it's an account not already listed as maintainer.
-Either of `jira` and `email` is optional.
+`jira` is optional.
 
-Please note that we generally reject email contacts due to the additional overhead in reaching out via email.
-Unless you represent a large organization with dedicated security team that needs to be involved in the coordination of a release, but is not otherwise part of plugin maintenance, please refrain from requesting to be contacted via email.
-
-⚠️ Update from 2022-02-24, note from the security officer, we plan to remove the email support to reduce the overhead of communication.
+If you represent a company with dedicated security team that needs to be involved, we recommend you to create a Jira account backed by a shared email.
 
 Managing Issue Trackers
 -----------------------

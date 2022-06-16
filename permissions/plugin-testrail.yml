@@ -1,5 +1,8 @@
 ---
 name: "testrail"
+github: &GH "jenkinsci/testrail-plugin"
+issues:
+  - github: *GH
 paths:
 - "org/jenkins-ci/plugins/testrail"
 developers:

@@ -9,3 +9,5 @@ developers:
 - "madsnielsen"
 - "atombrella"
 - "praqma"
+cd:
+  enabled: true

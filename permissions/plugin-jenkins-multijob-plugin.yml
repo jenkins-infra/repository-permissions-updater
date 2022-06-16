@@ -10,3 +10,5 @@ developers:
 - "hagzag"
 - "yorammi"
 - "cohencil"
+cd:
+  enabled: true

@@ -7,3 +7,6 @@ paths:
 - "org/jenkins-ci/plugins/additional-metrics"
 developers:
 - "chadiem"
+cd:
+  enabled: true
+

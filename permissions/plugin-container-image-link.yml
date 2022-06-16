@@ -1,0 +1,11 @@
+---
+name: "container-image-link"
+github: &GH "jenkinsci/container-image-link-plugin"
+paths:
+- "io/jenkins/plugins/container-image-link"
+developers:
+- "gabocuadros"
+issues:
+  - jira: 28921
+cd:
+  enabled: true  

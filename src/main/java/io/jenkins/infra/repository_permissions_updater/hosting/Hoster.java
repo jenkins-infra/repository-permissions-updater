@@ -11,7 +11,6 @@ import io.jenkins.infra.repository_permissions_updater.hosting.HostingRequest.Is
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
@@ -104,7 +103,7 @@ public class Hoster {
                 componentId = "";
             }
 
-            String prUrl = createUploadPermissionPR(issueID, forkTo, users, Collections.singletonList(defaultAssignee), issueTrackerChoice == IssueTracker.GITHUB, componentId);
+            String prUrl = createUploadPermissionPR(issueID, forkTo, users, hostingRequest.getJenkinsProjectUsers(), issueTrackerChoice == IssueTracker.GITHUB, componentId);
             if (StringUtils.isBlank(prUrl)) {
                 LOGGER.error("Could not create upload permission pull request");
             }

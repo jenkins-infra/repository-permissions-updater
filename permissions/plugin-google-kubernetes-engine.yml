@@ -16,6 +16,8 @@ developers:
 - "alecharp"
 - "batmat"
 - "teilo"
+- "rarabaolaza"
+- "carroll"
 security:
   contacts:
     jira: "cloudbees_security_members"

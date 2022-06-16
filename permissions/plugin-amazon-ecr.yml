@@ -9,3 +9,5 @@ developers:
 - "aheritier"
 - "ifernandezcalvo"
 - "tgr"
+cd:
+  enabled: true

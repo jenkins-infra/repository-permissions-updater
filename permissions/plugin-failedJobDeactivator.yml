@@ -1,6 +1,8 @@
 ---
 name: "failedJobDeactivator"
 github: "jenkinsci/failedjobdeactivator-plugin"
+issues:
+  - jira: '18136'
 paths:
 - "de/einsundeins/jenkins/plugins/failedjobdeactivator/failedJobDeactivator"
 developers:

@@ -1,0 +1,13 @@
+---
+name: "mergebase-sca"
+github: &GH "jenkinsci/mergebase-sca-plugin"
+paths:
+- "com/mergebase/mergebase-sca"
+developers:
+- "delanAtMergebase"
+issues:
+  - github: *GH
+cd:
+  enabled: true
+
+
