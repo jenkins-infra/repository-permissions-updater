@@ -4,8 +4,9 @@ github: "jenkinsci/disk-usage-plugin"
 issues:
 - jira: '15537' # disk-usage-plugin
 paths:
-- "org/jenkins-ci/plugins/disk-usage"
-- "org/jvnet/hudson/plugins/disk-usage"
+# Block creation of new releases. If you want to release the plugin, contact the Jenkins security team about SECURITY-2412
+- "org/jenkins-ci/plugins/disk-usage-releaseblock"
+- "org/jvnet/hudson/plugins/disk-usage-releaseblock"
 developers:
 - "vjuranek"
 - "oleg_nenashev"
