@@ -8,5 +8,4 @@ paths:
 - "com/dabsquared/gitlab-plugin"
 - "org/jenkins-ci/plugins/gitlab-plugin"
 developers:
-- "basil"
 - "elbidouilleur" # jenkins.io/jira Username MaximeMazet Github username
