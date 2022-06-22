@@ -5,5 +5,7 @@ issues:
 - jira: '24522' # hashicorp-vault-pipeline-plugin
 paths:
 - "io/jenkins/plugins/hashicorp-vault-pipeline"
+cd:
+  enabled: true
 developers:
 - "philmadden"
