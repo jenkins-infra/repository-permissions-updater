@@ -1,8 +1,8 @@
 ---
-name: "mina-sshd-api-scp"
+name: "mina-sshd-api"
 github: &GH "jenkinsci/mina-sshd-api-plugin"
 paths:
-- "io/jenkins/plugins/mina-sshd-api/mina-sshd-api-scp"
+- "io/jenkins/plugins/mina-sshd-api/mina-sshd-api-*"
 cd:
   enabled: true
 developers:
