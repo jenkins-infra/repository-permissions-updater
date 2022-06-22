@@ -7,3 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/clif-performance-testing"
 developers:
 - "dillense"
+cd:
+  enabled: true
