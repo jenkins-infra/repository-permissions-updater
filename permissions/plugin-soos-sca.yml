@@ -7,3 +7,5 @@ developers:
 - "soos_integrations"
 issues:
   - github: *GH
+cd:
+  enabled: true
