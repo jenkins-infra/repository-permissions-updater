@@ -1,6 +1,8 @@
 ---
 name: "pipeline-maven"
 github: "jenkinsci/pipeline-maven-plugin"
+cd:
+  enabled: true
 issues:
 - jira: '21669' # pipeline-maven-plugin
 paths:
