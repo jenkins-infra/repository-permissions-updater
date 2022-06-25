@@ -8,3 +8,4 @@ paths:
 - "io/jenkins/plugins/pipeline-as-yaml"
 developers:
 - "aytuncbeken"
+- "oleg_nenashev"
