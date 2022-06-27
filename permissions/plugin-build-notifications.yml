@@ -4,6 +4,7 @@ github: "jenkinsci/build-notifications-plugin"
 issues:
 - jira: '22524' # build-notifications-plugin
 paths:
-- "tools/devnull/build-notifications"
+# Block creation of new releases. If you want to release the plugin, contact the Jenkins security team about SECURITY-2333
+- "tools/devnull/build-notifications-releaseblock"
 developers:
 - "ataxexe"
