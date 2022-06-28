@@ -5,5 +5,7 @@ issues:
   - jira: '23222'
 paths:
 - "org/jenkins-ci/modules/instance-identity"
+cd:
+  enabled: true
 developers:
 - "@core"
