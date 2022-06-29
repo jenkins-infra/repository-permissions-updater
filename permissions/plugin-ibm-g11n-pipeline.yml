@@ -1,0 +1,9 @@
+---
+name: "ibm-g11n-pipeline"
+github: "jenkinsci/ibm-g11n-pipeline-plugin"
+issues:
+- jira: '25029' # ibm-g11n-pipeline-plugin
+paths:
+# Block creation of new releases. If you want to release the plugin, contact the Jenkins security team about SECURITY-1779
+- "org/jenkins-ci/plugins/ibm-g11n-pipeline-releaseblock"
+developers: []
