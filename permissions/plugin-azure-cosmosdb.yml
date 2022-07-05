@@ -1,0 +1,9 @@
+---
+name: "azure-cosmosdb"
+github: &GH "jenkinsci/azure-cosmosdb-plugin"
+paths:
+- "io/jenkins/plugins/azure-cosmosdb"
+developers:
+- "timja"
+issues:
+  - github: *GH
