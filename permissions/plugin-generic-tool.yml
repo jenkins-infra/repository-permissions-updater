@@ -1,0 +1,9 @@
+---
+name: "generic-tool"
+github: &GH "jenkinsci/generic-tool-plugin"
+paths:
+- "io/jenkins/plugins/generic-tool"
+developers:
+- "danielbeck"
+issues:
+  - github: *GH
