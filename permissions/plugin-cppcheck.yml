@@ -7,6 +7,5 @@ paths:
 - "com/thalesgroup/jenkins-ci/plugins/cppcheck"
 - "org/jenkins-ci/plugins/cppcheck"
 developers:
-- "basil"
 - "mixalturek"
 - "marcosteffan"
