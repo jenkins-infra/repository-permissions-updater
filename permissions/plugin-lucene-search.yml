@@ -7,8 +7,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/lucene-search"
 developers:
-- "hanabishi"
-- "tobias_"
 - "markch"
 cd:
   enabled: true
