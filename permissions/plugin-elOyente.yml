@@ -4,5 +4,6 @@ github: "jenkinsci/eloyente-plugin"
 issues:
 - jira: '17504' # eloyente-plugin
 paths:
-- "com/technicolor/elOyente"
+# Block creation of new releases. If you want to release the plugin, contact the Jenkins security team about SECURITY-2739
+- "com/technicolor/elOyente-releaseblocker"
 developers: []
