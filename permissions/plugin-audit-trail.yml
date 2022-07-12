@@ -10,3 +10,5 @@ developers:
 - "olivergondza"
 - "tsek"
 - "pierrebtz"
+cd:
+  enabled: true
