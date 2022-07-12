@@ -10,3 +10,5 @@ developers:
 - "recena"
 - "ydubreuil"
 - "pierrebtz"
+cd:
+  enabled: true
