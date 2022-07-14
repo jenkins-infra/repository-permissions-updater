@@ -8,7 +8,9 @@ paths:
 - "org/jenkins-ci/plugins/embeddable-build-status"
 developers:
 - "christiangalsterer"
+- "darinpope"
 - "jglick"
+- "markewaite"
 - "mgedmin"
 - "thomas_dee"
 cd:
