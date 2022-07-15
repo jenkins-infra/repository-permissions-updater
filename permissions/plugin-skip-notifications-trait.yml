@@ -8,3 +8,5 @@ paths:
 developers:
 - "alex_dubrouski"
 - "jonesbusy"
+cd:
+  enabled: true
