@@ -1,0 +1,9 @@
+---
+name: "enhanced-metrics"
+github: &GH "jenkinsci/enhanced-metrics-plugin"
+paths:
+- "io/jenkins/plugins/enhanced-metrics"
+developers:
+- "aytuncbeken"
+issues:
+  - github: *GH
