@@ -9,6 +9,8 @@ developers:
 - "kohsuke"
 - "andresrc"
 - "batmat"
+cd:
+  enabled: true
 security:
   contacts:
     jira: "cloudbees_security_members"
