@@ -14,3 +14,6 @@ developers:
 - "justinharringa"
 - "jetersen"
 - "surenpi"
+security:
+  contacts:
+    jira: "jetersen"
