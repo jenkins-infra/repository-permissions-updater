@@ -1,0 +1,6 @@
+---
+name: "azure-testbase"
+paths:
+- "org/jenkinsci/plugins/azure-testbase"
+developers:
+- "bingoz"
