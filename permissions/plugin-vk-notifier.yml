@@ -1,0 +1,11 @@
+---
+name: "vk-notifier"
+github: "jenkinsci/vk-notifier-plugin"
+issues:
+- github: "jenkinsci/vk-notifier"
+paths:
+- "org/jenkins-ci/plugins/vk-notifier"
+developers:
+- "spliterash"
+cd:
+  enabled: true
