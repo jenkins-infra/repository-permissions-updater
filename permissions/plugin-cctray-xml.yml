@@ -5,4 +5,5 @@ issues:
 - jira: '21967' # cctray-xml-plugin
 paths:
 - "org/jenkins-ci/plugins/cctray-xml"
-developers: []
+developers:
+- "rahulsom"
