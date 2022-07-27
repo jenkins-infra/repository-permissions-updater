@@ -93,7 +93,7 @@ cd:
 When using JEP-229 CD, every committer to your repository can create new releases by merging pull requests.
 As a result, the list of maintainer accounts maintained in your plugin's YAML file is no longer the single reference on who can publish new releases.
 The users listed there still serve as the contacts for security issues and plugin/component governance questions.
-In particular, the Jenkins security team will _not_ make an effort to reach out to GitHub committers when maintainers are unresponsive before [announcing vulnerabilities without a fix](https://www.jenkins.io/security/plugins/#unresolved).
+In particular, the Jenkins security team will _not_ make an effort to reach out to GitHub committers when maintainers (and security contacts, see below) are unresponsive before [announcing vulnerabilities without a fix](https://www.jenkins.io/security/plugins/#unresolved).
 
 
 Managing Security Process
