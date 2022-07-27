@@ -5,5 +5,6 @@ paths:
 - "io/jenkins/plugins/sonic-ci-helper"
 developers:
 - "zhouyixun"
+- "yaming116"
 issues:
   - github: *GH
