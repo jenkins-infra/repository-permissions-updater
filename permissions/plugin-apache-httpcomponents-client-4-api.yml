@@ -5,10 +5,16 @@ issues:
 - jira: '23052' # apache-httpcomponents-client-4-api-plugin
 paths:
 - "org/jenkins-ci/plugins/apache-httpcomponents-client-4-api"
+cd:
+  enabled: true
 developers:
 - "oleg_nenashev"
 - "dnusbaum"
 - "mramonleon"
+- "carroll"
+- "teilo"
+- "rsandell"
+- "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"
