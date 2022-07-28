@@ -5,11 +5,17 @@ issues:
 - jira: '21943' # jsch-plugin
 paths:
 - "org/jenkins-ci/plugins/jsch"
+cd:
+  enabled: true
 developers:
 - "zregvart"
 - "ljader"
 - "oleg_nenashev"
 - "dnusbaum"
+- "teilo"
+- "carroll"
+- "rsandell"
+- "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"
