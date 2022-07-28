@@ -6,7 +6,6 @@ issues:
 paths:
 - "io/jenkins/plugins/mathworks-polyspace"
 developers:
-- "pascal_brand38"
 - "cpreve"
 - "sbobin"
 
