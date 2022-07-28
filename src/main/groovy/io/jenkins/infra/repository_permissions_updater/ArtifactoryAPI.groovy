@@ -3,7 +3,6 @@ package io.jenkins.infra.repository_permissions_updater
 import edu.umd.cs.findbugs.annotations.CheckForNull
 import edu.umd.cs.findbugs.annotations.NonNull
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
-import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 
 import java.nio.charset.StandardCharsets
@@ -89,7 +88,7 @@ abstract class ArtifactoryAPI {
      * @param group the group scope for the token
      * @return the token
      */
-    abstract String generateTokenForGroup(String username, String group, String description, long expiresInSeconds);
+    abstract String generateTokenForGroup(String username, String group, long expiresInSeconds);
 
     /* Public instance-independent API */
 
@@ -223,19 +222,18 @@ abstract class ArtifactoryAPI {
         }
 
         @Override
-        @CheckForNull String generateTokenForGroup(String username, String group, String description, long expiresInSeconds) {
+        @CheckForNull String generateTokenForGroup(String username, String group, long expiresInSeconds) {
             withConnection('POST', ARTIFACTORY_TOKEN_API_URL) {
-                setRequestProperty('Content-Type', 'application/json')
+                setRequestProperty('Content-Type', 'application/x-www-form-urlencoded')
                 setDoOutput(true)
-                def body = JsonOutput.toJson([
+                OutputStreamWriter osw = new OutputStreamWriter(getOutputStream())
+                def params = [
                         'username': username,
                         'scope': 'member-of-groups:readers,' + group,
-                        'expires_in': expiresInSeconds,
-                        'description': description
-                ])
-                OutputStreamWriter osw = new OutputStreamWriter(getOutputStream())
-                LOGGER.log(Level.INFO, "Generating token with request payload: " + body)
-                osw.write(body)
+                        'expires_in': expiresInSeconds
+                ].collect { k, v -> k  + '=' + URLEncoder.encode((String)v, StandardCharsets.UTF_8) }.join('&')
+                LOGGER.log(Level.INFO, "Generating token with request payload: " + params)
+                osw.write(params)
                 osw.close()
                 String text = getInputStream().getText()
                 def json = new JsonSlurper().parseText(text)
