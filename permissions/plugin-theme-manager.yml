@@ -8,4 +8,5 @@ paths:
 - "io/jenkins/plugins/theme-manager"
 developers:
 - "timja"
-
+cd:
+  enabled: true
