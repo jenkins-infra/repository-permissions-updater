@@ -5,6 +5,8 @@ issues:
 - jira: '23529' # jdk-tool-plugin
 paths:
 - "org/jenkins-ci/plugins/jdk-tool"
+cd:
+  enabled: true
 developers:
 - "dnusbaum"
 - "jglick"
