@@ -87,7 +87,6 @@ cd:
   enabled: true
 ```
 
-**NOTE:** As of July 2022, this does not work for multimodule projects deploying multiple components, as these would have multiple YAML files in this repository.
 
 **IMPORTANT:**
 When using JEP-229 CD, every committer to your repository can create new releases by merging pull requests.
