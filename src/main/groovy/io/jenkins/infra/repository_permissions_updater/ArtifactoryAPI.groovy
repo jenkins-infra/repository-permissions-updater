@@ -125,7 +125,13 @@ abstract class ArtifactoryAPI {
      * @return
      */
     static @NonNull String toTokenUsername(String baseName) {
-        return sha256('CD-' + baseName).substring(0, 56)
+        def name = 'CD-for-' + baseName.replaceAll('[ /]', '__')
+        if (name.length() > 58) {
+            // Artifactory has an undocumented max length for usernames of 58 chars (and possibly other types) although documented to be 255 characters
+            // If length is exceeded, use 58 chars of the prefix+name, separator, and 8 hopefully unique chars (prefix of name's SHA-256)
+            name = name.substring(0, 50) + '_' + sha256(name).substring(0, 7)
+        }
+        return name
     }
 
     private static String sha256(String str) {
