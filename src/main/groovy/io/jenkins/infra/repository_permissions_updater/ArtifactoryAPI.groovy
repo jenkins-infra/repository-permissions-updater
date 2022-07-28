@@ -88,7 +88,7 @@ abstract class ArtifactoryAPI {
      * @param group the group scope for the token
      * @return the token
      */
-    abstract String generateTokenForGroup(String username, String group, long expiresInSeconds);
+    abstract String generateTokenForGroup(String username, String group, String description, long expiresInSeconds);
 
     /* Public instance-independent API */
 
@@ -117,12 +117,14 @@ abstract class ArtifactoryAPI {
      * Converts the provided base name (expected to be a GitHub repository name of the form 'org/name') to a user name
      * for a non-existing token user.
      *
+     * Artifactory has a limit of 58 characters for username
+     *
      * @link https://www.jfrog.com/confluence/display/JFROG/Access+Tokens#AccessTokens-SupportAuthenticationforNon-ExistingUsers
      * @param baseName
      * @return
      */
     static @NonNull String toTokenUsername(String baseName) {
-        return 'CD-for-' + baseName.replaceAll('[ /]', '__')
+        return sha256('CD-' + baseName).substring(0, 56)
     }
 
     private static String sha256(String str) {
@@ -214,7 +216,7 @@ abstract class ArtifactoryAPI {
         }
 
         @Override
-        @CheckForNull String generateTokenForGroup(String username, String group, long expiresInSeconds) {
+        @CheckForNull String generateTokenForGroup(String username, String group, String description, long expiresInSeconds) {
             withConnection('POST', ARTIFACTORY_TOKEN_API_URL) {
                 setRequestProperty('Content-Type', 'application/x-www-form-urlencoded')
                 setDoOutput(true)
@@ -222,7 +224,8 @@ abstract class ArtifactoryAPI {
                 def params = [
                         'username': username,
                         'scope': 'member-of-groups:readers,' + group,
-                        'expires_in': expiresInSeconds
+                        'expires_in': expiresInSeconds,
+                        'description': description
                 ].collect { k, v -> k  + '=' + URLEncoder.encode((String)v, StandardCharsets.UTF_8) }.join('&')
                 LOGGER.log(Level.INFO, "Generating token with request payload: " + params)
                 osw.write(params)

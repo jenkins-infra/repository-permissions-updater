@@ -404,8 +404,10 @@ class ArtifactoryPermissionsUpdater {
         def repos = new JsonSlurper().parse(githubReposForCdIndex)
         repos.each { repo ->
             LOGGER.log(Level.INFO, "Processing repository ${repo} for CD")
-            def username = ArtifactoryAPI.toTokenUsername((String) repo)
-            def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName((String) repo)
+
+            def repoStr = (String) repo
+            def username = ArtifactoryAPI.toTokenUsername(repoStr)
+            def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName(repoStr)
             def validFor = TimeUnit.MINUTES.toSeconds(Integer.getInteger('artifactoryTokenMinutesValid', 240))
             def token
             try {
@@ -413,13 +415,13 @@ class ArtifactoryPermissionsUpdater {
                     LOGGER.log(Level.INFO, "Skipped creation of token for GitHub repo: '${repo}', Artifactory user: '${username}', group name: '${groupName}', valid for ${validFor} seconds")
                     return
                 }
-                token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, groupName, validFor)
+                token = ArtifactoryAPI.getInstance().generateTokenForGroup(username, groupName, repoStr, validFor)
             } catch (Exception ex) {
                 LOGGER.log(Level.WARNING, "Failed to generate token for ${repo}", ex)
                 return
             }
 
-            GitHubAPI.GitHubPublicKey publicKey = GitHubAPI.getInstance().getRepositoryPublicKey((String) repo)
+            GitHubAPI.GitHubPublicKey publicKey = GitHubAPI.getInstance().getRepositoryPublicKey(repoStr)
             if (publicKey == null) {
                 LOGGER.log(Level.WARNING, "Failed to retrieve public key for ${repo}")
                 return
@@ -430,8 +432,8 @@ class ArtifactoryPermissionsUpdater {
             def encryptedToken = CryptoUtil.encryptSecret(token, publicKey.key)
             LOGGER.log(Level.INFO, "Encrypted secrets are username:${encryptedUsername}; token:${encryptedToken}")
 
-            GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'USERNAME', encryptedUsername, (String) repo, publicKey.keyId)
-            GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'TOKEN', encryptedToken, (String) repo, publicKey.keyId)
+            GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'USERNAME', encryptedUsername, repoStr, publicKey.keyId)
+            GitHubAPI.getInstance().createOrUpdateRepositorySecret(System.getProperty('gitHubSecretNamePrefix', DEVELOPMENT ? 'DEV_MAVEN_' : 'MAVEN_') + 'TOKEN', encryptedToken, repoStr, publicKey.keyId)
         }
     }
 
