@@ -5,6 +5,8 @@ issues:
 - jira: '17613' # git-server-plugin
 paths:
 - "org/jenkins-ci/plugins/git-server"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "kohsuke"
