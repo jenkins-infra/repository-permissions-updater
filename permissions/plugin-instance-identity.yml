@@ -9,3 +9,6 @@ cd:
   enabled: true
 developers:
 - "@core"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
