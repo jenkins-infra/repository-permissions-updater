@@ -75,6 +75,26 @@ Rename and edit the existing permissions file, changing both `name` and the last
 
 Change the `paths` to match the new Maven coordinates, or, if further uploads for the old coordinates are expected, add a new list entry.
 
+Managing Continuous Delivery (JEP-229 CD)
+-----------------------------------------
+
+Jenkins plugins and other components can be continuously delivered through a supported process described in [JEP-229](https://github.com/jenkinsci/jep/blob/master/jep/229/README.adoc).
+
+You can enable JEP-229 CD for your component by adding the following to your component's YAML file:
+
+```yaml
+cd:
+  enabled: true
+```
+
+
+**IMPORTANT:**
+When using JEP-229 CD, every committer to your repository can create new releases by merging pull requests.
+As a result, the list of maintainer accounts maintained in your plugin's YAML file is no longer the single reference on who can publish new releases.
+The users listed there still serve as the contacts for security issues and plugin/component governance questions.
+In particular, the Jenkins security team will _not_ make an effort to reach out to GitHub committers when maintainers (and security contacts, see below) are unresponsive before [announcing vulnerabilities without a fix](https://www.jenkins.io/security/plugins/#unresolved).
+
+
 Managing Security Process
 -------------------------
 
