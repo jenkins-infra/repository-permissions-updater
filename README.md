@@ -87,11 +87,11 @@ cd:
   enabled: true
 ```
 
-
 **IMPORTANT:**
 When using JEP-229 CD, every committer to your repository can create new releases by merging pull requests.
 As a result, the list of maintainer accounts maintained in your plugin's YAML file is no longer the single reference on who can publish new releases.
-The users listed there still serve as the contacts for security issues and plugin/component governance questions.
+Be sure to check [which users have commit access](https://www.jenkins.io/doc/developer/publishing/source-code-hosting/) to your repository and remove any that are unexpected before enabling CD, as well as any unexpected [deploy keys](https://docs.github.com/en/developers/overview/managing-deploy-keys).
+Additionally, the users listed in this repository still serve as the contacts for security issues and plugin/component governance questions.
 In particular, the Jenkins security team will _not_ make an effort to reach out to GitHub committers when maintainers (and security contacts, see below) are unresponsive before [announcing vulnerabilities without a fix](https://www.jenkins.io/security/plugins/#unresolved).
 
 
