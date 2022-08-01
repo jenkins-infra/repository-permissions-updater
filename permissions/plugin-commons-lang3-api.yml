@@ -5,5 +5,9 @@ paths:
 - "io/jenkins/plugins/commons-lang3-api"
 developers:
 - "nhojpatrick"
+- "timja"
 issues:
   - github: *GH
+cd:
+  enabled: true
+  
