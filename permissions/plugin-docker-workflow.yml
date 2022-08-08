@@ -5,6 +5,8 @@ issues:
 - jira: '20625' # docker-workflow-plugin
 paths:
 - "org/jenkins-ci/plugins/docker-workflow"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "oleg_nenashev"
