@@ -1,0 +1,9 @@
+---
+name: "autify"
+github: &GH "jenkinsci/autify-plugin"
+paths:
+- "io/jenkins/plugins/autify"
+developers:
+- "riywo"
+issues:
+  - github: *GH
