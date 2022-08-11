@@ -17,3 +17,5 @@ developers:
 - "timja"
 - "olamy"
 - "notmyfault"
+cd:
+  enabled: true
