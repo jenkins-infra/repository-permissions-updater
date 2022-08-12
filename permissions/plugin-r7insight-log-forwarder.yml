@@ -1,6 +1,8 @@
 ---
 name: "r7insight-log-forwarder"
 github: "jenkinsci/r7insight-log-forwarder-plugin"
+issues:
+- jira: '23820' # r7insight-log-forwarder-plugin
 paths:
 - "org/jenkins-ci/plugins/r7insight-log-forwarder"
 developers:

@@ -1,6 +1,8 @@
 ---
 name: "promoted-builds-simple"
 github: "jenkinsci/promoted-builds-simple-plugin"
+issues:
+- jira: '15702' # promoted-builds-simple-plugin
 paths:
 - "org/jenkins-ci/plugins/promoted-builds-simple"
 developers: []

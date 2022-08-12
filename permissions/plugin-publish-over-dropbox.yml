@@ -1,6 +1,8 @@
 ---
 name: "publish-over-dropbox"
 github: "jenkinsci/publish-over-dropbox-plugin"
+issues:
+- jira: '20844' # publish-over-dropbox-plugin
 paths:
 - "org/jenkins-ci/plugins/publish-over-dropbox"
 developers:

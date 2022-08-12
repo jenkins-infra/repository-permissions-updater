@@ -1,6 +1,8 @@
 ---
 name: "soapui-pro-functional-testing"
 github: "jenkinsci/soapui-pro-functional-testing-plugin"
+issues:
+- jira: '23734' # soapui-pro-functional-testing-plugin
 paths:
 - "org/jenkins-ci/plugins/soapui-pro-functional-testing"
 developers:
@@ -9,3 +11,4 @@ developers:
 - "alexandernikitin"
 - "alexey_bortulev"
 - "alexander_eremeev"
+- "alexanderpaeshin"

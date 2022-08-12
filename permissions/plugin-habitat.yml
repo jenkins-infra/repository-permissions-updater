@@ -1,6 +1,8 @@
 ---
 name: "habitat"
-github: "jenkinsci/habitat-plugin"
+github: &gh "jenkinsci/habitat-plugin"
+issues:
+- github: *gh
 paths:
 - "com/indellient/habitat"
 developers:

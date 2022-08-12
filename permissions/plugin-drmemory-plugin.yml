@@ -1,6 +1,8 @@
 ---
 name: "drmemory-plugin"
 github: "jenkinsci/drmemory-plugin"
+issues:
+- jira: '16540' # drmemory-plugin
 paths:
 - "net/praqma/drmemory-plugin"
 developers:

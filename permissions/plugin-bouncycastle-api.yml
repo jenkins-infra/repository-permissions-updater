@@ -1,9 +1,13 @@
 ---
 name: "bouncycastle-api"
 github: "jenkinsci/bouncycastle-api-plugin"
+issues:
+- jira: '21482' # bouncycastle-api-plugin
 paths:
 - "org/jenkins-ci/plugins/bouncycastle-api"
 developers:
 - "alobato"
 - "dnusbaum"
-- "jthompson"
+- "teilo"
+- "@security"
+- "@cloudbees-developers"

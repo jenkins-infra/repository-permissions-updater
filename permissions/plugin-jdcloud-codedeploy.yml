@@ -1,6 +1,8 @@
 ---
 name: "jdcloud-codedeploy"
 github: "jenkinsci/jdcloud-codedeploy-plugin"
+issues:
+- jira: '25131' # jdcloud-codedeploy-plugin
 paths:
 - "org/jenkins-ci/plugins/jdcloud-codedeploy"
 developers:

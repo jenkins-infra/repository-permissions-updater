@@ -1,6 +1,8 @@
 ---
 name: "jenkins-infra-test"
-github: "jenkinsci/jenkins-infra-test-plugin"
+github: &gh "jenkinsci/jenkins-infra-test-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/jenkins-infra-test"
 cd:
@@ -8,3 +10,4 @@ cd:
 developers:
 - "timja"
 - "olblak"
+- "jglick"

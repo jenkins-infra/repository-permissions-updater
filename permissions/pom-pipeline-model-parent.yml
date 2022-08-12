@@ -9,3 +9,6 @@ developers:
 - "rsandell"
 - "bitwiseman"
 - "dnusbaum"
+- "carroll"
+cd:
+  enabled: true

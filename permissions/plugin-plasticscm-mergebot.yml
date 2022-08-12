@@ -1,6 +1,8 @@
 ---
 name: "plasticscm-mergebot"
-github: "jenkinsci/plasticscm-mergebot-plugin"
+github: &GH "jenkinsci/plasticscm-mergebot-plugin"
+issues:
+  - github: *GH
 paths:
 - "org/jenkins-ci/plugins/plasticscm-mergebot"
 developers:

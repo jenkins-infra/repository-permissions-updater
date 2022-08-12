@@ -1,9 +1,12 @@
 ---
 name: "pipeline-maven-parent"
 github: "jenkinsci/pipeline-maven-plugin"
+cd:
+  enabled: true
 paths:
 - "org/jenkins-ci/plugins/pipeline-maven-parent"
 developers:
 - "alobato"
 - "cleclerc"
 - "aheritier"
+- "bguerin"

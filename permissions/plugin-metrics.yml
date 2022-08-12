@@ -1,13 +1,17 @@
 ---
 name: "metrics"
 github: "jenkinsci/metrics-plugin"
+issues:
+- jira: '18751' # metrics-plugin
 paths:
 - "org/jenkins-ci/plugins/metrics"
 developers:
 - "kohsuke"
 - "sbadger"
 - "alecharp"
-- "mramonleon"
+- "@cloudbees-developers"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

@@ -1,6 +1,8 @@
 ---
 name: "unique-id"
 github: "jenkinsci/unique-id-plugin"
+issues:
+- jira: '19822' # unique-id-plugin
 paths:
 - "org/jenkins-ci/plugins/unique-id"
 developers:
@@ -8,6 +10,7 @@ developers:
 - "oleg_nenashev"
 - "recampbell"
 - "oleg_nenashev"
+- "teilo"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

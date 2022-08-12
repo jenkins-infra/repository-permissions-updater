@@ -4,6 +4,4 @@ github: "jenkinsci/lib-support-log-formatter"
 paths:
 - "io/jenkins/lib/support-log-formatter"
 developers:
-- "batmat"
-- "jglick"
-- "oleg_nenashev"
+- "@core"

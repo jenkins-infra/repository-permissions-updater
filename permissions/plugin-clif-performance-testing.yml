@@ -1,7 +1,11 @@
 ---
 name: "clif-performance-testing"
 github: "jenkinsci/clif-performance-testing-plugin"
+issues:
+- jira: '21966' # clif-performance-testing-plugin
 paths:
 - "org/jenkins-ci/plugins/clif-performance-testing"
 developers:
 - "dillense"
+cd:
+  enabled: true

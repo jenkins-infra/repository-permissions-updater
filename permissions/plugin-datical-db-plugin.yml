@@ -1,6 +1,8 @@
 ---
 name: "datical-db-plugin"
 github: "jenkinsci/datical-db-plugin"
+issues:
+- jira: '17659' # datical-db-plugin
 paths:
 - "com/datical/integration/jenkins/datical-db-plugin"
 developers:

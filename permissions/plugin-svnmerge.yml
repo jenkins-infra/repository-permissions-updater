@@ -1,7 +1,10 @@
 ---
 name: "svnmerge"
 github: "jenkinsci/svnmerge-plugin"
+issues:
+- jira: '15739' # svnmerge-plugin
 paths:
 - "org/jenkins-ci/plugins/svnmerge"
 developers:
 - "hugueschabot"
+- "gmcdonald"

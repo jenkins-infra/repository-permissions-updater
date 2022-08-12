@@ -1,12 +1,17 @@
 ---
 name: "artifact-manager-s3"
 github: "jenkinsci/artifact-manager-s3-plugin"
+issues:
+- jira: '23538' # artifact-manager-s3-plugin
 paths:
 - "io/jenkins/plugins/artifact-manager-s3"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "csanchez"
 - "oleg_nenashev"
+- "@cloudbees-developers"
 security:
   contacts:
-    jira: "modern_platforms_security_members"
+    jira: "cloudbees_security_members"

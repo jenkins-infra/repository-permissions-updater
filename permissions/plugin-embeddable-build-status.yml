@@ -1,10 +1,17 @@
 ---
 name: "embeddable-build-status"
-github: "jenkinsci/embeddable-build-status-plugin"
+github: &gh "jenkinsci/embeddable-build-status-plugin"
+issues:
+- jira: '17120' # embeddable-build-status-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/embeddable-build-status"
 developers:
 - "christiangalsterer"
+- "darinpope"
 - "jglick"
+- "markewaite"
 - "mgedmin"
 - "thomas_dee"
+cd:
+  enabled: true

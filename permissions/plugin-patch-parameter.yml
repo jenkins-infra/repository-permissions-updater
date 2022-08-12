@@ -1,6 +1,8 @@
 ---
 name: "patch-parameter"
 github: "jenkinsci/patch-parameter-plugin"
+issues:
+- jira: '17503' # patch-parameter-plugin
 paths:
 - "org/jenkins-ci/plugins/patch-parameter"
 developers:

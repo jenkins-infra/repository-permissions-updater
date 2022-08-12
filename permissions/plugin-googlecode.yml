@@ -1,6 +1,8 @@
 ---
 name: "googlecode"
 github: "jenkinsci/googlecode-plugin"
+issues:
+- jira: '15546' # googlecode-plugin
 paths:
 - "org/jenkins-ci/plugins/googlecode"
 - "org/jvnet/hudson/plugins/googlecode"

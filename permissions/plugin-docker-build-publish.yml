@@ -1,6 +1,8 @@
 ---
 name: "docker-build-publish"
 github: "jenkinsci/docker-build-publish-plugin"
+issues:
+- jira: '18624' # docker-build-publish-plugin
 paths:
 - "org/jenkins-ci/plugins/docker-build-publish"
 developers:
@@ -10,4 +12,4 @@ developers:
 - "rsandell"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

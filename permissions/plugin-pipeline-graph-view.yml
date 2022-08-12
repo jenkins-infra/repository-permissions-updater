@@ -3,6 +3,8 @@ name: "pipeline-graph-view"
 github: &GH "jenkinsci/pipeline-graph-view-plugin"
 paths:
 - "io/jenkins/plugins/pipeline-graph-view"
+cd:
+  enabled: true
 developers:
 - "timja"
 issues:

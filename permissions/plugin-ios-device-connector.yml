@@ -1,6 +1,8 @@
 ---
 name: "ios-device-connector"
 github: "jenkinsci/ios-device-connector-plugin"
+issues:
+- jira: '17020' # ios-device-connector-plugin
 paths:
 - "org/jenkins-ci/plugins/ios-device-connector"
 developers: []

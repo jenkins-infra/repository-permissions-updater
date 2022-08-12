@@ -1,5 +1,8 @@
 ---
 name: "jira-trigger"
+github: jenkinsci/jira-trigger-plugin
+issues:
+- jira: '21140' # jira-trigger-plugin
 paths:
 - "org/jenkins-ci/plugins/jira-trigger"
 developers:

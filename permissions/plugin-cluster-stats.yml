@@ -1,5 +1,8 @@
 ---
 name: "cluster-stats"
+github: "jenkinsci/cluster-stats-plugin"
+issues:
+  - jira: '17540'
 paths:
 - "org/zeroturnaround/cluster-stats"
 developers:

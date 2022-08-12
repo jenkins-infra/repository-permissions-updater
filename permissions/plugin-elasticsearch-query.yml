@@ -1,6 +1,8 @@
 ---
 name: "elasticsearch-query"
 github: "jenkinsci/elasticsearch-query-plugin"
+issues:
+- jira: '21036' # elasticsearch-query-plugin
 paths:
 - "org/jenkins-ci/plugins/elasticsearch-query"
 developers:

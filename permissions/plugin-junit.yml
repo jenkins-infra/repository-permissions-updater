@@ -1,6 +1,9 @@
 ---
 name: "junit"
-github: "jenkinsci/junit-plugin"
+github: &gh "jenkinsci/junit-plugin"
+issues:
+- jira: '15499' # junit-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/junit"
 developers:
@@ -20,4 +23,6 @@ developers:
 - "timja"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

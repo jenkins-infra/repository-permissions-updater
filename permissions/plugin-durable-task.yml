@@ -1,6 +1,8 @@
 ---
 name: "durable-task"
 github: "jenkinsci/durable-task-plugin"
+issues:
+- jira: '18622' # durable-task-plugin
 paths:
 - "org/jenkins-ci/plugins/durable-task"
 developers:
@@ -13,6 +15,13 @@ developers:
 - "carroll"
 - "bitwiseman"
 - "kshultz"
+- "teilo"
+- "alecharp"
+- "batmat"
+- "olamy"
+- "mramonleon"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

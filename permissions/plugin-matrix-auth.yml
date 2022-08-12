@@ -1,9 +1,9 @@
 ---
 name: "matrix-auth"
 github: "jenkinsci/matrix-auth-plugin"
+issues:
+- jira: '18131' # matrix-auth-plugin
 paths:
 - "org/jenkins-ci/plugins/matrix-auth"
 developers:
 - "danielbeck"
-issues:
-  - jira: 'matrix-auth-plugin'

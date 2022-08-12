@@ -1,8 +1,9 @@
 ---
 name: "compuware-strobe-measurement"
 github: "jenkinsci/compuware-strobe-measurement-plugin"
+issues:
+- jira: '27126' # compuware-strobe-measurement-plugin
 paths:
 - "com/compuware/jenkins/compuware-strobe-measurement"
 developers:
-- "VinceCapodanno"
-- "pfhjgd0"
+- "cpwr_jenkins"

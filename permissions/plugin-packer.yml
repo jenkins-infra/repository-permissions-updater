@@ -1,6 +1,9 @@
 ---
 name: "packer"
-github: "jenkinsci/packer-plugin"
+github: &gh "jenkinsci/packer-plugin"
+issues:
+- github: *gh
+- jira: '18827' # packer-plugin
 paths:
 - "biz/neustar/jenkins/plugins/packer"
 developers:

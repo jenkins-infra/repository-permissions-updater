@@ -1,6 +1,8 @@
 ---
 name: "dotcommonitor-loadview"
 github: "jenkinsci/dotcommonitor-loadview-plugin"
+issues:
+- jira: '27020' # dotcommonitor-loadview-plugin
 paths:
 - "io/jenkins/plugins/dotcommonitor-loadview"
 developers:

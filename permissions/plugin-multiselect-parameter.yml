@@ -1,6 +1,8 @@
 ---
 name: "multiselect-parameter"
 github: "jenkinsci/multiselect-parameter-plugin"
+issues:
+- jira: '28126' # multiselect-parameter-plugin
 paths:
 - "io/jenkins/plugins/multiselect-parameter"
 developers:

@@ -1,9 +1,13 @@
 ---
 name: "fortify-on-demand-uploader"
-github: "jenkinsci/fortify-on-demand-uploader-plugin"
+github: &gh "jenkinsci/fortify-on-demand-uploader-plugin"
+issues:
+- github: *gh
+- jira: '21222' # fortify-on-demand-uploader-plugin
 paths:
 - "org/jenkins-ci/plugins/fortify-on-demand-uploader"
 developers:
-- "ryanblack"
-- "tsotack"
-- "vodriemf"
+- "makropod"
+- "c0d3m0nky"
+- "aishkotni"
+- "ciuppinho"

@@ -1,6 +1,8 @@
 ---
 name: "display-url-api"
 github: "jenkinsci/display-url-api-plugin"
+issues:
+- jira: '21721' # display-url-api-plugin
 paths:
 - "org/jenkins-ci/plugins/display-url-api"
 developers:
@@ -15,3 +17,6 @@ developers:
 - "rsandell"
 - "bitwiseman"
 - "kshultz"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

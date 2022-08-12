@@ -1,6 +1,8 @@
 ---
 name: "aws-codebuild"
 github: "jenkinsci/aws-codebuild-plugin"
+issues:
+- jira: '21955' # aws-codebuild-plugin
 paths:
 - "com/amazonaws/aws-codebuild"
 developers:
@@ -8,6 +10,3 @@ developers:
 - "johnhankataw"
 - "taoyong"
 - "leobaran_aws"
-security:
-  contacts:
-    email: "aws-security@amazon.com"

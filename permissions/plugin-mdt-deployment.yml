@@ -1,6 +1,8 @@
 ---
 name: "mdt-deployment"
 github: "jenkinsci/mdt-deployment-plugin"
+issues:
+- jira: '21478' # mdt-deployment-plugin
 paths:
 - "org/jenkins-ci/plugins/mdt-deployment"
 developers:

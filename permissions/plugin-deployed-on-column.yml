@@ -1,10 +1,13 @@
 ---
 name: "deployed-on-column"
 github: "jenkinsci/deployed-on-column-plugin"
+issues:
+- jira: '17436' # deployed-on-column-plugin
 paths:
 - "org/jenkins-ci/plugins/deployed-on-column"
 developers:
+- "batmat"
 - "recena"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

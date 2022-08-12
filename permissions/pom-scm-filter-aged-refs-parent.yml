@@ -4,4 +4,4 @@ github: "jenkinsci/scm-filter-aged-refs-plugin"
 paths:
 - "org/jenkins-ci/plugins/scm-filter-aged-refs-parent"
 developers:
-- "witokondoria"
+- "askalski85"

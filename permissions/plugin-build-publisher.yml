@@ -1,6 +1,8 @@
 ---
 name: "build-publisher"
 github: "jenkinsci/build-publisher-plugin"
+issues:
+- jira: '15529' # build-publisher-plugin
 paths:
 - "org/jenkins-ci/plugins/build-publisher"
 developers:

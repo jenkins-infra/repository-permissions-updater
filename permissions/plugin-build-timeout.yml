@@ -1,11 +1,15 @@
 ---
 name: "build-timeout"
-github: "jenkinsci/build-timeout-plugin"
+github: &gh "jenkinsci/build-timeout-plugin"
+issues:
+- jira: '15530' # build-timeout-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/build-timeout"
 developers:
 - "ikedam"
 - "oleg_nenashev"
+- "krisstern"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

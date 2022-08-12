@@ -1,6 +1,9 @@
 ---
 name: "dingding-notifications"
-github: "jenkinsci/dingtalk-plugin"
+github: &gh "jenkinsci/dingtalk-plugin"
+issues:
+- github: *gh
+- jira: '21920' # dingding-notifications-plugin
 paths:
   - "io/jenkins/plugins/dingding-notifications"
 developers:

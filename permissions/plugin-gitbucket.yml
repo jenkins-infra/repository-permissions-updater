@@ -1,6 +1,8 @@
 ---
 name: "gitbucket"
 github: "jenkinsci/gitbucket-plugin"
+issues:
+- jira: '18124' # gitbucket-plugin
 paths:
 - "org/jenkins-ci/plugins/gitbucket"
 developers:

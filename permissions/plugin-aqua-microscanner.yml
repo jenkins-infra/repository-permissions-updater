@@ -1,6 +1,8 @@
 ---
 name: "aqua-microscanner"
-github: "jenkinsci/aqua-microscanner-plugin"
+github: &gh "jenkinsci/aqua-microscanner-plugin"
+issues:
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/aqua-microscanner"
 developers:

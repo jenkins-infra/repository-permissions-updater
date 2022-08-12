@@ -1,6 +1,8 @@
 ---
 name: "requests"
 github: "jenkinsci/requests-plugin"
+issues:
+- jira: '25422' # requests-plugin
 paths:
 - "org/jenkins-ci/plugins/requests"
 developers:

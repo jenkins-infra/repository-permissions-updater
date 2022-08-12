@@ -1,6 +1,8 @@
 ---
 name: "nodejs"
 github: "jenkinsci/nodejs-plugin"
+issues:
+- jira: '15991' # nodejs-plugin
 paths:
 - "org/jenkins-ci/plugins/nodejs"
 developers:
@@ -8,4 +10,4 @@ developers:
 - "nfalco"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

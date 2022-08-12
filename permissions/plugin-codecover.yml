@@ -1,6 +1,8 @@
 ---
 name: "codecover"
 github: "jenkinsci/codecover-plugin"
+issues:
+- jira: '17563' # codecover-plugin
 paths:
 - "org/jenkins-ci/plugins/codecover"
 developers: []

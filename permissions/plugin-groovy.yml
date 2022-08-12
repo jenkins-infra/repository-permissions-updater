@@ -1,8 +1,12 @@
 ---
 name: "groovy"
 github: "jenkinsci/groovy-plugin"
+issues:
+- jira: '15549' # groovy-plugin
+cd:
+  enabled: true
 paths:
 - "org/jenkins-ci/plugins/groovy"
 - "org/jvnet/hudson/plugins/groovy"
 developers:
-- "vjuranek"
+- "jglick"

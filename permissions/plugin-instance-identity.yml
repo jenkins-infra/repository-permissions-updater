@@ -1,0 +1,14 @@
+---
+name: "instance-identity"
+github: "jenkinsci/instance-identity-plugin"
+issues:
+  - jira: '23222'
+paths:
+- "org/jenkins-ci/modules/instance-identity"
+cd:
+  enabled: true
+developers:
+- "@core"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

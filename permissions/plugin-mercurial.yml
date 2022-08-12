@@ -1,6 +1,8 @@
 ---
 name: "mercurial"
 github: "jenkinsci/mercurial-plugin"
+issues:
+- jira: '15502' # mercurial-plugin
 paths:
 - "org/jenkins-ci/plugins/mercurial"
 - "org/jvnet/hudson/plugins/mercurial"
@@ -12,6 +14,7 @@ developers:
 - "fcojfernandez"
 - "mramonleon"
 - "rsandell"
+- "dnusbaum"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

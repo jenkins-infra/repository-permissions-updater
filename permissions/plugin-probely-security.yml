@@ -1,6 +1,8 @@
 ---
 name: "probely-security"
 github: "jenkinsci/probely-security-plugin"
+issues:
+- jira: '24923' # probely-security-plugin
 paths:
 - "io/jenkins/plugins/probely-security"
 developers: 

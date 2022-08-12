@@ -1,6 +1,8 @@
 ---
 name: "job-node-stalker"
 github: "jenkinsci/job-node-stalker-plugin"
+issues:
+- jira: '17628' # job-node-stalker-plugin
 paths:
 - "org/jenkins-ci/plugins/job-node-stalker"
 developers:

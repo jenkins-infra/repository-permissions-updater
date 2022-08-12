@@ -1,6 +1,8 @@
 ---
 name: "hsts-filter-plugin"
 github: "jenkinsci/hsts-filter-plugin"
+issues:
+- jira: '15944' # hsts-filter-plugin
 paths:
 - "org/jenkins-ci/plugins/hsts-filter-plugin"
 developers: []

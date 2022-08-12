@@ -1,6 +1,8 @@
 ---
 name: "zap"
 github: "jenkinsci/zap-plugin"
+issues:
+- jira: '21935' # zap-plugin
 paths:
 - "org/jenkins-ci/plugins/zap"
 developers:

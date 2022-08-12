@@ -1,6 +1,8 @@
 ---
 name: "forticwp-cicd"
 github: "jenkinsci/forticwp-cicd-plugin"
+issues:
+- jira: '28428' # forticwp-cicd-plugin
 paths:
 - "io/jenkins/plugins/forticwp-cicd"
 developers:

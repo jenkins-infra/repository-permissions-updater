@@ -1,8 +1,9 @@
 ---
 name: "plot"
 github: "jenkinsci/plot-plugin"
+issues:
+- jira: '15564' # plot-plugin
 paths:
 - "org/jenkins-ci/plugins/plot"
 developers:
 - "ericbn"
-- "drulli"

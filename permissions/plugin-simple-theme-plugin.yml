@@ -1,8 +1,12 @@
 ---
 name: "simple-theme-plugin"
-github: "jenkinsci/simple-theme-plugin"
+github: &gh "jenkinsci/simple-theme-plugin"
+issues:
+- github: *gh
 paths:
 - "org/codefirst/jenkins/simplethemeplugin/simple-theme-plugin"
 - "org/jenkins-ci/plugins/simple-theme-plugin"
 developers:
 - "tgr"
+cd:
+  enabled: true

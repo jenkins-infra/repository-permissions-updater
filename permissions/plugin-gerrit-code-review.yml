@@ -1,6 +1,8 @@
 ---
 name: "gerrit-code-review"
 github: "jenkinsci/gerrit-code-review-plugin"
+issues:
+- jira: '23427' # gerrit-code-review-plugin
 paths:
 - "org/jenkins-ci/plugins/gerrit-code-review"
 developers:

@@ -1,7 +1,11 @@
 ---
 name: "sideex"
 github: "jenkinsci/sideex-plugin"
+issues:
+- jira: '27320' # sideex-plugin
 paths:
 - "io/jenkins/plugins/sideex"
+cd:
+  enabled: true
 developers:
 - "sideexteam"

@@ -1,0 +1,11 @@
+---
+name: "apimap"
+github: &GH "jenkinsci/apimap-plugin"
+paths:
+- "io/jenkins/plugins/apimap"
+developers:
+- "msulland"
+issues:
+  - github: *GH
+cd:
+  enabled: true

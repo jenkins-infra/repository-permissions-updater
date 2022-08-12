@@ -5,5 +5,6 @@ paths:
 - "io/jenkins/plugins/cloudevents"
 developers:
 - "waveywaves"
+- "shruti_chaturvedi"
 issues:
   - github: *GH

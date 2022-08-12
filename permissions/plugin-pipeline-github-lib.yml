@@ -1,8 +1,12 @@
 ---
 name: "pipeline-github-lib"
 github: "jenkinsci/pipeline-github-lib-plugin"
+issues:
+- jira: '21833' # pipeline-github-lib-plugin
 paths:
 - "org/jenkins-ci/plugins/pipeline-github-lib"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "abayer"
@@ -11,4 +15,4 @@ developers:
 - "svanoort"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

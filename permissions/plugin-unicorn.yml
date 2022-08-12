@@ -1,6 +1,8 @@
 ---
 name: "unicorn"
 github: "jenkinsci/unicorn-plugin"
+issues:
+- jira: '15983' # unicorn-plugin
 paths:
 - "si/nej/hudson/plugins/unicorn"
 developers: []

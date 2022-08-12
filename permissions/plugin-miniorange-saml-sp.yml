@@ -1,5 +1,7 @@
 name: "miniorange-saml-sp"
 github: "jenkinsci/miniorange-saml-sp-plugin"
+issues:
+- jira: '28426' # miniorange-saml-sp-plugin
 paths:
   - "io/jenkins/plugins/miniorange-saml-sp"
 developers:

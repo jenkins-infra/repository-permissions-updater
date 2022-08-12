@@ -1,6 +1,8 @@
 ---
 name: "maven-metadata-plugin"
 github: "jenkinsci/maven-metadata-plugin"
+issues:
+- jira: '17226' # maven-metadata-plugin
 paths:
 - "eu/markov/jenkins/plugin/mvnmeta/maven-metadata-plugin"
 developers:

@@ -1,8 +1,12 @@
 ---
 name: "confluence-publisher"
 github: "jenkinsci/confluence-publisher-plugin"
+issues:
+- jira: '15948' # confluence-publisher-plugin
 paths:
 - "org/jenkins-ci/plugins/confluence-publisher"
 developers:
 - "jhansche"
 - "jetersen"
+cd:
+  enabled: true

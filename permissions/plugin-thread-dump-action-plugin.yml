@@ -1,6 +1,8 @@
 ---
 name: "thread-dump-action-plugin"
 github: "jenkinsci/thread-dump-action-plugin"
+issues:
+- jira: '16524' # thread-dump-action-plugin
 paths:
 - "org/jenkins-ci/plugins/thread-dump-action-plugin"
 developers: []

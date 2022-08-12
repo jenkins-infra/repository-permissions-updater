@@ -1,6 +1,8 @@
 ---
 name: "stepcounter"
 github: "jenkinsci/stepcounter-plugin"
+issues:
+- jira: '17608' # stepcounter-plugin
 paths:
 - "org/jenkins-ci/plugins/stepcounter"
 developers:

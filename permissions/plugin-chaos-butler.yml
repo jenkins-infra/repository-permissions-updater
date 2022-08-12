@@ -1,5 +1,8 @@
 ---
 name: "chaos-butler"
+github: jenkinsci/chaos-butler-plugin
+issues:
+- jira: '21730' # chaos-butler-plugin
 paths:
 - "org/jenkins-ci/plugins/chaos-butler"
 developers: []

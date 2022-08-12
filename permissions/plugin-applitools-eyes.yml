@@ -1,6 +1,8 @@
 ---
 name: "applitools-eyes"
 github: "jenkinsci/applitools-eyes-plugin"
+issues:
+- jira: '21728' # applitools-eyes-plugin
 paths:
 - "org/jenkins-ci/plugins/applitools-eyes"
 developers:

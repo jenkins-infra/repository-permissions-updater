@@ -1,6 +1,8 @@
 ---
 name: "yet-another-build-visualizer"
 github: "jenkinsci/yet-another-build-visualizer-plugin"
+issues:
+- jira: '24536' # yet-another-build-visualizer-plugin
 paths:
 - "com/axis/system/jenkins/plugins/downstream/yet-another-build-visualizer"
 developers:

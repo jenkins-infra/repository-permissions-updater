@@ -1,7 +1,11 @@
 ---
 name: "hubot-steps"
 github: "jenkinsci/hubot-steps-plugin"
+issues:
+- jira: '21960' # hubot-steps-plugin
 paths:
 - "org/jenkins-ci/plugins/hubot-steps"
 developers:
 - "nrayapati"
+cd:
+  enabled: true

@@ -1,0 +1,11 @@
+---
+name: "compuware-topaz-for-enterprise-data"
+github: &GH "jenkinsci/compuware-topaz-for-enterprise-data-plugin"
+paths:
+- "com/compuware/jenkins/compuware-topaz-for-enterprise-data"
+developers:
+- "cpwr_jenkins"
+issues:
+  - github: *GH
+cd:
+  enabled: true

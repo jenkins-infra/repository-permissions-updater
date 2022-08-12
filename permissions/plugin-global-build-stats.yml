@@ -1,7 +1,11 @@
 ---
 name: "global-build-stats"
 github: "jenkinsci/global-build-stats-plugin"
+issues:
+- jira: '15746' # global-build-stats-plugin
 paths:
 - "org/jenkins-ci/plugins/global-build-stats"
 developers:
 - "dhinske"
+cd:
+  enabled: true

@@ -1,6 +1,8 @@
 ---
 name: "sysdig-secure"
 github: "jenkinsci/sysdig-secure-plugin"
+issues:
+- jira: '24121' # sysdig-secure-plugin
 paths:
 - "org/jenkins-ci/plugins/sysdig-secure"
 developers:
@@ -9,3 +11,9 @@ developers:
 - "jequals5"
 - "sethmccombs"
 - "nestorsalceda"
+- "airadier"
+- "ndsistsys"
+- "marcuzzuu"
+- "denz"
+cd:
+  enabled: true

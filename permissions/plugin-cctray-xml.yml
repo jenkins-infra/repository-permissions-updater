@@ -1,7 +1,11 @@
 ---
 name: "cctray-xml"
 github: "jenkinsci/cctray-xml-plugin"
+issues:
+- jira: '21967' # cctray-xml-plugin
 paths:
 - "org/jenkins-ci/plugins/cctray-xml"
 developers:
-- "danielbeck"
+- "rahulsom"
+cd:
+  enabled: true

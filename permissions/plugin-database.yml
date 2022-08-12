@@ -1,9 +1,12 @@
 ---
 name: "database"
 github: "jenkinsci/database-plugin"
+issues:
+- jira: '17514' # database-plugin
 paths:
 - "org/jenkins-ci/plugins/database"
 developers:
 - "davidvanlaatum"
 - "timja"
-
+cd:
+  enabled: true

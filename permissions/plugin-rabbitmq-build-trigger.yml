@@ -1,6 +1,8 @@
 ---
 name: "rabbitmq-build-trigger"
 github: "jenkinsci/rabbitmq-build-trigger-plugin"
+issues:
+- jira: '17475' # rabbitmq-build-trigger-plugin
 paths:
 - "org/jenkins-ci/plugins/rabbitmq-build-trigger"
 developers:

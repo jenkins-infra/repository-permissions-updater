@@ -1,0 +1,11 @@
+---
+name: "oes-template"
+github: &GH "jenkinsci/oes-template-plugin"
+paths:
+- "cn/opsbox/jenkinsci/plugins/oes-template"
+developers:
+- "seanly"
+issues:
+  - github: *GH
+cd:
+  enabled: true

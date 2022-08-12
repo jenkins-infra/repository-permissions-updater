@@ -1,6 +1,8 @@
 ---
 name: "port-allocator"
 github: "jenkinsci/port-allocator-plugin"
+issues:
+- jira: '15566' # port-allocator-plugin
 paths:
 - "org/jenkins-ci/plugins/port-allocator"
 - "org/jvnet/hudson/plugins/port-allocator"

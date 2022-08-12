@@ -1,5 +1,7 @@
 name: "breachlock-dast"
 github: "jenkinsci/breachlock-dast-plugin"
+issues:
+- jira: '27255' # breachlock-dast-plugin
 paths:
 - "io/jenkins/plugins/breachlock-dast"
 developers:

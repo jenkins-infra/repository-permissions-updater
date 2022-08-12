@@ -1,6 +1,8 @@
 ---
 name: "audit-trail"
 github: "jenkinsci/audit-trail-plugin"
+issues:
+- jira: '15599' # audit-trail-plugin
 paths:
 - "org/jenkins-ci/plugins/audit-trail"
 developers:
@@ -8,3 +10,5 @@ developers:
 - "olivergondza"
 - "tsek"
 - "pierrebtz"
+cd:
+  enabled: true

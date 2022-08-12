@@ -1,6 +1,8 @@
 ---
 name: "veracode-scan"
 github: "jenkinsci/veracode-scan-plugin"
+issues:
+- jira: '26820' # veracode-scan-plugin
 paths:
 - "com/veracode/jenkins/veracode-scan"
 developers:

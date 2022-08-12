@@ -1,6 +1,8 @@
 ---
 name: "preflight-integration"
 github: "jenkinsci/preflight-integration-plugin"
+issues:
+- jira: '27233' # preflight-integration-plugin
 paths:
 - "io/jenkins/plugins/preflight-integration"
 developers:

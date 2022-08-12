@@ -1,8 +1,12 @@
 ---
 name: "chucknorris"
 github: "jenkinsci/chucknorris-plugin"
+issues:
+- jira: '15956' # chucknorris-plugin
 paths:
 - "org/jvnet/hudson/plugins/chucknorris"
 developers:
 - "batmat"
 - "oleg_nenashev"
+cd:
+  enabled: true

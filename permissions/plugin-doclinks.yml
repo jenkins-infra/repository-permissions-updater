@@ -1,6 +1,9 @@
 ---
 name: "doclinks"
-github: "jenkinsci/doclinks-plugin"
+github: &gh "jenkinsci/doclinks-plugin"
+issues:
+- jira: '15740' # doclinks-plugin
+- github: *gh
 paths:
 - "org/jenkinsci/plugins/doclinks"
 - "org/jvnet/hudson/plugins/doclinks"

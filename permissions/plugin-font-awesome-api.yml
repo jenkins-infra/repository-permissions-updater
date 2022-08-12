@@ -1,7 +1,12 @@
 ---
 name: "font-awesome-api"
 github: "jenkinsci/font-awesome-api-plugin"
+issues:
+- jira: '26326' # font-awesome-api-plugin
 paths:
 - "io/jenkins/plugins/font-awesome-api"
 developers:
 - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

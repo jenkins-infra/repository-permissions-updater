@@ -1,6 +1,8 @@
 ---
 name: "blueocean-executor-info"
 github: "jenkinsci/blueocean-plugin"
+issues:
+- jira: '23156' # blueocean-executor-info-plugin
 paths:
 - "io/jenkins/blueocean/blueocean-executor-info"
 developers:
@@ -19,4 +21,4 @@ developers:
 - "tscherler"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

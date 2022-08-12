@@ -1,6 +1,8 @@
 ---
 name: "htmlresource"
 github: "jenkinsci/htmlresource-plugin"
+issues:
+- jira: '21461' # htmlresource-plugin
 paths:
 - "org/jenkins-ci/plugins/htmlresource"
 developers:

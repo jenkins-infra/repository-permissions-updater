@@ -1,6 +1,8 @@
 ---
 name: "defensics"
 github: "jenkinsci/defensics-plugin"
+issues:
+- jira: '27252' # defensics-plugin
 paths:
 - "com/synopsys/defensics"
 developers:

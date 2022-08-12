@@ -1,6 +1,8 @@
 ---
 name: "dashboard-view"
 github: "jenkinsci/dashboard-view-plugin"
+issues:
+- jira: '15679' # dashboard-view-plugin
 paths:
 - "org/jenkins-ci/plugins/dashboard-view"
 - "org/jvnet/hudson/plugins/dashboard-view"
@@ -10,4 +12,6 @@ developers:
 - "vandyev"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

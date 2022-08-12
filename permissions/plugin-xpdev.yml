@@ -1,6 +1,8 @@
 ---
 name: "xpdev"
 github: "jenkinsci/xpdev-plugin"
+issues:
+- jira: '17492' # xpdev-plugin
 paths:
 - "com/cloudbees/jenkins/plugins/xpdev"
 developers: []

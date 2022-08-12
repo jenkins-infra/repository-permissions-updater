@@ -1,6 +1,8 @@
 ---
 name: "authentication-tokens"
 github: "jenkinsci/authentication-tokens-plugin"
+issues:
+- jira: '20323' # authentication-tokens-plugin
 paths:
 - "org/jenkins-ci/plugins/authentication-tokens"
 developers:
@@ -13,4 +15,4 @@ developers:
 - "jglick"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

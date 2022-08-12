@@ -1,6 +1,8 @@
 ---
 name: "github-branch-pr-change-filter"
 github: "jenkinsci/github-branch-pr-change-filter-plugin"
+issues:
+- jira: '28122' # github-branch-pr-change-filter-plugin
 paths:
 - "io/jenkins/plugins/github-branch-pr-change-filter"
 developers:

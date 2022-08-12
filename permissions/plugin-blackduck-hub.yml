@@ -1,6 +1,8 @@
 ---
 name: "blackduck-hub"
 github: "jenkinsci/blackduck-hub-plugin"
+issues:
+- jira: '21925' # blackduck-hub-plugin
 paths:
 - "com/blackducksoftware/integration/blackduck-hub"
 developers:

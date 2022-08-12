@@ -1,10 +1,10 @@
 ---
 name: "aws-sam"
-github: "jenkinsci/aws-sam-plugin"
+github: &gh "jenkinsci/aws-sam-plugin"
+issues:
+- github: *gh
+- jira: '24422' # aws-sam-plugin
 paths:
 - "io/jenkins/plugins/aws-sam"
 developers:
 - "aws_sae_jenkinsio"
-security:
-  contacts:
-    email: "aws-security@amazon.com"

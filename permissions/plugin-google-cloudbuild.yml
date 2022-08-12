@@ -1,6 +1,9 @@
 ---
 name: "google-cloudbuild"
-github: "jenkinsci/google-cloudbuild-plugin"
+github: &gh "jenkinsci/google-cloudbuild-plugin"
+issues:
+- github: *gh
+- jira: '23166' # google-cloudbuild-plugin
 paths:
 - "org/jenkins-ci/plugins/google-cloudbuild"
 developers:

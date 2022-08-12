@@ -1,7 +1,11 @@
 ---
 name: "kafkalogs"
 github: "jenkinsci/kafkalogs-plugin"
+issues:
+- jira: '23432' # kafkalogs-plugin
 paths:
 - "org/jenkins-ci/plugins/kafkalogs"
 developers:
 - "trevorlinton"
+cd:
+  enabled: true

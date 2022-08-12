@@ -1,6 +1,8 @@
 ---
 name: "alibabacloud-edas"
 github: "jenkinsci/alibabacloud-edas-plugin"
+issues:
+- jira: '28425' # alibabacloud-edas-plugin
 paths:
   - "io/jenkins/plugins/alibabacloud-edas"
 developers:

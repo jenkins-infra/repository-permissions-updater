@@ -1,0 +1,12 @@
+---
+name: "jakarta-mail-api"
+github: &GH "jenkinsci/jakarta-mail-api-plugin"
+paths:
+- "io/jenkins/plugins/jakarta-mail-api"
+developers:
+- "basil"
+issues:
+  - jira: 28831
+security:
+  contacts:
+    jira: "cloudbees_security_members"

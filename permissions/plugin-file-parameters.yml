@@ -1,8 +1,10 @@
 ---
 name: "file-parameters"
-github: "jenkinsci/file-parameters-plugin"
+github: &gh "jenkinsci/file-parameters-plugin"
 cd:
   enabled: true
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/file-parameters"
 developers:

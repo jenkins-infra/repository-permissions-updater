@@ -1,5 +1,8 @@
 ---
 name: "timemachine"
+issues:
+  - jira: '24533'
+github: jenkinsci/timemachine-plugin
 paths:
 - "io/jenkins/plugins/timemachine"
 developers:

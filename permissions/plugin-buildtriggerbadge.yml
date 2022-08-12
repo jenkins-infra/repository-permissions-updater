@@ -1,7 +1,11 @@
 ---
 name: "buildtriggerbadge"
 github: "jenkinsci/buildtriggerbadge-plugin"
+issues:
+- jira: '16924' # buildtriggerbadge-plugin
 paths:
 - "org/jenkins-ci/plugins/buildtriggerbadge"
 developers:
 - "batmat"
+cd:
+  enabled: true

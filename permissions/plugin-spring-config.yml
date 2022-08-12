@@ -1,7 +1,11 @@
 ---
 name: "spring-config"
-github: "jenkinsci/spring-config-plugin"
+github: &GH "jenkinsci/spring-config-plugin"
+issues:
+  - github: *GH
 paths:
 - "io/jenkins/plugins/spring-config"
 developers:
 - "topikachu"
+cd:
+  enabled: true

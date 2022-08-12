@@ -1,8 +1,12 @@
 ---
 name: "hp-application-automation-tools-plugin"
 github: "jenkinsci/hpe-application-automation-tools-plugin"
+issues:
+- jira: '17322' # hp-application-automation-tools-plugin
 paths:
 - "org/jenkins-ci/plugins/hp-application-automation-tools-plugin"
 developers:
 - "zhipengwa"
-- "ptofan"
+- "buzas"
+- "plescaevelyn"
+

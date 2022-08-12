@@ -1,6 +1,8 @@
 ---
 name: "compuware-common-configuration"
 github: "jenkinsci/compuware-common-configuration-plugin"
+issues:
+- jira: '23140' # compuware-common-configuration-plugin
 paths:
 - "com/compuware/jenkins/compuware-common-configuration"
 developers:

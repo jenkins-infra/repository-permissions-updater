@@ -1,12 +1,21 @@
 ---
 name: "windows-slaves"
 github: "jenkinsci/windows-slaves-plugin"
+issues:
+- jira: '18327' # windows-slaves-plugin
 paths:
 - "org/jenkins-ci/plugins/windows-slaves"
 developers:
 - "andresrc"
 - "jglick"
 - "oleg_nenashev"
+- "rsandell"
+- "alecharp"
+- "teilo"
+- "carroll"
+- "bitwiseman"
+- "olamy"
+- "mramonleon"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

@@ -1,7 +1,11 @@
 ---
 name: "jobcacher"
-github: "jenkinsci/jobcacher-plugin"
+github: &GH "jenkinsci/jobcacher-plugin"
+issues:
+- github: *GH
 paths:
 - "org/jenkins-ci/plugins/jobcacher"
 developers:
-- "petehayes"
+- "repolevedavaj"
+cd:
+  enabled: true

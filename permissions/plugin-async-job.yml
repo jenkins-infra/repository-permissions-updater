@@ -1,6 +1,8 @@
 ---
 name: "async-job"
 github: "jenkinsci/async-job-plugin"
+issues:
+- jira: '17577' # async-job-plugin
 paths:
 - "org/jenkins-ci/plugins/async-job"
 developers: []

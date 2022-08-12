@@ -1,6 +1,8 @@
 ---
 name: "s3"
 github: "jenkinsci/s3-plugin"
+issues:
+- jira: '16620' # s3-plugin
 paths:
 - "org/jenkins-ci/plugins/s3"
 developers:
@@ -16,4 +18,4 @@ developers:
 - "rsandell"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

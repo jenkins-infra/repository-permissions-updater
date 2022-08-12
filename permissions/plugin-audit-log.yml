@@ -1,10 +1,14 @@
 ---
 name: "audit-log"
-github: "jenkinsci/audit-log-plugin"
+github: &gh "jenkinsci/audit-log-plugin"
+issues:
+- jira: '24638' # audit-log-plugin
+- github: *gh
 paths:
   - "io/jenkins/plugins/audit-log"
 developers:
 - "jvz"
-- "jthompson"
 - "lathasekar"
 - "mide"
+cd:
+  enabled: true

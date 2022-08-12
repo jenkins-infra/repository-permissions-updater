@@ -1,5 +1,8 @@
 ---
 name: "keepSlaveOffline"
+github: "jenkinsci/keep-slave-offline-plugin"
+issues:
+  - jira: '16097'
 paths:
 - "hudson/plugins/keepSlaveOffline/keepSlaveOffline"
 developers: []

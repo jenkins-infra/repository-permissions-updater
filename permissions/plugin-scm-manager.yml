@@ -1,6 +1,8 @@
 ---
 name: "scm-manager"
 github: "jenkinsci/scm-manager-plugin"
+issues:
+- jira: '26920' # scm-manager-plugin
 paths:
 - "io/jenkins/plugins/scm-manager"
 developers:

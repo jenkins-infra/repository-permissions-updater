@@ -1,8 +1,13 @@
 ---
 name: "teamconcert"
 github: "jenkinsci/teamconcert-plugin"
+issues:
+- jira: '17631' # teamconcert-plugin
 paths:
 - "org/jenkins-ci/plugins/teamconcert"
 developers:
 - "lvaikunt"
-- "ssangaiah"
+- "davidjwriter"
+- "sbabno"
+- "nitinjirawal"
+- "sahilkmansuriibm"

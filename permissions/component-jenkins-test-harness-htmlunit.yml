@@ -1,12 +1,10 @@
 ---
 name: "jenkins-test-harness-htmlunit"
 github: "jenkinsci/jenkins-test-harness-htmlunit"
+cd:
+  enabled: true
 paths:
 - "org/jenkins-ci/main/jenkins-test-harness-htmlunit"
 developers:
-- "andresrc"
 - "drulli"
-- "jglick"
-- "batmat"
-- "oleg_nenashev"
-- "timja"
+- "@core"

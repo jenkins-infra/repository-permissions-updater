@@ -1,10 +1,10 @@
 ---
 name: "flaky-test-handler"
 github: "jenkinsci/flaky-test-handler-plugin"
+issues:
+- jira: '19823' # flaky-test-handler-plugin
 paths:
 - "org/jenkins-ci/plugins/flaky-test-handler"
 developers:
-- "scpeters"
-- "seriousamlqz"
 - "svenjost"
 - "vtintillier"

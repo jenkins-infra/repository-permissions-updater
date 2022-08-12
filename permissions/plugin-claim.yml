@@ -1,8 +1,12 @@
 ---
 name: "claim"
 github: "jenkinsci/claim-plugin"
+issues:
+- jira: '15531' # claim-plugin
 paths:
 - "org/jenkins-ci/plugins/claim"
 developers:
 - "ki82"
 - "greybird"
+cd:
+  enabled: true

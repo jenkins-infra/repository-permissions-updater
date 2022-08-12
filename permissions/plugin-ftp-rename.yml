@@ -1,6 +1,8 @@
 ---
 name: "ftp-rename"
 github: "jenkinsci/ftp-rename-plugin"
+issues:
+- jira: '22121' # ftp-rename-plugin
 paths:
 - "org/jenkins-ci/plugins/ftp-rename"
 developers:

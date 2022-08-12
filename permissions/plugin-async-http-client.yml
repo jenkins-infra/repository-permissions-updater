@@ -1,6 +1,8 @@
 ---
 name: "async-http-client"
 github: "jenkinsci/async-http-client-plugin"
+issues:
+- jira: '16535' # async-http-client-plugin
 paths:
 - "org/jenkins-ci/plugins/async-http-client"
 - "org/jenkinsci/plugins/async-http-client"
@@ -13,4 +15,4 @@ developers:
 - "rsandell"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

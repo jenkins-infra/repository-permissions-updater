@@ -1,6 +1,8 @@
 ---
 name: "pipeline-model-definition"
 github: "jenkinsci/pipeline-model-definition-plugin"
+issues:
+- jira: '21706' # pipeline-model-definition-plugin
 paths:
 - "org/jenkinsci/plugins/pipeline-model-definition"
 developers:
@@ -10,6 +12,14 @@ developers:
 - "svanoort"
 - "bitwiseman"
 - "dnusbaum"
+- "carroll"
+- "teilo"
+- "olamy"
+- "alecharp"
+- "batmat"
+- "rarabaolaza"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

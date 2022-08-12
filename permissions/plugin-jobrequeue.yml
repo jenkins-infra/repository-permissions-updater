@@ -1,6 +1,8 @@
 ---
 name: "jobrequeue"
 github: "jenkinsci/jobrequeue-plugin"
+issues:
+- jira: '17542' # jobrequeue-plugin
 paths:
 - "org/jenkins-ci/plugins/jobrequeue"
 developers:

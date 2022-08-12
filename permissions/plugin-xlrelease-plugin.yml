@@ -1,12 +1,20 @@
 ---
 name: "xlrelease-plugin"
-github: "jenkinsci/xlrelease-plugin"
+github: &gh "jenkinsci/xlrelease-plugin"
+issues:
+- github: *gh
+- jira: '18733' # xlrelease-plugin
 paths:
 - "com/xebialabs/ci/xlrelease-plugin"
 developers:
 - "jdewinne"
 - "mbigorne"
 - "byaminov"
-- "aedsonfellipe"
-- "ashish_thakur"
-- "slal1"
+- "fellipeavanci"
+- "isaacsatish"
+- "surendarsuyamprakasam"
+- "balaji_digital_ai"
+- "sgaikwad"
+- "ankur_soni"
+- "vrushnim"
+- "nvaddey"

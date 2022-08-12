@@ -1,6 +1,8 @@
 ---
 name: "managed-scripts"
 github: "jenkinsci/managed-scripts-plugin"
+issues:
+- jira: '16139' # managed-scripts-plugin
 paths:
 - "org/jenkinsci/plugins/managed-scripts"
 developers:

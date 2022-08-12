@@ -1,0 +1,12 @@
+---
+name: "opslevel"
+github: &GH "jenkinsci/opslevel-plugin"
+paths:
+- "io/jenkins/plugins/opslevel"
+developers:
+- "opslevel"
+- "jasonopslevel"
+issues:
+  - github: *GH
+cd:
+  enabled: true

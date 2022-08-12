@@ -1,0 +1,11 @@
+---
+name: "jobtag"
+github: &GH "jenkinsci/jobtag-plugin"
+paths:
+- "io/jenkins/plugins/jobtag"
+developers:
+- "nistal97"
+cd:
+  enabled: true
+issues:
+  - github: *GH

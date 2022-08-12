@@ -1,8 +1,12 @@
 ---
 name: "script-security"
 github: "jenkinsci/script-security-plugin"
+issues:
+- jira: '18520' # script-security-plugin
 paths:
 - "org/jenkins-ci/plugins/script-security"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "kohsuke"
@@ -15,4 +19,4 @@ developers:
 - "kshultz"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

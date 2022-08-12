@@ -4,9 +4,4 @@ github: "jenkinsci/pom"
 paths:
 - "org/jenkins-ci/jenkins"
 developers:
-- "abayer"
-- "batmat"
-- "jglick"
-- "kohsuke"
-- "oleg_nenashev"
-- "timja"
+- "@core"

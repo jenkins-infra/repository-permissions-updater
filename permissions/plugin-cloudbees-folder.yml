@@ -1,8 +1,12 @@
 ---
 name: "cloudbees-folder"
 github: "jenkinsci/cloudbees-folder-plugin"
+issues:
+- jira: '18137' # cloudbees-folder-plugin
 paths:
 - "org/jenkins-ci/plugins/cloudbees-folder"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "kohsuke"
@@ -11,6 +15,13 @@ developers:
 - "dnusbaum"
 - "rsandell"
 - "fcojfernandez"
+- "alecharp"
+- "batmat"
+- "bitwiseman"
+- "carroll"
+- "mramonleon"
+- "olamy"
+- "teilo"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

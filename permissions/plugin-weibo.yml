@@ -1,6 +1,8 @@
 ---
 name: "weibo"
 github: "jenkinsci/weibo-plugin"
+issues:
+- jira: '18142' # weibo-plugin
 paths:
 - "org/jenkins-ci/plugins/weibo"
 developers:

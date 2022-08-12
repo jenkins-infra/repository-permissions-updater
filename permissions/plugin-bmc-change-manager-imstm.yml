@@ -1,0 +1,12 @@
+---
+name: "bmc-change-manager-imstm"
+github: &GH "jenkinsci/bmc-change-manager-imstm-plugin"
+paths:
+- "com/bmc/ims/bmc-change-manager-imstm"
+developers:
+- "mcohen"
+issues:
+  - github: *GH
+cd:
+  enabled: true
+

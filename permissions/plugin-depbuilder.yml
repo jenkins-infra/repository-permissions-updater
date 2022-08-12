@@ -1,6 +1,8 @@
 ---
 name: "depbuilder"
-github: "jenkinsci/depbuilder-plugin"
+github: &gh "jenkinsci/depbuilder-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/depbuilder"
 developers:

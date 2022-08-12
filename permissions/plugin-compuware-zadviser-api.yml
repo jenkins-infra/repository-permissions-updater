@@ -1,6 +1,8 @@
 name: "compuware-zadviser-api"
 github: "jenkinsci/compuware-zadviser-api-plugin"
+issues:
+- jira: '27225' # compuware-zadviser-api-plugin
 paths:
 - "com/compuware/jenkins/compuware-zadviser-api"
 developers:
-- "jgoering41"
+- "cpwr_jenkins"

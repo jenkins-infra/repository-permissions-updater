@@ -1,6 +1,8 @@
 ---
 name: "msbuild"
 github: "jenkinsci/msbuild-plugin"
+issues:
+- jira: '15559' # msbuild-plugin
 paths:
 - "org/jenkins-ci/plugins/msbuild"
 developers:
@@ -14,4 +16,4 @@ developers:
 - teilo
 security:
     contacts:
-      jira: "foundation_security_members"
+      jira: "cloudbees_security_members"

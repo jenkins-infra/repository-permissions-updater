@@ -1,6 +1,8 @@
 ---
 name: "openshift-pipeline"
 github: "jenkinsci/openshift-pipeline-plugin"
+issues:
+- jira: '21023' # openshift-pipeline-plugin
 paths:
 - "com/openshift/jenkins/openshift-pipeline"
 developers:
@@ -12,5 +14,4 @@ developers:
 security:
   contacts:
     jira: "akram"
-    email: prodsec-openshift@redhat.com
 

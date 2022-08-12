@@ -1,6 +1,8 @@
 ---
 name: "jenkow-plugin"
 github: "jenkinsci/jenkow-plugin"
+issues:
+- jira: '16925' # jenkow-plugin
 paths:
 - "com/cisco/step/jenkins/plugins/jenkow-plugin"
 developers: []

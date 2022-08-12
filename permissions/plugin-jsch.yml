@@ -1,14 +1,21 @@
 ---
 name: "jsch"
 github: "jenkinsci/jsch-plugin"
+issues:
+- jira: '21943' # jsch-plugin
 paths:
 - "org/jenkins-ci/plugins/jsch"
+cd:
+  enabled: true
 developers:
 - "zregvart"
 - "ljader"
 - "oleg_nenashev"
 - "dnusbaum"
-- "jthompson"
+- "teilo"
+- "carroll"
+- "rsandell"
+- "olamy"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

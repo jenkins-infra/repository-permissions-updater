@@ -1,6 +1,8 @@
 ---
 name: "pipeline-keepenv-step"
 github: "jenkinsci/pipeline-keepenv-step-plugin"
+issues:
+- jira: '27622' # pipeline-keepenv-step-plugin
 paths:
   - "io/jenkins/plugins/pipeline-keepenv-step"
 developers:

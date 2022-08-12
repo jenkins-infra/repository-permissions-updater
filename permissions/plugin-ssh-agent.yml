@@ -1,8 +1,12 @@
 ---
 name: "ssh-agent"
 github: "jenkinsci/ssh-agent-plugin"
+issues:
+- jira: '17509' # ssh-agent-plugin
 paths:
 - "org/jenkins-ci/plugins/ssh-agent"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "kohsuke"
@@ -15,4 +19,4 @@ developers:
 - "rsandell"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

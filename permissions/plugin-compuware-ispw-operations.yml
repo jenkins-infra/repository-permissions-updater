@@ -1,8 +1,9 @@
 ---
 name: "compuware-ispw-operations"
 github: "jenkinsci/compuware-ispw-operations-plugin"
+issues:
+- jira: '23423' # compuware-ispw-operations-plugin
 paths:
 - "com/compuware/jenkins/compuware-ispw-operations"
 developers:
-- "zhouqr2000"
 - "cpwr_jenkins"

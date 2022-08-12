@@ -1,6 +1,8 @@
 ---
 name: "openshift-login"
 github: "jenkinsci/openshift-login-plugin"
+issues:
+- jira: '21676' # openshift-login-plugin
 paths:
 - "org/openshift/jenkins/openshift-login"
 developers:
@@ -12,5 +14,4 @@ developers:
 security:
   contacts:
     jira: "akram"
-    email: prodsec-openshift@redhat.com
 

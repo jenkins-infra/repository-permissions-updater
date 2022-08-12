@@ -1,6 +1,8 @@
 ---
 name: "workflow-cps"
 github: "jenkinsci/workflow-cps-plugin"
+issues:
+- jira: '21713' # workflow-cps-plugin
 paths:
 - "org/jenkins-ci/plugins/workflow/workflow-cps"
 developers:
@@ -16,4 +18,7 @@ developers:
 - "jtaboada"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true
+

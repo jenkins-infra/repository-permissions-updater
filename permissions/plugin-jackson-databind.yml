@@ -1,6 +1,8 @@
 ---
 name: "jackson-databind"
 github: "jenkinsci/jackson-databind-plugin"
+issues:
+- jira: '23527' # jackson-databind-plugin
 paths:
 - "org/jenkins-ci/plugins/jackson-databind"
 developers:

@@ -1,6 +1,9 @@
 ---
 name: "github-autostatus"
-github: "jenkinsci/github-autostatus-plugin"
+github: &gh "jenkinsci/github-autostatus-plugin"
+issues:
+- github: *gh
+- jira: '23163' # github-autostatus-plugin
 paths:
 - "org/jenkins-ci/plugins/github-autostatus"
 developers:

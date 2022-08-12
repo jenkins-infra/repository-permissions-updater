@@ -1,12 +1,23 @@
 ---
 name: "jackson2-api"
 github: "jenkinsci/jackson2-api-plugin"
+cd:
+  enabled: true
+issues:
+- jira: '23528' # jackson2-api-plugin
 paths:
 - "org/jenkins-ci/plugins/jackson2-api"
 developers:
 - "oleg_nenashev"
 - "dnusbaum"
 - "jvz"
+- "teilo"
+- "rsandell"
+- "carroll"
+- "olamy"
+- "mramonleon"
+- "alecharp"
+- "bitwiseman"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

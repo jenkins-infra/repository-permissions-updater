@@ -1,6 +1,8 @@
 ---
 name: "tinfoil-scan"
-github: "jenkinsci/tinfoil-scan-plugin"
+github: &GH "jenkinsci/tinfoil-scan-plugin"
+issues:
+  - github: *GH
 paths:
 - "com/tinfoilsecurity/plugins/tinfoil-scan"
 developers:

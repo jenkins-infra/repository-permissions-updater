@@ -1,6 +1,8 @@
 ---
 name: "blackduck-detect"
 github: "jenkinsci/synopsys-detect-plugin"
+issues:
+- jira: '23145' # blackduck-detect-plugin
 paths:
 - "com/blackducksoftware/integration/blackduck-detect"
 developers:

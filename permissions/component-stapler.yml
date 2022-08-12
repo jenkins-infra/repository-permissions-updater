@@ -1,7 +1,8 @@
 ---
-# regularly published to OSSRH, this file exists only for incrementals support
 name: "stapler"
-github: "stapler/stapler"
+github: "jenkinsci/stapler"
+cd:
+  enabled: true
 paths:
-- "org/kohsuke/stapler/stapler"
+- "org/kohsuke/stapler/stapler*"
 developers: []

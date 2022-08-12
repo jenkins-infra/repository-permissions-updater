@@ -1,6 +1,8 @@
 ---
 name: "clearcase-release"
 github: "jenkinsci/clearcase-release-plugin"
+issues:
+- jira: '16042' # clearcase-release-plugin
 paths:
 - "org/jvnet/hudson/plugins/clearcase-release"
 developers: []

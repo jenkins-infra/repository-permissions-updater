@@ -1,10 +1,11 @@
 ---
 name: "mathworks-polyspace"
 github: "jenkinsci/mathworks-polyspace-plugin"
+issues:
+- jira: '24931' # mathworks-polyspace-plugin
 paths:
 - "io/jenkins/plugins/mathworks-polyspace"
 developers:
-- "pascal_brand38"
 - "cpreve"
 - "sbobin"
 

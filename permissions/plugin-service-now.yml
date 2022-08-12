@@ -1,6 +1,9 @@
 ---
 name: "service-now"
-github: "jenkinsci/service-now-plugin"
+github: &gh "jenkinsci/service-now-plugin"
+issues:
+- github: *gh
+- jira: '23437' # service-now-plugin
 paths:
 - "org/jenkins-ci/plugins/service-now"
 developers:

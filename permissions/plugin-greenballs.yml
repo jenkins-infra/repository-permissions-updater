@@ -1,6 +1,9 @@
 ---
 name: "greenballs"
-github: "jenkinsci/greenballs-plugin"
+github: &gh "jenkinsci/greenballs-plugin"
+issues:
+- jira: '15603' # greenballs-plugin
+- github: *gh
 paths:
 - "org/jenkins-ci/plugins/greenballs"
 - "org/jvnet/hudson/plugins/greenballs"

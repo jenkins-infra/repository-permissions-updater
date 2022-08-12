@@ -1,6 +1,8 @@
 ---
 name: "saml"
 github: "jenkinsci/saml-plugin"
+issues:
+- jira: '20321' # saml-plugin
 paths:
 - "org/jenkins-ci/plugins/saml"
 developers:
@@ -11,4 +13,6 @@ developers:
 - "sbower"
 security:
   contacts:
-    jira: "modern_platforms_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

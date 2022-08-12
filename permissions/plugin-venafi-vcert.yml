@@ -1,6 +1,8 @@
 ---
 name: "venafi-vcert"
-github: "jenkinsci/venafi-vcert-plugin"
+github: &gh "jenkinsci/venafi-vcert-plugin"
+issues:
+- github: *gh
 paths:
 - "io/jenkins/plugins/venafi-vcert"
 developers:

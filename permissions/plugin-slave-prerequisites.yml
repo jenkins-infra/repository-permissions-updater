@@ -1,6 +1,8 @@
 ---
 name: "slave-prerequisites"
 github: "jenkinsci/slave-prerequisites-plugin"
+issues:
+- jira: '16521' # slave-prerequisites-plugin
 paths:
 - "org/jenkins-ci/plugins/slave-prerequisites"
 developers: []

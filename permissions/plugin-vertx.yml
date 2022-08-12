@@ -1,6 +1,8 @@
 ---
 name: "vertx"
-github: "jenkinsci/vertx-plugin"
+github: &gh "jenkinsci/vertx-plugin"
+issues:
+- github: *gh
 paths:
 - "org/bravo5/jenkins/plugins/vertx"
 developers: []

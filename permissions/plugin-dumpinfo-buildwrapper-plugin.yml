@@ -1,5 +1,8 @@
 ---
 name: "dumpinfo-buildwrapper-plugin"
+github: "jenkinsci/dumpinfo-buildwrapper-plugin"
+issues:
+  - jira: '15782'
 paths:
 - "org/jvnet/hudson/plugins/dumpinfo-buildwrapper-plugin"
 developers: []

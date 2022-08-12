@@ -1,7 +1,12 @@
 ---
 name: "envinject"
 github: "jenkinsci/envinject-plugin"
+issues:
+- jira: '15893' # envinject-plugin
 paths:
 - "org/jenkins-ci/plugins/envinject"
 developers:
 - "oleg_nenashev"
+- "notmyfault"
+cd:
+  enabled: true
