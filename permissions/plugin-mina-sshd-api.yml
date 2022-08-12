@@ -10,3 +10,6 @@ developers:
 - "allan_burdajewicz"
 issues:
   - jira: 28925
+security:
+  contacts:
+    jira: "cloudbees_security_members"
