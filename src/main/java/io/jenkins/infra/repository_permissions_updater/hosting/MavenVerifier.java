@@ -35,10 +35,10 @@ public class MavenVerifier implements BuildSystemVerifier {
     public static final Version PARENT_POM_WITH_JENKINS_VERSION = new Version(2);
 
     public static final String INVALID_POM = "The pom.xml file in the root of the origin repository is not valid";
-    public static final String SPECIFY_LICENSE = "Please specify a license in your pom.xml file using the <licenses> tag. See https://maven.apache.org/pom.html#Licenses for more information.";
+    public static final String SPECIFY_LICENSE = "Please specify a license in your pom.xml file using the &lt;licenses&gt; tag. See https://maven.apache.org/pom.html#Licenses for more information.";
     public static final String MISSING_POM_XML = "No pom.xml found in root of project, if you are using a different build system, or this is not a plugin, you can disregard this message";
 
-    public static final String SHOULD_BE_IO_JENKINS_PLUGINS = "The <groupId> from the pom.xml should be `io.jenkins.plugins` instead of `org.jenkins-ci.plugins`";
+    public static final String SHOULD_BE_IO_JENKINS_PLUGINS = "The &lt;groupId&gt; from the pom.xml should be `io.jenkins.plugins` instead of `org.jenkins-ci.plugins`";
 
     @Override
     public void verify(HostingRequest issue, HashSet<VerificationMessage> hostingIssues) throws IOException {
