@@ -179,15 +179,9 @@
             <version>4.5.2</version>
         </dependency>
         <dependency>
-            <groupId>com.goterl.lazycode</groupId>
-            <artifactId>lazysodium-java</artifactId>
-            <version>4.3.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-api</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>eu.neilalexander</groupId>
+            <artifactId>jnacl</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -195,9 +189,9 @@
             <version>1.2.10</version>
         </dependency>
         <dependency>
-            <groupId>net.java.dev.jna</groupId>
-            <artifactId>jna</artifactId>
-            <version>5.9.0</version>
+            <groupId>org.kocakosm</groupId>
+            <artifactId>jblake2</artifactId>
+            <version>0.4</version>
         </dependency>
         <dependency>
             <groupId>io.jenkins.lib</groupId>

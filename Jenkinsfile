@@ -74,7 +74,7 @@ node('maven-11') {
             } else {
                 withCredentials([
                         usernamePassword(credentialsId: 'jiraUser', passwordVariable: 'JIRA_PASSWORD', usernameVariable: 'JIRA_USERNAME'),
-                        usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME'),
+                        string(credentialsId: 'artifactoryAdminToken', variable: 'ARTIFACTORY_TOKEN'),
                         usernamePassword(credentialsId: 'jenkins-infra-bot-github-token', passwordVariable: 'GITHUB_TOKEN', usernameVariable: 'GITHUB_USERNAME')
                 ]) {
                     sh 'java ' + javaArgs
