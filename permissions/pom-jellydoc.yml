@@ -1,0 +1,7 @@
+---
+name: "jellydoc"
+github: "jenkinsci/maven-jellydoc-plugin"
+paths:
+- "org/jvnet/maven-jellydoc-plugin/jellydoc"
+developers:
+- "@core"
