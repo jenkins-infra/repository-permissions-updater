@@ -12,6 +12,9 @@ developers:
 - "fcojfernandez"
 - "mramonleon"
 - "rsandell"
+- "teilo"
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true
