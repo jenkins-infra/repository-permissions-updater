@@ -1,0 +1,11 @@
+---
+name: "ionicons-api"
+github: &GH "jenkinsci/ionicons-api-plugin"
+paths:
+  - "io/jenkins/plugins/ionicons-api"
+developers:
+  - "@ux"
+issues:
+  - github: *GH
+cd:
+  enabled: true
