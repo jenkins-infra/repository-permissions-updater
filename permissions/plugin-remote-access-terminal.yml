@@ -1,0 +1,7 @@
+---
+name: "remote-access-terminal-plugin"
+github: "jenkinsci/remote-terminal-access-plugin"
+paths:
+- "org/jenkins-ci/plugins/remote-terminal-access"
+developers:
+- "kmartens27"
