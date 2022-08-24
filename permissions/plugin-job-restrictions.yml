@@ -7,3 +7,6 @@ paths:
 - "com/synopsys/arc/jenkinsci/plugins/job-restrictions"
 developers:
 - "oleg_nenashev"
+- "jm_meessen"
+- "markewaite"
+- "poddingue"
