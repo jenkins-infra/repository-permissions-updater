@@ -6,6 +6,8 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/mercurial"
 - "org/jvnet/hudson/plugins/mercurial"
+cd:
+  enabled: true
 developers:
 - "jglick"
 - "alecharp"
