@@ -7,5 +7,4 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/uipath-automation-package"
 developers:
-- "alvin_stanescu"
-- "rajeevuipath"
+- "ganeshborle"
