@@ -8,3 +8,6 @@ paths:
 - "org/jenkins-ci/plugins/kubernetes-cd"
 developers:
 - "zooopx"
+- "jm_meessen"
+- "markewaite"
+- "poddingue"
