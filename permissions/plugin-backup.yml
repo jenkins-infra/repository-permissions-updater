@@ -5,4 +5,7 @@ issues:
 - jira: '15696' # backup-plugin
 paths:
 - "org/jvnet/hudson/plugins/backup"
-developers: []
+developers:
+- "jm_meessen"
+- "markewaite"
+- "poddingue"
