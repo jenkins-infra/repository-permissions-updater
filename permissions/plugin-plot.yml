@@ -7,3 +7,6 @@ paths:
 - "org/jenkins-ci/plugins/plot"
 developers:
 - "ericbn"
+- "jm_meessen"
+- "markewaite"
+- "poddingue"
