@@ -13,6 +13,9 @@ developers:
 - "svanoort"
 - "wolfs"
 - "olamy"
+- "jm_meessen"
+- "markewaite"
+- "poddingue"
 security:
   contacts:
     jira: "cloudbees_security_members"
