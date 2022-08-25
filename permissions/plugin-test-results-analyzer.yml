@@ -7,3 +7,6 @@ paths:
 - "org/jenkins-ci/plugins/test-results-analyzer"
 developers:
 - "menonvarun"
+- "jm_meessen"
+- "markewaite"
+- "poddingue"
