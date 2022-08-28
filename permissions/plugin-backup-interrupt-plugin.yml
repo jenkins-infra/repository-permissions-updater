@@ -5,4 +5,7 @@ issues:
 - jira: '17528' # backup-interrupt-plugin
 paths:
 - "jenkins/ci/plugins/backup/backup-interrupt-plugin"
-developers: []
+developers:
+- "notmyfault"
+cd:
+  enabled: true
