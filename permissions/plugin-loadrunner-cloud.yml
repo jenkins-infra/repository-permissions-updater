@@ -8,3 +8,5 @@ developers:
 - "xiaoyuan_qi"
 issues:
   - github: *GH
+cd:
+  enabled: true
