@@ -7,3 +7,5 @@ paths:
 - "io/jenkins/plugins/forticwp-cicd"
 developers:
 - "forticontainer"
+cd:
+  enabled: true
