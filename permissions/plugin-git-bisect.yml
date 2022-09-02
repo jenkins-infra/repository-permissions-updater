@@ -8,3 +8,4 @@ paths:
 - "org/jenkins-ci/plugins/git-bisect"
 developers:
 - "dorav"
+- "antepenult"
