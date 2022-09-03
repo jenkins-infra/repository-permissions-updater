@@ -1,0 +1,10 @@
+---
+name: "quali-torque"
+github: &GH "jenkinsci/quali-torque-plugin"
+paths:
+- "io/jenkins/plugins/quali-torque"
+developers:
+- "sasha_quali"
+- "quali_integrations"
+issues:
+  - github: *GH
