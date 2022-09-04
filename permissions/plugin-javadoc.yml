@@ -6,7 +6,6 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/javadoc"
 developers:
-- "basil"
 - "jglick"
 - "batmat"
 - "oleg_nenashev"
