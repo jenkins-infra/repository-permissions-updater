@@ -5,4 +5,7 @@ issues:
 - jira: '17569' # favorite-view-plugin
 paths:
 - "org/jenkins-ci/plugins/favorite-view"
-developers: []
+developers:
+- "notmyfault"
+cd:
+  enabled: true
