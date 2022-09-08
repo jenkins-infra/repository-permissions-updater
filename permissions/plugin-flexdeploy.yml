@@ -8,3 +8,5 @@ paths:
 developers:
 - "bhoffman20"
 - "flexagon9"
+cd:
+  enabled: true
