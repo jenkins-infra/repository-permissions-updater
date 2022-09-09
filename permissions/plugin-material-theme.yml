@@ -7,3 +7,7 @@ paths:
 - "io/jenkins/plugins/material-theme"
 developers:
 - "canuck1987"
+- "timbrown5"
+cd:
+  enabled: true
+
