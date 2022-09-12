@@ -13,6 +13,11 @@ developers:
 - "fcojfernandez"
 - "mramonleon"
 - "rsandell"
+- "carroll"
+- "olamy"
+- "teilo"
+- "rarabaolaza"
+- "jm_meessen"
 security:
   contacts:
     jira: "cloudbees_security_members"
