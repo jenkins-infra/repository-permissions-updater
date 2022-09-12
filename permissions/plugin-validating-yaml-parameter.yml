@@ -7,3 +7,5 @@ developers:
 - "cesan3"
 issues:
   - github: *GH
+cd:
+  enabled: true
