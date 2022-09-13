@@ -5,6 +5,8 @@ issues:
 - jira: '17668' # dynamic-search-view-plugin
 paths:
 - "com/synopsys/arc/jenkinsci/dynamic-search-view"
+cd:
+  enabled: true
 developers:
 - "oleg_nenashev"
 - "kmartens27"
