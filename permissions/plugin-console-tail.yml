@@ -5,7 +5,6 @@ issues:
 - jira: '18144' # console-tail-plugin
 paths:
 - "org/jenkins-ci/plugins/console-tail"
-developers:
-- "notmyfault"
+developers: []
 cd:
   enabled: true

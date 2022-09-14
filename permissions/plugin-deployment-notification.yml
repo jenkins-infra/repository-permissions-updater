@@ -7,6 +7,5 @@ paths:
 - "org/jenkins-ci/plugins/deployment-notification"
 developers:
 - "kohsuke"
-- "notmyfault"
 cd:
   enabled: true

@@ -5,7 +5,6 @@ issues:
 - jira: '17584' # template-workflows-plugin
 paths:
 - "org/jenkins/plugin/templateWorkflows/template-workflows"
-developers:
-- "notmyfault"
+developers: []
 cd:
   enabled: true
