@@ -1,0 +1,9 @@
+---
+name: "sqlserver-api"
+github: &GH "jenkinsci/sqlserver-api-plugin"
+paths:
+- "io/jenkins/plugins/sqlserver-api"
+developers:
+- "cnhttpd"
+issues:
+  - github: *GH
