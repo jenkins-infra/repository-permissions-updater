@@ -1,0 +1,7 @@
+---
+name: "winp"
+github: "jenkinsci/winp"
+paths:
+- "org/jvnet/winp/winp"
+developers:
+- "@core"
