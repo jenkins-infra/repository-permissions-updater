@@ -1,6 +1,6 @@
 ---
-name: "parent" # file name change to disambiguate
+name: "parent"  # file name change to disambiguate
 github: "jenkinsci/findbugs-plugin"
 paths:
-- "org/jvnet/hudson/plugins/findbugs/parent"
+  - "org/jvnet/hudson/plugins/findbugs/parent"
 developers: []

@@ -2,7 +2,7 @@
 name: "jenkins-testswarm-plugin"
 github: "jenkinsci/testswarm-plugin"
 issues:
-- jira: '17605' # jenkins-testswarm-plugin
+  - jira: '17605'  # jenkins-testswarm-plugin
 paths:
-- "com/javaclimber/jenkins/testswarmplugin/jenkins-testswarm-plugin"
+  - "com/javaclimber/jenkins/testswarmplugin/jenkins-testswarm-plugin"
 developers: []

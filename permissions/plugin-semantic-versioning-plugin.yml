@@ -2,10 +2,10 @@
 name: "semantic-versioning-plugin"
 github: "jenkinsci/semantic-versioning-plugin"
 issues:
-- jira: '18834' # semantic-versioning-plugin
+  - jira: '18834'  # semantic-versioning-plugin
 paths:
-- "org/jenkins-ci/plugins/semantic-versioning-plugin"
+  - "org/jenkins-ci/plugins/semantic-versioning-plugin"
 developers:
-- "ciroque"
-- "schristou"
-- "allan_burdajewicz"
+  - "ciroque"
+  - "schristou"
+  - "allan_burdajewicz"

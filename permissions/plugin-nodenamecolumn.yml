@@ -2,7 +2,7 @@
 name: "nodenamecolumn"
 github: "jenkinsci/nodenamecolumn-plugin"
 issues:
-- jira: '15684' # nodenamecolumn-plugin
+  - jira: '15684'  # nodenamecolumn-plugin
 paths:
-- "org/jenkins-ci/plugins/nodenamecolumn"
+  - "org/jenkins-ci/plugins/nodenamecolumn"
 developers: []

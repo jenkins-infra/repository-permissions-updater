@@ -2,8 +2,8 @@
 name: "gprbuild"
 github: "jenkinsci/gprbuild-plugin"
 issues:
-- jira: '23522' # gprbuild-plugin
+  - jira: '23522'  # gprbuild-plugin
 paths:
-- "io/jenkins/plugins/gprbuild"
+  - "io/jenkins/plugins/gprbuild"
 developers:
-- "FeBrex"
+  - "FeBrex"

@@ -4,6 +4,6 @@ github: &GH "jenkinsci/stackhammer-plugin"
 issues:
   - github: *GH
 paths:
-- "org/cloudsmith/hammer/jenkins/stackhammer"
-- "org/jenkins-ci/plugins/stackhammer"
+  - "org/cloudsmith/hammer/jenkins/stackhammer"
+  - "org/jenkins-ci/plugins/stackhammer"
 developers: []

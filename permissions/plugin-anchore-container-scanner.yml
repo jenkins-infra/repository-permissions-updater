@@ -2,8 +2,8 @@
 name: "anchore-container-scanner"
 github: "jenkinsci/anchore-container-scanner-plugin"
 issues:
-- jira: '21824' # anchore-container-scanner-plugin
+  - jira: '21824'  # anchore-container-scanner-plugin
 paths:
-- "org/jenkins-ci/plugins/anchore-container-scanner"
+  - "org/jenkins-ci/plugins/anchore-container-scanner"
 developers:
-- "nurmi"
+  - "nurmi"

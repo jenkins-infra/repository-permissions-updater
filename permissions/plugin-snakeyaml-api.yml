@@ -2,15 +2,15 @@
 name: "snakeyaml-api"
 github: &gh "jenkinsci/snakeyaml-api-plugin"
 issues:
-- jira: '27125' # snakeyaml-plugin
-- github: *gh
+  - jira: '27125'  # snakeyaml-plugin
+  - github: *gh
 paths:
-- "io/jenkins/plugins/snakeyaml-api"
+  - "io/jenkins/plugins/snakeyaml-api"
 developers:
-- "escoem"
-- "timja"
-- "jetersen"
-- "amuniz"
+  - "escoem"
+  - "timja"
+  - "jetersen"
+  - "amuniz"
 security:
   contacts:
     jira: "cloudbees_security_members"

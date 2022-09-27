@@ -2,10 +2,10 @@
 name: "sloccount"
 github: "jenkinsci/sloccount-plugin"
 issues:
-- jira: '15614' # sloccount-plugin
+  - jira: '15614'  # sloccount-plugin
 paths:
-- "hudson/plugins/sloccount/sloccount"
+  - "hudson/plugins/sloccount/sloccount"
 developers:
-- "basil"
-- "mixalturek"
-- "imarinkov"
+  - "basil"
+  - "mixalturek"
+  - "imarinkov"

@@ -2,8 +2,8 @@
 name: "extra-columns"
 github: "jenkinsci/extra-columns-plugin"
 issues:
-- jira: '15943' # extra-columns-plugin
+  - jira: '15943'  # extra-columns-plugin
 paths:
-- "org/jenkins-ci/plugins/extra-columns"
+  - "org/jenkins-ci/plugins/extra-columns"
 developers:
-- "fredg"
+  - "fredg"

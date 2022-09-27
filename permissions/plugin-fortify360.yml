@@ -2,7 +2,7 @@
 name: "fortify360"
 github: "jenkinsci/fortify360-plugin"
 issues:
-- jira: '15742' # fortify360-plugin
+  - jira: '15742'  # fortify360-plugin
 paths:
-- "org/jvnet/hudson/plugins/fortify360/fortify360"
+  - "org/jvnet/hudson/plugins/fortify360/fortify360"
 developers: []

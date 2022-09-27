@@ -2,5 +2,5 @@
 name: "virtualbox-parent"
 github: "jenkinsci/virtualbox-plugin"
 paths:
-- "org/jenkins-ci/plugins/virtualbox-parent"
+  - "org/jenkins-ci/plugins/virtualbox-parent"
 developers: []

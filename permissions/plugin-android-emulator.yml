@@ -2,10 +2,10 @@
 name: "android-emulator"
 github: "jenkinsci/android-emulator-plugin"
 issues:
-- jira: '15725' # android-emulator-plugin
+  - jira: '15725'  # android-emulator-plugin
 paths:
-- "org/jenkins-ci/plugins/android-emulator"
-- "org/jvnet/hudson/plugins/android-emulator"
+  - "org/jenkins-ci/plugins/android-emulator"
+  - "org/jvnet/hudson/plugins/android-emulator"
 developers:
-- "orrc"
-- "nfalco"
+  - "orrc"
+  - "nfalco"

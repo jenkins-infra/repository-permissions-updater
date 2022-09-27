@@ -2,11 +2,11 @@
 name: "periodic-reincarnation"
 github: &gh "jenkinsci/periodic-reincarnation-plugin"
 issues:
-- jira: '17598' # periodic-reincarnation-plugin
-- github: *gh
+  - jira: '17598'  # periodic-reincarnation-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/periodic-reincarnation"
+  - "org/jenkins-ci/plugins/periodic-reincarnation"
 developers:
-- "boev"
-- "stefanbrausch"
-- "jochenafuerbacher"
+  - "boev"
+  - "stefanbrausch"
+  - "jochenafuerbacher"

@@ -2,14 +2,14 @@
 name: "jira"
 github: &gh "jenkinsci/jira-plugin"
 issues:
-- jira: '15515' # jira-plugin
-- github: *gh
+  - jira: '15515'  # jira-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/jira"
-- "org/jvnet/hudson/plugins/jira"
+  - "org/jenkins-ci/plugins/jira"
+  - "org/jvnet/hudson/plugins/jira"
 developers:
-- "warden"
-- "olamy"
+  - "warden"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

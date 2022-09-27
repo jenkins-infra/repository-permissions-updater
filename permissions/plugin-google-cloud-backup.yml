@@ -2,8 +2,8 @@
 name: "google-cloud-backup"
 github: "jenkinsci/google-cloud-backup-plugin"
 issues:
-- jira: '20831' # google-cloud-backup-plugin
+  - jira: '20831'  # google-cloud-backup-plugin
 paths:
-- "org/jenkins-ci/plugins/google-cloud-backup"
+  - "org/jenkins-ci/plugins/google-cloud-backup"
 developers:
-- "astroilov"
+  - "astroilov"

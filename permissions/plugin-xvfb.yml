@@ -2,8 +2,8 @@
 name: "xvfb"
 github: "jenkinsci/xvfb-plugin"
 issues:
-- jira: '16424' # xvfb-plugin
+  - jira: '16424'  # xvfb-plugin
 paths:
-- "org/jenkins-ci/plugins/xvfb"
+  - "org/jenkins-ci/plugins/xvfb"
 developers:
-- "zregvart"
+  - "zregvart"

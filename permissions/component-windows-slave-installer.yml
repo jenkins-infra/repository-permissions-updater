@@ -2,6 +2,6 @@
 name: "windows-slave-installer"
 github: "jenkinsci/windows-slave-installer-module"
 paths:
-- "org/jenkins-ci/modules/windows-slave-installer"
+  - "org/jenkins-ci/modules/windows-slave-installer"
 developers:
-- "@core"
+  - "@core"

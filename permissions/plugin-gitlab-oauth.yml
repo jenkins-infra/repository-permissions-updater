@@ -2,11 +2,11 @@
 name: "gitlab-oauth"
 github: "jenkinsci/gitlab-oauth-plugin"
 issues:
-- jira: '21470' # gitlab-oauth-plugin
+  - jira: '21470'  # gitlab-oauth-plugin
 paths:
-- "org/jenkins-ci/plugins/gitlab-oauth"
+  - "org/jenkins-ci/plugins/gitlab-oauth"
 developers:
-- "elhabib_med"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - "elhabib_med"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"

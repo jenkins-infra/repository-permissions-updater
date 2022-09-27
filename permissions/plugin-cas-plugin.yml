@@ -2,9 +2,9 @@
 name: "cas-plugin"
 github: &gh "jenkinsci/cas-plugin"
 issues:
-- jira: '17476' # cas-plugin
-- github: *gh
+  - jira: '17476'  # cas-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/cas-plugin"
+  - "org/jenkins-ci/plugins/cas-plugin"
 developers:
-- "fcrespel"
+  - "fcrespel"

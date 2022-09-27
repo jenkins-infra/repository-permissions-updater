@@ -2,6 +2,6 @@
 name: "jenkins"
 github: "jenkinsci/pom"
 paths:
-- "org/jenkins-ci/jenkins"
+  - "org/jenkins-ci/jenkins"
 developers:
-- "@core"
+  - "@core"

@@ -2,8 +2,8 @@
 name: "simple-travis-runner"
 github: "jenkinsci/simple-travis-runner-plugin"
 issues:
-- jira: '21322' # simple-travis-runner-plugin
+  - jira: '21322'  # simple-travis-runner-plugin
 paths:
-- "org/jenkins-ci/plugins/simple-travis-runner"
+  - "org/jenkins-ci/plugins/simple-travis-runner"
 developers:
-- "abayer"
+  - "abayer"

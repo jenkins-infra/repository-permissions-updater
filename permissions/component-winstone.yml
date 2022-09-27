@@ -2,6 +2,6 @@
 name: "winstone"
 github: "jenkinsci/winstone"
 paths:
-- "org/jenkins-ci/winstone"
+  - "org/jenkins-ci/winstone"
 developers:
-- "@core"
+  - "@core"

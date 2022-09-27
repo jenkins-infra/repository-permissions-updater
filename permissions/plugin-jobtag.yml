@@ -2,9 +2,9 @@
 name: "jobtag"
 github: &GH "jenkinsci/jobtag-plugin"
 paths:
-- "io/jenkins/plugins/jobtag"
+  - "io/jenkins/plugins/jobtag"
 developers:
-- "nistal97"
+  - "nistal97"
 cd:
   enabled: true
 issues:

@@ -4,8 +4,8 @@ github: &GH "jenkinsci/azure-sdk-plugin"
 cd:
   enabled: true
 paths:
-- "io/jenkins/plugins/azure-sdk"
+  - "io/jenkins/plugins/azure-sdk"
 developers:
-- "timja"
+  - "timja"
 issues:
   - github: *GH

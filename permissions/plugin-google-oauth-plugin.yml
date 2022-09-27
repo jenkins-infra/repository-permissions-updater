@@ -2,21 +2,21 @@
 name: "google-oauth-plugin"
 github: &gh "jenkinsci/google-oauth-plugin"
 issues:
-- github: *gh
-- jira: '18743' # google-oauth-plugin
+  - github: *gh
+  - jira: '18743'  # google-oauth-plugin
 paths:
-- "org/jenkins-ci/plugins/google-oauth-plugin"
+  - "org/jenkins-ci/plugins/google-oauth-plugin"
 developers:
-- "craigbarber"
-- "evanbrown"
-- "stephenshank"
-- "donmccasland"
-- "tarahernandez"
-- "vishalapatel"
-- "alecharp"
-- "batmat"
-- "teilo"
-- "rsandell"
+  - "craigbarber"
+  - "evanbrown"
+  - "stephenshank"
+  - "donmccasland"
+  - "tarahernandez"
+  - "vishalapatel"
+  - "alecharp"
+  - "batmat"
+  - "teilo"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

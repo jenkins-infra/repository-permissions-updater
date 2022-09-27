@@ -2,19 +2,19 @@
 name: "workflow-scm-step"
 github: "jenkinsci/workflow-scm-step-plugin"
 issues:
-- jira: '21717' # workflow-scm-step-plugin
+  - jira: '21717'  # workflow-scm-step-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-scm-step"
+  - "org/jenkins-ci/plugins/workflow/workflow-scm-step"
 developers:
-- "jglick"
-- "kohsuke"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "svanoort"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
 security:
   contacts:
     jira: "cloudbees_security_members"

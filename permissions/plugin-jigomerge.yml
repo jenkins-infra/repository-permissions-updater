@@ -2,8 +2,8 @@
 name: "jigomerge"
 github: "jenkinsci/jigomerge-plugin"
 issues:
-- jira: '16081' # jigomerge-plugin
+  - jira: '16081'  # jigomerge-plugin
 paths:
-- "org/jenkins-ci/plugins/jigomerge"
+  - "org/jenkins-ci/plugins/jigomerge"
 developers:
-- "smrutimo"
+  - "smrutimo"

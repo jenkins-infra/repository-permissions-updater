@@ -2,8 +2,8 @@
 name: "permissive-script-security"
 github: "jenkinsci/permissive-script-security-plugin"
 issues:
-- jira: '21467' # permissive-script-security-plugin
+  - jira: '21467'  # permissive-script-security-plugin
 paths:
-- "org/jenkins-ci/plugins/permissive-script-security"
+  - "org/jenkins-ci/plugins/permissive-script-security"
 developers:
-- "olivergondza"
+  - "olivergondza"

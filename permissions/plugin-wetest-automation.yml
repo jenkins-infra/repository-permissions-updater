@@ -2,11 +2,11 @@
 name: "wetest-automation"
 github: &GH "jenkinsci/wetest-automation-plugin"
 paths:
-- "io/jenkins/plugins/wetest-automation"
+  - "io/jenkins/plugins/wetest-automation"
 cd:
   enabled: true
 issues:
   - github: *GH
 developers:
-- "HEZI0427"
-- "WeTestQuality"
+  - "HEZI0427"
+  - "WeTestQuality"

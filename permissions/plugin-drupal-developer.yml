@@ -2,8 +2,8 @@
 name: "drupal-developer"
 github: "jenkinsci/drupal-developer-plugin"
 issues:
-- jira: '20827' # drupal-developer-plugin
+  - jira: '20827'  # drupal-developer-plugin
 paths:
-- "org/jenkins-ci/plugins/drupal-developer"
+  - "org/jenkins-ci/plugins/drupal-developer"
 developers:
-- "fengtan"
+  - "fengtan"

@@ -2,8 +2,8 @@
 name: "winrm-client"
 github: "jenkinsci/winrm-client-plugin"
 issues:
-- jira: '21985' # winrm-client-plugin
+  - jira: '21985'  # winrm-client-plugin
 paths:
-- "com/spcow/plugins/winrm-client"
+  - "com/spcow/plugins/winrm-client"
 developers:
-- "pskumar448"
+  - "pskumar448"

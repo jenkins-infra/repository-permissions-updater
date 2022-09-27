@@ -2,8 +2,8 @@
 name: "squashtm-publisher"
 github: "jenkinsci/squashtm-publisher-plugin"
 issues:
-- jira: '23059' # squashtm-publisher-plugin
+  - jira: '23059'  # squashtm-publisher-plugin
 paths:
-- "org/jenkins-ci/plugins/squashtm-publisher"
+  - "org/jenkins-ci/plugins/squashtm-publisher"
 developers:
-- "dev_squash"
+  - "dev_squash"

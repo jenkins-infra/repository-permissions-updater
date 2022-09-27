@@ -2,18 +2,18 @@
 name: "suppress-stack-trace"
 github: "jenkinsci/suppress-stack-trace-plugin"
 issues:
-- jira: '17630' # suppress-stack-trace-plugin
+  - jira: '17630'  # suppress-stack-trace-plugin
 paths:
-- "org/jenkins-ci/plugins/suppress-stack-trace"
+  - "org/jenkins-ci/plugins/suppress-stack-trace"
 developers:
-- "jglick"
-- "recena"
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
+  - "jglick"
+  - "recena"
+  - "alecharp"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

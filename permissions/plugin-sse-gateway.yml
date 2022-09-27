@@ -2,23 +2,23 @@
 name: "sse-gateway"
 github: "jenkinsci/sse-gateway-plugin"
 issues:
-- jira: '21477' # sse-gateway-plugin
+  - jira: '21477'  # sse-gateway-plugin
 paths:
-- "org/jenkins-ci/plugins/sse-gateway"
+  - "org/jenkins-ci/plugins/sse-gateway"
 developers:
-- "michaelneale"
-- "vivek"
-- "kzantow"
-- "tscherler"
-- "jamesdumay"
-- "davidbees"
-- "richbg"
-- "carroll"
-- "dnusbaum"
-- "jtaboada"
-- "kshultz"
-- "bitwiseman"
-- "olamy"
+  - "michaelneale"
+  - "vivek"
+  - "kzantow"
+  - "tscherler"
+  - "jamesdumay"
+  - "davidbees"
+  - "richbg"
+  - "carroll"
+  - "dnusbaum"
+  - "jtaboada"
+  - "kshultz"
+  - "bitwiseman"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

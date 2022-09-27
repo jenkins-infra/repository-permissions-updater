@@ -2,7 +2,7 @@
 name: "codescanner"
 github: "jenkinsci/codescanner-plugin"
 issues:
-- jira: '16053' # codescanner-plugin
+  - jira: '16053'  # codescanner-plugin
 paths:
-- "org/jvnet/hudson/plugins/codescanner"
+  - "org/jvnet/hudson/plugins/codescanner"
 developers: []

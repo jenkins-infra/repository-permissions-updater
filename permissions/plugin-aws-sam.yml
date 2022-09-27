@@ -2,9 +2,9 @@
 name: "aws-sam"
 github: &gh "jenkinsci/aws-sam-plugin"
 issues:
-- github: *gh
-- jira: '24422' # aws-sam-plugin
+  - github: *gh
+  - jira: '24422'  # aws-sam-plugin
 paths:
-- "io/jenkins/plugins/aws-sam"
+  - "io/jenkins/plugins/aws-sam"
 developers:
-- "aws_sae_jenkinsio"
+  - "aws_sae_jenkinsio"

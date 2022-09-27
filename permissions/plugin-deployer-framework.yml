@@ -2,22 +2,22 @@
 name: "deployer-framework"
 github: "jenkinsci/deployer-framework-plugin"
 issues:
-- jira: '19821' # deployer-framework-plugin
+  - jira: '19821'  # deployer-framework-plugin
 paths:
-- "org/jenkins-ci/plugins/deployer-framework"
+  - "org/jenkins-ci/plugins/deployer-framework"
 developers:
-- "jvz"
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
-- "carroll"
-- "olamy"
-- "teilo"
-- "rarabaolaza"
-- "jm_meessen"
+  - "jvz"
+  - "alecharp"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
+  - "carroll"
+  - "olamy"
+  - "teilo"
+  - "rarabaolaza"
+  - "jm_meessen"
 security:
   contacts:
     jira: "cloudbees_security_members"

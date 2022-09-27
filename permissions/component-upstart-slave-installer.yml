@@ -2,8 +2,8 @@
 name: "upstart-slave-installer"
 github: "jenkinsci/upstart-slave-installer-module"
 paths:
-- "org/jenkins-ci/modules/upstart-slave-installer"
+  - "org/jenkins-ci/modules/upstart-slave-installer"
 developers:
-- "kohsuke"
-- "jglick"
-- "oleg_nenashev"
+  - "kohsuke"
+  - "jglick"
+  - "oleg_nenashev"

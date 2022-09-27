@@ -2,10 +2,9 @@
 name: "createjobadvanced"
 github: "jenkinsci/createjobadvanced-plugin"
 issues:
-- jira: '15737' # createjobadvanced-plugin
+  - jira: '15737'  # createjobadvanced-plugin
 paths:
-- "org/jenkins-ci/plugins/createjobadvanced"
+  - "org/jenkins-ci/plugins/createjobadvanced"
 developers:
-# Not a maintainer, just tables-to-divs fixes
-- "oleg_nenashev"
-
+  # Not a maintainer, just tables-to-divs fixes
+  - "oleg_nenashev"

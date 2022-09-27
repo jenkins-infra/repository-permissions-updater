@@ -2,8 +2,8 @@
 name: "loadfocus-jmeter-load-testing-integration"
 github: "jenkinsci/loadfocus-jmeter-load-testing-integration-plugin"
 issues:
-- jira: '28522' # loadfocus-jmeter-load-testing-integration-plugin
+  - jira: '28522'  # loadfocus-jmeter-load-testing-integration-plugin
 paths:
-- "com/loadfocus/loadfocus-jmeter-load-testing-integration"
+  - "com/loadfocus/loadfocus-jmeter-load-testing-integration"
 developers:
-- "loadfocus"
+  - "loadfocus"

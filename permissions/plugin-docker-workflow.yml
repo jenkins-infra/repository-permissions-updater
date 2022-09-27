@@ -2,19 +2,19 @@
 name: "docker-workflow"
 github: "jenkinsci/docker-workflow-plugin"
 issues:
-- jira: '20625' # docker-workflow-plugin
+  - jira: '20625'  # docker-workflow-plugin
 paths:
-- "org/jenkins-ci/plugins/docker-workflow"
+  - "org/jenkins-ci/plugins/docker-workflow"
 cd:
   enabled: true
 developers:
-- "jglick"
-- "oleg_nenashev"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "carroll"
-- "rsandell"
+  - "jglick"
+  - "oleg_nenashev"
+  - "abayer"
+  - "svanoort"
+  - "dnusbaum"
+  - "carroll"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

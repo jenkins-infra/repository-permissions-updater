@@ -2,9 +2,9 @@
 name: "hidden-parameter"
 github: "jenkinsci/hidden-parameter-plugin"
 issues:
-- jira: '21468' # hidden-parameter-plugin
+  - jira: '21468'  # hidden-parameter-plugin
 paths:
-- "org/jenkins-ci/plugins/hidden-parameter"
+  - "org/jenkins-ci/plugins/hidden-parameter"
 developers:
-- "yangli"
-- "madsjakobsen"
+  - "yangli"
+  - "madsjakobsen"

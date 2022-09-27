@@ -2,8 +2,8 @@
 name: "safe-batch-environment-filter"
 github: &GH "jenkinsci/safe-batch-environment-filter-plugin"
 paths:
-- "io/jenkins/plugins/safe-batch-environment-filter"
+  - "io/jenkins/plugins/safe-batch-environment-filter"
 developers:
-- "danielbeck"
+  - "danielbeck"
 issues:
   - jira: 28827

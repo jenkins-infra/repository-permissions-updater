@@ -2,6 +2,6 @@
 name: "literate-api"
 github: "jenkinsci/literate-api"
 paths:
-- "org/jenkins-ci/literate/literate-api"
+  - "org/jenkins-ci/literate/literate-api"
 developers:
-- "vlatombe"
+  - "vlatombe"

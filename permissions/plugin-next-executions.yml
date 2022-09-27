@@ -2,8 +2,8 @@
 name: "next-executions"
 github: "jenkinsci/next-executions-plugin"
 issues:
-- jira: '15996' # next-executions-plugin
+  - jira: '15996'  # next-executions-plugin
 paths:
-- "org/jenkins-ci/plugins/next-executions"
+  - "org/jenkins-ci/plugins/next-executions"
 developers:
-- "ialbors"
+  - "ialbors"

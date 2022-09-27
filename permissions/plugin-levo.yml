@@ -2,10 +2,10 @@
 name: "levo"
 github: &GH "jenkinsci/levo-plugin"
 paths:
-- "io/jenkins/plugins/levo"
+  - "io/jenkins/plugins/levo"
 cd:
   enabled: true
 developers:
-- "mauroatlevo"
+  - "mauroatlevo"
 issues:
   - github: *GH

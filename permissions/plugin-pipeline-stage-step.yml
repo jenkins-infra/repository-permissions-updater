@@ -2,18 +2,18 @@
 name: "pipeline-stage-step"
 github: "jenkinsci/pipeline-stage-step-plugin"
 issues:
-- jira: '21709' # pipeline-stage-step-plugin
+  - jira: '21709'  # pipeline-stage-step-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-stage-step"
+  - "org/jenkins-ci/plugins/pipeline-stage-step"
 developers:
-- "jglick"
-- "svanoort"
-- "abayer"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "jglick"
+  - "svanoort"
+  - "abayer"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
 security:
   contacts:
     jira: "cloudbees_security_members"

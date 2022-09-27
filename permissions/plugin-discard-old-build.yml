@@ -2,7 +2,7 @@
 name: "discard-old-build"
 github: "jenkinsci/discard-old-build-plugin"
 issues:
-- jira: '17422' # discard-old-build-plugin
+  - jira: '17422'  # discard-old-build-plugin
 paths:
-- "jp/shiftinc/jenkins/plugins/discard-old-build"
+  - "jp/shiftinc/jenkins/plugins/discard-old-build"
 developers: []

@@ -2,8 +2,8 @@
 name: "image-tag-parameter"
 github: "jenkinsci/image-tag-parameter-plugin"
 issues:
-- jira: '26531' # image-tag-parameter-plugin
+  - jira: '26531'  # image-tag-parameter-plugin
 paths:
-- "org/jenkins-ci/plugins/image-tag-parameter"
+  - "org/jenkins-ci/plugins/image-tag-parameter"
 developers:
-- "maduma"
+  - "maduma"

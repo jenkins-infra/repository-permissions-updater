@@ -2,8 +2,8 @@
 name: "view-cloner"
 github: "jenkinsci/view-cloner-plugin"
 issues:
-- jira: '21628' # view-cloner-plugin
+  - jira: '21628'  # view-cloner-plugin
 paths:
-- "org/jenkins-ci/plugins/view-cloner"
+  - "org/jenkins-ci/plugins/view-cloner"
 developers:
-- "agukov"
+  - "agukov"

@@ -2,12 +2,12 @@
 name: "usemango-runner"
 github: "jenkinsci/usemango-runner-plugin"
 issues:
-- jira: '24627' # usemango-runner-plugin
+  - jira: '24627'  # usemango-runner-plugin
 paths:
-- "it/infuse/jenkins/usemango-runner"
+  - "it/infuse/jenkins/usemango-runner"
 developers:
-- "ian_bisset"
-- "jumpalongjim"
-- "psiingh"
-- "SubodhBorkar"
-- "techtrash"
+  - "ian_bisset"
+  - "jumpalongjim"
+  - "psiingh"
+  - "SubodhBorkar"
+  - "techtrash"

@@ -2,6 +2,6 @@
 name: "TestComplete"
 github: "jenkinsci/testcomplete-plugin"
 paths:
-- "org/jenkins-ci/plugins/TestComplete"
+  - "org/jenkins-ci/plugins/TestComplete"
 developers:
-- "igor_filin"
+  - "igor_filin"

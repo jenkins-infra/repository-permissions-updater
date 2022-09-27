@@ -2,10 +2,10 @@
 name: "webhook-step"
 github: "jenkinsci/webhook-step-plugin"
 issues:
-- jira: '22124' # webhook-step-plugin
+  - jira: '22124'  # webhook-step-plugin
 paths:
-- "org/jenkins-ci/plugins/webhook-step"
+  - "org/jenkins-ci/plugins/webhook-step"
 developers:
-- "jm_meessen"
+  - "jm_meessen"
 cd:
   enabled: true

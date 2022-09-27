@@ -2,9 +2,9 @@
 name: "valgrind"
 github: "jenkinsci/valgrind-plugin"
 issues:
-- jira: '16538' # valgrind-plugin
+  - jira: '16538'  # valgrind-plugin
 paths:
-- "org/jenkins-ci/plugins/valgrind"
-- "org/jenkinsci/plugins/valgrind/valgrind"
+  - "org/jenkins-ci/plugins/valgrind"
+  - "org/jenkinsci/plugins/valgrind/valgrind"
 developers:
-- "existence"
+  - "existence"

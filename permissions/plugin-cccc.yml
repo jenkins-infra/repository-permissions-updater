@@ -2,7 +2,7 @@
 name: "cccc"
 github: "jenkinsci/cccc-plugin"
 issues:
-- jira: '15727' # cccc-plugin
+  - jira: '15727'  # cccc-plugin
 paths:
-- "com/thalesgroup/jenkins-ci/plugins/cccc"
+  - "com/thalesgroup/jenkins-ci/plugins/cccc"
 developers: []

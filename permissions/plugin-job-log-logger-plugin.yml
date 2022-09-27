@@ -2,7 +2,7 @@
 name: "job-log-logger-plugin"
 github: "jenkinsci/job-log-logger-plugin"
 issues:
-- jira: '16421' # job-log-logger-plugin
+  - jira: '16421'  # job-log-logger-plugin
 paths:
-- "org/jenkins-ci/plugins/job-log-logger-plugin"
+  - "org/jenkins-ci/plugins/job-log-logger-plugin"
 developers: []

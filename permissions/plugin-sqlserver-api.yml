@@ -2,8 +2,8 @@
 name: "sqlserver-api"
 github: &GH "jenkinsci/sqlserver-api-plugin"
 paths:
-- "io/jenkins/plugins/sqlserver-api"
+  - "io/jenkins/plugins/sqlserver-api"
 developers:
-- "cnhttpd"
+  - "cnhttpd"
 issues:
   - github: *GH

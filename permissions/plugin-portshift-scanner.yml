@@ -2,6 +2,6 @@
 name: "portshift-scanner"
 github: "jenkinsci/portshift-scanner-plugin"
 paths:
-- "io/jenkins/plugins/portshift-scanner"
+  - "io/jenkins/plugins/portshift-scanner"
 developers:
-- "portshift"
+  - "portshift"

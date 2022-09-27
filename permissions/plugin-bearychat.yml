@@ -2,9 +2,9 @@
 name: "bearychat"
 github: "jenkinsci/bearychat-plugin"
 issues:
-- jira: '20643' # bearychat-plugin
+  - jira: '20643'  # bearychat-plugin
 paths:
-- "org/jenkins-ci/plugins/bearychat"
+  - "org/jenkins-ci/plugins/bearychat"
 developers:
-- "yuanbohan"
-- "shonenada"
+  - "yuanbohan"
+  - "shonenada"

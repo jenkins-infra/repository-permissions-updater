@@ -2,7 +2,7 @@
 name: "network-monitor"
 github: "jenkinsci/network-monitor-plugin"
 issues:
-- jira: '16125' # network-monitor-plugin
+  - jira: '16125'  # network-monitor-plugin
 paths:
-- "org/jvnet/hudson/plugins/network-monitor"
+  - "org/jvnet/hudson/plugins/network-monitor"
 developers: []

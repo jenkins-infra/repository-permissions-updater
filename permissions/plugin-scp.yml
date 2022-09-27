@@ -2,8 +2,8 @@
 name: "scp"
 github: &gh "jenkinsci/scp-plugin"
 issues:
-- jira: '15576' # scp-plugin
-- github: *gh
+  - jira: '15576'  # scp-plugin
+  - github: *gh
 paths:
-- "org/jvnet/hudson/plugins/scp"
+  - "org/jvnet/hudson/plugins/scp"
 developers: []

@@ -2,14 +2,14 @@
 name: "github-oauth"
 github: "jenkinsci/github-oauth-plugin"
 issues:
-- jira: '15900' # github-oauth-plugin
+  - jira: '15900'  # github-oauth-plugin
 paths:
-- "org/jenkins-ci/plugins/github-oauth"
+  - "org/jenkins-ci/plugins/github-oauth"
 developers:
-- "kohsuke"
-- "sag47"
-- "skottler"
-- "surya548"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - "kohsuke"
+  - "sag47"
+  - "skottler"
+  - "surya548"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"

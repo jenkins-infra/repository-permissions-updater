@@ -2,6 +2,6 @@
 name: "websocket-jetty11"
 github: "jenkinsci/jenkins"
 paths:
-- "org/jenkins-ci/main/websocket-jetty11"
+  - "org/jenkins-ci/main/websocket-jetty11"
 developers:
-- "releasebot"
+  - "releasebot"

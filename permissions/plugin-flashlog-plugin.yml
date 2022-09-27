@@ -2,7 +2,7 @@
 name: "flashlog-plugin"
 github: "jenkinsci/flashlog-plugin"
 issues:
-- jira: '16112' # flashlog-plugin
+  - jira: '16112'  # flashlog-plugin
 paths:
-- "org/jvnet/hudson/plugins/flashlog-plugin"
+  - "org/jvnet/hudson/plugins/flashlog-plugin"
 developers: []

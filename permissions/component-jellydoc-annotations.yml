@@ -2,6 +2,6 @@
 name: "jellydoc-annotations"
 github: "jenkinsci/maven-jellydoc-plugin"
 paths:
-- "org/jvnet/maven-jellydoc-plugin/jellydoc-annotations"
+  - "org/jvnet/maven-jellydoc-plugin/jellydoc-annotations"
 developers:
-- "@core"
+  - "@core"

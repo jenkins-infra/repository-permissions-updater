@@ -2,9 +2,9 @@
 name: "rapiddeploy-jenkins"
 github: "jenkinsci/rapiddeploy-plugin"
 issues:
-- jira: '18023' # rapiddeploy-jenkins-plugin
+  - jira: '18023'  # rapiddeploy-jenkins-plugin
 paths:
-- "org/jenkins-ci/plugins/rapiddeploy-jenkins"
+  - "org/jenkins-ci/plugins/rapiddeploy-jenkins"
 developers:
-- "midvision"
-- "sepsyk"
+  - "midvision"
+  - "sepsyk"

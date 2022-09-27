@@ -2,12 +2,12 @@
 name: "locale"
 github: "jenkinsci/locale-plugin"
 issues:
-- jira: '15557' # locale-plugin
+  - jira: '15557'  # locale-plugin
 paths:
-- "org/jvnet/hudson/plugins/locale"
-- "io/jenkins/plugins/locale"
+  - "org/jvnet/hudson/plugins/locale"
+  - "io/jenkins/plugins/locale"
 developers:
-- "oleg_nenashev"
-- "jonesbusy"
+  - "oleg_nenashev"
+  - "jonesbusy"
 cd:
   enabled: true

@@ -4,5 +4,5 @@ github: "jenkinsci/pry-plugin"
 issues:
   - jira: '17553'
 paths:
-- "org/jenkins-ci/plugins/pry"
+  - "org/jenkins-ci/plugins/pry"
 developers: []

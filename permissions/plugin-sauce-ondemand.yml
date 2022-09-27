@@ -2,13 +2,13 @@
 name: "sauce-ondemand"
 github: "jenkinsci/sauce-ondemand-plugin"
 issues:
-- jira: '15751' # sauce-ondemand-plugin
+  - jira: '15751'  # sauce-ondemand-plugin
 paths:
-- "org/jenkins-ci/plugins/sauce-ondemand"
-- "org/jvnet/hudson/plugins/sauce-ondemand"
+  - "org/jenkins-ci/plugins/sauce-ondemand"
+  - "org/jvnet/hudson/plugins/sauce-ondemand"
 developers:
-- "alexh_sauce"
-- "moizjv"
-- "rossrowe"
-- "sauce_jenkins_bot"
-- "yfangsl"
+  - "alexh_sauce"
+  - "moizjv"
+  - "rossrowe"
+  - "sauce_jenkins_bot"
+  - "yfangsl"

@@ -2,8 +2,8 @@
 name: "percentage-du-node-column"
 github: "jenkinsci/percentage-du-node-column-plugin"
 issues:
-- jira: '20841' # percentage-du-node-column-plugin
+  - jira: '20841'  # percentage-du-node-column-plugin
 paths:
-- "org/jenkins-ci/plugins/percentage-du-node-column"
+  - "org/jenkins-ci/plugins/percentage-du-node-column"
 developers:
-- "v2v"
+  - "v2v"

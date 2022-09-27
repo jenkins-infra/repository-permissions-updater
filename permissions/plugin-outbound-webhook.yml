@@ -2,8 +2,8 @@
 name: "outbound-webhook"
 github: &gh "jenkinsci/outbound-webhook-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/outbound-webhook"
+  - "org/jenkins-ci/plugins/outbound-webhook"
 developers:
-- "tylerlong"
+  - "tylerlong"

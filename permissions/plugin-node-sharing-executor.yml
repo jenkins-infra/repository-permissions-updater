@@ -2,10 +2,10 @@
 name: "node-sharing-executor"
 github: jenkinsci/node-sharing-plugin
 issues:
-- jira: '21466' # node-sharing-plugin
+  - jira: '21466'  # node-sharing-plugin
 paths:
-- "org/jenkins-ci/plugins/nodesharing/node-sharing-executor"
+  - "org/jenkins-ci/plugins/nodesharing/node-sharing-executor"
 developers:
-- "scoheb"
-- "pajasoft"
-- "olivergondza"
+  - "scoheb"
+  - "pajasoft"
+  - "olivergondza"

@@ -1,8 +1,9 @@
+---
 name: "stackrox-container-image-scanner"
 github: "jenkinsci/stackrox-container-image-scanner-plugin"
 issues:
-- jira: '26724' # stackrox-container-image-scanner-plugin
+  - jira: '26724'  # stackrox-container-image-scanner-plugin
 paths:
-- "org/jenkins-ci/plugins/stackrox-container-image-scanner"
+  - "org/jenkins-ci/plugins/stackrox-container-image-scanner"
 developers:
-- "stackrox"
+  - "stackrox"

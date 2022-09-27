@@ -2,19 +2,19 @@
 name: "workflow-step-api"
 github: "jenkinsci/workflow-step-api-plugin"
 issues:
-- jira: '21718' # workflow-step-api-plugin
+  - jira: '21718'  # workflow-step-api-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-step-api"
+  - "org/jenkins-ci/plugins/workflow/workflow-step-api"
 developers:
-- "jglick"
-- "kohsuke"
-- "abayer"
-- "svanoort"
-- "rsandell"
-- "dnusbaum"
-- "bitwiseman"
-- "kshultz"
-- "carroll"
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "svanoort"
+  - "rsandell"
+  - "dnusbaum"
+  - "bitwiseman"
+  - "kshultz"
+  - "carroll"
 security:
   contacts:
     jira: "cloudbees_security_members"

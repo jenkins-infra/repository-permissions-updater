@@ -2,11 +2,11 @@
 name: "jenkins-cloudformation-plugin"
 github: "jenkinsci/jenkins-cloudformation-plugin"
 issues:
-# Should probably be cleaned up
-- jira: '16015' # jenkins-cloudformation-plugin
-- jira: '15898' # cloudformation-plugin
+  # Should probably be cleaned up
+  - jira: '16015'  # jenkins-cloudformation-plugin
+  - jira: '15898'  # cloudformation-plugin
 paths:
-- "org/jenkins-ci/plugins/jenkins-cloudformation-plugin"
+  - "org/jenkins-ci/plugins/jenkins-cloudformation-plugin"
 developers:
-- "edovale"
-- "nathanagood"
+  - "edovale"
+  - "nathanagood"

@@ -2,11 +2,11 @@
 name: "proc-cleaner-plugin"
 github: "jenkinsci/proc-cleaner-plugin"
 issues:
-- jira: '19321' # proc-cleaner-plugin
+  - jira: '19321'  # proc-cleaner-plugin
 paths:
-- "org/jenkins-ci/plugins/proc-cleaner-plugin"
-- "org/jenkinsci/plugins/proccleaner/proc-cleaner-plugin"
+  - "org/jenkins-ci/plugins/proc-cleaner-plugin"
+  - "org/jenkinsci/plugins/proccleaner/proc-cleaner-plugin"
 developers:
-- "olivergondza"
-- "vjuranek"
-- "pajasoft"
+  - "olivergondza"
+  - "vjuranek"
+  - "pajasoft"

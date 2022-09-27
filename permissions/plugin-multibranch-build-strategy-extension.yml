@@ -2,8 +2,8 @@
 name: "multibranch-build-strategy-extension"
 github: "jenkinsci/multibranch-build-strategy-extension-plugin"
 issues:
-- jira: '25130' # multibranch-build-strategy-extension-plugin
+  - jira: '25130'  # multibranch-build-strategy-extension-plugin
 paths:
-- "igalg/jenkins/plugins/multibranch-build-strategy-extension"
+  - "igalg/jenkins/plugins/multibranch-build-strategy-extension"
 developers:
-- "igalg"
+  - "igalg"

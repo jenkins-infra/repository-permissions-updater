@@ -2,9 +2,9 @@
 name: "ca-apm-parent"
 github: "jenkinsci/ca-apm-plugin"
 issues:
-- jira: '21424' # ca-apm-plugin
+  - jira: '21424'  # ca-apm-plugin
 paths:
-- "org/jenkins-ci/plugins/ca-apm/ca-apm-parent"
+  - "org/jenkins-ci/plugins/ca-apm/ca-apm-parent"
 developers:
-- "srikns"
-- "pramodanarase"
+  - "srikns"
+  - "pramodanarase"

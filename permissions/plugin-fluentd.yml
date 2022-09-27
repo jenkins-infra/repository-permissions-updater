@@ -2,9 +2,9 @@
 name: "fluentd"
 github: "jenkinsci/fluentd-plugin"
 issues:
-- jira: '21928' # fluentd-plugin
+  - jira: '21928'  # fluentd-plugin
 paths:
-- "org/jenkins-ci/plugins/fluentd"
+  - "org/jenkins-ci/plugins/fluentd"
 developers:
-- "jimilian"
-- "sschuberth"
+  - "jimilian"
+  - "sschuberth"

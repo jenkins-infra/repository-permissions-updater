@@ -2,13 +2,13 @@
 name: "artifactdeployer"
 github: "jenkinsci/artifactdeployer-plugin"
 issues:
-- jira: '15870' # artifactdeployer-plugin
+  - jira: '15870'  # artifactdeployer-plugin
 paths:
-- "org/jenkins-ci/plugins/artifactdeployer"
+  - "org/jenkins-ci/plugins/artifactdeployer"
 developers:
-- "alecharp"
-- "gbois"
-- "seanturner83"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - "alecharp"
+  - "gbois"
+  - "seanturner83"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"

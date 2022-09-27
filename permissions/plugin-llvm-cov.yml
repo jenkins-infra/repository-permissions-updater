@@ -2,8 +2,8 @@
 name: "llvm-cov"
 github: &gh "jenkinsci/llvm-cov-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/llvm-cov"
+  - "io/jenkins/plugins/llvm-cov"
 developers:
-- "cizezsy"
+  - "cizezsy"

@@ -2,11 +2,11 @@
 name: "sumologic-publisher"
 github: &gh "jenkinsci/sumologic-publisher-plugin"
 issues:
-- github: *gh
-- jira: '20845' # sumologic-publisher-plugin
+  - github: *gh
+  - jira: '20845'  # sumologic-publisher-plugin
 paths:
-- "org/jenkins-ci/plugins/sumologic-publisher"
+  - "org/jenkins-ci/plugins/sumologic-publisher"
 developers:
-- "devennorton"
-- "sour0205"
-- "SumoApps"
+  - "devennorton"
+  - "sour0205"
+  - "SumoApps"

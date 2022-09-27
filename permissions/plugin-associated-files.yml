@@ -2,7 +2,7 @@
 name: "associated-files"
 github: "jenkinsci/associated-files-plugin"
 issues:
-- jira: '17473' # associated-files-plugin
+  - jira: '17473'  # associated-files-plugin
 paths:
-- "org/jenkinsci/plugins/associated-files"
+  - "org/jenkinsci/plugins/associated-files"
 developers: []

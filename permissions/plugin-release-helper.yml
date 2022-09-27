@@ -2,8 +2,8 @@
 name: "release-helper"
 github: "jenkinsci/release-helper-plugin"
 issues:
-- jira: '21691' # release-helper-plugin
+  - jira: '21691'  # release-helper-plugin
 paths:
-- "org/jenkins-ci/plugins/release-helper"
+  - "org/jenkins-ci/plugins/release-helper"
 developers:
-- "novatec"
+  - "novatec"

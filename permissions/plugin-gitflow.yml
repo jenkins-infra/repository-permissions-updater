@@ -2,8 +2,8 @@
 name: "gitflow"
 github: "jenkinsci/gitflow-plugin"
 issues:
-- jira: '23131' # gitflow-plugin
+  - jira: '23131'  # gitflow-plugin
 paths:
-- "de/silpion/jenkins/plugins/gitflow"
+  - "de/silpion/jenkins/plugins/gitflow"
 developers:
-- "marcrohlfs"
+  - "marcrohlfs"

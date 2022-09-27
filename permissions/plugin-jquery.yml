@@ -2,11 +2,11 @@
 name: "jquery"
 github: "jenkinsci/jquery-plugin"
 issues:
-- jira: '16017' # jquery-plugin
+  - jira: '16017'  # jquery-plugin
 paths:
-- "org/jenkins-ci/plugins/jquery"
+  - "org/jenkins-ci/plugins/jquery"
 developers:
-- "kohsuke"
+  - "kohsuke"
 security:
   contacts:
     jira: "cloudbees_security_members"

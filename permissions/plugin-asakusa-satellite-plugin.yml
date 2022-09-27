@@ -2,7 +2,7 @@
 name: "asakusa-satellite-plugin"
 github: "jenkinsci/asakusa-satellite-plugin"
 issues:
-- jira: '17442' # asakusa-satellite-plugin
+  - jira: '17442'  # asakusa-satellite-plugin
 paths:
-- "org/codefirst/jenkins/asakusasatellite/asakusa-satellite-plugin"
+  - "org/codefirst/jenkins/asakusasatellite/asakusa-satellite-plugin"
 developers: []

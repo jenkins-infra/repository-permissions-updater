@@ -2,8 +2,8 @@
 name: "bitbucket-oauth"
 github: "jenkinsci/bitbucket-oauth-plugin"
 issues:
-- jira: '17643' # bitbucket-oauth-plugin
+  - jira: '17643'  # bitbucket-oauth-plugin
 paths:
-- "org/jenkins-ci/plugins/bitbucket-oauth"
+  - "org/jenkins-ci/plugins/bitbucket-oauth"
 developers:
-- "mallowlabs"
+  - "mallowlabs"

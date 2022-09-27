@@ -2,6 +2,6 @@
 name: "jna-posix"
 github: "jenkinsci/jna-posix"
 paths:
-- "org/jruby/ext/posix/jna-posix"
+  - "org/jruby/ext/posix/jna-posix"
 developers:
-- "rodrigc"
+  - "rodrigc"

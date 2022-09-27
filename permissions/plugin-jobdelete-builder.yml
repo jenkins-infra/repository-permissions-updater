@@ -2,6 +2,6 @@
 name: "jobdelete-builder"
 github: "jenkinsci/jobdelete-builder-plugin"
 paths:
-- "org/jenkins-ci/plugins/jobdelete-builder"
+  - "org/jenkins-ci/plugins/jobdelete-builder"
 developers:
-- "sona_tar"
+  - "sona_tar"

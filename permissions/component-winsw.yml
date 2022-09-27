@@ -1,7 +1,7 @@
 ---
 name: "winsw"
 paths:
-- "com/sun/winsw/winsw"
+  - "com/sun/winsw/winsw"
 developers:
-- "oleg_nenashev"
-- "kohsuke"
+  - "oleg_nenashev"
+  - "kohsuke"

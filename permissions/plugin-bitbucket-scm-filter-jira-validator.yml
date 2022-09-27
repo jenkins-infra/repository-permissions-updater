@@ -2,8 +2,8 @@
 name: "bitbucket-scm-filter-jira-validator"
 github: "jenkinsci/scm-filter-jira-validator-plugin"
 issues:
-- jira: '23157' # branch-source-jira-validator-traits-plugin
+  - jira: '23157'  # branch-source-jira-validator-traits-plugin
 paths:
-- "org/jenkins-ci/plugins/bitbucket-scm-filter-jira-validator"
+  - "org/jenkins-ci/plugins/bitbucket-scm-filter-jira-validator"
 developers:
-- "askalski85"
+  - "askalski85"

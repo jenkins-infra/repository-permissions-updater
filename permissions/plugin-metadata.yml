@@ -2,7 +2,7 @@
 name: "metadata"
 github: "jenkinsci/metadata-plugin"
 issues:
-- jira: '17222' # metadata-plugin
+  - jira: '17222'  # metadata-plugin
 paths:
-- "com/sonyericsson/hudson/plugins/metadata/metadata"
+  - "com/sonyericsson/hudson/plugins/metadata/metadata"
 developers: []

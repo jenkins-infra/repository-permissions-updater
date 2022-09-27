@@ -2,9 +2,9 @@
 name: "git-push"
 github: &GH "jenkinsci/git-push-plugin"
 paths:
-- "io/jenkins/plugins/git-push"
+  - "io/jenkins/plugins/git-push"
 developers:
-- "reda_alaoui"
+  - "reda_alaoui"
 issues:
   - github: *GH
 cd:

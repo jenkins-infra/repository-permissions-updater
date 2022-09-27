@@ -2,9 +2,9 @@
 name: "email-aliases"
 github: "jenkinsci/email-aliases-plugin"
 issues:
-- jira: '21937' # email-aliases-plugin
+  - jira: '21937'  # email-aliases-plugin
 paths:
-- "org/jenkins-ci/plugins/email-aliases"
+  - "org/jenkins-ci/plugins/email-aliases"
 developers:
-- "michaelneale"
-- "jamesdumay"
+  - "michaelneale"
+  - "jamesdumay"

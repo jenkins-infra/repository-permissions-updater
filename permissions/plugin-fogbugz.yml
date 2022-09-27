@@ -2,11 +2,11 @@
 name: "fogbugz"
 github: &gh "jenkinsci/fogbugz-plugin"
 issues:
-- jira: '17530' # fogbugz-plugin
-- github: *gh
+  - jira: '17530'  # fogbugz-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/fogbugz"
+  - "org/jenkins-ci/plugins/fogbugz"
 developers:
-- "bubenkoff"
-- "maikelwever"
-- "pliljenberg"
+  - "bubenkoff"
+  - "maikelwever"
+  - "pliljenberg"

@@ -2,7 +2,7 @@
 name: "vboxwrapper"
 github: "jenkinsci/vboxwrapper-plugin"
 issues:
-- jira: '17498' # vboxwrapper-plugin
+  - jira: '17498'  # vboxwrapper-plugin
 paths:
-- "org/jenkins-ci/plugins/vboxwrapper"
+  - "org/jenkins-ci/plugins/vboxwrapper"
 developers: []

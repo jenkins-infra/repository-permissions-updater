@@ -2,8 +2,8 @@
 name: "envfile"
 github: &gh "jenkinsci/envfile-plugin"
 issues:
-- jira: '16035' # envfile-plugin
-- github: *gh
+  - jira: '16035'  # envfile-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/envfile"
+  - "org/jenkins-ci/plugins/envfile"
 developers: []

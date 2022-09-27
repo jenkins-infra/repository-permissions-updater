@@ -2,8 +2,8 @@
 name: "aws-sqs-trigger"
 github: &GH "jenkinsci/aws-sqs-trigger-plugin"
 paths:
-- "io/jenkins/plugins/aws-sqs-trigger"
+  - "io/jenkins/plugins/aws-sqs-trigger"
 developers:
-- "topikachu"
+  - "topikachu"
 issues:
   - github: *GH

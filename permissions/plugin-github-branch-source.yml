@@ -2,21 +2,21 @@
 name: "github-branch-source"
 github: "jenkinsci/github-branch-source-plugin"
 issues:
-- jira: '20858' # github-branch-source-plugin
+  - jira: '20858'  # github-branch-source-plugin
 paths:
-- "org/jenkins-ci/plugins/github-branch-source"
+  - "org/jenkins-ci/plugins/github-branch-source"
 developers:
-- "jglick"
-- "recena"
-- "abayer"
-- "svanoort"
-- "rsandell"
-- "dnusbaum"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
-- "jtaboada"
-- "olamy"
+  - "jglick"
+  - "recena"
+  - "abayer"
+  - "svanoort"
+  - "rsandell"
+  - "dnusbaum"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

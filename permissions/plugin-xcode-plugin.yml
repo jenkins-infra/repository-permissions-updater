@@ -2,12 +2,12 @@
 name: "xcode-plugin"
 github: "jenkinsci/xcode-plugin"
 issues:
-- jira: '16124' # xcode-plugin
+  - jira: '16124'  # xcode-plugin
 paths:
-- "org/jenkins-ci/plugins/xcode-plugin"
+  - "org/jenkins-ci/plugins/xcode-plugin"
 developers:
-- "lacostej"
-- "aheritier"
-- "kazuhidet"
+  - "lacostej"
+  - "aheritier"
+  - "kazuhidet"
 cd:
   enabled: true

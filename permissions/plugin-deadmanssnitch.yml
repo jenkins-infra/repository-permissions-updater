@@ -2,8 +2,8 @@
 name: "deadmanssnitch"
 github: "jenkinsci/deadmanssnitch-plugin"
 issues:
-- jira: '21521' # deadmanssnitch-plugin
+  - jira: '21521'  # deadmanssnitch-plugin
 paths:
-- "org/jenkins-ci/plugins/deadmanssnitch"
+  - "org/jenkins-ci/plugins/deadmanssnitch"
 developers:
-- "kamatama41"
+  - "kamatama41"

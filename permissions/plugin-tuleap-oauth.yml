@@ -2,11 +2,11 @@
 name: "tuleap-oauth"
 github: "jenkinsci/tuleap-oauth-plugin"
 issues:
-- jira: '27256' # tuleap-oauth-plugin
+  - jira: '27256'  # tuleap-oauth-plugin
 paths:
-- "io/jenkins/plugins/tuleap-oauth"
+  - "io/jenkins/plugins/tuleap-oauth"
 developers:
-- "erwyn"
-- "crobinson"
+  - "erwyn"
+  - "crobinson"
 cd:
   enabled: true

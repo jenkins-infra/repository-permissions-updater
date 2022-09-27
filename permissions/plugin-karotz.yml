@@ -2,7 +2,7 @@
 name: "karotz"
 github: "jenkinsci/karotz-plugin"
 issues:
-- jira: '16322' # karotz-plugin
+  - jira: '16322'  # karotz-plugin
 paths:
-- "org/jenkins-ci/plugins/karotz"
+  - "org/jenkins-ci/plugins/karotz"
 developers: []

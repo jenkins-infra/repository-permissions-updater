@@ -2,8 +2,8 @@
 name: "redis-fingerprint-storage-parent"
 github: "jenkinsci/redis-fingerprint-storage-plugin"
 paths:
-- "io/jenkins/plugins/redis-fingerprint-storage-parent"
+  - "io/jenkins/plugins/redis-fingerprint-storage-parent"
 developers:
-- "stellargo"
-- "oleg_nenashev"
-- "ma3oxuct"
+  - "stellargo"
+  - "oleg_nenashev"
+  - "ma3oxuct"

@@ -2,8 +2,8 @@
 name: "netsparker-cloud-scan"
 github: "jenkinsci/netsparker-cloud-scan-plugin"
 issues:
-- jira: '23741' # netsparker-cloud-scan-plugin
+  - jira: '23741'  # netsparker-cloud-scan-plugin
 paths:
-- "org/jenkins-ci/plugins/netsparker-cloud-scan"
-developers: 
-- "netsparker"
+  - "org/jenkins-ci/plugins/netsparker-cloud-scan"
+developers:
+  - "netsparker"

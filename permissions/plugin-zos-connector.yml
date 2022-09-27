@@ -2,8 +2,8 @@
 name: "zos-connector"
 github: "jenkinsci/zos-connector-plugin"
 issues:
-- jira: '20638' # zos-connector-plugin
+  - jira: '20638'  # zos-connector-plugin
 paths:
-- "org/jenkins-ci/plugins/zos-connector"
+  - "org/jenkins-ci/plugins/zos-connector"
 developers:
-- "candiduslynx"
+  - "candiduslynx"
