@@ -17,4 +17,4 @@ cd:
 issues:
   - github: *GH
   - jira: 23170 # configuration-as-code-plugin
-    report: no
+    report: false
