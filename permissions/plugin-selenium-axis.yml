@@ -7,4 +7,4 @@ issues:
 paths:
 - "org/jenkins-ci/plugins/selenium-axis"
 developers:
--  "jeremym"
+- "jeremym"
