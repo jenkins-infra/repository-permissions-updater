@@ -2,15 +2,15 @@
 name: "javadoc"
 github: "jenkinsci/javadoc-plugin"
 issues:
-- jira: '15992' # javadoc-plugin
+  - jira: '15992'  # javadoc-plugin
 paths:
-- "org/jenkins-ci/plugins/javadoc"
+  - "org/jenkins-ci/plugins/javadoc"
 developers:
-- "jglick"
-- "batmat"
-- "oleg_nenashev"
-- "olivergondza"
-- "olamy"
+  - "jglick"
+  - "batmat"
+  - "oleg_nenashev"
+  - "olivergondza"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,10 +2,10 @@
 name: "sonar-gerrit"
 github: &GH "jenkinsci/sonar-gerrit-plugin"
 issues:
-- github: *GH
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/sonar-gerrit"
+  - "org/jenkins-ci/plugins/sonar-gerrit"
 cd:
   enabled: true
 developers:
-- "reda_alaoui"
+  - "reda_alaoui"

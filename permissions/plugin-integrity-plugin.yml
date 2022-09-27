@@ -2,9 +2,9 @@
 name: "integrity-plugin"
 github: "jenkinsci/integrity-plugin"
 issues:
-- jira: '15920' # integrity-plugin
+  - jira: '15920'  # integrity-plugin
 paths:
-- "org/jenkins-ci/plugins/integrity-plugin"
+  - "org/jenkins-ci/plugins/integrity-plugin"
 developers:
-- "cdsouza"
-- "integrity_jenkins_plugin"
+  - "cdsouza"
+  - "integrity_jenkins_plugin"

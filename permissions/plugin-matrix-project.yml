@@ -2,20 +2,20 @@
 name: "matrix-project"
 github: "jenkinsci/matrix-project-plugin"
 issues:
-- jira: '18765' # matrix-project-plugin
+  - jira: '18765'  # matrix-project-plugin
 paths:
-- "org/jenkins-ci/plugins/matrix-project"
+  - "org/jenkins-ci/plugins/matrix-project"
 cd:
   enabled: true
 developers:
-- "amuniz"
-- "jglick"
-- "oleg_nenashev"
-- "olivergondza"
-- "alecharp"
-- "batmat"
-- "mramonleon"
-- "rsandell"
+  - "amuniz"
+  - "jglick"
+  - "oleg_nenashev"
+  - "olivergondza"
+  - "alecharp"
+  - "batmat"
+  - "mramonleon"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,11 +2,11 @@
 name: "cloudtest"
 github: &gh "jenkinsci/cloudtest-plugin"
 issues:
-- jira: '17527' # cloudtest-plugin
-- github: *gh
+  - jira: '17527'  # cloudtest-plugin
+  - github: *gh
 paths:
-- "com/soasta/jenkins/cloudtest"
+  - "com/soasta/jenkins/cloudtest"
 developers:
-- "elitecoder"
-- "ltyler"
-- "msolnit"
+  - "elitecoder"
+  - "ltyler"
+  - "msolnit"

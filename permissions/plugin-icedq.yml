@@ -2,8 +2,8 @@
 name: "icedq"
 github: "jenkinsci/icedq-plugin"
 issues:
-- jira: '23620' # icedq-plugin
+  - jira: '23620'  # icedq-plugin
 paths:
-- "com/icedq/ci/plugin/icedq"
+  - "com/icedq/ci/plugin/icedq"
 developers:
-- "toranainc"
+  - "toranainc"

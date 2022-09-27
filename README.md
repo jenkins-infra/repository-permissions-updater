@@ -45,9 +45,9 @@ Example file:
 name: "p4"
 github: "jenkinsci/p4-plugin"
 paths:
-- "org/jenkins-ci/plugins/p4"
+  - "org/jenkins-ci/plugins/p4"
 developers:
-- "p4paul"
+  - "p4paul"
 ```
 
 * `p4` (lines 2 and 5): `artifactId`
@@ -140,7 +140,7 @@ A complete example with two trackers:
 issues:
   - github: 'jenkinsci/configuration-as-code-plugin' # The preferred issue tracker
   - jira: 'configuration-as-code-plugin' # A secondary issue tracker is the Jira component 'configuration-as-code-plugin'
-    report: no # No new issues should be reported here
+    report: false # No new issues should be reported here
 ```
 
 When GitHub Issues is used, there would be some duplicated content in the file (between `github` and `issues` entries) which can be resolved by using a YAML reference.

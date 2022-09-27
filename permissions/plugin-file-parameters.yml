@@ -4,9 +4,9 @@ github: &gh "jenkinsci/file-parameters-plugin"
 cd:
   enabled: true
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/file-parameters"
+  - "io/jenkins/plugins/file-parameters"
 developers:
-- "jglick"
-- "olamy"
+  - "jglick"
+  - "olamy"

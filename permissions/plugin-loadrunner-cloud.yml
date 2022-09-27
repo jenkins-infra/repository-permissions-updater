@@ -2,10 +2,10 @@
 name: "loadrunner-cloud"
 github: &GH "jenkinsci/loadrunner-cloud-plugin"
 paths:
-- "io/jenkins/plugins/loadrunner-cloud"
+  - "io/jenkins/plugins/loadrunner-cloud"
 developers:
-- "weisun10"
-- "xiaoyuan_qi"
+  - "weisun10"
+  - "xiaoyuan_qi"
 issues:
   - github: *GH
 cd:

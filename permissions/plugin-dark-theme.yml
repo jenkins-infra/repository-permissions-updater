@@ -2,13 +2,13 @@
 name: "dark-theme"
 github: &gh "jenkinsci/dark-theme-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/dark-theme"
+  - "io/jenkins/plugins/dark-theme"
 cd:
   enabled: true
 developers:
-- "timja"
-- "oleg_nenashev"
-- "notmyfault"
-- "janfaracik"
+  - "timja"
+  - "oleg_nenashev"
+  - "notmyfault"
+  - "janfaracik"

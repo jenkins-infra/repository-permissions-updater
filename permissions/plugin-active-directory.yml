@@ -2,21 +2,21 @@
 name: "active-directory"
 github: "jenkinsci/active-directory-plugin"
 issues:
-- jira: '15526' # active-directory-plugin
+  - jira: '15526'  # active-directory-plugin
 paths:
-- "org/jenkins-ci/plugins/active-directory"
+  - "org/jenkins-ci/plugins/active-directory"
 developers:
-- "fbelzunc"
-- "kohsuke"
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
-- "carroll"
-- "teilo"
-- "rarabaolaza"
+  - "fbelzunc"
+  - "kohsuke"
+  - "alecharp"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
+  - "carroll"
+  - "teilo"
+  - "rarabaolaza"
 security:
-    contacts:
-      jira: "cloudbees_security_members"
+  contacts:
+    jira: "cloudbees_security_members"

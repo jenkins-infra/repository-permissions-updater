@@ -4,5 +4,5 @@ github: &GH "jenkinsci/tag-profiler-plugin"
 issues:
   - github: *GH
 paths:
-- "org/jenkins-ci/plugins/tag-profiler"
+  - "org/jenkins-ci/plugins/tag-profiler"
 developers: []

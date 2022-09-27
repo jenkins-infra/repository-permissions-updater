@@ -2,8 +2,8 @@
 name: "assertthat-bdd-jira"
 github: "jenkinsci/assertthat-bdd-jira-plugin"
 issues:
-- jira: '25221' # assertthat-bdd-jira-plugin
+  - jira: '25221'  # assertthat-bdd-jira-plugin
 paths:
-- "io/jenkins/plugins/assertthat-bdd-jira"
+  - "io/jenkins/plugins/assertthat-bdd-jira"
 developers:
-- "glib_briia"
+  - "glib_briia"

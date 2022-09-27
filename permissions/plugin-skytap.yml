@@ -2,9 +2,9 @@
 name: "skytap"
 github: "jenkinsci/skytap-cloud-plugin"
 issues:
-- jira: '18132' # skytap-plugin
+  - jira: '18132'  # skytap-plugin
 paths:
-- "org/jenkins-ci/plugins/skytap"
+  - "org/jenkins-ci/plugins/skytap"
 developers:
-- "jchenry"
-- "hanalee_skytap"
+  - "jchenry"
+  - "hanalee_skytap"

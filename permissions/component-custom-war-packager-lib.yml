@@ -2,10 +2,10 @@
 name: "custom-war-packager-lib"
 github: "jenkinsci/custom-war-packager"
 paths:
-- "io/jenkins/tools/custom-war-packager/custom-war-packager-lib"
+  - "io/jenkins/tools/custom-war-packager/custom-war-packager-lib"
 developers:
-- "oleg_nenashev"
-- "jglick"
-- "csanchez"
-- "fcojfernandez"
-- "egutierrez"
+  - "oleg_nenashev"
+  - "jglick"
+  - "csanchez"
+  - "fcojfernandez"
+  - "egutierrez"

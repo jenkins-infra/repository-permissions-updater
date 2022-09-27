@@ -2,7 +2,7 @@
 name: "transifex"
 github: "jenkinsci/transifex-plugin"
 issues:
-- jira: '18139' # transifex-plugin
+  - jira: '18139'  # transifex-plugin
 paths:
-- "com/gurkensalat/jenkins-ci/plugins/transifex"
+  - "com/gurkensalat/jenkins-ci/plugins/transifex"
 developers: []

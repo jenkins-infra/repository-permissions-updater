@@ -2,7 +2,7 @@
 name: "hckrnews"
 github: "jenkinsci/hckrnews-plugin"
 issues:
-- jira: '18158' # hckrnews-plugin
+  - jira: '18158'  # hckrnews-plugin
 paths:
-- "com/lewuathe/plugins/hckrnews"
+  - "com/lewuathe/plugins/hckrnews"
 developers: []

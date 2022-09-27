@@ -2,10 +2,10 @@
 name: "service-now"
 github: &gh "jenkinsci/service-now-plugin"
 issues:
-- github: *gh
-- jira: '23437' # service-now-plugin
+  - github: *gh
+  - jira: '23437'  # service-now-plugin
 paths:
-- "org/jenkins-ci/plugins/service-now"
+  - "org/jenkins-ci/plugins/service-now"
 developers:
-- "james_mcshane"
-- "pdkreid"
+  - "james_mcshane"
+  - "pdkreid"

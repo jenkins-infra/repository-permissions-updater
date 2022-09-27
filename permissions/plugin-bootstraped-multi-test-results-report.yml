@@ -1,6 +1,6 @@
 ---
 name: "bootstraped-multi-test-results-report"
 paths:
-- "com/github/bogdanlivadariu/bootstraped-multi-test-results-report"
+  - "com/github/bogdanlivadariu/bootstraped-multi-test-results-report"
 developers:
-- "bogdanlivadariu"
+  - "bogdanlivadariu"

@@ -2,14 +2,14 @@
 name: "docker-build-publish"
 github: "jenkinsci/docker-build-publish-plugin"
 issues:
-- jira: '18624' # docker-build-publish-plugin
+  - jira: '18624'  # docker-build-publish-plugin
 paths:
-- "org/jenkins-ci/plugins/docker-build-publish"
+  - "org/jenkins-ci/plugins/docker-build-publish"
 developers:
-- "csanchez"
-- "michaelneale"
-- "oleg_nenashev"
-- "rsandell"
+  - "csanchez"
+  - "michaelneale"
+  - "oleg_nenashev"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

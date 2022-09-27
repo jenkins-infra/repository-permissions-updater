@@ -2,8 +2,8 @@
 name: "rapid7-insightvm-container-assessment"
 github: "jenkinsci/rapid7-insightvm-container-assessment-plugin"
 issues:
-- jira: '25023' # rapid7-insightvm-container-assessment-plugin
+  - jira: '25023'  # rapid7-insightvm-container-assessment-plugin
 paths:
-- "org/jenkins-ci/plugins/rapid7-insightvm-container-assessment"
+  - "org/jenkins-ci/plugins/rapid7-insightvm-container-assessment"
 developers:
-- "rapid7"
+  - "rapid7"

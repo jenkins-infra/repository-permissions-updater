@@ -4,6 +4,6 @@ github: "jenkinsci/jenkins-test-harness"
 cd:
   enabled: true
 paths:
-- "org/jenkins-ci/main/jenkins-test-harness"
+  - "org/jenkins-ci/main/jenkins-test-harness"
 developers:
-- "@core"
+  - "@core"

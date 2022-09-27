@@ -2,8 +2,8 @@
 name: "pipeline-cps-http"
 github: "jenkinsci/pipeline-cps-http-plugin"
 issues:
-- jira: '26220' # pipeline-cps-http-plugin
+  - jira: '26220'  # pipeline-cps-http-plugin
 paths:
-- "io/jenkins/plugins/pipeline-cps-http"
+  - "io/jenkins/plugins/pipeline-cps-http"
 developers:
-- "julienduchesne"
+  - "julienduchesne"

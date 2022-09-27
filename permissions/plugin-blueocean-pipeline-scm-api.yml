@@ -2,22 +2,22 @@
 name: "blueocean-pipeline-scm-api"
 github: "jenkinsci/blueocean-plugin"
 issues:
-- jira: '21481' # blueocean-plugin
+  - jira: '21481'  # blueocean-plugin
 paths:
-- "io/jenkins/blueocean/blueocean-pipeline-scm-api"
+  - "io/jenkins/blueocean/blueocean-pipeline-scm-api"
 developers:
-- "michaelneale"
-- "vivek"
-- "kzantow"
-- "davidbees"
-- "richbg"
-- "carroll"
-- "dnusbaum"
-- "jtaboada"
-- "kshultz"
-- "bitwiseman"
-- "olamy"
-- "tscherler"
+  - "michaelneale"
+  - "vivek"
+  - "kzantow"
+  - "davidbees"
+  - "richbg"
+  - "carroll"
+  - "dnusbaum"
+  - "jtaboada"
+  - "kshultz"
+  - "bitwiseman"
+  - "olamy"
+  - "tscherler"
 security:
   contacts:
     jira: "cloudbees_security_members"

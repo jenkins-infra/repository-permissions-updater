@@ -2,8 +2,8 @@
 name: "jobtype-column"
 github: "jenkinsci/jobtype-column-plugin"
 issues:
-- jira: '15703' # jobtype-column-plugin
+  - jira: '15703'  # jobtype-column-plugin
 paths:
-- "org/jenkins-ci/plugins/jobtype-column"
-- "org/jvnet/hudson/plugins/jobtype-column"
+  - "org/jenkins-ci/plugins/jobtype-column"
+  - "org/jvnet/hudson/plugins/jobtype-column"
 developers: []

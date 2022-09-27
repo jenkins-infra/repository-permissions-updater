@@ -2,7 +2,7 @@
 name: "storable-configs-plugin"
 github: "jenkinsci/storable-configs-plugin"
 issues:
-- jira: '16003' # storable-configs-plugin
+  - jira: '16003'  # storable-configs-plugin
 paths:
-- "org/jvnet/hudson/plugins/storable-configs-plugin"
+  - "org/jvnet/hudson/plugins/storable-configs-plugin"
 developers: []

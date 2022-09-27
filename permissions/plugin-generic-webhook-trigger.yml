@@ -2,9 +2,9 @@
 name: "generic-webhook-trigger"
 github: &gh "jenkinsci/generic-webhook-trigger-plugin"
 issues:
-- github: *gh
-- jira: '22021' # generic-webhook-trigger-plugin
+  - github: *gh
+  - jira: '22021'  # generic-webhook-trigger-plugin
 paths:
-- "org/jenkins-ci/plugins/generic-webhook-trigger"
+  - "org/jenkins-ci/plugins/generic-webhook-trigger"
 developers:
-- "tomasbjerre"
+  - "tomasbjerre"

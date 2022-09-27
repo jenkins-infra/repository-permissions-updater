@@ -2,9 +2,9 @@
 name: "uipath-automation-package"
 github: &gh "jenkinsci/uipath-automation-package-plugin"
 issues:
-- github: *gh
-- jira: '25125' # uipath-automation-package-plugin
+  - github: *gh
+  - jira: '25125'  # uipath-automation-package-plugin
 paths:
-- "org/jenkins-ci/plugins/uipath-automation-package"
+  - "org/jenkins-ci/plugins/uipath-automation-package"
 developers:
-- "ganeshborle"
+  - "ganeshborle"

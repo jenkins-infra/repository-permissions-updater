@@ -2,8 +2,8 @@
 name: "applatix"
 github: "jenkinsci/applatix-plugin"
 issues:
-- jira: '22722' # applatix-plugin
+  - jira: '22722'  # applatix-plugin
 paths:
-- "com/applatix/jenkins/applatix"
+  - "com/applatix/jenkins/applatix"
 developers:
-- "applatix_jenkins"
+  - "applatix_jenkins"

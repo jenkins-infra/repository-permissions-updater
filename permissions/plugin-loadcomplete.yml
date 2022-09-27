@@ -2,8 +2,8 @@
 name: "loadcomplete"
 github: "jenkinsci/loadcomplete-plugin"
 issues:
-- jira: '24026' # loadcomplete-plugin
+  - jira: '24026'  # loadcomplete-plugin
 paths:
-- "org/jenkins-ci/plugins/loadcomplete"
+  - "org/jenkins-ci/plugins/loadcomplete"
 developers:
-- "igor_filin"
+  - "igor_filin"

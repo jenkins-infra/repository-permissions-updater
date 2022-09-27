@@ -2,8 +2,8 @@
 name: "enhanced-metrics"
 github: &GH "jenkinsci/enhanced-metrics-plugin"
 paths:
-- "io/jenkins/plugins/enhanced-metrics"
+  - "io/jenkins/plugins/enhanced-metrics"
 developers:
-- "aytuncbeken"
+  - "aytuncbeken"
 issues:
   - github: *GH

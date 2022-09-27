@@ -2,8 +2,8 @@
 name: "argus-notifier"
 github: "jenkinsci/argus-notifier-plugin"
 issues:
-- jira: '23130' # argus-notifier-plugin
+  - jira: '23130'  # argus-notifier-plugin
 paths:
-- "org/jenkins-ci/plugins/argus-notifier"
+  - "org/jenkins-ci/plugins/argus-notifier"
 developers:
-- "justinharringa"
+  - "justinharringa"

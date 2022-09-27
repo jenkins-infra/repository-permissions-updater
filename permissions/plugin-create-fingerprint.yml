@@ -2,7 +2,7 @@
 name: "create-fingerprint"
 github: "jenkinsci/create-fingerprint-plugin"
 issues:
-- jira: '17434' # create-fingerprint-plugin
+  - jira: '17434'  # create-fingerprint-plugin
 paths:
-- "org/jenkins-ci/plugins/create-fingerprint"
+  - "org/jenkins-ci/plugins/create-fingerprint"
 developers: []

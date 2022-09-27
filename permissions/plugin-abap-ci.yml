@@ -2,9 +2,9 @@
 name: "abap-ci"
 github: "jenkinsci/abap-ci-plugin"
 issues:
-- jira: '27420' # abap-ci-plugin
+  - jira: '27420'  # abap-ci-plugin
 paths:
-- "io/jenkins/plugins/abap-ci"
+  - "io/jenkins/plugins/abap-ci"
 developers:
-- "andau"
-- "wozjac"
+  - "andau"
+  - "wozjac"

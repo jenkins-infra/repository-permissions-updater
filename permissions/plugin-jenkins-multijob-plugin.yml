@@ -2,13 +2,13 @@
 name: "jenkins-multijob-plugin"
 github: &gh "jenkinsci/tikal-multijob-plugin"
 issues:
-- jira: '16545' # multijob-plugin
-- github: *gh
+  - jira: '16545'  # multijob-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/jenkins-multijob-plugin"
+  - "org/jenkins-ci/plugins/jenkins-multijob-plugin"
 developers:
-- "hagzag"
-- "yorammi"
-- "cohencil"
+  - "hagzag"
+  - "yorammi"
+  - "cohencil"
 cd:
   enabled: true

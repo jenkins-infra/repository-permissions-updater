@@ -2,9 +2,9 @@
 name: "commons-text-api"
 github: &GH "jenkinsci/commons-text-api-plugin"
 paths:
-- "io/jenkins/plugins/commons-text-api"
+  - "io/jenkins/plugins/commons-text-api"
 developers:
-- "sghill"
+  - "sghill"
 issues:
   - github: *GH
 cd:

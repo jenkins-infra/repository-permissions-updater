@@ -2,10 +2,10 @@
 name: "parameterized-scheduler"
 github: "jenkinsci/parameterized-scheduler-plugin"
 issues:
-- jira: '21025' # parameterized-scheduler-plugin
+  - jira: '21025'  # parameterized-scheduler-plugin
 paths:
-- "org/jenkins-ci/plugins/parameterized-scheduler"
+  - "org/jenkins-ci/plugins/parameterized-scheduler"
 developers:
-- "batmat"
-- "colourmeamused"
-- "raihaan"
+  - "batmat"
+  - "colourmeamused"
+  - "raihaan"

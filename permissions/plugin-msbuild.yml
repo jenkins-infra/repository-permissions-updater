@@ -2,21 +2,21 @@
 name: "msbuild"
 github: "jenkinsci/msbuild-plugin"
 issues:
-- jira: '15559' # msbuild-plugin
+  - jira: '15559'  # msbuild-plugin
 paths:
-- "org/jenkins-ci/plugins/msbuild"
+  - "org/jenkins-ci/plugins/msbuild"
 developers:
-- mramonleon
-- batmat
-- rsandell
-- alecharp
-- bitwiseman
-- carroll
-- olamy
-- teilo
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - mramonleon
+  - batmat
+  - rsandell
+  - alecharp
+  - bitwiseman
+  - carroll
+  - olamy
+  - teilo
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"
 security:
-    contacts:
-      jira: "cloudbees_security_members"
+  contacts:
+    jira: "cloudbees_security_members"

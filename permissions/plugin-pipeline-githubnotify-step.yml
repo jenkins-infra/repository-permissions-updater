@@ -4,9 +4,9 @@ github: "jenkinsci/pipeline-githubnotify-step-plugin"
 cd:
   enabled: true
 issues:
-- jira: '21944' # pipeline-githubnotify-step-plugin
+  - jira: '21944'  # pipeline-githubnotify-step-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-githubnotify-step"
+  - "org/jenkins-ci/plugins/pipeline-githubnotify-step"
 developers:
-- "rarabaolaza"
-- "recena"
+  - "rarabaolaza"
+  - "recena"

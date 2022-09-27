@@ -2,8 +2,8 @@
 name: "klaros-testmanagement"
 github: "jenkinsci/klaros-testmanagement-plugin"
 issues:
-- jira: '16030' # klaros-testmanagement-plugin
+  - jira: '16030'  # klaros-testmanagement-plugin
 paths:
-- "hudson/plugins/klaros/klaros-testmanagement"
+  - "hudson/plugins/klaros/klaros-testmanagement"
 developers:
-- "stolp"
+  - "stolp"

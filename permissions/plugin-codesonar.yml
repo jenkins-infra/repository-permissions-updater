@@ -2,10 +2,10 @@
 name: "codesonar"
 github: "jenkinsci/codesonar-plugin"
 issues:
-- jira: '20630' # codesonar-plugin
+  - jira: '20630'  # codesonar-plugin
 paths:
-- "org/jenkins-ci/plugins/codesonar"
+  - "org/jenkins-ci/plugins/codesonar"
 developers:
-- "madsnielsen"
-- "praqma"
-- "atombrella"
+  - "madsnielsen"
+  - "praqma"
+  - "atombrella"

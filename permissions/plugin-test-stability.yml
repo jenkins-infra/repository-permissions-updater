@@ -2,8 +2,8 @@
 name: "test-stability"
 github: "jenkinsci/test-stability-plugin"
 issues:
-- jira: '17661' # test-stability-plugin
+  - jira: '17661'  # test-stability-plugin
 paths:
-- "de/esailors/jenkins/test-stability"
+  - "de/esailors/jenkins/test-stability"
 developers:
-- "seanf"
+  - "seanf"

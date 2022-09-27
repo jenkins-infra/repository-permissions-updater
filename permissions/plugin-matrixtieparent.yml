@@ -2,7 +2,7 @@
 name: "matrixtieparent"
 github: "jenkinsci/matrixtieparent-plugin"
 issues:
-- jira: '15800' # matrixtieparent-plugin
+  - jira: '15800'  # matrixtieparent-plugin
 paths:
-- "org/jenkins-ci/plugins/matrixtieparent"
+  - "org/jenkins-ci/plugins/matrixtieparent"
 developers: []

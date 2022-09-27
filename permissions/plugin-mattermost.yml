@@ -2,8 +2,8 @@
 name: "mattermost"
 github: "jenkinsci/mattermost-plugin"
 issues:
-- jira: '21021' # mattermost-plugin
+  - jira: '21021'  # mattermost-plugin
 paths:
-- "org/jenkins-ci/plugins/mattermost"
+  - "org/jenkins-ci/plugins/mattermost"
 developers:
-- "jovandeginste"
+  - "jovandeginste"

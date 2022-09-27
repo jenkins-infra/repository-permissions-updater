@@ -2,9 +2,9 @@
 name: "elastest"
 github: "jenkinsci/elastest-plugin"
 issues:
-- jira: '23123' # elastest-plugin
+  - jira: '23123'  # elastest-plugin
 paths:
-- "org/jenkins-ci/plugins/elastest"
+  - "org/jenkins-ci/plugins/elastest"
 developers:
-- "frdiaz"
-- "elastestci"
+  - "frdiaz"
+  - "elastestci"

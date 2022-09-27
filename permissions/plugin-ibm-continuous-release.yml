@@ -2,8 +2,8 @@
 name: "ibm-continuous-release"
 github: "jenkinsci/ibm-continuous-release-plugin"
 issues:
-- jira: '23520' # ibm-continuous-release-plugin
+  - jira: '23520'  # ibm-continuous-release-plugin
 paths:
-- "com/ibm/devops/ibm-continuous-release"
+  - "com/ibm/devops/ibm-continuous-release"
 developers:
-- "aberkIBM"
+  - "aberkIBM"

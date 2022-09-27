@@ -2,9 +2,9 @@
 name: "itest"
 github: "jenkinsci/itest-plugin"
 issues:
-- jira: '23444' # itest-plugin
+  - jira: '23444'  # itest-plugin
 paths:
-- "org/jenkins-ci/plugins/itest"
+  - "org/jenkins-ci/plugins/itest"
 developers:
-- "cwhitty"
-- "spirentitestdevter"
+  - "cwhitty"
+  - "spirentitestdevter"

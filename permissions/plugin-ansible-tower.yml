@@ -2,8 +2,8 @@
 name: "ansible-tower"
 github: "jenkinsci/ansible-tower-plugin"
 issues:
-- jira: '23177' # ansible-tower-plugin
+  - jira: '23177'  # ansible-tower-plugin
 paths:
-- "org/jenkins-ci/plugins/ansible-tower"
+  - "org/jenkins-ci/plugins/ansible-tower"
 developers:
-- "johnwestcottiv"
+  - "johnwestcottiv"

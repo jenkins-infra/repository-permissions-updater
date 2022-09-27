@@ -2,8 +2,8 @@
 name: "jianliao"
 github: "jenkinsci/jianliao-plugin"
 issues:
-- jira: '20633' # jianliao-plugin
+  - jira: '20633'  # jianliao-plugin
 paths:
-- "org/jenkins-ci/plugins/jianliao"
+  - "org/jenkins-ci/plugins/jianliao"
 developers:
-- "jianliao"
+  - "jianliao"

@@ -2,8 +2,8 @@
 name: "testcafe"
 github: "jenkinsci/testcafe-plugin"
 issues:
-- jira: '27421' # testcafe-plugin
+  - jira: '27421'  # testcafe-plugin
 paths:
-- "io/jenkins/plugins/testcafe"
+  - "io/jenkins/plugins/testcafe"
 developers:
-- "wentwrong"
+  - "wentwrong"

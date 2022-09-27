@@ -2,8 +2,8 @@
 name: "cpptest"
 github: "jenkinsci/cpptest-plugin"
 issues:
-- jira: '15730' # cpptest-plugin
+  - jira: '15730'  # cpptest-plugin
 paths:
-- "com/thalesgroup/jenkins-ci/plugins/cpptest"
+  - "com/thalesgroup/jenkins-ci/plugins/cpptest"
 developers:
-- "gbois"
+  - "gbois"

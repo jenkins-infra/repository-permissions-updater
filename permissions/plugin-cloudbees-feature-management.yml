@@ -4,9 +4,9 @@ github: &GH "jenkinsci/cloudbees-feature-management-plugin"
 cd:
   enabled: true
 paths:
-- "io/jenkins/plugins/cloudbees-feature-management"
+  - "io/jenkins/plugins/cloudbees-feature-management"
 developers:
-- "tfennelly"
-- "agentgonzo"
+  - "tfennelly"
+  - "agentgonzo"
 issues:
   - github: *GH

@@ -2,10 +2,10 @@
 name: "convert-to-pipeline"
 github: "jenkinsci/convert-to-pipeline-plugin"
 issues:
-- jira: '23167' # convert-to-pipeline-plugin
+  - jira: '23167'  # convert-to-pipeline-plugin
 paths:
-- "org/jenkins-ci/plugins/convert-to-pipeline"
+  - "org/jenkins-ci/plugins/convert-to-pipeline"
 developers:
-- "mohit_dharamshi"
-- "vimal_infostretch"
-- "devenatis"
+  - "mohit_dharamshi"
+  - "vimal_infostretch"
+  - "devenatis"

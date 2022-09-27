@@ -4,5 +4,5 @@ github: "jenkinsci/collabnet-automic-deploy-plugin"
 issues:
   - jira: '17660'
 paths:
-- "org/jenkins-ci/plugins/collabnet-uc4-deploy"
+  - "org/jenkins-ci/plugins/collabnet-uc4-deploy"
 developers: []

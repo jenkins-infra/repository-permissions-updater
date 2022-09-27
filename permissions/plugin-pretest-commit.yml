@@ -4,6 +4,6 @@ github: "jenkinsci/pretested-integration-plugin"
 issues:
   - jira: '17627'
 paths:
-- "org/jenkins-ci/plugins/pretest-commit"
+  - "org/jenkins-ci/plugins/pretest-commit"
 developers:
-- "madsnielsen"
+  - "madsnielsen"

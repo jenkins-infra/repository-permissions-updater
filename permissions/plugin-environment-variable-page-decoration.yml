@@ -2,8 +2,8 @@
 name: "environment-variable-page-decoration"
 github: "jenkinsci/environment-variable-page-decoration-plugin"
 issues:
-- jira: '23229' # environment-variable-page-decoration-plugin
+  - jira: '23229'  # environment-variable-page-decoration-plugin
 paths:
-- "org/jenkins-ci/plugins/environment-variable-page-decoration"
+  - "org/jenkins-ci/plugins/environment-variable-page-decoration"
 developers:
-- "tvon"
+  - "tvon"

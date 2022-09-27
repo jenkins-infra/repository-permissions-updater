@@ -2,8 +2,8 @@
 name: "url-auth-sso"
 github: "jenkinsci/url-auth-sso-plugin"
 issues:
-- jira: '21476' # url-auth-sso-plugin
+  - jira: '21476'  # url-auth-sso-plugin
 paths:
-- "cf/pgmann/plugins/url-auth-sso"
+  - "cf/pgmann/plugins/url-auth-sso"
 developers:
-- "pgmann"
+  - "pgmann"

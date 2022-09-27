@@ -2,8 +2,8 @@
 name: "compuware-xpediter-code-coverage"
 github: "jenkinsci/compuware-xpediter-code-coverage-plugin"
 issues:
-- jira: '23141' # compuware-xpediter-code-coverage-plugin
+  - jira: '23141'  # compuware-xpediter-code-coverage-plugin
 paths:
-- "com/compuware/jenkins/compuware-xpediter-code-coverage"
+  - "com/compuware/jenkins/compuware-xpediter-code-coverage"
 developers:
-- "cpwr_jenkins"
+  - "cpwr_jenkins"

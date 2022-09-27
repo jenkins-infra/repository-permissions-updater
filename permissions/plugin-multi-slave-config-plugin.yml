@@ -2,8 +2,8 @@
 name: "multi-slave-config-plugin"
 github: "jenkinsci/multi-slave-config-plugin"
 issues:
-- jira: '15928' # multi-slave-config-plugin
+  - jira: '15928'  # multi-slave-config-plugin
 paths:
-- "com/sonyericsson/hudson/plugins/multi-slave-config-plugin/multi-slave-config-plugin"
+  - "com/sonyericsson/hudson/plugins/multi-slave-config-plugin/multi-slave-config-plugin"
 developers:
-- "rsandell"
+  - "rsandell"

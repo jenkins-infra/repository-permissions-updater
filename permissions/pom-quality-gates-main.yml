@@ -2,6 +2,6 @@
 name: "quality-gates-main"
 github: "jenkinsci/quality-gates-plugin"
 paths:
-- "org/jenkins-ci/plugins/quality-gates-main"
+  - "org/jenkins-ci/plugins/quality-gates-main"
 developers:
-- "ivanash"
+  - "ivanash"

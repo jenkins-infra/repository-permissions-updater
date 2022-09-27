@@ -2,11 +2,11 @@
 name: "skip-notifications-trait"
 github: "jenkinsci/skip-notifications-trait-plugin"
 issues:
-- jira: '23947' # skip-notifications-trait-plugin
+  - jira: '23947'  # skip-notifications-trait-plugin
 paths:
-- "org/jenkins-ci/plugins/skip-notifications-trait"
+  - "org/jenkins-ci/plugins/skip-notifications-trait"
 developers:
-- "alex_dubrouski"
-- "jonesbusy"
+  - "alex_dubrouski"
+  - "jonesbusy"
 cd:
   enabled: true

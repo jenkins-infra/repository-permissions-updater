@@ -2,8 +2,8 @@
 name: "teams-webhook-trigger"
 github: &GH "jenkinsci/teams-webhook-trigger-plugin"
 paths:
-- "io/jenkins/plugins/teams-webhook-trigger"
+  - "io/jenkins/plugins/teams-webhook-trigger"
 developers:
-- "uday4923"
+  - "uday4923"
 issues:
   - github: *GH

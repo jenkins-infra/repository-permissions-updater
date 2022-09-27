@@ -2,8 +2,8 @@
 name: "maintenance-jobs-scheduler"
 github: "jenkinsci/maintenance-jobs-scheduler-plugin"
 issues:
-- jira: '21124' # maintenance-jobs-scheduler-plugin
+  - jira: '21124'  # maintenance-jobs-scheduler-plugin
 paths:
-- "org/jenkins-ci/plugins/maintenance-jobs-scheduler"
+  - "org/jenkins-ci/plugins/maintenance-jobs-scheduler"
 developers:
-- "v2v"
+  - "v2v"

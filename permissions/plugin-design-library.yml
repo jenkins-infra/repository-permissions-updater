@@ -4,9 +4,9 @@ github: &GH "jenkinsci/design-library-plugin"
 issues:
   - github: *GH
 paths:
-- "io/jenkins/plugins/design-library"
+  - "io/jenkins/plugins/design-library"
 developers:
-- "@core"
-- "@ux"
+  - "@core"
+  - "@ux"
 cd:
   enabled: true

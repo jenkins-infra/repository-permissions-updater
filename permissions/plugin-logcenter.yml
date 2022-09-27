@@ -2,8 +2,8 @@
 name: "logcenter"
 github: &GH "jenkinsci/logcenter-plugin"
 paths:
-- "io/jenkins/plugins/logcenter"
+  - "io/jenkins/plugins/logcenter"
 developers:
-- "xykong"
+  - "xykong"
 issues:
   - github: *GH

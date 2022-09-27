@@ -2,9 +2,9 @@
 name: "copy-to-slave"
 github: "jenkinsci/copy-to-slave-plugin"
 issues:
-- jira: '15691' # copy-to-slave-plugin
+  - jira: '15691'  # copy-to-slave-plugin
 paths:
-- "org/jenkins-ci/plugins/copy-to-slave"
-- "org/jvnet/hudson/plugins/copy-to-slave"
+  - "org/jenkins-ci/plugins/copy-to-slave"
+  - "org/jvnet/hudson/plugins/copy-to-slave"
 developers:
-- "svvivek"
+  - "svvivek"

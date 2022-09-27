@@ -2,8 +2,8 @@
 name: "autoaction-step"
 github: "jenkinsci/autoaction-step-plugin"
 issues:
-- jira: '25524' # autoaction-step-plugin
+  - jira: '25524'  # autoaction-step-plugin
 paths:
-- "io/jenkins/plugins/autoaction-step"
+  - "io/jenkins/plugins/autoaction-step"
 developers:
-- "vochithanh"
+  - "vochithanh"

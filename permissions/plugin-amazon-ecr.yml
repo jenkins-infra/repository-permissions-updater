@@ -2,12 +2,12 @@
 name: "amazon-ecr"
 github: "jenkinsci/amazon-ecr-plugin"
 issues:
-- jira: '21454' # amazon-ecr-plugin
+  - jira: '21454'  # amazon-ecr-plugin
 paths:
-- "com/cloudbees/jenkins/plugins/amazon-ecr"
+  - "com/cloudbees/jenkins/plugins/amazon-ecr"
 developers:
-- "aheritier"
-- "ifernandezcalvo"
-- "tgr"
+  - "aheritier"
+  - "ifernandezcalvo"
+  - "tgr"
 cd:
   enabled: true

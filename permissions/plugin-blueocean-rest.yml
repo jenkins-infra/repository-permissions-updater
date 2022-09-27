@@ -2,22 +2,22 @@
 name: "blueocean-rest"
 github: "jenkinsci/blueocean-plugin"
 issues:
-- jira: '21481' # blueocean-plugin
+  - jira: '21481'  # blueocean-plugin
 paths:
-- "io/jenkins/blueocean/blueocean-rest"
+  - "io/jenkins/blueocean/blueocean-rest"
 developers:
-- "michaelneale"
-- "vivek"
-- "kzantow"
-- "davidbees"
-- "richbg"
-- "carroll"
-- "dnusbaum"
-- "jtaboada"
-- "kshultz"
-- "bitwiseman"
-- "olamy"
-- "tscherler"
+  - "michaelneale"
+  - "vivek"
+  - "kzantow"
+  - "davidbees"
+  - "richbg"
+  - "carroll"
+  - "dnusbaum"
+  - "jtaboada"
+  - "kshultz"
+  - "bitwiseman"
+  - "olamy"
+  - "tscherler"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,11 +2,11 @@
 name: "azure-ad"
 github: &gh "jenkinsci/azure-ad-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/azure-ad"
+  - "org/jenkins-ci/plugins/azure-ad"
 cd:
   enabled: true
 developers:
-- "zooopx"
-- "timja"
+  - "zooopx"
+  - "timja"

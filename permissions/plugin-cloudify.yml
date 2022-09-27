@@ -2,13 +2,15 @@
 name: "cloudify"
 github: &gh "jenkinsci/cloudify-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/cloudify"
+  - "io/jenkins/plugins/cloudify"
 developers:
-- "isaac_s"
-- "cosmo_admin"
-# Disabled by oleg-nenashev on Jun 15, 2020. The user needs to re-login to Artifactory
-# Please see https://groups.google.com/forum/#!topic/jenkinsci-dev/3UvrCTflXGk for the context
-# - "earthmant"
-- "alexmolev"
+  - "isaac_s"
+  - "cosmo_admin"
+  # Disabled by oleg-nenashev on Jun 15, 2020.
+  # The user needs to re-login to Artifactory.
+  # Please see https://groups.google.com/forum/#!topic/jenkinsci-dev/3UvrCTflXGk
+  # for the context.
+  # - "earthmant"
+  - "alexmolev"

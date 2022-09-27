@@ -2,22 +2,22 @@
 name: "promoted-builds"
 github: "jenkinsci/promoted-builds-plugin"
 issues:
-- jira: '15567' # promoted-builds-plugin
+  - jira: '15567'  # promoted-builds-plugin
 paths:
-- "org/jenkins-ci/plugins/promoted-builds"
-- "org/jvnet/hudson/plugins/promoted-builds"
+  - "org/jenkins-ci/plugins/promoted-builds"
+  - "org/jvnet/hudson/plugins/promoted-builds"
 developers:
-- "batmat"
-- "carroll"
-- "dnozay"
-- "jglick"
-- "oleg_nenashev"
-- "wolfs"
-- "dnusbaum"
-- "teilo"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - "batmat"
+  - "carroll"
+  - "dnozay"
+  - "jglick"
+  - "oleg_nenashev"
+  - "wolfs"
+  - "dnusbaum"
+  - "teilo"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"
 security:
   contacts:
     jira: "cloudbees_security_members"

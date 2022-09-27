@@ -2,8 +2,8 @@
 name: "scm2job"
 github: "jenkinsci/scm2job-plugin"
 issues:
-- jira: '16923' # scm2job-plugin
+  - jira: '16923'  # scm2job-plugin
 paths:
-- "org/jenkins-ci/plugins/scm2job"
+  - "org/jenkins-ci/plugins/scm2job"
 developers:
-- "stefanbrausch"
+  - "stefanbrausch"

@@ -2,9 +2,9 @@
 name: "database-sqlite"
 github: "jenkinsci/database-sqlite-plugin"
 issues:
-- jira: '21732' # database-sqlite-plugin
+  - jira: '21732'  # database-sqlite-plugin
 paths:
-- "org/jenkins-ci/plugins/database-sqlite"
+  - "org/jenkins-ci/plugins/database-sqlite"
 developers:
-- "basil"
-- "jholusa"
+  - "basil"
+  - "jholusa"

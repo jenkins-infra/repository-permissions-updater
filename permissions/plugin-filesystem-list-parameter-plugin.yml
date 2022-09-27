@@ -2,8 +2,8 @@
 name: "filesystem-list-parameter-plugin"
 github: "jenkinsci/filesystem-list-parameter-plugin"
 issues:
-- jira: '18823' # filesystem-list-parameter-plugin
+  - jira: '18823'  # filesystem-list-parameter-plugin
 paths:
-- "aendter/jenkins/plugins/filesystem-list-parameter-plugin"
+  - "aendter/jenkins/plugins/filesystem-list-parameter-plugin"
 developers:
-- "aendter"
+  - "aendter"

@@ -2,7 +2,7 @@
 name: "fail-the-build-plugin"
 github: "jenkinsci/fail-the-build-plugin"
 issues:
-- jira: '15895' # fail-the-build-plugin
+  - jira: '15895'  # fail-the-build-plugin
 paths:
-- "org/jenkins-ci/plugins/fail-the-build-plugin"
+  - "org/jenkins-ci/plugins/fail-the-build-plugin"
 developers: []

@@ -4,8 +4,8 @@ github: &GH "jenkinsci/leanix-microservice-intelligence-plugin"
 cd:
   enabled: true
 paths:
-- "io/jenkins/plugins/leanix-microservice-intelligence"
+  - "io/jenkins/plugins/leanix-microservice-intelligence"
 developers:
-- "cwalpert_leanix"
+  - "cwalpert_leanix"
 issues:
   - github: *GH

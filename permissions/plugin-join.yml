@@ -2,10 +2,10 @@
 name: "join"
 github: "jenkinsci/join-plugin"
 issues:
-- jira: '15635' # join-plugin
+  - jira: '15635'  # join-plugin
 paths:
-- "org/jenkins-ci/plugins/join"
+  - "org/jenkins-ci/plugins/join"
 developers:
-- "mdonohue"
-# Not a maintainer, just tables-to-divs fixes
-- "oleg_nenashev"
+  - "mdonohue"
+  # Not a maintainer, just tables-to-divs fixes
+  - "oleg_nenashev"

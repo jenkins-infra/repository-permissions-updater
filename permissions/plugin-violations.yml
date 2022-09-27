@@ -2,10 +2,10 @@
 name: "violations"
 github: &gh "jenkinsci/violations-plugin"
 issues:
-- jira: '15497' # violations-plugin
-- github: *gh
+  - jira: '15497'  # violations-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/violations"
-- "org/jvnet/hudson/plugins/violations"
+  - "org/jenkins-ci/plugins/violations"
+  - "org/jvnet/hudson/plugins/violations"
 developers:
-- "tomasbjerre"
+  - "tomasbjerre"

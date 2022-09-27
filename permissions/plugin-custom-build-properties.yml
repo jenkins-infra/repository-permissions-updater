@@ -2,10 +2,10 @@
 name: "custom-build-properties"
 github: "jenkinsci/custom-build-properties-plugin"
 issues:
-- jira: '25720' # custom-build-properties-plugin
+  - jira: '25720'  # custom-build-properties-plugin
 paths:
-- "io/jenkins/plugins/custom-build-properties"
+  - "io/jenkins/plugins/custom-build-properties"
 developers:
-- "shasait"
+  - "shasait"
 cd:
   enabled: true

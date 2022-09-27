@@ -2,8 +2,8 @@
 name: "android-signing"
 github: "jenkinsci/android-signing-plugin"
 issues:
-- jira: '21959' # android-signing-plugin
+  - jira: '21959'  # android-signing-plugin
 paths:
-- "org/jenkins-ci/plugins/android-signing"
+  - "org/jenkins-ci/plugins/android-signing"
 developers:
-- "restjohn"
+  - "restjohn"

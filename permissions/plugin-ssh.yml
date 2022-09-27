@@ -2,10 +2,10 @@
 name: "ssh"
 github: "jenkinsci/ssh-plugin"
 issues:
-- jira: '16049' # ssh-plugin
+  - jira: '16049'  # ssh-plugin
 paths:
-- "org/jenkins-ci/plugins/ssh"
-- "org/jvnet/hudson/plugins/ssh"
+  - "org/jenkins-ci/plugins/ssh"
+  - "org/jvnet/hudson/plugins/ssh"
 developers:
-- "edmund_wagner"
-- "ljader"
+  - "edmund_wagner"
+  - "ljader"

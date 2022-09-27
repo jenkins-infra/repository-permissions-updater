@@ -2,8 +2,8 @@
 name: "reliza-integration"
 github: &GH "jenkinsci/reliza-integration-plugin"
 paths:
-- "io/reliza/reliza-integration"
+  - "io/reliza/reliza-integration"
 developers:
-- "reliza"
+  - "reliza"
 issues:
   - github: *GH

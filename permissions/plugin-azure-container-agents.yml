@@ -2,11 +2,11 @@
 name: "azure-container-agents"
 github: &gh "jenkinsci/azure-container-agents-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/azure-container-agents"
+  - "org/jenkins-ci/plugins/azure-container-agents"
 cd:
   enabled: true
 developers:
-- "zooopx"
-- "timja"
+  - "zooopx"
+  - "timja"

@@ -2,8 +2,8 @@
 name: "convertigo-mobile-platform"
 github: "jenkinsci/convertigo-mobile-platform-plugin"
 issues:
-- jira: '20837' # convertigo-mobile-platform-plugin
+  - jira: '20837'  # convertigo-mobile-platform-plugin
 paths:
-- "com/convertigo/jenkins/plugins/convertigo-mobile-platform"
+  - "com/convertigo/jenkins/plugins/convertigo-mobile-platform"
 developers:
-- "opicciotto"
+  - "opicciotto"

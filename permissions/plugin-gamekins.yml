@@ -2,8 +2,8 @@
 name: "gamekins"
 github: &GH "jenkinsci/gamekins-plugin"
 paths:
-- "org/gamekins/gamekins"
+  - "org/gamekins/gamekins"
 developers:
-- "straubin"
+  - "straubin"
 issues:
   - github: *GH

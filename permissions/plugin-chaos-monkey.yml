@@ -2,8 +2,8 @@
 name: "chaos-monkey"
 github: "jenkinsci/chaos-monkey-plugin"
 issues:
-- jira: '26221' # chaos-monkey-plugin
+  - jira: '26221'  # chaos-monkey-plugin
 paths:
-- "io/jenkins/plugins/chaos-monkey"
+  - "io/jenkins/plugins/chaos-monkey"
 developers:
-- "pierrebtz"
+  - "pierrebtz"

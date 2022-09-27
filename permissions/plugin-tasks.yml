@@ -2,7 +2,7 @@
 name: "tasks"
 github: "jenkinsci/tasks-plugin"
 issues:
-- jira: '15498' # tasks-plugin
+  - jira: '15498'  # tasks-plugin
 paths:
-- "org/jvnet/hudson/plugins/tasks"
+  - "org/jvnet/hudson/plugins/tasks"
 developers: []

@@ -2,7 +2,7 @@
 name: "search-all-results-plugin"
 github: "jenkinsci/search-all-results-plugin"
 issues:
-- jira: '17585' # search-all-results-plugin
+  - jira: '17585'  # search-all-results-plugin
 paths:
-- "org/jenkins-ci/plugins/search-all-results-plugin"
+  - "org/jenkins-ci/plugins/search-all-results-plugin"
 developers: []

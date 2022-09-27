@@ -2,8 +2,8 @@
 name: "testein"
 github: "jenkinsci/testein-plugin"
 issues:
-- jira: '23165' # testein-plugin
+  - jira: '23165'  # testein-plugin
 paths:
-- "com/testein/testein"
+  - "com/testein/testein"
 developers:
-- "testein"
+  - "testein"

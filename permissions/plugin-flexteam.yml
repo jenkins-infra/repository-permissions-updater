@@ -2,7 +2,7 @@
 name: "flexteam"
 github: "jenkinsci/flexteam-plugin"
 issues:
-- jira: '16127' # flexteam-plugin
+  - jira: '16127'  # flexteam-plugin
 paths:
-- "org/jvnet/hudson/plugins/flexteam"
+  - "org/jvnet/hudson/plugins/flexteam"
 developers: []

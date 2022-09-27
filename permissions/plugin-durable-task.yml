@@ -2,24 +2,24 @@
 name: "durable-task"
 github: "jenkinsci/durable-task-plugin"
 issues:
-- jira: '18622' # durable-task-plugin
+  - jira: '18622'  # durable-task-plugin
 paths:
-- "org/jenkins-ci/plugins/durable-task"
+  - "org/jenkins-ci/plugins/durable-task"
 developers:
-- "jglick"
-- "kohsuke"
-- "svanoort"
-- "abayer"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
-- "teilo"
-- "alecharp"
-- "batmat"
-- "olamy"
-- "mramonleon"
+  - "jglick"
+  - "kohsuke"
+  - "svanoort"
+  - "abayer"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "teilo"
+  - "alecharp"
+  - "batmat"
+  - "olamy"
+  - "mramonleon"
 security:
   contacts:
     jira: "cloudbees_security_members"

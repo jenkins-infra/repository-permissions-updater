@@ -2,7 +2,7 @@
 name: "vertx"
 github: &gh "jenkinsci/vertx-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/bravo5/jenkins/plugins/vertx"
+  - "org/bravo5/jenkins/plugins/vertx"
 developers: []

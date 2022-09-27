@@ -2,8 +2,8 @@
 name: "global-slack-notifier"
 github: "jenkinsci/global-slack-notifier-plugin"
 issues:
-- jira: '23138' # global-slack-notifier-plugin
+  - jira: '23138'  # global-slack-notifier-plugin
 paths:
-- "org/jenkins-ci/plugins/global-slack-notifier"
+  - "org/jenkins-ci/plugins/global-slack-notifier"
 developers:
-- "marimoiro"
+  - "marimoiro"

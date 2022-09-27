@@ -2,9 +2,9 @@
 name: "dependency-track"
 github: &gh "jenkinsci/dependency-track-plugin"
 issues:
-- jira: '24428' # dependency-track-plugin
-- github: *gh
+  - jira: '24428'  # dependency-track-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/dependency-track"
+  - "org/jenkins-ci/plugins/dependency-track"
 developers:
-- "sephirothj"
+  - "sephirothj"

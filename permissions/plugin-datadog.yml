@@ -2,9 +2,9 @@
 name: "datadog"
 github: &gh "jenkinsci/datadog-plugin"
 issues:
-- github: *gh
-- jira: '20826' # datadog-plugin
+  - github: *gh
+  - jira: '20826'  # datadog-plugin
 paths:
-- "org/datadog/jenkins/plugins/datadog"
+  - "org/datadog/jenkins/plugins/datadog"
 developers:
-- "datadog"
+  - "datadog"

@@ -2,7 +2,7 @@
 name: "jboss"
 github: "jenkinsci/jboss-plugin"
 issues:
-- jira: '15686' # jboss-plugin
+  - jira: '15686'  # jboss-plugin
 paths:
-- "org/jenkins-ci/plugins/jboss"
+  - "org/jenkins-ci/plugins/jboss"
 developers: []

@@ -2,7 +2,7 @@
 name: "rad-builder"
 github: "jenkinsci/rad-builder-plugin"
 issues:
-- jira: '15747' # rad-builder-plugin
+  - jira: '15747'  # rad-builder-plugin
 paths:
-- "org/jvnet/hudson/plugins/rad-builder"
+  - "org/jvnet/hudson/plugins/rad-builder"
 developers: []

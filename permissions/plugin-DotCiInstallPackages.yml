@@ -1,6 +1,6 @@
 ---
 name: "DotCiInstallPackages"
 paths:
-- "com/groupon/jenkins/DotCiInstallPackages"
+  - "com/groupon/jenkins/DotCiInstallPackages"
 developers:
-- "surya548"
+  - "surya548"

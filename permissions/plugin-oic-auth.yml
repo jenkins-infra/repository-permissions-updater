@@ -2,10 +2,10 @@
 name: "oic-auth"
 github: &gh "jenkinsci/oic-auth-plugin"
 issues:
-- github: *gh
-- jira: '21661' # oic-auth-plugin
+  - github: *gh
+  - jira: '21661'  # oic-auth-plugin
 paths:
-- "org/jenkins-ci/plugins/oic-auth"
+  - "org/jenkins-ci/plugins/oic-auth"
 developers:
-- "mbischoff"
-- "surenpi"
+  - "mbischoff"
+  - "surenpi"

@@ -2,7 +2,7 @@
 name: "tibco-builder"
 github: "jenkinsci/tibco-builder-plugin"
 issues:
-- jira: '18154' # tibco-builder-plugin
+  - jira: '18154'  # tibco-builder-plugin
 paths:
-- "org/jenkins-ci/plugins/tibco-builder"
+  - "org/jenkins-ci/plugins/tibco-builder"
 developers: []

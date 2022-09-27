@@ -2,8 +2,8 @@
 name: "imagecomparison"
 github: &gh "jenkinsci/imagecomparison-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/imagecomparison"
+  - "org/jenkins-ci/plugins/imagecomparison"
 developers:
-- "tbaum"
+  - "tbaum"

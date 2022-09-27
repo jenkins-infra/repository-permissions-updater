@@ -2,11 +2,11 @@
 name: "echarts-api"
 github: "jenkinsci/echarts-api-plugin"
 issues:
-- jira: '26331' # echarts-api-plugin
+  - jira: '26331'  # echarts-api-plugin
 paths:
-- "io/jenkins/plugins/echarts-api"
+  - "io/jenkins/plugins/echarts-api"
 developers:
-- "drulli"
+  - "drulli"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,9 +2,9 @@
 name: "preflight-integration"
 github: "jenkinsci/preflight-integration-plugin"
 issues:
-- jira: '27233' # preflight-integration-plugin
+  - jira: '27233'  # preflight-integration-plugin
 paths:
-- "io/jenkins/plugins/preflight-integration"
+  - "io/jenkins/plugins/preflight-integration"
 developers:
-- "moosebay"
-- "huseyin"
+  - "moosebay"
+  - "huseyin"

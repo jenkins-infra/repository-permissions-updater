@@ -2,21 +2,21 @@
 name: "google-storage-plugin"
 github: &gh "jenkinsci/google-storage-plugin"
 issues:
-- github: *gh
-- jira: '18738' # google-storage-plugin
+  - github: *gh
+  - jira: '18738'  # google-storage-plugin
 paths:
-- "org/jenkins-ci/plugins/google-storage-plugin"
+  - "org/jenkins-ci/plugins/google-storage-plugin"
 developers:
-- "craigbarber"
-- "evanbrown"
-- "stephenshank"
-- "donmccasland"
-- "tarahernandez"
-- "vishalapatel"
-- "alecharp"
-- "batmat"
-- "teilo"
-- "rsandell"
+  - "craigbarber"
+  - "evanbrown"
+  - "stephenshank"
+  - "donmccasland"
+  - "tarahernandez"
+  - "vishalapatel"
+  - "alecharp"
+  - "batmat"
+  - "teilo"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

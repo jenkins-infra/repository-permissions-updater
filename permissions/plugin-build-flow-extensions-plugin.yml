@@ -4,6 +4,6 @@ github: "jenkinsci/buildflow-extensions-plugin"
 issues:
   - jira: '19325'
 paths:
-- "org/jenkins-ci/plugins/build-flow-extensions-plugin"
+  - "org/jenkins-ci/plugins/build-flow-extensions-plugin"
 developers:
-- "teilo"
+  - "teilo"

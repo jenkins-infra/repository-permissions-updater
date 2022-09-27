@@ -2,6 +2,6 @@
 name: "build-monitor-plugin"
 github: "jan-molak/jenkins-build-monitor-plugin"
 paths:
-- "org/jenkins-ci/plugins/build-monitor-plugin"
+  - "org/jenkins-ci/plugins/build-monitor-plugin"
 developers:
-- "janmolak"
+  - "janmolak"

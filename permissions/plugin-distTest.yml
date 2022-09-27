@@ -2,7 +2,7 @@
 name: "distTest"
 github: "jenkinsci/distTest-plugin"
 issues:
-- jira: '15990' # disttest-plugin
+  - jira: '15990'  # disttest-plugin
 paths:
-- "org/jvnet/hudson/plugins/distTest"
+  - "org/jvnet/hudson/plugins/distTest"
 developers: []

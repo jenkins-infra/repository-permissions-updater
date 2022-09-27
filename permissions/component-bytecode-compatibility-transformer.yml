@@ -2,8 +2,8 @@
 name: "bytecode-compatibility-transformer"
 github: "jenkinsci/bytecode-compatibility-transformer"
 paths:
-- "org/jenkins-ci/bytecode-compatibility-transformer"
+  - "org/jenkins-ci/bytecode-compatibility-transformer"
 developers:
-- "batmat"
-- "oleg_nenashev"
-- "timja"
+  - "batmat"
+  - "oleg_nenashev"
+  - "timja"

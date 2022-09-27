@@ -2,9 +2,9 @@
 name: "chatter-notifier"
 github: "jenkinsci/chatter-notifier-plugin"
 issues:
-- jira: '20821' # chatter-notifier-plugin
+  - jira: '20821'  # chatter-notifier-plugin
 paths:
-- "org/jenkins-ci/plugins/chatter-notifier"
+  - "org/jenkins-ci/plugins/chatter-notifier"
 developers:
-- "sfell"
-- "justinharringa"
+  - "sfell"
+  - "justinharringa"

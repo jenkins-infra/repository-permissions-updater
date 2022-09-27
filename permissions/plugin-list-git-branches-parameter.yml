@@ -2,8 +2,8 @@
 name: "list-git-branches-parameter"
 github: "jenkinsci/list-git-branches-parameter-plugin"
 issues:
-- jira: '24641' # list-git-branches-parameter-plugin
+  - jira: '24641'  # list-git-branches-parameter-plugin
 paths:
-- "org/jenkins-ci/plugins/list-git-branches-parameter"
+  - "org/jenkins-ci/plugins/list-git-branches-parameter"
 developers:
-- "huangsuoyuan"
+  - "huangsuoyuan"

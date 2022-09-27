@@ -2,15 +2,15 @@
 name: "cvs"
 github: "jenkinsci/cvs-plugin"
 issues:
-- jira: '15486' # cvs-plugin
+  - jira: '15486'  # cvs-plugin
 paths:
-- "org/jenkins-ci/plugins/cvs"
-- "org/jvnet/hudson/plugins/cvs"
+  - "org/jenkins-ci/plugins/cvs"
+  - "org/jvnet/hudson/plugins/cvs"
 developers:
-- "mc1arke"
-- "kohsuke"
-- "jglick"
-- "mrmoritz01"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - "mc1arke"
+  - "kohsuke"
+  - "jglick"
+  - "mrmoritz01"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"

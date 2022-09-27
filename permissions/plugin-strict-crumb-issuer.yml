@@ -2,8 +2,8 @@
 name: "strict-crumb-issuer"
 github: "jenkinsci/strict-crumb-issuer-plugin"
 issues:
-- jira: '25631' # strict-crumb-issuer-plugin
+  - jira: '25631'  # strict-crumb-issuer-plugin
 paths:
-- "org/jenkins-ci/plugins/strict-crumb-issuer"
+  - "org/jenkins-ci/plugins/strict-crumb-issuer"
 developers:
-- "@security"
+  - "@security"

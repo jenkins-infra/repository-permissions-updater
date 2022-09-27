@@ -2,9 +2,9 @@
 name: "external-workspace-manager"
 github: "jenkinsci/external-workspace-manager-plugin"
 issues:
-- jira: '21473' # external-workspace-manager-plugin
+  - jira: '21473'  # external-workspace-manager-plugin
 paths:
-- "org/jenkins-ci/plugins/external-workspace-manager"
+  - "org/jenkins-ci/plugins/external-workspace-manager"
 developers:
-- "alexsomai"
-- "oleg_nenashev"
+  - "alexsomai"
+  - "oleg_nenashev"

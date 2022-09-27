@@ -2,8 +2,8 @@
 name: "loadimpact-plugin"
 github: "jenkinsci/loadimpact-plugin"
 issues:
-- jira: '19225' # loadimpact-plugin
+  - jira: '19225'  # loadimpact-plugin
 paths:
-- "com/loadimpact/loadimpact-plugin"
+  - "com/loadimpact/loadimpact-plugin"
 developers:
-- "ragnarlonn"
+  - "ragnarlonn"

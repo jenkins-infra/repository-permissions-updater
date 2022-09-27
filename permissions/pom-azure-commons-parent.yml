@@ -1,7 +1,7 @@
 ---
 name: "azure-commons-parent"
 paths:
-- "org/jenkins-ci/plugins/azure-commons-parent"
+  - "org/jenkins-ci/plugins/azure-commons-parent"
 developers:
-- "zooopx"
-- "timja"
+  - "zooopx"
+  - "timja"

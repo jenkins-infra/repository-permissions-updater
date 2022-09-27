@@ -2,11 +2,11 @@
 name: "pam-auth"
 github: "jenkinsci/pam-auth-plugin"
 issues:
-- jira: '17502' # pam-auth-plugin
+  - jira: '17502'  # pam-auth-plugin
 paths:
-- "org/jenkins-ci/plugins/pam-auth"
+  - "org/jenkins-ci/plugins/pam-auth"
 developers:
-- "recena"
-- "jvz"
-- "@security"
-- "@cloudbees-developers"
+  - "recena"
+  - "jvz"
+  - "@security"
+  - "@cloudbees-developers"

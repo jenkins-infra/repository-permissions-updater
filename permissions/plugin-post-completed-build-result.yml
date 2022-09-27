@@ -2,7 +2,7 @@
 name: "post-completed-build-result"
 github: "jenkinsci/post-completed-build-result-plugin"
 issues:
-- jira: '18150' # post-completed-build-result-plugin
+  - jira: '18150'  # post-completed-build-result-plugin
 paths:
-- "org/terracotta/jenkins/plugins/post-completed-build-result"
+  - "org/terracotta/jenkins/plugins/post-completed-build-result"
 developers: []

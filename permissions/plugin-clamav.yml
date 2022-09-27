@@ -2,8 +2,8 @@
 name: "clamav"
 github: "jenkinsci/clamav-plugin"
 issues:
-- jira: '15950' # clamav-plugin
+  - jira: '15950'  # clamav-plugin
 paths:
-- "org/jenkins-ci/plugins/clamav"
+  - "org/jenkins-ci/plugins/clamav"
 developers:
-- "sogabe"
+  - "sogabe"

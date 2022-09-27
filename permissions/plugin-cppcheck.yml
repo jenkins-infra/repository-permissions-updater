@@ -2,10 +2,10 @@
 name: "cppcheck"
 github: "jenkinsci/cppcheck-plugin"
 issues:
-- jira: '15693' # cppcheck-plugin
+  - jira: '15693'  # cppcheck-plugin
 paths:
-- "com/thalesgroup/jenkins-ci/plugins/cppcheck"
-- "org/jenkins-ci/plugins/cppcheck"
+  - "com/thalesgroup/jenkins-ci/plugins/cppcheck"
+  - "org/jenkins-ci/plugins/cppcheck"
 developers:
-- "mixalturek"
-- "marcosteffan"
+  - "mixalturek"
+  - "marcosteffan"

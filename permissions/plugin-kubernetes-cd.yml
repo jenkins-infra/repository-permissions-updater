@@ -2,9 +2,9 @@
 name: "kubernetes-cd"
 github: &gh "jenkinsci/kubernetes-cd-plugin"
 issues:
-- github: *gh
-- jira: '23151' # kubernetes-cd-plugin
+  - github: *gh
+  - jira: '23151'  # kubernetes-cd-plugin
 paths:
-- "org/jenkins-ci/plugins/kubernetes-cd"
+  - "org/jenkins-ci/plugins/kubernetes-cd"
 developers:
-- "zooopx"
+  - "zooopx"

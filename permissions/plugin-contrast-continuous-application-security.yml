@@ -2,9 +2,9 @@
 name: "contrast-continuous-application-security"
 github: &gh "jenkinsci/contrast-continuous-application-security-plugin"
 issues:
-- jira: '21664' # contrast-continuous-application-security-plugin
-- github: *gh
+  - jira: '21664'  # contrast-continuous-application-security-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/contrast-continuous-application-security"
+  - "org/jenkins-ci/plugins/contrast-continuous-application-security"
 developers:
-- "bryanateoan"
+  - "bryanateoan"

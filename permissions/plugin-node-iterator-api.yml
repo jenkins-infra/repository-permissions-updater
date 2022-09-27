@@ -2,17 +2,17 @@
 name: "node-iterator-api"
 github: "jenkinsci/node-iterator-api-plugin"
 issues:
-- jira: '18151' # node-iterator-api-plugin
+  - jira: '18151'  # node-iterator-api-plugin
 paths:
-- "org/jenkins-ci/plugins/node-iterator-api"
+  - "org/jenkins-ci/plugins/node-iterator-api"
 developers:
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
-- "teilo"
+  - "alecharp"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
+  - "teilo"
 security:
   contacts:
     jira: "cloudbees_security_members"

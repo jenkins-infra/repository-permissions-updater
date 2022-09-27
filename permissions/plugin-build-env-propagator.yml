@@ -2,8 +2,8 @@
 name: "build-env-propagator"
 github: "jenkinsci/build-env-propagator-plugin"
 issues:
-- jira: '19226' # build-env-propagator-plugin
+  - jira: '19226'  # build-env-propagator-plugin
 paths:
-- "org/jenkins-ci/plugins/build-env-propagator"
+  - "org/jenkins-ci/plugins/build-env-propagator"
 developers:
-- "vivek"
+  - "vivek"

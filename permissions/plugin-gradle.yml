@@ -2,13 +2,13 @@
 name: "gradle"
 github: "jenkinsci/gradle-plugin"
 issues:
-- jira: '15547' # gradle-plugin
+  - jira: '15547'  # gradle-plugin
 paths:
-- "com/zenika/jenkins-ci/plugins/gradle"
-- "org/jenkins-ci/plugins/gradle"
+  - "com/zenika/jenkins-ci/plugins/gradle"
+  - "org/jenkins-ci/plugins/gradle"
 developers:
-- "gbois"
-- "wolfs"
+  - "gbois"
+  - "wolfs"
 security:
   contacts:
     jira: "cloudbees_security_members"

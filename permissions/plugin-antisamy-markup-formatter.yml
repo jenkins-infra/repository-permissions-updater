@@ -2,18 +2,18 @@
 name: "antisamy-markup-formatter"
 github: "jenkinsci/antisamy-markup-formatter-plugin"
 issues:
-- jira: '18424' # antisamy-markup-formatter-plugin
+  - jira: '18424'  # antisamy-markup-formatter-plugin
 paths:
-- "org/jenkins-ci/plugins/antisamy-markup-formatter"
+  - "org/jenkins-ci/plugins/antisamy-markup-formatter"
 developers:
-- "jglick"
-- "schristou"
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
+  - "jglick"
+  - "schristou"
+  - "alecharp"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

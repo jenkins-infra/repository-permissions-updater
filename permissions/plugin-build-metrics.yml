@@ -2,9 +2,9 @@
 name: "build-metrics"
 github: "jenkinsci/build-metrics-plugin"
 issues:
-- jira: '17545' # build-metrics-plugin
+  - jira: '17545'  # build-metrics-plugin
 paths:
-- "org/jenkins-ci/plugins/build-metrics"
+  - "org/jenkins-ci/plugins/build-metrics"
 developers:
-- "ydubreuil"
-- "px3"
+  - "ydubreuil"
+  - "px3"

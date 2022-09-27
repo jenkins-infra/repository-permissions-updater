@@ -2,11 +2,11 @@
 name: "throttle-concurrents"
 github: "jenkinsci/throttle-concurrent-builds-plugin"
 issues:
-- jira: '15745' # throttle-concurrent-builds-plugin
+  - jira: '15745'  # throttle-concurrent-builds-plugin
 paths:
-- "org/jenkins-ci/plugins/throttle-concurrents"
-- "org/jvnet/hudson/plugins/throttle-concurrents"
+  - "org/jenkins-ci/plugins/throttle-concurrents"
+  - "org/jvnet/hudson/plugins/throttle-concurrents"
 developers:
-- "abayer"
-- "basil"
-- "oleg_nenashev"
+  - "abayer"
+  - "basil"
+  - "oleg_nenashev"

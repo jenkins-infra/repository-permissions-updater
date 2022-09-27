@@ -4,11 +4,11 @@ github: "jenkinsci/pipeline-maven-plugin"
 cd:
   enabled: true
 issues:
-- jira: '21669' # pipeline-maven-plugin
+  - jira: '21669'  # pipeline-maven-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-maven"
+  - "org/jenkins-ci/plugins/pipeline-maven"
 developers:
-- "alobato"
-- "cleclerc"
-- "aheritier"
-- "bguerin"
+  - "alobato"
+  - "cleclerc"
+  - "aheritier"
+  - "bguerin"

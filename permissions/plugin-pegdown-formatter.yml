@@ -2,7 +2,7 @@
 name: "pegdown-formatter"
 github: "jenkinsci/pegdown-formatter-plugin"
 issues:
-- jira: '15899' # pegdown-formatter-plugin
+  - jira: '15899'  # pegdown-formatter-plugin
 paths:
-- "org/jenkins-ci/plugins/pegdown-formatter"
+  - "org/jenkins-ci/plugins/pegdown-formatter"
 developers: []

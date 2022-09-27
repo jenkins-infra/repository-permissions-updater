@@ -2,9 +2,9 @@
 name: "queue-cleanup"
 github: "jenkinsci/queue-cleanup-plugin"
 issues:
-- jira: '19323' # queue-cleanup-plugin
+  - jira: '19323'  # queue-cleanup-plugin
 paths:
-- "org/jenkins-ci/plugins/queue-cleanup"
+  - "org/jenkins-ci/plugins/queue-cleanup"
 developers:
-- "olivergondza"
-- "runzexia"
+  - "olivergondza"
+  - "runzexia"

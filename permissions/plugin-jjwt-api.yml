@@ -4,12 +4,12 @@ github: &gh "jenkinsci/jjwt-api-plugin"
 cd:
   enabled: true
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/jjwt-api"
+  - "io/jenkins/plugins/jjwt-api"
 developers:
-- "jglick"
-- "bitwiseman"
+  - "jglick"
+  - "bitwiseman"
 security:
   contacts:
     jira: "cloudbees_security_members"

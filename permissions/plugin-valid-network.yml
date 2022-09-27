@@ -2,8 +2,8 @@
 name: "valid-network"
 github: "jenkinsci/valid-network-plugin"
 issues:
-- jira: '27621' # valid-network-plugin
+  - jira: '27621'  # valid-network-plugin
 paths:
-- "io/jenkins/plugins/valid-network"
+  - "io/jenkins/plugins/valid-network"
 developers:
-- "dima"
+  - "dima"

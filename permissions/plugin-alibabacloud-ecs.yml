@@ -2,7 +2,7 @@
 name: "alibabacloud-ecs"
 github: &gh "jenkinsci/alibabacloud-ecs-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
   - "com/alibabacloud/jenkins/alibabacloud-ecs"
 developers:

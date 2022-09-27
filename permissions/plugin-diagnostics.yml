@@ -2,10 +2,10 @@
 name: "diagnostics"
 github: "jenkinsci/diagnostics-plugin"
 issues:
-- jira: '23220' # diagnostics-plugin
+  - jira: '23220'  # diagnostics-plugin
 paths:
-- "org/jenkins-ci/plugins/diagnostics"
+  - "org/jenkins-ci/plugins/diagnostics"
 developers:
-- "alecharp"
-- "aheritier"
-- "escoem"
+  - "alecharp"
+  - "aheritier"
+  - "escoem"

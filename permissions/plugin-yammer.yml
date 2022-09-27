@@ -2,7 +2,7 @@
 name: "yammer"
 github: &gh "jenkinsci/yammer-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/ruby-plugins/yammer"
+  - "org/jenkins-ci/ruby-plugins/yammer"
 developers: []

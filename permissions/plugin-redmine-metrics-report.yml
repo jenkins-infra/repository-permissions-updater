@@ -4,6 +4,6 @@ github: &GH "jenkinsci/redmine-metrics-report-plugin"
 issues:
   - github: *GH
 paths:
-- "io/jenkins/plugins/redmine-metrics-report"
+  - "io/jenkins/plugins/redmine-metrics-report"
 developers:
-- "bestoak"
+  - "bestoak"

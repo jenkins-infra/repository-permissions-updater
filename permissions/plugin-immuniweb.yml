@@ -2,9 +2,9 @@
 name: "immuniweb"
 github: &GH "jenkinsci/immuniweb-plugin"
 paths:
-- "io/jenkins/plugins/immuniweb"
+  - "io/jenkins/plugins/immuniweb"
 developers:
-- "immuniweb"
+  - "immuniweb"
 issues:
   - github: *GH
 cd:

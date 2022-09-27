@@ -2,8 +2,8 @@
 name: "aws-lambda"
 github: "jenkinsci/aws-lambda-plugin"
 issues:
-- jira: '20322' # aws-lambda-plugin
+  - jira: '20322'  # aws-lambda-plugin
 paths:
-- "org/jenkins-ci/plugins/aws-lambda"
+  - "org/jenkins-ci/plugins/aws-lambda"
 developers:
-- "cast"
+  - "cast"
