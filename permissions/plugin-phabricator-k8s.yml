@@ -7,4 +7,3 @@ paths:
 - "io/jenkins/plugins/phabricator-k8s"
 developers:
 - "andresrc"
-

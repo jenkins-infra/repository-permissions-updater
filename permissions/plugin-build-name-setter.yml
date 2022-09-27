@@ -1,4 +1,3 @@
-
 ---
 name: "build-name-setter"
 github: &gh "jenkinsci/build-name-setter-plugin"
@@ -9,4 +8,3 @@ paths:
 - "org/jenkins-ci/plugins/build-name-setter"
 developers:
 - "dszczepanik"
-
