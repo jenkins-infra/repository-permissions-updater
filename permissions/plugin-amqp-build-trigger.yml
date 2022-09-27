@@ -1,3 +1,4 @@
+---
 name: "amqp-build-trigger"
 github: "jenkinsci/amqp-build-trigger-plugin"
 issues:

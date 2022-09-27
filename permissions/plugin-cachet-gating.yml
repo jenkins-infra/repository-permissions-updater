@@ -1,4 +1,4 @@
-
+---
 name: "cachet-gating"
 github: &gh "jenkinsci/cachet-gating-plugin"
 issues:
