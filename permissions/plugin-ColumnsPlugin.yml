@@ -1,5 +1,5 @@
 ---
 name: "ColumnsPlugin"
 paths:
-- "org/jenkins-ci/plugins/ColumnsPlugin"
+  - "org/jenkins-ci/plugins/ColumnsPlugin"
 developers: []

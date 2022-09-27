@@ -2,9 +2,9 @@
 name: "upload-build-to-sofy"
 github: &GH "jenkinsci/upload-build-to-sofy-plugin"
 paths:
-- "io/jenkins/plugins/upload-build-to-sofy"
+  - "io/jenkins/plugins/upload-build-to-sofy"
 developers:
-- "sofydevelopers"
+  - "sofydevelopers"
 cd:
   enabled: true
 issues:

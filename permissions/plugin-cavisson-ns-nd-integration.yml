@@ -4,6 +4,6 @@ github: "jenkinsci/cavisson-ns-nd-integration-plugin"
 issues:
   - jira: '26621'
 paths:
-- "io/jenkins/plugins/cavisson-ns-nd-integration"
+  - "io/jenkins/plugins/cavisson-ns-nd-integration"
 developers:
-- "cavissonsystems"
+  - "cavissonsystems"

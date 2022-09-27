@@ -45,9 +45,9 @@ Example file:
 name: "p4"
 github: "jenkinsci/p4-plugin"
 paths:
-- "org/jenkins-ci/plugins/p4"
+  - "org/jenkins-ci/plugins/p4"
 developers:
-- "p4paul"
+  - "p4paul"
 ```
 
 * `p4` (lines 2 and 5): `artifactId`

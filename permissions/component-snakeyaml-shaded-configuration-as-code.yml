@@ -2,12 +2,12 @@
 name: "snakeyaml"
 github: "jenkinsci/configuration-as-code-plugin"
 paths:
-- "io/jenkins/configuration-as-code/snakeyaml"
+  - "io/jenkins/configuration-as-code/snakeyaml"
 developers:
-- "praqma"
-- "jetersen"
-- "oleg_nenashev"
-- "timja"
+  - "praqma"
+  - "jetersen"
+  - "oleg_nenashev"
+  - "timja"
 security:
   contacts:
     jira: "jetersen"

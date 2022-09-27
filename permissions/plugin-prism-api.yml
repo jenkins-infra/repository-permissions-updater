@@ -2,9 +2,9 @@
 name: "prism-api"
 github: &GH "jenkinsci/prism-api-plugin"
 paths:
-- "io/jenkins/plugins/prism-api"
+  - "io/jenkins/plugins/prism-api"
 developers:
-- "drulli"
+  - "drulli"
 issues:
   - jira: 28824
 security:

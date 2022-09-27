@@ -2,6 +2,6 @@
 name: "testflo-for-jira-test-management-automation"
 github: "jenkinsci/testflo-for-jira-test-management-automation-plugin"
 paths:
-- "io/jenkins/plugins/testflo-for-jira-test-management-automation"
+  - "io/jenkins/plugins/testflo-for-jira-test-management-automation"
 developers:
-- "deviniti"
+  - "deviniti"

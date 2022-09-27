@@ -2,8 +2,8 @@
 name: "commons-lang-api"
 github: &GH "jenkinsci/commons-lang-api-plugin"
 paths:
-- "io/jenkins/plugins/commons-lang-api"
+  - "io/jenkins/plugins/commons-lang-api"
 developers:
-- "nhojpatrick"
+  - "nhojpatrick"
 issues:
   - github: *GH

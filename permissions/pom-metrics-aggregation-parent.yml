@@ -2,6 +2,6 @@
 name: "metrics-aggregation-parent"
 github: "jenkinsci/metrics-aggregation-plugin"
 paths:
-- "io/jenkins/plugins/metrics-aggregation-parent"
+  - "io/jenkins/plugins/metrics-aggregation-parent"
 developers:
-- "andipabst"
+  - "andipabst"

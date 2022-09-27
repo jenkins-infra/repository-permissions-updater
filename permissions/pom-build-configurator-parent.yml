@@ -2,6 +2,6 @@
 name: "build-configurator-parent"
 github: "jenkinsci/build-configurator-plugin"
 paths:
-- "com/amcbridge/build-configurator-parent"
+  - "com/amcbridge/build-configurator-parent"
 developers:
-- "amcbridgedevteam"
+  - "amcbridgedevteam"

@@ -2,8 +2,8 @@
 name: "skenai"
 github: &GH "jenkinsci/skenai-plugin"
 paths:
-- "ai/sken/jenkins/plugins/skenai"
+  - "ai/sken/jenkins/plugins/skenai"
 developers:
-- "alfian_sken"
+  - "alfian_sken"
 issues:
   - github: *GH

@@ -4,9 +4,9 @@ github: &GH "jenkinsci/google-source-plugin"
 issues:
   - github: *GH
 paths:
-- "org/jenkins-ci/plugins/google-source-plugin"
+  - "org/jenkins-ci/plugins/google-source-plugin"
 developers:
-- "astroilov"
-- "gunan"
-- "tcnghia"
-- "viglesias"
+  - "astroilov"
+  - "gunan"
+  - "tcnghia"
+  - "viglesias"

@@ -4,6 +4,6 @@ github: &GH "jenkinsci/s3explorer-plugin"
 issues:
   - github: *GH
 paths:
-- "io/jenkins/plugins/s3explorer"
+  - "io/jenkins/plugins/s3explorer"
 developers:
-- "ngocson2vn"
+  - "ngocson2vn"

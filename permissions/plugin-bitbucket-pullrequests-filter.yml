@@ -2,8 +2,8 @@
 name: "bitbucket-pullrequests-filter"
 github: &GH "jenkinsci/bitbucket-pullrequests-filter-plugin"
 paths:
-- "io/jenkins/plugins/bitbucket-pullrequests-filter"
+  - "io/jenkins/plugins/bitbucket-pullrequests-filter"
 developers:
-- "nuh"
+  - "nuh"
 issues:
   - github: *GH

@@ -2,10 +2,10 @@
 name: "lightstep-incident-response"
 github: &GH "jenkinsci/lightstep-incident-response-plugin"
 paths:
-- "lightstep-plugin/lightstep-incident-response"
+  - "lightstep-plugin/lightstep-incident-response"
 developers:
-- "priyajagyasi"
-- "kirannunnasnow"
+  - "priyajagyasi"
+  - "kirannunnasnow"
 issues:
   - jira: 28922
 cd:

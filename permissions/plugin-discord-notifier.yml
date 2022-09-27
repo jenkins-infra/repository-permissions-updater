@@ -2,10 +2,10 @@
 name: "discord-notifier"
 github: &gh "jenkinsci/discord-notifier-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "nz/co/jammehcow/discord-notifier"
+  - "nz/co/jammehcow/discord-notifier"
 developers:
-- "kocproz"
+  - "kocproz"
 cd:
   enabled: true

@@ -2,8 +2,8 @@
 name: "payload"
 github: "jenkinsci/jenkinsfile-runner"
 paths:
-- "io/jenkins/jenkinsfile-runner/payload"
+  - "io/jenkins/jenkinsfile-runner/payload"
 developers:
-- "oleg_nenashev"
-- "egutierrez"
-- "fcojfernandez"
+  - "oleg_nenashev"
+  - "egutierrez"
+  - "fcojfernandez"

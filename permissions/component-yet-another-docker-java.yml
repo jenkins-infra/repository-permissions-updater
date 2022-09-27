@@ -1,6 +1,6 @@
 ---
 name: "yet-another-docker-java"
 paths:
-- "com/github/kostyasha/yet-another-docker/yet-another-docker-java"
+  - "com/github/kostyasha/yet-another-docker/yet-another-docker-java"
 developers:
-- "integer"
+  - "integer"

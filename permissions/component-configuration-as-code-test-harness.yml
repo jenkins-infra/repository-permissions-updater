@@ -2,12 +2,12 @@
 name: "test-harness"
 github: "jenkinsci/configuration-as-code-plugin"
 paths:
-- "io/jenkins/configuration-as-code/test-harness"
+  - "io/jenkins/configuration-as-code/test-harness"
 developers:
-- "praqma"
-- "jetersen"
-- "oleg_nenashev"
-- "timja"
+  - "praqma"
+  - "jetersen"
+  - "oleg_nenashev"
+  - "timja"
 cd:
   enabled: true
 security:

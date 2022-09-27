@@ -1,6 +1,6 @@
 ---
 name: "rubymotion"
 paths:
-- "org/jenkins-ci/ruby-plugins/rubymotion"
+  - "org/jenkins-ci/ruby-plugins/rubymotion"
 developers:
-- "watson1978"
+  - "watson1978"

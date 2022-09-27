@@ -2,6 +2,6 @@
 name: "scm-filter-jira-validator-parent"
 github: "jenkinsci/scm-filter-jira-validator-plugin"
 paths:
-- "org/jenkins-ci/plugins/scm-filter-jira-validator-parent"
+  - "org/jenkins-ci/plugins/scm-filter-jira-validator-parent"
 developers:
-- "askalski85"
+  - "askalski85"

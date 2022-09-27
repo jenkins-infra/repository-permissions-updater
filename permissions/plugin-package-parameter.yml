@@ -1,6 +1,6 @@
 ---
 name: "package-parameter"
 paths:
-- "com/viviquity/jenkins/package-parameter"
+  - "com/viviquity/jenkins/package-parameter"
 developers:
-- "d3clan"
+  - "d3clan"

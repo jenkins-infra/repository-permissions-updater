@@ -2,7 +2,7 @@
 name: "dom4j"
 github: "jenkinsci/dom4j"
 paths:
-- "org/jenkins-ci/dom4j/dom4j"
-- "org/jvnet/hudson/dom4j/dom4j"
+  - "org/jenkins-ci/dom4j/dom4j"
+  - "org/jvnet/hudson/dom4j/dom4j"
 developers:
-- "kohsuke"
+  - "kohsuke"

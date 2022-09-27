@@ -2,10 +2,10 @@
 name: "generic-event"
 github: &GH "jenkinsci/generic-event-plugin"
 paths:
-- "io/jenkins/plugins/generic-event"
+  - "io/jenkins/plugins/generic-event"
 cd:
   enabled: true
 developers:
-- "johnniang"
+  - "johnniang"
 issues:
   - github: *GH

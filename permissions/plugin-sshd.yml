@@ -4,12 +4,12 @@ github: &GH "jenkinsci/sshd-plugin"
 issues:
   - github: *GH
 paths:
-- "org/jenkins-ci/modules/sshd"
+  - "org/jenkins-ci/modules/sshd"
 developers:
-- "ifernandezcalvo"
-- "jvz"
-- "oleg_nenashev"
-- "timja"
+  - "ifernandezcalvo"
+  - "jvz"
+  - "oleg_nenashev"
+  - "timja"
 security:
   contacts:
     jira: "cloudbees_security_members"

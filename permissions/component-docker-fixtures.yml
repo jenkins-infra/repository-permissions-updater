@@ -2,13 +2,13 @@
 name: "docker-fixtures"
 github: "jenkinsci/docker-fixtures"
 paths:
-- "org/jenkins-ci/test/docker-fixtures"
+  - "org/jenkins-ci/test/docker-fixtures"
 cd:
   enabled: true
 developers:
-- "andresrc"
-- "jglick"
-- "kohsuke"
-- "olivergondza"
-- "rsandell"
-- "vlatombe"
+  - "andresrc"
+  - "jglick"
+  - "kohsuke"
+  - "olivergondza"
+  - "rsandell"
+  - "vlatombe"

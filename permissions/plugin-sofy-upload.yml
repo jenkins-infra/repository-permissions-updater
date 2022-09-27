@@ -2,8 +2,8 @@
 name: "sofy-upload"
 github: &GH "jenkinsci/sofy-upload-plugin"
 paths:
-- "io/jenkins/plugins/sofy-upload"
+  - "io/jenkins/plugins/sofy-upload"
 developers:
-- "sofy_official"
+  - "sofy_official"
 issues:
   - jira: 28632

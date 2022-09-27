@@ -2,9 +2,9 @@
 name: "thundra-foresight"
 github: &GH "jenkinsci/thundra-foresight-plugin"
 paths:
-- "io/jenkins/plugins/thundra-foresight"
+  - "io/jenkins/plugins/thundra-foresight"
 developers:
-- "thundraio"
+  - "thundraio"
 issues:
   - github: *GH
 cd:

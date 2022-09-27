@@ -2,8 +2,8 @@
 name: "ws-ctm"
 github: "jenkinsci/ws-ctm-plugin"
 paths:
-- "org/jenkins-ci/plugins/ws-ctm"
+  - "org/jenkins-ci/plugins/ws-ctm"
 developers:
-- "dtheobald"
-- "rrinehart"
-- "glenpgillman"
+  - "dtheobald"
+  - "rrinehart"
+  - "glenpgillman"

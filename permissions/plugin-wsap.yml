@@ -2,8 +2,8 @@
 name: "wsap"
 github: &GH "jenkinsci/wsap-plugin"
 paths:
-- "io/jenkinsci/security/wsap"
+  - "io/jenkinsci/security/wsap"
 developers:
-- "yvtq8k3n"
+  - "yvtq8k3n"
 issues:
   - github: *GH

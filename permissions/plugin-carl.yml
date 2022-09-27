@@ -2,6 +2,6 @@
 name: "carl"
 github: "jenkinsci/carl-plugin"
 paths:
-- "io/jenkins/plugins/carl"
+  - "io/jenkins/plugins/carl"
 developers:
-- "castnightlybuild"
+  - "castnightlybuild"

@@ -2,9 +2,9 @@
 name: "javax-activation-api"
 github: &GH "jenkinsci/javax-activation-api-plugin"
 paths:
-- "io/jenkins/plugins/javax-activation-api"
+  - "io/jenkins/plugins/javax-activation-api"
 developers:
-- "basil"
+  - "basil"
 issues:
   - jira: 28834
 security:

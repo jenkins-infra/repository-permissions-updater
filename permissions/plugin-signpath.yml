@@ -2,8 +2,8 @@
 name: "signpath"
 github: &GH "jenkinsci/signpath-plugin"
 paths:
-- "io/jenkins/plugins/signpath"
+  - "io/jenkins/plugins/signpath"
 developers:
-- "psavoie_signpath"
+  - "psavoie_signpath"
 issues:
   - jira: 28629
