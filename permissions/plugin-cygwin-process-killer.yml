@@ -6,6 +6,6 @@ issues:
 paths:
 - "com/synopsys/arc/jenkinsci/plugins/cygwin-process-killer"
 - "org/jenkins-ci/plugins/cygwin-process-killer"
-developers: 
+developers:
 - "oleg_nenashev"
 

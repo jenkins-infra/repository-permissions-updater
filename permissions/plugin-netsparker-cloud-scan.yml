@@ -5,5 +5,5 @@ issues:
 - jira: '23741' # netsparker-cloud-scan-plugin
 paths:
 - "org/jenkins-ci/plugins/netsparker-cloud-scan"
-developers: 
+developers:
 - "netsparker"

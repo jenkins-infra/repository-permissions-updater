@@ -8,4 +8,4 @@ developers:
 issues:
   - jira: 28921
 cd:
-  enabled: true  
+  enabled: true

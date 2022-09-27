@@ -2,7 +2,7 @@
 name: "azure-batch-parallel"
 github: &GH "jenkinsci/azure-batch-parallel-plugin"
 issues:
-  - github: *GH 
+  - github: *GH
 paths:
 - "com/microsoft/azurebatch/azure-batch-parallel"
 developers:

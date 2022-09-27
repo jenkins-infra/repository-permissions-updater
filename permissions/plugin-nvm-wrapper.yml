@@ -5,5 +5,5 @@ issues:
 - jira: '21633' # nvm-wrapper-plugin
 paths:
 - "org/jenkins-ci/plugins/nvm-wrapper"
-developers: 
+developers:
 - "atoms"

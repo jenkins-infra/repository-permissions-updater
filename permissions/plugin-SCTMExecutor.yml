@@ -5,6 +5,6 @@ issues:
 - jira: '15598' # sctmexecutor-plugin
 paths:
 - "hudson/plugins/sctmexecutor/SCTMExecutor"
-developers: 
+developers:
 - "tofuatjava"
 - "silk"

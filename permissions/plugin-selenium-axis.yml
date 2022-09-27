@@ -6,5 +6,5 @@ issues:
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/selenium-axis"
-developers: 
+developers:
 -  "jeremym"

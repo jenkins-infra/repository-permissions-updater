@@ -5,5 +5,5 @@ issues:
 - jira: '15708' # virtualbox-plugin
 paths:
 - "org/jenkins-ci/plugins/virtualbox"
-developers: 
+developers:
 - "bjones14"

@@ -5,5 +5,5 @@ issues:
 - jira: '22024' # acunetix-plugin
 paths:
 - "com/acunetix/acunetix"
-developers: 
+developers:
 - "acunetix"

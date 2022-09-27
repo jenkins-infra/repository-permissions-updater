@@ -5,5 +5,5 @@ issues:
 - jira: '17324' # changes-since-last-success-plugin
 paths:
 - "org/jenkins-ci/plugins/changes-since-last-success"
-developers: 
+developers:
 - stealthdj

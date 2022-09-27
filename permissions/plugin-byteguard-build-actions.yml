@@ -3,7 +3,7 @@ name: "byteguard-build-actions"
 github: "jenkinsci/byteguard-build-actions-plugin"
 issues:
 - jira: '24320' # byteguard-build-actions-plugin
-paths: 
+paths:
 - "io/jenkins/plugins/byteguard-build-actions"
 developers:
 - "khushboo"
