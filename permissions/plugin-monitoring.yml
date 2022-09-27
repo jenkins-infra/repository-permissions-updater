@@ -2,7 +2,7 @@
 name: "monitoring"
 github: "jenkinsci/monitoring-plugin"
 issues:
-- jira: '15958' # monitoring-plugin
+- jira: '15958'  # monitoring-plugin
 paths:
 - "org/jvnet/hudson/plugins/monitoring"
 developers:

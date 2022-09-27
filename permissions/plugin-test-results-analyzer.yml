@@ -2,7 +2,7 @@
 name: "test-results-analyzer"
 github: "jenkinsci/test-results-analyzer-plugin"
 issues:
-- jira: '19327' # test-results-analyzer-plugin
+- jira: '19327'  # test-results-analyzer-plugin
 paths:
 - "org/jenkins-ci/plugins/test-results-analyzer"
 developers:

@@ -2,7 +2,7 @@
 name: "swamp"
 github: "jenkinsci/swamp-plugin"
 issues:
-- jira: '22424' # swamp-plugin
+- jira: '22424'  # swamp-plugin
 paths:
 - "org/continuousassurance/swamp/jenkins/swamp"
 developers:

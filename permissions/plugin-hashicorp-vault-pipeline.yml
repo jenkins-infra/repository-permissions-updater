@@ -2,7 +2,7 @@
 name: "hashicorp-vault-pipeline"
 github: "jenkinsci/hashicorp-vault-pipeline-plugin"
 issues:
-- jira: '24522' # hashicorp-vault-pipeline-plugin
+- jira: '24522'  # hashicorp-vault-pipeline-plugin
 paths:
 - "io/jenkins/plugins/hashicorp-vault-pipeline"
 cd:

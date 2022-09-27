@@ -3,7 +3,7 @@ name: "brakeman"
 github: &gh "jenkinsci/brakeman-plugin"
 issues:
 - github: *gh
-- jira: '16096' # brakeman-plugin
+- jira: '16096'  # brakeman-plugin
 paths:
 - "org/jenkins-ci/plugins/brakeman"
 - "org/jvnet/hudson/plugins/brakeman"

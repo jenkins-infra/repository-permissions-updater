@@ -3,7 +3,7 @@ name: "rancher"
 github: &gh "jenkinsci/rancher-plugin"
 issues:
 - github: *gh
-- jira: '23033' # rancher-plugin
+- jira: '23033'  # rancher-plugin
 paths:
 - "org/jenkins-ci/plugins/rancher"
 developers:

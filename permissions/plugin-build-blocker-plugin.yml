@@ -2,7 +2,7 @@
 name: "build-blocker-plugin"
 github: "jenkinsci/build-blocker-plugin"
 issues:
-- jira: '17470' # build-blocker-plugin
+- jira: '17470'  # build-blocker-plugin
 paths:
 - "org/jenkins-ci/plugins/build-blocker-plugin"
 developers:

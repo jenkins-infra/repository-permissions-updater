@@ -2,7 +2,7 @@
 name: "javadoc"
 github: "jenkinsci/javadoc-plugin"
 issues:
-- jira: '15992' # javadoc-plugin
+- jira: '15992'  # javadoc-plugin
 paths:
 - "org/jenkins-ci/plugins/javadoc"
 developers:

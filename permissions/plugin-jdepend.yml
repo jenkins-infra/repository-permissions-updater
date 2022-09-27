@@ -2,7 +2,7 @@
 name: "jdepend"
 github: "jenkinsci/jdepend-plugin"
 issues:
-- jira: '15967' # jdepend-plugin
+- jira: '15967'  # jdepend-plugin
 paths:
 - "org/jenkins-ci/plugins/jdepend"
 - "org/jvnet/hudson/plugins/jdepend"

@@ -2,7 +2,7 @@
 name: "kryptowire"
 github: "jenkinsci/kryptowire-plugin"
 issues:
-- jira: '23923' # kryptowire-plugin
+- jira: '23923'  # kryptowire-plugin
 paths:
 - "io/jenkins/plugins/kryptowire"
 developers:

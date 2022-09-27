@@ -2,7 +2,7 @@
 name: "webload"
 github: "jenkinsci/webload-plugin"
 issues:
-- jira: '18320' # webload-plugin
+- jira: '18320'  # webload-plugin
 paths:
 - "hudson/plugins/webload"
 developers:

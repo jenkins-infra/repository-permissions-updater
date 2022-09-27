@@ -2,7 +2,7 @@
 name: "installshield"
 github: "jenkinsci/installshield-plugin"
 issues:
-- jira: '18767' # installshield-plugin
+- jira: '18767'  # installshield-plugin
 paths:
 - "org/jenkins-ci/plugins/installshield"
 developers:

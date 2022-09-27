@@ -2,7 +2,7 @@
 name: "apifortress"
 github: "jenkinsci/apifortress-plugin"
 issues:
-- jira: '22122' # apifortress-plugin
+- jira: '22122'  # apifortress-plugin
 paths:
 - "com/apifortress/jenkins/apifortress"
 developers:

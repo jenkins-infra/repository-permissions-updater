@@ -2,7 +2,7 @@
 name: "checkmarx"
 github: "jenkinsci/checkmarx-plugin"
 issues:
-- jira: '21122' # checkmarx-plugin
+- jira: '21122'  # checkmarx-plugin
 paths:
 - "com/checkmarx/jenkins/checkmarx"
 developers:

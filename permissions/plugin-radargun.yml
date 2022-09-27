@@ -2,7 +2,7 @@
 name: "radargun"
 github: "jenkinsci/radargun-plugin"
 issues:
-- jira: '19420' # radargun-plugin
+- jira: '19420'  # radargun-plugin
 paths:
 - "org/jenkins-ci/plugins/radargun"
 developers:

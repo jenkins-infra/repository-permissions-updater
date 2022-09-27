@@ -2,7 +2,7 @@
 name: "perfectomobile"
 github: "jenkinsci/perfectomobile-plugin"
 issues:
-- jira: '18930' # perfectomobile-plugin
+- jira: '18930'  # perfectomobile-plugin
 paths:
 - "org/jenkins-ci/plugins/perfectomobile"
 developers:

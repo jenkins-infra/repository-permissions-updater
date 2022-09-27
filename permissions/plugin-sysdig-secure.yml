@@ -2,7 +2,7 @@
 name: "sysdig-secure"
 github: "jenkinsci/sysdig-secure-plugin"
 issues:
-- jira: '24121' # sysdig-secure-plugin
+- jira: '24121'  # sysdig-secure-plugin
 paths:
 - "org/jenkins-ci/plugins/sysdig-secure"
 developers:

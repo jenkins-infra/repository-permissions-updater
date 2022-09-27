@@ -2,7 +2,7 @@
 name: "vectorcast-execution"
 github: "jenkinsci/vectorcast-execution-plugin"
 issues:
-- jira: '21941' # vectorcast-execution-plugin
+- jira: '21941'  # vectorcast-execution-plugin
 paths:
 - "org/jenkins-ci/plugins/vectorcast-execution"
 developers:

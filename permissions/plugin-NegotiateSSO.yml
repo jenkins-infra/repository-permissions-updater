@@ -2,7 +2,7 @@
 name: "NegotiateSSO"
 github: "jenkinsci/negotiatesso-plugin"
 issues:
-- jira: '20822' # negotiate-sso-plugin
+- jira: '20822'  # negotiate-sso-plugin
 paths:
 - "org/jenkins-ci/plugins/NegotiateSSO"
 developers:

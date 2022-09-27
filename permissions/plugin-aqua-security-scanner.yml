@@ -2,7 +2,7 @@
 name: "aqua-security-scanner"
 github: "jenkinsci/aqua-security-scanner-plugin"
 issues:
-- jira: '21631' # aqua-security-scanner-plugin
+- jira: '21631'  # aqua-security-scanner-plugin
 paths:
 - "org/jenkins-ci/plugins/aqua-security-scanner"
 developers:

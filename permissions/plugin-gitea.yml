@@ -2,7 +2,7 @@
 name: "gitea"
 github: "jenkinsci/gitea-plugin"
 issues:
-- jira: '23121' # gitea-plugin
+- jira: '23121'  # gitea-plugin
 paths:
 - "org/jenkins-ci/plugins/gitea"
 developers:

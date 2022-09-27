@@ -2,7 +2,7 @@
 name: "pipeline-timeline"
 github: "jenkinsci/pipeline-timeline-plugin"
 issues:
-- jira: '24637' # pipeline-timeline-plugin
+- jira: '24637'  # pipeline-timeline-plugin
 paths:
 - "io/jenkins/plugins/pipeline-timeline"
 developers:

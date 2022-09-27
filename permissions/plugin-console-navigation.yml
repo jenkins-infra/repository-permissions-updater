@@ -2,7 +2,7 @@
 name: "console-navigation"
 github: "jenkinsci/console-navigation-plugin"
 issues:
-- jira: '25021' # console-navigation-plugin
+- jira: '25021'  # console-navigation-plugin
 paths:
 - "io/jenkins/plugins/console-navigation"
 developers:

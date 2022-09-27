@@ -2,7 +2,7 @@
 name: "harvest"
 github: "jenkinsci/harvest-plugin"
 issues:
-- jira: '15605' # harvest-plugin
+- jira: '15605'  # harvest-plugin
 paths:
 - "org/jenkins-ci/plugins/harvest"
 developers:

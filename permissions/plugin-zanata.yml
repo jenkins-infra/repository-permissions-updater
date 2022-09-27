@@ -2,7 +2,7 @@
 name: "zanata"
 github: "jenkinsci/zanata-plugin"
 issues:
-- jira: '21963' # zanata-plugin
+- jira: '21963'  # zanata-plugin
 paths:
 - "org/jenkins-ci/plugins/zanata"
 developers:

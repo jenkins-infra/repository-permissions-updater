@@ -2,7 +2,7 @@
 name: "build-history-manager"
 github: &gh "jenkinsci/build-history-manager-plugin"
 issues:
-- jira: '26124' # build-history-manager-plugin
+- jira: '26124'  # build-history-manager-plugin
 - github: *gh
 paths:
 - "pl/damianszczepanik/build-history-manager"

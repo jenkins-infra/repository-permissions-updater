@@ -2,7 +2,7 @@
 name: "helix-teamhub"
 github: "jenkinsci/helix-teamhub-plugin"
 issues:
-- jira: '23164' # helix-teamhub-plugin
+- jira: '23164'  # helix-teamhub-plugin
 paths:
 - "org/jenkins-ci/plugins/helix-teamhub"
 developers:

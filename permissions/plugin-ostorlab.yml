@@ -2,7 +2,7 @@
 name: "ostorlab"
 github: "jenkinsci/ostorlab-plugin"
 issues:
-- jira: '28222' # ostorlab-plugin
+- jira: '28222'  # ostorlab-plugin
 paths:
 - "io/jenkins/plugins/ostorlab"
 developers:

@@ -2,7 +2,7 @@
 name: "teamconcert"
 github: "jenkinsci/teamconcert-plugin"
 issues:
-- jira: '17631' # teamconcert-plugin
+- jira: '17631'  # teamconcert-plugin
 paths:
 - "org/jenkins-ci/plugins/teamconcert"
 developers:

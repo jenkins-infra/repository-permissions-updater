@@ -2,7 +2,7 @@
 name: "aqua-serverless"
 github: "jenkinsci/aqua-serverless-plugin"
 issues:
-- jira: '24829' # aqua-serverless-plugin
+- jira: '24829'  # aqua-serverless-plugin
 paths:
 - "org/jenkins-ci/plugins/aqua-serverless"
 developers:

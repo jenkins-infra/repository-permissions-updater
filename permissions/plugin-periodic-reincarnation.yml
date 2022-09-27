@@ -2,7 +2,7 @@
 name: "periodic-reincarnation"
 github: &gh "jenkinsci/periodic-reincarnation-plugin"
 issues:
-- jira: '17598' # periodic-reincarnation-plugin
+- jira: '17598'  # periodic-reincarnation-plugin
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/periodic-reincarnation"

@@ -2,7 +2,7 @@
 name: "graphiteIntegrator"
 github: "jenkinsci/graphite-plugin"
 issues:
-- jira: '18041' # graphiteintegrator-plugin
+- jira: '18041'  # graphiteintegrator-plugin
 paths:
 - "org/jenkins-ci/plugins/graphiteIntegrator"
 developers:

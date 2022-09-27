@@ -2,7 +2,7 @@
 name: "yandex-metrica"
 github: "jenkinsci/yandex-metrica-plugin"
 issues:
-- jira: '20852' # yandex-metrica-plugin
+- jira: '20852'  # yandex-metrica-plugin
 paths:
 - "org/jenkins-ci/plugins/yandex-metrica"
 developers:

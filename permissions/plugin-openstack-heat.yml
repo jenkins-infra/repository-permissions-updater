@@ -2,7 +2,7 @@
 name: "openstack-heat"
 github: "jenkinsci/openstack-heat-plugin"
 issues:
-- jira: '21724' # openstack-heat-plugin
+- jira: '21724'  # openstack-heat-plugin
 paths:
 - "org/jenkins-ci/plugins/openstack-heat"
 developers:

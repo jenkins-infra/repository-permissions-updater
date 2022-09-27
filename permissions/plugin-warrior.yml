@@ -2,7 +2,7 @@
 name: "warrior"
 github: "jenkinsci/warrior-plugin"
 issues:
-- jira: '23174' # warrior-plugin
+- jira: '23174'  # warrior-plugin
 paths:
 - "org/jenkins-ci/plugins/warrior"
 developers:

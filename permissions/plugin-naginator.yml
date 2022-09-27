@@ -2,7 +2,7 @@
 name: "naginator"
 github: "jenkinsci/naginator-plugin"
 issues:
-- jira: '15560' # naginator-plugin
+- jira: '15560'  # naginator-plugin
 paths:
 - "org/jenkins-ci/plugins/naginator"
 developers:

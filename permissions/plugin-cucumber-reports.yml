@@ -3,7 +3,7 @@ name: "cucumber-reports"
 github: &gh "jenkinsci/cucumber-reports-plugin"
 issues:
 - github: *gh
-- jira: '17438' # cucumber-reports-plugin
+- jira: '17438'  # cucumber-reports-plugin
 paths:
 - "net/masterthought/jenkins/cucumber-reports"
 developers:

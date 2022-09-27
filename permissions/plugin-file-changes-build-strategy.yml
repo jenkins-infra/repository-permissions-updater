@@ -2,7 +2,7 @@
 name: "file-changes-build-strategy"
 github: "jenkinsci/file-changes-build-strategy-plugin"
 issues:
-- jira: '27921' # file-changes-build-strategy-plugin
+- jira: '27921'  # file-changes-build-strategy-plugin
 paths:
 - "io/jenkins/plugins/file-changes-build-strategy"
 developers:

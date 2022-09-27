@@ -2,7 +2,7 @@
 name: "qtest"
 github: "jenkinsci/qtest-plugin"
 issues:
-- jira: '21024' # qtest-plugin
+- jira: '21024'  # qtest-plugin
 paths:
 - "com/qasymphony/ci/jenkins/qtest"
 developers:

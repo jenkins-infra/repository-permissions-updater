@@ -2,7 +2,7 @@
 name: "opsgenie"
 github: "jenkinsci/opsgenie-plugin"
 issues:
-- jira: '23050' # opsgenie-plugin
+- jira: '23050'  # opsgenie-plugin
 paths:
 - "org/jenkins-ci/plugins/opsgenie"
 developers:

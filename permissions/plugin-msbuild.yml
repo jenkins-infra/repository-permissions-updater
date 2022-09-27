@@ -2,7 +2,7 @@
 name: "msbuild"
 github: "jenkinsci/msbuild-plugin"
 issues:
-- jira: '15559' # msbuild-plugin
+- jira: '15559'  # msbuild-plugin
 paths:
 - "org/jenkins-ci/plugins/msbuild"
 developers:

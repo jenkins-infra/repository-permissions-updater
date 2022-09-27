@@ -2,7 +2,7 @@
 name: "eagle-tester"
 github: "jenkinsci/eagle-tester-plugin"
 issues:
-- jira: '23234' # eagle-tester-plugin
+- jira: '23234'  # eagle-tester-plugin
 paths:
 - "com/mobileenerlytics/eagle/tester/eagle-tester"
 developers:

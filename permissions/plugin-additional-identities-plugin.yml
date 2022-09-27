@@ -2,7 +2,7 @@
 name: "additional-identities-plugin"
 github: "jenkinsci/additional-identities-plugin"
 issues:
-- jira: '17451' # additional-identities-plugin
+- jira: '17451'  # additional-identities-plugin
 paths:
 - "com/cloudbees/jenkins/plugins/additional-identities-plugin"
 developers:

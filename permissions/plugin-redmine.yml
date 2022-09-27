@@ -2,7 +2,7 @@
 name: "redmine"
 github: "jenkinsci/redmine-plugin"
 issues:
-- jira: '15570' # redmine-plugin
+- jira: '15570'  # redmine-plugin
 paths:
 - "org/jenkins-ci/plugins/redmine"
 developers:

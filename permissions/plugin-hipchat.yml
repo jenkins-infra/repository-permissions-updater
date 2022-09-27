@@ -3,7 +3,7 @@ name: "hipchat"
 github: &gh "jenkinsci/hipchat-plugin"
 issues:
 - github: *gh
-- jira: '17524' # hipchat-plugin
+- jira: '17524'  # hipchat-plugin
 paths:
 - "org/jvnet/hudson/plugins/hipchat"
 developers:

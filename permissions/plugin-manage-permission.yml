@@ -2,7 +2,7 @@
 name: "manage-permission"
 github: "jenkinsci/manage-permission-plugin"
 issues:
-- jira: '27241' # manage-permission-plugin
+- jira: '27241'  # manage-permission-plugin
 paths:
 - "io/jenkins/plugins/manage-permission"
 developers:

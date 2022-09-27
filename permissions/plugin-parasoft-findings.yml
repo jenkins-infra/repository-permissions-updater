@@ -2,7 +2,7 @@
 name: "parasoft-findings"
 github: "jenkinsci/parasoft-findings-plugin"
 issues:
-- jira: '21627' # parasoft-findings-plugin
+- jira: '21627'  # parasoft-findings-plugin
 paths:
 - "com/parasoft/parasoft-findings"
 developers:

@@ -2,7 +2,7 @@
 name: "nirmata"
 github: "jenkinsci/nirmata-plugin"
 issues:
-- jira: '23922' # nirmata-plugin
+- jira: '23922'  # nirmata-plugin
 paths:
 - "io/jenkins/plugins/nirmata"
 developers:

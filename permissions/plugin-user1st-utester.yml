@@ -2,7 +2,7 @@
 name: "user1st-utester"
 github: "jenkinsci/user1st-utester-plugin"
 issues:
-- jira: '24930' # user1st-utester-plugin
+- jira: '24930'  # user1st-utester-plugin
 paths:
 - "io/jenkins/plugins/user1st-utester"
 developers:

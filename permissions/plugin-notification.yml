@@ -2,7 +2,7 @@
 name: "notification"
 github: "jenkinsci/notification-plugin"
 issues:
-- jira: '16106' # notification-plugin
+- jira: '16106'  # notification-plugin
 paths:
 - "com/tikalk/hudson/plugins/notification"
 developers:

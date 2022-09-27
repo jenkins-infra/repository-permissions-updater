@@ -2,7 +2,7 @@
 name: "icescrum"
 github: "jenkinsci/icescrum-plugin"
 issues:
-- jira: '17649' # icescrum-plugin
+- jira: '17649'  # icescrum-plugin
 paths:
 - "org/jenkins-ci/plugins/icescrum"
 developers:

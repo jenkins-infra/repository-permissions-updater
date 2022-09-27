@@ -2,7 +2,7 @@
 name: "updatebot"
 github: "jenkinsci/updatebot-plugin"
 issues:
-- jira: '23161' # updatebot-plugin
+- jira: '23161'  # updatebot-plugin
 paths:
 - "org/jenkins-ci/plugins/updatebot"
 developers:

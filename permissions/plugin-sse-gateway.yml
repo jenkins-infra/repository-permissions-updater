@@ -2,7 +2,7 @@
 name: "sse-gateway"
 github: "jenkinsci/sse-gateway-plugin"
 issues:
-- jira: '21477' # sse-gateway-plugin
+- jira: '21477'  # sse-gateway-plugin
 paths:
 - "org/jenkins-ci/plugins/sse-gateway"
 developers:

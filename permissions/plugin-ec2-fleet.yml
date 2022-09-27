@@ -3,7 +3,7 @@ name: "ec2-fleet"
 github: &gh "jenkinsci/ec2-fleet-plugin"
 issues:
 - github: *gh
-- jira: '21472' # ec2-fleet-plugin
+- jira: '21472'  # ec2-fleet-plugin
 paths:
 - "com/amazon/jenkins/fleet/ec2-fleet"
 developers:

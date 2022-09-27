@@ -2,7 +2,7 @@
 name: "gatling-check"
 github: "jenkinsci/gatling-check-plugin"
 issues:
-- jira: '24826' # gatling-check-plugin
+- jira: '24826'  # gatling-check-plugin
 paths:
 - "org/jenkins-ci/plugins/gatling-check"
 developers:

@@ -3,7 +3,7 @@ name: "aws-codecommit-trigger"
 github: &gh "jenkinsci/aws-codecommit-trigger-plugin"
 issues:
 - github: *gh
-- jira: '23031' # aws-codecommit-trigger-plugin
+- jira: '23031'  # aws-codecommit-trigger-plugin
 paths:
   - "org/jenkins-ci/plugins/aws-codecommit-trigger"
 developers:

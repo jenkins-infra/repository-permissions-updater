@@ -2,7 +2,7 @@
 name: "recipe"
 github: "jenkinsci/recipe-plugin"
 issues:
-- jira: '17474' # recipe-plugin
+- jira: '17474'  # recipe-plugin
 paths:
 - "org/jenkins-ci/plugins/recipe"
 developers:

@@ -2,7 +2,7 @@
 name: "loadninja"
 github: "jenkinsci/loadninja-plugin"
 issues:
-- jira: '25026' # loadninja-plugin
+- jira: '25026'  # loadninja-plugin
 paths:
 - "org/jenkins-ci/plugins/loadninja"
 developers:

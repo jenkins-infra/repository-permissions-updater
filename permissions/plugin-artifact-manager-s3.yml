@@ -2,7 +2,7 @@
 name: "artifact-manager-s3"
 github: "jenkinsci/artifact-manager-s3-plugin"
 issues:
-- jira: '23538' # artifact-manager-s3-plugin
+- jira: '23538'  # artifact-manager-s3-plugin
 paths:
 - "io/jenkins/plugins/artifact-manager-s3"
 cd:

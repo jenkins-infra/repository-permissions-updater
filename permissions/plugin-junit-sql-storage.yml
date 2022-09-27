@@ -3,7 +3,7 @@ name: "junit-sql-storage"
 github: &gh "jenkinsci/junit-sql-storage-plugin"
 issues:
 - github: *gh
-- jira: '28020' # junit-sql-storage-plugin
+- jira: '28020'  # junit-sql-storage-plugin
 paths:
 - "io/jenkins/plugins/junit-sql-storage"
 developers:

@@ -2,7 +2,7 @@
 name: "viber-notification"
 github: "jenkinsci/viber-notification-plugin"
 issues:
-- jira: '22133' # viber-notification-plugin
+- jira: '22133'  # viber-notification-plugin
 paths:
 - "org/jenkins-ci/plugins/viber-notification"
 developers:

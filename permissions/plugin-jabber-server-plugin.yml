@@ -3,7 +3,7 @@ name: "jabber-server-plugin"
 github: &gh "jenkinsci/jabber-server-plugin"
 issues:
 - github: *gh
-- jira: '19230' # jabber-server-plugin
+- jira: '19230'  # jabber-server-plugin
 paths:
 - "de/e-nexus/jabber-server-plugin"
 developers:

@@ -2,7 +2,7 @@
 name: "build-timeout"
 github: &gh "jenkinsci/build-timeout-plugin"
 issues:
-- jira: '15530' # build-timeout-plugin
+- jira: '15530'  # build-timeout-plugin
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/build-timeout"

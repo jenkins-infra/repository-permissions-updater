@@ -2,7 +2,7 @@
 name: "snowglobe"
 github: "jenkinsci/snowglobe-plugin"
 issues:
-- jira: '23545' # snowglobe-plugin
+- jira: '23545'  # snowglobe-plugin
 paths:
 - "com/nirima/snowglobe/jenkins/snowglobe"
 developers:

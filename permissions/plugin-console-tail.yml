@@ -2,7 +2,7 @@
 name: "console-tail"
 github: "jenkinsci/console-tail-plugin"
 issues:
-- jira: '18144' # console-tail-plugin
+- jira: '18144'  # console-tail-plugin
 paths:
 - "org/jenkins-ci/plugins/console-tail"
 developers: []

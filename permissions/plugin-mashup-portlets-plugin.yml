@@ -2,7 +2,7 @@
 name: "mashup-portlets-plugin"
 github: "jenkinsci/mashup-portlets-plugin"
 issues:
-- jira: '18322' # mashup-portlets-plugin
+- jira: '18322'  # mashup-portlets-plugin
 paths:
 - "javagh/jenkins/mashup-portlets-plugin"
 developers:

@@ -3,7 +3,7 @@ name: "google-chat-notification"
 github: &gh "jenkinsci/google-chat-notification-plugin"
 issues:
 - github: *gh
-- jira: '24023' # google-chat-notification-plugin
+- jira: '24023'  # google-chat-notification-plugin
 paths:
 - "org/jenkins-ci/plugins/google-chat-notification"
 developers:

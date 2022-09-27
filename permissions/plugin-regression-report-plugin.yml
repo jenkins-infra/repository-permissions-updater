@@ -3,7 +3,7 @@ name: "regression-report-plugin"
 github: &gh "jenkinsci/regression-report-plugin"
 issues:
 - github: *gh
-- jira: '16544' # regression-report-plugin
+- jira: '16544'  # regression-report-plugin
 paths:
 - "org/jenkins-ci/plugins/regression-report-plugin"
 developers:

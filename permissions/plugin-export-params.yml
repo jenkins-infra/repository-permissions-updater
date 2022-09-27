@@ -2,7 +2,7 @@
 name: "export-params"
 github: "jenkinsci/export-params-plugin"
 issues:
-- jira: '18761' # export-params-plugin
+- jira: '18761'  # export-params-plugin
 paths:
 - "org/jenkins-ci/plugins/export-params"
 developers:

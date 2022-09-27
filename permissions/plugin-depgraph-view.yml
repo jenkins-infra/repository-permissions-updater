@@ -2,7 +2,7 @@
 name: "depgraph-view"
 github: &gh "jenkinsci/depgraph-view-plugin"
 issues:
-- jira: '15772' # depgraph-view-plugin
+- jira: '15772'  # depgraph-view-plugin
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/depgraph-view"

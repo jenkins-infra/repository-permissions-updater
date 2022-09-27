@@ -2,7 +2,7 @@
 name: "synopsys-coverity"
 github: "jenkinsci/synopsys-coverity-plugin"
 issues:
-- jira: '24024' # synopsys-coverity-plugin
+- jira: '24024'  # synopsys-coverity-plugin
 paths:
 - "org/jenkins-ci/plugins/synopsys-coverity"
 developers:

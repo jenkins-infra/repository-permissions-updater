@@ -2,7 +2,7 @@
 name: "categorized-view"
 github: &gh "jenkinsci/categorized-view-plugin"
 issues:
-- jira: '17638' # categorized-view-plugin
+- jira: '17638'  # categorized-view-plugin
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/categorized-view"

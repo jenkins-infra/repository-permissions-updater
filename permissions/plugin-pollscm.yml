@@ -2,7 +2,7 @@
 name: "pollscm"
 github: "jenkinsci/pollscm-plugin"
 issues:
-- jira: '17336' # pollscm-plugin
+- jira: '17336'  # pollscm-plugin
 paths:
 - "org/jenkins-ci/plugins/pollscm"
 developers:

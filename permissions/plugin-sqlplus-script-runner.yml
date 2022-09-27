@@ -3,7 +3,7 @@ name: "sqlplus-script-runner"
 github: &gh "jenkinsci/sqlplus-script-runner-plugin"
 issues:
 - github: *gh
-- jira: '20723' # sqlplus-script-runner-plugin
+- jira: '20723'  # sqlplus-script-runner-plugin
 paths:
 - "org/jenkins-ci/plugins/sqlplus-script-runner"
 developers:

@@ -2,7 +2,7 @@
 name: "hockeyapp"
 github: "jenkinsci/hockeyapp-plugin"
 issues:
-- jira: '17444' # hockeyapp-plugin
+- jira: '17444'  # hockeyapp-plugin
 paths:
 - "org/jenkins-ci/plugins/hockeyapp"
 developers:

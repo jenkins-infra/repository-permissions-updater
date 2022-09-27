@@ -2,7 +2,7 @@
 name: "quayio-trigger"
 github: "jenkinsci/quayio-trigger-plugin"
 issues:
-- jira: '21141' # quayio-trigger-plugin
+- jira: '21141'  # quayio-trigger-plugin
 paths:
 - "org/jenkins-ci/plugins/quayio-trigger"
 developers:

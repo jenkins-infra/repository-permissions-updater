@@ -3,7 +3,7 @@ name: "github-pr-comment-build"
 github: &gh "jenkinsci/github-pr-comment-build-plugin"
 issues:
 - github: *gh
-- jira: '21958' # github-pr-comment-build-plugin
+- jira: '21958'  # github-pr-comment-build-plugin
 paths:
 - "org/jenkins-ci/plugins/github-pr-comment-build"
 developers:

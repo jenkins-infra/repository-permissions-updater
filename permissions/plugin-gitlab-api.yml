@@ -2,7 +2,7 @@
 name: "gitlab-api"
 github: "jenkinsci/gitlab-api-plugin"
 issues:
-- jira: '25128' # gitlab-api-plugin
+- jira: '25128'  # gitlab-api-plugin
 paths:
 - "io/jenkins/plugins/gitlab-api"
 cd:

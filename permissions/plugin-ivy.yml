@@ -2,7 +2,7 @@
 name: "ivy"
 github: &gh "jenkinsci/ivy-plugin"
 issues:
-- jira: '15519' # ivy-plugin
+- jira: '15519'  # ivy-plugin
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/ivy"

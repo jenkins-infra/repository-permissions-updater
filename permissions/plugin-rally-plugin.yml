@@ -3,7 +3,7 @@ name: "rally-plugin"
 github: &gh "jenkinsci/rally-plugin"
 issues:
 - github: *gh
-- jira: '18734' # rally-plugin
+- jira: '18734'  # rally-plugin
 paths:
 - "org/jenkins-ci/plugins/rally-plugin"
 developers:

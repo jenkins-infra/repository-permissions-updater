@@ -4,7 +4,7 @@ github: "jenkinsci/github-api-plugin"
 cd:
   enabled: true
 issues:
-- jira: '17496' # github-api-plugin
+- jira: '17496'  # github-api-plugin
 paths:
 - "org/jenkins-ci/plugins/github-api"
 developers:

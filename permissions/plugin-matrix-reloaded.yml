@@ -2,7 +2,7 @@
 name: "matrix-reloaded"
 github: "jenkinsci/matrix-reloaded-plugin"
 issues:
-- jira: '15953' # matrix-reloaded-plugin
+- jira: '15953'  # matrix-reloaded-plugin
 paths:
 - "net/praqma/matrix-reloaded"
 developers:

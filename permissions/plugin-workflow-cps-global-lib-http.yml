@@ -2,7 +2,7 @@
 name: "workflow-cps-global-lib-http"
 github: "jenkinsci/workflow-cps-global-lib-http-plugin"
 issues:
-- jira: '25520' # workflow-cps-global-lib-http-plugin
+- jira: '25520'  # workflow-cps-global-lib-http-plugin
 paths:
 - "com/amadeus/jenkins/plugins/workflow-cps-global-lib-http"
 developers:

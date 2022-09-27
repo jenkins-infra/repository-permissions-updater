@@ -2,7 +2,7 @@
 name: "ant-in-workspace"
 github: "jenkinsci/ant-in-workspace-plugin"
 issues:
-- jira: '21983' # ant-in-workspace-plugin
+- jira: '21983'  # ant-in-workspace-plugin
 paths:
 - "org/jenkins-ci/plugins/ant-in-workspace"
 developers:

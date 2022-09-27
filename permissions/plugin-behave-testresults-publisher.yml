@@ -2,7 +2,7 @@
 name: "behave-testresults-publisher"
 github: "jenkinsci/behave-testresults-publisher-plugin"
 issues:
-- jira: '20849' # behave-testresults-publisher-plugin
+- jira: '20849'  # behave-testresults-publisher-plugin
 paths:
 - "net/jenkins/behave-testresults-publisher"
 developers:

@@ -3,7 +3,7 @@ name: "git-changelog"
 github: &gh "jenkinsci/git-changelog-plugin"
 issues:
 - github: *gh
-- jira: '20855' # git-changelog-plugin
+- jira: '20855'  # git-changelog-plugin
 paths:
 - "de/wellnerbou/jenkins/git-changelog"
 developers:

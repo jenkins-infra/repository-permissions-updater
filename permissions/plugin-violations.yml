@@ -2,7 +2,7 @@
 name: "violations"
 github: &gh "jenkinsci/violations-plugin"
 issues:
-- jira: '15497' # violations-plugin
+- jira: '15497'  # violations-plugin
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/violations"

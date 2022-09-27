@@ -2,7 +2,7 @@
 name: "createjobadvanced"
 github: "jenkinsci/createjobadvanced-plugin"
 issues:
-- jira: '15737' # createjobadvanced-plugin
+- jira: '15737'  # createjobadvanced-plugin
 paths:
 - "org/jenkins-ci/plugins/createjobadvanced"
 developers:

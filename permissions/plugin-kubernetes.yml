@@ -2,7 +2,7 @@
 name: "kubernetes"
 github: "jenkinsci/kubernetes-plugin"
 issues:
-- jira: '20639' # kubernetes-plugin
+- jira: '20639'  # kubernetes-plugin
 paths:
 - "org/csanchez/jenkins/plugins/kubernetes"
 cd:

@@ -2,7 +2,7 @@
 name: "scaleway-cloud"
 github: "jenkinsci/scaleway-cloud-plugin"
 issues:
-- jira: '21929' # scaleway-cloud-plugin
+- jira: '21929'  # scaleway-cloud-plugin
 paths:
 - "com/github/segator/jenkins/scaleway-cloud"
 developers:

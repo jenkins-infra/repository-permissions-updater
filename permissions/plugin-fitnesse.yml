@@ -2,7 +2,7 @@
 name: "fitnesse"
 github: "jenkinsci/fitnesse-plugin"
 issues:
-- jira: '15734' # fitnesse-plugin
+- jira: '15734'  # fitnesse-plugin
 paths:
 - "org/jenkins-ci/plugins/fitnesse"
 developers:

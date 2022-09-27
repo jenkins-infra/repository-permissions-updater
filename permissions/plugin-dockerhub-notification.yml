@@ -2,7 +2,7 @@
 name: "dockerhub-notification"
 github: "jenkinsci/dockerhub-notification-plugin"
 issues:
-- jira: '20627' # dockerhub-notification-plugin
+- jira: '20627'  # dockerhub-notification-plugin
 paths:
 - "org/jenkins-ci/plugins/dockerhub-notification"
 developers:

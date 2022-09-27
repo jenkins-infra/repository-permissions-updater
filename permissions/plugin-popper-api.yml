@@ -2,7 +2,7 @@
 name: "popper-api"
 github: "jenkinsci/popper-api-plugin"
 issues:
-- jira: '26328' # popper-api-plugin
+- jira: '26328'  # popper-api-plugin
 paths:
 - "io/jenkins/plugins/popper-api"
 developers:

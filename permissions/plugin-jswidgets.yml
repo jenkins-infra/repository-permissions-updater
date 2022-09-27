@@ -2,7 +2,7 @@
 name: "jswidgets"
 github: "jenkinsci/jswidgets-plugin"
 issues:
-- jira: '15639' # jswidgets-plugin
+- jira: '15639'  # jswidgets-plugin
 paths:
 - "org/jenkins-ci/plugins/jswidgets"
 - "org/jvnet/hudson/plugins/jswidgets"

@@ -2,7 +2,7 @@
 name: "myappci"
 github: "jenkinsci/myappci-plugin"
 issues:
-- jira: '25625' # myappci-plugin
+- jira: '25625'  # myappci-plugin
 paths:
 - "io/jenkins/plugins/myappci"
 developers:

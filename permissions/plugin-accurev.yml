@@ -2,7 +2,7 @@
 name: "accurev"
 github: &gh "jenkinsci/accurev-plugin"
 issues:
-- jira: '15525' # accurev-plugin
+- jira: '15525'  # accurev-plugin
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/accurev"

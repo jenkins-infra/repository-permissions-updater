@@ -2,7 +2,7 @@
 name: "modernstatus"
 github: "jenkinsci/modernstatus-plugin"
 issues:
-- jira: '19920' # modernstatus-plugin
+- jira: '19920'  # modernstatus-plugin
 paths:
 - "org/jenkins-ci/plugins/modernstatus"
 developers:

@@ -2,7 +2,7 @@
 name: "external-monitor-job"
 github: "jenkinsci/external-monitor-job-plugin"
 issues:
-- jira: '17123' # external-monitor-job-plugin
+- jira: '17123'  # external-monitor-job-plugin
 paths:
 - "org/jenkins-ci/plugins/external-monitor-job"
 cd:

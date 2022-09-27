@@ -2,7 +2,7 @@
 name: "report-info"
 github: "jenkinsci/report-info-plugin"
 issues:
-- jira: '21969' # report-info-plugin
+- jira: '21969'  # report-info-plugin
 paths:
 - "org/jenkins-ci/plugins/report-info"
 developers:

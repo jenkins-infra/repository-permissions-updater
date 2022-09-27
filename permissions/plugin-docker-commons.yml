@@ -2,7 +2,7 @@
 name: "docker-commons"
 github: "jenkinsci/docker-commons-plugin"
 issues:
-- jira: '20628' # docker-commons-plugin
+- jira: '20628'  # docker-commons-plugin
 paths:
 - "org/jenkins-ci/plugins/docker-commons"
 developers:

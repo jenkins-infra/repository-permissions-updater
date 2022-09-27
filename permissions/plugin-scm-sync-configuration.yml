@@ -2,7 +2,7 @@
 name: "scm-sync-configuration"
 github: &gh "jenkinsci/scm-sync-configuration-plugin"
 issues:
-- jira: '15757' # scm-sync-configuration-plugin
+- jira: '15757'  # scm-sync-configuration-plugin
 - github: *gh
 paths:
 - "org/jenkins-ci/plugins/scm-sync-configuration"

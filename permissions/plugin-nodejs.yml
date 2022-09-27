@@ -2,7 +2,7 @@
 name: "nodejs"
 github: "jenkinsci/nodejs-plugin"
 issues:
-- jira: '15991' # nodejs-plugin
+- jira: '15991'  # nodejs-plugin
 paths:
 - "org/jenkins-ci/plugins/nodejs"
 developers:

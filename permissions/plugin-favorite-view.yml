@@ -2,7 +2,7 @@
 name: "favorite-view"
 github: "jenkinsci/favorite-view-plugin"
 issues:
-- jira: '17569' # favorite-view-plugin
+- jira: '17569'  # favorite-view-plugin
 paths:
 - "org/jenkins-ci/plugins/favorite-view"
 developers: []

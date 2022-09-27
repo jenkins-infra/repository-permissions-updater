@@ -2,7 +2,7 @@
 name: "blueocean-executor-info"
 github: "jenkinsci/blueocean-plugin"
 issues:
-- jira: '23156' # blueocean-executor-info-plugin
+- jira: '23156'  # blueocean-executor-info-plugin
 paths:
 - "io/jenkins/blueocean/blueocean-executor-info"
 developers:

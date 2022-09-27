@@ -2,7 +2,7 @@
 name: "htmlpublisher"
 github: "jenkinsci/htmlpublisher-plugin"
 issues:
-- jira: '15681' # htmlpublisher-plugin
+- jira: '15681'  # htmlpublisher-plugin
 paths:
 - "org/jenkins-ci/plugins/htmlpublisher"
 - "org/jvnet/hudson/plugins/htmlpublisher"

@@ -3,7 +3,7 @@ name: "bitbucket-push-and-pull-request"
 github: &gh "jenkinsci/bitbucket-push-and-pull-request-plugin"
 issues:
 - github: *gh
-- jira: '24647' # bitbucket-push-and-pull-request-plugin
+- jira: '24647'  # bitbucket-push-and-pull-request-plugin
 paths:
 - "io/jenkins/plugins/bitbucket-push-and-pull-request"
 developers:

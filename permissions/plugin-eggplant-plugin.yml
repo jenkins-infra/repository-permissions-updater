@@ -2,7 +2,7 @@
 name: "eggplant-plugin"
 github: "jenkinsci/eggplant-plugin"
 issues:
-- jira: '17566' # eggplant-plugin
+- jira: '17566'  # eggplant-plugin
 paths:
 - "org/jenkins-ci/plugins/eggplant-plugin"
 developers:

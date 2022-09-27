@@ -2,7 +2,7 @@
 name: "backlog"
 github: "jenkinsci/backlog-plugin"
 issues:
-- jira: '15812' # backlog-plugin
+- jira: '15812'  # backlog-plugin
 paths:
 - "org/jenkins-ci/plugins/backlog"
 - "org/jvnet/hudson/plugins/backlog"
