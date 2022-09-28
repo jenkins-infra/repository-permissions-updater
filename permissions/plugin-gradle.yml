@@ -9,6 +9,11 @@ paths:
 developers:
   - "gbois"
   - "wolfs"
+  - "avenderov"
+  - "facewindu"
+  - "guylabs"
+  - "sflorea"
+  - "welandaz"
 security:
   contacts:
     jira: "cloudbees_security_members"
