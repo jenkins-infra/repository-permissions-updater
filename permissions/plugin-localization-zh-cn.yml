@@ -2,9 +2,9 @@
 name: "localization-zh-cn"
 github: &gh "jenkinsci/localization-zh-cn-plugin"
 issues:
-- github: *gh
-- jira: '24122' # localization-zh-cn-plugin
+  - github: *gh
+  - jira: '24122'  # localization-zh-cn-plugin
 paths:
-- "org/jenkins-ci/plugins/localization-zh-cn"
+  - "org/jenkins-ci/plugins/localization-zh-cn"
 developers:
-- "surenpi"
+  - "surenpi"

@@ -2,10 +2,10 @@
 name: "alauda-pipeline"
 github: jenkinsci/alauda-pipeline-plugin
 issues:
-- jira: '23726' # alauda-pipeline-plugin
+  - jira: '23726'  # alauda-pipeline-plugin
 paths:
-- "io/alauda/jenkins/plugins/alauda-pipeline"
+  - "io/alauda/jenkins/plugins/alauda-pipeline"
 developers:
-- "chengjingtao"
-- "danielfbm"
-- "surenpi"
+  - "chengjingtao"
+  - "danielfbm"
+  - "surenpi"

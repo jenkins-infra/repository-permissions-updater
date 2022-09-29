@@ -1,5 +1,5 @@
 ---
 name: "cocoapods-integration"
 paths:
-- "com/thoughtsonmobile/cocoapods-integration"
+  - "com/thoughtsonmobile/cocoapods-integration"
 developers: []

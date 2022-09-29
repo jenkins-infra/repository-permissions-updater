@@ -2,9 +2,9 @@
 name: "pretested-integration"
 github: "jenkinsci/pretested-integration-plugin"
 issues:
-- jira: '17624' # pretested-integration-plugin
+  - jira: '17624'  # pretested-integration-plugin
 paths:
-- "org/jenkins-ci/plugins/pretested-integration"
+  - "org/jenkins-ci/plugins/pretested-integration"
 developers:
-- "madsnielsen"
-- "praqma"
+  - "madsnielsen"
+  - "praqma"

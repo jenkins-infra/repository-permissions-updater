@@ -2,6 +2,6 @@
 name: "maven-jellydoc-plugin"
 github: "jenkinsci/maven-jellydoc-plugin"
 paths:
-- "org/jvnet/maven-jellydoc-plugin/maven-jellydoc-plugin"
+  - "org/jvnet/maven-jellydoc-plugin/maven-jellydoc-plugin"
 developers:
-- "@core"
+  - "@core"

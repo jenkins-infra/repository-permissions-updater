@@ -2,9 +2,9 @@
 name: "perfecto"
 github: "jenkinsci/perfecto-plugin"
 issues:
-- jira: '27530' # perfecto-plugin
+  - jira: '27530'  # perfecto-plugin
 paths:
-- "io/jenkins/plugins/perfecto"
+  - "io/jenkins/plugins/perfecto"
 developers:
-- "perfectojenkins"
-- "genesisthomas"
+  - "perfectojenkins"
+  - "genesisthomas"

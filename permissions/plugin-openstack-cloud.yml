@@ -2,9 +2,9 @@
 name: "openstack-cloud"
 github: &gh "jenkinsci/openstack-cloud-plugin"
 issues:
-- github: *gh
-- jira: '20631' # openstack-cloud-plugin
+  - github: *gh
+  - jira: '20631'  # openstack-cloud-plugin
 paths:
-- "org/jenkins-ci/plugins/openstack-cloud"
+  - "org/jenkins-ci/plugins/openstack-cloud"
 developers:
-- "olivergondza"
+  - "olivergondza"

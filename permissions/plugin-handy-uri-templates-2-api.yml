@@ -2,15 +2,15 @@
 name: "handy-uri-templates-2-api"
 github: "jenkinsci/handy-uri-templates-2-api-plugin"
 issues:
-- jira: '23421' # handy-uri-templates-2-api-plugin
+  - jira: '23421'  # handy-uri-templates-2-api-plugin
 paths:
-- "org/jenkins-ci/plugins/handy-uri-templates-2-api"
+  - "org/jenkins-ci/plugins/handy-uri-templates-2-api"
 cd:
   enabled: true
 developers:
-- "jetersen"
-- "dnusbaum"
-- "bitwiseman"
+  - "jetersen"
+  - "dnusbaum"
+  - "bitwiseman"
 security:
   contacts:
     jira: "cloudbees_security_members"

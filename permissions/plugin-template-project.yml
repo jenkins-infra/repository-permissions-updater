@@ -2,9 +2,9 @@
 name: "template-project"
 github: "jenkinsci/template-project-plugin"
 issues:
-- jira: '15623' # template-project-plugin
+  - jira: '15623'  # template-project-plugin
 paths:
-- "org/jenkins-ci/plugins/template-project"
+  - "org/jenkins-ci/plugins/template-project"
 developers:
-- "brantone"
-- "ctapobep"
+  - "brantone"
+  - "ctapobep"

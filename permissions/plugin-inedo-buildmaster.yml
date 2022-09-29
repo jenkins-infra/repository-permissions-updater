@@ -4,6 +4,6 @@ github: "jenkinsci/inedo-buildmaster-plugin"
 issues:
   - jira: '21830'
 paths:
-- "com/inedo/buildmaster/inedo-buildmaster"
+  - "com/inedo/buildmaster/inedo-buildmaster"
 developers:
-- "andrewsumner"
+  - "andrewsumner"

@@ -2,20 +2,20 @@
 name: "workflow-durable-task-step"
 github: "jenkinsci/workflow-durable-task-step-plugin"
 issues:
-- jira: '21715' # workflow-durable-task-step-plugin
+  - jira: '21715'  # workflow-durable-task-step-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-durable-task-step"
+  - "org/jenkins-ci/plugins/workflow/workflow-durable-task-step"
 developers:
-- "jglick"
-- "kohsuke"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
-- "jtaboada"
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "svanoort"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
 security:
   contacts:
     jira: "cloudbees_security_members"

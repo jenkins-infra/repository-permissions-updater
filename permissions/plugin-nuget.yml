@@ -2,8 +2,8 @@
 name: "nuget"
 github: "jenkinsci/nuget-plugin"
 issues:
-- jira: '17651' # nuget-plugin
+  - jira: '17651'  # nuget-plugin
 paths:
-- "org/jenkins-ci/plugins/nuget"
+  - "org/jenkins-ci/plugins/nuget"
 developers:
-- "greybird"
+  - "greybird"

@@ -4,6 +4,6 @@ issues:
   - jira: '24533'
 github: jenkinsci/timemachine-plugin
 paths:
-- "io/jenkins/plugins/timemachine"
+  - "io/jenkins/plugins/timemachine"
 developers:
-- "ndeloof"
+  - "ndeloof"

@@ -2,9 +2,9 @@
 name: "salesforce-migration-assistant-plugin"
 github: &gh "jenkinsci/salesforce-migration-assistant-plugin"
 issues:
-- github: *gh
-- jira: '21422' # salesforce-migration-assistant-plugin
+  - github: *gh
+  - jira: '21422'  # salesforce-migration-assistant-plugin
 paths:
-- "org/jenkins-ci/plugins/salesforce-migration-assistant-plugin"
+  - "org/jenkins-ci/plugins/salesforce-migration-assistant-plugin"
 developers:
-- "aesanch2"
+  - "aesanch2"

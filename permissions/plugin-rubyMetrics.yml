@@ -2,9 +2,9 @@
 name: "rubyMetrics"
 github: &gh "jenkinsci/rubymetrics-plugin"
 issues:
-- github: *gh
-- jira: '15573' # rubyMetrics-plugin
+  - github: *gh
+  - jira: '15573'  # rubyMetrics-plugin
 paths:
-- "org/jenkins-ci/plugins/rubyMetrics"
+  - "org/jenkins-ci/plugins/rubyMetrics"
 developers:
-- "pkuczynski"
+  - "pkuczynski"

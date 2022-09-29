@@ -2,6 +2,6 @@
 name: "access-modifier"
 github: "jenkinsci/lib-access-modifier"
 paths:
-- "org/kohsuke/access-modifier-annotation"
+  - "org/kohsuke/access-modifier-annotation"
 developers:
-- "@core"
+  - "@core"

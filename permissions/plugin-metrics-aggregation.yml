@@ -2,8 +2,8 @@
 name: "metrics-aggregation"
 github: "jenkinsci/metrics-aggregation-plugin"
 issues:
-- jira: '26720' # metrics-aggregation-plugin
+  - jira: '26720'  # metrics-aggregation-plugin
 paths:
-- "io/jenkins/plugins/metrics-aggregation"
+  - "io/jenkins/plugins/metrics-aggregation"
 developers:
-- "andipabst"
+  - "andipabst"

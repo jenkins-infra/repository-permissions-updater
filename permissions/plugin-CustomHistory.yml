@@ -2,8 +2,8 @@
 name: "CustomHistory"
 github: "jenkinsci/custom-history-plugin"
 issues:
-- jira: '17664' # customhistory-plugin
+  - jira: '17664'  # customhistory-plugin
 paths:
-- "CustomHistory/CustomHistory"
-- "org/jenkins-ci/plugins/CustomHistory"
+  - "CustomHistory/CustomHistory"
+  - "org/jenkins-ci/plugins/CustomHistory"
 developers: []

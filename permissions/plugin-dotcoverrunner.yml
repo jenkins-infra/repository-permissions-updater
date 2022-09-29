@@ -2,9 +2,9 @@
 name: "dotcoverrunner"
 github: "jenkinsci/dotcoverrunner-plugin"
 issues:
-- jira: '26121' # dotcoverrunner-plugin
+  - jira: '26121'  # dotcoverrunner-plugin
 paths:
-- "io/jenkins/plugins/dotcoverrunner"
+  - "io/jenkins/plugins/dotcoverrunner"
 developers:
-- "jetersen"
-- "rasmusjelsgaard"
+  - "jetersen"
+  - "rasmusjelsgaard"

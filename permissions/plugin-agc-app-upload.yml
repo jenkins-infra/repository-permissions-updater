@@ -2,8 +2,8 @@
 name: "agc-app-upload"
 github: &GH "jenkinsci/agc-app-upload-plugin"
 paths:
-- "com/huawei/jenkins/agc-app-upload"
+  - "com/huawei/jenkins/agc-app-upload"
 developers:
-- "josholadele"
+  - "josholadele"
 issues:
   - github: *GH

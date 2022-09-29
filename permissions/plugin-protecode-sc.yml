@@ -2,10 +2,10 @@
 name: "protecode-sc"
 github: "jenkinsci/protecode-sc-plugin"
 issues:
-- jira: '21659' # protecode-sc-plugin
+  - jira: '21659'  # protecode-sc-plugin
 paths:
-- "com/synopsys/protecode-sc"
+  - "com/synopsys/protecode-sc"
 developers:
-- "mattisii"
-- "rukkanen"
-- "phietala"
+  - "mattisii"
+  - "rukkanen"
+  - "phietala"

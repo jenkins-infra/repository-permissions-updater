@@ -2,8 +2,8 @@
 name: "azure-vmss"
 github: "jenkinsci/azure-vmss-plugin"
 issues:
-- jira: '23173' # azure-vmss-plugin
+  - jira: '23173'  # azure-vmss-plugin
 paths:
-- "org/jenkins-ci/plugins/azure-vmss"
+  - "org/jenkins-ci/plugins/azure-vmss"
 developers:
-- "zooopx"
+  - "zooopx"

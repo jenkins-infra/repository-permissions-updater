@@ -2,12 +2,12 @@
 name: "aws-codepipeline"
 github: "jenkinsci/aws-codepipeline-plugin"
 issues:
-- jira: '21020' # aws-codepipeline-plugin
+  - jira: '21020'  # aws-codepipeline-plugin
 paths:
-- "com/amazonaws/aws-codepipeline"
+  - "com/amazonaws/aws-codepipeline"
 developers:
-- "belltimo"
-- "fgalmeida"
-- "madhvidua"
-- "haips"
-- "egoramazon"
+  - "belltimo"
+  - "fgalmeida"
+  - "madhvidua"
+  - "haips"
+  - "egoramazon"

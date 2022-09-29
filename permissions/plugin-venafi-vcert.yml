@@ -2,9 +2,9 @@
 name: "venafi-vcert"
 github: &gh "jenkinsci/venafi-vcert-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/venafi-vcert"
+  - "io/jenkins/plugins/venafi-vcert"
 developers:
-- "honglilai"
-- "arnold79"
+  - "honglilai"
+  - "arnold79"

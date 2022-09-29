@@ -2,8 +2,8 @@
 name: "crossbrowsertesting"
 github: "jenkinsci/crossbrowsertesting-plugin"
 issues:
-- jira: '21136' # crossbrowsertesting-plugin
+  - jira: '21136'  # crossbrowsertesting-plugin
 paths:
-- "org/jenkins-ci/plugins/crossbrowsertesting"
+  - "org/jenkins-ci/plugins/crossbrowsertesting"
 developers:
-- "crossbrowsertesting"
+  - "crossbrowsertesting"

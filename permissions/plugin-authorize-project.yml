@@ -2,13 +2,13 @@
 name: "authorize-project"
 github: "jenkinsci/authorize-project-plugin"
 issues:
-- jira: '18155' # authorize-project-plugin
+  - jira: '18155'  # authorize-project-plugin
 paths:
-- "org/jenkins-ci/plugins/authorize-project"
+  - "org/jenkins-ci/plugins/authorize-project"
 developers:
-- "ikedam"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
-# Not a maintainer, just tables-to-divs fixes
-- "oleg_nenashev"
+  - "ikedam"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"
+  # Not a maintainer, just tables-to-divs fixes
+  - "oleg_nenashev"

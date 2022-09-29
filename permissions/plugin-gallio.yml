@@ -2,9 +2,9 @@
 name: "gallio"
 github: "jenkinsci/gallio-plugin"
 issues:
-- jira: '15640' # gallio-plugin
+  - jira: '15640'  # gallio-plugin
 paths:
-- "org/jenkins-ci/plugins/gallio"
-- "org/jvnet/hudson/plugins/gallio"
+  - "org/jenkins-ci/plugins/gallio"
+  - "org/jvnet/hudson/plugins/gallio"
 developers:
-- "gbois"
+  - "gbois"

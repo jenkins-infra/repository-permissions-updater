@@ -2,8 +2,8 @@
 name: "uuid-parameter"
 github: &GH "jenkinsci/uuid-parameter-plugin"
 paths:
-- "io/jenkins/plugins/uuid-parameter"
+  - "io/jenkins/plugins/uuid-parameter"
 developers:
-- "amehina"
+  - "amehina"
 issues:
   - github: *GH

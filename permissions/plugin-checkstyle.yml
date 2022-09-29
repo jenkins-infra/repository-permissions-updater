@@ -2,7 +2,7 @@
 name: "checkstyle"
 github: "jenkinsci/checkstyle-plugin"
 issues:
-- jira: '15512' # checkstyle-plugin
+  - jira: '15512'  # checkstyle-plugin
 paths:
-- "org/jvnet/hudson/plugins/checkstyle"
+  - "org/jvnet/hudson/plugins/checkstyle"
 developers: []

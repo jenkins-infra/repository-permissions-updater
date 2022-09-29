@@ -2,8 +2,8 @@
 name: "neoload-jenkins-plugin"
 github: "jenkinsci/neoload-plugin"
 issues:
-- jira: '18149' # neoload-jenkins-plugin
+  - jira: '18149'  # neoload-jenkins-plugin
 paths:
-- "org/jenkins-ci/plugins/neoload-jenkins-plugin"
+  - "org/jenkins-ci/plugins/neoload-jenkins-plugin"
 developers:
-- "neotyspluginsupport"
+  - "neotyspluginsupport"

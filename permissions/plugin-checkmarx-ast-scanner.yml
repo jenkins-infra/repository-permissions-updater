@@ -2,9 +2,9 @@
 name: "checkmarx-ast-scanner"
 github: &GH "jenkinsci/checkmarx-ast-scanner-plugin"
 paths:
-- "com/checkmarx/jenkins/checkmarx-ast-scanner"
+  - "com/checkmarx/jenkins/checkmarx-ast-scanner"
 developers:
-- "pedrolopecx"
+  - "pedrolopecx"
 issues:
   - github: *GH
 cd:

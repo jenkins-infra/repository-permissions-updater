@@ -2,7 +2,7 @@
 name: "jclouds-jenkins-parent"
 github: "jenkinsci/jclouds-plugin"
 paths:
-- "org/jenkins-ci/plugins/jclouds-jenkins-parent"
+  - "org/jenkins-ci/plugins/jclouds-jenkins-parent"
 developers:
-- "mikefero"
-- "felfert"
+  - "mikefero"
+  - "felfert"

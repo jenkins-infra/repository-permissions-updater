@@ -2,10 +2,8 @@
 name: "matlab"
 github: "jenkinsci/matlab-plugin"
 issues:
-- jira: '25032' # matlab-plugin
+  - jira: '25032'  # matlab-plugin
 paths:
-- "org/jenkins-ci/plugins/matlab"
+  - "org/jenkins-ci/plugins/matlab"
 developers:
-- "mathworks_ci_team"
-
-
+  - "mathworks_ci_team"

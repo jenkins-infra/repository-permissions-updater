@@ -2,12 +2,12 @@
 name: "TestFairy"
 github: "jenkinsci/testfairy-plugin"
 issues:
-- github: 'jenkinsci/testfairy-plugin'
+  - github: 'jenkinsci/testfairy-plugin'
 paths:
-- "org/jenkins-ci/plugins/TestFairy"
+  - "org/jenkins-ci/plugins/TestFairy"
 developers:
-- "diegoperini"
-- "gilm"
-- "yan123"
+  - "diegoperini"
+  - "gilm"
+  - "yan123"
 cd:
   enabled: true

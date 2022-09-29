@@ -2,10 +2,10 @@
 name: "pipeline-cloudwatch-logs"
 github: "jenkinsci/pipeline-cloudwatch-logs-plugin"
 issues:
-- jira: '23949' # pipeline-cloudwatch-logs-plugin
+  - jira: '23949'  # pipeline-cloudwatch-logs-plugin
 paths:
-- "io/jenkins/plugins/pipeline-cloudwatch-logs"
+  - "io/jenkins/plugins/pipeline-cloudwatch-logs"
 developers:
-- "jglick"
-- "csanchez"
-- "oleg_nenashev"
+  - "jglick"
+  - "csanchez"
+  - "oleg_nenashev"

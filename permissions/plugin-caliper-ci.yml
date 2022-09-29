@@ -2,7 +2,7 @@
 name: "caliper-ci"
 github: &gh "jenkinsci/caliper-ci-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "com/brianfromoregon/caliper-ci"
+  - "com/brianfromoregon/caliper-ci"
 developers: []

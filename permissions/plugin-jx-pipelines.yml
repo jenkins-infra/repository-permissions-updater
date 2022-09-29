@@ -2,9 +2,9 @@
 name: "jx-pipelines"
 github: "jenkinsci/jx-pipelines-plugin"
 issues:
-- jira: '23426' # jx-pipelines-plugin
+  - jira: '23426'  # jx-pipelines-plugin
 paths:
-- "org/jenkins-ci/plugins/jx-pipelines"
+  - "org/jenkins-ci/plugins/jx-pipelines"
 developers:
-- "jstrachan"
-- "jenkinsxbot"
+  - "jstrachan"
+  - "jenkinsxbot"

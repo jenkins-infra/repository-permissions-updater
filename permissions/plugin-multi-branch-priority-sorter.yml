@@ -2,9 +2,9 @@
 name: "multi-branch-priority-sorter"
 github: &gh "jenkinsci/multi-branch-priority-sorter-plugin"
 issues:
-- jira: '25435' # multi-branch-priority-sorter-plugin
-- github: *gh
+  - jira: '25435'  # multi-branch-priority-sorter-plugin
+  - github: *gh
 paths:
-- "io/jenkins/plugins/multi-branch-priority-sorter"
+  - "io/jenkins/plugins/multi-branch-priority-sorter"
 developers:
-- "surenpi"
+  - "surenpi"

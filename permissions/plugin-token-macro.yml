@@ -2,11 +2,11 @@
 name: "token-macro"
 github: "jenkinsci/token-macro-plugin"
 issues:
-- jira: '15832' # token-macro-plugin
+  - jira: '15832'  # token-macro-plugin
 paths:
-- "org/jenkins-ci/plugins/token-macro"
+  - "org/jenkins-ci/plugins/token-macro"
 developers:
-- "oleg_nenashev"
-- "slide_o_mix"
+  - "oleg_nenashev"
+  - "slide_o_mix"
 cd:
   enabled: true

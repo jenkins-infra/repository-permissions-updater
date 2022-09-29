@@ -2,12 +2,12 @@
 name: "ssh-steps"
 github: "jenkinsci/ssh-steps-plugin"
 issues:
-- jira: '23921' # ssh-steps-plugin
+  - jira: '23921'  # ssh-steps-plugin
 paths:
-- "org/jenkins-ci/plugins/ssh-steps"
+  - "org/jenkins-ci/plugins/ssh-steps"
 developers:
-- "nrayapati"
-- "ghenkes"
-- "wuchenwang"
+  - "nrayapati"
+  - "ghenkes"
+  - "wuchenwang"
 cd:
   enabled: true

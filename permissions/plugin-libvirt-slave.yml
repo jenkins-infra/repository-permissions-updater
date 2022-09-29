@@ -2,11 +2,11 @@
 name: "libvirt-slave"
 github: "jenkinsci/libvirt-slave-plugin"
 issues:
-- jira: '15985' # libvirt-slave-plugin
+  - jira: '15985'  # libvirt-slave-plugin
 paths:
-- "hudson/plugins/libvirt/libvirt-slave"
-- "org/jenkins-ci/plugins/libvirt-slave"
+  - "hudson/plugins/libvirt/libvirt-slave"
+  - "org/jenkins-ci/plugins/libvirt-slave"
 developers:
-- "gkr"
-- "magnayn"
-- "bgermann"
+  - "gkr"
+  - "magnayn"
+  - "bgermann"

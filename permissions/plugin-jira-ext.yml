@@ -2,8 +2,8 @@
 name: "jira-ext"
 github: "jenkinsci/jira-ext-plugin"
 issues:
-- jira: '21131' # jira-ext-plugin
+  - jira: '21131'  # jira-ext-plugin
 paths:
-- "org/jenkins-ci/plugins/jira-ext"
+  - "org/jenkins-ci/plugins/jira-ext"
 developers:
-- "dalvizu"
+  - "dalvizu"

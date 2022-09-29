@@ -2,8 +2,8 @@
 name: "ca-mat-performance-benchmarking-by-broadcom"
 github: &GH "jenkinsci/ca-mat-performance-benchmarking-by-broadcom-plugin"
 paths:
-- "com/ca/broadcom/plugins/ca-mat-performance-benchmarking-by-broadcom"
+  - "com/ca/broadcom/plugins/ca-mat-performance-benchmarking-by-broadcom"
 developers:
-- "arthurpessoa"
+  - "arthurpessoa"
 issues:
   - github: *GH

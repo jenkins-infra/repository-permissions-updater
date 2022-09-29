@@ -2,9 +2,9 @@
 name: "cmakebuilder"
 github: "jenkinsci/cmakebuilder-plugin"
 issues:
-- jira: '15966' # cmakebuilder-plugin
+  - jira: '15966'  # cmakebuilder-plugin
 paths:
-- "hudson/plugins/cmake/cmakebuilder"
-- "org/jenkins-ci/plugins/cmakebuilder"
+  - "hudson/plugins/cmake/cmakebuilder"
+  - "org/jenkins-ci/plugins/cmakebuilder"
 developers:
-- "15knots"
+  - "15knots"

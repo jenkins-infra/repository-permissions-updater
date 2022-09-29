@@ -2,8 +2,8 @@
 name: "newrelic-deployment-notifier"
 github: "jenkinsci/newrelic-deployment-notifier-plugin"
 issues:
-- jira: '24624' # newrelic-deployment-notifier-plugin
+  - jira: '24624'  # newrelic-deployment-notifier-plugin
 paths:
-- "org/jenkins-ci/plugins/newrelic-deployment-notifier"
+  - "org/jenkins-ci/plugins/newrelic-deployment-notifier"
 developers:
-- "mmchr"
+  - "mmchr"

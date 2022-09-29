@@ -5,5 +5,5 @@ issues:
   - jira: '21945'
 paths:
   - "org/jenkins-ci/plugins/hello-world-scala"
-developers: 
--  "jeremym"
+developers:
+  - "jeremym"

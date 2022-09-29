@@ -2,8 +2,8 @@
 name: "neuro-cucumber"
 github: &GH "jenkinsci/neuro-cucumber-plugin"
 paths:
-- "io/jenkins/plugins/neuro-cucumber"
+  - "io/jenkins/plugins/neuro-cucumber"
 developers:
-- "neuro_support"
+  - "neuro_support"
 issues:
   - github: *GH

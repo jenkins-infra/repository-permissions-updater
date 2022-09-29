@@ -2,7 +2,7 @@
 name: "jenkins-tag-cloud-plugin"
 github: "jenkinsci/tag-cloud-plugin"
 issues:
-- jira: '17484' # jenkins-tag-cloud-plugin
+  - jira: '17484'  # jenkins-tag-cloud-plugin
 paths:
-- "org/jenkins-ci/plugins/jenkins-tag-cloud-plugin"
+  - "org/jenkins-ci/plugins/jenkins-tag-cloud-plugin"
 developers: []

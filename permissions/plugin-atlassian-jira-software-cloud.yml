@@ -2,7 +2,7 @@
 name: "atlassian-jira-software-cloud"
 github: "jenkinsci/atlassian-jira-software-cloud-plugin"
 issues:
-- jira: '25523' # atlassian-jira-software-cloud-plugin
+  - jira: '25523'  # atlassian-jira-software-cloud-plugin
 paths:
   - "com/atlassian/jira/software/cloud/jenkins/atlassian-jira-software-cloud"
 developers:

@@ -2,8 +2,8 @@
 name: "jprt"
 github: "jenkinsci/jprt-plugin"
 issues:
-- jira: '16128' # jprt-plugin
+  - jira: '16128'  # jprt-plugin
 paths:
-- "org/jenkins-ci/plugins/jprt"
-- "org/jvnet/hudson/plugins/jprt"
+  - "org/jenkins-ci/plugins/jprt"
+  - "org/jvnet/hudson/plugins/jprt"
 developers: []

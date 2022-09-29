@@ -2,11 +2,10 @@
 name: "additional-metrics"
 github: "jenkinsci/additional-metrics-plugin"
 issues:
-- jira: '23752' # additional-metrics-plugin
+  - jira: '23752'  # additional-metrics-plugin
 paths:
-- "org/jenkins-ci/plugins/additional-metrics"
+  - "org/jenkins-ci/plugins/additional-metrics"
 developers:
-- "chadiem"
+  - "chadiem"
 cd:
   enabled: true
-

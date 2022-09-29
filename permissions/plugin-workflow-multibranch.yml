@@ -2,20 +2,20 @@
 name: "workflow-multibranch"
 github: "jenkinsci/workflow-multibranch-plugin"
 issues:
-- jira: '21465' # workflow-multibranch-plugin
+  - jira: '21465'  # workflow-multibranch-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-multibranch"
+  - "org/jenkins-ci/plugins/workflow/workflow-multibranch"
 developers:
-- "jglick"
-- "recena"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
-- "jtaboada"
+  - "jglick"
+  - "recena"
+  - "abayer"
+  - "svanoort"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
 security:
   contacts:
     jira: "cloudbees_security_members"

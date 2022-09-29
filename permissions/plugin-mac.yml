@@ -2,10 +2,10 @@
 name: "mac"
 github: "jenkinsci/mac-plugin"
 issues:
-- jira: '26226' # mac-plugin
+  - jira: '26226'  # mac-plugin
 paths:
-- "fr/edf/jenkins/plugins/mac"
+  - "fr/edf/jenkins/plugins/mac"
 developers:
-- "mat1e"
+  - "mat1e"
 cd:
   enabled: true

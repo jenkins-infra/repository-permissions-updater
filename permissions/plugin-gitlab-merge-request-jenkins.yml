@@ -2,8 +2,8 @@
 name: "gitlab-merge-request-jenkins"
 github: "jenkinsci/gitlab-merge-request-builder-plugin"
 issues:
-- jira: '17632' # gitlab-merge-request-jenkins-plugin
+  - jira: '17632'  # gitlab-merge-request-jenkins-plugin
 paths:
-- "com/switchfly/gitlab-merge-request-jenkins"
+  - "com/switchfly/gitlab-merge-request-jenkins"
 developers:
-- "timols"
+  - "timols"

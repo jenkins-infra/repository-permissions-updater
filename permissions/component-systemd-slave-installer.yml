@@ -2,6 +2,6 @@
 name: "systemd-slave-installer"
 github: "jenkinsci/systemd-slave-installer-module"
 paths:
-- "org/jenkins-ci/modules/systemd-slave-installer"
+  - "org/jenkins-ci/modules/systemd-slave-installer"
 developers:
-- "@core"
+  - "@core"

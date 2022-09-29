@@ -2,8 +2,8 @@
 name: "rest-list-parameter"
 github: &gh "jenkinsci/rest-list-parameter-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/rest-list-parameter"
+  - "io/jenkins/plugins/rest-list-parameter"
 developers:
-- "h1dden_da3m0n"
+  - "h1dden_da3m0n"

@@ -2,18 +2,18 @@
 name: "pipeline-milestone-step"
 github: "jenkinsci/pipeline-milestone-step-plugin"
 issues:
-- jira: '21448' # pipeline-milestone-step-plugin
+  - jira: '21448'  # pipeline-milestone-step-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-milestone-step"
+  - "org/jenkins-ci/plugins/pipeline-milestone-step"
 developers:
-- "amuniz"
-- "batmat"
-- "svanoort"
-- "jglick"
-- "abayer"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
+  - "amuniz"
+  - "batmat"
+  - "svanoort"
+  - "jglick"
+  - "abayer"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
 security:
   contacts:
     jira: "cloudbees_security_members"

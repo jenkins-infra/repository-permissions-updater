@@ -2,13 +2,13 @@
 name: "pipeline-model-parent"
 github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
-- "org/jenkinsci/plugins/pipeline-model-parent"
+  - "org/jenkinsci/plugins/pipeline-model-parent"
 developers:
-- "abayer"
-- "oleg_nenashev"
-- "rsandell"
-- "bitwiseman"
-- "dnusbaum"
-- "carroll"
+  - "abayer"
+  - "oleg_nenashev"
+  - "rsandell"
+  - "bitwiseman"
+  - "dnusbaum"
+  - "carroll"
 cd:
   enabled: true

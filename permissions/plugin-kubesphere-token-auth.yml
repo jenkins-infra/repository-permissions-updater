@@ -2,11 +2,10 @@
 name: "kubesphere-token-auth"
 github: "jenkinsci/kubesphere-token-auth-plugin"
 issues:
-- jira: '28420' # kubesphere-token-auth-plugin
+  - jira: '28420'  # kubesphere-token-auth-plugin
 paths:
-- "io/jenkins/plugins/kubesphere-token-auth"
+  - "io/jenkins/plugins/kubesphere-token-auth"
 developers:
   - "shaowenchen"
   - "zhuxiaoyang"
   - "surenpi"
-  

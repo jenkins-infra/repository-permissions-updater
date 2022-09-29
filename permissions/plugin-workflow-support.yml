@@ -2,19 +2,19 @@
 name: "workflow-support"
 github: "jenkinsci/workflow-support-plugin"
 issues:
-- jira: '21719' # workflow-support-plugin
+  - jira: '21719'  # workflow-support-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-support"
+  - "org/jenkins-ci/plugins/workflow/workflow-support"
 developers:
-- "jglick"
-- "kohsuke"
-- "svanoort"
-- "abayer"
-- "rsandell"
-- "dnusbaum"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "jglick"
+  - "kohsuke"
+  - "svanoort"
+  - "abayer"
+  - "rsandell"
+  - "dnusbaum"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
 security:
   contacts:
     jira: "cloudbees_security_members"

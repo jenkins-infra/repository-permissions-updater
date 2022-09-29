@@ -2,7 +2,7 @@
 name: "batch-task"
 github: "jenkinsci/batch-task-plugin"
 issues:
-- jira: '15505' # batch-task-plugin
+  - jira: '15505'  # batch-task-plugin
 paths:
-- "org/jenkins-ci/plugins/batch-task"
+  - "org/jenkins-ci/plugins/batch-task"
 developers: []

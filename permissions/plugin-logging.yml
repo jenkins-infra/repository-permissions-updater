@@ -2,8 +2,8 @@
 name: "logging"
 github: "jenkinsci/logging-plugin"
 issues:
-- jira: '16621' # logging-plugin
+  - jira: '16621'  # logging-plugin
 paths:
-- "net/praqma/logging"
+  - "net/praqma/logging"
 developers:
-- "madsnielsen"
+  - "madsnielsen"

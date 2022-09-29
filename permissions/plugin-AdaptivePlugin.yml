@@ -1,5 +1,5 @@
 ---
 name: "AdaptivePlugin"
 paths:
-- "jenkins/AdaptivePlugin"
+  - "jenkins/AdaptivePlugin"
 developers: []

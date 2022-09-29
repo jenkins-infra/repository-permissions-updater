@@ -2,6 +2,6 @@
 name: "metrics-aggregation-shaded-pmd"
 github: "jenkinsci/metrics-aggregation-plugin"
 paths:
-- "io/jenkins/plugins/metrics-aggregation-shaded-pmd"
+  - "io/jenkins/plugins/metrics-aggregation-shaded-pmd"
 developers:
-- "andipabst"
+  - "andipabst"

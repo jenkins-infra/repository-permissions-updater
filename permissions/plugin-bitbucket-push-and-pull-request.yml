@@ -2,10 +2,10 @@
 name: "bitbucket-push-and-pull-request"
 github: &gh "jenkinsci/bitbucket-push-and-pull-request-plugin"
 issues:
-- github: *gh
-- jira: '24647' # bitbucket-push-and-pull-request-plugin
+  - github: *gh
+  - jira: '24647'  # bitbucket-push-and-pull-request-plugin
 paths:
-- "io/jenkins/plugins/bitbucket-push-and-pull-request"
+  - "io/jenkins/plugins/bitbucket-push-and-pull-request"
 developers:
-- "cdelmonte"
-- "macghriogair"
+  - "cdelmonte"
+  - "macghriogair"

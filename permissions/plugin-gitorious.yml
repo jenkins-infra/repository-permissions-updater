@@ -2,7 +2,7 @@
 name: "gitorious"
 github: "jenkinsci/gitorious-plugin"
 issues:
-- jira: '17440' # gitorious-plugin
+  - jira: '17440'  # gitorious-plugin
 paths:
-- "org/jenkins-ci/plugins/gitorious"
+  - "org/jenkins-ci/plugins/gitorious"
 developers: []

@@ -2,8 +2,8 @@
 name: "testdroid-run-in-cloud"
 github: "jenkinsci/testdroid-run-in-cloud-plugin"
 issues:
-- jira: '21144' # testdroid-run-in-cloud-plugin
+  - jira: '21144'  # testdroid-run-in-cloud-plugin
 paths:
-- "testdroid/testdroid-run-in-cloud"
+  - "testdroid/testdroid-run-in-cloud"
 developers:
-- "bitbar"
+  - "bitbar"

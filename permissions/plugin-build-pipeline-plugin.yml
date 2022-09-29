@@ -2,11 +2,11 @@
 name: "build-pipeline-plugin"
 github: "jenkinsci/build-pipeline-plugin"
 issues:
-- jira: '15962' # build-pipeline-plugin
+  - jira: '15962'  # build-pipeline-plugin
 paths:
-- "org/jenkins-ci/plugins/build-pipeline-plugin"
+  - "org/jenkins-ci/plugins/build-pipeline-plugin"
 developers:
-- "dalvizu"
-- "geoffbullen"
-- "integer"
-- "recena"
+  - "dalvizu"
+  - "geoffbullen"
+  - "integer"
+  - "recena"

@@ -2,8 +2,8 @@
 name: "acunetix-360-scan"
 github: "jenkinsci/acunetix-360-scan-plugin"
 issues:
-- jira: '25621' # acunetix-360-scan-plugin
+  - jira: '25621'  # acunetix-360-scan-plugin
 paths:
-- "org/jenkins-ci/plugins/acunetix-360-scan"
+  - "org/jenkins-ci/plugins/acunetix-360-scan"
 developers:
-- "acunetix360"
+  - "acunetix360"

@@ -2,13 +2,13 @@
 name: "form-element-path"
 github: "jenkinsci/form-element-path-plugin"
 issues:
-- jira: '17482' # form-element-path-plugin
+  - jira: '17482'  # form-element-path-plugin
 paths:
-- "org/jenkins-ci/plugins/form-element-path"
+  - "org/jenkins-ci/plugins/form-element-path"
 developers:
-- "olivergondza"
-- "vlatombe"
-- "jglick"
+  - "olivergondza"
+  - "vlatombe"
+  - "jglick"
 security:
   contacts:
     jira: "cloudbees_security_members"

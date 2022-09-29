@@ -4,6 +4,6 @@ github: "jenkinsci/ignore-committer-strategy-plugin"
 issues:
   - jira: '23428'
 paths:
-- "au/com/versent/jenkins/plugins/ignore-committer-strategy"
+  - "au/com/versent/jenkins/plugins/ignore-committer-strategy"
 developers:
-- "bb3rn4rd"
+  - "bb3rn4rd"

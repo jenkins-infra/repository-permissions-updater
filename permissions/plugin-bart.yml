@@ -2,8 +2,8 @@
 name: "bart"
 github: "jenkinsci/bart-plugin"
 issues:
-- jira: '24632' # bart-plugin
+  - jira: '24632'  # bart-plugin
 paths:
-- "org/jenkins-ci/plugins/bart"
+  - "org/jenkins-ci/plugins/bart"
 developers:
-- "timotyzemp"
+  - "timotyzemp"

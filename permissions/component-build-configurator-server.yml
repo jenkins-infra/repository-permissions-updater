@@ -1,7 +1,7 @@
 ---
 name: "build-configurator-server"
 github: "jenkinsci/build-configurator-plugin"
-paths: 
-- "com/amcbridge/build-configurator-server"
-developers: 
-- "amcbridgedevteam"
+paths:
+  - "com/amcbridge/build-configurator-server"
+developers:
+  - "amcbridgedevteam"

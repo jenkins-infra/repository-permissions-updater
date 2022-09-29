@@ -2,8 +2,8 @@
 name: "buckminster"
 github: "jenkinsci/buckminster-plugin"
 issues:
-- jira: '15633' # buckminster-plugin
+  - jira: '15633'  # buckminster-plugin
 paths:
-- "org/jenkins-ci/plugins/buckminster"
-- "org/jvnet/hudson/plugins/buckminster"
+  - "org/jenkins-ci/plugins/buckminster"
+  - "org/jvnet/hudson/plugins/buckminster"
 developers: []

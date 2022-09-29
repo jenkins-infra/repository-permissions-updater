@@ -2,7 +2,7 @@
 name: "compound-slaves"
 github: &gh "jenkinsci/compound-slaves-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "ru/yandex/jenkins/plugins/compound-slaves/compound-slaves"
+  - "ru/yandex/jenkins/plugins/compound-slaves/compound-slaves"
 developers: []

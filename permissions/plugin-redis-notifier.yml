@@ -2,11 +2,13 @@
 name: "redis-notifier"
 github: "jenkinsci/redis-notifier-plugin"
 issues:
-- jira: '27022' # redis-notifier-plugin
+  - jira: '27022'  # redis-notifier-plugin
 paths:
-- "io/jenkins/plugins/redis-notifier"
+  - "io/jenkins/plugins/redis-notifier"
 developers:
-- "d3camp0s"
-# Disabled by oleg-nenashev on Jun 15, 2020. The user needs to re-login to Artifactory
-# Please see https://groups.google.com/forum/#!topic/jenkinsci-dev/3UvrCTflXGk for the context
-#- "dkmpos89"
+  - "d3camp0s"
+  # Disabled by oleg-nenashev on Jun 15, 2020.
+  # The user needs to re-login to Artifactory.
+  # Please see https://groups.google.com/forum/#!topic/jenkinsci-dev/3UvrCTflXGk
+  # for the context
+  # - "dkmpos89"

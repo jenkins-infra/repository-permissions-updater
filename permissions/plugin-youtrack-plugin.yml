@@ -2,8 +2,8 @@
 name: "youtrack-plugin"
 github: "jenkinsci/youtrack-plugin"
 issues:
-- jira: '17618' # youtrack-plugin
+  - jira: '17618'  # youtrack-plugin
 paths:
-- "org/jenkins-ci/plugins/youtrack-plugin"
+  - "org/jenkins-ci/plugins/youtrack-plugin"
 developers:
-- "erikzielke"
+  - "erikzielke"

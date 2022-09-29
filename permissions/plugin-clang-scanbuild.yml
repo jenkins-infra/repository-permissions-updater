@@ -4,6 +4,6 @@ github: "jenkinsci/clang-scanbuild-plugin"
 issues:
   - jira: '16011'
 paths:
-- "org/jenkins-ci/plugins/clang-scanbuild"
+  - "org/jenkins-ci/plugins/clang-scanbuild"
 developers:
-- "rodrigc"
+  - "rodrigc"

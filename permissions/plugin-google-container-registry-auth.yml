@@ -2,8 +2,8 @@
 name: "google-container-registry-auth"
 github: "jenkinsci/google-container-registry-auth-plugin"
 issues:
-- jira: '20632' # google-container-registry-auth-plugin
+  - jira: '20632'  # google-container-registry-auth-plugin
 paths:
-- "org/jenkins-ci/plugins/google-container-registry-auth"
+  - "org/jenkins-ci/plugins/google-container-registry-auth"
 developers:
-- "wzheng2310"
+  - "wzheng2310"

@@ -2,11 +2,11 @@
 name: "plot"
 github: "jenkinsci/plot-plugin"
 issues:
-- jira: '15564' # plot-plugin
+  - jira: '15564'  # plot-plugin
 paths:
-- "org/jenkins-ci/plugins/plot"
+  - "org/jenkins-ci/plugins/plot"
 developers:
-- "ericbn"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - "ericbn"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"

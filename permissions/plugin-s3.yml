@@ -2,20 +2,20 @@
 name: "s3"
 github: "jenkinsci/s3-plugin"
 issues:
-- jira: '16620' # s3-plugin
+  - jira: '16620'  # s3-plugin
 paths:
-- "org/jenkins-ci/plugins/s3"
+  - "org/jenkins-ci/plugins/s3"
 developers:
-- "dmbeer"
-- "jimilian"
-- "thoulen"
-- "jequals5"
-- "egutierrez"
-- "fcojfernandez"
-- "alecharp"
-- "batmat"
-- "mramonleon"
-- "rsandell"
+  - "dmbeer"
+  - "jimilian"
+  - "thoulen"
+  - "jequals5"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "alecharp"
+  - "batmat"
+  - "mramonleon"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

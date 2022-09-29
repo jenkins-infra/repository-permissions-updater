@@ -2,7 +2,7 @@
 name: "covcomplplot"
 github: "jenkinsci/covcomplplot-plugin"
 issues:
-- jira: '16099' # covcomplplot-plugin
+  - jira: '16099'  # covcomplplot-plugin
 paths:
-- "org/jenkins-ci/plugins/covcomplplot"
+  - "org/jenkins-ci/plugins/covcomplplot"
 developers: []

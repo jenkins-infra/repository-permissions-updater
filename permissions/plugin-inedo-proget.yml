@@ -2,8 +2,8 @@
 name: "inedo-proget"
 github: "jenkinsci/inedo-proget-plugin"
 issues:
-- jira: '21464' # inedo-proget-plugin
+  - jira: '21464'  # inedo-proget-plugin
 paths:
-- "com/inedo/proget/inedo-proget"
+  - "com/inedo/proget/inedo-proget"
 developers:
-- "andrewsumner"
+  - "andrewsumner"

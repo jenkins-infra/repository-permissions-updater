@@ -2,10 +2,10 @@
 name: "redis-fingerprint-storage"
 github: "jenkinsci/redis-fingerprint-storage-plugin"
 issues:
-- jira: '27238' # redis-fingerprint-storage-plugin
+  - jira: '27238'  # redis-fingerprint-storage-plugin
 paths:
-- "io/jenkins/plugins/redis-fingerprint-storage"
+  - "io/jenkins/plugins/redis-fingerprint-storage"
 developers:
-- "stellargo"
-- "oleg_nenashev"
-- "ma3oxuct"
+  - "stellargo"
+  - "oleg_nenashev"
+  - "ma3oxuct"

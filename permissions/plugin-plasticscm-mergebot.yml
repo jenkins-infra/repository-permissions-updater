@@ -4,9 +4,9 @@ github: &GH "jenkinsci/plasticscm-mergebot-plugin"
 issues:
   - github: *GH
 paths:
-- "org/jenkins-ci/plugins/plasticscm-mergebot"
+  - "org/jenkins-ci/plugins/plasticscm-mergebot"
 developers:
-- "mig42"
-- "miryamgsm"
-- "jemagoga"
-- "rubarax"
+  - "mig42"
+  - "miryamgsm"
+  - "jemagoga"
+  - "rubarax"

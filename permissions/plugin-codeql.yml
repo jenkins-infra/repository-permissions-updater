@@ -4,8 +4,8 @@ github: &GH "jenkinsci/codeql-plugin"
 cd:
   enabled: true
 paths:
-- "io/jenkins/plugins/codeql"
+  - "io/jenkins/plugins/codeql"
 developers:
-- "issc29"
+  - "issc29"
 issues:
   - github: *GH

@@ -2,17 +2,17 @@
 name: "pipeline-model-api"
 github: "jenkinsci/pipeline-model-definition-plugin"
 issues:
-- jira: '21706' # pipeline-model-definition-plugin
+  - jira: '21706'  # pipeline-model-definition-plugin
 paths:
-- "org/jenkinsci/plugins/pipeline-model-api"
+  - "org/jenkinsci/plugins/pipeline-model-api"
 developers:
-- "abayer"
-- "oleg_nenashev"
-- "rsandell"
-- "svanoort"
-- "bitwiseman"
-- "dnusbaum"
-- "carroll"
+  - "abayer"
+  - "oleg_nenashev"
+  - "rsandell"
+  - "svanoort"
+  - "bitwiseman"
+  - "dnusbaum"
+  - "carroll"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,7 +2,7 @@
 name: "darcs"
 github: "jenkinsci/darcs-plugin"
 issues:
-- jira: '15820' # darcs-plugin
+  - jira: '15820'  # darcs-plugin
 paths:
-- "org/jenkins-ci/plugins/darcs"
+  - "org/jenkins-ci/plugins/darcs"
 developers: []

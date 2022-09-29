@@ -2,8 +2,8 @@
 name: "project-build-times"
 github: "jenkinsci/project-build-times-plugin"
 issues:
-- jira: '18742' # project-build-times-plugin
+  - jira: '18742'  # project-build-times-plugin
 paths:
-- "org/jenkins-ci/plugins/project-build-times"
+  - "org/jenkins-ci/plugins/project-build-times"
 developers:
-- "therhino04"
+  - "therhino04"

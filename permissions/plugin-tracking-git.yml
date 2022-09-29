@@ -2,8 +2,8 @@
 name: "tracking-git"
 github: "jenkinsci/tracking-git-plugin"
 issues:
-- jira: '18728' # tracking-git-plugin
+  - jira: '18728'  # tracking-git-plugin
 paths:
-- "org/jenkins-ci/plugins/tracking-git"
+  - "org/jenkins-ci/plugins/tracking-git"
 developers:
-- "deanaldinger"
+  - "deanaldinger"

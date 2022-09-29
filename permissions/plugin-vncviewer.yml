@@ -2,9 +2,9 @@
 name: "vncviewer"
 github: &gh "jenkinsci/vncviewer-plugin"
 issues:
-- jira: '20325' # vncviewer-plugin
-- github: *gh
+  - jira: '20325'  # vncviewer-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/vncviewer"
+  - "org/jenkins-ci/plugins/vncviewer"
 developers:
-- "tbaum"
+  - "tbaum"

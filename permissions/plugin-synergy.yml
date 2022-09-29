@@ -2,8 +2,8 @@
 name: "synergy"
 github: "jenkinsci/synergy_scm-plugin"
 issues:
-- jira: '15595' # synergy-plugin
+  - jira: '15595'  # synergy-plugin
 paths:
-- "org/jenkins-ci/plugins/synergy"
-- "org/jvnet/hudson/plugins/synergy"
+  - "org/jenkins-ci/plugins/synergy"
+  - "org/jvnet/hudson/plugins/synergy"
 developers: []

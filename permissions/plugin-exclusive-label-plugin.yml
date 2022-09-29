@@ -2,7 +2,7 @@
 name: "exclusive-label-plugin"
 github: "jenkinsci/exclusive-labels-plugin"
 issues:
-- jira: '17500' # exclusive-label-plugin
+  - jira: '17500'  # exclusive-label-plugin
 paths:
-- "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
+  - "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
 developers: []

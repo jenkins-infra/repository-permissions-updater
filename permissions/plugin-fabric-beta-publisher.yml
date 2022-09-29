@@ -2,9 +2,9 @@
 name: "fabric-beta-publisher"
 github: &gh "jenkinsci/fabric-beta-publisher-plugin"
 issues:
-- github: *gh
-- jira: '21667' # fabric-beta-publisher-plugin
+  - github: *gh
+  - jira: '21667'  # fabric-beta-publisher-plugin
 paths:
-- "egor-n/fabric-beta-publisher"
+  - "egor-n/fabric-beta-publisher"
 developers:
-- "egor"
+  - "egor"

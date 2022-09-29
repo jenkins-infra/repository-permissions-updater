@@ -2,7 +2,7 @@
 name: "vault-scm-plugin"
 github: "jenkinsci/vault-scm-plugin"
 issues:
-- jira: '17333' # vault-scm-plugin
+  - jira: '17333'  # vault-scm-plugin
 paths:
-- "org/jenkins-ci/plugins/vault-scm-plugin"
+  - "org/jenkins-ci/plugins/vault-scm-plugin"
 developers: []

@@ -2,11 +2,11 @@
 name: "data-tables-api"
 github: "jenkinsci/data-tables-api-plugin"
 issues:
-- jira: '26333' # data-tables-api-plugin
+  - jira: '26333'  # data-tables-api-plugin
 paths:
-- "io/jenkins/plugins/data-tables-api"
+  - "io/jenkins/plugins/data-tables-api"
 developers:
-- "drulli"
+  - "drulli"
 security:
   contacts:
     jira: "cloudbees_security_members"

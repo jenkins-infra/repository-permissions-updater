@@ -2,12 +2,12 @@
 name: "parent"
 github: "jenkinsci/configuration-as-code-plugin"
 paths:
-- "io/jenkins/configuration-as-code/parent"
+  - "io/jenkins/configuration-as-code/parent"
 developers:
-- "praqma"
-- "jetersen"
-- "oleg_nenashev"
-- "timja"
+  - "praqma"
+  - "jetersen"
+  - "oleg_nenashev"
+  - "timja"
 cd:
   enabled: true
 security:

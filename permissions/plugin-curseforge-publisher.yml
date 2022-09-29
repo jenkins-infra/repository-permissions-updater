@@ -2,8 +2,8 @@
 name: "curseforge-publisher"
 github: "jenkinsci/curseforge-publisher-plugin"
 issues:
-- jira: '19220' # curseforge-publisher-plugin
+  - jira: '19220'  # curseforge-publisher-plugin
 paths:
-- "org/jenkins-ci/plugins/curseforge-publisher"
+  - "org/jenkins-ci/plugins/curseforge-publisher"
 developers:
-- "r04r"
+  - "r04r"

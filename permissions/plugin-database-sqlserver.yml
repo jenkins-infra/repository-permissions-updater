@@ -2,8 +2,8 @@
 name: "database-sqlserver"
 github: &GH "jenkinsci/database-sqlserver-plugin"
 paths:
-- "io/jenkins/plugins/database-sqlserver"
+  - "io/jenkins/plugins/database-sqlserver"
 developers:
-- "cnhttpd"
+  - "cnhttpd"
 issues:
   - github: *GH

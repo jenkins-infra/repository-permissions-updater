@@ -2,8 +2,8 @@
 name: "azure-dev-spaces"
 github: "jenkinsci/azure-dev-spaces-plugin"
 issues:
-- jira: '25429' # azure-dev-spaces-plugin
+  - jira: '25429'  # azure-dev-spaces-plugin
 paths:
-- "org/jenkins-ci/plugins/azure-dev-spaces"
+  - "org/jenkins-ci/plugins/azure-dev-spaces"
 developers:
-- "zooopx"
+  - "zooopx"

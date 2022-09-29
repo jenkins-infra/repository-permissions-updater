@@ -2,8 +2,8 @@
 name: "block-build-final-project"
 github: "jenkinsci/block-build-final-project-plugin"
 issues:
-- jira: '21957' # block-build-final-project-plugin
+  - jira: '21957'  # block-build-final-project-plugin
 paths:
-- "org/jenkins-ci/plugins/block-build-final-project"
+  - "org/jenkins-ci/plugins/block-build-final-project"
 developers:
-- "chadrosenquist"
+  - "chadrosenquist"

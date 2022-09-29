@@ -2,8 +2,8 @@
 name: "pipeline-dependency-walker"
 github: &gh "jenkinsci/pipeline-dependency-walker-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/pipeline-dependency-walker"
+  - "org/jenkins-ci/plugins/pipeline-dependency-walker"
 developers:
-- "estarter"
+  - "estarter"

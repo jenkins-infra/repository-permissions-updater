@@ -2,9 +2,9 @@
 name: "github-issues"
 github: &gh "jenkinsci/github-issues-plugin"
 issues:
-- jira: '21923' # github-issues-plugin
-- github: *gh
+  - jira: '21923'  # github-issues-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/github-issues"
+  - "org/jenkins-ci/plugins/github-issues"
 developers:
-- "daniel15"
+  - "daniel15"

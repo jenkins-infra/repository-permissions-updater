@@ -2,11 +2,11 @@
 name: "crowd2"
 github: "jenkinsci/crowd2-plugin"
 issues:
-- jira: '15949' # crowd2-plugin
+  - jira: '15949'  # crowd2-plugin
 paths:
-- "org/jenkins-ci/plugins/crowd2"
+  - "org/jenkins-ci/plugins/crowd2"
 developers:
-- "integer"
-- "mreinhardt"
-- "pingunaut"
-- "dumam"
+  - "integer"
+  - "mreinhardt"
+  - "pingunaut"
+  - "dumam"

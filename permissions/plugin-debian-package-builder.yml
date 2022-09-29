@@ -2,9 +2,9 @@
 name: "debian-package-builder"
 github: &gh "jenkinsci/debian-package-builder-plugin"
 issues:
-- github: *gh
-- jira: '17529' # debian-package-builder-plugin
+  - github: *gh
+  - jira: '17529'  # debian-package-builder-plugin
 paths:
-- "ru/yandex/jenkins/plugins/debuilder/debian-package-builder"
+  - "ru/yandex/jenkins/plugins/debuilder/debian-package-builder"
 developers:
-- "pupssman"
+  - "pupssman"

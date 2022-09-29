@@ -2,10 +2,9 @@
 name: "azure-iot-edge"
 github: "jenkinsci/azure-iot-edge-plugin"
 issues:
-- jira: '24425' # azure-iot-edge-plugin
+  - jira: '24425'  # azure-iot-edge-plugin
 paths:
-- "org/jenkins-ci/plugins/azure-iot-edge"
+  - "org/jenkins-ci/plugins/azure-iot-edge"
 developers:
-- "michaeljqzq"
-- "azure_iot_tooling"
-
+  - "michaeljqzq"
+  - "azure_iot_tooling"

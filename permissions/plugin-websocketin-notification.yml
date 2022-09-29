@@ -2,8 +2,8 @@
 name: "websocketin-notification"
 github: "jenkinsci/websocketin-notification-plugin"
 issues:
-- jira: '25820' # websocketin-notification-plugin
+  - jira: '25820'  # websocketin-notification-plugin
 paths:
-- "io/jenkins/plugins/websocketin-notification"
+  - "io/jenkins/plugins/websocketin-notification"
 developers:
-- "dhobi"
+  - "dhobi"

@@ -2,9 +2,9 @@
 name: "view26"
 github: "jenkinsci/view26-plugin"
 issues:
-- jira: '22720' # view26-plugin
+  - jira: '22720'  # view26-plugin
 paths:
-- "org/jenkins-ci/plugins/view26"
+  - "org/jenkins-ci/plugins/view26"
 developers:
-- "ajayep"
-- "aneeshiad"
+  - "ajayep"
+  - "aneeshiad"

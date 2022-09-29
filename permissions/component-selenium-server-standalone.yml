@@ -1,8 +1,8 @@
 ---
 name: "selenium-server-standalone"
 paths:
-- "org/seleniumhq/selenium/selenium-server-standalone"
+  - "org/seleniumhq/selenium/selenium-server-standalone"
 developers:
-- "darkrift"
-- "glennc"
-- "willemv"
+  - "darkrift"
+  - "glennc"
+  - "willemv"

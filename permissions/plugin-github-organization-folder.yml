@@ -2,10 +2,10 @@
 name: "github-organization-folder"
 github: "jenkinsci/github-organization-folder-plugin"
 issues:
-- jira: '21427' # github-organization-folder-plugin
+  - jira: '21427'  # github-organization-folder-plugin
 paths:
-- "org/jenkins-ci/plugins/github-organization-folder"
+  - "org/jenkins-ci/plugins/github-organization-folder"
 developers:
-- "jglick"
-- "kohsuke"
-- "recena"
+  - "jglick"
+  - "kohsuke"
+  - "recena"

@@ -2,9 +2,9 @@
 name: "frugal-testing"
 github: "jenkinsci/frugal-testing-plugin"
 issues:
-- jira: '25525' # frugal-testing-plugin
+  - jira: '25525'  # frugal-testing-plugin
 paths:
-- "io/jenkins/plugins/frugal-testing"
+  - "io/jenkins/plugins/frugal-testing"
 developers:
-- "frugaltesting"
-- "jakshatdesai"
+  - "frugaltesting"
+  - "jakshatdesai"

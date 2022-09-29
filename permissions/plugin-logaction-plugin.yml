@@ -2,7 +2,7 @@
 name: "logaction-plugin"
 github: "jenkinsci/logaction-plugin"
 issues:
-- jira: '16051' # logaction-plugin
+  - jira: '16051'  # logaction-plugin
 paths:
-- "de/fspengler/hudson/plugin/logaction-plugin"
+  - "de/fspengler/hudson/plugin/logaction-plugin"
 developers: []

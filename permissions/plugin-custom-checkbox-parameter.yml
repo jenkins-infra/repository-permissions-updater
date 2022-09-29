@@ -2,8 +2,8 @@
 name: "custom-checkbox-parameter"
 github: "jenkinsci/custom-checkbox-parameter-plugin"
 issues:
-- jira: '27524' # custom-checkbox-parameter-plugin
+  - jira: '27524'  # custom-checkbox-parameter-plugin
 paths:
-- "io/jenkins/plugins/custom-checkbox-parameter"
+  - "io/jenkins/plugins/custom-checkbox-parameter"
 developers:
-- "bluersw"
+  - "bluersw"

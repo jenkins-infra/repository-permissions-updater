@@ -2,9 +2,9 @@
 name: "appray"
 github: "jenkinsci/appray-plugin"
 issues:
-- jira: '27423' # appray-plugin
+  - jira: '27423'  # appray-plugin
 paths:
-- "io/jenkins/plugins/appray"
+  - "io/jenkins/plugins/appray"
 developers:
-- "marci_appray"
-- "jayzsolt"
+  - "marci_appray"
+  - "jayzsolt"

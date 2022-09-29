@@ -2,8 +2,8 @@
 name: "labelled-steps"
 github: "jenkinsci/labelled-steps-plugin"
 issues:
-- jira: '24020' # labelled-steps-plugin
+  - jira: '24020'  # labelled-steps-plugin
 paths:
-- "me/vickychijwani/jenkins/labelled-steps"
+  - "me/vickychijwani/jenkins/labelled-steps"
 developers:
-- "vickychijwani"
+  - "vickychijwani"

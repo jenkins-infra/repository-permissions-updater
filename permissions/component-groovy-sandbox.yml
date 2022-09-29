@@ -2,9 +2,9 @@
 name: "groovy-sandbox"
 github: "jenkinsci/groovy-sandbox"
 paths:
-- "org/kohsuke/groovy-sandbox"
+  - "org/kohsuke/groovy-sandbox"
 developers:
-- "carroll"
-- "dnusbaum"
-- "jglick"
-- "rsandell"
+  - "carroll"
+  - "dnusbaum"
+  - "jglick"
+  - "rsandell"

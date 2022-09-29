@@ -1,6 +1,6 @@
 ---
 name: "servlet-api"
 paths:
-- "javax/servlet/servlet-api"
+  - "javax/servlet/servlet-api"
 developers:
-- "teilo"
+  - "teilo"

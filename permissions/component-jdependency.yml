@@ -2,8 +2,8 @@
 name: "jdependency"
 github: "jenkinsci/jdependency"
 paths:
-- "io/jenkins/org/vafer/jdependency"
+  - "io/jenkins/org/vafer/jdependency"
 developers:
-- "rsandell"
-- "svanoort"
-- "abayer"
+  - "rsandell"
+  - "svanoort"
+  - "abayer"

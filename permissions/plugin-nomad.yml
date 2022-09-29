@@ -2,15 +2,15 @@
 name: "nomad"
 github: &gh "jenkinsci/nomad-plugin"
 issues:
-- github: *gh
-- jira: '21456' # nomad-plugin
+  - github: *gh
+  - jira: '21456'  # nomad-plugin
 paths:
-- "org/jenkins-ci/plugins/nomad"
+  - "org/jenkins-ci/plugins/nomad"
 developers:
-- "iverberk"
-- "antweiss"
-- "phedoreanu"
-- "multani"
-- "j3t"
+  - "iverberk"
+  - "antweiss"
+  - "phedoreanu"
+  - "multani"
+  - "j3t"
 cd:
   enabled: true

@@ -2,7 +2,7 @@
 name: "emmacoveragecolumn"
 github: "jenkinsci/emmacoveragecolumn-plugin"
 issues:
-- jira: '16014' # emmacoveragecolumn-plugin
+  - jira: '16014'  # emmacoveragecolumn-plugin
 paths:
-- "org/jenkins-ci/plugins/emmacoveragecolumn"
+  - "org/jenkins-ci/plugins/emmacoveragecolumn"
 developers: []

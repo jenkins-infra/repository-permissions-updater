@@ -2,8 +2,8 @@
 name: "myst-plugin"
 github: "jenkinsci/myst-plugin"
 issues:
-- jira: '18762' # myst-plugin
+  - jira: '18762'  # myst-plugin
 paths:
-- "com/rubiconred/jenkins/myst-plugin"
+  - "com/rubiconred/jenkins/myst-plugin"
 developers:
-- "fdouek"
+  - "fdouek"

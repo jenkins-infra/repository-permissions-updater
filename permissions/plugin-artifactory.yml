@@ -2,9 +2,9 @@
 name: "artifactory"
 github: "jenkinsci/artifactory-plugin"
 issues:
-- jira: '15689' # artifactory-plugin
+  - jira: '15689'  # artifactory-plugin
 paths:
-- "org/jenkins-ci/plugins/artifactory"
-- "org/jvnet/hudson/plugins/artifactory"
+  - "org/jenkins-ci/plugins/artifactory"
+  - "org/jvnet/hudson/plugins/artifactory"
 developers:
-- "yossis"
+  - "yossis"

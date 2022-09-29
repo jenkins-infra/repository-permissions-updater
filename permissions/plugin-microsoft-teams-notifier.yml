@@ -2,8 +2,8 @@
 name: "microsoft-teams-notifier"
 github: &GH "jenkinsci/microsoft-teams-notifier-plugin"
 paths:
-- "io/jenkins/plugins/microsoft-teams-notifier"
+  - "io/jenkins/plugins/microsoft-teams-notifier"
 developers:
-- "huynx11"
+  - "huynx11"
 issues:
   - github: *GH

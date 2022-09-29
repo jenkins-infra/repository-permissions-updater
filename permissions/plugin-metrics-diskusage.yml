@@ -2,7 +2,7 @@
 name: "metrics-diskusage"
 github: "jenkinsci/metrics-diskusage-plugin"
 issues:
-- jira: '18736' # metrics-diskusage-plugin
+  - jira: '18736'  # metrics-diskusage-plugin
 paths:
-- "org/jenkins-ci/plugins/metrics-diskusage"
+  - "org/jenkins-ci/plugins/metrics-diskusage"
 developers: []

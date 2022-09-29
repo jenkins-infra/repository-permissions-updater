@@ -2,8 +2,8 @@
 name: "onesky"
 github: "jenkinsci/onesky-plugin"
 issues:
-- jira: '21946' # onesky-plugin
-paths: 
-- "org/jenkins-ci/plugins/onesky"
+  - jira: '21946'  # onesky-plugin
+paths:
+  - "org/jenkins-ci/plugins/onesky"
 developers:
-- "ricardoespsanto"
+  - "ricardoespsanto"

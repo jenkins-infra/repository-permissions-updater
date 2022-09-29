@@ -2,17 +2,17 @@
 name: "jdk-tool"
 github: "jenkinsci/jdk-tool-plugin"
 issues:
-- jira: '23529' # jdk-tool-plugin
+  - jira: '23529'  # jdk-tool-plugin
 paths:
-- "org/jenkins-ci/plugins/jdk-tool"
+  - "org/jenkins-ci/plugins/jdk-tool"
 cd:
   enabled: true
 developers:
-- "dnusbaum"
-- "jglick"
-- "oleg_nenashev"
-- "aheritier"
-- "mramonleon"
+  - "dnusbaum"
+  - "jglick"
+  - "oleg_nenashev"
+  - "aheritier"
+  - "mramonleon"
 security:
   contacts:
     jira: "cloudbees_security_members"

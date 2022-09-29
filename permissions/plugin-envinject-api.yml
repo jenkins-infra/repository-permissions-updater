@@ -2,11 +2,11 @@
 name: "envinject-api"
 github: "jenkinsci/envinject-api-plugin"
 issues:
-- jira: '22421' # envinject-api-plugin
+  - jira: '22421'  # envinject-api-plugin
 paths:
-- "org/jenkins-ci/plugins/envinject-api"
+  - "org/jenkins-ci/plugins/envinject-api"
 developers:
-- "oleg_nenashev"
-- "notmyfault"
+  - "oleg_nenashev"
+  - "notmyfault"
 cd:
   enabled: true

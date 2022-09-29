@@ -2,8 +2,8 @@
 name: "remoting-security-workaround"
 github: &GH "jenkinsci/remoting-security-workaround-plugin"
 issues:
-- github: *GH
+  - github: *GH
 paths:
-- "io/jenkins/plugins/remoting-security-workaround"
+  - "io/jenkins/plugins/remoting-security-workaround"
 developers:
-- "@security"
+  - "@security"

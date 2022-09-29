@@ -1,5 +1,5 @@
 ---
 name: "container-slaves"
 paths:
-- "com/cloudbees/jenkins/plugins/container-slaves"
+  - "com/cloudbees/jenkins/plugins/container-slaves"
 developers: []

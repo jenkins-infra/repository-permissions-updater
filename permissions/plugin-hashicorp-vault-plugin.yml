@@ -2,13 +2,13 @@
 name: "hashicorp-vault-plugin"
 github: &gh "jenkinsci/hashicorp-vault-plugin"
 issues:
-- github: *gh
-- jira: '21682' # hashicorp-vault-plugin
+  - github: *gh
+  - jira: '21682'  # hashicorp-vault-plugin
 paths:
-- "com/datapipe/jenkins/plugins/hashicorp-vault-plugin"
+  - "com/datapipe/jenkins/plugins/hashicorp-vault-plugin"
 developers:
-- "ptierno"
-- "jetersen"
-- "dineshba"
+  - "ptierno"
+  - "jetersen"
+  - "dineshba"
 cd:
   enabled: true

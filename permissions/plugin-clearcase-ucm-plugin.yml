@@ -2,12 +2,12 @@
 name: "clearcase-ucm-plugin"
 github: "jenkinsci/clearcase-ucm-plugin"
 issues:
-- jira: '16041' # clearcase-ucm-plugin
+  - jira: '16041'  # clearcase-ucm-plugin
 paths:
-- "org/jenkins-ci/plugins/clearcase-ucm-plugin"
+  - "org/jenkins-ci/plugins/clearcase-ucm-plugin"
 developers:
-- "madsnielsen"
-- "atombrella"
-- "praqma"
+  - "madsnielsen"
+  - "atombrella"
+  - "praqma"
 cd:
   enabled: true

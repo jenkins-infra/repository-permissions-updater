@@ -2,7 +2,7 @@
 name: "pathignore"
 github: "jenkinsci/pathignore-plugin"
 issues:
-- jira: '16135' # pathignore-plugin
+  - jira: '16135'  # pathignore-plugin
 paths:
-- "org/jenkins-ci/ruby-plugins/pathignore"
+  - "org/jenkins-ci/ruby-plugins/pathignore"
 developers: []

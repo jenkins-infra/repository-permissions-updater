@@ -2,12 +2,12 @@
 name: "jms-messaging"
 github: &gh "jenkinsci/jms-messaging-plugin"
 issues:
-- github: *gh
-- jira: '21951' # jms-messaging-plugin
+  - github: *gh
+  - jira: '21951'  # jms-messaging-plugin
 paths:
-- "org/jenkins-ci/plugins/jms-messaging"
+  - "org/jenkins-ci/plugins/jms-messaging"
 developers:
-- "scoheb"
-- "ggallen"
-- "olivergondza"
-- "pajasoft"
+  - "scoheb"
+  - "ggallen"
+  - "olivergondza"
+  - "pajasoft"

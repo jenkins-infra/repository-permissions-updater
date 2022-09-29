@@ -4,6 +4,6 @@ github: &GH "jenkinsci/discobit-autoconfig-plugin"
 issues:
   - github: *GH
 paths:
-- "com/v3rticle/oss/discobit-autoconfig"
+  - "com/v3rticle/oss/discobit-autoconfig"
 developers:
-- "jenssaade"
+  - "jenssaade"

@@ -2,7 +2,7 @@
 name: "declarative-pipeline-migration-assistant-api"
 github: "jenkinsci/declarative-pipeline-migration-assistant-plugin"
 issues:
-- jira: '27120' # declarative-pipeline-migration-assistant-plugin
+  - jira: '27120'  # declarative-pipeline-migration-assistant-plugin
 paths:
   - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-api"
 developers:
@@ -17,4 +17,3 @@ developers:
 security:
   contacts:
     jira: "cloudbees_security_members"
-

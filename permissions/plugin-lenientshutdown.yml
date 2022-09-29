@@ -2,8 +2,8 @@
 name: "lenientshutdown"
 github: "jenkinsci/lenient-shutdown-plugin"
 issues:
-- jira: '19229' # lenientshutdown-plugin
+  - jira: '19229'  # lenientshutdown-plugin
 paths:
-- "com/sonymobile/jenkins/plugins/lenientshutdown/lenientshutdown"
+  - "com/sonymobile/jenkins/plugins/lenientshutdown/lenientshutdown"
 developers:
-- "rsandell"
+  - "rsandell"

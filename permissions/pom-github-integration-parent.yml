@@ -1,6 +1,6 @@
 ---
 name: "github-integration-parent"
 paths:
-- "org/jenkins-ci/plugins/github-integration-parent"
+  - "org/jenkins-ci/plugins/github-integration-parent"
 developers:
-- "integer"
+  - "integer"

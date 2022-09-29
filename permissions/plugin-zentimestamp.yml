@@ -2,8 +2,8 @@
 name: "zentimestamp"
 github: "jenkinsci/zentimestamp-plugin"
 issues:
-- jira: '15589' # zentimestamp-plugin
+  - jira: '15589'  # zentimestamp-plugin
 paths:
-- "org/jenkins-ci/plugins/zentimestamp"
+  - "org/jenkins-ci/plugins/zentimestamp"
 developers:
-- "gbois"
+  - "gbois"

@@ -2,10 +2,10 @@
 name: "toolenv"
 github: "jenkinsci/toolenv-plugin"
 issues:
-- jira: '16058' # toolenv-plugin
+  - jira: '16058'  # toolenv-plugin
 paths:
-- "org/jenkins-ci/plugins/toolenv"
+  - "org/jenkins-ci/plugins/toolenv"
 developers:
-- "skundrik"
+  - "skundrik"
 cd:
   enabled: true

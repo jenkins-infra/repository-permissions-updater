@@ -2,8 +2,8 @@
 name: "offlineonfailure-plugin"
 github: "jenkinsci/offlineonfailure-plugin"
 issues:
-- jira: '16088' # offlineonfailure-plugin
+  - jira: '16088'  # offlineonfailure-plugin
 paths:
-- "org/jenkins-ci/plugins/offlineonfailure-plugin"
+  - "org/jenkins-ci/plugins/offlineonfailure-plugin"
 developers:
-- "johnlengeling"
+  - "johnlengeling"

@@ -2,9 +2,9 @@
 name: "koji"
 github: "jenkinsci/koji-plugin"
 issues:
-- jira: '18821' # koji-plugin
+  - jira: '18821'  # koji-plugin
 paths:
-- "org/jenkins-ci/plugins/koji"
+  - "org/jenkins-ci/plugins/koji"
 developers:
-- "orrc"
-- "vtunka"
+  - "orrc"
+  - "vtunka"

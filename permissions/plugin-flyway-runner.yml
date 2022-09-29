@@ -2,8 +2,8 @@
 name: "flyway-runner"
 github: "jenkinsci/flyway-runner-plugin"
 issues:
-- jira: '21439' # flyway-runner-plugin
+  - jira: '21439'  # flyway-runner-plugin
 paths:
-- "sp/sd/flyway-runner"
+  - "sp/sd/flyway-runner"
 developers:
-- "pskumar448"
+  - "pskumar448"

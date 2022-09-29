@@ -2,8 +2,8 @@
 name: "kubernetes-pipeline-arquillian-steps"
 github: "jenkinsci/kubernetes-pipeline-plugin"
 issues:
-- jira: '21630' # kubernetes-pipeline-plugin
+  - jira: '21630'  # kubernetes-pipeline-plugin
 paths:
-- "io/fabric8/pipeline/kubernetes-pipeline-arquillian-steps"
+  - "io/fabric8/pipeline/kubernetes-pipeline-arquillian-steps"
 developers:
-- "iocanel"
+  - "iocanel"

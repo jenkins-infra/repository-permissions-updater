@@ -2,18 +2,18 @@
 name: "maven-plugin"
 github: "jenkinsci/maven-plugin"
 issues:
-- jira: '16033' # maven-plugin
+  - jira: '16033'  # maven-plugin
 paths:
-- "org/jenkins-ci/main/maven-plugin"
-- "org/jvnet/hudson/main/maven-plugin"
+  - "org/jenkins-ci/main/maven-plugin"
+  - "org/jvnet/hudson/main/maven-plugin"
 developers:
-- "integer"
-- "jglick"
-- "kohsuke"
-- "olamy"
-- "olivergondza"
-- "aheritier"
-- "jtaboada"
+  - "integer"
+  - "jglick"
+  - "kohsuke"
+  - "olamy"
+  - "olivergondza"
+  - "aheritier"
+  - "jtaboada"
 security:
   contacts:
     jira: "cloudbees_security_members"
