@@ -6,5 +6,7 @@ issues:
   - jira: '25126'  # maven-snapshot-check-plugin
 paths:
   - "org/jenkins-ci/plugins/maven-snapshot-check"
+cd:
+  enabled: true
 developers:
   - "donhui"
