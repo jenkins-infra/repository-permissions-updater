@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/dependency-check-jenkins-plugin"
 developers:
   - "danile42"
+  - "nfalco"
