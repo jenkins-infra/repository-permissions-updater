@@ -19,6 +19,7 @@ developers:
   - "rarabaolaza"
   - "borisyaoa"
   - "julieheard"
+  - "ampuscas"
 security:
   contacts:
     jira: "cloudbees_security_members"
