@@ -2,13 +2,13 @@
 name: "mstestrunner"
 github: "jenkinsci/mstestrunner-plugin"
 issues:
-- jira: '17461' # mstestrunner-plugin
+  - jira: '17461'  # mstestrunner-plugin
 paths:
-- "org/jenkins-ci/plugins/mstestrunner"
+  - "org/jenkins-ci/plugins/mstestrunner"
 developers:
-- "armfergom"
-- "batmat"
-- "ido_ran"
+  - "armfergom"
+  - "batmat"
+  - "ido_ran"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,22 +2,22 @@
 name: "blueocean-commons"
 github: "jenkinsci/blueocean-plugin"
 issues:
-- jira: '21481' # blueocean-plugin
+  - jira: '21481'  # blueocean-plugin
 paths:
-- "io/jenkins/blueocean/blueocean-commons"
+  - "io/jenkins/blueocean/blueocean-commons"
 developers:
-- "michaelneale"
-- "vivek"
-- "kzantow"
-- "davidbees"
-- "richbg"
-- "carroll"
-- "dnusbaum"
-- "jtaboada"
-- "kshultz"
-- "bitwiseman"
-- "olamy"
-- "tscherler"
+  - "michaelneale"
+  - "vivek"
+  - "kzantow"
+  - "davidbees"
+  - "richbg"
+  - "carroll"
+  - "dnusbaum"
+  - "jtaboada"
+  - "kshultz"
+  - "bitwiseman"
+  - "olamy"
+  - "tscherler"
 security:
   contacts:
     jira: "cloudbees_security_members"

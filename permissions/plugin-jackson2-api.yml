@@ -4,20 +4,20 @@ github: "jenkinsci/jackson2-api-plugin"
 cd:
   enabled: true
 issues:
-- jira: '23528' # jackson2-api-plugin
+  - jira: '23528'  # jackson2-api-plugin
 paths:
-- "org/jenkins-ci/plugins/jackson2-api"
+  - "org/jenkins-ci/plugins/jackson2-api"
 developers:
-- "oleg_nenashev"
-- "dnusbaum"
-- "jvz"
-- "teilo"
-- "rsandell"
-- "carroll"
-- "olamy"
-- "mramonleon"
-- "alecharp"
-- "bitwiseman"
+  - "oleg_nenashev"
+  - "dnusbaum"
+  - "jvz"
+  - "teilo"
+  - "rsandell"
+  - "carroll"
+  - "olamy"
+  - "mramonleon"
+  - "alecharp"
+  - "bitwiseman"
 security:
   contacts:
     jira: "cloudbees_security_members"

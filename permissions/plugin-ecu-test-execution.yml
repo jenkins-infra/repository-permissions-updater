@@ -2,8 +2,8 @@
 name: "ecu-test-execution"
 github: &gh "jenkinsci/ecu-test-execution-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "de/tracetronic/jenkins/plugins/ecu-test-execution"
+  - "de/tracetronic/jenkins/plugins/ecu-test-execution"
 developers:
-- "tracetronic"
+  - "tracetronic"

@@ -2,8 +2,8 @@
 name: "scm-filter-branch-pr"
 github: "jenkinsci/scm-filter-branch-pr-plugin"
 issues:
-- jira: '23159' # scm-filter-branch-pr-plugin
+  - jira: '23159'  # scm-filter-branch-pr-plugin
 paths:
-- "org/jenkins-ci/plugins/scm-filter-branch-pr"
+  - "org/jenkins-ci/plugins/scm-filter-branch-pr"
 developers:
-- "sag47"
+  - "sag47"

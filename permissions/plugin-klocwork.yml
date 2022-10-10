@@ -2,11 +2,11 @@
 name: "klocwork"
 github: &gh "jenkinsci/klocwork-plugin"
 issues:
-- jira: '15906' # klocwork-plugin
-- github: *gh
+  - jira: '15906'  # klocwork-plugin
+  - github: *gh
 paths:
-- "com/thalesgroup/jenkins-ci/plugins/klocwork"
-- "org/jenkins-ci/plugins/klocwork"
+  - "com/thalesgroup/jenkins-ci/plugins/klocwork"
+  - "org/jenkins-ci/plugins/klocwork"
 developers:
-- "michaelbaron"
-- "klocwork"
+  - "michaelbaron"
+  - "klocwork"

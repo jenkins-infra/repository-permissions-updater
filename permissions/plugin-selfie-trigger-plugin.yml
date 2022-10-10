@@ -1,7 +1,7 @@
 ---
 name: "selfie-trigger-plugin"
 paths:
-- "org/jenkins-ci/plugins/selfie-trigger-plugin"
-- "org/jenkinsci/plugins/selfie-trigger-plugin"
+  - "org/jenkins-ci/plugins/selfie-trigger-plugin"
+  - "org/jenkinsci/plugins/selfie-trigger-plugin"
 developers:
-- "abhyrama"
+  - "abhyrama"

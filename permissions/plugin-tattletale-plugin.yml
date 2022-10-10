@@ -2,7 +2,7 @@
 name: "tattletale-plugin"
 github: "jenkinsci/tattletale-plugin"
 issues:
-- jira: '16543' # tattletale-plugin
+  - jira: '16543'  # tattletale-plugin
 paths:
-- "org/jenkins-ci/plugins/tattletale-plugin"
+  - "org/jenkins-ci/plugins/tattletale-plugin"
 developers: []

@@ -2,9 +2,9 @@
 name: "tuleap-api"
 github: "jenkinsci/tuleap-api-plugin"
 issues:
-- jira: '27220' # tuleap-api-plugin
+  - jira: '27220'  # tuleap-api-plugin
 paths:
-- "io/jenkins/plugins/tuleap-api"
+  - "io/jenkins/plugins/tuleap-api"
 developers:
-- "erwyn"
-- "crobinson"
+  - "erwyn"
+  - "crobinson"

@@ -2,9 +2,9 @@
 name: "adoptopenjdk"
 github: "jenkinsci/adoptopenjdk-plugin"
 issues:
-- jira: '25222' # adoptopenjdk-plugin
+  - jira: '25222'  # adoptopenjdk-plugin
 paths:
-- "io/jenkins/plugins/adoptopenjdk"
+  - "io/jenkins/plugins/adoptopenjdk"
 developers:
-- "basil"
-- "mmchr"
+  - "basil"
+  - "mmchr"

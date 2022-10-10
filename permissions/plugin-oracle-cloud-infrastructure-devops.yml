@@ -2,8 +2,8 @@
 name: "oracle-cloud-infrastructure-devops"
 github: &GH "jenkinsci/oracle-cloud-infrastructure-devops-plugin"
 paths:
-- "io/jenkins/plugins/oracle-cloud-infrastructure-devops"
+  - "io/jenkins/plugins/oracle-cloud-infrastructure-devops"
 developers:
-- "soumya_oracle"
+  - "soumya_oracle"
 issues:
   - jira: 28630

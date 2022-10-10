@@ -2,7 +2,7 @@
 name: "random-string-parameter"
 github: "jenkinsci/random-string-parameter-plugin"
 issues:
-- jira: '17449' # random-string-parameter-plugin
+  - jira: '17449'  # random-string-parameter-plugin
 paths:
-- "org/jenkins-ci/plugins/random-string-parameter"
+  - "org/jenkins-ci/plugins/random-string-parameter"
 developers: []

@@ -2,7 +2,7 @@
 name: "any-buildstep"
 github: "jenkinsci/any-buildstep-plugin"
 issues:
-- jira: '16136' # any-buildstep-plugin
+  - jira: '16136'  # any-buildstep-plugin
 paths:
-- "org/jenkins-ci/plugins/any-buildstep"
+  - "org/jenkins-ci/plugins/any-buildstep"
 developers: []

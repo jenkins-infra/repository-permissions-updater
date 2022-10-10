@@ -2,9 +2,9 @@
 name: "memory-map"
 github: "jenkinsci/memory-map-plugin"
 issues:
-- jira: '17326' # memory-map-plugin
+  - jira: '17326'  # memory-map-plugin
 paths:
-- "net/praqma/memory-map"
+  - "net/praqma/memory-map"
 developers:
-- "madsnielsen"
-- "praqma"
+  - "madsnielsen"
+  - "praqma"

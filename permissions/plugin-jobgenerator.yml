@@ -2,8 +2,8 @@
 name: "jobgenerator"
 github: "jenkinsci/jobgenerator-plugin"
 issues:
-- jira: '17435' # jobgenerator-plugin
+  - jira: '17435'  # jobgenerator-plugin
 paths:
-- "org/jenkins-ci/plugins/jobgenerator"
+  - "org/jenkins-ci/plugins/jobgenerator"
 developers:
-- "syl20bnr"
+  - "syl20bnr"

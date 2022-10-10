@@ -2,10 +2,10 @@
 name: "urltrigger"
 github: &gh "jenkinsci/urltrigger-plugin"
 issues:
-- jira: '15891' # urltrigger-plugin
-- github: *gh
+  - jira: '15891'  # urltrigger-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/urltrigger"
+  - "org/jenkins-ci/plugins/urltrigger"
 developers:
-- "gbois"
-- "stealthdj"
+  - "gbois"
+  - "stealthdj"

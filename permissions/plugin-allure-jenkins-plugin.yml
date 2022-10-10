@@ -2,10 +2,10 @@
 name: "allure-jenkins-plugin"
 github: &gh "jenkinsci/allure-plugin"
 issues:
-- github: *gh
-- jira: '18926' # allure-plugin
+  - github: *gh
+  - jira: '18926'  # allure-plugin
 paths:
-- "ru/yandex/qatools/allure/allure-jenkins-plugin"
+  - "ru/yandex/qatools/allure/allure-jenkins-plugin"
 developers:
-- "eroshenkoam"
-- "pupssman"
+  - "eroshenkoam"
+  - "pupssman"

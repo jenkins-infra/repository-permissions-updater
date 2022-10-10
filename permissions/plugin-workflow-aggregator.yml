@@ -2,22 +2,22 @@
 name: "workflow-aggregator"
 github: "jenkinsci/workflow-aggregator-plugin"
 issues:
-- jira: '21710' # workflow-aggregator-plugin
+  - jira: '21710'  # workflow-aggregator-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-aggregator"
+  - "org/jenkins-ci/plugins/workflow/workflow-aggregator"
 cd:
   enabled: true
 developers:
-- "jglick"
-- "kohsuke"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
-- "jtaboada"
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "svanoort"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,9 +2,9 @@
 name: "parameter-separator"
 github: "jenkinsci/parameter-separator-plugin"
 issues:
-- jira: '19021' # parameter-separator-plugin
+  - jira: '19021'  # parameter-separator-plugin
 paths:
-- "org/jenkins-ci/plugins/parameter-separator"
+  - "org/jenkins-ci/plugins/parameter-separator"
 developers:
-- "olhado"
-- "ppaczyn"
+  - "olhado"
+  - "ppaczyn"

@@ -2,8 +2,8 @@
 name: "gitcolony-plugin"
 github: "jenkinsci/gitcolony-plugin"
 issues:
-- jira: '19830' # gitcolony-plugin
+  - jira: '19830'  # gitcolony-plugin
 paths:
-- "com/gitcolony/jenkins/gitcolony-plugin"
+  - "com/gitcolony/jenkins/gitcolony-plugin"
 developers:
-- "mfocaraccio"
+  - "mfocaraccio"

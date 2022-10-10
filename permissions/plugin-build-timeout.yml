@@ -2,14 +2,14 @@
 name: "build-timeout"
 github: &gh "jenkinsci/build-timeout-plugin"
 issues:
-- jira: '15530' # build-timeout-plugin
-- github: *gh
+  - jira: '15530'  # build-timeout-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/build-timeout"
+  - "org/jenkins-ci/plugins/build-timeout"
 developers:
-- "ikedam"
-- "oleg_nenashev"
-- "krisstern"
+  - "ikedam"
+  - "oleg_nenashev"
+  - "krisstern"
 security:
   contacts:
     jira: "cloudbees_security_members"

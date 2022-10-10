@@ -2,10 +2,10 @@
 name: "cloudfoundry"
 github: jenkinsci/cloudfoundry-plugin
 issues:
-- jira: '19824' # cloudfoundry-plugin
+  - jira: '19824'  # cloudfoundry-plugin
 paths:
-- "org/jenkins-ci/plugins/cloudfoundry"
+  - "org/jenkins-ci/plugins/cloudfoundry"
 developers:
-- "williamg"
-- "olamy"
-- "sworisbreathing"
+  - "williamg"
+  - "olamy"
+  - "sworisbreathing"

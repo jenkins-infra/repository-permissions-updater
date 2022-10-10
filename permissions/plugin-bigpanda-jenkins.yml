@@ -2,8 +2,8 @@
 name: "bigpanda-jenkins"
 github: "jenkinsci/bigpanda-plugin"
 paths:
-- "org/jenkins-ci/plugins/bigpanda-jenkins"
+  - "org/jenkins-ci/plugins/bigpanda-jenkins"
 developers:
-- "erikzaadi"
-- "jguereca"
-- "robstemen"
+  - "erikzaadi"
+  - "jguereca"
+  - "robstemen"

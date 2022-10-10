@@ -2,10 +2,10 @@
 name: "autify"
 github: &GH "jenkinsci/autify-plugin"
 paths:
-- "io/jenkins/plugins/autify"
+  - "io/jenkins/plugins/autify"
 cd:
   enabled: true
 developers:
-- "riywo"
+  - "riywo"
 issues:
   - github: *GH

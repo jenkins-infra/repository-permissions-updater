@@ -2,7 +2,7 @@
 name: "codedx"
 github: "jenkinsci/codedx-plugin"
 paths:
-- "org/jenkins-ci/plugins/codedx"
+  - "org/jenkins-ci/plugins/codedx"
 developers:
-- "baf"
-- "tylercamp"
+  - "baf"
+  - "tylercamp"

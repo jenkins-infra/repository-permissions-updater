@@ -2,18 +2,18 @@
 name: "mailer"
 github: "jenkinsci/mailer-plugin"
 issues:
-- jira: '17522' # mailer-plugin
+  - jira: '17522'  # mailer-plugin
 paths:
-- "org/jenkins-ci/plugins/mailer"
+  - "org/jenkins-ci/plugins/mailer"
 cd:
   enabled: true
 developers:
-- "andresrc"
-- "jglick"
-- "kohsuke"
-- "rsandell"
-- "oleg_nenashev"
-- "alecharp"
+  - "andresrc"
+  - "jglick"
+  - "kohsuke"
+  - "rsandell"
+  - "oleg_nenashev"
+  - "alecharp"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,10 +2,10 @@
 name: "nodepool-agents"
 github: "jenkinsci/nodepool-agents-plugin"
 issues:
-- jira: '23539' # nodepool-agents-plugin
+  - jira: '23539'  # nodepool-agents-plugin
 paths:
-- "org/jenkins-ci/plugins/nodepool-agents"
+  - "org/jenkins-ci/plugins/nodepool-agents"
 developers:
-- "nairbttoille"
-- "hughsaunders"
-- "ddeal"
+  - "nairbttoille"
+  - "hughsaunders"
+  - "ddeal"

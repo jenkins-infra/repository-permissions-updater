@@ -2,8 +2,8 @@
 name: "pipeline-npm"
 github: "jenkinsci/pipeline-npm-plugin"
 issues:
-- jira: '21971' # pipeline-npm-plugin
+  - jira: '21971'  # pipeline-npm-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-npm"
+  - "org/jenkins-ci/plugins/pipeline-npm"
 developers:
-- "timdowney"
+  - "timdowney"

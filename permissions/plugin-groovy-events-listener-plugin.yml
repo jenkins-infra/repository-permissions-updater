@@ -2,9 +2,9 @@
 name: "groovy-events-listener-plugin"
 github: &gh "jenkinsci/groovy-events-listener-plugin"
 issues:
-- github: *gh
-- jira: '20836' # groovy-events-listener-plugin
+  - github: *gh
+  - jira: '20836'  # groovy-events-listener-plugin
 paths:
-- "org/jenkins-ci/plugins/groovy-events-listener-plugin"
+  - "org/jenkins-ci/plugins/groovy-events-listener-plugin"
 developers:
-- "jequals5"
+  - "jequals5"

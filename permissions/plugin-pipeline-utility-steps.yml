@@ -2,8 +2,8 @@
 name: "pipeline-utility-steps"
 github: "jenkinsci/pipeline-utility-steps-plugin"
 issues:
-- jira: '21135' # pipeline-utility-steps-plugin
+  - jira: '21135'  # pipeline-utility-steps-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-utility-steps"
+  - "org/jenkins-ci/plugins/pipeline-utility-steps"
 developers:
-- "rsandell"
+  - "rsandell"

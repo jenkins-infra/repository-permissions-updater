@@ -2,8 +2,8 @@
 name: "multibranch-job-tear-down"
 github: &gh "jenkinsci/multibranch-job-tear-down-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "com/fuzzpro/jenkins-plugins/multibranch-job-tear-down"
+  - "com/fuzzpro/jenkins-plugins/multibranch-job-tear-down"
 developers:
-- "fuzzcaguilar"
+  - "fuzzcaguilar"

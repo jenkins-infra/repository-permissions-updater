@@ -2,7 +2,7 @@
 name: "jclouds-shaded"
 github: "jenkinsci/jclouds-plugin"
 paths:
-- "org/jenkins-ci/plugins/jclouds-shaded"
+  - "org/jenkins-ci/plugins/jclouds-shaded"
 developers:
-- "mikefero"
-- "felfert"
+  - "mikefero"
+  - "felfert"

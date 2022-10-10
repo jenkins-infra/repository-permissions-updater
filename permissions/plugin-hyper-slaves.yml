@@ -2,9 +2,9 @@
 name: "hyper-slaves"
 github: "jenkinsci/hyper-slaves-plugin"
 issues:
-- jira: '21726' # hyper-slaves-plugin
+  - jira: '21726'  # hyper-slaves-plugin
 paths:
-- "sh/hyper/plugins/hyper-slaves"
+  - "sh/hyper/plugins/hyper-slaves"
 developers:
-- "xjimmyshcn"
-- "xlgao"
+  - "xjimmyshcn"
+  - "xlgao"

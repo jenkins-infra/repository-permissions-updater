@@ -2,8 +2,8 @@
 name: "tmpcleaner"
 github: "jenkinsci/tmpcleaner-plugin"
 issues:
-- jira: '16070' # tmpcleaner-plugin
+  - jira: '16070'  # tmpcleaner-plugin
 paths:
-- "org/jenkins-ci/plugins/tmpcleaner"
+  - "org/jenkins-ci/plugins/tmpcleaner"
 developers:
-- "olivergondza"
+  - "olivergondza"

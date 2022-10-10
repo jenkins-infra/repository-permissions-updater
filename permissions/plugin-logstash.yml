@@ -2,12 +2,11 @@
 name: "logstash"
 github: "jenkinsci/logstash-plugin"
 issues:
-- jira: '17517' # logstash-plugin
+  - jira: '17517'  # logstash-plugin
 paths:
-- "org/jenkins-ci/plugins/logstash"
+  - "org/jenkins-ci/plugins/logstash"
 developers:
-- "rgerard"
-- "jbochenski"
+  - "rgerard"
+  - "jbochenski"
 cd:
   enabled: true
-

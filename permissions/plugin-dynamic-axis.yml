@@ -2,8 +2,8 @@
 name: "dynamic-axis"
 github: "jenkinsci/dynamic-axis-plugin"
 issues:
-- jira: '17430' # dynamic-axis-plugin
+  - jira: '17430'  # dynamic-axis-plugin
 paths:
-- "org/jenkins-ci/plugins/dynamic-axis"
+  - "org/jenkins-ci/plugins/dynamic-axis"
 developers:
-- "oleg_nenashev"
+  - "oleg_nenashev"

@@ -2,15 +2,15 @@
 name: "command-launcher"
 github: "jenkinsci/command-launcher-plugin"
 issues:
-- jira: '23169' # command-launcher-plugin
+  - jira: '23169'  # command-launcher-plugin
 paths:
-- "org/jenkins-ci/plugins/command-launcher"
+  - "org/jenkins-ci/plugins/command-launcher"
 cd:
   enabled: true
 developers:
-- "jglick"
-- "oleg_nenashev"
-- "mramonleon"
+  - "jglick"
+  - "oleg_nenashev"
+  - "mramonleon"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,8 +2,8 @@
 name: "r"
 github: "jenkinsci/r-plugin"
 issues:
-- jira: '17443' # r-plugin
+  - jira: '17443'  # r-plugin
 paths:
-- "org/biouno/r/r"
+  - "org/biouno/r/r"
 developers:
-- "kinow"
+  - "kinow"

@@ -2,16 +2,16 @@
 name: "momentjs"
 github: "jenkinsci/js-libs"
 issues:
-- jira: '21133' # js-modules
+  - jira: '21133'  # js-modules
 paths:
-- "org/jenkins-ci/ui/momentjs"
+  - "org/jenkins-ci/ui/momentjs"
 developers:
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
+  - "alecharp"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,7 +2,7 @@
 name: "svncompat13"
 github: "jenkinsci/svncompat13-plugin"
 issues:
-- jira: '15580' # svncompat13-plugin
+  - jira: '15580'  # svncompat13-plugin
 paths:
-- "org/jvnet/hudson/plugins/svncompat13"
+  - "org/jvnet/hudson/plugins/svncompat13"
 developers: []

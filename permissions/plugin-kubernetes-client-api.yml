@@ -2,19 +2,19 @@
 name: "kubernetes-client-api"
 github: "jenkinsci/kubernetes-client-api-plugin"
 issues:
-- jira: '25921' # kubernetes-client-api-plugin
+  - jira: '25921'  # kubernetes-client-api-plugin
 paths:
-- "org/jenkins-ci/plugins/kubernetes-client-api"
+  - "org/jenkins-ci/plugins/kubernetes-client-api"
 cd:
   enabled: true
 developers:
-- "csanchez"
-- "vlatombe"
-- "jglick"
-- "teilo"
-- "agentgonzo"
-- "kylecronin"
-- "@cloudbees-developers"
+  - "csanchez"
+  - "vlatombe"
+  - "jglick"
+  - "teilo"
+  - "agentgonzo"
+  - "kylecronin"
+  - "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"

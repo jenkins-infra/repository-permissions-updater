@@ -2,9 +2,9 @@
 name: "global-post-script"
 github: "jenkinsci/global-post-script-plugin"
 issues:
-- jira: '20637' # global-post-script-plugin
+  - jira: '20637'  # global-post-script-plugin
 paths:
-- "org/jenkins-ci/plugins/global-post-script"
+  - "org/jenkins-ci/plugins/global-post-script"
 developers:
-- "orctom"
-- "abie_in"
+  - "orctom"
+  - "abie_in"

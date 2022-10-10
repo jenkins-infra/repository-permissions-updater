@@ -2,10 +2,10 @@
 name: "beer"
 github: "jenkinsci/beer-plugin"
 issues:
-- jira: '17586' # beer-plugin
+  - jira: '17586'  # beer-plugin
 paths:
-- "org/jenkins-ci/plugins/beer"
+  - "org/jenkins-ci/plugins/beer"
 developers:
-- "timja"
+  - "timja"
 cd:
   enabled: true

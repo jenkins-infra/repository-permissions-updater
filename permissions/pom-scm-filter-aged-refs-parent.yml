@@ -2,6 +2,6 @@
 name: "scm-filter-aged-refs-parent"
 github: "jenkinsci/scm-filter-aged-refs-plugin"
 paths:
-- "org/jenkins-ci/plugins/scm-filter-aged-refs-parent"
+  - "org/jenkins-ci/plugins/scm-filter-aged-refs-parent"
 developers:
-- "askalski85"
+  - "askalski85"

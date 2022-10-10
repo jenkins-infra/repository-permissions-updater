@@ -2,8 +2,8 @@
 name: "chef"
 github: "jenkinsci/chef-plugin"
 issues:
-- jira: '18744' # chef-plugin
+  - jira: '18744'  # chef-plugin
 paths:
-- "org/jenkins-ci/ruby-plugins/chef"
+  - "org/jenkins-ci/ruby-plugins/chef"
 developers:
-- "melezhik"
+  - "melezhik"

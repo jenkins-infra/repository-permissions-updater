@@ -2,9 +2,8 @@
 name: "prisma-cloud-iac-scan"
 github: "jenkinsci/prisma-cloud-iac-scan-plugin"
 issues:
-- jira: '28421' # prisma-cloud-iac-scan-plugin
+  - jira: '28421'  # prisma-cloud-iac-scan-plugin
 paths:
-- "io/jenkins/plugins/prisma-cloud-iac-scan"
-
+  - "io/jenkins/plugins/prisma-cloud-iac-scan"
 developers:
-- "shiftleftiacscan"
+  - "shiftleftiacscan"

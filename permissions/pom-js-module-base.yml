@@ -2,12 +2,12 @@
 name: "jenkins-js-libs"
 github: "jenkinsci/js-libs"
 paths:
-- "org/jenkins-ci/ui/jenkins-js-libs"
+  - "org/jenkins-ci/ui/jenkins-js-libs"
 developers:
-- "alecharp"
-- "batmat"
-- "mramonleon"
-- "rsandell"
+  - "alecharp"
+  - "batmat"
+  - "mramonleon"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

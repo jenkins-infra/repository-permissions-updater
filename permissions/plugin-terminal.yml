@@ -2,8 +2,8 @@
 name: "terminal"
 github: "jenkinsci/terminal-plugin"
 issues:
-- jira: '15972' # terminal-plugin
+  - jira: '15972'  # terminal-plugin
 paths:
-- "org/jenkins-ci/plugins/terminal"
-- "org/jvnet/hudson/plugins/terminal"
+  - "org/jenkins-ci/plugins/terminal"
+  - "org/jvnet/hudson/plugins/terminal"
 developers: []

@@ -2,7 +2,7 @@
 name: "javancss"
 github: "jenkinsci/javancss-plugin"
 issues:
-- jira: '15552' # javancss-plugin
+  - jira: '15552'  # javancss-plugin
 paths:
-- "org/jenkins-ci/plugins/javancss"
+  - "org/jenkins-ci/plugins/javancss"
 developers: []

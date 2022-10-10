@@ -2,25 +2,25 @@
 name: "junit"
 github: &gh "jenkinsci/junit-plugin"
 issues:
-- jira: '15499' # junit-plugin
-- github: *gh
+  - jira: '15499'  # junit-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/junit"
+  - "org/jenkins-ci/plugins/junit"
 developers:
-- "abayer"
-- "andresrc"
-- "jglick"
-- "kohsuke"
-- "olivergondza"
-- "wolfs"
-- "dnusbaum"
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
-- "timja"
+  - "abayer"
+  - "andresrc"
+  - "jglick"
+  - "kohsuke"
+  - "olivergondza"
+  - "wolfs"
+  - "dnusbaum"
+  - "alecharp"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
+  - "timja"
 security:
   contacts:
     jira: "cloudbees_security_members"

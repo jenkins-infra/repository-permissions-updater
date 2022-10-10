@@ -2,11 +2,11 @@
 name: "azure-commons"
 github: &gh "jenkinsci/azure-commons-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/azure-commons"
+  - "org/jenkins-ci/plugins/azure-commons"
 cd:
   enabled: true
 developers:
-- "zooopx"
-- "timja"
+  - "zooopx"
+  - "timja"

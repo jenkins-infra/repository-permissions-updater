@@ -2,8 +2,8 @@
 name: "doxygen"
 github: "jenkinsci/doxygen-plugin"
 issues:
-- jira: '15602' # doxygen-plugin
+  - jira: '15602'  # doxygen-plugin
 paths:
-- "org/jenkins-ci/plugins/doxygen"
+  - "org/jenkins-ci/plugins/doxygen"
 developers:
-- "gbois"
+  - "gbois"

@@ -2,6 +2,6 @@
 name: "rpi-build-status"
 github: "jenkinsci/rpi-build-status-plugin"
 paths:
-- "net/sleepymouse/jenkins/plugins/rpi-build-status"
+  - "net/sleepymouse/jenkins/plugins/rpi-build-status"
 developers:
-- "havelaptopwillcode"
+  - "havelaptopwillcode"

@@ -2,8 +2,8 @@
 name: "pipeline-huaweicloud-plugin"
 github: "jenkinsci/pipeline-huaweicloud-plugin"
 issues:
-- jira: '26327' # pipeline-huaweicloud-plugin
+  - jira: '26327'  # pipeline-huaweicloud-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-huaweicloud-plugin"
+  - "org/jenkins-ci/plugins/pipeline-huaweicloud-plugin"
 developers:
-- "zhongjun2"
+  - "zhongjun2"

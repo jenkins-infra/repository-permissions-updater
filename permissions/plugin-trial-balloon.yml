@@ -2,7 +2,7 @@
 name: "trial-balloon"
 github: &gh "jenkinsci/trial-balloon-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/trial-balloon"
+  - "org/jenkins-ci/plugins/trial-balloon"
 developers: []

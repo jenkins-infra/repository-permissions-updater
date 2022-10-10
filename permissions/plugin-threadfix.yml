@@ -2,10 +2,10 @@
 name: "threadfix"
 github: "jenkinsci/threadfix-plugin"
 issues:
-- jira: '19221' # threadfix-plugin
+  - jira: '19221'  # threadfix-plugin
 paths:
-- "me/automationdomination/threadfix"
-- "org/jenkins-ci/plugins/threadfix"
+  - "me/automationdomination/threadfix"
+  - "org/jenkins-ci/plugins/threadfix"
 developers:
-- "automationdomination"
-- "cbaek"
+  - "automationdomination"
+  - "cbaek"

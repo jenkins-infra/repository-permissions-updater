@@ -2,8 +2,8 @@
 name: "npm-yarn-wrapper-steps"
 github: &GH "jenkinsci/npm-yarn-wrapper-steps-plugin"
 paths:
-- "io/jenkins/plugins/npm-yarn-wrapper-steps"
+  - "io/jenkins/plugins/npm-yarn-wrapper-steps"
 developers:
-- "jameslafferty"
+  - "jameslafferty"
 issues:
   - github: *GH

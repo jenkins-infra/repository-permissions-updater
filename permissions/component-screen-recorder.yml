@@ -1,6 +1,6 @@
 ---
 name: "screen-recorder"
 paths:
-- "org/monte/screen-recorder"
+  - "org/monte/screen-recorder"
 developers:
-- "asotobueno"
+  - "asotobueno"

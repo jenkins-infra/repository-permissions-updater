@@ -2,22 +2,22 @@
 name: "google-kubernetes-engine"
 github: &gh "jenkinsci/google-kubernetes-engine-plugin"
 issues:
-- github: *gh
-- jira: '24658' # google-kubernetes-engine-plugin
+  - github: *gh
+  - jira: '24658'  # google-kubernetes-engine-plugin
 paths:
-- "org/jenkins-ci/plugins/google-kubernetes-engine"
+  - "org/jenkins-ci/plugins/google-kubernetes-engine"
 developers:
-- "craigbarber"
-- "evanbrown"
-- "stephenshank"
-- "donmccasland"
-- "tarahernandez"
-- "vishalapatel"
-- "alecharp"
-- "batmat"
-- "teilo"
-- "rarabaolaza"
-- "carroll"
+  - "craigbarber"
+  - "evanbrown"
+  - "stephenshank"
+  - "donmccasland"
+  - "tarahernandez"
+  - "vishalapatel"
+  - "alecharp"
+  - "batmat"
+  - "teilo"
+  - "rarabaolaza"
+  - "carroll"
 security:
   contacts:
     jira: "cloudbees_security_members"

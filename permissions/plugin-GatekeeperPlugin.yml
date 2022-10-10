@@ -2,9 +2,9 @@
 name: "GatekeeperPlugin"
 github: &gh "jenkinsci/gatekeeper-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/paylogic/GatekeeperPlugin"
+  - "org/paylogic/GatekeeperPlugin"
 developers:
-- "bubenkoff"
-- "maikelwever"
+  - "bubenkoff"
+  - "maikelwever"

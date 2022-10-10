@@ -2,12 +2,12 @@
 name: "badge"
 github: &gh "jenkinsci/badge-plugin"
 issues:
-- github: *gh
-- jira: '23455' # badge-plugin
+  - github: *gh
+  - jira: '23455'  # badge-plugin
 paths:
-- "org/jenkins-ci/plugins/badge"
+  - "org/jenkins-ci/plugins/badge"
 developers:
-- "bakito"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - "bakito"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"

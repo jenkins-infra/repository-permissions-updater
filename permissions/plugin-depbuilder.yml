@@ -2,8 +2,8 @@
 name: "depbuilder"
 github: &gh "jenkinsci/depbuilder-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/depbuilder"
+  - "io/jenkins/plugins/depbuilder"
 developers:
-- "rsl"
+  - "rsl"

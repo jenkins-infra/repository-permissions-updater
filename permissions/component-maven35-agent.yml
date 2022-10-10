@@ -2,7 +2,7 @@
 name: "maven35-agent"
 github: "jenkinsci/maven-interceptors"
 paths:
-- "org/jenkins-ci/main/maven/maven35-agent"
+  - "org/jenkins-ci/main/maven/maven35-agent"
 developers:
-- "olamy"
-- "aheritier"
+  - "olamy"
+  - "aheritier"

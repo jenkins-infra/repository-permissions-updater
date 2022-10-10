@@ -2,8 +2,8 @@
 name: "systeminfo"
 github: &GH "jenkinsci/systeminfo-plugin"
 paths:
-- "io/jenkins/plugins/systeminfo"
+  - "io/jenkins/plugins/systeminfo"
 developers:
-- "ozhang"
+  - "ozhang"
 issues:
   - jira: 29020

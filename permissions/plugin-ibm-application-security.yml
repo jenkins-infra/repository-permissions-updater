@@ -2,7 +2,7 @@
 name: "ibm-application-security"
 github: "jenkinsci/appscan-plugin"
 paths:
-- "com/ibm/ibm-application-security"
-- "com/hcl/security/ibm-application-security"
+  - "com/ibm/ibm-application-security"
+  - "com/hcl/security/ibm-application-security"
 developers:
-- "mattmurp"
+  - "mattmurp"

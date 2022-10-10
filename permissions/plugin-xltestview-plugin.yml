@@ -2,9 +2,9 @@
 name: "xltestview-plugin"
 github: &gh "jenkinsci/xltestview-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "com/xebialabs/xlt/ci/xltestview-plugin"
+  - "com/xebialabs/xlt/ci/xltestview-plugin"
 developers:
-- "amolenaar"
-- "klaren"
+  - "amolenaar"
+  - "klaren"

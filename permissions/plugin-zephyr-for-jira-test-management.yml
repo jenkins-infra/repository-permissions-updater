@@ -2,9 +2,9 @@
 name: "zephyr-for-jira-test-management"
 github: "jenkinsci/zephyr-for-jira-test-management-plugin"
 issues:
-- jira: '20824' # zephyr-for-jira-test-management-plugin
+  - jira: '20824'  # zephyr-for-jira-test-management-plugin
 paths:
-- "org/jenkins-ci/plugins/zephyr-for-jira-test-management"
+  - "org/jenkins-ci/plugins/zephyr-for-jira-test-management"
 developers:
-- "zeedeveloper"
-- "mohanzephyr"
+  - "zeedeveloper"
+  - "mohanzephyr"

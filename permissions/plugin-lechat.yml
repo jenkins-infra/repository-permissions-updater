@@ -2,7 +2,7 @@
 name: "lechat"
 github: "jenkinsci/lechat-plugin"
 issues:
-- jira: '17420' # lechat-plugin
+  - jira: '17420'  # lechat-plugin
 paths:
-- "org/jvnet/hudson/plugins/lechat"
+  - "org/jvnet/hudson/plugins/lechat"
 developers: []

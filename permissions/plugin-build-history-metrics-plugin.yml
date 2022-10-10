@@ -2,10 +2,10 @@
 name: "build-history-metrics-plugin"
 github: &GH "jenkinsci/build-history-metrics-plugin"
 paths:
-- "org/jenkins-ci/plugins/build-history-metrics-plugin"
+  - "org/jenkins-ci/plugins/build-history-metrics-plugin"
 developers:
-- "mcgin"
+  - "mcgin"
 issues:
-- github: *GH
+  - github: *GH
 cd:
   enabled: true

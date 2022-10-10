@@ -2,8 +2,8 @@
 name: "tap"
 github: "jenkinsci/tap-plugin"
 issues:
-- jira: '15874' # tap-plugin
+  - jira: '15874'  # tap-plugin
 paths:
-- "org/tap4j/tap"
+  - "org/tap4j/tap"
 developers:
-- "kinow"
+  - "kinow"

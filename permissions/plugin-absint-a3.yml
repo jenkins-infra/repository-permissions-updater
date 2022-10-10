@@ -2,8 +2,8 @@
 name: "absint-a3"
 github: "jenkinsci/absint-a3-plugin"
 issues:
-- jira: '21698' # absint-a3-plugin
+  - jira: '21698'  # absint-a3-plugin
 paths:
-- "org/jenkins-ci/plugins/absint-a3"
+  - "org/jenkins-ci/plugins/absint-a3"
 developers:
-- "absint"
+  - "absint"

@@ -2,8 +2,8 @@
 name: "42crunch-security-audit"
 github: "jenkinsci/42crunch-security-audit-plugin"
 issues:
-- jira: '27235' # 42crunch-security-audit-plugin
+  - jira: '27235'  # 42crunch-security-audit-plugin
 paths:
-- "io/jenkins/plugins/42crunch-security-audit"
+  - "io/jenkins/plugins/42crunch-security-audit"
 developers:
-- "42crunch_plugins"
+  - "42crunch_plugins"

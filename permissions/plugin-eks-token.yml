@@ -2,8 +2,8 @@
 name: "eks-token"
 github: &GH "jenkinsci/eks-token-plugin"
 paths:
-- "io/jenkins/plugins/eks-token"
+  - "io/jenkins/plugins/eks-token"
 developers:
-- "topikachu"
+  - "topikachu"
 issues:
   - github: *GH

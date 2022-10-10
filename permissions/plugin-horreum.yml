@@ -2,9 +2,9 @@
 name: "horreum"
 github: &GH "jenkinsci/horreum-plugin"
 paths:
-- "io/jenkins/plugins/horreum"
+  - "io/jenkins/plugins/horreum"
 developers:
-- "rvansa"
+  - "rvansa"
 issues:
   - github: *GH
 cd:

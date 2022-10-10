@@ -1,8 +1,9 @@
+---
 name: "amqp-build-trigger"
 github: "jenkinsci/amqp-build-trigger-plugin"
 issues:
-- jira: '25722' # amqp-build-trigger-plugin
+  - jira: '25722'  # amqp-build-trigger-plugin
 paths:
-- "io/jenkins/plugins/amqp-build-trigger"
+  - "io/jenkins/plugins/amqp-build-trigger"
 developers:
-- "kpvdr"
+  - "kpvdr"

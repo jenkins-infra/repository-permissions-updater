@@ -2,8 +2,8 @@
 name: "jenkinslint"
 github: "jenkinsci/jenkinslint-plugin"
 issues:
-- jira: '20644' # jenkinslint-plugin
+  - jira: '20644'  # jenkinslint-plugin
 paths:
-- "org/jenkins-ci/plugins/jenkinslint"
+  - "org/jenkins-ci/plugins/jenkinslint"
 developers:
-- "v2v"
+  - "v2v"

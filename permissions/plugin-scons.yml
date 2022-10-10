@@ -2,7 +2,7 @@
 name: "scons"
 github: "jenkinsci/scons-plugin"
 issues:
-- jira: '15721' # scons-plugin
+  - jira: '15721'  # scons-plugin
 paths:
-- "com/thalesgroup/jenkins-ci/plugins/scons"
+  - "com/thalesgroup/jenkins-ci/plugins/scons"
 developers: []

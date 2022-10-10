@@ -2,11 +2,11 @@
 name: "multiple-scms"
 github: "jenkinsci/multiple-scms-plugin"
 issues:
-- jira: '15810' # multiple-scms-plugin
+  - jira: '15810'  # multiple-scms-plugin
 paths:
-- "org/jenkins-ci/plugins/multiple-scms"
+  - "org/jenkins-ci/plugins/multiple-scms"
 developers:
-- "elksson"
-- "jglick"
-- "jimklimov"
-- "rodrigc"
+  - "elksson"
+  - "jglick"
+  - "jimklimov"
+  - "rodrigc"

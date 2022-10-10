@@ -4,7 +4,7 @@ github: &GH "jenkinsci/tinfoil-scan-plugin"
 issues:
   - github: *GH
 paths:
-- "com/tinfoilsecurity/plugins/tinfoil-scan"
+  - "com/tinfoilsecurity/plugins/tinfoil-scan"
 developers:
-- "bsedat"
-- "shanewilton"
+  - "bsedat"
+  - "shanewilton"

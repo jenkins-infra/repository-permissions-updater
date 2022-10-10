@@ -2,18 +2,17 @@
 name: "openshift-client"
 github: "jenkinsci/openshift-client-plugin"
 issues:
-- jira: '21961' # openshift-client-plugin
+  - jira: '21961'  # openshift-client-plugin
 paths:
-- "com/openshift/jenkins/plugins/openshift-client"
+  - "com/openshift/jenkins/plugins/openshift-client"
 developers:
-- "jupierce"
-- "gmontero"
-- "bparees"
-- "rymurphy"
-- "waveywaves"
-- "akram"
-- "jkhelil"
+  - "jupierce"
+  - "gmontero"
+  - "bparees"
+  - "rymurphy"
+  - "waveywaves"
+  - "akram"
+  - "jkhelil"
 security:
   contacts:
     jira: "akram"
-

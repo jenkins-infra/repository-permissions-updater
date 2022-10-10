@@ -2,9 +2,9 @@
 name: "purge-build-queue-plugin"
 github: "jenkinsci/purge-build-queue-plugin"
 issues:
-- jira: '15912' # purge-build-queue-plugin
+  - jira: '15912'  # purge-build-queue-plugin
 paths:
-- "org/jenkins-ci/plugins/purge-build-queue-plugin"
+  - "org/jenkins-ci/plugins/purge-build-queue-plugin"
 developers:
   - "notmyfault"
 cd:

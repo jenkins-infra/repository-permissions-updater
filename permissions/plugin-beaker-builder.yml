@@ -2,9 +2,9 @@
 name: "beaker-builder"
 github: "jenkinsci/beaker-builder-plugin"
 issues:
-- jira: '18021' # beaker-builder-plugin
+  - jira: '18021'  # beaker-builder-plugin
 paths:
-- "org/jenkins-ci/plugins/beaker-builder"
+  - "org/jenkins-ci/plugins/beaker-builder"
 developers:
-- "olivergondza"
-- "vjuranek"
+  - "olivergondza"
+  - "vjuranek"

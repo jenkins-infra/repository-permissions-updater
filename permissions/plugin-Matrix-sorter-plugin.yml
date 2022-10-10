@@ -2,8 +2,8 @@
 name: "Matrix-sorter-plugin"
 github: "jenkinsci/Matrix-sorter-plugin"
 issues:
-- jira: '17581' # matrix-sorter-plugin
+  - jira: '17581'  # matrix-sorter-plugin
 paths:
-- "org/jenkins-ci/plugins/Matrix-sorter-plugin"
+  - "org/jenkins-ci/plugins/Matrix-sorter-plugin"
 developers:
-- "olivergondza"
+  - "olivergondza"

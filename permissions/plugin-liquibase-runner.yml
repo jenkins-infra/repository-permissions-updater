@@ -2,10 +2,10 @@
 name: "liquibase-runner"
 github: &gh "jenkinsci/liquibase-runner-plugin"
 issues:
-- jira: '19023' # liquibase-runner-plugin
-- github: *gh
+  - jira: '19023'  # liquibase-runner-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/liquibase-runner"
+  - "org/jenkins-ci/plugins/liquibase-runner"
 developers:
-- "prospero238"
-- "r2datical"
+  - "prospero238"
+  - "r2datical"

@@ -2,9 +2,9 @@
 name: "matrix-combinations-parameter"
 github: "jenkinsci/matrix-combinations-plugin"
 issues:
-- jira: '18156' # matrix-combinations-parameter-plugin
+  - jira: '18156'  # matrix-combinations-parameter-plugin
 paths:
-- "org/jenkins-ci/plugins/matrix-combinations-parameter"
+  - "org/jenkins-ci/plugins/matrix-combinations-parameter"
 developers:
-- "ikedam"
-- "omer727"
+  - "ikedam"
+  - "omer727"

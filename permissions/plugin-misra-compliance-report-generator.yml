@@ -2,8 +2,8 @@
 name: "misra-compliance-report-generator"
 github: "jenkinsci/misra-compliance-report-generator-plugin"
 issues:
-- jira: '24928' # misra-compliance-report-generator-plugin
+  - jira: '24928'  # misra-compliance-report-generator-plugin
 paths:
-- "io/jenkins/plugins/misra-compliance-report-generator"
+  - "io/jenkins/plugins/misra-compliance-report-generator"
 developers:
-- "oyvindlr"
+  - "oyvindlr"

@@ -2,8 +2,8 @@
 name: "jwt-auth"
 github: &GH "jenkinsci/jwt-auth-plugin"
 paths:
-- "io/jenkins/plugins/jwt-auth"
+  - "io/jenkins/plugins/jwt-auth"
 developers:
-- "dnuevo"
+  - "dnuevo"
 issues:
   - github: *GH

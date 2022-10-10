@@ -2,7 +2,7 @@
 name: "analysis-collector"
 github: "jenkinsci/analysis-collector-plugin"
 issues:
-- jira: '15710' # analysis-collector-plugin
+  - jira: '15710'  # analysis-collector-plugin
 paths:
-- "org/jvnet/hudson/plugins/analysis-collector"
+  - "org/jvnet/hudson/plugins/analysis-collector"
 developers: []

@@ -2,7 +2,7 @@
 name: "paaslane-estimate"
 github: "jenkinsci/paaslane-plugin"
 paths:
-- "com/cloudtp/jenkins/paaslane-estimate"
+  - "com/cloudtp/jenkins/paaslane-estimate"
 developers:
-- "ctp_alan_zall"
-- "ushatil_ctp"
+  - "ctp_alan_zall"
+  - "ushatil_ctp"

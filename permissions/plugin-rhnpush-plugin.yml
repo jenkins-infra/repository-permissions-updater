@@ -2,8 +2,8 @@
 name: "rhnpush-plugin"
 github: "jenkinsci/rhnpush-plugin"
 issues:
-- jira: '17421' # rhnpush-plugin
+  - jira: '17421'  # rhnpush-plugin
 paths:
-- "org/jenkins-ci/plugins/rhnpush-plugin"
+  - "org/jenkins-ci/plugins/rhnpush-plugin"
 developers:
-- "mtizzoni"
+  - "mtizzoni"

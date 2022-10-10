@@ -2,7 +2,7 @@
 name: "refit"
 github: "jenkinsci/refit-plugin"
 issues:
-- jira: '15821' # refit-plugin
+  - jira: '15821'  # refit-plugin
 paths:
-- "com/googlecode/refit/jenkins/refit"
+  - "com/googlecode/refit/jenkins/refit"
 developers: []

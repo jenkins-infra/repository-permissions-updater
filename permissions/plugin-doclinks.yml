@@ -2,10 +2,10 @@
 name: "doclinks"
 github: &gh "jenkinsci/doclinks-plugin"
 issues:
-- jira: '15740' # doclinks-plugin
-- github: *gh
+  - jira: '15740'  # doclinks-plugin
+  - github: *gh
 paths:
-- "org/jenkinsci/plugins/doclinks"
-- "org/jvnet/hudson/plugins/doclinks"
+  - "org/jenkinsci/plugins/doclinks"
+  - "org/jvnet/hudson/plugins/doclinks"
 developers:
-- "ikedam"
+  - "ikedam"

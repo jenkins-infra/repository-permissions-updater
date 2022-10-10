@@ -2,7 +2,7 @@
 name: "trac-publisher-plugin"
 github: "jenkinsci/trac-publisher-plugin"
 issues:
-- jira: '17560' # trac-publisher-plugin
+  - jira: '17560'  # trac-publisher-plugin
 paths:
-- "org/jenkins-ci/plugins/trac-publisher-plugin"
+  - "org/jenkins-ci/plugins/trac-publisher-plugin"
 developers: []

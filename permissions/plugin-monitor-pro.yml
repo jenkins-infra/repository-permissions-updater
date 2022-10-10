@@ -2,9 +2,9 @@
 name: "monitor-pro"
 github: "jenkinsci/monitor-pro-plugin"
 issues:
-- jira: '21956' # monitor-pro-plugin
+  - jira: '21956'  # monitor-pro-plugin
 paths:
-- "org/jenkins-ci/plugins/monitor-pro"
+  - "org/jenkins-ci/plugins/monitor-pro"
 developers:
-- "frdiaz"
-- "mmariscalg"
+  - "frdiaz"
+  - "mmariscalg"

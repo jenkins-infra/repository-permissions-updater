@@ -2,16 +2,16 @@
 name: "emma"
 github: "jenkinsci/emma-plugin"
 issues:
-- jira: '15539' # emma-plugin
+  - jira: '15539'  # emma-plugin
 paths:
-- "org/jenkins-ci/plugins/emma"
-- "org/jvnet/hudson/plugins/emma"
+  - "org/jenkins-ci/plugins/emma"
+  - "org/jvnet/hudson/plugins/emma"
 developers:
-- "alecharp"
-- "batmat"
-- "bitwiseman"
-- "carroll"
-- "mramonleon"
-- "olamy"
-- "rsandell"
-- "teilo"
+  - "alecharp"
+  - "batmat"
+  - "bitwiseman"
+  - "carroll"
+  - "mramonleon"
+  - "olamy"
+  - "rsandell"
+  - "teilo"

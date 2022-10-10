@@ -2,8 +2,8 @@
 name: "owl-reporter"
 github: "jenkinsci/owl-reporter-plugin"
 issues:
-- jira: '23540' # owl-reporter-plugin
+  - jira: '23540'  # owl-reporter-plugin
 paths:
-- "com/atlantbh/jenkins/owl-reporter"
+  - "com/atlantbh/jenkins/owl-reporter"
 developers:
-- "tarikabh"
+  - "tarikabh"

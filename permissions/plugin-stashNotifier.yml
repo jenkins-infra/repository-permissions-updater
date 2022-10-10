@@ -2,10 +2,10 @@
 name: "stashNotifier"
 github: &gh "jenkinsci/stashnotifier-plugin"
 issues:
-- github: *gh
-- jira: '17535' # stashnotifier-plugin
+  - github: *gh
+  - jira: '17535'  # stashnotifier-plugin
 paths:
-- "org/jenkins-ci/plugins/stashNotifier"
+  - "org/jenkins-ci/plugins/stashNotifier"
 developers:
-- "gruetter"
-- "scaytrase"
+  - "gruetter"
+  - "scaytrase"

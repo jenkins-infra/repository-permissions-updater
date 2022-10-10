@@ -2,11 +2,10 @@
 name: "bitbucket-pullrequest-builder"
 github: "jenkinsci/bitbucket-pullrequest-builder-plugin"
 issues:
-- jira: '18932' # bitbucket-pullrequest-builder-plugin
+  - jira: '18932'  # bitbucket-pullrequest-builder-plugin
 paths:
-- "org/jenkins-ci/plugins/bitbucket-pullrequest-builder"
-
+  - "org/jenkins-ci/plugins/bitbucket-pullrequest-builder"
 developers:
-- "nishio_dens"
-- "damovsky"
-- "codemonky"
+  - "nishio_dens"
+  - "damovsky"
+  - "codemonky"

@@ -2,7 +2,7 @@
 name: "zubhium"
 github: "jenkinsci/zubhium-plugin"
 issues:
-- jira: '16537' # zubhium-plugin
+  - jira: '16537'  # zubhium-plugin
 paths:
-- "org/jenkins-ci/plugins/zubhium"
+  - "org/jenkins-ci/plugins/zubhium"
 developers: []

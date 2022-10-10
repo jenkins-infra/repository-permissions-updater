@@ -2,8 +2,8 @@
 name: "log-command"
 github: "jenkinsci/log-command-plugin"
 issues:
-- jira: '17548' # log-command-plugin
+  - jira: '17548'  # log-command-plugin
 paths:
-- "org/jenkins-ci/plugins/log-command"
+  - "org/jenkins-ci/plugins/log-command"
 developers:
-- "ialbors"
+  - "ialbors"

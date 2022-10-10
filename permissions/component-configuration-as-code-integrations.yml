@@ -2,12 +2,12 @@
 name: "integrations"
 github: "jenkinsci/configuration-as-code-plugin"
 paths:
-- "io/jenkins/configuration-as-code/integrations"
+  - "io/jenkins/configuration-as-code/integrations"
 developers:
-- "praqma"
-- "jetersen"
-- "oleg_nenashev"
-- "timja"
+  - "praqma"
+  - "jetersen"
+  - "oleg_nenashev"
+  - "timja"
 security:
   contacts:
     jira: "jetersen"

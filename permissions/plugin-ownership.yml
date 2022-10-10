@@ -2,9 +2,9 @@
 name: "ownership"
 github: &gh "jenkinsci/ownership-plugin"
 issues:
-- jira: '17721' # ownership-plugin
-- github: *gh
+  - jira: '17721'  # ownership-plugin
+  - github: *gh
 paths:
-- "com/synopsys/jenkinsci/ownership"
+  - "com/synopsys/jenkinsci/ownership"
 developers:
-- "oleg_nenashev"
+  - "oleg_nenashev"

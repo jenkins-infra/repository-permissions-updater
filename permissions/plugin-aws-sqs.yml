@@ -2,11 +2,11 @@
 name: "aws-sqs"
 github: &gh "jenkinsci/aws-sqs-plugin"
 issues:
-- github: *gh
-- jira: '21734' # aws-sqs-plugin
+  - github: *gh
+  - jira: '21734'  # aws-sqs-plugin
 paths:
-- "io/relution/jenkins/aws-sqs"
+  - "io/relution/jenkins/aws-sqs"
 developers:
-- "nickg"
-- "mvk"
-- "j_vvt"
+  - "nickg"
+  - "mvk"
+  - "j_vvt"

@@ -6,6 +6,6 @@ issues:
 cd:
   enabled: true
 paths:
-- "io/jenkins/plugins/synopsys-sigma"
+  - "io/jenkins/plugins/synopsys-sigma"
 developers:
-- "sboyd"
+  - "sboyd"

@@ -2,16 +2,16 @@
 name: "cloverphp"
 github: "jenkinsci/cloverphp-plugin"
 issues:
-- jira: '15851' # cloverphp-plugin
+  - jira: '15851'  # cloverphp-plugin
 paths:
-- "org/jenkins-ci/plugins/cloverphp"
+  - "org/jenkins-ci/plugins/cloverphp"
 developers:
-- "sogabe"
-- "alecharp"
-- "batmat"
-- "bitwiseman"
-- "carroll"
-- "mramonleon"
-- "olamy"
-- "rsandell"
-- "teilo"
+  - "sogabe"
+  - "alecharp"
+  - "batmat"
+  - "bitwiseman"
+  - "carroll"
+  - "mramonleon"
+  - "olamy"
+  - "rsandell"
+  - "teilo"

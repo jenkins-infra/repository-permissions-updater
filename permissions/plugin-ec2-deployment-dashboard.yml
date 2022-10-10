@@ -2,8 +2,8 @@
 name: "ec2-deployment-dashboard"
 github: "jenkinsci/ec2-deployment-dashboard"
 issues:
-- jira: '20020' # ec2-deployment-dashboard-plugin
+  - jira: '20020'  # ec2-deployment-dashboard-plugin
 paths:
-- "org/jenkins-ci/plugins/ec2-deployment-dashboard"
+  - "org/jenkins-ci/plugins/ec2-deployment-dashboard"
 developers:
-- "marcelbirkner"
+  - "marcelbirkner"

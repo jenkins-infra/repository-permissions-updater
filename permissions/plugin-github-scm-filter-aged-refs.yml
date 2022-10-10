@@ -2,9 +2,8 @@
 name: "github-scm-filter-aged-refs"
 github: "jenkinsci/scm-filter-aged-refs-plugin"
 issues:
-- jira: '23154' # branch-source-aged-refs-traits-plugin
+  - jira: '23154'  # branch-source-aged-refs-traits-plugin
 paths:
-- "org/jenkins-ci/plugins/github-scm-filter-aged-refs"
+  - "org/jenkins-ci/plugins/github-scm-filter-aged-refs"
 developers:
-- "askalski85"
-
+  - "askalski85"

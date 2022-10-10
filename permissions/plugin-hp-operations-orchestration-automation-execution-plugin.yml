@@ -2,8 +2,8 @@
 name: "hp-operations-orchestration-automation-execution-plugin"
 github: "jenkinsci/hp-operations-orchestration-plugin"
 issues:
-- jira: '17544' # hp-operations-orchestration-automation-execution-plugin
+  - jira: '17544'  # hp-operations-orchestration-automation-execution-plugin
 paths:
-- "org/jenkins-ci/plugins/hp-operations-orchestration-automation-execution-plugin"
+  - "org/jenkins-ci/plugins/hp-operations-orchestration-automation-execution-plugin"
 developers:
-- "franky4ro"
+  - "franky4ro"

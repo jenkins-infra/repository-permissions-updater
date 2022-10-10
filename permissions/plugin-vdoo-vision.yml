@@ -2,9 +2,9 @@
 name: "vdoo-vision"
 github: "jenkinsci/vdoo-vision-plugin"
 issues:
-- jira: '28524' # vdoo-vision-plugin
+  - jira: '28524'  # vdoo-vision-plugin
 paths:
-- "io/jenkins/plugins/vdoo-vision"
+  - "io/jenkins/plugins/vdoo-vision"
 developers:
-- "meirvdoo"
-- "vdoo_oper"
+  - "meirvdoo"
+  - "vdoo_oper"

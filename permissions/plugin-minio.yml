@@ -2,11 +2,11 @@
 name: "minio"
 github: &gh "jenkinsci/minio-plugin"
 issues:
-- github: *gh
-- jira: '27525' # minio-plugin
+  - github: *gh
+  - jira: '27525'  # minio-plugin
 paths:
-- "io/jenkins/plugins/minio"
+  - "io/jenkins/plugins/minio"
 developers:
-- "sleepy"
+  - "sleepy"
 cd:
   enabled: true

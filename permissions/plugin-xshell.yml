@@ -2,9 +2,9 @@
 name: "xshell"
 github: "jenkinsci/xshell-plugin"
 issues:
-- jira: '16098' # xshell-plugin
+  - jira: '16098'  # xshell-plugin
 paths:
-- "org/jenkins-ci/plugins/xshell"
-- "org/jvnet/hudson/plugins/xshell"
+  - "org/jenkins-ci/plugins/xshell"
+  - "org/jvnet/hudson/plugins/xshell"
 developers:
-- "mambu"
+  - "mambu"

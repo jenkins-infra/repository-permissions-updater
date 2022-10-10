@@ -2,9 +2,9 @@
 name: "gcloud-sdk"
 github: "jenkinsci/gcloud-sdk-plugin"
 issues:
-- jira: '21933' # gcloud-sdk-plugin
+  - jira: '21933'  # gcloud-sdk-plugin
 paths:
-- "com/byclosure/jenkins/plugins/gcloud-sdk"
+  - "com/byclosure/jenkins/plugins/gcloud-sdk"
 developers:
-- "jrluis"
-- "jhansche"
+  - "jrluis"
+  - "jhansche"

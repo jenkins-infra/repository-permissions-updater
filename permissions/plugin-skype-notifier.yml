@@ -2,7 +2,7 @@
 name: "skype-notifier"
 github: "jenkinsci/skype-im-plugin"
 issues:
-- jira: '15963' # skype-notifier-plugin
+  - jira: '15963'  # skype-notifier-plugin
 paths:
-- "org/jenkins-ci/plugins/skype-notifier"
+  - "org/jenkins-ci/plugins/skype-notifier"
 developers: []

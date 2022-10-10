@@ -2,6 +2,6 @@
 name: "launchd-slave-installer"
 github: "jenkinsci/launchd-slave-installer-module"
 paths:
-- "org/jenkins-ci/modules/launchd-slave-installer"
+  - "org/jenkins-ci/modules/launchd-slave-installer"
 developers:
-- "@core"
+  - "@core"

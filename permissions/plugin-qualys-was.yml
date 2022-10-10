@@ -2,8 +2,8 @@
 name: "qualys-was"
 github: "jenkinsci/qualys-was-plugin"
 issues:
-- jira: '26228' # qualys-was-plugin
+  - jira: '26228'  # qualys-was-plugin
 paths:
-- "com/qualys/plugins/qualys-was"
+  - "com/qualys/plugins/qualys-was"
 developers:
-- "qualys"
+  - "qualys"

@@ -2,8 +2,8 @@
 name: "stackify-deployment-recorder"
 github: "jenkinsci/stackify-deployment-recorder-plugin"
 issues:
-- jira: '23447' # stackify-deployment-recorder-plugin
+  - jira: '23447'  # stackify-deployment-recorder-plugin
 paths:
-- "org/jenkins-ci/plugins/stackify-deployment-recorder"
+  - "org/jenkins-ci/plugins/stackify-deployment-recorder"
 developers:
-- "emartin"
+  - "emartin"

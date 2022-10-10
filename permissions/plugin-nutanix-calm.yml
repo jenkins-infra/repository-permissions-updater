@@ -2,8 +2,8 @@
 name: "nutanix-calm"
 github: "jenkinsci/nutanix-calm-plugin"
 issues:
-- jira: '24534' # nutanix-calm-plugin
+  - jira: '24534'  # nutanix-calm-plugin
 paths:
-- "org/jenkins-ci/plugins/nutanix-calm"
+  - "org/jenkins-ci/plugins/nutanix-calm"
 developers:
-- "nutanix_calm"
+  - "nutanix_calm"

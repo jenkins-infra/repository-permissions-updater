@@ -2,9 +2,9 @@
 name: "splunk-devops-extend"
 github: "jenkinsci/splunk-devops-plugin"
 issues:
-- jira: '21829' # splunk-devops-plugin
+  - jira: '21829'  # splunk-devops-plugin
 paths:
-- "com/splunk/splunkins/splunk-devops-extend"
+  - "com/splunk/splunkins/splunk-devops-extend"
 developers:
-- "fengxx"
-- "srv_splunk_devops_uploader"
+  - "fengxx"
+  - "srv_splunk_devops_uploader"

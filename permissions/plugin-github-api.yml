@@ -4,18 +4,18 @@ github: "jenkinsci/github-api-plugin"
 cd:
   enabled: true
 issues:
-- jira: '17496' # github-api-plugin
+  - jira: '17496'  # github-api-plugin
 paths:
-- "org/jenkins-ci/plugins/github-api"
+  - "org/jenkins-ci/plugins/github-api"
 developers:
-- "@cloudbees-developers"
-- "andresrc"
-- "bitwiseman"
-- "integer"
-- "kohsuke"
-- "ohtake_tomohiro"
-- "recena"
-- "surya548"
+  - "@cloudbees-developers"
+  - "andresrc"
+  - "bitwiseman"
+  - "integer"
+  - "kohsuke"
+  - "ohtake_tomohiro"
+  - "recena"
+  - "surya548"
 security:
   contacts:
     jira: "cloudbees_security_members"

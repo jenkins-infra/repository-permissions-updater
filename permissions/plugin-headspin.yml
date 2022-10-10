@@ -2,8 +2,8 @@
 name: "headspin"
 github: "jenkinsci/headspin-plugin"
 issues:
-- jira: '25821' # headspin-plugin
+  - jira: '25821'  # headspin-plugin
 paths:
-- "io/jenkins/plugins/headspin"
+  - "io/jenkins/plugins/headspin"
 developers:
-- "headspin"
+  - "headspin"

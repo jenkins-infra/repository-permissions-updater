@@ -2,8 +2,8 @@
 name: "cors-filter"
 github: "jenkinsci/cors-filter-plugin"
 issues:
-- jira: '20629' # cors-filter-plugin
+  - jira: '20629'  # cors-filter-plugin
 paths:
-- "org/jenkins-ci/plugins/cors-filter"
+  - "org/jenkins-ci/plugins/cors-filter"
 developers:
-- "uday"
+  - "uday"

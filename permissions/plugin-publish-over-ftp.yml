@@ -2,11 +2,11 @@
 name: "publish-over-ftp"
 github: "jenkinsci/publish-over-ftp-plugin"
 issues:
-- jira: '15791' # publish-over-ftp-plugin
+  - jira: '15791'  # publish-over-ftp-plugin
 paths:
-- "org/jenkins-ci/plugins/publish-over-ftp"
-- "org/jvnet/hudson/plugins/publish-over-ftp"
+  - "org/jenkins-ci/plugins/publish-over-ftp"
+  - "org/jvnet/hudson/plugins/publish-over-ftp"
 developers:
-- "gmcdonald"
-# Not a maintainer, just tables-to-divs fixes
-- "oleg_nenashev"
+  - "gmcdonald"
+  # Not a maintainer, just tables-to-divs fixes
+  - "oleg_nenashev"

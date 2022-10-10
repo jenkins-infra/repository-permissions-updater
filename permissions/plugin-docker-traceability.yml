@@ -2,9 +2,9 @@
 name: "docker-traceability"
 github: "jenkinsci/docker-traceability-plugin"
 issues:
-- jira: '20626' # docker-traceability-plugin
+  - jira: '20626'  # docker-traceability-plugin
 paths:
-- "org/jenkins-ci/plugins/docker-traceability"
+  - "org/jenkins-ci/plugins/docker-traceability"
 developers:
-- "oleg_nenashev"
-- "ataylor"
+  - "oleg_nenashev"
+  - "ataylor"

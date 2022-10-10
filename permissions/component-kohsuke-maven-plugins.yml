@@ -2,12 +2,12 @@
 # Workaround for publishing Maven plugins
 name: "dummy-unused-artifact-name"
 paths:
-- "org/jvnet"
-- "org/kohsuke"
+  - "org/jvnet"
+  - "org/kohsuke"
 developers:
-- "basil"
-- "timja"
-- "oleg_nenashev"
-- "jglick"
-- "batmat"
-- "markewaite"
+  - "basil"
+  - "timja"
+  - "oleg_nenashev"
+  - "jglick"
+  - "batmat"
+  - "markewaite"
