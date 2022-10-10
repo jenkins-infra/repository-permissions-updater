@@ -1,6 +1,8 @@
 ---
 name: "quali-torque"
 github: &GH "jenkinsci/quali-torque-plugin"
+cd:
+  enabled: true
 paths:
   - "io/jenkins/plugins/quali-torque"
 developers:
