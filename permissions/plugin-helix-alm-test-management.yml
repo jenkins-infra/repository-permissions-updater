@@ -1,0 +1,9 @@
+---
+name: "helix-alm-test-management"
+github: &GH "jenkinsci/helix-alm-test-management-plugin"
+paths:
+- "com/perforce/halm/jenkins/helix-alm-test-management"
+developers:
+- "vincentp"
+issues:
+  - github: *GH
