@@ -15,6 +15,11 @@ developers:
   - "bitwiseman"
   - "kshultz"
   - "olamy"
+  - "teilo"
+  - "rarabaolaza"
+  - "borisyaoa"
+  - "julieheard"
+  - "ampuscas"
 security:
   contacts:
     jira: "cloudbees_security_members"
