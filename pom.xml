@@ -237,7 +237,8 @@
     </pluginRepositories>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkins-infra/repository-permissions-updater.git</connection>
+        <connection>scm:git:https://github.com/jenkins-infra/repository-permissions-updater.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/jenkins-infra/repository-permissions-updater.git</developerConnection>
+        <url>https://github.com/jenkins-infra/repository-permissions-updater</url>
     </scm>
 </project>
