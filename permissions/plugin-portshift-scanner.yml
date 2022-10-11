@@ -5,3 +5,5 @@ paths:
   - "io/jenkins/plugins/portshift-scanner"
 developers:
   - "portshift"
+cd:
+  enabled: true
