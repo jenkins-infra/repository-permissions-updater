@@ -14,11 +14,11 @@ jobs:
       actor_in_hosting_team: ${{ steps.checkUserMember.outputs.isTeamMember }}
     steps:
       - name: Ack
-        uses: actions/github-script@v4
+        uses: actions/github-script@v6
         with:
           script: |
             const {owner, repo} = context.issue
-            github.reactions.createForIssueComment({
+            github.rest.reactions.createForIssueComment({
               owner,
               repo,
               comment_id: context.payload.comment.id,
