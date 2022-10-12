@@ -4,11 +4,11 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-      ignore:
-        # Managed dependencies for jira-api
-        - dependency-name: "org.codehaus.groovy:groovy-all"
-        - dependency-name: "com.atlassian.plugins:atlassian-plugins-core"
-        - dependency-name: "ch.qos.logback:logback-classic"
+    ignore:
+      # Managed dependencies for jira-api
+      - dependency-name: "org.codehaus.groovy:groovy-all"
+      - dependency-name: "com.atlassian.plugins:atlassian-plugins-core"
+      - dependency-name: "ch.qos.logback:logback-classic"
   - package-ecosystem: github-actions
     directory: /
     schedule:
