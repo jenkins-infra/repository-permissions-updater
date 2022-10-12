@@ -2,7 +2,7 @@
 name: "securecn-scanner"
 github: "jenkinsci/securecn-scanner-plugin"
 paths:
-  - "io/jenkins/plugins/securecn-scanner"
+  - "io/jenkins/plugins/portshift-scanner"
 developers:
   - "portshift"
 cd:
