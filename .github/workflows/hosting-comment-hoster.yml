@@ -14,7 +14,7 @@ jobs:
       actor_in_hosting_team: ${{ steps.checkUserMember.outputs.isTeamMember }}
     steps:
       - name: Ack
-        uses: actions/github-script@v6
+        uses: actions/github-script@v4
         with:
           script: |
             const {owner, repo} = context.issue
