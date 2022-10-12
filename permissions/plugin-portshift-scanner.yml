@@ -1,5 +1,5 @@
 ---
-name: "securecn-scanner"
+name: "portshift-scanner"
 github: "jenkinsci/securecn-scanner-plugin"
 paths:
   - "io/jenkins/plugins/portshift-scanner"
