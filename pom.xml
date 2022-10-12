@@ -125,7 +125,7 @@
             <dependency>
                 <groupId>com.atlassian.plugins</groupId>
                 <artifactId>atlassian-plugins-core</artifactId>
-                <version>4.0.0-m029</version>
+                <version>8.0.0-m01</version>
             </dependency>
             <dependency>
                 <groupId>org.osgi</groupId>
