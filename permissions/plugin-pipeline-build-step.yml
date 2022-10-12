@@ -5,6 +5,8 @@ issues:
   - jira: '21707'  # pipeline-build-step-plugin
 paths:
   - "org/jenkins-ci/plugins/pipeline-build-step"
+cd:
+  enabled: true
 developers:
   - "jglick"
   - "abayer"
