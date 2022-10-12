@@ -35,7 +35,7 @@ jobs:
     needs: [validate]
     if: needs.validate.outputs.actor_in_hosting_team == 'true'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: 'master'
       - uses: actions/setup-java@v3
