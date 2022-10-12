@@ -1,8 +1,8 @@
 ---
-name: "portshift-scanner"
-github: "jenkinsci/portshift-scanner-plugin"
+name: "securecn-scanner"
+github: "jenkinsci/securecn-scanner-plugin"
 paths:
-  - "io/jenkins/plugins/portshift-scanner"
+  - "io/jenkins/plugins/securecn-scanner"
 developers:
   - "portshift"
 cd:
