@@ -2,7 +2,7 @@
 name: "hudson-pview-plugin"
 github: "jenkinsci/pview-plugin"
 issues:
-- jira: '16079' # hudson-pview-plugin
+  - jira: '16079'  # hudson-pview-plugin
 paths:
-- "de/fspengler/hudson/pview/hudson-pview-plugin"
+  - "de/fspengler/hudson/pview/hudson-pview-plugin"
 developers: []

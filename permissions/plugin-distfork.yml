@@ -1,6 +1,9 @@
 ---
 name: "distfork"
+github: "jenkinsci/distfork-plugin"
+issues:
+  - jira: '15973'
 paths:
-- "org/jenkins-ci/plugins/distfork"
+  - "org/jenkins-ci/plugins/distfork"
 developers:
-- "teilo"
+  - "teilo"

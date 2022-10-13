@@ -2,8 +2,8 @@
 name: "jqs-monitoring"
 github: &gh "jenkinsci/jqs-monitoring-plugin"
 issues:
-- jira: '17616' # jqs-monitoring-plugin
-- github: *gh
+  - jira: '17616'  # jqs-monitoring-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/jqs-monitoring"
+  - "org/jenkins-ci/plugins/jqs-monitoring"
 developers: []

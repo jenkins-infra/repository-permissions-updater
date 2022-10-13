@@ -2,16 +2,16 @@
 name: "tfs"
 github: "jenkinsci/tfs-plugin"
 issues:
-- jira: '15521' # tfs-plugin
+  - jira: '15521'  # tfs-plugin
 paths:
-- "org/jenkins-ci/plugins/tfs"
+  - "org/jenkins-ci/plugins/tfs"
 developers:
-- "oli_at_jsi"
-- "yacaovsnc"
-- "dastahel"
-- "jpricketmsft"
-- "jeffyoung"
-- "kelliejos"
-- "kalyan"
-- "jenkinssriramb"
-- "leantk"
+  - "oli_at_jsi"
+  - "yacaovsnc"
+  - "dastahel"
+  - "jpricketmsft"
+  - "jeffyoung"
+  - "kelliejos"
+  - "kalyan"
+  - "jenkinssriramb"
+  - "leantk"

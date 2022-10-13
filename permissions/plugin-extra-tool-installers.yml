@@ -2,10 +2,10 @@
 name: "extra-tool-installers"
 github: "jenkinsci/extra-tool-installers-plugin"
 issues:
-- jira: '17920' # extra-tool-installers-plugin
+  - jira: '17920'  # extra-tool-installers-plugin
 paths:
-- "com/synopsys/arc/jenkinsci/extra-tool-installers"
-- "io/jenkins/plugins/extra-tool-installers"
+  - "com/synopsys/arc/jenkinsci/extra-tool-installers"
+  - "io/jenkins/plugins/extra-tool-installers"
 developers:
-- "oleg_nenashev"
-- "pjdarton"
+  - "oleg_nenashev"
+  - "pjdarton"

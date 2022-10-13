@@ -2,9 +2,9 @@
 name: "runscope"
 github: "jenkinsci/runscope-plugin"
 issues:
-- jira: '20720' # runscope-plugin
+  - jira: '20720'  # runscope-plugin
 paths:
-- "com/runscope/jenkins/runscope"
+  - "com/runscope/jenkins/runscope"
 developers:
-- "frankstratton"
-- "mansilladev"
+  - "frankstratton"
+  - "mansilladev"

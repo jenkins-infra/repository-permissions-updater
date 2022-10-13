@@ -2,8 +2,8 @@
 name: "docker-slaves"
 github: "jenkinsci/docker-slaves-plugin"
 issues:
-- jira: '20839' # docker-slaves-plugin
+  - jira: '20839'  # docker-slaves-plugin
 paths:
-- "io/jenkins/plugins/docker-slaves"
+  - "io/jenkins/plugins/docker-slaves"
 developers:
-- "ydubreuil"
+  - "ydubreuil"

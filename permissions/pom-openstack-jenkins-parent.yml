@@ -1,5 +1,5 @@
 ---
 name: "openstack-jenkins-parent"
 paths:
-- "org/jenkins-ci/plugins/openstack-jenkins-parent"
+  - "org/jenkins-ci/plugins/openstack-jenkins-parent"
 developers: []

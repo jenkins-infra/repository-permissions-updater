@@ -2,8 +2,8 @@
 name: "build-environment"
 github: "jenkinsci/build-environment-plugin"
 issues:
-- jira: '17667' # build-environment-plugin
+  - jira: '17667'  # build-environment-plugin
 paths:
-- "org/jenkins-ci/plugins/build-environment"
+  - "org/jenkins-ci/plugins/build-environment"
 developers:
-- "stefanbrausch"
+  - "stefanbrausch"

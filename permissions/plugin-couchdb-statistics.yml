@@ -2,8 +2,8 @@
 name: "couchdb-statistics"
 github: "jenkinsci/couchdb-statistics-plugin"
 issues:
-- jira: '21031' # couchdb-statistics-plugin
+  - jira: '21031'  # couchdb-statistics-plugin
 paths:
-- "org/jenkins-ci/plugins/couchdb-statistics"
+  - "org/jenkins-ci/plugins/couchdb-statistics"
 developers:
-- "garethjevans"
+  - "garethjevans"

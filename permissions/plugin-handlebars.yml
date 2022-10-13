@@ -2,16 +2,16 @@
 name: "handlebars"
 github: "jenkinsci/js-libs"
 issues:
-- jira: '21133' # js-modules
+  - jira: '21133'  # js-modules
 paths:
-- "org/jenkins-ci/ui/handlebars"
+  - "org/jenkins-ci/ui/handlebars"
 developers:
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
+  - "alecharp"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"

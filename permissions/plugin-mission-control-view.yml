@@ -2,8 +2,8 @@
 name: "mission-control-view"
 github: "jenkinsci/mission-control-view-plugin"
 issues:
-- jira: '21123' # mission-control-view-plugin
+  - jira: '21123'  # mission-control-view-plugin
 paths:
-- "tech/andrey/jenkins/mission-control-view"
+  - "tech/andrey/jenkins/mission-control-view"
 developers:
-- "ashevtsov"
+  - "ashevtsov"

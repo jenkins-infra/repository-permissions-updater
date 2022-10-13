@@ -2,7 +2,7 @@
 name: "svn-revert-plugin"
 github: "jenkinsci/svn-revert-plugin"
 issues:
-- jira: '16921' # svn-revert-plugin
+  - jira: '16921'  # svn-revert-plugin
 paths:
-- "org/jenkins-ci/plugins/svn-revert-plugin"
+  - "org/jenkins-ci/plugins/svn-revert-plugin"
 developers: []

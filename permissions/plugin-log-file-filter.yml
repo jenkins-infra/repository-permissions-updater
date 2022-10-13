@@ -2,11 +2,11 @@
 name: "log-file-filter"
 github: "jenkinsci/log-file-filter-plugin"
 issues:
-- jira: '23549' # log-file-filter-plugin
+  - jira: '23549'  # log-file-filter-plugin
 paths:
-- "com/tsystems/sbs/log-file-filter"
+  - "com/tsystems/sbs/log-file-filter"
 developers:
-- "carlescapdevila"
-- "andreasmandel"
+  - "carlescapdevila"
+  - "andreasmandel"
 cd:
   enabled: true

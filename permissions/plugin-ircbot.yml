@@ -2,10 +2,10 @@
 name: "ircbot"
 github: "jenkinsci/ircbot-plugin"
 issues:
-- jira: '15550' # ircbot-plugin
+  - jira: '15550'  # ircbot-plugin
 paths:
-- "org/jvnet/hudson/plugins/ircbot"
+  - "org/jvnet/hudson/plugins/ircbot"
 developers:
-- "kutzi"
-- "sircmpwn"
-- "jimklimov"
+  - "kutzi"
+  - "sircmpwn"
+  - "jimklimov"

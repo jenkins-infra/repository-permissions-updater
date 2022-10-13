@@ -2,7 +2,7 @@
 name: "persona"
 github: "jenkinsci/persona-plugin"
 issues:
-- jira: '15760' # persona-plugin
+  - jira: '15760'  # persona-plugin
 paths:
-- "org/jenkins-ci/plugins/persona"
+  - "org/jenkins-ci/plugins/persona"
 developers: []

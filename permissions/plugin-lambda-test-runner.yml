@@ -2,8 +2,8 @@
 name: "lambda-test-runner"
 github: &gh "jenkinsci/lambda-test-runner-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/lambda-test-runner"
+  - "org/jenkins-ci/plugins/lambda-test-runner"
 developers:
-- "ipastusiak"
+  - "ipastusiak"

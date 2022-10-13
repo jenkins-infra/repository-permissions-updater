@@ -2,9 +2,9 @@
 name: "yaml-project"
 github: "jenkinsci/yaml-project-plugin"
 issues:
-- jira: '19524' # yaml-project-plugin
+  - jira: '19524'  # yaml-project-plugin
 paths:
-- "org/jenkins-ci/plugins/yaml-project"
+  - "org/jenkins-ci/plugins/yaml-project"
 developers:
-- "astroilov"
-- "mattmoor"
+  - "astroilov"
+  - "mattmoor"

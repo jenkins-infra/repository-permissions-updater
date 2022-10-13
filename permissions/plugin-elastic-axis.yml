@@ -2,11 +2,11 @@
 name: "elastic-axis"
 github: "jenkinsci/elastic-axis-plugin"
 issues:
-- jira: '17588' # elastic-axis-plugin
+  - jira: '17588'  # elastic-axis-plugin
 paths:
-- "org/jenkins-ci/plugins/elastic-axis"
+  - "org/jenkins-ci/plugins/elastic-axis"
 cd:
   enabled: true
 developers:
-- "taksan"
-- "markewaite"
+  - "taksan"
+  - "markewaite"

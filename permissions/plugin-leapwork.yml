@@ -2,9 +2,9 @@
 name: "leapwork"
 github: &GH "jenkinsci/leapwork-plugin"
 paths:
-- "io/jenkins/plugins/leapwork"
+  - "io/jenkins/plugins/leapwork"
 developers:
-- "bir"
+  - "bir"
 issues:
   - github: *GH
 cd:

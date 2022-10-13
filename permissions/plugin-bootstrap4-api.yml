@@ -2,11 +2,11 @@
 name: "bootstrap4-api"
 github: "jenkinsci/bootstrap4-api-plugin"
 issues:
-- jira: '26330' # bootstrap4-api-plugin
+  - jira: '26330'  # bootstrap4-api-plugin
 paths:
-- "io/jenkins/plugins/bootstrap4-api"
+  - "io/jenkins/plugins/bootstrap4-api"
 developers:
-- "drulli"
+  - "drulli"
 security:
   contacts:
     jira: "cloudbees_security_members"

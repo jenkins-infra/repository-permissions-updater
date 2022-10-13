@@ -2,7 +2,7 @@
 name: "delete-log-plugin"
 github: "jenkinsci/delete-log-plugin"
 issues:
-- jira: '17494' # delete-log-plugin
+  - jira: '17494'  # delete-log-plugin
 paths:
-- "org/jenkins-ci/plugins/delete-log-plugin"
+  - "org/jenkins-ci/plugins/delete-log-plugin"
 developers: []

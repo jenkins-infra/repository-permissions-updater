@@ -2,7 +2,7 @@
 name: "copy-data-to-workspace-plugin"
 github: jenkinsci/copy-data-to-workspace-plugin
 issues:
-- jira: '15957' # copy-data-to-workspace-plugin
+  - jira: '15957'  # copy-data-to-workspace-plugin
 paths:
-- "org/jvnet/hudson/plugins/copy-data-to-workspace-plugin"
+  - "org/jvnet/hudson/plugins/copy-data-to-workspace-plugin"
 developers: []

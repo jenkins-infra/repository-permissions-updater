@@ -2,10 +2,10 @@
 name: "description-setter"
 github: "jenkinsci/description-setter-plugin"
 issues:
-- jira: '15536' # description-setter-plugin
+  - jira: '15536'  # description-setter-plugin
 paths:
-- "org/jenkins-ci/plugins/description-setter"
-- "org/jvnet/hudson/plugins/description-setter"
+  - "org/jenkins-ci/plugins/description-setter"
+  - "org/jvnet/hudson/plugins/description-setter"
 developers:
-- "marcomiller"
-- "michael1010"
+  - "marcomiller"
+  - "michael1010"

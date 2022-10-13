@@ -2,10 +2,10 @@
 name: "rally-plugin"
 github: &gh "jenkinsci/rally-plugin"
 issues:
-- github: *gh
-- jira: '18734' # rally-plugin
+  - github: *gh
+  - jira: '18734'  # rally-plugin
 paths:
-- "org/jenkins-ci/plugins/rally-plugin"
+  - "org/jenkins-ci/plugins/rally-plugin"
 developers:
-- "mikerogers_"
-- "tushar686"
+  - "mikerogers_"
+  - "tushar686"

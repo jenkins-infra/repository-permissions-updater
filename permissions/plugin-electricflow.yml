@@ -2,9 +2,9 @@
 name: "electricflow"
 github: "jenkinsci/electricflow-plugin"
 issues:
-- jira: '22420' # electricflow-plugin
+  - jira: '22420'  # electricflow-plugin
 paths:
-- "org/jenkins-ci/plugins/electricflow"
+  - "org/jenkins-ci/plugins/electricflow"
 developers:
-- "efpluginsdev"
-- "flowpluginteam"
+  - "efpluginsdev"
+  - "flowpluginteam"

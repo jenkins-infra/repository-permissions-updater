@@ -2,9 +2,8 @@
 name: "filesystem_scm"
 github: "jenkinsci/filesystem_scm-plugin"
 issues:
-- jira: '15698' # filesystem_scm-plugin
+  - jira: '15698'  # filesystem_scm-plugin
 paths:
-- "hudson/plugins/filesystem_scm/filesystem_scm"
+  - "hudson/plugins/filesystem_scm/filesystem_scm"
 developers:
-- oleg_nenashev
-
+  - oleg_nenashev

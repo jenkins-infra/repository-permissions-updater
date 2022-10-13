@@ -2,15 +2,15 @@
 name: "plasticscm-plugin"
 github: &gh "jenkinsci/plasticscm-plugin"
 issues:
-- github: *gh
-- jira: '16103' # plasticscm-plugin
+  - github: *gh
+  - jira: '16103'  # plasticscm-plugin
 paths:
-- "org/jenkins-ci/plugins/plasticscm-plugin"
-- "org/jvnet/hudson/plugins/plasticscm-plugin"
+  - "org/jenkins-ci/plugins/plasticscm-plugin"
+  - "org/jvnet/hudson/plugins/plasticscm-plugin"
 developers:
-- "mig42"
-- "fernando_de_francisco"
-- "juliomaqueda"
-- "danhomp"
-- "pbayarri"
-- "jgutierrez"
+  - "mig42"
+  - "fernando_de_francisco"
+  - "juliomaqueda"
+  - "danhomp"
+  - "pbayarri"
+  - "jgutierrez"

@@ -2,10 +2,10 @@
 name: "Parameterized-Remote-Trigger"
 github: "jenkinsci/parameterized-remote-trigger-plugin"
 issues:
-- jira: '18159' # parameterized-remote-trigger-plugin
+  - jira: '18159'  # parameterized-remote-trigger-plugin
 paths:
-- "org/jenkins-ci/plugins/Parameterized-Remote-Trigger"
+  - "org/jenkins-ci/plugins/Parameterized-Remote-Trigger"
 developers:
-- "kutzi"
-- "morficus"
-- "cashlalala"
+  - "kutzi"
+  - "morficus"
+  - "cashlalala"

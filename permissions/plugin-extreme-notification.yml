@@ -2,9 +2,9 @@
 name: "extreme-notification"
 github: "jenkinsci/extreme-notification-plugin"
 issues:
-- jira: '18428' # extreme-notification-plugin
+  - jira: '18428'  # extreme-notification-plugin
 paths:
-- "org/jenkins-ci/plugins/extreme-notification"
+  - "org/jenkins-ci/plugins/extreme-notification"
 developers:
-- "bkmeneguello"
-- "danielburgmann"
+  - "bkmeneguello"
+  - "danielburgmann"

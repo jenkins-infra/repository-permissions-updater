@@ -2,7 +2,7 @@
 name: "jenkins-parent"
 github: "jenkinsci/jenkins"
 paths:
-- "org/jenkins-ci/main/jenkins-parent"
+  - "org/jenkins-ci/main/jenkins-parent"
 developers:
-- "kohsuke"
-- "releasebot"
+  - "kohsuke"
+  - "releasebot"

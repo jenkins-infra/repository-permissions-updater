@@ -2,7 +2,7 @@
 name: "collabnet-automic-deploy"
 github: "jenkinsci/collabnet-automic-deploy-plugin"
 issues:
-- jira: '18025' # collabnet-automic-deploy-plugin
+  - jira: '18025'  # collabnet-automic-deploy-plugin
 paths:
-- "org/jenkins-ci/plugins/collabnet-automic-deploy"
+  - "org/jenkins-ci/plugins/collabnet-automic-deploy"
 developers: []

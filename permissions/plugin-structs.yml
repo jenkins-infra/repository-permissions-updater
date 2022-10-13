@@ -2,20 +2,20 @@
 name: "structs"
 github: "jenkinsci/structs-plugin"
 issues:
-- jira: '21442' # structs-plugin
+  - jira: '21442'  # structs-plugin
 paths:
-- "org/jenkins-ci/plugins/structs"
+  - "org/jenkins-ci/plugins/structs"
 developers:
-- "jglick"
-- "kohsuke"
-- "oleg_nenashev"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "jglick"
+  - "kohsuke"
+  - "oleg_nenashev"
+  - "abayer"
+  - "svanoort"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
 security:
   contacts:
     jira: "cloudbees_security_members"

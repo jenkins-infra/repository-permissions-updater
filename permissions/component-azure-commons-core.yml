@@ -1,7 +1,7 @@
 ---
 name: "azure-commons-core"
 paths:
-- "org/jenkins-ci/plugins/azure-commons-core"
+  - "org/jenkins-ci/plugins/azure-commons-core"
 developers:
-- "zooopx"
-- "timja"
+  - "zooopx"
+  - "timja"

@@ -2,7 +2,7 @@
 name: "call-remote-job-plugin"
 github: "jenkinsci/call-remote-job-plugin"
 issues:
-- jira: '17663' # call-remote-job-plugin
+  - jira: '17663'  # call-remote-job-plugin
 paths:
-- "org/ukiuni/callOtherJenkins/call-remote-job-plugin"
+  - "org/ukiuni/callOtherJenkins/call-remote-job-plugin"
 developers: []

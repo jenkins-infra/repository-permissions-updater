@@ -2,7 +2,7 @@
 name: "growl"
 github: "jenkinsci/growl-plugin"
 issues:
-- jira: '16080' # growl-plugin
+  - jira: '16080'  # growl-plugin
 paths:
-- "org/jenkins-ci/plugins/growl"
+  - "org/jenkins-ci/plugins/growl"
 developers: []

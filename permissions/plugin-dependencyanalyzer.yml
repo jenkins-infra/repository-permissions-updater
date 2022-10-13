@@ -2,9 +2,9 @@
 name: "dependencyanalyzer"
 github: "jenkinsci/dependency-analyzer-plugin"
 issues:
-- jira: '15535' # dependencyanalyzer-plugin
+  - jira: '15535'  # dependencyanalyzer-plugin
 paths:
-- "org/jenkins-ci/plugins/dependencyanalyzer"
-- "org/jvnet/hudson/plugins/dependencyanalyzer"
+  - "org/jenkins-ci/plugins/dependencyanalyzer"
+  - "org/jvnet/hudson/plugins/dependencyanalyzer"
 developers:
-- "ejouvin"
+  - "ejouvin"

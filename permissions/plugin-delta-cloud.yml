@@ -2,7 +2,7 @@
 name: "delta-cloud"
 github: "jenkinsci/delta-cloud-plugin"
 issues:
-- jira: '16002' # delta-cloud-plugin
+  - jira: '16002'  # delta-cloud-plugin
 paths:
-- "org/jenkins-ci/plugins/delta-cloud"
+  - "org/jenkins-ci/plugins/delta-cloud"
 developers: []

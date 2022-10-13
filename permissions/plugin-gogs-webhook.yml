@@ -2,9 +2,9 @@
 name: "gogs-webhook"
 github: &gh "jenkinsci/gogs-webhook-plugin"
 issues:
-- github: *gh
-- jira: '21674' # gogs-webhook-plugin
+  - github: *gh
+  - jira: '21674'  # gogs-webhook-plugin
 paths:
-- "org/jenkins-ci/plugins/gogs-webhook"
+  - "org/jenkins-ci/plugins/gogs-webhook"
 developers:
-- "sanderv43"
+  - "sanderv43"

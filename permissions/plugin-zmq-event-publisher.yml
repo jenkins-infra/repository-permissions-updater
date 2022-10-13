@@ -1,6 +1,6 @@
 ---
 name: "zmq-event-publisher"
 paths:
-- "org/jenkins-ci/plugins/zmq-event-publisher"
+  - "org/jenkins-ci/plugins/zmq-event-publisher"
 developers:
-- "openstackjenkins"
+  - "openstackjenkins"

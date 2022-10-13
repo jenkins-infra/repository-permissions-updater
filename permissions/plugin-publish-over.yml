@@ -2,5 +2,6 @@
 name: "publish-over"
 github: "jenkinsci/publish-over-plugin"
 paths:
-- "org/jenkins-ci/plugins/publish-over"
-developers: []
+  - "org/jenkins-ci/plugins/publish-over"
+developers:
+  - "gmcdonald"

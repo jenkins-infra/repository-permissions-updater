@@ -2,13 +2,13 @@
 name: "email-ext"
 github: "jenkinsci/email-ext-plugin"
 issues:
-- jira: '15538' # email-ext-plugin
+  - jira: '15538'  # email-ext-plugin
 paths:
-- "org/jenkins-ci/plugins/email-ext"
-- "org/jvnet/hudson/plugins/email-ext"
+  - "org/jenkins-ci/plugins/email-ext"
+  - "org/jvnet/hudson/plugins/email-ext"
 developers:
-- "basil"
-- "davidvanlaatum"
+  - "basil"
+  - "davidvanlaatum"
 security:
   contacts:
     jira: "cloudbees_security_members"

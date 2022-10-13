@@ -2,12 +2,12 @@
 name: "jenkins-infra-test"
 github: &gh "jenkinsci/jenkins-infra-test-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/jenkins-infra-test"
+  - "io/jenkins/plugins/jenkins-infra-test"
 cd:
   enabled: true
 developers:
-- "timja"
-- "olblak"
-- "jglick"
+  - "timja"
+  - "olblak"
+  - "jglick"

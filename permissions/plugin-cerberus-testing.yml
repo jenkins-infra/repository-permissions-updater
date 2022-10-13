@@ -2,10 +2,10 @@
 name: "cerberus-testing"
 github: &gh "jenkinsci/cerberus-testing-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/cerberus-testing"
+  - "org/jenkins-ci/plugins/cerberus-testing"
 developers:
-- "nicodeur"
-- "vertigo17"
-- "gotier"
+  - "nicodeur"
+  - "vertigo17"
+  - "gotier"

@@ -2,8 +2,8 @@
 name: "partyparrotstatus"
 github: "jenkinsci/partyparrotstatus-plugin"
 issues:
-- jira: '23456' # partyparrotstatus-plugin
+  - jira: '23456'  # partyparrotstatus-plugin
 paths:
-- "org/jenkins-ci/plugins/partyparrotstatus"
+  - "org/jenkins-ci/plugins/partyparrotstatus"
 developers:
-- "nikitabelonogov"
+  - "nikitabelonogov"

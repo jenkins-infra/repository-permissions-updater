@@ -2,16 +2,6 @@
 name: "symbol-annotation"
 github: "jenkinsci/lib-symbol-annotation"
 paths:
-- "org/jenkins-ci/symbol-annotation"
+  - "org/jenkins-ci/symbol-annotation"
 developers:
-- "basil"
-- "jglick"
-- "kohsuke"
-- "oleg_nenashev"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "@core"

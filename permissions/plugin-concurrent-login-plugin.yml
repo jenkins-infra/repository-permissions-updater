@@ -2,7 +2,7 @@
 name: "concurrent-login-plugin"
 github: "jenkinsci/concurrent-login-plugin"
 issues:
-- jira: '17820' # concurrent-login-plugin
+  - jira: '17820'  # concurrent-login-plugin
 paths:
-- "hudson/plugins/concurrent_login/concurrent-login-plugin"
+  - "hudson/plugins/concurrent_login/concurrent-login-plugin"
 developers: []

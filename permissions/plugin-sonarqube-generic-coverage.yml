@@ -2,8 +2,8 @@
 name: "sonarqube-generic-coverage"
 github: "jenkinsci/sonarqube-generic-coverage-plugin"
 issues:
-- jira: '25626' # sonarqube-generic-coverage-plugin
+  - jira: '25626'  # sonarqube-generic-coverage-plugin
 paths:
-- "io/jenkins/plugins/sonarqube-generic-coverage"
+  - "io/jenkins/plugins/sonarqube-generic-coverage"
 developers:
-- "cizezsy"
+  - "cizezsy"

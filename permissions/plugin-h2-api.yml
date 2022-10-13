@@ -2,8 +2,8 @@
 name: "h2-api"
 github: "jenkinsci/h2-api-plugin"
 issues:
-- jira: '25421' # h2-api-plugin
+  - jira: '25421'  # h2-api-plugin
 paths:
-- "io/jenkins/plugins/h2-api"
+  - "io/jenkins/plugins/h2-api"
 developers:
-- "cleclerc"
+  - "cleclerc"

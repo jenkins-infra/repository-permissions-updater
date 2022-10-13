@@ -1,12 +1,13 @@
+---
 name: "worktile"
 github: "jenkinsci/pingcode-plugin"
 issues:
-- jira: '27247' # worktile-plugin
+  - jira: '27247'  # worktile-plugin
 paths:
-- "io/jenkins/plugins/worktile"
+  - "io/jenkins/plugins/worktile"
 developers:
-- "shaunxu"
-- "luodongjia"
-- "sunjingyun"
-- "cheerfyt"
-- "13111179550"
+  - "shaunxu"
+  - "luodongjia"
+  - "sunjingyun"
+  - "cheerfyt"
+  - "13111179550"

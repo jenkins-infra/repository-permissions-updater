@@ -2,9 +2,9 @@
 name: "calendar-view"
 github: "jenkinsci/calendar-view-plugin"
 issues:
-- jira: '23933' # calendar-view-plugin
+  - jira: '23933'  # calendar-view-plugin
 paths:
-- "io/jenkins/plugins/calendar-view"
+  - "io/jenkins/plugins/calendar-view"
 developers:
-- "svenschoenung"
-- "malice00"
+  - "svenschoenung"
+  - "malice00"

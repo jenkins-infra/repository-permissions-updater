@@ -2,8 +2,8 @@
 name: "ontrack"
 github: &gh "jenkinsci/ontrack-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/ontrack"
+  - "org/jenkins-ci/plugins/ontrack"
 developers:
-- "damien_coraboeuf"
+  - "damien_coraboeuf"

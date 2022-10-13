@@ -2,9 +2,9 @@
 name: "help-editor"
 github: "jenkinsci/help-editor-plugin"
 issues:
-- jira: '21694' # help-editor-plugin
+  - jira: '21694'  # help-editor-plugin
 paths:
-- "org/jenkins-ci/plugins/help-editor"
+  - "org/jenkins-ci/plugins/help-editor"
 developers:
-- "samat"
-- "oleg_nenashev"
+  - "samat"
+  - "oleg_nenashev"

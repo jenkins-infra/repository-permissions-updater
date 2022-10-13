@@ -2,8 +2,8 @@
 name: themis
 github: "jenkinsci/themis-plugin"
 issues:
-- jira: '23181' # themis-plugin
+  - jira: '23181'  # themis-plugin
 paths:
-    - org/jenkins-ci/plugins/themis
+  - org/jenkins-ci/plugins/themis
 developers:
-    - cteyton
+  - cteyton

@@ -2,9 +2,9 @@
 name: "violation-comments-to-github"
 github: &gh "jenkinsci/violation-comments-to-github-plugin"
 issues:
-- github: *gh
-- jira: '21426' # violation-comments-to-github-plugin
+  - github: *gh
+  - jira: '21426'  # violation-comments-to-github-plugin
 paths:
-- "org/jenkins-ci/plugins/violation-comments-to-github"
+  - "org/jenkins-ci/plugins/violation-comments-to-github"
 developers:
-- "tomasbjerre"
+  - "tomasbjerre"

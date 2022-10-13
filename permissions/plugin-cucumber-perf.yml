@@ -2,9 +2,9 @@
 name: "cucumber-perf"
 github: "jenkinsci/cucumber-performance-plugin"
 issues:
-- jira: '17720' # cucumber-perf-plugin
+  - jira: '17720'  # cucumber-perf-plugin
 paths:
-- "com/castlemon/hudson/cucumber-perf"
+  - "com/castlemon/hudson/cucumber-perf"
 developers:
-- "truedub"
-- "brianjriddle"
+  - "truedub"
+  - "brianjriddle"

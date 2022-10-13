@@ -2,7 +2,7 @@
 name: "bugzilla"
 github: "jenkinsci/bugzilla-plugin"
 issues:
-- jira: '15528' # bugzilla-plugin
+  - jira: '15528'  # bugzilla-plugin
 paths:
-- "org/jvnet/hudson/plugins/bugzilla"
+  - "org/jvnet/hudson/plugins/bugzilla"
 developers: []

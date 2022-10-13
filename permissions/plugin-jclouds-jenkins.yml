@@ -2,9 +2,9 @@
 name: "jclouds-jenkins"
 github: "jenkinsci/jclouds-plugin"
 issues:
-- jira: '16529' # jclouds-plugin
+  - jira: '16529'  # jclouds-plugin
 paths:
-- "org/jenkins-ci/plugins/jclouds-jenkins"
+  - "org/jenkins-ci/plugins/jclouds-jenkins"
 developers:
-- "mikefero"
-- "felfert"
+  - "mikefero"
+  - "felfert"

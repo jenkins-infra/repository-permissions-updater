@@ -2,10 +2,9 @@
 name: "deployhub"
 github: "jenkinsci/deployhub-plugin"
 issues:
-- jira: '23931' # deployhub-plugin
+  - jira: '23931'  # deployhub-plugin
 paths:
-- "com/openmake/deployhub"
+  - "com/openmake/deployhub"
 developers:
-- "sbtaylor15"
-- "philgibbs"
-
+  - "sbtaylor15"
+  - "philgibbs"

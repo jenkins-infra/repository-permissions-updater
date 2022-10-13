@@ -2,8 +2,8 @@
 name: "hp-quality-center"
 github: "jenkinsci/hp-quality-center-plugin"
 issues:
-- jira: '21444' # hp-quality-center-plugin
+  - jira: '21444'  # hp-quality-center-plugin
 paths:
-- "org/jenkins-ci/plugins/qc/hp-quality-center"
+  - "org/jenkins-ci/plugins/qc/hp-quality-center"
 developers:
-- "faziom"
+  - "faziom"

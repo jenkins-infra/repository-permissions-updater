@@ -2,10 +2,10 @@
 name: "docker-swarm"
 github: &gh "jenkinsci/docker-swarm-plugin"
 issues:
-- github: *gh
-- jira: '23450' # docker-swarm-plugin
+  - github: *gh
+  - jira: '23450'  # docker-swarm-plugin
 paths:
-- "org/jenkins-ci/plugins/docker-swarm"
+  - "org/jenkins-ci/plugins/docker-swarm"
 developers:
-- "surya548"
-- "roemer"
+  - "surya548"
+  - "roemer"

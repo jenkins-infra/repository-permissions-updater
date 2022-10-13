@@ -2,7 +2,7 @@
 name: "selection-tasks-plugin"
 github: "jenkinsci/selection-tasks-plugin"
 issues:
-- jira: '16054' # selection-tasks-plugin
+  - jira: '16054'  # selection-tasks-plugin
 paths:
-- "org/jvnet/hudson/plugins/selection-tasks-plugin"
+  - "org/jvnet/hudson/plugins/selection-tasks-plugin"
 developers: []

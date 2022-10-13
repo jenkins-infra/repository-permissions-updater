@@ -2,9 +2,9 @@
 name: "octoperf"
 github: &gh "jenkinsci/octoperf-plugin"
 issues:
-- jira: '21423' # octoperf-jci-plugin
-- github: *gh
+  - jira: '21423'  # octoperf-jci-plugin
+  - github: *gh
 paths:
-- "org/jenkinsci/plugins/octoperf"
+  - "org/jenkinsci/plugins/octoperf"
 developers:
-- "jloisel"
+  - "jloisel"

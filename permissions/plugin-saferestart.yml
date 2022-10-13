@@ -2,7 +2,7 @@
 name: "saferestart"
 github: "jenkinsci/saferestart-plugin"
 issues:
-- jira: '16072' # saferestart-plugin
+  - jira: '16072'  # saferestart-plugin
 paths:
-- "org/jenkins-ci/plugins/saferestart"
+  - "org/jenkins-ci/plugins/saferestart"
 developers: []

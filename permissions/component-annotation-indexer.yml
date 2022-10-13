@@ -2,10 +2,6 @@
 name: "annotation-indexer"
 github: "jenkinsci/lib-annotation-indexer"
 paths:
-- "org/jenkins-ci/annotation-indexer"
+  - "org/jenkins-ci/annotation-indexer"
 developers:
-- "basil"
-- "jglick"
-- "kohsuke"
-- "oleg_nenashev"
-- "olivergondza"
+  - "@core"

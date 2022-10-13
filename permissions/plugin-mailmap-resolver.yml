@@ -2,7 +2,7 @@
 name: "mailmap-resolver"
 github: "jenkinsci/mailmap-resolver-plugin"
 issues:
-- jira: '18331' # mailmap-resolver-plugin
+  - jira: '18331'  # mailmap-resolver-plugin
 paths:
-- "org/jenkins-ci/plugins/mailmap-resolver"
+  - "org/jenkins-ci/plugins/mailmap-resolver"
 developers: []

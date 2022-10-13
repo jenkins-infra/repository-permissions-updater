@@ -2,11 +2,11 @@
 name: "overops-query"
 github: &gh "jenkinsci/overops-query-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/overops/plugins/overops-query"
+  - "org/overops/plugins/overops-query"
 developers:
-- "joe99000"
-- "emizell"
-- "daverted"
-- "ccaspanello"
+  - "joe99000"
+  - "emizell"
+  - "daverted"
+  - "ccaspanello"

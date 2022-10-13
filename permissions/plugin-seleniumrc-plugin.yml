@@ -2,7 +2,7 @@
 name: "seleniumrc-plugin"
 github: "jenkinsci/seleniumrc-plugin"
 issues:
-- jira: '16084' # seleniumrc-plugin
+  - jira: '16084'  # seleniumrc-plugin
 paths:
-- "org/jvnet/hudson/plugins/seleniumrc-plugin"
+  - "org/jvnet/hudson/plugins/seleniumrc-plugin"
 developers: []

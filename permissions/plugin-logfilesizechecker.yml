@@ -2,9 +2,9 @@
 name: "logfilesizechecker"
 github: "jenkinsci/logfilesizechecker-plugin"
 issues:
-- jira: '16920' # logfilesizechecker-plugin
+  - jira: '16920'  # logfilesizechecker-plugin
 paths:
-- "org/jenkins-ci/plugins/logfilesizechecker"
+  - "org/jenkins-ci/plugins/logfilesizechecker"
 developers:
-- "stefanbrausch"
-- "jochenafuerbacher"
+  - "stefanbrausch"
+  - "jochenafuerbacher"

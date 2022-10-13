@@ -2,16 +2,16 @@
 name: "pipeline-model-declarative-agent"
 github: "jenkinsci/pipeline-model-definition-plugin"
 issues:
-- jira: '21706' # pipeline-model-definition-plugin
+  - jira: '21706'  # pipeline-model-definition-plugin
 paths:
-- "org/jenkinsci/plugins/pipeline-model-declarative-agent"
+  - "org/jenkinsci/plugins/pipeline-model-declarative-agent"
 developers:
-- "abayer"
-- "oleg_nenashev"
-- "rsandell"
-- "bitwiseman"
-- "dnusbaum"
-- "carroll"
+  - "abayer"
+  - "oleg_nenashev"
+  - "rsandell"
+  - "bitwiseman"
+  - "dnusbaum"
+  - "carroll"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,14 +2,14 @@
 name: "coverity"
 github: "jenkinsci/coverity-plugin"
 issues:
-- jira: '16005' # coverity-plugin
+  - jira: '16005'  # coverity-plugin
 paths:
-- "org/jenkins-ci/plugins/coverity"
+  - "org/jenkins-ci/plugins/coverity"
 developers:
-- "gkillough"
-- "jrichard"
-- "akamen"
-- "bdsoss"
-- "shami"
-- "jbriggs"
-- "ahcho0819"
+  - "gkillough"
+  - "jrichard"
+  - "akamen"
+  - "bdsoss"
+  - "shami"
+  - "jbriggs"
+  - "ahcho0819"

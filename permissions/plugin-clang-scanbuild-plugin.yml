@@ -2,8 +2,8 @@
 name: "clang-scanbuild-plugin"
 github: "jenkinsci/clang-scanbuild-plugin"
 issues:
-- jira: '16011' # clang-scanbuild-plugin
+  - jira: '16011'  # clang-scanbuild-plugin
 paths:
-- "jenkins/plugins/clangscanbuild/clang-scanbuild-plugin"
+  - "jenkins/plugins/clangscanbuild/clang-scanbuild-plugin"
 developers:
-- "rodrigc"
+  - "rodrigc"

@@ -2,8 +2,8 @@
 name: "puppet"
 github: "jenkinsci/puppet-plugin"
 issues:
-- jira: '18727' # puppet-plugin
+  - jira: '18727'  # puppet-plugin
 paths:
-- "org/jenkins-ci/plugins/puppet"
+  - "org/jenkins-ci/plugins/puppet"
 developers:
-- "kohsuke"
+  - "kohsuke"

@@ -2,16 +2,16 @@
 name: "git"
 github: "jenkinsci/git-plugin"
 issues:
-- jira: '15543' # git-plugin
+  - jira: '15543'  # git-plugin
 paths:
-- "org/jenkins-ci/plugins/git"
-- "org/jenkinsci/plugins/git"
-- "org/jvnet/hudson/plugins/git"
+  - "org/jenkins-ci/plugins/git"
+  - "org/jenkinsci/plugins/git"
+  - "org/jvnet/hudson/plugins/git"
 developers:
-- "markewaite"
-- "mramonleon"
-- "olamy"
-- "rsandell"
+  - "markewaite"
+  - "mramonleon"
+  - "olamy"
+  - "rsandell"
 security:
-    contacts:
-      jira: "cloudbees_security_members"
+  contacts:
+    jira: "cloudbees_security_members"

@@ -2,9 +2,9 @@
 name: "maven-artifact-choicelistprovider"
 github: &gh "jenkinsci/maven-artifact-choicelistprovider-plugin"
 issues:
-- jira: '21932' # maven-artifact-choicelistprovider-plugin
-- github: *gh
+  - jira: '21932'  # maven-artifact-choicelistprovider-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/maven-artifact-choicelistprovider"
+  - "org/jenkins-ci/plugins/maven-artifact-choicelistprovider"
 developers:
-- "phreakadelle"
+  - "phreakadelle"

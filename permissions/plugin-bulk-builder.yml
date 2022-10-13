@@ -2,7 +2,7 @@
 name: "bulk-builder"
 github: "jenkinsci/bulk-builder-plugin"
 issues:
-- jira: '15774' # bulk-builder-plugin
+  - jira: '15774'  # bulk-builder-plugin
 paths:
-- "org/jvnet/hudson/plugins/bulk-builder"
+  - "org/jvnet/hudson/plugins/bulk-builder"
 developers: []

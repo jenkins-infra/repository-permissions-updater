@@ -2,7 +2,7 @@
 name: "shared-objects"
 github: "jenkinsci/shared-objects-plugin"
 issues:
-- jira: '16525' # shared-objects-plugin
+  - jira: '16525'  # shared-objects-plugin
 paths:
-- "org/jenkins-ci/plugins/shared-objects"
+  - "org/jenkins-ci/plugins/shared-objects"
 developers: []

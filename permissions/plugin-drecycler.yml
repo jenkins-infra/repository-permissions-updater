@@ -1,6 +1,6 @@
 ---
 name: "drecycler"
 paths:
-- "com/cloudera/diskrecycler/drecycler"
+  - "com/cloudera/diskrecycler/drecycler"
 developers:
-- "mthakkar"
+  - "mthakkar"

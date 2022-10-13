@@ -1,9 +1,11 @@
 ---
 name: "peass-ci"
 github: &GH "jenkinsci/peass-ci-plugin"
+cd:
+  enabled: true
 paths:
-- "de/peass/peass-ci"
+  - "de/peass/peass-ci"
 developers:
-- "dagere"
+  - "dagere"
 issues:
   - github: *GH

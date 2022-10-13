@@ -1,0 +1,9 @@
+---
+name: "jfrog"
+github: &GH "jenkinsci/jfrog-plugin"
+paths:
+- "io/jenkins/plugins/jfrog"
+developers:
+- "jfrog_ecosystem"
+issues:
+  - github: *GH

@@ -2,8 +2,8 @@
 name: "sematext"
 github: "jenkinsci/sematext-plugin"
 issues:
-- jira: '28021' # sematext-plugin
+  - jira: '28021'  # sematext-plugin
 paths:
-- "io/jenkins/plugins/sematext"
+  - "io/jenkins/plugins/sematext"
 developers:
-- "wawanawna"
+  - "wawanawna"

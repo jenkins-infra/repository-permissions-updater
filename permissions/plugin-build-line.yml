@@ -2,7 +2,7 @@
 name: "build-line"
 github: "jenkinsci/build-line-plugin"
 issues:
-- jira: '18037' # build-line-plugin
+  - jira: '18037'  # build-line-plugin
 paths:
-- "org/jenkins-ci/plugins/build-line"
+  - "org/jenkins-ci/plugins/build-line"
 developers: []

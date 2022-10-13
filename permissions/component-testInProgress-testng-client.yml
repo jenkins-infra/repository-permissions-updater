@@ -1,6 +1,6 @@
 ---
 name: "testInProgress-testng-client"
 paths:
-- "org/imaginea/jenkins/plugins/testInProgress-testng-client"
+  - "org/imaginea/jenkins/plugins/testInProgress-testng-client"
 developers:
-- "menonvarun"
+  - "menonvarun"

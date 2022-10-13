@@ -2,13 +2,13 @@
 name: "cloudbees-enabler"
 github: "jenkinsci/cloudbees-enabler-plugin"
 issues:
-- jira: '28228' # cloudbees-enabler-plugin
+  - jira: '28228'  # cloudbees-enabler-plugin
 paths:
-- "io/jenkins/plugins/cloudbees-enabler"
+  - "io/jenkins/plugins/cloudbees-enabler"
 developers:
-- "bitwiseman"
-- "carroll"
-- "dnusbaum"
-- "jtaboada"
-- "olamy"
-- "vlatombe"
+  - "bitwiseman"
+  - "carroll"
+  - "dnusbaum"
+  - "jtaboada"
+  - "olamy"
+  - "vlatombe"

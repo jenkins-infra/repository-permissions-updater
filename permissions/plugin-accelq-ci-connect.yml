@@ -2,8 +2,8 @@
 name: "accelq-ci-connect"
 github: &GH "jenkinsci/accelq-ci-connect-plugin"
 paths:
-- "com/aq/accelq-ci-connect"
+  - "com/aq/accelq-ci-connect"
 developers:
-- "accelq"
+  - "accelq"
 issues:
   - github: *GH

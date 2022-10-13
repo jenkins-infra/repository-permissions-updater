@@ -2,7 +2,7 @@
 name: "scripted-cloud-plugin"
 github: "jenkinsci/scripted-cloud-plugin"
 issues:
-- jira: '17453' # scripted-cloud-plugin
+  - jira: '17453'  # scripted-cloud-plugin
 paths:
-- "org/jenkins-ci/plugins/scripted-cloud-plugin"
+  - "org/jenkins-ci/plugins/scripted-cloud-plugin"
 developers: []

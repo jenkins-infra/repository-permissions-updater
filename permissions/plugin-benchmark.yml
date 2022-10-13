@@ -2,9 +2,9 @@
 name: "benchmark"
 github: &gh "jenkinsci/benchmark-plugin"
 issues:
-- github: *gh
-- jira: '23227' # benchmark-plugin
+  - github: *gh
+  - jira: '23227'  # benchmark-plugin
 paths:
-- "org/jenkins-ci/plugins/benchmark"
+  - "org/jenkins-ci/plugins/benchmark"
 developers:
-- "damercie"
+  - "damercie"

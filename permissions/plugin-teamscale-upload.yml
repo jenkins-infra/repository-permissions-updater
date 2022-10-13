@@ -2,8 +2,8 @@
 name: "teamscale-upload"
 github: "jenkinsci/teamscale-upload-plugin"
 issues:
-- jira: '26622' # teamscale-upload-plugin
+  - jira: '26622'  # teamscale-upload-plugin
 paths:
-- "io/jenkins/plugins/teamscale-upload"
+  - "io/jenkins/plugins/teamscale-upload"
 developers:
-- "cqsejenkins"
+  - "cqsejenkins"

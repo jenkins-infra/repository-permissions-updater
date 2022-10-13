@@ -2,8 +2,8 @@
 name: "easyqa"
 github: "jenkinsci/easyqa-plugin"
 issues:
-- jira: '22925' # easyqa-plugin
+  - jira: '22925'  # easyqa-plugin
 paths:
-- "com/geteasyqa/easyqa"
+  - "com/geteasyqa/easyqa"
 developers:
-- "yana_gusti"
+  - "yana_gusti"

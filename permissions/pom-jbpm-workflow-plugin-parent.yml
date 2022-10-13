@@ -2,5 +2,5 @@
 name: "jbpm-workflow-plugin-parent"
 github: "jenkinsci/jbpm-workflow-plugin"
 paths:
-- "jenkins/plugins/jbpm/jbpm-workflow-plugin-parent"
+  - "jenkins/plugins/jbpm/jbpm-workflow-plugin-parent"
 developers: []

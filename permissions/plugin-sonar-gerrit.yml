@@ -1,9 +1,11 @@
 ---
 name: "sonar-gerrit"
-github: "jenkinsci/sonar-gerrit-plugin"
+github: &GH "jenkinsci/sonar-gerrit-plugin"
 issues:
-- jira: '20853' # sonar-gerrit-plugin
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/sonar-gerrit"
+  - "org/jenkins-ci/plugins/sonar-gerrit"
+cd:
+  enabled: true
 developers:
-- "aquarellian"
+  - "reda_alaoui"

@@ -2,8 +2,8 @@
 name: "unreliable-slave-plugin"
 github: "jenkinsci/unreliable-slave-plugin"
 issues:
-- jira: '17458' # unreliable-slave-plugin
+  - jira: '17458'  # unreliable-slave-plugin
 paths:
-- "jenkinsci/unreliable-slave-plugin"
+  - "jenkinsci/unreliable-slave-plugin"
 developers:
-- "olivergondza"
+  - "olivergondza"

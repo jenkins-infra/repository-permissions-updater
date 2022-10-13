@@ -2,8 +2,8 @@
 name: "kmap-jenkins"
 github: "jenkinsci/kmap-plugin"
 issues:
-- jira: '18753' # kmap-jenkins-plugin
+  - jira: '18753'  # kmap-jenkins-plugin
 paths:
-- "org/jenkins-ci/plugins/kmap-jenkins"
+  - "org/jenkins-ci/plugins/kmap-jenkins"
 developers:
-- "adminkeivox"
+  - "adminkeivox"

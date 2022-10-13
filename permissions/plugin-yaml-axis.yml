@@ -2,8 +2,8 @@
 name: "yaml-axis"
 github: "jenkinsci/yaml-axis-plugin"
 issues:
-- jira: '21129' # yaml-axis-plugin
+  - jira: '21129'  # yaml-axis-plugin
 paths:
-- "org/jenkins-ci/plugins/yaml-axis"
+  - "org/jenkins-ci/plugins/yaml-axis"
 developers:
-- "sue445"
+  - "sue445"

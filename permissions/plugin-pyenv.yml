@@ -2,8 +2,8 @@
 name: "pyenv"
 github: "jenkinsci/pyenv-plugin"
 issues:
-- jira: '17640' # pyenv-plugin
+  - jira: '17640'  # pyenv-plugin
 paths:
-- "org/jenkins-ci/ruby-plugins/pyenv"
+  - "org/jenkins-ci/ruby-plugins/pyenv"
 developers:
-- "yyuu"
+  - "yyuu"

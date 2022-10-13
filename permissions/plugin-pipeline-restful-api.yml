@@ -2,9 +2,9 @@
 name: "pipeline-restful-api"
 github: &gh "jenkinsci/pipeline-restful-api-plugin"
 issues:
-- github: *gh
-- jira: '25822' # pipeline-restful-api-plugin
+  - github: *gh
+  - jira: '25822'  # pipeline-restful-api-plugin
 paths:
-- "io/jenkins/plugins/pipeline-restful-api"
+  - "io/jenkins/plugins/pipeline-restful-api"
 developers:
-- "surenpi"
+  - "surenpi"

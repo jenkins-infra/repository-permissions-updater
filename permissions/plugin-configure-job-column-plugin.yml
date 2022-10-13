@@ -2,7 +2,10 @@
 name: "configure-job-column-plugin"
 github: "jenkinsci/configure-job-column-plugin"
 issues:
-- jira: '16539' # configure-job-column-plugin
+  - jira: '16539'  # configure-job-column-plugin
 paths:
-- "org/jenkins-ci/plugins/configure-job-column-plugin"
-developers: []
+  - "org/jenkins-ci/plugins/configure-job-column-plugin"
+developers:
+  - "notmyfault"
+cd:
+  enabled: true

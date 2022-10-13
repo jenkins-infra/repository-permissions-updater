@@ -2,6 +2,6 @@
 name: "housekeeper"
 github: "jenkinsci/housekeeper-plugin"
 paths:
-- "org/jenkins-ci/plugins/housekeeper"
+  - "org/jenkins-ci/plugins/housekeeper"
 developers:
-- "scarytom"
+  - "scarytom"

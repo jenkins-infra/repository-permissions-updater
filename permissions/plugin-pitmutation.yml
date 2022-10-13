@@ -2,9 +2,9 @@
 name: "pitmutation"
 github: "jenkinsci/pitmutation-plugin"
 issues:
-- jira: '18121' # pitmutation-plugin
+  - jira: '18121'  # pitmutation-plugin
 paths:
-- "org/jenkins-ci/plugins/pitmutation"
+  - "org/jenkins-ci/plugins/pitmutation"
 developers:
-- "edwardk"
-- "gigasproule"
+  - "edwardk"
+  - "gigasproule"

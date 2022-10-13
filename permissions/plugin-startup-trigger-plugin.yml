@@ -2,10 +2,10 @@
 name: "startup-trigger-plugin"
 github: "jenkinsci/startup-trigger-plugin"
 issues:
-- jira: '15661' # startup-trigger-plugin
+  - jira: '15661'  # startup-trigger-plugin
 paths:
-- "org/jenkins-ci/plugins/startup-trigger-plugin"
-- "org/jvnet/hudson/plugins/startup-trigger-plugin"
+  - "org/jenkins-ci/plugins/startup-trigger-plugin"
+  - "org/jvnet/hudson/plugins/startup-trigger-plugin"
 developers:
-- "gbois"
-- "ejpenney"
+  - "gbois"
+  - "ejpenney"

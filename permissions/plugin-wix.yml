@@ -2,9 +2,9 @@
 name: "wix"
 github: &gh "jenkinsci/wix-plugin"
 issues:
-- github: *gh
-- jira: '17462' # wix-plugin
+  - github: *gh
+  - jira: '17462'  # wix-plugin
 paths:
-- "org/jenkins-ci/plugins/wix"
+  - "org/jenkins-ci/plugins/wix"
 developers:
-- "rollinhand"
+  - "rollinhand"

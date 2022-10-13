@@ -1,9 +1,9 @@
 ---
 name: "remoting-test-client"
 paths:
-- "org/jenkins-ci/remoting-test-client"
+  - "org/jenkins-ci/remoting-test-client"
 developers:
-- "kohsuke"
-- "oleg_nenashev"
-- "jthompson"
-- "releasebot"
+  - "kohsuke"
+  - "oleg_nenashev"
+  - "jthompson"
+  - "releasebot"

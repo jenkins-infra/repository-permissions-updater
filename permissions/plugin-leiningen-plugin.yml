@@ -2,7 +2,7 @@
 name: "leiningen-plugin"
 github: &gh "jenkinsci/leiningen-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/leiningen-plugin"
+  - "org/jenkins-ci/plugins/leiningen-plugin"
 developers: []

@@ -1,6 +1,6 @@
 ---
 name: "idobata-notifier"
 paths:
-- "org/jenkins-ci/plugins/idobata-notifier"
+  - "org/jenkins-ci/plugins/idobata-notifier"
 developers:
-- "tototoshi"
+  - "tototoshi"

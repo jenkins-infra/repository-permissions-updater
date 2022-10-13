@@ -2,8 +2,8 @@
 name: "cloudshell-sandbox"
 github: "jenkinsci/cloudshell-sandbox-plugin"
 issues:
-- jira: '23143' # cloudshell-sandbox-plugin
+  - jira: '23143'  # cloudshell-sandbox-plugin
 paths:
-- "org/jenkins-ci/plugins/cloudshell-sandbox"
+  - "org/jenkins-ci/plugins/cloudshell-sandbox"
 developers:
-- "tomeradmon"
+  - "tomeradmon"

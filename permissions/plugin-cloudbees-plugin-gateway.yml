@@ -2,7 +2,7 @@
 name: "cloudbees-plugin-gateway"
 github: "jenkinsci/cloudbees-plugin-gateway"
 issues:
-- jira: '17521' # cloudbees-plugin-gateway-plugin
+  - jira: '17521'  # cloudbees-plugin-gateway-plugin
 paths:
-- "org/jenkins-ci/plugins/cloudbees-plugin-gateway"
+  - "org/jenkins-ci/plugins/cloudbees-plugin-gateway"
 developers: []
