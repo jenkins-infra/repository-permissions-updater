@@ -1,7 +1,0 @@
----
-name: "executable-war"
-github: "jenkinsci/extras-executable-war"
-paths:
-  - "org/jenkins-ci/executable-war"
-developers:
-  - "@core"

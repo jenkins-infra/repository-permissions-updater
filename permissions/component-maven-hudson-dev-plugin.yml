@@ -1,8 +1,0 @@
----
-name: "maven-jenkins-dev-plugin"
-github: "jenkinsci/maven-hudson-dev-plugin"
-paths:
-  - "org/jenkins-ci/tools"
-  - "org/jenkins-ci/tools/maven-jenkins-dev-plugin"
-developers:
-  - "olamy"
