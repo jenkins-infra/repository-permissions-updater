@@ -1,0 +1,7 @@
+---
+name: "archetypes"
+github: "jenkinsci/archetypes"
+paths:
+  - "io/jenkins/archetypes/archetypes-parent"
+developers:
+  - "@core"

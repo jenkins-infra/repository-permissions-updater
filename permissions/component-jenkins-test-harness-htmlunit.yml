@@ -5,6 +5,4 @@ cd:
   enabled: true
 paths:
   - "org/jenkins-ci/main/jenkins-test-harness-htmlunit"
-developers:
-  - "drulli"
-  - "@core"
+developers: []
