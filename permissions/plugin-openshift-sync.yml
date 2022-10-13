@@ -8,9 +8,10 @@ paths:
 developers:
   - "gmontero"
   - "bparees"
-  - "waveywaves"
   - "akram"
   - "jkhelil"
+  - "mbharatk"
+  - "divyanshu42"
 security:
   contacts:
     jira: "akram"
