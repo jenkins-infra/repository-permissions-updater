@@ -5,6 +5,8 @@ issues:
   - jira: '16620'  # s3-plugin
 paths:
   - "org/jenkins-ci/plugins/s3"
+cd:
+  enabled: true
 developers:
   - "dmbeer"
   - "jimilian"
