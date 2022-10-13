@@ -4,6 +4,12 @@ github: &GH "jenkinsci/signpath-plugin"
 paths:
   - "io/jenkins/plugins/signpath"
 developers:
-  - "psavoie_signpath"
+- "psavoie_signpath"
+- "ugsp"
+- "swenig_signpath"
+- "fabianschmied"
+- "drauch"
+- "robert_benak"
+- "volodymyr_bobko"
 issues:
   - jira: 28629
