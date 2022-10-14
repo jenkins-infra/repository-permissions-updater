@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-metadata-plugin"
 developers:
-  - "alecharp"
   - "batmat"
   - "teilo"
 security:

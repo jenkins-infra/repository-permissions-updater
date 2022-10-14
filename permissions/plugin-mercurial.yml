@@ -10,7 +10,6 @@ cd:
   enabled: true
 developers:
   - "jglick"
-  - "alecharp"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"

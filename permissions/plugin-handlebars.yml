@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/ui/handlebars"
 developers:
-  - "alecharp"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"

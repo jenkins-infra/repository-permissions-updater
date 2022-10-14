@@ -5,7 +5,6 @@ paths:
   # For the 1.7.x branch which is the only needed one at the moment
   - "com/ning/async-http-client"
 developers:
-  - "alecharp"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"

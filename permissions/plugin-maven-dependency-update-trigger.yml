@@ -7,4 +7,3 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/maven-dependency-update-trigger"
 developers:
-  - "alecharp"

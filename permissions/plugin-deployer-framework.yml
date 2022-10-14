@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/deployer-framework"
 developers:
   - "jvz"
-  - "alecharp"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"
