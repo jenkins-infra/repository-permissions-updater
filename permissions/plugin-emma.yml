@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/emma"
   - "org/jvnet/hudson/plugins/emma"
 developers:
-  - "alecharp"
   - "batmat"
   - "bitwiseman"
   - "carroll"

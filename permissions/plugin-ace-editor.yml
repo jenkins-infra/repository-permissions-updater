@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/ui/ace-editor"
 developers:
-  - "alecharp"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"

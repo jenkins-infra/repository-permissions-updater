@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/ui/numeraljs"
 developers:
-  - "alecharp"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"

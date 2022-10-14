@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/ui/jquery-detached"
 developers:
-  - "alecharp"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"
