@@ -6,5 +6,4 @@ issues:
 paths:
   - "io/jenkins/plugins/adoptopenjdk"
 developers:
-  - "basil"
   - "mmchr"
