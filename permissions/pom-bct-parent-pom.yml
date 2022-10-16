@@ -1,9 +1,0 @@
----
-name: "bct-parent-pom"
-github: "jenkinsci/bytecode-compatibility-transformer"
-paths:
-  - "org/jenkins-ci/main/bct/bct-parent-pom"
-developers:
-  - "batmat"
-  - "oleg_nenashev"
-  - "timja"
