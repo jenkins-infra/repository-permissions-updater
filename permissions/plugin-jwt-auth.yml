@@ -5,5 +5,6 @@ paths:
   - "io/jenkins/plugins/jwt-auth"
 developers:
   - "dnuevo"
+  - "maskedpirate"
 issues:
   - github: *GH
