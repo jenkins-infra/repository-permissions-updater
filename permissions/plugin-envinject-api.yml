@@ -1,8 +1,8 @@
 ---
 name: "envinject-api"
-github: "jenkinsci/envinject-api-plugin"
+github: &gh "jenkinsci/envinject-api-plugin"
 issues:
-  - jira: '22421'  # envinject-api-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/envinject-api"
 developers:
