@@ -123,6 +123,7 @@ class ArtifactoryPermissionsUpdater {
         Map<String, List> issueTrackersByPlugin = new TreeMap()
         Map<String, List<Definition>> cdEnabledComponentsByGitHub = new TreeMap<>()
         Map<String, List<String>> maintainersByComponent = new HashMap<>()
+        List<String> repositoriesUpForAdoption = new ArrayList<>()
 
         yamlSourceDirectory.eachFile { file ->
             if (!file.name.endsWith('.yml')) {
@@ -230,6 +231,11 @@ class ArtifactoryPermissionsUpdater {
                 principals {
                     if (definition.developers.length == 0) {
                         users [:]
+                        if (definition.github) {
+                            repositoriesUpForAdoption.add(definition.github)
+                        } else {
+                            LOGGER.log(Level.WARNING, "${definition.name} has no GitHub details, will not be able to add adoption label")
+                        }
                     } else {
                         users definition.developers.collectEntries { developer ->
                             def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
@@ -316,6 +322,10 @@ class ArtifactoryPermissionsUpdater {
         def maintainers = new JsonBuilder()
         maintainers(maintainersByComponent)
         new File(apiOutputDir, 'maintainers.index.json').text = maintainers.toPrettyString()
+
+        def adoptionRepos = new JsonBuilder()
+        adoptionRepos(repositoriesUpForAdoption)
+        new File(apiOutputDir, 'adoption.index.json').text = adoptionRepos.toPrettyString()
     }
 
     // TODO It's a really weird decision to have this in the otherwise invocation agnostic standalone tool
@@ -435,6 +445,18 @@ class ArtifactoryPermissionsUpdater {
         }
     }
 
+    private static void addAdoptionTopicOnRepositories(File githubReposForAdoptionIndex) {
+        def repos = new JsonSlurper().parse(githubReposForAdoptionIndex);
+        def topic = "adopt-this-plugin"
+        repos.each { repo ->
+            if (DRY_RUN_MODE) {
+                LOGGER.log(Level.INFO, "Skipped adding adoption topic for GitHub repo: '${repo}'")
+                return
+            }
+            GitHubAPI.getInstance().addTopicToRepository((String) repo, topic)
+        }
+    }
+
     static void main(String[] args) throws IOException {
         for (Handler h : Logger.getLogger("").getHandlers()) {
             if (h instanceof ConsoleHandler) {
@@ -469,6 +491,10 @@ class ArtifactoryPermissionsUpdater {
          * For all CD-enabled GitHub repositories, obtain a token from Artifactory and attach it to a GH repo as secret.
          */
         generateTokens(new File(ARTIFACTORY_API_DIR, "cd.index.json"))
+        /*
+         * For all plugins without developers, mark them as up for adoption
+         */
+        addAdoptionTopicOnRepositories(new File(ARTIFACTORY_API_DIR, "adoption.index.json"))
     }
 
     private static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.name)

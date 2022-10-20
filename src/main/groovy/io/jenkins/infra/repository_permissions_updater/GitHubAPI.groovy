@@ -57,6 +57,14 @@ abstract class GitHubAPI {
      */
     abstract void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId);
 
+    /**
+     * Adds a topic to a repository
+     *
+     * @param repositoryName the repository name
+     * @param topic the topic to add to the repository
+     */
+    abstract void addTopicToRepository(String repositoryName, String topic);
+
     /* Singleton support */
     private static GitHubAPI INSTANCE = null;
     static synchronized GitHubAPI getInstance() {
@@ -102,6 +110,11 @@ abstract class GitHubAPI {
             osw.close()
 
             String text = conn.getInputStream().getText()
+        }
+
+        @Override
+        void addTopicToRepository(String repositoryName, String topic) {
+            LOGGER.log(Level.INFO, "Add topic ${topic} on ${repositoryName}")
         }
     }
 }
