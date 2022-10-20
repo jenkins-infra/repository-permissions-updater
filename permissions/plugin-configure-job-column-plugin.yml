@@ -1,8 +1,8 @@
 ---
 name: "configure-job-column-plugin"
-github: "jenkinsci/configure-job-column-plugin"
+github: &gh "jenkinsci/configure-job-column-plugin"
 issues:
-  - jira: '16539'  # configure-job-column-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/configure-job-column-plugin"
 developers:
