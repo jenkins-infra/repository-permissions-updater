@@ -2,7 +2,8 @@ package io.jenkins.infra.repository_permissions_updater
 
 import edu.umd.cs.findbugs.annotations.CheckForNull
 import edu.umd.cs.findbugs.annotations.NonNull
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
+import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 
 import java.nio.charset.StandardCharsets;
@@ -112,9 +113,37 @@ abstract class GitHubAPI {
             String text = conn.getInputStream().getText()
         }
 
+        private static HttpURLConnection createConnection(String url, String method) {
+            HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection()
+
+            conn.setRequestProperty('Authorization', 'Basic ' + Base64.getEncoder().encodeToString((System.getenv("GITHUB_USERNAME") + ':' + System.getenv("GITHUB_TOKEN")).getBytes(StandardCharsets.UTF_8)))
+            conn.setRequestProperty('Accept', 'application/vnd.github.v3+json')
+            conn.setRequestMethod(method)
+        }
+
         @Override
         void addTopicToRepository(String repositoryName, String topic) {
             LOGGER.log(Level.INFO, "Add topic ${topic} on ${repositoryName}")
+
+            HttpURLConnection conn = createConnection("https://api.github.com/repos/${repositoryName}/topics", 'GET')
+            conn.connect()
+
+            def response = conn.getInputStream().getText()
+            conn.disconnect()
+            def json = new JsonSlurper().parseText(response)
+
+            if (!json.names.contains(topic)) {
+                json.names.add(topic)
+                conn = createConnection("https://api.github.com/repos/${repositoryName}/topics", 'PUT')
+                conn.setDoOutput(true)
+                def osw = new OutputStreamWriter(conn.getOutputStream())
+                osw.write(JsonOutput.toJson(json))
+                osw.close()
+
+                conn.getInputStream().getText();
+            } else {
+                LOGGER.log(Level.INFO, "Repository ${repositoryName} already has topic ${topic}")
+            }
         }
     }
 }
