@@ -81,13 +81,7 @@ abstract class GitHubAPI {
         @CheckForNull
         GitHubPublicKey getRepositoryPublicKey(String repositoryName) {
             LOGGER.log(Level.INFO, "GET call to retrieve public key for ${repositoryName}")
-            URL url = new URL("https://api.github.com/repos/${repositoryName}/actions/secrets/public-key")
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection()
-
-            // The GitHub API doesn't do an auth challenge
-            conn.setRequestProperty('Authorization', 'Basic ' + Base64.getEncoder().encodeToString((System.getenv("GITHUB_USERNAME") + ':' + System.getenv("GITHUB_TOKEN")).getBytes(StandardCharsets.UTF_8)))
-            conn.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-            conn.setRequestMethod('GET')
+            HttpURLConnection conn = createConnection("https://api.github.com/repos/${repositoryName}/actions/secrets/public-key", 'GET')
             conn.connect()
             String text = conn.getInputStream().getText()
 
@@ -98,13 +92,7 @@ abstract class GitHubAPI {
         @Override
         void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) {
             LOGGER.log(Level.INFO, "Create/update the secret ${name} for ${repositoryName} encrypted with key ${keyId}")
-            URL url = new URL("https://api.github.com/repos/${repositoryName}/actions/secrets/${name}")
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection()
-
-            // The GitHub API doesn't do an auth challenge
-            conn.setRequestProperty('Authorization', 'Basic ' + Base64.getEncoder().encodeToString((System.getenv("GITHUB_USERNAME") + ':' + System.getenv("GITHUB_TOKEN")).getBytes(StandardCharsets.UTF_8)))
-            conn.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-            conn.setRequestMethod('PUT')
+            HttpURLConnection conn = createConnection("https://api.github.com/repos/${repositoryName}/actions/secrets/${name}", 'PUT')
             conn.setDoOutput(true)
             OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
             osw.write('{"encrypted_value":"' + encryptedSecret + '","key_id":"' + keyId + '"}')
