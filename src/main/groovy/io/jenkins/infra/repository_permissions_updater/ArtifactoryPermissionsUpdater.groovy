@@ -234,7 +234,7 @@ class ArtifactoryPermissionsUpdater {
                         if (definition.github) {
                             repositoriesUpForAdoption.add(definition.github)
                         } else {
-                            LOGGER.log(Level.WARNING, "${definition.name} has no GitHub details, will not be able to add adoption label")
+                            LOGGER.log(Level.WARNING, "${definition.name} has no GitHub details, will not be able to add adoption topic")
                         }
                     } else {
                         users definition.developers.collectEntries { developer ->
