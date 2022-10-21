@@ -81,7 +81,7 @@ abstract class GitHubAPI {
         @CheckForNull
         GitHubPublicKey getRepositoryPublicKey(String repositoryName) {
             LOGGER.log(Level.INFO, "GET call to retrieve public key for ${repositoryName}")
-            HttpURLConnection conn = createConnection("https://api.github.com/repos/${repositoryName}/actions/secrets/public-key", 'GET')
+            HttpURLConnection conn = githubRequest("https://api.github.com/repos/${repositoryName}/actions/secrets/public-key", 'GET')
             conn.connect()
             String text = conn.getInputStream().getText()
 
@@ -92,7 +92,7 @@ abstract class GitHubAPI {
         @Override
         void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) {
             LOGGER.log(Level.INFO, "Create/update the secret ${name} for ${repositoryName} encrypted with key ${keyId}")
-            HttpURLConnection conn = createConnection("https://api.github.com/repos/${repositoryName}/actions/secrets/${name}", 'PUT')
+            HttpURLConnection conn = githubRequest("https://api.github.com/repos/${repositoryName}/actions/secrets/${name}", 'PUT')
             conn.setDoOutput(true)
             OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
             osw.write('{"encrypted_value":"' + encryptedSecret + '","key_id":"' + keyId + '"}')
@@ -101,7 +101,7 @@ abstract class GitHubAPI {
             String text = conn.getInputStream().getText()
         }
 
-        private static HttpURLConnection createConnection(String url, String method) {
+        private static HttpURLConnection githubRequest(String url, String method) {
             HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection()
 
             conn.setRequestProperty('Authorization', 'Basic ' + Base64.getEncoder().encodeToString((System.getenv("GITHUB_USERNAME") + ':' + System.getenv("GITHUB_TOKEN")).getBytes(StandardCharsets.UTF_8)))
@@ -111,7 +111,7 @@ abstract class GitHubAPI {
 
         @Override
         void addTopicToRepository(String repositoryName, String topic) {
-            LOGGER.log(Level.INFO, "Add topic ${topic} on ${repositoryName}")
+            LOGGER.log(Level.INFO, "Add topic '${topic}' on ${repositoryName}")
 
             HttpURLConnection conn = createConnection("https://api.github.com/repos/${repositoryName}/topics", 'GET')
             conn.connect()
@@ -130,7 +130,7 @@ abstract class GitHubAPI {
 
                 conn.getInputStream().getText();
             } else {
-                LOGGER.log(Level.INFO, "Repository ${repositoryName} already has topic ${topic}")
+                LOGGER.log(Level.INFO, "Repository ${repositoryName} already has topic '${topic}'")
             }
         }
     }
