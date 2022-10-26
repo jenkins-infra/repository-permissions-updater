@@ -4,6 +4,6 @@ github: "jenkinsci/codeclimate-plugin"
 issues:
   - jira: '21128'
 paths:
-- "suryagaddipati/codeclimate-plugin"
+  - "suryagaddipati/codeclimate-plugin"
 developers:
-- "surya548"
+  - "surya548"

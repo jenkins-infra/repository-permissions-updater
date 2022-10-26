@@ -2,11 +2,11 @@
 name: "warnings-ng"
 github: "jenkinsci/warnings-ng-plugin"
 issues:
-- jira: '24526' # warnings-ng-plugin
+  - jira: '24526'  # warnings-ng-plugin
 paths:
-- "io/jenkins/plugins/warnings-ng"
+  - "io/jenkins/plugins/warnings-ng"
 developers:
-- "drulli"
+  - "drulli"
 security:
   contacts:
     jira: "cloudbees_security_members"

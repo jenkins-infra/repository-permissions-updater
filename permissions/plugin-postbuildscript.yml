@@ -2,11 +2,11 @@
 name: "postbuildscript"
 github: "jenkinsci/postbuildscript-plugin"
 issues:
-- jira: '15922' # postbuildscript-plugin
+  - jira: '15922'  # postbuildscript-plugin
 paths:
-- "org/jenkins-ci/plugins/postbuildscript"
+  - "org/jenkins-ci/plugins/postbuildscript"
 developers:
-- "gbois"
-- "dheid"
+  - "gbois"
+  - "dheid"
 cd:
   enabled: true

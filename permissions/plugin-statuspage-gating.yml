@@ -2,6 +2,6 @@
 name: "statuspage-gating"
 github: "jenkinsci/statuspage-gating-plugin"
 paths:
-- "io/jenkins/plugins/statuspage-gating"
+  - "io/jenkins/plugins/statuspage-gating"
 developers:
-- "olivergondza"
+  - "olivergondza"

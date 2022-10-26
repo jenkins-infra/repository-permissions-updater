@@ -2,8 +2,8 @@
 name: "inodes-monitor"
 github: "jenkinsci/inodes-monitor-plugin"
 issues:
-- jira: '23743' # inodes-monitor-plugin
+  - jira: '23743'  # inodes-monitor-plugin
 paths:
-- "io/jenkins/plugins/inodes-monitor"
+  - "io/jenkins/plugins/inodes-monitor"
 developers:
-- "batmat"
+  - "batmat"

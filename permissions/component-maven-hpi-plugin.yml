@@ -2,7 +2,7 @@
 name: "maven-hpi-plugin"
 github: "jenkinsci/maven-hpi-plugin"
 paths:
-- "org/jenkins-ci/tools"
-- "org/jenkins-ci/tools/maven-hpi-plugin"
+  - "org/jenkins-ci/tools"
+  - "org/jenkins-ci/tools/maven-hpi-plugin"
 developers:
-- "@core"
+  - "@core"

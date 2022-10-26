@@ -2,8 +2,8 @@
 name: "aws-s3-cleaner"
 github: "jenkinsci/aws-s3-cleaner-plugin"
 issues:
-- jira: '26323' # aws-s3-cleaner-plugin
+  - jira: '26323'  # aws-s3-cleaner-plugin
 paths:
-- "io/jenkins/plugins/aws-s3-cleaner"
+  - "io/jenkins/plugins/aws-s3-cleaner"
 developers:
-- "visiontech"
+  - "visiontech"

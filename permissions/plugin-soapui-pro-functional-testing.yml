@@ -2,13 +2,13 @@
 name: "soapui-pro-functional-testing"
 github: "jenkinsci/soapui-pro-functional-testing-plugin"
 issues:
-- jira: '23734' # soapui-pro-functional-testing-plugin
+  - jira: '23734'  # soapui-pro-functional-testing-plugin
 paths:
-- "org/jenkins-ci/plugins/soapui-pro-functional-testing"
+  - "org/jenkins-ci/plugins/soapui-pro-functional-testing"
 developers:
-- "olesia_mitina"
-- "ilyaavdeev"
-- "alexandernikitin"
-- "alexey_bortulev"
-- "alexander_eremeev"
-- "alexanderpaeshin"
+  - "olesia_mitina"
+  - "ilyaavdeev"
+  - "alexandernikitin"
+  - "alexey_bortulev"
+  - "alexander_eremeev"
+  - "alexanderpaeshin"

@@ -2,6 +2,6 @@
 name: "optional-plugin-helper"
 github: "jenkinsci/optional-plugin-helper-module"
 paths:
-- "org/jenkins-ci/modules/optional-plugin-helper"
+  - "org/jenkins-ci/modules/optional-plugin-helper"
 developers:
-- "@core"
+  - "@core"

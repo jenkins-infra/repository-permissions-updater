@@ -2,12 +2,12 @@
 name: "release"
 github: "jenkinsci/release-plugin"
 issues:
-- jira: '15622' # release-plugin
+  - jira: '15622'  # release-plugin
 paths:
-- "org/jenkins-ci/plugins/release"
-- "org/jvnet/hudson/plugins/release"
+  - "org/jenkins-ci/plugins/release"
+  - "org/jvnet/hudson/plugins/release"
 developers:
-- "avalanche123"
-- "oleg_nenashev"
-- "fr123k"
-- "timja"
+  - "avalanche123"
+  - "oleg_nenashev"
+  - "fr123k"
+  - "timja"

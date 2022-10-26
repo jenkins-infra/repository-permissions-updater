@@ -2,10 +2,10 @@
 name: "stash-pullrequest-builder"
 github: "jenkinsci/stash-pullrequest-builder-plugin"
 issues:
-- jira: '20028' # stash-pullrequest-builder-plugin
+  - jira: '20028'  # stash-pullrequest-builder-plugin
 paths:
-- "org/jenkins-ci/plugins/stash-pullrequest-builder"
+  - "org/jenkins-ci/plugins/stash-pullrequest-builder"
 developers:
-- "nemccarthy"
-- "jbochenski"
-- "jimklimov"
+  - "nemccarthy"
+  - "jbochenski"
+  - "jimklimov"

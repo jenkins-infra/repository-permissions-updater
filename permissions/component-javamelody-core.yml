@@ -1,6 +1,6 @@
 ---
 name: "javamelody-core"
 paths:
-- "net/bull/javamelody/javamelody-core"
+  - "net/bull/javamelody/javamelody-core"
 developers:
-- "evernat"
+  - "evernat"

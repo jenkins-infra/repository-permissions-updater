@@ -2,13 +2,13 @@
 name: "aqua-microscanner"
 github: &gh "jenkinsci/aqua-microscanner-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/aqua-microscanner"
+  - "org/jenkins-ci/plugins/aqua-microscanner"
 developers:
-- "oranmoshai"
-- "aqua_maintainers"
-- "sudhirbatchu"
+  - "oranmoshai"
+  - "aqua_maintainers"
+  - "sudhirbatchu"
 security:
   contacts:
     jira: aqua_maintainers

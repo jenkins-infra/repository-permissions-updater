@@ -2,8 +2,8 @@
 name: "doktor"
 github: "jenkinsci/doktor-plugin"
 issues:
-- jira: '23129' # doktor-plugin
+  - jira: '23129'  # doktor-plugin
 paths:
-- "by/dev/madhead/doktor/doktor"
+  - "by/dev/madhead/doktor/doktor"
 developers:
-- "madhead"
+  - "madhead"

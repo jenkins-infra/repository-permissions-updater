@@ -2,7 +2,7 @@
 name: "text-finder-run-condition"
 github: "jenkinsci/text-finder-run-condition-plugin"
 issues:
-- jira: '17609' # text-finder-run-condition-plugin
+  - jira: '17609'  # text-finder-run-condition-plugin
 paths:
-- "org/jenkins-ci/plugins/text-finder-run-condition"
+  - "org/jenkins-ci/plugins/text-finder-run-condition"
 developers: []

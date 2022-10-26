@@ -2,8 +2,8 @@
 name: "qc"
 github: "jenkinsci/qc-plugin"
 issues:
-- jira: '15759' # qc-plugin
+  - jira: '15759'  # qc-plugin
 paths:
-- "org/jenkins-ci/plugins/qc"
-- "org/jvnet/hudson/plugins/qc"
+  - "org/jenkins-ci/plugins/qc"
+  - "org/jvnet/hudson/plugins/qc"
 developers: []

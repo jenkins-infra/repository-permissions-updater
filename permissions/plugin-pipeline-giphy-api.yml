@@ -2,9 +2,8 @@
 name: "pipeline-giphy-api"
 github: "jenkinsci/pipeline-giphy-api-plugin"
 issues:
-- jira: '24125' # pipeline-giphy-api-plugin
+  - jira: '24125'  # pipeline-giphy-api-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-giphy-api"
+  - "org/jenkins-ci/plugins/pipeline-giphy-api"
 developers:
-- "aviadlevy"
-
+  - "aviadlevy"

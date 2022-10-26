@@ -2,7 +2,7 @@
 name: "websocket"
 github: "jenkinsci/websocket-plugin"
 issues:
-- jira: '16050' # websocket-plugin
+  - jira: '16050'  # websocket-plugin
 paths:
-- "org/codefirst/jenkins/wsnotifier/websocket"
+  - "org/codefirst/jenkins/wsnotifier/websocket"
 developers: []

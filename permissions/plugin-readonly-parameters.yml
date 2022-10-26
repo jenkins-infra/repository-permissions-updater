@@ -2,8 +2,8 @@
 name: "readonly-parameters"
 github: &gh "jenkinsci/readonly-parameter-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/readonly-parameters"
+  - "org/jenkins-ci/plugins/readonly-parameters"
 developers:
-- "yangli"
+  - "yangli"

@@ -2,12 +2,12 @@
 name: "multibranch-action-triggers"
 github: &gh "jenkinsci/multibranch-action-triggers-plugin"
 issues:
-- jira: '25920' # multibranch-action-triggers-plugin
-- github: *gh
+  - jira: '25920'  # multibranch-action-triggers-plugin
+  - github: *gh
 paths:
-- "io/jenkins/plugins/multibranch-action-triggers"
+  - "io/jenkins/plugins/multibranch-action-triggers"
 developers:
-- "aytuncbeken"
+  - "aytuncbeken"
 security:
   contacts:
     jira: "aytuncbeken"

@@ -2,10 +2,10 @@
 name: "repository-connector"
 github: "jenkinsci/repository-connector-plugin"
 issues:
-- jira: '15955' # repository-connector-plugin
+  - jira: '15955'  # repository-connector-plugin
 paths:
-- "org/jenkins-ci/plugins/repository-connector"
-- "org/jvnet/hudson/plugins/repository-connector"
+  - "org/jenkins-ci/plugins/repository-connector"
+  - "org/jvnet/hudson/plugins/repository-connector"
 developers:
-- "mikee805"
-- "jgangemi"
+  - "mikee805"
+  - "jgangemi"

@@ -2,8 +2,8 @@
 name: "cucumber-trends-report"
 github: "jenkinsci/cucumber-trend-report-plugin"
 issues:
-- jira: '21675' # cucumber-trend-report-plugin
+  - jira: '21675'  # cucumber-trend-report-plugin
 paths:
-- "trends/cucumber-trends-report"
+  - "trends/cucumber-trends-report"
 developers:
-- "thanhqle"
+  - "thanhqle"

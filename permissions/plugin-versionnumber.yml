@@ -2,12 +2,12 @@
 name: "versionnumber"
 github: "jenkinsci/versionnumber-plugin"
 issues:
-- jira: '16037' # versionnumber-plugin
+  - jira: '16037'  # versionnumber-plugin
 paths:
-- "org/jvnet/hudson/tools/versionnumber"
+  - "org/jvnet/hudson/tools/versionnumber"
 developers:
-- "bahadir"
-- "rosberglinhares"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - "bahadir"
+  - "rosberglinhares"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"

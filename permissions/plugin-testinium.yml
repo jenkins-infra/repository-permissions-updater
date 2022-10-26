@@ -2,9 +2,9 @@
 name: "testinium"
 github: "jenkinsci/testinium-plugin"
 issues:
-- jira: '23431' # testinium-plugin
+  - jira: '23431'  # testinium-plugin
 paths:
-- "com/testinium/jenkins/testinium"
+  - "com/testinium/jenkins/testinium"
 developers:
-- "erhangullu"
-- "erdoganonur"
+  - "erhangullu"
+  - "erdoganonur"

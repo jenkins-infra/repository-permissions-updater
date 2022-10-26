@@ -2,8 +2,8 @@
 name: "cloudbees-devoptics-enabler"
 github: "jenkinsci/cloudbees-devoptics-enabler-plugin"
 issues:
-- jira: '23436' # cloudbees-devoptics-enabler-plugin
+  - jira: '23436'  # cloudbees-devoptics-enabler-plugin
 paths:
-- "org/jenkins-ci/plugins/cloudbees-devoptics-enabler"
+  - "org/jenkins-ci/plugins/cloudbees-devoptics-enabler"
 developers:
-- "jordanglassman"
+  - "jordanglassman"

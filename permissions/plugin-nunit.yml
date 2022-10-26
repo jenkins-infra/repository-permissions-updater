@@ -2,10 +2,10 @@
 name: "nunit"
 github: "jenkinsci/nunit-plugin"
 issues:
-- jira: '15562' # nunit-plugin
+  - jira: '15562'  # nunit-plugin
 paths:
-- "org/jenkins-ci/plugins/nunit"
-- "org/jvnet/hudson/plugins/nunit"
+  - "org/jenkins-ci/plugins/nunit"
+  - "org/jvnet/hudson/plugins/nunit"
 developers:
-- "kinow"
-- "smorita"
+  - "kinow"
+  - "smorita"

@@ -2,8 +2,8 @@
 name: "custom-view-tabs"
 github: "jenkinsci/custom-view-tabs-plugin"
 issues:
-- jira: '18140' # custom-view-tabs-plugin
+  - jira: '18140'  # custom-view-tabs-plugin
 paths:
-- "org/jenkins-ci/plugins/custom-view-tabs"
+  - "org/jenkins-ci/plugins/custom-view-tabs"
 developers:
-- "todderz"
+  - "todderz"

@@ -2,15 +2,15 @@
 name: "docker-plugin"
 github: &gh "jenkinsci/docker-plugin"
 issues:
-- github: *gh
-- jira: '18724' # docker-plugin
+  - github: *gh
+  - jira: '18724'  # docker-plugin
 paths:
-- "com/nirima/docker-plugin"
-- "io/jenkins/docker/docker-plugin"
+  - "com/nirima/docker-plugin"
+  - "io/jenkins/docker/docker-plugin"
 developers:
-- "integer"
-- "magnayn"
-- "pjdarton"
-- "jm_meessen"
-- "markewaite"
-- "poddingue"
+  - "integer"
+  - "magnayn"
+  - "pjdarton"
+  - "jm_meessen"
+  - "markewaite"
+  - "poddingue"

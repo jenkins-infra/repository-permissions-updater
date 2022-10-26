@@ -2,9 +2,9 @@
 name: "working-hours"
 github: &gh "jenkinsci/working-hours-plugin"
 issues:
-- jira: '23434' # working-hours-plugin
-- github: *gh
+  - jira: '23434'  # working-hours-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/working-hours"
+  - "org/jenkins-ci/plugins/working-hours"
 developers:
-- "jeffpearce"
+  - "jeffpearce"

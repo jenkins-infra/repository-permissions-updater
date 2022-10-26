@@ -2,7 +2,7 @@
 name: "tepco-epuw"
 github: "jenkinsci/tepco-epuw-plugin"
 issues:
-- jira: '15965' # tepco-epuw-plugin
+  - jira: '15965'  # tepco-epuw-plugin
 paths:
-- "org/jenkins-ci/plugins/tepco-epuw"
+  - "org/jenkins-ci/plugins/tepco-epuw"
 developers: []

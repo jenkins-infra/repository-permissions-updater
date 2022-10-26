@@ -2,8 +2,8 @@
 name: "bmc-rpd"
 github: "jenkinsci/bmc-rpd-plugin"
 issues:
-- jira: '21457' # bmc-rpd-plugin
+  - jira: '21457'  # bmc-rpd-plugin
 paths:
-- "RPD/bmc-rpd"
+  - "RPD/bmc-rpd"
 developers:
-- "aivaniuk"
+  - "aivaniuk"

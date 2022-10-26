@@ -2,8 +2,8 @@
 name: "redhat-codeready-dependency-analysis"
 github: &GH "jenkinsci/redhat-codeready-dependency-analysis-plugin"
 paths:
-- "redhat/jenkins/plugins/redhat-codeready-dependency-analysis"
+  - "redhat/jenkins/plugins/redhat-codeready-dependency-analysis"
 developers:
-- "yzainee"
+  - "yzainee"
 issues:
   - github: *GH

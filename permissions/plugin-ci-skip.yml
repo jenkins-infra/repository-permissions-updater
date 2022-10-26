@@ -2,7 +2,7 @@
 name: "ci-skip"
 github: "jenkinsci/ci-skip-plugin"
 issues:
-- jira: '18323' # ci-skip-plugin
+  - jira: '18323'  # ci-skip-plugin
 paths:
-- "org/jenkins-ci/ruby-plugins/ci-skip"
+  - "org/jenkins-ci/ruby-plugins/ci-skip"
 developers: []

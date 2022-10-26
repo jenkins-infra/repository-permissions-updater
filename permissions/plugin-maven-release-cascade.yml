@@ -2,7 +2,7 @@
 name: "maven-release-cascade"
 github: "jenkinsci/maven-release-cascade-plugin"
 issues:
-- jira: '17332' # maven-release-cascade-plugin
+  - jira: '17332'  # maven-release-cascade-plugin
 paths:
-- "com/barchart/jenkins/maven-release-cascade"
+  - "com/barchart/jenkins/maven-release-cascade"
 developers: []

@@ -2,7 +2,7 @@
 name: "campfire"
 github: "jenkinsci/campfire-plugin"
 issues:
-- jira: '15733' # campfire-plugin
+  - jira: '15733'  # campfire-plugin
 paths:
-- "org/jenkins-ci/plugins/campfire"
+  - "org/jenkins-ci/plugins/campfire"
 developers: []

@@ -2,7 +2,7 @@
 name: "testabilityexplorer"
 github: "jenkinsci/testabilityexplorer-plugin"
 issues:
-- jira: '15613' # testabilityexplorer-plugin
+  - jira: '15613'  # testabilityexplorer-plugin
 paths:
-- "org/jenkins-ci/plugins/testabilityexplorer"
+  - "org/jenkins-ci/plugins/testabilityexplorer"
 developers: []

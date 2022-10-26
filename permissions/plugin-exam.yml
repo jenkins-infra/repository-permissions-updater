@@ -2,9 +2,9 @@
 name: "exam"
 github: "jenkinsci/exam-plugin"
 issues:
-- jira: '23542' # exam-plugin
+  - jira: '23542'  # exam-plugin
 paths:
-- "org/jenkins-ci/plugins/exam"
+  - "org/jenkins-ci/plugins/exam"
 developers:
-- "MicroNovaAG"
-- "tomasch"
+  - "MicroNovaAG"
+  - "tomasch"

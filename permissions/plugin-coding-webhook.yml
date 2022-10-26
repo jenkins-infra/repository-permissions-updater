@@ -2,9 +2,9 @@
 name: "coding-webhook"
 github: &gh "jenkinsci/coding-webhook-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/coding-webhook"
+  - "org/jenkins-ci/plugins/coding-webhook"
 developers:
-- "tsl0922"
-- "wusisu"
+  - "tsl0922"
+  - "wusisu"

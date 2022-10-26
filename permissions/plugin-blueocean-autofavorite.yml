@@ -2,22 +2,22 @@
 name: "blueocean-autofavorite"
 github: "jenkinsci/blueocean-autofavorite-plugin"
 issues:
-- jira: '21924' # blueocean-autofavorite-plugin
+  - jira: '21924'  # blueocean-autofavorite-plugin
 paths:
-- "org/jenkins-ci/plugins/blueocean-autofavorite"
+  - "org/jenkins-ci/plugins/blueocean-autofavorite"
 developers:
-- "batmat"
-- "michaelneale"
-- "jamesdumay"
-- "vivek"
-- "davidbees"
-- "richbg"
-- "carroll"
-- "dnusbaum"
-- "jtaboada"
-- "kshultz"
-- "bitwiseman"
-- "olamy"
+  - "batmat"
+  - "michaelneale"
+  - "jamesdumay"
+  - "vivek"
+  - "davidbees"
+  - "richbg"
+  - "carroll"
+  - "dnusbaum"
+  - "jtaboada"
+  - "kshultz"
+  - "bitwiseman"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

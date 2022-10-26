@@ -2,10 +2,10 @@
 name: "parent-pom"
 github: "jenkinsci/custom-war-packager"
 paths:
-- "io/jenkins/tools/custom-war-packager/parent-pom"
+  - "io/jenkins/tools/custom-war-packager/parent-pom"
 developers:
-- "oleg_nenashev"
-- "jglick"
-- "csanchez"
-- "fcojfernandez"
-- "egutierrez"
+  - "oleg_nenashev"
+  - "jglick"
+  - "csanchez"
+  - "fcojfernandez"
+  - "egutierrez"

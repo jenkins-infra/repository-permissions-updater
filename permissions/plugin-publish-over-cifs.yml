@@ -2,9 +2,9 @@
 name: "publish-over-cifs"
 github: "jenkinsci/publish-over-cifs-plugin"
 issues:
-- jira: '15850' # publish-over-cifs-plugin
+  - jira: '15850'  # publish-over-cifs-plugin
 paths:
-- "org/jenkins-ci/plugins/publish-over-cifs"
+  - "org/jenkins-ci/plugins/publish-over-cifs"
 developers:
-- "patrickw"
-- "gmcdonald"
+  - "patrickw"
+  - "gmcdonald"

@@ -2,9 +2,9 @@
 name: "downstream-build-cache"
 github: "jenkinsci/downstream-build-cache-plugin"
 issues:
-- jira: '24535' # downstream-build-cache-plugin
+  - jira: '24535'  # downstream-build-cache-plugin
 paths:
-- "com/axis/system/jenkins/plugins/downstream/downstream-build-cache"
+  - "com/axis/system/jenkins/plugins/downstream/downstream-build-cache"
 developers:
-- "gustafl"
-- "jons"
+  - "gustafl"
+  - "jons"

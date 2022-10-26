@@ -2,8 +2,8 @@
 name: "phoenix-autotest"
 github: &gh "jenkinsci/phoenix-autotest-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "com/surenpi/jenkins/phoenix-autotest"
+  - "com/surenpi/jenkins/phoenix-autotest"
 developers:
-- "surenpi"
+  - "surenpi"

@@ -2,7 +2,7 @@
 name: "cvs-tag"
 github: "jenkinsci/cvs-tag-plugin"
 issues:
-- jira: '15534' # cvs-tag-plugin
+  - jira: '15534'  # cvs-tag-plugin
 paths:
-- "org/jenkins-ci/plugins/cvs-tag"
+  - "org/jenkins-ci/plugins/cvs-tag"
 developers: []

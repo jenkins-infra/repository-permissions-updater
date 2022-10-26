@@ -2,8 +2,8 @@
 name: "codescan"
 github: "jenkinsci/codescan-plugin"
 issues:
-- jira: '21474' # codescan-plugin
+  - jira: '21474'  # codescan-plugin
 paths:
-- "com/villagechief/codescan/jenkins/codescan"
+  - "com/villagechief/codescan/jenkins/codescan"
 developers:
-- "villagechief"
+  - "villagechief"

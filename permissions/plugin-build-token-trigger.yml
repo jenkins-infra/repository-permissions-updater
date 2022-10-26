@@ -2,7 +2,7 @@
 name: "build-token-trigger"
 github: "jenkinsci/build-token-trigger-plugin"
 issues:
-- jira: '23535' # build-token-trigger-plugin
+  - jira: '23535'  # build-token-trigger-plugin
 paths:
-- "org/jenkins-ci/plugins/build-token-trigger"
+  - "org/jenkins-ci/plugins/build-token-trigger"
 developers: []

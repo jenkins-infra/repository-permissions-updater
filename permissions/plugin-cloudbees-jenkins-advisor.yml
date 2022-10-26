@@ -2,15 +2,15 @@
 name: "cloudbees-jenkins-advisor"
 github: "jenkinsci/cloudbees-jenkins-advisor-plugin"
 issues:
-- jira: '23162' # cloudbees-jenkins-advisor-plugin
+  - jira: '23162'  # cloudbees-jenkins-advisor-plugin
 paths:
-- "org/jenkins-ci/plugins/cloudbees-jenkins-advisor"
+  - "org/jenkins-ci/plugins/cloudbees-jenkins-advisor"
 developers:
-- "owood"
-- "kwhetstone"
-- "kohsuke"
-- "aheritier"
-- "pierrebtz"
+  - "owood"
+  - "kwhetstone"
+  - "kohsuke"
+  - "aheritier"
+  - "pierrebtz"
 security:
   contacts:
     jira: "cloudbees_security_members"

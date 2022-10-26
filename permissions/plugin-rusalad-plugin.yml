@@ -2,7 +2,7 @@
 name: "rusalad-plugin"
 github: "jenkinsci/rusalad-plugin"
 issues:
-- jira: '17645' # rusalad-plugin
+  - jira: '17645'  # rusalad-plugin
 paths:
-- "org/jenkins-ci/plugins/rusalad-plugin"
+  - "org/jenkins-ci/plugins/rusalad-plugin"
 developers: []

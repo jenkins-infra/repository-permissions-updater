@@ -2,9 +2,9 @@
 name: "dagshub-branch-source"
 github: &GH "jenkinsci/dagshub-branch-source-plugin"
 paths:
-- "io/jenkins/plugins/dagshub-branch-source"
+  - "io/jenkins/plugins/dagshub-branch-source"
 developers:
-- "guysmoilov"
+  - "guysmoilov"
 issues:
   - github: *GH
 cd:

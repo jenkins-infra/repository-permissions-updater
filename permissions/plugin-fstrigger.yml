@@ -2,10 +2,10 @@
 name: "fstrigger"
 github: &gh "jenkinsci/fstrigger-plugin"
 issues:
-- jira: '15890' # fstrigger-plugin
-- github: *gh
+  - jira: '15890'  # fstrigger-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/fstrigger"
+  - "org/jenkins-ci/plugins/fstrigger"
 developers:
-- "gbois"
-- "stealthdj"
+  - "gbois"
+  - "stealthdj"

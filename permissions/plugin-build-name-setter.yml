@@ -1,12 +1,10 @@
-
 ---
 name: "build-name-setter"
 github: &gh "jenkinsci/build-name-setter-plugin"
 issues:
-- jira: '15902' # build-name-setter-plugin
-- github: *gh
+  - jira: '15902'  # build-name-setter-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/build-name-setter"
+  - "org/jenkins-ci/plugins/build-name-setter"
 developers:
-- "dszczepanik"
-
+  - "dszczepanik"

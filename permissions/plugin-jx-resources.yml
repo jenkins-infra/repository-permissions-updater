@@ -2,11 +2,11 @@
 name: "jx-resources"
 github: "jenkinsci/jx-resources-plugin"
 issues:
-- jira: '23543' # jx-resources-plugin
+  - jira: '23543'  # jx-resources-plugin
 paths:
-- "org/jenkins-ci/plugins/jx-resources"
+  - "org/jenkins-ci/plugins/jx-resources"
 developers:
-- "jstrachan"
-- "jrawlings"
-- "jenkinsxbot"
-- "jglick"
+  - "jstrachan"
+  - "jrawlings"
+  - "jenkinsxbot"
+  - "jglick"

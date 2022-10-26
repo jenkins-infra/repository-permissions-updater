@@ -2,7 +2,7 @@
 name: "crowd"
 github: "jenkinsci/crowd-plugin"
 issues:
-- jira: '15601' # crowd-plugin
+  - jira: '15601'  # crowd-plugin
 paths:
-- "com/ds/tools/hudson/crowd"
+  - "com/ds/tools/hudson/crowd"
 developers: []

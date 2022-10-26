@@ -2,9 +2,9 @@
 name: "gerrit-code-review"
 github: "jenkinsci/gerrit-code-review-plugin"
 issues:
-- jira: '23427' # gerrit-code-review-plugin
+  - jira: '23427'  # gerrit-code-review-plugin
 paths:
-- "org/jenkins-ci/plugins/gerrit-code-review"
+  - "org/jenkins-ci/plugins/gerrit-code-review"
 developers:
-- "lucamilanesio"
-- "ssbarnea"
+  - "lucamilanesio"
+  - "ssbarnea"

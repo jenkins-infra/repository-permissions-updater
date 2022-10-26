@@ -2,8 +2,8 @@
 name: "puppet-enterprise-pipeline"
 github: "jenkinsci/puppet-enterprise-pipeline-plugin"
 issues:
-- jira: '21831' # puppet-enterprise-pipeline-plugin
+  - jira: '21831'  # puppet-enterprise-pipeline-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/puppet-enterprise-pipeline"
+  - "org/jenkins-ci/plugins/workflow/puppet-enterprise-pipeline"
 developers:
-- "ccaum"
+  - "ccaum"

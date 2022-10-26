@@ -2,9 +2,9 @@
 name: "buildresult-trigger"
 github: "jenkinsci/buildresult-trigger-plugin"
 issues:
-- jira: '15969' # buildresult-trigger-plugin
+  - jira: '15969'  # buildresult-trigger-plugin
 paths:
-- "org/jenkins-ci/plugins/buildresult-trigger"
+  - "org/jenkins-ci/plugins/buildresult-trigger"
 developers:
-- "gbois"
-- "stealthdj"
+  - "gbois"
+  - "stealthdj"

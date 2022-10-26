@@ -2,7 +2,7 @@
 name: "xtrigger-lib"
 github: "jenkinsci/xtrigger-lib"
 paths:
-- "org/jenkins-ci/lib/xtrigger-lib"
+  - "org/jenkins-ci/lib/xtrigger-lib"
 developers:
-- "gbois"
-- "stealthdj"
+  - "gbois"
+  - "stealthdj"

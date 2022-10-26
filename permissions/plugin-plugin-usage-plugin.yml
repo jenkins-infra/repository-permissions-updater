@@ -2,10 +2,10 @@
 name: "plugin-usage-plugin"
 github: "jenkinsci/plugin-usage-plugin"
 issues:
-- jira: '19227' # plugin-usage-plugin
+  - jira: '19227'  # plugin-usage-plugin
 paths:
-- "org/jenkins-ci/plugins/plugin-usage-plugin"
+  - "org/jenkins-ci/plugins/plugin-usage-plugin"
 developers:
-- "chrissy25"
-- "michallaskowski"
-- "froque"
+  - "chrissy25"
+  - "michallaskowski"
+  - "froque"

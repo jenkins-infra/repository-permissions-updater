@@ -2,7 +2,7 @@
 name: "jython"
 github: "jenkinsci/jython-plugin"
 issues:
-- jira: '16012' # jython-plugin
+  - jira: '16012'  # jython-plugin
 paths:
-- "org/jvnet/hudson/plugins/jython"
+  - "org/jvnet/hudson/plugins/jython"
 developers: []

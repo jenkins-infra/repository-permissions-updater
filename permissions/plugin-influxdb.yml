@@ -2,8 +2,8 @@
 name: "influxdb"
 github: "jenkinsci/influxdb-plugin"
 issues:
-- jira: '21671' # influxdb-plugin
+  - jira: '21671'  # influxdb-plugin
 paths:
-- "org/jenkins-ci/plugins/influxdb"
+  - "org/jenkins-ci/plugins/influxdb"
 developers:
-- "aleksisimell"
+  - "aleksisimell"

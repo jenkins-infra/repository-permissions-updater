@@ -2,10 +2,10 @@
 name: "publish-over-ssh"
 github: &GH "jenkinsci/publish-over-ssh-plugin"
 issues:
-- github: *GH
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/publish-over-ssh"
-- "org/jvnet/hudson/plugins/publish-over-ssh"
+  - "org/jenkins-ci/plugins/publish-over-ssh"
+  - "org/jvnet/hudson/plugins/publish-over-ssh"
 developers:
-- "gmcdonald"
-- "olamy"
+  - "gmcdonald"
+  - "olamy"

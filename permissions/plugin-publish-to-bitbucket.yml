@@ -2,8 +2,8 @@
 name: "publish-to-bitbucket"
 github: "jenkinsci/publish-to-bitbucket-plugin"
 issues:
-- jira: '22125' # publish-to-bitbucket-plugin
+  - jira: '22125'  # publish-to-bitbucket-plugin
 paths:
-- "org/jenkins-ci/plugins/publish-to-bitbucket"
+  - "org/jenkins-ci/plugins/publish-to-bitbucket"
 developers:
-- "himindz"
+  - "himindz"

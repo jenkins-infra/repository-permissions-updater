@@ -2,11 +2,11 @@
 name: "secure-requester-whitelist"
 github: "jenkinsci/secure-requester-whitelist-plugin"
 issues:
-- jira: '18221' # secure-requester-whitelist-plugin
+  - jira: '18221'  # secure-requester-whitelist-plugin
 paths:
-- "org/jenkins-ci/plugins/secure-requester-whitelist"
+  - "org/jenkins-ci/plugins/secure-requester-whitelist"
 developers:
-- "jglick"
-- "andresrc"
-- "@security"
-- "@cloudbees-developers"
+  - "jglick"
+  - "andresrc"
+  - "@security"
+  - "@cloudbees-developers"

@@ -2,9 +2,9 @@
 name: "cloudcoreo-deploytime"
 github: "jenkinsci/cloudcoreo-deploytime-plugin"
 issues:
-- jira: '23176' # cloudcoreo-deploytime-plugin
+  - jira: '23176'  # cloudcoreo-deploytime-plugin
 paths:
-- "com/cloudcoreo/plugins/cloudcoreo-deploytime"
+  - "com/cloudcoreo/plugins/cloudcoreo-deploytime"
 developers:
-- "pauldallen"
-- "armaneous"
+  - "pauldallen"
+  - "armaneous"

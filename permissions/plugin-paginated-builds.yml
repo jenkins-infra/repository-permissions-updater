@@ -2,9 +2,9 @@
 name: "paginated-builds"
 github: &GH "jenkinsci/paginated-builds-plugin"
 paths:
-- "io/jenkins/plugins/paginated-builds"
+  - "io/jenkins/plugins/paginated-builds"
 developers:
-- "lineville"
+  - "lineville"
 issues:
   - github: *GH
 cd:

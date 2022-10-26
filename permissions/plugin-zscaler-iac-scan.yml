@@ -2,9 +2,9 @@
 name: "zscaler-iac-scan"
 github: &GH "jenkinsci/zscaler-iac-scan-plugin"
 paths:
-- "io/jenkins/plugins/zscaler-iac-scan"
+  - "io/jenkins/plugins/zscaler-iac-scan"
 developers:
-- "chandar_dayakar"
-- "jragula"
+  - "chandar_dayakar"
+  - "jragula"
 issues:
   - github: *GH

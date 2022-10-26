@@ -2,11 +2,11 @@
 name: "whitesource"
 github: "jenkinsci/whitesource-plugin"
 issues:
-- jira: '17558' # whitesource-plugin
+  - jira: '17558'  # whitesource-plugin
 paths:
-- "org/jenkins-ci/plugins/whitesource"
+  - "org/jenkins-ci/plugins/whitesource"
 developers:
-- "edoshor"
-- "itaimarko"
-- "annarozin"
-- "samisalamiws"
+  - "edoshor"
+  - "itaimarko"
+  - "annarozin"
+  - "samisalamiws"

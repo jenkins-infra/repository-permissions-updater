@@ -2,9 +2,9 @@
 name: "skip-cron-rebuild"
 github: &GH "jenkinsci/skip-cron-rebuild-plugin"
 paths:
-- "io/jenkins/plugins/skip-cron-rebuild"
+  - "io/jenkins/plugins/skip-cron-rebuild"
 developers:
-- "theirix"
+  - "theirix"
 issues:
   - github: *GH
 cd:

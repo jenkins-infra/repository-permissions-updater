@@ -2,8 +2,8 @@
 name: "internetmeme"
 github: "jenkinsci/internet-meme-plugin"
 issues:
-- jira: '18329' # internetmeme-plugin
+  - jira: '18329'  # internetmeme-plugin
 paths:
-- "org/jenkins-ci/plugins/internetmeme"
+  - "org/jenkins-ci/plugins/internetmeme"
 developers:
-- "harpreet1002"
+  - "harpreet1002"

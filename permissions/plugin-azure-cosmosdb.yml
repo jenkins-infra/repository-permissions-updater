@@ -2,10 +2,10 @@
 name: "azure-cosmosdb"
 github: &GH "jenkinsci/azure-cosmosdb-plugin"
 paths:
-- "io/jenkins/plugins/azure-cosmosdb"
+  - "io/jenkins/plugins/azure-cosmosdb"
 cd:
   enabled: true
 developers:
-- "timja"
+  - "timja"
 issues:
   - github: *GH

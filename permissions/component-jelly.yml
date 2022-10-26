@@ -2,6 +2,6 @@
 name: "commons-jelly"
 github: "jenkinsci/jelly"
 paths:
-- "org/jenkins-ci/commons-jelly"
+  - "org/jenkins-ci/commons-jelly"
 developers:
-- "@core"
+  - "@core"

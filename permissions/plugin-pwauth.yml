@@ -2,7 +2,7 @@
 name: "pwauth"
 github: "jenkinsci/pwauth-plugin"
 issues:
-- jira: '16043' # pwauth-plugin
+  - jira: '16043'  # pwauth-plugin
 paths:
-- "org/jvnet/hudson/plugins/pwauth"
+  - "org/jvnet/hudson/plugins/pwauth"
 developers: []

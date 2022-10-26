@@ -2,9 +2,9 @@
 name: "loadium"
 github: "jenkinsci/loadium-plugin"
 issues:
-- jira: '23521' # loadium-plugin
+  - jira: '23521'  # loadium-plugin
 paths:
-- "com/loadium/jenkins/loadium"
+  - "com/loadium/jenkins/loadium"
 developers:
-- "loadium"
-- "erhangullu"
+  - "loadium"
+  - "erhangullu"

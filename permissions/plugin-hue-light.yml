@@ -2,8 +2,8 @@
 name: "hue-light"
 github: "jenkinsci/hue-light-plugin"
 issues:
-- jira: '18143' # hue-light-plugin
+  - jira: '18143'  # hue-light-plugin
 paths:
-- "org/jenkins-ci/plugins/hue-light"
+  - "org/jenkins-ci/plugins/hue-light"
 developers:
-- "mmore"
+  - "mmore"

@@ -15,7 +15,7 @@ This repository contains both the definitions for Artifactory upload permissions
 Requesting Permissions
 ----------------------
 
-**Prerequisite**: You need to have logged in once to [Artifactory](https://repo.jenkins-ci.org/) with your Jenkins community account (this is the same as the account you would use to login to Jira) before you can be added to a permissions target.
+**Prerequisite**: You need to have logged in once to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io) with your Jenkins community account (this is the same as the account you would use to login to Jira) before you can be added to a permissions target.
 
 To request upload permissions to an artifact (typically a plugin), [file a PR](https://help.github.com/articles/creating-a-pull-request/) editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR, approving it.
 See [this page](https://jenkins.io/doc/developer/plugin-governance/managing-permissions/) for more information.
@@ -45,9 +45,9 @@ Example file:
 name: "p4"
 github: "jenkinsci/p4-plugin"
 paths:
-- "org/jenkins-ci/plugins/p4"
+  - "org/jenkins-ci/plugins/p4"
 developers:
-- "p4paul"
+  - "p4paul"
 ```
 
 * `p4` (lines 2 and 5): `artifactId`
@@ -140,7 +140,7 @@ A complete example with two trackers:
 issues:
   - github: 'jenkinsci/configuration-as-code-plugin' # The preferred issue tracker
   - jira: 'configuration-as-code-plugin' # A secondary issue tracker is the Jira component 'configuration-as-code-plugin'
-    report: no # No new issues should be reported here
+    report: false # No new issues should be reported here
 ```
 
 When GitHub Issues is used, there would be some duplicated content in the file (between `github` and `issues` entries) which can be resolved by using a YAML reference.

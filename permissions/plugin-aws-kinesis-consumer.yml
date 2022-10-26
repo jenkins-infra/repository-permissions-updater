@@ -4,10 +4,10 @@ github: &GH "jenkinsci/aws-kinesis-consumer-plugin"
 cd:
   enabled: true
 paths:
-- "io/jenkins/plugins/aws-kinesis-consumer"
+  - "io/jenkins/plugins/aws-kinesis-consumer"
 developers:
-- "ponch"
-- "syntonyze"
-- "lucamilanesio"
+  - "ponch"
+  - "syntonyze"
+  - "lucamilanesio"
 issues:
   - jira: 28634

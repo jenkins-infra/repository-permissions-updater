@@ -2,11 +2,11 @@
 name: "oidc-provider"
 github: &GH "jenkinsci/oidc-provider-plugin"
 paths:
-- "io/jenkins/plugins/oidc-provider"
+  - "io/jenkins/plugins/oidc-provider"
 developers:
-- "jglick"
-- "escoem"
-- "fcojfernandez"
+  - "jglick"
+  - "escoem"
+  - "fcojfernandez"
 cd:
   enabled: true
 issues:

@@ -4,13 +4,13 @@ github: "jenkinsci/okhttp-api-plugin"
 cd:
   enabled: true
 issues:
-- jira: '27251' # okhttp-api-plugin
+  - jira: '27251'  # okhttp-api-plugin
 paths:
-- "io/jenkins/plugins/okhttp-api"
+  - "io/jenkins/plugins/okhttp-api"
 developers:
-- "@cloudbees-developers"
-- "kshultz"
-- "oleg_nenashev"
+  - "@cloudbees-developers"
+  - "kshultz"
+  - "oleg_nenashev"
 security:
   contacts:
     jira: "cloudbees_security_members"

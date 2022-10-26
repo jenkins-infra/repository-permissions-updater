@@ -2,7 +2,7 @@
 name: "dry-run"
 github: "jenkinsci/dry-run-plugin"
 issues:
-- jira: '16019' # dry-run-plugin
+  - jira: '16019'  # dry-run-plugin
 paths:
-- "org/jenkins-ci/plugins/dry-run"
+  - "org/jenkins-ci/plugins/dry-run"
 developers: []

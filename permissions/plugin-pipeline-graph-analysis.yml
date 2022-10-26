@@ -2,18 +2,18 @@
 name: "pipeline-graph-analysis"
 github: "jenkinsci/pipeline-graph-analysis-plugin"
 issues:
-- jira: '21693' # pipeline-graph-analysis-plugin
+  - jira: '21693'  # pipeline-graph-analysis-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-graph-analysis"
+  - "org/jenkins-ci/plugins/pipeline-graph-analysis"
 developers:
-- "svanoort"
-- "abayer"
-- "dnusbaum"
-- "jglick"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "svanoort"
+  - "abayer"
+  - "dnusbaum"
+  - "jglick"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
 security:
   contacts:
     jira: "cloudbees_security_members"

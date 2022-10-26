@@ -2,9 +2,9 @@
 name: "poll-mailbox-trigger-plugin"
 github: &gh "jenkinsci/poll-mailbox-trigger-plugin"
 issues:
-- github: *gh
-- jira: '18760' # poll-mailbox-trigger-plugin
+  - github: *gh
+  - jira: '18760'  # poll-mailbox-trigger-plugin
 paths:
-- "org/jenkins-ci/plugins/poll-mailbox-trigger-plugin"
+  - "org/jenkins-ci/plugins/poll-mailbox-trigger-plugin"
 developers:
-- "nickg"
+  - "nickg"

@@ -2,21 +2,21 @@
 name: "workflow-basic-steps"
 github: "jenkinsci/workflow-basic-steps-plugin"
 issues:
-- jira: '21712' # workflow-basic-steps-plugin
+  - jira: '21712'  # workflow-basic-steps-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-basic-steps"
+  - "org/jenkins-ci/plugins/workflow/workflow-basic-steps"
 developers:
-- "jglick"
-- "kohsuke"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
-- "jtaboada"
-- "teilo"
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "svanoort"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
+  - "teilo"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -2,11 +2,11 @@
 name: "elasticbox"
 github: "jenkinsci/elasticbox-plugin"
 issues:
-- jira: '19022' # elasticbox-plugin
+  - jira: '19022'  # elasticbox-plugin
 paths:
-- "com/elasticbox/jenkins-ci/plugins/elasticbox"
-- "org/jenkins-ci/plugins/elasticbox"
+  - "com/elasticbox/jenkins-ci/plugins/elasticbox"
+  - "org/jenkins-ci/plugins/elasticbox"
 developers:
-- "gsanchezu"
-- "julio_castanar"
-- "allyourbotsarebelongtous"
+  - "gsanchezu"
+  - "julio_castanar"
+  - "allyourbotsarebelongtous"

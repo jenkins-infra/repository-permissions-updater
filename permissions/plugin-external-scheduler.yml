@@ -2,7 +2,7 @@
 name: "external-scheduler"
 github: "jenkinsci/external-scheduler-plugin"
 issues:
-- jira: '17635' # external-scheduler-plugin
+  - jira: '17635'  # external-scheduler-plugin
 paths:
-- "org/jenkins-ci/plugins/external-scheduler"
+  - "org/jenkins-ci/plugins/external-scheduler"
 developers: []

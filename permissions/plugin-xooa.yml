@@ -2,11 +2,11 @@
 name: "xooa"
 github: "jenkinsci/xooa-plugin"
 issues:
-- jira: '25427' # xooa-plugin
+  - jira: '25427'  # xooa-plugin
 paths:
-- "io/jenkins/plugins/xooa"
+  - "io/jenkins/plugins/xooa"
 developers:
-- "vinay_bagul"
+  - "vinay_bagul"
 security:
   contacts:
     jira: vinay_bagul

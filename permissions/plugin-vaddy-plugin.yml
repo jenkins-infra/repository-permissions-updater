@@ -2,8 +2,8 @@
 name: "vaddy-plugin"
 github: "jenkinsci/vaddy-plugin"
 issues:
-- jira: '19720' # vaddy-plugin
+  - jira: '19720'  # vaddy-plugin
 paths:
-- "org/jenkins-ci/plugins/vaddy-plugin"
+  - "org/jenkins-ci/plugins/vaddy-plugin"
 developers:
-- "kanatoko"
+  - "kanatoko"

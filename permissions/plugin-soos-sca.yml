@@ -2,9 +2,9 @@
 name: "soos-sca"
 github: &GH "jenkinsci/soos-sca-plugin"
 paths:
-- "io/soos/soos-sca"
+  - "io/soos/soos-sca"
 developers:
-- "soos_integrations"
+  - "soos_integrations"
 issues:
   - github: *GH
 cd:

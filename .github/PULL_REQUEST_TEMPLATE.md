@@ -30,7 +30,7 @@ Make sure to implement all relevant entries (see section headers to when they ap
 - [ ] [Make sure to `@`mention an existing maintainer to confirm the permissions request, if applicable](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
 - [ ] Use the Jenkins community (LDAP) account name in the YAML file, not the GitHub account name
 - [ ] Make sure to `@`mention the users being added so their GitHub account names are known if they require GitHub merge access (see below).
-- [ ] [All newly added users have logged in to Artifactory at least once](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
+- [ ] [All newly added users have logged in to Artifactory and Jira at least once](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
 
 ### Reviewer checklist (not for requesters!)
 

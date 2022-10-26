@@ -2,14 +2,14 @@
 name: "ldap"
 github: "jenkinsci/ldap-plugin"
 issues:
-- jira: '17122' # ldap-plugin
+  - jira: '17122'  # ldap-plugin
 paths:
-- "org/jenkins-ci/plugins/ldap"
+  - "org/jenkins-ci/plugins/ldap"
 developers:
-- "andresrc"
-- "kohsuke"
-- "rsandell"
-- "@cloudbees-developers"
+  - "andresrc"
+  - "kohsuke"
+  - "rsandell"
+  - "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"

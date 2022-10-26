@@ -2,7 +2,7 @@
 name: "custom-job-icon"
 github: "jenkinsci/custom-job-icon-plugin"
 issues:
-- jira: '17323' # custom-job-icon-plugin
+  - jira: '17323'  # custom-job-icon-plugin
 paths:
-- "org/jenkins-ci/plugins/custom-job-icon"
+  - "org/jenkins-ci/plugins/custom-job-icon"
 developers: []

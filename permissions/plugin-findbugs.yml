@@ -2,7 +2,7 @@
 name: "findbugs"
 github: "jenkinsci/findbugs-plugin"
 issues:
-- jira: '15496' # findbugs-plugin
+  - jira: '15496'  # findbugs-plugin
 paths:
-- "org/jvnet/hudson/plugins/findbugs"
+  - "org/jvnet/hudson/plugins/findbugs"
 developers: []

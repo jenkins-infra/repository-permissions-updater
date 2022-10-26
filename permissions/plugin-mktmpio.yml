@@ -2,8 +2,8 @@
 name: "mktmpio"
 github: "jenkinsci/mktmpio-plugin"
 issues:
-- jira: '20722' # mktmpio-plugin
+  - jira: '20722'  # mktmpio-plugin
 paths:
-- "org/jenkins-ci/plugins/mktmpio"
+  - "org/jenkins-ci/plugins/mktmpio"
 developers:
-- "rmgraham"
+  - "rmgraham"

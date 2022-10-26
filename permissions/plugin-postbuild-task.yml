@@ -2,10 +2,10 @@
 name: "postbuild-task"
 github: "jenkinsci/postbuild-task-plugin"
 issues:
-- jira: '16010' # postbuild-task-plugin
+  - jira: '16010'  # postbuild-task-plugin
 paths:
-- "org/jvnet/hudson/plugins/postbuild-task"
+  - "org/jvnet/hudson/plugins/postbuild-task"
 developers:
-- "madsnielsen"
-- "praqma"
-- "timja"
+  - "madsnielsen"
+  - "praqma"
+  - "timja"

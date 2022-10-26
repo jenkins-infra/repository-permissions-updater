@@ -3,7 +3,8 @@
     <parent>
         <groupId>org.jenkins-ci</groupId>
         <artifactId>jenkins</artifactId>
-        <version>1.69</version>
+        <version>1.90</version>
+        <relativePath />
     </parent>
 
     <groupId>io.jenkins.infra</groupId>
@@ -29,7 +30,7 @@
             <plugin><!-- run unit test in src/test/java -->
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
-                <version>1.13.1</version>
+                <version>2.1.0</version>
                 <!-- version specified in grandparent pom -->
                 <executions>
                     <execution>
@@ -77,7 +78,6 @@
 
     <properties>
         <main.class>io.jenkins.infra.repository_permissions_updater.ArtifactoryPermissionsUpdater</main.class>
-        <java.level>8</java.level>
         <spotbugs.excludeFilterFile>${project.basedir}/src/spotbugs/excludesFilter.xml</spotbugs.excludeFilterFile>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -105,12 +105,12 @@
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpcore</artifactId>
-                <version>4.4.14</version>
+                <version>4.4.15</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
-                <version>5.3.20</version>
+                <version>5.3.23</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -120,7 +120,7 @@
             <dependency>
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
-                <version>2.2.2</version>
+                <version>2.3.1</version>
             </dependency>
             <dependency>
                 <groupId>com.atlassian.plugins</groupId>
@@ -129,13 +129,13 @@
             </dependency>
             <dependency>
                 <groupId>org.osgi</groupId>
-                <artifactId>org.osgi.core</artifactId>
-                <version>5.0.0</version>
+                <artifactId>osgi.core</artifactId>
+                <version>8.0.0</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>1.7.32</version>
+                <version>2.0.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -144,7 +144,7 @@
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
-            <version>1.29</version>
+            <version>1.33</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
@@ -176,7 +176,7 @@
         <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs-annotations</artifactId>
-            <version>4.5.2</version>
+            <version>4.7.3</version>
         </dependency>
         <dependency>
             <groupId>eu.neilalexander</groupId>
@@ -196,12 +196,12 @@
         <dependency>
             <groupId>io.jenkins.lib</groupId>
             <artifactId>support-log-formatter</artifactId>
-            <version>1.0</version>
+            <version>1.1</version>
         </dependency>
         <dependency>
             <groupId>org.kohsuke</groupId>
             <artifactId>github-api</artifactId>
-            <version>1.301</version>
+            <version>1.313</version>
         </dependency>
         <dependency>
             <groupId>org.javatuples</groupId>
@@ -211,12 +211,12 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-model</artifactId>
-            <version>3.8.1</version>
+            <version>3.8.6</version>
         </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter</artifactId>
-        <version>5.8.2</version>
+        <version>5.9.1</version>
         <scope>test</scope>
       </dependency>
 
@@ -237,7 +237,8 @@
     </pluginRepositories>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkins-infra/repository-permissions-updater.git</connection>
+        <connection>scm:git:https://github.com/jenkins-infra/repository-permissions-updater.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/jenkins-infra/repository-permissions-updater.git</developerConnection>
+        <url>https://github.com/jenkins-infra/repository-permissions-updater</url>
     </scm>
 </project>

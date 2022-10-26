@@ -2,23 +2,23 @@
 name: "blueocean-display-url"
 github: "jenkinsci/blueocean-display-url-plugin"
 issues:
-- jira: '21827' # blueocean-display-url-plugin
+  - jira: '21827'  # blueocean-display-url-plugin
 paths:
-- "org/jenkins-ci/plugins/blueocean-display-url"
+  - "org/jenkins-ci/plugins/blueocean-display-url"
 developers:
-- "michaelneale"
-- "vivek"
-- "kzantow"
-- "davidbees"
-- "richbg"
-- "carroll"
-- "dnusbaum"
-- "jtaboada"
-- "kshultz"
-- "bitwiseman"
-- "olamy"
-- "imeredith"
-- "jamesdumay"
+  - "michaelneale"
+  - "vivek"
+  - "kzantow"
+  - "davidbees"
+  - "richbg"
+  - "carroll"
+  - "dnusbaum"
+  - "jtaboada"
+  - "kshultz"
+  - "bitwiseman"
+  - "olamy"
+  - "imeredith"
+  - "jamesdumay"
 security:
   contacts:
     jira: "cloudbees_security_members"

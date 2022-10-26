@@ -2,10 +2,10 @@
 name: "bitbucket"
 github: "jenkinsci/bitbucket-plugin"
 issues:
-- jira: '18755' # bitbucket-plugin
+  - jira: '18755'  # bitbucket-plugin
 paths:
-- "org/jenkins-ci/plugins/bitbucket"
+  - "org/jenkins-ci/plugins/bitbucket"
 developers:
-- "tzach_solomon"
+  - "tzach_solomon"
 cd:
   enabled: true

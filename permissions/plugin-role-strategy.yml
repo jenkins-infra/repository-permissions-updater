@@ -2,14 +2,14 @@
 name: "role-strategy"
 github: "jenkinsci/role-strategy-plugin"
 issues:
-- jira: '15758' # role-strategy-plugin
+  - jira: '15758'  # role-strategy-plugin
 paths:
-- "org/jenkins-ci/plugins/role-strategy"
-- "org/jvnet/hudson/plugins/role-strategy"
+  - "org/jenkins-ci/plugins/role-strategy"
+  - "org/jvnet/hudson/plugins/role-strategy"
 developers:
-- "oleg_nenashev"
-- "runzexia"
-- "thomas_nemer"
-- "mawinter69"
+  - "oleg_nenashev"
+  - "runzexia"
+  - "thomas_nemer"
+  - "mawinter69"
 cd:
   enabled: true

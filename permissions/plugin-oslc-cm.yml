@@ -2,7 +2,7 @@
 name: "oslc-cm"
 github: "jenkinsci/oslc-cm-plugin"
 issues:
-- jira: '15872' # oslc-cm-plugin
+  - jira: '15872'  # oslc-cm-plugin
 paths:
-- "org/jenkins-ci/plugins/oslc-cm"
+  - "org/jenkins-ci/plugins/oslc-cm"
 developers: []

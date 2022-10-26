@@ -2,12 +2,12 @@
 name: "analysis-model-api"
 github: "jenkinsci/analysis-model-api-plugin"
 issues:
-- jira: '24221' # analysis-model-api-plugin
+  - jira: '24221'  # analysis-model-api-plugin
 paths:
-- "org/jenkins-ci/plugins/analysis-model-api"
-- "io/jenkins/plugins/analysis-model-api"
+  - "org/jenkins-ci/plugins/analysis-model-api"
+  - "io/jenkins/plugins/analysis-model-api"
 developers:
-- "drulli"
+  - "drulli"
 security:
   contacts:
     jira: "cloudbees_security_members"

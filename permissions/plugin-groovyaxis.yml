@@ -2,7 +2,7 @@
 name: "groovyaxis"
 github: "jenkinsci/groovyaxis-plugin"
 issues:
-- jira: '15942' # groovyaxis-plugin
+  - jira: '15942'  # groovyaxis-plugin
 paths:
-- "org/jenkins-ci/plugins/groovyaxis"
+  - "org/jenkins-ci/plugins/groovyaxis"
 developers: []

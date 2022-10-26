@@ -2,9 +2,9 @@
 name: "pipeline-multibranch-defaults"
 github: "jenkinsci/pipeline-multibranch-defaults-plugin"
 issues:
-- jira: '21926' # pipeline-multibranch-defaults-plugin
+  - jira: '21926'  # pipeline-multibranch-defaults-plugin
 paths:
-- "org/jenkins-ci/plugins/pipeline-multibranch-defaults"
+  - "org/jenkins-ci/plugins/pipeline-multibranch-defaults"
 developers:
-- "vaimr"
-- "sag47"
+  - "vaimr"
+  - "sag47"

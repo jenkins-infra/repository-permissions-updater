@@ -2,12 +2,12 @@
 name: "slack"
 github: &gh "jenkinsci/slack-plugin"
 issues:
-- github: *gh
-- jira: '18321' # slack-plugin
+  - github: *gh
+  - jira: '18321'  # slack-plugin
 paths:
-- "org/jenkins-ci/plugins/slack"
+  - "org/jenkins-ci/plugins/slack"
 cd:
   enabled: true
 developers:
-- "timja"
-- "jetersen"
+  - "timja"
+  - "jetersen"

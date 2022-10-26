@@ -2,9 +2,9 @@
 name: "jenkinsci-appspider-plugin"
 github: "jenkinsci/appspider-build-scanner-plugin"
 issues:
-- jira: '20850' # appspider-build-scanner-plugin
+  - jira: '20850'  # appspider-build-scanner-plugin
 paths:
-- "com/rapid7/jenkinsci-appspider-plugin"
+  - "com/rapid7/jenkinsci-appspider-plugin"
 developers:
-- "rgrimley"
-- "tmoreland"
+  - "rgrimley"
+  - "tmoreland"

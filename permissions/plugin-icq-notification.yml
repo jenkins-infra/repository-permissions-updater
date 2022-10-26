@@ -2,8 +2,8 @@
 name: "icq-notification"
 github: "jenkinsci/icq-notification-plugin"
 issues:
-- jira: '25036' # icq-notification-plugin
+  - jira: '25036'  # icq-notification-plugin
 paths:
-- "org/jenkins-ci/plugins/icq-notification"
+  - "org/jenkins-ci/plugins/icq-notification"
 developers:
-- "nolequen"
+  - "nolequen"

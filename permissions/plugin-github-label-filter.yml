@@ -2,9 +2,9 @@
 name: "github-label-filter"
 github: &gh "jenkinsci/github-label-filter-plugin"
 issues:
-- jira: '27244' # github-label-filter-plugin
-- github: *gh
+  - jira: '27244'  # github-label-filter-plugin
+  - github: *gh
 paths:
-- "io/jenkins/plugins/github-label-filter"
+  - "io/jenkins/plugins/github-label-filter"
 developers:
-- "topikachu"
+  - "topikachu"

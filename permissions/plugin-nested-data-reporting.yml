@@ -2,8 +2,8 @@
 name: "nested-data-reporting"
 github: &GH "jenkinsci/nested-data-reporting-plugin"
 paths:
-- "io/jenkins/plugins/nested-data-reporting"
+  - "io/jenkins/plugins/nested-data-reporting"
 developers:
-- "simonsymhoven"
+  - "simonsymhoven"
 issues:
   - github: *GH

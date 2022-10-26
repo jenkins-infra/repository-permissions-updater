@@ -2,8 +2,8 @@
 name: "build-alias-setter"
 github: "jenkinsci/build-alias-setter-plugin"
 issues:
-- jira: '17478' # build-alias-setter-plugin
+  - jira: '17478'  # build-alias-setter-plugin
 paths:
-- "org/jenkins-ci/plugins/build-alias-setter"
+  - "org/jenkins-ci/plugins/build-alias-setter"
 developers:
-- "olivergondza"
+  - "olivergondza"

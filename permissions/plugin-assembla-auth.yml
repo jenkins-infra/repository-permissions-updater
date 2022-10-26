@@ -4,7 +4,7 @@ github: "jenkinsci/assembla-plugin"
 issues:
   - jira: '17538'
 paths:
-- "org/jenkins-ci/plugins/assembla-auth"
+  - "org/jenkins-ci/plugins/assembla-auth"
 developers:
-- "damir_assembla"
-- "paveld"
+  - "damir_assembla"
+  - "paveld"

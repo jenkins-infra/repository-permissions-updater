@@ -2,8 +2,8 @@
 name: "autocancel"
 github: "jenkinsci/autocancel-plugin"
 issues:
-- jira: '27520' # autocancel-plugin
+  - jira: '27520'  # autocancel-plugin
 paths:
-- "io/jenkins/plugins/autocancel"
+  - "io/jenkins/plugins/autocancel"
 developers:
-- "recuencojones"
+  - "recuencojones"

@@ -2,10 +2,9 @@
 name: "sge-cloud-plugin"
 github: &gh "jenkinsci/sge-cloud-plugin"
 issues:
-- jira: '21437' # sge-cloud-plugin
-- github: *gh
+  - jira: '21437'  # sge-cloud-plugin
+  - github: *gh
 paths:
-- "io/jenkins/plugins/sge-cloud-plugin"
+  - "io/jenkins/plugins/sge-cloud-plugin"
 developers:
-- "jmcgeheeiv"
-
+  - "jmcgeheeiv"

@@ -2,11 +2,10 @@
 name: "build-time-blame"
 github: &gh "jenkinsci/build-time-blame-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/build-time-blame"
+  - "org/jenkins-ci/plugins/build-time-blame"
 developers:
-- "ltegtmeier"
+  - "ltegtmeier"
 cd:
   enabled: true
- 

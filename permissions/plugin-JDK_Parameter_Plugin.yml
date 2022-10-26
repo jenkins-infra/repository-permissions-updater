@@ -2,7 +2,7 @@
 name: "JDK_Parameter_Plugin"
 github: jenkinsci/JDK_Parameter_Plugin-plugin
 issues:
-- jira: '18038' # jdk_parameter_plugin-plugin
+  - jira: '18038'  # jdk_parameter_plugin-plugin
 paths:
-- "org/jenkins-ci/plugins/JDK_Parameter_Plugin"
+  - "org/jenkins-ci/plugins/JDK_Parameter_Plugin"
 developers: []

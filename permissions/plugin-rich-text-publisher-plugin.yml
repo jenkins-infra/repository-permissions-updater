@@ -2,8 +2,8 @@
 name: "rich-text-publisher-plugin"
 github: "jenkinsci/rich-text-publisher-plugin"
 issues:
-- jira: '17662' # rich-text-publisher-plugin
+  - jira: '17662'  # rich-text-publisher-plugin
 paths:
-- "org/jenkins-ci/plugins/rich-text-publisher-plugin"
+  - "org/jenkins-ci/plugins/rich-text-publisher-plugin"
 developers:
-- "masterhard"
+  - "masterhard"

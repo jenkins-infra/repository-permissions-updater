@@ -2,8 +2,8 @@
 name: "capitomcat"
 github: "jenkinsci/capitomcat-plugin"
 issues:
-- jira: '18741' # capitomcat-plugin
+  - jira: '18741'  # capitomcat-plugin
 paths:
-- "org/jenkins-ci/ruby-plugins/capitomcat"
+  - "org/jenkins-ci/ruby-plugins/capitomcat"
 developers:
-- "sunggun"
+  - "sunggun"

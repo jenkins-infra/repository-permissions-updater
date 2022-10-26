@@ -2,6 +2,6 @@
 name: "perforce"
 github: "jenkinsci/perforce-plugin"
 paths:
-- "org/jvnet/hudson/plugins/perforce"
+  - "org/jvnet/hudson/plugins/perforce"
 developers:
-- "rpetti"
+  - "rpetti"

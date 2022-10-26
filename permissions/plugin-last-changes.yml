@@ -2,9 +2,9 @@
 name: "last-changes"
 github: &gh "jenkinsci/last-changes-plugin"
 issues:
-- github: *gh
-- jira: '21666' # last-changes-plugin
+  - github: *gh
+  - jira: '21666'  # last-changes-plugin
 paths:
-- "org/jenkins-ci/plugins/last-changes"
+  - "org/jenkins-ci/plugins/last-changes"
 developers:
-- "rmpestano"
+  - "rmpestano"

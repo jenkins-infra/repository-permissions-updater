@@ -2,7 +2,7 @@
 name: "simpleupdatesite"
 github: "jenkinsci/simpleupdatesite-plugin"
 issues:
-- jira: '16021' # simpleupdatesite-plugin
+  - jira: '16021'  # simpleupdatesite-plugin
 paths:
-- "org/jenkins-ci/plugins/simpleupdatesite"
+  - "org/jenkins-ci/plugins/simpleupdatesite"
 developers: []

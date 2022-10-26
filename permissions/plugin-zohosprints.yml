@@ -2,7 +2,7 @@
 name: "zohosprints"
 github: "jenkinsci/zohosprints-plugin"
 issues:
-- jira: '26725' # zohosprints-plugin
+  - jira: '26725'  # zohosprints-plugin
 paths:
   - "io/jenkins/plugins/zohosprints"
 developers:
