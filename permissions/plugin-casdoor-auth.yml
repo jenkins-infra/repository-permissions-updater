@@ -1,0 +1,10 @@
+---
+name: "casdoor-auth"
+github: &GH "jenkinsci/casdoor-auth-plugin"
+paths:
+- "io/jenkins/plugins/casdoor"
+developers:
+- "hsluoyz"
+- "abingcbc"
+issues:
+  - github: *GH
