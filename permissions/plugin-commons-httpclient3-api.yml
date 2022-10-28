@@ -1,0 +1,9 @@
+---
+name: "commons-httpclient3-api"
+github: &GH "jenkinsci/commons-httpclient3-api-plugin"
+paths:
+- "io/jenkins/plugins/commons-httpclient3-api"
+developers:
+- "basil"
+issues:
+  - jira: 29120
