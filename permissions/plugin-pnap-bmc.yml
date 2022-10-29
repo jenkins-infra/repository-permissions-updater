@@ -1,0 +1,9 @@
+---
+name: "pnap-bmc"
+github: &GH "jenkinsci/pnap-bmc-plugin"
+paths:
+- "io/jenkins/plugins/pnap-bmc"
+developers:
+- "pajuga"
+issues:
+  - github: *GH
