@@ -8,4 +8,5 @@ paths:
 # Block creation of new releases. If you want to release the plugin, contact the Jenkins security team.
   - "org/jenkins-ci/plugins/violations-releaseblocker"
   - "org/jvnet/hudson/plugins/violations-releaseblocker"
-developers: []
+developers:
+  - "tomasbjerre"
