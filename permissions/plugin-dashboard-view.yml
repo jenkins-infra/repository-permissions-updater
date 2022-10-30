@@ -1,8 +1,8 @@
 ---
 name: "dashboard-view"
-github: "jenkinsci/dashboard-view-plugin"
+github: &gh "jenkinsci/dashboard-view-plugin"
 issues:
-  - jira: '15679'  # dashboard-view-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/dashboard-view"
   - "org/jvnet/hudson/plugins/dashboard-view"
