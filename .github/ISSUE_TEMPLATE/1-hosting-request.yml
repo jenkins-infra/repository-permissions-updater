@@ -40,7 +40,9 @@ body:
   - type: textarea
     attributes:
       label: Jenkins project users to have release permission
-      description: The Jenkins project has it's own identity system, users can sign up at https://accounts.jenkins.io. All users *must* sign in to [Jira](https://issues.jenkins.io) and [Artifactory](https://repo.jenkins-ci.org/).
+      description: |
+        The Jenkins project has it's own identity system, users can sign up at https://accounts.jenkins.io. All users *must* sign in to [Jira](https://issues.jenkins.io) and [Artifactory](https://repo.jenkins-ci.org/).
+        The user(s) listed must NOT be mentioned. The Jenkins identity system account name is handled independently of the GitHub user handle.
       placeholder: |
         user1
         user2
