@@ -1,0 +1,13 @@
+---
+name: "propelo-job-reporter"
+github: &GH "jenkinsci/propelo-job-reporter-plugin"
+paths:
+- "io/jenkins/plugins/propelo-job-reporter"
+developers:
+- "ivan_propelo"
+- "viraj_propelo"
+- "maxime_propelo"
+- "sid_propelo"
+- "amit_propelo"
+issues:
+  - jira: 29121
