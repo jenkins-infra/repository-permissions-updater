@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/jdepend"
   - "org/jvnet/hudson/plugins/jdepend"
 developers:
+  - "basil"
   - "oleg_nenashev"
