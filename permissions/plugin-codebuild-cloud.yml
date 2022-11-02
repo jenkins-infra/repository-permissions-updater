@@ -7,3 +7,5 @@ developers:
 - "carpnick2"
 issues:
   - github: *GH
+cd:
+  enabled: true
