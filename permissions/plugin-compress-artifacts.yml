@@ -5,6 +5,8 @@ issues:
   - jira: '18040'  # compress-artifacts-plugin
 paths:
   - "org/jenkins-ci/plugins/compress-artifacts"
+cd:
+  enabled: true
 developers:
   - "jglick"
   - "olivergondza"
