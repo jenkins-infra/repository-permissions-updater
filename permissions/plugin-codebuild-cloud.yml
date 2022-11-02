@@ -1,0 +1,9 @@
+---
+name: "codebuild-cloud"
+github: &GH "jenkinsci/codebuild-cloud-plugin"
+paths:
+- "io/jenkins/plugins/codebuild-cloud"
+developers:
+- "carpnick2"
+issues:
+  - github: *GH
