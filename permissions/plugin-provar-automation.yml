@@ -1,0 +1,9 @@
+---
+name: "provar-automation"
+github: &GH "jenkinsci/provar-automation-plugin"
+paths:
+- "io/jenkins/plugins/provar-automation"
+developers:
+- "mrdailey99"
+issues:
+  - github: *GH
