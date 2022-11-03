@@ -7,3 +7,5 @@ developers:
 - "mrdailey99"
 issues:
   - github: *GH
+cd:
+  enabled: true
