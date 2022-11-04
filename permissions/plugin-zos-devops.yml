@@ -1,0 +1,9 @@
+---
+name: "zos-devops"
+github: &gh "jenkinsci/zos-devops-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/zos-devops"
+developers:
+  - "iba_mainframe_dev"
