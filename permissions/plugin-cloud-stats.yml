@@ -8,3 +8,4 @@ paths:
   - "org/jenkins-ci/plugins/cloud-stats"
 developers:
   - "olivergondza"
+  - "markewaite"
