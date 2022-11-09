@@ -1,6 +1,6 @@
 ---
 name: "database"
-github: "jenkinsci/database-plugin"
+&GH github: "jenkinsci/database-plugin"
 issues:
   - github: *GH
 paths:
