@@ -5,7 +5,4 @@ issues:
   - jira: '18764'  # emailext-template-plugin
 paths:
   - "org/jenkinsci/plugins/emailext-template"
-developers:
-  - "jm_meessen"
-  - "markewaite"
-  - "poddingue"
+developers: []
