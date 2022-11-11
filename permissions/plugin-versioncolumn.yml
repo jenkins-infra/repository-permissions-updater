@@ -1,4 +1,6 @@
 ---
+cd:
+  enabled: true
 name: "versioncolumn"
 github: "jenkinsci/versioncolumn-plugin"
 issues:
