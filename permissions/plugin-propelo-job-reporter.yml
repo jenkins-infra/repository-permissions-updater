@@ -11,3 +11,5 @@ developers:
 - "amit_propelo"
 issues:
   - jira: 29121
+cd:
+  enabled: true
