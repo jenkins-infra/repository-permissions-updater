@@ -9,3 +9,4 @@ paths:
   - "org/jvnet/hudson/plugins/ivy"
 developers:
   - "arothian"
+  - "basil"
