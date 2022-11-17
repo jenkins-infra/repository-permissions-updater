@@ -8,3 +8,4 @@ paths:
   - "org/jvnet/hudson/plugins/xshell"
 developers:
   - "mambu"
+  - "markewaite"
