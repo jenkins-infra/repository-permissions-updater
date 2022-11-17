@@ -266,7 +266,7 @@ public class MavenVerifier implements BuildSystemVerifier {
 
     private void checkSoftwareConfigurationManagementField(Model model, HashSet<VerificationMessage> hostingIssues) {
         if (model.getScm() == null) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
         } else {
             if (model.getScm().getConnection() == null) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <connection> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
