@@ -1,5 +1,7 @@
 ---
 name: "bridge-method-injector-parent"
+github: "jenkinsci/bridge-method-injector"
 paths:
   - "com/infradna/tool/bridge-method-injector-parent"
-developers: []
+developers:
+  - "@core"
