@@ -14,6 +14,7 @@ import org.apache.maven.model.License;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.Parent;
 import org.apache.maven.model.Repository;
+import org.apache.maven.model.Scm;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
 import org.kohsuke.github.GHContent;
@@ -68,6 +69,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                             checkGroupId(model, hostingIssues);
                             checkRepositories(model, hostingIssues);
                             checkPluginRepositories(model, hostingIssues);
+                            checkSoftwareConfigurationManagementField(model, hostingIssues);
                         } catch(Exception e) {
                             LOGGER.error("Failed looking at pom.xml", e);
                             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
@@ -258,6 +260,25 @@ public class MavenVerifier implements BuildSystemVerifier {
                 } catch (URISyntaxException e) {
                     hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The `<pluginRepository><url></url></pluginRepository>` in your pom.xml for 'repo.jenkins-ci.org' has an invalid URL"));
                 }
+            }
+        }
+    }
+
+    private void checkSoftwareConfigurationManagementField(Model model, HashSet<VerificationMessage> hostingIssues) {
+        if (model.getScm() == null) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+        } else {
+            if (model.getScm().getConnection() == null) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <connection> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+            }
+            if (model.getScm().getUrl() == null) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an <url> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+            }
+            if (model.getScm().getDeveloperConnection() == null) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <developerConnection> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+            }
+            if (model.getScm().getTag() == null) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <tag> tag in your <scm> block in your pom.xml. Add '${scmTag}' to your <tag> tag."));
             }
         }
     }
