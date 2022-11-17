@@ -9,3 +9,5 @@ paths:
 developers:
   - "mambu"
   - "markewaite"
+cd:
+  enabled: true
