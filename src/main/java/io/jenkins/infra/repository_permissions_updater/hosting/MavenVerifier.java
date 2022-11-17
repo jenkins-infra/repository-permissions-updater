@@ -268,7 +268,9 @@ public class MavenVerifier implements BuildSystemVerifier {
         if (model.getScm() == null) {
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
         } else {
-            if (model.getScm().getConnection() == null) {
+            if (model.getScm().getConnection() != null && ((model.getScm().getConnection().startsWith("scm:git:git:")) || model.getScm().getConnection().startsWith("scm:git:http:"))) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must use HTTPS for the <connection> tag in your <scm> block in your pom.xml. Use `scm:git:https:`."));
+            } else if (model.getScm().getConnection() == null) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <connection> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
             }
             if (model.getScm().getUrl() == null) {
@@ -278,7 +280,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <developerConnection> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
             }
             if (model.getScm().getTag() == null) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <tag> tag in your <scm> block in your pom.xml. Add '${scmTag}' to your <tag> tag."));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <tag> tag in your <scm> block in your pom.xml. Add `${scmTag}` to your <tag> tag."));
             }
         }
     }
