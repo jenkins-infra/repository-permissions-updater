@@ -272,7 +272,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <connection> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
             }
             if (model.getScm().getUrl() == null) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <url> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an <url> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
             }
             if (model.getScm().getDeveloperConnection() == null) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <developerConnection> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
