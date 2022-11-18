@@ -9,3 +9,4 @@ paths:
   - "org/jenkins-ci/plugins/extended-choice-parameter"
 developers:
   - "vimil"
+  - "chas"
