@@ -7,5 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/github-pr-coverage-status"
 developers:
+  - "basil"
   - "terma"
   - "dmotpan"
