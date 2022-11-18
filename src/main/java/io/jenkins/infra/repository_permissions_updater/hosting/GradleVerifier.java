@@ -52,7 +52,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
     public static final String CANNOT_VERIFY_JENKINS_VERSION = "The `jenkinsVersion` value from your build.gradle seems to be a variable, we cannot verify the `jenkinsVersion` in this case, please make sure it is set to at least `%s`";
 
 
-    public static final Version LOWEST_JPI_PLUGIN_VERSION = new Version(0,39);
+    public static final Version LOWEST_JPI_PLUGIN_VERSION = new Version(0,47);
     public static final Version JAVA_COMPATIBILITY_VERSION = new Version(1,8,0);
 
     private boolean hasJenkinsVersion = false;
