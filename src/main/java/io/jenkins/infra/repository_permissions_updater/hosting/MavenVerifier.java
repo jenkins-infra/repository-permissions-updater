@@ -216,8 +216,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                         }
 
                         if(jenkinsVersion != null && jenkinsVersion.compareTo(LOWEST_JENKINS_VERSION) < 0) {
-                            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Your baseline specified does not meet the minimum Jenkins version required, please update `<jenkins.version>%s</jenkins.version>` to at least %s in your pom.xml" +
-                                    "\nTake a look at the [baseline recommendations](https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/#currently-recommended-versions).",
+                            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Your baseline specified does not meet the minimum Jenkins version required, please update `<jenkins.version>%s</jenkins.version>` to at least %s in your pom.xml. Take a look at the [baseline recommendations](https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/#currently-recommended-versions).",
                                     jenkinsVersion, LOWEST_JENKINS_VERSION));
                         }
                     }
