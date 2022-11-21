@@ -32,7 +32,7 @@ public class MavenVerifier implements BuildSystemVerifier {
     private static final int MAX_LENGTH_OF_ARTIFACT_ID = 37;
     private static final Logger LOGGER = LoggerFactory.getLogger(MavenVerifier.class);
 
-    public static final Version LOWEST_PARENT_POM_VERSION = new Version(4, 50, 0);
+    public static final Version LOWEST_PARENT_POM_VERSION = new Version(4, 50);
     public static final Version PARENT_POM_WITH_JENKINS_VERSION = new Version(2);
 
     public static final String INVALID_POM = "The pom.xml file in the root of the origin repository is not valid";
@@ -206,7 +206,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                 if(StringUtils.isNotBlank(version)) {
                     Version parentVersion = new Version(version);
                     if(parentVersion.compareTo(LOWEST_PARENT_POM_VERSION) < 0) {
-                        hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The parent pom version '%s' should be at least %s or higher", parentVersion, LOWEST_PARENT_POM_VERSION));
+                        hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The parent pom version '%s' should be at least '%s' or higher.", parentVersion, LOWEST_PARENT_POM_VERSION));
                     }
 
                     if(parentVersion.compareTo(PARENT_POM_WITH_JENKINS_VERSION) >= 0) {
@@ -216,7 +216,8 @@ public class MavenVerifier implements BuildSystemVerifier {
                         }
 
                         if(jenkinsVersion != null && jenkinsVersion.compareTo(LOWEST_JENKINS_VERSION) < 0) {
-                            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Your pom.xml's `<jenkins.version>(%s)</jenkins.version>` does not meet the minimum Jenkins version required, please update your `<jenkins.version>` to at least %s", jenkinsVersion, LOWEST_JENKINS_VERSION));
+                            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Your baseline specified does not meet the minimum Jenkins version required, please update `<jenkins.version>%s</jenkins.version>` to at least %s in your pom.xml. Take a look at the [baseline recommendations](https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/#currently-recommended-versions).",
+                                    jenkinsVersion, LOWEST_JENKINS_VERSION));
                         }
                     }
                 }
@@ -269,18 +270,18 @@ public class MavenVerifier implements BuildSystemVerifier {
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
         } else {
             if (model.getScm().getConnection() != null && ((model.getScm().getConnection().startsWith("scm:git:git:")) || model.getScm().getConnection().startsWith("scm:git:http:"))) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must use HTTPS for the <connection> tag in your <scm> block in your pom.xml. Use `scm:git:https:`."));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must use HTTPS for the `<connection>` tag in your `<scm>` block in your pom.xml. You can use this sample: `<connection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>`"));
             } else if (model.getScm().getConnection() == null) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <connection> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a `<connection>` tag in your `<scm>` block in your pom.xml. You can use this sample: `<connection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>`"));
             }
             if (model.getScm().getUrl() == null) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an <url> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an `<url>` tag in your `<scm>` block in your pom.xml. You can use this sample: `<url>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin</url>`"));
             }
             if (model.getScm().getDeveloperConnection() == null) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <developerConnection> tag in your <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a `<developerConnection>` tag in your <scm> block in your pom.xml. You can use this sample: `<developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>`"));
             }
             if (model.getScm().getTag() == null) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a <tag> tag in your <scm> block in your pom.xml. Add `${scmTag}` to your <tag> tag."));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a `<tag>` tag in your `<scm>` block in your pom.xml. You can use this sample: `<tag>${scmTag}</tag>`"));
             }
         }
     }
