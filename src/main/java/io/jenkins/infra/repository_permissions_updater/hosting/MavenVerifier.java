@@ -278,7 +278,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an `<url>` tag in your `<scm>` block in your pom.xml. You can use this sample: `<url>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin</url>`"));
             }
             if (model.getScm().getDeveloperConnection() == null) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a `<developerConnection>` tag in your <scm> block in your pom.xml. You can use this sample: `<developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>`"));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a `<developerConnection>` tag in your <scm> block in your pom.xml. You can use this sample: `<developerConnection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin</developerConnection>`"));
             }
             if (model.getScm().getTag() == null) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a `<tag>` tag in your `<scm>` block in your pom.xml. You can use this sample: `<tag>${scmTag}</tag>`"));
