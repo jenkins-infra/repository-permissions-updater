@@ -7,3 +7,5 @@ developers:
   - "jimklimov"
 issues:
   - jira: 28838
+cd:
+  enabled: true
