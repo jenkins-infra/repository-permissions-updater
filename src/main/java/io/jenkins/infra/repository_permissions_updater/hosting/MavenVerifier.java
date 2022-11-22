@@ -161,7 +161,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                     hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The 'name' field in the pom.xml should not contain \"Jenkins\""));
                 }
             } else {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The pom.xml file does not contain a valid <name> for the project"));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The pom.xml file does not contain a valid `<name>` for the project"));
             }
         } catch(Exception e) {
             LOGGER.error("Error trying to access <name>", e);
@@ -267,7 +267,7 @@ public class MavenVerifier implements BuildSystemVerifier {
 
     private void checkSoftwareConfigurationManagementField(Model model, HashSet<VerificationMessage> hostingIssues) {
         if (model.getScm() == null) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an <scm> block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify an `<scm>` block in your pom.xml. See https://maven.apache.org/pom.html#SCM for more information."));
         } else {
             if (model.getScm().getConnection() != null && ((model.getScm().getConnection().startsWith("scm:git:git:")) || model.getScm().getConnection().startsWith("scm:git:http:"))) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must use HTTPS for the `<connection>` tag in your `<scm>` block in your pom.xml. You can use this sample: `<connection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>`"));
