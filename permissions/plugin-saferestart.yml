@@ -5,4 +5,5 @@ issues:
   - jira: '16072'  # saferestart-plugin
 paths:
   - "org/jenkins-ci/plugins/saferestart"
-developers: []
+developers:
+  - "markewaite"
