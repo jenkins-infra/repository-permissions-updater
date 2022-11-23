@@ -12,6 +12,7 @@ developers:
   - "sudhirbatchu"
   - "ank13"
   - "deepakd_aquasec"
+  - "prakhar_jenkins"
 security:
   contacts:
     jira: aqua_maintainers
