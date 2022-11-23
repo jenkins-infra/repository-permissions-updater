@@ -5,4 +5,5 @@ issues:
   - jira: '16001'  # built-on-column-plugin
 paths:
   - "org/jenkins-ci/plugins/built-on-column"
-developers: []
+developers:
+  - "markewaite"
