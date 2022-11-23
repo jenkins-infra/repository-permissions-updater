@@ -1,0 +1,9 @@
+---
+name: "wxwork-notification"
+github: &GH "jenkinsci/wxwork-notification-plugin"
+paths:
+- "io/jenkins/plugins/wxwork-notification"
+developers:
+- "nekoimi"
+issues:
+  - github: *GH
