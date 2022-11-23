@@ -129,7 +129,7 @@ public class Hoster {
                     + "https://github.com/jenkinsci/" + forkTo
                     + issueTrackerText
                     + prDescription
-                    + "\n\nPlease remove your original repository (if there are no other forks) so that the jenkinsci organization repository "
+                    + "\n\nPlease [delete your original repository](" + forkFrom + "/settings) (if there are no other forks), under 'Danger Zone', so that the jenkinsci organization repository "
                     + "is the definitive source for the code. If there are other forks, please contact GitHub support to make the jenkinsci repo the root of the fork network (mention that Jenkins approval was given in support request 569994). "
                     + "Also, please make sure you properly follow the [documentation on documenting your plugin](https://jenkins.io/doc/developer/publishing/documentation/) "
                     + "so that your plugin is correctly documented. \n\n"
@@ -139,7 +139,7 @@ public class Hoster {
                     + "* [Releasing your plugin](https://jenkins.io/doc/developer/publishing/releasing/)\n"
                     + "\n\nIn order for your plugin to be built by the [Jenkins CI Infrastructure](https://ci.jenkins.io) and check pull requests,"
                     + " please add a [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) to the root of your repository with the following content:\n"
-                    + "`buildPlugin()`"
+                    + "`buildPlugin(useContainerAgent: true, jdkVersions: [8, 11])\n`"
                     + "\n\nWelcome aboard!";
 
             // add comment
