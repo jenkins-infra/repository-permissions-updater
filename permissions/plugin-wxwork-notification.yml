@@ -7,3 +7,5 @@ developers:
 - "nekoimi"
 issues:
   - github: *GH
+cd:
+  enabled: true
