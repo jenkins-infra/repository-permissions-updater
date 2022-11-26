@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/copyartifact"
   - "org/jvnet/hudson/plugins/copyartifact"
 developers:
-  - "basil"
   - "ikedam"
   - "wolfs"
 security:
