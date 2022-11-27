@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/build-with-parameters"
 developers:
   - "sugonyak_ivan"
+cd:
+  enabled: true
