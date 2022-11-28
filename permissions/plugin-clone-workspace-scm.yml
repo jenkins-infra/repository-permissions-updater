@@ -8,3 +8,5 @@ paths:
   - "org/jvnet/hudson/plugins/clone-workspace-scm"
 developers:
   - "markewaite"
+cd:
+  enabled: true
