@@ -7,6 +7,5 @@ paths:
   - "com/synopsys/arc/jenkinsci/extra-tool-installers"
   - "io/jenkins/plugins/extra-tool-installers"
 developers:
-  - "basil"
   - "oleg_nenashev"
   - "pjdarton"
