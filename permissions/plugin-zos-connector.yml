@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/zos-connector"
 developers:
   - "candiduslynx"
+cd:
+  enabled: true
