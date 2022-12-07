@@ -43,9 +43,7 @@ public class HostingChecker {
         verifications.add(Triplet.with("Jira", new HostingFieldVerifier(), null));
         verifications.add(Triplet.with("GitHub", new GitHubVerifier(), null));
         verifications.add(Triplet.with("Maven", new MavenVerifier(), new FileExistsConditionChecker("pom.xml")));
-        verifications.add(Triplet.with("Gradle", new GradleVerifier(), new FileExistsConditionChecker("build.gradle")));
         verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
-        //verifications.add(Triplet.with("Kotlin", new KotlinVerifier(), new FileExistsConditionChecker("build.gradle.kts")));
 
         final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
@@ -66,7 +64,7 @@ public class HostingChecker {
         }
 
         if (!hasBuildSystem) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "No build system found (pom.xml, build.gradle)"));
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "No pom.xml detected."));
         }
 
         LOGGER.info("Done checking hosting for " + issueID + ", found " + hostingIssues.size() + " issues");

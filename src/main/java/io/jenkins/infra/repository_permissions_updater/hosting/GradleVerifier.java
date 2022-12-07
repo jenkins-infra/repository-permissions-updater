@@ -34,6 +34,10 @@ import org.kohsuke.github.GitHub;
 import static io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker.LOWEST_JENKINS_VERSION;
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
+/**
+ * @deprecated until the Gradle JPI plugin supports the same scope of features as the Maven HPI plugin.
+ */
+@Deprecated
 public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVerifier {
 
     public static final String SPECIFY_LICENSE = "Please specify a license in your build.gradle file using the `licenses` closure. See https://github.com/jenkinsci/gradle-jpi-plugin#configuration for an example.";
