@@ -1,10 +1,10 @@
 ---
 name: "zos-connector"
-github: "jenkinsci/zos-connector-plugin"
+github: &GH "jenkinsci/zos-connector-plugin"
 issues:
-  - jira: '20638'  # zos-connector-plugin
+  - github: *GH
 paths:
-  - "org/jenkins-ci/plugins/zos-connector"
+  - "io/jenkins/plugins/zos-connector"
 developers:
   - "candiduslynx"
 cd:
