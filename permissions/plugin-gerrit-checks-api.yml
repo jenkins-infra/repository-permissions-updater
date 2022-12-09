@@ -1,0 +1,10 @@
+---
+name: "gerrit-checks-api"
+github: &GH "jenkinsci/gerrit-checks-api-plugin"
+paths:
+- "io/jenkins/plugins/gerrit-checks-api"
+developers:
+- "tdraebing"
+- "lucamilanesio"
+issues:
+  - github: *GH
