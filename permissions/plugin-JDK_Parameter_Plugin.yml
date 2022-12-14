@@ -5,4 +5,5 @@ issues:
   - jira: '18038'  # jdk_parameter_plugin-plugin
 paths:
   - "org/jenkins-ci/plugins/JDK_Parameter_Plugin"
-developers: []
+developers:
+  - "markewaite"
