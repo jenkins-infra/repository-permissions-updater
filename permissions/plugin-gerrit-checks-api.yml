@@ -8,3 +8,5 @@ developers:
 - "lucamilanesio"
 issues:
   - github: *GH
+cd:
+  enabled: true
