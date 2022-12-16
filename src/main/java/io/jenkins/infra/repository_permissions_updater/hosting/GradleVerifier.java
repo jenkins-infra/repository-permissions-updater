@@ -367,7 +367,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
             String shortName = e.getText();
             if(StringUtils.isNotBlank(shortName)) {
                 if(StringUtils.isNotBlank(forkTo) && !shortName.equals(forkTo.replace("-plugin", ""))) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The `shortName` from the build.gradle (%s) is incorrect, it should be '%s' ('New Repository Name' field with \"-plugin\" removed)", shortName, forkTo.replace("-plugin", "")));
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The `shortName` from the build.gradle (%s) is incorrect, it should be '%s' ('New Repository Name' field with \"-plugin\" removed)", shortName, (forkTo.replace("-plugin", "")).toLowerCase()));
                 }
 
                 if(shortName.toLowerCase().contains("jenkins")) {
