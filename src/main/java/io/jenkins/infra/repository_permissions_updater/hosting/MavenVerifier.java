@@ -101,7 +101,7 @@ public class MavenVerifier implements BuildSystemVerifier {
             String artifactId = model.getArtifactId();
             if(StringUtils.isNotBlank(artifactId)) {
                 if(StringUtils.isNotBlank(forkTo) && !artifactId.equals(forkTo.replace("-plugin", ""))) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The 'artifactId' from the pom.xml (`%s`) is incorrect, it should be `%s` ('New Repository Name' field with \"-plugin\" removed)", artifactId, forkTo.replace("-plugin", "")));
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The 'artifactId' from the pom.xml (`%s`) is incorrect, it should be `%s` ('New Repository Name' field with \"-plugin\" removed)", artifactId, (forkTo.replace("-plugin", "")).toLowerCase()));
                 }
 
                 if (artifactId.length() >= MAX_LENGTH_OF_ARTIFACT_ID) {
