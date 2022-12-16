@@ -8,10 +8,6 @@ body:
       label: GitHub repositories
     validations:
       required: true
-    placeholder: |
-        https://github.com/jenkinsci/a-plugin
-        https://github.com/jenkinsci/b-plugin
-        https://github.com/jenkinsci/c-lib
 
   - type: textarea
     attributes:
