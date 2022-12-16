@@ -1,5 +1,5 @@
 name: '🚀 GitHub permissions'
-labels: ['github-permissions', 'triage']
+labels: ['github-permissions']
 description: Request GitHub permissions
 
 body:
