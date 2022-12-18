@@ -8,3 +8,5 @@ developers:
 - "abingcbc"
 issues:
   - github: *GH
+cd:
+  enabled: true
