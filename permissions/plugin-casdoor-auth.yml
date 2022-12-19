@@ -2,7 +2,7 @@
 name: "casdoor-auth"
 github: &GH "jenkinsci/casdoor-auth-plugin"
 paths:
-- "io/jenkins/plugins/casdoor"
+- "io/jenkins/plugins/casdoor-auth"
 developers:
 - "hsluoyz"
 - "abingcbc"
