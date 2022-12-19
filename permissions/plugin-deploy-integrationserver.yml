@@ -1,0 +1,9 @@
+---
+name: "deploy-integrationserver"
+github: &GH "jenkinsci/deploy-integrationserver-plugin"
+paths:
+- "io/jenkins/plugins/deploy-integrationserver"
+developers:
+- "kalpshekhar"
+issues:
+  - jira: 29123
