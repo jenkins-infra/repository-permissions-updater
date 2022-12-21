@@ -69,11 +69,14 @@ Remove the YAML file. The next synchronization will remove permissions for the p
 
 ### Renaming a plugin
 
-Rename and edit the existing permissions file, changing both `name` and the last `path` component.
+Rename and edit the existing permissions file, changing the `name` component.  
+You may also edit the `github` component, if you wish to rename the repository.
 
 ### Changing a plugin's `groupId`
 
-Change the `paths` to match the new Maven coordinates, or, if further uploads for the old coordinates are expected, add a new list entry.
+Changing the `paths` or modifying the `<artifactId>` in the plugin `pom.xml` is highly discouraged.  
+Modifying the path will break any Maven dependencies from other plugins.
+Altering the `artifactId` means changing the identifier by which the Jenkins plugin manager differentiates one plugin from others, and will cause chaos for users who have already installed it under the old name.
 
 Managing Continuous Delivery (JEP-229 CD)
 -----------------------------------------
