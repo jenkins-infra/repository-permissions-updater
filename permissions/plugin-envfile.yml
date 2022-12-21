@@ -6,4 +6,7 @@ issues:
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/envfile"
-developers: []
+developers:
+  - "notmyfault"
+cd:
+  enabled: true

@@ -5,4 +5,7 @@ issues:
   - jira: '15699'  # downstream-buildview-plugin
 paths:
   - "org/jvnet/hudson/plugins/downstream-buildview"
-developers: []
+developers:
+  - "notmyfault"
+cd:
+  enabled: true

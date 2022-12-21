@@ -7,3 +7,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jqs-monitoring"
 developers: []
+cd:
+  enabled: true
