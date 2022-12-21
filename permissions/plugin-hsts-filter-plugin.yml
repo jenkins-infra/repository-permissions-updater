@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/hsts-filter-plugin"
 developers:
   - "notmyfault"
+cd:
+  enabled: true
