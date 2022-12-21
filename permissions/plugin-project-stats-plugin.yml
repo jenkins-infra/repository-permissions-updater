@@ -5,4 +5,7 @@ issues:
   - jira: '15988'  # project-stats-plugin
 paths:
   - "org/jenkins-ci/plugins/project-stats-plugin"
-developers: []
+developers:
+  - "notmyfault"
+cd:
+  enabled: true

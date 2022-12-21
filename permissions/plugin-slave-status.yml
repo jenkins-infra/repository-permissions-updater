@@ -5,4 +5,7 @@ issues:
   - jira: '15981'  # slave-status-plugin
 paths:
   - "org/jvnet/hudson/plugins/slave-status"
-developers: []
+developers:
+  - "notmyfault"
+cd:
+  enabled: true

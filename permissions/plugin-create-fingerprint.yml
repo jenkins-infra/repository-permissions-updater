@@ -5,4 +5,7 @@ issues:
   - jira: '17434'  # create-fingerprint-plugin
 paths:
   - "org/jenkins-ci/plugins/create-fingerprint"
-developers: []
+developers:
+  - "notmyfault"
+cd:
+  enabled: true

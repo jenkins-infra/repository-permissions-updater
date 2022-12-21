@@ -5,4 +5,7 @@ issues:
   - jira: '17609'  # text-finder-run-condition-plugin
 paths:
   - "org/jenkins-ci/plugins/text-finder-run-condition"
-developers: []
+developers:
+  - "notmyfault"
+cd:
+  enabled: true
