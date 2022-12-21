@@ -63,13 +63,21 @@ Create a new YAML file similar to existing files.
 
 Edit the `developers` list in the YAML file for the plugin.
 
+### Remove uploaders from an existing plugin
+
+Remove entries from the `developers` list.
+
 ### Deprecating a plugin
 
-Remove the YAML file. The next synchronization will remove permissions for the plugin.
+See [the documentation on jenkins.io](https://www.jenkins.io/doc/developer/plugin-governance/deprecating-or-removing-plugin/).
+Do not delete YAML files from this repository.
 
-### Renaming a plugin
+### Changing plugin ID
 
-Rename and edit the existing permissions file, changing the `name` component.  
+Jenkins cannot handle plugin renames, so if a release of the plugin has been published already, it's not possible to rename it.
+A plugin can theoretically be replaced by a new one with a different ID, but this is difficult to get right (e.g., when both plugins are installed at the same time).
+
+If the plugin _hasn't_ been released yet, you can just rename and edit the existing permissions file, changing the `name` component.
 You may also edit the `github` component, if you wish to rename the repository.
 
 ### Changing a plugin's `groupId`
