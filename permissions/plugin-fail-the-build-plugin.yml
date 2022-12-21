@@ -5,7 +5,6 @@ issues:
   - jira: '15895'  # fail-the-build-plugin
 paths:
   - "org/jenkins-ci/plugins/fail-the-build-plugin"
-developers:
-  - "notmyfault"
+developers: []
 cd:
   enabled: true
