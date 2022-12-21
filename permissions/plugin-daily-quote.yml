@@ -2,7 +2,7 @@
 name: "daily-quote"
 github: "jenkinsci/daily-quote-plugin"
 issues:
-- jira: '18160' # daily-quote-plugin
+  - jira: '18160'  # daily-quote-plugin
 paths:
-- "org/jenkins-ci/plugins/daily-quote"
+  - "org/jenkins-ci/plugins/daily-quote"
 developers: []

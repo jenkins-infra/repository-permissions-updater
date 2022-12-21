@@ -4,7 +4,7 @@ github: &GH "jenkinsci/venafi-codesigning-plugin"
 issues:
   - github: *GH
 paths:
-- "io/jenkins/plugins/venafi-codesigning"
+  - "io/jenkins/plugins/venafi-codesigning"
 developers:
-- "honglilai"
-- "arnold79"
+  - "honglilai"
+  - "arnold79"

@@ -2,8 +2,8 @@
 name: "redeploy-rancher2-workload"
 github: "jenkinsci/redeploy-rancher2-workload-plugin"
 issues:
-- jira: '26525' # redeploy-rancher2-workload-plugin
+  - jira: '26525'  # redeploy-rancher2-workload-plugin
 paths:
-- "io/jenkins/plugins/redeploy-rancher2-workload"
+  - "io/jenkins/plugins/redeploy-rancher2-workload"
 developers:
-- "feg545"
+  - "feg545"

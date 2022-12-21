@@ -2,8 +2,8 @@
 name: "block-queued-job"
 github: "jenkinsci/block-queued-job-plugin"
 issues:
-- jira: '20420' # block-queued-job-plugin
+  - jira: '20420'  # block-queued-job-plugin
 paths:
-- "org/jenkins-ci/plugins/block-queued-job"
+  - "org/jenkins-ci/plugins/block-queued-job"
 developers:
-- "integer"
+  - "integer"

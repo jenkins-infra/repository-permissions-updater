@@ -2,8 +2,8 @@
 name: "inflectra-spira-integration"
 github: "jenkinsci/inflectra-spira-integration-plugin"
 issues:
-- jira: '23748' # inflectra-spira-integration-plugin
+  - jira: '23748'  # inflectra-spira-integration-plugin
 paths:
-- "com/inflectra/spiratest/plugins/inflectra-spira-integration"
+  - "com/inflectra/spiratest/plugins/inflectra-spira-integration"
 developers:
-- "inflectra"
+  - "inflectra"

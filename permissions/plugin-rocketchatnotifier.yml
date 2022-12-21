@@ -2,8 +2,8 @@
 name: "rocketchatnotifier"
 github: jenkinsci/rocketchatnotifier-plugin
 issues:
-- jira: '21737' # rocketchatnotifier-plugin
+  - jira: '21737'  # rocketchatnotifier-plugin
 paths:
-- "org/jenkins-ci/plugins/rocketchatnotifier"
+  - "org/jenkins-ci/plugins/rocketchatnotifier"
 developers:
-- "mreinhardt"
+  - "mreinhardt"

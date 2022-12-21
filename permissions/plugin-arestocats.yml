@@ -2,8 +2,8 @@
 name: "arestocats"
 github: &gh "jenkinsci/arestocats-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/arestocats"
+  - "org/jenkins-ci/plugins/arestocats"
 developers:
-- "qacwnfq"
+  - "qacwnfq"

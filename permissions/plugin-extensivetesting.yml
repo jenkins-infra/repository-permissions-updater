@@ -2,8 +2,8 @@
 name: "extensivetesting"
 github: "jenkinsci/extensivetesting-plugin"
 issues:
-- jira: '21663' # extensivetesting-plugin
+  - jira: '21663'  # extensivetesting-plugin
 paths:
-- "jenkins/xtc/extensivetesting"
+  - "jenkins/xtc/extensivetesting"
 developers:
-- "cadorb"
+  - "cadorb"

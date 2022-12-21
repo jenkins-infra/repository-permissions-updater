@@ -2,8 +2,8 @@
 name: "aliyun-container-service-deploy"
 github: "jenkinsci/aliyun-container-service-deploy-plugin"
 issues:
-- jira: '21697' # aliyun-container-service-deploy-plugin
+  - jira: '21697'  # aliyun-container-service-deploy-plugin
 paths:
-- "org/jenkins-ci/plugins/aliyun-container-service-deploy"
+  - "org/jenkins-ci/plugins/aliyun-container-service-deploy"
 developers:
-- "aliyun_containerservice"
+  - "aliyun_containerservice"

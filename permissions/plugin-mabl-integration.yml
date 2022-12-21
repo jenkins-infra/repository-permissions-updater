@@ -2,8 +2,8 @@
 name: "mabl-integration"
 github: "jenkinsci/mabl-integration-plugin"
 issues:
-- jira: '23548' # mabl-integration-plugin
+  - jira: '23548'  # mabl-integration-plugin
 paths:
-- "com/mabl/integration/jenkins/mabl-integration"
+  - "com/mabl/integration/jenkins/mabl-integration"
 developers:
-- "mabl"
+  - "mabl"

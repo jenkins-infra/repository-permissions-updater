@@ -2,9 +2,8 @@
 name: "project-description-setter"
 github: "jenkinsci/project-description-setter-plugin"
 issues:
-- jira: '15903' # project-description-setter-plugin
+  - jira: '15903'  # project-description-setter-plugin
 paths:
-- "org/jenkins-ci/plugins/project-description-setter"
+  - "org/jenkins-ci/plugins/project-description-setter"
 developers:
-- "oleg_nenashev"
-
+  - "oleg_nenashev"

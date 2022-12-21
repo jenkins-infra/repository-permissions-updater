@@ -2,9 +2,9 @@
 name: "dtkit"
 github: "jenkinsci/dtkit-plugin"
 issues:
-- jira: '16031' # dtkit-plugin
+  - jira: '16031'  # dtkit-plugin
 paths:
-- "org/jenkins-ci/plugins/dtkit/dtkit"
+  - "org/jenkins-ci/plugins/dtkit/dtkit"
 developers:
-- "gbois"
-- "nfalco"
+  - "gbois"
+  - "nfalco"

@@ -2,7 +2,7 @@
 name: "jobrevision"
 github: "jenkinsci/jobrevision-plugin"
 issues:
-- jira: '16067' # jobrevision-plugin
+  - jira: '16067'  # jobrevision-plugin
 paths:
-- "org/jenkins-ci/plugins/jobrevision"
+  - "org/jenkins-ci/plugins/jobrevision"
 developers: []

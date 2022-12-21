@@ -2,8 +2,8 @@
 name: "secure-post-script"
 github: "jenkinsci/secure-post-script-plugin"
 issues:
-- jira: '28221' # secure-post-script-plugin
+  - jira: '28221'  # secure-post-script-plugin
 paths:
-- "io/jenkins/plugins/secure-post-script"
+  - "io/jenkins/plugins/secure-post-script"
 developers:
-- "geekchow"
+  - "geekchow"

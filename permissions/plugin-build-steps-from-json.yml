@@ -2,6 +2,6 @@
 name: "build-steps-from-json"
 github: "jenkinsci/build-steps-from-json-plugin"
 paths:
-- "com/spcow/plugins/build-steps-from-json"
+  - "com/spcow/plugins/build-steps-from-json"
 developers:
-- "pskumar448"
+  - "pskumar448"

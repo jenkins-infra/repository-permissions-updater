@@ -2,9 +2,9 @@
 name: "aws-device-farm"
 github: "jenkinsci/aws-device-farm-plugin"
 issues:
-- jira: '20653' # aws-device-farm-plugin
+  - jira: '20653'  # aws-device-farm-plugin
 paths:
-- "org/jenkins-ci/plugins/aws-device-farm"
+  - "org/jenkins-ci/plugins/aws-device-farm"
 developers:
-- "nikdabn"
-- "aws_device_farm_jenkins"
+  - "nikdabn"
+  - "aws_device_farm_jenkins"

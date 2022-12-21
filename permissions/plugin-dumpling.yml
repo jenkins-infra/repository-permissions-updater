@@ -2,8 +2,8 @@
 name: "dumpling"
 github: "jenkinsci/dumpling-plugin"
 issues:
-- jira: '21705' # dumpling-plugin
+  - jira: '21705'  # dumpling-plugin
 paths:
-- "org/jenkins-ci/plugins/dumpling"
+  - "org/jenkins-ci/plugins/dumpling"
 developers:
-- "olivergondza"
+  - "olivergondza"

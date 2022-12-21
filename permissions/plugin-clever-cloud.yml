@@ -4,6 +4,6 @@ github: &GH "jenkinsci/clever-cloud-plugin"
 issues:
   - github: *GH
 paths:
-- "io/jenkins/plugins/clever-cloud"
+  - "io/jenkins/plugins/clever-cloud"
 developers:
-- "ndeloof"
+  - "ndeloof"

@@ -1,7 +1,6 @@
 ---
 name: "cloudbees-developers"
 developers:
-- "ajard"
 - "alecharp"
 - "amuniz"
 - "aneveux"
@@ -11,7 +10,6 @@ developers:
 - "mikecirioli"
 - "olamy"
 - "rarabaolaza"
-- "richbg"
 - "rsandell"
 - "teilo"
 - "twasyl"

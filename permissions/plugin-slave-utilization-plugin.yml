@@ -1,6 +1,6 @@
 ---
 name: "slave-utilization-plugin"
 paths:
-- "com/suryagaddipati/jenkins/slave-utilization-plugin"
+  - "com/suryagaddipati/jenkins/slave-utilization-plugin"
 developers:
-- "surya548"
+  - "surya548"

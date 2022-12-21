@@ -2,8 +2,8 @@
 name: "lambdatest-automation"
 github: "jenkinsci/lambdatest-automation-plugin"
 issues:
-- jira: '24652' # lambdatest-automation-plugin
+  - jira: '24652'  # lambdatest-automation-plugin
 paths:
-- "org/jenkins-ci/plugins/lambdatest-automation"
+  - "org/jenkins-ci/plugins/lambdatest-automation"
 developers:
-- "lambdatest"
+  - "lambdatest"

@@ -2,13 +2,13 @@
 name: "configuration-as-code"
 github: &GH jenkinsci/configuration-as-code-plugin
 paths:
-- "org/jenkins-ci/plugins/configuration-as-code"
-- "io/jenkins/configuration-as-code"
+  - "org/jenkins-ci/plugins/configuration-as-code"
+  - "io/jenkins/configuration-as-code"
 developers:
-- "praqma"
-- "jetersen"
-- "oleg_nenashev"
-- "timja"
+  - "praqma"
+  - "jetersen"
+  - "oleg_nenashev"
+  - "timja"
 security:
   contacts:
     jira: "cloudbees_security_members"
@@ -16,5 +16,5 @@ cd:
   enabled: true
 issues:
   - github: *GH
-  - jira: 23170 # configuration-as-code-plugin
-    report: no
+  - jira: 23170  # configuration-as-code-plugin
+    report: false

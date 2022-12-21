@@ -2,7 +2,7 @@
 name: "selenium-aes"
 github: "jenkinsci/selenium-aes-plugin"
 issues:
-- jira: '15615' # selenium-aes-plugin
+  - jira: '15615'  # selenium-aes-plugin
 paths:
-- "org/jvnet/hudson/plugins/selenium-aes"
+  - "org/jvnet/hudson/plugins/selenium-aes"
 developers: []

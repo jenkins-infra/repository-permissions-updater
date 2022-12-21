@@ -2,7 +2,7 @@
 name: "blitz_io-jenkins"
 github: "jenkinsci/blitz_io-plugin"
 issues:
-- jira: '17599' # blitz_io-jenkins-plugin
+  - jira: '17599'  # blitz_io-jenkins-plugin
 paths:
-- "io/blitz/blitz_io-jenkins"
+  - "io/blitz/blitz_io-jenkins"
 developers: []

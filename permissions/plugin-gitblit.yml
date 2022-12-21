@@ -2,9 +2,9 @@
 name: "gitblit"
 github: "jenkinsci/gitblit-plugin"
 issues:
-- jira: '23948' # gitblit-plugin
+  - jira: '23948'  # gitblit-plugin
 paths:
-- "com/tsystems/sbs/gitblit"
+  - "com/tsystems/sbs/gitblit"
 developers:
-- "carlescapdevila"
-- "andreasmandel"
+  - "carlescapdevila"
+  - "andreasmandel"

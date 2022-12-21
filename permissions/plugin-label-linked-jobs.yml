@@ -2,9 +2,9 @@
 name: "label-linked-jobs"
 github: "jenkinsci/label-linked-jobs-plugin"
 issues:
-- jira: '19522' # label-linked-jobs-plugin
+  - jira: '19522'  # label-linked-jobs-plugin
 paths:
-- "org/jenkins-ci/plugins/label-linked-jobs"
+  - "org/jenkins-ci/plugins/label-linked-jobs"
 developers:
-- "dominiquebrice"
-- "surenpi"
+  - "dominiquebrice"
+  - "surenpi"

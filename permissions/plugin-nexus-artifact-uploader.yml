@@ -2,8 +2,8 @@
 name: "nexus-artifact-uploader"
 github: "jenkinsci/nexus-artifact-uploader-plugin"
 issues:
-- jira: '21429' # nexus-artifact-uploader-plugin
+  - jira: '21429'  # nexus-artifact-uploader-plugin
 paths:
-- "sp/sd/nexus-artifact-uploader"
+  - "sp/sd/nexus-artifact-uploader"
 developers:
-- "pskumar448"
+  - "pskumar448"

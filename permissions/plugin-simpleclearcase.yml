@@ -2,7 +2,7 @@
 name: "simpleclearcase"
 github: "jenkinsci/simpleclearcase-plugin"
 issues:
-- jira: '16047' # simpleclearcase-plugin
+  - jira: '16047'  # simpleclearcase-plugin
 paths:
-- "jenkins/plugins/simpleclearcase"
+  - "jenkins/plugins/simpleclearcase"
 developers: []

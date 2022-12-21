@@ -2,8 +2,8 @@
 name: "testweaver"
 github: "jenkinsci/testweaver-plugin"
 issues:
-- jira: '23939' # testweaver-plugin
+  - jira: '23939'  # testweaver-plugin
 paths:
-- "org/jenkins-ci/plugins/testweaver"
+  - "org/jenkins-ci/plugins/testweaver"
 developers:
-- "qtronic"
+  - "qtronic"

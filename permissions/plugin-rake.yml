@@ -2,9 +2,9 @@
 name: "rake"
 github: &gh "jenkinsci/rake-plugin"
 issues:
-- jira: '15569' # rake-plugin
-- github: *gh
+  - jira: '15569'  # rake-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/rake"
+  - "org/jenkins-ci/plugins/rake"
 developers:
-- "oli_at_jsi"
+  - "oli_at_jsi"

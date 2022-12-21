@@ -2,10 +2,10 @@
 name: "custom-war-packager-maven-plugin"
 github: "jenkinsci/custom-war-packager"
 paths:
-- "io/jenkins/tools/custom-war-packager/custom-war-packager-maven-plugin"
+  - "io/jenkins/tools/custom-war-packager/custom-war-packager-maven-plugin"
 developers:
-- "oleg_nenashev"
-- "jglick"
-- "csanchez"
-- "fcojfernandez"
-- "egutierrez"
+  - "oleg_nenashev"
+  - "jglick"
+  - "csanchez"
+  - "fcojfernandez"
+  - "egutierrez"

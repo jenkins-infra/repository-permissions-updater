@@ -2,7 +2,7 @@
 name: "was-builder"
 github: "jenkinsci/was-builder-plugin"
 issues:
-- jira: '15748' # was-builder-plugin
+  - jira: '15748'  # was-builder-plugin
 paths:
-- "org/jenkins-ci/plugins/was-builder"
+  - "org/jenkins-ci/plugins/was-builder"
 developers: []

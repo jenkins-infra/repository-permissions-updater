@@ -2,8 +2,8 @@
 name: "android-lint"
 github: "jenkinsci/android-lint-plugin"
 issues:
-- jira: '16528' # android-lint-plugin
+  - jira: '16528'  # android-lint-plugin
 paths:
-- "org/jvnet/hudson/plugins/android-lint"
+  - "org/jvnet/hudson/plugins/android-lint"
 developers:
-- "orrc"
+  - "orrc"

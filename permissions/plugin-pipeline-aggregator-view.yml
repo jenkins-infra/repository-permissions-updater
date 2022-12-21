@@ -2,8 +2,8 @@
 name: "pipeline-aggregator-view"
 github: "jenkinsci/pipeline-aggregator-view-plugin"
 issues:
-- jira: '21821' # pipeline-aggregator-view-plugin
+  - jira: '21821'  # pipeline-aggregator-view-plugin
 paths:
-- "com/paul8620/jenkins/plugins/pipeline-aggregator-view"
+  - "com/paul8620/jenkins/plugins/pipeline-aggregator-view"
 developers:
-- "paul8620"
+  - "paul8620"

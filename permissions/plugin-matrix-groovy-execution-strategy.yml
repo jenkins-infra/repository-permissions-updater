@@ -4,6 +4,6 @@ github: &GH "jenkinsci/matrix-groovy-execution-strategy-plugin"
 issues:
   - github: *GH
 paths:
-- "org/jenkins-ci/plugins/matrix-groovy-execution-strategy"
+  - "org/jenkins-ci/plugins/matrix-groovy-execution-strategy"
 developers:
-- "jeremym"
+  - "jeremym"

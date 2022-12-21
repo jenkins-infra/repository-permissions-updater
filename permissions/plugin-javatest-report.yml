@@ -2,9 +2,9 @@
 name: "javatest-report"
 github: "jenkinsci/javatest-report-plugin"
 issues:
-- jira: '15555' # javatest-report-plugin
+  - jira: '15555'  # javatest-report-plugin
 paths:
-- "org/jenkins-ci/plugins/javatest-report"
-- "org/jvnet/hudson/plugins/javatest-report"
+  - "org/jenkins-ci/plugins/javatest-report"
+  - "org/jvnet/hudson/plugins/javatest-report"
 developers:
-- "lvotypkova"
+  - "lvotypkova"

@@ -2,8 +2,8 @@
 name: "packaging-parent-pom"
 github: "jenkinsci/jenkinsfile-runner"
 paths:
-- "io/jenkins/jenkinsfile-runner/packaging-parent-pom"
+  - "io/jenkins/jenkinsfile-runner/packaging-parent-pom"
 developers:
-- "oleg_nenashev"
-- "egutierrez"
-- "fcojfernandez"
+  - "oleg_nenashev"
+  - "egutierrez"
+  - "fcojfernandez"

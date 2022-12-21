@@ -2,8 +2,8 @@
 name: "scm-httpclient"
 github: "jenkinsci/scm-httpclient-plugin"
 issues:
-- jira: '24925' # scm-httpclient-plugin
+  - jira: '24925'  # scm-httpclient-plugin
 paths:
-- "com/meowlomo/jenkins/scm-httpclient"
+  - "com/meowlomo/jenkins/scm-httpclient"
 developers:
-- "richchen"
+  - "richchen"

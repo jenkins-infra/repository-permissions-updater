@@ -1,5 +1,5 @@
 ---
 name: "nexus-task-runner"
 paths:
-- "org/jenkins-ci/plugins/nexus-task-runner"
+  - "org/jenkins-ci/plugins/nexus-task-runner"
 developers: []

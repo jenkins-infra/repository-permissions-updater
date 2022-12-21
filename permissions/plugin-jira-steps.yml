@@ -2,10 +2,10 @@
 name: "jira-steps"
 github: "jenkinsci/jira-steps-plugin"
 issues:
-- jira: '21974' # jira-steps-plugin
+  - jira: '21974'  # jira-steps-plugin
 paths:
-- "org/jenkins-ci/plugins/jira-steps"
+  - "org/jenkins-ci/plugins/jira-steps"
 developers:
-- "nrayapati"
+  - "nrayapati"
 cd:
   enabled: true

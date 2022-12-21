@@ -2,8 +2,8 @@
 name: "wso2id-oauth"
 github: "jenkinsci/wso2id-oauth-plugin"
 issues:
-- jira: '22423' # wso2id-oauth-plugin
+  - jira: '22423'  # wso2id-oauth-plugin
 paths:
-- "org/jenkins-ci/plugins/wso2id-oauth"
+  - "org/jenkins-ci/plugins/wso2id-oauth"
 developers:
-- "mohamedelhabib"
+  - "mohamedelhabib"

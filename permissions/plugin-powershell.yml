@@ -2,9 +2,9 @@
 name: "powershell"
 github: "jenkinsci/powershell-plugin"
 issues:
-- jira: '16044' # powershell-plugin
+  - jira: '16044'  # powershell-plugin
 paths:
-- "org/jenkins-ci/plugins/powershell"
+  - "org/jenkins-ci/plugins/powershell"
 developers:
-- "chrisalbrecht"
-- "froque"
+  - "chrisalbrecht"
+  - "froque"

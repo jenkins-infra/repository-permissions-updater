@@ -2,8 +2,8 @@
 name: "scm-filter-jervis"
 github: "jenkinsci/scm-filter-jervis-plugin"
 issues:
-- jira: '26332' # scm-filter-jervis-plugin
+  - jira: '26332'  # scm-filter-jervis-plugin
 paths:
-- "io/jenkins/plugins/scm-filter-jervis"
+  - "io/jenkins/plugins/scm-filter-jervis"
 developers:
-- "sag47"
+  - "sag47"

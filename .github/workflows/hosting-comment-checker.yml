@@ -12,20 +12,20 @@ jobs:
     if: ${{ github.event.comment.body == '/hosting re-check'}}
     steps:
       - name: Ack
-        uses: actions/github-script@v4
+        uses: actions/github-script@v6
         with:
           script: |
             const {owner, repo} = context.issue
-            github.reactions.createForIssueComment({
+            github.rest.reactions.createForIssueComment({
               owner,
               repo,
               comment_id: context.payload.comment.id,
               content: "+1",
             });
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: 'master'
-      - uses: actions/setup-java@v2
+      - uses: actions/setup-java@v3
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '11'

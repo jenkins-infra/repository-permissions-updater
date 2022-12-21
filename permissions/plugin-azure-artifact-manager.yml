@@ -4,9 +4,9 @@ github: &gh "jenkinsci/azure-artifact-manager-plugin"
 issues:
   - github: *gh
 paths:
-- "org/jenkins-ci/plugins/azure-artifact-manager"
+  - "org/jenkins-ci/plugins/azure-artifact-manager"
 cd:
   enabled: true
 developers:
-- "zooopx"
-- "timja"
+  - "zooopx"
+  - "timja"

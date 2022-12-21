@@ -4,8 +4,8 @@ github: &GH "jenkinsci/spring-config-plugin"
 issues:
   - github: *GH
 paths:
-- "io/jenkins/plugins/spring-config"
+  - "io/jenkins/plugins/spring-config"
 developers:
-- "topikachu"
+  - "topikachu"
 cd:
   enabled: true

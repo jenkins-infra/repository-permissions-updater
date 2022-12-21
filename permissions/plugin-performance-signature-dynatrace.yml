@@ -2,10 +2,10 @@
 name: "performance-signature-dynatrace"
 github: "jenkinsci/performance-signature-dynatrace-plugin"
 issues:
-- jira: '21420' # performance-signature-dynatrace-plugin
+  - jira: '21420'  # performance-signature-dynatrace-plugin
 paths:
-- "de/tsystems/mms/apm/performance-signature-dynatrace"
+  - "de/tsystems/mms/apm/performance-signature-dynatrace"
 developers:
-- "rpionke"
-- "robkuehn"
-- "dgetzlaf"
+  - "rpionke"
+  - "robkuehn"
+  - "dgetzlaf"

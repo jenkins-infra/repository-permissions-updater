@@ -2,17 +2,17 @@
 name: "aws-global-configuration"
 github: "jenkinsci/aws-global-configuration-plugin"
 issues:
-- jira: '23929' # aws-global-configuration-plugin
+  - jira: '23929'  # aws-global-configuration-plugin
 paths:
-- "io/jenkins/plugins/aws-global-configuration"
+  - "io/jenkins/plugins/aws-global-configuration"
 cd:
   enabled: true
 developers:
-- "jglick"
-- "csanchez"
-- "oleg_nenashev"
-- "ifernandezcalvo"
-- "@cloudbees-developers"
+  - "jglick"
+  - "csanchez"
+  - "oleg_nenashev"
+  - "ifernandezcalvo"
+  - "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -15,7 +15,7 @@ This repository contains both the definitions for Artifactory upload permissions
 Requesting Permissions
 ----------------------
 
-**Prerequisite**: You need to have logged in once to [Artifactory](https://repo.jenkins-ci.org/) with your Jenkins community account (this is the same as the account you would use to login to Jira) before you can be added to a permissions target.
+**Prerequisite**: You need to have logged in once to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io) with your Jenkins community account (this is the same as the account you would use to login to Jira) before you can be added to a permissions target.
 
 To request upload permissions to an artifact (typically a plugin), [file a PR](https://help.github.com/articles/creating-a-pull-request/) editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR, approving it.
 See [this page](https://jenkins.io/doc/developer/plugin-governance/managing-permissions/) for more information.
@@ -45,9 +45,9 @@ Example file:
 name: "p4"
 github: "jenkinsci/p4-plugin"
 paths:
-- "org/jenkins-ci/plugins/p4"
+  - "org/jenkins-ci/plugins/p4"
 developers:
-- "p4paul"
+  - "p4paul"
 ```
 
 * `p4` (lines 2 and 5): `artifactId`
@@ -74,6 +74,26 @@ Rename and edit the existing permissions file, changing both `name` and the last
 ### Changing a plugin's `groupId`
 
 Change the `paths` to match the new Maven coordinates, or, if further uploads for the old coordinates are expected, add a new list entry.
+
+Managing Continuous Delivery (JEP-229 CD)
+-----------------------------------------
+
+Jenkins plugins and other components can be continuously delivered through a supported process described in [JEP-229](https://github.com/jenkinsci/jep/blob/master/jep/229/README.adoc).
+
+You can enable JEP-229 CD for your component by adding the following to your component's YAML file:
+
+```yaml
+cd:
+  enabled: true
+```
+
+**IMPORTANT:**
+When using JEP-229 CD, every committer to your repository can create new releases by merging pull requests.
+As a result, the list of maintainer accounts maintained in your plugin's YAML file is no longer the single reference on who can publish new releases.
+Be sure to check [which users have commit access](https://www.jenkins.io/doc/developer/publishing/source-code-hosting/) to your repository and remove any that are unexpected before enabling CD, as well as any unexpected [deploy keys](https://docs.github.com/en/developers/overview/managing-deploy-keys).
+Additionally, the users listed in this repository still serve as the contacts for security issues and plugin/component governance questions.
+In particular, the Jenkins security team will _not_ make an effort to reach out to GitHub committers when maintainers (and security contacts, see below) are unresponsive before [announcing vulnerabilities without a fix](https://www.jenkins.io/security/plugins/#unresolved).
+
 
 Managing Security Process
 -------------------------
@@ -120,7 +140,7 @@ A complete example with two trackers:
 issues:
   - github: 'jenkinsci/configuration-as-code-plugin' # The preferred issue tracker
   - jira: 'configuration-as-code-plugin' # A secondary issue tracker is the Jira component 'configuration-as-code-plugin'
-    report: no # No new issues should be reported here
+    report: false # No new issues should be reported here
 ```
 
 When GitHub Issues is used, there would be some duplicated content in the file (between `github` and `issues` entries) which can be resolved by using a YAML reference.

@@ -2,9 +2,9 @@
 name: "violation-comments-to-gitlab"
 github: &gh "jenkinsci/violation-comments-to-gitlab-plugin"
 issues:
-- github: *gh
-- jira: '21984' # violation-comments-to-gitlab-plugin
+  - github: *gh
+  - jira: '21984'  # violation-comments-to-gitlab-plugin
 paths:
-- "org/jenkins-ci/plugins/violation-comments-to-gitlab"
+  - "org/jenkins-ci/plugins/violation-comments-to-gitlab"
 developers:
-- "tomasbjerre"
+  - "tomasbjerre"

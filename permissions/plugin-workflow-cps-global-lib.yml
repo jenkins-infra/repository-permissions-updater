@@ -2,20 +2,20 @@
 name: "workflow-cps-global-lib"
 github: "jenkinsci/workflow-cps-global-lib-plugin"
 issues:
-- jira: '21714' # workflow-cps-global-lib-plugin
+  - jira: '21714'  # workflow-cps-global-lib-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-cps-global-lib"
+  - "org/jenkins-ci/plugins/workflow/workflow-cps-global-lib"
 developers:
-- "jglick"
-- "kohsuke"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
-- "jtaboada"
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "svanoort"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
 security:
   contacts:
     jira: "cloudbees_security_members"

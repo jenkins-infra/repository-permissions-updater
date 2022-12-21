@@ -2,8 +2,8 @@
 name: "display-upstream-changes"
 github: "jenkinsci/display-upstream-changes-plugin"
 issues:
-- jira: '16531' # display-upstream-changes-plugin
+  - jira: '16531'  # display-upstream-changes-plugin
 paths:
-- "org/jvnet/hudson/plugins/display-upstream-changes"
+  - "org/jvnet/hudson/plugins/display-upstream-changes"
 developers:
-- "rpetti"
+  - "rpetti"

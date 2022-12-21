@@ -2,9 +2,9 @@
 name: "ansible"
 github: "jenkinsci/ansible-plugin"
 issues:
-- jira: '20624' # ansible-plugin
+  - jira: '20624'  # ansible-plugin
 paths:
-- "org/jenkins-ci/plugins/ansible"
+  - "org/jenkins-ci/plugins/ansible"
 developers:
-- "sirot"
-- "escoem"
+  - "sirot"
+  - "escoem"

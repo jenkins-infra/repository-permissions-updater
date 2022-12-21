@@ -1,8 +1,9 @@
+---
 name: "autonomiq"
 github: "jenkinsci/autonomiq-plugin"
 cd:
   enabled: true
 paths:
-- "io/jenkins/plugins/autonomiq"
+  - "io/jenkins/plugins/autonomiq"
 developers:
-- "puneetchelani_sauce"
+  - "puneetchelani_sauce"

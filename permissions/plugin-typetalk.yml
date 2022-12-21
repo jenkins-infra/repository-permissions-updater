@@ -2,11 +2,11 @@
 name: "typetalk"
 github: "jenkinsci/typetalk-plugin"
 issues:
-  - jira: '18421' # typetalk-plugin
+  - jira: '18421'  # typetalk-plugin
 paths:
-- "org/jenkins-ci/plugins/typetalk"
+  - "org/jenkins-ci/plugins/typetalk"
 cd:
   enabled: true
 developers:
-- "ikikko"
-- "yasuyuki_baba"
+  - "ikikko"
+  - "yasuyuki_baba"

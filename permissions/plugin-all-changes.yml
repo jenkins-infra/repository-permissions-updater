@@ -2,8 +2,8 @@
 name: "all-changes"
 github: "jenkinsci/all-changes-plugin"
 issues:
-- jira: '15911' # all-changes-plugin
+  - jira: '15911'  # all-changes-plugin
 paths:
-- "org/jenkins-ci/plugins/all-changes"
+  - "org/jenkins-ci/plugins/all-changes"
 developers:
-- "pskumar448"
+  - "pskumar448"

@@ -2,7 +2,7 @@
 name: "escaped-markup-plugin"
 github: "jenkinsci/escaped-markup-plugin"
 issues:
-- jira: '16107' # escaped-markup-plugin
+  - jira: '16107'  # escaped-markup-plugin
 paths:
-- "org/jenkins-ci/plugins/escaped-markup-plugin"
+  - "org/jenkins-ci/plugins/escaped-markup-plugin"
 developers: []

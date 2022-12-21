@@ -2,9 +2,9 @@
 name: "docker-custom-build-environment"
 github: "jenkinsci/docker-custom-build-environment-plugin"
 issues:
-- jira: '20634' # docker-custom-build-environment-plugin
+  - jira: '20634'  # docker-custom-build-environment-plugin
 paths:
-- "com/cloudbees/jenkins/plugins/docker-custom-build-environment"
+  - "com/cloudbees/jenkins/plugins/docker-custom-build-environment"
 developers:
-- "vlatombe"
-- "jonhermansen"
+  - "vlatombe"
+  - "jonhermansen"

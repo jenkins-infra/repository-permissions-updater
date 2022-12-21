@@ -4,6 +4,6 @@ github: &GH "jenkinsci/walti-plugin"
 issues:
   - github: *GH
 paths:
-- "org/jenkins-ci/plugins/walti"
+  - "org/jenkins-ci/plugins/walti"
 developers:
-- "walti_io"
+  - "walti_io"

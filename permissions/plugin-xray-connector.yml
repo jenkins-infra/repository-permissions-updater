@@ -2,9 +2,9 @@
 name: "xray-connector"
 github: &gh "jenkinsci/xray-connector-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/xray-connector"
+  - "org/jenkins-ci/plugins/xray-connector"
 developers:
-- "xpandit"
-- "xrayjenkins"
+  - "xpandit"
+  - "xrayjenkins"

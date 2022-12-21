@@ -4,6 +4,6 @@ github: "jenkinsci/codebeamer-coverage-publisher-plugin"
 issues:
   - jira: '21704'
 paths:
-- "org/jenkins-ci/plugins/codebeamer-coverage-publisher"
+  - "org/jenkins-ci/plugins/codebeamer-coverage-publisher"
 developers:
-- "intland_support"
+  - "intland_support"

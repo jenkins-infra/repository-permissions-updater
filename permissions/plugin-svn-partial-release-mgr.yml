@@ -2,8 +2,8 @@
 name: "svn-partial-release-mgr"
 github: "jenkinsci/svn-partial-release-mgr-plugin"
 issues:
-- jira: '22130' # svn-partial-release-mgr-plugin
+  - jira: '22130'  # svn-partial-release-mgr-plugin
 paths:
-- "org/jenkins-ci/plugins/svn-partial-release-mgr"
+  - "org/jenkins-ci/plugins/svn-partial-release-mgr"
 developers:
-- "giliadis"
+  - "giliadis"

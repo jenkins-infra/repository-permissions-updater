@@ -2,7 +2,7 @@
 name: "emotional-hudson"
 github: "jenkinsci/emotional-hudson-plugin"
 issues:
-- jira: '15540' # emotional-hudson-plugin
+  - jira: '15540'  # emotional-hudson-plugin
 paths:
-- "org/jvnet/hudson/plugins/emotional-hudson"
+  - "org/jvnet/hudson/plugins/emotional-hudson"
 developers: []

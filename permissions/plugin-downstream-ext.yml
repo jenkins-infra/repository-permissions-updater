@@ -2,7 +2,7 @@
 name: "downstream-ext"
 github: "jenkinsci/downstream-ext-plugin"
 issues:
-- jira: '15682' # downstream-ext-plugin
+  - jira: '15682'  # downstream-ext-plugin
 paths:
-- "org/jenkins-ci/plugins/downstream-ext"
+  - "org/jenkins-ci/plugins/downstream-ext"
 developers: []

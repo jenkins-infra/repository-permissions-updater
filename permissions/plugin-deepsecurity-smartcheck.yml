@@ -2,8 +2,8 @@
 name: deepsecurity-smartcheck
 github: &gh jenkinsci/deepsecurity-smartcheck-plugin
 issues:
-- github: *gh
-- jira: '25123' # deepsecurity-smartcheck-plugin
+  - github: *gh
+  - jira: '25123'  # deepsecurity-smartcheck-plugin
 paths:
   - io/jenkins/plugins/deepsecurity-smartcheck
 developers:

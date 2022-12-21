@@ -2,9 +2,9 @@
 name: "rundeck"
 github: "jenkinsci/rundeck-plugin"
 issues:
-- jira: '15941' # rundeck-plugin
+  - jira: '15941'  # rundeck-plugin
 paths:
-- "org/jenkins-ci/plugins/rundeck"
+  - "org/jenkins-ci/plugins/rundeck"
 developers:
-- "gschueler"
-- "ltoledo" 
+  - "gschueler"
+  - "ltoledo"

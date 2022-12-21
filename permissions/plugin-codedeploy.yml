@@ -2,14 +2,14 @@
 name: "codedeploy"
 github: "jenkinsci/aws-codedeploy-plugin"
 issues:
-- jira: '20920' # codedeploy-plugin
+  - jira: '20920'  # codedeploy-plugin
 paths:
-- "com/amazonaws/codedeploy"
+  - "com/amazonaws/codedeploy"
 developers:
-- "jmcfar"
-- "michaelneale"
-- "suryanb"
-- "yubangxi"
-- "feverlu"
-- "q13117god"
-- "alena"
+  - "jmcfar"
+  - "michaelneale"
+  - "suryanb"
+  - "yubangxi"
+  - "feverlu"
+  - "q13117god"
+  - "alena"

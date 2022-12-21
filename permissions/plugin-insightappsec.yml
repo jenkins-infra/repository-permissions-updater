@@ -2,8 +2,8 @@
 name: "insightappsec"
 github: "jenkinsci/insightappsec-plugin"
 issues:
-- jira: '24722' # insightappsec-plugin
+  - jira: '24722'  # insightappsec-plugin
 paths:
-- "io/jenkins/plugins/insightappsec"
+  - "io/jenkins/plugins/insightappsec"
 developers:
-- "ias_developer"
+  - "ias_developer"

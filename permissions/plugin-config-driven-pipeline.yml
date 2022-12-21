@@ -2,9 +2,9 @@
 name: "config-driven-pipeline"
 github: &gh "jenkinsci/config-driven-pipeline-plugin"
 issues:
-- github: *gh
-- jira: '25129' # config-driven-pipeline-plugin
+  - github: *gh
+  - jira: '25129'  # config-driven-pipeline-plugin
 paths:
-- "org/jenkins-ci/plugins/config-driven-pipeline"
+  - "org/jenkins-ci/plugins/config-driven-pipeline"
 developers:
-- "justinharringa"
+  - "justinharringa"

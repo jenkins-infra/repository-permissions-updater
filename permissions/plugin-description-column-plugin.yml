@@ -2,7 +2,7 @@
 name: "description-column-plugin"
 github: "jenkinsci/description-column-plugin"
 issues:
-- jira: '15910' # description-column-plugin
+  - jira: '15910'  # description-column-plugin
 paths:
-- "org/jenkins-ci/plugins/description-column-plugin"
+  - "org/jenkins-ci/plugins/description-column-plugin"
 developers: []

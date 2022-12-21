@@ -2,8 +2,8 @@
 name: "grypescanner"
 github: &GH "jenkinsci/grypescanner-plugin"
 paths:
-- "io/jenkins/plugins/grypescanner"
+  - "io/jenkins/plugins/grypescanner"
 developers:
-- "tbaum"
+  - "tbaum"
 issues:
   - github: *GH

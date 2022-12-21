@@ -2,7 +2,7 @@
 name: "buildcontext-capture"
 github: "jenkinsci/buildcontext-capture-plugin"
 issues:
-- jira: '16534' # buildcontext-capture-plugin
+  - jira: '16534'  # buildcontext-capture-plugin
 paths:
-- "org/jenkins-ci/plugins/buildcontext-capture"
+  - "org/jenkins-ci/plugins/buildcontext-capture"
 developers: []

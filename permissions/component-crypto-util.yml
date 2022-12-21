@@ -2,6 +2,6 @@
 name: "crypto-util"
 github: "jenkinsci/lib-crypto-util"
 paths:
-- "org/jenkins-ci/crypto-util"
+  - "org/jenkins-ci/crypto-util"
 developers:
-- "@core"
+  - "@core"

@@ -2,9 +2,9 @@
 name: "performance-signature-ui"
 github: "jenkinsci/performance-signature-dynatrace-plugin"
 issues:
-- jira: '21420' # performance-signature-dynatrace-plugin
+  - jira: '21420'  # performance-signature-dynatrace-plugin
 paths:
-- "de/tsystems/mms/apm/performance-signature-ui"
+  - "de/tsystems/mms/apm/performance-signature-ui"
 developers:
-- "rpionke"
-- "robkuehn"
+  - "rpionke"
+  - "robkuehn"

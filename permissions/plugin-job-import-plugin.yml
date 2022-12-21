@@ -2,8 +2,8 @@
 name: "job-import-plugin"
 github: "jenkinsci/job-import-plugin"
 issues:
-- jira: '15897' # job-import-plugin
+  - jira: '15897'  # job-import-plugin
 paths:
-- "org/jenkins-ci/plugins/job-import-plugin"
+  - "org/jenkins-ci/plugins/job-import-plugin"
 developers:
-- "escoem"
+  - "escoem"

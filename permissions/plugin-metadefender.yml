@@ -2,8 +2,8 @@
 name: "metadefender"
 github: &GH "jenkinsci/metadefender-plugin"
 paths:
-- "io/jenkins/plugins/metadefender"
+  - "io/jenkins/plugins/metadefender"
 developers:
-- "vlam"
+  - "vlam"
 issues:
   - github: *GH

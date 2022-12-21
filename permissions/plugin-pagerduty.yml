@@ -2,8 +2,8 @@
 name: "pagerduty"
 github: "jenkinsci/pagerduty-plugin"
 issues:
-- jira: '20842' # pagerduty-plugin
+  - jira: '20842'  # pagerduty-plugin
 paths:
-- "org/jenkins-ci/plugins/pagerduty"
+  - "org/jenkins-ci/plugins/pagerduty"
 developers:
-- "alexanderlz"
+  - "alexanderlz"

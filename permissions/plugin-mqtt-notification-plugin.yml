@@ -2,8 +2,8 @@
 name: "mqtt-notification-plugin"
 github: "jenkinsci/mqtt-notification-plugin"
 issues:
-- jira: '18034' # mqtt-notification-plugin
+  - jira: '18034'  # mqtt-notification-plugin
 paths:
-- "jenkins/plugins/mqtt-notification-plugin"
+  - "jenkins/plugins/mqtt-notification-plugin"
 developers:
-- "gareth_western"
+  - "gareth_western"

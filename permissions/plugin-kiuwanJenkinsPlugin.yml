@@ -2,11 +2,11 @@
 name: "kiuwanJenkinsPlugin"
 github: "jenkinsci/kiuwan-plugin"
 issues:
-- jira: '18030' # kiuwanjenkinsplugin-plugin
+  - jira: '18030'  # kiuwanjenkinsplugin-plugin
 paths:
-- "org/jenkins-ci/plugins/kiuwanJenkinsPlugin"
+  - "org/jenkins-ci/plugins/kiuwanJenkinsPlugin"
 developers:
-- "jptejela"
-- "kwjsalado"
-- "gsimmross"
-- "alexey_s_kwn"
+  - "jptejela"
+  - "kwjsalado"
+  - "gsimmross"
+  - "alexey_s_kwn"

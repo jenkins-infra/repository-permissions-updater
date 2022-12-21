@@ -2,21 +2,21 @@
 name: "workflow-api"
 github: "jenkinsci/workflow-api-plugin"
 issues:
-- jira: '21711' # workflow-api-plugin
+  - jira: '21711'  # workflow-api-plugin
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-api"
+  - "org/jenkins-ci/plugins/workflow/workflow-api"
 developers:
-- "jglick"
-- "kohsuke"
-- "svanoort"
-- "abayer"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
-- "jtaboada"
-- "olamy"
+  - "jglick"
+  - "kohsuke"
+  - "svanoort"
+  - "abayer"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

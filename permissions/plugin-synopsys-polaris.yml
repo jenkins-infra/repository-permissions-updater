@@ -2,11 +2,11 @@
 name: "synopsys-polaris"
 github: "jenkinsci/synopsys-polaris-plugin"
 issues:
-- jira: '27229' # synopsys-polaris-plugin
+  - jira: '27229'  # synopsys-polaris-plugin
 paths:
-- "org/jenkins-ci/plugins/synopsys-polaris"
+  - "org/jenkins-ci/plugins/synopsys-polaris"
 developers:
-- "gkillough"
-- "jrichard"
-- "akamen"
-- "bdsoss"
+  - "gkillough"
+  - "jrichard"
+  - "akamen"
+  - "bdsoss"

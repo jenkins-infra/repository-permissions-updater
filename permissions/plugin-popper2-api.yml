@@ -2,9 +2,9 @@
 name: "popper2-api"
 github: &GH "jenkinsci/popper2-api-plugin"
 paths:
-- "io/jenkins/plugins/popper2-api"
+  - "io/jenkins/plugins/popper2-api"
 developers:
-- "drulli"
+  - "drulli"
 issues:
   - jira: 28621
 security:

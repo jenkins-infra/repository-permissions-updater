@@ -2,7 +2,7 @@
 name: "TwilioNotifier"
 github: "jenkinsci/twilio-notifier-plugin"
 issues:
-- jira: '17437' # twilionotifier-plugin
+  - jira: '17437'  # twilionotifier-plugin
 paths:
-- "com/twilio/jenkins/TwilioNotifier"
+  - "com/twilio/jenkins/TwilioNotifier"
 developers: []

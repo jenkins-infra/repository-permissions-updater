@@ -4,5 +4,5 @@ github: &GH "jenkinsci/team-views-plugin"
 issues:
   - github: *GH
 paths:
-- "com/sonymobile/jenkins/plugins/teamviews/team-views"
+  - "com/sonymobile/jenkins/plugins/teamviews/team-views"
 developers: []

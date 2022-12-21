@@ -2,8 +2,8 @@
 name: "maven-invoker-plugin"
 github: "jenkinsci/maven-invoker-plugin"
 issues:
-- jira: '16822' # maven-invoker-plugin
+  - jira: '16822'  # maven-invoker-plugin
 paths:
-- "org/jenkins-ci/plugins/maven-invoker-plugin"
+  - "org/jenkins-ci/plugins/maven-invoker-plugin"
 developers:
-- "olamy"
+  - "olamy"

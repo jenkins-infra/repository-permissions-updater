@@ -2,21 +2,21 @@
 name: "kubernetes"
 github: "jenkinsci/kubernetes-plugin"
 issues:
-- jira: '20639' # kubernetes-plugin
+  - jira: '20639'  # kubernetes-plugin
 paths:
-- "org/csanchez/jenkins/plugins/kubernetes"
+  - "org/csanchez/jenkins/plugins/kubernetes"
 cd:
   enabled: true
 developers:
-- "csanchez"
-- "vlatombe"
-- "jglick"
-- "jequals5"
-- "@cloudbees-developers"
-- "amuniz"
-- "kerogers"
-- "aneveux"
-- "ajard"
+  - "csanchez"
+  - "vlatombe"
+  - "jglick"
+  - "jequals5"
+  - "@cloudbees-developers"
+  - "amuniz"
+  - "kerogers"
+  - "aneveux"
+  - "ajard"
 security:
   contacts:
     jira: "cloudbees_security_members"

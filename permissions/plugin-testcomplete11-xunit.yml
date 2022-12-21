@@ -2,8 +2,8 @@
 name: "testcomplete11-xunit"
 github: "jenkinsci/testcomplete11-xunit-plugin"
 issues:
-- jira: '23126' # testcomplete11-xunit-plugin
+  - jira: '23126'  # testcomplete11-xunit-plugin
 paths:
-- "org/jenkins-ci/plugins/testcomplete11-xunit"
+  - "org/jenkins-ci/plugins/testcomplete11-xunit"
 developers:
-- "mgaert"
+  - "mgaert"

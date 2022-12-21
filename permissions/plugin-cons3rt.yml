@@ -4,6 +4,6 @@ github: &GH "jenkinsci/cons3rt-plugin"
 issues:
   - github: *GH
 paths:
-- "org/jenkins-ci/plugins/cons3rt"
+  - "org/jenkins-ci/plugins/cons3rt"
 developers:
-- "cons3rt"
+  - "cons3rt"

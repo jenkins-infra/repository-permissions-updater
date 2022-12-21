@@ -2,13 +2,9 @@
 name: "fireline"
 github: "jenkinsci/fireline-plugin"
 issues:
-- jira: '23028' # fireline-plugin
+  - jira: '23028'  # fireline-plugin
 paths:
-- "org/jenkins-ci/plugins/plugin/fireline"
+  - "org/jenkins-ci/plugins/plugin/fireline"
 developers:
-- "weihao"
-- "qtest"
-
-
-
-
+  - "weihao"
+  - "qtest"

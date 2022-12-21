@@ -2,9 +2,9 @@
 name: "implied-labels"
 github: &gh "jenkinsci/implied-labels-plugin"
 issues:
-- jira: '18330' # implied-labels-plugin
+  - jira: '18330'  # implied-labels-plugin
 paths:
-- "org/jenkins-ci/plugins/implied-labels"
+  - "org/jenkins-ci/plugins/implied-labels"
 developers:
-- "olivergondza"
-- "markewaite"
+  - "olivergondza"
+  - "markewaite"

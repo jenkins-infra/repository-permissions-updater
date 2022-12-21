@@ -2,9 +2,9 @@
 name: "hetzner-cloud"
 github: &GH "jenkinsci/hetzner-cloud-plugin"
 paths:
-- "io/jenkins/plugins/hetzner-cloud"
+  - "io/jenkins/plugins/hetzner-cloud"
 developers:
-- "rkosegi"
+  - "rkosegi"
 issues:
   - github: *GH
 cd:

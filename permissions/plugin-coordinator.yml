@@ -2,8 +2,8 @@
 name: "coordinator"
 github: &gh "jenkinsci/coordinator-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/coordinator"
+  - "org/jenkins-ci/plugins/coordinator"
 developers:
-- "ace_jl_han"
+  - "ace_jl_han"

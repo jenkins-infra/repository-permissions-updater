@@ -2,8 +2,11 @@
 name: "jakarta-activation-api"
 github: &GH "jenkinsci/jakarta-activation-api-plugin"
 paths:
-- "io/jenkins/plugins/jakarta-activation-api"
+  - "io/jenkins/plugins/jakarta-activation-api"
 developers:
-- "basil"
+  - "basil"
 issues:
   - jira: 28835
+security:
+  contacts:
+    jira: "cloudbees_security_members"

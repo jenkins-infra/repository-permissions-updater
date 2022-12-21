@@ -2,6 +2,6 @@
 name: "oversecured"
 github: "jenkinsci/oversecured-plugin"
 paths:
-- "io/jenkins/plugins/oversecured"
+  - "io/jenkins/plugins/oversecured"
 developers:
-- "oversecured"
+  - "oversecured"

@@ -2,8 +2,8 @@
 name: "syslog-logger"
 github: "jenkinsci/syslog-logger-plugin"
 issues:
-- jira: '18766' # syslog-logger-plugin
+  - jira: '18766'  # syslog-logger-plugin
 paths:
-- "org/jenkins-ci/plugins/syslog-logger"
+  - "org/jenkins-ci/plugins/syslog-logger"
 developers:
-- "cleclerc"
+  - "cleclerc"

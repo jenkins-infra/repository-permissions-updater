@@ -2,9 +2,9 @@
 name: "clover"
 github: "jenkinsci/clover-plugin"
 issues:
-- jira: '15532' # clover-plugin
+  - jira: '15532'  # clover-plugin
 paths:
-- "org/jenkins-ci/plugins/clover"
+  - "org/jenkins-ci/plugins/clover"
 developers:
-- "mparfianowicz"
-- "marekparf"
+  - "mparfianowicz"
+  - "marekparf"

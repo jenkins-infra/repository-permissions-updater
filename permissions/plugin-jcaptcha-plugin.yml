@@ -2,7 +2,7 @@
 name: "jcaptcha-plugin"
 github: "jenkinsci/jcaptcha-plugin"
 issues:
-- jira: '15861' # jcaptcha-plugin
+  - jira: '15861'  # jcaptcha-plugin
 paths:
-- "org/jenkins-ci/plugins/jcaptcha-plugin"
+  - "org/jenkins-ci/plugins/jcaptcha-plugin"
 developers: []

@@ -2,9 +2,9 @@
 name: "prometheus"
 github: &gh "jenkinsci/prometheus-plugin"
 issues:
-- github: *gh
-- jira: '21450' # prometheus-plugin
+  - github: *gh
+  - jira: '21450'  # prometheus-plugin
 paths:
-- "org/jenkins-ci/plugins/prometheus"
+  - "org/jenkins-ci/plugins/prometheus"
 developers:
-- "jequals5"
+  - "jequals5"

@@ -2,9 +2,9 @@
 name: "sonargraph-integration"
 github: "jenkinsci/sonargraph-integration-plugin"
 issues:
-- jira: '21430' # sonargraph-integration-plugin
+  - jira: '21430'  # sonargraph-integration-plugin
 paths:
-- "org/jenkins-ci/plugins/sonargraph-integration"
+  - "org/jenkins-ci/plugins/sonargraph-integration"
 developers:
-- "andreashoyerh2m"
-- "builderh2m"
+  - "andreashoyerh2m"
+  - "builderh2m"

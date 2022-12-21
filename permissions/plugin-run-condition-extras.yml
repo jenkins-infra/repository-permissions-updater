@@ -2,10 +2,9 @@
 name: "run-condition-extras"
 github: "jenkinsci/run-condition-extras-plugin"
 issues:
-- jira: '18740' # run-condition-extras-plugin
+  - jira: '18740'  # run-condition-extras-plugin
 paths:
-- "com/synopsys/arc/jenkinsci/plugins/run-condition-extras"
-- "org/jenkins-ci/plugins/run-condition-extras"
+  - "com/synopsys/arc/jenkinsci/plugins/run-condition-extras"
+  - "org/jenkins-ci/plugins/run-condition-extras"
 developers:
-- "oleg_nenashev"
-
+  - "oleg_nenashev"

@@ -4,6 +4,6 @@ github: "jenkinsci/vsts-cd-plugin"
 issues:
   - jira: '21479'
 paths:
-- "org/jenkins-ci/plugins/vsts-cd"
+  - "org/jenkins-ci/plugins/vsts-cd"
 developers:
-- "angoya"
+  - "angoya"

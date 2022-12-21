@@ -2,8 +2,8 @@
 name: "github-coverage-reporter"
 github: "jenkinsci/github-coverage-reporter-plugin"
 issues:
-- jira: '24021' # github-coverage-reporter-plugin
+  - jira: '24021'  # github-coverage-reporter-plugin
 paths:
-- "io/jenkins/plugins/github-coverage-reporter"
+  - "io/jenkins/plugins/github-coverage-reporter"
 developers:
-- "jnewc"
+  - "jnewc"

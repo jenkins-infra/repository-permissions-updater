@@ -2,8 +2,8 @@
 name: "newrelic-insights"
 github: "jenkinsci/newrelic-insights-plugin"
 issues:
-- jira: '22027' # newrelic-insights-plugin
+  - jira: '22027'  # newrelic-insights-plugin
 paths:
-- "org/jenkins-ci/plugins/newrelic-insights"
+  - "org/jenkins-ci/plugins/newrelic-insights"
 developers:
-- "tiny_dancer"
+  - "tiny_dancer"

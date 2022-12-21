@@ -4,6 +4,6 @@ github: "jenkinsci/xcp-ci-plugin"
 issues:
   - jira: '20635'
 paths:
-- "com/viltgroup/xcp/jenkins/xcp-ci"
+  - "com/viltgroup/xcp/jenkins/xcp-ci"
 developers:
-- "joaori"
+  - "joaori"

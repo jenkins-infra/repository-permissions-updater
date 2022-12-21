@@ -2,10 +2,10 @@
 name: "node-sharing-orchestrator"
 github: jenkinsci/node-sharing-plugin
 issues:
-- jira: '21466' # node-sharing-plugin
+  - jira: '21466'  # node-sharing-plugin
 paths:
-- "org/jenkins-ci/plugins/nodesharing/node-sharing-orchestrator"
+  - "org/jenkins-ci/plugins/nodesharing/node-sharing-orchestrator"
 developers:
-- "scoheb"
-- "pajasoft"
-- "olivergondza"
+  - "scoheb"
+  - "pajasoft"
+  - "olivergondza"

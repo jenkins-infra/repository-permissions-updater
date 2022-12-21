@@ -2,9 +2,9 @@
 name: "ranorex-integration"
 github: "jenkinsci/ranorex-integration-plugin"
 issues:
-- jira: '22422' # ranorex-integration-plugin
-paths: 
-- "org/jenkins-ci/plugins/ranorex-integration"
-developers: 
-- "mstoegerer"
-- "ranorex"
+  - jira: '22422'  # ranorex-integration-plugin
+paths:
+  - "org/jenkins-ci/plugins/ranorex-integration"
+developers:
+  - "mstoegerer"
+  - "ranorex"

@@ -1,16 +1,13 @@
 package io.jenkins.infra.repository_permissions_updater;
 
-import com.goterl.lazycode.lazysodium.LazySodium;
-import com.goterl.lazycode.lazysodium.LazySodiumJava;
-import com.goterl.lazycode.lazysodium.SodiumJava;
-import com.goterl.lazycode.lazysodium.interfaces.Box;
-import edu.umd.cs.findbugs.annotations.CheckForNull;
 import edu.umd.cs.findbugs.annotations.NonNull;
+import org.kocakosm.jblake2.Blake2b;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Base64;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
+import static com.neilalexander.jnacl.crypto.curve25519xsalsa20poly1305.*;
 
 public class CryptoUtil {
 
@@ -24,22 +21,32 @@ public class CryptoUtil {
      * @param base64PublicKey the public key, base64 encoded
      * @return the ciphertext, or {@code null} if it failed
      */
-    @CheckForNull
+    @NonNull
     public static String encryptSecret(@NonNull String plainText, @NonNull String base64PublicKey) {
         final byte[] plainTextBytes = plainText.getBytes(StandardCharsets.UTF_8);
         final byte[] publicKeyBytes = Base64.getDecoder().decode(base64PublicKey);
-        final int cipherMessageLength = plainTextBytes.length + Box.SEALBYTES;
-        final byte[] cipherTextResult = new byte[cipherMessageLength];
-
-        final SodiumJava sodium = new SodiumJava();
-        final LazySodium lazySodium = new LazySodiumJava(sodium);
-        if (!lazySodium.cryptoBoxSeal(cipherTextResult, plainTextBytes, plainTextBytes.length, publicKeyBytes)) {
-            LOGGER.log(Level.INFO, "Failed to encrypt");
-            return null;
+        if (publicKeyBytes.length != crypto_secretbox_PUBLICKEYBYTES) {
+            throw new IllegalArgumentException("Public key must be " + crypto_secretbox_PUBLICKEYBYTES + " bytes");
         }
+
+        final byte[] ephemeralPrivateKeyBytes = new byte[crypto_secretbox_SECRETKEYBYTES];
+        final byte[] ephemeralPublicKeyBytes = new byte[crypto_secretbox_PUBLICKEYBYTES];
+        crypto_box_keypair(ephemeralPublicKeyBytes, ephemeralPrivateKeyBytes);
+
+        final byte[] nonce = new Blake2b(crypto_secretbox_NONCEBYTES)
+                .update(ephemeralPublicKeyBytes)
+                .update(publicKeyBytes)
+                .digest();
+
+        final byte[] buf = new byte[plainTextBytes.length + crypto_secretbox_ZEROBYTES];
+        System.arraycopy(plainTextBytes, 0, buf, crypto_secretbox_ZEROBYTES, plainTextBytes.length);
+        crypto_box(buf, buf, nonce, publicKeyBytes, ephemeralPrivateKeyBytes);
+
+        final byte[] cipherTextResult = Arrays.copyOf(ephemeralPublicKeyBytes, buf.length + crypto_secretbox_BOXZEROBYTES);
+        System.arraycopy(buf, crypto_secretbox_BOXZEROBYTES, cipherTextResult, crypto_secretbox_PUBLICKEYBYTES,
+                plainTextBytes.length + crypto_secretbox_BOXZEROBYTES);
         return Base64.getEncoder().encodeToString(cipherTextResult);
     }
 
     private CryptoUtil() { /* prevent instantiation */ }
-    private static final Logger LOGGER = Logger.getLogger(CryptoUtil.class.getName());
 }

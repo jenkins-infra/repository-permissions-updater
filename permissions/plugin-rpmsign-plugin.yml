@@ -2,9 +2,9 @@
 name: "rpmsign-plugin"
 github: &gh "jenkinsci/rpmsign-plugin"
 issues:
-- github: *gh
-- jira: '17549' # rpmsign-plugin
+  - github: *gh
+  - jira: '17549'  # rpmsign-plugin
 paths:
-- "org/jenkins-ci/plugins/rpmsign-plugin"
+  - "org/jenkins-ci/plugins/rpmsign-plugin"
 developers:
-- "mtizzoni"
+  - "mtizzoni"

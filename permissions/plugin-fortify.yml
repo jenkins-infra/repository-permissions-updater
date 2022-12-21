@@ -2,11 +2,11 @@
 name: "fortify"
 github: &gh "jenkinsci/fortify-plugin"
 issues:
-- github: *gh
-- jira: '24924' # fortify-plugin
+  - github: *gh
+  - jira: '24924'  # fortify-plugin
 paths:
-- "org/jenkins-ci/plugins/fortify"
+  - "org/jenkins-ci/plugins/fortify"
 developers:
-- "akaryakina"
-- "youngspark"
-- "hiro0824"
+  - "akaryakina"
+  - "youngspark"
+  - "hiro0824"

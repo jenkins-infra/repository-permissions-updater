@@ -2,7 +2,7 @@
 name: "global-variable-string-parameter"
 github: "jenkinsci/global-variable-string-parameter-plugin"
 issues:
-- jira: '17603' # global-variable-string-parameter-plugin
+  - jira: '17603'  # global-variable-string-parameter-plugin
 paths:
-- "org/jenkins-ci/plugins/global-variable-string-parameter"
+  - "org/jenkins-ci/plugins/global-variable-string-parameter"
 developers: []
