@@ -7,3 +7,5 @@ paths:
   - "jp/ikedam/jenkins/plugins/scoring-load-balancer"
 developers:
   - "notmyfault"
+cd:
+  enabled: true
