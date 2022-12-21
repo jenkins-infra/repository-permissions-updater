@@ -5,7 +5,6 @@ issues:
   - jira: '18036'  # kpp-management-plugin
 paths:
   - "sic/software/kpp-management-plugin"
-developers:
-  - "notmyfault"
+developers: []
 cd:
   enabled: true
