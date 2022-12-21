@@ -5,4 +5,7 @@ issues:
   - jira: '15944'  # hsts-filter-plugin
 paths:
   - "org/jenkins-ci/plugins/hsts-filter-plugin"
-developers: []
+developers:
+  - "notmyfault"
+cd:
+  enabled: true
