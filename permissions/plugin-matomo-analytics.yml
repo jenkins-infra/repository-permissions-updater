@@ -1,0 +1,9 @@
+---
+name: "matomo-analytics"
+github: &GH "jenkinsci/matomo-analytics-plugin"
+paths:
+- "io/jenkins/plugins/matomo-analytics"
+developers:
+- "atai"
+issues:
+  - github: *GH
