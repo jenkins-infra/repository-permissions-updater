@@ -1,0 +1,9 @@
+---
+name: "bevigil-ci"
+github: &GH "jenkinsci/bevigil-ci-plugin"
+paths:
+- "io/jenkins/plugins/bevigil-ci"
+developers:
+- "ashikka"
+issues:
+  - github: *GH
