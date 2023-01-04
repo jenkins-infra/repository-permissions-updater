@@ -5,6 +5,6 @@ paths:
 - "io/jenkins/plugins/bevigil-ci"
 developers:
 - "ashikka"
-- "Bevigil"
+- "bevigil"
 issues:
   - github: *GH
