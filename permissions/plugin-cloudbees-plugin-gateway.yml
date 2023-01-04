@@ -5,4 +5,4 @@ issues:
   - jira: '17521'  # cloudbees-plugin-gateway-plugin
 paths:
   - "org/jenkins-ci/plugins/cloudbees-plugin-gateway"
-developers: []
+developers: [] # archived
