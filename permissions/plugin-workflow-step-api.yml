@@ -15,6 +15,7 @@ developers:
   - "bitwiseman"
   - "kshultz"
   - "carroll"
+  - "teilo"
 security:
   contacts:
     jira: "cloudbees_security_members"

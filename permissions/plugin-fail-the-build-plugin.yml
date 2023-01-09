@@ -6,3 +6,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fail-the-build-plugin"
 developers: []
+cd:
+  enabled: true

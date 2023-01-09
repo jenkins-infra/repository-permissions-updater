@@ -34,6 +34,10 @@ import org.kohsuke.github.GitHub;
 import static io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker.LOWEST_JENKINS_VERSION;
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
+/**
+ * @deprecated until the Gradle JPI plugin supports the same scope of features as the Maven HPI plugin.
+ */
+@Deprecated
 public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVerifier {
 
     public static final String SPECIFY_LICENSE = "Please specify a license in your build.gradle file using the `licenses` closure. See https://github.com/jenkinsci/gradle-jpi-plugin#configuration for an example.";
@@ -52,7 +56,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
     public static final String CANNOT_VERIFY_JENKINS_VERSION = "The `jenkinsVersion` value from your build.gradle seems to be a variable, we cannot verify the `jenkinsVersion` in this case, please make sure it is set to at least `%s`";
 
 
-    public static final Version LOWEST_JPI_PLUGIN_VERSION = new Version(0,39);
+    public static final Version LOWEST_JPI_PLUGIN_VERSION = new Version(0,47);
     public static final Version JAVA_COMPATIBILITY_VERSION = new Version(1,8,0);
 
     private boolean hasJenkinsVersion = false;
@@ -353,7 +357,8 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         if(e instanceof ConstantExpression) {
             Version jenkinsVersion = new Version(e.getText());
             if(jenkinsVersion.compareTo(LOWEST_JENKINS_VERSION) < 0) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, String.format("The `jenkinsVersion` value in your build.gradle does not meet the minimum Jenkins version required, please update your jenkinsVersion to at least %s", jenkinsVersion, LOWEST_JENKINS_VERSION)));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, String.format("The `jenkinsVersion` value in your build.gradle does not meet the minimum Jenkins version required, please update your jenkinsVersion to at least %s. Take a look at the [baseline recommendations](https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/#currently-recommended-versions)."
+                        , jenkinsVersion, LOWEST_JENKINS_VERSION)));
             }
             hasJenkinsVersion = true;
         } else {
@@ -366,7 +371,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
             String shortName = e.getText();
             if(StringUtils.isNotBlank(shortName)) {
                 if(StringUtils.isNotBlank(forkTo) && !shortName.equals(forkTo.replace("-plugin", ""))) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The `shortName` from the build.gradle (%s) is incorrect, it should be '%s' ('New Repository Name' field with \"-plugin\" removed)", shortName, forkTo.replace("-plugin", "")));
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The `shortName` from the build.gradle (%s) is incorrect, it should be '%s' ('New Repository Name' field with \"-plugin\" removed)", shortName, (forkTo.replace("-plugin", "")).toLowerCase()));
                 }
 
                 if(shortName.toLowerCase().contains("jenkins")) {

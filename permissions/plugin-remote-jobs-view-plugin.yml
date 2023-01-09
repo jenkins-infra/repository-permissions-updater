@@ -5,5 +5,4 @@ issues:
   - jira: '20846'  # remote-jobs-view-plugin
 paths:
   - "com/sap/jenkinsci/remote-jobs-view-plugin"
-developers:
-  - "doergn"
+developers: []

@@ -46,7 +46,7 @@ public class HostingFieldVerifier implements Verifier {
 
         if(StringUtils.isBlank(forkTo)) {
             HashSet<VerificationMessage> subitems = new HashSet<>();
-            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must match the artifactId (with -plugin added) from your build file (pom.xml/build.gradle)."));
+            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must match the artifactId (with -plugin added) from your pom.xml."));
             subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must end in -plugin if hosting request is for a Jenkins plugin."));
             subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must be all lowercase."));
             subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must NOT contain \"Jenkins\"."));

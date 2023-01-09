@@ -7,23 +7,17 @@
 # Submitter checklist for adding or changing permissions
 
 <!--
-Make sure to implement all relevant entries (see section headers to when they apply) and mark them as checked (by replacing the space between brackets with an "x"). Remove sections that don't apply, e.g. the second and third when adding a new uploader to an existing permissions file.
+Make sure to implement all relevant entries (see section headers to when they apply) and mark them as checked (by replacing the space between brackets with an "x").
 -->
 
 ### Always
 
 - [ ] Add link to plugin/component Git repository in description above
 
-### For a newly hosted plugin only
+### When enabling automated releases (cd: true)
 
-- [ ] Add link to resolved HOSTING issue in description above
-
-### For a new permissions file only
-
-- [ ] Make sure the file is created in `permissions/` directory
-- [ ] `artifactId` (pom.xml) is used for `name` (permissions YAML file).
-- [ ] [`groupId` / `artifactId` (pom.xml) are correctly represented in `path` (permissions YAML file)](https://github.com/jenkins-infra/repository-permissions-updater/#managing-permissions)
-- [ ] Check that the file is named `plugin-${artifactId}.yml` for plugins
+- [ ] Add a link to the pull request, which enables continous delivery for your plugin or component.  
+Follow the [documentation](https://www.jenkins.io/doc/developer/publishing/releasing-cd/) to ensure, your pull request is set up properly.
 
 ### When adding new uploaders (this includes newly created permissions files)
 

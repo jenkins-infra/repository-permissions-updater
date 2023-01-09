@@ -5,4 +5,7 @@ issues:
   - jira: '15980'  # prescmbuildstep-plugin
 paths:
   - "org/jenkins-ci/plugins/preSCMbuildstep"
-developers: []
+developers:
+  - "markewaite"
+cd:
+  enabled: true

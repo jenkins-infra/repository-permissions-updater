@@ -188,7 +188,7 @@ public class Definition {
     }
 
     public String getGithub() {
-        if (github != null && (github.startsWith("jenkinsci/") || github.startsWith("stapler/"))) {
+        if (github != null && github.startsWith("jenkinsci/")) {
             return github;
         }
         return null;
