@@ -9,3 +9,46 @@ developers:
   - "bdsoss"
   - "jcroall"
   - "sshreyas"
+  - "---
+name: "synopsys-coverity"
+github: "jenkinsci/synopsys-coverity-plugin"
+issues:
+  - jira: '24024'  # synopsys-coverity-plugin
+paths:
+  - "org/jenkins-ci/plugins/synopsys-coverity"
+developers:
+  - "bdsoss"
+  - "jcroall"
+  - "sshreyas"
+  - "schatti"
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT -
