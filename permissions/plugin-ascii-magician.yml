@@ -1,0 +1,9 @@
+---
+name: "ascii-magician"
+github: &GH "jenkinsci/ascii-magician-plugin"
+paths:
+- "io/jenkins/plugins/ascii-magician"
+developers:
+- "kadkoda"
+issues:
+  - github: *GH
