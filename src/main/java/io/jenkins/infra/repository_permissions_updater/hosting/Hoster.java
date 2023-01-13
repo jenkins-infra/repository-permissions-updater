@@ -388,25 +388,18 @@ public class Hoster {
         String artifactId = null;
         String groupId = null;
 
-        String[] buildFiles = new String[]{"pom.xml", "build.gradle"};
-        for (String buildFile : buildFiles) {
-            try {
-                GHContent file = fork.getFileContent(buildFile);
-                if (file != null && file.isFile()) {
-                    String contents = IOUtils.toString(file.read(), StandardCharsets.UTF_8);
-                    if (buildFile.equalsIgnoreCase("pom.xml")) {
-                        artifactId = MavenVerifier.getArtifactId(contents);
-                        groupId = MavenVerifier.getGroupId(contents);
-                    } else if (buildFile.equalsIgnoreCase("build.gradle")) {
-                        artifactId = GradleVerifier.getShortName(contents);
-                        groupId = GradleVerifier.getGroupId(contents);
-                    }
-                    break;
+        try {
+            GHContent file = fork.getFileContent("pom.xml");
+            if (file != null && file.isFile()) {
+                String contents = IOUtils.toString(file.read(), StandardCharsets.UTF_8);
+                if (file.isFile()) {
+                    artifactId = MavenVerifier.getArtifactId(contents);
+                    groupId = MavenVerifier.getGroupId(contents);
                 }
-            } catch (IOException e) {
-                LOGGER.error("Could not find supported build file (pom.xml or build.gradle) to get artifact path from or another error occurred.");
-                return null;
             }
+        } catch (IOException e) {
+            LOGGER.error("Could not find pom.xml to get artifact path from or another error occurred.");
+            return null;
         }
 
         if (!StringUtils.isBlank(artifactId) && !StringUtils.isBlank((groupId))) {

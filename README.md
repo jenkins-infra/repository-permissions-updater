@@ -63,17 +63,28 @@ Create a new YAML file similar to existing files.
 
 Edit the `developers` list in the YAML file for the plugin.
 
+### Remove uploaders from an existing plugin
+
+Remove entries from the `developers` list.
+
 ### Deprecating a plugin
 
-Remove the YAML file. The next synchronization will remove permissions for the plugin.
+See [the documentation on jenkins.io](https://www.jenkins.io/doc/developer/plugin-governance/deprecating-or-removing-plugin/).
+Do not delete YAML files from this repository.
 
-### Renaming a plugin
+### Changing plugin ID
 
-Rename and edit the existing permissions file, changing both `name` and the last `path` component.
+Jenkins cannot handle plugin renames, so if a release of the plugin has been published already, it's not possible to rename it.
+A plugin can theoretically be replaced by a new one with a different ID, but this is difficult to get right (e.g., when both plugins are installed at the same time).
+
+If the plugin _hasn't_ been released yet, you can just rename and edit the existing permissions file, changing the `name` component.
+You may also edit the `github` component, if you wish to rename the repository.
 
 ### Changing a plugin's `groupId`
 
-Change the `paths` to match the new Maven coordinates, or, if further uploads for the old coordinates are expected, add a new list entry.
+Changing the `paths` or modifying the `<artifactId>` in the plugin `pom.xml` is highly discouraged.  
+Modifying the path will break any Maven dependencies from other plugins.
+Altering the `artifactId` means changing the identifier by which the Jenkins plugin manager differentiates one plugin from others, and will cause chaos for users who have already installed it under the old name.
 
 Managing Continuous Delivery (JEP-229 CD)
 -----------------------------------------
@@ -88,7 +99,7 @@ cd:
 ```
 
 **IMPORTANT:**
-When using JEP-229 CD, every committer to your repository can create new releases by merging pull requests.
+When using JEP-229 CD, [every committer to your repository](https://www.jenkins.io/doc/developer/publishing/source-code-hosting/) can create new releases by merging pull requests.
 As a result, the list of maintainer accounts maintained in your plugin's YAML file is no longer the single reference on who can publish new releases.
 Be sure to check [which users have commit access](https://www.jenkins.io/doc/developer/publishing/source-code-hosting/) to your repository and remove any that are unexpected before enabling CD, as well as any unexpected [deploy keys](https://docs.github.com/en/developers/overview/managing-deploy-keys).
 Additionally, the users listed in this repository still serve as the contacts for security issues and plugin/component governance questions.

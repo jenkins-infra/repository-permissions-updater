@@ -5,7 +5,6 @@ issues:
   - jira: '18051'  # scoring-load-balancer-plugin
 paths:
   - "jp/ikedam/jenkins/plugins/scoring-load-balancer"
-developers:
-  - "notmyfault"
+developers: []
 cd:
   enabled: true
