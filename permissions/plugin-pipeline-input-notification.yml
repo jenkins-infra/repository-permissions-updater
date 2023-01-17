@@ -1,0 +1,9 @@
+---
+name: "pipeline-input-notification"
+github: &GH "jenkinsci/pipeline-input-notification-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-input-notification"
+developers:
+- "jasperyue"
+issues:
+  - github: *GH
