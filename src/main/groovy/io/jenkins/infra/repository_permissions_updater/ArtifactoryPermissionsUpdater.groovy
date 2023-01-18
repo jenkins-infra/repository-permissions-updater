@@ -266,7 +266,7 @@ class ArtifactoryPermissionsUpdater {
                                         """
                                 ${developer} needs to log in to [Jira](https://issues.jenkins.io/)
 
-                                We resync our Jira user list bihourly, so you will need to wait some time before rebuilding your pull request.
+                                We resync our Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
                                 The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
 
                                 Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
