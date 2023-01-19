@@ -2,8 +2,7 @@
 name: "ascii-magician"
 github: &GH "jenkinsci/ascii-magician-plugin"
 paths:
-# Blocked for https://github.com/jenkinsci/ascii-magician-plugin/issues/1
-- "io/jenkins/plugins/ascii-magician-releaseblock"
+- "io/jenkins/plugins/ascii-magician"
 developers:
 - "kadkoda"
 - "ilay_goldman"
