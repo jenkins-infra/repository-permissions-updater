@@ -1,10 +1,7 @@
 ---
-name: "plugins-compat-tester"
+name: "plugins-compat-tester-cli"
 github: "jenkinsci/plugin-compat-tester"
 paths:
-  - "org/jenkins-ci/tests/plugins-compat-tester"
-  - "org/jenkins-ci/tests/plugins-compat-tester-aggregator"
-  - "org/jenkins-ci/tests/plugins-compat-tester-model"
   - "org/jenkins-ci/tests/plugins-compat-tester-cli"
 cd:
   enabled: true
