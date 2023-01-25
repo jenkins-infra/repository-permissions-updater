@@ -1,0 +1,7 @@
+---
+name: "devops-portal"
+github: "rbello/jenkins-plugin-devops-portal"
+paths:
+  - "io/jenkins/plugins/devops-portal"
+developers:
+  - "rbello"
