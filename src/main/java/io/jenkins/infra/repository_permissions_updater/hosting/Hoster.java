@@ -129,7 +129,7 @@ public class Hoster {
                     + "https://github.com/jenkinsci/" + forkTo
                     + issueTrackerText
                     + prDescription
-                    + "\n\nPlease [delete your original repository](" + forkFrom + "/settings) (if there are no other forks), under 'Danger Zone', so that the jenkinsci organization repository "
+                    + "\n\nPlease [delete your original repository](" + forkFrom + "/settings?confirm_delete=yes) (if there are no other forks), under 'Danger Zone', so that the jenkinsci organization repository "
                     + "is the definitive source for the code. If there are other forks, please contact GitHub support to make the jenkinsci repo the root of the fork network (mention that Jenkins approval was given in support request 569994). "
                     + "Also, please make sure you properly follow the [documentation on documenting your plugin](https://jenkins.io/doc/developer/publishing/documentation/) "
                     + "so that your plugin is correctly documented. \n\n"
