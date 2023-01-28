@@ -6,5 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ansible"
 developers:
+  - "jonesbusy"
   - "sirot"
   - "escoem"
