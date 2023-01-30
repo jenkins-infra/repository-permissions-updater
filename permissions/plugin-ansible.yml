@@ -5,6 +5,8 @@ issues:
   - jira: '20624'  # ansible-plugin
 paths:
   - "org/jenkins-ci/plugins/ansible"
+cd:
+  enabled: true
 developers:
   - "jonesbusy"
   - "sirot"
