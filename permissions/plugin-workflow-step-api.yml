@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/workflow/workflow-step-api"
 developers:
   - "jglick"
-  - "kohsuke"
   - "abayer"
   - "svanoort"
   - "rsandell"

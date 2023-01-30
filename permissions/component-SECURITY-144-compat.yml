@@ -5,4 +5,3 @@ paths:
   - "org/jenkins-ci/SECURITY-144-compat"
 developers:
   - "jglick"
-  - "kohsuke"

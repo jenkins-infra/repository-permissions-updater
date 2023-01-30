@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/docker-commons"
 developers:
   - "jglick"
-  - "kohsuke"
   - "oleg_nenashev"
   - "rsandell"
   - "dnusbaum"

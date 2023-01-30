@@ -4,4 +4,3 @@ paths:
   - "org/jenkins-ci/plugins/workflow/workflow-pom"
 developers:
   - "jglick"
-  - "kohsuke"

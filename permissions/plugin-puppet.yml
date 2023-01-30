@@ -5,5 +5,4 @@ issues:
   - jira: '18727'  # puppet-plugin
 paths:
   - "org/jenkins-ci/plugins/puppet"
-developers:
-  - "kohsuke"
+developers: []

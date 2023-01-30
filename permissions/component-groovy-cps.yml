@@ -5,7 +5,6 @@ paths:
   - "com/cloudbees/groovy-cps"
 developers:
   - "jglick"
-  - "kohsuke"
   - "abayer"
   - "svanoort"
   - "rsandell"

@@ -5,7 +5,6 @@ issues:
   - jira: '18726'  # deployment-notification-plugin
 paths:
   - "org/jenkins-ci/plugins/deployment-notification"
-developers:
-  - "kohsuke"
+developers: []
 cd:
   enabled: true

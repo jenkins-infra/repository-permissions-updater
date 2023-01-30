@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/workflow/workflow-cps-global-lib"
 developers:
   - "jglick"
-  - "kohsuke"
   - "abayer"
   - "svanoort"
   - "dnusbaum"

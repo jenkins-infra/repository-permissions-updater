@@ -4,6 +4,5 @@ github: "jenkinsci/jenkins"
 paths:
   - "org/jenkins-ci/main/jenkins-bom"
 developers:
-  - "kohsuke"
   - "teilo"
   - "releasebot"

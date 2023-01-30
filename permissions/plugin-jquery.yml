@@ -5,8 +5,7 @@ issues:
   - jira: '16017'  # jquery-plugin
 paths:
   - "org/jenkins-ci/plugins/jquery"
-developers:
-  - "kohsuke"
+developers: []
 security:
   contacts:
     jira: "cloudbees_security_members"

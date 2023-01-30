@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/workflow/workflow-basic-steps"
 developers:
   - "jglick"
-  - "kohsuke"
   - "abayer"
   - "svanoort"
   - "dnusbaum"

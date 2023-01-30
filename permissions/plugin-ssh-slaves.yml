@@ -8,7 +8,6 @@ paths:
 developers:
   - "andresrc"
   - "jglick"
-  - "kohsuke"
   - "oleg_nenashev"
   - "ifernandezcalvo"
 security:
