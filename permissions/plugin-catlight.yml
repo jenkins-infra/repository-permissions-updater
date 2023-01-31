@@ -8,3 +8,5 @@ developers:
 - "catlight"
 issues:
   - github: *GH
+cd:
+  enabled: true
