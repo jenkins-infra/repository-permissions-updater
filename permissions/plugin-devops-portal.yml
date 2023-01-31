@@ -1,0 +1,9 @@
+---
+name: "devops-portal"
+github: &GH "jenkinsci/devops-portal-plugin"
+paths:
+- "io/jenkins/plugins/devops-portal"
+developers:
+- "rbello"
+issues:
+  - github: *GH
