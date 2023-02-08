@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/radargun"
 developers:
   - "vjuranek"
+  - "diegolovison"  
