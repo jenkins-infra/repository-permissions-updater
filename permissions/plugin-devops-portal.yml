@@ -7,3 +7,5 @@ developers:
 - "rbello"
 issues:
   - github: *GH
+cd:
+  enabled: true
