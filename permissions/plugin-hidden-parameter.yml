@@ -9,3 +9,5 @@ developers:
   - "yangli"
   - "madsjakobsen"
   - "jonesbusy"
+cd:
+  enabled: true
