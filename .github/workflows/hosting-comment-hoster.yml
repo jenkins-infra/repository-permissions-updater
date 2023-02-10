@@ -13,17 +13,6 @@ jobs:
     outputs:
       actor_in_hosting_team: ${{ steps.checkUserMember.outputs.isTeamMember }}
     steps:
-      - name: Ack
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const {owner, repo} = context.issue
-            github.rest.reactions.createForIssueComment({
-              owner,
-              repo,
-              comment_id: context.payload.comment.id,
-              content: "+1",
-            });
       - uses: tspascoal/get-user-teams-membership@v2
         id: checkUserMember
         with:
@@ -35,6 +24,17 @@ jobs:
     needs: [validate]
     if: needs.validate.outputs.actor_in_hosting_team == 'true'
     steps:
+      - name: Ack
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const {owner, repo} = context.issue
+            github.rest.reactions.createForIssueComment({
+              owner,
+              repo,
+              comment_id: context.payload.comment.id,
+              content: "+1",
+            });
       - uses: actions/checkout@v3
         with:
           ref: 'master'
