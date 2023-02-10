@@ -1,0 +1,9 @@
+---
+name: "codethreat-scanner"
+github: &GH "jenkinsci/codethreat-scanner-plugin"
+paths:
+- "io/jenkins/plugins/codethreat-scanner"
+developers:
+- "codethreat"
+issues:
+  - github: *GH
