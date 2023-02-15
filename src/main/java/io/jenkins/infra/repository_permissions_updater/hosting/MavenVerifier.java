@@ -133,7 +133,7 @@ public class MavenVerifier implements BuildSystemVerifier {
         try {
             String groupId = model.getGroupId();
             if(StringUtils.isNotBlank(groupId)) {
-                if (groupId.equals("org.jenkins-ci.plugins") || !groupId.equals("io.jenkins.plugins")) {
+                if (!groupId.equals("io.jenkins.plugins")) {
                     hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, SHOULD_BE_IO_JENKINS_PLUGINS, groupId));
                 }
             } else {
