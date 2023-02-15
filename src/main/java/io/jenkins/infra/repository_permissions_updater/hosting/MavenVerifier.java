@@ -39,7 +39,7 @@ public class MavenVerifier implements BuildSystemVerifier {
     public static final String SPECIFY_LICENSE = "Please specify a license in your pom.xml file using the &lt;licenses&gt; tag. See https://maven.apache.org/pom.html#Licenses for more information.";
     public static final String MISSING_POM_XML = "No pom.xml found in root of project, if you are using a different build system, or this is not a plugin, you can disregard this message";
 
-    public static final String SHOULD_BE_IO_JENKINS_PLUGINS = "The &lt;groupId&gt; from the pom.xml should be `io.jenkins.plugins` instead of `org.jenkins-ci.plugins`";
+    public static final String SHOULD_BE_IO_JENKINS_PLUGINS = "The &lt;groupId&gt; from the pom.xml should be `io.jenkins.plugins` instead of `%s`";
 
     @Override
     public void verify(HostingRequest issue, HashSet<VerificationMessage> hostingIssues) throws IOException {
@@ -133,8 +133,8 @@ public class MavenVerifier implements BuildSystemVerifier {
         try {
             String groupId = model.getGroupId();
             if(StringUtils.isNotBlank(groupId)) {
-                if(groupId.equals("org.jenkins-ci.plugins")) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, SHOULD_BE_IO_JENKINS_PLUGINS));
+                if (!groupId.equals("io.jenkins.plugins")) {
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, SHOULD_BE_IO_JENKINS_PLUGINS, groupId));
                 }
             } else {
                 Parent parent = model.getParent();
