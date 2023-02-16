@@ -1,0 +1,9 @@
+---
+name: "add-changes-to-build-changelog"
+github: &GH "jenkinsci/add-changes-to-build-changelog-plugin"
+paths:
+- "io/jenkins/plugins/add-changes-to-build-changelog"
+developers:
+- "shingo_d"
+issues:
+  - github: *GH
