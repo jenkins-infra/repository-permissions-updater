@@ -7,3 +7,5 @@ developers:
 - "shingo_d"
 issues:
   - github: *GH
+cd:
+  enabled: true
