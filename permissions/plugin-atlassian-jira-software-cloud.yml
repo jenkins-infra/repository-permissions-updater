@@ -6,7 +6,6 @@ issues:
 paths:
   - "com/atlassian/jira/software/cloud/jenkins/atlassian-jira-software-cloud"
 developers:
-  - "lenin_atlassian"
   - "bgvozdev"
   - "thombergs"
   - "atrigueiro"
