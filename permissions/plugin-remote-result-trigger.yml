@@ -1,0 +1,9 @@
+---
+name: "remote-result-trigger"
+github: &GH "jenkinsci/remote-result-trigger-plugin"
+paths:
+- "io/jenkins/plugins/remote-result-trigger"
+developers:
+- "itfsw"
+issues:
+  - github: *GH
