@@ -1,11 +1,9 @@
 name: Hosting hoster
-
 on:
   issue_comment:
     types:
       - created
       - edited
-
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -13,7 +11,7 @@ jobs:
     outputs:
       actor_in_hosting_team: ${{ steps.checkUserMember.outputs.isTeamMember }}
     steps:
-      - uses: tspascoal/get-user-teams-membership@v2
+      - uses: tspascoal/get-user-teams-membership@37c08f7b52a72ca95d12af2e7ab2553ca9adf13b # v2
         id: checkUserMember
         with:
           username: ${{ github.actor }}
