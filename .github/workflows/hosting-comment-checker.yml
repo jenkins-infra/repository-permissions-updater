@@ -1,11 +1,9 @@
 name: Hosting re-checker
-
 on:
   issue_comment:
     types:
       - created
       - edited
-
 jobs:
   hosting:
     runs-on: ubuntu-latest
