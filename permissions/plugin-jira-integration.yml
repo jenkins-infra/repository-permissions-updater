@@ -1,0 +1,9 @@
+---
+name: "jira-integration"
+github: &GH "jenkinsci/jira-integration-plugin"
+paths:
+- "io/jenkins/plugins/jira-integration"
+developers:
+- "markrekveld"
+issues:
+  - github: *GH
