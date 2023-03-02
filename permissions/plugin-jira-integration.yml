@@ -7,3 +7,5 @@ developers:
 - "markrekveld"
 issues:
   - github: *GH
+cd:
+  enabled: true
