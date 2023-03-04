@@ -1,0 +1,9 @@
+---
+name: "apache-httpcomponents-client-5-api"
+github: &GH "jenkinsci/apache-httpcomponents-client-5-api-plugin"
+paths:
+- "io/jenkins/plugins/apache-httpcomponents-client-5-api"
+developers:
+- "strangelookingnerd"
+issues:
+  - github: *GH
