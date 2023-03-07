@@ -5,9 +5,4 @@ paths:
   - "org/jvnet"
   - "org/kohsuke"
 developers:
-  - "basil"
-  - "timja"
-  - "oleg_nenashev"
-  - "jglick"
-  - "batmat"
-  - "markewaite"
+  - "@core"
