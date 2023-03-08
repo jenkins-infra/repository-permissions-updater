@@ -1,5 +1,8 @@
 ---
 name: "bootstraped-multi-test-results-report"
+github: &gh "jenkinsci/bootstraped-multi-test-results-report-plugin"
+issues:
+  - github: *gh
 paths:
   - "com/github/bogdanlivadariu/bootstraped-multi-test-results-report"
 developers:
