@@ -5,6 +5,8 @@ issues:
   - jira: '20323'  # authentication-tokens-plugin
 paths:
   - "org/jenkins-ci/plugins/authentication-tokens"
+cd:
+  enabled: true
 developers:
   - "alecharp"
   - "batmat"
@@ -13,6 +15,7 @@ developers:
   - "mramonleon"
   - "rsandell"
   - "jglick"
+  - "teilo"
 security:
   contacts:
     jira: "cloudbees_security_members"
