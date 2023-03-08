@@ -5,6 +5,8 @@ issues:
   - jira: '19822'  # unique-id-plugin
 paths:
   - "org/jenkins-ci/plugins/unique-id"
+cd:
+  enabled: true
 developers:
   - "andresrc"
   - "oleg_nenashev"
