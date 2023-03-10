@@ -8,3 +8,5 @@ developers:
 - "avie"
 issues:
   - github: *GH
+cd:
+  enabled: true
