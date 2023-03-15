@@ -7,3 +7,4 @@ paths:
   - "io/jenkins/plugins/h2-api"
 developers:
   - "cleclerc"
+  - "timja"
