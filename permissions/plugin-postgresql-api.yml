@@ -8,3 +8,5 @@ paths:
 developers:
   - "cleclerc"
   - "timja"
+cd:
+  enabled: true
