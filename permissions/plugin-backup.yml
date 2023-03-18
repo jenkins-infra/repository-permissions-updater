@@ -7,5 +7,4 @@ paths:
   - "org/jvnet/hudson/plugins/backup"
 developers:
   - "jm_meessen"
-  - "markewaite"
   - "poddingue"
