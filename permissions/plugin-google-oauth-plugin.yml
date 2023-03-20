@@ -16,6 +16,7 @@ developers:
   - "batmat"
   - "teilo"
   - "rsandell"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"
