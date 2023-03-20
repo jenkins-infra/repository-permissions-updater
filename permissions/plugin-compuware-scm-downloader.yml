@@ -4,6 +4,7 @@ github: "jenkinsci/compuware-scm-downloader-plugin"
 issues:
   - jira: '21125'  # compuware-scm-downloader-plugin
 paths:
-  - "com/compuware/jenkins/compuware-scm-downloader"
+  # New releases blocked due to non-free license, see 2023-03-20 project meeting
+  - "com/compuware/jenkins/compuware-scm-downloader-releaseblock"
 developers:
   - "cpwr_jenkins"

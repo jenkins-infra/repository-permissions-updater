@@ -4,6 +4,7 @@ github: "jenkinsci/compuware-ispw-operations-plugin"
 issues:
   - jira: '23423'  # compuware-ispw-operations-plugin
 paths:
-  - "com/compuware/jenkins/compuware-ispw-operations"
+  # New releases blocked due to non-free license, see 2023-03-20 project meeting
+  - "com/compuware/jenkins/compuware-ispw-operations-releaseblock"
 developers:
   - "cpwr_jenkins"
