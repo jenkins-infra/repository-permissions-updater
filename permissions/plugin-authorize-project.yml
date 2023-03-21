@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/authorize-project"
 developers:
   - "ikedam"
+  - "markewaite"
   # Not a maintainer, just tables-to-divs fixes
   - "oleg_nenashev"
