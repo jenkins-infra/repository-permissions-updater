@@ -8,5 +8,3 @@ paths:
 developers:
   - "ikedam"
   - "markewaite"
-  # Not a maintainer, just tables-to-divs fixes
-  - "oleg_nenashev"

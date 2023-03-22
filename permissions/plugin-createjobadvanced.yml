@@ -5,6 +5,4 @@ issues:
   - jira: '15737'  # createjobadvanced-plugin
 paths:
   - "org/jenkins-ci/plugins/createjobadvanced"
-developers:
-  # Not a maintainer, just tables-to-divs fixes
-  - "oleg_nenashev"
+developers: []
