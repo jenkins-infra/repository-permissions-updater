@@ -4,7 +4,6 @@ github: "jenkinsci/compuware-common-configuration-plugin"
 issues:
   - jira: '23140'  # compuware-common-configuration-plugin
 paths:
-  # New releases blocked due to non-free license, see 2023-03-20 project meeting
-  - "com/compuware/jenkins/compuware-common-configuration-releaseblock"
+  - "com/compuware/jenkins/compuware-common-configuration"
 developers:
   - "cpwr_jenkins"
