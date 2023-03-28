@@ -1,0 +1,22 @@
+---
+name: "groovy-cps-dgm-builder"
+github: "jenkinsci/workflow-cps-plugin"
+paths:
+  - "com/cloudbees/groovy-cps-dgm-builder"
+developers:
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "svanoort"
+  - "rsandell"
+  - "dnusbaum"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
+  - "teilo"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true
