@@ -6,6 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/global-build-stats"
 developers:
-  - "dhinske"
+  - "victor_yousician"
 cd:
   enabled: true
