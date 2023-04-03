@@ -12,3 +12,5 @@ developers:
   - "shikhag"
   - "pbaker"
   - "lukej7"
+cd:
+  enabled: true
