@@ -2,17 +2,11 @@
 name: "openshift-sync"
 github: "jenkinsci/openshift-sync-plugin"
 issues:
-  - jira: '21623'  # openshift-sync-plugin
+  - jira: "21623" # openshift-sync-plugin
 paths:
   - "io/fabric8/jenkins/plugins/openshift-sync"
 developers:
-  - "apoorvaj4"
-  - "gmontero"
-  - "bparees"
-  - "akram"
-  - "jkhelil"
-  - "mbharatk"
-  - "divyanshu42"
+  - "@openshift-developers"
 security:
   contacts:
-    jira: "akram"
+    jira: "coreydaley"
