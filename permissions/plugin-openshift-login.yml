@@ -6,6 +6,7 @@ issues:
 paths:
   - "org/openshift/jenkins/openshift-login"
 developers:
+  - "apoorvaj4"
   - "gmontero"
   - "bparees"
   - "akram"

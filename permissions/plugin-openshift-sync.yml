@@ -6,6 +6,7 @@ issues:
 paths:
   - "io/fabric8/jenkins/plugins/openshift-sync"
 developers:
+  - "apoorvaj4"
   - "gmontero"
   - "bparees"
   - "akram"
