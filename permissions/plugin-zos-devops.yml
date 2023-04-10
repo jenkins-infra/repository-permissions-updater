@@ -1,6 +1,6 @@
 ---
 name: "zdevops"
-github: &gh "jenkinsci/zos-devops-plugin"
+github: &gh "jenkinsci/zdevops-plugin"
 issues:
   - github: *gh
 paths:
