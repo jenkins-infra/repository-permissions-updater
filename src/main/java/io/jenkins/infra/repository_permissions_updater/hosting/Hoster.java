@@ -146,7 +146,7 @@ public class Hoster {
                     + "    [platform: 'linux', jdk: 17],\n"
                     + "    [platform: 'windows', jdk: 11],\n"
                     + "])\n"
-                    + "```\n`"
+                    + "```\n"
                     + "\n\nWelcome aboard!";
 
             // add comment
