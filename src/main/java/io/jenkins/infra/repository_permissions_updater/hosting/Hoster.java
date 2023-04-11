@@ -139,7 +139,14 @@ public class Hoster {
                     + "* [Releasing your plugin](https://jenkins.io/doc/developer/publishing/releasing/)\n"
                     + "\n\nIn order for your plugin to be built by the [Jenkins CI Infrastructure](https://ci.jenkins.io) and check pull requests,"
                     + " please add a [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) to the root of your repository with the following content:\n"
-                    + "`buildPlugin(useContainerAgent: true, jdkVersions: [8, 11])\n`"
+                    + "```\n"
+                    + "buildPlugin(\n"
+                    + "  useContainerAgent: true, // Set to `false` if you need to use Docker for containerized tests\n"
+                    + "  configurations: [\n"
+                    + "    [platform: 'linux', jdk: 17],\n"
+                    + "    [platform: 'windows', jdk: 11],\n"
+                    + "])\n"
+                    + "```\n`"
                     + "\n\nWelcome aboard!";
 
             // add comment
