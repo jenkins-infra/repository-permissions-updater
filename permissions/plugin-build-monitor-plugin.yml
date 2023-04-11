@@ -8,5 +8,6 @@ paths:
   - "org/jenkins-ci/plugins/build-monitor-plugin"
 developers:
   - "janmolak"
+  - "dcendents"
 cd:
   enabled: true
