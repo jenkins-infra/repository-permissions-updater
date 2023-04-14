@@ -8,3 +8,5 @@ paths:
 developers:
   - "batmat"
   - "janasrikanth"
+cd:
+  enabled: true
