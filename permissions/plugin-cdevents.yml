@@ -1,0 +1,9 @@
+---
+name: "cdevents"
+github: &GH "jenkinsci/cdevents-plugin"
+paths:
+- "io/jenkins/plugins/cdevents"
+developers:
+- "plowerjay_fmr"
+issues:
+  - jira: 29125
