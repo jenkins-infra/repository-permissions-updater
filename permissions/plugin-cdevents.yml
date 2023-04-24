@@ -5,5 +5,8 @@ paths:
 - "io/jenkins/plugins/cdevents"
 developers:
 - "plowerjay_fmr"
+- "rorybakerfmr"
+- "elmsdata"
+- "Racey3542"
 issues:
   - jira: 29125
