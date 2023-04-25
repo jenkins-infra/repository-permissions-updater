@@ -1,0 +1,9 @@
+---
+name: "slsa"
+github: &GH "jenkinsci/slsa-plugin"
+paths:
+- "io/jenkins/plugins/slsa"
+developers:
+- "netomi"
+issues:
+  - github: *GH
