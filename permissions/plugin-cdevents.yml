@@ -1,9 +1,14 @@
 ---
 name: "cdevents"
 github: &GH "jenkinsci/cdevents-plugin"
+cd:
+  enabled: true
 paths:
 - "io/jenkins/plugins/cdevents"
 developers:
 - "plowerjay_fmr"
+- "rorybakerfmr"
+- "elmsdata"
+- "racey3542"
 issues:
   - jira: 29125
