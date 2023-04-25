@@ -1,0 +1,9 @@
+---
+name: "mend-cloud-native-security-scanner"
+github: &GH "jenkinsci/mend-cloud-native-security-scanner-plugin"
+paths:
+- "io/jenkins/plugins/mend-cloud-native-security-scanner"
+developers:
+- "yuval_nahari_mend"
+issues:
+  - jira: 29127
