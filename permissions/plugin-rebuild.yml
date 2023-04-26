@@ -10,3 +10,5 @@ developers:
   - "ragesh_nair"
   - "rsandell"
   - "gustafl"
+cd:
+  enabled: true
