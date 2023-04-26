@@ -6,4 +6,5 @@ issues:
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/maven-repo-cleaner"
-developers: []
+developers:
+  - "olamy"
