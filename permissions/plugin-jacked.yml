@@ -4,6 +4,6 @@ github: &GH "jenkinsci/jacked-plugin"
 paths:
 - "io/jenkins/plugins/jacked"
 developers:
-- "sairen-carbonetes"
+- "sairen_carbonetes"
 issues:
   - github: *GH
