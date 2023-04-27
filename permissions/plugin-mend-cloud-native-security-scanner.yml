@@ -5,5 +5,7 @@ paths:
 - "io/jenkins/plugins/mend-cloud-native-security-scanner"
 developers:
 - "yuval_nahari_mend"
+cd:
+  enabled: true
 issues:
   - jira: 29127
