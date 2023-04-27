@@ -8,5 +8,6 @@ paths:
   - "org/jenkins-ci/plugins/lucene-search"
 developers:
   - "markch"
+  - "tdraebing"
 cd:
   enabled: true
