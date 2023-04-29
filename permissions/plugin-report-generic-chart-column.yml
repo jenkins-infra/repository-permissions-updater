@@ -1,0 +1,9 @@
+---
+name: "report-generic-chart-column"
+github: &GH "jenkinsci/report-generic-chart-column-plugin"
+paths:
+- "io/jenkins/plugins/report-generic-chart-column"
+developers:
+- "judovana"
+issues:
+  - github: *GH
