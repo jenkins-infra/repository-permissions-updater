@@ -6,5 +6,4 @@ issues:
 paths:
   - "io/jenkins/plugins/servicenow-cicd"
 developers:
-  - "basil"
   - "chiarnglin"
