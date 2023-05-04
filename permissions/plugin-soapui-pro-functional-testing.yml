@@ -6,9 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/soapui-pro-functional-testing"
 developers:
-  - "olesia_mitina"
-  - "ilyaavdeev"
-  - "alexandernikitin"
-  - "alexey_bortulev"
-  - "alexander_eremeev"
-  - "alexanderpaeshin"
+  - "rafal_mroczkowski_smartbear"
+  - "jakubpkochanski"
+  - "przemyslawniedorozow"
+  - "lukaszm_sb"
+  - "michal_lemanski"
