@@ -10,3 +10,5 @@ developers:
 security:
   contacts:
     jira: "coreydaley"
+cd:
+  enabled: true
