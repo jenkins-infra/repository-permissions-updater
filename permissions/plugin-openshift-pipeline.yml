@@ -2,15 +2,11 @@
 name: "openshift-pipeline"
 github: "jenkinsci/openshift-pipeline-plugin"
 issues:
-  - jira: '21023'  # openshift-pipeline-plugin
+  - jira: "21023" # openshift-pipeline-plugin
 paths:
   - "com/openshift/jenkins/openshift-pipeline"
 developers:
-  - "gmontero"
-  - "bparees"
-  - "rymurphy"
-  - "akram"
-  - "jkhelil"
+  - "@openshift-developers"
 security:
   contacts:
-    jira: "akram"
+    jira: "coreydaley"
