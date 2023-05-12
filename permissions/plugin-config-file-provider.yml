@@ -5,6 +5,8 @@ issues:
   - jira: '16140'  # config-file-provider-plugin
 paths:
   - "org/jenkins-ci/plugins/config-file-provider"
+cd:
+  enabled: true
 developers:
   - "imod"
   - "egutierrez"
