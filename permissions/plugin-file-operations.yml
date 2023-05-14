@@ -8,3 +8,5 @@ paths:
 developers:
   - "pskumar448"
   - "jonesbusy"
+cd:
+  enabled: true
