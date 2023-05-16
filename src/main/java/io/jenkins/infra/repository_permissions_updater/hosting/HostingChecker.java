@@ -81,7 +81,8 @@ public class HostingChecker {
             msg.append("\nYou can re-trigger a check by editing your hosting request or by commenting `/hosting re-check`");
         } else {
             msg.append("It looks like you have everything in order for your hosting request. "
-                    + "A human volunteer will check over things that I am not able to check for "
+                    + "A member of the [Jenkins hosting team](https://www.jenkins.io/project/teams/hosting/#members-of-the-hosting-team) "
+                    + "will check over things that I am not able to check"
                     + "(code review, README content, etc) and process the request as quickly as possible. "
                     + "Thank you for your patience.\n")
                     .append("\nHosting team members can host this request with `/hosting host`");
