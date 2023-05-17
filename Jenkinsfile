@@ -77,7 +77,9 @@ node('maven-11') {
                         string(credentialsId: 'artifactoryAdminToken', variable: 'ARTIFACTORY_TOKEN'),
                         usernamePassword(credentialsId: 'jenkins-infra-bot-github-token', passwordVariable: 'GITHUB_TOKEN', usernameVariable: 'GITHUB_USERNAME')
                 ]) {
-                    sh 'java ' + javaArgs
+                    retry(conditions: [agent(), nonresumable()], count: 2) {
+                        sh 'java ' + javaArgs
+                    }
                 }
             }
         }
