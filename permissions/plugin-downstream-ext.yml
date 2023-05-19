@@ -6,5 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/downstream-ext"
 developers: []
-cd:
-  enabled: true
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

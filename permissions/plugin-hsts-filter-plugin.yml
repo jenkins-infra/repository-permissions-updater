@@ -6,5 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hsts-filter-plugin"
 developers: []
-cd:
-  enabled: true
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

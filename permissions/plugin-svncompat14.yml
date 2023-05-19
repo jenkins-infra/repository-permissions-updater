@@ -6,5 +6,6 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/svncompat14"
 developers: []
-cd:
-  enabled: true
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true
