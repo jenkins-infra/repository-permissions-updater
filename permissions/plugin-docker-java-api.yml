@@ -6,6 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/docker-java-api"
 developers:
+  - "basil"
   - "ydubreuil"
   - "ericcitaire"
 cd:
