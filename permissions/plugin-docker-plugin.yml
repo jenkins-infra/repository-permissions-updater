@@ -8,6 +8,7 @@ paths:
   - "com/nirima/docker-plugin"
   - "io/jenkins/docker/docker-plugin"
 developers:
+  - "basil"
   - "integer"
   - "magnayn"
   - "pjdarton"
