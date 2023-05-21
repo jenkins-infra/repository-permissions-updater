@@ -1,0 +1,9 @@
+---
+name: "customizable-header"
+github: &GH "jenkinsci/customizable-header-plugin"
+paths:
+- "io/jenkins/plugins/customizable-header"
+developers:
+- "mawinter69"
+issues:
+  - github: *GH
