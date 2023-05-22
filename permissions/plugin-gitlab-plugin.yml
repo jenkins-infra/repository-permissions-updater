@@ -9,7 +9,6 @@ paths:
   - "org/jenkins-ci/plugins/gitlab-plugin"
 developers:
   - "elbidouilleur"  # jenkins.io/jira Username MaximeMazet Github username
-  - "jm_meessen"
   - "markewaite"
   - "poddingue"
   - "krisstern"
