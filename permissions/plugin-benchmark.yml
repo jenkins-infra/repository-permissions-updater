@@ -8,6 +8,5 @@ paths:
   - "org/jenkins-ci/plugins/benchmark"
 developers:
   - "damercie"
-  - "notmyfault"
 cd:
   enabled: true
