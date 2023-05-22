@@ -9,3 +9,6 @@ paths:
 developers:
   - "batmat"
   - "oleg_nenashev"
+  - "notmyfault"
+cd:
+  enabled: true
