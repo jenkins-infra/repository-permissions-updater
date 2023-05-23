@@ -10,3 +10,6 @@ developers:
 - "jenkinstest_yu"
 issues:
   - jira: 29128
+cd:
+  enabled: true
+
