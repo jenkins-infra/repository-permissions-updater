@@ -1,0 +1,9 @@
+---
+name: "aribot"
+github: &GH "jenkinsci/aribot-plugin"
+paths:
+- "io/jenkins/plugins/aribot"
+developers:
+- "tejs"
+issues:
+  - jira: 29129
