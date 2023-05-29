@@ -7,3 +7,5 @@ developers:
 - "tejs"
 issues:
   - jira: 29129
+cd:
+  enabled: true
