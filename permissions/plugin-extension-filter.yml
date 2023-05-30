@@ -5,4 +5,5 @@ issues:
   - jira: '17511'  # extension-filter-plugin
 paths:
   - "org/jenkins-ci/plugins/extension-filter"
-developers: []
+developers:
+  - "jonesbusy"
