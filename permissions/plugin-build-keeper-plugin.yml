@@ -6,5 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-keeper-plugin"
 developers: []
-cd:
-  enabled: true
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

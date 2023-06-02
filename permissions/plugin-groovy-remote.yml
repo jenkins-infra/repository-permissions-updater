@@ -6,5 +6,6 @@ issues:
 paths:
   - "org/jenkinsci/plugins/groovy-remote"
 developers: []
-cd:
-  enabled: true
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

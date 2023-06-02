@@ -6,5 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/text-finder-run-condition"
 developers: []
-cd:
-  enabled: true
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

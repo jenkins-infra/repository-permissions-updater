@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/sbt"
   - "org/jvnet/hudson/plugins/sbt"
 developers: []
-cd:
-  enabled: true
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

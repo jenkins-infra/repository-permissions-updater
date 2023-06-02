@@ -6,5 +6,6 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/downstream-buildview"
 developers: []
-cd:
-  enabled: true
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

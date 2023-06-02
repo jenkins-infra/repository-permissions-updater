@@ -7,5 +7,6 @@ paths:
   - "hudson/plugins/copyProjectLink/copy-project-link"
   - "org/jenkins-ci/plugins/copy-project-link"
 developers: []
-cd:
-  enabled: true
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true
