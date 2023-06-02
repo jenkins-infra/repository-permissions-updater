@@ -27,7 +27,7 @@ public class HostingChecker {
 
     public static final String INVALID_FORK_FROM = "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
-    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 361, 4);
+    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 387, 3);
 
     public static void main(String[] args) throws IOException {
         new HostingChecker().checkRequest(Integer.parseInt(args[0]));
