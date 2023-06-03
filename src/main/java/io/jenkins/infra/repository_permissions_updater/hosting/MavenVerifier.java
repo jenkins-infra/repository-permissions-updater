@@ -32,7 +32,7 @@ public class MavenVerifier implements BuildSystemVerifier {
     private static final int MAX_LENGTH_OF_ARTIFACT_ID = 37;
     private static final Logger LOGGER = LoggerFactory.getLogger(MavenVerifier.class);
 
-    public static final Version LOWEST_PARENT_POM_VERSION = new Version(4, 64);
+    public static final Version LOWEST_PARENT_POM_VERSION = new Version(4, 65);
     public static final Version PARENT_POM_WITH_JENKINS_VERSION = new Version(2);
 
     public static final String INVALID_POM = "The pom.xml file in the root of the origin repository is not valid";
