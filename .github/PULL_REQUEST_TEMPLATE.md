@@ -16,7 +16,8 @@ Make sure to implement all relevant entries (see section headers to when they ap
 
 ### When enabling automated releases (cd: true)
 
-- [ ] Add a link to the pull request, which enables continuous delivery for your plugin or component.  
+- [ ] Add a link to the pull request, which enables continuous delivery for your plugin or component. Don't merge the PR yet.  
+In case of changes requested by the hosting team, an open PR facilitates future reviews, without derailing work across multiple PRs.
 Follow the [documentation](https://www.jenkins.io/doc/developer/publishing/releasing-cd/) to ensure, your pull request is set up properly.
 
 ### When adding new uploaders (this includes newly created permissions files)
