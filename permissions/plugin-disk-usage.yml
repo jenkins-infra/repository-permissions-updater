@@ -7,6 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/disk-usage"
   - "org/jvnet/hudson/plugins/disk-usage"
 developers:
-  - "vjuranek"
-  - "oleg_nenashev"
   - "froque"
