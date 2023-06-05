@@ -4,6 +4,5 @@ paths:
   - "org/jenkins-ci/plugins/job-dsl-core"
   - "org/jenkinsci/plugins/job-dsl-core"
 developers:
-  - "basil"
   - "daspilker"
   - "jamietanna"
