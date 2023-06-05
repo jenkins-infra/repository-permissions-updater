@@ -5,5 +5,7 @@ issues:
   - jira: '25629'  # beagle-security-plugin
 paths:
   - "io/jenkins/plugins/beagle-security"
+cd:
+  enabled: true
 developers:
   - "rejah"
