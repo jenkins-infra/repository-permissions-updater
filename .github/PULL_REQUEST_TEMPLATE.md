@@ -1,37 +1,38 @@
-<!-- This PR template only applies to permission changes. Ignore it for changes to the tool updating permissions in Artifactory -->
+# Link to GitHub repository
 
-# Description
+<!-- Provide a link to the plugin or component repository you want to modify -->
 
-<!-- fill in description here, this will at least be a link to a GitHub repository, and often also links to hosting request, and @mentioning other committers/maintainers as per the checklist below -->
+# When modifying release permission
 
-# Submitter checklist for adding or changing permissions
+If you are modifying the release permission of your plugin or component, fill out the following checklist:
 
-<!--
-Make sure to implement all relevant entries (see section headers to when they apply) and mark them as checked (by replacing the space between brackets with an "x").
--->
+<!-- If you're enabling CD only, leave the following checklist blank! -->
 
-### Always
+```[tasklist]
+### Release permission checklist (for submitters)
+- [ ] The usernames of the users added to the "developers" section in the .yml file are the same the users use to log in to [accounts.jenkins.io](https://accounts.jenkins.io/).
+- [ ] All users added have logged in to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io/) once.
+- [ ] I have mentioned an [existing team member](https://github.com/orgs/jenkinsci/teams) of the plugin or component team to approve this request.
+```
 
-- [ ] Add link to plugin/component Git repository in description above
+## When enabling automated releases (cd: true)
 
-### When enabling automated releases (cd: true)
-
-- [ ] Add a link to the pull request, which enables continuous delivery for your plugin or component. Don't merge the PR yet.  
+Follow the [documentation](https://www.jenkins.io/doc/developer/publishing/releasing-cd/) to ensure, your pull request is set up properly. Don't merge it yet.  
 In case of changes requested by the hosting team, an open PR facilitates future reviews, without derailing work across multiple PRs.
-Follow the [documentation](https://www.jenkins.io/doc/developer/publishing/releasing-cd/) to ensure, your pull request is set up properly.
 
-### When adding new uploaders (this includes newly created permissions files)
+### Link to the PR enabling CD in your plugin
 
-- [ ] [Make sure to `@`mention an existing maintainer to confirm the permissions request, if applicable](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
-- [ ] Use the Jenkins community (LDAP) account name in the YAML file, not the GitHub account name
-- [ ] Make sure to `@`mention the users being added so their GitHub account names are known if they require GitHub merge access (see below).
-- [ ] [All newly added users have logged in to Artifactory and Jira at least once](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
+<!-- Provide a link to the pull request containing the necessary changes in your plugin -->
 
-### Reviewer checklist (not for requesters!)
+```[tasklist]
+### CD checklist (for submitters)
+- [ ] I have provided a link to the pull request in my plugin, which enables CD according to the documentation. 
+```
 
-- [ ] Check this if newly added person also needs to be given merge permission to the GitHub repo (please @ the people/person with their GitHub username in this issue as well). If needed, it can be done using an [IRC Bot command](https://jenkins.io/projects/infrastructure/ircbot/#github-repo-management)
+```[tasklist]
+### Reviewer checklist
 - [ ] Check that the `$pluginId Developers` team has `Admin` permissions while granting the access.
 - [ ] In the case of plugin adoption, ensure that the Jenkins Jira default assignee is either removed or changed to the new maintainer.
 - [ ] If security contacts are changed (this includes add/remove), ping the security officer (currently `@Wadeck`) in this pull request. If an email contact is changed, wait for approval from the security officer.
-
-There are [IRC Bot commands](https://jenkins.io/projects/infrastructure/ircbot/#issue-tracker-management) for it
+```
+There are [IRC Bot commands](https://jenkins.io/projects/infrastructure/ircbot/#issue-tracker-management) for it.
