@@ -1,8 +1,8 @@
 ---
 name: "file-operations"
-github: "jenkinsci/file-operations-plugin"
+github: &GH "jenkinsci/file-operations-plugin"
 issues:
-  - jira: '22428'  # file-operations-plugin
+  - github: *GH
 paths:
   - "sp/sd/file-operations"
 developers:

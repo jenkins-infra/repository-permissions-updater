@@ -1,8 +1,8 @@
 ---
 name: "locale"
-github: "jenkinsci/locale-plugin"
+github: &GH "jenkinsci/locale-plugin"
 issues:
-  - jira: '15557'  # locale-plugin
+  - github: *GH
 paths:
   - "org/jvnet/hudson/plugins/locale"
   - "io/jenkins/plugins/locale"

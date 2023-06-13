@@ -1,8 +1,8 @@
 ---
 name: "ansible"
-github: "jenkinsci/ansible-plugin"
+github: &GH "jenkinsci/ansible-plugin"
 issues:
-  - jira: '20624'  # ansible-plugin
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/ansible"
 cd:

@@ -1,8 +1,8 @@
 ---
 name: "login-theme"
-github: "jenkinsci/login-theme-plugin"
+github: &GH "jenkinsci/login-theme-plugin"
 issues:
-  - jira: '23920'  # login-theme-plugin
+  - github: *GH
 paths:
   - "io/jenkins/plugins/login-theme"
 developers:
