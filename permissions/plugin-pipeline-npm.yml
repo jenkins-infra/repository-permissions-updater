@@ -1,8 +1,8 @@
 ---
 name: "pipeline-npm"
-github: "jenkinsci/pipeline-npm-plugin"
+github: &GH "jenkinsci/pipeline-npm-plugin"
 issues:
-  - jira: '21971'  # pipeline-npm-plugin
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/pipeline-npm"
 cd:
