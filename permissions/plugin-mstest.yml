@@ -4,8 +4,7 @@ github: "jenkinsci/mstest-plugin"
 issues:
   - jira: '15619'  # mstest-plugin
 paths:
-  # Ref SECURITY-2292
-  - "org/jvnet/hudson/plugins/mstest-releaseblocker"
+  - "org/jvnet/hudson/plugins/mstest"
 developers:
   - "nilleb"
   - "jetersen"
