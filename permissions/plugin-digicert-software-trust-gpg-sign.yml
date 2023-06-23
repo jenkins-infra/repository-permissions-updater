@@ -1,0 +1,9 @@
+---
+name: "digicert-software-trust-gpg-sign"
+github: &GH "jenkinsci/digicert-software-trust-gpg-sign-plugin"
+paths:
+- "io/jenkins/plugins/digicert-software-trust-gpg-sign"
+developers:
+- "vmummadi"
+issues:
+  - jira: 29131
