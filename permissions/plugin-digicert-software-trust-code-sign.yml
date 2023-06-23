@@ -1,0 +1,9 @@
+---
+name: "digicert-software-trust-code-sign"
+github: &GH "jenkinsci/digicert-software-trust-code-sign-plugin"
+paths:
+- "io/jenkins/plugins/digicert-software-trust-code-sign"
+developers:
+- "vmummadi"
+issues:
+  - jira: 29130
