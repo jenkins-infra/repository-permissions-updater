@@ -160,7 +160,7 @@
         <dependency>
             <groupId>com.atlassian.jira</groupId>
             <artifactId>jira-rest-java-client-core</artifactId>
-            <version>5.2.2</version>
+            <version>5.2.5</version>
             <exclusions>
                 <exclusion>
                     <groupId>commons-lang</groupId>
