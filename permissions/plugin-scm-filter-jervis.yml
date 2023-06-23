@@ -7,3 +7,5 @@ paths:
   - "io/jenkins/plugins/scm-filter-jervis"
 developers:
   - "sag47"
+cd:
+  enabled: true
