@@ -1,0 +1,10 @@
+---
+name: "global-yaml-properties"
+github: &GH "jenkinsci/global-yaml-properties-plugin"
+paths:
+- "io/jenkins/plugins/global-yaml-properties"
+developers:
+- "vladyslav_kovalov"
+- "berezhinskiy"
+issues:
+  - jira: 29132
