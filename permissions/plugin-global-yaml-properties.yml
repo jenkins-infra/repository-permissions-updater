@@ -8,3 +8,6 @@ developers:
 - "berezhinskiy"
 issues:
   - jira: 29132
+cd:
+  enabled: true
+
