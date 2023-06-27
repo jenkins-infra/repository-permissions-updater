@@ -7,5 +7,5 @@ developers:
 - "vmummadi"
 issues:
   - jira: 29131
-  cd:
+cd:
   enabled: true
