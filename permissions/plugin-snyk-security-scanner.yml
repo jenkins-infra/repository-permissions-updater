@@ -7,10 +7,6 @@ issues:
 paths:
   - "io/snyk/plugins/snyk-security-scanner"
 developers:
-  - "levangig"
-  - "michelkaporinsnyk"
-  - "pavel_snyk"
-  - "www"
   - "asaf92Snyk"
   - "bdoetsch"
   - "jluong"
