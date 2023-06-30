@@ -6,5 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/calendar-view"
 developers:
+  - "basil"
   - "svenschoenung"
   - "malice00"
