@@ -201,7 +201,7 @@
         <dependency>
             <groupId>org.kohsuke</groupId>
             <artifactId>github-api</artifactId>
-            <version>1.314</version>
+            <version>1.315</version>
         </dependency>
         <dependency>
             <groupId>org.javatuples</groupId>
