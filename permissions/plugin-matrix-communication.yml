@@ -1,0 +1,9 @@
+---
+name: "matrix-communication"
+github: &GH "jenkinsci/matrix-communication-plugin"
+paths:
+- "io/jenkins/plugins/matrix-communication"
+developers:
+- "reda_alaoui"
+issues:
+  - github: *GH
