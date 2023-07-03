@@ -7,3 +7,5 @@ developers:
 - "reda_alaoui"
 issues:
   - github: *GH
+cd:
+  enabled: true
