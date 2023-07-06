@@ -7,4 +7,3 @@ paths:
   - "org/kohsuke/stapler/maven-stapler-plugin"
 developers:
   - "@core"
-  - "notmyfault"
