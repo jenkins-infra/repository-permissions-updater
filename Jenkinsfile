@@ -13,7 +13,7 @@ if (!env.CHANGE_ID && (!env.BRANCH_NAME || env.BRANCH_NAME == 'master')) {
 
         // Check for code change every 5 minutes as there are no webhooks on trusted.ci.jenkins.io
         // The goal is to run RPU as soon as possible for any code change
-        triggeres += pollSCM('H/5 * * * *')
+        triggers += pollSCM('H/5 * * * *')
         // Run every 3 hours
         triggers += cron('H H/3 * * *')
     } else {
