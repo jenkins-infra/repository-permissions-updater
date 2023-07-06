@@ -2,9 +2,7 @@ def props = [
         buildDiscarder(logRotator(numToKeepStr: '10'))
 ]
 
-def triggers = [
-        pollSCM('H/2 * * * *')
-]
+def triggers = []
 
 def dryRun = true
 
@@ -13,6 +11,9 @@ if (!env.CHANGE_ID && (!env.BRANCH_NAME || env.BRANCH_NAME == 'master')) {
         // only on trusted.ci, running on master is not a dry-run
         dryRun = false
 
+        // Check for code change every 5 minutes as there are no webhooks on trusted.ci.jenkins.io
+        // The goal is to run RPU as soon as possible for any code change
+        triggers += pollSCM('H/5 * * * *')
         // Run every 3 hours
         triggers += cron('H H/3 * * *')
     } else {
