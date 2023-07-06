@@ -4,6 +4,5 @@ name: "dummy-unused-artifact-name"
 paths:
   - "org/jvnet"
   - "org/kohsuke"
-  - "io/jenkins/tools/maven"
 developers:
   - "@core"
