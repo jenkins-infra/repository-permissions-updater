@@ -1,7 +1,7 @@
 ---
 name: "taglib-xml-writer"
-github: "jenkinsci/maven-jellydoc-plugin"
+github: "jenkinsci/jellydoc-maven-plugin"
 paths:
-  - "org/jvnet/maven-jellydoc-plugin/taglib-xml-writer"
+  - "io/jenkins/tools/maven/jellydoc-maven-plugin/taglib-xml-writer"
 developers:
   - "@core"
