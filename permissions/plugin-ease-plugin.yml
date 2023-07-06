@@ -6,9 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ease-plugin"
 developers:
-  - "kwilson6744"
-  - "oleksiyp"
-  - "rfriedman"
   - "afinley"
   - "jrodriguez"
+  - "matt_pelaggi"
   - "puri"
