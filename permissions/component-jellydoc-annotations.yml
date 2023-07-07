@@ -2,7 +2,7 @@
 name: "jellydoc-annotations"
 github: "jenkinsci/jellydoc-maven-plugin"
 paths:
-  - "io/jenkins/tools/maven/jellydoc-maven-plugin/jellydoc-annotations"
+  - "io/jenkins/tools/maven/jellydoc-annotations"
 developers:
   - "@core"
 cd:
