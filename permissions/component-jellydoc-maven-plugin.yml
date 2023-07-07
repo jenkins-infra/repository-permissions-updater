@@ -5,3 +5,5 @@ paths:
   - "io/jenkins/tools/maven/jellydoc-maven-plugin/jellydoc-maven-plugin"
 developers:
   - "@core"
+cd:
+  enabled: true
