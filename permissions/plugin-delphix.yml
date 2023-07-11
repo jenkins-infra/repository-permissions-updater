@@ -9,4 +9,6 @@ paths:
   - "org/jenkins-ci/plugins/delphix"
 developers:
   - "mcred"
+  - "ankit_patil"
   - "arunskurian"
+  - "n_mathison_delphix"
