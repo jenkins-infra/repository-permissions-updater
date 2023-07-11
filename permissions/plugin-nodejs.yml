@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nodejs"
 developers:
-  - "fcamblor"
   - "nfalco"
 security:
   contacts:
