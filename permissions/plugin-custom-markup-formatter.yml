@@ -1,0 +1,10 @@
+---
+name: "custom-markup-formatter"
+github: &GH "jenkinsci/custom-markup-formatter-plugin"
+paths:
+- "io/jenkins/plugins/custom-markup-formatter"
+developers:
+- "quic_dhapat"
+- "quic_hangdong"
+issues:
+  - github: *GH
