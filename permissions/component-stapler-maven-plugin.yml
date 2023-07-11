@@ -5,7 +5,5 @@ issues:
   - github: *GH
 paths:
   - "io/jenkins/tools/maven/stapler-maven-plugin"
-developers:
-  - "@core"
 cd:
   enabled: true
