@@ -1,9 +1,0 @@
----
-name: "maven-stapler-plugin"
-github: &GH "jenkinsci/maven-stapler-plugin"
-issues:
-  - github: *GH
-paths:
-  - "org/kohsuke/stapler/maven-stapler-plugin"
-developers:
-  - "@core"
