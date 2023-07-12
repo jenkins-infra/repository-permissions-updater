@@ -8,3 +8,5 @@ developers:
 - "quic_hangdong"
 issues:
   - github: *GH
+cd:
+  enabled: true
