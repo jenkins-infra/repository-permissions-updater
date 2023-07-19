@@ -6,7 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/pipeline-cloudwatch-logs"
 cd:
-  true
+  enabled: true
 developers:
   - "jglick"
   - "csanchez"
