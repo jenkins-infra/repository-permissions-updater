@@ -7,6 +7,7 @@ paths:
   - "org/jenkins-ci/plugins/android-emulator"
   - "org/jvnet/hudson/plugins/android-emulator"
 developers:
+  - "basil"
   - "orrc"
   - "nfalco"
   - "poddingue"
