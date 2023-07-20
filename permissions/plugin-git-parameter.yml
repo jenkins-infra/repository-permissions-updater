@@ -7,6 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/git-parameter"
   - "org/jenkins-ci/tools/git-parameter"
 developers:
-  - "basil"
   - "klimas7"
   - "ngiger"
