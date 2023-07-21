@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/android-emulator"
   - "org/jvnet/hudson/plugins/android-emulator"
+cd:
+  enabled: true
 developers:
   - "orrc"
   - "nfalco"
