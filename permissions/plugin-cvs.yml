@@ -8,5 +8,4 @@ paths:
   - "org/jvnet/hudson/plugins/cvs"
 developers:
   - "mc1arke"
-  - "kohsuke"
   - "jglick"

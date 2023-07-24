@@ -5,7 +5,6 @@ paths:
   - "org/jenkins-ci/trilead-ssh2"
   - "org/jvnet/hudson/trilead-ssh2"
 developers:
-  - "kohsuke"
   - "mc1arke"
   - "ifernandezcalvo"
 cd:

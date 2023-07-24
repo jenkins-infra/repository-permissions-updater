@@ -9,7 +9,6 @@ cd:
   enabled: true
 developers:
   - "jglick"
-  - "kohsuke"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"

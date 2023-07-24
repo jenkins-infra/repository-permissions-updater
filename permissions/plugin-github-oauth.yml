@@ -8,7 +8,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/github-oauth"
 developers:
-  - "kohsuke"
   - "sag47"
   - "scurvy"
   - "skottler"

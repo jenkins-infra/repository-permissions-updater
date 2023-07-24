@@ -1,0 +1,6 @@
+---
+name: "localizer"
+paths:
+  - "org/jvnet/localizer/localizer"
+developers:
+  - "kohsuke"

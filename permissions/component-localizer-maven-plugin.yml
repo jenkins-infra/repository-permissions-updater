@@ -1,0 +1,6 @@
+---
+name: "localizer-maven-plugin"
+paths:
+  - "org/jvnet/localizer/localizer-maven-plugin"
+developers:
+  - "kohsuke"

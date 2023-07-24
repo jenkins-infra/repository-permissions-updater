@@ -7,4 +7,3 @@ paths:
   - "org/jvnet/hudson/plugins/monitoring"
 developers:
   - "evernat"
-  - "kohsuke"

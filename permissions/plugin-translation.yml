@@ -7,5 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/translation"
 developers:
   - "jglick"
-  - "kohsuke"
   - "recena"

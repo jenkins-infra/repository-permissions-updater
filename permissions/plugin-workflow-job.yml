@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/workflow/workflow-job"
 developers:
   - "jglick"
-  - "kohsuke"
   - "abayer"
   - "svanoort"
   - "dnusbaum"

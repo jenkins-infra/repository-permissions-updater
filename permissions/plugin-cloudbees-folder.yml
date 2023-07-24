@@ -9,7 +9,6 @@ cd:
   enabled: true
 developers:
   - "jglick"
-  - "kohsuke"
   - "oleg_nenashev"
   - "recena"
   - "dnusbaum"

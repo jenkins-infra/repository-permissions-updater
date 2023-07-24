@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/workflow/workflow-cps"
 developers:
   - "jglick"
-  - "kohsuke"
   - "abayer"
   - "svanoort"
   - "rsandell"

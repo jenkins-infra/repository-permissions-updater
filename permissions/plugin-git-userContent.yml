@@ -5,5 +5,4 @@ issues:
   - jira: '17593'  # git-usercontent-plugin
 paths:
   - "org/jenkins-ci/plugins/git-userContent"
-developers:
-  - "kohsuke"
+developers: []

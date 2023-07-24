@@ -5,5 +5,4 @@ issues:
   - jira: '18825'  # chef-tracking-plugin
 paths:
   - "org/jenkins-ci/plugins/chef-tracking"
-developers:
-  - "kohsuke"
+developers: []
