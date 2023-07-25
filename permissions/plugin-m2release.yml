@@ -7,6 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/m2release/m2release"
   - "org/jvnet/hudson/plugins/m2release/m2release"
 developers:
-  - "basil"
   - "imod"
   - "teilo"
