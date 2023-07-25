@@ -6,5 +6,4 @@ issues:
 paths:
   - "jp/ikedam/jenkins/plugins/extensible-choice-parameter"
 developers:
-  - "basil"
   - "ikedam"
