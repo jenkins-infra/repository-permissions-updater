@@ -6,6 +6,7 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/chucknorris"
 developers:
+  - "basil"
   - "batmat"
   - "oleg_nenashev"
 cd:
