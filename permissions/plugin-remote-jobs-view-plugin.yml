@@ -7,3 +7,5 @@ paths:
   - "com/sap/jenkinsci/remote-jobs-view-plugin"
 developers:
   - "swamy_m_s"
+cd:
+  enabled: true
