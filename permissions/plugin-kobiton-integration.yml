@@ -1,0 +1,10 @@
+---
+name: "kobiton-integration"
+github: &GH "jenkinsci/kobiton-integration-plugin"
+paths:
+- "io/jenkins/plugins/kobiton-integration"
+developers:
+- "kobiton"
+- "huytunguyen"
+issues:
+  - github: *GH
