@@ -8,3 +8,5 @@ developers:
 - "huytunguyen"
 issues:
   - github: *GH
+cd:
+  enabled: true
