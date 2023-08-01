@@ -9,6 +9,7 @@ paths:
   - "org/jenkins-ci/plugins/github-oauth"
 developers:
   - "kohsuke"
+  - "krzwrd"
   - "sag47"
   - "scurvy"
   - "skottler"
