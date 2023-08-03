@@ -9,6 +9,7 @@ paths:
   - "org/jvnet/hudson/plugins/ansicolor"
 developers:
   - "anyfoo"
+  - "basil"
   - "dblock"
   - "qvicksilver"
   - "joemerten"
