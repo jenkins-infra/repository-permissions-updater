@@ -8,4 +8,5 @@ paths:
   - "org/jenkinsci/plugins/doclinks"
   - "org/jvnet/hudson/plugins/doclinks"
 developers:
+  - "basil"
   - "ikedam"
