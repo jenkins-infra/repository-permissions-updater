@@ -6,5 +6,12 @@ paths:
 developers:
   - "basil"
   - "carroll"
+  - "teilo"
+  - "rarabaolaza"
+  - "rsandell"
+  - "olamy"
+  - "julieheard"
+  - "ampuscas"
+  - "borisyaoa"
 issues:
   - jira: 28832
