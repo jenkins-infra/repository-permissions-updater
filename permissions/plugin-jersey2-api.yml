@@ -5,5 +5,13 @@ paths:
   - "io/jenkins/plugins/jersey2-api"
 developers:
   - "basil"
+  - "carroll"
+  - "teilo"
+  - "rarabaolaza"
+  - "rsandell"
+  - "olamy"
+  - "julieheard"
+  - "ampuscas"
+  - "borisyaoa"
 issues:
   - jira: 28832
