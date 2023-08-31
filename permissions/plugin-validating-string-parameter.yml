@@ -8,3 +8,5 @@ paths:
 developers:
   - "vlatombe"
   - "raihaan"
+cd:
+  enabled: true
