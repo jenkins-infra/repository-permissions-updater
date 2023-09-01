@@ -9,3 +9,5 @@ developers:
   - "batmat"
   - "colourmeamused"
   - "raihaan"
+cd:
+  enabled: true
