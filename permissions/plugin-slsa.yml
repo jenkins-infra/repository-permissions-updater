@@ -2,8 +2,10 @@
 name: "slsa"
 github: &GH "jenkinsci/slsa-plugin"
 paths:
-- "io/jenkins/plugins/slsa"
+  - "io/jenkins/plugins/slsa"
 developers:
-- "netomi"
+  - "netomi"
 issues:
   - github: *GH
+cd:
+  enabled: true
