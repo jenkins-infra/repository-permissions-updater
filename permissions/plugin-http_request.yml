@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/http_request"
 developers:
+  - "janario"
+  - "markewaite"
+  - "oleg_nenashev"
   - "sandi2382"
