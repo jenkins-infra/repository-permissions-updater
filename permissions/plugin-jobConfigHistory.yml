@@ -5,7 +5,6 @@ issues:
   - jira: '15683'  # jobconfighistory-plugin
 paths:
   - "org/jenkins-ci/plugins/jobConfigHistory"
-developers:
-  - "notmyfault"
+developers: []
 cd:
   enabled: true

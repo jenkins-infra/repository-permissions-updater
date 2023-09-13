@@ -1,0 +1,9 @@
+---
+name: "miniorange-two-factor"
+github: &GH "jenkinsci/miniorange-two-factor-plugin"
+paths:
+- "io/jenkins/plugins/miniorange-two-factor"
+developers:
+- "miniorange"
+issues:
+  - jira: 29220

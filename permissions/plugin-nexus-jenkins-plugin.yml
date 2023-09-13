@@ -6,7 +6,8 @@ issues:
   - github: *gh
 paths:
   - "org/sonatype/nexus/ci/nexus-jenkins-plugin"
-developers:
-  - "whyjustin"
-cd:
-  enabled: true
+developers: []
+# https://github.com/jenkins-infra/helpdesk/issues/3742
+#  - "whyjustin"
+#cd:
+#  enabled: true

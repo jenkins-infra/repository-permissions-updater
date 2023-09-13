@@ -1,8 +1,8 @@
 ---
 name: "console-column-plugin"
-github: "jenkinsci/console-column-plugin"
+github: &gh "jenkinsci/console-column-plugin"
 issues:
-  - jira: '15790'  # console-column-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/console-column-plugin"
 developers:

@@ -7,3 +7,6 @@ paths:
   - "io/jenkins/plugins/postgresql-api"
 developers:
   - "cleclerc"
+  - "timja"
+cd:
+  enabled: true

@@ -7,5 +7,3 @@ paths:
   - "org/jenkins-ci/plugins/publish-over-dropbox"
 developers:
   - "rcgroot"
-  # Not a maintainer, just tables-to-divs fixes
-  - "oleg_nenashev"

@@ -13,9 +13,9 @@ developers:
   - "donmccasland"
   - "tarahernandez"
   - "vishalapatel"
-  - "alecharp"
   - "batmat"
   - "teilo"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

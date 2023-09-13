@@ -1,0 +1,22 @@
+---
+name: "workflow-cps-parent"
+github: "jenkinsci/workflow-cps-plugin"
+paths:
+  - "org/jenkins-ci/plugins/workflow/workflow-cps-parent"
+developers:
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "svanoort"
+  - "rsandell"
+  - "dnusbaum"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
+  - "teilo"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

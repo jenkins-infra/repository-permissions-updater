@@ -10,14 +10,12 @@ cd:
   enabled: true
 developers:
   - "jglick"
-  - "alecharp"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"
   - "mramonleon"
   - "rsandell"
   - "dnusbaum"
-  - "jm_meessen"
   - "markewaite"
   - "poddingue"
 security:

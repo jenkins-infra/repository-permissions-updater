@@ -149,8 +149,8 @@ class ArtifactoryPermissionsUpdater {
                 paths.addAll(definition.paths)
 
                 if (definition.cd && definition.getCd().enabled) {
-                    if (!definition.github.matches('(jenkinsci|stapler)/.+')) {
-                        throw new Exception("CD is only supported when the GitHub repository is in @jenkinsci or @stapler")
+                    if (!definition.github.matches('(jenkinsci)/.+')) {
+                        throw new Exception("CD is only supported when the GitHub repository is in @jenkinsci")
                     }
                     List<Definition> definitions = cdEnabledComponentsByGitHub[definition.github]
                     if (!definitions) {
@@ -240,7 +240,7 @@ class ArtifactoryPermissionsUpdater {
                                 """
                                 ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io/).
 
-                                We resync our Artifactory list hourly, so you will need to wait some time before rebuilding your pull request.
+                                We resync our Artifactory and Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
                                 The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
 
                                 Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
@@ -253,7 +253,7 @@ class ArtifactoryPermissionsUpdater {
                                         """
                                 ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/).
 
-                                We resync our Artifactory list hourly, so you will need to wait some time before rebuilding your pull request.
+                                We resync our Artifactory user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
                                 The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
 
                                 Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
@@ -264,7 +264,12 @@ class ArtifactoryPermissionsUpdater {
                             if (!existsInJira) {
                                 reportChecksApiDetails(developer + " needs to log in to Jira",
                                         """
-                                ${developer} needs to log in to [Jira](https://issues.jenkins.io/).
+                                ${developer} needs to log in to [Jira](https://issues.jenkins.io/)
+
+                                We resync our Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
+                                The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+
+                                Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
                                 """.stripIndent())
                                 throw new IllegalStateException("User name not known to Jira: " + developer)
                             }

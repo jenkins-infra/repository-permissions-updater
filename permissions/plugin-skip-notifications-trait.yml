@@ -1,8 +1,8 @@
 ---
 name: "skip-notifications-trait"
-github: "jenkinsci/skip-notifications-trait-plugin"
+github: &GH "jenkinsci/skip-notifications-trait-plugin"
 issues:
-  - jira: '23947'  # skip-notifications-trait-plugin
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/skip-notifications-trait"
 developers:

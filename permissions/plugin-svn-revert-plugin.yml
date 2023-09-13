@@ -6,3 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/svn-revert-plugin"
 developers: []
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

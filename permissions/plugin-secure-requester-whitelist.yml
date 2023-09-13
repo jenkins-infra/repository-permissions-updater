@@ -5,6 +5,8 @@ issues:
   - jira: '18221'  # secure-requester-whitelist-plugin
 paths:
   - "org/jenkins-ci/plugins/secure-requester-whitelist"
+cd:
+  enabled: true
 developers:
   - "jglick"
   - "andresrc"

@@ -1,0 +1,10 @@
+---
+name: "license-maven-plugin"
+github: &GH "jenkinsci/license-maven-plugin"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/tools/maven"
+  - "io/jenkins/tools/maven/license-maven-plugin"
+cd:
+  enabled: true

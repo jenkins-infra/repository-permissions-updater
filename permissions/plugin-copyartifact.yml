@@ -9,6 +9,10 @@ paths:
 developers:
   - "ikedam"
   - "wolfs"
+  - "markewaite"
+  - "allancth"
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true

@@ -1,0 +1,8 @@
+---
+name: "core-annotation-processors"
+github: "jenkinsci/core-annotation-processors"
+cd:
+  enabled: true
+paths:
+  - "org/jenkins-ci/core-annotation-processors"
+developers: []

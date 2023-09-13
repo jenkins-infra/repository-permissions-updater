@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/subversion"
   - "org/jvnet/hudson/plugins/subversion"
+cd:
+  enabled: true
 developers:
   - "didiez"

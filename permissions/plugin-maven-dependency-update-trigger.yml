@@ -6,5 +6,4 @@ issues:
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/maven-dependency-update-trigger"
-developers:
-  - "alecharp"
+developers: []

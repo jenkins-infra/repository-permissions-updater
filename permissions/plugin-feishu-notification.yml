@@ -1,0 +1,9 @@
+---
+name: "feishu-notification"
+github: &GH "jenkinsci/feishu-notification-plugin"
+paths:
+- "io/jenkins/plugins/feishu-notification"
+developers:
+- "xm721806280"
+issues:
+  - github: *GH

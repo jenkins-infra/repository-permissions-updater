@@ -10,3 +10,6 @@ paths:
 developers:
   - "edovale"
   - "nathanagood"
+  - "bitle0"
+cd:
+  enabled: true

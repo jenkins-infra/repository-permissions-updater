@@ -6,9 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-metadata-plugin"
 developers:
-  - "alecharp"
   - "batmat"
   - "teilo"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

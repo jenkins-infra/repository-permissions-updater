@@ -7,5 +7,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ivy"
   - "org/jvnet/hudson/plugins/ivy"
-developers:
-  - "arothian"
+developers: []

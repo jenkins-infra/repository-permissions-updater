@@ -7,5 +7,10 @@ cd:
   enabled: true
 developers:
   - "riywo"
+  - "nate_autify"
+  - "hgsgtk"
+  - "mtsmfm"
+  - "kensei_autify"
+  - "henchiyb"
 issues:
   - github: *GH

@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/doxygen"
 developers:
   - "gbois"
+cd:
+  enabled: true

@@ -7,3 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jqs-monitoring"
 developers: []
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

@@ -27,7 +27,7 @@ public class HostingChecker {
 
     public static final String INVALID_FORK_FROM = "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
-    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 277, 1);
+    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 387, 3);
 
     public static void main(String[] args) throws IOException {
         new HostingChecker().checkRequest(Integer.parseInt(args[0]));
@@ -43,9 +43,7 @@ public class HostingChecker {
         verifications.add(Triplet.with("Jira", new HostingFieldVerifier(), null));
         verifications.add(Triplet.with("GitHub", new GitHubVerifier(), null));
         verifications.add(Triplet.with("Maven", new MavenVerifier(), new FileExistsConditionChecker("pom.xml")));
-        verifications.add(Triplet.with("Gradle", new GradleVerifier(), new FileExistsConditionChecker("build.gradle")));
         verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
-        //verifications.add(Triplet.with("Kotlin", new KotlinVerifier(), new FileExistsConditionChecker("build.gradle.kts")));
 
         final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
@@ -66,7 +64,7 @@ public class HostingChecker {
         }
 
         if (!hasBuildSystem) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "No build system found (pom.xml, build.gradle)"));
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "No pom.xml detected."));
         }
 
         LOGGER.info("Done checking hosting for " + issueID + ", found " + hostingIssues.size() + " issues");
@@ -83,7 +81,8 @@ public class HostingChecker {
             msg.append("\nYou can re-trigger a check by editing your hosting request or by commenting `/hosting re-check`");
         } else {
             msg.append("It looks like you have everything in order for your hosting request. "
-                    + "A human volunteer will check over things that I am not able to check for "
+                    + "A member of the [Jenkins hosting team](https://www.jenkins.io/project/teams/hosting/#members-of-the-hosting-team) "
+                    + "will check over things that I am not able to check"
                     + "(code review, README content, etc) and process the request as quickly as possible. "
                     + "Thank you for your patience.\n")
                     .append("\nHosting team members can host this request with `/hosting host`");

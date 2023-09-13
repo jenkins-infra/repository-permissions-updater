@@ -1,11 +1,9 @@
 name: Hosting checker
-
 on:
   issues:
     types:
       - opened
       - edited
-
 jobs:
   hosting:
     runs-on: ubuntu-latest

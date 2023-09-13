@@ -7,3 +7,6 @@ paths:
   - "io/jenkins/plugins/inodes-monitor"
 developers:
   - "batmat"
+  - "janasrikanth"
+cd:
+  enabled: true

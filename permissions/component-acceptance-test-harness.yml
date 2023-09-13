@@ -5,6 +5,7 @@ paths:
   - "org/jenkins-ci/acceptance-test-harness"
 developers:
   - "andresrc"
+  - "basil"
   - "jglick"
   - "kohsuke"
   - "olivergondza"

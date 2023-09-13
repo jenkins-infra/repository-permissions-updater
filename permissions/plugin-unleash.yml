@@ -5,5 +5,4 @@ issues:
   - jira: '21681'  # unleash-plugin
 paths:
   - "com/itemis/jenkins/plugins/unleash"
-developers:
-  - "shillner"
+developers: []

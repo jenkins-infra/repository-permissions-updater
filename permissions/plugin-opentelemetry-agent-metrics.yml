@@ -1,0 +1,9 @@
+---
+name: "opentelemetry-agent-metrics"
+github: &GH "jenkinsci/opentelemetry-agent-metrics-plugin"
+paths:
+- "io/jenkins/plugins/opentelemetry-agent-metrics"
+developers:
+- "christophe_kamphaus_jemmic"
+issues:
+  - github: *GH

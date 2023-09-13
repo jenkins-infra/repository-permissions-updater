@@ -6,7 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/design-library"
 developers:
-  - "@core"
   - "@ux"
 cd:
   enabled: true

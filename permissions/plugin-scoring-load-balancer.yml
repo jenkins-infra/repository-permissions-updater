@@ -6,3 +6,6 @@ issues:
 paths:
   - "jp/ikedam/jenkins/plugins/scoring-load-balancer"
 developers: []
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

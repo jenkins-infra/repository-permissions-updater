@@ -8,3 +8,6 @@ paths:
 developers:
   - "asafgurveertu"
   - "nivkeidan"
+security:
+  contacts:
+    jira: "nivkeidan"

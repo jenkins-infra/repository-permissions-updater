@@ -13,11 +13,13 @@ developers:
   - "donmccasland"
   - "tarahernandez"
   - "vishalapatel"
-  - "alecharp"
   - "batmat"
   - "teilo"
   - "rarabaolaza"
   - "carroll"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true

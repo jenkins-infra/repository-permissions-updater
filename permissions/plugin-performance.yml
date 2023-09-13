@@ -1,6 +1,8 @@
 ---
 name: "performance"
 github: "jenkinsci/performance-plugin"
+cd:
+  enabled: true
 issues:
   - jira: '15803'  # performance-plugin
 paths:
@@ -9,3 +11,4 @@ paths:
 developers:
   - "manolo"
   - "artem_fedorov"
+  - "a_st"

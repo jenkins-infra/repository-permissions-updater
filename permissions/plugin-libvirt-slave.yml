@@ -6,6 +6,8 @@ issues:
 paths:
   - "hudson/plugins/libvirt/libvirt-slave"
   - "org/jenkins-ci/plugins/libvirt-slave"
+cd:
+  enabled: true
 developers:
   - "gkr"
   - "magnayn"

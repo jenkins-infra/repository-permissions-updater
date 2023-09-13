@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/NegotiateSSO"
 developers:
   - "farmgeek4life"
+cd:
+  enabled: true

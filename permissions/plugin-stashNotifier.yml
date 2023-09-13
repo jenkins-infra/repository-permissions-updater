@@ -4,8 +4,11 @@ github: &gh "jenkinsci/stashnotifier-plugin"
 issues:
   - github: *gh
   - jira: '17535'  # stashnotifier-plugin
+cd:
+  enabled: true
 paths:
   - "org/jenkins-ci/plugins/stashNotifier"
 developers:
   - "gruetter"
   - "scaytrase"
+  - "sghill"

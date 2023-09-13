@@ -7,6 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/gitlab-oauth"
 developers:
   - "elhabib_med"
-  - "jm_meessen"
-  - "markewaite"
-  - "poddingue"
+  - "krisstern"

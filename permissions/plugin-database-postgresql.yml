@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/database-postgresql"
 developers:
   - "timja"
+cd:
+  enabled: true

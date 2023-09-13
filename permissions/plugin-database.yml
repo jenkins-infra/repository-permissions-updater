@@ -1,8 +1,8 @@
 ---
 name: "database"
-github: "jenkinsci/database-plugin"
+&GH github: "jenkinsci/database-plugin"
 issues:
-  - jira: '17514'  # database-plugin
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/database"
 developers:

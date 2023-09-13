@@ -4,6 +4,13 @@ github: "jenkinsci/bigpanda-plugin"
 paths:
   - "org/jenkins-ci/plugins/bigpanda-jenkins"
 developers:
-  - "erikzaadi"
   - "jguereca"
   - "robstemen"
+  - "jcardozo"
+  - "ccrist"
+  - "goodwinjeremyr"
+  - "shikhag"
+  - "pbaker"
+  - "lukej7"
+cd:
+  enabled: true

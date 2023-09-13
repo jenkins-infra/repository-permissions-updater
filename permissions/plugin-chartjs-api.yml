@@ -1,0 +1,9 @@
+---
+name: "chartjs-api"
+github: &GH "jenkinsci/chartjs-api-plugin"
+paths:
+- "io/jenkins/plugins/chartjs-api"
+developers:
+- "judovana"
+issues:
+  - github: *GH

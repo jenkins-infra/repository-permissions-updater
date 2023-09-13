@@ -6,7 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/synopsys-coverity"
 developers:
-  - "gkillough"
-  - "jrichard"
-  - "akamen"
   - "bdsoss"
+  - "jcroall"
+  - "sshreyas"
+  - "schatti"
+  - "akamen"

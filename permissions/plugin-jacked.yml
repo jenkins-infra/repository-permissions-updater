@@ -1,0 +1,9 @@
+---
+name: "jacked"
+github: &GH "jenkinsci/jacked-plugin"
+paths:
+- "io/jenkins/plugins/jacked"
+developers:
+- "sairen_carbonetes"
+issues:
+  - github: *GH

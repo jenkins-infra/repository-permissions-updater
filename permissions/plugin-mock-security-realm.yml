@@ -5,6 +5,8 @@ issues:
   - jira: '17121'  # mock-security-realm-plugin
 paths:
   - "org/jenkins-ci/plugins/mock-security-realm"
+cd:
+  enabled: true
 developers:
   - "jglick"
   - "rarabaolaza"

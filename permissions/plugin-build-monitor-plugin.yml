@@ -1,7 +1,13 @@
 ---
 name: "build-monitor-plugin"
-github: "jan-molak/jenkins-build-monitor-plugin"
+github: &gh "jenkinsci/build-monitor-plugin"
+issues:
+  - jira: '17722'  # build-monitor-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/build-monitor-plugin"
 developers:
   - "janmolak"
+  - "dcendents"
+cd:
+  enabled: true

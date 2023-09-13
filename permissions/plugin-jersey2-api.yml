@@ -5,5 +5,11 @@ paths:
   - "io/jenkins/plugins/jersey2-api"
 developers:
   - "basil"
+  - "@cloudbees-developers"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
 issues:
   - jira: 28832
+cd:
+  enabled: true

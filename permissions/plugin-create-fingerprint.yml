@@ -6,3 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/create-fingerprint"
 developers: []
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

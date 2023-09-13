@@ -9,3 +9,5 @@ developers:
   - "kutzi"
   - "sircmpwn"
   - "jimklimov"
+cd:
+  enabled: true

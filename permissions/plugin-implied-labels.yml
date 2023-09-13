@@ -8,3 +8,5 @@ paths:
 developers:
   - "olivergondza"
   - "markewaite"
+cd:
+  enabled: true

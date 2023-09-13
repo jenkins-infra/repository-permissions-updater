@@ -6,3 +6,6 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/statusmonitor"
 developers: []
+#CD blocked for lack of maintainers
+#cd:
+#  enabled: true

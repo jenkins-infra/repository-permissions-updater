@@ -1,0 +1,9 @@
+---
+name: "stapler-maven-plugin"
+github: &GH "jenkinsci/stapler-maven-plugin"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/tools/maven/stapler-maven-plugin"
+cd:
+  enabled: true

@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/http_request"
 developers:
   - "janario"
-  - "oleg_nenashev"
-  - "jm_meessen"
   - "markewaite"
-  - "poddingue"
+  - "oleg_nenashev"
+  - "sandi2382"

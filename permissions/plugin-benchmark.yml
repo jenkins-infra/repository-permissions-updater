@@ -8,3 +8,5 @@ paths:
   - "org/jenkins-ci/plugins/benchmark"
 developers:
   - "damercie"
+cd:
+  enabled: true
