@@ -1,0 +1,10 @@
+---
+name: "redhat-dependency-analytics"
+github: &GH "jenkinsci/redhat-dependency-analytics-plugin"
+paths:
+- "io/jenkins/plugins/redhat-dependency-analytics"
+developers:
+- "olavtar"
+- "vbelouso"
+issues:
+  - jira: 29221
