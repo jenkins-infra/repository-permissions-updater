@@ -1,0 +1,9 @@
+---
+name: "gcp-java-sdk"
+github: &GH "jenkinsci/gcp-java-sdk-plugin"
+paths:
+- "io/jenkins/plugins/gcp-java-sdk"
+developers:
+- "aneveux"
+issues:
+  - jira: 29222
