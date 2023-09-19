@@ -8,5 +8,6 @@ paths:
 developers:
   - "jglick"
   - "uday"
+  - "mawinter69"
 cd:
   enabled: true
