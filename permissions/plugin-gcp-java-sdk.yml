@@ -5,5 +5,10 @@ paths:
 - "io/jenkins/plugins/gcp-java-sdk"
 developers:
 - "aneveux"
+cd:
+  enabled: true
 issues:
   - jira: 29222
+security:
+  contacts:
+    jira: "cloudbees_security_members"
