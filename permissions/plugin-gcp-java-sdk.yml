@@ -3,8 +3,10 @@ name: "gcp-java-sdk"
 github: &GH "jenkinsci/gcp-java-sdk-plugin"
 paths:
 - "io/jenkins/plugins/gcp-java-sdk"
+- "io/jenkins/plugins/gcp-java-sdk-*"
 developers:
 - "aneveux"
+- "@cloudbees-developers"
 cd:
   enabled: true
 issues:
