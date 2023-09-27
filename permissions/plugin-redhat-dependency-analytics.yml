@@ -8,3 +8,5 @@ developers:
 - "vbelouso"
 issues:
   - jira: 29221
+cd:
+  enabled: true
