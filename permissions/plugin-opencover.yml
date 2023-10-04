@@ -5,6 +5,8 @@ issues:
   - github: *gh
 paths:
   - "io/jenkins/plugins/opencover"
+cd:
+  enabled: true
 developers:
   - "asavanchuk"
   - "cizezsy"
