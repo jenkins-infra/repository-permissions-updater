@@ -7,3 +7,4 @@ paths:
   - "igalg/jenkins/plugins/multibranch-build-strategy-extension"
 developers:
   - "igalg"
+  - "legall_benoit"
