@@ -7,3 +7,5 @@ paths:
   - "igalg/jenkins/plugins/multibranch-build-strategy-extension"
 developers:
   - "igalg"
+cd:
+  enabled: true
