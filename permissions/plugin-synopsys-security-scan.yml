@@ -1,0 +1,11 @@
+---
+name: "synopsys-security-scan"
+github: &GH "jenkinsci/synopsys-security-scan-plugin"
+paths:
+- "io/jenkins/plugins/synopsys-security-scan"
+developers:
+- "sig_tithi"
+- "kishorikumar"
+- "dmamidisynopsys"
+issues:
+  - github: *GH
