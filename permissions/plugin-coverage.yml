@@ -1,0 +1,9 @@
+---
+name: "coverage"
+github: "jenkinsci/coverage-plugin"
+issues:
+  - jira: '29223'  # coverage-plugin
+paths:
+  - "io/jenkins/plugins/coverage"
+developers:
+  - "drulli"
