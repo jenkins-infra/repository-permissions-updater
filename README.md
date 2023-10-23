@@ -126,7 +126,7 @@ Regular maintainers are added to the issue as well to give visibility and allow 
 This means that specifying a Jira security contact is only useful when it's an account not already listed as maintainer.
 `jira` is optional.
 
-If you represent a company with dedicated security team that needs to be involved, we recommend you to create a Jira account backed by a shared email.
+If you represent a company with dedicated security team that needs to be involved, we recommend you to create a Jira account backed by an email address that the team can access, like a mailing list.
 
 Managing Issue Trackers
 -----------------------
