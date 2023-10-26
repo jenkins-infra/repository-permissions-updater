@@ -10,3 +10,5 @@ developers:
   - "poojavishal"
   - "abmohantyj"
   - "prattal"
+cd:
+  enabled: true
