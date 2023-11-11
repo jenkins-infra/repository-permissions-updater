@@ -1,0 +1,9 @@
+---
+name: "harbor"
+github: &GH "jenkinsci/harbor-plugin"
+paths:
+- "io/jenkins/plugins/harbor"
+developers:
+- "cnhttpd"
+issues:
+  - github: *GH
