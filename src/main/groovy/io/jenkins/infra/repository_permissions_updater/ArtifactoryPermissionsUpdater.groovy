@@ -239,49 +239,69 @@ class ArtifactoryPermissionsUpdater {
                             LOGGER.log(Level.INFO, "Skipping CD group definition for " + definition.name + " as there are no maintainers")
                         }
                     } else {
-                        users definition.developers.collectEntries { developer ->
-                            def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
-                            def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
+                        if (!definition.getCd().exclusive) {
+                            users definition.developers.collectEntries { developer ->
+                                def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
+                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
 
-                            if (!existsInArtifactory && !existsInJira) {
-                                reportChecksApiDetails(developer + " needs to log in to Artifactory and Jira",
-                                """
-                                ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io/).
+                                if (!existsInArtifactory && !existsInJira) {
+                                    reportChecksApiDetails(developer + " needs to log in to Artifactory and Jira",
+                                            """
+                                    ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io/).
 
-                                We resync our Artifactory and Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
-                                The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+                                    We resync our Artifactory and Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
+                                    The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
 
-                                Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
-                                """.stripIndent())
-                                throw new IllegalStateException("User name not known to Artifactory and Jira: " + developer)
+                                    Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                    """.stripIndent())
+                                    throw new IllegalStateException("User name not known to Artifactory and Jira: " + developer)
+                                }
+
+                                if (!existsInArtifactory) {
+                                    reportChecksApiDetails(developer + " needs to log in to Artifactory",
+                                            """
+                                    ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/).
+
+                                    We resync our Artifactory user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
+                                    The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+
+                                    Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                    """.stripIndent())
+                                    throw new IllegalStateException("User name not known to Artifactory: " + developer)
+                                }
+
+                                if (!existsInJira) {
+                                    reportChecksApiDetails(developer + " needs to log in to Jira",
+                                            """
+                                    ${developer} needs to log in to [Jira](https://issues.jenkins.io/)
+
+                                    We resync our Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
+                                    The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+
+                                    Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                    """.stripIndent())
+                                    throw new IllegalStateException("User name not known to Jira: " + developer)
+                                }
+                                [(developer.toLowerCase(Locale.US)): ["w", "n"]]
                             }
+                        } else {
+                            definition.developers.each { developer ->
+                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
 
-                            if (!existsInArtifactory) {
-                                reportChecksApiDetails(developer + " needs to log in to Artifactory",
-                                        """
-                                ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/).
+                                if (!existsInJira) {
+                                    reportChecksApiDetails(developer + " needs to log in to Jira",
+                                            """
+                                    ${developer} needs to log in to [Jira](https://issues.jenkins.io/)
 
-                                We resync our Artifactory user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
-                                The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+                                    We resync our Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
+                                    The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
 
-                                Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
-                                """.stripIndent())
-                                throw new IllegalStateException("User name not known to Artifactory: " + developer)
+                                    Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                    """.stripIndent())
+                                    throw new IllegalStateException("User name not known to Jira: " + developer)
+                                }
                             }
-
-                            if (!existsInJira) {
-                                reportChecksApiDetails(developer + " needs to log in to Jira",
-                                        """
-                                ${developer} needs to log in to [Jira](https://issues.jenkins.io/)
-
-                                We resync our Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
-                                The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
-
-                                Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
-                                """.stripIndent())
-                                throw new IllegalStateException("User name not known to Jira: " + developer)
-                            }
-                            [(developer.toLowerCase(Locale.US)): ["w", "n"]]
+                            users [:]
                         }
                         if (definition.cd?.enabled) {
                             groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
