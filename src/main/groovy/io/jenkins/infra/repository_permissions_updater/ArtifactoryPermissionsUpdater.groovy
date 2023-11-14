@@ -234,6 +234,7 @@ class ArtifactoryPermissionsUpdater {
                 principals {
                     if (definition.developers.length == 0) {
                         users [:]
+                        groups [:]
                         if (definition.cd?.enabled) {
                             LOGGER.log(Level.INFO, "Skipping CD group definition for " + definition.name + " as there are no maintainers")
                         }
