@@ -152,13 +152,17 @@ class ArtifactoryPermissionsUpdater {
                     if (!definition.github.matches('(jenkinsci)/.+')) {
                         throw new Exception("CD is only supported when the GitHub repository is in @jenkinsci")
                     }
-                    List<Definition> definitions = cdEnabledComponentsByGitHub[definition.github]
-                    if (!definitions) {
-                        definitions = new ArrayList<>()
-                        cdEnabledComponentsByGitHub[definition.github] = definitions
+                    if (definition.developers.length > 0) {
+                        List<Definition> definitions = cdEnabledComponentsByGitHub[definition.github]
+                        if (!definitions) {
+                            definitions = new ArrayList<>()
+                            cdEnabledComponentsByGitHub[definition.github] = definitions
+                        }
+                        LOGGER.log(Level.INFO, "CD-enabled component '${definition.name}' in repository '${definition.github}'")
+                        definitions.add(definition)
+                    } else {
+                        LOGGER.log(Level.INFO, "Skipping CD-enablement for '${definition.name}' in repository '${definition.github}' as it is unmaintained")
                     }
-                    LOGGER.log(Level.INFO, "CD-enabled component '${definition.name}' in repository '${definition.github}'")
-                    definitions.add(definition)
                 }
             } else {
                 if (definition.cd && definition.getCd().enabled) {
@@ -230,6 +234,9 @@ class ArtifactoryPermissionsUpdater {
                 principals {
                     if (definition.developers.length == 0) {
                         users [:]
+                        if (definition.cd?.enabled) {
+                            LOGGER.log(Level.INFO, "Skipping CD group definition for " + definition.name + " as there are no maintainers")
+                        }
                     } else {
                         users definition.developers.collectEntries { developer ->
                             def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
@@ -275,11 +282,11 @@ class ArtifactoryPermissionsUpdater {
                             }
                             [(developer.toLowerCase(Locale.US)): ["w", "n"]]
                         }
-                    }
-                    if (definition.cd?.enabled) {
-                        groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
-                    } else {
-                        groups([:])
+                        if (definition.cd?.enabled) {
+                            groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
+                        } else {
+                            groups([:])
+                        }
                     }
                 }
             }
