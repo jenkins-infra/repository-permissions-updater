@@ -1,0 +1,11 @@
+---
+name: "maplelabs-apm"
+github: &GH "jenkinsci/maplelabs-apm-plugin"
+paths:
+- "io/jenkins/plugins/maplelabs-apm"
+developers:
+- "Bhagavad_Geetha_ML"
+- "APM_Jenkins_plugin_ML"
+- "APM_Jenkins_plugin_sysnet_ML"
+issues:
+  - jira: 29224
