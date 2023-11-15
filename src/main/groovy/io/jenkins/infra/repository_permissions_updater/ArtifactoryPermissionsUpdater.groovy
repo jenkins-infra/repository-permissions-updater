@@ -239,7 +239,7 @@ class ArtifactoryPermissionsUpdater {
                             LOGGER.log(Level.INFO, "Skipping CD group definition for " + definition.name + " as there are no maintainers")
                         }
                     } else {
-                        if (!definition.getCd().exclusive) {
+                        if (!definition.cd?.exclusive) {
                             users definition.developers.collectEntries { developer ->
                                 def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
                                 def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
