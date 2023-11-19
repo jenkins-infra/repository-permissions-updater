@@ -9,3 +9,6 @@ developers:
   - "stellargo"
   - "oleg_nenashev"
   - "ma3oxuct"
+  - "jonesbusy"
+cd:
+  enabled: true
