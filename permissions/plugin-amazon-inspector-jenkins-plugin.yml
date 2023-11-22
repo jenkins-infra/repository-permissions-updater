@@ -1,0 +1,7 @@
+---
+name: "amazon-inspector-jenkins-plugin"
+github: "amazon-inspector-container-image-scanner-jenkins-plugin"
+paths:
+  - "com/amazon/inspector/jenkins"
+developers:
+  - "inspector-opensource"
