@@ -7,3 +7,5 @@ developers:
 - "jcustenborder"
 issues:
   - github: *GH
+cd:
+  enabled: true
