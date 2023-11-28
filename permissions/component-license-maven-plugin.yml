@@ -8,3 +8,6 @@ paths:
   - "io/jenkins/tools/maven/license-maven-plugin"
 cd:
   enabled: true
+  exclusive: true
+developers:
+  - "@core"

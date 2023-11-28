@@ -10,6 +10,7 @@ public class Definition {
 
     public static class CD {
         public boolean enabled;
+        public boolean exclusive;
     }
 
     public static class Security {

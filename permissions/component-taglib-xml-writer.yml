@@ -6,3 +6,6 @@ paths:
   - "io/jenkins/tools/maven/taglib-xml-writer"
 cd:
   enabled: true
+  exclusive: true
+developers:
+  - "@core"

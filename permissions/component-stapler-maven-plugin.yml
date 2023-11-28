@@ -7,3 +7,6 @@ paths:
   - "io/jenkins/tools/maven/stapler-maven-plugin"
 cd:
   enabled: true
+  exclusive: true
+developers:
+  - "@core"
