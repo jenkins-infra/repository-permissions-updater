@@ -10,7 +10,7 @@ jobs:
     if: ${{ github.event.comment.body == '/hosting re-check'}}
     steps:
       - name: Ack
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             const {owner, repo} = context.issue
