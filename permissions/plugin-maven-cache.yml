@@ -1,0 +1,9 @@
+---
+name: "maven-cache"
+github: &GH "jenkinsci/maven-cache-plugin"
+paths:
+- "io/jenkins/plugins/maven-cache"
+developers:
+- "olamy"
+issues:
+  - github: *GH
