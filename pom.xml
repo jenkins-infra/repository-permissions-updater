@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.jenkins-ci</groupId>
         <artifactId>jenkins</artifactId>
-        <version>1.105</version>
+        <version>1.107</version>
         <relativePath />
     </parent>
 
