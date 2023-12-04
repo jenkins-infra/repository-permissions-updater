@@ -3,4 +3,5 @@ name: "project-inheritance"
 paths:
   - "hudson/plugins/project-inheritance"
 developers:
+  - "basil"
   - "mhschroe"
