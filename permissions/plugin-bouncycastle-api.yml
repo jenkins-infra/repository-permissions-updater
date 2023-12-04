@@ -13,3 +13,4 @@ developers:
   - "@cloudbees-developers"
 cd:
   enabled: true
+  exclusive: true
