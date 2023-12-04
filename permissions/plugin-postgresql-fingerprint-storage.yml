@@ -1,8 +1,8 @@
 ---
 name: "postgresql-fingerprint-storage"
-github: "jenkinsci/postgresql-fingerprint-storage-plugin"
+github:  &GH "jenkinsci/postgresql-fingerprint-storage-plugin"
 issues:
-  - jira: '27527'  # postgresql-fingerprint-storage-plugin
+  - github: *GH
 paths:
   - "io/jenkins/plugins/postgresql-fingerprint-storage"
 developers:
