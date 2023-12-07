@@ -7,3 +7,5 @@ developers:
 - "jsm_alert_plugin"
 issues:
   - github: *GH
+cd:
+  enabled: true
