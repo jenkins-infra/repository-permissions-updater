@@ -16,6 +16,7 @@ developers:
   - "rsandell"
   - "bitwiseman"
   - "kshultz"
+  - "mawinter69"
 security:
   contacts:
     jira: "cloudbees_security_members"
