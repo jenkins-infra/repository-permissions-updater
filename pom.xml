@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.jenkins-ci</groupId>
         <artifactId>jenkins</artifactId>
-        <version>1.105</version>
+        <version>1.107</version>
         <relativePath />
     </parent>
 
@@ -110,7 +110,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
-                <version>5.3.29</version>
+                <version>5.3.31</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -155,12 +155,12 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.13.0</version>
+            <version>3.14.0</version>
         </dependency>
         <dependency>
             <groupId>com.atlassian.jira</groupId>
             <artifactId>jira-rest-java-client-core</artifactId>
-            <version>5.2.6</version>
+            <version>5.2.7</version>
             <exclusions>
                 <exclusion>
                     <groupId>commons-lang</groupId>
@@ -176,7 +176,7 @@
         <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs-annotations</artifactId>
-            <version>4.7.3</version>
+            <version>4.8.0</version>
         </dependency>
         <dependency>
             <groupId>eu.neilalexander</groupId>
@@ -201,7 +201,7 @@
         <dependency>
             <groupId>org.kohsuke</groupId>
             <artifactId>github-api</artifactId>
-            <version>1.316</version>
+            <version>1.318</version>
         </dependency>
         <dependency>
             <groupId>org.javatuples</groupId>
@@ -211,7 +211,7 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-model</artifactId>
-            <version>3.9.4</version>
+            <version>3.9.5</version>
         </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>

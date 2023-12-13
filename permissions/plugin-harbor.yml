@@ -1,0 +1,11 @@
+---
+name: "harbor"
+github: &GH "jenkinsci/harbor-plugin"
+paths:
+- "io/jenkins/plugins/harbor"
+cd:
+  enabled: true
+developers:
+- "cnhttpd"
+issues:
+  - github: *GH

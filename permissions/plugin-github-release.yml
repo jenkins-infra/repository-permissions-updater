@@ -1,0 +1,11 @@
+---
+name: "github-release"
+github: &GH "jenkinsci/github-release-plugin"
+paths:
+- "io/jenkins/plugins/github-release"
+developers:
+- "jcustenborder"
+issues:
+  - github: *GH
+cd:
+  enabled: true

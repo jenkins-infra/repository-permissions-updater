@@ -11,3 +11,6 @@ developers:
   - "teilo"
   - "@security"
   - "@cloudbees-developers"
+cd:
+  enabled: true
+  exclusive: true
