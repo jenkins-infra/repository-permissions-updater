@@ -9,3 +9,5 @@ developers:
 - "APM_Jenkins_plugin_sysnet_ML"
 issues:
   - jira: 29224
+cd:
+  enabled: true
