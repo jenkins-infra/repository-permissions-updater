@@ -8,6 +8,7 @@ paths:
   - "org/jenkins-ci/plugins/parallel-test-executor"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "jglick"
   - "vlatombe"

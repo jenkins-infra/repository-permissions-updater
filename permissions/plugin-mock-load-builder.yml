@@ -9,6 +9,7 @@ paths:
   - "org/jenkins-ci/plugins/mock-load-builder"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "vlatombe"
   - "jglick"
