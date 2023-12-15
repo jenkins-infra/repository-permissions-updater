@@ -7,3 +7,4 @@ paths:
   - "org/jvnet/hudson/plugins/groovy-postbuild"
 developers:
   - "ikedam"
+  - "markewaite"
