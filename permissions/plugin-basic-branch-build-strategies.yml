@@ -7,6 +7,7 @@ paths:
   - "org/jenkins-ci/plugins/basic-branch-build-strategies"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "rsandell"
   - "bitwiseman"

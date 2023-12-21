@@ -8,6 +8,7 @@ paths:
   - "org/jvnet/hudson/plugins/platformlabeler"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "markewaite"
   - "timja"

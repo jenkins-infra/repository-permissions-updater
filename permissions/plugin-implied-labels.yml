@@ -10,3 +10,4 @@ developers:
   - "markewaite"
 cd:
   enabled: true
+  exclusive: true

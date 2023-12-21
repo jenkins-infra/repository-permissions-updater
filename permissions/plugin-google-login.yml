@@ -5,6 +5,8 @@ issues:
   - jira: '19828'  # google-login-plugin
 paths:
   - "org/jenkins-ci/plugins/google-login"
+cd:
+  enabled: true
 developers:
   - "recampbell"
   - "vlatombe"
