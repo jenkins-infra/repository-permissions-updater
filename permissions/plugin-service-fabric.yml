@@ -5,5 +5,5 @@ issues:
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/service-fabric"
-developers: []
+developers:
   - "azsf_msft"
