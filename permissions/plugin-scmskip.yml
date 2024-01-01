@@ -7,6 +7,5 @@ paths:
   - "net/plavcak/jenkins/scmskip"
 developers:
   - "plavc"
-  - "notmyfault"
 cd:
   enabled: true
