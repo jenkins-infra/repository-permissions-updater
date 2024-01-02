@@ -2,13 +2,17 @@
 name: "copyartifact"
 github: "jenkinsci/copyartifact-plugin"
 issues:
-- jira: '15692' # copyartifact-plugin
+  - jira: '15692'  # copyartifact-plugin
 paths:
-- "org/jenkins-ci/plugins/copyartifact"
-- "org/jvnet/hudson/plugins/copyartifact"
+  - "org/jenkins-ci/plugins/copyartifact"
+  - "org/jvnet/hudson/plugins/copyartifact"
 developers:
-- "ikedam"
-- "wolfs"
+  - "ikedam"
+  - "wolfs"
+  - "markewaite"
+  - "allancth"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

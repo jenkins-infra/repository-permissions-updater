@@ -1,0 +1,12 @@
+---
+name: "catlight"
+github: &GH "jenkinsci/catlight-plugin"
+paths:
+- "io/jenkins/plugins/catlight"
+developers:
+- "alexk"
+- "catlight"
+issues:
+  - github: *GH
+cd:
+  enabled: true

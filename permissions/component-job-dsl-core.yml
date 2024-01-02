@@ -1,7 +1,8 @@
 ---
 name: "job-dsl-core"
 paths:
-- "org/jenkins-ci/plugins/job-dsl-core"
-- "org/jenkinsci/plugins/job-dsl-core"
+  - "org/jenkins-ci/plugins/job-dsl-core"
+  - "org/jenkinsci/plugins/job-dsl-core"
 developers:
-- "daspilker"
+  - "daspilker"
+  - "jamietanna"

@@ -2,8 +2,8 @@
 name: "vmware-vrealize-orchestrator"
 github: "jenkinsci/vmware-vrealize-orchestrator-plugin"
 issues:
-- jira: '21137' # vmware-vrealize-orchestrator-plugin
+  - jira: '21137'  # vmware-vrealize-orchestrator-plugin
 paths:
-- "org/jenkins-ci/plugins/vmware-vrealize-orchestrator"
+  - "org/jenkins-ci/plugins/vmware-vrealize-orchestrator"
 developers:
-- "agovindaraju"
+  - "agovindaraju"

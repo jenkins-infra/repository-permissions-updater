@@ -1,6 +1,8 @@
 ---
 name: "osf-builder-suite-for-sfcc-run-job"
-github: "jenkinsci/osf-builder-suite-for-sfcc-run-job-plugin"
+github: &GH "jenkinsci/osf-builder-suite-for-sfcc-run-job-plugin"
+issues:
+  - github: *GH
 paths:
   - "io/jenkins/plugins/osf-builder-suite-for-sfcc-run-job"
 developers:

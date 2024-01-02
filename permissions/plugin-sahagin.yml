@@ -2,8 +2,8 @@
 name: "sahagin"
 github: "jenkinsci/sahagin-plugin"
 issues:
-- jira: '19831' # sahagin-plugin
+  - jira: '19831'  # sahagin-plugin
 paths:
-- "org/jenkins-ci/plugins/sahagin"
+  - "org/jenkins-ci/plugins/sahagin"
 developers:
-- "nozomiito"
+  - "nozomiito"

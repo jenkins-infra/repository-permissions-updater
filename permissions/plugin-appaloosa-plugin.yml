@@ -2,10 +2,9 @@
 name: "appaloosa-plugin"
 github: "jenkinsci/appaloosa-plugin"
 issues:
-- jira: '16121' # appaloosa-plugin
+  - jira: '16121'  # appaloosa-plugin
 paths:
-- "org/jenkins-ci/plugins/appaloosa-plugin"
+  - "org/jenkins-ci/plugins/appaloosa-plugin"
 developers:
-- "benoittgt"
-- "robertaudi"
-- "benlenem"
+  - "jeremybdk"
+  - "ammelanie"

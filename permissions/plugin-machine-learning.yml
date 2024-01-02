@@ -1,10 +1,11 @@
 ---
 name: "machine-learning"
 github: "jenkinsci/machine-learning-plugin"
+cd:
+  enabled: true
 issues:
-- jira: '27242' # machine-learning-plugin
+  - jira: '27242'  # machine-learning-plugin
 paths:
   - "io/jenkins/plugins/machine-learning"
 developers:
   - "loghijiaha"
-

@@ -2,6 +2,6 @@
 name: "analysis-model"
 github: "jenkinsci/analysis-model"
 paths:
-- "edu/hm/hafner/analysis-model"
+  - "edu/hm/hafner/analysis-model"
 developers:
-- "drulli"
+  - "drulli"

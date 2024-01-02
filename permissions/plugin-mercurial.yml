@@ -2,18 +2,22 @@
 name: "mercurial"
 github: "jenkinsci/mercurial-plugin"
 issues:
-- jira: '15502' # mercurial-plugin
+  - jira: '15502'  # mercurial-plugin
 paths:
-- "org/jenkins-ci/plugins/mercurial"
-- "org/jvnet/hudson/plugins/mercurial"
+  - "org/jenkins-ci/plugins/mercurial"
+  - "org/jvnet/hudson/plugins/mercurial"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
+  - "jglick"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
+  - "dnusbaum"
+  - "markewaite"
+  - "poddingue"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

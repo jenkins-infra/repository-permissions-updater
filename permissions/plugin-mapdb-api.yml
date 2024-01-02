@@ -2,7 +2,14 @@
 name: "mapdb-api"
 github: "jenkinsci/mapdb-api-plugin"
 issues:
-- jira: '18829' # mapdb-api-plugin
+  - jira: '18829'  # mapdb-api-plugin
 paths:
-- "org/jenkins-ci/plugins/mapdb-api"
-developers: []
+  - "org/jenkins-ci/plugins/mapdb-api"
+developers:
+  - "@cloudbees-developers"
+  - "markewaite"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

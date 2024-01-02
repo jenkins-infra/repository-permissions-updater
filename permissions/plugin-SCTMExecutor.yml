@@ -2,9 +2,9 @@
 name: "SCTMExecutor"
 github: "jenkinsci/SCTMExecutor-plugin"
 issues:
-- jira: '15598' # sctmexecutor-plugin
+  - jira: '15598'  # sctmexecutor-plugin
 paths:
-- "hudson/plugins/sctmexecutor/SCTMExecutor"
-developers: 
-- "tofuatjava"
-- "silk"
+  - "hudson/plugins/sctmexecutor/SCTMExecutor"
+developers:
+  - "tofuatjava"
+  - "silk"

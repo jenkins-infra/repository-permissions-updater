@@ -1,0 +1,11 @@
+---
+name: "jellydoc-maven-plugin"
+github: "jenkinsci/jellydoc-maven-plugin"
+paths:
+  - "io/jenkins/tools/maven"
+  - "io/jenkins/tools/maven/jellydoc-maven-plugin"
+cd:
+  enabled: true
+  exclusive: true
+developers:
+  - "@core"

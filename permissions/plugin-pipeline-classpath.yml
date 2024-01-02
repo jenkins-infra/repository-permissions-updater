@@ -2,8 +2,8 @@
 name: "pipeline-classpath"
 github: "jenkinsci/pipeline-classpath-step-plugin"
 issues:
-- jira: '21695' # pipeline-classpath-step-plugin
+  - jira: '21695'  # pipeline-classpath-step-plugin
 paths:
-- "cprice404/pipeline-classpath"
+  - "cprice404/pipeline-classpath"
 developers:
-- "cprice404"
+  - "cprice404"

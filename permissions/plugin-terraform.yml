@@ -2,8 +2,8 @@
 name: "terraform"
 github: jenkinsci/terraform-plugin
 issues:
-- jira: '21028' # terraform-plugin
+  - jira: '21028'  # terraform-plugin
 paths:
-- "org/jenkins-ci/plugins/terraform"
+  - "org/jenkins-ci/plugins/terraform"
 developers:
-- "dpires"
+  - "dpires"

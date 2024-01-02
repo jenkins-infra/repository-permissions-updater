@@ -2,9 +2,13 @@
 name: "opencover"
 github: &gh "jenkinsci/opencover-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/opencover"
+  - "io/jenkins/plugins/opencover"
+cd:
+  enabled: true
+  exclusive: true
 developers:
-- "asavanchuk"
-- "cizezsy"
+  - "asavanchuk"
+  - "cizezsy"
+  - "jonesbusy"

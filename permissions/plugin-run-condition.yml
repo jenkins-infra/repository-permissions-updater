@@ -2,12 +2,15 @@
 name: "run-condition"
 github: "jenkinsci/run-condition-plugin"
 issues:
-- jira: '16129' # run-condition-plugin
+  - jira: '16129'  # run-condition-plugin
 paths:
-- "org/jenkins-ci/plugins/run-condition"
+  - "org/jenkins-ci/plugins/run-condition"
 developers:
-- "imod"
-- "timja"
+  - "imod"
+  - "timja"
+  - "markewaite"
+  - "poddingue"
+  - "zack_aayush"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

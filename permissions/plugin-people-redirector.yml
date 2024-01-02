@@ -2,7 +2,7 @@
 name: "people-redirector"
 github: "jenkinsci/people-redirector-plugin"
 issues:
-- jira: '16105' # people-redirector-plugin
+  - jira: '16105'  # people-redirector-plugin
 paths:
-- "com/cisco/step/jenkins/plugins/people-redirector"
+  - "com/cisco/step/jenkins/plugins/people-redirector"
 developers: []

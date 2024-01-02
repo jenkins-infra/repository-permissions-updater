@@ -2,8 +2,8 @@
 name: "bazaar"
 github: "jenkinsci/bazaar-plugin"
 issues:
-- jira: '15632' # bazaar-plugin
+  - jira: '15632'  # bazaar-plugin
 paths:
-- "org/jenkins-ci/plugins/bazaar"
-- "org/jvnet/hudson/plugins/bazaar"
+  - "org/jenkins-ci/plugins/bazaar"
+  - "org/jvnet/hudson/plugins/bazaar"
 developers: []

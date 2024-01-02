@@ -2,8 +2,12 @@
 name: "mysql-api"
 github: "jenkinsci/mysql-api-plugin"
 issues:
-- jira: '25425' # mysql-api-plugin
+  - jira: '25425'  # mysql-api-plugin
 paths:
-- "io/jenkins/plugins/mysql-api"
+  - "io/jenkins/plugins/mysql-api"
 developers:
-- "cleclerc"
+  - "cleclerc"
+  - "jonesbusy"
+cd:
+  enabled: true
+  exclusive: true

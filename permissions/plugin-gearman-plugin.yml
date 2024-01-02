@@ -2,8 +2,8 @@
 name: "gearman-plugin"
 github: "jenkinsci/gearman-plugin"
 issues:
-- jira: '17647' # gearman-plugin
+  - jira: '17647'  # gearman-plugin
 paths:
-- "org/jenkins-ci/plugins/gearman-plugin"
+  - "org/jenkins-ci/plugins/gearman-plugin"
 developers:
-- "hashar"
+  - "hashar"

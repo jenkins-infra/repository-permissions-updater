@@ -6,6 +6,7 @@ import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import io.jenkins.lib.support_log_formatter.SupportLogFormatter
 import org.yaml.snakeyaml.Yaml
+import org.yaml.snakeyaml.error.YAMLException;
 import org.yaml.snakeyaml.constructor.Constructor
 
 import java.util.concurrent.TimeUnit
@@ -43,6 +44,66 @@ class ArtifactoryPermissionsUpdater {
     private static final boolean DEVELOPMENT = Boolean.getBoolean('development')
 
     /**
+     * Loads all teams from the teams/ folder.
+     * Always returns non null.
+     */
+    private static Map<String, Set<TeamDefinition>>  loadTeams() {
+        Yaml yaml = new Yaml(new Constructor(TeamDefinition.class))
+        File teamsDir = new File('teams/')
+
+        Set<TeamDefinition> teams = [] as Set
+
+        teamsDir.eachFile { teamFile ->
+            try {
+                TeamDefinition newTeam = yaml.loadAs(new FileReader(teamFile), TeamDefinition.class)
+                teams.add(newTeam)
+
+                String expectedName = "${newTeam.name}.yml"
+                if(teamFile.name != expectedName ) {
+                    throw new Exception("team file should be named $expectedName instead of the current ${teamFile.name}")
+                }
+            } catch (YAMLException e) {
+                throw new IOException("Failed to read ${teamFile.name}", e)
+            }
+        }
+        Map<String, Set<TeamDefinition>> result = [:]
+        // TODO: lamba-ify more the conversion
+        teams.each { team ->
+            result.put(team.name, team)
+        }
+        return result
+
+    }
+
+    /**
+     * Checks if any developer has its name starting with `@`.
+     * In which case, for `@some-team` it will replace it with the developers
+     * listed for the team whose name equals `some-team` under the teams/ directory.
+     */
+    private static void expandTeams(Definition definition, Map<String, Set<TeamDefinition>> teamsByName) {
+        Set<String> developers = definition.developers
+        Set<String> expandedDevelopers = [] as Set
+
+        developers.each { developerName ->
+            if (developerName.startsWith('@')) {
+                String teamName = developerName.substring(1)
+                Set teamDevs = teamsByName.get(teamName)?.developers
+                if (teamDevs == null ) {
+                    throw new Exception("Team $teamName not found!")
+                }
+                if (teamDevs.isEmpty()) {
+                    throw new Exception("Team $teamName is empty?!")
+                }
+                LOGGER.log(Level.INFO, "[$definition.name]: replacing $developerName with $teamDevs")
+                expandedDevelopers.addAll(teamDevs.toArray())
+            } else {
+                expandedDevelopers.add(developerName)
+            }
+        }
+        definition.developers = expandedDevelopers
+    }
+
+    /**
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
      */
     private static void generateApiPayloads(File yamlSourceDirectory, File apiOutputDir) throws IOException {
@@ -55,6 +116,8 @@ class ArtifactoryPermissionsUpdater {
         if (apiOutputDir.exists()) {
             throw new IOException(apiOutputDir.path + " already exists")
         }
+
+        Map<String, Set<TeamDefinition>> teamsByName = loadTeams()
 
         Map<String, Set<String>> pathsByGithub = new TreeMap()
         Map<String, List> issueTrackersByPlugin = new TreeMap()
@@ -70,6 +133,9 @@ class ArtifactoryPermissionsUpdater {
 
             try {
                 definition = yaml.loadAs(new FileReader(file), Definition.class)
+
+                expandTeams(definition, teamsByName)
+
             } catch (Exception e) {
                 throw new IOException("Failed to read ${file.name}", e)
             }
@@ -83,16 +149,20 @@ class ArtifactoryPermissionsUpdater {
                 paths.addAll(definition.paths)
 
                 if (definition.cd && definition.getCd().enabled) {
-                    if (!definition.github.matches('(jenkinsci|stapler)/.+')) {
-                        throw new Exception("CD is only supported when the GitHub repository is in @jenkinsci or @stapler")
+                    if (!definition.github.matches('(jenkinsci)/.+')) {
+                        throw new Exception("CD is only supported when the GitHub repository is in @jenkinsci")
                     }
-                    List<Definition> definitions = cdEnabledComponentsByGitHub[definition.github]
-                    if (!definitions) {
-                        definitions = new ArrayList<>()
-                        cdEnabledComponentsByGitHub[definition.github] = definitions
+                    if (definition.developers.length > 0) {
+                        List<Definition> definitions = cdEnabledComponentsByGitHub[definition.github]
+                        if (!definitions) {
+                            definitions = new ArrayList<>()
+                            cdEnabledComponentsByGitHub[definition.github] = definitions
+                        }
+                        LOGGER.log(Level.INFO, "CD-enabled component '${definition.name}' in repository '${definition.github}'")
+                        definitions.add(definition)
+                    } else {
+                        LOGGER.log(Level.INFO, "Skipping CD-enablement for '${definition.name}' in repository '${definition.github}' as it is unmaintained")
                     }
-                    LOGGER.log(Level.INFO, "CD-enabled component '${definition.name}' in repository '${definition.github}'")
-                    definitions.add(definition)
                 }
             } else {
                 if (definition.cd && definition.getCd().enabled) {
@@ -164,51 +234,80 @@ class ArtifactoryPermissionsUpdater {
                 principals {
                     if (definition.developers.length == 0) {
                         users [:]
-                    } else {
-                        users definition.developers.collectEntries { developer ->
-                            def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
-                            def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
-
-                            if (!existsInArtifactory && !existsInJira) {
-                                reportChecksApiDetails(developer + " needs to log in to Artifactory and Jira",
-                                """
-                                ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io/).
-
-                                We resync our Artifactory list hourly, so you will need to wait some time before rebuilding your pull request.
-                                The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
-
-                                Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
-                                """.stripIndent())
-                                throw new IllegalStateException("User name not known to Artifactory and Jira: " + developer)
-                            }
-
-                            if (!existsInArtifactory) {
-                                reportChecksApiDetails(developer + " needs to log in to Artifactory",
-                                        """
-                                ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/).
-
-                                We resync our Artifactory list hourly, so you will need to wait some time before rebuilding your pull request.
-                                The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
-
-                                Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
-                                """.stripIndent())
-                                throw new IllegalStateException("User name not known to Artifactory: " + developer)
-                            }
-
-                            if (!existsInJira) {
-                                reportChecksApiDetails(developer + " needs to log in to Jira",
-                                        """
-                                ${developer} needs to log in to [Jira](https://issues.jenkins.io/).
-                                """.stripIndent())
-                                throw new IllegalStateException("User name not known to Jira: " + developer)
-                            }
-                            [(developer.toLowerCase(Locale.US)): ["w", "n"]]
+                        groups [:]
+                        if (definition.cd?.enabled) {
+                            LOGGER.log(Level.INFO, "Skipping CD group definition for " + definition.name + " as there are no maintainers")
                         }
-                    }
-                    if (definition.cd?.enabled) {
-                        groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
                     } else {
-                        groups([:])
+                        if (!definition.cd?.exclusive) {
+                            users definition.developers.collectEntries { developer ->
+                                def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
+                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
+
+                                if (!existsInArtifactory && !existsInJira) {
+                                    reportChecksApiDetails(developer + " needs to log in to Artifactory and Jira",
+                                            """
+                                    ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io/).
+
+                                    We resync our Artifactory and Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
+                                    The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+
+                                    Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                    """.stripIndent())
+                                    throw new IllegalStateException("User name not known to Artifactory and Jira: " + developer)
+                                }
+
+                                if (!existsInArtifactory) {
+                                    reportChecksApiDetails(developer + " needs to log in to Artifactory",
+                                            """
+                                    ${developer} needs to log in to [Artifactory](https://repo.jenkins-ci.org/).
+
+                                    We resync our Artifactory user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
+                                    The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+
+                                    Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                    """.stripIndent())
+                                    throw new IllegalStateException("User name not known to Artifactory: " + developer)
+                                }
+
+                                if (!existsInJira) {
+                                    reportChecksApiDetails(developer + " needs to log in to Jira",
+                                            """
+                                    ${developer} needs to log in to [Jira](https://issues.jenkins.io/)
+
+                                    We resync our Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
+                                    The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+
+                                    Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                    """.stripIndent())
+                                    throw new IllegalStateException("User name not known to Jira: " + developer)
+                                }
+                                [(developer.toLowerCase(Locale.US)): ["w", "n"]]
+                            }
+                        } else {
+                            definition.developers.each { developer ->
+                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
+
+                                if (!existsInJira) {
+                                    reportChecksApiDetails(developer + " needs to log in to Jira",
+                                            """
+                                    ${developer} needs to log in to [Jira](https://issues.jenkins.io/)
+
+                                    We resync our Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
+                                    The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
+
+                                    Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
+                                    """.stripIndent())
+                                    throw new IllegalStateException("User name not known to Jira: " + developer)
+                                }
+                            }
+                            users [:]
+                        }
+                        if (definition.cd?.enabled) {
+                            groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
+                        } else {
+                            groups([:])
+                        }
                     }
                 }
             }

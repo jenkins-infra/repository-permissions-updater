@@ -2,12 +2,13 @@
 name: "platformlabeler"
 github: &gh "jenkinsci/platformlabeler-plugin"
 issues:
-- jira: '15650' # platformlabeler-plugin
-- github: *gh
+  - jira: '15650'  # platformlabeler-plugin
+  - github: *gh
 paths:
-- "org/jvnet/hudson/plugins/platformlabeler"
+  - "org/jvnet/hudson/plugins/platformlabeler"
 cd:
   enabled: true
+  exclusive: true
 developers:
-- "markewaite"
-- "timja"
+  - "markewaite"
+  - "timja"

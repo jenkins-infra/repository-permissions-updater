@@ -2,7 +2,7 @@
 name: "ivy-report"
 github: "jenkinsci/ivy-report-plugin"
 issues:
-- jira: '17225' # ivy-report-plugin
+  - jira: '17225'  # ivy-report-plugin
 paths:
-- "org/jenkins-ci/plugins/ivy-report"
+  - "org/jenkins-ci/plugins/ivy-report"
 developers: []

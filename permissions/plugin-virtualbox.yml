@@ -2,8 +2,8 @@
 name: "virtualbox"
 github: "jenkinsci/virtualbox-plugin"
 issues:
-- jira: '15708' # virtualbox-plugin
+  - jira: '15708'  # virtualbox-plugin
 paths:
-- "org/jenkins-ci/plugins/virtualbox"
-developers: 
-- "bjones14"
+  - "org/jenkins-ci/plugins/virtualbox"
+developers:
+  - "bjones14"

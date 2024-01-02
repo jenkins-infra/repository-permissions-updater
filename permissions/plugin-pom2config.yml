@@ -2,7 +2,7 @@
 name: "pom2config"
 github: "jenkinsci/pom2config-plugin"
 issues:
-- jira: '18220' # pom2config-plugin
+  - jira: '18220'  # pom2config-plugin
 paths:
-- "org/jenkins-ci/plugins/pom2config"
+  - "org/jenkins-ci/plugins/pom2config"
 developers: []

@@ -2,8 +2,8 @@
 name: "aws-beanstalk-releaser"
 github: "jenkinsci/aws-beanstalk-releaser-plugin"
 issues:
-- jira: '26223' # aws-beanstalk-releaser-plugin
+  - jira: '26223'  # aws-beanstalk-releaser-plugin
 paths:
-- "io/jenkins/plugins/aws-beanstalk-releaser"
+  - "io/jenkins/plugins/aws-beanstalk-releaser"
 developers:
-- "visiontech"
+  - "visiontech"

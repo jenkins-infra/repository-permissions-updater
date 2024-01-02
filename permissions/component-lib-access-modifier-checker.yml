@@ -2,10 +2,6 @@
 name: "access-modifier"
 github: "jenkinsci/lib-access-modifier"
 paths:
-- "org/kohsuke/access-modifier-checker"
+  - "org/kohsuke/access-modifier-checker"
 developers:
-- "timja"
-- "oleg_nenashev"
-- "jglick"
-- "batmat"
-- "markewaite"
+  - "@core"

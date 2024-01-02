@@ -2,7 +2,7 @@
 name: "externalresource-dispatcher"
 github: "jenkinsci/external-resource-dispatcher-plugin"
 issues:
-- jira: '17223' # external-resource-dispatcher-plugin
+  - jira: '17223'  # external-resource-dispatcher-plugin
 paths:
-- "com/sonyericsson/jenkins/plugins/externalresource/externalresource-dispatcher"
+  - "com/sonyericsson/jenkins/plugins/externalresource/externalresource-dispatcher"
 developers: []

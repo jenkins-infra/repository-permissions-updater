@@ -2,9 +2,9 @@
 name: "hudson-wsclean-plugin"
 github: "jenkinsci/wsclean-plugin"
 issues:
-- jira: '15607' # hudson-wsclean-plugin
+  - jira: '15607'  # hudson-wsclean-plugin
 paths:
-- "de/jamba/hudson/plugin/wsclean/hudson-wsclean-plugin"
+  - "de/jamba/hudson/plugin/wsclean/hudson-wsclean-plugin"
 developers:
-- "aheritier"
-- "pjdarton"
+  - "aheritier"
+  - "pjdarton"

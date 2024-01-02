@@ -2,8 +2,8 @@
 name: "xframe-filter-plugin"
 github: "jenkinsci/xframe-filter-plugin"
 issues:
-- jira: '15945' # xframe-filter-plugin
+  - jira: '15945'  # xframe-filter-plugin
 paths:
-- "org/jenkins-ci/plugins/xframe-filter-plugin"
+  - "org/jenkins-ci/plugins/xframe-filter-plugin"
 developers:
-- "jglick"
+  - "jglick"

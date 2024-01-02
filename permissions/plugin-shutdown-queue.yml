@@ -1,0 +1,10 @@
+---
+name: "shutdown-queue"
+github: &GH "jenkinsci/shutdown-queue-plugin"
+paths:
+  - "io/jenkins/plugins/shutdown-queue"
+developers:
+  - "_dkozubik"
+  - "judovana"
+issues:
+  - jira: 28826

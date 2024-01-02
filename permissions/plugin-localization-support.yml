@@ -2,8 +2,8 @@
 name: "localization-support"
 github: "jenkinsci/localization-support-plugin"
 issues:
-- jira: '25034' # localization-support-plugin
+  - jira: '25034'  # localization-support-plugin
 paths:
-- "io/jenkins/plugins/localization-support"
+  - "io/jenkins/plugins/localization-support"
 developers:
-- "danielbeck"
+  - "danielbeck"

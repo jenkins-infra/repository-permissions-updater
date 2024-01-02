@@ -2,10 +2,10 @@
 name: "text-finder"
 github: "jenkinsci/text-finder-plugin"
 issues:
-- jira: '15583' # text-finder-plugin
+  - jira: '15583'  # text-finder-plugin
 paths:
-- "org/jenkins-ci/plugins/text-finder"
-- "org/jvnet/hudson/plugins/text-finder"
+  - "org/jenkins-ci/plugins/text-finder"
+  - "org/jvnet/hudson/plugins/text-finder"
 developers:
-- "basil"
-- "jglick"
+  - "basil"
+  - "jglick"

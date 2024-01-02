@@ -2,8 +2,8 @@
 name: "disable-failed-job"
 github: "jenkinsci/disable-failed-job-plugin"
 issues:
-- jira: '18135' # disable-failed-job-plugin
+  - jira: '18135'  # disable-failed-job-plugin
 paths:
-- "org/jenkins-ci/plugins/disable-failed-job"
+  - "org/jenkins-ci/plugins/disable-failed-job"
 developers:
-- "w_kazunori"
+  - "w_kazunori"

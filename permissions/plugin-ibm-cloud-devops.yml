@@ -2,10 +2,10 @@
 name: "ibm-cloud-devops"
 github: "jenkinsci/ibm-cloud-devops-plugin"
 issues:
-- jira: '22520' # ibm-cloud-devops-plugin
+  - jira: '22520'  # ibm-cloud-devops-plugin
 paths:
-- "com/ibm/devops/ibm-cloud-devops"
+  - "com/ibm/devops/ibm-cloud-devops"
 developers:
-- "xunrongl"
-- "uparulekar"
-- "dlaprod"
+  - "xunrongl"
+  - "uparulekar"
+  - "dlaprod"

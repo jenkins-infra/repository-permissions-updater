@@ -2,9 +2,11 @@
 name: "http_request"
 github: "jenkinsci/http-request-plugin"
 issues:
-- jira: '17539' # http-request-plugin
+  - jira: '17539'  # http-request-plugin
 paths:
-- "org/jenkins-ci/plugins/http_request"
+  - "org/jenkins-ci/plugins/http_request"
 developers:
-- "janario"
-- "oleg_nenashev"
+  - "janario"
+  - "markewaite"
+  - "oleg_nenashev"
+  - "sandi2382"

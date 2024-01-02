@@ -1,0 +1,27 @@
+name: '🚀 GitHub permissions'
+labels: ['github-permissions']
+description: Request GitHub permissions
+
+body:
+  - type: textarea
+    attributes:
+      label: GitHub repositories
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: GitHub users to have permission
+      placeholder: |
+        @user1
+        @user2
+        @user3
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Justification
+      description: |
+        Please provide justification for access and the access level
+    validations:
+      required: true

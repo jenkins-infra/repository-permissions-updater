@@ -1,14 +1,18 @@
 ---
 name: "lockable-resources"
 github: &gh "jenkinsci/lockable-resources-plugin"
+cd:
+  enabled: true
 issues:
-- jira: '18222' # lockable-resources-plugin
-- github: *gh
+  - github: *gh
 paths:
-- "org/6wind/jenkins/lockable-resources"
+  - "org/6wind/jenkins/lockable-resources"
 developers:
-- "abayer"
-- "amuniz"
-- "basil"
-- "tgr"
-- "robinjarry"
+  - "abayer"
+  - "amuniz"
+  - "tgr"
+  - "robinjarry"
+  - "jimklimov"
+  - "markewaite"
+  - "poddingue"
+  - "mpokornyetm"

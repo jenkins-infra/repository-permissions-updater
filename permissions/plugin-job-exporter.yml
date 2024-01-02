@@ -2,8 +2,8 @@
 name: "job-exporter"
 github: "jenkinsci/job-exporter-plugin"
 issues:
-- jira: '16034' # job-exporter-plugin
+  - jira: '16034'  # job-exporter-plugin
 paths:
-- "org/jenkins-ci/plugins/job-exporter"
-- "org/jvnet/hudson/plugins/job-exporter"
+  - "org/jenkins-ci/plugins/job-exporter"
+  - "org/jvnet/hudson/plugins/job-exporter"
 developers: []

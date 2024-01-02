@@ -2,8 +2,8 @@
 name: "arachni-scanner"
 github: "jenkinsci/arachni-scanner-plugin"
 issues:
-- jira: '23443' # arachni-scanner-plugin
+  - jira: '23443'  # arachni-scanner-plugin
 paths:
-- "org/jenkins-ci/plugins/arachni-scanner"
+  - "org/jenkins-ci/plugins/arachni-scanner"
 developers:
-- "irissmann"
+  - "irissmann"

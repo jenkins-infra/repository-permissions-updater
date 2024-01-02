@@ -2,7 +2,7 @@
 name: "tracking-svn"
 github: "jenkinsci/tracking-svn-plugin"
 issues:
-- jira: '16111' # tracking-svn-plugin
+  - jira: '16111'  # tracking-svn-plugin
 paths:
-- "org/jvnet/hudson/plugins/tracking-svn"
+  - "org/jvnet/hudson/plugins/tracking-svn"
 developers: []

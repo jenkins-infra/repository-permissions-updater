@@ -2,6 +2,6 @@
 name: "kotlin-plugin"
 github: "jenkinsci/kotlin-plugin-pom"
 paths:
-- "org/jenkins-ci/plugins/kotlin-plugin"
+  - "org/jenkins-ci/plugins/kotlin-plugin"
 developers:
-- "jetersen"
+  - "jetersen"

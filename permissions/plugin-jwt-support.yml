@@ -2,11 +2,11 @@
 name: "jwt-support"
 github: "jenkinsci/jwt-support-plugin"
 issues:
-- jira: '23753' # jwt-support-plugin
+  - jira: '23753'  # jwt-support-plugin
 paths:
-- "io/jenkins/plugins/jwt-support"
+  - "io/jenkins/plugins/jwt-support"
 developers:
-- "teilo"
-- "agentgonzo"
-- "vivek"
-- "tscherler"
+  - "teilo"
+  - "agentgonzo"
+  - "vivek"
+  - "tscherler"

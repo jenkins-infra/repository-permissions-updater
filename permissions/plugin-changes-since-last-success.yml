@@ -2,8 +2,8 @@
 name: "changes-since-last-success"
 github: "jenkinsci/changes-since-last-success-plugin"
 issues:
-- jira: '17324' # changes-since-last-success-plugin
+  - jira: '17324'  # changes-since-last-success-plugin
 paths:
-- "org/jenkins-ci/plugins/changes-since-last-success"
-developers: 
-- stealthdj
+  - "org/jenkins-ci/plugins/changes-since-last-success"
+developers:
+  - stealthdj

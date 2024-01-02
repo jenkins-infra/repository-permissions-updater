@@ -2,8 +2,8 @@
 name: "teststudio"
 github: "jenkinsci/teststudio-plugin"
 issues:
-- jira: '23439' # teststudio-plugin
+  - jira: '23439'  # teststudio-plugin
 paths:
-- "org/jenkins-ci/plugins/teststudio"
+  - "org/jenkins-ci/plugins/teststudio"
 developers:
-- "deyan_kalinov"
+  - "deyan_kalinov"

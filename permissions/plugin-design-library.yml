@@ -1,0 +1,11 @@
+---
+name: "design-library"
+github: &GH "jenkinsci/design-library-plugin"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/plugins/design-library"
+developers:
+  - "@ux"
+cd:
+  enabled: true

@@ -2,9 +2,9 @@
 name: "CFLint"
 github: "jenkinsci/CFLint-plugin"
 issues:
-- jira: '21039' # cflint-plugin
+  - jira: '21039'  # cflint-plugin
 paths:
-- "org/jvnet/hudson/plugins/CFLint"
+  - "org/jvnet/hudson/plugins/CFLint"
 developers:
-- "jjames967"
-- "ryaneberly"
+  - "jjames967"
+  - "ryaneberly"

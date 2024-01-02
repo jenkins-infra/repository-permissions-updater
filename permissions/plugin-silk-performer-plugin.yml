@@ -2,9 +2,9 @@
 name: "silk-performer-plugin"
 github: "jenkinsci/silk-performer-plugin"
 issues:
-- jira: '21040' # silk-performer-plugin
+  - jira: '21040'  # silk-performer-plugin
 paths:
-- "org/jenkins-ci/plugins/silk-performer-plugin"
+  - "org/jenkins-ci/plugins/silk-performer-plugin"
 developers:
-- "silk"
-- "mihai_virag"
+  - "silk"
+  - "mihai_virag"

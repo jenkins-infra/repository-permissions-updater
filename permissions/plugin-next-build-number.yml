@@ -2,8 +2,8 @@
 name: "next-build-number"
 github: "jenkinsci/next-build-number-plugin"
 issues:
-- jira: '15651' # next-build-number-plugin
+  - jira: '15651'  # next-build-number-plugin
 paths:
-- "org/jenkins-ci/plugins/next-build-number"
+  - "org/jenkins-ci/plugins/next-build-number"
 developers:
-- "akom"
+  - "akom"

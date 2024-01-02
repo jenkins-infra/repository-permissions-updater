@@ -2,7 +2,7 @@
 name: "xpath-config-viewer"
 github: "jenkinsci/xpath-config-viewer-plugin"
 issues:
-- jira: '17546' # xpath-config-viewer-plugin
+  - jira: '17546'  # xpath-config-viewer-plugin
 paths:
-- "org/jenkins-ci/plugins/xpath-config-viewer"
+  - "org/jenkins-ci/plugins/xpath-config-viewer"
 developers: []

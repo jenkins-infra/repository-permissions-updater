@@ -1,9 +1,15 @@
 ---
 name: "mock-load-builder"
-github: "jenkinsci/mock-load-builder-plugin"
+github: &GH "jenkinsci/mock-load-builder-plugin"
 issues:
-- jira: '18828' # mock-load-builder-plugin
+  - github: *GH
+  - jira: '18828'  # mock-load-builder-plugin
+    report: false
 paths:
-- "org/jenkins-ci/plugins/mock-load-builder"
+  - "org/jenkins-ci/plugins/mock-load-builder"
+cd:
+  enabled: true
+  exclusive: true
 developers:
-- "vlatombe"
+  - "vlatombe"
+  - "jglick"

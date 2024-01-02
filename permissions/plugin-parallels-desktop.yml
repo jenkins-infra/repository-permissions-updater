@@ -2,8 +2,8 @@
 name: "parallels-desktop"
 github: "jenkinsci/parallels-desktop-plugin"
 issues:
-- jira: '20851' # parallels-desktop-plugin
+  - jira: '20851'  # parallels-desktop-plugin
 paths:
-- "com/parallels/parallels-desktop"
+  - "com/parallels/parallels-desktop"
 developers:
-- "romankulikov"
+  - "romankulikov"

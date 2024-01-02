@@ -2,18 +2,19 @@
 name: "git-server"
 github: "jenkinsci/git-server-plugin"
 issues:
-- jira: '17613' # git-server-plugin
+  - jira: '17613'  # git-server-plugin
 paths:
-- "org/jenkins-ci/plugins/git-server"
+  - "org/jenkins-ci/plugins/git-server"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "kohsuke"
-- "alecharp"
-- "batmat"
-- "egutierrez"
-- "fcojfernandez"
-- "mramonleon"
-- "rsandell"
+  - "jglick"
+  - "kohsuke"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

@@ -2,6 +2,5 @@
 name: "icon-set"
 github: "jenkinsci/icon-shim-plugin"
 paths:
-- "org/jenkins-ci/plugins/icon-shim/icon-set"
-developers:
-- "jglick"
+  - "org/jenkins-ci/plugins/icon-shim/icon-set"
+developers: [] # archived

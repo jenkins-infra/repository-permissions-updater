@@ -2,7 +2,7 @@
 name: "dtkit-frmk"
 github: "jenkinsci/libdtkit"
 paths:
-- "org/jenkins-ci/lib/dtkit/dtkit-frmk"
+  - "org/jenkins-ci/lib/dtkit/dtkit-frmk"
 developers:
-- "gbois"
-- "nfalco"
+  - "gbois"
+  - "nfalco"

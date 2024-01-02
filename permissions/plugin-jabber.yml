@@ -2,9 +2,9 @@
 name: "jabber"
 github: "jenkinsci/jabber-plugin"
 issues:
-- jira: '15507' # jabber-plugin
+  - jira: '15507'  # jabber-plugin
 paths:
-- "org/jvnet/hudson/plugins/jabber"
+  - "org/jvnet/hudson/plugins/jabber"
 developers:
-- "kutzi"
-- "flow"
+  - "kutzi"
+  - "flow"

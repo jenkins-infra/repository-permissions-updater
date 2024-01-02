@@ -1,11 +1,15 @@
 ---
 name: "nunit"
-github: "jenkinsci/nunit-plugin"
+github: &GH "jenkinsci/nunit-plugin"
 issues:
-- jira: '15562' # nunit-plugin
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/nunit"
-- "org/jvnet/hudson/plugins/nunit"
+  - "org/jenkins-ci/plugins/nunit"
+  - "org/jvnet/hudson/plugins/nunit"
 developers:
-- "kinow"
-- "smorita"
+  - "kinow"
+  - "smorita"
+  - "jonesbusy"
+cd:
+  enabled: true
+  exclusive: true

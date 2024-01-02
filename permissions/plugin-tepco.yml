@@ -2,7 +2,7 @@
 name: "tepco"
 github: "jenkinsci/tepco-plugin"
 issues:
-- jira: '16086' # tepco-plugin
+  - jira: '16086'  # tepco-plugin
 paths:
-- "org/jenkins-ci/plugins/tepco"
+  - "org/jenkins-ci/plugins/tepco"
 developers: []

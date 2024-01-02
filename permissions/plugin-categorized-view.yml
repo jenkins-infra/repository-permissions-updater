@@ -2,10 +2,10 @@
 name: "categorized-view"
 github: &gh "jenkinsci/categorized-view-plugin"
 issues:
-- jira: '17638' # categorized-view-plugin
-- github: *gh
+  - jira: '17638'  # categorized-view-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/categorized-view"
+  - "org/jenkins-ci/plugins/categorized-view"
 developers:
-- "taksan"
-- "takeuchi"
+  - "taksan"
+  - "takeuchi"

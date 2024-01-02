@@ -2,8 +2,8 @@
 name: "google-cloud-health-check"
 github: "jenkinsci/google-cloud-health-check-plugin"
 issues:
-- jira: '20832' # google-cloud-health-check-plugin
+  - jira: '20832'  # google-cloud-health-check-plugin
 paths:
-- "org/jenkins-ci/plugins/google-cloud-health-check"
+  - "org/jenkins-ci/plugins/google-cloud-health-check"
 developers:
-- "astroilov"
+  - "astroilov"

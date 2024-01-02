@@ -2,8 +2,8 @@
 name: "non-dynamic-hello-world"
 github: "jenkinsci/non-dynamic-hello-world-plugin"
 issues:
-- jira: '23433' # non-dynamic-hello-world-plugin
+  - jira: '23433'  # non-dynamic-hello-world-plugin
 paths:
-- "io/jenkins/plugins/non-dynamic-hello-world"
+  - "io/jenkins/plugins/non-dynamic-hello-world"
 developers:
-- "batmat"
+  - "batmat"

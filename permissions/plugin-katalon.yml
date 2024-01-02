@@ -2,8 +2,11 @@
 name: "katalon"
 github: "jenkinsci/katalon-plugin"
 issues:
-- jira: '24650' # katalon-plugin
+  - jira: '24650'  # katalon-plugin
 paths:
-- "org/jenkins-ci/plugins/katalon"
+  - "org/jenkins-ci/plugins/katalon"
 developers:
-- "devalex88"
+  - "duyluonganh"
+  - "hainguyenkatalon"
+cd:
+  enabled: true

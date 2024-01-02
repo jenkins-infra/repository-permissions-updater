@@ -1,8 +1,10 @@
 ---
 name: "stapler"
-github: "stapler/stapler"
+github: "jenkinsci/stapler"
 cd:
   enabled: true
+  exclusive: true
 paths:
-- "org/kohsuke/stapler/stapler*"
-developers: []
+  - "org/kohsuke/stapler/stapler*"
+developers:
+  - "@core"

@@ -2,7 +2,7 @@
 name: "BlameSubversion"
 github: "jenkinsci/BlameSubversion-plugin"
 issues:
-- jira: '16008' # blamesubversion-plugin
+  - jira: '16008'  # blamesubversion-plugin
 paths:
-- "org/jvnet/hudson/plugins/BlameSubversion"
+  - "org/jvnet/hudson/plugins/BlameSubversion"
 developers: []

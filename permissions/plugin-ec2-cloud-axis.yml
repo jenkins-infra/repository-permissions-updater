@@ -2,8 +2,8 @@
 name: "ec2-cloud-axis"
 github: &gh "jenkinsci/ec2-cloud-axis-plugin"
 issues:
-- jira: '18148' # ec2-cloud-axis-plugin
-- github: *gh
+  - jira: '18148'  # ec2-cloud-axis-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/ec2-cloud-axis"
+  - "org/jenkins-ci/plugins/ec2-cloud-axis"
 developers: []

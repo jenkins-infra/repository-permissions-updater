@@ -2,8 +2,8 @@
 name: "customized-build-message"
 github: "jenkinsci/customized-build-message-plugin"
 issues:
-- jira: '22525' # customized-build-message-plugin
+  - jira: '22525'  # customized-build-message-plugin
 paths:
-- "org/jenkins-ci/plugins/customized-build-message"
+  - "org/jenkins-ci/plugins/customized-build-message"
 developers:
-- "cashlalala"
+  - "cashlalala"

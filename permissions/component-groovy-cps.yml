@@ -1,0 +1,22 @@
+---
+name: "groovy-cps"
+github: "jenkinsci/workflow-cps-plugin"
+paths:
+  - "com/cloudbees/groovy-cps"
+developers:
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "svanoort"
+  - "rsandell"
+  - "dnusbaum"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
+  - "teilo"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

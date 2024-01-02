@@ -2,9 +2,9 @@
 name: "scripttrigger"
 github: "jenkinsci/scripttrigger-plugin"
 issues:
-- jira: '15892' # scripttrigger-plugin
+  - jira: '15892'  # scripttrigger-plugin
 paths:
-- "org/jenkins-ci/plugins/scripttrigger"
+  - "org/jenkins-ci/plugins/scripttrigger"
 developers:
-- "gbois"
-- "stealthdj"
+  - "gbois"
+  - "stealthdj"

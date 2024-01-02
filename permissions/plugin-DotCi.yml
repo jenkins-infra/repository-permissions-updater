@@ -2,10 +2,10 @@
 name: "DotCi"
 github: "jenkinsci/DotCi"
 issues:
-- jira: '18836' # dotci-plugin
+  - jira: '18836'  # dotci-plugin
 paths:
-- "com/groupon/jenkins-ci/plugins/DotCi"
+  - "com/groupon/jenkins-ci/plugins/DotCi"
 developers:
-- "surya548"
-- "suryagaddipati"
-- "vvitayau"
+  - "surya548"
+  - "suryagaddipati"
+  - "vvitayau"

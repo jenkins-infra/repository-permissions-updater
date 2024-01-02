@@ -2,8 +2,8 @@
 name: "aws-parameter-store"
 github: "jenkinsci/aws-parameter-store-plugin"
 issues:
-- jira: '23534' # aws-parameter-store-plugin
+  - jira: '23534'  # aws-parameter-store-plugin
 paths:
-- "org/jenkins-ci/plugins/aws-parameter-store"
+  - "org/jenkins-ci/plugins/aws-parameter-store"
 developers:
-- "rikturnbull"
+  - "rikturnbull"

@@ -2,9 +2,11 @@
 name: "google-login"
 github: "jenkinsci/google-login-plugin"
 issues:
-- jira: '19828' # google-login-plugin
+  - jira: '19828'  # google-login-plugin
 paths:
-- "org/jenkins-ci/plugins/google-login"
+  - "org/jenkins-ci/plugins/google-login"
+cd:
+  enabled: true
 developers:
-- "recampbell"
-- "vlatombe"
+  - "recampbell"
+  - "vlatombe"

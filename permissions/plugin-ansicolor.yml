@@ -2,16 +2,17 @@
 name: "ansicolor"
 github: &gh "jenkinsci/ansicolor-plugin"
 issues:
-- github: *gh
-- jira: '15995' # ansicolor-plugin
+  - github: *gh
+  - jira: '15995'  # ansicolor-plugin
 paths:
-- "org/jenkins-ci/plugins/ansicolor"
-- "org/jvnet/hudson/plugins/ansicolor"
+  - "org/jenkins-ci/plugins/ansicolor"
+  - "org/jvnet/hudson/plugins/ansicolor"
 developers:
-- "anyfoo"
-- "dblock"
-- "qvicksilver"
-- "joemerten"
-- "mkobit"
-- "dnusbaum"
-- "tszmytka"
+  - "anyfoo"
+  - "basil"
+  - "dblock"
+  - "qvicksilver"
+  - "joemerten"
+  - "mkobit"
+  - "dnusbaum"
+  - "tszmytka"

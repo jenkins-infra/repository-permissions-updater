@@ -2,8 +2,10 @@
 name: "cortex-metrics"
 github: &GH "jenkinsci/cortex-metrics-plugin"
 paths:
-- "io/jenkins/plugins/cortex-metrics"
+  - "io/jenkins/plugins/cortex-metrics"
 developers:
-- "bksaville"
+  - "bksaville"
 issues:
   - github: *GH
+cd:
+  enabled: true

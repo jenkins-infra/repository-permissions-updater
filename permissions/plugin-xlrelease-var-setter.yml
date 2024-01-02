@@ -2,8 +2,8 @@
 name: "xlrelease-var-setter"
 github: &gh "jenkinsci/xlrelease-var-setter-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "com/arkea/satd/xlrelease-var-setter"
+  - "com/arkea/satd/xlrelease-var-setter"
 developers:
-- "obeautier"
+  - "obeautier"

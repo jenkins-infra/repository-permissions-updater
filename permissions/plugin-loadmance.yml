@@ -1,0 +1,9 @@
+---
+name: "loadmance"
+github: &GH "jenkinsci/loadmance-plugin"
+paths:
+- "io/jenkins/plugins/loadmance"
+developers:
+- "aktoluna"
+issues:
+  - github: *GH

@@ -2,10 +2,8 @@
 name: "incapptic-connect-uploader"
 github: "jenkinsci/incapptic-connect-uploader-plugin"
 issues:
-- jira: '23020' # incapptic-connect-uploader-plugin
+  - jira: '23020'  # incapptic-connect-uploader-plugin
 paths:
-- "com/incapptic/plugins/incapptic-connect-uploader"
+  - "com/incapptic/plugins/incapptic-connect-uploader"
 developers:
-- "incapptic_connect"
-
-
+  - "incapptic_connect"

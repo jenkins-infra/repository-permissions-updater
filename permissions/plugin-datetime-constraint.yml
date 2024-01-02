@@ -2,8 +2,8 @@
 name: "datetime-constraint"
 github: "jenkinsci/datetime-constraint-plugin"
 issues:
-- jira: '26227' # datetime-constraint-plugin
+  - jira: '26227'  # datetime-constraint-plugin
 paths:
-- "io/jenkins/plugins/datetime-constraint"
+  - "io/jenkins/plugins/datetime-constraint"
 developers:
-- "jouda_hidri"
+  - "jouda_hidri"

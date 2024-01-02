@@ -2,10 +2,12 @@
 name: "lucene-search"
 github: &gh "jenkinsci/lucene-search-plugin"
 issues:
-- jira: '20828' # lucene-search-plugin
-- github: *gh
+  - jira: '20828'  # lucene-search-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/lucene-search"
+  - "org/jenkins-ci/plugins/lucene-search"
 developers:
-- "hanabishi"
-- "tobias_"
+  - "markch"
+  - "tdraebing"
+cd:
+  enabled: true

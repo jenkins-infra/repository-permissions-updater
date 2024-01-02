@@ -2,8 +2,8 @@
 name: "pull-request-monitoring"
 github: &GH "jenkinsci/pull-request-monitoring-plugin"
 paths:
-- "io/jenkins/plugins/pull-request-monitoring"
+  - "io/jenkins/plugins/pull-request-monitoring"
 developers:
-- "simonsymhoven"
+  - "simonsymhoven"
 issues:
   - github: *GH

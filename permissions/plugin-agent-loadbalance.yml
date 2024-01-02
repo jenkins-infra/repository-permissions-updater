@@ -2,8 +2,8 @@
 name: "agent-loadbalance"
 github: "jenkinsci/agent-loadbalance-plugin"
 issues:
-- jira: '23452' # agent-loadbalance-plugin
+  - jira: '23452'  # agent-loadbalance-plugin
 paths:
-- "com/surenpi/jenkins/agent-loadbalance"
+  - "com/surenpi/jenkins/agent-loadbalance"
 developers:
-- "surenpi"
+  - "surenpi"

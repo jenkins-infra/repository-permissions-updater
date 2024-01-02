@@ -2,11 +2,11 @@
 name: "zephyr-enterprise-test-management"
 github: "jenkinsci/zephyr-enterprise-test-management-plugin"
 issues:
-- jira: '20648' # zephyr-enterprise-test-management-plugin
+  - jira: '20648'  # zephyr-enterprise-test-management-plugin
 paths:
-- "org/jenkins-ci/plugins/zephyr-enterprise-test-management"
+  - "org/jenkins-ci/plugins/zephyr-enterprise-test-management"
 developers:
-- "zeedeveloper"
-- "mohanzephyr"
-- "pv_smartbear"
-- "t25garg"
+  - "zeedeveloper"
+  - "mohanzephyr"
+  - "pv_smartbear"
+  - "t25garg"

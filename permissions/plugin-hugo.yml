@@ -2,8 +2,8 @@
 name: "hugo"
 github: &gh "jenkinsci/hugo-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/hugo"
+  - "io/jenkins/plugins/hugo"
 developers:
-- "surenpi"
+  - "surenpi"

@@ -2,10 +2,13 @@
 name: "naginator"
 github: "jenkinsci/naginator-plugin"
 issues:
-- jira: '15560' # naginator-plugin
+  - jira: '15560'  # naginator-plugin
+cd:
+  enabled: true
 paths:
-- "org/jenkins-ci/plugins/naginator"
+  - "org/jenkins-ci/plugins/naginator"
 developers:
-- "galunto"
-- "ikedam"
-- "integer"
+  - "galunto"
+  - "ikedam"
+  - "integer"
+  - "sghill"

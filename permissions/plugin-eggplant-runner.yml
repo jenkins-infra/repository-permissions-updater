@@ -1,0 +1,14 @@
+---
+name: "eggplant-runner"
+github: &GH "jenkinsci/eggplant-runner-plugin"
+paths:
+  - "io/jenkins/plugins/eggplant-runner"
+developers:
+  - "pohkheng"
+  - "poasungoh"
+  - "tingwcho"
+  - "curveenk"
+issues:
+  - github: *GH
+cd:
+  enabled: true

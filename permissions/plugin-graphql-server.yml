@@ -2,8 +2,8 @@
 name: "graphql-server"
 github: "jenkinsci/graphql-server-plugin"
 issues:
-- jira: '25526' # graphql-server-plugin
+  - jira: '25526'  # graphql-server-plugin
 paths:
-- "io/jenkins/plugins/graphql-server"
+  - "io/jenkins/plugins/graphql-server"
 developers:
-- "halkeye"
+  - "halkeye"

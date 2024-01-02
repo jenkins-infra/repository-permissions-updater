@@ -2,8 +2,9 @@
 name: "cloudevents"
 github: &GH "jenkinsci/cloudevents-plugin"
 paths:
-- "io/jenkins/plugins/cloudevents"
+  - "io/jenkins/plugins/cloudevents"
 developers:
-- "waveywaves"
+  - "waveywaves"
+  - "shruti_chaturvedi"
 issues:
   - github: *GH

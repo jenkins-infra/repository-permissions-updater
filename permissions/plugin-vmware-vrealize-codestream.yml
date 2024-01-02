@@ -2,8 +2,8 @@
 name: "vmware-vrealize-codestream"
 github: "jenkinsci/vmware-vrealize-codestream-plugin"
 issues:
-- jira: '20654' # vmware-vrealize-codestream-plugin
+  - jira: '20654'  # vmware-vrealize-codestream-plugin
 paths:
-- "com/vmware/vcac/vmware-vrealize-codestream"
+  - "com/vmware/vcac/vmware-vrealize-codestream"
 developers:
-- "rishisaraf11"
+  - "rishisaraf11"

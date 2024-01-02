@@ -1,16 +1,18 @@
 ---
 name: "ssh-slaves"
-github: "jenkinsci/ssh-slaves-plugin"
+github: "jenkinsci/ssh-agents-plugin"
 issues:
-- jira: '15578' # ssh-slaves-plugin
+  - jira: '15578'  # ssh-slaves-plugin
 paths:
-- "org/jenkins-ci/plugins/ssh-slaves"
+  - "org/jenkins-ci/plugins/ssh-slaves"
 developers:
-- "andresrc"
-- "jglick"
-- "kohsuke"
-- "oleg_nenashev"
-- "ifernandezcalvo"
+  - "andresrc"
+  - "jglick"
+  - "kohsuke"
+  - "oleg_nenashev"
+  - "ifernandezcalvo"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

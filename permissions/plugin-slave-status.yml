@@ -1,8 +1,10 @@
 ---
 name: "slave-status"
-github: "jenkinsci/slave-status-plugin"
+github: "jenkinsci/agent-status-plugin"
 issues:
-- jira: '15981' # slave-status-plugin
+  - jira: '15981'  # slave-status-plugin
 paths:
-- "org/jvnet/hudson/plugins/slave-status"
+  - "org/jvnet/hudson/plugins/slave-status"
 developers: []
+cd:
+  enabled: true

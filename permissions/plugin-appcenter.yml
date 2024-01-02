@@ -2,8 +2,8 @@
 name: "appcenter"
 github: "jenkinsci/appcenter-plugin"
 issues:
-- jira: '25430' # appcenter-plugin
+  - jira: '25430'  # appcenter-plugin
 paths:
-- "io/jenkins/plugins/appcenter"
+  - "io/jenkins/plugins/appcenter"
 developers:
-- "nitin_kumar"
+  - "nitin_kumar"

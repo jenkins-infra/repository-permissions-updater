@@ -2,8 +2,8 @@
 name: "lotus-connections-plugin"
 github: "jenkinsci/lotus-connections-plugin"
 issues:
-- jira: '17221' # lotus-connections-plugin
+  - jira: '17221'  # lotus-connections-plugin
 paths:
-- "org/jenkins-ci/plugins/lotus-connections-plugin"
+  - "org/jenkins-ci/plugins/lotus-connections-plugin"
 developers:
-- "philrumble"
+  - "philrumble"

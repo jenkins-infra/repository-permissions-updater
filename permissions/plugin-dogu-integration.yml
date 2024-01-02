@@ -1,0 +1,11 @@
+---
+name: "dogu-integration"
+github: &GH "jenkinsci/dogu-integration-plugin"
+paths:
+- "io/jenkins/plugins/dogu-integration"
+developers:
+- "dogutechio"
+issues:
+  - github: *GH
+cd:
+  enabled: true

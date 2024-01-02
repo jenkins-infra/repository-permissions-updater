@@ -2,7 +2,7 @@
 name: "caroline"
 github: "jenkinsci/caroline-plugin"
 issues:
-- jira: '16126' # caroline-plugin
+  - jira: '16126'  # caroline-plugin
 paths:
-- "org/jvnet/hudson/plugins/caroline"
+  - "org/jvnet/hudson/plugins/caroline"
 developers: []

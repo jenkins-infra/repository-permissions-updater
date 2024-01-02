@@ -2,13 +2,13 @@
 name: "configuration-as-code-support"
 github: &gh "jenkinsci/configuration-as-code-plugin"
 issues:
-- github: *gh
-- jira: '23170' # configuration-as-code-plugin
+  - github: *gh
+  - jira: '23170'  # configuration-as-code-plugin
 paths:
-- "io/jenkins/configuration-as-code/configuration-as-code-support"
+  - "io/jenkins/configuration-as-code/configuration-as-code-support"
 developers:
-- "praqma"
-- "jetersen"
+  - "praqma"
+  - "jetersen"
 security:
   contacts:
     jira: "jetersen"

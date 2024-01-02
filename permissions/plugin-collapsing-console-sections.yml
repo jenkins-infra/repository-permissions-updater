@@ -2,8 +2,8 @@
 name: "collapsing-console-sections"
 github: "jenkinsci/collapsing-console-sections-plugin"
 issues:
-- jira: '15763' # collapsing-console-sections-plugin
+  - jira: '15763'  # collapsing-console-sections-plugin
 paths:
-- "org/jenkins-ci/plugins/collapsing-console-sections"
+  - "org/jenkins-ci/plugins/collapsing-console-sections"
 developers:
-- "oleg_nenashev"
+  - "oleg_nenashev"

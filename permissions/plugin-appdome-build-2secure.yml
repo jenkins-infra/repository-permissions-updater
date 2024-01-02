@@ -1,0 +1,10 @@
+---
+name: "appdome-build-2secure"
+github: &GH "jenkinsci/appdome-build-2secure-plugin"
+paths:
+- "io/jenkins/plugins/appdome-build-2secure"
+developers:
+- "idanhauser"
+- "avie"
+issues:
+  - github: *GH

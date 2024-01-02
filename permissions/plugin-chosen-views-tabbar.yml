@@ -2,8 +2,8 @@
 name: "chosen-views-tabbar"
 github: &gh "jenkinsci/chosen-views-tabbar"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/chosen-views-tabbar"
+  - "org/jenkins-ci/plugins/chosen-views-tabbar"
 developers:
-- "taksan"
+  - "taksan"

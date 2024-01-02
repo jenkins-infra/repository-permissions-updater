@@ -2,8 +2,8 @@
 name: "audit2db"
 github: &gh "jenkinsci/audit2db-plugin"
 issues:
-- github: *gh
-- jira: '17533' # audit2db-plugin
+  - github: *gh
+  - jira: '17533'  # audit2db-plugin
 paths:
-- "org/jenkins-ci/plugins/audit2db"
+  - "org/jenkins-ci/plugins/audit2db"
 developers: []

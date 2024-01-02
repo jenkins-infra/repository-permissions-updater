@@ -2,16 +2,19 @@
 name: "caffeine-api"
 github: &GH "jenkinsci/caffeine-api-plugin"
 paths:
-- "io/jenkins/plugins/caffeine-api"
+  - "io/jenkins/plugins/caffeine-api"
 developers:
-- "teilo"
-- "rsandell"
-- "carroll"
-- "olamy"
-- "mramonleon"
-- "alecharp"
-- "bitwiseman"
+  - "teilo"
+  - "rsandell"
+  - "carroll"
+  - "olamy"
+  - "mramonleon"
+  - "alecharp"
+  - "bitwiseman"
 issues:
   - jira: 28622
 cd:
   enabled: true
+security:
+  contacts:
+    jira: "cloudbees_security_members"

@@ -1,0 +1,12 @@
+---
+name: "database-mariadb"
+github: &GH "jenkinsci/database-mariadb-plugin"
+paths:
+- "io/jenkins/plugins/database-mariadb"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true
+  exclusive: true

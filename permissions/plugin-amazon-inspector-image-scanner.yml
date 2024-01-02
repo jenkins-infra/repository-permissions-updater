@@ -1,0 +1,11 @@
+---
+name: "amazon-inspector-image-scanner"
+github: &GH "jenkinsci/amazon-inspector-image-scanner-plugin"
+paths:
+- "io/jenkins/plugins/amazon-inspector-image-scanner"
+developers:
+- "inspector_opensource"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -2,7 +2,7 @@
 name: "cryptomove"
 github: "jenkinsci/cryptomove-plugin"
 issues:
-- jira: '25522' # cryptomove-plugin
+  - jira: '25522'  # cryptomove-plugin
 paths:
   - "io/jenkins/plugins/cryptomove"
 developers:

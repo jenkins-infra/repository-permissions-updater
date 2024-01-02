@@ -2,9 +2,7 @@ def props = [
         buildDiscarder(logRotator(numToKeepStr: '10'))
 ]
 
-def triggers = [
-        pollSCM('H/2 * * * *')
-]
+def triggers = []
 
 def dryRun = true
 
@@ -13,6 +11,9 @@ if (!env.CHANGE_ID && (!env.BRANCH_NAME || env.BRANCH_NAME == 'master')) {
         // only on trusted.ci, running on master is not a dry-run
         dryRun = false
 
+        // Check for code change every 5 minutes as there are no webhooks on trusted.ci.jenkins.io
+        // The goal is to run RPU as soon as possible for any code change
+        triggers += pollSCM('H/5 * * * *')
         // Run every 3 hours
         triggers += cron('H H/3 * * *')
     } else {
@@ -27,7 +28,7 @@ props += pipelineTriggers(triggers)
 properties(props)
 
 
-node('java') {
+node('maven-11') {
     try {
         stage ('Clean') {
             deleteDir()
@@ -39,9 +40,7 @@ node('java') {
         }
 
         stage ('Build') {
-            def mvnHome = tool 'mvn'
-            env.JAVA_HOME = tool 'jdk11'
-            sh "${mvnHome}/bin/mvn -U clean verify"
+            sh "mvn -U -B -ntp clean verify"
         }
 
         stage ('Run') {
@@ -57,14 +56,14 @@ node('java') {
                     withCredentials([
                             usernamePassword(credentialsId: 'jiraUser', passwordVariable: 'JIRA_PASSWORD', usernameVariable: 'JIRA_USERNAME')
                             ]) {
-                        sh '${JAVA_HOME}/bin/java -DdryRun=true' + javaArgs
+                        sh 'java -DdryRun=true' + javaArgs
                     }
                 } catch(ignored) {
                     if (fileExists('checks-title.txt')) {
                         def title = readFile file: 'checks-title.txt', encoding: 'utf-8'
                         def summary = readFile file:'checks-details.txt', encoding:  'utf-8'
                         publishChecks conclusion: 'ACTION_REQUIRED',
-                                name: 'Validation', 
+                                name: 'Validation',
                             summary: summary,
                             title: title
                     }
@@ -76,10 +75,12 @@ node('java') {
             } else {
                 withCredentials([
                         usernamePassword(credentialsId: 'jiraUser', passwordVariable: 'JIRA_PASSWORD', usernameVariable: 'JIRA_USERNAME'),
-                        usernamePassword(credentialsId: 'artifactoryAdmin', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME'),
+                        string(credentialsId: 'artifactoryAdminToken', variable: 'ARTIFACTORY_TOKEN'),
                         usernamePassword(credentialsId: 'jenkins-infra-bot-github-token', passwordVariable: 'GITHUB_TOKEN', usernameVariable: 'GITHUB_USERNAME')
                 ]) {
-                    sh '${JAVA_HOME}/bin/java ' + javaArgs
+                    retry(conditions: [agent(), nonresumable()], count: 2) {
+                        sh 'java ' + javaArgs
+                    }
                 }
             }
         }

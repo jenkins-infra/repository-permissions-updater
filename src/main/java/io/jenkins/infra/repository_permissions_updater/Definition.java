@@ -10,6 +10,7 @@ public class Definition {
 
     public static class CD {
         public boolean enabled;
+        public boolean exclusive;
     }
 
     public static class Security {
@@ -17,7 +18,6 @@ public class Definition {
     }
 
     public static class SecurityContacts {
-        public String email;
         public String jira;
     }
 
@@ -189,7 +189,7 @@ public class Definition {
     }
 
     public String getGithub() {
-        if (github != null && (github.startsWith("jenkinsci/") || github.startsWith("stapler/"))) {
+        if (github != null && github.startsWith("jenkinsci/")) {
             return github;
         }
         return null;

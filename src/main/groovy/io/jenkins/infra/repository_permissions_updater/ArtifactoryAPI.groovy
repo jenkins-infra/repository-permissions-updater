@@ -28,7 +28,7 @@ abstract class ArtifactoryAPI {
     /**
      * URL to the groups API of Artifactory
      */
-    private static final String ARTIFACTORY_TOKEN_API_URL = ARTIFACTORY_URL + '/api/security/token'
+    private static final String ARTIFACTORY_TOKEN_API_URL = ARTIFACTORY_URL + '/access/api/v1/tokens'
 
     /**
      * True iff this is a dry-run (no API calls resulting in modifications)
@@ -156,27 +156,23 @@ abstract class ArtifactoryAPI {
         private static final Logger LOGGER = Logger.getLogger(ArtifactoryImpl.class.getName())
 
         static {
-            String username = System.getenv("ARTIFACTORY_USERNAME")
-            String password = System.getenv("ARTIFACTORY_PASSWORD")
-            if (username == null || password == null) {
-                AUTHENTICATOR = null
+            String token = System.getenv("ARTIFACTORY_TOKEN")
+            if (token == null) {
+                BEARER_TOKEN = null
                 if (!DRY_RUN_MODE) {
-                    throw new IllegalStateException("ARTIFACTORY_USERNAME and ARTIFACTORY_PASSWORD must be provided unless dry-run mode is used")
+                    throw new IllegalStateException("ARTIFACTORY_TOKEN must be provided unless dry-run mode is used")
                 }
             } else {
                 if (System.getProperty("java.version").startsWith("1.")) {
-                    // HttpUrlConnection#setAuthenticator exists since Java 9
-                    throw new IllegalStateException("You need at least Java 9 to run this unless dry-run mode is used")
+                    // URLEncoder#encode(String, Charset) exists since Java 10
+                    throw new IllegalStateException("You need at least Java 10 to run this unless dry-run mode is used")
                 }
-                AUTHENTICATOR = new Authenticator() {
-                    protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(username, password.toCharArray())
-                    }
-                }
+
+                BEARER_TOKEN = "Bearer ${token}"
             }
         }
 
-        private static final Authenticator AUTHENTICATOR
+        private static final String BEARER_TOKEN
 
         /**
          * Creates or replaces a permission target based on the provided payload.
@@ -221,7 +217,7 @@ abstract class ArtifactoryAPI {
                 OutputStreamWriter osw = new OutputStreamWriter(getOutputStream())
                 def params = [
                         'username': username,
-                        'scope': 'member-of-groups:readers,' + group,
+                        'scope': 'applied-permissions/groups:readers,' + group,
                         'expires_in': expiresInSeconds
                 ].collect { k, v -> k  + '=' + URLEncoder.encode((String)v, StandardCharsets.UTF_8) }.join('&')
                 LOGGER.log(Level.INFO, "Generating token with request payload: " + params)
@@ -284,8 +280,10 @@ abstract class ArtifactoryAPI {
             try {
                 URL _url = new URL(url)
                 conn = (HttpURLConnection) _url.openConnection()
-                conn.setAuthenticator(AUTHENTICATOR)
                 conn.setRequestMethod(verb)
+                if (BEARER_TOKEN) {
+                    conn.addRequestProperty('Authorization', BEARER_TOKEN)
+                }
 
                 closure.setDelegate(conn)
                 closure.call()

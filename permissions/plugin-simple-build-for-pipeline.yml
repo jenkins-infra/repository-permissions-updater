@@ -2,8 +2,8 @@
 name: "simple-build-for-pipeline"
 github: "jenkinsci/simple-build-for-pipeline-plugin"
 issues:
-- jira: '21421' # simple-build-for-pipeline-plugin
+  - jira: '21421'  # simple-build-for-pipeline-plugin
 paths:
-- "org/jenkins-ci/plugins/simple-build-for-pipeline"
+  - "org/jenkins-ci/plugins/simple-build-for-pipeline"
 developers:
-- "michaelneale"
+  - "michaelneale"

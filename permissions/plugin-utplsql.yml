@@ -2,9 +2,9 @@
 name: "utplsql"
 github: "jenkinsci/utplsql-plugin"
 issues:
-- jira: '15732' # utplsql-plugin
+  - jira: '15732'  # utplsql-plugin
 paths:
-- "hudson/plugins/utplsql/utplsql"
-- "org/jenkins-ci/plugins/utplsql"
+  - "hudson/plugins/utplsql/utplsql"
+  - "org/jenkins-ci/plugins/utplsql"
 developers:
-- "kusemuckl"
+  - "kusemuckl"

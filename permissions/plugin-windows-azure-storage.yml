@@ -4,9 +4,9 @@ github: &gh "jenkinsci/azure-storage-plugin"
 issues:
   - github: *gh
 paths:
-- "org/jenkins-ci/plugins/windows-azure-storage"
+  - "org/jenkins-ci/plugins/windows-azure-storage"
 cd:
   enabled: true
 developers:
-- "zooopx"
-- "timja"
+  - "zooopx"
+  - "timja"

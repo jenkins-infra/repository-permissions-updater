@@ -2,12 +2,12 @@
 name: "remote-file"
 github: &gh "jenkinsci/remote-file-plugin"
 issues:
-- github: *gh
-- jira: '25622' # remote-file-plugin
+  - github: *gh
+  - jira: '25622'  # remote-file-plugin
 paths:
-- "io/jenkins/plugins/remote-file"
+  - "io/jenkins/plugins/remote-file"
 developers:
-- "aytuncbeken"
+  - "aytuncbeken"
 security:
   contacts:
     jira: "aytuncbeken"

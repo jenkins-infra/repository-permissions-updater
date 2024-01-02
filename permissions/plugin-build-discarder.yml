@@ -2,8 +2,12 @@
 name: "build-discarder"
 github: &gh "jenkinsci/build-discarder-plugin"
 issues:
-- github: *gh
+  - github: *gh
 paths:
-- "io/jenkins/plugins/build-discarder"
+  - "io/jenkins/plugins/build-discarder"
 developers:
-- "orjan"
+  - "orjan"
+  - "ilana"
+  - "akessoj71"
+cd:
+  enabled: true

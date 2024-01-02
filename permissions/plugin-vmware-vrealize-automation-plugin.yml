@@ -2,8 +2,8 @@
 name: "vmware-vrealize-automation-plugin"
 github: "jenkinsci/vmware-vrealize-automation-plugin"
 issues:
-- jira: '21121' # vmware-vrealize-automation-plugin
+  - jira: '21121'  # vmware-vrealize-automation-plugin
 paths:
-- "com/inkysea/vmware/vra/vmware-vrealize-automation-plugin"
+  - "com/inkysea/vmware/vra/vmware-vrealize-automation-plugin"
 developers:
-- "inkysea"
+  - "inkysea"

@@ -2,8 +2,8 @@
 name: "multi-branch-project-plugin"
 github: "jenkinsci/multi-branch-project-plugin"
 issues:
-- jira: '21127' # multi-branch-project-plugin (not Pipeline)
+  - jira: '21127'  # multi-branch-project-plugin (not Pipeline)
 paths:
-- "com/github/mjdetullio/jenkins/plugins/multi-branch-project-plugin"
+  - "com/github/mjdetullio/jenkins/plugins/multi-branch-project-plugin"
 developers:
-- "mjdetullio"
+  - "mjdetullio"

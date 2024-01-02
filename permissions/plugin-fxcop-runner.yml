@@ -2,7 +2,7 @@
 name: "fxcop-runner"
 github: "jenkinsci/fxcop-runner-plugin"
 issues:
-- jira: '17571' # fxcop-runner-plugin
+  - jira: '17571'  # fxcop-runner-plugin
 paths:
-- "org/jenkins-ci/plugins/fxcop-runner"
+  - "org/jenkins-ci/plugins/fxcop-runner"
 developers: []

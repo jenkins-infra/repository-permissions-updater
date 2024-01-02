@@ -1,0 +1,9 @@
+---
+name: "restrict-steps"
+github: &GH "jenkinsci/restrict-steps-plugin"
+paths:
+- "io/jenkins/plugins/restrict-steps"
+developers:
+- "sag47"
+issues:
+  - jira: 29133

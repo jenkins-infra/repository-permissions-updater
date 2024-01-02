@@ -2,8 +2,8 @@
 name: "gradle-repo"
 github: "jenkinsci/gradle-repo-plugin"
 issues:
-- jira: '24431' # gradle-repo-plugin
+  - jira: '24431'  # gradle-repo-plugin
 paths:
-- "io/jenkins/plugins/gradle-repo"
+  - "io/jenkins/plugins/gradle-repo"
 developers:
-- "eastwoodyang"
+  - "eastwoodyang"
