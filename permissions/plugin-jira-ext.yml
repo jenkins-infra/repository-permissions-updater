@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/jira-ext"
 developers:
   - "dalvizu"
+cd:
+  enabled: true
