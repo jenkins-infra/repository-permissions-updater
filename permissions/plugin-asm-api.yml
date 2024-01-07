@@ -8,4 +8,4 @@ developers:
 issues:
   - github: *GH
 cd:
-	enabled: true  
+  enabled: true
