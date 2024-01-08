@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/pull-request-monitoring"
 developers:
   - "simonsymhoven"
+  - "mPokornyETM"
 issues:
   - github: *GH
 cd:
