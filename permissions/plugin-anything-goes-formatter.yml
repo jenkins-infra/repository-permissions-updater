@@ -5,6 +5,7 @@ issues:
   - jira: '17568'  # anything-goes-formatter-plugin
 paths:
   - "org/jenkins-ci/plugins/anything-goes-formatter"
-developers: []
+developers:
+  - "mPokornyETM"
 cd:
   enabled: true

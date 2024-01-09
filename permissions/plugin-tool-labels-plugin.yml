@@ -4,3 +4,4 @@ paths:
   - "org/jenkins-ci/plugins/tool-labels-plugin"
 developers:
   - "kazssym"
+  - "mPokornyETM"
