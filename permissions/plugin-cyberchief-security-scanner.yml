@@ -1,0 +1,9 @@
+---
+name: "cyberchief-security-scanner"
+github: &GH "jenkinsci/cyberchief-security-scanner-plugin"
+paths:
+- "io/jenkins/plugins/cyberchief-security-scanner"
+developers:
+- "ziontavera"
+issues:
+  - jira: 29321
