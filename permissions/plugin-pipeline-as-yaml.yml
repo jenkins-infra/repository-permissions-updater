@@ -9,3 +9,7 @@ paths:
 developers:
   - "aytuncbeken"
   - "oleg_nenashev"
+  - "jonesbusy"
+cd:
+  enabled: true
+  exclusive: true

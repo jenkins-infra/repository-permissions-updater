@@ -8,3 +8,4 @@ paths:
   - "org/jvnet/hudson/plugins/port-allocator"
 developers:
   - "markewaite"
+  - "mPokornyETM"

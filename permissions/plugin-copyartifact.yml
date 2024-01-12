@@ -11,6 +11,7 @@ developers:
   - "wolfs"
   - "markewaite"
   - "allancth"
+  - "mPokornyETM"
 security:
   contacts:
     jira: "cloudbees_security_members"

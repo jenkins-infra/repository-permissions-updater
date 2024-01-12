@@ -7,5 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/description-setter"
   - "org/jvnet/hudson/plugins/description-setter"
 developers:
-  - "marcomiller"
+  - "markewaite"
   - "michael1010"
