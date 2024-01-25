@@ -1,0 +1,9 @@
+---
+name: "google-analyze-code-security"
+github: &GH "jenkinsci/google-analyze-code-security-plugin"
+paths:
+- "io/jenkins/plugins/google-analyze-code-security"
+developers:
+- "sanyam803"
+issues:
+  - jira: 29324
