@@ -1,0 +1,9 @@
+---
+name: "testkube-cli"
+github: &GH "jenkinsci/testkube-cli-plugin"
+paths:
+- "io/jenkins/plugins/testkube-cli"
+developers:
+- "testkube"
+issues:
+  - github: *GH
