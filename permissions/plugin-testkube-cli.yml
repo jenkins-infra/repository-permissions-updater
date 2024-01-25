@@ -7,3 +7,5 @@ developers:
 - "testkube"
 issues:
   - github: *GH
+cd:
+  enabled: true
