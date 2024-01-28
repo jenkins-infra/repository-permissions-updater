@@ -7,3 +7,5 @@ developers:
 - "sanyam803"
 issues:
   - jira: 29324
+cd:
+ enabled: true
