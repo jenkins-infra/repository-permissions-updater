@@ -9,6 +9,3 @@ developers:
 - "chas"
 issues:
   - github: *GH
-security:
-  contacts:
-    jira: chas
