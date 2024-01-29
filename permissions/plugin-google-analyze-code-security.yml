@@ -5,6 +5,7 @@ paths:
 - "io/jenkins/plugins/google-analyze-code-security"
 developers:
 - "sanyam803"
+- "adishagarwal"
 issues:
   - jira: 29324
 cd:
