@@ -8,3 +8,5 @@ developers:
 - "saurabhthatte_sec1"
 issues:
   - jira: 29323
+cd:
+  enabled: true
