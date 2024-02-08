@@ -90,7 +90,7 @@ node('maven-11') {
             archiveArtifacts 'json/*.json'
             if (infra.isTrusted()) {
                 dir('json') {
-                    publishReports ([ 'issues.index.json', 'maintainers.index.json' ])
+                    publishReports ([ 'issues.index.json', 'maintainers.index.json', 'github.index.json' ])
                 }
             }
         }
