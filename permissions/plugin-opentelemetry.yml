@@ -5,6 +5,8 @@ paths:
   - "io/jenkins/plugins/opentelemetry"
 developers:
   - "cleclerc"
+  - "ifernandezcalvo"
+  - "v2v"
 issues:
   - github: *GH
 cd:

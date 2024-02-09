@@ -17,6 +17,10 @@ developers:
   - "teilo"
   - "olamy"
   - "carroll"
+  - "rsandell"
+  - "ampuscas"
+  - "rarabaolaza"
+  - "borisyaoa"
 security:
   contacts:
     jira: "cloudbees_security_members"
