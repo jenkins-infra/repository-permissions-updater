@@ -6,6 +6,6 @@ issues:
 paths:
   - "com/qasymphony/ci/jenkins/qtest"
 developers:
-  - "Slestac"
+  - "s_lachner"
   - "pjaladi21"
   - "qasymphony"
