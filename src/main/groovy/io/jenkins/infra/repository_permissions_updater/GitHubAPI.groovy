@@ -111,7 +111,7 @@ abstract class GitHubAPI {
                 if (responseCode != HttpURLConnection.HTTP_CREATED) {
                     sleep(200)
                     if (attemptNumber == maxAttempts) {
-                        LOGGER.log(Level.INFO, "Failed to create/update secret ${name} for ${repositoryName}, response code: ${responseCode}")
+                        LOGGER.log(Level.WARNING, "Failed to create/update secret ${name} for ${repositoryName}, response code: ${responseCode}")
                         break;
                     }
                     LOGGER.log(Level.INFO, "Retrying create/update secret ${name} for ${repositoryName} attempt ${attemptNumber}/${maxAttempts}")
