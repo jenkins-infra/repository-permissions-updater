@@ -118,7 +118,7 @@ abstract class GitHubAPI {
             int responseCode = 0;
             int attemptNumber = 1;
             int maxAttempts = 3;
-            while (responseCode != HttpURLConnection.HTTP_CREATED) {
+            while (responseCode != HttpURLConnection.HTTP_NO_CONTENT) {
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection()
 
                 // The GitHub API doesn't do an auth challenge
@@ -131,7 +131,7 @@ abstract class GitHubAPI {
                 osw.close()
                 responseCode = conn.getResponseCode()
 
-                if (responseCode != HttpURLConnection.HTTP_CREATED) {
+                if (responseCode != HttpURLConnection.HTTP_NO_CONTENT) {
                     if (attemptNumber == maxAttempts) {
                         LOGGER.log(Level.WARNING, "Failed to create/update secret ${name} for ${repositoryName}, response code: ${responseCode}")
                         break;
