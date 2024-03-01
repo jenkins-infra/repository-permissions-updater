@@ -73,15 +73,39 @@ abstract class GitHubAPI {
         GitHubPublicKey getRepositoryPublicKey(String repositoryName) {
             LOGGER.log(Level.INFO, "GET call to retrieve public key for ${repositoryName}")
             URL url = new URL("https://api.github.com/repos/${repositoryName}/actions/secrets/public-key")
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection()
 
-            // The GitHub API doesn't do an auth challenge
-            conn.setRequestProperty('Authorization', 'Basic ' + Base64.getEncoder().encodeToString((System.getenv("GITHUB_USERNAME") + ':' + System.getenv("GITHUB_TOKEN")).getBytes(StandardCharsets.UTF_8)))
-            conn.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-            conn.setRequestMethod('GET')
-            conn.connect()
+            int responseCode = 0;
+            int attemptNumber = 1;
+            int maxAttempts = 3;
+            while (responseCode != HttpURLConnection.HTTP_OK) {
+
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection()
+
+                // The GitHub API doesn't do an auth challenge
+                conn.setRequestProperty('Authorization', 'Basic ' + Base64.getEncoder().encodeToString((System.getenv("GITHUB_USERNAME") + ':' + System.getenv("GITHUB_TOKEN")).getBytes(StandardCharsets.UTF_8)))
+                conn.setRequestProperty('Accept', 'application/vnd.github.v3+json')
+                conn.setRequestMethod('GET')
+                conn.connect()
+
+                responseCode = conn.getResponseCode()
+
+                if (responseCode != HttpURLConnection.HTTP_OK) {
+                    if (attemptNumber == maxAttempts) {
+                        LOGGER.log(Level.WARNING, "Failed to retrieve public key for ${repositoryName}, response code: ${responseCode}")
+                        return null
+                    }
+                    sleep(200)
+                    LOGGER.log(Level.INFO, "Retrying retrieving public key for ${repositoryName} attempt ${attemptNumber}/${maxAttempts}")
+                    attemptNumber++;
+                } else {
+                    return retrievePublicKeyFromResponse(conn)
+                }
+            }
+            return null
+        }
+
+        private static GitHubPublicKey retrievePublicKeyFromResponse(HttpURLConnection conn) {
             String text = conn.getInputStream().getText()
-
             def json = new JsonSlurper().parseText(text)
             return new GitHubPublicKey(json.key_id, json.key)
         }
@@ -90,18 +114,35 @@ abstract class GitHubAPI {
         void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) {
             LOGGER.log(Level.INFO, "Create/update the secret ${name} for ${repositoryName} encrypted with key ${keyId}")
             URL url = new URL("https://api.github.com/repos/${repositoryName}/actions/secrets/${name}")
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection()
 
-            // The GitHub API doesn't do an auth challenge
-            conn.setRequestProperty('Authorization', 'Basic ' + Base64.getEncoder().encodeToString((System.getenv("GITHUB_USERNAME") + ':' + System.getenv("GITHUB_TOKEN")).getBytes(StandardCharsets.UTF_8)))
-            conn.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-            conn.setRequestMethod('PUT')
-            conn.setDoOutput(true)
-            OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
-            osw.write('{"encrypted_value":"' + encryptedSecret + '","key_id":"' + keyId + '"}')
-            osw.close()
+            int responseCode = 0;
+            int attemptNumber = 1;
+            int maxAttempts = 3;
+            while (responseCode != HttpURLConnection.HTTP_CREATED) {
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection()
 
-            String text = conn.getInputStream().getText()
+                // The GitHub API doesn't do an auth challenge
+                conn.setRequestProperty('Authorization', 'Basic ' + Base64.getEncoder().encodeToString((System.getenv("GITHUB_USERNAME") + ':' + System.getenv("GITHUB_TOKEN")).getBytes(StandardCharsets.UTF_8)))
+                conn.setRequestProperty('Accept', 'application/vnd.github.v3+json')
+                conn.setRequestMethod('PUT')
+                conn.setDoOutput(true)
+                OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())
+                osw.write('{"encrypted_value":"' + encryptedSecret + '","key_id":"' + keyId + '"}')
+                osw.close()
+                responseCode = conn.getResponseCode()
+
+                if (responseCode != HttpURLConnection.HTTP_CREATED) {
+                    if (attemptNumber == maxAttempts) {
+                        LOGGER.log(Level.WARNING, "Failed to create/update secret ${name} for ${repositoryName}, response code: ${responseCode}")
+                        break;
+                    }
+                    sleep(200)
+                    LOGGER.log(Level.INFO, "Retrying create/update secret ${name} for ${repositoryName} attempt ${attemptNumber}/${maxAttempts}")
+                    attemptNumber++;
+                } else {
+                    String text = conn.getInputStream().getText()
+                }
+            }
         }
     }
 }
