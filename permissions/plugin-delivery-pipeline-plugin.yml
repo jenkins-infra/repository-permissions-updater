@@ -6,7 +6,5 @@ issues:
 paths:
   - "se/diabol/jenkins/pipeline/delivery-pipeline-plugin"
 developers:
-  - "diabol_jenkins"
-  - "mrfatstrat"
-  - "patbos"
-  - "tommysdk"
+  - "rzanner"
+  - "gsoffredini"
