@@ -118,8 +118,8 @@ public class Hoster {
 
             String issueTrackerText;
             if (issueTrackerChoice == IssueTracker.JIRA) {
-                issueTrackerText = "\n\nA Jira component named " + forkTo + " has also been created with "
-                        + defaultAssignee + " as the default assignee for issues.";
+                issueTrackerText = "\n\nA Jira component named [" + forkTo + "](https://issues.jenkins.io/issues/?jql=project+%3D+JENKINS+AND+component+%3D+ " + forkTo + ")" + 
+                        "has also been created with " + defaultAssignee + " as the default assignee for issues.";
             } else {
                 issueTrackerText = "\n\nGitHub issues has been selected for issue tracking and was enabled for the forked repo.";
             }
@@ -136,10 +136,7 @@ public class Hoster {
                     + "You will also need to do the following in order to push changes and release your plugin: \n\n"
                     + "* [Accept the invitation to the Jenkins CI Org on Github](https://github.com/jenkinsci)\n"
                     + "* [" + repoPermissionsActionText + "](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)\n"
-                    + "* [Releasing your plugin](https://jenkins.io/doc/developer/publishing/releasing/)\n"
-                    + "\n\nIn order for your plugin to be built by the [Jenkins CI Infrastructure](https://ci.jenkins.io) and check pull requests,"
-                    + " please add a [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) to the root of your repository with the following content:\n"
-                    + "https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile\n"
+                    + "* [Releasing your plugin](https://jenkins.io/doc/developer/publishing/releasing/)"
                     + "\n\nWelcome aboard!";
 
             // add comment
