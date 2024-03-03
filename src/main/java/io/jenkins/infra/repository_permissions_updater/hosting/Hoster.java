@@ -252,6 +252,8 @@ public class Hoster {
         r.enableIssueTracker(useGHIssues);
         r.enableWiki(false);
         r.setHomepage("https://plugins.jenkins.io/" + r.getName().replace("-plugin", "") + "/");
+        r.setEmailServiceHook("jenkinsci-commits@googlegroups.com");
+        r.setDefaultBranch("main");
     }
 
     /**
