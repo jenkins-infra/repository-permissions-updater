@@ -248,6 +248,10 @@ public class Hoster {
     private static void setupRepository(GHRepository r, boolean useGHIssues) throws IOException {
         r.enableIssueTracker(useGHIssues);
         r.enableWiki(false);
+        r.setHomepage("https://plugins.jenkins.io/" + r.getName().replace("-plugin", "") + "/");
+        if (!r.getDefaultBranch().equals("main")) {
+            r.setDefaultBranch("main");
+        }
     }
 
     /**
