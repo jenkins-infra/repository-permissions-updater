@@ -7,3 +7,5 @@ developers:
 - "kiryushin_andrey"
 issues:
   - github: *GH
+cd:
+  enabled: true
