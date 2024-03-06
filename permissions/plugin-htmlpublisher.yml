@@ -12,6 +12,7 @@ developers:
   - "dnusbaum"
   - "bitwiseman"
   - "olamy"
+  - "rsandell"
 security:
   contacts:
     jira: "cloudbees_security_members"
