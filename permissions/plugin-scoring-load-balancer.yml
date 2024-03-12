@@ -8,4 +8,4 @@ paths:
 developers:
   - "viceice"
 cd:
-  enabled: false # will be enabled later again
+  enabled: true
