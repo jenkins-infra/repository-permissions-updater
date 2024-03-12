@@ -7,3 +7,5 @@ paths:
   - "com/cloudbees/jenkins/plugins/additional-identities-plugin"
 developers:
   - "viceice"
+cd:
+  enabled: true
