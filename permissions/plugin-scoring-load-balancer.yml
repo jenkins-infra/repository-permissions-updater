@@ -1,11 +1,14 @@
 ---
 name: "scoring-load-balancer"
-github: "jenkinsci/scoring-load-balancer-plugin"
+github: &GH "jenkinsci/scoring-load-balancer-plugin"
 issues:
+  - github: *GH
   - jira: '18051'  # scoring-load-balancer-plugin
+    report: false
 paths:
   - "jp/ikedam/jenkins/plugins/scoring-load-balancer"
 developers:
   - "viceice"
 cd:
   enabled: true
+  exclusive: true
