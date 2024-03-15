@@ -7,3 +7,5 @@ paths:
   - "io/jenkins/plugins/pipeline-gcp"
 developers:
   - "enigo"
+cd:
+  enabled: true
