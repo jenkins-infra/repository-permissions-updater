@@ -4,8 +4,6 @@ github: &GH "jenkinsci/pipeline-gcp-plugin"
 issues:
   - github: *GH
 paths:
-  - "org/jenkins-ci/plugins/pipeline-gcp"
+  - "io/jenkins/plugins/pipeline-gcp"
 developers:
   - "enigo"
-cd:
-  enabled: true
