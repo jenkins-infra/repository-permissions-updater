@@ -1,7 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater;
 
 import com.google.common.reflect.TypeToken;
-import com.google.gson.Gson;
+import com.google.gson.*;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 
@@ -80,25 +80,21 @@ abstract public class JiraAPI implements Definition.IssueTracker.JiraComponentSo
                 }
                 reader.close();
 
-                Type ResponseType = new TypeToken
-                        <List<Map<String, String>>>() {}.getType();
+                String text = response.toString();
 
-                Gson gson = new Gson();
+                JsonElement jsonElement = JsonParser.parseString(text);
+                JsonArray jsonArray = jsonElement.getAsJsonArray();
 
-                List<Map<String, String>> data = gson.fromJson(response.toString(), ResponseType);
-
-                for (Map<String, String> map : data) {
-
-                    String id = map.get("id");
-                    String name = map.get("name");
-
+                for (JsonElement element : jsonArray) {
+                    JsonObject jsonObject = element.getAsJsonObject();
+                    String id = jsonObject.get("id").getAsString();
+                    String name = jsonObject.get("name").getAsString();
                     LOGGER.log(Level.FINE,
                             String.format("Identified Jira component with ID '%s' and name '%s",
                                     id, name));
-
                     componentNamesToIds.put(name, id);
-
                 }
+
 
             } catch (IOException e) {
                 throw new RuntimeException(e);
