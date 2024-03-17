@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater;
 
 import com.google.gson.Gson;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -77,6 +78,7 @@ abstract public class GitHubAPI {
     }
 
     /* Implementation */
+    @SuppressFBWarnings(value = "URLCONNECTION_SSRF_FD", justification = "GitHub API requests are necessary")
     private static class GitHubImpl extends GitHubAPI {
 
         @Override
@@ -138,7 +140,7 @@ abstract public class GitHubAPI {
 
         private static GitHubPublicKey retrievePublicKeyFromResponse(HttpURLConnection conn) throws IOException {
 
-            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream() , StandardCharsets.UTF_8));
             StringBuilder response = new StringBuilder();
 
             String line;
@@ -184,7 +186,7 @@ abstract public class GitHubAPI {
                     conn.setRequestProperty("Accept", "application/vnd.github.v3+json");
                     conn.setRequestMethod("PUT");
                     conn.setDoOutput(true);
-                    OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream());
+                    OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream() , StandardCharsets.UTF_8);
                     osw.write(
                             String.format(
                                     "{\"encrypted_value\":\"%s\",\"key_id\":\"%s\"}",
