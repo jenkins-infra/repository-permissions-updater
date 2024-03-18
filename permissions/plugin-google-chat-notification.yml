@@ -9,4 +9,5 @@ paths:
 developers:
   - "cnaik"
   - "thiagoc"
-  
+cd:
+  enabled: true

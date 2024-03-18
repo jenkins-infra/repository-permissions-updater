@@ -60,6 +60,8 @@ public class Definition {
             return true;
         }
 
+        @SuppressFBWarnings(value = "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+                            justification = "All calls are guarded by jira null check in isJira()")
         private String loadComponentId(JiraComponentSource source) {
             String jiraComponentId = jira;
             if (!jira.matches("[0-9]+")) {
