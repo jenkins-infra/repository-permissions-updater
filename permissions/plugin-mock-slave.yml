@@ -1,6 +1,6 @@
 ---
 name: "mock-slave"
-github: "jenkinsci/mock-slave-plugin"
+github: "jenkinsci/mock-agent-plugin"
 cd:
   enabled: true
   exclusive: true
