@@ -1,11 +1,11 @@
 ---
-name: "simplifyqa-pipeline-executor"
-github: &gh "jenkinsci/simplifyqa-pipeline-executor"
+name: "simplify-qa-connector"
+github: &gh "jenkinsci/simplify-qa-connector-plugin"
 issues:
   - github: *gh
   - jira: '28523'
 paths:
-  - "io/jenkins/plugins/simplifyqa"
+  - "io/jenkins/plugins/simplifyqa-qa-connector"
 developers:
   - "Simplify3x"
   - "bernardbdas"
