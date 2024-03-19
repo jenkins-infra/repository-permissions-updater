@@ -5,7 +5,7 @@ issues:
   - github: *gh
   - jira: '28523'
 paths:
-  - "io/jenkins/plugins/simplifyqa-qa-connector"
+  - "io/jenkins/plugins/simplify-qa-connector"
 developers:
   - "Simplify3x"
   - "bernardbdas"
