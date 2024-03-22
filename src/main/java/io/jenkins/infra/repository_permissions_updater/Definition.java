@@ -2,6 +2,7 @@ package io.jenkins.infra.repository_permissions_updater;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
+import io.jenkins.infra.repository_permissions_updater.jira.JiraAPI;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -60,24 +61,9 @@ public class Definition {
             return true;
         }
 
-        @SuppressFBWarnings(value = "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
-                            justification = "All calls are guarded by jira null check in isJira()")
-        private String loadComponentId(JiraComponentSource source) {
-            String jiraComponentId = jira;
-            if (!jira.matches("[0-9]+")) {
-                // CreateIssueDetails needs the numeric Jira component ID
-                jiraComponentId = source.getComponentId(jira);
-                if (jiraComponentId == null) {
-                    LOGGER.warning("Failed to determine Jira component ID for '" + jira + "', the component may not exist");
-                    return null;
-                }
-            }
-            return jiraComponentId;
-        }
-
-        public String getViewUrl(JiraComponentSource source) {
+        public String getViewUrl() {
             if (isJira()) {
-                final String id = loadComponentId(source);
+                final Long id = JiraAPI.instance().getComponentId(jira);
                 if (id != null) {
                     return "https://issues.jenkins.io/issues/?jql=component=" + id;
                 }
@@ -89,12 +75,12 @@ public class Definition {
             throw new IllegalStateException("Invalid issue tracker: " + github + " / " + jira);
         }
 
-        public String getReportUrl(JiraComponentSource source) {
+        public String getReportUrl() {
             if (!report) {
                 return null;
             }
             if (isJira()) {
-                final String id = loadComponentId(source);
+                final Long id = JiraAPI.instance().getComponentId(jira);
                 if (id != null) {
                     return "https://www.jenkins.io/participate/report-issue/redirect/#" + id;
                 }

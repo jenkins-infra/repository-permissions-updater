@@ -4,6 +4,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings
 import groovy.io.FileType
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
+import io.jenkins.infra.repository_permissions_updater.jira.JiraAPI
 import io.jenkins.lib.support_log_formatter.SupportLogFormatter
 import org.yaml.snakeyaml.Yaml
 import org.yaml.snakeyaml.error.YAMLException;
@@ -175,11 +176,11 @@ class ArtifactoryPermissionsUpdater {
                     issueTrackersByPlugin.put(definition.name, definition.issues.collect { tracker ->
                         if (tracker.isJira() || tracker.isGitHubIssues()) {
                             def ret = [type: tracker.getType(), reference: tracker.getReference()]
-                            def viewUrl = tracker.getViewUrl(JiraAPI.getInstance())
+                            def viewUrl = tracker.getViewUrl()
                             if (viewUrl) {
                                 ret += [ viewUrl: viewUrl ]
                             }
-                            def reportUrl = tracker.getReportUrl(JiraAPI.getInstance())
+                            def reportUrl = tracker.getReportUrl()
                             if (reportUrl) {
                                 ret += [ reportUrl: reportUrl ]
                             }
@@ -242,7 +243,7 @@ class ArtifactoryPermissionsUpdater {
                         if (!definition.cd?.exclusive) {
                             users definition.developers.collectEntries { developer ->
                                 def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
-                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
+                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.instance().isUserPresent(developer)
 
                                 if (!existsInArtifactory && !existsInJira) {
                                     reportChecksApiDetails(developer + " needs to log in to Artifactory and Jira",
@@ -286,7 +287,7 @@ class ArtifactoryPermissionsUpdater {
                             }
                         } else {
                             definition.developers.each { developer ->
-                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
+                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.instance().isUserPresent(developer)
 
                                 if (!existsInJira) {
                                     reportChecksApiDetails(developer + " needs to log in to Jira",
