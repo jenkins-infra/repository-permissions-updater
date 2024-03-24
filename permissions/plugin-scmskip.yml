@@ -7,5 +7,6 @@ paths:
   - "net/plavcak/jenkins/scmskip"
 developers:
   - "plavc"
+  - "zbynek"
 cd:
   enabled: true
