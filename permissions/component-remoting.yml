@@ -5,10 +5,7 @@ paths:
   - "org/jenkins-ci/main/remoting"
   - "org/jvnet/hudson/main/remoting"
 developers:
-  - "kohsuke"
-  - "oleg_nenashev"
-  - "jthompson"
-  - "releasebot"
   - "@core"
 cd:
   enabled: true
+  exclusive: true
