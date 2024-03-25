@@ -4,7 +4,6 @@ github: &GH "jenkinsci/jersey2-api-plugin"
 paths:
   - "io/jenkins/plugins/jersey2-api"
 developers:
-  - "basil"
   - "@cloudbees-developers"
 security:
   contacts:
@@ -13,3 +12,4 @@ issues:
   - jira: 28832
 cd:
   enabled: true
+  exclusive: true
