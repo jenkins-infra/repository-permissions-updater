@@ -7,7 +7,6 @@ issues:
 paths:
   - "io/jenkins/plugins/jaxb"
 developers:
-  - "basil"
   - "kohsuke"
   - "oleg_nenashev"
   - "batmat"
