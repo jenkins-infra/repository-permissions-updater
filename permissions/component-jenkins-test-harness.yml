@@ -3,6 +3,7 @@ name: "jenkins-test-harness"
 github: "jenkinsci/jenkins-test-harness"
 cd:
   enabled: true
+  exclusive: true
 paths:
   - "org/jenkins-ci/main/jenkins-test-harness"
 developers:
