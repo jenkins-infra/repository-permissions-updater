@@ -8,6 +8,7 @@ paths:
   - "org/jvnet/hudson/plugins/email-ext"
 developers:
   - "basil"
+  - "slide_o_mix"
 security:
   contacts:
     jira: "cloudbees_security_members"
