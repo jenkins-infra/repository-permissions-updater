@@ -3,6 +3,7 @@ name: "jjwt-api"
 github: &gh "jenkinsci/jjwt-api-plugin"
 cd:
   enabled: true
+  exclusive: true
 issues:
   - github: *gh
 paths:

@@ -7,6 +7,7 @@ paths:
   - "org/jenkins-ci/plugins/pipeline-build-step"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "jglick"
   - "abayer"

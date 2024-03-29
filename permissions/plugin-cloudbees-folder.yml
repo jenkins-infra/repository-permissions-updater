@@ -7,6 +7,7 @@ paths:
   - "org/jenkins-ci/plugins/cloudbees-folder"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "jglick"
   - "kohsuke"

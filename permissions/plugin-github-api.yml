@@ -3,6 +3,7 @@ name: "github-api"
 github: "jenkinsci/github-api-plugin"
 cd:
   enabled: true
+  exclusive: true
 issues:
   - jira: '17496'  # github-api-plugin
 paths:

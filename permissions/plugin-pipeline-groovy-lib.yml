@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/pipeline-groovy-lib"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "jglick"
   - "dnusbaum"

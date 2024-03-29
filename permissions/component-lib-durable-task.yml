@@ -14,3 +14,4 @@ developers:
   - "mramonleon"
 cd:
   enabled: true
+  exclusive: true
