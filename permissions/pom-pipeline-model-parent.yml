@@ -12,3 +12,4 @@ developers:
   - "carroll"
 cd:
   enabled: true
+  exclusive: true
