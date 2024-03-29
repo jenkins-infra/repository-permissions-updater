@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/email-ext"
   - "org/jvnet/hudson/plugins/email-ext"
 developers:
-  - "basil"
   - "slide_o_mix"
 security:
   contacts:
