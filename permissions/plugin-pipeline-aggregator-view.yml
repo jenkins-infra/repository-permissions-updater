@@ -7,3 +7,7 @@ paths:
   - "com/paul8620/jenkins/plugins/pipeline-aggregator-view"
 developers:
   - "paul8620"
+  - "notmyfault"
+cd:
+  enabled: true
+  exclusive: true
