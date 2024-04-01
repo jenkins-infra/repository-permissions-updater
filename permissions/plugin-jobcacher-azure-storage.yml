@@ -1,0 +1,12 @@
+---
+name: "jobcacher-azure-storage"
+github: &GH "jenkinsci/jobcacher-azure-storage-plugin"
+paths:
+- "io/jenkins/plugins/jobcacher-azure-storage"
+developers:
+- "timja"
+cd:
+  enabled: true
+  exclusive: true
+issues:
+  - github: *GH
