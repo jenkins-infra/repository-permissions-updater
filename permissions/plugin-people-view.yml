@@ -6,4 +6,4 @@ paths:
 developers:
 - "danielbeck"
 issues:
-  - github: *GH
+  - jira: '29420' # people-view-plugin
