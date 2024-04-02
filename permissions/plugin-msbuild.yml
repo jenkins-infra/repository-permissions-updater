@@ -14,7 +14,7 @@ developers:
   - "olamy"
   - "teilo"
   - "poddingue"
-  - "tialx"
+  - "tilalx"
 security:
   contacts:
     jira: "cloudbees_security_members"
