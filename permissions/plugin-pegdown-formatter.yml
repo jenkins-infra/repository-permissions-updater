@@ -5,4 +5,5 @@ issues:
   - jira: '15899'  # pegdown-formatter-plugin
 paths:
   - "org/jenkins-ci/plugins/pegdown-formatter"
-developers: []
+developers:
+  - "markewaite"
