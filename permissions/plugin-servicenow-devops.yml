@@ -12,3 +12,4 @@ developers:
   - "mohansaira_medisetti"
 cd:
   enabled: true
+  exclusive: false

@@ -13,3 +13,4 @@ developers:
   - "j3t"
 cd:
   enabled: true
+  exclusive: false

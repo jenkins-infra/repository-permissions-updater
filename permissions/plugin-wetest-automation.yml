@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/wetest-automation"
 cd:
   enabled: true
+  exclusive: false
 issues:
   - github: *GH
 developers:

@@ -10,3 +10,4 @@ developers:
   - "justusbunsi"
 cd:
   enabled: true
+  exclusive: false

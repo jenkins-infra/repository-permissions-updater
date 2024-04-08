@@ -10,3 +10,4 @@ developers:
   - "pierrebtz"
 cd:
   enabled: true
+  exclusive: false

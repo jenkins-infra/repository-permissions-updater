@@ -3,6 +3,7 @@ name: "leanix-microservice-intelligence"
 github: &GH "jenkinsci/leanix-microservice-intelligence-plugin"
 cd:
   enabled: true
+  exclusive: false
 paths:
   - "io/jenkins/plugins/leanix-microservice-intelligence"
 developers:

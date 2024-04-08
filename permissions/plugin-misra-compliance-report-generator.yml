@@ -9,3 +9,4 @@ developers:
   - "oyvindlr"
 cd:
   enabled: true
+  exclusive: false

@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/mina-sshd-api/mina-sshd-api-*"
 cd:
   enabled: true
+  exclusive: false
 developers:
   - "jglick"
   - "allan_burdajewicz"
