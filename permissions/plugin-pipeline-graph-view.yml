@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/pipeline-graph-view"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "timja"
 issues:

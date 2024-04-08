@@ -8,5 +8,6 @@ paths:
   - "org/jvnet/hudson/plugins/scriptler"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "mtughan"

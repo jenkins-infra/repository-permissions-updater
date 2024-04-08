@@ -9,3 +9,4 @@ issues:
   - jira: 28921
 cd:
   enabled: true
+  exclusive: true

@@ -11,3 +11,4 @@ developers:
   - "wuchenwang"
 cd:
   enabled: true
+  exclusive: true

@@ -9,3 +9,4 @@ developers:
   - "kocproz"
 cd:
   enabled: true
+  exclusive: true

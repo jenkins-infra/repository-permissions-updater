@@ -10,3 +10,4 @@ developers:
   - "ifernandezcalvo"
 cd:
   enabled: true
+  exclusive: true

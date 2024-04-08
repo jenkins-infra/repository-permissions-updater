@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/azure-cosmosdb"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "timja"
 issues:

@@ -10,3 +10,4 @@ developers:
   - "bksaville"
 cd:
   enabled: true
+  exclusive: true

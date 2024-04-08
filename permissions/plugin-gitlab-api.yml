@@ -7,6 +7,7 @@ paths:
   - "io/jenkins/plugins/gitlab-api"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "baymac"
   - "surenpi"

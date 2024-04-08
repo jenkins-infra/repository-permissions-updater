@@ -10,3 +10,4 @@ developers:
   - "zbynek"
 cd:
   enabled: true
+  exclusive: true

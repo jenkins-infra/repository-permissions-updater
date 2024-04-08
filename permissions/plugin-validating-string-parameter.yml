@@ -10,3 +10,4 @@ developers:
   - "raihaan"
 cd:
   enabled: true
+  exclusive: true

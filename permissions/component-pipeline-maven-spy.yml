@@ -3,6 +3,7 @@ name: "pipeline-maven-spy"
 github: "jenkinsci/pipeline-maven-plugin"
 cd:
   enabled: true
+  exclusive: true
 paths:
   - "org/jenkins-ci/plugins/pipeline-maven-spy"
 developers:

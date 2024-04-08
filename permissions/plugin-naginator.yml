@@ -5,6 +5,7 @@ issues:
   - jira: '15560'  # naginator-plugin
 cd:
   enabled: true
+  exclusive: true
 paths:
   - "org/jenkins-ci/plugins/naginator"
 developers:
