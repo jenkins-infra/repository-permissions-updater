@@ -8,6 +8,7 @@ paths:
   - "org/jvnet/hudson/plugins/view-job-filters"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "svenschoenung"
   - "jglick"
