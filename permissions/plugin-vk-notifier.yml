@@ -9,3 +9,4 @@ developers:
   - "spliterash"
 cd:
   enabled: true
+  exclusive: false

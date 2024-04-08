@@ -9,3 +9,4 @@ developers:
   - "promissing"
 cd:
   enabled: true
+  exclusive: false

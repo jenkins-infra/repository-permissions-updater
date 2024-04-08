@@ -10,3 +10,4 @@ developers:
   - "jetersen"
 cd:
   enabled: true
+  exclusive: false

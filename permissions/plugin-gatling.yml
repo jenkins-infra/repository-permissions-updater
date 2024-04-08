@@ -9,3 +9,4 @@ developers:
   - "slandelle"
 cd:
   enabled: true
+  exclusive: false

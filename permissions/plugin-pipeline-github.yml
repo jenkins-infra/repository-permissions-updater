@@ -6,6 +6,7 @@ issues:
   - jira: '22522'  # pipeline-github-plugin
 cd:
   enabled: true
+  exclusive: false
 paths:
   - "org/jenkins-ci/plugins/pipeline-github"
 developers:
