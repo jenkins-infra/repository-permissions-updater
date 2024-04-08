@@ -11,3 +11,4 @@ developers:
   - "praqma"
 cd:
   enabled: true
+  exclusive: true

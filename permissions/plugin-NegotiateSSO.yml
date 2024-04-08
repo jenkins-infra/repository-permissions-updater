@@ -9,3 +9,4 @@ developers:
   - "farmgeek4life"
 cd:
   enabled: true
+  exclusive: true

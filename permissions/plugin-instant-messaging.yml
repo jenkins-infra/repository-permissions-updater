@@ -10,3 +10,4 @@ developers:
   - "jimklimov"
 cd:
   enabled: true
+  exclusive: true

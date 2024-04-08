@@ -3,6 +3,7 @@ name: "extended-choice-parameter"
 github: &GH jenkinsci/extended-choice-parameter-plugin
 cd:
   enabled: true
+  exclusive: true
 issues:
   - github: *GH # The preferred issue tracker
   - jira: '16004'  # extended-choice-parameter-plugin

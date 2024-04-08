@@ -10,3 +10,4 @@ developers:
   - "legall_benoit"
 cd:
   enabled: true
+  exclusive: true

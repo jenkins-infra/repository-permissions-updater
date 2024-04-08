@@ -12,3 +12,4 @@ security:
     jira: "coreydaley"
 cd:
   enabled: true
+  exclusive: true

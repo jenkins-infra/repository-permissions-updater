@@ -11,3 +11,4 @@ developers:
   - "dcendents"
 cd:
   enabled: true
+  exclusive: true

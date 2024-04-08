@@ -9,3 +9,4 @@ developers:
   - "chadiem"
 cd:
   enabled: true
+  exclusive: true

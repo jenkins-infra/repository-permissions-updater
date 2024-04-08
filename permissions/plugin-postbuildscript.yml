@@ -10,3 +10,4 @@ developers:
   - "dheid"
 cd:
   enabled: true
+  exclusive: true

@@ -7,3 +7,4 @@ developers:
   - "janmolak"
 cd:
   enabled: true
+  exclusive: true

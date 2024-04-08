@@ -5,6 +5,7 @@ paths:
   - "org/jenkins-ci/tests/plugins-compat-tester-cli"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "kwhetstone"
   - "jglick"

@@ -10,3 +10,4 @@ developers:
   - "andreasmandel"
 cd:
   enabled: true
+  exclusive: true

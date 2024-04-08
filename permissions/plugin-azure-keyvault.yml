@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/azure-keyvault"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "timja"

@@ -9,3 +9,4 @@ developers:
   - "forticontainer"
 cd:
   enabled: true
+  exclusive: true

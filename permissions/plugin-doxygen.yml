@@ -9,3 +9,4 @@ developers:
   - "gbois"
 cd:
   enabled: true
+  exclusive: true

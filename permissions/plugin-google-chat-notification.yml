@@ -11,3 +11,4 @@ developers:
   - "thiagoc"
 cd:
   enabled: true
+  exclusive: true

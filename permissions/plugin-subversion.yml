@@ -8,5 +8,6 @@ paths:
   - "org/jvnet/hudson/plugins/subversion"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "didiez"
