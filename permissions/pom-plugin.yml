@@ -4,8 +4,5 @@ github: "jenkinsci/plugin-pom"
 paths:
   - "org/jenkins-ci/plugins/plugin"
   - "org/jvnet/hudson/plugins/plugin"
-cd:
-  enabled: true
-  exclusive: false
 developers:
   - "@core"
