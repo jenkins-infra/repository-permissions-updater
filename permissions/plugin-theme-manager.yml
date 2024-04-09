@@ -11,3 +11,4 @@ developers:
   - "timja"
 cd:
   enabled: true
+  exclusive: true

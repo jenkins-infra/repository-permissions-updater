@@ -9,3 +9,4 @@ developers:
   - "rahulsom"
 cd:
   enabled: true
+  exclusive: true

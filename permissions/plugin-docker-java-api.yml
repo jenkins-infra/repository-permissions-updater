@@ -10,3 +10,4 @@ developers:
   - "ericcitaire"
 cd:
   enabled: true
+  exclusive: true

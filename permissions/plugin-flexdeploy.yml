@@ -10,3 +10,4 @@ developers:
   - "flexagon9"
 cd:
   enabled: true
+  exclusive: true

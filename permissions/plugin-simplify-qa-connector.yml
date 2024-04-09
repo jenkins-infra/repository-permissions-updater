@@ -10,4 +10,4 @@ developers:
   - "bernardbdas"
 cd:
   enabled: true
-  
+  exclusive: false

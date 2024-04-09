@@ -10,3 +10,4 @@ developers:
   - "janasrikanth"
 cd:
   enabled: true
+  exclusive: true

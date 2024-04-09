@@ -6,5 +6,6 @@ paths:
   - "org/jvnet/hudson/plugins/plugin"
 cd:
   enabled: true
+  exclusive: false
 developers:
   - "@core"

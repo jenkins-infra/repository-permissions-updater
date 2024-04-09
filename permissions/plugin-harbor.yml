@@ -5,6 +5,7 @@ paths:
 - "io/jenkins/plugins/harbor"
 cd:
   enabled: true
+  exclusive: true
 developers:
 - "cnhttpd"
 issues:

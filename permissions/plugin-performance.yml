@@ -3,6 +3,7 @@ name: "performance"
 github: "jenkinsci/performance-plugin"
 cd:
   enabled: true
+  exclusive: true
 issues:
   - jira: '15803'  # performance-plugin
 paths:

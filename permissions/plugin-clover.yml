@@ -10,3 +10,4 @@ developers:
   - "marekparf"
 cd:
   enabled: true
+  exclusive: true

@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/sonar-gerrit"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "reda_alaoui"

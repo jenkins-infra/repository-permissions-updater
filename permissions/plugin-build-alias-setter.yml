@@ -9,3 +9,4 @@ developers:
   - "olivergondza"
 cd:
   enabled: true
+  exclusive: true

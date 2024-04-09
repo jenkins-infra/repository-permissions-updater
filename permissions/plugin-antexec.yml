@@ -9,3 +9,4 @@ developers:
   - "svasek"
 cd:
   enabled: true
+  exclusive: true

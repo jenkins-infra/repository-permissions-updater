@@ -11,3 +11,4 @@ developers:
   - "thvu_katalon"
 cd:
   enabled: true
+  exclusive: false

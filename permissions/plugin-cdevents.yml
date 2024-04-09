@@ -3,6 +3,7 @@ name: "cdevents"
 github: &GH "jenkinsci/cdevents-plugin"
 cd:
   enabled: true
+  exclusive: true
 paths:
 - "io/jenkins/plugins/cdevents"
 developers:

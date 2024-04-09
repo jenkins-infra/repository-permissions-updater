@@ -9,3 +9,4 @@ developers:
   - "trowbrds"
 cd:
   enabled: true
+  exclusive: false

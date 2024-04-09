@@ -5,6 +5,7 @@ paths:
   - "org/jenkins-ci/test/docker-fixtures"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "andresrc"
   - "jglick"

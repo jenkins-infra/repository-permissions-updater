@@ -7,5 +7,6 @@ developers:
   - "nistal97"
 cd:
   enabled: true
+  exclusive: true
 issues:
   - github: *GH

@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/autify"
 cd:
   enabled: true
+  exclusive: true
 developers:
   - "riywo"
   - "nate_autify"

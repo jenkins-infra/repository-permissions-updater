@@ -11,3 +11,4 @@ developers:
   - "tdraebing"
 cd:
   enabled: true
+  exclusive: true

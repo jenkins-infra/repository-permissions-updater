@@ -7,5 +7,6 @@ developers:
   - "sofydevelopers"
 cd:
   enabled: true
+  exclusive: false
 issues:
   - jira: 28721
