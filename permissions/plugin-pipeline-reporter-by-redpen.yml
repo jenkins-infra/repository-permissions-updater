@@ -1,7 +1,6 @@
 ---
 cd:
   enabled: true
-  exclusive: true
 name: "pipeline-reporter-by-redpen"
 github: &GH "jenkinsci/pipeline-reporter-by-redpen-plugin"
 paths:

@@ -7,7 +7,6 @@ paths:
   - "io/jenkins/plugins/opencover"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "asavanchuk"
   - "cizezsy"

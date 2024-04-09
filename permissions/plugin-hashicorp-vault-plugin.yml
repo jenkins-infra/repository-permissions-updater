@@ -12,4 +12,3 @@ developers:
   - "dineshba"
 cd:
   enabled: true
-  exclusive: true

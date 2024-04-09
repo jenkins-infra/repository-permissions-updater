@@ -8,7 +8,6 @@ paths:
   - "org/jenkins-ci/plugins/slack"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "timja"
   - "jetersen"

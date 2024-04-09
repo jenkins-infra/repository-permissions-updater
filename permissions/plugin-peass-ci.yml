@@ -3,7 +3,6 @@ name: "peass-ci"
 github: &GH "jenkinsci/peass-ci-plugin"
 cd:
   enabled: true
-  exclusive: true
 paths:
   - "de/peass/peass-ci"
 developers:

@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/modules/instance-identity"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "@core"
 security:

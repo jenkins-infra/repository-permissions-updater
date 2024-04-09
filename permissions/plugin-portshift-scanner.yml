@@ -8,4 +8,3 @@ developers:
   - "d_neduva"
 cd:
   enabled: true
-  exclusive: true

@@ -9,4 +9,3 @@ developers:
   - "mPokornyETM"
 cd:
   enabled: true
-  exclusive: true

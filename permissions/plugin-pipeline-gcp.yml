@@ -9,4 +9,3 @@ developers:
   - "enigo"
 cd:
   enabled: true
-  exclusive: true

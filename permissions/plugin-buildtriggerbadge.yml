@@ -9,4 +9,3 @@ developers:
   - "batmat"
 cd:
   enabled: true
-  exclusive: true

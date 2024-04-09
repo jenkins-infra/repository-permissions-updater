@@ -3,7 +3,6 @@ name: "bom"
 github: "jenkinsci/bom"
 cd:
   enabled: true
-  exclusive: true
 paths:
   - "io/jenkins/tools/bom/bom-*"
 developers:

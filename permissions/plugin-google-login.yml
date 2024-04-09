@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/google-login"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "recampbell"
   - "vlatombe"

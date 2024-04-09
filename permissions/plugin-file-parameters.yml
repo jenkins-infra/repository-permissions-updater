@@ -3,7 +3,6 @@ name: "file-parameters"
 github: &gh "jenkinsci/file-parameters-plugin"
 cd:
   enabled: true
-  exclusive: true
 issues:
   - github: *gh
 paths:

@@ -7,7 +7,6 @@ paths:
   - "io/jenkins/plugins/artifact-manager-s3"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "jglick"
   - "csanchez"

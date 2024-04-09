@@ -15,4 +15,3 @@ developers:
   - "thomas_dee"
 cd:
   enabled: true
-  exclusive: true

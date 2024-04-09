@@ -9,4 +9,3 @@ developers:
   - "@ux"
 cd:
   enabled: true
-  exclusive: true

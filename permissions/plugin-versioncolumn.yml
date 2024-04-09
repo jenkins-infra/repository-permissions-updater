@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/versioncolumn"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "batmat"
   - "markewaite"

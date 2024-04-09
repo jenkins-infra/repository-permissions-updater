@@ -11,4 +11,3 @@ developers:
   - "yan123"
 cd:
   enabled: true
-  exclusive: true

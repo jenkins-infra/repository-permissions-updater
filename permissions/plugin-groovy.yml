@@ -5,7 +5,6 @@ issues:
   - jira: '15549' # groovy-plugin
 cd:
   enabled: true
-  exclusive: true
 paths:
   - "org/jenkins-ci/plugins/groovy"
   - "org/jvnet/hudson/plugins/groovy"

@@ -9,4 +9,3 @@ developers:
   - "dillense"
 cd:
   enabled: true
-  exclusive: true

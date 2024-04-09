@@ -12,4 +12,3 @@ developers:
   - "darinpope"
 cd:
   enabled: true
-  exclusive: true

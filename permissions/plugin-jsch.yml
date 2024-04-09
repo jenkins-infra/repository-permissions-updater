@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/jsch"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "zregvart"
   - "ljader"

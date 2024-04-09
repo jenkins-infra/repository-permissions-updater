@@ -12,4 +12,3 @@ developers:
   - "gustafl"
 cd:
   enabled: true
-  exclusive: true

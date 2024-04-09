@@ -3,7 +3,6 @@ name: "artifactz"
 github: &GH "jenkinsci/artifactz-plugin"
 cd:
   enabled: true
-  exclusive: true
 paths:
   - "io/jenkins/plugins/artifactz"
 developers:

@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/gitee"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "yashin"
   - "markewaite"

@@ -11,4 +11,3 @@ developers:
   - "tomjshore"
 cd:
   enabled: true
-  exclusive: true

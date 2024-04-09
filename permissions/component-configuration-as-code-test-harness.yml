@@ -10,7 +10,6 @@ developers:
   - "timja"
 cd:
   enabled: true
-  exclusive: true
 security:
   contacts:
     jira: "jetersen"

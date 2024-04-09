@@ -9,4 +9,3 @@ developers:
   - "shasait"
 cd:
   enabled: true
-  exclusive: true

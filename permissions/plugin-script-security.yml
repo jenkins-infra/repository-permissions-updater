@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/script-security"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "jglick"
   - "kohsuke"

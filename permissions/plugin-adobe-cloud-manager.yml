@@ -7,7 +7,6 @@ paths:
   - "io/jenkins/plugins/adobe-cloud-manager"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "ahmedmusallam"
   - "stopp"

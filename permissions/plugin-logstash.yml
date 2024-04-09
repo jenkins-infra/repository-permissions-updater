@@ -10,4 +10,3 @@ developers:
   - "jbochenski"
 cd:
   enabled: true
-  exclusive: true

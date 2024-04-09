@@ -11,4 +11,3 @@ developers:
   - "oleg_nenashev"
 cd:
   enabled: true
-  exclusive: true

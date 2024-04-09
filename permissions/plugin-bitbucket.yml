@@ -9,4 +9,3 @@ developers:
   - "tzach_solomon"
 cd:
   enabled: true
-  exclusive: true

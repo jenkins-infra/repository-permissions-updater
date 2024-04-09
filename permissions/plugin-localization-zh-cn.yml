@@ -10,4 +10,3 @@ developers:
   - "surenpi"
 cd:
   enabled: true
-  exclusive: true

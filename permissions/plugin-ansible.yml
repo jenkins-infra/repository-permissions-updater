@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/ansible"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "jonesbusy"
   - "sirot"

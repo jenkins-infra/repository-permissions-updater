@@ -6,7 +6,6 @@ issues:
   - jira: '17535'  # stashnotifier-plugin
 cd:
   enabled: true
-  exclusive: true
 paths:
   - "org/jenkins-ci/plugins/stashNotifier"
 developers:

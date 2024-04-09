@@ -9,4 +9,3 @@ developers:
   - "dawidmalina"
 cd:
   enabled: true
-  exclusive: true

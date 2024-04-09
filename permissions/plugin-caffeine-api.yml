@@ -15,7 +15,6 @@ issues:
   - jira: 28622
 cd:
   enabled: true
-  exclusive: true
 security:
   contacts:
     jira: "cloudbees_security_members"

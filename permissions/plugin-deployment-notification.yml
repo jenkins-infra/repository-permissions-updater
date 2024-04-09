@@ -9,4 +9,3 @@ developers:
   - "kohsuke"
 cd:
   enabled: true
-  exclusive: true

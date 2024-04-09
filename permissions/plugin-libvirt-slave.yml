@@ -8,7 +8,6 @@ paths:
   - "org/jenkins-ci/plugins/libvirt-slave"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "gkr"
   - "magnayn"

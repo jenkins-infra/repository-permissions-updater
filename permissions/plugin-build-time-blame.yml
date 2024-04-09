@@ -9,4 +9,3 @@ developers:
   - "ltegtmeier"
 cd:
   enabled: true
-  exclusive: true
