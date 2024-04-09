@@ -111,12 +111,14 @@ In particular, the Jenkins security team will _not_ make an effort to reach out 
 
 ### Exclusively using JEP-229 CD
 
-It is also possible to enable JEP-229 CD exclusively, i.e., the listed users will not be able to create new releases, but remain contacts for security issues and plugin/component governance questions. 
+By default, enabling JEP-229 CD enables it _exclusively;_ i.e., the listed users will not be able to create new releases, but they remain contacts for security issues and plugin/component governance questions.
+
+It is also possible to disable exclusive JEP-229 CD, in which case both users with commit access _and_ the listed users will be able to create new releases, with the listed users remaining contacts for security issues and plugin/component governance questions:
 
 ```yaml
 cd:
   enabled: true
-  exclusive: true
+  exclusive: false
 ```
 
 

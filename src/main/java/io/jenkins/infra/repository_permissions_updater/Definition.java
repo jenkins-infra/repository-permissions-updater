@@ -5,12 +5,15 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@SuppressFBWarnings("UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD")
+@SuppressFBWarnings({
+    "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"
+})
 public class Definition {
 
     public static class CD {
         public boolean enabled;
-        public boolean exclusive;
+        public boolean exclusive = true;
     }
 
     public static class Security {
