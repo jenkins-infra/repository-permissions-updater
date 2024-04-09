@@ -9,7 +9,7 @@ developers:
 - "@cloudbees-developers"
 cd:
   enabled: true
-  exclusive: false
+  exclusive: true
 issues:
   - jira: 29222
 security:
