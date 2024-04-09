@@ -11,4 +11,3 @@ developers:
   - "viceice"
 cd:
   enabled: true
-  exclusive: true

@@ -5,7 +5,6 @@ issues:
   - jira: '23429'  # github-scm-trait-notification-context-plugin
 cd:
   enabled: true
-  exclusive: true
 paths:
   - "org/jenkins-ci/plugins/github-scm-trait-notification-context"
 developers:

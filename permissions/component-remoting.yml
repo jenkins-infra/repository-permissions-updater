@@ -8,4 +8,3 @@ developers:
   - "@core"
 cd:
   enabled: true
-  exclusive: true

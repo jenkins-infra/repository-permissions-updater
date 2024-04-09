@@ -3,7 +3,6 @@ name: "lockable-resources"
 github: &gh "jenkinsci/lockable-resources-plugin"
 cd:
   enabled: true
-  exclusive: true
 issues:
   - github: *gh
 paths:

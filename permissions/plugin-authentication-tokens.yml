@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/authentication-tokens"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "alecharp"
   - "batmat"

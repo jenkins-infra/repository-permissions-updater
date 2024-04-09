@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/s3"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "dmbeer"
   - "jimilian"

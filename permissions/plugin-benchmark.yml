@@ -10,4 +10,3 @@ developers:
   - "damercie"
 cd:
   enabled: true
-  exclusive: true

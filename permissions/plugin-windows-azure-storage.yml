@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/windows-azure-storage"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "zooopx"
   - "timja"

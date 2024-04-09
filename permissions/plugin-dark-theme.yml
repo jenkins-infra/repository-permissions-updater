@@ -7,7 +7,6 @@ paths:
   - "io/jenkins/plugins/dark-theme"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "timja"
   - "oleg_nenashev"

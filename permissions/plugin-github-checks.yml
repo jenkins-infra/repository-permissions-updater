@@ -12,4 +12,3 @@ developers:
   - "drulli"
 cd:
   enabled: true
-  exclusive: true

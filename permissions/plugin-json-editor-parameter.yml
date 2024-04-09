@@ -5,7 +5,6 @@ paths:
 - "io/jenkins/plugins/json-editor-parameter"
 cd:
   enabled: true
-  exclusive: true
 developers:
 - "chas"
 issues:

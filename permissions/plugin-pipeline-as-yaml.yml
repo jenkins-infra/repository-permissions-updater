@@ -13,4 +13,3 @@ developers:
   - "slide_o_mix"
 cd:
   enabled: true
-  exclusive: true

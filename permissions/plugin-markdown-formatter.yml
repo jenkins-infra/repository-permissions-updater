@@ -7,7 +7,6 @@ paths:
   - "io/jenkins/plugins/markdown-formatter"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "halkeye"
   - "markewaite"

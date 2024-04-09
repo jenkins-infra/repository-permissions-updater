@@ -13,4 +13,3 @@ developers:
   - "bitle0"
 cd:
   enabled: true
-  exclusive: true

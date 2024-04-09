@@ -12,4 +12,3 @@ developers:
   - "jonesbusy"
 cd:
   enabled: true
-  exclusive: true

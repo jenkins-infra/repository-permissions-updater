@@ -10,4 +10,3 @@ developers:
   - "greybird"
 cd:
   enabled: true
-  exclusive: true

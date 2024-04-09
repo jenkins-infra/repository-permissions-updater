@@ -5,7 +5,6 @@ paths:
   - "io/jenkins/plugins/levo"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "mauroatlevo"
 issues:

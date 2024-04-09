@@ -9,4 +9,3 @@ developers:
   - "notmyfault"
 cd:
   enabled: true
-  exclusive: true

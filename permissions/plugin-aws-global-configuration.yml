@@ -7,7 +7,6 @@ paths:
   - "io/jenkins/plugins/aws-global-configuration"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "jglick"
   - "csanchez"

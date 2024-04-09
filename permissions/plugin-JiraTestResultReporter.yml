@@ -11,4 +11,3 @@ developers:
   - "imontero"
 cd:
   enabled: true
-  exclusive: true

@@ -5,7 +5,6 @@ paths:
   - "io/jenkins/plugins/generic-event"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "johnniang"
 issues:

@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/secure-requester-whitelist"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "jglick"
   - "andresrc"

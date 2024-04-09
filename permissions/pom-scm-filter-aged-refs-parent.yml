@@ -7,4 +7,3 @@ developers:
   - "tgr"
 cd:
   enabled: true
-  exclusive: true

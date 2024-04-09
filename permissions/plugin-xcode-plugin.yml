@@ -11,4 +11,3 @@ developers:
   - "kazuhidet"
 cd:
   enabled: true
-  exclusive: true

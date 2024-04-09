@@ -7,7 +7,6 @@ paths:
   - "io/jenkins/plugins/jenkins-infra-test"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "timja"
   - "olblak"

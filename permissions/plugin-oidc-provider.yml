@@ -9,6 +9,5 @@ developers:
   - "fcojfernandez"
 cd:
   enabled: true
-  exclusive: true
 issues:
   - github: *GH

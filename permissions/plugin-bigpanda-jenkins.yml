@@ -14,4 +14,3 @@ developers:
   - "lukej7"
 cd:
   enabled: true
-  exclusive: true

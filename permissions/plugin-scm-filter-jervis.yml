@@ -9,4 +9,3 @@ developers:
   - "sag47"
 cd:
   enabled: true
-  exclusive: true

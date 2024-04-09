@@ -11,4 +11,3 @@ developers:
   - "akessoj71"
 cd:
   enabled: true
-  exclusive: true

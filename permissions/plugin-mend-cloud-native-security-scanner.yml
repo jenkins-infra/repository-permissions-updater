@@ -7,6 +7,5 @@ developers:
 - "yuval_nahari_mend"
 cd:
   enabled: true
-  exclusive: true
 issues:
   - jira: 29127

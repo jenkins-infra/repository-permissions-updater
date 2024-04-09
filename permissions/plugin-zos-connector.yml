@@ -9,4 +9,3 @@ developers:
   - "candiduslynx"
 cd:
   enabled: true
-  exclusive: true

@@ -13,4 +13,3 @@ developers:
   - "victor_yousician"
 cd:
   enabled: true
-  exclusive: true

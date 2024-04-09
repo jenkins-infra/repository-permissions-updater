@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/matrix-project"
 cd:
   enabled: true
-  exclusive: true
 developers:
   - "amuniz"
   - "oleg_nenashev"
