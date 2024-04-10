@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/favorite-view"
 developers:
   - "mPokornyETM"
+  - "thomasvincent"
 cd:
   enabled: true
