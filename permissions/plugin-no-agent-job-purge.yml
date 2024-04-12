@@ -6,6 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/no-agent-job-purge"
 developers:
-  - "janasrikanth"
+  - "sonicwind"
 cd:
   enabled: true
