@@ -10,3 +10,5 @@ developers:
   - "clifford_jenkins"
   - "oleg_nenashev"
   - "zedasvacas"
+cd:
+  enabled: true
