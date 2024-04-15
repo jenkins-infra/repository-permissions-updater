@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/email-ext"
   - "org/jvnet/hudson/plugins/email-ext"
+cd:
+  enabled: true
 developers:
   - "slide_o_mix"
 security:
