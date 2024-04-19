@@ -11,4 +11,3 @@ developers:
   - "raymondwu"
 cd:
   enabled: true
-  exclusive: false
