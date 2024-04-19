@@ -15,6 +15,7 @@ developers:
   - "olamy"
   - "markewaite"
   - "poddingue"
+  - "jondaley"
 cd:
   enabled: true
 security:
