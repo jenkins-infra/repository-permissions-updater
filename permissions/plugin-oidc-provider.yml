@@ -7,6 +7,10 @@ developers:
   - "jglick"
   - "escoem"
   - "fcojfernandez"
+  - "@cloudbees-developers"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
 cd:
   enabled: true
 issues:
