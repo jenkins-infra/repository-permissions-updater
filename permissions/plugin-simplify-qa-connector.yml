@@ -7,3 +7,7 @@ paths:
   - "io/jenkins/plugins/simplify-qa-connector"
 developers:
   - "simplifyadmin"
+  - "bernardbdas"
+cd:
+  enabled: true
+  exclusive: false

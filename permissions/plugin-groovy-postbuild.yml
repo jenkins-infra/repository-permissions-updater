@@ -1,9 +1,12 @@
 ---
 name: "groovy-postbuild"
 github: "jenkinsci/groovy-postbuild-plugin"
+cd:
+  enabled: true
 issues:
   - jira: '15685'  # groovy-postbuild-plugin
 paths:
   - "org/jvnet/hudson/plugins/groovy-postbuild"
 developers:
   - "ikedam"
+  - "markewaite"

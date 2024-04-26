@@ -3,9 +3,6 @@ name: "redhat-codeready-dependency-analysis"
 github: &GH "jenkinsci/redhat-codeready-dependency-analysis-plugin"
 paths:
   - "redhat/jenkins/plugins/redhat-codeready-dependency-analysis"
-developers:
-  - "yzainee"
-  - "vbelouso"
-  - "olavtar"
+developers: [] # Suspended in favor of redhat-dependency-analytics
 issues:
   - github: *GH

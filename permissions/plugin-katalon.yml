@@ -8,5 +8,7 @@ paths:
 developers:
   - "duyluonganh"
   - "hainguyenkatalon"
+  - "thvu_katalon"
 cd:
   enabled: true
+  exclusive: false

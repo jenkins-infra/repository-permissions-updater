@@ -3,6 +3,7 @@ name: "aws-kinesis-consumer"
 github: &GH "jenkinsci/aws-kinesis-consumer-plugin"
 cd:
   enabled: true
+  exclusive: false
 paths:
   - "io/jenkins/plugins/aws-kinesis-consumer"
 developers:

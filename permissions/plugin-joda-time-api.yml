@@ -1,0 +1,11 @@
+---
+name: "joda-time-api"
+github: &GH "jenkinsci/joda-time-api-plugin"
+paths:
+- "io/jenkins/plugins/joda-time-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

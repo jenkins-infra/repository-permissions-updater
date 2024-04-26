@@ -3,6 +3,7 @@ name: "machine-learning"
 github: "jenkinsci/machine-learning-plugin"
 cd:
   enabled: true
+  exclusive: false
 issues:
   - jira: '27242'  # machine-learning-plugin
 paths:

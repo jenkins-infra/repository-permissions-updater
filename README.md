@@ -52,7 +52,7 @@ developers:
 
 * `p4` (lines 2 and 5): `artifactId`
 * `p4-plugin` (line 3): GitHub repository name
-* `org/jenkins-ci` (line 5): `groupId` (with slashes replacing periods)
+* `org/jenkins-ci/plugins` (line 5): `groupId` (with slashes replacing periods)
 * `p4paul` (line 7): Jenkins community account user name
 
 ### Adding a new plugin
@@ -80,7 +80,7 @@ A plugin can theoretically be replaced by a new one with a different ID, but thi
 If the plugin _hasn't_ been released yet, you can just rename and edit the existing permissions file, changing the `name` component.
 You may also edit the `github` component, if you wish to rename the repository.
 
-### Changing a plugin's `groupId`
+### Changing a plugin's `artifactId`
 
 Changing the `paths` or modifying the `<artifactId>` in the plugin `pom.xml` is highly discouraged.  
 Modifying the path will break any Maven dependencies from other plugins.
@@ -98,12 +98,28 @@ cd:
   enabled: true
 ```
 
+For this to work, there needs to be at least one developers listed.
+If the list of developers is empty or missing entirely (e.g., after the last maintainer steps down), no new releases can be published through JEP-229 CD.
+
 **IMPORTANT:**
 When using JEP-229 CD, [every committer to your repository](https://www.jenkins.io/doc/developer/publishing/source-code-hosting/) can create new releases by merging pull requests.
 As a result, the list of maintainer accounts maintained in your plugin's YAML file is no longer the single reference on who can publish new releases.
 Be sure to check [which users have commit access](https://www.jenkins.io/doc/developer/publishing/source-code-hosting/) to your repository and remove any that are unexpected before enabling CD, as well as any unexpected [deploy keys](https://docs.github.com/en/developers/overview/managing-deploy-keys).
 Additionally, the users listed in this repository still serve as the contacts for security issues and plugin/component governance questions.
+For that reason, CD permissions are also only granted to components with at least one maintainer.
 In particular, the Jenkins security team will _not_ make an effort to reach out to GitHub committers when maintainers (and security contacts, see below) are unresponsive before [announcing vulnerabilities without a fix](https://www.jenkins.io/security/plugins/#unresolved).
+
+### Exclusively using JEP-229 CD
+
+By default, enabling JEP-229 CD enables it _exclusively;_ i.e., the listed users will not be able to create new releases, but they remain contacts for security issues and plugin/component governance questions.
+
+It is also possible to disable exclusive JEP-229 CD, in which case both users with commit access _and_ the listed users will be able to create new releases, with the listed users remaining contacts for security issues and plugin/component governance questions:
+
+```yaml
+cd:
+  enabled: true
+  exclusive: false
+```
 
 
 Managing Security Process
@@ -126,7 +142,7 @@ Regular maintainers are added to the issue as well to give visibility and allow 
 This means that specifying a Jira security contact is only useful when it's an account not already listed as maintainer.
 `jira` is optional.
 
-If you represent a company with dedicated security team that needs to be involved, we recommend you to create a Jira account backed by a shared email.
+If you represent a company with dedicated security team that needs to be involved, we recommend you to create a Jira account backed by an email address that the team can access, like a mailing list.
 
 Managing Issue Trackers
 -----------------------

@@ -10,3 +10,4 @@ developers:
   - "neworldlt"
 cd:
   enabled: true
+  exclusive: false

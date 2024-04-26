@@ -1,6 +1,6 @@
 ---
 name: "slave-setup"
-github: "jenkinsci/slave-setup-plugin"
+github: "jenkinsci/agent-setup-plugin"
 issues:
   - jira: '15929'  # slave-setup-plugin
 paths:

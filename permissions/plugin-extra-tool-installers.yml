@@ -1,11 +1,14 @@
 ---
 name: "extra-tool-installers"
-github: "jenkinsci/extra-tool-installers-plugin"
+github: &GH "jenkinsci/extra-tool-installers-plugin"
 issues:
-  - jira: '17920'  # extra-tool-installers-plugin
+  - github: *GH
 paths:
   - "com/synopsys/arc/jenkinsci/extra-tool-installers"
   - "io/jenkins/plugins/extra-tool-installers"
 developers:
   - "oleg_nenashev"
   - "pjdarton"
+  - "jonesbusy"
+cd:
+  enabled: true

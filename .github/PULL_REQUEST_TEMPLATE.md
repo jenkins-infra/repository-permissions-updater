@@ -4,6 +4,12 @@
 
 # When modifying release permission
 
+List the GitHub usernames of the users who should have commit permissions below:
+- `@username1`
+- `@username2`
+
+This is needed in order to cut releases of the plugin or component.
+
 If you are modifying the release permission of your plugin or component, fill out the following checklist:
 
 <!-- If you're enabling CD only, leave the following checklist blank! -->

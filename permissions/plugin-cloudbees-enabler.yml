@@ -12,3 +12,8 @@ developers:
   - "jtaboada"
   - "olamy"
   - "vlatombe"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

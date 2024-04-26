@@ -6,3 +6,5 @@ paths:
   - "io/jenkins/tools/maven/jellydoc-annotations"
 cd:
   enabled: true
+developers:
+  - "@core"

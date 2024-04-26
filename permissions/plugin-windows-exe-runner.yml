@@ -6,6 +6,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/windows-exe-runner"
 developers: []
-#CD blocked for lack of maintainers
-#cd:
-#  enabled: true
+cd:
+  enabled: true

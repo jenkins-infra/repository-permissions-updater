@@ -1,9 +1,10 @@
 ---
 name: "delivery-pipeline-plugin"
+github: &gh "jenkinsci/delivery-pipeline-plugin"
+issues:
+  - jira: '18134' # delivery-pipeline-plugin
 paths:
   - "se/diabol/jenkins/pipeline/delivery-pipeline-plugin"
 developers:
-  - "diabol_jenkins"
-  - "mrfatstrat"
-  - "patbos"
-  - "tommysdk"
+  - "rzanner"
+  - "gsoffredini"

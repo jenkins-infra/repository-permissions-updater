@@ -10,3 +10,4 @@ developers:
   - "crobinson"
 cd:
   enabled: true
+  exclusive: false

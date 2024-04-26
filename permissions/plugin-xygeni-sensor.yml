@@ -1,0 +1,10 @@
+---
+name: "xygeni-sensor"
+github: &GH "jenkinsci/xygeni-sensor-plugin"
+paths:
+- "io/jenkins/plugins/xygeni-sensor"
+developers:
+- "luis_rodriguez"
+- "vdlr"
+issues:
+  - github: *GH

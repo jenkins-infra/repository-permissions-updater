@@ -10,7 +10,7 @@ developers:
   - "iverberk"
   - "antweiss"
   - "phedoreanu"
-  - "multani"
   - "j3t"
 cd:
   enabled: true
+  exclusive: false
