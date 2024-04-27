@@ -9,7 +9,6 @@ developers:
   - "alobato"
   - "dnusbaum"
   - "teilo"
-  - "@security"
   - "@cloudbees-developers"
 cd:
   enabled: true

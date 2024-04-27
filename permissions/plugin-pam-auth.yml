@@ -8,5 +8,4 @@ paths:
 developers:
   - "recena"
   - "jvz"
-  - "@security"
   - "@cloudbees-developers"
