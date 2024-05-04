@@ -6,5 +6,4 @@ issues:
   - github: *gh
 paths:
   - "org/jvnet/hudson/plugins/scp"
-developers:
-  - "markewaite"
+developers: [] # archived
