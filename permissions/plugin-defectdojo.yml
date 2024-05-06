@@ -7,3 +7,5 @@ developers:
 - "eu_david"
 issues:
   - jira: 29421
+cd:
+  enabled: true
