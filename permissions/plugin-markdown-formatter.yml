@@ -8,5 +8,4 @@ paths:
 cd:
   enabled: true
 developers:
-  - "halkeye"
   - "markewaite"
