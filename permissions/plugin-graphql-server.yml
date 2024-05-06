@@ -5,5 +5,4 @@ issues:
   - jira: '25526'  # graphql-server-plugin
 paths:
   - "io/jenkins/plugins/graphql-server"
-developers:
-  - "halkeye"
+developers: []
