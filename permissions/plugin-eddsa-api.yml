@@ -1,0 +1,9 @@
+---
+name: "eddsa-api"
+github: &GH "jenkinsci/eddsa-api-plugin"
+paths:
+- "io/jenkins/plugins/eddsa-api"
+developers:
+- "teilo"
+issues:
+  - jira: 29422
