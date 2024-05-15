@@ -7,5 +7,9 @@ cd:
   enabled: true
 developers:
 - "teilo"
+- "@cloudbees-developers"
 issues:
   - jira: 29422
+security:
+  contacts:
+    jira: "cloudbees_security_members"
