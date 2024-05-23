@@ -3,15 +3,18 @@ package io.jenkins.infra.repository_permissions_updater;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import org.glassfish.jersey.uri.UriComponent;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URI;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.HashMap;
@@ -46,7 +49,7 @@ class JiraImpl extends JiraAPI {
     private static final String JIRA_BASIC_AUTH_VALUE = Base64.getEncoder().encodeToString((JIRA_USERNAME + ":" + JIRA_PASSWORD).getBytes(StandardCharsets.UTF_8));
     private static final String JIRA_BASIC_AUTH_HEADER = "Basic %s";
 
-    @SuppressFBWarnings("SE_NO_SERIALVERSIONID")
+    @SuppressFBWarnings({"SE_NO_SERIALVERSIONID", "URLCONNECTION_SSRF_FD"})
     private void ensureDataLoaded() {
         if (componentNamesToIds == null) {
             componentNamesToIds = new HashMap<>();
@@ -79,7 +82,7 @@ class JiraImpl extends JiraAPI {
                 LOGGER.log(Level.SEVERE, "Failed to connect to Jira URL", e);
                 return;
             }
-            try (final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream()))) {
+            try (final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
                 final String text = bufferedReader.lines().collect(Collectors.joining());
                 final JsonArray jsonElements = gson.fromJson(text, JsonArray.class);
                 jsonElements.forEach(jsonElement -> {
@@ -104,7 +107,7 @@ class JiraImpl extends JiraAPI {
     boolean isUserPresent(final String username) {
         return userMapping.computeIfAbsent(username, JiraImpl::isUserPresentInternal);
     }
-
+    @SuppressFBWarnings({"URLCONNECTION_SSRF_FD"})
     private static boolean isUserPresentInternal(final String username) {
         if (!USERNAME_REGEX.matcher(username).matches()) {
             LOGGER.log(Level.WARNING, "Rejecting user name for Jira lookup: {0}", new Object[]{username});
