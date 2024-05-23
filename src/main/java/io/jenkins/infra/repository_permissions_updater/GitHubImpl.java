@@ -3,6 +3,7 @@ package io.jenkins.infra.repository_permissions_updater;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import edu.umd.cs.findbugs.annotations.CheckForNull;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -33,6 +34,7 @@ class GitHubImpl extends GitHubAPI {
 
     @Override
     @CheckForNull
+    @SuppressFBWarnings({"SE_NO_SERIALVERSIONID", "URLCONNECTION_SSRF_FD"})
     public GitHubPublicKey getRepositoryPublicKey(String repositoryName) {
         LOGGER.log(Level.INFO, "GET call to retrieve public key for {}", new Object[]{repositoryName});
         URL url;
@@ -100,7 +102,7 @@ class GitHubImpl extends GitHubAPI {
     }
 
     private static GitHubPublicKey retrievePublicKeyFromResponse(HttpURLConnection conn) {
-        try (final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream()))) {
+        try (final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream() , StandardCharsets.UTF_8))) {
             final String text = bufferedReader.lines().collect(Collectors.joining());
             final JsonObject json = gson.fromJson(text, JsonObject.class);
             return new GitHubPublicKey(json.get("key_id").getAsString(), json.get("key").getAsString());
@@ -111,6 +113,7 @@ class GitHubImpl extends GitHubAPI {
     }
 
     @Override
+    @SuppressFBWarnings({"SE_NO_SERIALVERSIONID", "URLCONNECTION_SSRF_FD"})
     public void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) {
         LOGGER.log(Level.INFO, "Create/update the secret {} for {} encrypted with key {}", new Object[]{name, repositoryName, keyId});
         URL url;
@@ -125,7 +128,7 @@ class GitHubImpl extends GitHubAPI {
         int attemptNumber = 1;
         int maxAttempts = 3;
         while (responseCode != HttpURLConnection.HTTP_NO_CONTENT) {
-            HttpURLConnection conn = null;
+            HttpURLConnection conn;
             try {
                 conn = (HttpURLConnection) url.openConnection();
             } catch (IOException e) {
@@ -144,7 +147,7 @@ class GitHubImpl extends GitHubAPI {
             }
             conn.setDoOutput(true);
 
-            try(OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream())) {
+            try(OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream(), StandardCharsets.UTF_8)) {
                 osw.write(String.format(GITHUB_JSON_TEMPLATE,encryptedSecret, keyId));
             } catch (IOException e) {
                 LOGGER.log(Level.SEVERE, "IO Error", e);
