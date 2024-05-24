@@ -6,6 +6,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import edu.umd.cs.findbugs.annotations.CheckForNull;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -199,6 +200,7 @@ class ArtifactoryImpl extends ArtifactoryAPI {
         T accept(HttpURLConnection conn) throws IOException;
     }
 
+    @SuppressFBWarnings("URLCONNECTION_SSRF_FD")
     private static <T> T withConnection(String verb, String url, HttpRequestConsumer<T> closure) {
         if (DRY_RUN_MODE) {
             LOGGER.log(Level.INFO, "Dry-run mode: Skipping {0} call to {1}", new Object[]{verb, url});
