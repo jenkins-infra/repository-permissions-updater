@@ -1,5 +1,5 @@
 ---
-name: "plugin-modernizer-tool "
+name: "plugin-modernizer-tool"
 github: &GH "jenkinsci/plugin-modernizer-tool"
 issues:
   - github: *GH
