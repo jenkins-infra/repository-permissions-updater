@@ -1,6 +1,8 @@
 ---
 name: "plugin-modernizer-tool "
-github: "jenkinsci/plugin-modernizer-tool "
+github: &GH "jenkinsci/plugin-modernizer-tool "
+issues:
+  - github: *GH
 paths:
   - "io/jenkins/plugin-modernizer"
 developers:
