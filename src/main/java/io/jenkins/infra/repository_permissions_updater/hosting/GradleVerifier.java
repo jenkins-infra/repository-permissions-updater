@@ -89,7 +89,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
                         AstBuilder astBuilder = new AstBuilder();
                         List<ASTNode> nodes = astBuilder.buildFromString(CompilePhase.SEMANTIC_ANALYSIS, false, IOUtils.toString(input, Charset.defaultCharset()));
 
-                        BlockStatement node = (BlockStatement) nodes.get(0);
+                        BlockStatement node = (BlockStatement) nodes.getFirst();
                         for (Statement s : node.getStatements()) {
                             if (s instanceof ExpressionStatement) {
                                 Expression e = ((ExpressionStatement) s).getExpression();
@@ -163,7 +163,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         List<ASTNode> nodes = astBuilder.buildFromString(CompilePhase.SEMANTIC_ANALYSIS, false, contents);
         boolean isDone = false;
 
-        BlockStatement node = (BlockStatement) nodes.get(0);
+        BlockStatement node = (BlockStatement) nodes.getFirst();
         for (Statement s : node.getStatements()) {
             Expression e = ((ExpressionStatement) s).getExpression();
             if (e instanceof MethodCallExpression) {
@@ -200,7 +200,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         AstBuilder astBuilder = new AstBuilder();
         List<ASTNode> nodes = astBuilder.buildFromString(CompilePhase.SEMANTIC_ANALYSIS, false, contents);
 
-        BlockStatement node = (BlockStatement) nodes.get(0);
+        BlockStatement node = (BlockStatement) nodes.getFirst();
         for (Statement s : node.getStatements()) {
             Expression e = ((ExpressionStatement) s).getExpression();
             if (e instanceof BinaryExpression) {

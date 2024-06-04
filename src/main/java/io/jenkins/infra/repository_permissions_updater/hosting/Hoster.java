@@ -59,7 +59,7 @@ public class Hoster {
         try {
             final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
-            String defaultAssignee = hostingRequest.getJenkinsProjectUsers().get(0);
+            String defaultAssignee = hostingRequest.getJenkinsProjectUsers().getFirst();
             String forkFrom = hostingRequest.getRepositoryUrl();
             List<String> users = hostingRequest.getGithubUsers();
             IssueTracker issueTrackerChoice = hostingRequest.getIssueTracker();
