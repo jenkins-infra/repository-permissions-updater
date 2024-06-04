@@ -7,7 +7,6 @@ paths:
   - "io/jenkins/plugin-modernizer"
 developers:
   - "poddingue"
-  - "iamrajiv"
   - "jonesbusy"
 cd:
   enabled: true
