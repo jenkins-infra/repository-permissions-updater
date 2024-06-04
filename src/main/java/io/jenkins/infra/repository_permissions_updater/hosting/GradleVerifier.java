@@ -91,10 +91,9 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
 
                         BlockStatement node = (BlockStatement) nodes.getFirst();
                         for (Statement s : node.getStatements()) {
-                            if (s instanceof ExpressionStatement) {
-                                Expression e = ((ExpressionStatement) s).getExpression();
-                                if (e instanceof MethodCallExpression) {
-                                    MethodCallExpression mc = (MethodCallExpression) e;
+                            if (s instanceof ExpressionStatement statement) {
+                                Expression e = statement.getExpression();
+                                if (e instanceof MethodCallExpression mc) {
                                     if (mc.getMethodAsString().equals("plugins")) {
                                         // make sure we get the correct version of the gradle jpi plugin
                                         checkPluginVersion(((ArgumentListExpression) mc.getArguments()).getExpression(0), hostingIssues);
@@ -105,8 +104,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
                                         // verify the things that will make it into the pom.xml that is published
                                         checkJenkinsPlugin(((ArgumentListExpression) mc.getArguments()).getExpression(0), hostingIssues);
                                     }
-                                } else if (e instanceof BinaryExpression) {
-                                    BinaryExpression be = (BinaryExpression) e;
+                                } else if (e instanceof BinaryExpression be) {
                                     VariableExpression v = (VariableExpression) be.getLeftExpression();
                                     if (v.getName().equals("group")) {
                                         checkGroup(be.getRightExpression(), hostingIssues);
@@ -166,12 +164,10 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         BlockStatement node = (BlockStatement) nodes.getFirst();
         for (Statement s : node.getStatements()) {
             Expression e = ((ExpressionStatement) s).getExpression();
-            if (e instanceof MethodCallExpression) {
-                MethodCallExpression mc = (MethodCallExpression) e;
+            if (e instanceof MethodCallExpression mc) {
                 if (mc.getMethodAsString().equals("jenkinsPlugin")) {
                     Expression jenkinsPlugin = ((ArgumentListExpression) mc.getArguments()).getExpression(0);
-                    if (jenkinsPlugin instanceof ClosureExpression) {
-                        ClosureExpression c = (ClosureExpression) jenkinsPlugin;
+                    if (jenkinsPlugin instanceof ClosureExpression c) {
                         for (Statement st : ((BlockStatement) c.getCode()).getStatements()) {
                             ExpressionStatement sm = (ExpressionStatement) st;
                             if (sm.getExpression() instanceof BinaryExpression) {
@@ -203,8 +199,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         BlockStatement node = (BlockStatement) nodes.getFirst();
         for (Statement s : node.getStatements()) {
             Expression e = ((ExpressionStatement) s).getExpression();
-            if (e instanceof BinaryExpression) {
-                BinaryExpression be = (BinaryExpression) e;
+            if (e instanceof BinaryExpression be) {
                 VariableExpression v = (VariableExpression) be.getLeftExpression();
                 if (v.getName().equals("group")) {
                     if (be.getRightExpression() instanceof ConstantExpression) {
@@ -218,20 +213,18 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
     }
 
     private void checkPluginVersion(Expression plugins, HashSet<VerificationMessage> hostingIssues) {
-        if(plugins instanceof ClosureExpression) {
-            ClosureExpression c = (ClosureExpression)plugins;
+        if(plugins instanceof ClosureExpression c) {
             for (Statement st : ((BlockStatement) c.getCode()).getStatements()) {
                 Expression e = ((ExpressionStatement) st).getExpression();
-                if (e instanceof MethodCallExpression) {
-                    MethodCallExpression mc = (MethodCallExpression) e;
+                if (e instanceof MethodCallExpression mc) {
                     // if no version if there for the jpi plugin, the latest will be used
                     if (mc.getMethodAsString().equals("version")) {
                         e = ((ArgumentListExpression) mc.getArguments()).getExpression(0);
-                        if (e instanceof ConstantExpression && mc.getObjectExpression() instanceof MethodCallExpression) {
+                        if (e instanceof ConstantExpression expression && mc.getObjectExpression() instanceof MethodCallExpression) {
                             if (((MethodCallExpression) mc.getObjectExpression()).getMethodAsString().equals("id")) {
                                 String pluginId = ((ConstantExpression) ((ArgumentListExpression) mc.getArguments()).getExpression(0)).getValue().toString();
                                 if (pluginId.equals("org.jenkins-ci.jpi")) {
-                                    Version jpiPluginVersion = new Version(((ConstantExpression) e).getValue().toString());
+                                    Version jpiPluginVersion = new Version(expression.getValue().toString());
                                     if (jpiPluginVersion.compareTo(LOWEST_JPI_PLUGIN_VERSION) < 0) {
                                         hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, JPI_PLUGIN_VERSION_TOO_LOW, jpiPluginVersion, LOWEST_JPI_PLUGIN_VERSION));
                                     }
@@ -245,16 +238,15 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
     }
 
     private void checkRepositories(Expression repositories, HashSet<VerificationMessage> hostingIssues) {
-        if(repositories instanceof ClosureExpression) {
-            ClosureExpression c = (ClosureExpression)repositories;
+        if(repositories instanceof ClosureExpression c) {
             for(Statement st : ((BlockStatement)c.getCode()).getStatements()) {
                 Expression e = ((ExpressionStatement) st).getExpression();
-                if(e instanceof MethodCallExpression && ((MethodCallExpression)e).getMethodAsString().equals("maven")) {
-                    c = (ClosureExpression)((ArgumentListExpression)((MethodCallExpression)e).getArguments()).getExpression(0);
+                if(e instanceof MethodCallExpression expression && expression.getMethodAsString().equals("maven")) {
+                    c = (ClosureExpression)((ArgumentListExpression)expression.getArguments()).getExpression(0);
                     for(Statement s : ((BlockStatement)c.getCode()).getStatements()) {
                         e = ((ExpressionStatement)s).getExpression();
-                        if(e instanceof MethodCallExpression && ((MethodCallExpression) e).getMethodAsString().equals("url")) {
-                            e = ((ArgumentListExpression)((MethodCallExpression)e).getArguments()).getExpression(0);
+                        if(e instanceof MethodCallExpression callExpression && callExpression.getMethodAsString().equals("url")) {
+                            e = ((ArgumentListExpression)callExpression.getArguments()).getExpression(0);
                             if(e instanceof ConstantExpression) {
                                 String url = e.getText();
                                 if(url.contains("repo.jenkins-ci.org")) {
@@ -276,8 +268,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
     }
 
     private void checkJenkinsPlugin(Expression jenkinsPlugin, HashSet<VerificationMessage> hostingIssues) {
-        if(jenkinsPlugin instanceof ClosureExpression) {
-            ClosureExpression c = (ClosureExpression)jenkinsPlugin;
+        if(jenkinsPlugin instanceof ClosureExpression c) {
             for(Statement st : ((BlockStatement)c.getCode()).getStatements()) {
                 ExpressionStatement s = (ExpressionStatement)st;
                 if(s.getExpression() instanceof BinaryExpression) {
@@ -329,11 +320,10 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
     }
 
     private void checkLicenses(Expression e, HashSet<VerificationMessage> hostingIssues) {
-        if(e instanceof ClosureExpression) {
-            ClosureExpression c = (ClosureExpression)e;
+        if(e instanceof ClosureExpression c) {
             for(Statement st : ((BlockStatement)c.getCode()).getStatements()) {
                 e = ((ExpressionStatement) st).getExpression();
-                if(e instanceof MethodCallExpression && ((MethodCallExpression)e).getMethodAsString().equals("license")) {
+                if(e instanceof MethodCallExpression expression && expression.getMethodAsString().equals("license")) {
                     hasLicense = true;
 //                    c = (ClosureExpression)((ArgumentListExpression)((MethodCallExpression)e).getArguments()).getExpression(0);
 //                    for(Statement s : ((BlockStatement)c.getCode()).getStatements()) {

@@ -43,8 +43,8 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
 
     @Override
     public boolean equals(Object other) {
-        if(other instanceof VerificationMessage) {
-            return compareTo((VerificationMessage)other) == 0;
+        if(other instanceof VerificationMessage verificationMessage) {
+            return compareTo(verificationMessage) == 0;
         }
         return false;
     }
