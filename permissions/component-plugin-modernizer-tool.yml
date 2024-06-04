@@ -6,7 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugin-modernizer"
 developers:
-  - "berviantoleo"
   - "poddingue"
   - "iamrajiv"
   - "jonesbusy"
