@@ -1,9 +1,21 @@
 ---
 name: "apache-httpcomponents-client-4-api"
 github: "jenkinsci/apache-httpcomponents-client-4-api-plugin"
+issues:
+  - jira: '23052'  # apache-httpcomponents-client-4-api-plugin
 paths:
-- "org/jenkins-ci/plugins/apache-httpcomponents-client-4-api"
+  - "org/jenkins-ci/plugins/apache-httpcomponents-client-4-api"
+cd:
+  enabled: true
 developers:
-- "oleg_nenashev"
-- "dnusbaum"
-- "mramonleon"
+  - "oleg_nenashev"
+  - "dnusbaum"
+  - "mramonleon"
+  - "carroll"
+  - "teilo"
+  - "rsandell"
+  - "olamy"
+  - "markewaite"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

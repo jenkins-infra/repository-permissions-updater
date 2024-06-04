@@ -1,0 +1,7 @@
+---
+name: "coverage-model"
+github: "jenkinsci/coverage-model"
+paths:
+  - "edu/hm/hafner/coverage-model"
+developers:
+  - "drulli"

@@ -1,7 +1,9 @@
 ---
 name: "deploy"
 github: "jenkinsci/deploy-plugin"
+issues:
+  - jira: '15520'  # deploy-plugin
 paths:
-- "org/jenkins-ci/plugins/deploy"
+  - "org/jenkins-ci/plugins/deploy"
 developers:
-- "kohsuke"
+  - "jansohn"

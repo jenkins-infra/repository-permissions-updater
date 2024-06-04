@@ -2,13 +2,21 @@
 name: "acceptance-test-harness"
 github: "jenkinsci/acceptance-test-harness"
 paths:
-- "org/jenkins-ci/acceptance-test-harness"
+  - "org/jenkins-ci/acceptance-test-harness"
 developers:
-- "andresrc"
-- "jglick"
-- "kohsuke"
-- "olivergondza"
-- "rsandell"
-- "vlatombe"
-- "batmat"
-
+  - "andresrc"
+  - "basil"
+  - "jglick"
+  - "kohsuke"
+  - "olivergondza"
+  - "rsandell"
+  - "vlatombe"
+  - "batmat"
+  - "amuniz"
+  - "vilacides"
+  - "teilo"
+  - "timja"
+  - "olamy"
+  - "notmyfault"
+cd:
+  enabled: true

@@ -1,7 +1,12 @@
 ---
 name: "scm-filter-branch-pr"
-github: "jenkinsci/scm-filter-branch-pr-plugin"
+github: &GH "jenkinsci/scm-filter-branch-pr-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/scm-filter-branch-pr"
+  - "org/jenkins-ci/plugins/scm-filter-branch-pr"
 developers:
-- "sag47"
+  - "sag47"
+  - "jonesbusy"
+cd:
+  enabled: true

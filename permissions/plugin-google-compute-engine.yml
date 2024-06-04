@@ -1,7 +1,28 @@
 ---
 name: "google-compute-engine"
-github: "jenkinsci/google-compute-engine-plugin"
+github: &gh "jenkinsci/google-compute-engine-plugin"
+issues:
+  - github: *gh
+  - jira: '23530'  # google-compute-engine-plugin
 paths:
-- "org/jenkins-ci/plugins/google-compute-engine"
+  - "org/jenkins-ci/plugins/google-compute-engine"
 developers:
-- "evanbrown"
+  - "evanbrown"
+  - "stephenshank"
+  - "craigbarber"
+  - "donmccasland"
+  - "tarahernandez"
+  - "vishalapatel"
+  - "batmat"
+  - "teilo"
+  - "olamy"
+  - "carroll"
+  - "rsandell"
+  - "ampuscas"
+  - "rarabaolaza"
+  - "borisyaoa"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

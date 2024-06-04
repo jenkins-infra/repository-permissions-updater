@@ -1,0 +1,11 @@
+---
+name: "crowdstrike-security"
+github: &GH "jenkinsci/crowdstrike-security-plugin"
+paths:
+- "io/jenkins/plugins/crowdstrike-security"
+developers:
+- "crwd_etatarevic"
+- "crwdsmullz"
+- "crwdlemos"
+issues:
+  - github: *GH

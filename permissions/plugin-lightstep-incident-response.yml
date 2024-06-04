@@ -1,0 +1,9 @@
+---
+name: "lightstep-incident-response"
+github: &GH "jenkinsci/lightstep-incident-response-plugin"
+paths:
+  - "lightstep-plugin/lightstep-incident-response"
+developers: [] # The repository has been archived
+issues:
+  - jira: 28922
+    report: false

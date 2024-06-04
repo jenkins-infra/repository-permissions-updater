@@ -1,0 +1,14 @@
+---
+name: "postgresql-fingerprint-storage"
+github:  &GH "jenkinsci/postgresql-fingerprint-storage-plugin"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/plugins/postgresql-fingerprint-storage"
+developers:
+  - "stellargo"
+  - "oleg_nenashev"
+  - "ma3oxuct"
+  - "jonesbusy"
+cd:
+  enabled: true

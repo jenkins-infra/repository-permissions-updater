@@ -1,6 +1,5 @@
 ---
 name: "sshd-pam"
 paths:
-- "org/apache/sshd/sshd-pam"
-developers:
-- "stephenconnolly"
+  - "org/apache/sshd/sshd-pam"
+developers: []

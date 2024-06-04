@@ -1,9 +1,18 @@
 ---
 name: "htmlpublisher"
 github: "jenkinsci/htmlpublisher-plugin"
+issues:
+  - jira: '15681'  # htmlpublisher-plugin
 paths:
-- "org/jenkins-ci/plugins/htmlpublisher"
-- "org/jvnet/hudson/plugins/htmlpublisher"
+  - "org/jenkins-ci/plugins/htmlpublisher"
+  - "org/jvnet/hudson/plugins/htmlpublisher"
 developers:
-- "mcrooney"
-- "r2b2_nz"
+  - "mcrooney"
+  - "r2b2_nz"
+  - "dnusbaum"
+  - "bitwiseman"
+  - "olamy"
+  - "rsandell"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

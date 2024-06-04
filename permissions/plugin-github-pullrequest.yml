@@ -1,6 +1,6 @@
 ---
 name: "github-pullrequest"
 paths:
-- "org/jenkins-ci/plugins/github-pullrequest"
+  - "org/jenkins-ci/plugins/github-pullrequest"
 developers:
-- "integer"
+  - "integer"

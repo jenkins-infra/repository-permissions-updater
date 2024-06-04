@@ -1,8 +1,10 @@
 ---
 name: "ecs-publisher"
 github: "jenkinsci/ecs-publisher-plugin"
+issues:
+  - jira: '23058'  # ecs-publisher-plugin
 paths:
-- "de/eacg/ecs-publisher"
+  - "de/eacg/ecs-publisher"
 developers:
-- "prizrack13"
-- "jthdev"
+  - "prizrack13"
+  - "jthdev"

@@ -1,10 +1,13 @@
 ---
 name: "clearcase"
 github: "jenkinsci/clearcase-plugin"
+issues:
+  - jira: '15503'  # clearcase-plugin
 paths:
-- "org/jenkins-ci/plugins/clearcase"
-- "org/jvnet/hudson/plugins/clearcase"
+  - "org/jenkins-ci/plugins/clearcase"
+  - "org/jvnet/hudson/plugins/clearcase"
 developers:
-- "madsnielsen"
-- "vlatombe"
-- "praqma"
+  - "madsnielsen"
+  - "vlatombe"
+  - "praqma"
+  - "atombrella"

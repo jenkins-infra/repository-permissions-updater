@@ -1,7 +1,14 @@
 ---
 name: "basic-branch-build-strategies"
 github: "jenkinsci/basic-branch-build-strategies-plugin"
+issues:
+  - jira: '23425'  # basic-branch-build-strategies-plugin
 paths:
-- "org/jenkins-ci/plugins/basic-branch-build-strategies"
+  - "org/jenkins-ci/plugins/basic-branch-build-strategies"
+cd:
+  enabled: true
 developers:
-- "stephenconnolly"
+  - "rsandell"
+  - "bitwiseman"
+  - "jack_zhang"
+  - "markewaite"

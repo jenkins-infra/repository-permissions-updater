@@ -1,0 +1,13 @@
+---
+name: "opencover"
+github: &gh "jenkinsci/opencover-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/opencover"
+cd:
+  enabled: true
+developers:
+  - "asavanchuk"
+  - "cizezsy"
+  - "jonesbusy"

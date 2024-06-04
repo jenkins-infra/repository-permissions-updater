@@ -1,8 +1,20 @@
 ---
 name: "external-monitor-job"
 github: "jenkinsci/external-monitor-job-plugin"
+issues:
+  - jira: '17123'  # external-monitor-job-plugin
 paths:
-- "org/jenkins-ci/plugins/external-monitor-job"
+  - "org/jenkins-ci/plugins/external-monitor-job"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "recena"
+  - "jglick"
+  - "recena"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

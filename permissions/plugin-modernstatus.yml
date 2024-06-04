@@ -1,7 +1,10 @@
 ---
 name: "modernstatus"
 github: "jenkinsci/modernstatus-plugin"
+issues:
+  - jira: '19920'  # modernstatus-plugin
 paths:
-- "org/jenkins-ci/plugins/modernstatus"
+  - "org/jenkins-ci/plugins/modernstatus"
 developers:
-- "ovinn"
+  - "ovinn"
+  - "timja"

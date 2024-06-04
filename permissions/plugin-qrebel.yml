@@ -1,0 +1,10 @@
+---
+name: "qrebel"
+github: "jenkinsci/qrebel-plugin"
+issues:
+  - jira: '25033'  # qrebel-plugin
+paths:
+  - "org/jenkins-ci/plugins/qrebel"
+developers:
+  - "vasilyt"
+  - "mastap"

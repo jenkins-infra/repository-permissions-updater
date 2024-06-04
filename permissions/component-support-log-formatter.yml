@@ -1,0 +1,7 @@
+---
+name: "support-log-formatter"
+github: "jenkinsci/lib-support-log-formatter"
+paths:
+  - "io/jenkins/lib/support-log-formatter"
+developers:
+  - "@core"

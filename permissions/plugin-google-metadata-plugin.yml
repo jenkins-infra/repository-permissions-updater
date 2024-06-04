@@ -1,7 +1,14 @@
 ---
 name: "google-metadata-plugin"
-github: "jenkinsci/google-metadata-plugin"
+github: &gh "jenkinsci/google-metadata-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/google-metadata-plugin"
+  - "org/jenkins-ci/plugins/google-metadata-plugin"
 developers:
-- "tcnghia"
+  - "batmat"
+  - "teilo"
+  - "olamy"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

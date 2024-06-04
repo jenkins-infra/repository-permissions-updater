@@ -1,7 +1,9 @@
 ---
 name: "rigor-optimization"
 github: "jenkinsci/rigor-optimization-plugin"
+issues:
+  - jira: '21729'  # rigor-optimization-plugin
 paths:
-- "org/jenkins-ci/plugins/rigor-optimization"
+  - "org/jenkins-ci/plugins/rigor-optimization"
 developers:
-- "mtisham"
+  - "wcmonty"

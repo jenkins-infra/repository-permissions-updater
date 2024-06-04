@@ -1,9 +1,14 @@
 ---
 name: "mesos"
-github: "jenkinsci/mesos-plugin"
+github: &gh "jenkinsci/mesos-plugin"
+issues:
+  - github: *gh
+  - jira: '18122'  # mesos-plugin
 paths:
-- "org/jenkins-ci/plugins/mesos"
+  - "org/jenkins-ci/plugins/mesos"
 developers:
-- "maselvaraj"
-- "vinodkone"
-- "vlatombe"
+  - "kjoshi"
+  - "jeschkies"
+  - "maselvaraj"
+  - "vinodkone"
+  - "vlatombe"

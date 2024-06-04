@@ -1,0 +1,19 @@
+---
+name: "gitlab-branch-source"
+github: &gh "jenkinsci/gitlab-branch-source-plugin"
+issues:
+  - jira: '21980'  # gitlab-branch-source-plugin
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/gitlab-branch-source"
+cd:
+  enabled: true
+developers:
+  - "baymac"
+  - "jequals5"
+  - "justinharringa"
+  - "jetersen"
+  - "surenpi"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

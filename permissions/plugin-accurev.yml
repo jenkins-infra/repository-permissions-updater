@@ -1,8 +1,12 @@
 ---
 name: "accurev"
-github: "jenkinsci/accurev-plugin"
+github: &gh "jenkinsci/accurev-plugin"
+issues:
+  - jira: '15525'  # accurev-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/accurev"
+  - "org/jenkins-ci/plugins/accurev"
 developers:
-- "casz"
-- "poojavishal"
+  - "poojavishal"
+  - "abmohantyj"
+  - "prattal"

@@ -1,6 +1,0 @@
----
-name: "jira-trigger"
-paths:
-- "org/jenkins-ci/plugins/jira-trigger"
-developers:
-- "ceilfors"

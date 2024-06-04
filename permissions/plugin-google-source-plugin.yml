@@ -1,8 +1,12 @@
 ---
 name: "google-source-plugin"
+github: &GH "jenkinsci/google-source-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/google-source-plugin"
+  - "org/jenkins-ci/plugins/google-source-plugin"
 developers:
-- "astroilov"
-- "gunan"
-- "tcnghia"
+  - "astroilov"
+  - "gunan"
+  - "tcnghia"
+  - "viglesias"

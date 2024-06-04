@@ -1,0 +1,10 @@
+---
+name: "adoptopenjdk"
+github: "jenkinsci/adoptopenjdk-plugin"
+issues:
+  - jira: '25222'  # adoptopenjdk-plugin
+paths:
+  - "io/jenkins/plugins/adoptopenjdk"
+developers:
+  - "mmchr"
+  - "markewaite"

@@ -1,7 +1,12 @@
 ---
 name: "login-theme"
-github: "jenkinsci/login-theme-plugin"
+github: &GH "jenkinsci/login-theme-plugin"
+issues:
+  - github: *GH
 paths:
-- "io/jenkins/plugins/login-theme"
+  - "io/jenkins/plugins/login-theme"
 developers:
-- "danielbeck"
+  - "oleg_nenashev"
+  - "jonesbusy"
+cd:
+  enabled: true

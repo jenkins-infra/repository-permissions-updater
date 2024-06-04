@@ -1,7 +1,9 @@
 ---
 name: "codescene"
-github: "jenkinsci/codescene-plugin"
+github: &gh "jenkinsci/codescene-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/codescene"
+  - "org/jenkins-ci/plugins/codescene"
 developers:
-- "empear_jenkins"
+  - "empear_jenkins"

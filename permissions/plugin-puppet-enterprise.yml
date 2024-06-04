@@ -1,7 +1,0 @@
----
-name: "puppet-enterprise-pipeline"
-github: "jenkinsci/puppet-enterprise-pipeline-plugin"
-paths:
-- "org/jenkins-ci/plugins/workflow/puppet-enterprise-pipeline"
-developers:
-- "ccaum"

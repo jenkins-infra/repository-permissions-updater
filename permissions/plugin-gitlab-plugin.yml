@@ -1,8 +1,15 @@
 ---
 name: "gitlab-plugin"
-github: "jenkinsci/gitlab-plugin"
+github: &gh "jenkinsci/gitlab-plugin"
+issues:
+  - github: *gh
+  - jira: '19326'  # gitlab-plugin
 paths:
-- "com/dabsquared/gitlab-plugin"
-- "org/jenkins-ci/plugins/gitlab-plugin"
+  - "com/dabsquared/gitlab-plugin"
+  - "org/jenkins-ci/plugins/gitlab-plugin"
 developers:
-- "owenmehegan"
+  - "elbidouilleur"  # jenkins.io/jira Username MaximeMazet Github username
+  - "markewaite"
+  - "poddingue"
+  - "krisstern"
+  - "harsh_ps_2003"

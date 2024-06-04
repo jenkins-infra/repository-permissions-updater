@@ -1,6 +1,5 @@
 ---
 name: "sshd-sftp"
 paths:
-- "org/apache/sshd/sshd-sftp"
-developers:
-- "stephenconnolly"
+  - "org/apache/sshd/sshd-sftp"
+developers: []

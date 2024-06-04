@@ -1,7 +1,12 @@
 ---
 name: "pipeline-npm"
-github: "jenkinsci/pipeline-npm-plugin"
+github: &GH "jenkinsci/pipeline-npm-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/pipeline-npm"
+  - "org/jenkins-ci/plugins/pipeline-npm"
+cd:
+  enabled: true
 developers:
-- "timdowney"
+  - "timdowney"
+  - "jonesbusy"

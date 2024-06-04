@@ -1,0 +1,9 @@
+---
+name: "trunk-io"
+github: &GH "jenkinsci/trunk-io-plugin"
+paths:
+- "io/jenkins/plugins/trunk-io"
+developers:
+- "zaycev"
+issues:
+  - github: *GH

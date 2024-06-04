@@ -1,7 +1,12 @@
 ---
 name: "file-operations"
-github: "jenkinsci/file-operations-plugin"
+github: &GH "jenkinsci/file-operations-plugin"
+issues:
+  - github: *GH
 paths:
-- "sp/sd/file-operations"
+  - "sp/sd/file-operations"
 developers:
-- "pskumar448"
+  - "pskumar448"
+  - "jonesbusy"
+cd:
+  enabled: true

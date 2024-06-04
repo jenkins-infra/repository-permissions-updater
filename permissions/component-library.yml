@@ -1,6 +1,5 @@
 ---
 name: "library"
 paths:
-- "org/jvnet/hudson/plugins/findbugs/library"
-developers:
-- "drulli"
+  - "org/jvnet/hudson/plugins/findbugs/library"
+developers: []

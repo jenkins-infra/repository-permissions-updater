@@ -1,7 +1,12 @@
 ---
 name: "instant-messaging"
 github: "jenkinsci/instant-messaging-plugin"
+issues:
+  - jira: '15637'  # instant-messaging-plugin
 paths:
-- "org/jvnet/hudson/plugins/instant-messaging"
+  - "org/jvnet/hudson/plugins/instant-messaging"
 developers:
-- "kutzi"
+  - "kutzi"
+  - "jimklimov"
+cd:
+  enabled: true

@@ -1,8 +1,10 @@
 ---
 name: "humbug"
 github: "jenkinsci/humbug-plugin"
+issues:
+  - jira: '17615'  # humbug-plugin
 paths:
-- "org/jenkins-ci/plugins/humbug"
+  - "org/jenkins-ci/plugins/humbug"
 developers:
-- "wdaher"
-- "butchyyyy"
+  - "wdaher"
+  - "butchyyyy"

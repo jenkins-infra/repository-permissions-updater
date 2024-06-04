@@ -1,8 +1,10 @@
 ---
 name: "vagrant"
 github: "jenkinsci/vagrant-plugin"
+issues:
+  - jira: '17601'  # vagrant-plugin
 paths:
-- "org/jenkins-ci/plugins/vagrant"
-- "org/jenkins-ci/ruby-plugins/vagrant"
+  - "org/jenkins-ci/plugins/vagrant"
+  - "org/jenkins-ci/ruby-plugins/vagrant"
 developers:
-- "shimitanaka"
+  - "shimitanaka"

@@ -1,7 +1,9 @@
 ---
 name: "copado"
 github: "jenkinsci/copado-plugin"
+issues:
+  - jira: '21033'  # copado-plugin
 paths:
-- "com/copado/jenkins/copado"
+  - "com/copado/jenkins/copado"
 developers:
-- "larsenfed"
+  - "larsenfed"

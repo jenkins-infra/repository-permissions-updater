@@ -1,11 +1,17 @@
 ---
 name: "aws-codepipeline"
 github: "jenkinsci/aws-codepipeline-plugin"
+issues:
+  - jira: '21020'  # aws-codepipeline-plugin
 paths:
-- "com/amazonaws/aws-codepipeline"
+  - "com/amazonaws/aws-codepipeline"
 developers:
-- "belltimo"
-- "fgalmeida"
-security:
-  contacts:
-    email: "aws-security@amazon.com"
+  - "belltimo"
+  - "fgalmeida"
+  - "madhvidua"
+  - "haips"
+  - "egoramazon"
+  - "dfchang336"
+  - "snozhka"
+  - "shriramsuryaaws"
+  - "abartn"

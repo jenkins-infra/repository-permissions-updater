@@ -1,10 +1,10 @@
 ---
 name: "jdepend"
 github: "jenkinsci/jdepend-plugin"
+issues:
+  - jira: '15967'  # jdepend-plugin
 paths:
-- "org/jenkins-ci/plugins/jdepend"
-- "org/jvnet/hudson/plugins/jdepend"
+  - "org/jenkins-ci/plugins/jdepend"
+  - "org/jvnet/hudson/plugins/jdepend"
 developers:
-- "ndeloof"
-- "oleg_nenashev"
-
+  - "oleg_nenashev"

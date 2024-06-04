@@ -1,5 +1,5 @@
 ---
 name: "jenkins-ci"
 paths:
-- "org/jenkins-ci"
+  - "org/jenkins-ci"
 developers: []

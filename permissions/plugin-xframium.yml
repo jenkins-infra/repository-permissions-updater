@@ -1,7 +1,9 @@
 ---
 name: "xframium"
 github: "jenkinsci/xframium-plugin"
+issues:
+  - jira: '23179'  # xframium-plugin
 paths:
-- "org/jenkins-ci/plugins/xframium"
+  - "org/jenkins-ci/plugins/xframium"
 developers:
-- "xframium"
+  - "xframium"

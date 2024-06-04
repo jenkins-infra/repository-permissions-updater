@@ -1,7 +1,9 @@
 ---
 name: "websphere-deployer"
 github: "jenkinsci/websphere-deployer-plugin"
+issues:
+  - jira: '18153'  # websphere-deployer-plugin
 paths:
-- "org/jenkins-ci/plugins/websphere-deployer"
+  - "org/jenkins-ci/plugins/websphere-deployer"
 developers:
-- "gpeters"
+  - "gpeters"

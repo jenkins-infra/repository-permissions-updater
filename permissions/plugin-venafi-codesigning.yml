@@ -1,0 +1,10 @@
+---
+name: "venafi-codesigning"
+github: &GH "jenkinsci/venafi-codesigning-plugin"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/plugins/venafi-codesigning"
+developers:
+  - "honglilai"
+  - "arnold79"

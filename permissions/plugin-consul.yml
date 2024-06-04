@@ -1,7 +1,9 @@
 ---
 name: "consul"
 github: "jenkinsci/consul-plugin"
+issues:
+  - jira: '22127'  # consul-plugin
 paths:
-- "com/inneractive/jenkins/plugins/consul"
+  - "com/inneractive/jenkins/plugins/consul"
 developers:
-- "liozn"
+  - "liozn"

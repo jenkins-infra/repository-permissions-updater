@@ -1,11 +1,16 @@
 ---
 name: "docker-plugin"
-github: "jenkinsci/docker-plugin"
+github: &gh "jenkinsci/docker-plugin"
+issues:
+  - github: *gh
+  - jira: '18724'  # docker-plugin
 paths:
-- "com/nirima/docker-plugin"
-- "io/jenkins/docker/docker-plugin"
+  - "com/nirima/docker-plugin"
+  - "io/jenkins/docker/docker-plugin"
 developers:
-- "integer"
-- "magnayn"
-- "ndeloof"
-- "pjdarton"
+  - "integer"
+  - "magnayn"
+  - "pjdarton"
+  - "markewaite"
+  - "poddingue"
+  - "krisstern"

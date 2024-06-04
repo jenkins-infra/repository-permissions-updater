@@ -1,7 +1,10 @@
 ---
 name: "ecutest"
-github: "jenkinsci/ecutest-plugin"
+github: &gh "jenkinsci/ecutest-plugin"
+issues:
+  - github: *gh
+  - jira: '20856'  # ecutest-plugin
 paths:
-- "de/tracetronic/jenkins/plugins/ecutest"
+  - "de/tracetronic/jenkins/plugins/ecutest"
 developers:
-- "tracetronic"
+  - "tracetronic"

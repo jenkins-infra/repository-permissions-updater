@@ -1,7 +1,9 @@
 ---
 name: "seed"
-github: "jenkinsci/seed-plugin"
+github: &gh "jenkinsci/seed-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/seed"
+  - "org/jenkins-ci/plugins/seed"
 developers:
-- "damien_coraboeuf"
+  - "damien_coraboeuf"

@@ -1,7 +1,13 @@
 ---
 name: "parameter-separator"
-github: "jenkinsci/parameter-separator-plugin"
+github: &GH "jenkinsci/parameter-separator-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/parameter-separator"
+  - "org/jenkins-ci/plugins/parameter-separator"
 developers:
-- "olhado"
+  - "olhado"
+  - "ppaczyn"
+  - "jonesbusy"
+cd:
+  enabled: true

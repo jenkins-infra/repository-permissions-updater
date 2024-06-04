@@ -1,7 +1,9 @@
 ---
 name: "singleuseslave"
 github: "jenkinsci/singleuseslave-plugin"
+issues:
+  - jira: '20622'  # singleuseslave-plugin
 paths:
-- "org/jenkins-ci/ruby-plugins/singleuseslave"
+  - "org/jenkins-ci/ruby-plugins/singleuseslave"
 developers:
-- "claytononeill"
+  - "claytononeill"

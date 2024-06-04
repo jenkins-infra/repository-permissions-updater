@@ -1,8 +1,13 @@
 ---
 name: "ansible"
-github: "jenkinsci/ansible-plugin"
+github: &GH "jenkinsci/ansible-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/ansible"
+  - "org/jenkins-ci/plugins/ansible"
+cd:
+  enabled: true
 developers:
-- "sirot"
-- "escoem"
+  - "jonesbusy"
+  - "sirot"
+  - "escoem"

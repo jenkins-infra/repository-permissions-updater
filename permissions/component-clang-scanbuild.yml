@@ -1,6 +1,0 @@
----
-name: "clang-scanbuild"
-paths:
-- "org/jenkins-ci/plugins/clang-scanbuild"
-developers:
-- "rodrigc"

@@ -1,0 +1,8 @@
+---
+# Workaround for publishing Maven plugins
+name: "dummy-unused-artifact-name"
+paths:
+  - "org/jvnet"
+  - "org/kohsuke"
+developers:
+  - "@core"

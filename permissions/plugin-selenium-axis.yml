@@ -1,7 +1,10 @@
 ---
 name: "selenium-axis"
-github: "jenkinsci/selenium-axis-plugin"
+github: &gh "jenkinsci/selenium-axis-plugin"
+issues:
+  - jira: '18138'  # selenium-axis-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/selenium-axis"
-developers: 
--  "jeremym"
+  - "org/jenkins-ci/plugins/selenium-axis"
+developers:
+  - "jeremym"

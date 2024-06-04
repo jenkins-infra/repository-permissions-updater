@@ -1,6 +1,0 @@
----
-name: "deployment-sphere"
-paths:
-- "org/jenkins-ci/plugins/deployment-sphere"
-developers:
-- "webdizz"

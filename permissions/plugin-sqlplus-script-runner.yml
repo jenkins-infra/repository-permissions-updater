@@ -1,7 +1,10 @@
 ---
 name: "sqlplus-script-runner"
-github: "jenkinsci/sqlplus-script-runner-plugin"
+github: &gh "jenkinsci/sqlplus-script-runner-plugin"
+issues:
+  - github: *gh
+  - jira: '20723'  # sqlplus-script-runner-plugin
 paths:
-- "org/jenkins-ci/plugins/sqlplus-script-runner"
+  - "org/jenkins-ci/plugins/sqlplus-script-runner"
 developers:
-- "boaglio"
+  - "boaglio"

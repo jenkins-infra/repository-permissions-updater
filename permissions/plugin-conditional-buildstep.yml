@@ -1,7 +1,18 @@
 ---
 name: "conditional-buildstep"
 github: "jenkinsci/conditional-buildstep-plugin"
+issues:
+  - jira: '15947'  # conditional-buildstep-plugin
 paths:
-- "org/jenkins-ci/plugins/conditional-buildstep"
+  - "org/jenkins-ci/plugins/conditional-buildstep"
 developers:
-- "imod"
+  - "imod"
+  - "oleg_nenashev"
+  - "carroll"
+  - "olamy"
+  - "teilo"
+  - "rarabaolaza"
+  - "markewaite"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

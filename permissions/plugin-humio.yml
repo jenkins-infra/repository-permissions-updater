@@ -1,7 +1,9 @@
 ---
 name: "humio"
 github: "jenkinsci/humio-plugin"
+issues:
+  - jira: '23134'  # humio-plugin
 paths:
-- "org/jenkins-ci/plugins/humio"
+  - "org/jenkins-ci/plugins/humio"
 developers:
-- "anagrius"
+  - "anagrius"

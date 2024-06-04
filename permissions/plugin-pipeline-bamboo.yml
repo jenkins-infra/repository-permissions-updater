@@ -1,7 +1,9 @@
 ---
 name: "pipeline-bamboo"
 github: "jenkinsci/pipeline-bamboo-plugin"
+issues:
+  - jira: '23171'  # pipeline-bamboo-plugin
 paths:
-- "com/logmein/pipeline-bamboo"
+  - "com/logmein/pipeline-bamboo"
 developers:
-- "kflavin"
+  - "kflavin"

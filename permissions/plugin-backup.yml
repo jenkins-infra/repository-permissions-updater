@@ -1,6 +1,10 @@
 ---
 name: "backup"
 github: "jenkinsci/backup-plugin"
+issues:
+  - jira: '15696'  # backup-plugin
 paths:
-- "org/jvnet/hudson/plugins/backup"
-developers: []
+  - "org/jvnet/hudson/plugins/backup"
+developers:
+  - "jm_meessen"
+  - "poddingue"

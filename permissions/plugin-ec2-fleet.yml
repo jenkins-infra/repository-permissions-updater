@@ -1,8 +1,19 @@
 ---
 name: "ec2-fleet"
-github: "jenkinsci/ec2-fleet-plugin"
+github: &gh "jenkinsci/ec2-fleet-plugin"
+issues:
+  - github: *gh
+  - jira: '21472'  # ec2-fleet-plugin
 paths:
-- "com/amazon/jenkins/fleet/ec2-fleet"
+  - "com/amazon/jenkins/fleet/ec2-fleet"
 developers:
-- "cyberax"
-- "schmutze"
+  - "cyberax"
+  - "schmutze"
+  - "terma"
+  - "brycahta"
+  - "cjerad"
+  - "pdk27"
+  - "likithavemulapalli"
+  - "naraharip2017"
+  - "banvinee"
+  - "ggburris"

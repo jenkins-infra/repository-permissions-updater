@@ -2,5 +2,5 @@
 name: "setenv"
 github: "jenkinsci/setenv-plugin"
 paths:
-- "org/jenkins-ci/plugins/setenv"
+  - "org/jenkins-ci/plugins/setenv"
 developers: []

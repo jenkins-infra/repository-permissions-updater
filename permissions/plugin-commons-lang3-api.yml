@@ -1,0 +1,15 @@
+---
+name: "commons-lang3-api"
+github: &GH "jenkinsci/commons-lang3-api-plugin"
+paths:
+  - "io/jenkins/plugins/commons-lang3-api"
+developers:
+  - "nhojpatrick"
+  - "timja"
+issues:
+  - github: *GH
+cd:
+  enabled: true
+security:
+  contacts:
+    jira: "cloudbees_security_members"

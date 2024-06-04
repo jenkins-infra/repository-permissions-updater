@@ -1,5 +1,5 @@
 ---
 name: "flow"
 paths:
-- "org/jenkins-ci/plugins/flow"
+  - "org/jenkins-ci/plugins/flow"
 developers: []

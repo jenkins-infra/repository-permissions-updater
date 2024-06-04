@@ -1,7 +1,10 @@
 ---
 name: "date-parameter"
-github: "jenkinsci/date-parameter-plugin"
+github: &gh "jenkinsci/date-parameter-plugin"
+issues:
+  - github: *gh
+  - jira: '22924'  # date-parameter-plugin
 paths:
-- "me/leejay/jenkins/date-parameter"
+  - "me/leejay/jenkins/date-parameter"
 developers:
-- "leejaycoke"
+  - "leejaycoke"

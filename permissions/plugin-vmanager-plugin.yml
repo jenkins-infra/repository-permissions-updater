@@ -1,7 +1,9 @@
 ---
 name: "vmanager-plugin"
-github: "jenkinsci/vmanager-plugin"
+github: &gh "jenkinsci/vmanager-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/vmanager-plugin"
+  - "org/jenkins-ci/plugins/vmanager-plugin"
 developers:
-- "tyanai"
+  - "tyanai"

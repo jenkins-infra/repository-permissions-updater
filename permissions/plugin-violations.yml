@@ -1,8 +1,12 @@
 ---
 name: "violations"
-github: "jenkinsci/violations-plugin"
+github: &gh "jenkinsci/violations-plugin"
+issues:
+  - jira: '15497'  # violations-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/violations"
-- "org/jvnet/hudson/plugins/violations"
+# Block creation of new releases. If you want to release the plugin, contact the Jenkins security team about SECURITY-2913.
+  - "org/jenkins-ci/plugins/violations-releaseblocker"
+  - "org/jvnet/hudson/plugins/violations-releaseblocker"
 developers:
-- "tomasbjerre"
+  - "tomasbjerre"

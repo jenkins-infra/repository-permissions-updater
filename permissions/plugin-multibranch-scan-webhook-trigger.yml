@@ -1,0 +1,9 @@
+---
+name: "multibranch-scan-webhook-trigger"
+github: "jenkinsci/multibranch-scan-webhook-trigger-plugin"
+issues:
+  - jira: '25134'  # multibranch-scan-webhook-trigger-plugin
+paths:
+  - "igalg/jenkins/plugins/multibranch-scan-webhook-trigger"
+developers:
+  - "igalg"

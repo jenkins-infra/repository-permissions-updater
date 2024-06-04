@@ -1,0 +1,14 @@
+---
+name: "jersey2-api"
+github: &GH "jenkinsci/jersey2-api-plugin"
+paths:
+  - "io/jenkins/plugins/jersey2-api"
+developers:
+  - "@cloudbees-developers"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+issues:
+  - jira: 28832
+cd:
+  enabled: true

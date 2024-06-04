@@ -1,0 +1,18 @@
+---
+name: "checks-api"
+github: &gh "jenkinsci/checks-api-plugin"
+issues:
+  - github: *gh
+  - jira: '27529'  # checks-api-plugin
+paths:
+  - "io/jenkins/plugins/checks-api"
+developers:
+  - "xiongkezhi"
+  - "timja"
+  - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true
+  exclusive: false

@@ -1,7 +1,9 @@
 ---
 name: "deveo"
-github: "jenkinsci/deveo-plugin"
+github: &gh "jenkinsci/deveo-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/deveo"
+  - "org/jenkins-ci/plugins/deveo"
 developers:
-- "vellu"
+  - "vellu"

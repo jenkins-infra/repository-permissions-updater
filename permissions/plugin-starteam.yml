@@ -1,7 +1,9 @@
 ---
 name: "starteam"
 github: "jenkinsci/starteam-plugin"
+issues:
+  - jira: '15579'  # starteam-plugin
 paths:
-- "hudson/plugins/starteam"
+  - "hudson/plugins/starteam"
 developers:
-- "ravaid"
+  - "ravaid"

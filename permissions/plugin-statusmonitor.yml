@@ -1,6 +1,11 @@
 ---
 name: "statusmonitor"
 github: "jenkinsci/statusmonitor-plugin"
+issues:
+  - jira: '15617'  # statusmonitor-plugin
 paths:
-- "org/jvnet/hudson/plugins/statusmonitor"
+  - "org/jvnet/hudson/plugins/statusmonitor"
 developers: []
+cd:
+  enabled: true
+  exclusive: false

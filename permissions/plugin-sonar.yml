@@ -1,11 +1,15 @@
 ---
 name: "sonar"
 github: "jenkinsci/sonarqube-plugin"
+issues:
+  - jira: '15523'  # sonar-plugin
 paths:
-- "org/jenkins-ci/plugins/sonar"
-- "org/jvnet/hudson/plugins/sonar"
+  - "org/jenkins-ci/plugins/sonar"
+  - "org/jvnet/hudson/plugins/sonar"
 developers:
-- "dmeneses"
-- "ehartmann"
-- "henryju"
-- "tomverin"
+  - "dmeneses"
+  - "henryju"
+  - "tomverin"
+  - "maeb"
+  - "wouteradmiraal"
+  - "ericg"

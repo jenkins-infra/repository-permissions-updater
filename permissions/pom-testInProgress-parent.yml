@@ -1,6 +1,6 @@
 ---
 name: "testInProgress-parent"
 paths:
-- "org/jenkins-ci/plugins/testInProgress-parent"
+  - "org/jenkins-ci/plugins/testInProgress-parent"
 developers:
-- "menonvarun"
+  - "menonvarun"

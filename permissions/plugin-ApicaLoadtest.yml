@@ -1,7 +1,9 @@
 ---
 name: "ApicaLoadtest"
 github: "jenkinsci/apica-loadtest-plugin"
+issues:
+  - jira: '20327'  # apica-loadtest-plugin
 paths:
-- "com/apica/ApicaLoadtest"
+  - "com/apica/ApicaLoadtest"
 developers:
-- "andrasnemes"
+  - "andrasnemes"

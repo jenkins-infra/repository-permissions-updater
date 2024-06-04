@@ -1,7 +1,9 @@
 ---
 name: "waptpro"
 github: "jenkinsci/waptpro-plugin"
+issues:
+  - jira: '21459'  # waptpro-plugin
 paths:
-- "org/jenkins-ci/plugins/waptpro"
+  - "org/jenkins-ci/plugins/waptpro"
 developers:
-- "waptpro"
+  - "waptpro"

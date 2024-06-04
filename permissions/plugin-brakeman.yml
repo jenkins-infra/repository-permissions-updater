@@ -1,8 +1,11 @@
 ---
 name: "brakeman"
-github: "jenkinsci/brakeman-plugin"
+github: &gh "jenkinsci/brakeman-plugin"
+issues:
+  - github: *gh
+  - jira: '16096'  # brakeman-plugin
 paths:
-- "org/jenkins-ci/plugins/brakeman"
-- "org/jvnet/hudson/plugins/brakeman"
+  - "org/jenkins-ci/plugins/brakeman"
+  - "org/jvnet/hudson/plugins/brakeman"
 developers:
-- "presidentbeef"
+  - "presidentbeef"

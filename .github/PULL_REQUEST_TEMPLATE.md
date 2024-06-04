@@ -1,32 +1,44 @@
-<!-- This PR template only applies to permission changes. Ignore it for changes to the tool updating permissions in Artifactory -->
+# Link to GitHub repository
 
-# Description
+<!-- Provide a link to the plugin or component repository you want to modify -->
 
-<!-- fill in description here, this will at least be a link to a GitHub repository, and often also links to hosting request, and @mentioning other committers/maintainers as per the checklist below -->
+# When modifying release permission
 
-# Submitter checklist for changing permissions
+List the GitHub usernames of the users who should have commit permissions below:
+- `@username1`
+- `@username2`
 
-<!--
-Make sure to implement all relevant entries (see section headers to when they apply) and mark them as checked (by replacing the space between brackets with an "x"). Remove sections that don't apply, e.g. the second and third when adding a new uploader to an existing permissions file.
--->
+This is needed in order to cut releases of the plugin or component.
 
-### Always
+If you are modifying the release permission of your plugin or component, fill out the following checklist:
 
-- [ ] Add link to plugin/component Git repository in description above
+<!-- If you're enabling CD only, leave the following checklist blank! -->
 
-### For a newly hosted plugin only
+```[tasklist]
+### Release permission checklist (for submitters)
+- [ ] The usernames of the users added to the "developers" section in the .yml file are the same the users use to log in to [accounts.jenkins.io](https://accounts.jenkins.io/).
+- [ ] All users added have logged in to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io/) once.
+- [ ] I have mentioned an [existing team member](https://github.com/orgs/jenkinsci/teams) of the plugin or component team to approve this request.
+```
 
-- [ ] Add link to resolved HOSTING issue in description above
+## When enabling automated releases (cd: true)
 
-### For a new permissions file only
+Follow the [documentation](https://www.jenkins.io/doc/developer/publishing/releasing-cd/) to ensure, your pull request is set up properly. Don't merge it yet.  
+In case of changes requested by the hosting team, an open PR facilitates future reviews, without derailing work across multiple PRs.
 
-- [ ] Make sure the file is created in `permissions/` directory
-- [ ] `artifactId` (pom.xml) is used for `name` (permissions YAML file).
-- [ ] [`groupId` / `artifactId` (pom.xml) are correctly represented in `path` (permissions YAML file)](https://github.com/jenkins-infra/repository-permissions-updater/#managing-permissions)
-- [ ] Check that the file is named `plugin-${artifactId}.yml` for plugins
+### Link to the PR enabling CD in your plugin
 
-### When adding new uploaders (this includes newly created permissions files)
+<!-- Provide a link to the pull request containing the necessary changes in your plugin -->
 
-- [ ] [Make sure to `@`mention an existing maintainer to confirm the permissions request, if applicable](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
-- [ ] Use the Jenkins community (LDAP) account name in the YAML file, not the GitHub account name
-- [ ] [All newly added users have logged in to Artifactory at least once](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)
+```[tasklist]
+### CD checklist (for submitters)
+- [ ] I have provided a link to the pull request in my plugin, which enables CD according to the documentation. 
+```
+
+```[tasklist]
+### Reviewer checklist
+- [ ] Check that the `$pluginId Developers` team has `Admin` permissions while granting the access.
+- [ ] In the case of plugin adoption, ensure that the Jenkins Jira default assignee is either removed or changed to the new maintainer.
+- [ ] If security contacts are changed (this includes add/remove), ping the security officer (currently `@Wadeck`) in this pull request. If an email contact is changed, wait for approval from the security officer.
+```
+There are [IRC Bot commands](https://jenkins.io/projects/infrastructure/ircbot/#issue-tracker-management) for it.
