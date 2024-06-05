@@ -347,8 +347,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         if(e instanceof ConstantExpression) {
             Version jenkinsVersion = new Version(e.getText());
             if(jenkinsVersion.compareTo(LOWEST_JENKINS_VERSION) < 0) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, String.format("The `jenkinsVersion` value in your build.gradle does not meet the minimum Jenkins version required, please update your jenkinsVersion to at least %s. Take a look at the [baseline recommendations](https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/#currently-recommended-versions)."
-                        , jenkinsVersion, LOWEST_JENKINS_VERSION)));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The `jenkinsVersion` value in your build.gradle does not meet the minimum Jenkins version required, please update your jenkinsVersion to at least %s. Take a look at the [baseline recommendations](https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/#currently-recommended-versions).".formatted(jenkinsVersion, LOWEST_JENKINS_VERSION)));
             }
             hasJenkinsVersion = true;
         } else {

@@ -296,7 +296,7 @@ public class Hoster {
             try {
                 team.add(github.getUser(user));
             } catch (IOException e) {
-                LOGGER.error(String.format("Failed to add user %s to team %s", user, team.getName()), e);
+                LOGGER.error("Failed to add user %s to team %s".formatted(user, team.getName()), e);
             }
         };
     }
@@ -350,13 +350,15 @@ public class Hoster {
 
                 builder.content(content).path("permissions/plugin-" + forkTo.replace("-plugin", "") + ".yml").commit();
 
-                String prText = String.format("Hello from your friendly Jenkins Hosting Bot!%n%n" +
-                                "This is an automatically created PR for:%n%n" +
-                                "- #%s%n" +
-                                "- https://github.com/%s/%s%n%n" +
-                                "The user(s) listed in the permissions file may not have logged in to Artifactory yet, check the PR status.%n" +
-                                "To check again, hosting team members will retrigger the build using Checks area or by closing and reopening the PR.%n%n" +
-                                "cc %s",
+                String prText = """
+                        Hello from your friendly Jenkins Hosting Bot!
+                        This is an automatically created PR for:
+                        - #%s
+                        - https://github.com/%s/%s
+                        The user(s) listed in the permissions file may not have logged in to Artifactory yet, check the PR status.
+                        To check again, hosting team members will retrigger the build using Checks area or by closing and reopening the PR.
+                        cc %s
+                        """.formatted(
                         issueId, TARGET_ORG_NAME,
                         forkTo, ghUsers.stream().map(u -> "@" + u).collect(joining(", ")));
 
@@ -401,13 +403,13 @@ public class Hoster {
         }
 
         if (!StringUtils.isBlank(artifactId) && !StringUtils.isBlank((groupId))) {
-            res = String.format("%s/%s", groupId.replace('.', '/'), artifactId);
+            res = "%s/%s".formatted(groupId.replace('.', '/'), artifactId);
         }
         return res;
     }
 
     private boolean createComponent(String subcomponent, String owner) {
-        LOGGER.info(String.format("Adding a new JIRA subcomponent %s to the %s project, owned by %s",
+        LOGGER.info("Adding a new JIRA subcomponent %s to the %s project, owned by %s".formatted(
                 subcomponent, JIRA_PROJECT, owner));
 
         boolean result = false;
