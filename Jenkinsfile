@@ -27,8 +27,8 @@ props += pipelineTriggers(triggers)
 
 properties(props)
 
-
-node('maven-21') {
+// Temporary until maven-21 agents are available on trusted.ci
+node('maven-21' || 'java' || 'maven-11') {
     try {
         stage ('Clean') {
             deleteDir()
@@ -40,7 +40,8 @@ node('maven-21') {
         }
 
         stage ('Build') {
-            sh "mvn -U -B -ntp clean verify"
+            // Temporary until maven-21 agents are available on trusted.ci
+            sh "[ -d /opt/jdk-21/bin ] && export JAVA_HOME=/opt/jdk-21; mvn -U -B -ntp clean verify"
         }
 
         stage ('Run') {
