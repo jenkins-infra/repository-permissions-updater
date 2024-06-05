@@ -78,7 +78,6 @@
 
     <properties>
         <main.class>io.jenkins.infra.repository_permissions_updater.ArtifactoryPermissionsUpdater</main.class>
-        <spotbugs.excludeFilterFile>${project.basedir}/src/spotbugs/excludesFilter.xml</spotbugs.excludeFilterFile>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -216,7 +215,6 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
