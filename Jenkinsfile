@@ -27,9 +27,10 @@ props += pipelineTriggers(triggers)
 
 properties(props)
 
-
+// Temporary until maven-21 agents are available on trusted.ci
 node('maven-21 || (java&&linux)') {
-    withEnv(['JAVA_HOME=/opt/jdk-21']) {
+    // Temporary until maven-21 agents are available on trusted.ci
+    withEnv(['JAVA_HOME=/opt/jdk-21','PATH+JDK21=/opt/jdk-21/bin']) {
         try {
             stage ('Clean') {
                 deleteDir()
