@@ -13,7 +13,7 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
     public VerificationMessage(Severity severity, HashSet<VerificationMessage> subItems, String format, Object... args) {
         this.severity = severity;
         this.subItems = subItems;
-        message = String.format(format, args);
+        message = format.formatted(args);
     }
 
     public VerificationMessage(Severity severity, String format, Object... args) {
@@ -43,8 +43,8 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
 
     @Override
     public boolean equals(Object other) {
-        if(other instanceof VerificationMessage) {
-            return compareTo((VerificationMessage)other) == 0;
+        if(other instanceof VerificationMessage verificationMessage) {
+            return compareTo(verificationMessage) == 0;
         }
         return false;
     }
@@ -106,6 +106,6 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
 
     @Override
     public String toString() {
-        return String.format("%s: %s", severity.getMessage(), message);
+        return "%s: %s".formatted(severity.getMessage(), message);
     }
 }
