@@ -86,8 +86,7 @@ node('maven-21') {
         }
     } finally {
         stage ('Archive') {
-            archiveArtifacts 'permissions/*.yml'
-            archiveArtifacts 'json/*.json'
+            archiveArtifacts 'json/**'
             if (infra.isTrusted()) {
                 dir('json') {
                     publishReports ([ 'issues.index.json', 'maintainers.index.json', 'github.index.json' ])
