@@ -28,7 +28,7 @@ props += pipelineTriggers(triggers)
 properties(props)
 
 // Temporary until maven-21 agents are available on trusted.ci
-node('maven-21' || 'java' || 'maven-11') {
+node('maven-21 || java || maven-11') {
     try {
         stage ('Clean') {
             deleteDir()
