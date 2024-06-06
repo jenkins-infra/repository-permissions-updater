@@ -8,3 +8,5 @@ paths:
 developers:
   - "cappuccino"
   - "viceice"
+cd:
+  enabled: true
