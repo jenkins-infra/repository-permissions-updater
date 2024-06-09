@@ -7,3 +7,5 @@ developers:
 - "jonesbusy"
 issues:
   - github: *GH
+cd:
+  enabled: true
