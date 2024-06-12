@@ -13,7 +13,6 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URI;
@@ -61,13 +60,11 @@ class JiraAPITest {
     }
 
     @BeforeEach
-    public void reset() throws NoSuchFieldException, IllegalAccessException {
+    public void reset() {
         backup = new Properties();
         backup.putAll(System.getProperties());
 
-        Field instance = JiraAPI.class.getDeclaredField("INSTANCE");
-        instance.setAccessible(true);
-        instance.set(null, null);
+        JiraAPI.INSTANCE = null;
 
         httpUrlStreamHandler.resetConnections();
     }
@@ -85,7 +82,6 @@ class JiraAPITest {
         JiraAPI.getInstance().getComponentId("FakeData");
         assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
         assertThat(memoryAppender.contains("Failed to construct Jira URL", Level.ERROR)).isTrue();
-        System.clearProperty("jiraUrl");
     }
 
     @Test

@@ -2,7 +2,7 @@ package io.jenkins.infra.repository_permissions_updater;
 
 public abstract class JiraAPI implements Definition.IssueTracker.JiraComponentSource {
 
-    private static JiraAPI INSTANCE = null;
+    static JiraAPI INSTANCE = null;
 
     public abstract String getComponentId(String componentName);
 
