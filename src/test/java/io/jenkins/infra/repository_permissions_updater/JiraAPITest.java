@@ -134,7 +134,7 @@ class JiraAPITest {
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
         var id = JiraAPI.getInstance().getComponentId("42crunch-security-audit-plugin");
         assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
-        assertEquals(id, "27235");
+        assertEquals("27235", id);
     }
 
     @Test
