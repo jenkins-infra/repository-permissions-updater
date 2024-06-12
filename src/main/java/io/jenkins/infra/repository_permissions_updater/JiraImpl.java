@@ -3,29 +3,26 @@ package io.jenkins.infra.repository_permissions_updater;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-import org.glassfish.jersey.uri.UriComponent;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URI;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 class JiraImpl extends JiraAPI {
-    private static final Logger LOGGER = Logger.getLogger(JiraImpl.class.getName());
+    private static final Logger LOGGER = LoggerFactory.getLogger(JiraImpl.class);
 
     /**
      * URL to Jira
@@ -54,32 +51,32 @@ class JiraImpl extends JiraAPI {
         if (componentNamesToIds == null) {
             componentNamesToIds = new HashMap<>();
 
-            LOGGER.log(Level.INFO, "Retrieving components from Jira...");
+            LOGGER.info("Retrieving components from Jira...");
             final URL url;
             try {
                 url = URI.create(JIRA_COMPONENTS_URL).toURL();
             } catch (final MalformedURLException e) {
-                LOGGER.log(Level.SEVERE, "Failed to construct Jira URL", e);
+                LOGGER.error("Failed to construct Jira URL", e);
                 return;
             }
             final HttpURLConnection conn;
             try {
                 conn = (HttpURLConnection) url.openConnection();
             } catch (final IOException e) {
-                LOGGER.log(Level.SEVERE, "Failed to open connection for Jira URL", e);
+                LOGGER.error("Failed to open connection for Jira URL", e);
                 return;
             }
 
             try {
                 conn.setRequestMethod("GET");
             } catch (final ProtocolException e) {
-                LOGGER.log(Level.SEVERE, "Failed to set request method", e);
+                LOGGER.error("Failed to set request method", e);
                 return;
             }
             try {
                 conn.connect();
             } catch (IOException e) {
-                LOGGER.log(Level.SEVERE, "Failed to connect to Jira URL", e);
+                LOGGER.error("Failed to connect to Jira URL", e);
                 return;
             }
             try (final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
@@ -89,11 +86,11 @@ class JiraImpl extends JiraAPI {
                     final var object = jsonElement.getAsJsonObject();
                     final var id = object.get("id").getAsString();
                     final var name = object.get("name").getAsString();
-                    LOGGER.log(Level.FINE, "Identified Jira component with ID {0} and name {1}", new Object[]{id, name});
+                    LOGGER.trace("Identified Jira component with ID {} and name {}", id, name);
                     componentNamesToIds.put(name, id);
                 });
             } catch (final IOException e) {
-                LOGGER.log(Level.SEVERE, "Failed to parse Jira response", e);
+                LOGGER.error("Failed to parse Jira response", e);
             }
         }
     }
@@ -110,38 +107,38 @@ class JiraImpl extends JiraAPI {
     @SuppressFBWarnings({"URLCONNECTION_SSRF_FD"})
     private static boolean isUserPresentInternal(final String username) {
         if (!USERNAME_REGEX.matcher(username).matches()) {
-            LOGGER.log(Level.WARNING, "Rejecting user name for Jira lookup: {0}", new Object[]{username});
+            LOGGER.warn("Rejecting user name for Jira lookup: {}", username);
             return false; // Do not allow unusual user names, protect from any shenanigans
         }
 
-        LOGGER.log(Level.INFO, "Checking whether user exists in Jira: {0}", new Object[]{username});
+        LOGGER.info("Checking whether user exists in Jira: {}", username);
 
         final URL url;
         try {
             url = URI.create(String.format(JIRA_USER_QUERY, username)).toURL();
         } catch (final MalformedURLException e) {
-            LOGGER.log(Level.SEVERE, "Failed to construct Jira URL", e);
+            LOGGER.error("Failed to construct Jira URL", e);
             return false;
         }
         final HttpURLConnection conn;
         try {
             conn = (HttpURLConnection) url.openConnection();
         } catch (final IOException e) {
-            LOGGER.log(Level.SEVERE, "Failed to open connection for Jira URL", e);
+            LOGGER.error("Failed to open connection for Jira URL", e);
             return false;
         }
 
         try {
             conn.setRequestMethod("GET");
         } catch (final ProtocolException e) {
-            LOGGER.log(Level.SEVERE, "Failed to set request method", e);
+            LOGGER.error("Failed to set request method", e);
             return false;
         }
         conn.setRequestProperty("Authorization", String.format(JIRA_BASIC_AUTH_HEADER, JIRA_BASIC_AUTH_VALUE));
         try {
             conn.connect();
         } catch (final IOException e) {
-            LOGGER.log(Level.SEVERE, "Failed to connect to Jira URL", e);
+            LOGGER.error("Failed to connect to Jira URL", e);
             return false;
         }
 
