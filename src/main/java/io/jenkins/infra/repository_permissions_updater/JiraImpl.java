@@ -18,6 +18,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Supplier;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -27,20 +28,20 @@ class JiraImpl extends JiraAPI {
     /**
      * URL to Jira
      */
-    private static final String JIRA_URL = System.getProperty("jiraUrl", "https://issues.jenkins.io");
+    private static final Supplier<String> JIRA_URL = () -> System.getProperty("jiraUrl", "https://issues.jenkins.io");
     /**
      * URL to Jira components API
      */
-    private static final String JIRA_COMPONENTS_URL = JIRA_URL + "/rest/api/2/project/JENKINS/components";
+    private static final  Supplier<String> JIRA_COMPONENTS_URL = () -> JIRA_URL.get() + "/rest/api/2/project/JENKINS/components";
     /**
      * URL to Jira user API
      */
-    private static final String JIRA_USE_URL = JIRA_URL + "/rest/api/2/user";
+    private static final  Supplier<String> JIRA_USE_URL = () -> JIRA_URL.get() + "/rest/api/2/user";
     private Map<String, String> componentNamesToIds;
     private final Map<String, Boolean> userMapping = new HashMap<>();
     private static final Gson gson = new Gson();
     private static final Pattern USERNAME_REGEX = Pattern.compile("[a-zA-Z0-9_]+");
-    private static final String JIRA_USER_QUERY = JIRA_USE_URL + "?username=%s";
+    private static final  Supplier<String> JIRA_USER_QUERY = () -> JIRA_USE_URL.get() + "?username=%s";
     private static final String JIRA_USERNAME = System.getenv("JIRA_USERNAME");
     private static final String JIRA_PASSWORD = System.getenv("JIRA_PASSWORD");
     private static final String JIRA_BASIC_AUTH_VALUE = Base64.getEncoder().encodeToString((JIRA_USERNAME + ":" + JIRA_PASSWORD).getBytes(StandardCharsets.UTF_8));
@@ -54,7 +55,7 @@ class JiraImpl extends JiraAPI {
             LOGGER.info("Retrieving components from Jira...");
             final URL url;
             try {
-                url = URI.create(JIRA_COMPONENTS_URL).toURL();
+                url = URI.create(JIRA_COMPONENTS_URL.get()).toURL();
             } catch (final MalformedURLException e) {
                 LOGGER.error("Failed to construct Jira URL", e);
                 return;
@@ -115,7 +116,7 @@ class JiraImpl extends JiraAPI {
 
         final URL url;
         try {
-            url = URI.create(String.format(JIRA_USER_QUERY, username)).toURL();
+            url = URI.create(String.format(JIRA_USER_QUERY.get(), username)).toURL();
         } catch (final MalformedURLException e) {
             LOGGER.error("Failed to construct Jira URL", e);
             return false;

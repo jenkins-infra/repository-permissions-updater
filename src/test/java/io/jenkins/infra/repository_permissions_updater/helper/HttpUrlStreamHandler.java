@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLStreamHandler;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -28,6 +27,11 @@ public class HttpUrlStreamHandler extends URLStreamHandler {
 
     public HttpUrlStreamHandler addConnection(URL url, Object urlConnection) {
         this.connections.put(url, urlConnection);
+        this.stringConnections.put(url.toString(), urlConnection);
+        return this;
+    }
+
+    public HttpUrlStreamHandler addConnection(String url, Object urlConnection) {
         this.stringConnections.put(url.toString(), urlConnection);
         return this;
     }
