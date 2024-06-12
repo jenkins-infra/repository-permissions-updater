@@ -8,12 +8,7 @@ import io.jenkins.infra.repository_permissions_updater.helper.MemoryAppender;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.parallel.ResourceLock;
-import org.junitpioneer.jupiter.ClearSystemProperty;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
@@ -30,15 +25,11 @@ import java.util.function.Supplier;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.parallel.ResourceAccessMode.READ;
-import static org.junit.jupiter.api.parallel.Resources.SYSTEM_PROPERTIES;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
-
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class JiraAPITest {
 
     private static MemoryAppender memoryAppender;
@@ -86,8 +77,6 @@ class JiraAPITest {
     }
 
     @Test
-    @Order(0)
-    @ResourceLock(value = SYSTEM_PROPERTIES, mode = READ)
     void testEnsureLoadedWrongBaseUrl() {
         System.setProperty("jiraUrl", "xx://issues.jenkins.io");
         JiraAPI.getInstance().getComponentId("FakeData");
@@ -97,8 +86,6 @@ class JiraAPITest {
     }
 
     @Test
-    @ClearSystemProperty(key = "jiraUrl")
-    @Order(1)
     void testEnsureLoadedFailedToOpenConnection() throws IOException {
 
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
@@ -109,7 +96,6 @@ class JiraAPITest {
     }
 
     @Test
-    @Order(2)
     void testEnsureLoadedFailedToGetConnection() throws IOException {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
@@ -121,7 +107,6 @@ class JiraAPITest {
     }
 
     @Test
-    @Order(3)
     void testEnsureLoadedFailedToConnect() throws IOException {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
@@ -133,7 +118,6 @@ class JiraAPITest {
     }
 
     @Test
-    @Order(3)
     void testEnsureLoadedFailedToParse() throws IOException {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
@@ -145,11 +129,10 @@ class JiraAPITest {
     }
 
     @Test
-    @Order(3)
     void testEnsureLoadedSuccessToParse() throws IOException {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
-        when(fakeHttpConnection.getInputStream()).thenReturn(Files.newInputStream(Path.of("src","test","resources", "result_12_07_2024.json")));
+        when(fakeHttpConnection.getInputStream()).thenReturn(Files.newInputStream(Path.of("src","test","resources", "components_12_07_2024.json")));
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
         var id = JiraAPI.getInstance().getComponentId("42crunch-security-audit-plugin");
         assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
