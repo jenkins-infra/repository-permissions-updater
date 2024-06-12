@@ -34,11 +34,9 @@ class JiraAPITest {
 
     private static MemoryAppender memoryAppender;
     private static HttpUrlStreamHandler httpUrlStreamHandler;
+    private static final Supplier<String> JIRA_USER_QUERY = JiraAPITest::createUserQuery;
+    private static final Supplier<String> JIRA_COMPONENTS_URL = JiraAPITest::createComponentsURL;
 
-    private static final Supplier<String> JIRA_URL = () -> System.getProperty("jiraUrl", "https://issues.jenkins.io");
-    private static final  Supplier<String> JIRA_USE_URL = () -> JIRA_URL.get() + "/rest/api/2/user";
-    private static final  Supplier<String> JIRA_USER_QUERY = () -> JIRA_USE_URL.get() + "?username=%s";
-    private static final Supplier<String> JIRA_COMPONENTS_URL = () -> JIRA_URL.get() + "/rest/api/2/project/JENKINS/components";
     private static URLStreamHandlerFactory urlStreamHandlerFactory;
     private Properties backup;
 
@@ -59,17 +57,21 @@ class JiraAPITest {
         URL.setURLStreamHandlerFactory(urlStreamHandlerFactory);
     }
 
+    private static String createUserQuery() {
+        return System.getProperty("jiraUrl", "https://issues.jenkins.io") +"/rest/api/2/user?username=%s";
+    }
+
+    private static String createComponentsURL() {
+        return System.getProperty("jiraUrl", "https://issues.jenkins.io") + "/rest/api/2/project/JENKINS/components";
+    }
+
     @BeforeEach
     public void reset() {
         backup = new Properties();
         backup.putAll(System.getProperties());
-
         JiraAPI.INSTANCE = null;
-
         httpUrlStreamHandler.resetConnections();
     }
-
-
 
     @AfterEach
     void restore() {
@@ -220,4 +222,5 @@ class JiraAPITest {
         assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
         Assertions.assertTrue(result);
     }
+
 }

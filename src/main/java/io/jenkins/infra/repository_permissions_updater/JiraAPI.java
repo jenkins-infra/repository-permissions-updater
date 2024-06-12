@@ -11,7 +11,7 @@ public abstract class JiraAPI implements Definition.IssueTracker.JiraComponentSo
     /* Singleton support */
     public static synchronized JiraAPI getInstance() {
         if (INSTANCE == null) {
-            INSTANCE = new JiraImpl();
+            INSTANCE = new JiraImpl(System.getProperty("jiraUrl", "https://issues.jenkins.io"));
         }
         return INSTANCE;
     }
