@@ -6,6 +6,7 @@ import ch.qos.logback.classic.LoggerContext;
 import io.jenkins.infra.repository_permissions_updater.helper.HttpUrlStreamHandler;
 import io.jenkins.infra.repository_permissions_updater.helper.MemoryAppender;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -36,6 +37,8 @@ class JiraAPITest {
     private static HttpUrlStreamHandler httpUrlStreamHandler;
 
     private static final Supplier<String> JIRA_URL = () -> System.getProperty("jiraUrl", "https://issues.jenkins.io");
+    private static final  Supplier<String> JIRA_USE_URL = () -> JIRA_URL.get() + "/rest/api/2/user";
+    private static final  Supplier<String> JIRA_USER_QUERY = () -> JIRA_USE_URL.get() + "?username=%s";
     private static final Supplier<String> JIRA_COMPONENTS_URL = () -> JIRA_URL.get() + "/rest/api/2/project/JENKINS/components";
     private static URLStreamHandlerFactory urlStreamHandlerFactory;
     private Properties backup;
@@ -87,7 +90,6 @@ class JiraAPITest {
 
     @Test
     void testEnsureLoadedFailedToOpenConnection() throws IOException {
-
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         httpUrlStreamHandler.addConnection(fakeUrl, new IOException());
         JiraAPI.getInstance().getComponentId("FakeData");
@@ -137,5 +139,89 @@ class JiraAPITest {
         var id = JiraAPI.getInstance().getComponentId("42crunch-security-audit-plugin");
         assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
         assertEquals(id, "27235");
+    }
+
+    @Test
+    void testIsUserPresentInternalRegexDontMatch() {
+        var result = JiraAPI.getInstance().isUserPresent("FakeUser**");
+        assertThat(memoryAppender.contains("Rejecting user name for Jira lookup", Level.WARN)).isTrue();
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void testIsUserPresentInternalMalformedUrlException() {
+        System.setProperty("jiraUrl", "xx://issues.jenkins.io");
+        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
+        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
+        assertThat(memoryAppender.contains("Failed to construct Jira URL", Level.ERROR)).isTrue();
+        Assertions.assertFalse(result);
+    }
+
+
+    @Test
+    void testIsUserPresentInternalFailedToOpenConnection() throws IOException {
+        URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
+        httpUrlStreamHandler.addConnection(fakeUrl, new IOException());
+        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
+        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
+        assertThat(memoryAppender.contains("Failed to open connection for Jira URL", Level.ERROR)).isTrue();
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void testIsUserPresentInternalFailedToGetConnection() throws IOException {
+        URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
+        var fakeHttpConnection = mock(HttpURLConnection.class);
+        doThrow(ProtocolException.class).when(fakeHttpConnection).setRequestMethod(anyString());
+        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
+        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
+        assertThat(memoryAppender.contains("Failed to set request method", Level.ERROR)).isTrue();
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void testIsUserPresentInternalFailedToConnect() throws IOException {
+        URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
+        var fakeHttpConnection = mock(HttpURLConnection.class);
+        doThrow(IOException.class).when(fakeHttpConnection).connect();
+        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
+        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
+        assertThat(memoryAppender.contains("Failed to connect to Jira URL", Level.ERROR)).isTrue();
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void testIsUserPresentInternalNotExistsException() throws IOException {
+        URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
+        var fakeHttpConnection = mock(HttpURLConnection.class);
+        when(fakeHttpConnection.getResponseCode()).thenThrow(IOException.class);
+        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
+        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void testIsUserPresentInternalNotExists() throws IOException {
+        URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
+        var fakeHttpConnection = mock(HttpURLConnection.class);
+        when(fakeHttpConnection.getResponseCode()).thenReturn(404);
+        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
+        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void testIsUserPresentInternalExists() throws IOException {
+        URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
+        var fakeHttpConnection = mock(HttpURLConnection.class);
+        when(fakeHttpConnection.getResponseCode()).thenReturn(200);
+        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
+        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
+        Assertions.assertTrue(result);
     }
 }
