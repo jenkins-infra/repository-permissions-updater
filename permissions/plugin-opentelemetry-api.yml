@@ -6,5 +6,7 @@ paths:
 developers:
 - "cleclerc"
 - "ifernandezcalvo"
+cd:
+  enabled: true
 issues:
   - github: *GH
