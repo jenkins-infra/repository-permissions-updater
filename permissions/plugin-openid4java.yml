@@ -6,6 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/openid4java"
 developers: []
-#CD blocked for lack of maintainers
-#cd:
-#  enabled: true
+cd:
+  enabled: true
+  exclusive: false

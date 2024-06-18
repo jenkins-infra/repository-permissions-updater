@@ -7,3 +7,5 @@ paths:
   - "io/jenkins/plugins/websocketin-notification"
 developers:
   - "dhobi"
+cd:
+  enabled: true

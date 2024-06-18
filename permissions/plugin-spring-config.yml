@@ -9,3 +9,4 @@ developers:
   - "topikachu"
 cd:
   enabled: true
+  exclusive: false

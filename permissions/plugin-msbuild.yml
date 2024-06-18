@@ -6,14 +6,15 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/msbuild"
 developers:
-  - mramonleon
-  - batmat
-  - rsandell
-  - bitwiseman
-  - carroll
-  - olamy
-  - teilo
+  - "mramonleon"
+  - "batmat"
+  - "rsandell"
+  - "bitwiseman"
+  - "carroll"
+  - "olamy"
+  - "teilo"
   - "poddingue"
+  - "tilalx"
 security:
   contacts:
     jira: "cloudbees_security_members"

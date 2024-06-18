@@ -1,0 +1,11 @@
+---
+name: "pipeline-gcp"
+github: &GH "jenkinsci/pipeline-gcp-plugin"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/plugins/pipeline-gcp"
+developers:
+  - "enigo"
+cd:
+  enabled: true

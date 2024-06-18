@@ -9,3 +9,4 @@ developers:
   - "skundrik"
 cd:
   enabled: true
+  exclusive: false

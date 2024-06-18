@@ -59,7 +59,7 @@ public class Hoster {
         try {
             final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
-            String defaultAssignee = hostingRequest.getJenkinsProjectUsers().get(0);
+            String defaultAssignee = hostingRequest.getJenkinsProjectUsers().getFirst();
             String forkFrom = hostingRequest.getRepositoryUrl();
             List<String> users = hostingRequest.getGithubUsers();
             IssueTracker issueTrackerChoice = hostingRequest.getIssueTracker();
@@ -118,8 +118,8 @@ public class Hoster {
 
             String issueTrackerText;
             if (issueTrackerChoice == IssueTracker.JIRA) {
-                issueTrackerText = "\n\nA Jira component named " + forkTo + " has also been created with "
-                        + defaultAssignee + " as the default assignee for issues.";
+                issueTrackerText = "\n\nA Jira component named [" + forkTo + "](https://issues.jenkins.io/issues/?jql=project+%3D+JENKINS+AND+component+%3D+ " + forkTo + ")" + 
+                        "has also been created with " + defaultAssignee + " as the default assignee for issues.";
             } else {
                 issueTrackerText = "\n\nGitHub issues has been selected for issue tracking and was enabled for the forked repo.";
             }
@@ -136,10 +136,7 @@ public class Hoster {
                     + "You will also need to do the following in order to push changes and release your plugin: \n\n"
                     + "* [Accept the invitation to the Jenkins CI Org on Github](https://github.com/jenkinsci)\n"
                     + "* [" + repoPermissionsActionText + "](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)\n"
-                    + "* [Releasing your plugin](https://jenkins.io/doc/developer/publishing/releasing/)\n"
-                    + "\n\nIn order for your plugin to be built by the [Jenkins CI Infrastructure](https://ci.jenkins.io) and check pull requests,"
-                    + " please add a [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) to the root of your repository with the following content:\n"
-                    + "https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile\n"
+                    + "* [Releasing your plugin](https://jenkins.io/doc/developer/publishing/releasing/)"
                     + "\n\nWelcome aboard!";
 
             // add comment
@@ -251,6 +248,7 @@ public class Hoster {
     private static void setupRepository(GHRepository r, boolean useGHIssues) throws IOException {
         r.enableIssueTracker(useGHIssues);
         r.enableWiki(false);
+        r.setHomepage("https://plugins.jenkins.io/" + r.getName().replace("-plugin", "") + "/");
     }
 
     /**
@@ -298,7 +296,7 @@ public class Hoster {
             try {
                 team.add(github.getUser(user));
             } catch (IOException e) {
-                LOGGER.error(String.format("Failed to add user %s to team %s", user, team.getName()), e);
+                LOGGER.error("Failed to add user %s to team %s".formatted(user, team.getName()), e);
             }
         };
     }
@@ -352,13 +350,15 @@ public class Hoster {
 
                 builder.content(content).path("permissions/plugin-" + forkTo.replace("-plugin", "") + ".yml").commit();
 
-                String prText = String.format("Hello from your friendly Jenkins Hosting Bot!%n%n" +
-                                "This is an automatically created PR for:%n%n" +
-                                "- #%s%n" +
-                                "- https://github.com/%s/%s%n%n" +
-                                "The user(s) listed in the permissions file may not have logged in to Artifactory yet, check the PR status.%n" +
-                                "To check again, hosting team members will retrigger the build using Checks area or by closing and reopening the PR.%n%n" +
-                                "cc %s",
+                String prText = """
+                        Hello from your friendly Jenkins Hosting Bot!
+                        This is an automatically created PR for:
+                        - #%s
+                        - https://github.com/%s/%s
+                        The user(s) listed in the permissions file may not have logged in to Artifactory yet, check the PR status.
+                        To check again, hosting team members will retrigger the build using Checks area or by closing and reopening the PR.
+                        cc %s
+                        """.formatted(
                         issueId, TARGET_ORG_NAME,
                         forkTo, ghUsers.stream().map(u -> "@" + u).collect(joining(", ")));
 
@@ -403,13 +403,13 @@ public class Hoster {
         }
 
         if (!StringUtils.isBlank(artifactId) && !StringUtils.isBlank((groupId))) {
-            res = String.format("%s/%s", groupId.replace('.', '/'), artifactId);
+            res = "%s/%s".formatted(groupId.replace('.', '/'), artifactId);
         }
         return res;
     }
 
     private boolean createComponent(String subcomponent, String owner) {
-        LOGGER.info(String.format("Adding a new JIRA subcomponent %s to the %s project, owned by %s",
+        LOGGER.info("Adding a new JIRA subcomponent %s to the %s project, owned by %s".formatted(
                 subcomponent, JIRA_PROJECT, owner));
 
         boolean result = false;

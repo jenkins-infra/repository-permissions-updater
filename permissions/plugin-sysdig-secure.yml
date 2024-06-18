@@ -17,3 +17,4 @@ developers:
   - "denz"
 cd:
   enabled: true
+  exclusive: false

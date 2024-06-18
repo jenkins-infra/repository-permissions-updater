@@ -6,5 +6,8 @@ paths:
 developers:
 - "olavtar"
 - "vbelouso"
+- "zgrinber"
 issues:
   - jira: 29221
+cd:
+  enabled: true

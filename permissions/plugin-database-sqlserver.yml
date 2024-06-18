@@ -5,5 +5,8 @@ paths:
   - "io/jenkins/plugins/database-sqlserver"
 developers:
   - "cnhttpd"
+  - "jonesbusy"
 issues:
   - github: *GH
+cd:
+  enabled: true

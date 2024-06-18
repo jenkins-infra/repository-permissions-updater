@@ -6,8 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/email-ext"
   - "org/jvnet/hudson/plugins/email-ext"
+cd:
+  enabled: true
 developers:
-  - "basil"
+  - "slide_o_mix"
 security:
   contacts:
     jira: "cloudbees_security_members"

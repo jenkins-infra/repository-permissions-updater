@@ -1,9 +1,13 @@
 ---
 name: "summary_report"
-github: "jenkinsci/summary_report-plugin"
+github:  &gh "jenkinsci/summary_report-plugin"
+cd:
+  enabled: true
 issues:
   - jira: '17534'  # summary_report-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/summary_report"
 developers:
   - "deruyter"
+  - "mPokornyETM"

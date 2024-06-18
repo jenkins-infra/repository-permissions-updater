@@ -9,7 +9,6 @@ cd:
   enabled: true
 developers:
   - "amuniz"
-  - "jglick"
   - "oleg_nenashev"
   - "olivergondza"
   - "batmat"

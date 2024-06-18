@@ -10,3 +10,5 @@ developers:
   - "mbischoff"
   - "surenpi"
   - "mdoubez"
+cd:
+  enabled: true

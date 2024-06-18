@@ -1,0 +1,11 @@
+---
+name: "json-editor-parameter"
+github: &GH "jenkinsci/json-editor-parameter-plugin"
+paths:
+- "io/jenkins/plugins/json-editor-parameter"
+cd:
+  enabled: true
+developers:
+- "chas"
+issues:
+  - github: *GH

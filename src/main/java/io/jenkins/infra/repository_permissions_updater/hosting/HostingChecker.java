@@ -27,7 +27,7 @@ public class HostingChecker {
 
     public static final String INVALID_FORK_FROM = "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
-    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 387, 3);
+    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 440, 3);
 
     public static void main(String[] args) throws IOException {
         new HostingChecker().checkRequest(Integer.parseInt(args[0]));
@@ -110,9 +110,9 @@ public class HostingChecker {
     private void appendIssues(StringBuilder msg, Set<VerificationMessage> issues, int level) {
         for (VerificationMessage issue : issues.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList())) {
             if (level == 1) {
-                msg.append(String.format("%s %s %s: %s%n", StringUtils.repeat("*", level), issue.getSeverity().getColor(), issue.getSeverity().getMessage(), issue.getMessage()));
+                msg.append("%s %s %s: %s%n".formatted(StringUtils.repeat("*", level), issue.getSeverity().getColor(), issue.getSeverity().getMessage(), issue.getMessage()));
             } else {
-                msg.append(String.format("%s %s%n", StringUtils.repeat("*", level), issue.getMessage()));
+                msg.append("%s %s%n".formatted(StringUtils.repeat("*", level), issue.getMessage()));
             }
 
             if (issue.getSubItems() != null) {

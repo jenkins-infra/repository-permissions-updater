@@ -5,11 +5,15 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@SuppressFBWarnings("UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD")
+@SuppressFBWarnings({
+    "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"
+})
 public class Definition {
 
     public static class CD {
         public boolean enabled;
+        public boolean exclusive = true;
     }
 
     public static class Security {
@@ -59,6 +63,8 @@ public class Definition {
             return true;
         }
 
+        @SuppressFBWarnings(value = "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+                            justification = "All calls are guarded by jira null check in isJira()")
         private String loadComponentId(JiraComponentSource source) {
             String jiraComponentId = jira;
             if (!jira.matches("[0-9]+")) {

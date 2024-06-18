@@ -7,5 +7,6 @@ paths:
   - "io/jenkins/plugins/hashicorp-vault-pipeline"
 cd:
   enabled: true
+  exclusive: false
 developers:
   - "philmadden"

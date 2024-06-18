@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/device-watcher"
 developers:
-  - "sonicwind"
+  - "janasrikanth"
+cd:
+  enabled: true

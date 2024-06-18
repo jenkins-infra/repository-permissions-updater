@@ -1,0 +1,7 @@
+---
+name: "javax-servlet-api"
+github: "jenkinsci/javax-servlet-api"
+paths:
+  - "io/jenkins/servlet/javax-servlet-api"
+developers:
+  - "@core"
