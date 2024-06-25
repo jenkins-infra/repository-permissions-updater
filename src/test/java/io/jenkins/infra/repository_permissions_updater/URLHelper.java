@@ -8,14 +8,26 @@ import java.net.URLStreamHandlerFactory;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+/**
+ * This class manage the handling of fake url for URL creation
+ */
 sealed interface URLHelper permits URLHelper.URLHelperImpl {
 
+    /**
+     * @return singleton instance of the {@link URLHelper}
+     */
     static URLHelper instance() {
-        return URLHelperImpl.getINSTANCE();
+        return URLHelperImpl.getInstance();
     }
 
+    /**
+     * @return singleton instance of the {@link HttpUrlStreamHandler}
+     */
     HttpUrlStreamHandler getURLStreamHandler();
 
+    /**
+     * @return singleton instance of the {@link URLStreamHandlerFactory}
+     */
     URLStreamHandlerFactory getURLStreamHandlerFactory();
 
 
@@ -34,13 +46,6 @@ sealed interface URLHelper permits URLHelper.URLHelperImpl {
             URL.setURLStreamHandlerFactory(urlStreamHandlerFactory);
         }
 
-        static synchronized URLHelper getINSTANCE() {
-            if (INSTANCE == null) {
-                INSTANCE = new URLHelperImpl();
-            }
-            return INSTANCE;
-        }
-
         @Override
         public HttpUrlStreamHandler getURLStreamHandler() {
             return this.httpUrlStreamHandler;
@@ -49,6 +54,13 @@ sealed interface URLHelper permits URLHelper.URLHelperImpl {
         @Override
         public URLStreamHandlerFactory getURLStreamHandlerFactory() {
             return this.urlStreamHandlerFactory;
+        }
+
+        static synchronized URLHelper getInstance() {
+            if (INSTANCE == null) {
+                INSTANCE = new URLHelperImpl();
+            }
+            return INSTANCE;
         }
     }
 
