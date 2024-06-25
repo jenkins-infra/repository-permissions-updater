@@ -7,7 +7,7 @@ import java.net.URLStreamHandler;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class HttpUrlStreamHandler extends URLStreamHandler {
+class HttpUrlStreamHandler extends URLStreamHandler {
     private Map<URL, Object> connections = new ConcurrentHashMap();
     private Map<String, Object> stringConnections = new ConcurrentHashMap();
 
