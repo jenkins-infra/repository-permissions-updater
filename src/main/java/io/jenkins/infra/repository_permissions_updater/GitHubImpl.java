@@ -23,8 +23,8 @@ import java.util.stream.Collectors;
 class GitHubImpl extends GitHubAPI {
     private static final Logger LOGGER = Logger.getLogger(GitHubImpl.class.getName());
 
-    private static final String GITHUB_PUBLIC_KEY_URL = "https://api.github.com/repos/%s/actions/secrets/public-key";
-    private static final String GITHUB_SECRET_URL = "https://api.github.com/repos/%s/actions/secrets/%s";
+    private final String githubPublicKeyUrl;
+    private final String githubSecrectUrl;
     private static final String GITHUB_USERNAME = System.getenv("GITHUB_USERNAME");
     private static final String GITHUB_PASSWORD = System.getenv("GITHUB_TOKEN");
     private static final String GITHUB_BASIC_AUTH_VALUE = Base64.getEncoder().encodeToString((GITHUB_USERNAME + ":" + GITHUB_PASSWORD).getBytes(StandardCharsets.UTF_8));
@@ -32,17 +32,21 @@ class GitHubImpl extends GitHubAPI {
     private static final Gson gson = new Gson();
     private static final String GITHUB_JSON_TEMPLATE = "{\"encrypted_value\":\"%s\",\"key_id\":\"%s\"}";
 
+    GitHubImpl(String githubPublicKeyUrl, String githubSecrectUrl) {
+        this.githubPublicKeyUrl = githubPublicKeyUrl;
+        this.githubSecrectUrl = githubSecrectUrl;
+    }
+
     @Override
     @CheckForNull
     @SuppressFBWarnings({"SE_NO_SERIALVERSIONID", "URLCONNECTION_SSRF_FD"})
-    public GitHubPublicKey getRepositoryPublicKey(String repositoryName) {
+    public GitHubPublicKey getRepositoryPublicKey(String repositoryName) throws IOException {
         LOGGER.log(Level.INFO, "GET call to retrieve public key for {}", new Object[]{repositoryName});
         URL url;
         try {
-            url = URI.create(String.format(GITHUB_PUBLIC_KEY_URL, repositoryName)).toURL();
+            url = URI.create(String.format(githubPublicKeyUrl, repositoryName)).toURL();
         } catch (MalformedURLException e) {
-            LOGGER.log(Level.SEVERE, "Malformed URL", e);
-            return null;
+            throw new IOException("Github Malformed URL", e);
         }
 
         int responseCode = 0;
@@ -50,12 +54,11 @@ class GitHubImpl extends GitHubAPI {
         int maxAttempts = 3;
         while (responseCode != HttpURLConnection.HTTP_OK) {
 
-            HttpURLConnection conn = null;
+            HttpURLConnection conn;
             try {
                 conn = (HttpURLConnection) url.openConnection();
             } catch (IOException e) {
-                LOGGER.log(Level.SEVERE, "Failed to open connection", e);
-                return null;
+                throw new IOException("Failed to open connection to github", e);
             }
 
             // The GitHub API doesn't do an auth challenge
@@ -64,35 +67,31 @@ class GitHubImpl extends GitHubAPI {
             try {
                 conn.setRequestMethod("GET");
             } catch (ProtocolException e) {
-                LOGGER.log(Level.SEVERE, "Protocol error", e);
-                return null;
+                throw new IOException("Protocol error for github", e);
             }
             try {
                 conn.connect();
             } catch (IOException e) {
-                LOGGER.log(Level.SEVERE, "Connection error", e);
-                return null;
+                throw new IOException("Connection error to github", e);
             }
 
             try {
                 responseCode = conn.getResponseCode();
             } catch (IOException e) {
-                LOGGER.log(Level.SEVERE, "ResponseCode error", e);
-                return null;
+                throw new IOException("ResponseCode error from github", e);
             }
 
             if (responseCode != HttpURLConnection.HTTP_OK) {
                 if (attemptNumber == maxAttempts) {
-                    LOGGER.log(Level.WARNING, "Failed to retrieve public key for {}, response code: {}", new Object[]{repositoryName, responseCode});
+                    LOGGER.log(Level.WARNING, "Failed to retrieve public key for {0}, response code: {1}", new Object[]{repositoryName, responseCode});
                     return null;
                 }
                 try {
                     Thread.sleep(200);
                 } catch (InterruptedException e) {
-                    LOGGER.log(Level.SEVERE, "Interrupted", e);
-                    return null;
+                    throw new IOException("Interrupted for github", e);
                 }
-                LOGGER.log(Level.INFO, "Retrying retrieving public key for {} attempt {}/{}", new Object[]{repositoryName, attemptNumber, maxAttempts});
+                LOGGER.log(Level.INFO, "Retrying retrieving public key for {0} attempt {1}/{2}", new Object[]{repositoryName, attemptNumber, maxAttempts});
                 attemptNumber++;
             } else {
                 return retrievePublicKeyFromResponse(conn);
@@ -101,27 +100,25 @@ class GitHubImpl extends GitHubAPI {
         return null;
     }
 
-    private static GitHubPublicKey retrievePublicKeyFromResponse(HttpURLConnection conn) {
+    private static GitHubPublicKey retrievePublicKeyFromResponse(HttpURLConnection conn) throws IOException {
         try (final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream() , StandardCharsets.UTF_8))) {
             final String text = bufferedReader.lines().collect(Collectors.joining());
             final JsonObject json = gson.fromJson(text, JsonObject.class);
             return new GitHubPublicKey(json.get("key_id").getAsString(), json.get("key").getAsString());
         } catch (final IOException e) {
-            LOGGER.log(Level.SEVERE, "Failed to parse github response", e);
+            throw new IOException("Failed to parse github response", e);
         }
-        return null;
     }
 
     @Override
     @SuppressFBWarnings({"SE_NO_SERIALVERSIONID", "URLCONNECTION_SSRF_FD"})
-    public void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) {
-        LOGGER.log(Level.INFO, "Create/update the secret {} for {} encrypted with key {}", new Object[]{name, repositoryName, keyId});
+    public void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) throws IOException {
+        LOGGER.log(Level.INFO, "Create/update the secret {0} for {1} encrypted with key {2}", new Object[]{name, repositoryName, keyId});
         URL url;
         try {
-            url = URI.create(String.format(GITHUB_SECRET_URL, repositoryName, name)).toURL();
+            url = URI.create(String.format(githubSecrectUrl, repositoryName, name)).toURL();
         } catch (MalformedURLException e) {
-            LOGGER.log(Level.SEVERE, "Malformed URL", e);
-            return;
+            throw new IOException("Github Malformed URL", e);
         }
 
         int responseCode = 0;
@@ -132,8 +129,7 @@ class GitHubImpl extends GitHubAPI {
             try {
                 conn = (HttpURLConnection) url.openConnection();
             } catch (IOException e) {
-                LOGGER.log(Level.SEVERE, "Connection error", e);
-                return;
+                throw new IOException("Failed to open connection to github", e);
             }
 
             // The GitHub API doesn't do an auth challenge
@@ -142,22 +138,19 @@ class GitHubImpl extends GitHubAPI {
             try {
                 conn.setRequestMethod("PUT");
             } catch (ProtocolException e) {
-                LOGGER.log(Level.SEVERE, "Protocol error", e);
-                return;
+                throw new IOException("Protocol error for github", e);
             }
             conn.setDoOutput(true);
 
             try(OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream(), StandardCharsets.UTF_8)) {
                 osw.write(String.format(GITHUB_JSON_TEMPLATE,encryptedSecret, keyId));
             } catch (IOException e) {
-                LOGGER.log(Level.SEVERE, "IO Error", e);
-                return;
+                throw new IOException("IO error to send data to github", e);
             }
             try {
                 responseCode = conn.getResponseCode();
             } catch (IOException e) {
-                LOGGER.log(Level.SEVERE, "ResponseCode error", e);
-                return;
+                throw new IOException("ResponseCode error from github", e);
             }
 
             if (responseCode != HttpURLConnection.HTTP_NO_CONTENT) {
@@ -168,8 +161,7 @@ class GitHubImpl extends GitHubAPI {
                 try {
                     Thread.sleep(200);
                 } catch (InterruptedException e) {
-                    LOGGER.log(Level.SEVERE, "Interrupted", e);
-                    return;
+                    throw new IOException("Interrupted for github", e);
                 }
                 LOGGER.log(Level.INFO, "Retrying create/update secret {} for {} attempt {}/{}", new Object[]{name, repositoryName, attemptNumber, maxAttempts});
                 attemptNumber++;

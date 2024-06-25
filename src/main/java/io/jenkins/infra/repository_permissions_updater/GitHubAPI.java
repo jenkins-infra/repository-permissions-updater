@@ -2,8 +2,10 @@ package io.jenkins.infra.repository_permissions_updater;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 
+import java.io.IOException;
+
 public abstract class GitHubAPI {
-    private static GitHubAPI INSTANCE = null;
+    static GitHubAPI INSTANCE = null;
 
     static final class GitHubPublicKey {
         private final String keyId;
@@ -35,7 +37,7 @@ public abstract class GitHubAPI {
      * @param repository the repository (as org/repo)
      * @return the base64 encoded public key
      */
-    abstract GitHubPublicKey getRepositoryPublicKey(String repository);
+    abstract GitHubPublicKey getRepositoryPublicKey(String repository) throws IOException;
 
     /**
      * Creates or update a secret in a repository.
@@ -45,11 +47,11 @@ public abstract class GitHubAPI {
      * @param encryptedSecret the encrypted, base64 encoded secret value
      * @param repositoryName the repository name
      */
-    abstract void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId);
+    abstract void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) throws IOException;
 
     static synchronized GitHubAPI getInstance() {
         if (INSTANCE == null) {
-            INSTANCE = new GitHubImpl();
+            INSTANCE = new GitHubImpl("https://api.github.com/repos/%s/actions/secrets/public-key", "https://api.github.com/repos/%s/actions/secrets/%s");
         }
         return INSTANCE;
     }
