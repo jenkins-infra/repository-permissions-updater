@@ -26,22 +26,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
 
-class GithubAPITest {
+class GithubAPITest extends TestBase {
 
-    private static HttpUrlStreamHandler httpUrlStreamHandler;
-
-    private static URLStreamHandlerFactory urlStreamHandlerFactory;
     private Properties backup;
-
-
-    @BeforeAll
-    public static void setup() {
-        urlStreamHandlerFactory = mock(URLStreamHandlerFactory.class);
-        httpUrlStreamHandler = new HttpUrlStreamHandler();
-        when(urlStreamHandlerFactory.createURLStreamHandler("http")).thenReturn(httpUrlStreamHandler);
-        when(urlStreamHandlerFactory.createURLStreamHandler("https")).thenReturn(httpUrlStreamHandler);
-        URL.setURLStreamHandlerFactory(urlStreamHandlerFactory);
-    }
 
     @BeforeEach
     public void reset() {

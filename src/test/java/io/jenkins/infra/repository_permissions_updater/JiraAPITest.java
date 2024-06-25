@@ -1,9 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater;
 
-import io.jenkins.infra.repository_permissions_updater.helper.HttpUrlStreamHandler;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +10,6 @@ import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URI;
 import java.net.URL;
-import java.net.URLStreamHandlerFactory;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
@@ -24,24 +21,12 @@ import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
-class JiraAPITest {
+class JiraAPITest extends TestBase {
 
-    private static HttpUrlStreamHandler httpUrlStreamHandler;
     private static final Supplier<String> JIRA_USER_QUERY = JiraAPITest::createUserQuery;
     private static final Supplier<String> JIRA_COMPONENTS_URL = JiraAPITest::createComponentsURL;
 
-    private static URLStreamHandlerFactory urlStreamHandlerFactory;
     private Properties backup;
-
-
-    @BeforeAll
-    public static void setup() {
-        urlStreamHandlerFactory = mock(URLStreamHandlerFactory.class);
-        httpUrlStreamHandler = new HttpUrlStreamHandler();
-        when(urlStreamHandlerFactory.createURLStreamHandler("http")).thenReturn(httpUrlStreamHandler);
-        when(urlStreamHandlerFactory.createURLStreamHandler("https")).thenReturn(httpUrlStreamHandler);
-        URL.setURLStreamHandlerFactory(urlStreamHandlerFactory);
-    }
 
     private static String createUserQuery() {
         return System.getProperty("jiraUrl", "https://issues.jenkins.io") +"/rest/api/2/user?username=%s";
