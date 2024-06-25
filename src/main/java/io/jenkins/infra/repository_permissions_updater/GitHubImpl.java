@@ -68,7 +68,7 @@ class GitHubImpl extends GitHubAPI {
                 try {
                     Thread.sleep(200);
                 } catch (InterruptedException e) {
-                    throw new IOException("Interrupted for github", e);
+                    throw new IOException("Interrupted for GitHub", e);
                 }
                 LOGGER.log(Level.INFO, "Retrying retrieving public key for {0} attempt {1}/{2}", new Object[]{repositoryName, attemptNumber, maxAttempts});
                 attemptNumber++;
@@ -85,7 +85,7 @@ class GitHubImpl extends GitHubAPI {
             final JsonObject json = gson.fromJson(text, JsonObject.class);
             return new GitHubPublicKey(json.get("key_id").getAsString(), json.get("key").getAsString());
         } catch (final IOException e) {
-            throw new IOException("Failed to parse github response", e);
+            throw new IOException("Failed to parse GitHub response", e);
         }
     }
 
@@ -110,7 +110,7 @@ class GitHubImpl extends GitHubAPI {
             try(OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream(), StandardCharsets.UTF_8)) {
                 osw.write(GITHUB_JSON_TEMPLATE.formatted(encryptedSecret, keyId));
             } catch (IOException e) {
-                throw new IOException("IO error to send data to github", e);
+                throw new IOException("IO error to send data to GitHub", e);
             }
             responseCode = conn.getResponseCode();
 
@@ -122,7 +122,7 @@ class GitHubImpl extends GitHubAPI {
                 try {
                     Thread.sleep(200);
                 } catch (InterruptedException e) {
-                    throw new IOException("Interrupted for github", e);
+                    throw new IOException("Interrupted for GitHub", e);
                 }
                 LOGGER.log(Level.INFO, "Retrying create/update secret {0} for {1} attempt {2}/{3}", new Object[]{name, repositoryName, attemptNumber, maxAttempts});
                 attemptNumber++;
