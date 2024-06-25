@@ -21,7 +21,7 @@ import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
-class JiraAPITest extends TestBase {
+class JiraAPITest {
 
     private static final Supplier<String> JIRA_USER_QUERY = JiraAPITest::createUserQuery;
     private static final Supplier<String> JIRA_COMPONENTS_URL = JiraAPITest::createComponentsURL;
@@ -41,7 +41,7 @@ class JiraAPITest extends TestBase {
         backup = new Properties();
         backup.putAll(System.getProperties());
         JiraAPI.INSTANCE = null;
-        httpUrlStreamHandler.resetConnections();
+        URLHelper.instance().getURLStreamHandler().resetConnections();
     }
 
     @AfterEach
@@ -63,7 +63,7 @@ class JiraAPITest extends TestBase {
     @Test
     void testEnsureLoadedFailedToOpenConnection() throws IOException {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
-        httpUrlStreamHandler.addConnection(fakeUrl, new IOException());
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, new IOException());
         Exception exception = assertThrows(IOException.class, () -> {
                     JiraAPI.getInstance().getComponentId("FakeData");
         });
@@ -77,7 +77,7 @@ class JiraAPITest extends TestBase {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(ProtocolException.class).when(fakeHttpConnection).setRequestMethod(anyString());
-        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
         Exception exception = assertThrows(IOException.class, () -> {
                     JiraAPI.getInstance().getComponentId("FakeData");
         });
@@ -91,7 +91,7 @@ class JiraAPITest extends TestBase {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(IOException.class).when(fakeHttpConnection).connect();
-        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
         Exception exception = assertThrows(IOException.class, () -> {
             JiraAPI.getInstance().getComponentId("FakeData");
         });
@@ -105,7 +105,7 @@ class JiraAPITest extends TestBase {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
         when(fakeHttpConnection.getInputStream()).thenThrow(IOException.class);
-        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
         Exception exception = assertThrows(IOException.class, () -> {
             JiraAPI.getInstance().getComponentId("FakeData");
         });
@@ -119,7 +119,7 @@ class JiraAPITest extends TestBase {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
         when(fakeHttpConnection.getInputStream()).thenReturn(Files.newInputStream(Path.of("src","test","resources", "components_12_07_2024.json")));
-        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
         var id = JiraAPI.getInstance().getComponentId("42crunch-security-audit-plugin");
         Assertions.assertEquals("27235", id);
     }
@@ -149,7 +149,7 @@ class JiraAPITest extends TestBase {
     @Test
     void testIsUserPresentInternalFailedToOpenConnection() throws IOException {
         URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
-        httpUrlStreamHandler.addConnection(fakeUrl, new IOException());
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, new IOException());
         Exception exception = assertThrows(RuntimeException.class, () -> {
             Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
         });
@@ -163,7 +163,7 @@ class JiraAPITest extends TestBase {
         URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(ProtocolException.class).when(fakeHttpConnection).setRequestMethod(anyString());
-        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
         Exception exception = assertThrows(RuntimeException.class, () -> {
             Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
         });
@@ -177,7 +177,7 @@ class JiraAPITest extends TestBase {
         URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(IOException.class).when(fakeHttpConnection).connect();
-        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
         Exception exception = assertThrows(RuntimeException.class, () -> {
             Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
         });
@@ -191,7 +191,7 @@ class JiraAPITest extends TestBase {
         URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
         when(fakeHttpConnection.getResponseCode()).thenThrow(IOException.class);
-        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
         Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
     }
 
@@ -200,7 +200,7 @@ class JiraAPITest extends TestBase {
         URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
         when(fakeHttpConnection.getResponseCode()).thenReturn(404);
-        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
         Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
     }
 
@@ -209,7 +209,7 @@ class JiraAPITest extends TestBase {
         URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
         var fakeHttpConnection = mock(HttpURLConnection.class);
         when(fakeHttpConnection.getResponseCode()).thenReturn(200);
-        httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
         var result = JiraAPI.getInstance().isUserPresent("FakeUser");
         Assertions.assertTrue(result);
     }
