@@ -2,6 +2,7 @@ package io.jenkins.infra.repository_permissions_updater;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
+import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -32,7 +33,7 @@ public class Definition {
      */
     public static class IssueTracker {
         public interface JiraComponentSource {
-            String getComponentId(String componentName);
+            String getComponentId(String componentName) throws IOException;
         }
 
         private static final Logger LOGGER = Logger.getLogger(IssueTracker.class.getName());
@@ -65,7 +66,7 @@ public class Definition {
 
         @SuppressFBWarnings(value = "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
                             justification = "All calls are guarded by jira null check in isJira()")
-        private String loadComponentId(JiraComponentSource source) {
+        private String loadComponentId(JiraComponentSource source) throws IOException {
             String jiraComponentId = jira;
             if (!jira.matches("[0-9]+")) {
                 // CreateIssueDetails needs the numeric Jira component ID
@@ -78,7 +79,7 @@ public class Definition {
             return jiraComponentId;
         }
 
-        public String getViewUrl(JiraComponentSource source) {
+        public String getViewUrl(JiraComponentSource source) throws IOException {
             if (isJira()) {
                 final String id = loadComponentId(source);
                 if (id != null) {
@@ -92,7 +93,7 @@ public class Definition {
             throw new IllegalStateException("Invalid issue tracker: " + github + " / " + jira);
         }
 
-        public String getReportUrl(JiraComponentSource source) {
+        public String getReportUrl(JiraComponentSource source) throws IOException {
             if (!report) {
                 return null;
             }
