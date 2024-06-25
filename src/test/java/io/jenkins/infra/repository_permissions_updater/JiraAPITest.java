@@ -1,10 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater;
 
-import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
-import ch.qos.logback.classic.LoggerContext;
 import io.jenkins.infra.repository_permissions_updater.helper.HttpUrlStreamHandler;
-import io.jenkins.infra.repository_permissions_updater.helper.MemoryAppender;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -23,8 +20,7 @@ import java.nio.file.Path;
 import java.util.Properties;
 import java.util.function.Supplier;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
@@ -32,7 +28,6 @@ import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
 class JiraAPITest {
 
-    private static MemoryAppender memoryAppender;
     private static HttpUrlStreamHandler httpUrlStreamHandler;
     private static final Supplier<String> JIRA_USER_QUERY = JiraAPITest::createUserQuery;
     private static final Supplier<String> JIRA_COMPONENTS_URL = JiraAPITest::createComponentsURL;
@@ -44,11 +39,6 @@ class JiraAPITest {
     @BeforeAll
     public static void setup() {
         Logger logger = (Logger) LoggerFactory.getLogger(JiraImpl.class);
-        memoryAppender = new MemoryAppender();
-        memoryAppender.setContext((LoggerContext) LoggerFactory.getILoggerFactory());
-        logger.setLevel(Level.DEBUG);
-        logger.addAppender(memoryAppender);
-        memoryAppender.start();
 
         urlStreamHandlerFactory = mock(URLStreamHandlerFactory.class);
         httpUrlStreamHandler = new HttpUrlStreamHandler();
@@ -81,18 +71,24 @@ class JiraAPITest {
     @Test
     void testEnsureLoadedWrongBaseUrl() {
         System.setProperty("jiraUrl", "xx://issues.jenkins.io");
-        JiraAPI.getInstance().getComponentId("FakeData");
-        assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
-        assertThat(memoryAppender.contains("Failed to construct Jira URL", Level.ERROR)).isTrue();
+        Exception exception = assertThrows(IOException.class, () -> {
+            JiraAPI.getInstance().getComponentId("FakeData");
+        });
+        String expectedMessage = "Failed to construct Jira URL";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
     void testEnsureLoadedFailedToOpenConnection() throws IOException {
         URL fakeUrl = spy(URI.create(JIRA_COMPONENTS_URL.get()).toURL());
         httpUrlStreamHandler.addConnection(fakeUrl, new IOException());
-        JiraAPI.getInstance().getComponentId("FakeData");
-        assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
-        assertThat(memoryAppender.contains("Failed to open connection for Jira URL", Level.ERROR)).isTrue();
+        Exception exception = assertThrows(IOException.class, () -> {
+                    JiraAPI.getInstance().getComponentId("FakeData");
+        });
+        String expectedMessage = "Failed to open connection for Jira URL";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -101,9 +97,12 @@ class JiraAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(ProtocolException.class).when(fakeHttpConnection).setRequestMethod(anyString());
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
-        JiraAPI.getInstance().getComponentId("FakeData");
-        assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
-        assertThat(memoryAppender.contains("Failed to set request method", Level.ERROR)).isTrue();
+        Exception exception = assertThrows(IOException.class, () -> {
+                    JiraAPI.getInstance().getComponentId("FakeData");
+        });
+        String expectedMessage = "Failed to set request method";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -112,9 +111,12 @@ class JiraAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(IOException.class).when(fakeHttpConnection).connect();
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
-        JiraAPI.getInstance().getComponentId("FakeData");
-        assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
-        assertThat(memoryAppender.contains("Failed to connect to Jira URL", Level.ERROR)).isTrue();
+        Exception exception = assertThrows(IOException.class, () -> {
+            JiraAPI.getInstance().getComponentId("FakeData");
+        });
+        String expectedMessage = "Failed to connect to Jira URL";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -123,9 +125,12 @@ class JiraAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         when(fakeHttpConnection.getInputStream()).thenThrow(IOException.class);
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
-        JiraAPI.getInstance().getComponentId("FakeData");
-        assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
-        assertThat(memoryAppender.contains("Failed to parse Jira response", Level.ERROR)).isTrue();
+        Exception exception = assertThrows(IOException.class, () -> {
+            JiraAPI.getInstance().getComponentId("FakeData");
+        });
+        String expectedMessage = "Failed to parse Jira response";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -135,24 +140,28 @@ class JiraAPITest {
         when(fakeHttpConnection.getInputStream()).thenReturn(Files.newInputStream(Path.of("src","test","resources", "components_12_07_2024.json")));
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
         var id = JiraAPI.getInstance().getComponentId("42crunch-security-audit-plugin");
-        assertThat(memoryAppender.contains("Retrieving components from Jira...", Level.INFO)).isTrue();
-        assertEquals("27235", id);
+        Assertions.assertEquals("27235", id);
     }
 
     @Test
     void testIsUserPresentInternalRegexDontMatch() {
-        var result = JiraAPI.getInstance().isUserPresent("FakeUser**");
-        assertThat(memoryAppender.contains("Rejecting user name for Jira lookup", Level.WARN)).isTrue();
-        Assertions.assertFalse(result);
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser**"));
+        });
+        String expectedMessage = "Rejecting user name for Jira lookup";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
     void testIsUserPresentInternalMalformedUrlException() {
         System.setProperty("jiraUrl", "xx://issues.jenkins.io");
-        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
-        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
-        assertThat(memoryAppender.contains("Failed to construct Jira URL", Level.ERROR)).isTrue();
-        Assertions.assertFalse(result);
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
+        });
+        String expectedMessage = "Failed to construct Jira URL";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
 
@@ -160,10 +169,12 @@ class JiraAPITest {
     void testIsUserPresentInternalFailedToOpenConnection() throws IOException {
         URL fakeUrl = spy(URI.create(String.format(JIRA_USER_QUERY.get(), "FakeUser")).toURL());
         httpUrlStreamHandler.addConnection(fakeUrl, new IOException());
-        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
-        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
-        assertThat(memoryAppender.contains("Failed to open connection for Jira URL", Level.ERROR)).isTrue();
-        Assertions.assertFalse(result);
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
+        });
+        String expectedMessage = "Failed to open connection for Jira URL";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -172,10 +183,12 @@ class JiraAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(ProtocolException.class).when(fakeHttpConnection).setRequestMethod(anyString());
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
-        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
-        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
-        assertThat(memoryAppender.contains("Failed to set request method", Level.ERROR)).isTrue();
-        Assertions.assertFalse(result);
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
+        });
+        String expectedMessage = "Failed to set request method";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -184,10 +197,12 @@ class JiraAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(IOException.class).when(fakeHttpConnection).connect();
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
-        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
-        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
-        assertThat(memoryAppender.contains("Failed to connect to Jira URL", Level.ERROR)).isTrue();
-        Assertions.assertFalse(result);
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
+        });
+        String expectedMessage = "Failed to connect to Jira URL";
+        String actualMessage = exception.getMessage();
+        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -196,9 +211,7 @@ class JiraAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         when(fakeHttpConnection.getResponseCode()).thenThrow(IOException.class);
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
-        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
-        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
-        Assertions.assertFalse(result);
+        Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
     }
 
     @Test
@@ -207,9 +220,7 @@ class JiraAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         when(fakeHttpConnection.getResponseCode()).thenReturn(404);
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
-        var result = JiraAPI.getInstance().isUserPresent("FakeUser");
-        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
-        Assertions.assertFalse(result);
+        Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser"));
     }
 
     @Test
@@ -219,7 +230,6 @@ class JiraAPITest {
         when(fakeHttpConnection.getResponseCode()).thenReturn(200);
         httpUrlStreamHandler.addConnection(fakeUrl, fakeHttpConnection);
         var result = JiraAPI.getInstance().isUserPresent("FakeUser");
-        assertThat(memoryAppender.contains("Checking whether user exists in Jira", Level.INFO)).isTrue();
         Assertions.assertTrue(result);
     }
 

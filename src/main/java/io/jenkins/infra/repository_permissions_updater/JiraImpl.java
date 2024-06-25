@@ -50,7 +50,7 @@ class JiraImpl extends JiraAPI {
     }
 
     @SuppressFBWarnings({"SE_NO_SERIALVERSIONID", "URLCONNECTION_SSRF_FD"})
-    private void ensureDataLoaded() {
+    private void ensureDataLoaded() throws IOException {
         if (componentNamesToIds == null) {
             componentNamesToIds = new HashMap<>();
 
@@ -59,28 +59,24 @@ class JiraImpl extends JiraAPI {
             try {
                 url = URI.create(JIRA_COMPONENTS_URL).toURL();
             } catch (final MalformedURLException e) {
-                LOGGER.error("Failed to construct Jira URL", e);
-                return;
+                throw new IOException("Failed to construct Jira URL", e);
             }
             final HttpURLConnection conn;
             try {
                 conn = (HttpURLConnection) url.openConnection();
             } catch (final IOException e) {
-                LOGGER.error("Failed to open connection for Jira URL", e);
-                return;
+                throw new IOException("Failed to open connection for Jira URL", e);
             }
 
             try {
                 conn.setRequestMethod("GET");
             } catch (final ProtocolException e) {
-                LOGGER.error("Failed to set request method", e);
-                return;
+                throw new IOException("Failed to set request method", e);
             }
             try {
                 conn.connect();
             } catch (IOException e) {
-                LOGGER.error("Failed to connect to Jira URL", e);
-                return;
+                throw new IOException("Failed to connect to Jira URL", e);
             }
             try (final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
                 final String text = bufferedReader.lines().collect(Collectors.joining());
@@ -93,12 +89,12 @@ class JiraImpl extends JiraAPI {
                     componentNamesToIds.put(name, id);
                 });
             } catch (final IOException e) {
-                LOGGER.error("Failed to parse Jira response", e);
+                throw new IOException("Failed to parse Jira response", e);
             }
         }
     }
     @Override
-    public String getComponentId(final String componentName) {
+    public String getComponentId(final String componentName) throws IOException {
         ensureDataLoaded();
         return componentNamesToIds.get(componentName);
     }
@@ -108,10 +104,9 @@ class JiraImpl extends JiraAPI {
         return userMapping.computeIfAbsent(username, this::isUserPresentInternal);
     }
     @SuppressFBWarnings({"URLCONNECTION_SSRF_FD"})
-    private boolean isUserPresentInternal(final String username) {
+    private boolean isUserPresentInternal(final String username) throws RuntimeException {
         if (!USERNAME_REGEX.matcher(username).matches()) {
-            LOGGER.warn("Rejecting user name for Jira lookup: {}", username);
-            return false; // Do not allow unusual user names, protect from any shenanigans
+            throw new RuntimeException(String.format("Rejecting user name for Jira lookup: %s", username));
         }
 
         LOGGER.info("Checking whether user exists in Jira: {}", username);
@@ -120,29 +115,25 @@ class JiraImpl extends JiraAPI {
         try {
             url = URI.create(String.format(JIRA_USER_QUERY, username)).toURL();
         } catch (final MalformedURLException e) {
-            LOGGER.error("Failed to construct Jira URL", e);
-            return false;
+            throw new RuntimeException("Failed to construct Jira URL", e);
         }
         final HttpURLConnection conn;
         try {
             conn = (HttpURLConnection) url.openConnection();
         } catch (final IOException e) {
-            LOGGER.error("Failed to open connection for Jira URL", e);
-            return false;
+            throw new RuntimeException("Failed to open connection for Jira URL", e);
         }
 
         try {
             conn.setRequestMethod("GET");
         } catch (final ProtocolException e) {
-            LOGGER.error("Failed to set request method", e);
-            return false;
+            throw new RuntimeException("Failed to set request method", e);
         }
         conn.setRequestProperty("Authorization", String.format(JIRA_BASIC_AUTH_HEADER, JIRA_BASIC_AUTH_VALUE));
         try {
             conn.connect();
         } catch (final IOException e) {
-            LOGGER.error("Failed to connect to Jira URL", e);
-            return false;
+            throw new RuntimeException("Failed to connect to Jira URL", e);
         }
 
         final int code;
