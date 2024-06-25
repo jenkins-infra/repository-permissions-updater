@@ -5,6 +5,7 @@ import groovy.io.FileType
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import io.jenkins.lib.support_log_formatter.SupportLogFormatter
+import org.yaml.snakeyaml.LoaderOptions
 import org.yaml.snakeyaml.Yaml
 import org.yaml.snakeyaml.error.YAMLException;
 import org.yaml.snakeyaml.constructor.Constructor
@@ -48,7 +49,7 @@ class ArtifactoryPermissionsUpdater {
      * Always returns non null.
      */
     private static Map<String, Set<TeamDefinition>>  loadTeams() {
-        Yaml yaml = new Yaml(new Constructor(TeamDefinition.class))
+        Yaml yaml = new Yaml(new Constructor(TeamDefinition.class, new LoaderOptions()))
         File teamsDir = new File('teams/')
 
         Set<TeamDefinition> teams = [] as Set
@@ -107,7 +108,7 @@ class ArtifactoryPermissionsUpdater {
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
      */
     private static void generateApiPayloads(File yamlSourceDirectory, File apiOutputDir) throws IOException {
-        Yaml yaml = new Yaml(new Constructor(Definition.class))
+        Yaml yaml = new Yaml(new Constructor(Definition.class, new LoaderOptions()))
 
         if (!yamlSourceDirectory.exists()) {
             throw new IOException("Directory ${DEFINITIONS_DIR} does not exist")
