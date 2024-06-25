@@ -6,11 +6,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.BufferedInputStream;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URI;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
@@ -42,24 +48,18 @@ class GithubAPITest {
     @Test
     void testGetRepositoryPublicKeyWrongBaseUrl() {
         GitHubAPI.INSTANCE = new GitHubImpl("XX://api.github.com/repos/%s/actions/secrets/public-key", "https://api.github.com/repos/%s/actions/secrets/%s");
-        Exception exception = assertThrows(IOException.class, () -> {
+        Assertions.assertThrows(MalformedURLException.class, () -> {
             GitHubAPI.getInstance().getRepositoryPublicKey("FakeRepo");
-        });
-        String expectedMessage = "Github Malformed URL";
-        String actualMessage = exception.getMessage();
-        Assertions.assertTrue(actualMessage.contains(expectedMessage));
+        }, "unknown protocol: xx");
     }
 
     @Test
     void testGetRepositoryPublicKeyFailedToOpenConnection() throws IOException {
         URL fakeUrl = spy(URI.create("https://api.github.com/repos/FakeRepo/actions/secrets/public-key").toURL());
         URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, new IOException());
-        Exception exception = assertThrows(IOException.class, () -> {
+        Assertions.assertThrows(IOException.class, () -> {
             GitHubAPI.getInstance().getRepositoryPublicKey("FakeRepo");
         });
-        String expectedMessage = "Failed to open connection to github";
-        String actualMessage = exception.getMessage();
-        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -68,12 +68,9 @@ class GithubAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(ProtocolException.class).when(fakeHttpConnection).setRequestMethod(anyString());
         URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
-        Exception exception = assertThrows(IOException.class, () -> {
+        assertThrows(ProtocolException.class, () -> {
             GitHubAPI.getInstance().getRepositoryPublicKey("FakeRepo");
         });
-        String expectedMessage = "Protocol error for github";
-        String actualMessage = exception.getMessage();
-        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -82,12 +79,9 @@ class GithubAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(IOException.class).when(fakeHttpConnection).connect();
         URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
-        Exception exception = assertThrows(IOException.class, () -> {
+        assertThrows(IOException.class, () -> {
             GitHubAPI.getInstance().getRepositoryPublicKey("FakeRepo");
         });
-        String expectedMessage = "Connection error to github";
-        String actualMessage = exception.getMessage();
-        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
 
@@ -97,12 +91,9 @@ class GithubAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         when(fakeHttpConnection.getResponseCode()).thenThrow(IOException.class);
         URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
-        Exception exception = assertThrows(IOException.class, () -> {
+        assertThrows(IOException.class, () -> {
             GitHubAPI.getInstance().getRepositoryPublicKey("FakeRepo");
         });
-        String expectedMessage = "ResponseCode error from github";
-        String actualMessage = exception.getMessage();
-        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -144,12 +135,9 @@ class GithubAPITest {
     @Test
     void testCreateOrUpdateRepositorySecretWrongBaseUrl() {
         GitHubAPI.INSTANCE = new GitHubImpl("XX://api.github.com/repos/%s/actions/secrets/public-key", "XX://api.github.com/repos/%s/actions/secrets/%s");
-        Exception exception = assertThrows(IOException.class, () -> {
+        Assertions.assertThrows(MalformedURLException.class, () -> {
             GitHubAPI.getInstance().createOrUpdateRepositorySecret("FakeKey", "fakeSecret", "FakeRepo", "fakeKeyId");
-        });
-        String expectedMessage = "Github Malformed URL";
-        String actualMessage = exception.getMessage();
-        Assertions.assertTrue(actualMessage.contains(expectedMessage));
+        }, "unknown protocol: xx");
     }
 
     @Test
@@ -158,12 +146,9 @@ class GithubAPITest {
                 "https://api.github.com/repos/%s/actions/secrets/%s");
         URL fakeUrl = spy(URI.create("https://api.github.com/repos/FakeRepo/actions/secrets/FakeKey").toURL());
         URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, new IOException());
-        Exception exception = assertThrows(IOException.class, () -> {
+        assertThrows(IOException.class, () -> {
             GitHubAPI.getInstance().createOrUpdateRepositorySecret("FakeKey", "fakeSecret", "FakeRepo", "fakeKeyId");
         });
-        String expectedMessage = "Failed to open connection to github";
-        String actualMessage = exception.getMessage();
-        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
     @Test
@@ -185,12 +170,9 @@ class GithubAPITest {
         var fakeHttpConnection = mock(HttpURLConnection.class);
         doThrow(ProtocolException.class).when(fakeHttpConnection).setRequestMethod(anyString());
         URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
-        Exception exception = assertThrows(IOException.class, () -> {
+        Assertions.assertThrows(ProtocolException.class, () -> {
             GitHubAPI.getInstance().createOrUpdateRepositorySecret("FakeKey", "fakeSecret", "FakeRepo", "fakeKeyId");
         });
-        String expectedMessage = "Protocol error for github";
-        String actualMessage = exception.getMessage();
-        Assertions.assertTrue(actualMessage.contains(expectedMessage));
     }
 
 
@@ -208,6 +190,24 @@ class GithubAPITest {
         String expectedMessage = "IO error to send data to github";
         String actualMessage = exception.getMessage();
         Assertions.assertTrue(actualMessage.contains(expectedMessage));
+    }
+
+    @Test
+    void testCreateOrUpdateRepositorySecretOutputStreamContent() throws IOException {
+        GitHubAPI.INSTANCE = new GitHubImpl("XX://api.github.com/repos/%s/actions/secrets/public-key",
+                "https://api.github.com/repos/%s/actions/secrets/%s");
+        URL fakeUrl = spy(URI.create("https://api.github.com/repos/FakeRepo/actions/secrets/FakeKey").toURL());
+        var fakeHttpConnection = mock(HttpURLConnection.class);
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        when(fakeHttpConnection.getOutputStream()).thenReturn(outputStream);
+        when(fakeHttpConnection.getResponseCode()).thenThrow(IOException.class);
+
+        URLHelper.instance().getURLStreamHandler().addConnection(fakeUrl, fakeHttpConnection);
+        Assertions.assertThrows(IOException.class, () -> {
+            GitHubAPI.getInstance().createOrUpdateRepositorySecret("FakeKey", "fakeSecret", "FakeRepo", "fakeKeyId");
+        });
+        var result = outputStream.toString(StandardCharsets.UTF_8);
+        Assertions.assertEquals("{\"encrypted_value\":\"fakeSecret\",\"key_id\":\"fakeKeyId\"}\n", result);
     }
 
 }
