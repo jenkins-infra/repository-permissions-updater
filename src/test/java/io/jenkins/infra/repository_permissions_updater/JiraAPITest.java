@@ -38,8 +38,6 @@ class JiraAPITest {
 
     @BeforeAll
     public static void setup() {
-        Logger logger = (Logger) LoggerFactory.getLogger(JiraImpl.class);
-
         urlStreamHandlerFactory = mock(URLStreamHandlerFactory.class);
         httpUrlStreamHandler = new HttpUrlStreamHandler();
         when(urlStreamHandlerFactory.createURLStreamHandler("http")).thenReturn(httpUrlStreamHandler);
