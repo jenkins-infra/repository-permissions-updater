@@ -8,13 +8,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 
-public abstract class ArtifactoryAPI {
+public sealed interface ArtifactoryAPI permits ArtifactoryImpl {
     /* Singleton support */
-    private static ArtifactoryAPI INSTANCE = null;
-    private static final String ARTIFACTORY_OBJECT_NAME_PREFIX = System.getProperty("artifactoryObjectPrefix", Boolean.getBoolean("development") ? "generateddev-" : "generatedv2-");
-    private static final Logger LOGGER = Logger.getLogger(ArtifactoryAPI.class.getName());
 
     /**
      * List all permission targets whose name starts with the configured prefix.
@@ -23,21 +19,21 @@ public abstract class ArtifactoryAPI {
      * @link https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetPermissionTargets
      * @return all permission targets whose name starts with the configured prefix.
      */
-    abstract List<String> listGeneratedPermissionTargets();
+    List<String> listGeneratedPermissionTargets();
     /**
      * Creates or replaces a permission target.
      *
      * @param name the name of the permission target, used in URL
      * @param payloadFile {@see https://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplacePermissionTarget}
      */
-    abstract void createOrReplacePermissionTarget(@NonNull String name, @NonNull File payloadFile);
+    void createOrReplacePermissionTarget(@NonNull String name, @NonNull File payloadFile);
 
     /**
      * Deletes a permission target in Artifactory.
      *
      * @param target Name of the permssion target
      */
-    abstract void deletePermissionTarget(@NonNull String target);
+    void deletePermissionTarget(@NonNull String target);
 
     /**
      * List all groups whose name starts with the configured prefix.
@@ -46,7 +42,7 @@ public abstract class ArtifactoryAPI {
      * @link https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetGroups
      * @return all groups whose name starts with the configured prefix.
      */
-    abstract @NonNull List<String> listGeneratedGroups();
+    @NonNull List<String> listGeneratedGroups();
 
     /**
      * Creates or replaces a group.
@@ -54,8 +50,8 @@ public abstract class ArtifactoryAPI {
      * @param name the name of the group, used in URL
      * @param payloadFile {@see https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplaceGroup}
      */
-    abstract void createOrReplaceGroup(String name, File payloadFile);
-    abstract void deleteGroup(String group);
+    void createOrReplaceGroup(String name, File payloadFile);
+    void deleteGroup(String group);
 
     /**
      * Generates a token scoped to the specified group.
@@ -64,7 +60,7 @@ public abstract class ArtifactoryAPI {
      * @param group the group scope for the token
      * @return the token
      */
-    abstract String generateTokenForGroup(String username, String group, long expiresInSeconds);
+    String generateTokenForGroup(String username, String group, long expiresInSeconds);
 
     /* Public instance-independent API */
 
@@ -75,7 +71,7 @@ public abstract class ArtifactoryAPI {
      * @return the transformed name, including the prefix, and compatible with Artifactory
      */
     static @NonNull String toGeneratedPermissionTargetName(@NonNull String name) {
-        return toGeneratedName(ARTIFACTORY_OBJECT_NAME_PREFIX, name);
+        return toGeneratedName(ArtifactoryImpl.ARTIFACTORY_OBJECT_NAME_PREFIX, name);
     }
 
     /**
@@ -86,7 +82,7 @@ public abstract class ArtifactoryAPI {
      */
     static @NonNull String toGeneratedGroupName(String baseName) {
         // Add 'cd' to indicate this group is for CD only
-        return toGeneratedName(ARTIFACTORY_OBJECT_NAME_PREFIX, "cd-" + baseName);
+        return toGeneratedName(ArtifactoryImpl.ARTIFACTORY_OBJECT_NAME_PREFIX, "cd-" + baseName);
     }
 
     /**
@@ -102,12 +98,12 @@ public abstract class ArtifactoryAPI {
     }
 
     private static String sha256(String str) {
-        LOGGER.log(Level.INFO, "Computing sha256 for string: " + str);
+        ArtifactoryImpl.LOGGER.log(Level.INFO, "Computing sha256 for string: " + str);
         MessageDigest digest;
         try {
             digest = MessageDigest.getInstance("SHA-256");
         } catch (NoSuchAlgorithmException e) {
-            LOGGER.log(Level.SEVERE, "Could not find SHA-256 algorithm.", e);
+            ArtifactoryImpl.LOGGER.log(Level.SEVERE, "Could not find SHA-256 algorithm.", e);
             return null;
         }
         digest.update(str.getBytes(StandardCharsets.UTF_8));
@@ -128,10 +124,7 @@ public abstract class ArtifactoryAPI {
         return name;
     }
 
-    static synchronized ArtifactoryAPI getInstance() {
-        if (INSTANCE == null) {
-            INSTANCE = new ArtifactoryImpl();
-        }
-        return INSTANCE;
+    static ArtifactoryAPI getInstance() {
+        return ArtifactoryImpl.getInstance();
     }
 }

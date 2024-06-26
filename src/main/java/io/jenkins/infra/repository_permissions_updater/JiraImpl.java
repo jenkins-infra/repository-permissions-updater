@@ -100,7 +100,7 @@ class JiraImpl extends JiraAPI {
     }
 
     @Override
-    boolean isUserPresent(final String username) {
+    public boolean isUserPresent(final String username) {
         return userMapping.computeIfAbsent(username, this::isUserPresentInternal);
     }
     @SuppressFBWarnings({"URLCONNECTION_SSRF_FD"})

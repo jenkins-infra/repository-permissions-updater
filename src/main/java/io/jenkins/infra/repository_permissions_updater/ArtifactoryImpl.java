@@ -25,31 +25,30 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-class ArtifactoryImpl extends ArtifactoryAPI {
-    private static final Logger LOGGER = Logger.getLogger(ArtifactoryImpl.class.getName());
-    /**
-     * URL to Artifactory
-     */
-    private static final String ARTIFACTORY_URL = System.getProperty("artifactoryUrl", "https://repo.jenkins-ci.org");
+final class ArtifactoryImpl implements ArtifactoryAPI {
+
+    static ArtifactoryAPI INSTANCE;
+
+    static final String ARTIFACTORY_OBJECT_NAME_PREFIX = System.getProperty("artifactoryObjectPrefix", Boolean.getBoolean("development") ? "generateddev-" : "generatedv2-");
+
+    static final Logger LOGGER = Logger.getLogger(ArtifactoryImpl.class.getName());
     /**
      * URL to the permissions API of Artifactory
      */
-    private static final String ARTIFACTORY_PERMISSIONS_API_URL = ARTIFACTORY_URL + "/api/security/permissions";
+    private final String artifactoryPermissionsApiUrl;
     /**
      * URL to the groups API of Artifactory
      */
-    private static final String ARTIFACTORY_GROUPS_API_URL = ARTIFACTORY_URL + "/api/security/groups";
+    private final String artifactoryGroupsApiUrl;
     /**
      * URL to the groups API of Artifactory
      */
-    private static final String ARTIFACTORY_TOKEN_API_URL = ARTIFACTORY_URL + "/access/api/v1/tokens";
+    private final String artifactoryTokenApiUrl;
 
     /**
      * True iff this is a dry-run (no API calls resulting in modifications)
      */
     public static final boolean DRY_RUN_MODE = Boolean.getBoolean("dryRun");
-
-    private static final String ARTIFACTORY_OBJECT_NAME_PREFIX = System.getProperty("artifactoryObjectPrefix", Boolean.getBoolean("development") ? "generateddev-" : "generatedv2-");
 
     private static final Gson gson = new Gson();
 
@@ -72,6 +71,12 @@ class ArtifactoryImpl extends ArtifactoryAPI {
 
     private static final String BEARER_TOKEN;
 
+    ArtifactoryImpl(String artifactoryUrl) {
+        artifactoryPermissionsApiUrl = artifactoryUrl + "/api/security/permissions";
+        artifactoryGroupsApiUrl = artifactoryUrl + "/api/security/groups";
+        artifactoryTokenApiUrl = artifactoryUrl + "/access/api/v1/tokens";
+    }
+
     /**
      * Creates or replaces a permission target based on the provided payload.
      * @oaram name the name of the permission target
@@ -79,38 +84,38 @@ class ArtifactoryImpl extends ArtifactoryAPI {
      */
     @Override
     public void createOrReplacePermissionTarget(String name, File payloadFile) {
-        createOrReplace(ARTIFACTORY_PERMISSIONS_API_URL, name, "permission target", payloadFile);
+        createOrReplace(artifactoryPermissionsApiUrl, name, "permission target", payloadFile);
     }
 
     @Override
     public void deletePermissionTarget(String target) {
-        delete(ARTIFACTORY_PERMISSIONS_API_URL, target, "permission target");
+        delete(artifactoryPermissionsApiUrl, target, "permission target");
     }
 
     @Override
     public List<String> listGeneratedPermissionTargets() {
-        return list(ARTIFACTORY_PERMISSIONS_API_URL, ARTIFACTORY_OBJECT_NAME_PREFIX);
+        return list(artifactoryPermissionsApiUrl, ARTIFACTORY_OBJECT_NAME_PREFIX);
     }
 
     @Override
     public List<String> listGeneratedGroups() {
-        return list(ARTIFACTORY_GROUPS_API_URL, ARTIFACTORY_OBJECT_NAME_PREFIX);
+        return list(artifactoryGroupsApiUrl, ARTIFACTORY_OBJECT_NAME_PREFIX);
     }
 
     @Override
     public void createOrReplaceGroup(String name, File payloadFile) {
-        createOrReplace(ARTIFACTORY_GROUPS_API_URL, name, "group", payloadFile);
+        createOrReplace(artifactoryGroupsApiUrl, name, "group", payloadFile);
     }
 
     @Override
     public void deleteGroup(String group) {
-        delete(ARTIFACTORY_GROUPS_API_URL, group, "group");
+        delete(artifactoryGroupsApiUrl, group, "group");
     }
 
     @Override
     @CheckForNull
     public String generateTokenForGroup(String username, String group, long expiresInSeconds) {
-       return withConnection("POST", ARTIFACTORY_TOKEN_API_URL, conn -> {
+       return withConnection("POST", artifactoryTokenApiUrl, conn -> {
             conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
             conn.setDoOutput(true);
             try (OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream(), StandardCharsets.UTF_8)) {
@@ -237,4 +242,12 @@ class ArtifactoryImpl extends ArtifactoryAPI {
         }
         return null;
     }
+
+    static synchronized ArtifactoryAPI getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new ArtifactoryImpl(System.getProperty("artifactoryUrl", "https://repo.jenkins-ci.org"));
+        }
+        return INSTANCE;
+    }
+
 }
