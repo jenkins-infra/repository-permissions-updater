@@ -30,8 +30,6 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Handler;
@@ -67,40 +65,7 @@ public class ArtifactoryPermissionsUpdater {
     private static final boolean DEVELOPMENT = Boolean.getBoolean("development");
 
     private static final Gson gson = new Gson();
-    private static final Path TEAMS_DIR = Path.of("teams");
-
-    /**
-     * Loads all teams from the teams/ folder.
-     * Always returns non null.
-     */
-    private static Map<String, TeamDefinition> loadTeams() throws Exception {
-        Set<TeamDefinition> teamsResult = new HashSet<>();
-        try(var teams = Files.list(TEAMS_DIR)) {
-            teamsResult = teams.map(TeamsHelper::loadTeam)
-                    .filter(TeamsHelper::expectedTeamName).collect(Collectors.toSet());
-        }
-        return teamsResult.stream().collect(Collectors.toMap(TeamDefinition::getName, Function.identity()));
-    }
-
-    private static final Predicate<String> DEVELOPER_START_WITH = s -> s.startsWith("@");
-
-    /**
-     * Checks if any developer has its name starting with `@`.
-     * In which case, for `@some-team` it will replace it with the developers
-     * listed for the team whose name equals `some-team` under the teams/ directory.
-     */
-    private static void expandTeams(Definition definition, Map<String, TeamDefinition> teamsByName) {
-        try (var developers = Arrays.stream(definition.getDevelopers())) {
-            var extendDevelopers = developers.filter(DEVELOPER_START_WITH).map(s -> {
-                var team = teamsByName.get(s.substring(1));
-                LOGGER.log(Level.INFO, "[" + definition.getName() + "]: replacing " + s + " with " + String.join(",", Arrays.asList(team.getDevelopers())));
-                return (Set<String>) new HashSet<>(Arrays.asList(team.getDevelopers()));
-            }).reduce((strings, strings2) -> Stream.concat(strings.stream(), strings2.stream()).collect(Collectors.toSet()));
-            var result = new HashSet<>(Arrays.asList(definition.getDevelopers()));
-            extendDevelopers.ifPresent(result::addAll);
-            definition.setDevelopers(result.toArray(String[]::new));
-        }
-    }
+    static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.getName());
 
     /**
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
@@ -116,7 +81,7 @@ public class ArtifactoryPermissionsUpdater {
             throw new IOException(apiOutputDir.getPath() + " already exists");
         }
 
-        Map<String, TeamDefinition> teamsByName = loadTeams();
+        Map<String, TeamDefinition> teamsByName = TeamsHelper.loadTeams();
 
         Map<String, Set<String>> pathsByGithub = new TreeMap<>();
         Map<String, List<Map<String, Object>>> issueTrackersByPlugin = new TreeMap<>();
@@ -133,7 +98,7 @@ public class ArtifactoryPermissionsUpdater {
                 Definition definition;
                 try {
                     definition = yaml.loadAs(new FileReader(file, StandardCharsets.UTF_8), Definition.class);
-                    expandTeams(definition, teamsByName);
+                    TeamsHelper.expandTeams(definition, teamsByName);
                 } catch (Exception e) {
                     throw new IOException("Failed to read " + file.getName(), e);
                 }
@@ -518,6 +483,4 @@ public class ArtifactoryPermissionsUpdater {
          */
         generateTokens(new File(ARTIFACTORY_API_DIR, "cd.index.json"));
     }
-
-    private static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.getName());
 }
