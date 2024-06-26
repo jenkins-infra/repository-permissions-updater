@@ -12,6 +12,7 @@ import io.jenkins.infra.repository_permissions_updater.JiraAPI;
 import io.jenkins.infra.repository_permissions_updater.KnownUsers;
 import io.jenkins.infra.repository_permissions_updater.TeamDefinition;
 import io.jenkins.lib.support_log_formatter.SupportLogFormatter;
+import org.checkerframework.checker.units.qual.A;
 import org.yaml.snakeyaml.LoaderOptions;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.error.YAMLException;
@@ -29,12 +30,15 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ArtifactoryPermissionsUpdater {
     /**
@@ -63,67 +67,39 @@ public class ArtifactoryPermissionsUpdater {
     private static final boolean DEVELOPMENT = Boolean.getBoolean("development");
 
     private static final Gson gson = new Gson();
+    private static final Path TEAMS_DIR = Path.of("teams");
 
     /**
      * Loads all teams from the teams/ folder.
      * Always returns non null.
      */
-    private static Map<String, Set<TeamDefinition>> loadTeams() throws Exception {
-        Yaml yaml = new Yaml(new Constructor(TeamDefinition.class, new LoaderOptions()));
-        File teamsDir = new File("teams/");
-
-        Set<TeamDefinition> teams = new HashSet<>();
-
-        File[] teamFiles = teamsDir.listFiles();
-        if (teamFiles != null) {
-            for (File teamFile : teamFiles) {
-                try {
-                    TeamDefinition newTeam = yaml.loadAs(new FileReader(teamFile, StandardCharsets.UTF_8), TeamDefinition.class);
-                    teams.add(newTeam);
-
-                    String expectedName = newTeam.getName() + ".yml";
-                    if (!teamFile.getName().equals(expectedName)) {
-                        throw new Exception("team file should be named " + expectedName + " instead of the current " + teamFile.getName());
-                    }
-                } catch (YAMLException e) {
-                    throw new IOException("Failed to read " + teamFile.getName(), e);
-                }
-            }
+    private static Map<String, TeamDefinition> loadTeams() throws Exception {
+        Set<TeamDefinition> teamsResult = new HashSet<>();
+        try(var teams = Files.list(TEAMS_DIR)) {
+            teamsResult = teams.map(TeamsHelper::loadTeam)
+                    .filter(TeamsHelper::expectedTeamName).collect(Collectors.toSet());
         }
-
-        Map<String, Set<TeamDefinition>> result = new HashMap<>();
-        teams.forEach(team -> result.put(team.getName(), Set.of(team)));
-
-        return result;
+        return teamsResult.stream().collect(Collectors.toMap(TeamDefinition::getName, Function.identity()));
     }
+
+    private static final Predicate<String> DEVELOPER_START_WITH = s -> s.startsWith("@");
 
     /**
      * Checks if any developer has its name starting with `@`.
      * In which case, for `@some-team` it will replace it with the developers
      * listed for the team whose name equals `some-team` under the teams/ directory.
      */
-    private static void expandTeams(Definition definition, Map<String, Set<TeamDefinition>> teamsByName) throws Exception {
-        String[] developers = definition.getDevelopers();
-        Set<String> expandedDevelopers = new HashSet<>();
-
-        for (String developerName : developers) {
-            if (developerName.startsWith("@")) {
-                String teamName = developerName.substring(1);
-                Set<TeamDefinition> team = teamsByName.get(teamName);
-                if (team == null) {
-                    throw new Exception("Team " + teamName + " not found!");
-                }
-                Set<String> teamDevs = team.stream().flatMap(td -> Arrays.stream(td.getDevelopers())).collect(Collectors.toSet());
-                if (teamDevs.isEmpty()) {
-                    throw new Exception("Team " + teamName + " is empty?!");
-                }
-                LOGGER.log(Level.INFO, "[" + definition.getName() + "]: replacing " + developerName + " with " + teamDevs);
-                expandedDevelopers.addAll(teamDevs);
-            } else {
-                expandedDevelopers.add(developerName);
-            }
+    private static void expandTeams(Definition definition, Map<String, TeamDefinition> teamsByName) {
+        try (var developers = Arrays.stream(definition.getDevelopers())) {
+            var extendDevelopers = developers.filter(DEVELOPER_START_WITH).map(s -> {
+                var team = teamsByName.get(s.substring(1));
+                LOGGER.log(Level.INFO, "[" + definition.getName() + "]: replacing " + s + " with " + String.join(",", Arrays.asList(team.getDevelopers())));
+                return (Set<String>) new HashSet<>(Arrays.asList(team.getDevelopers()));
+            }).reduce((strings, strings2) -> Stream.concat(strings.stream(), strings2.stream()).collect(Collectors.toSet()));
+            var result = new HashSet<>(Arrays.asList(definition.getDevelopers()));
+            extendDevelopers.ifPresent(result::addAll);
+            definition.setDevelopers(result.toArray(String[]::new));
         }
-        definition.setDevelopers(expandedDevelopers.toArray(String[]::new));
     }
 
     /**
@@ -140,7 +116,7 @@ public class ArtifactoryPermissionsUpdater {
             throw new IOException(apiOutputDir.getPath() + " already exists");
         }
 
-        Map<String, Set<TeamDefinition>> teamsByName = loadTeams();
+        Map<String, TeamDefinition> teamsByName = loadTeams();
 
         Map<String, Set<String>> pathsByGithub = new TreeMap<>();
         Map<String, List<Map<String, Object>>> issueTrackersByPlugin = new TreeMap<>();
