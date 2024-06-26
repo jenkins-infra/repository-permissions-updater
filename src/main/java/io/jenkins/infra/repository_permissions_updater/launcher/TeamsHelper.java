@@ -38,7 +38,7 @@ final class TeamsHelper {
             td.setFilePath(teamFile);
             return td;
         } catch (IOException e) {
-            throw new RuntimeException("Failed to read " + teamFile.getFileName().toString(), e);
+            throw new RuntimeException("Failed to read " + teamFile, e);
         }
     }
 
@@ -48,9 +48,14 @@ final class TeamsHelper {
      * @return true if the file name expected and false if not
      */
     static Boolean expectedTeamName(TeamDefinition teamDefinition) {
-        var result = YAML_FILE_EXTENSION.formatted(teamDefinition.getName()).equals(teamDefinition.getFilePath().getFileName().toString());
+        var path = teamDefinition.getFilePath();
+        var name = teamDefinition.getName();
+        if (path == null || name == null)  return false;
+        var fileName = path.getFileName();
+        if (fileName == null) return true;
+        var result = YAML_FILE_EXTENSION.formatted(name).equalsIgnoreCase(fileName.toString());
         if (!result) {
-            throw new RuntimeException("Team file should be named " + YAML_FILE_EXTENSION.formatted(teamDefinition.getName()) + " instead of the current " + teamDefinition.getFilePath().getFileName().toString());
+            throw new RuntimeException("Team file should be named " + YAML_FILE_EXTENSION.formatted(name) + " instead of the current " + path.getFileName());
         }
         return result;
     }
@@ -60,7 +65,7 @@ final class TeamsHelper {
      * Always returns non null.
      */
     static Map<String, TeamDefinition> loadTeams() throws Exception {
-        Set<TeamDefinition> teamsResult = new HashSet<>();
+        Set<TeamDefinition> teamsResult;
         try(var teams = Files.list(TEAMS_DIR)) {
             teamsResult = teams.map(TeamsHelper::loadTeam)
                     .filter(TeamsHelper::expectedTeamName).collect(Collectors.toSet());
