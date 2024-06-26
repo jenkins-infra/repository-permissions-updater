@@ -184,8 +184,8 @@ public class ArtifactoryPermissionsUpdater {
                     }
                 }
 
-                if (definition.getIssues() != null) {
-                    if (definition.getGithub() != null) {
+                if (definition.getIssues() != null && definition.getIssues().length != 0) {
+                    if (definition.getGithub() != null && !definition.getGithub().isEmpty()) {
                         issueTrackersByPlugin.put(definition.getName(), Arrays.stream(definition.getIssues()).map(tracker -> {
                             Map<String, Object> ret = new HashMap<>();
                             if (tracker.isJira() || tracker.isGitHubIssues()) {
@@ -212,7 +212,7 @@ public class ArtifactoryPermissionsUpdater {
                                 return ret;
                             }
                             return null;
-                        }).filter(Objects::nonNull).collect(Collectors.toList()));
+                        }).filter(Objects::nonNull).toList());
                     } else {
                         throw new Exception("Issue trackers ('issues') support requires GitHub repository ('github')");
                     }
