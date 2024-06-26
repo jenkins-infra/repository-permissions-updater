@@ -22,7 +22,9 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.function.BiConsumer;
@@ -76,7 +78,7 @@ public class ArtifactoryPermissionsUpdater {
         if (teamFiles != null) {
             for (File teamFile : teamFiles) {
                 try {
-                    TeamDefinition newTeam = yaml.loadAs(new FileReader(teamFile), TeamDefinition.class);
+                    TeamDefinition newTeam = yaml.loadAs(new FileReader(teamFile, StandardCharsets.UTF_8), TeamDefinition.class);
                     teams.add(newTeam);
 
                     String expectedName = newTeam.getName() + ".yml";
@@ -154,7 +156,7 @@ public class ArtifactoryPermissionsUpdater {
 
                 Definition definition;
                 try {
-                    definition = yaml.loadAs(new FileReader(file), Definition.class);
+                    definition = yaml.loadAs(new FileReader(file, StandardCharsets.UTF_8), Definition.class);
                     expandTeams(definition, teamsByName);
                 } catch (Exception e) {
                     throw new IOException("Failed to read " + file.getName(), e);
@@ -234,7 +236,11 @@ public class ArtifactoryPermissionsUpdater {
                 String fileBaseName = file.getName().replaceAll("\\.ya?ml$", "");
 
                 String jsonName = ArtifactoryAPI.toGeneratedPermissionTargetName(fileBaseName);
-                File outputFile = new File(new File(apiOutputDir, "permissions"), jsonName + ".json");
+                var permissionPath = Path.of(artifactId, "permissions");
+                Path outputFile = permissionPath.resolve(jsonName + ".json");
+                if (!outputFile.normalize().startsWith(permissionPath)) {
+                    throw new IOException("Not allowed to navigate outside of the current folder");
+                }
                 JsonBuilder json = new JsonBuilder();
 
                 json.call("name", jsonName);
@@ -313,19 +319,9 @@ public class ArtifactoryPermissionsUpdater {
 
                 String pretty = json.toPrettyString();
 
-                outputFile.getParentFile().mkdirs();
-                try {
-                    outputFile.createNewFile();
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-                outputFile.setWritable(true);
-                outputFile.setReadable(true);
-                try {
-                    Files.write(outputFile.toPath(), pretty.getBytes());
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
+                Files.createDirectories(permissionPath);
+                Files.createFile(outputFile);
+                Files.writeString(outputFile, pretty);
             }
         }
 
@@ -333,7 +329,11 @@ public class ArtifactoryPermissionsUpdater {
             String githubRepo = entry.getKey();
             List<Definition> components = entry.getValue();
             String groupName = ArtifactoryAPI.toGeneratedGroupName(githubRepo);
-            File outputFile = new File(new File(apiOutputDir, "groups"), groupName + ".json");
+            var groupsPath = apiOutputDir.toPath().resolve("groups");
+            Path outputFile = groupsPath.resolve(groupName + ".json");
+            if (!outputFile.normalize().startsWith(groupsPath)) {
+                throw new IOException("Not allowed to navigate outside of the current folder");
+            }
             JsonBuilder json = new JsonBuilder();
 
             json.call("name", groupName);
@@ -341,25 +341,15 @@ public class ArtifactoryPermissionsUpdater {
 
             String pretty = json.toPrettyString();
 
-            outputFile.getParentFile().mkdirs();
-            try {
-                outputFile.createNewFile();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            outputFile.setWritable(true);
-            outputFile.setReadable(true);
-            try {
-                Files.write(outputFile.toPath(), pretty.getBytes());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            Files.createDirectories(groupsPath);
+            Files.createFile(outputFile);
+            Files.writeString(outputFile, pretty);
         }
 
         JsonBuilder githubIndex = new JsonBuilder();
         githubIndex.call(pathsByGithub);
         try {
-            Files.write(new File(apiOutputDir, "github.index.json").toPath(), githubIndex.toPrettyString().getBytes());
+            Files.writeString(new File(apiOutputDir, "github.index.json").toPath(), githubIndex.toPrettyString());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -367,7 +357,7 @@ public class ArtifactoryPermissionsUpdater {
         JsonBuilder issuesIndex = new JsonBuilder();
         issuesIndex.call(issueTrackersByPlugin);
         try {
-            Files.write(new File(apiOutputDir, "issues.index.json").toPath(), issuesIndex.toPrettyString().getBytes());
+            Files.writeString(new File(apiOutputDir, "issues.index.json").toPath(), issuesIndex.toPrettyString());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -375,7 +365,7 @@ public class ArtifactoryPermissionsUpdater {
         JsonBuilder cdRepos = new JsonBuilder();
         cdRepos.call(cdEnabledComponentsByGitHub.keySet().toArray());
         try {
-            Files.write(new File(apiOutputDir, "cd.index.json").toPath(), cdRepos.toPrettyString().getBytes());
+            Files.writeString(new File(apiOutputDir, "cd.index.json").toPath(), cdRepos.toPrettyString());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -383,7 +373,7 @@ public class ArtifactoryPermissionsUpdater {
         JsonBuilder maintainers = new JsonBuilder();
         maintainers.call(maintainersByComponent);
         try {
-            Files.write(new File(apiOutputDir, "maintainers.index.json").toPath(), maintainers.toPrettyString().getBytes());
+            Files.writeString(new File(apiOutputDir, "maintainers.index.json").toPath(), maintainers.toPrettyString());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -392,8 +382,8 @@ public class ArtifactoryPermissionsUpdater {
     // TODO It's a really weird decision to have this in the otherwise invocation agnostic standalone tool
     private static void reportChecksApiDetails(String errorMessage, String details) {
         try {
-            Files.write(new File("checks-title.txt").toPath(), errorMessage.getBytes());
-            Files.write(new File("checks-details.txt").toPath(), details.getBytes());
+            Files.writeString(new File("checks-title.txt").toPath(), errorMessage);
+            Files.writeString(new File("checks-details.txt").toPath(), details);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -441,7 +431,7 @@ public class ArtifactoryPermissionsUpdater {
      * @param lister no-argument closure returning a list of {@code String} names of objects
      * @param deleter removes the specified object identified through the single {@code String} argument
      */
-    private static void removeExtraArtifactoryObjects(File payloadsDir, String kind, Supplier<List<String>> lister, Consumer<String> deleter) {
+    private static void removeExtraArtifactoryObjects(File payloadsDir, String kind, Supplier<List<String>> lister, Consumer<String> deleter) throws IOException {
         if (!payloadsDir.exists() || !payloadsDir.isDirectory()) {
             LOGGER.log(Level.INFO, payloadsDir + " does not exist or is not a directory, skipping extra " + kind + "s removal");
             return;
@@ -457,7 +447,11 @@ public class ArtifactoryPermissionsUpdater {
             LOGGER.log(Level.INFO, "Discovered " + objects.size() + " " + kind + "s");
 
             for (String object : objects) {
-                if (!new File(payloadsDir, object + ".json").exists()) {
+                Path objectPath = payloadsDir.toPath().resolve(object + ".json");
+                if (!objectPath.normalize().startsWith(payloadsDir.toPath())) {
+                    throw new IOException("Not allowed to navigate outside of the current folder");
+                }
+                if (Files.notExists(objectPath)) {
                     LOGGER.log(Level.INFO, kind.substring(0, 1).toUpperCase() + kind.substring(1) + " " + object + " has no corresponding file, deleting...");
                     try {
                         deleter.accept(object);
@@ -477,7 +471,7 @@ public class ArtifactoryPermissionsUpdater {
      * @param githubReposForCdIndex JSON file containing a list of GitHub repo names in the format 'orgname/reponame'
      */
     private static void generateTokens(File githubReposForCdIndex) throws IOException {
-        JsonElement jsonElement = gson.fromJson(new InputStreamReader(new FileInputStream(githubReposForCdIndex)), JsonElement.class);
+        JsonElement jsonElement = gson.fromJson(new InputStreamReader(new FileInputStream(githubReposForCdIndex), StandardCharsets.UTF_8), JsonElement.class);
         JsonArray repos = jsonElement.getAsJsonArray();
         for (JsonElement repoElement : repos) {
             var repo = repoElement.getAsString();

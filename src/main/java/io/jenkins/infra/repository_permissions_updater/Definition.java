@@ -3,6 +3,7 @@ package io.jenkins.infra.repository_permissions_updater;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -10,18 +11,18 @@ import java.util.logging.Logger;
     "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
     "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"
 })
-public class Definition {
+public class Definition implements Serializable {
 
-    public static class CD {
+    public static class CD implements Serializable {
         public boolean enabled;
         public boolean exclusive = true;
     }
 
-    public static class Security {
+    public static class Security implements Serializable {
         public SecurityContacts contacts;
     }
 
-    public static class SecurityContacts {
+    public static class SecurityContacts implements Serializable {
         public String jira;
     }
 
@@ -31,7 +32,7 @@ public class Definition {
      * Call {@link #isJira()} and/or {@link #isGitHubIssues()} to determine the kind of tracker.
      * Some invalid input may result in both returning {@code false}, in that case other methods will throw exceptions.
      */
-    public static class IssueTracker {
+    public static class IssueTracker implements Serializable {
         public interface JiraComponentSource {
             String getComponentId(String componentName) throws IOException;
         }
