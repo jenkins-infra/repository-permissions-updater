@@ -62,7 +62,7 @@ final class TeamsHelper {
 
     /**
      * Loads all teams from the teams/ folder.
-     * Always returns non null.
+     * Always returns non-null.
      */
     static Map<String, TeamDefinition> loadTeams() throws Exception {
         Set<TeamDefinition> teamsResult;
