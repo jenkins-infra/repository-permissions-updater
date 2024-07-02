@@ -2,6 +2,7 @@ package io.jenkins.infra.repository_permissions_updater;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
+import java.nio.file.Path;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -10,6 +11,7 @@ public class TeamDefinition {
 
     private String name = "";
     private String[] developers = new String[0];
+    private Path filePath = null;
 
     public String getName() {
         return name;
@@ -25,5 +27,13 @@ public class TeamDefinition {
 
     public void setDevelopers(String[] developers) {
         this.developers = developers.clone();
+    }
+
+    public Path getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(final Path filePath) {
+        this.filePath = filePath;
     }
 }
