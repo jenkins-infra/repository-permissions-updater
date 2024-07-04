@@ -5,4 +5,5 @@ issues:
   - jira: '18831'  # digitalocean-plugin
 paths:
   - "com/dubture/jenkins/digitalocean-plugin"
-developers: []
+developers:
+  - speedythesnail
