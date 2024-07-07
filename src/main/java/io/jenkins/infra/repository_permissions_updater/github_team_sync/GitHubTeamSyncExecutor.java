@@ -10,7 +10,7 @@ public class GitHubTeamSyncExecutor {
         }
 
         String yamlFilePath = args[0];
-        GithubTeamDefinition team = yamlTeamLoader.loadTeam(yamlFilePath);
+        GithubTeamDefinition team = YAMLTeamLoader.loadTeam(yamlFilePath);
         TeamUpdater.updateTeam(team);
     }
     

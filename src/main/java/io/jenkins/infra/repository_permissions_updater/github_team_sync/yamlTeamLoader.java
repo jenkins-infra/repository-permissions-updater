@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class yamlTeamLoader {
+public class YAMLTeamLoader {
 
     public static GithubTeamDefinition loadTeam(String filePath) {
         Yaml yaml = new Yaml();
