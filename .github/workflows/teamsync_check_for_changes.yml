@@ -42,7 +42,7 @@ jobs:
             GIT_DIFF=$(git diff ${{ github.event.before }} ${{ github.sha }} -- "$file")
             
             if [[ "$GIT_DIFF" == *"github_team"* || "$GIT_DIFF" == *"developers"* ]]; then
-              file="${filepath#permissions/}"
+              file="${file#permissions/}"
               echo "Updating the team in: $file"
               java -jar target/github_team_sync.jar "$file"
             else
