@@ -1,18 +1,37 @@
 package io.jenkins.infra.repository_permissions_updater.github_team_sync;
 import org.yaml.snakeyaml.Yaml;
 import java.io.FileInputStream;
-import java.io.InputStream;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class YAMLTeamLoader {
 
     public static GithubTeamDefinition loadTeam(String filePath) {
-        Yaml yaml = new Yaml();
 
-        try (InputStream inputStream = new FileInputStream(filePath)) {
+        Path resolvedPath = Paths.get(filePath).normalize();
+
+        if (!resolvedPath.startsWith(Paths.get("permissions"))) {
+            throw new SecurityException("Attempted path traversal out of allowed directory");
+        }
+
+        if (!resolvedPath.toString().endsWith(".YAML")) {
+            throw new SecurityException("Invalid file type");
+        }
+
+        if (!Files.exists(resolvedPath)) {
+            throw new RuntimeException("File does not exist: " + resolvedPath);
+        }
+
+        // Load the file
+        try (FileInputStream inputStream = new FileInputStream(resolvedPath.toFile())) {
+
+            Yaml yaml = new Yaml();
+
             Map<String, Object> data = yaml.load(inputStream);
             String repoPath = "";
             String teamName = "";
@@ -33,10 +52,13 @@ public class YAMLTeamLoader {
             }
 
             return new GithubTeamDefinition(repoPath,teamName,developers);
+            
 
         } catch (Exception e) {
             e.printStackTrace();
-            throw new RuntimeException("Failed to load: " + filePath, e);
+            throw new RuntimeException("Failed to load: " + resolvedPath, e);
         }
+
+        
     }
 }
