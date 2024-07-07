@@ -22,10 +22,11 @@ jobs:
     - name: Build project
       run: mvn clean install
 
-    - name: Update all YAML files in permissions directory
+    - name: Update all yml files in permissions directory
       run: |
         echo "Updating all permissions files..."
-        for file in permissions/*.YAML; do  
+        for file in permissions/*.yml; do  
+          file="${filepath#permissions/}"
           echo "Updating the team in: $file"
           java -jar target/github_team_sync.jar "$file"
         done

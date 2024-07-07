@@ -26,11 +26,11 @@ jobs:
     - name: Build project
       run: mvn clean install
       
-    - name: Check for YAML changes
+    - name: Check for yml changes
       id: files
       run: |
-        echo "Checking for changes in permissions/*.YAML files..."
-        FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'permissions/*.YAML')
+        echo "Checking for changes in permissions/*.yml files..."
+        FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'permissions/*.yml')
         
         if [[ -z "$FILES" ]]; then
           echo "No changes detected in permissions files."
@@ -42,6 +42,7 @@ jobs:
             GIT_DIFF=$(git diff ${{ github.event.before }} ${{ github.sha }} -- "$file")
             
             if [[ "$GIT_DIFF" == *"github_team"* || "$GIT_DIFF" == *"developers"* ]]; then
+              file="${filepath#permissions/}"
               echo "Updating the team in: $file"
               java -jar target/github_team_sync.jar "$file"
             else

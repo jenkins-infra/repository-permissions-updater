@@ -9,17 +9,17 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class YAMLTeamLoader {
+public class YmlTeamLoader {
 
     public static GithubTeamDefinition loadTeam(String filePath) {
+        Path basePath = Paths.get("permissions").toAbsolutePath().normalize();
+        Path resolvedPath = basePath.resolve(filePath).normalize();
 
-        Path resolvedPath = Paths.get(filePath).normalize();
-
-        if (!resolvedPath.startsWith(Paths.get("permissions"))) {
+        if (!resolvedPath.startsWith(basePath)) {
             throw new SecurityException("Attempted path traversal out of allowed directory");
         }
 
-        if (!resolvedPath.toString().endsWith(".YAML")) {
+        if (!resolvedPath.toString().endsWith(".yml")) {
             throw new SecurityException("Invalid file type");
         }
 
