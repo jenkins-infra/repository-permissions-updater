@@ -4,4 +4,5 @@ github: "jenkinsci/kubernetes-pipeline-plugin"
 paths:
   - "io/fabric8/pipeline/kubernetes-pipeline-core"
 developers:
+  - "basil"
   - "iocanel"
