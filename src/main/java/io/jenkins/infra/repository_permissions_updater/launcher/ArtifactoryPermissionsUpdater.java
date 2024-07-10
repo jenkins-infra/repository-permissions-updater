@@ -25,7 +25,7 @@ public class ArtifactoryPermissionsUpdater {
         if (DRY_RUN_MODE) {
             LOGGER.log(Level.INFO, "Running in dry run mode");
         }
-        // ArtifactoryAPI artifactoryApi = ArtifactoryAPI.getInstance();
+        ArtifactoryAPI artifactoryApi = ArtifactoryAPI.getInstance();
         /*
          * Generate JSON payloads from YAML permission definition files in DEFINITIONS_DIR and writes them to ARTIFACTORY_API_DIR.
          * Any problems with the input here are fatal so PR builds fails.
@@ -35,19 +35,19 @@ public class ArtifactoryPermissionsUpdater {
          * Submit generated Artifactory group JSON payloads to Artifactory, and delete generated groups no longer relevant.
          * Any problems here are logged to allow troubleshooting.
          */
-        // File groupsJsonDir = new File(ARTIFACTORY_API_DIR, "groups");
-        // ArtifactoryHelper.submitArtifactoryObjects(groupsJsonDir, "group", artifactoryApi::createOrReplaceGroup);
-        // ArtifactoryHelper.removeExtraArtifactoryObjects(groupsJsonDir, "group", artifactoryApi::listGeneratedGroups, artifactoryApi::deleteGroup);
+         File groupsJsonDir = new File(ARTIFACTORY_API_DIR, "groups");
+        ArtifactoryHelper.submitArtifactoryObjects(groupsJsonDir, "group", artifactoryApi::createOrReplaceGroup);
+        ArtifactoryHelper.removeExtraArtifactoryObjects(groupsJsonDir, "group", artifactoryApi::listGeneratedGroups, artifactoryApi::deleteGroup);
         /*
          * Submit generated Artifactory permission target JSON payloads to Artifactory, and delete generated groups no longer relevant.
          * Any problems here are logged to allow troubleshooting.
          */
-        // File permissionTargetsJsonDir = new File(ARTIFACTORY_API_DIR, "permissions");
-        // ArtifactoryHelper.submitArtifactoryObjects(permissionTargetsJsonDir, "permission target", artifactoryApi::createOrReplacePermissionTarget);
-        // ArtifactoryHelper.removeExtraArtifactoryObjects(permissionTargetsJsonDir, "permission target", artifactoryApi::listGeneratedPermissionTargets, artifactoryApi::deletePermissionTarget);
+        File permissionTargetsJsonDir = new File(ARTIFACTORY_API_DIR, "permissions");
+        ArtifactoryHelper.submitArtifactoryObjects(permissionTargetsJsonDir, "permission target", artifactoryApi::createOrReplacePermissionTarget);
+        ArtifactoryHelper.removeExtraArtifactoryObjects(permissionTargetsJsonDir, "permission target", artifactoryApi::listGeneratedPermissionTargets, artifactoryApi::deletePermissionTarget);
         /*
          * For all CD-enabled GitHub repositories, obtain a token from Artifactory and attach it to a GH repo as secret.
          */
-        // ArtifactoryHelper.generateTokens(new File(ARTIFACTORY_API_DIR, "cd.index.json"));*/
+        ArtifactoryHelper.generateTokens(new File(ARTIFACTORY_API_DIR, "cd.index.json"));
     }
 }
