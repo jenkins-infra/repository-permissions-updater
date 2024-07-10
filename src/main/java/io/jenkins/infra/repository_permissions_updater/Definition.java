@@ -10,7 +10,8 @@ import java.util.logging.Logger;
 
 @SuppressFBWarnings({
     "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
-    "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"
+    "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD",
+    "SE_NO_SERIALVERSIONID"
 })
 public class Definition implements Serializable {
 
