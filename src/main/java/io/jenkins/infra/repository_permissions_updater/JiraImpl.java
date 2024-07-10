@@ -106,7 +106,8 @@ class JiraImpl extends JiraAPI {
     @SuppressFBWarnings({"URLCONNECTION_SSRF_FD"})
     private boolean isUserPresentInternal(final String username) throws RuntimeException {
         if (!USERNAME_REGEX.matcher(username).matches()) {
-            throw new RuntimeException(String.format("Rejecting user name for Jira lookup: %s", username));
+            LOGGER.warn(String.format("Rejecting user name for Jira lookup: %s", username));
+            return false;
         }
 
         LOGGER.info("Checking whether user exists in Jira: {}", username);

@@ -4,6 +4,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.nio.file.Path;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -138,6 +139,7 @@ public class Definition implements Serializable {
     }
 
     private String name = "";
+    private transient Path permissionFile;
     private String[] paths = new String[0];
     private String[] developers = new String[0];
     private IssueTracker[] issues = new IssueTracker[0];
@@ -200,5 +202,13 @@ public class Definition implements Serializable {
             return github;
         }
         return null;
+    }
+
+    public Path getPermissionFile() {
+        return permissionFile;
+    }
+
+    public void setPermissionFile(final Path permissionFile) {
+        this.permissionFile = permissionFile;
     }
 }
