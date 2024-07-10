@@ -6,9 +6,11 @@ issues:
 paths:
   - "io/jenkins/plugins/servicenow-devops"
 developers:
-  - "bhavani_velivala"
+  - "mdavireddy"
   - "sampath_methuku_servicenow"
-  - "eshwar_molugu"
+  - "felipefaraco"
+  - "ramasnow"
+  - "snraonow"
   - "mohansaira_medisetti"
 cd:
   enabled: true

@@ -12,9 +12,5 @@ developers:
   - "bitwiseman"
   - "carroll"
   - "olamy"
-  - "teilo"
   - "poddingue"
   - "tilalx"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

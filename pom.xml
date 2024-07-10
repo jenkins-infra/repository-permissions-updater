@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.jenkins-ci</groupId>
         <artifactId>jenkins</artifactId>
-        <version>1.115</version>
+        <version>1.116</version>
         <relativePath />
     </parent>
 
@@ -171,7 +171,7 @@
         <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs-annotations</artifactId>
-            <version>4.8.3</version>
+            <version>4.8.6</version>
         </dependency>
         <dependency>
             <groupId>eu.neilalexander</groupId>
@@ -221,7 +221,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.25.3</version>
+            <version>3.26.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
