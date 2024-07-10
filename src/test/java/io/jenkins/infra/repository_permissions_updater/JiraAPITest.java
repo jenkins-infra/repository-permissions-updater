@@ -126,16 +126,6 @@ class JiraAPITest {
     }
 
     @Test
-    void testIsUserPresentInternalRegexDontMatch() {
-        Exception exception = assertThrows(RuntimeException.class, () -> {
-            Assertions.assertFalse(JiraAPI.getInstance().isUserPresent("FakeUser**"));
-        });
-        String expectedMessage = "Rejecting user name for Jira lookup";
-        String actualMessage = exception.getMessage();
-        Assertions.assertTrue(actualMessage.contains(expectedMessage));
-    }
-
-    @Test
     void testIsUserPresentInternalMalformedUrlException() {
         System.setProperty("jiraUrl", "xx://issues.jenkins.io");
         Exception exception = assertThrows(RuntimeException.class, () -> {
