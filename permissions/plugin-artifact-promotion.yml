@@ -2,7 +2,7 @@
 name: "artifact-promotion"
 github: "jenkinsci/artifact-promotion-plugin"
 issues:
-  - github: *gh
+  - github: "https://github.com/jenkinsci/artifact-promotion-plugin/issues"
   - jira: '18826'  # artifact-promotion-plugin
 paths:
   - "org/jenkins-ci/plugins/artifact-promotion"
