@@ -5,5 +5,6 @@ issues:
   - jira: '21681'  # unleash-plugin
 paths:
   - "com/itemis/jenkins/plugins/unleash"
+  - "io/jenkins/plugins/unleash"
 developers:
   - "mhoffrog"
