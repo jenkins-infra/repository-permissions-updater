@@ -1,0 +1,9 @@
+---
+name: "better-pipeline-flowgraph-table"
+github: &GH "jenkinsci/better-pipeline-flowgraph-table-plugin"
+paths:
+- "io/jenkins/plugins/better-pipeline-flowgraph-table"
+developers:
+- "danielbeck"
+issues:
+  - github: *GH
