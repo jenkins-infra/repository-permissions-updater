@@ -8,7 +8,7 @@ public class GithubTeamDefinition {
     private String teamName;
     private Set<String> developers;
 
-    public GithubTeamDefinition(String RepoName, String TeamName, Set<String> developers) {
+    public GithubTeamDefinition(String repoName, String teamName, Set<String> developers) {
         this.RepoName = RepoName;
         this.TeamName = TeamName;
         this.developers = developers;
