@@ -4,8 +4,8 @@ import java.util.Set;
 
 public class GithubTeamDefinition {
 
-    private String RepoName = "";
-    private String TeamName = "";
+    private String repoName;
+    private String teamName;
     private Set<String> developers;
 
     public GithubTeamDefinition(String RepoName, String TeamName, Set<String> developers) {
