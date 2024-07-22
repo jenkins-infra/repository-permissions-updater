@@ -9,8 +9,8 @@ public class GithubTeamDefinition {
     private Set<String> developers;
 
     public GithubTeamDefinition(String repoName, String teamName, Set<String> developers) {
-        this.RepoName = RepoName;
-        this.TeamName = TeamName;
+        this.repoName = repoName;
+        this.teamName = teamName;
         this.developers = developers;
     }
 
