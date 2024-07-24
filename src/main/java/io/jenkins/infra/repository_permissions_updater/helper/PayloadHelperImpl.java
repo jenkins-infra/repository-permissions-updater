@@ -1,6 +1,8 @@
 package io.jenkins.infra.repository_permissions_updater.helper;
 
-import groovy.json.JsonBuilder;
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import io.jenkins.infra.repository_permissions_updater.ArtifactoryAPI;
 import io.jenkins.infra.repository_permissions_updater.Definition;
 import io.jenkins.infra.repository_permissions_updater.JiraAPI;
@@ -42,6 +44,8 @@ final class PayloadHelperImpl implements PayloadHelper {
     private static final Path DEFINITIONS_DIR = Path.of(System.getProperty("definitionsDir", "./permissions"));
 
     static final Logger LOGGER = Logger.getLogger(PayloadHelperImpl.class.getName());
+
+    private static final Gson GSON = new Gson();
     /**
      * Set to true during development to prevent collisions with production behavior:
      *
@@ -231,26 +235,25 @@ final class PayloadHelperImpl implements PayloadHelper {
         if (!outputFile.normalize().startsWith(permissionPath)) {
             throw new RuntimeException("Not allowed to navigate outside of the current folder");
         }
-        JsonBuilder json = new JsonBuilder();
-
-        json.call("name", jsonName);
-        json.call("includesPattern", Arrays.stream(definition.getPaths()).flatMap(definitionPath -> Arrays.stream(new String[]{
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("name", jsonName);
+        jsonObject.addProperty("includesPattern", Arrays.stream(definition.getPaths()).flatMap(definitionPath -> Arrays.stream(new String[]{
                 definitionPath + "/*/" + definition.getName() + "-*",
                 definitionPath + "/*/maven-metadata.xml", // used for SNAPSHOTs
                 definitionPath + "/*/maven-metadata.xml.*",
                 definitionPath + "/maven-metadata.xml",
                 definitionPath + "/maven-metadata.xml.*"
         })).collect(Collectors.joining(",")));
-        json.call("excludesPattern", "");
-        json.call("repositories", DEVELOPMENT ? Collections.singletonList("snapshots") : Arrays.asList("snapshots", "releases"));
-        json.call("principals", this.createPrincipals(definition));
-
-        String pretty = json.toPrettyString();
+        jsonObject.addProperty("excludesPattern", "");
+        JsonArray jsonElements = new JsonArray();
+        (DEVELOPMENT ? Collections.singletonList("snapshots") : Arrays.asList("snapshots", "releases")).forEach(jsonElements::add);
+        jsonObject.add("repositories", jsonElements);
+        jsonObject.add("principals", GSON.toJsonTree(this.createPrincipals(definition)));
 
         try {
             Files.createDirectories(permissionPath);
             Files.createFile(outputFile);
-            Files.writeString(outputFile, pretty);
+            Files.writeString(outputFile, GSON.toJson(jsonObject));
         } catch (IOException e) {
             this.logException(e);
         }
@@ -265,51 +268,38 @@ final class PayloadHelperImpl implements PayloadHelper {
             if (!outputFile.normalize().startsWith(apiOutputDir.toAbsolutePath())) {
                 throw new RuntimeException("Not allowed to navigate outside of the current folder");
             }
-            JsonBuilder json = new JsonBuilder();
-
-            json.call("name", groupName);
-            json.call("description", "CD group with permissions to deploy from " + githubRepo);
-
-            String pretty = json.toPrettyString();
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("name", groupName);
+            jsonObject.addProperty("description", "CD group with permissions to deploy from " + githubRepo);
 
             try {
                 Files.createDirectories(groupsPath);
                 Files.createFile(outputFile);
-                Files.writeString(outputFile, pretty);
+                Files.writeString(outputFile, GSON.toJson(jsonObject));
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
 
         }
 
-        JsonBuilder githubIndex = new JsonBuilder();
-        githubIndex.call(apiPayloadHolder.pathsByGithub());
         try {
-            Files.writeString(apiOutputDir.resolve("github.index.json"), githubIndex.toPrettyString());
+            Files.writeString(apiOutputDir.resolve("github.index.json"), GSON.toJson(apiPayloadHolder.pathsByGithub()));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            Files.writeString(apiOutputDir.resolve( "issues.index.json"), GSON.toJson(apiPayloadHolder.issueTrackersByPlugin()));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            Files.writeString(apiOutputDir.resolve( "cd.index.json"), GSON.toJson(apiPayloadHolder.cdEnabledComponentsByGitHub().keySet().toArray());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        JsonBuilder issuesIndex = new JsonBuilder();
-        issuesIndex.call(apiPayloadHolder.issueTrackersByPlugin());
         try {
-            Files.writeString(apiOutputDir.resolve( "issues.index.json"), issuesIndex.toPrettyString());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        JsonBuilder cdRepos = new JsonBuilder();
-        cdRepos.call(apiPayloadHolder.cdEnabledComponentsByGitHub().keySet().toArray());
-        try {
-            Files.writeString(apiOutputDir.resolve( "cd.index.json"), cdRepos.toPrettyString());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        JsonBuilder maintainers = new JsonBuilder();
-        maintainers.call(apiPayloadHolder.maintainersByComponent());
-        try {
-            Files.writeString(apiOutputDir.resolve("maintainers.index.json"), maintainers.toPrettyString());
+            Files.writeString(apiOutputDir.resolve("maintainers.index.json"), GSON.toJson(apiPayloadHolder.maintainersByComponent()));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
