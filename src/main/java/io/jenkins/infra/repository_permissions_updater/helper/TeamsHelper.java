@@ -89,6 +89,7 @@ public final class TeamsHelper {
             }).reduce((strings, strings2) -> Stream.concat(strings.stream(), strings2.stream()).collect(Collectors.toSet()));
             var result = new HashSet<>(Arrays.asList(definition.getDevelopers()));
             extendDevelopers.ifPresent(result::addAll);
+            result.removeIf(DEVELOPER_START_WITH);
             definition.setDevelopers(result.toArray(String[]::new));
         }
     }
