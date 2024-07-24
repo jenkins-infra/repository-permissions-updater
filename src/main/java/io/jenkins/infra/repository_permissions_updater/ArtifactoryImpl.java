@@ -60,11 +60,6 @@ final class ArtifactoryImpl implements ArtifactoryAPI {
                 throw new IllegalStateException("ARTIFACTORY_TOKEN must be provided unless dry-run mode is used");
             }
         } else {
-            if (System.getProperty("java.version").startsWith("1.")) {
-                // URLEncoder#encode(String, Charset) exists since Java 10
-                throw new IllegalStateException("You need at least Java 10 to run this unless dry-run mode is used");
-            }
-
             BEARER_TOKEN = "Bearer " + token;
         }
     }
