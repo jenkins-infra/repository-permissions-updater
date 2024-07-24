@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater.helper;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import io.jenkins.infra.repository_permissions_updater.ArtifactoryAPI;
@@ -31,7 +32,7 @@ public final class ArtifactoryHelper {
      */
     private static final boolean DRY_RUN_MODE = Boolean.getBoolean("dryRun");
 
-    private static final Gson gson = new Gson();
+    private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
     static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.getName());
 
     /**

@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater.helper;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import io.jenkins.infra.repository_permissions_updater.ArtifactoryAPI;
@@ -45,7 +46,7 @@ final class PayloadHelperImpl implements PayloadHelper {
 
     static final Logger LOGGER = Logger.getLogger(PayloadHelperImpl.class.getName());
 
-    private static final Gson GSON = new Gson();
+    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     /**
      * Set to true during development to prevent collisions with production behavior:
      *
