@@ -1,12 +1,10 @@
 ---
-name: "plugin-modernizer-tool"
+name: "plugin-modernizer-parent-pom"
 github: &GH "jenkinsci/plugin-modernizer-tool"
 issues:
   - github: *GH
 paths:
   - "io/jenkins/plugin-modernizer/plugin-modernizer-parent-pom"
-  - "io/jenkins/plugin-modernizer/plugin-modernizer-cli"
-  - "io/jenkins/plugin-modernizer/plugin-modernizer-core"
 developers:
   - "poddingue"
   - "jonesbusy"

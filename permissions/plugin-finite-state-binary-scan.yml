@@ -1,0 +1,11 @@
+---
+name: "finite-state-binary-scan"
+github: &GH "jenkinsci/finite-state-binary-scan-plugin"
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/finite-state-binary-scan"
+developers:
+- "finitestateinc"
+issues:
+  - github: *GH
