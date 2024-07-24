@@ -293,7 +293,7 @@ final class PayloadHelperImpl implements PayloadHelper {
             throw new RuntimeException(e);
         }
         try {
-            Files.writeString(apiOutputDir.resolve( "cd.index.json"), GSON.toJson(apiPayloadHolder.cdEnabledComponentsByGitHub().keySet().toArray());
+            Files.writeString(apiOutputDir.resolve( "cd.index.json"), GSON.toJson(apiPayloadHolder.cdEnabledComponentsByGitHub().keySet().toArray()));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
