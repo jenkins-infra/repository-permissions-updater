@@ -154,10 +154,10 @@ final class PayloadHelperImpl implements PayloadHelper {
                 }
                 if (!Arrays.asList(definition.getDevelopers()).isEmpty()) {
                     List<Definition> definitions = apiPayloadHolder.cdEnabledComponentsByGitHub().computeIfAbsent(definition.getGithub(), k -> new ArrayList<>());
-                    LOGGER.log(Level.INFO, "CD-enabled component '{}' in repository '{}'", new Object[]{definition.getName(), definition.getGithub() });
+                    LOGGER.log(Level.INFO, "CD-enabled component '{0}' in repository '{1}'", new Object[]{definition.getName(), definition.getGithub() });
                     definitions.add(definition);
                 } else {
-                    LOGGER.log(Level.INFO, "Skipping CD-enablement for '{}' in repository '{}' as it is unmaintained", new Object[]{definition.getName(), definition.getGithub()});
+                    LOGGER.log(Level.INFO, "Skipping CD-enablement for '{0}' in repository '{1}' as it is unmaintained", new Object[]{definition.getName(), definition.getGithub()});
                 }
             }
         } else {
