@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
-import io.jenkins.infra.repository_permissions_updater.hosting.HostingRequest.IssueTracker;
+import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest;
+import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest.IssueTracker;
 import java.io.IOException;
 import java.util.AbstractMap;
 import java.util.Arrays;
@@ -46,7 +47,7 @@ public final class HostingRequestParser {
                 fields.get(GITHUB_USERS).asList()
                         .stream()
                         .map(user -> user.replace("@", ""))
-                        .collect(Collectors.toList()),
+                        .toList(),
                 fields.get(JENKINS_PROJECT_USERS).asList(),
                 IssueTracker.fromString(fields.get(ISSUE_TRACKER).asString())
         );
