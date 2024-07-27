@@ -32,8 +32,6 @@ public class HostingChecker {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HostingChecker.class);
 
-    public static final String INVALID_FORK_FROM = "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
-
     public static final Version LOWEST_JENKINS_VERSION = new Version(2, 440, 3);
 
     private static final boolean DEBUG_HOSTING = Boolean.getBoolean("debugHosting");

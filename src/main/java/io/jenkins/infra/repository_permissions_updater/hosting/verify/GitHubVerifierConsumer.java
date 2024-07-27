@@ -1,6 +1,5 @@
 package io.jenkins.infra.repository_permissions_updater.hosting.verify;
 
-import io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker;
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.VerificationMessage;
@@ -70,7 +69,7 @@ public final class GitHubVerifierConsumer implements VerifierConsumer {
                 try {
                     repo = gitHub.getRepository(owner + "/" + repoName);
                 } catch (Exception e) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, forkFrom));
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("INVALID_FORK_FROM"), forkFrom));
                 }
 
                 if (repo != null) {
@@ -119,7 +118,7 @@ public final class GitHubVerifierConsumer implements VerifierConsumer {
                     }
                 }
             } else {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, forkFrom));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("INVALID_FORK_FROM"), forkFrom));
             }
         }
     }

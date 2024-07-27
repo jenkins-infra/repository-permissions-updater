@@ -1,6 +1,5 @@
 package io.jenkins.infra.repository_permissions_updater.hosting.verify;
 
-import io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker;
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.VerificationMessage;
@@ -24,7 +23,7 @@ public final class HostingFieldVerifierConsumer implements VerifierConsumer {
         }
 
         if (StringUtils.isBlank(forkFrom)) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, ""));
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("INVALID_FORK_FROM"), ""));
         } else {
             boolean updateIssue = false;
             if (forkFrom.endsWith(".git")) {
@@ -39,7 +38,7 @@ public final class HostingFieldVerifierConsumer implements VerifierConsumer {
 
             // check the repo they want to fork from to make sure it conforms
             if (!HostingConfig.GITHUB_FORK_PATTERN.matcher(forkFrom).matches()) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, forkFrom));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("INVALID_FORK_FROM"), forkFrom));
             }
 
             if (updateIssue) {
