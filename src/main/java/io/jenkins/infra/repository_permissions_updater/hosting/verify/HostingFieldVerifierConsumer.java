@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater.hosting.verify;
 
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker;
+import io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.VerificationMessage;
 import org.apache.commons.lang3.StringUtils;
@@ -19,7 +20,7 @@ public final class HostingFieldVerifierConsumer implements VerifierConsumer {
 
         // check list of users
         if (users.isEmpty()) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing list of users to authorize in 'GitHub Users to Authorize as Committers'"));
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("MISSING_LIST_OF_USERS")));
         }
 
         if (StringUtils.isBlank(forkFrom)) {
@@ -37,7 +38,7 @@ public final class HostingFieldVerifierConsumer implements VerifierConsumer {
             }
 
             // check the repo they want to fork from to make sure it conforms
-            if (!Pattern.matches("https://github\\.com/(\\S+)/(\\S+)", forkFrom)) {
+            if (!HostingConfig.GITHUB_FORK_PATTERN.matcher(forkFrom).matches()) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, forkFrom));
             }
 
@@ -47,14 +48,13 @@ public final class HostingFieldVerifierConsumer implements VerifierConsumer {
 
         if (StringUtils.isBlank(forkTo)) {
             HashSet<VerificationMessage> subitems = new HashSet<>();
-            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must match the artifactId (with -plugin added) from your pom.xml."));
-            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must end in -plugin if hosting request is for a Jenkins plugin."));
-            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must be all lowercase."));
-            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must NOT contain \"Jenkins\"."));
-            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It must use hyphens ( - ) instead of spaces or camel case."));
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, subitems, "You must specify the repository name to fork to in 'New Repository Name' field with the following rules:"));
+            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("IT_MUST_MATCH_ARTIFACT_ID")));
+            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("IT_MUST_MATCH_PLUGIN")));
+            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("IT_MUST_LOWERCASE")));
+            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("IT_MUST_NOT_CONTAIN_JENKINS")));
+            subitems.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("IT_MUST_HYPHENS")));
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, subitems, HostingConfig.RESOURCE_BUNDLE.getString("IT_MUST_NEW_REPO")));
         } else {
-            String originalForkTo = forkTo;
             // we don't like camel case - ThisIsCamelCase becomes this-is-camel-case
             Matcher m = Pattern.compile("(\\B[A-Z]+?(?=[A-Z][^A-Z])|\\B[A-Z]+?(?=[^A-Z]))").matcher(forkTo);
             String forkToLower = m.replaceAll("-$1").toLowerCase();
@@ -68,13 +68,7 @@ public final class HostingFieldVerifierConsumer implements VerifierConsumer {
             forkToLower = StringUtils.strip(forkToLower, "- ");
 
             if (!forkToLower.endsWith("-plugin")) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "'New Repository Name' must end with \"-plugin\" (disregard if you are not requesting hosting of a plugin)"));
-            }
-
-            // we don't like spaces...
-            forkToLower = forkToLower.replace(" ", "-");
-
-            if (!forkToLower.equals(originalForkTo)) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("NEW_REPO_MUST_END")));
             }
         }
     }
