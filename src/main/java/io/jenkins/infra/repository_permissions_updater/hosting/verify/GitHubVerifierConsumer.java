@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater.hosting.verify;
 
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker;
+import io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.VerificationMessage;
 import org.apache.commons.lang3.StringUtils;
@@ -10,10 +11,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 public final class GitHubVerifierConsumer implements VerifierConsumer {
 
@@ -54,7 +51,7 @@ public final class GitHubVerifierConsumer implements VerifierConsumer {
         if (StringUtils.isNotBlank(forkFrom)) {
             forkFrom = forkFrom.trim();
 
-            Matcher m = Pattern.compile("https?://github\\.com/(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
+            var m = HostingConfig.GITHUB_FORK_PATTERN.matcher(forkFrom);
             if (m.matches()) {
                 String owner = m.group(1);
                 String repoName = m.group(2);
