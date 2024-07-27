@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater.hosting.verify;
 
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker;
+import io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.VerificationMessage;
 import io.jenkins.infra.repository_permissions_updater.hosting.model.Version;
@@ -25,7 +26,6 @@ import java.net.URISyntaxException;
 import java.util.HashSet;
 import java.util.List;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 
 public final class MavenVerifierConsumer implements VerifierConsumer {
@@ -43,7 +43,6 @@ public final class MavenVerifierConsumer implements VerifierConsumer {
     private static final String REPOSITORY_CANNOT_BE_FOUND = "The specified repository cannot be found";
 
     public static final String SHOULD_BE_IO_JENKINS_PLUGINS = "The &lt;groupId&gt; from the pom.xml should be `io.jenkins.plugins` instead of `%s`";
-    public static final Pattern GITHUB_CONNECTION_PATTERN = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", Pattern.CASE_INSENSITIVE);
 
     private final GitHub github;
 
@@ -55,65 +54,75 @@ public final class MavenVerifierConsumer implements VerifierConsumer {
     public void accept(HostingRequest issue, HashSet<VerificationMessage> hostingIssues) {
         String forkTo = issue.newRepoName();
         String forkFrom = issue.repositoryUrl();
+        if(!StringUtils.isNotBlank(forkFrom)) return;
 
-        if(StringUtils.isNotBlank(forkFrom)) {
-            Matcher m = GITHUB_CONNECTION_PATTERN.matcher(forkFrom);
-            if(m.matches()) {
-                String owner = m.group(1);
-                String repoName = m.group(2);
+        Matcher m = HostingConfig.GITHUB_FORK_PATTERN.matcher(forkFrom);
+        if(!m.matches()) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, forkFrom));
+            return;
+        }
 
-                GHRepository repo = null;
-                try {
-                    repo = github.getRepository(owner+"/"+repoName);
-                } catch (IOException e) {
-                    LOGGER.error("Cannot find repository for {}", repoName, e);
-                }
-                if (repo == null) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, REPOSITORY_CANNOT_BE_FOUND));
-                    return;
-                }
-                try {
-                    GHContent pomXml = null;
-                    try {
-                        pomXml = repo.getFileContent("pom.xml");
-                    } catch (IOException e) {
-                        hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, MISSING_POM_XML));
-                    }
-                    if(pomXml != null && pomXml.isFile()) {
-                        InputStream contents = null;
-                        try {
-                            contents = pomXml.read();
-                        } catch (IOException e) {
-                            LOGGER.error("Cannot read pom.xml file", e);
-                        }
-                        MavenXpp3Reader reader = new MavenXpp3Reader();
-                        Model model = null;
-                        try {
-                            model = reader.read(contents);
-                        } catch (IOException e) {
-                            LOGGER.error("Cannot read maven model", e);
-                        }
+        String owner = m.group(1);
+        String repoName = m.group(2);
 
-                        try {
-                            checkArtifactId(model, forkTo, hostingIssues);
-                            checkParentInfoAndJenkinsVersion(model, hostingIssues);
-                            checkName(model, hostingIssues);
-                            checkLicenses(model, hostingIssues);
-                            checkGroupId(model, hostingIssues);
-                            checkRepositories(model, hostingIssues);
-                            checkPluginRepositories(model, hostingIssues);
-                            checkSoftwareConfigurationManagementField(model, hostingIssues);
-                        } catch(Exception e) {
-                            LOGGER.error("Failed looking at pom.xml", e);
-                            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
-                        }
-                    }
-                } catch(XmlPullParserException e) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
-                }
-            } else {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, forkFrom));
+        GHRepository repo = null;
+        try {
+            repo = github.getRepository(owner+"/"+repoName);
+        } catch (IOException e) {
+            LOGGER.error("Cannot find repository for {}", repoName, e);
+        }
+        if (repo == null) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, REPOSITORY_CANNOT_BE_FOUND));
+            return;
+        }
+        try {
+            GHContent pomXml = null;
+            try {
+                pomXml = repo.getFileContent("pom.xml");
+            } catch (IOException e) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, MISSING_POM_XML));
             }
+            if(pomXml == null) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, MISSING_POM_XML));
+                return;
+            }
+            if(!pomXml.isFile()) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, MISSING_POM_XML));
+                return;
+            }
+            InputStream contents = null;
+            try {
+                contents = pomXml.read();
+            } catch (IOException e) {
+                LOGGER.error("Cannot read pom.xml file", e);
+            }
+            MavenXpp3Reader reader = new MavenXpp3Reader();
+            Model model = null;
+            try {
+                model = reader.read(contents);
+            } catch (IOException e) {
+                LOGGER.error("Cannot read maven model", e);
+            }
+            if(model == null) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
+                return;
+            }
+
+            try {
+                checkArtifactId(model, forkTo, hostingIssues);
+                checkParentInfoAndJenkinsVersion(model, hostingIssues);
+                checkName(model, hostingIssues);
+                checkLicenses(model, hostingIssues);
+                checkGroupId(model, hostingIssues);
+                checkRepositories(model, hostingIssues);
+                checkPluginRepositories(model, hostingIssues);
+                checkSoftwareConfigurationManagementField(model, hostingIssues);
+            } catch(Exception e) {
+                LOGGER.error("Failed looking at pom.xml", e);
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
+            }
+        } catch(XmlPullParserException e) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
         }
     }
 
