@@ -83,7 +83,7 @@
                             </descriptors>
                             <archive>
                                 <manifest>
-                                    <mainClass>io.jenkins.infra.repository_permissions_updater.github_team_sync.GitHubTeamSyncExecutor</mainClass>
+                                    <mainClass>io.jenkins.infra.repository_permissions_updater.github_team_sync.TeamSyncExecutor</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>

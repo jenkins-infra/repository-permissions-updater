@@ -24,31 +24,17 @@ jobs:
         distribution: 'adopt'
         
     - name: Build project
-      run: mvn clean install
+      run: mvn install
       
     - name: Check for yml changes
       id: files
       run: |
-        echo "Checking for changes in permissions/*.yml files..."
-        FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'permissions/*.yml')
-        
+        FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'permissions/*.yml' | xargs echo)
         if [[ -z "$FILES" ]]; then
           echo "No changes detected in permissions files."
         else
           echo "Changes detected. Processing..."
-          for file in $FILES
-          do
-            echo "Processing changes in $file"
-            GIT_DIFF=$(git diff ${{ github.event.before }} ${{ github.sha }} -- "$file")
-            
-            if [[ "$GIT_DIFF" == *"github_team"* || "$GIT_DIFF" == *"developers"* ]]; then
-              file="${file#permissions/}"
-              echo "Updating the team in: $file"
-              java -jar target/github_team_sync.jar "$file"
-            else
-              echo "No relevant changes to the team in: $file"
-            fi
-          done
+          java -jar target/github_team_sync.jar $FILES
         fi
       env:
-        GITHUB_OAUTH: ${{ secrets.HOSTING_PAT }}
+        GITHUB_OAUTH: ${{ secrets.TEMP_TEAMSYNC_PAT }}
