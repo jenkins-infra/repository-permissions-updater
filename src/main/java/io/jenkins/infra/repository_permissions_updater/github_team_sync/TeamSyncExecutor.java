@@ -13,7 +13,6 @@ public class TeamSyncExecutor {
     }
 
     public static void main(String[] args) {
-        // change your repo secret name here
         GitHubService gitHubService = new GitHubServiceImpl(System.getenv("GITHUB_OAUTH"));
         TeamUpdater teamUpdater = new TeamUpdater(gitHubService);
         TeamSyncExecutor executor = new TeamSyncExecutor(teamUpdater);
@@ -23,14 +22,13 @@ public class TeamSyncExecutor {
 
     public void run(String[] args) {
         if (args.length == 0) {
-            logger.info("No file path provided.");
-            System.exit(1);
+            throw new IllegalArgumentException("No file path provided.");
         }
 
         for (String yamlFilePath : args) {
             try {
                 logger.info("Processing team configuration for file: " + yamlFilePath);
-                GithubTeamDefinition team = YAMLTeamLoader.loadTeam(yamlFilePath);
+                GithubTeamDefinition team = YamlTeamLoader.loadTeam(yamlFilePath);
                 teamUpdater.updateTeam(team);
             } catch (Exception e) {
                 logger.error("Failed to update team for file " + yamlFilePath + ": " + e.getMessage(), e);

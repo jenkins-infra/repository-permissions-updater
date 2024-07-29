@@ -24,7 +24,7 @@ jobs:
         distribution: 'adopt'
         
     - name: Build project
-      run: mvn install
+      run: mvn clean install
       
     - name: Check for yml changes
       id: files

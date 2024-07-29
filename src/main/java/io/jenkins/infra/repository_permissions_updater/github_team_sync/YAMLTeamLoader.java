@@ -14,8 +14,8 @@ import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class YAMLTeamLoader {
-    private static final Logger logger = LoggerFactory.getLogger(YAMLTeamLoader.class);
+public class YamlTeamLoader {
+    private static final Logger logger = LoggerFactory.getLogger(YamlTeamLoader.class);
 
     public static GithubTeamDefinition loadTeam(String filePath) {
         Path resolvedPath = resolveFilePath(filePath);
