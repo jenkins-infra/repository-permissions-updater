@@ -7,6 +7,5 @@ paths:
   - "io/jenkins/plugins/mysql-api"
 developers:
   - "cleclerc"
-  - "jonesbusy"
 cd:
   enabled: true
