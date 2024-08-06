@@ -1,4 +1,4 @@
----
+  ---
 name: "sonar-quality-gates"
 github: "jenkinsci/sonar-quality-gates-plugin"
 issues:
@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/sonar-quality-gates"
 developers:
   - "arkanjoms"
+cd:
+  enable: true
