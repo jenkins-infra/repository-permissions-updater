@@ -7,7 +7,8 @@ import com.atlassian.jira.rest.client.api.domain.BasicComponent;
 import com.atlassian.jira.rest.client.api.domain.Component;
 import com.atlassian.jira.rest.client.api.domain.input.ComponentInput;
 import io.atlassian.util.concurrent.Promise;
-import io.jenkins.infra.repository_permissions_updater.hosting.HostingRequest.IssueTracker;
+import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest;
+import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest.IssueTracker;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -19,6 +20,8 @@ import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+
+import io.jenkins.infra.repository_permissions_updater.hosting.verify.MavenVerifierConsumer;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.kohsuke.github.GHContent;
@@ -47,6 +50,7 @@ import static java.util.stream.Collectors.joining;
 public class Hoster {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Hoster.class);
+    private static final Pattern GITHUB_HOST_PATTERN = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE);
 
     public static void main(String[] args) {
         new Hoster().run(Integer.parseInt(args[0]));
@@ -59,12 +63,12 @@ public class Hoster {
         try {
             final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
-            String defaultAssignee = hostingRequest.getJenkinsProjectUsers().getFirst();
-            String forkFrom = hostingRequest.getRepositoryUrl();
-            List<String> users = hostingRequest.getGithubUsers();
-            IssueTracker issueTrackerChoice = hostingRequest.getIssueTracker();
+            String defaultAssignee = hostingRequest.jenkinsProjectUsers().getFirst();
+            String forkFrom = hostingRequest.repositoryUrl();
+            List<String> users = hostingRequest.githubUsers();
+            IssueTracker issueTrackerChoice = hostingRequest.issueTracker();
 
-            String forkTo = hostingRequest.getNewRepoName();
+            String forkTo = hostingRequest.newRepoName();
 
             if (StringUtils.isBlank(forkFrom) || StringUtils.isBlank(forkTo) || users.isEmpty()) {
                 LOGGER.info("Could not retrieve information (or information does not exist) from the Hosting request");
@@ -72,7 +76,7 @@ public class Hoster {
             }
 
             // Parse forkFrom in order to determine original repo owner and repo name
-            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
+            Matcher m = GITHUB_HOST_PATTERN.matcher(forkFrom);
             if (m.matches()) {
                 if (!forkGitHub(m.group(1), m.group(2), forkTo, users, issueTrackerChoice == IssueTracker.GITHUB)) {
                     LOGGER.error("Hosting request failed to fork repository on Github");
@@ -103,7 +107,7 @@ public class Hoster {
                 componentId = "";
             }
 
-            String prUrl = createUploadPermissionPR(issueID, forkTo, users, hostingRequest.getJenkinsProjectUsers(), issueTrackerChoice == IssueTracker.GITHUB, componentId);
+            String prUrl = createUploadPermissionPR(issueID, forkTo, users, hostingRequest.jenkinsProjectUsers(), issueTrackerChoice == IssueTracker.GITHUB, componentId);
             if (StringUtils.isBlank(prUrl)) {
                 LOGGER.error("Could not create upload permission pull request");
             }
@@ -393,8 +397,8 @@ public class Hoster {
             if (file != null && file.isFile()) {
                 String contents = IOUtils.toString(file.read(), StandardCharsets.UTF_8);
                 if (file.isFile()) {
-                    artifactId = MavenVerifier.getArtifactId(contents);
-                    groupId = MavenVerifier.getGroupId(contents);
+                    artifactId = MavenVerifierConsumer.getArtifactId(contents);
+                    groupId = MavenVerifierConsumer.getGroupId(contents);
                 }
             }
         } catch (IOException e) {

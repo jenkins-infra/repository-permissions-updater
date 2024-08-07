@@ -1,4 +1,4 @@
-package io.jenkins.infra.repository_permissions_updater.hosting;
+package io.jenkins.infra.repository_permissions_updater.hosting.model;
 
 import java.util.Collections;
 import java.util.Comparator;
