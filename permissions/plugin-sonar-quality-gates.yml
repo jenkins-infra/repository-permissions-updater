@@ -1,4 +1,4 @@
-  ---
+---
 name: "sonar-quality-gates"
 github: "jenkinsci/sonar-quality-gates-plugin"
 issues:
