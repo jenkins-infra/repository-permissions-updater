@@ -7,3 +7,4 @@ paths:
   - "de/esailors/jenkins/test-stability"
 developers:
   - "seanf"
+  - "timja"
