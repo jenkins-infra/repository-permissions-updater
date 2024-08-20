@@ -1,0 +1,9 @@
+---
+name: "commons-math3-api"
+github: &GH "jenkinsci/commons-math3-api-plugin"
+paths:
+- "io/jenkins/plugins/commons-math3-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
