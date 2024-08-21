@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URI;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -124,7 +126,6 @@ class GitHubImpl extends GitHubAPI {
                 }
                 LOGGER.log(Level.INFO, "Retrying create/update secret {0} for {1} attempt {2}/{3}", new Object[]{name, repositoryName, attemptNumber, maxAttempts});
                 attemptNumber++;
-                
             }
         }
     }
