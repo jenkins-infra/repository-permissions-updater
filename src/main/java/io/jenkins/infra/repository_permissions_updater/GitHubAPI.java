@@ -7,7 +7,7 @@ import java.io.IOException;
 public abstract class GitHubAPI {
     static GitHubAPI INSTANCE = null;
 
-    public static final class GitHubPublicKey {
+    static final class GitHubPublicKey {
         private final String keyId;
         private final String key;
 
@@ -16,11 +16,11 @@ public abstract class GitHubAPI {
             this.key = key;
         }
 
-        public String getKeyId() {
+        String getKeyId() {
             return keyId;
         }
 
-        public String getKey() {
+        String getKey() {
             return key;
         }
 
@@ -37,7 +37,7 @@ public abstract class GitHubAPI {
      * @param repository the repository (as org/repo)
      * @return the base64 encoded public key
      */
-    public abstract GitHubPublicKey getRepositoryPublicKey(String repository) throws IOException;
+    abstract GitHubPublicKey getRepositoryPublicKey(String repository) throws IOException;
 
     /**
      * Creates or update a secret in a repository.
@@ -47,9 +47,9 @@ public abstract class GitHubAPI {
      * @param encryptedSecret the encrypted, base64 encoded secret value
      * @param repositoryName the repository name
      */
-    public abstract void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) throws IOException;
+    abstract void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) throws IOException;
 
-    public static synchronized GitHubAPI getInstance() {
+    static synchronized GitHubAPI getInstance() {
         if (INSTANCE == null) {
             INSTANCE = new GitHubImpl("https://api.github.com/repos/%s/actions/secrets/public-key", "https://api.github.com/repos/%s/actions/secrets/%s");
         }

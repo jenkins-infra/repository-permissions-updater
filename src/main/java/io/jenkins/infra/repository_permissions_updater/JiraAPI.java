@@ -8,7 +8,7 @@ public abstract class JiraAPI implements Definition.IssueTracker.JiraComponentSo
 
     public abstract String getComponentId(String componentName) throws IOException;
 
-    public abstract boolean isUserPresent(String username);
+    abstract boolean isUserPresent(String username);
 
     /* Singleton support */
     public static synchronized JiraAPI getInstance() {

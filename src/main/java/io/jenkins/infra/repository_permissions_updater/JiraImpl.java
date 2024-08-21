@@ -100,14 +100,13 @@ class JiraImpl extends JiraAPI {
     }
 
     @Override
-    public boolean isUserPresent(final String username) {
+    boolean isUserPresent(final String username) {
         return userMapping.computeIfAbsent(username, this::isUserPresentInternal);
     }
     @SuppressFBWarnings({"URLCONNECTION_SSRF_FD"})
     private boolean isUserPresentInternal(final String username) throws RuntimeException {
         if (!USERNAME_REGEX.matcher(username).matches()) {
-            LOGGER.warn(String.format("Rejecting user name for Jira lookup: %s", username));
-            return false;
+            throw new RuntimeException(String.format("Rejecting user name for Jira lookup: %s", username));
         }
 
         LOGGER.info("Checking whether user exists in Jira: {}", username);
