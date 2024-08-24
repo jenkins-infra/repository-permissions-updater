@@ -1,0 +1,7 @@
+---
+name: "security3430-workaround"
+github: "jenkinsci-cert/SECURITY-3430"
+paths:
+  - "io/jenkins/security/security3430-workaround"
+developers:
+  - "@security"

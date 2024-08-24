@@ -5,7 +5,6 @@ paths:
   - "io/jenkins/plugins/sqlserver-api"
 developers:
   - "cnhttpd"
-  - "jonesbusy"
 issues:
   - github: *GH
 cd:
