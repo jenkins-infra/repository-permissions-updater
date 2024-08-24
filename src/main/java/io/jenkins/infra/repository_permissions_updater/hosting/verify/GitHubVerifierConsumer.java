@@ -1,26 +1,29 @@
-package io.jenkins.infra.repository_permissions_updater.hosting;
+package io.jenkins.infra.repository_permissions_updater.hosting.verify;
+
+import io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig;
+import io.jenkins.infra.repository_permissions_updater.hosting.model.HostingRequest;
+import io.jenkins.infra.repository_permissions_updater.hosting.model.VerificationMessage;
+import org.apache.commons.lang3.StringUtils;
+import org.kohsuke.github.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import org.apache.commons.lang3.StringUtils;
-import org.kohsuke.github.GHContent;
-import org.kohsuke.github.GHLicense;
-import org.kohsuke.github.GHRepository;
-import org.kohsuke.github.GHUser;
-import org.kohsuke.github.GitHub;
 
-import static java.util.regex.Pattern.CASE_INSENSITIVE;
+public final class GitHubVerifierConsumer implements VerifierConsumer {
 
-public class GitHubVerifier implements Verifier {
+    private final GitHub gitHub;
+
+    public GitHubVerifierConsumer() throws IOException {
+        gitHub = GitHub.connect();
+    }
+
     @Override
-    public void verify(HostingRequest request, HashSet<VerificationMessage> hostingIssues) throws IOException {
-        GitHub github = GitHub.connect();
-        String forkFrom = request.getRepositoryUrl();
-        List<String> users = request.getGithubUsers();
+    public void accept(HostingRequest request, HashSet<VerificationMessage> hostingIssues) {
+
+        String forkFrom = request.repositoryUrl();
+        List<String> users = request.githubUsers();
 
         if (users != null && !users.isEmpty()) {
             List<String> invalidUsers = new ArrayList<>();
@@ -30,7 +33,7 @@ public class GitHubVerifier implements Verifier {
                 }
 
                 try {
-                    GHUser ghUser = github.getUser(user.trim());
+                    GHUser ghUser = this.gitHub.getUser(user.trim());
                     if (ghUser == null || !ghUser.getType().equalsIgnoreCase("user")) {
                         invalidUsers.add(user.trim());
                     }
@@ -47,7 +50,7 @@ public class GitHubVerifier implements Verifier {
         if (StringUtils.isNotBlank(forkFrom)) {
             forkFrom = forkFrom.trim();
 
-            Matcher m = Pattern.compile("https?://github\\.com/(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
+            var m = HostingConfig.GITHUB_FORK_PATTERN.matcher(forkFrom);
             if (m.matches()) {
                 String owner = m.group(1);
                 String repoName = m.group(2);
@@ -64,9 +67,9 @@ public class GitHubVerifier implements Verifier {
 
                 GHRepository repo = null;
                 try {
-                    repo = github.getRepository(owner + "/" + repoName);
+                    repo = gitHub.getRepository(owner + "/" + repoName);
                 } catch (Exception e) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, forkFrom));
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("INVALID_FORK_FROM"), forkFrom));
                 }
 
                 if (repo != null) {
@@ -115,7 +118,7 @@ public class GitHubVerifier implements Verifier {
                     }
                 }
             } else {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, forkFrom));
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, HostingConfig.RESOURCE_BUNDLE.getString("INVALID_FORK_FROM"), forkFrom));
             }
         }
     }

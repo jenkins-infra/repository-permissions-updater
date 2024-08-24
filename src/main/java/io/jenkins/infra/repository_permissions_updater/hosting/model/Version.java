@@ -1,21 +1,21 @@
-package io.jenkins.infra.repository_permissions_updater.hosting;
+package io.jenkins.infra.repository_permissions_updater.hosting.model;
 
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
-public class Version implements Comparable {
+public class Version implements Comparable<Version> {
 
     private final int major;
     private final int minor;
-    private final int micro;
+    private final int patch;
     private static final String SEPARATOR = ".";
 
     public static final Version EMPTY = new Version(0, 0, 0);
 
-    public Version(int major, int minor, int micro) {
+    public Version(int major, int minor, int patch) {
         this.major = major;
         this.minor = minor;
-        this.micro = micro;
+        this.patch = patch;
         validate();
     }
 
@@ -30,7 +30,7 @@ public class Version implements Comparable {
     public Version(String version) {
         int major;
         int minor = -1;
-        int micro = -1;
+        int patch = -1;
 
         try {
             StringTokenizer st = new StringTokenizer(version, SEPARATOR, true);
@@ -42,7 +42,7 @@ public class Version implements Comparable {
 
                 if (st.hasMoreTokens()) {
                     st.nextToken(); // consume delimiter
-                    micro = Integer.parseInt(st.nextToken());
+                    patch = Integer.parseInt(st.nextToken());
 
                     if (st.hasMoreTokens()) {
                         throw new IllegalArgumentException("invalid format");
@@ -55,7 +55,7 @@ public class Version implements Comparable {
 
         this.major = major;
         this.minor = minor;
-        this.micro = micro;
+        this.patch = patch;
         validate();
     }
 
@@ -64,7 +64,7 @@ public class Version implements Comparable {
             throw new IllegalArgumentException("negative major");
         }
 
-        if (minor < 0 && micro >= 0) {
+        if (minor < 0 && patch >= 0) {
             throw new IllegalArgumentException("negative minor with micro provided");
         }
     }
@@ -90,21 +90,21 @@ public class Version implements Comparable {
         return Math.max(minor, 0);
     }
 
-    public int getMicro() {
-        return Math.max(micro, 0);
+    public int getPatch() {
+        return Math.max(patch, 0);
     }
 
     public String toString() {
-        if (major >= 0 && minor >= 0 && micro < 0) {
+        if (major >= 0 && minor >= 0 && patch < 0) {
             return major + SEPARATOR + minor;
         } else if (major >= 0 && minor < 0) {
             return "" + major;
         }
-        return major + SEPARATOR + minor + SEPARATOR + micro;
+        return major + SEPARATOR + minor + SEPARATOR + patch;
     }
 
     public int hashCode() {
-        return (major << 24) + (minor << 16) + (micro << 8);
+        return (major << 24) + (minor << 16) + (patch << 8);
     }
 
     public boolean equals(Object object) {
@@ -118,18 +118,16 @@ public class Version implements Comparable {
 
         Version other = (Version) object;
         return (major == other.major) && (minor == other.minor)
-                && (micro == other.micro);
+                && (patch == other.patch);
     }
 
-    public int compareTo(Object object) {
-        if (object == this) {
+    public int compareTo(Version other) {
+        if (other == this) {
             return 0;
         }
 
         int localMinor = Math.max(minor, 0);
-        int localMicro = Math.max(micro, 0);
-
-        Version other = (Version) object;
+        int localMicro = Math.max(patch, 0);
 
         int result = major - other.major;
         if (result != 0) {
@@ -141,7 +139,7 @@ public class Version implements Comparable {
             return result;
         }
 
-        result = localMicro - other.getMicro();
+        result = localMicro - other.getPatch();
         return result;
     }
 }
