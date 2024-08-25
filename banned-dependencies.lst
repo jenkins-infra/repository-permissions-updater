@@ -17,6 +17,10 @@ org.ow2.asm:asm;io.jenkins.plugins:asm-api
 net.bytebuddy:byte-buddy;io.jenkins.plugins:byte-buddy-api
 com.github.ben-manes.caffeine:caffeine;io.jenkins.plugins:caffeine-api
 com.github.mwiede:jsch;org.jenkins-ci.plugins:jsch
+org.bouncycastle:bcpkix-jdk18on;org.jenkins-ci.plugins:bouncycastle-api
+org.bouncycastle:bcprov-jdk18on;org.jenkins-ci.plugins:bouncycastle-api
+org.bouncycastle:bcutil-jdk18on;org.jenkins-ci.plugins:bouncycastle-api
+
 
 org.apache.httpcomponents:httpclient;org.jenkins-ci.plugins:apache-httpcomponents-client-4-api
 org.apache.httpcomponents.client5:httpclient5;io.jenkins.plugins:apache-httpcomponents-client-5-api
