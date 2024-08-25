@@ -1,12 +1,19 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
@@ -14,7 +21,6 @@ import org.apache.maven.model.License;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.Parent;
 import org.apache.maven.model.Repository;
-import org.apache.maven.model.Scm;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
 import org.kohsuke.github.GHContent;
@@ -40,6 +46,8 @@ public class MavenVerifier implements BuildSystemVerifier {
     public static final String MISSING_POM_XML = "No pom.xml found in root of project, if you are using a different build system, or this is not a plugin, you can disregard this message";
 
     public static final String SHOULD_BE_IO_JENKINS_PLUGINS = "The &lt;groupId&gt; from the pom.xml should be `io.jenkins.plugins` instead of `%s`";
+
+    public static final String DEPENDENCY_SHOULD_USE_API_PLUGIN = "The dependency `%s` should be replaced with a dependency to the api plugin `%s` %s";
 
     @Override
     public void verify(HostingRequest issue, HashSet<VerificationMessage> hostingIssues) throws IOException {
@@ -70,6 +78,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                             checkRepositories(model, hostingIssues);
                             checkPluginRepositories(model, hostingIssues);
                             checkSoftwareConfigurationManagementField(model, hostingIssues);
+                            checkDependencies(model, hostingIssues);
                         } catch(Exception e) {
                             LOGGER.error("Failed looking at pom.xml", e);
                             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
@@ -99,6 +108,7 @@ public class MavenVerifier implements BuildSystemVerifier {
 
             String groupId = model.getGroupId();
             String artifactId = model.getArtifactId();
+
             if(StringUtils.isNotBlank(artifactId)) {
                 if(StringUtils.isNotBlank(forkTo) && !artifactId.equals(forkTo.replace("-plugin", ""))) {
                     hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The 'artifactId' from the pom.xml (`%s`) is incorrect, it should be `%s` ('New Repository Name' field with \"-plugin\" removed)", artifactId, (forkTo.replace("-plugin", "")).toLowerCase()));
@@ -283,6 +293,46 @@ public class MavenVerifier implements BuildSystemVerifier {
             if (model.getScm().getTag() == null) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You must specify a `<tag>` tag in your `<scm>` block in your pom.xml. You can use this sample: `<tag>${scmTag}</tag>`"));
             }
+        }
+    }
+    private void checkDependencies(Model model, HashSet<VerificationMessage> hostingIssues) {
+        Map<String, String> bd = getBannedDependencies();
+        model.getDependencies().forEach(d -> {
+            String dep = d.getGroupId() + ":" + d.getArtifactId();
+            String scope = d.getScope();
+            if (scope == null) {
+                scope = "compile";
+            }
+            if (scope.equals("compile") && bd.containsKey(dep)) {
+                String[] alt = bd.get(dep).split(";", 2);
+                String comment = "";
+                if (alt.length > 1) {
+                    comment = ". " + alt[1];
+                }
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, DEPENDENCY_SHOULD_USE_API_PLUGIN, dep, alt[0], comment));
+            }
+        });
+    }
+
+    private Map<String, String> getBannedDependencies() {
+        Map<String, String> bannedDependencies = new HashMap<>();
+        try (InputStream is = new FileInputStream("banned-dependencies.lst"); BufferedReader reader = new BufferedReader(new InputStreamReader(Objects.requireNonNull(is), StandardCharsets.UTF_8))) {
+
+            String line = reader.readLine();
+            while (line != null) {
+                line = line.trim();
+                if (!line.startsWith("#") && line.length() > 0) {
+                    String[] parts = line.split(";", 2);
+                    if (parts.length < 2) {
+                        continue;
+                    }
+                    bannedDependencies.put(parts[0], parts[1]);
+                }
+                line = reader.readLine();
+            }
+            return bannedDependencies;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
