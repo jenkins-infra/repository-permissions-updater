@@ -28,8 +28,15 @@ public class TeamSyncExecutor {
         for (String yamlFilePath : args) {
             try {
                 logger.info("Processing team configuration for file: " + yamlFilePath);
-                GithubTeamDefinition team = YamlTeamLoader.loadTeam(yamlFilePath);
-                teamUpdater.updateTeam(team);
+                Object team = YamlTeamManager.loadTeam(yamlFilePath);
+
+                if (team instanceof RepoTeamDefinition) {
+                    teamUpdater.updateTeam((RepoTeamDefinition) team);
+                } else if (team instanceof SpecialTeamDefinition) {
+                    teamUpdater.updateSpecialTeam((SpecialTeamDefinition) team);
+                } else {
+                    throw new IllegalArgumentException("Unsupported team definition type.");
+                }
             } catch (Exception e) {
                 logger.error("Failed to update team for file " + yamlFilePath + ": " + e.getMessage(), e);
             }
