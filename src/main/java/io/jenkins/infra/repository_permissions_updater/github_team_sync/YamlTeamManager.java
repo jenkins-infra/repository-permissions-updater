@@ -25,12 +25,10 @@ public class YamlTeamManager {
     private static final Path PERMISSIONS_PATH = Paths.get("permissions").toAbsolutePath().normalize();
     private static final Path TEAMS_PATH = Paths.get("teams").toAbsolutePath().normalize();
 
-    private static GitHubService gitHubService;
     private static Path resolvedPath;
     private static Map<String, Object> teamConfig;
 
     public YamlTeamManager(GitHubService gitHubService, String filePath) throws IOException {
-        YamlTeamManager.gitHubService = gitHubService;
         YamlTeamManager.resolvedPath = resolveFilePath(filePath);
         YamlTeamManager.teamConfig = loadYamlConfiguration(YamlTeamManager.resolvedPath);
     }
@@ -139,12 +137,6 @@ public class YamlTeamManager {
         }
 
         return new SpecialTeamDefinition(null, teamName, developers);
-    }
-
-    public static String resolveTeamName(String orgName, String repoName) throws IOException {
-        String potentialTeamName = repoName + " Developers";
-        GHTeam team = gitHubService.getTeamFromRepo(orgName, repoName, potentialTeamName);
-        return team != null ? team.getName() : null;
     }
 
     private static Set<String> extractDevelopers(Map<String, Object> teamConfig) {
