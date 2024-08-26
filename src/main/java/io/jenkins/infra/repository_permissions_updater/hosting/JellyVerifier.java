@@ -65,9 +65,9 @@ public class JellyVerifier implements Verifier {
                         try {
                             Document doc = db.parse(is);
                             Element root = doc.getDocumentElement();
-                            boolean hasIssues = checkStyleElement(root, hostingIssues, jellyFile.getPath());
-                            hasIssues |= checkScriptElement(root, hostingIssues, jellyFile.getPath());
-                            hasIssues |= checkJavaScriptAttributes(root, hostingIssues, jellyFile.getPath());
+                            boolean hasIssues = checkStyleElement(root, hostingIssues, jellyFile.getHtmlUrl());
+                            hasIssues |= checkScriptElement(root, hostingIssues, jellyFile.getHtmlUrl());
+                            hasIssues |= checkJavaScriptAttributes(root, hostingIssues, jellyFile.getHtmlUrl());
                             if (hasIssues) {
                                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.INFO, CSP_HELP));
                             }
