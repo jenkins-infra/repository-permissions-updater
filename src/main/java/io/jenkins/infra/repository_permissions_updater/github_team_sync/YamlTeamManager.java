@@ -4,7 +4,6 @@ import org.kohsuke.github.GHTeam;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.FileInputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -100,10 +99,6 @@ public class YamlTeamManager {
         //  - "user2"
         Set<String> developers = extractDevelopers(teamConfig);
 
-        if (repoTeamName == null || repoTeamName.trim().isEmpty()) {
-            repoTeamName = handleMissingTeamName(orgName, repoName);
-        }
-
         // If developers is not empty, then team name is required
         if ((repoTeamName == null || repoTeamName.trim().isEmpty()) && !developers.isEmpty()) {
             throw new IllegalArgumentException("No valid team name found.");
@@ -146,17 +141,6 @@ public class YamlTeamManager {
         return new SpecialTeamDefinition(null, teamName, developers);
     }
 
-    private static String handleMissingTeamName(String orgName, String repoName) throws IOException {
-        if (FirstRunCheck.isFirstRun()) {
-            String resolvedTeamName = resolveTeamName(orgName, repoName);
-            if (!resolvedTeamName.isEmpty()) {
-                backfillRepoTeamName(resolvedTeamName);
-                return resolvedTeamName;
-            }
-        }
-        return "";
-    }
-
     public static String resolveTeamName(String orgName, String repoName) throws IOException {
         String potentialTeamName = repoName + " Developers";
         GHTeam team = gitHubService.getTeamFromRepo(orgName, repoName, potentialTeamName);
@@ -167,23 +151,6 @@ public class YamlTeamManager {
         List<String> devsList = (List<String>) teamConfig.getOrDefault(
                 "developers", new HashSet<>());
         return new HashSet<>(devsList);
-    }
-
-    public static void backfillRepoTeamName(String repoTeamName) throws IOException {
-        teamConfig.put("repository_team", repoTeamName);
-
-        try (FileWriter writer = new FileWriter(resolvedPath.toFile())) {
-            new Yaml().dump(teamConfig, writer);
-        }
-    }
-
-    public static void backfillAdditionalTeamName(String teamName, Role role) throws IOException {
-        teamConfig.put("repository_team", teamName);
-
-        try (FileWriter writer = new FileWriter(resolvedPath.toFile())) {
-            new Yaml().dump(teamConfig, writer);
-        }
-
     }
 
 

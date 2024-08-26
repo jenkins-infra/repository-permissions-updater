@@ -3,7 +3,6 @@ package io.jenkins.infra.repository_permissions_updater.github_team_sync;
 
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 import org.kohsuke.github.GHOrganization;
@@ -12,7 +11,6 @@ import org.kohsuke.github.GHTeam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static io.jenkins.infra.repository_permissions_updater.github_team_sync.Role.*;
 
 public class TeamUpdater {
     private static final Logger logger = LoggerFactory.getLogger(TeamUpdater.class);
@@ -100,12 +98,11 @@ public class TeamUpdater {
         }
     }
 
-    private void updateAdditionalTeam(
+    public void updateAdditionalTeam(
             GHOrganization org, GHRepository repo, GHTeam repoTeam,
             Set<AdditionalTeamDefinition> additionalTeams) throws IOException {
 
         Set<String> currentTeamMap = gitHubService.getCurrentTeams(repo, repoTeam);
-        boolean isFirstRun = FirstRunCheck.isFirstRun();
 
         Set<String> additionalTeamNames = new HashSet<>();
         // update roles of additional teams from yaml file
@@ -128,12 +125,7 @@ public class TeamUpdater {
 
             if (!additionalTeamNames.contains(currentTeam)) {
                 // backfill team name if it's the first run
-                if (isFirstRun) {
-                    // Note: currently, roles are not handled due to API limitations. Therefore, the role is set to null.
-                    YamlTeamManager.backfillAdditionalTeamName(currentTeam, null);
-                } else {
-                    ghTeam.remove(repo);
-                }
+                ghTeam.remove(repo);
             }
         }
     }
