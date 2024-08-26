@@ -1,6 +1,5 @@
 package io.jenkins.infra.repository_permissions_updater.github_team_sync;
 
-import org.kohsuke.github.GHTeam;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.FileInputStream;
@@ -25,15 +24,15 @@ public class YamlTeamManager {
     private static final Path PERMISSIONS_PATH = Paths.get("permissions").toAbsolutePath().normalize();
     private static final Path TEAMS_PATH = Paths.get("teams").toAbsolutePath().normalize();
 
-    private static Path resolvedPath;
-    private static Map<String, Object> teamConfig;
+    private final Path resolvedPath;
+    private final Map<String, Object> teamConfig;
 
     public YamlTeamManager(GitHubService gitHubService, String filePath) throws IOException {
-        YamlTeamManager.resolvedPath = resolveFilePath(filePath);
-        YamlTeamManager.teamConfig = loadYamlConfiguration(YamlTeamManager.resolvedPath);
+        this.resolvedPath = resolveFilePath(filePath);
+        this.teamConfig = loadYamlConfiguration(this.resolvedPath);
     }
 
-    public static Object loadTeam(String filePath) throws IOException {
+    public Object loadTeam(String filePath) throws IOException {
         Path resolvedPath = resolveFilePath(filePath);
         Map<String, Object> teamConfig = loadYamlConfiguration(resolvedPath);
 
@@ -47,7 +46,7 @@ public class YamlTeamManager {
     }
 
     // Resolves and secures a YAML file path, protecting against path traversal attacks.
-    private static Path resolveFilePath(String filePath) {
+    private Path resolveFilePath(String filePath) {
         Path basePath = filePath.startsWith("permissions/") ? PERMISSIONS_PATH : TEAMS_PATH;
         Path resolvedPath = basePath.resolve(filePath.replaceFirst("^(permissions/|teams/)", "")).normalize();
 
