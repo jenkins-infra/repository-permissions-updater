@@ -44,6 +44,7 @@ public class HostingChecker {
         verifications.add(Triplet.with("GitHub", new GitHubVerifier(), null));
         verifications.add(Triplet.with("Maven", new MavenVerifier(), new FileExistsConditionChecker("pom.xml")));
         verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
+        verifications.add(Triplet.with("Jelly", new JellyVerifier(), null));
 
         final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
