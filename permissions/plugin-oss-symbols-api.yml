@@ -1,0 +1,11 @@
+---
+name: "oss-symbols-api"
+github: &GH "jenkinsci/oss-symbols-api-plugin"
+paths:
+- "io/jenkins/plugins/oss-symbols-api"
+developers:
+- "jonesbusy"
+cd:
+  enabled: true
+issues:
+  - github: *GH
