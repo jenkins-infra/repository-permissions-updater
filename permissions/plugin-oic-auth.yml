@@ -12,3 +12,6 @@ developers:
   - "mdoubez"
 cd:
   enabled: true
+security:
+  contacts:
+    jira: "cloudbees_security_members"
