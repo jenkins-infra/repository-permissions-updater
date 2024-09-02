@@ -7,3 +7,5 @@ developers:
 - "mawinter69"
 issues:
   - github: *GH
+cd:
+  enabled: true
