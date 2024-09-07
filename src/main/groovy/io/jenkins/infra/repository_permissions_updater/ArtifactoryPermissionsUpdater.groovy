@@ -352,7 +352,12 @@ class ArtifactoryPermissionsUpdater {
         new File(apiOutputDir, 'maintainers.index.json').text = maintainers.toPrettyString()
     }
 
-    // TODO It's a really weird decision to have this in the otherwise invocation agnostic standalone tool
+    /**
+     * Uses Groovy's File class to create or overwrite checks-title.txt and checks-details.txt.
+     *
+     * @param errorMessage A message describing the error encountered in the API check.
+     * @param details Additional details about the error or API check.
+     */
     private static void reportChecksApiDetails(String errorMessage, String details) {
         new File('checks-title.txt').text = errorMessage
         new File('checks-details.txt').text = details
