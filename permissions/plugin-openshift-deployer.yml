@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/openshift-deployer"
 developers:
   - "siamaksade"
+cd:
+  enabled: true
