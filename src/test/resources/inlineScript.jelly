@@ -1,6 +1,6 @@
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core">
       <script>
-        console.log("Hello Worls")
+        console.log("Hello World")
       </script>
 </j:jelly>
