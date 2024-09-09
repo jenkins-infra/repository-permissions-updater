@@ -10,5 +10,6 @@ developers:
   - "mbischoff"
   - "surenpi"
   - "mdoubez"
+  - "@cloudbees-developers"
 cd:
   enabled: true

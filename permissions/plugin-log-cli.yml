@@ -9,3 +9,6 @@ paths:
   - "org/jenkins-ci/plugins/log-cli"
 developers:
   - "jglick"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

@@ -8,3 +8,5 @@ paths:
   - "io/jenkins/plugins/unleash"
 developers:
   - "mhoffrog"
+cd:
+  enabled: true
