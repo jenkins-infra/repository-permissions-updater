@@ -15,8 +15,8 @@ public class KnownUsers {
     private static final String ARTIFACTORY_USER_NAMES_URL = System.getProperty("artifactoryUserNamesJsonListUrl", "https://reports.jenkins.io/artifactory-ldap-users-report.json");
     private static final String JIRA_USER_NAMES_URL = System.getProperty("jiraUserNamesJsonListUrl", "https://reports.jenkins.io/jira-users-report.json");
 
-    private static Set<String> knownArtifactoryUsers = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
-    private static Set<String> knownJiraUsers = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
+    private static final Set<String> knownArtifactoryUsers = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
+    private static final Set<String> knownJiraUsers = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
 
     static {
         try {

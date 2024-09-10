@@ -166,9 +166,11 @@ A complete example with two trackers:
 ```yaml
 issues:
   - github: 'jenkinsci/configuration-as-code-plugin' # The preferred issue tracker
-  - jira: 'configuration-as-code-plugin' # A secondary issue tracker is the Jira component 'configuration-as-code-plugin'
+  - jira: '23170' # A secondary issue tracker is the Jira component id 23170 for 'configuration-as-code-plugin'
     report: false # No new issues should be reported here
 ```
+
+Jira component id can be found at: https://issues.jenkins.io/rest/api/2/project/JENKINS/components
 
 When GitHub Issues is used, there would be some duplicated content in the file (between `github` and `issues` entries) which can be resolved by using a YAML reference.
 Example:
