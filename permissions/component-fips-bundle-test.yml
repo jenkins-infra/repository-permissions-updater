@@ -6,3 +6,5 @@ paths:
 developers:
   - "teilo"
   - "olamy"
+cd:
+  enabled: true
