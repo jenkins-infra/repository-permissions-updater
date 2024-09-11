@@ -1,8 +1,8 @@
 ---
-name: "fips-bundle-test"
-github: "jenkinsci/fips-bundle-test"
+name: "lib-fips-bundle-test"
+github: "jenkinsci/lib-fips-bundle-test"
 paths:
-  - "io/jenkins/test/fips/fips-bundle-test"
+  - "io/jenkins/test/fips/lib-fips-bundle-test"
 developers:
   - "teilo"
   - "olamy"
