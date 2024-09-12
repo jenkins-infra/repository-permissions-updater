@@ -120,8 +120,8 @@ class ArtifactoryPermissionsUpdater {
 
         Map<String, Set<TeamDefinition>> teamsByName = loadTeams()
 
-        Map<String, Set<String>> pathsByGithub = new TreeMap()
-        Map<String, List> issueTrackersByPlugin = new TreeMap()
+        Map<String, Set<String>> pathsByGithub = new TreeMap<>()
+        Map<String, List> issueTrackersByPlugin = new TreeMap<>()
         Map<String, List<Definition>> cdEnabledComponentsByGitHub = new TreeMap<>()
         Map<String, List<String>> maintainersByComponent = new HashMap<>()
 
@@ -176,11 +176,11 @@ class ArtifactoryPermissionsUpdater {
                     issueTrackersByPlugin.put(definition.name, definition.issues.collect { tracker ->
                         if (tracker.isJira() || tracker.isGitHubIssues()) {
                             def ret = [type: tracker.getType(), reference: tracker.getReference()]
-                            def viewUrl = tracker.getViewUrl(JiraAPI.getInstance())
+                            def viewUrl = tracker.getViewUrl()
                             if (viewUrl) {
                                 ret += [ viewUrl: viewUrl ]
                             }
-                            def reportUrl = tracker.getReportUrl(JiraAPI.getInstance())
+                            def reportUrl = tracker.getReportUrl()
                             if (reportUrl) {
                                 ret += [ reportUrl: reportUrl ]
                             }
@@ -243,7 +243,7 @@ class ArtifactoryPermissionsUpdater {
                         if (!definition.cd?.exclusive) {
                             users definition.developers.collectEntries { developer ->
                                 def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
-                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
+                                def existsInJira = KnownUsers.existsInJira(developer)
 
                                 if (!existsInArtifactory && !existsInJira) {
                                     reportChecksApiDetails(developer + " needs to log in to Artifactory and Jira",
@@ -287,7 +287,7 @@ class ArtifactoryPermissionsUpdater {
                             }
                         } else {
                             definition.developers.each { developer ->
-                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
+                                def existsInJira = KnownUsers.existsInJira(developer)
 
                                 if (!existsInJira) {
                                     reportChecksApiDetails(developer + " needs to log in to Jira",
