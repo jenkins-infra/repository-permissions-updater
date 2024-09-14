@@ -22,9 +22,9 @@ developers:
   - github: "lemeurherve"
 repository_team: "bom Developers"
 additional_github_teams:
-  - team: "Core"
-    role: "Triage"
   - team: "SIG: UX"
+    role: "Triage"
+  - team: "Core"
     role: "Triage"
   - team: "Core PR Reviewers"
     role: "Triage"

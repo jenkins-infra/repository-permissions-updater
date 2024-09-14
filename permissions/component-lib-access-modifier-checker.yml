@@ -6,7 +6,7 @@ paths:
 developers:
   - ldap: "@core"
 additional_github_teams:
-  - team: "Core"
-    role: "Admin"
   - team: "access-modifier Developers"
+    role: "Admin"
+  - team: "Core"
     role: "Admin"

@@ -18,7 +18,7 @@ cd:
     enabled: true
 repository_team: "sshd-plugin Developers"
 additional_github_teams:
-  - team: "sshd-module Developers"
-    role: "Admin"
   - team: "Core"
     role: "Write"
+  - team: "sshd-module Developers"
+    role: "Admin"

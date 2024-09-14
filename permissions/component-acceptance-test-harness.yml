@@ -30,9 +30,9 @@ cd:
     enabled: true
 repository_team: "acceptance-test-harness Developers"
 additional_github_teams:
+  - team: "DockerHub Admins"
+    role: "Admin"
   - team: "Core"
     role: "Admin"
   - team: "SIG: UX"
-    role: "Admin"
-  - team: "DockerHub Admins"
     role: "Admin"

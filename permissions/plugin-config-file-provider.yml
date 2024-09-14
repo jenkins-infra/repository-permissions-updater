@@ -8,28 +8,18 @@ paths:
 cd:
     enabled: true
 developers:
-<<<<<<< HEAD
   - ldap: "imod"
   - ldap: "egutierrez"
   - ldap: "alecharp"
     github: "alecharp"
   - ldap: "batmat"
     github: "batmat"
-  - ldap: "mramonleon"
   - ldap: "rsandell"
     github: "rsandell"
   - ldap: "jm_meessen"
   - github: "jmMeessen"
   - github: "varyvol"
   - github: "MRamonLeon"
-=======
-  - "imod"
-  - "egutierrez"
-  - "alecharp"
-  - "batmat"
-  - "rsandell"
-  - "jm_meessen"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

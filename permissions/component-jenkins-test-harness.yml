@@ -10,9 +10,9 @@ developers:
   - github: "timja"
 repository_team: "jenkins-test-harness Developers"
 additional_github_teams:
-  - team: "Code Reviewers"
-    role: "Read"
-  - team: "Core"
-    role: "Admin"
   - team: "Core PR Reviewers"
     role: "Triage"
+  - team: "Core"
+    role: "Admin"
+  - team: "Code Reviewers"
+    role: "Read"

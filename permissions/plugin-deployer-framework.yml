@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/deployer-framework"
 developers:
-<<<<<<< HEAD
   - ldap: "jvz"
     github: "jvz"
   - ldap: "batmat"
@@ -14,7 +13,6 @@ developers:
   - ldap: "egutierrez"
   - ldap: "fcojfernandez"
     github: "fcojfernandez"
-  - ldap: "mramonleon"
   - ldap: "rsandell"
     github: "rsandell"
   - ldap: "carroll"
@@ -27,18 +25,6 @@ developers:
   - github: "raul-arabaolaza"
   - github: "varyvol"
   - github: "MRamonLeon"
-=======
-  - "jvz"
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "rsandell"
-  - "carroll"
-  - "olamy"
-  - "teilo"
-  - "rarabaolaza"
-  - "jm_meessen"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

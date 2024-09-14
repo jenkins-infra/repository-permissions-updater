@@ -5,11 +5,15 @@ paths:
   # For the 1.7.x branch which is the only needed one at the moment
   - "com/ning/async-http-client"
 developers:
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "mramonleon"
-  - "rsandell"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
     contacts:
         jira: "cloudbees_security_members"

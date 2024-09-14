@@ -7,20 +7,13 @@ paths:
   - "org/jenkins-ci/plugins/git-client"
   - "org/jenkinsci/plugins/git-client"
 developers:
-<<<<<<< HEAD
   - ldap: "markewaite"
-  - ldap: "mramonleon"
   - ldap: "olamy"
     github: "olamy"
   - ldap: "rsandell"
     github: "rsandell"
   - github: "MarkEWaite"
   - github: "fcojfernandez"
-=======
-  - "markewaite"
-  - "olamy"
-  - "rsandell"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

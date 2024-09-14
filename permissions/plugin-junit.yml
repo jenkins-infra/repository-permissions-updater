@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/junit"
 developers:
-<<<<<<< HEAD
   - ldap: "abayer"
   - ldap: "andresrc"
   - ldap: "jglick"
@@ -20,7 +19,6 @@ developers:
   - ldap: "egutierrez"
   - ldap: "fcojfernandez"
     github: "fcojfernandez"
-  - ldap: "mramonleon"
   - ldap: "rsandell"
     github: "rsandell"
   - ldap: "timja"
@@ -28,20 +26,6 @@ developers:
   - github: "dwnusbaum"
   - github: "varyvol"
   - github: "MRamonLeon"
-=======
-  - "abayer"
-  - "andresrc"
-  - "jglick"
-  - "kohsuke"
-  - "olivergondza"
-  - "wolfs"
-  - "dnusbaum"
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "rsandell"
-  - "timja"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

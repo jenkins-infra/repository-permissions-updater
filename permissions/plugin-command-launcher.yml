@@ -8,16 +8,10 @@ paths:
 cd:
     enabled: true
 developers:
-<<<<<<< HEAD
   - ldap: "jglick"
     github: "jglick"
   - ldap: "oleg_nenashev"
-  - ldap: "mramonleon"
   - github: "oleg-nenashev"
-=======
-  - "jglick"
-  - "oleg_nenashev"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

@@ -8,7 +8,6 @@ paths:
 cd:
     enabled: true
 developers:
-<<<<<<< HEAD
   - ldap: "jglick"
     github: "jglick"
   - ldap: "kohsuke"
@@ -25,7 +24,6 @@ developers:
   - ldap: "bitwiseman"
     github: "bitwiseman"
   - ldap: "carroll"
-  - ldap: "mramonleon"
   - ldap: "olamy"
     github: "olamy"
   - ldap: "teilo"
@@ -33,21 +31,6 @@ developers:
   - github: "dwnusbaum"
   - github: "MRamonLeon"
   - github: "car-roll"
-=======
-  - "jglick"
-  - "kohsuke"
-  - "oleg_nenashev"
-  - "recena"
-  - "dnusbaum"
-  - "rsandell"
-  - "fcojfernandez"
-  - "alecharp"
-  - "batmat"
-  - "bitwiseman"
-  - "carroll"
-  - "olamy"
-  - "teilo"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

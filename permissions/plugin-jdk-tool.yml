@@ -8,23 +8,15 @@ paths:
 cd:
     enabled: true
 developers:
-<<<<<<< HEAD
   - ldap: "dnusbaum"
   - ldap: "jglick"
     github: "jglick"
   - ldap: "oleg_nenashev"
   - ldap: "aheritier"
     github: "aheritier"
-  - ldap: "mramonleon"
   - github: "dwnusbaum"
   - github: "oleg-nenashev"
   - github: "MRamonLeon"
-=======
-  - "dnusbaum"
-  - "jglick"
-  - "oleg_nenashev"
-  - "aheritier"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

@@ -18,7 +18,7 @@ security:
     contacts:
         jira: "cloudbees_security_members"
 additional_github_teams:
-  - team: "convert-to-declarative Developers"
-    role: "Admin"
   - team: "declarative-pipeline-migration-assistant-plugin-developers"
+    role: "Admin"
+  - team: "convert-to-declarative Developers"
     role: "Admin"

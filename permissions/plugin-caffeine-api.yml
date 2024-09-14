@@ -4,14 +4,12 @@ github: &GH "jenkinsci/caffeine-api-plugin"
 paths:
   - "io/jenkins/plugins/caffeine-api"
 developers:
-<<<<<<< HEAD
   - ldap: "teilo"
   - ldap: "rsandell"
     github: "rsandell"
   - ldap: "carroll"
   - ldap: "olamy"
     github: "olamy"
-  - ldap: "mramonleon"
   - ldap: "alecharp"
     github: "alecharp"
   - ldap: "bitwiseman"
@@ -20,14 +18,6 @@ developers:
   - github: "jtnord"
   - github: "MRamonLeon"
   - github: "car-roll"
-=======
-  - "teilo"
-  - "rsandell"
-  - "carroll"
-  - "olamy"
-  - "alecharp"
-  - "bitwiseman"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 issues:
   - jira: 28622
 cd:

@@ -21,7 +21,7 @@ security:
         jira: "jetersen"
 repository_team: "configuration-as-code-plugin Developers"
 additional_github_teams:
-  - team: "jcasc-compatibility-reviewers"
-    role: "Read"
   - team: "configuration-as-code-devtools-project-team"
     role: "Triage"
+  - team: "jcasc-compatibility-reviewers"
+    role: "Read"

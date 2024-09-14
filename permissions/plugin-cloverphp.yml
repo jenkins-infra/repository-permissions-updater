@@ -6,14 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloverphp"
 developers:
-<<<<<<< HEAD
   - ldap: "sogabe"
   - ldap: "batmat"
     github: "batmat"
   - ldap: "bitwiseman"
     github: "bitwiseman"
   - ldap: "carroll"
-  - ldap: "mramonleon"
   - ldap: "olamy"
     github: "olamy"
   - ldap: "rsandell"
@@ -23,12 +21,3 @@ developers:
   - github: "MRamonLeon"
   - github: "car-roll"
 repository_team: "cloverphp-plugin Developers"
-=======
-  - "sogabe"
-  - "batmat"
-  - "bitwiseman"
-  - "carroll"
-  - "olamy"
-  - "rsandell"
-  - "teilo"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde

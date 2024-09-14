@@ -8,14 +8,20 @@ paths:
 cd:
     enabled: true
 developers:
-  - "oleg_nenashev"
-  - "dnusbaum"
-  - "mramonleon"
-  - "carroll"
-  - "teilo"
-  - "rsandell"
-  - "olamy"
-  - "markewaite"
+  - ldap: "oleg_nenashev"
+  - ldap: "dnusbaum"
+  - ldap: "carroll"
+  - ldap: "teilo"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+  - github: "jtnord"
+  - github: "dwnusbaum"
+  - github: "oleg-nenashev"
+  - github: "car-roll"
 security:
     contacts:
         jira: "cloudbees_security_members"

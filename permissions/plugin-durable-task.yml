@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/durable-task"
 developers:
-<<<<<<< HEAD
   - ldap: "jglick"
     github: "jglick"
   - ldap: "kohsuke"
@@ -24,25 +23,10 @@ developers:
   - ldap: "batmat"
   - ldap: "olamy"
     github: "olamy"
-  - ldap: "mramonleon"
   - github: "jtnord"
   - github: "raul-arabaolaza"
   - github: "dwnusbaum"
   - github: "car-roll"
-=======
-  - "jglick"
-  - "kohsuke"
-  - "svanoort"
-  - "abayer"
-  - "dnusbaum"
-  - "rsandell"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
-  - "teilo"
-  - "batmat"
-  - "olamy"
->>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"
