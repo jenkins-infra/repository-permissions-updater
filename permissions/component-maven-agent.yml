@@ -4,6 +4,11 @@ github: "jenkinsci/maven-interceptors"
 paths:
   - "org/jenkins-ci/main/maven/maven-agent"
 developers:
-  - "kutzi"
-  - "olamy"
-  - "aheritier"
+  - ldap: "kutzi"
+  - ldap: "olamy"
+  - ldap: "aheritier"
+    github: "aheritier"
+repository_team: "maven-interceptors Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

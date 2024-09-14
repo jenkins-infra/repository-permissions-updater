@@ -5,4 +5,6 @@ issues:
   - jira: '16056'  # mailcommander-plugin
 paths:
   - "org/jenkins-ci/plugins/mailcommander"
-developers: []
+developers:
+  - github: "sikakura"
+repository_team: "mail-commander-plugin Developers"

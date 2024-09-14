@@ -6,10 +6,15 @@ issues:
 paths:
   - "io/jenkins/plugins/gitlab-api"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "baymac"
-  - "surenpi"
-  - "jetersen"
-  - "jeffpearce"
-  - "justinharringa"
+  - ldap: "baymac"
+    github: "baymac"
+  - ldap: "surenpi"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - ldap: "jeffpearce"
+  - ldap: "justinharringa"
+    github: "justinharringa"
+  - github: "LinuxSuRen"
+repository_team: "gitlab-api-plugin Developers"

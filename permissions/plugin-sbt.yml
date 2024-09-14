@@ -6,6 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sbt"
   - "org/jvnet/hudson/plugins/sbt"
-developers: []
+developers:
+  - github: "gseitz"
+  - github: "uzilan"
+  - github: "jabbrwcky"
+  - github: "wolfg1969"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "sbt-plugin Developers"

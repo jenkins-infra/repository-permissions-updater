@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/custom-view-tabs"
 developers:
-  - "todderz"
+  - ldap: "todderz"
+  - github: "Todderz"
+repository_team: "custom-view-tabs-plugin Developers"

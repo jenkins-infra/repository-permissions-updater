@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloudshell-sandbox"
 developers:
-  - "tomeradmon"
+  - ldap: "tomeradmon"
+  - github: "TomerAdmon"
+repository_team: "cloudshell-sandbox-plugin Developers"

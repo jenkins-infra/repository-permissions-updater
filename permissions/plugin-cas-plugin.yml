@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cas-plugin"
 developers:
-  - "fcrespel"
+  - ldap: "fcrespel"
+    github: "fcrespel"
+repository_team: "cas-plugin Developers"

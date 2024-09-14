@@ -5,6 +5,9 @@ paths:
   - "io/jenkins/tools/maven"
   - "io/jenkins/tools/maven/jellydoc"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

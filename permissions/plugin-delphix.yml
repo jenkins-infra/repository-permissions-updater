@@ -8,7 +8,13 @@ paths:
   - "org/jenkins-ci/plugins/delphix-plugin" # Legacy artifact name, no longer used
   - "org/jenkins-ci/plugins/delphix"
 developers:
-  - "ankit_patil"
-  - "arunskurian"
-  - "n_mathison_delphix"
-  - "elima_sugunan"
+  - ldap: "ankit_patil"
+  - ldap: "arunskurian"
+    github: "arunskurian"
+  - ldap: "n_mathison_delphix"
+  - ldap: "elima_sugunan"
+  - github: "Uddipaan-Hazarika"
+  - github: "elima-sugunan"
+  - github: "ankit-patil-hubs"
+  - github: "nick-mathison"
+repository_team: "delphix-plugin Developers"

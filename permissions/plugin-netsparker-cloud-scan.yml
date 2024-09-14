@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/netsparker-cloud-scan"
 developers:
-  - "netsparker"
+  - ldap: "netsparker"

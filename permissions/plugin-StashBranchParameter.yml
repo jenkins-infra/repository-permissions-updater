@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/StashBranchParameter"
 developers:
-  - "eernie"
+  - ldap: "eernie"

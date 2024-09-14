@@ -5,4 +5,6 @@ issues:
   - jira: '17571'  # fxcop-runner-plugin
 paths:
   - "org/jenkins-ci/plugins/fxcop-runner"
-developers: []
+developers:
+  - github: "yasu-s"
+repository_team: "fxcop-runner-plugin Developers"

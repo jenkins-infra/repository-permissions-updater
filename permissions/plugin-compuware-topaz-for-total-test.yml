@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/compuware/jenkins/compuware-topaz-for-total-test"
 developers:
-  - "cpwr_jenkins"
+  - ldap: "cpwr_jenkins"
+  - github: "efhjnw0"
+  - github: "vzamoragbmc"
+repository_team: "compuware-topaz-for-total-test-plugin Developers"

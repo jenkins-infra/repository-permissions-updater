@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/batch-task"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "lacostej"
+  - ldap: "lacostej"
+    github: "lacostej"
+  - github: "fbelzunc"
+repository_team: "batch-task-plugin Developers"

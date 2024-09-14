@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/view26"
 developers:
-  - "ajayep"
-  - "aneeshiad"
+  - ldap: "ajayep"
+    github: "ajayep"
+  - ldap: "aneeshiad"
+    github: "aneeshiad"
+repository_team: "view26-plugin Developers"

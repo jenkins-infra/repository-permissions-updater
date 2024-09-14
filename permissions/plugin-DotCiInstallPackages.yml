@@ -3,4 +3,4 @@ name: "DotCiInstallPackages"
 paths:
   - "com/groupon/jenkins/DotCiInstallPackages"
 developers:
-  - "surya548"
+  - ldap: "surya548"

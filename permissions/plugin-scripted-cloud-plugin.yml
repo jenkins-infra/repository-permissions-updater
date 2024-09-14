@@ -5,4 +5,7 @@ issues:
   - jira: '17453'  # scripted-cloud-plugin
 paths:
   - "org/jenkins-ci/plugins/scripted-cloud-plugin"
-developers: []
+developers:
+  - github: "hisatti77"
+  - github: "feoff3"
+repository_team: "scripted-cloud-plugin Developers"

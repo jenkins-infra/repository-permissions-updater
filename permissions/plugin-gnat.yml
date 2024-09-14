@@ -7,3 +7,4 @@ paths:
   - "com/thalesgroup/jenkins-ci/plugins/gnat"
   - "org/jenkins-ci/plugins/gnat"
 developers: []
+repository_team: "gnat-plugin Developers"

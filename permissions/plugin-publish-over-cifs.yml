@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/publish-over-cifs"
 developers:
-  - "patrickw"
-  - "gmcdonald"
+  - ldap: "patrickw"
+  - ldap: "gmcdonald"
+    github: "gmcdonald"
+  - github: "bap2000"
+  - github: "blakmajk"
+repository_team: "publish-over-cifs-plugin Developers"

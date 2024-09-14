@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cons3rt"
 developers:
-  - "cons3rt"
+  - ldap: "cons3rt"
+  - github: "paulojohnj"
+repository_team: "cons3rt-plugin Developers"

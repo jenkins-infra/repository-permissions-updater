@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkinsci/plugins/change-assembly-version-plugin"
 developers:
-  - "lkobus"
+  - ldap: "lkobus"
+    github: "lkobus"
+  - github: "slide"
+  - github: "sankethpb"
+repository_team: "change-assembly-version-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/file-changes-build-strategy"
 developers:
-  - "michelzanini"
+  - ldap: "michelzanini"
+    github: "michelzanini"
+repository_team: "file-changes-build-strategy-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vmware-vrealize-orchestrator"
 developers:
-  - "agovindaraju"
+  - ldap: "agovindaraju"
+    github: "agovindaraju"
+repository_team: "vmware-vrealize-orchestrator-plugin Developers"

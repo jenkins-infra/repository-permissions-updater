@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/openshift-deployer"
 developers:
-  - "siamaksade"
+  - ldap: "siamaksade"

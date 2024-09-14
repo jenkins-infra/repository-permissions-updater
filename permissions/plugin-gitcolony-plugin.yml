@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/gitcolony/jenkins/gitcolony-plugin"
 developers:
-  - "mfocaraccio"
+  - ldap: "mfocaraccio"
+    github: "mfocaraccio"
+repository_team: "gitcolony-plugin Developers"

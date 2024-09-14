@@ -7,6 +7,12 @@ paths:
   - "org/jenkins-ci/plugins/subversion"
   - "org/jvnet/hudson/plugins/subversion"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "didiez"
+  - ldap: "didiez"
+    github: "didiez"
+  - github: "jglick"
+  - github: "kuisathaverat"
+  - github: "theKBro"
+  - github: "timja"
+repository_team: "subversion-plugin Developers"

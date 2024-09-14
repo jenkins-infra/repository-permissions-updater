@@ -5,4 +5,6 @@ issues:
   - jira: '16091'  # assembla-plugin
 paths:
   - "org/jenkins-ci/plugins/assembla"
-developers: []
+developers:
+  - github: "lucamilanesio"
+repository_team: "assembla-plugin Developers"

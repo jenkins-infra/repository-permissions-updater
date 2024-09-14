@@ -6,4 +6,6 @@ issues:
 paths:
   - "sp/sd/nexus-artifact-uploader"
 developers:
-  - "pskumar448"
+  - ldap: "pskumar448"
+    github: "pskumar448"
+repository_team: "nexus-artifact-uploader-plugin Developers"

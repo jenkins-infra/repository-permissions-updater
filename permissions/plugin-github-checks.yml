@@ -7,8 +7,12 @@ issues:
 paths:
   - "io/jenkins/plugins/github-checks"
 developers:
-  - "xiongkezhi"
-  - "timja"
-  - "drulli"
+  - ldap: "xiongkezhi"
+  - ldap: "timja"
+    github: "timja"
+  - ldap: "drulli"
+  - github: "uhafner"
+  - github: "XiongKezhi"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "github-checks-plugin Developers"

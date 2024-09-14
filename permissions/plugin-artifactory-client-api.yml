@@ -2,10 +2,12 @@
 name: "artifactory-client-api"
 github: &GH "jenkinsci/artifactory-client-api-plugin"
 paths:
-- "io/jenkins/plugins/artifactory-client-api"
+  - "io/jenkins/plugins/artifactory-client-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "artifactory-client-api-plugin Developers"

@@ -5,4 +5,6 @@ issues:
   - jira: '17636'  # mongodb-document-upload-plugin
 paths:
   - "org/jenkins-ci/plugins/mongodb-document-upload"
-developers: []
+developers:
+  - github: "aluetjen"
+repository_team: "mongodb-document-upload-plugin Developers"

@@ -4,4 +4,6 @@ github: "jenkinsci/rpi-build-status-plugin"
 paths:
   - "net/sleepymouse/jenkins/plugins/rpi-build-status"
 developers:
-  - "havelaptopwillcode"
+  - ldap: "havelaptopwillcode"
+  - github: "ldirz80"
+repository_team: "rpi-build-status-plugin Developers"

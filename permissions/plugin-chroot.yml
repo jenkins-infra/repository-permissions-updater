@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/chroot"
 developers:
-  - "rmohr"
+  - ldap: "rmohr"
+    github: "rmohr"
+repository_team: "chroot-plugin Developers"

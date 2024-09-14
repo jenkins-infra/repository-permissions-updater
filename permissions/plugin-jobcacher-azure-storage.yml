@@ -2,10 +2,12 @@
 name: "jobcacher-azure-storage"
 github: &GH "jenkinsci/jobcacher-azure-storage-plugin"
 paths:
-- "io/jenkins/plugins/jobcacher-azure-storage"
+  - "io/jenkins/plugins/jobcacher-azure-storage"
 developers:
-- "timja"
+  - ldap: "timja"
+    github: "timja"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *GH
+repository_team: "jobcacher-azure-storage-plugin Developers"

@@ -4,9 +4,12 @@ github: &GH "jenkinsci/upload-build-to-sofy-plugin"
 paths:
   - "io/jenkins/plugins/upload-build-to-sofy"
 developers:
-  - "sofydevelopers"
+  - ldap: "sofydevelopers"
+  - github: "SOFYDEVELOPER"
+  - github: "Ayeshasaifsofy"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 issues:
   - jira: 28721
+repository_team: "upload-build-to-sofy-plugin Developers"

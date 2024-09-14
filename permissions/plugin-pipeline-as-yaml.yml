@@ -7,8 +7,13 @@ issues:
 paths:
   - "io/jenkins/plugins/pipeline-as-yaml"
 developers:
-  - "aytuncbeken"
-  - "oleg_nenashev"
-  - "slide_o_mix"
+  - ldap: "aytuncbeken"
+    github: "aytuncbeken"
+  - ldap: "oleg_nenashev"
+  - ldap: "slide_o_mix"
+  - github: "slide"
+  - github: "jonesbusy"
+  - github: "oleg-nenashev"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pipeline-as-yaml-plugin Developers"

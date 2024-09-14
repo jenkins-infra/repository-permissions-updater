@@ -6,5 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/build-health-cache-updater"
 developers:
-  - "rsandell"
-  - "egutierrez"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "egutierrez"
+  - github: "jenkinsadmin"
+  - github: "varyvol"
+repository_team: "build-health-cache-updater-plugin Developers"

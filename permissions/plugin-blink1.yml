@@ -5,4 +5,6 @@ issues:
   - jira: '17448'  # blink1-plugin
 paths:
   - "org/jenkins-ci/plugins/blink1"
-developers: []
+developers:
+  - github: "maripo"
+repository_team: "blink1-plugin Developers"

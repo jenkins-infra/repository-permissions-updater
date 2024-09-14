@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/unity3d-plugin"
 developers:
-  - "bobdu"
+  - ldap: "bobdu"
+  - github: "BobDu"
+repository_team: "unity3d-plugin Developers"

@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/mixing-security-realm"
 developers:
-  - "promissing"
+  - ldap: "promissing"
+  - github: "wenjunxiao"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "mixing-security-realm-plugin Developers"

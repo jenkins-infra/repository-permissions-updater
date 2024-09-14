@@ -4,6 +4,8 @@ github: &GH "jenkinsci/enhanced-metrics-plugin"
 paths:
   - "io/jenkins/plugins/enhanced-metrics"
 developers:
-  - "aytuncbeken"
+  - ldap: "aytuncbeken"
+    github: "aytuncbeken"
 issues:
   - github: *GH
+repository_team: "enhanced-metrics-plugin Developers"

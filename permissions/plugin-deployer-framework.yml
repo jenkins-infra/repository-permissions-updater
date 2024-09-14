@@ -6,19 +6,29 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/deployer-framework"
 developers:
-  - "jvz"
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "mramonleon"
-  - "rsandell"
-  - "carroll"
-  - "olamy"
-  - "teilo"
-  - "rarabaolaza"
-  - "jm_meessen"
+  - ldap: "jvz"
+    github: "jvz"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "mramonleon"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "teilo"
+  - ldap: "rarabaolaza"
+  - ldap: "jm_meessen"
+  - github: "jtnord"
+  - github: "raul-arabaolaza"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "deployer-framework-plugin Developers"

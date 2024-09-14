@@ -8,8 +8,15 @@ paths:
   - "org/jenkins-ci/plugins/jira"
   - "org/jvnet/hudson/plugins/jira"
 developers:
-  - "warden"
-  - "olamy"
+  - ldap: "warden"
+  - ldap: "olamy"
+    github: "olamy"
+  - github: "rantoniuk"
+  - github: "artkoshelev"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "jira-plugin Developers"
+additional_github_teams:
+  - team: "jira-plugin-admin"
+    role: "Admin"

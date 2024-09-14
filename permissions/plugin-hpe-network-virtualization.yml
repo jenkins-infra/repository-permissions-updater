@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hpe-network-virtualization"
 developers:
-  - "itay_karo_hpe"
+  - ldap: "itay_karo_hpe"
+  - github: "itayka"
+repository_team: "hpe-network-virtualization-plugin Developers"

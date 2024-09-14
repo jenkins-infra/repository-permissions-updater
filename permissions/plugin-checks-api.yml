@@ -7,12 +7,16 @@ issues:
 paths:
   - "io/jenkins/plugins/checks-api"
 developers:
-  - "xiongkezhi"
-  - "timja"
-  - "drulli"
+  - ldap: "xiongkezhi"
+  - ldap: "timja"
+    github: "timja"
+  - ldap: "drulli"
+  - github: "uhafner"
+  - github: "XiongKezhi"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "checks-api-plugin Developers"

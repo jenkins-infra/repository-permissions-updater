@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ivytrigger"
 developers:
-  - "gbois"
-  - "bbergquist"
-  - "stealthdj"
+  - ldap: "gbois"
+  - ldap: "bbergquist"
+  - ldap: "stealthdj"
+  - github: "TonyNoble"
+repository_team: "ivytrigger-plugin Developers"

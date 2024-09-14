@@ -4,4 +4,7 @@ github: "jenkinsci/build-configurator-plugin"
 paths:
   - "com/amcbridge/build-configurator-parent"
 developers:
-  - "amcbridgedevteam"
+  - ldap: "amcbridgedevteam"
+  - github: "AMCBridgeDevTeam"
+  - github: "roman-bilyi"
+repository_team: "build-configurator-plugin Developers"

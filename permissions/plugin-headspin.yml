@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/headspin"
 developers:
-  - "headspin"
+  - ldap: "headspin"
+  - github: "songsb13"
+repository_team: "headspin-plugin Developers"

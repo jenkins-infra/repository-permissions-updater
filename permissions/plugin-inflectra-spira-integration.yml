@@ -6,4 +6,8 @@ issues:
 paths:
   - "com/inflectra/spiratest/plugins/inflectra-spira-integration"
 developers:
-  - "inflectra"
+  - ldap: "inflectra"
+  - github: "simonhbor"
+  - github: "adammarksandman"
+  - github: "sbauer18"
+repository_team: "inflectra-spira-integration-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/ruby-plugins/pyenv"
 developers:
-  - "yyuu"
+  - ldap: "yyuu"
+    github: "yyuu"
+repository_team: "pyenv-plugin Developers"

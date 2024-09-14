@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/servicenow-cicd"
 developers:
-  - "chiarnglin"
+  - ldap: "chiarnglin"
+  - github: "chiarng"
+  - github: "kamilgo"
+repository_team: "servicenow-cicd-plugin Developers"

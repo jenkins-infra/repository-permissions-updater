@@ -3,4 +3,4 @@ name: "jenkinspider"
 paths:
   - "org/jenkins-ci/ruby-plugins/jenkinspider"
 developers:
-  - "nbugash"
+  - ldap: "nbugash"

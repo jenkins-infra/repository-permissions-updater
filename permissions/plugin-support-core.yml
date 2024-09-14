@@ -6,18 +6,26 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/support-core"
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "schristou"
-  - "batmat"
-  - "owood"
-  - "escoem"
-  - "dnusbaum"
-  - "egutierrez"
-  - "mramonleon"
-  - "allan_burdajewicz"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "schristou"
+  - ldap: "batmat"
+  - ldap: "owood"
+  - ldap: "escoem"
+    github: "escoem"
+  - ldap: "dnusbaum"
+  - ldap: "egutierrez"
+  - ldap: "mramonleon"
+  - ldap: "allan_burdajewicz"
+  - github: "dwnusbaum"
+  - github: "svanoort"
+  - github: "varyvol"
+  - github: "Dohbedoh"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "support-core-plugin Developers"

@@ -6,9 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/basic-branch-build-strategies"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "rsandell"
-  - "bitwiseman"
-  - "jack_zhang"
-  - "markewaite"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "bitwiseman"
+  - ldap: "jack_zhang"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+  - github: "zhan9san"
+repository_team: "basic-branch-build-strategies-plugin Developers"

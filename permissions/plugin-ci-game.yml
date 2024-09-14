@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/ci-game"
   - "org/jvnet/hudson/plugins/ci-game"
 developers:
-  - "cappuccino"
+  - ldap: "cappuccino"
+repository_team: "ci-game-plugin Developers"

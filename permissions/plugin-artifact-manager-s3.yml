@@ -6,12 +6,16 @@ issues:
 paths:
   - "io/jenkins/plugins/artifact-manager-s3"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "csanchez"
-  - "oleg_nenashev"
-  - "@cloudbees-developers"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "csanchez"
+  - ldap: "oleg_nenashev"
+  - ldap: "@cloudbees-developers"
+  - github: "kuisathaverat"
+  - github: "davidcurrie"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "artifact-manager-s3-plugin Developers"

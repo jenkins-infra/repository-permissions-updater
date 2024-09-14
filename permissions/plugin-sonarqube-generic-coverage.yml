@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/sonarqube-generic-coverage"
 developers:
-  - "cizezsy"
+  - ldap: "cizezsy"
+    github: "cizezsy"
+repository_team: "sonarqube-generic-coverage-plugin Developers"

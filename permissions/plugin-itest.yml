@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/itest"
 developers:
-  - "cwhitty"
-  - "spirentitestdevter"
+  - ldap: "cwhitty"
+    github: "cwhitty"
+  - ldap: "spirentitestdevter"
+repository_team: "itest-plugin Developers"

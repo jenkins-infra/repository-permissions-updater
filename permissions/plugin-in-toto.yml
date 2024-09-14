@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/in-toto"
 developers:
-  - "SantiagoTorres"
+  - ldap: "SantiagoTorres"
+    github: "SantiagoTorres"
+repository_team: "in-toto-plugin Developers"

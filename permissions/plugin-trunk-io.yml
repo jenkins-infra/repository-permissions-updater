@@ -2,8 +2,10 @@
 name: "trunk-io"
 github: &GH "jenkinsci/trunk-io-plugin"
 paths:
-- "io/jenkins/plugins/trunk-io"
+  - "io/jenkins/plugins/trunk-io"
 developers:
-- "zaycev"
+  - ldap: "zaycev"
+    github: "zaycev"
 issues:
   - github: *GH
+repository_team: "trunk-io-plugin Developers"

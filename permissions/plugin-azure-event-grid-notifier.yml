@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-event-grid-notifier"
 developers:
-  - "torosent"
+  - ldap: "torosent"
+    github: "torosent"
+repository_team: "azure-event-grid-notifier-plugin Developers"

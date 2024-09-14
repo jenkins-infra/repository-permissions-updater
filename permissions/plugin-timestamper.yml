@@ -7,8 +7,10 @@ paths:
   - "org/jenkins-ci/plugins/timestamper"
   - "org/jvnet/hudson/plugins/timestamper"
 developers:
-  - "basil"
-  - "stevengbrown"
+  - ldap: "basil"
+    github: "basil"
+  - ldap: "stevengbrown"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "timestamper-plugin Developers"

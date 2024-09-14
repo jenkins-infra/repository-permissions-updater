@@ -6,4 +6,7 @@ issues:
 paths:
   - 'io/jenkins/plugins/sentry'
 developers:
-  - 'rtyler'
+  - ldap: "rtyler"
+additional_github_teams:
+  - team: "sentry-plugin-team Developers"
+    role: "Admin"

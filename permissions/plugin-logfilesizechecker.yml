@@ -6,5 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/logfilesizechecker"
 developers:
-  - "stefanbrausch"
-  - "jochenafuerbacher"
+  - ldap: "stefanbrausch"
+    github: "stefanbrausch"
+  - ldap: "jochenafuerbacher"
+  - github: "mfriedenhagen"
+  - github: "boev"
+  - github: "kstutz"
+  - github: "miklein"
+  - github: "Jochen-A-Fuerbacher"
+repository_team: "logfilesizechecker-plugin Developers"

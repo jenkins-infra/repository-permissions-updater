@@ -6,4 +6,8 @@ issues:
 paths:
   - "com/vmware/devops/wavefront"
 developers:
-  - "ddparapanov"
+  - ldap: "ddparapanov"
+  - github: "jenkinsadmin"
+  - github: "glechev"
+  - github: "dparapanov"
+repository_team: "wavefront-plugin Developers"

@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/clif-performance-testing"
 developers:
-  - "dillense"
+  - ldap: "dillense"
+    github: "dillense"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "clif-performance-testing-plugin Developers"

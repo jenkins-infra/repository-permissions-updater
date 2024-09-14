@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/requests"
 developers:
-  - "trixmot"
+  - ldap: "trixmot"
+    github: "trixmot"
+repository_team: "requests-plugin Developers"

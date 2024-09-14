@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fluentd"
 developers:
-  - "jimilian"
-  - "sschuberth"
+  - ldap: "jimilian"
+  - ldap: "sschuberth"
+    github: "sschuberth"
+  - github: "Jimilian"
+repository_team: "fluentd-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/testrail"
 developers:
-  - "xirsoi"
+  - ldap: "xirsoi"
+    github: "xirsoi"
+repository_team: "testrail-plugin Developers"

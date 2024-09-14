@@ -3,4 +3,4 @@ name: "javamelody-core"
 paths:
   - "net/bull/javamelody/javamelody-core"
 developers:
-  - "evernat"
+  - ldap: "evernat"

@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/recipe"
 developers:
-  - "kohsuke"
+  - ldap: "kohsuke"

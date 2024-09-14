@@ -2,8 +2,10 @@
 name: "commons-compress-api"
 github: &GH "jenkinsci/commons-compress-api-plugin"
 paths:
-- "io/jenkins/plugins/commons-compress-api"
+  - "io/jenkins/plugins/commons-compress-api"
 developers:
-- "basil"
+  - ldap: "basil"
+    github: "basil"
 issues:
   - jira: 29424
+repository_team: "commons-compress-api-plugin Developers"

@@ -6,4 +6,5 @@ issues:
 paths:
   - "testingbot/testingbot"
 developers:
-  - "testingbot"
+  - ldap: "testingbot"
+repository_team: "testingbot-plugin Developers"

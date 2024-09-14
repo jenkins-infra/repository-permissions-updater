@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/qmetry-for-jira-test-management"
 developers:
-  - "priankashah"
+  - ldap: "priankashah"
+  - github: "priyankashah1224"
+  - github: "QMetryDev"
+repository_team: "qmetry-for-jira-test-management-plugin Developers"

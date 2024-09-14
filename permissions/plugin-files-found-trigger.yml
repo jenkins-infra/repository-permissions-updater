@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/files-found-trigger"
   - "org/jvnet/hudson/plugins/files-found-trigger"
 developers:
-  - "stevengbrown"
+  - ldap: "stevengbrown"
+repository_team: "files-found-trigger-plugin Developers"

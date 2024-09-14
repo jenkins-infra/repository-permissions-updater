@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/boxuk/jenkins/jslint"
   - "org/jenkins-ci/plugins/jslint"
-developers: []
+developers:
+  - github: "gavD"
+repository_team: "jslint-jenkins-plugin Developers"

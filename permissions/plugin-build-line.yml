@@ -5,4 +5,6 @@ issues:
   - jira: '18037'  # build-line-plugin
 paths:
   - "org/jenkins-ci/plugins/build-line"
-developers: []
+developers:
+  - github: "k-qing"
+repository_team: "build-line-plugin Developers"

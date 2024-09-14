@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/redmine"
 developers:
-  - "ljader"
+  - ldap: "ljader"
+    github: "ljader"
+repository_team: "redmine-plugin Developers"

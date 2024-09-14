@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/progress-bar-column-plugin"
 developers: []
 cd:
-  enabled: true
+    enabled: true
+repository_team: "progress-bar-column-plugin Developers"

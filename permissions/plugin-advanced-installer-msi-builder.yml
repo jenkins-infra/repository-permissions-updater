@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/advanced-installer-msi-builder"
 developers:
-  - "advinst"
+  - ldap: "advinst"
+    github: "advinst"
+repository_team: "advanced-installer-msi-builder-plugin Developers"

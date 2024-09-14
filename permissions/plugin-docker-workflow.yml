@@ -6,15 +6,18 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/docker-workflow"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "oleg_nenashev"
-  - "abayer"
-  - "svanoort"
-  - "dnusbaum"
-  - "carroll"
-  - "rsandell"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "oleg_nenashev"
+  - ldap: "abayer"
+  - ldap: "svanoort"
+  - ldap: "dnusbaum"
+  - ldap: "carroll"
+  - ldap: "rsandell"
+  - github: "dwnusbaum"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "docker-workflow-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nuget"
 developers:
-  - "greybird"
+  - ldap: "greybird"
+  - github: "baritonehands"
+  - github: "Greybird"
+repository_team: "nuget-plugin Developers"

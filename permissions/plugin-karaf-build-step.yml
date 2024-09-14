@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/karaf-build-step"
 developers:
-  - "jgalego"
+  - ldap: "jgalego"
+  - github: "JGalego"
+repository_team: "karaf-build-step-plugin Developers"

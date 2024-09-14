@@ -2,10 +2,12 @@
 name: "plain-text-console-link"
 github: &GH "jenkinsci/plain-text-console-link-plugin"
 paths:
-- "io/jenkins/plugins/plain-text-console-link"
+  - "io/jenkins/plugins/plain-text-console-link"
 developers:
-- "mawinter69"
+  - ldap: "mawinter69"
+    github: "mawinter69"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "plain-text-console-link-plugin Developers"

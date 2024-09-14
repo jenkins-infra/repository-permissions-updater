@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/matrix-combinations-parameter"
 developers:
-  - "ikedam"
-  - "omer727"
+  - ldap: "ikedam"
+    github: "ikedam"
+  - ldap: "omer727"
+    github: "omer727"
+repository_team: "matrix-combinations-plugin Developers"

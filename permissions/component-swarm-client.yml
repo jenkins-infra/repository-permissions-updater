@@ -5,6 +5,9 @@ paths:
   - "org/jenkins-ci/plugins/swarm-client"
   - "org/jvnet/hudson/plugins/swarm-client"
 developers:
-  - "basil"
-  - "mindjiver"
-  - "oleg_nenashev"
+  - ldap: "basil"
+    github: "basil"
+  - ldap: "mindjiver"
+    github: "mindjiver"
+  - ldap: "oleg_nenashev"
+repository_team: "swarm-plugin Developers"

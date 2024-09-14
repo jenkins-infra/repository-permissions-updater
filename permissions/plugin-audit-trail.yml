@@ -6,9 +6,15 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/audit-trail"
 developers:
-  - "cleclerc"
-  - "olivergondza"
-  - "tsek"
-  - "pierrebtz"
+  - ldap: "cleclerc"
+  - ldap: "olivergondza"
+  - ldap: "tsek"
+  - ldap: "pierrebtz"
+  - github: "PierreBtz"
+  - github: "tomaszsek"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "audit-trail-plugin Developers"
+additional_github_teams:
+  - team: "jcasc-compatibility-reviewers"
+    role: "Read"

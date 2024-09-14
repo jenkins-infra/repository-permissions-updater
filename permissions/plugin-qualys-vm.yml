@@ -6,4 +6,16 @@ issues:
 paths:
   - "com/qualys/plugins/qualys-vm"
 developers:
-  - "qualys"
+  - ldap: "qualys"
+  - github: "pmgupte"
+  - github: "nikita-bedmutha"
+  - github: "gwaghmare"
+  - github: "qualys-plugins"
+  - github: "aphatangade"
+  - github: "mbachhav18"
+  - github: "aditya-qualys"
+  - github: "hgoyalqualys"
+repository_team: "qualys-vm-plugin Developers"
+additional_github_teams:
+  - team: "qualys Developers"
+    role: "Admin"

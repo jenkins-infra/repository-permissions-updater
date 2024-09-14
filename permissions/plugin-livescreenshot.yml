@@ -5,4 +5,6 @@ issues:
   - jira: '17567'  # livescreenshot-plugin
 paths:
   - "org/jenkins-ci/plugins/livescreenshot"
-developers: []
+developers:
+  - github: "sttts"
+repository_team: "livescreenshot-plugin Developers"

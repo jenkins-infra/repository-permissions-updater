@@ -4,5 +4,5 @@ github: "jenkinsci/xtrigger-lib"
 paths:
   - "org/jenkins-ci/lib/xtrigger-lib"
 developers:
-  - "gbois"
-  - "stealthdj"
+  - ldap: "gbois"
+  - ldap: "stealthdj"

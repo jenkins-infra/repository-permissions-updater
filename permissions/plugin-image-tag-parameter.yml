@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/image-tag-parameter"
 developers:
-  - "maduma"
+  - ldap: "maduma"
+    github: "maduma"
+  - github: "jenkinsadmin"
+repository_team: "image-tag-parameter-plugin Developers"

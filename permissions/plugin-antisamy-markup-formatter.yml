@@ -6,15 +6,25 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/antisamy-markup-formatter"
 developers:
-  - "jglick"
-  - "schristou"
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "mramonleon"
-  - "rsandell"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "schristou"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "mramonleon"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "antisamy-markup-formatter-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Write"

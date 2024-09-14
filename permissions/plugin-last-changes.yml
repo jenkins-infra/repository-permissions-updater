@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/last-changes"
 developers:
-  - "rmpestano"
+  - ldap: "rmpestano"
+    github: "rmpestano"
+repository_team: "last-changes-plugin Developers"

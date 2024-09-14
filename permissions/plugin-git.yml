@@ -8,10 +8,15 @@ paths:
   - "org/jenkinsci/plugins/git"
   - "org/jvnet/hudson/plugins/git"
 developers:
-  - "markewaite"
-  - "mramonleon"
-  - "olamy"
-  - "rsandell"
+  - ldap: "markewaite"
+  - ldap: "mramonleon"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - github: "MarkEWaite"
+  - github: "fcojfernandez"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "git-plugin Developers"

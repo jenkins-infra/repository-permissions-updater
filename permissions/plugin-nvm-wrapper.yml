@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nvm-wrapper"
 developers:
-  - "atoms"
+  - ldap: "atoms"
+  - github: "atomsfat"
+repository_team: "nvm-wrapper-plugin Developers"

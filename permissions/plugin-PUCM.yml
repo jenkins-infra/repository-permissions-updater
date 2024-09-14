@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/PUCM"
 developers: []
+repository_team: "pucm-plugin Developers"

@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pyenv-pipeline"
 developers:
-  - "cstarner"
+  - ldap: "cstarner"
+    github: "cstarner"
+repository_team: "pyenv-pipeline-plugin Developers"

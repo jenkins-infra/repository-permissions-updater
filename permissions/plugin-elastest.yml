@@ -6,5 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/elastest"
 developers:
-  - "frdiaz"
-  - "elastestci"
+  - ldap: "frdiaz"
+  - ldap: "elastestci"
+  - github: "micaelgallego"
+  - github: "franciscoRdiaz"
+  - github: "EduJGURJC"
+  - github: "ElasTestCI"
+repository_team: "elastest-plugin Developers"

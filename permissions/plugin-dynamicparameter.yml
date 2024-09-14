@@ -5,4 +5,7 @@ issues:
   - jira: '17426'  # dynamicparameter-plugin
 paths:
   - "com/seitenbau/jenkins/plugins/dynamicparameter"
-developers: []
+developers:
+  - github: "chbaranowski"
+  - github: "dimitarp"
+repository_team: "dynamicparameter-plugin Developers"

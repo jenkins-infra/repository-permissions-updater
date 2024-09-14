@@ -4,10 +4,14 @@ github: &GH "jenkinsci/opentelemetry-plugin"
 paths:
   - "io/jenkins/plugins/opentelemetry"
 developers:
-  - "cleclerc"
-  - "ifernandezcalvo"
-  - "v2v"
+  - ldap: "cleclerc"
+  - ldap: "ifernandezcalvo"
+  - ldap: "v2v"
+  - github: "cyrille-leclerc"
+  - github: "v1v"
+  - github: "kuisathaverat"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "opentelemetry-plugin Developers"

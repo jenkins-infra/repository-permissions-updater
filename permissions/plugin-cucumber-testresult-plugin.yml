@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cucumber-testresult-plugin"
 developers:
-  - "teilo"
+  - ldap: "teilo"

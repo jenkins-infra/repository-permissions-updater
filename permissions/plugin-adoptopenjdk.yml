@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/adoptopenjdk"
 developers:
-  - "mmchr"
-  - "markewaite"
+  - ldap: "mmchr"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+  - github: "hrmohr"
+repository_team: "adoptopenjdk-plugin Developers"

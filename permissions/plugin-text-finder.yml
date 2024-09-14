@@ -7,5 +7,7 @@ paths:
   - "org/jenkins-ci/plugins/text-finder"
   - "org/jvnet/hudson/plugins/text-finder"
 developers:
-  - "basil"
-  - "jglick"
+  - ldap: "basil"
+    github: "basil"
+  - ldap: "jglick"
+repository_team: "text-finder-plugin Developers"

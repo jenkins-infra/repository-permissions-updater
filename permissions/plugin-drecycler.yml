@@ -3,4 +3,4 @@ name: "drecycler"
 paths:
   - "com/cloudera/diskrecycler/drecycler"
 developers:
-  - "mthakkar"
+  - ldap: "mthakkar"

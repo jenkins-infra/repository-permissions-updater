@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cors-filter"
 developers:
-  - "uday"
+  - ldap: "uday"

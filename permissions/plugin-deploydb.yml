@@ -3,4 +3,4 @@ name: "deploydb"
 paths:
   - "org/jenkins-ci/plugins/deploydb"
 developers:
-  - "orrc"
+  - ldap: "orrc"

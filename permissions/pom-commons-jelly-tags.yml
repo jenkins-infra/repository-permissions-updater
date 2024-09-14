@@ -4,4 +4,7 @@ github: "jenkinsci/jelly"
 paths:
   - "org/jenkins-ci/commons-jelly-tags"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/perfectomobile"
 developers:
-  - "perfectomobile"
+  - ldap: "perfectomobile"
+additional_github_teams:
+  - team: "jenkins-multijob-plugin Developers"
+    role: "Admin"

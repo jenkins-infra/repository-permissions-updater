@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/anything-goes-formatter"
 developers:
-  - "mPokornyETM"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - github: "kohsuke"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "anything-goes-formatter-plugin Developers"

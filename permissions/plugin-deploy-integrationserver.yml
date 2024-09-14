@@ -2,8 +2,10 @@
 name: "deploy-integrationserver"
 github: &GH "jenkinsci/deploy-integrationserver-plugin"
 paths:
-- "io/jenkins/plugins/deploy-integrationserver"
+  - "io/jenkins/plugins/deploy-integrationserver"
 developers:
-- "kalpshekhar"
+  - ldap: "kalpshekhar"
+    github: "kalpshekhar"
 issues:
   - jira: 29123
+repository_team: "deploy-integrationserver-plugin Developers"

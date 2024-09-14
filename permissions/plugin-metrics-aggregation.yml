@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/metrics-aggregation"
 developers:
-  - "andipabst"
+  - ldap: "andipabst"
+    github: "andipabst"
+  - github: "jenkinsadmin"
+repository_team: "metrics-aggregation-plugin Developers"

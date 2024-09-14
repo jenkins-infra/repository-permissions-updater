@@ -6,8 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ssh-steps"
 developers:
-  - "nrayapati"
-  - "ghenkes"
-  - "wuchenwang"
+  - ldap: "nrayapati"
+    github: "nrayapati"
+  - ldap: "ghenkes"
+    github: "ghenkes"
+  - ldap: "wuchenwang"
+  - github: "wwftw"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "ssh-steps-plugin Developers"

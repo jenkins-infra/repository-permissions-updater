@@ -6,8 +6,12 @@ issues:
 paths:
   - "io/jenkins/plugins/pipeline-cloudwatch-logs"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "csanchez"
-  - "oleg_nenashev"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "csanchez"
+  - ldap: "oleg_nenashev"
+  - github: "carlossg"
+  - github: "oleg-nenashev"
+repository_team: "pipeline-cloudwatch-logs-plugin Developers"

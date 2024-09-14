@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/selenium-aes"
 developers: []
+repository_team: "selenium-aes-plugin Developers"

@@ -6,5 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/appaloosa-plugin"
 developers:
-  - "jeremybdk"
-  - "ammelanie"
+  - ldap: "jeremybdk"
+    github: "jeremybdk"
+  - ldap: "ammelanie"
+    github: "ammelanie"
+  - github: "aheritier"
+  - github: "rsfez"
+  - github: "benoittgt"
+repository_team: "appaloosa-plugin Developers"

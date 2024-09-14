@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/phing"
   - "org/jvnet/hudson/plugins/phing"
 developers:
-  - "sogabe"
+  - ldap: "sogabe"
+repository_team: "phing-plugin Developers"

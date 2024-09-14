@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/coverage"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
+repository_team: "coverage-plugin Developers"

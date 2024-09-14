@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/minio-storage"
 developers:
-  - "minio"
+  - ldap: "minio"
+  - github: "harshavardhana"
+  - github: "GarimaKapoor"
+repository_team: "minio-storage-plugin Developers"

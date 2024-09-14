@@ -7,9 +7,14 @@ paths:
   - "org/jenkins-ci/plugins/role-strategy"
   - "org/jvnet/hudson/plugins/role-strategy"
 developers:
-  - "oleg_nenashev"
-  - "runzexia"
-  - "thomas_nemer"
-  - "mawinter69"
+  - ldap: "oleg_nenashev"
+  - ldap: "runzexia"
+    github: "runzexia"
+  - ldap: "thomas_nemer"
+  - ldap: "mawinter69"
+    github: "mawinter69"
+  - github: "oleg-nenashev"
+  - github: "AbhyudayaSharma"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "role-strategy-plugin Developers"

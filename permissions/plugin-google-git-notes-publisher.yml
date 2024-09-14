@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-git-notes-publisher"
 developers:
-  - "astroilov"
-  - "wzheng2310"
+  - ldap: "astroilov"
+  - ldap: "wzheng2310"
+additional_github_teams:
+  - team: "git-notes-publisher-plugin Developers"
+    role: "Admin"

@@ -7,7 +7,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/badge"
 developers:
-  - "bakito"
-  - "mPokornyETM"
-  - "strangelookingnerd"
-  - "markewaite"
+  - ldap: "bakito"
+    github: "bakito"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - ldap: "strangelookingnerd"
+    github: "strangelookingnerd"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+repository_team: "badge-plugin Developers"

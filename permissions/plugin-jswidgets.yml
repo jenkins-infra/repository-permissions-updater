@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/jswidgets"
   - "org/jvnet/hudson/plugins/jswidgets"
 developers: []
+repository_team: "jswidgets-plugin Developers"

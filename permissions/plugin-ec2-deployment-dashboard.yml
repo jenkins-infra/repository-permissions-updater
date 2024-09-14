@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ec2-deployment-dashboard"
 developers:
-  - "marcelbirkner"
+  - ldap: "marcelbirkner"
+additional_github_teams:
+  - team: "deployment-dashboard-plugin Developers"
+    role: "Admin"

@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-flow-extensions-plugin"
 developers:
-  - "teilo"
+  - ldap: "teilo"

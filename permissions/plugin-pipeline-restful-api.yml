@@ -7,4 +7,6 @@ issues:
 paths:
   - "io/jenkins/plugins/pipeline-restful-api"
 developers:
-  - "surenpi"
+  - ldap: "surenpi"
+  - github: "LinuxSuRen"
+repository_team: "pipeline-restful-api-plugin Developers"

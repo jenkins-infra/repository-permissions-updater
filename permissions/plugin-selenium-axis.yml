@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/selenium-axis"
 developers:
-  - "jeremym"
+  - ldap: "jeremym"
+  - github: "JeremyMarshall"
+repository_team: "selenium-axis-plugin Developers"

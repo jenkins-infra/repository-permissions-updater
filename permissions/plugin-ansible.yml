@@ -6,8 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ansible"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jonesbusy"
-  - "sirot"
-  - "escoem"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+  - ldap: "sirot"
+  - ldap: "escoem"
+  - github: "jcsirot"
+repository_team: "ansible-plugin Developers"

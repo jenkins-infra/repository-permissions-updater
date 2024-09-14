@@ -2,10 +2,12 @@
 name: "flyway-api"
 github: &GH "jenkinsci/flyway-api-plugin"
 paths:
-- "io/jenkins/plugins/flyway-api"
+  - "io/jenkins/plugins/flyway-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "flyway-api-plugin Developers"

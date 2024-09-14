@@ -7,11 +7,17 @@ paths:
   - "org/jenkins-ci/plugins/view-job-filters"
   - "org/jvnet/hudson/plugins/view-job-filters"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "svenschoenung"
-  - "jglick"
-  - "@cloudbees-developers"
+  - ldap: "svenschoenung"
+    github: "svenschoenung"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "@cloudbees-developers"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "view-job-filters-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Admin"

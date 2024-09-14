@@ -2,10 +2,12 @@
 name: "accelq-ci-connect"
 github: &GH "jenkinsci/accelq-ci-connect-plugin"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "com/aq/accelq-ci-connect"
 developers:
-  - "accelq"
+  - ldap: "accelq"
+  - github: "ravin-accelq"
 issues:
   - github: *GH
+repository_team: "accelq-ci-connect-plugin Developers"

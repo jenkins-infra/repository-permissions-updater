@@ -7,9 +7,14 @@ paths:
   - "hudson/plugins/libvirt/libvirt-slave"
   - "org/jenkins-ci/plugins/libvirt-slave"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "gkr"
-  - "magnayn"
-  - "bgermann"
-  - "m_jeanson"
+  - ldap: "gkr"
+  - ldap: "magnayn"
+  - ldap: "bgermann"
+    github: "bgermann"
+  - ldap: "m_jeanson"
+  - github: "mjeanson"
+  - github: "tastybug"
+  - github: "g-k-r"
+repository_team: "libvirt-agent-plugin Developers"

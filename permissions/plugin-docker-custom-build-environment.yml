@@ -6,5 +6,7 @@ issues:
 paths:
   - "com/cloudbees/jenkins/plugins/docker-custom-build-environment"
 developers:
-  - "vlatombe"
-  - "jonhermansen"
+  - ldap: "vlatombe"
+  - ldap: "jonhermansen"
+    github: "jonhermansen"
+repository_team: "docker-custom-build-environment-plugin Developers"

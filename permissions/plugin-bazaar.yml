@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bazaar"
   - "org/jvnet/hudson/plugins/bazaar"
-developers: []
+developers:
+  - github: "ccustine"
+  - github: "zigarn"
+  - github: "rbtcollins"
+repository_team: "bazaar-plugin Developers"

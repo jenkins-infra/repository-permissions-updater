@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/squashtm-publisher"
 developers:
-  - "dev_squash"
+  - ldap: "dev_squash"
+  - github: "bsiri"
+  - github: "devsquash"
+repository_team: "squashtm-publisher-plugin Developers"

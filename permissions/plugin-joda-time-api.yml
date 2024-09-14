@@ -2,10 +2,12 @@
 name: "joda-time-api"
 github: &GH "jenkinsci/joda-time-api-plugin"
 paths:
-- "io/jenkins/plugins/joda-time-api"
+  - "io/jenkins/plugins/joda-time-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "joda-time-api-plugin Developers"

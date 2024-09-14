@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/material-theme"
 developers:
-  - "canuck1987"
+  - ldap: "canuck1987"
+  - github: "timbrown5"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "material-theme-plugin Developers"

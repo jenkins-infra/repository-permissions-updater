@@ -7,4 +7,7 @@ issues:
 paths:
   - "ru/yandex/jenkins/plugins/debuilder/debian-package-builder"
 developers:
-  - "pupssman"
+  - ldap: "pupssman"
+additional_github_teams:
+  - team: "debian-package-builder Developers"
+    role: "Admin"

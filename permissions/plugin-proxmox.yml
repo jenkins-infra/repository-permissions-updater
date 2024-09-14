@@ -7,5 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/proxmox"
 developers:
-  - "justnom"
-  - "maxhy"
+  - ldap: "justnom"
+    github: "justnom"
+  - ldap: "maxhy"
+repository_team: "proxmox-plugin Developers"

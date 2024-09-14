@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/block-same-builds"
 developers:
-  - "cashlalala"
+  - ldap: "cashlalala"
+    github: "cashlalala"
+repository_team: "block-same-builds-plugin Developers"

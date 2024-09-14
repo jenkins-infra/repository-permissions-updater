@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/tsystems/sbs/gitblit"
 developers:
-  - "carlescapdevila"
-  - "andreasmandel"
+  - ldap: "carlescapdevila"
+  - ldap: "andreasmandel"
+  - github: "amandel"
+  - github: "CarlesCapdevila"
+repository_team: "gitblit-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/msginject"
 developers:
-  - "zxiiro"
+  - ldap: "zxiiro"
+    github: "zxiiro"
+repository_team: "msginject-plugin Developers"

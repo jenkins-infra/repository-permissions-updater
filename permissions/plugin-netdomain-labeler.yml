@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/netdomain-labeler"
 developers:
-  - "mcamposv"
+  - ldap: "mcamposv"
+    github: "mcamposv"
+repository_team: "netdomain-labeler-plugin Developers"

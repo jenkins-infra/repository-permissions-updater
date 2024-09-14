@@ -4,6 +4,8 @@ github: &GH "jenkinsci/portscanner-plugin"
 paths:
   - "io/jenkins/plugins/portscanner"
 developers:
-  - "tbaum"
+  - ldap: "tbaum"
+  - github: "dtbaum"
 issues:
   - github: *GH
+repository_team: "portscanner-plugin Developers"

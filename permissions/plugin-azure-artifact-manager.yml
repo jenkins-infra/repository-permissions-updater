@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-artifact-manager"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "zooopx"
-  - "timja"
+  - ldap: "zooopx"
+  - ldap: "timja"
+    github: "timja"
+  - github: "gavinfish"
+repository_team: "azure-artifact-manager-plugin Developers"

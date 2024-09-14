@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/semantic-versioning-plugin"
 developers:
-  - "ciroque"
-  - "schristou"
-  - "allan_burdajewicz"
+  - ldap: "ciroque"
+    github: "ciroque"
+  - ldap: "schristou"
+  - ldap: "allan_burdajewicz"
+  - github: "christ66"
+  - github: "Dohbedoh"
+repository_team: "semantic-versioning-plugin Developers"

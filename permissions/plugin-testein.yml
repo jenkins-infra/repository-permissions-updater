@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/testein/testein"
 developers:
-  - "testein"
+  - ldap: "testein"
+  - github: "ViTaLESs"
+  - github: "dbondarchuk"
+repository_team: "testein-plugin Developers"

@@ -5,4 +5,6 @@ issues:
   - jira: '16322'  # karotz-plugin
 paths:
   - "org/jenkins-ci/plugins/karotz"
-developers: []
+developers:
+  - github: "ssogabe"
+repository_team: "karotz-plugin Developers"

@@ -2,10 +2,12 @@
 name: "asm-api"
 github: &GH "jenkinsci/asm-api-plugin"
 paths:
-- "io/jenkins/plugins/asm-api"
+  - "io/jenkins/plugins/asm-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "asm-api-plugin Developers"

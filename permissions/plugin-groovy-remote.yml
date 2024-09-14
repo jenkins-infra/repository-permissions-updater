@@ -5,7 +5,9 @@ issues:
   - jira: '17604'  # groovy-remote-plugin
 paths:
   - "org/jenkinsci/plugins/groovy-remote"
-developers: []
+developers:
+  - github: "kiy0taka"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "groovy-remote-control-plugin Developers"

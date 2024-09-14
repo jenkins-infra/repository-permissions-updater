@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ca-apm/ca-apm-parent"
 developers:
-  - "srikns"
-  - "pramodanarase"
+  - ldap: "srikns"
+    github: "srikns"
+  - ldap: "pramodanarase"
+repository_team: "ca-apm-plugin Developers"

@@ -5,6 +5,8 @@ issues:
   - jira: '16136'  # any-buildstep-plugin
 paths:
   - "org/jenkins-ci/plugins/any-buildstep"
-developers: []
+developers:
+  - github: "bap2000"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "any-buildstep-plugin Developers"

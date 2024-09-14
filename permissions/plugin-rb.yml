@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rb"
 developers:
-  - "trowbrds"
+  - ldap: "trowbrds"
+  - github: "davidt"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "rb-plugin Developers"

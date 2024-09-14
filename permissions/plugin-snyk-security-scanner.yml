@@ -7,6 +7,12 @@ issues:
 paths:
   - "io/snyk/plugins/snyk-security-scanner"
 developers:
-  - "asaf92Snyk"
-  - "bdoetsch"
-  - "jluong"
+  - ldap: "asaf92Snyk"
+  - ldap: "bdoetsch"
+  - ldap: "jluong"
+  - github: "michelkaporin"
+  - github: "j-luong"
+repository_team: "snyk-security-scanner-plugin Developers"
+additional_github_teams:
+  - team: "snyk-security-plugin Developers"
+    role: "Admin"

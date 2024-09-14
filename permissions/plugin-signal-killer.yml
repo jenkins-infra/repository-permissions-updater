@@ -6,4 +6,6 @@ issues:
 paths:
   - "hudson/plugins/signal_killer/signal-killer"
 developers:
-  - "vjuranek"
+  - ldap: "vjuranek"
+    github: "vjuranek"
+repository_team: "signal-killer Developers"

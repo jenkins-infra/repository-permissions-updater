@@ -6,4 +6,8 @@ issues:
 paths:
   - "com/ibm/devops/ibm-continuous-release"
 developers:
-  - "aberkIBM"
+  - ldap: "aberkIBM"
+    github: "aberkIBM"
+  - github: "crjenkins89"
+  - github: "aboe026"
+repository_team: "ibm-continuous-release-plugin Developers"

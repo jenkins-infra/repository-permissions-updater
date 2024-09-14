@@ -5,4 +5,6 @@ issues:
   - jira: '17553'
 paths:
   - "org/jenkins-ci/plugins/pry"
-developers: []
+developers:
+  - github: "kohsuke"
+repository_team: "pry-plugin Developers"

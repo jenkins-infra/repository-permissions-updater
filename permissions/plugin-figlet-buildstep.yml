@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/figlet-buildstep"
 developers:
-  - "slide_o_mix"
+  - ldap: "slide_o_mix"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+additional_github_teams:
+  - team: "mailer-plugin Developers"
+    role: "Admin"

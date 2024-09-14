@@ -5,4 +5,6 @@ issues:
   - jira: '18026'  # accelerated-build-now-plugin
 paths:
   - "org/terracotta/jenkins/plugins/accelerated-build-now-plugin"
-developers: []
+developers:
+  - github: "anthonydahanne"
+repository_team: "accelerated-build-now-plugin Developers"

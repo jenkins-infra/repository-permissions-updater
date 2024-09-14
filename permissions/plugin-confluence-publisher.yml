@@ -6,8 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/confluence-publisher"
 developers:
-  - "jhansche"
-  - "jetersen"
+  - ldap: "jhansche"
+    github: "jhansche"
+  - ldap: "jetersen"
+    github: "jetersen"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "confluence-publisher-plugin Developers"

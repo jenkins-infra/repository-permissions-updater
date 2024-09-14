@@ -6,4 +6,7 @@ issues:
 paths:
   - "hudson/plugins/starteam"
 developers:
-  - "ravaid"
+  - ldap: "ravaid"
+  - github: "framer8"
+  - github: "hugares"
+repository_team: "starteam-plugin Developers"

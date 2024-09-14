@@ -4,12 +4,15 @@ github: &GH "jenkinsci/mina-sshd-api-plugin"
 paths:
   - "io/jenkins/plugins/mina-sshd-api/mina-sshd-api-*"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "allan_burdajewicz"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "allan_burdajewicz"
+  - github: "Dohbedoh"
 issues:
   - jira: 28925
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "mina-sshd-api-plugin Developers"

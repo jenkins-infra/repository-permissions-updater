@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/inedo/proget/inedo-proget"
 developers:
-  - "andrewsumner"
+  - ldap: "andrewsumner"
+  - github: "andrew-sumner"
+repository_team: "inedo-proget-plugin Developers"

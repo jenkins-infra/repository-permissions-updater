@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/zoom"
 developers:
-  - "zoom_us"
+  - ldap: "zoom_us"
+  - github: "zoomdevplatform"
+repository_team: "zoom-plugin Developers"

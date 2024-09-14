@@ -6,7 +6,11 @@ issues:
   - github: *gh
 paths:
   - "org/sonatype/nexus/ci/nexus-jenkins-plugin"
-developers: []
+developers:
+  - github: "whyjustin"
+  - github: "bigspotteddog"
+  - github: "fernau"
+repository_team: "nexus-platform-plugin Developers"
 # https://github.com/jenkins-infra/helpdesk/issues/3742
 #  - "whyjustin"
 #cd:

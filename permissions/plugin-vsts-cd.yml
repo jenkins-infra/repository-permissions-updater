@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vsts-cd"
 developers:
-  - "angoya"
+  - ldap: "angoya"
+  - github: "ankitgo"
+repository_team: "vsts-cd-plugin Developers"

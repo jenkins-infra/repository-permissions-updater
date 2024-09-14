@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/wwpass-plugin"
 developers:
-  - "spanyushkin"
+  - ldap: "spanyushkin"
+  - github: "wwpass"
+repository_team: "wwpass-plugin Developers"

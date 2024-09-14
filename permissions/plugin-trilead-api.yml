@@ -6,10 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/trilead-api"
 developers:
-  - "mc1arke"
-  - "ifernandezcalvo"
+  - ldap: "mc1arke"
+    github: "mc1arke"
+  - ldap: "ifernandezcalvo"
+  - github: "kuisathaverat"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "trilead-api-plugin Developers"

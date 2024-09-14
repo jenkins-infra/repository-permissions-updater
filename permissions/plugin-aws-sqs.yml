@@ -7,6 +7,9 @@ issues:
 paths:
   - "io/relution/jenkins/aws-sqs"
 developers:
-  - "nickg"
-  - "mvk"
-  - "j_vvt"
+  - ldap: "nickg"
+  - ldap: "mvk"
+  - ldap: "j_vvt"
+  - github: "nickgrealy"
+  - github: "mpfeiffermway"
+repository_team: "aws-sqs-plugin Developers"

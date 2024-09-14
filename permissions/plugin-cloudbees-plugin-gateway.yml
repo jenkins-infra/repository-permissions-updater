@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloudbees-plugin-gateway"
 developers: [] # archived
+repository_team: "cloudbees-plugin-gateway Developers"

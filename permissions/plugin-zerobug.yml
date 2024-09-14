@@ -6,5 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/zerobug"
 developers:
-  - "cvfelipeoliveira"
-  - "fernandomengali"
+  - ldap: "cvfelipeoliveira"
+  - ldap: "fernandomengali"
+  - github: "engfelipeoliveira"
+repository_team: "zerobug-plugin Developers"

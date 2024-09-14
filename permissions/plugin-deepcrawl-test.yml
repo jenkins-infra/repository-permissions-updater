@@ -4,8 +4,12 @@ github: &GH "jenkinsci/deepcrawl-test-plugin"
 paths:
   - "io/jenkins/plugins/deepcrawl-test"
 developers:
-  - "deepcrawl_integration"
+  - ldap: "deepcrawl_integration"
+  - github: "AndKiel"
+  - github: "Nikamura"
+  - github: "andrei-bitca-dc"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "deepcrawl-test-plugin Developers"

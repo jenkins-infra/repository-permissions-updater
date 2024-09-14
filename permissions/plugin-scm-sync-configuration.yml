@@ -8,5 +8,7 @@ paths:
   - "org/jenkins-ci/plugins/scm-sync-configuration"
   - "org/jvnet/hudson/plugins/scm-sync-configuration"
 developers:
-  - "rodrigc"
-  - "palacgui"
+  - ldap: "rodrigc"
+  - ldap: "palacgui"
+  - github: "guipal"
+repository_team: "scm-sync-configuration-plugin Developers"

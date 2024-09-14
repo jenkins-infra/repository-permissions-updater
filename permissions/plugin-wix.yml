@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/wix"
 developers:
-  - "rollinhand"
+  - ldap: "rollinhand"
+    github: "rollinhand"
+repository_team: "wix-plugin Developers"

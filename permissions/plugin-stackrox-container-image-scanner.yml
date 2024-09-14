@@ -6,4 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/stackrox-container-image-scanner"
 developers:
-  - "stackrox"
+  - ldap: "stackrox"
+  - github: "joshdk"
+  - github: "jenkinsadmin"
+  - github: "gaurav-nelson"
+  - github: "clickboo"
+  - github: "akshatrox"
+repository_team: "stackrox-container-image-scanner-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/sonyericsson/jenkins/plugins/externalresource/externalresource-dispatcher"
 developers: []
+repository_team: "external-resource-dispatcher-plugin Developers"

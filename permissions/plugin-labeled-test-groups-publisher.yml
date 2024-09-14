@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/labeled-test-groups-publisher"
 developers:
-  - "lbordowitz"
+  - ldap: "lbordowitz"
+    github: "lbordowitz"
+repository_team: "labeled-test-groups-publisher-plugin Developers"

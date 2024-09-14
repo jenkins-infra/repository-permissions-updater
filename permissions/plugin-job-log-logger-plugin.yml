@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/job-log-logger-plugin"
 developers: []
+repository_team: "job-log-logger-plugin Developers"

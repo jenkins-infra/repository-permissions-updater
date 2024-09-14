@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/chef/jenkins-ci/plugins/chef-cookbook-pipeline"
 developers:
-  - "rhass"
+  - ldap: "rhass"
+    github: "rhass"
+  - github: "btm"
+repository_team: "chef-cookbook-pipeline-plugin Developers"

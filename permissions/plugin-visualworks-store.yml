@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/visualworks-store"
 developers:
-  - "randycoulman"
+  - ldap: "randycoulman"
+    github: "randycoulman"
+repository_team: "visualworks-store-plugin Developers"

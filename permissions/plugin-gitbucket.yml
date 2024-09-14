@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gitbucket"
 developers:
-  - "sogabe"
+  - ldap: "sogabe"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/svncompat13"
 developers: []
+repository_team: "svncompat13-plugin Developers"

@@ -6,8 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/simplify-qa-connector"
 developers:
-  - "simplifyadmin"
-  - "bernardbdas"
+  - ldap: "simplifyadmin"
+  - ldap: "bernardbdas"
+  - github: "Simplify3x"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "simplify-qa-connector-plugin Developers"

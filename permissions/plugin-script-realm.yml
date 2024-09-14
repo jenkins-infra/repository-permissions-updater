@@ -5,4 +5,6 @@ issues:
   - jira: '15762'  # script-realm-plugin
 paths:
   - "org/jvnet/hudson/plugins/script-realm"
-developers: []
+developers:
+  - github: "imod"
+repository_team: "script-realm-plugin Developers"

@@ -5,4 +5,6 @@ issues:
   - jira: '17645'  # rusalad-plugin
 paths:
   - "org/jenkins-ci/plugins/rusalad-plugin"
-developers: []
+developers:
+  - github: "masterhard"
+repository_team: "rusalad-plugin Developers"

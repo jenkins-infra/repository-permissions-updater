@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/vk-notifier"
 developers:
-  - "spliterash"
+  - ldap: "spliterash"
+  - github: "Spliterash"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "vk-notifier-plugin Developers"

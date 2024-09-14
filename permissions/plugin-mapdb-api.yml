@@ -6,10 +6,14 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mapdb-api"
 developers:
-  - "@cloudbees-developers"
-  - "markewaite"
+  - ldap: "@cloudbees-developers"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+  - github: "stephenc"
+  - github: "alecharp"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "mapdb-api-plugin Developers"

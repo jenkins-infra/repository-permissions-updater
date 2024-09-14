@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/app-detector"
 developers:
-  - "justice3120"
-  - "kmaeda_dena"
-  - "hisashi_iguchi"
-  - "kentakase_dena"
+  - ldap: "justice3120"
+    github: "justice3120"
+  - ldap: "kmaeda_dena"
+  - ldap: "hisashi_iguchi"
+  - ldap: "kentakase_dena"
+  - github: "Kesin11"
+repository_team: "app-detector-plugin Developers"

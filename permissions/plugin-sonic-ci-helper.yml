@@ -4,7 +4,10 @@ github: &GH "jenkinsci/sonic-ci-helper-plugin"
 paths:
   - "io/jenkins/plugins/sonic-ci-helper"
 developers:
-  - "zhouyixun"
-  - "yaming116"
+  - ldap: "zhouyixun"
+  - ldap: "yaming116"
+    github: "yaming116"
+  - github: "ZhouYixun"
 issues:
   - github: *GH
+repository_team: "sonic-ci-helper-plugin Developers"

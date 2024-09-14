@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/blazemeter/plugins/BlazeMeterJenkinsPlugin"
 developers:
-  - "sat_blazemeter"
+  - ldap: "sat_blazemeter"
+  - github: "doron-bloch"
+  - github: "dzmitrykashlach"
+repository_team: "blazemeter-plugin Developers"

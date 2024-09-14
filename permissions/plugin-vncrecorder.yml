@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vncrecorder"
 developers:
-  - "tbaum"
+  - ldap: "tbaum"
+  - github: "dtbaum"
+repository_team: "vncrecorder-plugin Developers"

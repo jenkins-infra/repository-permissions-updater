@@ -7,5 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/liquibase-runner"
 developers:
-  - "prospero238"
-  - "r2datical"
+  - ldap: "prospero238"
+    github: "prospero238"
+  - ldap: "r2datical"
+repository_team: "liquibase-runner-plugin Developers"
+additional_github_teams:
+  - team: "liquibase-runner-plugin-commiters"
+    role: "Admin"

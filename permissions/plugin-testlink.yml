@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/testlink"
   - "org/jvnet/hudson/plugins/testlink"
 developers:
-  - "kinow"
-  - "oleg_nenashev"
+  - ldap: "kinow"
+  - ldap: "oleg_nenashev"
+repository_team: "testlink-plugin Developers"

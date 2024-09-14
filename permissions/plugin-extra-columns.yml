@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/extra-columns"
 developers:
-  - "fredg"
+  - ldap: "fredg"
+  - github: "fredg02"
+repository_team: "extra-columns-plugin Developers"

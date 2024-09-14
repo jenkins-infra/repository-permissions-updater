@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/dotnet-as-script"
 developers:
-  - "ariel_lenis"
+  - ldap: "ariel_lenis"
+  - github: "ariel-lenis"
+repository_team: "dotnet-as-script-plugin Developers"

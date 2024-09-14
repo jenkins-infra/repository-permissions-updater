@@ -3,4 +3,4 @@ name: "quality-gates-parent"
 paths:
   - "com/opensource/quality-gates-parent"
 developers:
-  - "ivanash"
+  - ldap: "ivanash"

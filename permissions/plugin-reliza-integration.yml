@@ -4,6 +4,9 @@ github: &GH "jenkinsci/reliza-integration-plugin"
 paths:
   - "io/reliza/reliza-integration"
 developers:
-  - "reliza"
+  - ldap: "reliza"
+  - github: "taleodor"
+  - github: "Xenogents"
 issues:
   - github: *GH
+repository_team: "reliza-integration-plugin Developers"

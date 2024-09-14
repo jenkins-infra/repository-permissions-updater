@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sametime"
 developers: []
+repository_team: "sametime-plugin Developers"

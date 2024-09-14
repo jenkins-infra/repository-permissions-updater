@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/CFLint"
 developers:
-  - "jjames967"
-  - "ryaneberly"
+  - ldap: "jjames967"
+    github: "jjames967"
+  - ldap: "ryaneberly"
+    github: "ryaneberly"
+  - github: "jenkinsadmin"
+repository_team: "CFLint-plugin Developers"

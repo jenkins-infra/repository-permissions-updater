@@ -6,6 +6,6 @@ issues:
 paths:
   - "com/synopsys/protecode-sc"
 developers:
-  - "mattisii"
-  - "rukkanen"
-  - "phietala"
+  - ldap: "mattisii"
+  - ldap: "rukkanen"
+  - ldap: "phietala"

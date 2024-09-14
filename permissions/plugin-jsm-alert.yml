@@ -2,10 +2,13 @@
 name: "jsm-alert"
 github: &GH "jenkinsci/jsm-alert-plugin"
 paths:
-- "io/jenkins/plugins/jsm-alert"
+  - "io/jenkins/plugins/jsm-alert"
 developers:
-- "jsm_alert_plugin"
+  - ldap: "jsm_alert_plugin"
+  - github: "akyuznurettin"
+  - github: "mhamzak008"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "jsm-alert-plugin Developers"

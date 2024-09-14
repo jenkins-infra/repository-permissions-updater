@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/cryptomove"
 developers:
-  - "cryptomoovin"
+  - ldap: "cryptomoovin"
+    github: "cryptomoovin"
+repository_team: "cryptomove-plugin Developers"

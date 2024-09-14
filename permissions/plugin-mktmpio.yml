@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mktmpio"
 developers:
-  - "rmgraham"
+  - ldap: "rmgraham"
+  - github: "rmg"
+repository_team: "mktmpio-plugin Developers"

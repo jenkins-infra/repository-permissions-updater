@@ -6,19 +6,29 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/display-url-api"
 developers:
-  - "jamesdumay"
-  - "michaelneale"
-  - "vivek"
-  - "imeredith"
-  - "abayer"
-  - "carroll"
-  - "dnusbaum"
-  - "olamy"
-  - "rsandell"
-  - "bitwiseman"
-  - "kshultz"
+  - ldap: "jamesdumay"
+  - ldap: "michaelneale"
+    github: "michaelneale"
+  - ldap: "vivek"
+    github: "vivek"
+  - ldap: "imeredith"
+    github: "imeredith"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "carroll"
+  - ldap: "dnusbaum"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "bitwiseman"
+  - ldap: "kshultz"
+  - github: "stephenc"
+  - github: "dwnusbaum"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "display-url-api-plugin Developers"

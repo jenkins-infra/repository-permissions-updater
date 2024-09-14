@@ -4,4 +4,6 @@ github: "jenkinsci/appetize-plugin"
 paths:
   - "org/jenkins-ci/plugins/appetize"
 developers:
-  - "weiyin"
+  - ldap: "weiyin"
+    github: "weiyin"
+repository_team: "appetize-plugin Developers"

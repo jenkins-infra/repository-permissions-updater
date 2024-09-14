@@ -6,5 +6,6 @@ issues:
 paths:
   - "com/castlemon/hudson/cucumber-perf"
 developers:
-  - "truedub"
-  - "brianjriddle"
+  - ldap: "truedub"
+  - ldap: "brianjriddle"
+repository_team: "cucumber-performance-plugin Developers"

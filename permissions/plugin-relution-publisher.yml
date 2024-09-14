@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/relution-publisher"
 developers:
-  - "mway_solutions"
+  - ldap: "mway_solutions"
+  - github: "stefanjauker"
+  - github: "mpfeiffermway"
+repository_team: "relution-publisher-plugin Developers"

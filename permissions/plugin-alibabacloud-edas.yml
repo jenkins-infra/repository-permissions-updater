@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/alibabacloud-edas"
 developers:
-  - "jungle"
+  - ldap: "jungle"
+  - github: "Hellojungle"
+repository_team: "alibabacloud-edas-plugin Developers"

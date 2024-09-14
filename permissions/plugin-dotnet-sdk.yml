@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/dotnet-sdk"
 developers:
-  - "Zastai"
+  - ldap: "Zastai"
+    github: "Zastai"
+repository_team: "dotnet-sdk-plugin Developers"

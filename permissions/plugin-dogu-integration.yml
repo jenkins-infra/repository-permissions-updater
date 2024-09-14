@@ -2,10 +2,12 @@
 name: "dogu-integration"
 github: &GH "jenkinsci/dogu-integration-plugin"
 paths:
-- "io/jenkins/plugins/dogu-integration"
+  - "io/jenkins/plugins/dogu-integration"
 developers:
-- "dogutechio"
+  - ldap: "dogutechio"
+  - github: "lumyjuwon"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "dogu-integration-plugin Developers"

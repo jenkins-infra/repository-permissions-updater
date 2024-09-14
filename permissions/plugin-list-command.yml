@@ -5,4 +5,6 @@ issues:
   - jira: '17469'  # list-command-plugin
 paths:
   - "org/jenkins-ci/plugins/list-command"
-developers: []
+developers:
+  - github: "wadatka"
+repository_team: "list-command-plugin Developers"

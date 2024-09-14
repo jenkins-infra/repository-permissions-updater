@@ -2,14 +2,19 @@
 name: "eddsa-api"
 github: &GH "jenkinsci/eddsa-api-plugin"
 paths:
-- "io/jenkins/plugins/eddsa-api"
+  - "io/jenkins/plugins/eddsa-api"
 cd:
-  enabled: true
+    enabled: true
 developers:
-- "teilo"
-- "@cloudbees-developers"
+  - ldap: "teilo"
+  - ldap: "@cloudbees-developers"
+  - github: "jtnord"
 issues:
   - jira: 29422
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "eddsa-api-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Maintain"

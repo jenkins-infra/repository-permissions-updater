@@ -5,4 +5,6 @@ issues:
   - jira: '17510'  # pending-changes-plugin
 paths:
   - "org/jenkins-ci/plugins/pending-changes"
-developers: []
+developers:
+  - github: "avogler"
+repository_team: "pendingchanges-plugin Developers"

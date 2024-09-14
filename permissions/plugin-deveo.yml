@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/deveo"
 developers:
-  - "vellu"
+  - ldap: "vellu"
+  - github: "jlaiho"
+repository_team: "deveo-plugin Developers"

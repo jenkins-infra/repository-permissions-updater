@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/ruby-plugins/capitomcat"
 developers:
-  - "sunggun"
+  - ldap: "sunggun"
+  - github: "sunggun-yu"
+repository_team: "capitomcat-plugin Developers"

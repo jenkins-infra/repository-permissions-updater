@@ -6,3 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/violation-columns"
 developers: []
+additional_github_teams:
+  - team: "logfilesizechecker-plugin Developers"
+    role: "Admin"

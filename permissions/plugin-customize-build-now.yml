@@ -6,8 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/customize-build-now"
 developers:
-  - "jglick"
-  - "uday"
-  - "mawinter69"
+  - ldap: "jglick"
+  - ldap: "uday"
+  - ldap: "mawinter69"
+    github: "mawinter69"
+  - github: "uaarkoti"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "customize-build-now-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/warrior"
 developers:
-  - "venkat1077"
+  - ldap: "venkat1077"
+    github: "venkat1077"
+repository_team: "warrior-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/grails"
 developers: []
+repository_team: "grails-plugin Developers"

@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-timestamp"
 developers:
-  - "orctom"
-
+  - ldap: "orctom"
+    github: "orctom"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "jmMeessen"
+repository_team: "build-timestamp-plugin Developers"

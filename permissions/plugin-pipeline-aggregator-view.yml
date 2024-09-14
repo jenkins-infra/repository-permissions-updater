@@ -6,7 +6,10 @@ issues:
 paths:
   - "com/paul8620/jenkins/plugins/pipeline-aggregator-view"
 developers:
-  - "paul8620"
-  - "notmyfault"
+  - ldap: "paul8620"
+  - ldap: "notmyfault"
 cd:
-  enabled: true
+    enabled: true
+additional_github_teams:
+  - team: "aggregated-pipeline-view-plugin Developers"
+    role: "Admin"

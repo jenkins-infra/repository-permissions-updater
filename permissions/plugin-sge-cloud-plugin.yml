@@ -7,4 +7,6 @@ issues:
 paths:
   - "io/jenkins/plugins/sge-cloud-plugin"
 developers:
-  - "jmcgeheeiv"
+  - ldap: "jmcgeheeiv"
+    github: "jmcgeheeiv"
+repository_team: "sge-cloud-plugin Developers"

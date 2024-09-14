@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/mstest"
 developers:
-  - "nilleb"
-  - "jetersen"
-  - "ipdev"
+  - ldap: "nilleb"
+    github: "nilleb"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - ldap: "ipdev"
+  - github: "pavlovic-ivan"
+repository_team: "mstest-plugin Developers"

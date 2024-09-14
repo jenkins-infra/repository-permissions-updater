@@ -2,8 +2,12 @@
 name: "report-jtreg"
 github: &GH "jenkinsci/report-jtreg-plugin"
 paths:
-- "io/jenkins/plugins/report-jtreg"
+  - "io/jenkins/plugins/report-jtreg"
 developers:
-- "judovana"
+  - ldap: "judovana"
+    github: "judovana"
+  - github: "RadekCap"
+  - github: "zzambers"
 issues:
   - github: *GH
+repository_team: "report-jtreg-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/nsiqcollector"
 developers: []
+repository_team: "nsiqcollector-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/workflow/puppet-enterprise-pipeline"
 developers:
-  - "ccaum"
+  - ldap: "ccaum"
+    github: "ccaum"
+repository_team: "puppet-enterprise-pipeline-plugin Developers"

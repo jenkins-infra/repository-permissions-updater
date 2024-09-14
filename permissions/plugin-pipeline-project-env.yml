@@ -4,8 +4,10 @@ github: &GH "jenkinsci/pipeline-project-env-plugin"
 paths:
   - "io/jenkins/plugins/pipeline-project-env"
 developers:
-  - "repolevedavaj"
+  - ldap: "repolevedavaj"
+    github: "repolevedavaj"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pipeline-project-env-plugin Developers"

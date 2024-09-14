@@ -2,10 +2,12 @@
 name: "customizable-header"
 github: &GH "jenkinsci/customizable-header-plugin"
 paths:
-- "io/jenkins/plugins/customizable-header"
+  - "io/jenkins/plugins/customizable-header"
 developers:
-- "mawinter69"
+  - ldap: "mawinter69"
+    github: "mawinter69"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "customizable-header-plugin Developers"

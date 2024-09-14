@@ -6,11 +6,17 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/run-condition"
 developers:
-  - "imod"
-  - "timja"
-  - "markewaite"
-  - "poddingue"
-  - "zack_aayush"
+  - ldap: "imod"
+  - ldap: "timja"
+  - ldap: "markewaite"
+  - ldap: "poddingue"
+  - ldap: "zack_aayush"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "bap2000"
+  - github: "jmMeessen"
+  - github: "AayushSaini101"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "run-condition-plugin Developers"

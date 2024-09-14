@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/zohosprints"
 developers:
-  - "zohosprints"
+  - ldap: "zohosprints"
+  - github: "jenkinsadmin"
+  - github: "zsprints"
+repository_team: "zohosprints-plugin Developers"

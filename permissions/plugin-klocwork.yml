@@ -8,5 +8,9 @@ paths:
   - "com/thalesgroup/jenkins-ci/plugins/klocwork"
   - "org/jenkins-ci/plugins/klocwork"
 developers:
-  - "michaelbaron"
-  - "klocwork"
+  - ldap: "michaelbaron"
+  - ldap: "klocwork"
+  - github: "jlarfors"
+  - github: "michael-baron"
+  - github: "klocwork-perforce"
+repository_team: "klocwork-plugin Developers"

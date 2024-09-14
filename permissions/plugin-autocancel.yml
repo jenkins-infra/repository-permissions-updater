@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/autocancel"
 developers:
-  - "recuencojones"
+  - ldap: "recuencojones"
+  - github: "AlbertoSH"
+  - github: "RecuencoJones"
+repository_team: "autocancel-plugin Developers"

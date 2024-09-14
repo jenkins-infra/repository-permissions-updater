@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/newrelic-deployment-notifier"
 developers:
-  - "mmchr"
-  - "jonathanpdx"
-  - "JustinLewisNR"
+  - ldap: "mmchr"
+  - ldap: "jonathanpdx"
+    github: "jonathanpdx"
+  - ldap: "JustinLewisNR"
+  - github: "hrmohr"
+repository_team: "newrelic-deployment-notifier-plugin Developers"

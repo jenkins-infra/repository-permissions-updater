@@ -7,8 +7,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-cloudbuild"
 developers:
-  - "a_goulti"
-  - "bwkimmel"
-  - "donmccasland"
-  - "tarahernandez"
-  - "vishalapatel"
+  - ldap: "a_goulti"
+  - ldap: "bwkimmel"
+  - ldap: "donmccasland"
+    github: "donmccasland"
+  - ldap: "tarahernandez"
+  - ldap: "vishalapatel"
+  - github: "tequilarista"
+  - github: "agoulti"
+repository_team: "google-cloudbuild-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/describe-with-params"
 developers:
-  - "liumazi"
+  - ldap: "liumazi"
+    github: "liumazi"
+repository_team: "describe-with-params-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pureload"
 developers:
-  - "JanAndersson"
+  - ldap: "JanAndersson"
+    github: "JanAndersson"
+repository_team: "pureload-plugin Developers"

@@ -4,8 +4,11 @@ github: &GH "jenkinsci/dagshub-branch-source-plugin"
 paths:
   - "io/jenkins/plugins/dagshub-branch-source"
 developers:
-  - "guysmoilov"
+  - ldap: "guysmoilov"
+    github: "guysmoilov"
+  - github: "deanp70"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "dagshub-branch-source-plugin Developers"

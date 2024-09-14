@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/svn-partial-release-mgr"
 developers:
-  - "giliadis"
+  - ldap: "giliadis"
+  - github: "IGiannis"
+repository_team: "svn-partial-release-mgr-plugin Developers"

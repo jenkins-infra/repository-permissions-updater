@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/flexible-publish"
 developers:
-  - "ikedam"
+  - ldap: "ikedam"
+    github: "ikedam"
+  - github: "bap2000"
+repository_team: "flexible-publish-plugin Developers"

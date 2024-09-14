@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/export-params"
 developers:
-  - "rin_ne"
+  - ldap: "rin_ne"
+  - github: "rinrinne"
+repository_team: "export-params-plugin Developers"

@@ -3,4 +3,4 @@ name: "issue-link"
 paths:
   - "org/jenkins-ci/plugins/issue-link"
 developers:
-  - "patbos"
+  - ldap: "patbos"

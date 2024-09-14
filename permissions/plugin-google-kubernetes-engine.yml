@@ -7,19 +7,27 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-kubernetes-engine"
 developers:
-  - "craigbarber"
-  - "evanbrown"
-  - "stephenshank"
-  - "donmccasland"
-  - "tarahernandez"
-  - "vishalapatel"
-  - "batmat"
-  - "teilo"
-  - "rarabaolaza"
-  - "carroll"
-  - "olamy"
+  - ldap: "craigbarber"
+  - ldap: "evanbrown"
+  - ldap: "stephenshank"
+  - ldap: "donmccasland"
+  - ldap: "tarahernandez"
+  - ldap: "vishalapatel"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "teilo"
+  - ldap: "rarabaolaza"
+  - ldap: "carroll"
+  - ldap: "olamy"
+    github: "olamy"
+  - github: "viglesiasce"
+  - github: "jtnord"
+  - github: "raul-arabaolaza"
+  - github: "craigdbarber"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "google-kubernetes-engine-plugin Developers"

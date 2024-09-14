@@ -8,6 +8,9 @@ issues:
 paths:
   - "jp/ikedam/jenkins/plugins/scoring-load-balancer"
 developers:
-  - "viceice"
+  - ldap: "viceice"
+    github: "viceice"
+  - github: "ikedam"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "scoring-load-balancer-plugin Developers"

@@ -1,12 +1,16 @@
 ---
 cd:
-  enabled: true
+    enabled: true
 name: "pipeline-reporter-by-redpen"
 github: &GH "jenkinsci/pipeline-reporter-by-redpen-plugin"
 paths:
   - "org/jenkinsci/plugins/pipeline-reporter-by-redpen"
 developers:
-  - "ayushk048"
-  - "anandpadiya_ai"
+  - ldap: "ayushk048"
+  - ldap: "anandpadiya_ai"
+  - github: "anandcpadiya"
+  - github: "heenachauhan18"
+  - github: "ayushk048-Ajmera"
 issues:
   - jira: 28920
+repository_team: "pipeline-reporter-by-redpen-plugin Developers"

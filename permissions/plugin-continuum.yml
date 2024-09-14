@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/continuum"
 developers:
-  - "boraaksoy"
+  - ldap: "boraaksoy"
+  - github: "BoraAksoy"
+repository_team: "continuum-plugin Developers"

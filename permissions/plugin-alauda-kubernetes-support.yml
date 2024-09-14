@@ -6,7 +6,12 @@ issues:
 paths:
   - "io/alauda/jenkins/plugins/alauda-kubernetes-support"
 developers:
-  - "surenpi"
-  - "danielfbm"
-  - "chengjingtao"
-  - "cizezsy"
+  - ldap: "surenpi"
+  - ldap: "danielfbm"
+    github: "danielfbm"
+  - ldap: "chengjingtao"
+    github: "chengjingtao"
+  - ldap: "cizezsy"
+    github: "cizezsy"
+  - github: "LinuxSuRen"
+repository_team: "alauda-kubernetes-support-plugin Developers"

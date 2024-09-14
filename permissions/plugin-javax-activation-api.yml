@@ -4,9 +4,11 @@ github: &GH "jenkinsci/javax-activation-api-plugin"
 paths:
   - "io/jenkins/plugins/javax-activation-api"
 developers:
-  - "basil"
+  - ldap: "basil"
+    github: "basil"
 issues:
   - jira: 28834
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "javax-activation-api-plugin Developers"

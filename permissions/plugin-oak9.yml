@@ -4,13 +4,17 @@ github: &GH "jenkinsci/oak9-plugin"
 paths:
   - "io/jenkins/plugins/oak9"
 developers:
-  - "oak9_michaelgrosser"
-  - "mherro_oak9"
-  - "jreiner_oak9"
-  - "rpateloak9"
-  - "awright_oak9"
+  - ldap: "oak9_michaelgrosser"
+  - ldap: "mherro_oak9"
+  - ldap: "jreiner_oak9"
+  - ldap: "rpateloak9"
+  - ldap: "awright_oak9"
+  - github: "michaelgrosser"
+  - github: "jreiner-oak9"
+  - github: "awright-oak9"
 issues:
   - jira: 28631
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "oak9-plugin Developers"

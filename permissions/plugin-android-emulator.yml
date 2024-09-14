@@ -7,9 +7,14 @@ paths:
   - "org/jenkins-ci/plugins/android-emulator"
   - "org/jvnet/hudson/plugins/android-emulator"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "orrc"
-  - "nfalco"
-  - "poddingue"
-  - "mPokornyETM"
+  - ldap: "orrc"
+  - ldap: "nfalco"
+  - ldap: "poddingue"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - github: "gounthar"
+  - github: "jenkinsadmin"
+  - github: "nfalco79"
+repository_team: "android-emulator-plugin Developers"

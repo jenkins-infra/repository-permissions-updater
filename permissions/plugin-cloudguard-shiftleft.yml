@@ -4,6 +4,10 @@ github: &GH "jenkinsci/cloudguard-shiftleft-plugin"
 paths:
   - "io/jenkins/plugins/cloudguard-shiftleft"
 developers:
-  - "ivanmar"
+  - ldap: "ivanmar"
+  - github: "ilavender"
+  - github: "chkp-jmichealson"
+  - github: "chkp-rolandop"
 issues:
   - github: *GH
+repository_team: "cloudguard-shiftleft-plugin Developers"

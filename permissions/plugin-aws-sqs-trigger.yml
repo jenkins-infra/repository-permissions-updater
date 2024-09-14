@@ -4,6 +4,8 @@ github: &GH "jenkinsci/aws-sqs-trigger-plugin"
 paths:
   - "io/jenkins/plugins/aws-sqs-trigger"
 developers:
-  - "topikachu"
+  - ldap: "topikachu"
+    github: "topikachu"
 issues:
   - github: *GH
+repository_team: "aws-sqs-trigger-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/validating-email-parameter"
 developers:
-  - "szcn"
+  - ldap: "szcn"
+    github: "szcn"
+repository_team: "validating-email-parameter-plugin Developers"

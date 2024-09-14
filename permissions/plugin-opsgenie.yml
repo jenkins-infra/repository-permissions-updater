@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/opsgenie"
 developers:
-  - "opsgenieplugin"
+  - ldap: "opsgenieplugin"
+  - github: "bkaganyildiz"
+repository_team: "opsgenie-plugin Developers"

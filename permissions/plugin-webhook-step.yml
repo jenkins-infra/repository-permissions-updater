@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/webhook-step"
 developers:
-  - "jm_meessen"
+  - ldap: "jm_meessen"
+  - github: "cpitman"
+  - github: "jmMeessen"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "webhook-step-plugin Developers"

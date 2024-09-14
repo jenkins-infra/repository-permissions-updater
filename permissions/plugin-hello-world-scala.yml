@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hello-world-scala"
 developers:
-  - "jeremym"
+  - ldap: "jeremym"
+  - github: "JeremyMarshall"
+repository_team: "hello-world-scala-plugin Developers"

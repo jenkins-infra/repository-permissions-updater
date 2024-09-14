@@ -4,4 +4,7 @@ github: "jenkinsci/environment-labels-setter-plugin"
 paths:
   - "org/jenkins-ci/plugins/environment-labels-setter"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+additional_github_teams:
+  - team: "mail-watcher-plugin Developers"
+    role: "Admin"

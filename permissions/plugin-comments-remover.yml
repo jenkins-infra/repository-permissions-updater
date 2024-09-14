@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/ste/comments-remover"
 developers:
-  - "singapore_tech_entrepreneurs"
-  - "bisk"
+  - ldap: "singapore_tech_entrepreneurs"
+  - ldap: "bisk"
+  - github: "Bisk1"
+  - github: "TalEliyahu"
+repository_team: "comments-remover-plugin Developers"

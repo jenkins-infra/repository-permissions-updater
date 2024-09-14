@@ -6,5 +6,8 @@ issues:
 paths:
   - "ren/helloworld/upload-pgyer"
 developers:
-  - "myroid"
-  - "Caoxy"
+  - ldap: "myroid"
+    github: "myroid"
+  - ldap: "Caoxy"
+  - github: "manongxiaoyun"
+repository_team: "upload-pgyer-plugin Developers"

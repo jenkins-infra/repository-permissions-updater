@@ -2,10 +2,12 @@
 name: "jetbrains-space"
 github: &GH "jenkinsci/jetbrains-space-plugin"
 paths:
-- "io/jenkins/plugins/jetbrains-space"
+  - "io/jenkins/plugins/jetbrains-space"
 developers:
-- "kiryushin_andrey"
+  - ldap: "kiryushin_andrey"
+  - github: "Kiryushin-Andrey"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "jetbrains-space-plugin Developers"

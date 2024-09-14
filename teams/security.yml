@@ -1,6 +1,6 @@
 ---
 name: "security"
 developers:
-- "danielbeck"
-- "kevingrdj"
-- "wfollonier"
+  - ldap: "danielbeck"
+  - ldap: "kevingrdj"
+  - ldap: "wfollonier"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/percentage-du-node-column"
 developers:
-  - "v2v"
+  - ldap: "v2v"
+  - github: "v1v"
+repository_team: "percentage-du-node-column-plugin Developers"

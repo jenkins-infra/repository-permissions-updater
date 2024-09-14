@@ -4,4 +4,6 @@ github: "jenkinsci/oversecured-plugin"
 paths:
   - "io/jenkins/plugins/oversecured"
 developers:
-  - "oversecured"
+  - ldap: "oversecured"
+  - github: "bagipro"
+repository_team: "oversecured-plugin Developers"

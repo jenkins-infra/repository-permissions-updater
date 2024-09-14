@@ -4,4 +4,9 @@ github: "jenkinsci/scm-trait-commit-skip-plugin"
 paths:
   - "org/jenkins-ci/plugins/scm-trait-commit-skip-parent"
 developers:
-  - "askalski85"
+  - ldap: "askalski85"
+    github: "askalski85"
+repository_team: "scm-trait-commit-skip-plugin Developers"
+additional_github_teams:
+  - team: "branch-source-commit-skip-traits-plugin Developers"
+    role: "Admin"

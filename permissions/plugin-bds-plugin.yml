@@ -4,4 +4,4 @@ paths:
   - "org/jenkins-ci/plugins/bds-plugin"
   - "org/vx68k/jenkins/bds-plugin"
 developers:
-  - "kazssym"
+  - ldap: "kazssym"

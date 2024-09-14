@@ -6,7 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/collabnet"
 developers:
-  - "dharmsheta"
-  - "jmcnally"
-  - "boraaksoy"
-  - "arunpandurangan"
+  - ldap: "dharmsheta"
+  - ldap: "jmcnally"
+    github: "jmcnally"
+  - ldap: "boraaksoy"
+  - ldap: "arunpandurangan"
+    github: "arunpandurangan"
+  - github: "BoraAksoy"
+repository_team: "collabnet-plugin Developers"

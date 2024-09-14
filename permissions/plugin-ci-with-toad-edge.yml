@@ -6,7 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ci-with-toad-edge"
 developers:
-  - "pchudani"
-  - "mkumar_jenkins"
-  - "tmajumda"
-  - "ddsouza_jenkins"
+  - ldap: "pchudani"
+  - ldap: "mkumar_jenkins"
+  - ldap: "tmajumda"
+  - ldap: "ddsouza_jenkins"
+  - github: "PChudani-Quest"
+  - github: "mkumar-quest"
+  - github: "tmajumda1"
+  - github: "DashlineJoveDSouza"
+repository_team: "ci-with-toad-edge-plugin Developers"

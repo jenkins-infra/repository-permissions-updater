@@ -7,4 +7,7 @@ paths:
   - "com/browserstack/browserstack-integration"
   - "org/jenkins-ci/plugins/browserstack-integration"
 developers:
-  - "browserstack"
+  - ldap: "browserstack"
+  - github: "nakula"
+  - github: "anirudha13"
+repository_team: "browserstack-integration-plugin Developers"

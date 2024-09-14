@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/loadcomplete"
 developers:
-  - "igor_filin"
+  - ldap: "igor_filin"
+  - github: "Igor-Filin"
+repository_team: "loadcomplete-plugin Developers"

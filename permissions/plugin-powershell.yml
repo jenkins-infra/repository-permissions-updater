@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/powershell"
 developers:
-  - "chrisalbrecht"
-  - "froque"
+  - ldap: "chrisalbrecht"
+    github: "chrisalbrecht"
+  - ldap: "froque"
+    github: "froque"
+repository_team: "powershell-plugin Developers"

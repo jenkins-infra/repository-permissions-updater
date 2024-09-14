@@ -4,4 +4,12 @@ github: "jenkinsci/lib-support-log-formatter"
 paths:
   - "io/jenkins/lib/support-log-formatter"
 developers:
-  - "@core"
+  - ldap: "@core"
+  - github: "jglick"
+  - github: "stephenc"
+  - github: "batmat"
+  - github: "oleg-nenashev"
+repository_team: "lib-support-log-formatter Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/vrealize-automation-8"
 developers:
-  - "prydin"
+  - ldap: "prydin"
+    github: "prydin"
+repository_team: "vrealize-automation-8-plugin Developers"

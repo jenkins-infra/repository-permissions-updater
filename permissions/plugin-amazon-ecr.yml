@@ -6,8 +6,13 @@ issues:
 paths:
   - "com/cloudbees/jenkins/plugins/amazon-ecr"
 developers:
-  - "aheritier"
-  - "ifernandezcalvo"
-  - "tgr"
+  - ldap: "aheritier"
+    github: "aheritier"
+  - ldap: "ifernandezcalvo"
+  - ldap: "tgr"
+  - github: "TobiX"
+  - github: "fbelzunc"
+  - github: "kuisathaverat"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "amazon-ecr-plugin Developers"

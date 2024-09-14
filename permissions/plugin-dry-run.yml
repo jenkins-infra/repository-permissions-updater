@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/dry-run"
 developers: []
+repository_team: "dry-run-plugin Developers"

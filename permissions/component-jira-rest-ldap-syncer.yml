@@ -4,5 +4,5 @@ paths:
   - "io/jenkins/backend/jira-rest-ldap-syncer"
 github: "jenkins-infra/jira-ldap-syncer"
 developers:
-  - "oleg_nenashev"
-  - "olblak"
+  - ldap: "oleg_nenashev"
+  - ldap: "olblak"

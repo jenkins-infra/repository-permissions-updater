@@ -6,4 +6,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/matrix-auth"
 developers:
-  - "danielbeck"
+  - ldap: "danielbeck"
+repository_team: "matrix-auth-plugin Developers"

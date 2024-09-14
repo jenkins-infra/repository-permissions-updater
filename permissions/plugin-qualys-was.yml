@@ -6,4 +6,17 @@ issues:
 paths:
   - "com/qualys/plugins/qualys-was"
 developers:
-  - "qualys"
+  - ldap: "qualys"
+  - github: "pmgupte"
+  - github: "nikita-bedmutha"
+  - github: "gwaghmare"
+  - github: "qualys-plugins"
+  - github: "aphatangade"
+  - github: "mbachhav18"
+  - github: "aditya-qualys"
+  - github: "hgoyalqualys"
+  - github: "Bhagyashri-Sapnar"
+repository_team: "qualys-was-plugin Developers"
+additional_github_teams:
+  - team: "qualys Developers"
+    role: "Admin"

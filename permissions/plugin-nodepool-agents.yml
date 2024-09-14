@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nodepool-agents"
 developers:
-  - "nairbttoille"
-  - "hughsaunders"
-  - "ddeal"
+  - ldap: "nairbttoille"
+  - ldap: "hughsaunders"
+    github: "hughsaunders"
+  - ldap: "ddeal"
+  - github: "dealako"
+  - github: "bdelliott"
+repository_team: "nodepool-agents-plugin Developers"

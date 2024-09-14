@@ -6,4 +6,15 @@ issues:
 paths:
   - "com/qualys/plugins/qualys-pc"
 developers:
-  - "qualys"
+  - ldap: "qualys"
+  - github: "pmgupte"
+  - github: "nikita-bedmutha"
+  - github: "gwaghmare"
+  - github: "qualys-plugins"
+  - github: "aphatangade"
+  - github: "charchil-gupta"
+  - github: "mbachhav18"
+  - github: "aditya-qualys"
+  - github: "hgoyalqualys"
+  - github: "Bhagyashri-Sapnar"
+repository_team: "qualys-pc-plugin Developers"

@@ -6,6 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/websocketin-notification"
 developers:
-  - "dhobi"
+  - ldap: "dhobi"
+    github: "dhobi"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "websocketin-notification-plugin Developers"

@@ -4,4 +4,7 @@ github: "jenkinsci/lib-file-leak-detector"
 paths:
   - "org/kohsuke/file-leak-detector"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

@@ -4,4 +4,6 @@ github: "jenkinsci/testcomplete-xunit-plugin"
 paths:
   - "org/jenkins-ci/plugins/testcomplete-xunit"
 developers:
-  - "fmiguelez"
+  - ldap: "fmiguelez"
+    github: "fmiguelez"
+repository_team: "testcomplete-xunit-plugin Developers"

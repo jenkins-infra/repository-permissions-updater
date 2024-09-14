@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vs-code-metrics"
 developers:
-  - "yasu_s"
+  - ldap: "yasu_s"
+  - github: "yasu-s"
+repository_team: "vs-code-metrics-plugin Developers"

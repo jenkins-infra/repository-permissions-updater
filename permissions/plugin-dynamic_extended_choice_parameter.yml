@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/moded/extendedchoiceparameter/dynamic_extended_choice_parameter"
 developers:
-  - "rgssingh"
+  - ldap: "rgssingh"
+    github: "rgssingh"
+repository_team: "dynamic-extended-choice-parameter-plugin Developers"

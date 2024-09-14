@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/git-chooser-alternative"
 developers:
-  - "kbriggs"
+  - ldap: "kbriggs"
+    github: "kbriggs"
+repository_team: "git-chooser-alternative-plugin Developers"

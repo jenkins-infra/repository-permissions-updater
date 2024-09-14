@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-cloud-backup"
 developers:
-  - "astroilov"
+  - ldap: "astroilov"
+    github: "astroilov"
+  - github: "wzheng2310"
+repository_team: "google-cloud-backup-plugin Developers"

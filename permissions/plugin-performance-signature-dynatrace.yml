@@ -6,6 +6,10 @@ issues:
 paths:
   - "de/tsystems/mms/apm/performance-signature-dynatrace"
 developers:
-  - "rpionke"
-  - "robkuehn"
-  - "dgetzlaf"
+  - ldap: "rpionke"
+    github: "rpionke"
+  - ldap: "robkuehn"
+    github: "robkuehn"
+  - ldap: "dgetzlaf"
+    github: "dgetzlaf"
+repository_team: "performance-signature-dynatrace-plugin Developers"

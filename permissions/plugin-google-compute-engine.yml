@@ -7,22 +7,31 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-compute-engine"
 developers:
-  - "evanbrown"
-  - "stephenshank"
-  - "craigbarber"
-  - "donmccasland"
-  - "tarahernandez"
-  - "vishalapatel"
-  - "batmat"
-  - "teilo"
-  - "olamy"
-  - "carroll"
-  - "rsandell"
-  - "ampuscas"
-  - "rarabaolaza"
-  - "borisyaoa"
+  - ldap: "evanbrown"
+  - ldap: "stephenshank"
+  - ldap: "craigbarber"
+  - ldap: "donmccasland"
+  - ldap: "tarahernandez"
+  - ldap: "vishalapatel"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "teilo"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "carroll"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "ampuscas"
+    github: "ampuscas"
+  - ldap: "rarabaolaza"
+  - ldap: "borisyaoa"
+  - github: "jtnord"
+  - github: "raul-arabaolaza"
+  - github: "car-roll"
+  - github: "BorisYaoA"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "google-compute-engine-plugin Developers"

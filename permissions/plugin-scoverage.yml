@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/scoverage"
 developers:
-  - "shanbin"
+  - ldap: "shanbin"
+    github: "shanbin"
+repository_team: "scoverage-plugin Developers"

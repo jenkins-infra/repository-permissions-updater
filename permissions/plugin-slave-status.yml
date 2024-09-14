@@ -7,4 +7,5 @@ paths:
   - "org/jvnet/hudson/plugins/slave-status"
 developers: []
 cd:
-  enabled: true
+    enabled: true
+repository_team: "agent-status-plugin Developers"

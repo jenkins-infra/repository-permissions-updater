@@ -2,8 +2,11 @@
 name: "qualys-iac-security"
 github: &GH "jenkinsci/qualys-iac-security-plugin"
 paths:
-- "io/jenkins/plugins/qualys-iac-security"
+  - "io/jenkins/plugins/qualys-iac-security"
 developers:
-- "qualys"
+  - ldap: "qualys"
+  - github: "pmgupte"
+  - github: "hdhaygude"
 issues:
   - github: *GH
+repository_team: "qualys-iac-security-plugin Developers"

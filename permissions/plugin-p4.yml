@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/p4"
 developers:
-  - "p4paul"
-  - "cbopardikar"
-  - "msmeeth"
-  - "skumar7322"
+  - ldap: "p4paul"
+    github: "p4paul"
+  - ldap: "cbopardikar"
+  - ldap: "msmeeth"
+  - ldap: "skumar7322"
+    github: "skumar7322"
+repository_team: "p4-plugin Developers"

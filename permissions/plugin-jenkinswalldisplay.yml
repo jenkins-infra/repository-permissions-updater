@@ -9,4 +9,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jenkinswalldisplay"
 developers:
-  - "pelle"
+  - ldap: "pelle"
+  - github: "pellepelster"
+repository_team: "walldisplay-plugin Developers"

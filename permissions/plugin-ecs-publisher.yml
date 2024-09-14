@@ -6,5 +6,8 @@ issues:
 paths:
   - "de/eacg/ecs-publisher"
 developers:
-  - "prizrack13"
-  - "jthdev"
+  - ldap: "prizrack13"
+  - ldap: "jthdev"
+  - github: "Prizrack13"
+  - github: "jthDEV"
+repository_team: "ecs-publisher-plugin Developers"

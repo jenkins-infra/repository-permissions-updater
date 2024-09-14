@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-multibranch-defaults"
 developers:
-  - "vaimr"
-  - "sag47"
+  - ldap: "vaimr"
+    github: "vaimr"
+  - ldap: "sag47"
+  - github: "samrocketman"
+repository_team: "pipeline-multibranch-defaults-plugin Developers"

@@ -6,18 +6,25 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/workflow/workflow-aggregator"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "abayer"
-  - "svanoort"
-  - "dnusbaum"
-  - "rsandell"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
-  - "jtaboada"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "kshultz"
+  - ldap: "jtaboada"
+  - github: "dwnusbaum"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "workflow-aggregator-plugin Developers"

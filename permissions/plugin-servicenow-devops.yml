@@ -6,13 +6,18 @@ issues:
 paths:
   - "io/jenkins/plugins/servicenow-devops"
 developers:
-  - "mdavireddy"
-  - "sampath_methuku_servicenow"
-  - "felipefaraco"
-  - "eshwar_molugu"
-  - "ramasnow"
-  - "snraonow"
-  - "mohansaira_medisetti"
+  - ldap: "mdavireddy"
+  - ldap: "sampath_methuku_servicenow"
+  - ldap: "felipefaraco"
+  - ldap: "eshwar_molugu"
+  - ldap: "ramasnow"
+    github: "ramasnow"
+  - ldap: "snraonow"
+  - ldap: "mohansaira_medisetti"
+  - github: "bhavani-velivala-sn"
+  - github: "sampath-methuku-servicenow"
+  - github: "manoharreddydavired"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "servicenow-devops-plugin Developers"

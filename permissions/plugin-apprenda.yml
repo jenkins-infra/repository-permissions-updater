@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/apprenda"
 developers:
-  - "apprenda"
+  - ldap: "apprenda"
+  - github: "michmike"
+repository_team: "apprenda-plugin Developers"

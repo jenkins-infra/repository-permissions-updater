@@ -6,12 +6,17 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pubsub-light"
 developers:
-  - "michaelneale"
-  - "vivek"
-  - "kzantow"
-  - "tscherler"
-  - "jamesdumay"
-  - "olamy"
+  - ldap: "michaelneale"
+  - ldap: "vivek"
+  - ldap: "kzantow"
+  - ldap: "tscherler"
+  - ldap: "jamesdumay"
+  - ldap: "olamy"
+    github: "olamy"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "pubsub-light-plugin Developers"
+additional_github_teams:
+  - team: "pubsub-light-module Developers"
+    role: "Admin"

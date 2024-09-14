@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/email-aliases"
 developers:
-  - "michaelneale"
-  - "jamesdumay"
+  - ldap: "michaelneale"
+    github: "michaelneale"
+  - ldap: "jamesdumay"
+repository_team: "email-aliases-plugin Developers"

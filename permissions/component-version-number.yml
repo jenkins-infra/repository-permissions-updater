@@ -4,4 +4,9 @@ github: "jenkinsci/lib-version-number"
 paths:
   - "org/jenkins-ci/version-number"
 developers:
-  - "@core"
+  - ldap: "@core"
+  - github: "kohsuke"
+repository_team: "lib-version-number Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

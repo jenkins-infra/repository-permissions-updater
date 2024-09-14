@@ -7,7 +7,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jms-messaging"
 developers:
-  - "scoheb"
-  - "ggallen"
-  - "olivergondza"
-  - "pajasoft"
+  - ldap: "scoheb"
+    github: "scoheb"
+  - ldap: "ggallen"
+  - ldap: "olivergondza"
+  - ldap: "pajasoft"
+repository_team: "jms-messaging-plugin Developers"

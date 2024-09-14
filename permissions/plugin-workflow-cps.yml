@@ -6,19 +6,29 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/workflow/workflow-cps"
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "abayer"
-  - "svanoort"
-  - "rsandell"
-  - "dnusbaum"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
-  - "jtaboada"
-  - "teilo"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "dnusbaum"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "kshultz"
+  - ldap: "jtaboada"
+  - ldap: "teilo"
+  - github: "olamy"
+  - github: "jtnord"
+  - github: "dwnusbaum"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "workflow-cps-plugin Developers"

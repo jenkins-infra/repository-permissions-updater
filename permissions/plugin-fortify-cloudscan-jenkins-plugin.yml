@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fortify-cloudscan-jenkins-plugin"
 developers:
-  - "sspringett"
+  - ldap: "sspringett"

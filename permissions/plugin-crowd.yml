@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/ds/tools/hudson/crowd"
 developers: []
+repository_team: "crowd-plugin Developers"

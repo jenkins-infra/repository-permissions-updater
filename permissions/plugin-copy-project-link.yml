@@ -6,6 +6,8 @@ issues:
 paths:
   - "hudson/plugins/copyProjectLink/copy-project-link"
   - "org/jenkins-ci/plugins/copy-project-link"
-developers: []
+developers:
+  - github: "NotMyFault"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "copy-project-link-plugin Developers"

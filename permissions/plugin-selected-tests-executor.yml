@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/selected-tests-executor"
 developers:
-  - "tamarca"
+  - ldap: "tamarca"
+  - github: "Tamar-Camus"
+repository_team: "selected-tests-executor-plugin Developers"

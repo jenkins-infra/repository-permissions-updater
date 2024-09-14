@@ -2,10 +2,12 @@
 name: "json-editor-parameter"
 github: &GH "jenkinsci/json-editor-parameter-plugin"
 paths:
-- "io/jenkins/plugins/json-editor-parameter"
+  - "io/jenkins/plugins/json-editor-parameter"
 cd:
-  enabled: true
+    enabled: true
 developers:
-- "chas"
+  - ldap: "chas"
+  - github: "chonton"
 issues:
   - github: *GH
+repository_team: "json-editor-parameter-plugin Developers"

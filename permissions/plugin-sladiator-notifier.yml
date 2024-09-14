@@ -5,4 +5,6 @@ issues:
   - jira: '17606'  # sladiator-notifier-plugin
 paths:
   - "org/jenkins-ci/plugins/sladiator-notifier"
-developers: []
+developers:
+  - github: "mkemme"
+repository_team: "sladiator-plugin Developers"

@@ -6,7 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ease-plugin"
 developers:
-  - "afinley"
-  - "jrodriguez"
-  - "matt_pelaggi"
-  - "puri"
+  - ldap: "afinley"
+  - ldap: "jrodriguez"
+  - ldap: "matt_pelaggi"
+  - ldap: "puri"
+  - github: "rufriedman"
+  - github: "fin7710"
+  - github: "kwilson6744"
+  - github: "jrodgut-sg"
+repository_team: "ease-plugin Developers"

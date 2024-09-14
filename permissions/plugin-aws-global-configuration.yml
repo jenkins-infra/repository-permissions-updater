@@ -6,13 +6,20 @@ issues:
 paths:
   - "io/jenkins/plugins/aws-global-configuration"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "csanchez"
-  - "oleg_nenashev"
-  - "ifernandezcalvo"
-  - "@cloudbees-developers"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "csanchez"
+  - ldap: "oleg_nenashev"
+  - ldap: "ifernandezcalvo"
+  - ldap: "@cloudbees-developers"
+  - github: "carlossg"
+  - github: "jtnord"
+  - github: "amuniz"
+  - github: "oleg-nenashev"
+  - github: "kuisathaverat"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "aws-global-configuration-plugin Developers"

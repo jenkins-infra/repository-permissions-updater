@@ -7,4 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aws-beanstalk-publisher-plugin"
 developers:
-  - "davidtanner"
+  - ldap: "davidtanner"
+  - github: "DavidTanner"
+  - github: "jenkinsadmin"
+repository_team: "aws-beanstalk-publisher-plugin Developers"

@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/skytap"
 developers:
-  - "jchenry"
-  - "hanalee_skytap"
+  - ldap: "jchenry"
+    github: "jchenry"
+  - ldap: "hanalee_skytap"
+  - github: "ptoma98"
+  - github: "tjmilligan"
+repository_team: "skytap-cloud-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/aws-s3-cleaner"
 developers:
-  - "visiontech"
+  - ldap: "visiontech"
+  - github: "VisiontechGitHub"
+repository_team: "aws-s3-cleaner-plugin Developers"

@@ -6,7 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jx-resources"
 developers:
-  - "jstrachan"
-  - "jrawlings"
-  - "jenkinsxbot"
-  - "jglick"
+  - ldap: "jstrachan"
+    github: "jstrachan"
+  - ldap: "jrawlings"
+  - ldap: "jenkinsxbot"
+  - ldap: "jglick"
+    github: "jglick"
+  - github: "rawlingsj"
+  - github: "jenkins-x-bot"
+repository_team: "jx-resources-plugin Developers"

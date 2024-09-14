@@ -5,4 +5,6 @@ issues:
   - jira: '17222'  # metadata-plugin
 paths:
   - "com/sonyericsson/hudson/plugins/metadata/metadata"
-developers: []
+developers:
+  - github: "orjanpercy"
+repository_team: "metadata-plugin Developers"

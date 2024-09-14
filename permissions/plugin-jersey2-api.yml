@@ -4,11 +4,13 @@ github: &GH "jenkinsci/jersey2-api-plugin"
 paths:
   - "io/jenkins/plugins/jersey2-api"
 developers:
-  - "@cloudbees-developers"
+  - ldap: "@cloudbees-developers"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 issues:
   - jira: 28832
 cd:
-  enabled: true
+    enabled: true
+repository_team: "jersey2-api-plugin Developers"

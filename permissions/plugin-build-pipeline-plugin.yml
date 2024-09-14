@@ -6,7 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-pipeline-plugin"
 developers:
-  - "dalvizu"
-  - "geoffbullen"
-  - "integer"
-  - "recena"
+  - ldap: "dalvizu"
+    github: "dalvizu"
+  - ldap: "geoffbullen"
+    github: "geoffbullen"
+  - ldap: "integer"
+  - ldap: "recena"
+    github: "recena"
+  - github: "Tetradeus"
+repository_team: "build-pipeline-plugin Developers"

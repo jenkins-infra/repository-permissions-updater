@@ -6,13 +6,16 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/unique-id"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "andresrc"
-  - "oleg_nenashev"
-  - "recampbell"
-  - "oleg_nenashev"
-  - "teilo"
+  - ldap: "andresrc"
+  - ldap: "oleg_nenashev"
+  - ldap: "recampbell"
+    github: "recampbell"
+  - ldap: "oleg_nenashev"
+  - ldap: "teilo"
+  - github: "jtnord"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "unique-id-plugin Developers"

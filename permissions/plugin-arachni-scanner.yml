@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/arachni-scanner"
 developers:
-  - "irissmann"
+  - ldap: "irissmann"
+    github: "irissmann"
+repository_team: "arachni-scanner-plugin Developers"

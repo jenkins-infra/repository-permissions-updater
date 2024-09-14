@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nodenamecolumn"
 developers: []
+repository_team: "nodenamecolumn-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/miniorange-saml-sp"
 developers:
-  - "miniorange"
+  - ldap: "miniorange"
+  - github: "miniOrangeDev"
+repository_team: "miniorange-saml-sp-plugin Developers"

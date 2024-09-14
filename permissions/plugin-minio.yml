@@ -7,7 +7,9 @@ issues:
 paths:
   - "io/jenkins/plugins/minio"
 developers:
-  - "sleepy"
+  - ldap: "sleepy"
+  - github: "Sleepy-GH"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "minio-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/non-dynamic-hello-world"
 developers:
-  - "batmat"
+  - ldap: "batmat"
+    github: "batmat"
+repository_team: "non-dynamic-hello-world-plugin Developers"

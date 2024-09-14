@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/reviewboard"
 developers: []
+repository_team: "reviewboard-plugin Developers"

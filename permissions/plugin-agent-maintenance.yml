@@ -4,8 +4,10 @@ github: &GH "jenkinsci/agent-maintenance-plugin"
 paths:
   - "io/jenkins/plugins/agent-maintenance"
 developers:
-  - "mawinter69"
+  - ldap: "mawinter69"
+    github: "mawinter69"
 issues:
   - jira: 28837
 cd:
-  enabled: true
+    enabled: true
+repository_team: "agent-maintenance-plugin Developers"

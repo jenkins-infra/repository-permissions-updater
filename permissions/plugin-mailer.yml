@@ -6,14 +6,18 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mailer"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "andresrc"
-  - "jglick"
-  - "kohsuke"
-  - "rsandell"
-  - "oleg_nenashev"
-  - "alecharp"
+  - ldap: "andresrc"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "rsandell"
+  - ldap: "oleg_nenashev"
+  - ldap: "alecharp"
+    github: "alecharp"
+  - github: "slide"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "mailer-plugin Developers"

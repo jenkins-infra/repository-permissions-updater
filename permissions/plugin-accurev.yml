@@ -7,6 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/accurev"
 developers:
-  - "poojavishal"
-  - "abmohantyj"
-  - "prattal"
+  - ldap: "poojavishal"
+  - ldap: "abmohantyj"
+    github: "abmohantyj"
+  - ldap: "prattal"
+  - github: "jsherwood-accurev"
+  - github: "AldenPratt"
+repository_team: "accurev-plugin Developers"

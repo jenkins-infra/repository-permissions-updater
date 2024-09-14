@@ -4,11 +4,26 @@ github: "jenkinsci/pipeline-model-definition-plugin"
 paths:
   - "org/jenkinsci/plugins/pipeline-model-parent"
 developers:
-  - "abayer"
-  - "oleg_nenashev"
-  - "rsandell"
-  - "bitwiseman"
-  - "dnusbaum"
-  - "carroll"
+  - ldap: "abayer"
+  - ldap: "oleg_nenashev"
+  - ldap: "rsandell"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "dnusbaum"
+  - ldap: "carroll"
+  - github: "olamy"
+  - github: "batmat"
+  - github: "jtnord"
+  - github: "raul-arabaolaza"
+  - github: "dwnusbaum"
+  - github: "HRMPW"
+  - github: "joseblas"
+  - github: "PaddyOH"
+  - github: "kshultzCB"
+  - github: "car-roll"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pipeline-model-definition-plugin Developers"
+additional_github_teams:
+  - team: "declarative-rfc-reviewers"
+    role: "Read"

@@ -3,4 +3,4 @@ name: "slave-utilization-plugin"
 paths:
   - "com/suryagaddipati/jenkins/slave-utilization-plugin"
 developers:
-  - "surya548"
+  - ldap: "surya548"

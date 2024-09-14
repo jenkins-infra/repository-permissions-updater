@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/URLSCM"
 developers: []
+repository_team: "URLSCM-plugin Developers"

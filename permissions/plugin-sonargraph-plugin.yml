@@ -6,7 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sonargraph-plugin"
 developers:
-  - "andreashoyerh2m"
-  - "ingmarkellner"
-  - "a_zitzewitz"
-  - "dietmar_menges"
+  - ldap: "andreashoyerh2m"
+    github: "andreashoyerh2m"
+  - ldap: "ingmarkellner"
+    github: "ingmarkellner"
+  - ldap: "a_zitzewitz"
+  - ldap: "dietmar_menges"
+  - github: "esteban-h2m"
+repository_team: "sonargraph-plugin Developers"

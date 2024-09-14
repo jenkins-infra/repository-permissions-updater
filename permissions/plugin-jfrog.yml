@@ -2,8 +2,11 @@
 name: "jfrog"
 github: &GH "jenkinsci/jfrog-plugin"
 paths:
-- "io/jenkins/plugins/jfrog"
+  - "io/jenkins/plugins/jfrog"
 developers:
-- "jfrog_ecosystem"
+  - ldap: "jfrog_ecosystem"
+  - github: "jfrog-ecosystem"
+  - github: "IL-Automation"
 issues:
   - github: *GH
+repository_team: "jfrog-plugin Developers"

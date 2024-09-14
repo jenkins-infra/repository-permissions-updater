@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/couchdb-statistics"
 developers:
-  - "garethjevans"
+  - ldap: "garethjevans"
+    github: "garethjevans"
+repository_team: "couchdb-statistics-plugin Developers"

@@ -6,8 +6,12 @@ issues:
 paths:
   - "io/jenkins/plugins/opencover"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "asavanchuk"
-  - "cizezsy"
-  - "jonesbusy"
+  - ldap: "asavanchuk"
+  - ldap: "cizezsy"
+    github: "cizezsy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+  - github: "tempora-mutantur"
+repository_team: "opencover-plugin Developers"

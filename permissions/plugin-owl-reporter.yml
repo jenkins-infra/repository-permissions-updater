@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/atlantbh/jenkins/owl-reporter"
 developers:
-  - "tarikabh"
+  - ldap: "tarikabh"
+  - github: "tarikdem"
+repository_team: "owl-reporter-plugin Developers"

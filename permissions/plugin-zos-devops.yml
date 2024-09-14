@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/zdevops"
 developers:
-  - "iba_mainframe_dev"
+  - ldap: "iba_mainframe_dev"
+additional_github_teams:
+  - team: "zos-devops-plugin Developers"
+    role: "Admin"

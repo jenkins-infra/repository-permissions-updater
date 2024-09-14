@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gradle-daemon"
 developers:
-  - "deepy"
+  - ldap: "deepy"
+    github: "deepy"
+repository_team: "gradle-daemon-plugin Developers"

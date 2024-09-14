@@ -4,4 +4,6 @@ github: "jenkinsci/lsf-cloud-plugin"
 paths:
   - "org/jenkins-ci/plugins/lsf-cloud"
 developers:
-  - "laisvydas"
+  - ldap: "laisvydas"
+  - github: "LaisvydasLT"
+repository_team: "lsf-cloud-plugin Developers"

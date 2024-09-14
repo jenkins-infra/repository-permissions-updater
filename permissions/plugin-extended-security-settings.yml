@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/extended-security-settings"
 developers:
-  - "jvz"
-  - "wfollonier"
+  - ldap: "jvz"
+    github: "jvz"
+  - ldap: "wfollonier"
+  - github: "Wadeck"
+repository_team: "extended-security-settings-plugin Developers"

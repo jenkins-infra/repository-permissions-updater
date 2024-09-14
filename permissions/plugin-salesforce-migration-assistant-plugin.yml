@@ -7,4 +7,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/salesforce-migration-assistant-plugin"
 developers:
-  - "aesanch2"
+  - ldap: "aesanch2"
+repository_team: "salesforce-migration-assistant-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/golang"
 developers:
-  - "orrc"
+  - ldap: "orrc"
+    github: "orrc"
+repository_team: "golang-plugin Developers"

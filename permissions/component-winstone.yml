@@ -4,4 +4,11 @@ github: "jenkinsci/winstone"
 paths:
   - "org/jenkins-ci/winstone"
 developers:
-  - "@core"
+  - ldap: "@core"
+  - github: "olamy"
+  - github: "jglick"
+  - github: "oleg-nenashev"
+repository_team: "winstone Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Write"

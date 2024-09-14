@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-keyvault"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "timja"
+  - ldap: "timja"
+    github: "timja"
+repository_team: "azure-keyvault-plugin Developers"

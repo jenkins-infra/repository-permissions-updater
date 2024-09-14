@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/all-changes"
 developers:
-  - "pskumar448"
+  - ldap: "pskumar448"
+    github: "pskumar448"
+  - github: "olamy"
+  - github: "wolfs"
+repository_team: "all-changes-plugin Developers"

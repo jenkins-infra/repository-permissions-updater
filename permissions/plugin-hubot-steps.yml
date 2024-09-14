@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hubot-steps"
 developers:
-  - "nrayapati"
+  - ldap: "nrayapati"
+    github: "nrayapati"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "hubot-steps-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "me/vickychijwani/jenkins/labelled-steps"
 developers:
-  - "vickychijwani"
+  - ldap: "vickychijwani"
+    github: "vickychijwani"
+repository_team: "labelled-steps-plugin Developers"

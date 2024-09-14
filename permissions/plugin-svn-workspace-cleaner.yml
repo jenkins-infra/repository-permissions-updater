@@ -3,4 +3,4 @@ name: "svn-workspace-cleaner"
 paths:
   - "org/jenkins-ci/plugins/svn-workspace-cleaner"
 developers:
-  - "davidparsson"
+  - ldap: "davidparsson"

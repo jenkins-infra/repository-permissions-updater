@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/graphiteIntegrator"
 developers:
-  - "patelm5"
+  - ldap: "patelm5"
+    github: "patelm5"
+  - github: "joachim-rodrigues"
+repository_team: "graphite-plugin Developers"

@@ -7,4 +7,10 @@ issues:
 paths:
   - "de/tracetronic/jenkins/plugins/ecutest"
 developers:
-  - "tracetronic"
+  - ldap: "tracetronic"
+  - github: "cpoenisch"
+  - github: "TT-S3-D1"
+  - github: "MartinGroscheTT"
+  - github: "thardtke-tt"
+  - github: "TT-CX-User"
+repository_team: "ecutest-plugin Developers"

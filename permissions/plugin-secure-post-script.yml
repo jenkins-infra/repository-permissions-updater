@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/secure-post-script"
 developers:
-  - "geekchow"
+  - ldap: "geekchow"
+    github: "geekchow"
+repository_team: "secure-post-script-plugin Developers"

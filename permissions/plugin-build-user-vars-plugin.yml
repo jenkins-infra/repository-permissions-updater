@@ -6,9 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-user-vars-plugin"
 developers:
-  - "abayer"
-  - "clifford_jenkins"
-  - "oleg_nenashev"
-  - "zedasvacas"
+  - ldap: "abayer"
+  - ldap: "clifford_jenkins"
+  - ldap: "oleg_nenashev"
+  - ldap: "zedasvacas"
+  - github: "aalibabaevich"
+  - github: "fabiodcasilva"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "build-user-vars-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/maven-deployment-linker"
 developers: []
+repository_team: "maven-deployment-linker-plugin Developers"

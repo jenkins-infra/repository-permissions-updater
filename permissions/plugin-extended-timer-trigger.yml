@@ -2,10 +2,12 @@
 name: "extended-timer-trigger"
 github: &GH "jenkinsci/extended-timer-trigger-plugin"
 paths:
-- "io/jenkins/plugins/extended-timer-trigger"
+  - "io/jenkins/plugins/extended-timer-trigger"
 developers:
-- "mawinter69"
+  - ldap: "mawinter69"
+    github: "mawinter69"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "extended-timer-trigger-plugin Developers"

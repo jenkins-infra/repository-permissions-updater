@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/rubiconred/jenkins/myst-plugin"
 developers:
-  - "fdouek"
+  - ldap: "fdouek"
+  - github: "fdouek-rxr"
+repository_team: "myst-plugin Developers"

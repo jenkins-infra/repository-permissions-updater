@@ -6,6 +6,12 @@ issues:
 paths:
   - "com/ibm/devops/ibm-cloud-devops"
 developers:
-  - "xunrongl"
-  - "uparulekar"
-  - "dlaprod"
+  - ldap: "xunrongl"
+  - ldap: "uparulekar"
+  - ldap: "dlaprod"
+  - github: "xunrongli-ibm"
+  - github: "ccox-IBM"
+repository_team: "ibm-cloud-devops-plugin Developers"
+additional_github_teams:
+  - team: "DevOpsInsights"
+    role: "Read"

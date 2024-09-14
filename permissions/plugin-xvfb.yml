@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/xvfb"
 developers:
-  - "zregvart"
+  - ldap: "zregvart"
+    github: "zregvart"
+repository_team: "xvfb-plugin Developers"

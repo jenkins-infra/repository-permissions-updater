@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rancher"
 developers:
-  - "yunlzheng"
+  - ldap: "yunlzheng"
+    github: "yunlzheng"
+repository_team: "rancher-plugin Developers"

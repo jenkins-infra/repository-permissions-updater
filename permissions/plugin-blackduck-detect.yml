@@ -6,7 +6,10 @@ issues:
 paths:
   - "com/blackducksoftware/integration/blackduck-detect"
 developers:
-  - "gkillough"
-  - "jrichard"
-  - "akamen"
-  - "bdsoss"
+  - ldap: "gkillough"
+  - ldap: "jrichard"
+  - ldap: "akamen"
+  - ldap: "bdsoss"
+additional_github_teams:
+  - team: "blackduck-detect-plugin Developers"
+    role: "Admin"

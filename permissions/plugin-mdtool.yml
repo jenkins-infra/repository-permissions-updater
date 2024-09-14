@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mdtool"
 developers:
-  - "fen_x"
+  - ldap: "fen_x"
+  - github: "fen-x"
+repository_team: "mdtool-plugin Developers"

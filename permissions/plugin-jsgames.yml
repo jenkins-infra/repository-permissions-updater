@@ -5,4 +5,6 @@ issues:
   - jira: '16110'  # jsgames-plugin
 paths:
   - "org/jenkins-ci/plugins/jsgames"
-developers: []
+developers:
+  - github: "cliffano"
+repository_team: "jsgames-plugin Developers"

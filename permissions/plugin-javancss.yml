@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/javancss"
 developers: []
+repository_team: "javancss-plugin Developers"

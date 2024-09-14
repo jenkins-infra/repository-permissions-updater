@@ -5,4 +5,6 @@ issues:
   - jira: '15983'  # unicorn-plugin
 paths:
   - "si/nej/hudson/plugins/unicorn"
-developers: []
+developers:
+  - github: "digitaljerry"
+repository_team: "unicorn-plugin Developers"

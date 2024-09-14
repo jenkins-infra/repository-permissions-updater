@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/continuousassurance/swamp/jenkins/swamp"
 developers:
-  - "swamp_jenkins_plugin"
+  - ldap: "swamp_jenkins_plugin"
+  - github: "vamshikr"
+  - github: "jsweetland3"
+  - github: "bigtrak"
+repository_team: "swamp-plugin Developers"

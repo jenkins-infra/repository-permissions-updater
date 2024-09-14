@@ -4,10 +4,13 @@ github: &gh "jenkinsci/zap-pipeline-plugin"
 issues:
   - github: *gh
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 paths:
   - "com/vrondakis/zap/zap-pipeline"
 developers:
-  - "vrondakis"
-  - "cuda_shardy"
+  - ldap: "vrondakis"
+  - ldap: "cuda_shardy"
+  - github: "uen"
+  - github: "shardy-lbar"
+repository_team: "zap-pipeline-plugin Developers"

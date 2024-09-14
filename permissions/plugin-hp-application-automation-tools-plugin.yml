@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hp-application-automation-tools-plugin"
 developers:
-  - "buzas"
-  - "andreibangau"
+  - ldap: "buzas"
+  - ldap: "andreibangau"
+  - github: "zhipengwa"
+repository_team: "hpe-application-automation-tools-plugin Developers"

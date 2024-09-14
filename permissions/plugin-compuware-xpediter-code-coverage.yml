@@ -6,4 +6,8 @@ issues:
 paths:
   - "com/compuware/jenkins/compuware-xpediter-code-coverage"
 developers:
-  - "cpwr_jenkins"
+  - ldap: "cpwr_jenkins"
+  - github: "pfhdzg0"
+  - github: "sallenCPWR"
+  - github: "jgoering41"
+repository_team: "compuware-xpediter-code-coverage-plugin Developers"

@@ -4,5 +4,7 @@ github: "jenkinsci/libdtkit"
 paths:
   - "org/jenkins-ci/lib/dtkit/dtkit-metrics-util"
 developers:
-  - "gbois"
-  - "nfalco"
+  - ldap: "gbois"
+  - ldap: "nfalco"
+  - github: "nfalco79"
+repository_team: "libdtkit Developers"

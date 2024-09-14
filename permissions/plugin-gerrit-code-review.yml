@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gerrit-code-review"
 developers:
-  - "lucamilanesio"
-  - "ssbarnea"
+  - ldap: "lucamilanesio"
+  - ldap: "ssbarnea"
+additional_github_teams:
+  - team: "gerrit-plugin Developers"
+    role: "Admin"

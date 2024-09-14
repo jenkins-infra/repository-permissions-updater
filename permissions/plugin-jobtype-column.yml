@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/jobtype-column"
   - "org/jvnet/hudson/plugins/jobtype-column"
 developers: []
+repository_team: "jobtype-column-plugin Developers"

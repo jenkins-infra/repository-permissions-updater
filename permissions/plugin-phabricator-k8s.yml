@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/phabricator-k8s"
 developers:
-  - "andresrc"
+  - ldap: "andresrc"
+    github: "andresrc"
+repository_team: "phabricator-k8s-plugin Developers"

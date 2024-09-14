@@ -6,4 +6,6 @@ issues:
 paths:
   - "dev/lsegal/jenkins/codebuilder-cloud"
 developers:
-  - "lsegal"
+  - ldap: "lsegal"
+    github: "lsegal"
+repository_team: "codebuilder-cloud-plugin Developers"

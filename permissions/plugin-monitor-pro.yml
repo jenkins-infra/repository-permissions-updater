@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/monitor-pro"
 developers:
-  - "frdiaz"
-  - "mmariscalg"
+  - ldap: "frdiaz"
+  - ldap: "mmariscalg"
+    github: "mmariscalg"
+  - github: "franciscoRdiaz"
+repository_team: "monitor-pro-plugin Developers"

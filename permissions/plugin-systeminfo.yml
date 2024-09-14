@@ -4,6 +4,8 @@ github: &GH "jenkinsci/systeminfo-plugin"
 paths:
   - "io/jenkins/plugins/systeminfo"
 developers:
-  - "ozhang"
+  - ldap: "ozhang"
+  - github: "Zhaeong"
 issues:
   - jira: 29020
+repository_team: "systeminfo-plugin Developers"

@@ -6,4 +6,12 @@ issues:
 paths:
   - "io/jenkins/plugins/atlassian-bitbucket-server-integration"
 developers:
-  - "atlassian_bbs"
+  - ldap: "atlassian_bbs"
+  - github: "justinskariah"
+  - github: "goravjoshi"
+  - github: "dkjellin"
+  - github: "mhenschke-atl"
+  - github: "jvanderloo-atlassian"
+  - github: "khughes-atlassian"
+  - github: "hwiggers-atl"
+repository_team: "atlassian-bitbucket-server-integration-plugin Developers"

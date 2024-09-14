@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/fuzzpro/jenkins-plugins/multibranch-job-tear-down"
 developers:
-  - "fuzzcaguilar"
+  - ldap: "fuzzcaguilar"
+  - github: "caguilar187"
+repository_team: "multibranch-job-tear-down-plugin Developers"

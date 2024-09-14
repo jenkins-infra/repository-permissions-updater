@@ -5,4 +5,6 @@ issues:
   - jira: '18020'  # gem-publisher-plugin
 paths:
   - "net/arangamani/jenkins/gem-publisher"
-developers: []
+developers:
+  - github: "arangamani"
+repository_team: "gem-publisher-plugin Developers"

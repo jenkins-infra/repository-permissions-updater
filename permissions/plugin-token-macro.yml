@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/token-macro"
 developers:
-  - "oleg_nenashev"
-  - "slide_o_mix"
+  - ldap: "oleg_nenashev"
+  - ldap: "slide_o_mix"
+  - github: "kohsuke"
+  - github: "slide"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "token-macro-plugin Developers"

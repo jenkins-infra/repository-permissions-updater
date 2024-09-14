@@ -4,8 +4,10 @@ github: &GH "jenkinsci/pipeline-graph-view-plugin"
 paths:
   - "io/jenkins/plugins/pipeline-graph-view"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "timja"
+  - ldap: "timja"
+    github: "timja"
 issues:
   - github: *GH
+repository_team: "pipeline-graph-view-plugin Developers"

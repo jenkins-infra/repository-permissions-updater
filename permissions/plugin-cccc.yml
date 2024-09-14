@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/thalesgroup/jenkins-ci/plugins/cccc"
 developers: []
+repository_team: "cccc-plugin Developers"

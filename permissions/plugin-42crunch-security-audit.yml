@@ -6,4 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/42crunch-security-audit"
 developers:
-  - "42crunch_plugins"
+  - ldap: "42crunch_plugins"
+  - github: "ak1394"
+  - github: "isamauny"
+  - github: "DSotnikov"
+repository_team: "42crunch-security-audit-plugin Developers"

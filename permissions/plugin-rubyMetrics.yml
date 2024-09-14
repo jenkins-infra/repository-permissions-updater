@@ -7,4 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rubyMetrics"
 developers:
-  - "pkuczynski"
+  - ldap: "pkuczynski"
+additional_github_teams:
+  - team: "rubyMetrics-plugin Developers"
+    role: "Write"

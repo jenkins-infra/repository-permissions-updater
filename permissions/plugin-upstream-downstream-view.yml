@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/upstream-downstream-view"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+  - github: "lvotypko"
+repository_team: "upstream-downstream-view-plugin Developers"

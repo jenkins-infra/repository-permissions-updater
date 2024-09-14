@@ -6,5 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/venafi-codesigning"
 developers:
-  - "honglilai"
-  - "arnold79"
+  - ldap: "honglilai"
+  - ldap: "arnold79"
+  - github: "FooBarWidget"
+  - github: "sanhi"
+  - github: "avwsolutions"
+repository_team: "venafi-codesigning-plugin Developers"

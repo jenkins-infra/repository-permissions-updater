@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/codebeamer-coverage-publisher"
 developers:
-  - "intland_support"
+  - ldap: "intland_support"
+  - github: "abanfi"
+  - github: "balazstarint"
+repository_team: "codebeamer-coverage-publisher-plugin Developers"

@@ -2,8 +2,10 @@
 name: "restrict-steps"
 github: &GH "jenkinsci/restrict-steps-plugin"
 paths:
-- "io/jenkins/plugins/restrict-steps"
+  - "io/jenkins/plugins/restrict-steps"
 developers:
-- "sag47"
+  - ldap: "sag47"
+  - github: "samrocketman"
 issues:
   - jira: 29133
+repository_team: "restrict-steps-plugin Developers"

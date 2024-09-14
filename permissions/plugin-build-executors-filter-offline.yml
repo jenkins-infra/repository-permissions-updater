@@ -4,6 +4,8 @@ github: &GH "jenkinsci/build-executors-filter-offline-plugin"
 paths:
   - "io/jenkins/plugins/build-executors-filter-offline"
 developers:
-  - "markch"
+  - ldap: "markch"
+  - github: "hmarkc"
 issues:
   - github: *GH
+repository_team: "build-executors-filter-offline-plugin Developers"

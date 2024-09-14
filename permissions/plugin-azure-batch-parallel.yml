@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/microsoft/azurebatch/azure-batch-parallel"
 developers:
-  - "azurebatch"
+  - ldap: "azurebatch"
+  - github: "junguan2014"
+repository_team: "azure-batch-parallel-plugin Developers"

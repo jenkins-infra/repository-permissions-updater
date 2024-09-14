@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/gallio"
   - "org/jvnet/hudson/plugins/gallio"
 developers:
-  - "gbois"
+  - ldap: "gbois"
+repository_team: "gallio-plugin Developers"

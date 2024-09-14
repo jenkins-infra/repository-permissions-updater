@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/scripttrigger"
 developers:
-  - "gbois"
-  - "stealthdj"
+  - ldap: "gbois"
+  - ldap: "stealthdj"
+  - github: "TonyNoble"
+repository_team: "scripttrigger-plugin Developers"

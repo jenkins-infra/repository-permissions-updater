@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/simple-travis-runner"
 developers:
-  - "abayer"
+  - ldap: "abayer"
+    github: "abayer"
+  - github: "michaelneale"
+repository_team: "simple-travis-runner-plugin Developers"

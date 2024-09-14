@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/chatter-notifier"
 developers:
-  - "sfell"
-  - "justinharringa"
+  - ldap: "sfell"
+  - ldap: "justinharringa"
+    github: "justinharringa"
+  - github: "superfell"
+  - github: "sortiz-sfdc"
+repository_team: "chatter-notifier-plugin Developers"

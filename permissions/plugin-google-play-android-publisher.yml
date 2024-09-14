@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-play-android-publisher"
 developers:
-  - "orrc"
+  - ldap: "orrc"
+    github: "orrc"
+  - github: "jhansche"
+repository_team: "google-play-android-publisher-plugin Developers"

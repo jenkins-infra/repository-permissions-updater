@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jobrevision"
 developers: []
+repository_team: "jobrevision-plugin Developers"

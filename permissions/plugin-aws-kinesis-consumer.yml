@@ -2,13 +2,16 @@
 name: "aws-kinesis-consumer"
 github: &GH "jenkinsci/aws-kinesis-consumer-plugin"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 paths:
   - "io/jenkins/plugins/aws-kinesis-consumer"
 developers:
-  - "ponch"
-  - "syntonyze"
-  - "lucamilanesio"
+  - ldap: "ponch"
+  - ldap: "syntonyze"
+  - ldap: "lucamilanesio"
+    github: "lucamilanesio"
+  - github: "barbasa"
 issues:
   - jira: 28634
+repository_team: "aws-kinesis-consumer-plugin Developers"

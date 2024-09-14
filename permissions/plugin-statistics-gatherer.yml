@@ -7,5 +7,7 @@ issues:
 paths:
   - "org/jenkins/plugins/statistics/gatherer/statistics-gatherer"
 developers:
-  - "macha762"
-  - "lucamilanesio"
+  - ldap: "macha762"
+  - ldap: "lucamilanesio"
+    github: "lucamilanesio"
+repository_team: "statistics-gatherer-plugin Developers"

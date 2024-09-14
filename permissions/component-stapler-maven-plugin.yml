@@ -6,6 +6,9 @@ issues:
 paths:
   - "io/jenkins/tools/maven/stapler-maven-plugin"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

@@ -3,4 +3,4 @@ name: "rubymotion"
 paths:
   - "org/jenkins-ci/ruby-plugins/rubymotion"
 developers:
-  - "watson1978"
+  - ldap: "watson1978"

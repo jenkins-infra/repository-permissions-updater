@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/skip-notifications-trait"
 developers:
-  - "alex_dubrouski"
-  - "jonesbusy"
+  - ldap: "alex_dubrouski"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+  - github: "alex-dubrouski"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "skip-notifications-trait-plugin Developers"

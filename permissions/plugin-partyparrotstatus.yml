@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/partyparrotstatus"
 developers:
-  - "nikitabelonogov"
+  - ldap: "nikitabelonogov"
+    github: "nikitabelonogov"
+repository_team: "partyparrotstatus-plugin Developers"

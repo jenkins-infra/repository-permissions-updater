@@ -2,8 +2,11 @@
 name: "stapler"
 github: "jenkinsci/stapler"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "org/kohsuke/stapler/stapler*"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

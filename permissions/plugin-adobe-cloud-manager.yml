@@ -6,7 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/adobe-cloud-manager"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "ahmedmusallam"
-  - "stopp"
+  - ldap: "ahmedmusallam"
+  - ldap: "stopp"
+  - github: "bstopp"
+  - github: "ahmed-musallam"
+repository_team: "adobe-cloud-manager-plugin Developers"

@@ -4,6 +4,8 @@ github: &GH "jenkinsci/grypescanner-plugin"
 paths:
   - "io/jenkins/plugins/grypescanner"
 developers:
-  - "tbaum"
+  - ldap: "tbaum"
+  - github: "dtbaum"
 issues:
   - github: *GH
+repository_team: "grypescanner-plugin Developers"

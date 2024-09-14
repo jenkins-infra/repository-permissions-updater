@@ -5,4 +5,8 @@ issues:
   - jira: '16050'  # websocket-plugin
 paths:
   - "org/codefirst/jenkins/wsnotifier/websocket"
-developers: []
+developers:
+  - github: "mzp"
+  - github: "mallowlabs"
+  - github: "suer"
+repository_team: "websocket-plugin Developers"

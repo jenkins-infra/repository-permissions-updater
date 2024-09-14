@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/surenpi/jenkins/agent-loadbalance"
 developers:
-  - "surenpi"
+  - ldap: "surenpi"
+  - github: "LinuxSuRen"
+repository_team: "agent-loadbalance-plugin Developers"

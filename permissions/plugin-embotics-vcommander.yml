@@ -4,7 +4,10 @@ github: "jenkinsci/snowsoftware-commander-plugin"
 paths:
   - "io/jenkins/plugins/embotics-vcommander"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 developers:
-  - "commanderjenkinsplugin"
+  - ldap: "commanderjenkinsplugin"
+  - github: "dougkorchinski"
+  - github: "VolodymyrFesenko"
+repository_team: "snowsoftware-commander-plugin Developers"

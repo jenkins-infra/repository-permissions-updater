@@ -4,9 +4,12 @@ github: &GH "jenkinsci/loadrunner-cloud-plugin"
 paths:
   - "io/jenkins/plugins/loadrunner-cloud"
 developers:
-  - "weisun10"
-  - "xiaoyuan_qi"
+  - ldap: "weisun10"
+    github: "weisun10"
+  - ldap: "xiaoyuan_qi"
+  - github: "narcotics726"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "loadrunner-cloud-plugin Developers"

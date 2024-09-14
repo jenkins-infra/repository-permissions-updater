@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/findbugs"
 developers: []
+repository_team: "findbugs-plugin Developers"

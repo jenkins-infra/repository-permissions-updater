@@ -6,8 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/TestFairy"
 developers:
-  - "diegoperini"
-  - "gilm"
-  - "yan123"
+  - ldap: "diegoperini"
+  - ldap: "gilm"
+  - ldap: "yan123"
+  - github: "gmegidish"
+  - github: "giltsl"
+  - github: "yairba"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "testfairy-plugin Developers"

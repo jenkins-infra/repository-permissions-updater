@@ -6,3 +6,6 @@ issues:
 paths:
   - "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
 developers: []
+additional_github_teams:
+  - team: "computer-queue-plugin Developers"
+    role: "Admin"

@@ -4,4 +4,8 @@ github: "jenkinsci/lib-task-reactor"
 paths:
   - "org/jenkins-ci/task-reactor"
 developers:
-  - "@core"
+  - ldap: "@core"
+repository_team: "lib-task-reactor Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

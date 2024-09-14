@@ -6,5 +6,7 @@ issues:
 paths:
   - "com/base2services/jenkins/github-sqs-plugin"
 developers:
-  - "nemo83"
-  - "aaronwalker"
+  - ldap: "nemo83"
+  - ldap: "aaronwalker"
+    github: "aaronwalker"
+repository_team: "github-sqs-plugin Developers"

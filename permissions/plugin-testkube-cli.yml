@@ -2,10 +2,13 @@
 name: "testkube-cli"
 github: &GH "jenkinsci/testkube-cli-plugin"
 paths:
-- "io/jenkins/plugins/testkube-cli"
+  - "io/jenkins/plugins/testkube-cli"
 developers:
-- "testkube"
+  - ldap: "testkube"
+  - github: "olensmar"
+  - github: "devcatalin"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "testkube-cli-plugin Developers"

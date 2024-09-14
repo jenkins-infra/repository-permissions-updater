@@ -6,6 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/scm-filter-jervis"
 developers:
-  - "sag47"
+  - ldap: "sag47"
+  - github: "samrocketman"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "scm-filter-jervis-plugin Developers"

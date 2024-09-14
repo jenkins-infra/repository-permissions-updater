@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/amcbridge/build-configurator"
 developers:
-  - "amcbridgedevteam"
+  - ldap: "amcbridgedevteam"
+  - github: "AMCBridgeDevTeam"
+  - github: "roman-bilyi"
+repository_team: "build-configurator-plugin Developers"

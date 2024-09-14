@@ -6,4 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/r7insight-log-forwarder"
 developers:
-  - "donatello_rapid7"
+  - ldap: "donatello_rapid7"
+  - github: "udangel-r7"
+  - github: "danilosterrapid7"
+  - github: "scawley-r7"
+  - github: "icakmak-r7"
+repository_team: "r7insight-log-forwarder-plugin Developers"

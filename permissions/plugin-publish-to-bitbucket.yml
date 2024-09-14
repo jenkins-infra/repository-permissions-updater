@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/publish-to-bitbucket"
 developers:
-  - "himindz"
+  - ldap: "himindz"
+  - github: "khanali21"
+repository_team: "publish-to-bitbucket-plugin Developers"

@@ -7,4 +7,6 @@ issues:
 paths:
   - "com/aspectsecurity/automationservices/plugins/jenkins/ibm-security-appscansource-scanner"
 developers:
-  - "kevinfealey"
+  - ldap: "kevinfealey"
+    github: "kevinfealey"
+repository_team: "ibm-security-appscansource-scanner-plugin Developers"

@@ -5,4 +5,6 @@ issues:
   - jira: '15774'  # bulk-builder-plugin
 paths:
   - "org/jvnet/hudson/plugins/bulk-builder"
-developers: []
+developers:
+  - github: "alienfs"
+repository_team: "bulk-builder-plugin Developers"

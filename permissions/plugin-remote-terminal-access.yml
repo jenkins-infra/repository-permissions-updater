@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/remote-terminal-access"
 developers:
-  - "kmartens27"
+  - ldap: "kmartens27"
+    github: "kmartens27"
+  - github: "kohsuke"
+repository_team: "remote-terminal-access-plugin Developers"

@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ws-execution-manager"
 developers:
-  - "dtheobald"
-  - "rrinehart"
+  - ldap: "dtheobald"
+    github: "dtheobald"
+  - ldap: "rrinehart"
+  - github: "raleigh-rinehart"
+repository_team: "ws-execution-manager-plugin Developers"

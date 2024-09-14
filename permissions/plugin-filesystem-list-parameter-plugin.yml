@@ -6,4 +6,6 @@ issues:
 paths:
   - "aendter/jenkins/plugins/filesystem-list-parameter-plugin"
 developers:
-  - "aendter"
+  - ldap: "aendter"
+    github: "aendter"
+repository_team: "filesystem-list-parameter-plugin Developers"

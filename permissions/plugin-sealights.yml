@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/sealights/plugins/sealights"
 developers:
-  - "sealights"
+  - ldap: "sealights"
+  - github: "shl3vi"
+repository_team: "sealights-plugin Developers"

@@ -4,11 +4,16 @@ github: &GH "jenkinsci/ionicons-api-plugin"
 paths:
   - "io/jenkins/plugins/ionicons-api"
 developers:
-  - "@ux"
+  - ldap: "@ux"
+  - github: "NotMyFault"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "ionicons-api-plugin Developers"
+additional_github_teams:
+  - team: "SIG: UX"
+    role: "Admin"

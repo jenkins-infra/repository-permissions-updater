@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/cavisson-ns-nd-integration"
 developers:
-  - "cavissonsystems"
+  - ldap: "cavissonsystems"
+    github: "cavissonsystems"
+  - github: "jenkinsadmin"
+repository_team: "cavisson-ns-nd-integration-plugin Developers"

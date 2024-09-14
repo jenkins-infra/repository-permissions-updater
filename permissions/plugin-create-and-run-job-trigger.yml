@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/create-and-run-job-trigger"
 developers:
-  - "culmat"
+  - ldap: "culmat"
+    github: "culmat"
+  - github: "MarkusTiede"
+  - github: "joachimprinzbach"
+repository_team: "create-and-run-job-trigger-plugin Developers"

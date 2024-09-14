@@ -6,9 +6,20 @@ issues:
 paths:
   - "com/openshift/jenkins/plugins/openshift-client"
 developers:
-  - "@openshift-developers"
+  - ldap: "@openshift-developers"
+  - github: "akram"
+  - github: "gabemontero"
+  - github: "bparees"
+  - github: "jkhelil"
+  - github: "waveywaves"
+  - github: "jupierce"
+  - github: "divyansh42"
+  - github: "apoorvajagtap"
+  - github: "ayushsatyam146"
+  - github: "mbharatk"
 security:
-  contacts:
-    jira: "coreydaley"
+    contacts:
+        jira: "coreydaley"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "openshift-client-plugin Developers"

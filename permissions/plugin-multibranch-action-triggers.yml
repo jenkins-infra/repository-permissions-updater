@@ -7,7 +7,9 @@ issues:
 paths:
   - "io/jenkins/plugins/multibranch-action-triggers"
 developers:
-  - "aytuncbeken"
+  - ldap: "aytuncbeken"
+    github: "aytuncbeken"
 security:
-  contacts:
-    jira: "aytuncbeken"
+    contacts:
+        jira: "aytuncbeken"
+repository_team: "multibranch-action-triggers-plugin Developers"

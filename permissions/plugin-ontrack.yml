@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ontrack"
 developers:
-  - "damien_coraboeuf"
+  - ldap: "damien_coraboeuf"
+  - github: "dcoraboeuf"
+repository_team: "ontrack-plugin Developers"

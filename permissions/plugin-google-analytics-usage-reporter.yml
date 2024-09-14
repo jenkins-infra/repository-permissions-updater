@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-analytics-usage-reporter"
 developers:
-  - "astroilov"
+  - ldap: "astroilov"
+    github: "astroilov"
+  - github: "wzheng2310"
+repository_team: "google-analytics-usage-reporter-plugin Developers"

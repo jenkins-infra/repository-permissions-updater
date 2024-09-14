@@ -2,9 +2,12 @@
 name: "appdome-validate-2secure"
 github: &GH "jenkinsci/appdome-validate-2secure-plugin"
 paths:
-- "io/jenkins/plugins/appdome-validate-2secure"
+  - "io/jenkins/plugins/appdome-validate-2secure"
 developers:
-- "idanhauser"
-- "avie"
+  - ldap: "idanhauser"
+    github: "idanhauser"
+  - ldap: "avie"
+  - github: "avi112211"
 issues:
   - github: *GH
+repository_team: "appdome-validate-2secure-plugin Developers"

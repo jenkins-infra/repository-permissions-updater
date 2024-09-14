@@ -6,17 +6,24 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/parameterized-trigger"
 developers:
-  - "ikedam"
-  - "kwhetstone"
-  - "oleg_nenashev"
-  - "olivergondza"
-  - "svanoort"
-  - "wolfs"
-  - "olamy"
-  - "markewaite"
-  - "poddingue"
+  - ldap: "ikedam"
+    github: "ikedam"
+  - ldap: "kwhetstone"
+    github: "kwhetstone"
+  - ldap: "oleg_nenashev"
+  - ldap: "olivergondza"
+  - ldap: "svanoort"
+  - ldap: "wolfs"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "markewaite"
+  - ldap: "poddingue"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "jmMeessen"
 cd:
-  enabled: true
+    enabled: true
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "parameterized-trigger-plugin Developers"

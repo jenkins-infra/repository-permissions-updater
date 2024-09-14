@@ -7,6 +7,9 @@ paths:
   - "com/thalesgroup/jenkins-ci/plugins/xunit"
   - "org/jenkins-ci/plugins/xunit"
 developers:
-  - "gbois"
-  - "abayer"
-  - "nfalco"
+  - ldap: "gbois"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "nfalco"
+  - github: "nfalco79"
+repository_team: "xunit-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/parasoft/policycenter-gate-validator"
 developers:
-  - "sang_parasoft"
+  - ldap: "sang_parasoft"
+  - github: "parasoft-sang"
+  - github: "mattloveparasoft"
+repository_team: "policycenter-gate-validator-plugin Developers"

@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rake"
 developers:
-  - "oli_at_jsi"
+  - ldap: "oli_at_jsi"
+  - github: "olivierdagenais"
+repository_team: "rake-plugin Developers"

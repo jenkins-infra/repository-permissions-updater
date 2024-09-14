@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/github/bogdanlivadariu/bootstraped-multi-test-results-report"
 developers:
-  - "bogdanlivadariu"
+  - ldap: "bogdanlivadariu"
+  - github: "BogdanLivadariu"
+repository_team: "bootstraped-multi-test-results-report-plugin Developers"

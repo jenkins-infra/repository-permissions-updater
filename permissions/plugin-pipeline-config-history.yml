@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-config-history"
 developers:
-  - "jochenafuerbacher"
-  - "robinschulz"
-  - "stefanbrausch"
+  - ldap: "jochenafuerbacher"
+  - ldap: "robinschulz"
+  - ldap: "stefanbrausch"
+    github: "stefanbrausch"
+  - github: "Jochen-A-Fuerbacher"
+  - github: "RobinRSchulz"
+repository_team: "pipeline-config-history-plugin Developers"

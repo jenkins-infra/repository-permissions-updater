@@ -6,4 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/sematext"
 developers:
-  - "wawanawna"
+  - ldap: "wawanawna"
+    github: "wawanawna"
+  - github: "otisg"
+  - github: "adnanrahic"
+repository_team: "sematext-plugin Developers"

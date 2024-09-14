@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/mabl/integration/jenkins/mabl-integration"
 developers:
-  - "mabl"
+  - ldap: "mabl"
+  - github: "jbaldassari"
+  - github: "twistedpair"
+repository_team: "mabl-integration-plugin Developers"

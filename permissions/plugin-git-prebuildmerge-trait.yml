@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/git-prebuildmerge-trait"
 developers:
-  - "arty13"
+  - ldap: "arty13"
+  - github: "MarkEWaite"
+  - github: "stephenc"
+  - github: "arthurvanduynhoven"
+repository_team: "git-prebuildmerge-trait-plugin Developers"

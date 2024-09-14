@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/kafkalogs"
 developers:
-  - "trevorlinton"
+  - ldap: "trevorlinton"
+    github: "trevorlinton"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "kafkalogs-plugin Developers"

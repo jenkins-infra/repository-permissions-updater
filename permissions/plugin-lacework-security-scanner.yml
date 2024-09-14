@@ -4,6 +4,8 @@ github: &GH "jenkinsci/lacework-security-scanner-plugin"
 paths:
   - "io/jenkins/plugins/lacework-security-scanner"
 developers:
-  - "alannix_lw"
+  - ldap: "alannix_lw"
+  - github: "alannix-lw"
 issues:
   - github: *GH
+repository_team: "lacework-security-scanner-plugin Developers"

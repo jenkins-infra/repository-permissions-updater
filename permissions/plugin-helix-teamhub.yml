@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/helix-teamhub"
 developers:
-  - "p4paul"
+  - ldap: "p4paul"
+    github: "p4paul"
+  - github: "jlaiho"
+  - github: "sayradley"
+repository_team: "helix-teamhub-plugin Developers"

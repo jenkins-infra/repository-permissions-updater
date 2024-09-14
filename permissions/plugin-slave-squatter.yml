@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/slave-squatter"
 developers: []
+repository_team: "slave-squatter-plugin Developers"

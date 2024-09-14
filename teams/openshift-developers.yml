@@ -1,10 +1,9 @@
 ---
 name: "openshift-developers"
 developers:
-  - "apoorvaj4"
-  - "ayushsatyam146"
-  - "coreydaley"
-  - "divyanshu42"
-  - "jkhelil"
-  - "sayan_biswas"
-
+  - ldap: "apoorvaj4"
+  - ldap: "ayushsatyam146"
+  - ldap: "coreydaley"
+  - ldap: "divyanshu42"
+  - ldap: "jkhelil"
+  - ldap: "sayan_biswas"

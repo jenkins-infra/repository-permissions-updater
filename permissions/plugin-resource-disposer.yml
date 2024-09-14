@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/resource-disposer"
 developers:
-  - "basil"
-  - "olivergondza"
+  - ldap: "basil"
+    github: "basil"
+  - ldap: "olivergondza"
+    github: "olivergondza"
+repository_team: "resource-disposer-plugin Developers"

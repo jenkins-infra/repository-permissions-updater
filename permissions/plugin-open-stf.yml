@@ -7,6 +7,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/open-stf"
 developers:
-  - "justice3120"
-  - "lukzeg"
-  - "poddingue"
+  - ldap: "justice3120"
+    github: "justice3120"
+  - ldap: "lukzeg"
+  - ldap: "poddingue"
+  - github: "gounthar"
+repository_team: "open-stf-plugin Developers"

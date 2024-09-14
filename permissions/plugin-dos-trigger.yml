@@ -7,3 +7,4 @@ paths:
   - "com/tombrus/hudson/dostrigger/dos-trigger"
   - "org/jenkins-ci/plugins/dos-trigger"
 developers: []
+repository_team: "dos-trigger-plugin Developers"

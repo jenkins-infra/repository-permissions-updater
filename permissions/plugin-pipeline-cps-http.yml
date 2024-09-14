@@ -6,4 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/pipeline-cps-http"
 developers:
-  - "julienduchesne"
+  - ldap: "julienduchesne"
+    github: "julienduchesne"
+  - github: "dblanchette"
+  - github: "AbdulRahmanAlHamali"
+repository_team: "pipeline-cps-http-plugin Developers"

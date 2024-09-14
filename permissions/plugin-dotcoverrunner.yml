@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/dotcoverrunner"
 developers:
-  - "jetersen"
-  - "rasmusjelsgaard"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - ldap: "rasmusjelsgaard"
+    github: "rasmusjelsgaard"
+repository_team: "dotcoverrunner-plugin Developers"

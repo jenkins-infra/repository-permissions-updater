@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/config-driven-pipeline"
 developers:
-  - "justinharringa"
+  - ldap: "justinharringa"
+    github: "justinharringa"
+repository_team: "config-driven-pipeline-plugin Developers"

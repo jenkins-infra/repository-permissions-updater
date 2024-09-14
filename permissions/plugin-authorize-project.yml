@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/authorize-project"
 developers:
-  - "ikedam"
-  - "markewaite"
+  - ldap: "ikedam"
+    github: "ikedam"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+  - github: "jmMeessen"
+repository_team: "authorize-project-plugin Developers"

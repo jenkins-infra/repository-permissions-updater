@@ -2,13 +2,17 @@
 name: "cdevents"
 github: &GH "jenkinsci/cdevents-plugin"
 cd:
-  enabled: true
+    enabled: true
 paths:
-- "io/jenkins/plugins/cdevents"
+  - "io/jenkins/plugins/cdevents"
 developers:
-- "plowerjay_fmr"
-- "rorybakerfmr"
-- "elmsdata"
-- "racey3542"
+  - ldap: "plowerjay_fmr"
+  - ldap: "rorybakerfmr"
+    github: "rorybakerfmr"
+  - ldap: "elmsdata"
+    github: "elmsdata"
+  - ldap: "racey3542"
+    github: "racey3542"
 issues:
   - jira: 29125
+repository_team: "cdevents-plugin Developers"

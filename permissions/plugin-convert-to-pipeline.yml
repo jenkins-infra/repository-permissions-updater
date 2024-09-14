@@ -6,6 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/convert-to-pipeline"
 developers:
-  - "mohit_dharamshi"
-  - "vimal_infostretch"
-  - "devenatis"
+  - ldap: "mohit_dharamshi"
+  - ldap: "vimal_infostretch"
+  - ldap: "devenatis"
+repository_team: "convert-to-pipeline-plugin Developers"

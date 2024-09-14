@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/display-upstream-changes"
 developers:
-  - "rpetti"
+  - ldap: "rpetti"
+    github: "rpetti"
+repository_team: "display-upstream-changes-plugin Developers"

@@ -6,4 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/probely-security"
 developers:
-  - "poupas"
+  - ldap: "poupas"
+    github: "poupas"
+  - github: "bbarao"
+  - github: "tmendo"
+  - github: "hcastilho"
+repository_team: "probely-security-plugin Developers"

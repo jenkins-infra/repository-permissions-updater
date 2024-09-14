@@ -7,6 +7,8 @@ paths:
   - "org/jenkins-ci/plugins/throttle-concurrents"
   - "org/jvnet/hudson/plugins/throttle-concurrents"
 developers:
-  - "abayer"
-  - "basil"
-  - "oleg_nenashev"
+  - ldap: "abayer"
+  - ldap: "basil"
+    github: "basil"
+  - ldap: "oleg_nenashev"
+repository_team: "throttle-concurrent-builds-plugin Developers"

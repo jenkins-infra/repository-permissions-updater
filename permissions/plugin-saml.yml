@@ -6,13 +6,16 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/saml"
 developers:
-  - "0xcfff"
-  - "chengas123"
-  - "ifernandezcalvo"
-  - "mdonohue"
-  - "sbower"
+  - ldap: "0xcfff"
+  - ldap: "chengas123"
+  - ldap: "ifernandezcalvo"
+  - ldap: "mdonohue"
+  - ldap: "sbower"
+  - github: "benmccann"
+  - github: "kuisathaverat"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "saml-plugin Developers"

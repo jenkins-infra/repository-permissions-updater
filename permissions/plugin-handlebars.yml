@@ -6,11 +6,19 @@ issues:
 paths:
   - "org/jenkins-ci/ui/handlebars"
 developers:
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "mramonleon"
-  - "rsandell"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "mramonleon"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - github: "jenkinsadmin"
+  - github: "fqueiruga"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "js-libs Developers"

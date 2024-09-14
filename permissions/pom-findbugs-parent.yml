@@ -4,3 +4,4 @@ github: "jenkinsci/findbugs-plugin"
 paths:
   - "org/jvnet/hudson/plugins/findbugs/parent"
 developers: []
+repository_team: "findbugs-plugin Developers"

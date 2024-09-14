@@ -2,8 +2,10 @@
 name: "maven-cache"
 github: &GH "jenkinsci/maven-cache-plugin"
 paths:
-- "io/jenkins/plugins/maven-cache"
+  - "io/jenkins/plugins/maven-cache"
 developers:
-- "olamy"
+  - ldap: "olamy"
+    github: "olamy"
 issues:
   - github: *GH
+repository_team: "maven-cache-plugin Developers"

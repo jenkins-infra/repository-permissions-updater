@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/maintenance-jobs-scheduler"
 developers:
-  - "v2v"
+  - ldap: "v2v"
+  - github: "v1v"
+repository_team: "maintenance-jobs-scheduler-plugin Developers"

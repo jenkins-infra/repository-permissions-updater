@@ -4,10 +4,14 @@ github: &GH "jenkinsci/opslevel-plugin"
 paths:
   - "io/jenkins/plugins/opslevel"
 developers:
-  - "opslevel"
-  - "jasonopslevel"
+  - ldap: "opslevel"
+  - ldap: "jasonopslevel"
+    github: "jasonopslevel"
+  - github: "kenrose"
+  - github: "sergio-opslevel"
 issues:
   - github: *GH
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "opslevel-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/loadfocus/loadfocus-jmeter-load-testing-integration"
 developers:
-  - "loadfocus"
+  - ldap: "loadfocus"
+  - github: "loadfocuscom"
+repository_team: "loadfocus-jmeter-load-testing-integration-plugin Developers"

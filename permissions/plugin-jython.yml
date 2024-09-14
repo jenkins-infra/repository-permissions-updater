@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/jython"
 developers: []
+repository_team: "jython-plugin Developers"

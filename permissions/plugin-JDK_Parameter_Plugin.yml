@@ -6,4 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/JDK_Parameter_Plugin"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+repository_team: "JDK_Parameter_Plugin-plugin Developers"
+additional_github_teams:
+  - team: "job-node-stalker-plugin Developers"
+    role: "Admin"

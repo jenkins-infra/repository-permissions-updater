@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/redfin/hudson/url-change-trigger"
 developers: []
+repository_team: "url-change-trigger-plugin Developers"

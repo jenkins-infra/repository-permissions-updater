@@ -8,8 +8,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jenkins-cloudformation-plugin"
 developers:
-  - "edovale"
-  - "nathanagood"
-  - "bitle0"
+  - ldap: "edovale"
+  - ldap: "nathanagood"
+    github: "nathanagood"
+  - ldap: "bitle0"
+  - github: "bitle"
+  - github: "Burden50"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "jenkins-cloudformation-plugin Developers"

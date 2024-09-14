@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/claim"
 developers:
-  - "ki82"
-  - "greybird"
+  - ldap: "ki82"
+    github: "ki82"
+  - ldap: "greybird"
+  - github: "Greybird"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "claim-plugin Developers"

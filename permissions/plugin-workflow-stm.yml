@@ -3,4 +3,4 @@ name: "workflow-stm"
 paths:
   - "org/jenkins-ci/plugins/workflow/workflow-stm"
 developers:
-  - "jglick"
+  - ldap: "jglick"

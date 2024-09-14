@@ -6,13 +6,22 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jdk-tool"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "dnusbaum"
-  - "jglick"
-  - "oleg_nenashev"
-  - "aheritier"
-  - "mramonleon"
+  - ldap: "dnusbaum"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "oleg_nenashev"
+  - ldap: "aheritier"
+    github: "aheritier"
+  - ldap: "mramonleon"
+  - github: "dwnusbaum"
+  - github: "oleg-nenashev"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "jdk-tool-plugin Developers"
+additional_github_teams:
+  - team: "Java11 support"
+    role: "Read"

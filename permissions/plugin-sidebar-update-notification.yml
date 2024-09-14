@@ -4,4 +4,6 @@ github: "jenkinsci/sidebar-update-notification-plugin"
 paths:
   - "com/exxeta/jenkins/plugins/sidebar-update-notification"
 developers:
-  - "asbachb"
+  - ldap: "asbachb"
+    github: "asbachb"
+repository_team: "sidebar-update-notification-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/logback-nats-appender"
 developers:
-  - "lucamilanesio"
+  - ldap: "lucamilanesio"
+    github: "lucamilanesio"
+repository_team: "logback-nats-appender-plugin Developers"

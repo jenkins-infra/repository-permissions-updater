@@ -2,13 +2,29 @@
 name: "bom"
 github: "jenkinsci/bom"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "io/jenkins/tools/bom/bom-*"
 developers:
-  - "jglick"
-  - "timja"
-  - "hlemeur"
-  - "dduportal"
-  - "alecharp"
-  - "poddingue"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "timja"
+    github: "timja"
+  - ldap: "hlemeur"
+  - ldap: "dduportal"
+    github: "dduportal"
+  - ldap: "alecharp"
+    github: "alecharp"
+  - ldap: "poddingue"
+  - github: "basil"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "lemeurherve"
+repository_team: "bom Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Triage"
+  - team: "SIG: UX"
+    role: "Triage"
+  - team: "Core PR Reviewers"
+    role: "Triage"

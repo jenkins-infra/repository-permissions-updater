@@ -7,17 +7,28 @@ paths:
   - "org/jenkins-ci/plugins/mercurial"
   - "org/jvnet/hudson/plugins/mercurial"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "mramonleon"
-  - "rsandell"
-  - "dnusbaum"
-  - "markewaite"
-  - "poddingue"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "mramonleon"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "dnusbaum"
+  - ldap: "markewaite"
+  - ldap: "poddingue"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "dwnusbaum"
+  - github: "jmMeessen"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "mercurial-plugin Developers"

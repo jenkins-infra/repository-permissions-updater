@@ -5,4 +5,6 @@ issues:
   - jira: '17520'  # anchorchain-plugin
 paths:
   - "org/jenkins-ci/plugins/AnchorChain"
-developers: []
+developers:
+  - github: "direvius"
+repository_team: "anchor-chain-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/inneractive/jenkins/plugins/consul"
 developers:
-  - "liozn"
+  - ldap: "liozn"
+  - github: "liozN"
+repository_team: "consul-plugin Developers"

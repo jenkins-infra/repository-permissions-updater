@@ -5,16 +5,29 @@ paths:
   - "org/jenkins-ci/plugins/configuration-as-code"
   - "io/jenkins/configuration-as-code"
 developers:
-  - "praqma"
-  - "jetersen"
-  - "oleg_nenashev"
-  - "timja"
+  - ldap: "praqma"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - ldap: "oleg_nenashev"
+  - ldap: "timja"
+    github: "timja"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
+  - github: "buep"
+  - github: "oleg-nenashev"
+  - github: "ewelinawilkosz"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *GH
   - jira: 23170  # configuration-as-code-plugin
     report: false
+repository_team: "configuration-as-code-plugin Developers"
+additional_github_teams:
+  - team: "configuration-as-code-devtools-project-team"
+    role: "Triage"
+  - team: "jcasc-compatibility-reviewers"
+    role: "Read"

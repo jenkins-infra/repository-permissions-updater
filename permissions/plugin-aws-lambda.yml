@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aws-lambda"
 developers:
-  - "cast"
+  - ldap: "cast"
+    github: "cast"
+repository_team: "aws-lambda-plugin Developers"

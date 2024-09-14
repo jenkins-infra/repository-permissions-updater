@@ -3,6 +3,6 @@ name: "job-dsl-parent"
 paths:
   - "org/jenkins-ci/plugins/job-dsl-parent"
 developers:
-  - "basil"
-  - "daspilker"
-  - "jamietanna"
+  - ldap: "basil"
+  - ldap: "daspilker"
+  - ldap: "jamietanna"

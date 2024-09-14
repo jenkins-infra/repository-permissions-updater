@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/github-coverage-reporter"
 developers:
-  - "jnewc"
+  - ldap: "jnewc"
+    github: "jnewc"
+repository_team: "github-coverage-reporter-plugin Developers"

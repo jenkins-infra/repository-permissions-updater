@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/essentials"
 developers:
-  - "batmat"
-  - "rtyler"
+  - ldap: "batmat"
+  - ldap: "rtyler"
+additional_github_teams:
+  - team: "essentials-plugin Developers"
+    role: "Admin"

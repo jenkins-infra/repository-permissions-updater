@@ -6,4 +6,6 @@ issues:
 paths:
   - "de/taimos/pipeline-deploymon"
 developers:
-  - "hoegertn"
+  - ldap: "hoegertn"
+    github: "hoegertn"
+repository_team: "pipeline-deploymon-plugin Developers"

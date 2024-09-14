@@ -6,4 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/llvm-cov"
 developers:
-  - "cizezsy"
+  - ldap: "cizezsy"
+    github: "cizezsy"
+  - github: "christ66"
+  - github: "oleg-nenashev"
+  - github: "Supun94"
+repository_team: "llvm-cov-plugin Developers"

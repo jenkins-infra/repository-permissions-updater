@@ -4,7 +4,10 @@ github: &GH "jenkinsci/shutdown-queue-plugin"
 paths:
   - "io/jenkins/plugins/shutdown-queue"
 developers:
-  - "_dkozubik"
-  - "judovana"
+  - ldap: "_dkozubik"
+  - ldap: "judovana"
+    github: "judovana"
+  - github: "dkozubik"
 issues:
   - jira: 28826
+repository_team: "shutdown-queue-plugin Developers"

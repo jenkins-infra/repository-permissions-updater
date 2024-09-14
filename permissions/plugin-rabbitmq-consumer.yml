@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rabbitmq-consumer"
 developers:
-  - "rin_ne"
+  - ldap: "rin_ne"
+  - github: "rinrinne"
+repository_team: "rabbitmq-consumer-plugin Developers"

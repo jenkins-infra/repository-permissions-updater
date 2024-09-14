@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/telerik/plugins/telerik-appbuilder-plugin"
 developers:
-  - "galexandrov"
+  - ldap: "galexandrov"
+    github: "galexandrov"
+repository_team: "telerik-appbuilder-plugin Developers"

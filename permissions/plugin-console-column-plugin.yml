@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/console-column-plugin"
 developers:
-  - "notmyfault"
+  - ldap: "notmyfault"
+  - github: "NotMyFault"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "console-column-plugin Developers"

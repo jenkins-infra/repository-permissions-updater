@@ -5,7 +5,9 @@ issues:
   - jira: '17490'  # build-cause-run-condition-plugin
 paths:
   - "org/jenkins-ci/plugins/build-cause-run-condition"
-developers: []
+developers:
+  - github: "cjo9900"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "build-cause-run-condition-plugin Developers"

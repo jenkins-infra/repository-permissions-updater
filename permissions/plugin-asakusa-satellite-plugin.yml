@@ -6,3 +6,6 @@ issues:
 paths:
   - "org/codefirst/jenkins/asakusasatellite/asakusa-satellite-plugin"
 developers: []
+additional_github_teams:
+  - team: "websocket-plugin Developers"
+    role: "Admin"

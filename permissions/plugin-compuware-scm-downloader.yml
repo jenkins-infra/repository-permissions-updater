@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/compuware/jenkins/compuware-scm-downloader"
 developers:
-  - "cpwr_jenkins"
+  - ldap: "cpwr_jenkins"
+  - github: "chadseippel"
+  - github: "sallenCPWR"
+repository_team: "compuware-scm-downloader-plugin Developers"

@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bitbucket"
 developers:
-  - "tzach_solomon"
+  - ldap: "tzach_solomon"
+  - github: "fbelzunc"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "bitbucket-plugin Developers"

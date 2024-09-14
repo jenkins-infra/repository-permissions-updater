@@ -4,4 +4,8 @@ github: "jenkinsci/quality-gates-plugin"
 paths:
   - "org/jenkins-ci/plugins/quality-gates-main"
 developers:
-  - "ivanash"
+  - ldap: "ivanash"
+  - github: "IvanaSh"
+  - github: "dpd90"
+  - github: "egrozdani"
+repository_team: "quality-gates-plugin Developers"

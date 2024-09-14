@@ -4,6 +4,8 @@ github: &GH "jenkinsci/agc-app-upload-plugin"
 paths:
   - "com/huawei/jenkins/agc-app-upload"
 developers:
-  - "josholadele"
+  - ldap: "josholadele"
+    github: "josholadele"
 issues:
   - github: *GH
+repository_team: "agc-app-upload-plugin Developers"

@@ -6,5 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/remoting-kafka/remoting-kafka"
 developers:
-  - "pvtuan10"
-  - "vulong237"
+  - ldap: "pvtuan10"
+    github: "pvtuan10"
+  - ldap: "vulong237"
+  - github: "afalko"
+  - github: "oleg-nenashev"
+  - github: "longngn"
+repository_team: "remoting-kafka-plugin Developers"

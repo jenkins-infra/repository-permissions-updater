@@ -6,5 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/diagnostics"
 developers:
-  - "aheritier"
-  - "escoem"
+  - ldap: "aheritier"
+    github: "aheritier"
+  - ldap: "escoem"
+    github: "escoem"
+  - github: "kuisathaverat"
+  - github: "alvarolobato"
+repository_team: "diagnostics-plugin Developers"

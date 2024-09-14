@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/cloudbees/jenkins/plugins/cloudbees-registration"
 developers:
-  - "kohsuke"
-  - "ydubreuil"
+  - ldap: "kohsuke"
+  - ldap: "ydubreuil"
+    github: "ydubreuil"
+  - github: "aheritier"
+repository_team: "cloudbees-registration-plugin Developers"

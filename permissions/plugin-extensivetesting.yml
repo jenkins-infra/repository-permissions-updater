@@ -6,4 +6,6 @@ issues:
 paths:
   - "jenkins/xtc/extensivetesting"
 developers:
-  - "cadorb"
+  - ldap: "cadorb"
+    github: "cadorb"
+repository_team: "extensivetesting-plugin Developers"

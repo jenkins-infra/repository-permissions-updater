@@ -6,6 +6,8 @@ issues:
 paths:
   - "com/parasoft/environment-manager"
 developers:
-  - "mattloveparasoft"
-  - "kailunc"
-  - "yshiparasoft"
+  - ldap: "mattloveparasoft"
+    github: "mattloveparasoft"
+  - ldap: "kailunc"
+  - ldap: "yshiparasoft"
+repository_team: "environment-manager-tools-plugin Developers"

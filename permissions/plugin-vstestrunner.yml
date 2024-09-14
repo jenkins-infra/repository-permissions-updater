@@ -6,6 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vstestrunner"
 developers:
-  - "egoughnour"
-  - "yasu_s"
-  - "jetersen"
+  - ldap: "egoughnour"
+    github: "egoughnour"
+  - ldap: "yasu_s"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - github: "ssogabe"
+  - github: "yasu-s"
+repository_team: "vstestrunner-plugin Developers"

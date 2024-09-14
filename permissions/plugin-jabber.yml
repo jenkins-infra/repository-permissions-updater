@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/jabber"
 developers:
-  - "kutzi"
-  - "flow"
+  - ldap: "kutzi"
+  - ldap: "flow"
+  - github: "Flowdalic"
+repository_team: "jabber-plugin Developers"

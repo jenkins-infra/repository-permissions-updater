@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sinatra-chef-builder"
 developers:
-  - "irfanjs"
+  - ldap: "irfanjs"
+additional_github_teams:
+  - team: "chefbuilder-plugin Developers"
+    role: "Admin"

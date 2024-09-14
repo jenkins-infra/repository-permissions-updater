@@ -6,19 +6,28 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/favorite"
 developers:
-  - "michaelneale"
-  - "jamesdumay"
-  - "vivek"
-  - "abayer"
-  - "carroll"
-  - "dnusbaum"
-  - "olamy"
-  - "rsandell"
-  - "bitwiseman"
-  - "kshultz"
-  - "mawinter69"
+  - ldap: "michaelneale"
+    github: "michaelneale"
+  - ldap: "jamesdumay"
+  - ldap: "vivek"
+    github: "vivek"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "carroll"
+  - ldap: "dnusbaum"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "bitwiseman"
+  - ldap: "kshultz"
+  - ldap: "mawinter69"
+    github: "mawinter69"
+  - github: "dwnusbaum"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "favorite-plugin Developers"

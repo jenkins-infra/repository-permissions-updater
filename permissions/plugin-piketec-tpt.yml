@@ -4,4 +4,6 @@ github: "jenkinsci/piketec-tpt-plugin"
 paths:
   - "com/piketec/jenkins/plugins/piketec-tpt"
 developers:
-  - "piketec"
+  - ldap: "piketec"
+  - github: "PikeTec"
+repository_team: "piketec-tpt-plugin Developers"

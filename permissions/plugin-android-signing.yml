@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/android-signing"
 developers:
-  - "restjohn"
+  - ldap: "restjohn"
+    github: "restjohn"
+repository_team: "android-signing-plugin Developers"

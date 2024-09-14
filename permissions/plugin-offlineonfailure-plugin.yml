@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/offlineonfailure-plugin"
 developers:
-  - "johnlengeling"
+  - ldap: "johnlengeling"
+  - github: "bitter"
+repository_team: "offlineonfailure-plugin Developers"

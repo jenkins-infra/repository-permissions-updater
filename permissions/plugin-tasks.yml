@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/tasks"
 developers: []
+repository_team: "tasks-plugin Developers"

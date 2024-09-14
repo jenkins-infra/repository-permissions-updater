@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/vmware/vcac/vmware-vrealize-codestream"
 developers:
-  - "rishisaraf11"
+  - ldap: "rishisaraf11"
+    github: "rishisaraf11"
+repository_team: "vmware-vrealize-codestream-plugin Developers"

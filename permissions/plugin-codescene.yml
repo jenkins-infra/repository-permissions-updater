@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/codescene"
 developers:
-  - "empear_jenkins"
+  - ldap: "empear_jenkins"
+  - github: "josf"
+  - github: "jumarko"
+  - github: "adamtornhill"
+repository_team: "codescene-plugin Developers"

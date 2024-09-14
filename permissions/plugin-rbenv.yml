@@ -7,5 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/ruby-plugins/rbenv"
 developers:
-  - "hsbt"
-  - "yyuu"
+  - ldap: "hsbt"
+  - ldap: "yyuu"
+    github: "yyuu"
+repository_team: "rbenv-plugin Developers"

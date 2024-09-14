@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/unik-builder"
 developers:
-  - "mathiasmah"
+  - ldap: "mathiasmah"
+    github: "mathiasmah"
+repository_team: "unik-builder-plugin Developers"

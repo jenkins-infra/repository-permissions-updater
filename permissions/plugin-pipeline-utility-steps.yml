@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-utility-steps"
 developers:
-  - "rsandell"
+  - ldap: "rsandell"
+additional_github_teams:
+  - team: "workflow-utility-steps-plugin Developers"
+    role: "Admin"

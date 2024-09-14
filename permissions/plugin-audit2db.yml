@@ -6,4 +6,7 @@ issues:
   - jira: '17533'  # audit2db-plugin
 paths:
   - "org/jenkins-ci/plugins/audit2db"
-developers: []
+developers:
+  - github: "sergueik"
+  - github: "mscata"
+repository_team: "audit2db-plugin Developers"

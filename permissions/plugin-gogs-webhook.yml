@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gogs-webhook"
 developers:
-  - "sanderv43"
+  - ldap: "sanderv43"
+  - github: "sanderv32"
+repository_team: "gogs-webhook-plugin Developers"

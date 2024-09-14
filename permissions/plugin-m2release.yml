@@ -7,5 +7,9 @@ paths:
   - "org/jenkins-ci/plugins/m2release/m2release"
   - "org/jvnet/hudson/plugins/m2release/m2release"
 developers:
-  - "imod"
-  - "teilo"
+  - ldap: "imod"
+  - ldap: "teilo"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "jmMeessen"
+repository_team: "m2release-plugin Developers"

@@ -6,6 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bitbucket-pullrequest-builder"
 developers:
-  - "nishio_dens"
-  - "damovsky"
-  - "codemonky"
+  - ldap: "nishio_dens"
+  - ldap: "damovsky"
+  - ldap: "codemonky"
+repository_team: "bitbucket-pullrequest-builder-plugin Developers"

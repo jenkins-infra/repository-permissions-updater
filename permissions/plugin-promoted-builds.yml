@@ -7,17 +7,31 @@ paths:
   - "org/jenkins-ci/plugins/promoted-builds"
   - "org/jvnet/hudson/plugins/promoted-builds"
 developers:
-  - "batmat"
-  - "carroll"
-  - "dnozay"
-  - "oleg_nenashev"
-  - "wolfs"
-  - "dnusbaum"
-  - "teilo"
-  - "markewaite"
-  - "poddingue"
+  - ldap: "batmat"
+  - ldap: "carroll"
+  - ldap: "dnozay"
+    github: "dnozay"
+  - ldap: "oleg_nenashev"
+  - ldap: "wolfs"
+  - ldap: "dnusbaum"
+  - ldap: "teilo"
+  - ldap: "markewaite"
+  - ldap: "poddingue"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "escoem"
+  - github: "bap2000"
+  - github: "tomdcc"
+  - github: "petehayes"
+  - github: "jtnord"
+  - github: "dwnusbaum"
+  - github: "jmMeessen"
+  - github: "jonbrohauge"
+  - github: "MCardenasBlanco"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "promoted-builds-plugin Developers"

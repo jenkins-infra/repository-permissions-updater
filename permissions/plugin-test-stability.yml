@@ -6,4 +6,4 @@ issues:
 paths:
   - "de/esailors/jenkins/test-stability"
 developers:
-  - "seanf"
+  - ldap: "seanf"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/ghost-inspector/jenkins/ghost-inspector"
 developers:
-  - "ghostinspector"
+  - ldap: "ghostinspector"
+  - github: "justinklemm"
+repository_team: "ghost-inspector-plugin Developers"

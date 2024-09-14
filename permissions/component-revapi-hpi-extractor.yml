@@ -4,4 +4,6 @@ github: "jenkinsci/lib-revapi-hpi-extractor"
 paths:
   - "io/jenkins/tools/revapi-hpi-extractor"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
+repository_team: "lib-revapi-hpi-extractor Developers"

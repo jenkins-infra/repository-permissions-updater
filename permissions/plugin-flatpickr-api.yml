@@ -2,10 +2,12 @@
 name: "flatpickr-api"
 github: &GH "jenkinsci/flatpickr-api-plugin"
 paths:
-- "io/jenkins/plugins/flatpickr-api"
+  - "io/jenkins/plugins/flatpickr-api"
 developers:
-- "mawinter69"
+  - ldap: "mawinter69"
+    github: "mawinter69"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "flatpickr-api-plugin Developers"

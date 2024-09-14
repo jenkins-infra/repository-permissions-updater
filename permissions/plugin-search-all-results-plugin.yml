@@ -6,3 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/search-all-results-plugin"
 developers: []
+additional_github_teams:
+  - team: "computer-queue-plugin Developers"
+    role: "Admin"

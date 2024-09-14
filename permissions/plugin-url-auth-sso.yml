@@ -6,4 +6,6 @@ issues:
 paths:
   - "cf/pgmann/plugins/url-auth-sso"
 developers:
-  - "pgmann"
+  - ldap: "pgmann"
+    github: "pgmann"
+repository_team: "url-auth-sso-plugin Developers"

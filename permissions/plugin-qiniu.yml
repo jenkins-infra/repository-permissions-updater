@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/qiniu"
 developers:
-  - "bachue"
+  - ldap: "bachue"
+    github: "bachue"
+repository_team: "qiniu-plugin Developers"

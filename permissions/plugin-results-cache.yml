@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/king/jenkins/plugins/results-cache"
 developers:
-  - "franciscoord"
-  - "kargath"
+  - ldap: "franciscoord"
+  - ldap: "kargath"
+    github: "kargath"
+  - github: "francisco-orduna"
+repository_team: "results-cache-plugin Developers"

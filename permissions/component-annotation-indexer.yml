@@ -4,4 +4,8 @@ github: "jenkinsci/lib-annotation-indexer"
 paths:
   - "org/jenkins-ci/annotation-indexer"
 developers:
-  - "@core"
+  - ldap: "@core"
+repository_team: "lib-annotation-indexer Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

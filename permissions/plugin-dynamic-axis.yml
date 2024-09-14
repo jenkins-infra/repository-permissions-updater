@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/dynamic-axis"
 developers:
-  - "oleg_nenashev"
+  - ldap: "oleg_nenashev"
+  - github: "kckane"
+repository_team: "dynamic-axis-plugin Developers"

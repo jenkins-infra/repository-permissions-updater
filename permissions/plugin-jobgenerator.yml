@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jobgenerator"
 developers:
-  - "syl20bnr"
+  - ldap: "syl20bnr"

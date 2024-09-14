@@ -4,4 +4,5 @@ github: "jenkinsci/maven-repository-plugin"
 paths:
   - "com/nirima/jenkins/repository/pom"
 developers:
-  - "magnayn"
+  - ldap: "magnayn"
+repository_team: "maven-repository-plugin Developers"

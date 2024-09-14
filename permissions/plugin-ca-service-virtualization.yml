@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/ca-service-virtualization"
 developers:
-  - "ca_sv_plugin"
+  - ldap: "ca_sv_plugin"
+  - github: "hrabosch"
+  - github: "PetrVlasek"
+repository_team: "ca-service-virtualization-plugin Developers"

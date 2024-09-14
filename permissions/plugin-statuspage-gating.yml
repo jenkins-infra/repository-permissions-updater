@@ -4,4 +4,7 @@ github: "jenkinsci/statuspage-gating-plugin"
 paths:
   - "io/jenkins/plugins/statuspage-gating"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+    github: "olivergondza"
+  - github: "pjanouse"
+repository_team: "statuspage-gating-plugin Developers"

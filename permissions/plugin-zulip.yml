@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/zulip"
 developers:
-  - "butchyyyy"
+  - ldap: "butchyyyy"
+    github: "butchyyyy"
+  - github: "timabbott"
+repository_team: "zulip-plugin Developers"

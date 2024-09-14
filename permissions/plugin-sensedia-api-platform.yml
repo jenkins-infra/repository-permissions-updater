@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sensedia-api-platform"
 developers:
-  - "denisscapinsensedia"
+  - ldap: "denisscapinsensedia"
+  - github: "denisscapinrecalde"
+repository_team: "sensedia-api-platform-plugin Developers"

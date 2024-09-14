@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/phabricator-plugin"
 developers:
-  - "ai"
-  - "kageiit"
-  - "arturas"
+  - ldap: "ai"
+  - ldap: "kageiit"
+    github: "kageiit"
+  - ldap: "arturas"
+  - github: "ascandella"
+  - github: "jjx"
+repository_team: "phabricator-plugin Developers"

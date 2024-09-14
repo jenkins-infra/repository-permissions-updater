@@ -7,8 +7,12 @@ issues:
 paths:
   - "com/datapipe/jenkins/plugins/hashicorp-vault-plugin"
 developers:
-  - "ptierno"
-  - "jetersen"
-  - "dineshba"
+  - ldap: "ptierno"
+    github: "ptierno"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - ldap: "dineshba"
+    github: "dineshba"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "hashicorp-vault-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/virtualbox"
 developers:
-  - "bjones14"
+  - ldap: "bjones14"
+    github: "bjones14"
+  - github: "choas"
+repository_team: "virtualbox-plugin Developers"

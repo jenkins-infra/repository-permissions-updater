@@ -4,5 +4,9 @@ github: "jenkinsci/paaslane-plugin"
 paths:
   - "com/cloudtp/jenkins/paaslane-estimate"
 developers:
-  - "ctp_alan_zall"
-  - "ushatil_ctp"
+  - ldap: "ctp_alan_zall"
+  - ldap: "ushatil_ctp"
+  - github: "jenkinsadmin"
+  - github: "thatzall"
+  - github: "ushatil"
+repository_team: "paaslane-plugin Developers"

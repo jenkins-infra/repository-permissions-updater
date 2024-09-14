@@ -5,4 +5,6 @@ issues:
   - jira: '16048'  # started-by-envvar-plugin
 paths:
   - "org/jenkins-ci/plugins/started-by-envvar"
-developers: []
+developers:
+  - github: "huybrechts"
+repository_team: "started-by-envvar-plugin Developers"

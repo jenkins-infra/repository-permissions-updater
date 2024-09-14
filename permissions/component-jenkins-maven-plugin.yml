@@ -5,4 +5,5 @@ paths:
   - "com/nirima/jenkins/repository"
   - "com/nirima/jenkins/repository/jenkins-maven-plugin"
 developers:
-  - "magnayn"
+  - ldap: "magnayn"
+repository_team: "maven-repository-plugin Developers"

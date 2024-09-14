@@ -6,4 +6,4 @@ issues:
 paths:
   - "com/compuware/jenkins/compuware-topaz-utilities"
 developers:
-  - "cpwr_jenkins"
+  - ldap: "cpwr_jenkins"

@@ -6,6 +6,8 @@ issues:
 paths:
   - "com/lookout/jenkins/environment-script"
 developers:
-  - "dawidmalina"
+  - ldap: "dawidmalina"
+    github: "dawidmalina"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "environment-script-plugin Developers"

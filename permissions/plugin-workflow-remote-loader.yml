@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/workflow-remote-loader"
 developers:
-  - "oleg_nenashev"
-  - "escoem"
+  - ldap: "oleg_nenashev"
+  - ldap: "escoem"
+    github: "escoem"
+  - github: "oleg-nenashev"
+repository_team: "workflow-remote-loader-plugin Developers"

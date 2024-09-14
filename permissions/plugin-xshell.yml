@@ -7,7 +7,9 @@ paths:
   - "org/jenkins-ci/plugins/xshell"
   - "org/jvnet/hudson/plugins/xshell"
 developers:
-  - "mambu"
-  - "markewaite"
+  - ldap: "mambu"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "xshell-plugin Developers"

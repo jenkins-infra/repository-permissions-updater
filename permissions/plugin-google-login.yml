@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-login"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "recampbell"
-  - "vlatombe"
+  - ldap: "recampbell"
+    github: "recampbell"
+  - ldap: "vlatombe"
+  - github: "Vlatombe"
+repository_team: "google-login-plugin Developers"

@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/telegram-notifications"
 developers:
-  - "nikitabelonogov"
+  - ldap: "nikitabelonogov"
+    github: "nikitabelonogov"
+  - github: "alekseiko"
+  - github: "wlad031"
+repository_team: "telegram-notifications-plugin Developers"

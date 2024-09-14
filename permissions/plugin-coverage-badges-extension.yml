@@ -2,10 +2,12 @@
 name: "coverage-badges-extension"
 github: &GH "jenkinsci/coverage-badges-extension-plugin"
 paths:
-- "io/jenkins/plugins/coverage-badges-extension"
+  - "io/jenkins/plugins/coverage-badges-extension"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "coverage-badges-extension-plugin Developers"

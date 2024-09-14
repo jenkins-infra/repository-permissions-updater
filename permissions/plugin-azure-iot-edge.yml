@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-iot-edge"
 developers:
-  - "michaeljqzq"
-  - "azure_iot_tooling"
+  - ldap: "michaeljqzq"
+    github: "michaeljqzq"
+  - ldap: "azure_iot_tooling"
+  - github: "vschinaiot"
+repository_team: "azure-iot-edge-plugin Developers"

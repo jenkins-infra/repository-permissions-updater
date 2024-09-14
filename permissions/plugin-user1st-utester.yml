@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/user1st-utester"
 developers:
-  - "matt_user1st"
+  - ldap: "matt_user1st"
+  - github: "matt617"
+  - github: "nate-kingsley"
+repository_team: "user1st-utester-plugin Developers"

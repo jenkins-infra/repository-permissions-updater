@@ -7,7 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/slack"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "timja"
-  - "jetersen"
+  - ldap: "timja"
+    github: "timja"
+  - ldap: "jetersen"
+    github: "jetersen"
+repository_team: "slack-plugin Developers"

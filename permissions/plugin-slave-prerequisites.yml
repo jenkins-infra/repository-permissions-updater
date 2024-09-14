@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/slave-prerequisites"
 developers: []
+repository_team: "slave-prerequisites-plugin Developers"

@@ -3,6 +3,6 @@ name: "selenium-server-standalone"
 paths:
   - "org/seleniumhq/selenium/selenium-server-standalone"
 developers:
-  - "darkrift"
-  - "glennc"
-  - "willemv"
+  - ldap: "darkrift"
+  - ldap: "glennc"
+  - ldap: "willemv"

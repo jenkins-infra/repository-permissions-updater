@@ -6,17 +6,25 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/script-security"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "abayer"
-  - "svanoort"
-  - "rsandell"
-  - "dnusbaum"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "dnusbaum"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "kshultz"
+  - github: "dwnusbaum"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "script-security-plugin Developers"

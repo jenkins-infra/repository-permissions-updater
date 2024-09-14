@@ -6,9 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-metadata-plugin"
 developers:
-  - "batmat"
-  - "teilo"
-  - "olamy"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "teilo"
+  - ldap: "olamy"
+    github: "olamy"
+  - github: "jtnord"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "google-metadata-plugin Developers"

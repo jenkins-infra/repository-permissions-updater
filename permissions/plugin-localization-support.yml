@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/localization-support"
 developers:
-  - "danielbeck"
+  - ldap: "danielbeck"
+  - github: "daniel-beck"
+repository_team: "localization-support-plugin Developers"

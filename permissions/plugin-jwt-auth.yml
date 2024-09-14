@@ -4,6 +4,8 @@ github: &GH "jenkinsci/jwt-auth-plugin"
 paths:
   - "io/jenkins/plugins/jwt-auth"
 developers:
-  - "dnuevo"
+  - ldap: "dnuevo"
+  - github: "narcoticfresh"
 issues:
   - github: *GH
+repository_team: "jwt-auth-plugin Developers"

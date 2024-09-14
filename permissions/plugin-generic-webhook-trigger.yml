@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/generic-webhook-trigger"
 developers:
-  - "tomasbjerre"
+  - ldap: "tomasbjerre"
+    github: "tomasbjerre"
+repository_team: "generic-webhook-trigger-plugin Developers"

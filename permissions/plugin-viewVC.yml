@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/viewVC"
   - "org/jvnet/hudson/plugins/viewVC"
 developers:
-  - "mirumpf"
+  - ldap: "mirumpf"
+repository_team: "viewVC-plugin Developers"

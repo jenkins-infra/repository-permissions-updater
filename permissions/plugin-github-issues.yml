@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/github-issues"
 developers:
-  - "daniel15"
+  - ldap: "daniel15"
+  - github: "Daniel15"
+repository_team: "github-issues-plugin Developers"

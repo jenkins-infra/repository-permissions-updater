@@ -4,4 +4,7 @@ github: "jenkinsci/remoting-test-client"
 paths:
   - "org/jenkins-ci/remoting-test-client"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

@@ -3,4 +3,4 @@ name: "build-flow-toolbox-plugin"
 paths:
   - "org/jenkins-ci/plugins/build-flow-toolbox-plugin"
 developers:
-  - "dnozay"
+  - ldap: "dnozay"

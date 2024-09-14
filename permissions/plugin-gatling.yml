@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gatling"
 developers:
-  - "slandelle"
+  - ldap: "slandelle"
+    github: "slandelle"
+  - github: "ccedric"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "gatling-plugin Developers"

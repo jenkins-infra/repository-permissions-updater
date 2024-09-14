@@ -2,12 +2,16 @@
 name: "redhat-dependency-analytics"
 github: &GH "jenkinsci/redhat-dependency-analytics-plugin"
 paths:
-- "io/jenkins/plugins/redhat-dependency-analytics"
+  - "io/jenkins/plugins/redhat-dependency-analytics"
 developers:
-- "olavtar"
-- "vbelouso"
-- "zgrinber"
+  - ldap: "olavtar"
+    github: "olavtar"
+  - ldap: "vbelouso"
+    github: "vbelouso"
+  - ldap: "zgrinber"
+  - github: "zvigrinberg"
 issues:
   - jira: 29221
 cd:
-  enabled: true
+    enabled: true
+repository_team: "redhat-dependency-analytics-plugin Developers"

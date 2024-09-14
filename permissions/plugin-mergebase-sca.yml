@@ -4,9 +4,11 @@ github: &GH "jenkinsci/mergebase-sca-plugin"
 paths:
   - "com/mergebase/mergebase-sca"
 developers:
-  - "delanAtMergebase"
+  - ldap: "delanAtMergebase"
+    github: "delanAtMergebase"
 issues:
   - github: *GH
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "mergebase-sca-plugin Developers"

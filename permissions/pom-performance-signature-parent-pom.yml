@@ -4,5 +4,9 @@ github: "jenkinsci/performance-signature-dynatrace-plugin"
 paths:
   - "de/tsystems/mms/apm/performance-signature-parent-pom"
 developers:
-  - "rpionke"
-  - "robkuehn"
+  - ldap: "rpionke"
+    github: "rpionke"
+  - ldap: "robkuehn"
+    github: "robkuehn"
+  - github: "dgetzlaf"
+repository_team: "performance-signature-dynatrace-plugin Developers"

@@ -5,4 +5,6 @@ issues:
   - jira: '17486'  # chromedriver-plugin
 paths:
   - "org/jenkins-ci/plugins/chromedriver"
-developers: []
+developers:
+  - github: "kohsuke"
+repository_team: "chromedriver-plugin Developers"

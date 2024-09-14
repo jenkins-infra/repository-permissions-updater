@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/matlab"
 developers:
-  - "mathworks_ci_team"
+  - ldap: "mathworks_ci_team"
+  - github: "mcafaro"
+  - github: "nbhoski"
+  - github: "mw-akumar"
+repository_team: "matlab-plugin Developers"

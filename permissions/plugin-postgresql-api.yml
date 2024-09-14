@@ -6,7 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/postgresql-api"
 developers:
-  - "cleclerc"
-  - "timja"
+  - ldap: "cleclerc"
+  - ldap: "timja"
+    github: "timja"
+  - github: "cyrille-leclerc"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "postgresql-api-plugin Developers"

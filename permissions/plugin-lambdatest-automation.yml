@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/lambdatest-automation"
 developers:
-  - "lambdatest"
+  - ldap: "lambdatest"
+  - github: "psych0der"
+  - github: "sushobhit-lt"
+repository_team: "lambdatest-automation-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/screenrecorder"
 developers:
-  - "tbaum"
+  - ldap: "tbaum"
+  - github: "dtbaum"
+repository_team: "screenrecorder-plugin Developers"

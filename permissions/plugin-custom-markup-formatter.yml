@@ -2,11 +2,13 @@
 name: "custom-markup-formatter"
 github: &GH "jenkinsci/custom-markup-formatter-plugin"
 paths:
-- "io/jenkins/plugins/custom-markup-formatter"
+  - "io/jenkins/plugins/custom-markup-formatter"
 developers:
-- "quic_dhapat"
-- "quic_hangdong"
+  - ldap: "quic_dhapat"
+  - ldap: "quic_hangdong"
+  - github: "dhavalpateln"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "custom-markup-formatter-plugin Developers"

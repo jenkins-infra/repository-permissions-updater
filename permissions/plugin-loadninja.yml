@@ -6,6 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/loadninja"
 developers:
-  - "mrunkle_sb"
-  - "yamini_sethu"
-  - "loadninja"
+  - ldap: "mrunkle_sb"
+  - ldap: "yamini_sethu"
+  - ldap: "loadninja"
+  - github: "runkalicious"
+  - github: "loadninja-bot"
+  - github: "yamini-sethu"
+  - github: "kordian-smartbear"
+repository_team: "loadninja-plugin Developers"

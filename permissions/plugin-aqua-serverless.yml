@@ -6,8 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aqua-serverless"
 developers:
-  - "oranmoshai"
-  - "aqua_maintainers"
+  - ldap: "oranmoshai"
+    github: "oranmoshai"
+  - ldap: "aqua_maintainers"
+  - github: "jerbia"
 security:
-  contacts:
-    jira: aqua_maintainers
+    contacts:
+        jira: aqua_maintainers
+repository_team: "aqua-serverless-plugin Developers"

@@ -7,7 +7,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cachet-gating"
 developers:
-  - "ggallen"
-  - "olivergondza"
-  - "scoheb"
-  - "avielyosef"
+  - ldap: "ggallen"
+    github: "ggallen"
+  - ldap: "olivergondza"
+  - ldap: "scoheb"
+    github: "scoheb"
+  - ldap: "avielyosef"
+  - github: "Avielyo10"
+repository_team: "cachet-gating-plugin Developers"

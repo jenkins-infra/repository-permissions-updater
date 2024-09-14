@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/deadmanssnitch"
 developers:
-  - "kamatama41"
+  - ldap: "kamatama41"
+    github: "kamatama41"
+repository_team: "deadmanssnitch-plugin Developers"

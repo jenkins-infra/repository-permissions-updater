@@ -6,4 +6,8 @@ issues:
 paths:
   - "net/praqma/rqm-plugin"
 developers:
-  - "madsnielsen"
+  - ldap: "madsnielsen"
+  - github: "wolfgarnet"
+  - github: "MadsNielsen"
+  - github: "buep"
+repository_team: "rqm-plugin Developers"

@@ -4,4 +4,7 @@ github: "jenkinsci/google-deployment-manager-plugin"
 paths:
   - "org/jenkins-ci/plugins/google-deployment-manager"
 developers:
-  - "reprogrammer"
+  - ldap: "reprogrammer"
+    github: "reprogrammer"
+  - github: "astroilov"
+repository_team: "google-deployment-manager-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "de/fspengler/hudson/pview/hudson-pview-plugin"
 developers: []
+repository_team: "pview-plugin Developers"

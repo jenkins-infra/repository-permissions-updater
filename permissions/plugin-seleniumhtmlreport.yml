@@ -8,4 +8,7 @@ paths:
   - "org/jenkins-ci/plugins/seleniumhtmlreport"
   - "org/jvnet/hudson/plugins/seleniumhtmlreport"
 developers:
-  - "slorenz"
+  - ldap: "slorenz"
+additional_github_teams:
+  - team: "seleniumhtmlreport Developers"
+    role: "Admin"

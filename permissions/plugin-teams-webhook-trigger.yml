@@ -4,6 +4,8 @@ github: &GH "jenkinsci/teams-webhook-trigger-plugin"
 paths:
   - "io/jenkins/plugins/teams-webhook-trigger"
 developers:
-  - "uday4923"
+  - ldap: "uday4923"
+    github: "uday4923"
 issues:
   - github: *GH
+repository_team: "teams-webhook-trigger-plugin Developers"

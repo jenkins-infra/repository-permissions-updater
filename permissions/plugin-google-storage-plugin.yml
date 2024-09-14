@@ -7,18 +7,26 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-storage-plugin"
 developers:
-  - "craigbarber"
-  - "evanbrown"
-  - "stephenshank"
-  - "donmccasland"
-  - "tarahernandez"
-  - "vishalapatel"
-  - "batmat"
-  - "teilo"
-  - "rsandell"
-  - "olamy"
+  - ldap: "craigbarber"
+  - ldap: "evanbrown"
+  - ldap: "stephenshank"
+  - ldap: "donmccasland"
+  - ldap: "tarahernandez"
+  - ldap: "vishalapatel"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "teilo"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "olamy"
+    github: "olamy"
+  - github: "jtnord"
+  - github: "alecharp"
+  - github: "craigdbarber"
+  - github: "agoulti"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "google-storage-plugin Developers"

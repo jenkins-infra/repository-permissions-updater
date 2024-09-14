@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/junit-realtime-test-reporter"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "timja"
+  - ldap: "timja"
+    github: "timja"
+repository_team: "junit-realtime-test-reporter-plugin Developers"

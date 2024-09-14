@@ -8,7 +8,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mock-load-builder"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "vlatombe"
-  - "jglick"
+  - ldap: "vlatombe"
+  - ldap: "jglick"
+    github: "jglick"
+  - github: "Vlatombe"
+  - github: "stephenc"
+repository_team: "mock-load-builder-plugin Developers"

@@ -7,4 +7,7 @@ issues:
 paths:
   - "org/jenkinsci/plugins/octoperf"
 developers:
-  - "jloisel"
+  - ldap: "jloisel"
+additional_github_teams:
+  - team: "octoperf-jci-plugin Developers"
+    role: "Admin"

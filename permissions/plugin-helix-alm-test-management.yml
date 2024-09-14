@@ -2,9 +2,12 @@
 name: "helix-alm-test-management"
 github: &GH "jenkinsci/helix-alm-test-management-plugin"
 paths:
-- "com/perforce/halm/jenkins/helix-alm-test-management"
+  - "com/perforce/halm/jenkins/helix-alm-test-management"
 developers:
-- "vincentp"
-- "perforce_pjackson"
+  - ldap: "vincentp"
+  - ldap: "perforce_pjackson"
+  - github: "vincenpt"
+  - github: "petejax"
 issues:
   - github: *GH
+repository_team: "helix-alm-test-management-plugin Developers"

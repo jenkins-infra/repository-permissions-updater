@@ -8,6 +8,8 @@ issues:
 paths:
   - "com/cloudbees/jenkins/plugins/additional-identities-plugin"
 developers:
-  - "viceice"
+  - ldap: "viceice"
+    github: "viceice"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "additional-identities-plugin Developers"

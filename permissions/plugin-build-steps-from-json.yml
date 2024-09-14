@@ -4,4 +4,7 @@ github: "jenkinsci/build-steps-from-json-plugin"
 paths:
   - "com/spcow/plugins/build-steps-from-json"
 developers:
-  - "pskumar448"
+  - ldap: "pskumar448"
+additional_github_teams:
+  - team: "buildsteps-as-code-plugin Developers"
+    role: "Admin"

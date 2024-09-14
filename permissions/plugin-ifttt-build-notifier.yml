@@ -7,4 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/ifttt-build-notifier"
   - "org/jenkinsci/plugins/ifttt-build-notifier"
 developers:
-  - "upgundecha"
+  - ldap: "upgundecha"
+    github: "upgundecha"
+repository_team: "ifttt-build-notifier-plugin Developers"

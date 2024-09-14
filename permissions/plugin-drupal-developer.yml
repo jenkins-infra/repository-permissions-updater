@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/drupal-developer"
 developers:
-  - "fengtan"
+  - ldap: "fengtan"
+    github: "fengtan"
+repository_team: "drupal-developer-plugin Developers"

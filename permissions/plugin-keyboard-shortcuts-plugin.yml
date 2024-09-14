@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/keyboard-shortcuts-plugin"
 developers:
-  - "surenpi"
+  - ldap: "surenpi"
+  - github: "LinuxSuRen"
+repository_team: "keyboard-shortcuts-plugin Developers"

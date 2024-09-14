@@ -2,10 +2,10 @@
 name: "aribot"
 github: &GH "jenkinsci/aribot-plugin"
 paths:
-- "io/jenkins/plugins/aribot"
+  - "io/jenkins/plugins/aribot"
 developers:
-- "tejs"
+  - ldap: "tejs"
 issues:
   - jira: 29129
 cd:
-  enabled: true
+    enabled: true

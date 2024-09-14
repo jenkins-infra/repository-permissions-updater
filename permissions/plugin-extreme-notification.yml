@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/extreme-notification"
 developers:
-  - "bkmeneguello"
-  - "danielburgmann"
+  - ldap: "bkmeneguello"
+    github: "bkmeneguello"
+  - ldap: "danielburgmann"
+    github: "danielburgmann"
+repository_team: "extreme-notification-plugin Developers"

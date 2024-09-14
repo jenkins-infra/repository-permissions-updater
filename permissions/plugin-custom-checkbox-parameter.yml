@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/custom-checkbox-parameter"
 developers:
-  - "bluersw"
+  - ldap: "bluersw"
+  - github: "sunweisheng"
+repository_team: "custom-checkbox-parameter-plugin Developers"

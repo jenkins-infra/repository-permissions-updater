@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/periodicbackup"
 developers:
-  - "oleg_nenashev"
-  - "johno"
+  - ldap: "oleg_nenashev"
+  - ldap: "johno"
+  - github: "dienomight"
+  - github: "johnou"
+  - github: "emanuelez"
+repository_team: "periodicbackup-plugin Developers"

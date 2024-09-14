@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/tap4j/tap"
 developers:
-  - "kinow"
+  - ldap: "kinow"
+additional_github_teams:
+  - team: "tap-plugin-developers"
+    role: "Admin"

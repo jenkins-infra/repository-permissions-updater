@@ -5,4 +5,7 @@ issues:
   - jira: '17428'  # application-director-plugin
 paths:
   - "org/jenkins-ci/plugins/application-director-plugin"
-developers: []
+developers:
+  - github: "jfullam"
+  - github: "mlschechter"
+repository_team: "application-director-plugin Developers"

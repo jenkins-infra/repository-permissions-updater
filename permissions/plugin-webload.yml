@@ -6,4 +6,6 @@ issues:
 paths:
   - "hudson/plugins/webload"
 developers:
-  - "jane_king"
+  - ldap: "jane_king"
+  - github: "jane-king"
+repository_team: "webload-plugin Developers"

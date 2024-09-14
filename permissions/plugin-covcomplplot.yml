@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/covcomplplot"
 developers: []
+repository_team: "covcomplplot-plugin Developers"

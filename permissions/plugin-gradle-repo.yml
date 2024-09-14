@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/gradle-repo"
 developers:
-  - "eastwoodyang"
+  - ldap: "eastwoodyang"
+  - github: "EastWoodYang"
+repository_team: "gradle-repo-plugin Developers"

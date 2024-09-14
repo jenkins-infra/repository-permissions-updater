@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/promoted-builds-simple"
 developers: []
+repository_team: "promoted-builds-simple-plugin Developers"

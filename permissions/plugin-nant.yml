@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/nant"
 developers: []
 cd:
-  enabled: true
+    enabled: true
+repository_team: "nant-plugin Developers"

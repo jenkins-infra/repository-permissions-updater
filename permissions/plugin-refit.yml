@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/googlecode/refit/jenkins/refit"
 developers: []
+repository_team: "refit-plugin Developers"

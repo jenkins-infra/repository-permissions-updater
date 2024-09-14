@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-dev-spaces"
 developers:
-  - "zooopx"
+  - ldap: "zooopx"
+  - github: "gavinfish"
+  - github: "yuwzho"
+  - github: "mmyyrroonn"
+repository_team: "azure-dev-spaces-plugin Developers"

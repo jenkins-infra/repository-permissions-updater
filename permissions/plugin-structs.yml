@@ -6,18 +6,22 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/structs"
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "oleg_nenashev"
-  - "abayer"
-  - "svanoort"
-  - "dnusbaum"
-  - "rsandell"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
+  - ldap: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "oleg_nenashev"
+  - ldap: "abayer"
+  - ldap: "svanoort"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+  - ldap: "kshultz"
+  - github: "dwnusbaum"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "structs-plugin Developers"

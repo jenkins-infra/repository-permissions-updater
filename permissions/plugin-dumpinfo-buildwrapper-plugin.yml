@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/dumpinfo-buildwrapper-plugin"
 developers: []
+repository_team: "dumpinfo-buildwrapper-plugin Developers"

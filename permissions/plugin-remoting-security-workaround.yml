@@ -6,4 +6,4 @@ issues:
 paths:
   - "io/jenkins/plugins/remoting-security-workaround"
 developers:
-  - "@security"
+  - ldap: "@security"

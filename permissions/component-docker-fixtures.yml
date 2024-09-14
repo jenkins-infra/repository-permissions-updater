@@ -4,11 +4,13 @@ github: "jenkinsci/docker-fixtures"
 paths:
   - "org/jenkins-ci/test/docker-fixtures"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "andresrc"
-  - "jglick"
-  - "kohsuke"
-  - "olivergondza"
-  - "rsandell"
-  - "vlatombe"
+  - ldap: "andresrc"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "olivergondza"
+  - ldap: "rsandell"
+  - ldap: "vlatombe"
+repository_team: "docker-fixtures Developers"

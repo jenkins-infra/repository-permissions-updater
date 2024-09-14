@@ -4,8 +4,10 @@ github: &GH "jenkinsci/editable-choice-plugin"
 paths:
   - "io/jenkins/plugins/editable-choice"
 developers:
-  - "ikedam"
+  - ldap: "ikedam"
+    github: "ikedam"
 issues:
   - jira: 28633
 cd:
-  enabled: true
+    enabled: true
+repository_team: "editable-choice-plugin Developers"

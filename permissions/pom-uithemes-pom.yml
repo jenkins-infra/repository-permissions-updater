@@ -4,3 +4,6 @@ github: "jenkinsci/uithemes-plugin"
 paths:
   - "org/jenkins-ci/plugins/uithemes/uithemes-pom"
 developers: [] # archived
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

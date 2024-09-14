@@ -2,10 +2,12 @@
 name: "better-pipeline-flowgraph-table"
 github: &GH "jenkinsci/better-pipeline-flowgraph-table-plugin"
 paths:
-- "io/jenkins/plugins/better-pipeline-flowgraph-table"
+  - "io/jenkins/plugins/better-pipeline-flowgraph-table"
 developers:
-- "danielbeck"
+  - ldap: "danielbeck"
+  - github: "daniel-beck"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "better-pipeline-flowgraph-table-plugin Developers"

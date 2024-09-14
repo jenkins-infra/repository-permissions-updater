@@ -6,8 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/dockerhub-notification"
 developers:
-  - "rsandell"
-  - "@cloudbees-developers"
+  - ldap: "rsandell"
+  - ldap: "@cloudbees-developers"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Admin"

@@ -2,17 +2,27 @@
 name: "lockable-resources"
 github: &gh "jenkinsci/lockable-resources-plugin"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *gh
 paths:
   - "org/6wind/jenkins/lockable-resources"
 developers:
-  - "abayer"
-  - "amuniz"
-  - "tgr"
-  - "robinjarry"
-  - "jimklimov"
-  - "markewaite"
-  - "poddingue"
-  - "mpokornyetm"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "amuniz"
+    github: "amuniz"
+  - ldap: "tgr"
+  - ldap: "robinjarry"
+  - ldap: "jimklimov"
+    github: "jimklimov"
+  - ldap: "markewaite"
+  - ldap: "poddingue"
+  - ldap: "mpokornyetm"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "haithir"
+  - github: "g3n35i5"
+  - github: "mPokornyETM"
+  - github: "mark-reiche"
+repository_team: "lockable-resources-plugin Developers"

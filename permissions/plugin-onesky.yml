@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/onesky"
 developers:
-  - "ricardoespsanto"
+  - ldap: "ricardoespsanto"
+    github: "ricardoespsanto"
+repository_team: "onesky-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/kmap-jenkins"
 developers:
-  - "adminkeivox"
+  - ldap: "adminkeivox"
+    github: "adminkeivox"
+repository_team: "kmap-plugin Developers"

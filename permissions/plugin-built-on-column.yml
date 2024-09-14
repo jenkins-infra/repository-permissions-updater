@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/built-on-column"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+additional_github_teams:
+  - team: "builton-column-plugin Developers"
+    role: "Admin"

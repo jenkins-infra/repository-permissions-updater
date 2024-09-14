@@ -4,4 +4,7 @@ github: "jenkinsci/lib-symbol-annotation"
 paths:
   - "org/jenkins-ci/symbol-annotation"
 developers:
-  - "@core"
+  - ldap: "@core"
+  - github: "basil"
+  - github: "timja"
+repository_team: "lib-symbol-annotation Developers"

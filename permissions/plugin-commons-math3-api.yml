@@ -2,10 +2,12 @@
 name: "commons-math3-api"
 github: &GH "jenkinsci/commons-math3-api-plugin"
 paths:
-- "io/jenkins/plugins/commons-math3-api"
+  - "io/jenkins/plugins/commons-math3-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *GH
+repository_team: "commons-math3-api-plugin Developers"

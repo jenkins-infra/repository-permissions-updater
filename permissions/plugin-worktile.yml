@@ -6,8 +6,11 @@ issues:
 paths:
   - "io/jenkins/plugins/worktile"
 developers:
-  - "shaunxu"
-  - "luodongjia"
-  - "sunjingyun"
-  - "cheerfyt"
-  - "13111179550"
+  - ldap: "shaunxu"
+  - ldap: "luodongjia"
+  - ldap: "sunjingyun"
+  - ldap: "cheerfyt"
+  - ldap: "13111179550"
+additional_github_teams:
+  - team: "worktile-plugin Developers"
+    role: "Admin"

@@ -4,4 +4,4 @@ github: "jenkinsci/literate-api"
 paths:
   - "org/jenkins-ci/literate/literate-api"
 developers:
-  - "vlatombe"
+  - ldap: "vlatombe"

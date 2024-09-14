@@ -6,4 +6,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ws-ws-replacement"
 developers:
-  - "leewinder"
+  - ldap: "leewinder"
+repository_team: "ws-ws-replacement-plugin Developers"

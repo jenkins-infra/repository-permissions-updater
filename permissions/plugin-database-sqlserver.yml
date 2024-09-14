@@ -4,8 +4,11 @@ github: &GH "jenkinsci/database-sqlserver-plugin"
 paths:
   - "io/jenkins/plugins/database-sqlserver"
 developers:
-  - "cnhttpd"
+  - ldap: "cnhttpd"
+  - github: "jonesbusy"
+  - github: "identifysun"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "database-sqlserver-plugin Developers"

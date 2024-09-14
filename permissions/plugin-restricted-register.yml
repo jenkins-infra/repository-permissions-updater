@@ -6,4 +6,9 @@ issues:
 paths:
   - "com/infullmobile/jenkins/plugin/restricted-register"
 developers:
-  - "adamkobusifm"
+  - ldap: "adamkobusifm"
+  - github: "tomaszpiekarczyk"
+  - github: "AdamKobus"
+  - github: "krzysztofwasilewski"
+  - github: "MasterAccountIFM"
+repository_team: "restricted-register-plugin Developers"

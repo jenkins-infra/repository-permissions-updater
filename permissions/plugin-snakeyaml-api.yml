@@ -7,12 +7,15 @@ issues:
 paths:
   - "io/jenkins/plugins/snakeyaml-api"
 developers:
-  - "escoem"
-  - "timja"
-  - "jetersen"
-  - "amuniz"
+  - ldap: "escoem"
+  - ldap: "timja"
+  - ldap: "jetersen"
+  - ldap: "amuniz"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+additional_github_teams:
+  - team: "snakeyaml-plugin Developers"
+    role: "Admin"

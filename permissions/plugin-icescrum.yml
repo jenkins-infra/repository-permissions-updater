@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/icescrum"
 developers:
-  - "vbarrier"
+  - ldap: "vbarrier"
+    github: "vbarrier"
+  - github: "kagilum"
+repository_team: "icescrum-plugin Developers"

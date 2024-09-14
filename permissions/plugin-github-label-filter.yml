@@ -7,4 +7,6 @@ issues:
 paths:
   - "io/jenkins/plugins/github-label-filter"
 developers:
-  - "topikachu"
+  - ldap: "topikachu"
+    github: "topikachu"
+repository_team: "github-label-filter-plugin Developers"

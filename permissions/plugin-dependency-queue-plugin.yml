@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/dependency-queue-plugin"
 developers: []
+repository_team: "dependency-queue-plugin Developers"

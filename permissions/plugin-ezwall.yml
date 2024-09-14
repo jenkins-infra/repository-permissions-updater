@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ezwall"
 developers: []
+repository_team: "ezwall-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/permissive-script-security"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+    github: "olivergondza"
+repository_team: "permissive-script-security-plugin Developers"

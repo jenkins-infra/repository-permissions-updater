@@ -2,10 +2,12 @@
 name: "remote-result-trigger"
 github: &GH "jenkinsci/remote-result-trigger-plugin"
 paths:
-- "io/jenkins/plugins/remote-result-trigger"
+  - "io/jenkins/plugins/remote-result-trigger"
 developers:
-- "itfsw"
+  - ldap: "itfsw"
+    github: "itfsw"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "remote-result-trigger-plugin Developers"

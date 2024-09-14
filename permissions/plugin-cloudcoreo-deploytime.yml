@@ -6,5 +6,9 @@ issues:
 paths:
   - "com/cloudcoreo/plugins/cloudcoreo-deploytime"
 developers:
-  - "pauldallen"
-  - "armaneous"
+  - ldap: "pauldallen"
+    github: "pauldallen"
+  - ldap: "armaneous"
+    github: "armaneous"
+  - github: "smattes"
+repository_team: "cloudcoreo-deploytime-plugin Developers"

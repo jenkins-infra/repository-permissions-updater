@@ -6,4 +6,6 @@ issues:
 paths:
   - "hudson/plugins/klaros/klaros-testmanagement"
 developers:
-  - "stolp"
+  - ldap: "stolp"
+    github: "stolp"
+repository_team: "klaros-testmanagement-plugin Developers"

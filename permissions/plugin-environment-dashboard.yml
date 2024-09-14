@@ -6,5 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/environment-dashboard"
 developers:
-  - "vipinsthename"
-  - "willwh"
+  - ldap: "vipinsthename"
+  - ldap: "willwh"
+    github: "willwh"
+repository_team: "environment-dashboard-plugin Developers"

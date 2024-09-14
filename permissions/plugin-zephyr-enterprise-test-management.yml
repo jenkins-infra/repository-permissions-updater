@@ -6,5 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/zephyr-enterprise-test-management"
 developers:
-  - "smartbearashutosh"
-  - "ashwanikrsh"
+  - ldap: "smartbearashutosh"
+  - ldap: "ashwanikrsh"
+  - github: "sxm20"
+  - github: "zeedeveloper"
+  - github: "mohan-zephyr"
+  - github: "AshwaniKrSh"
+  - github: "SmartBearAshutosh"
+repository_team: "zephyr-enterprise-test-management-plugin Developers"

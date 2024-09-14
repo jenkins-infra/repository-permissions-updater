@@ -4,6 +4,8 @@ github: &GH "jenkinsci/nested-data-reporting-plugin"
 paths:
   - "io/jenkins/plugins/nested-data-reporting"
 developers:
-  - "simonsymhoven"
+  - ldap: "simonsymhoven"
+    github: "simonsymhoven"
 issues:
   - github: *GH
+repository_team: "nested-data-reporting-plugin Developers"

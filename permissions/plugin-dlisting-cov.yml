@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/dlisting-cov"
 developers:
-  - "cizezsy"
-  - "andre2007"
+  - ldap: "cizezsy"
+    github: "cizezsy"
+  - ldap: "andre2007"
+    github: "andre2007"
+repository_team: "dlisting-cov-plugin Developers"

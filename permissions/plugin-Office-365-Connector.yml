@@ -7,5 +7,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/Office-365-Connector"
 developers:
-  - "outconn"
-  - "dszczepanik"
+  - ldap: "outconn"
+    github: "outconn"
+  - ldap: "dszczepanik"
+  - github: "damianszczepanik"
+repository_team: "office-365-connector-plugin Developers"

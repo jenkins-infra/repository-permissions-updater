@@ -4,9 +4,12 @@ github: &GH "jenkinsci/leapwork-plugin"
 paths:
   - "io/jenkins/plugins/leapwork"
 developers:
-  - "bir"
+  - ldap: "bir"
+  - github: "AntonLiakhovich"
+  - github: "BirSikanderMahajan"
 issues:
   - github: *GH
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "leapwork-plugin Developers"

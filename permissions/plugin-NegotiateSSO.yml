@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/NegotiateSSO"
 developers:
-  - "farmgeek4life"
+  - ldap: "farmgeek4life"
 cd:
-  enabled: true
+    enabled: true
+additional_github_teams:
+  - team: "negotiate-sso-plugin Developers"
+    role: "Admin"

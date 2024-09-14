@@ -4,5 +4,5 @@ github: "jenkinsci/lib-jira-scraper"
 paths:
   - "org/jenkins-ci/jira-scraper"
 developers:
-  - "kohsuke"
-  - "oleg_nenashev"
+  - ldap: "kohsuke"
+  - ldap: "oleg_nenashev"

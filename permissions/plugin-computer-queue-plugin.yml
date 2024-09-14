@@ -6,4 +6,6 @@ issues:
 paths:
   - "jenkins/ci/plugins/computerqueue/computer-queue-plugin"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+  - github: "lvotypko"
+repository_team: "computer-queue-plugin Developers"

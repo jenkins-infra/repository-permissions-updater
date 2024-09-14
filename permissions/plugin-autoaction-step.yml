@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/autoaction-step"
 developers:
-  - "vochithanh"
+  - ldap: "vochithanh"
+    github: "vochithanh"
+repository_team: "autoaction-step-plugin Developers"

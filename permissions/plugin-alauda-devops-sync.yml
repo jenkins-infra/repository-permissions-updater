@@ -6,6 +6,10 @@ issues:
 paths:
   - "io/alauda/jenkins/plugins/alauda-devops-sync"
 developers:
-  - "surenpi"
-  - "danielfbm"
-  - "chengjingtao"
+  - ldap: "surenpi"
+  - ldap: "danielfbm"
+    github: "danielfbm"
+  - ldap: "chengjingtao"
+    github: "chengjingtao"
+  - github: "LinuxSuRen"
+repository_team: "alauda-devops-sync-plugin Developers"

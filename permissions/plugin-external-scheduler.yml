@@ -6,3 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/external-scheduler"
 developers: []
+additional_github_teams:
+  - team: "mail-watcher-plugin Developers"
+    role: "Admin"

@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/dependency-track"
 developers:
-  - "sephirothj"
+  - ldap: "sephirothj"
+  - github: "sephiroth-j"
+repository_team: "dependency-track-plugin Developers"

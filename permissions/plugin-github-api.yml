@@ -2,20 +2,26 @@
 name: "github-api"
 github: "jenkinsci/github-api-plugin"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - jira: '17496'  # github-api-plugin
 paths:
   - "org/jenkins-ci/plugins/github-api"
 developers:
-  - "@cloudbees-developers"
-  - "andresrc"
-  - "bitwiseman"
-  - "integer"
-  - "kohsuke"
-  - "ohtake_tomohiro"
-  - "recena"
-  - "surya548"
+  - ldap: "@cloudbees-developers"
+  - ldap: "andresrc"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "integer"
+  - ldap: "kohsuke"
+    github: "kohsuke"
+  - ldap: "ohtake_tomohiro"
+  - ldap: "recena"
+  - ldap: "surya548"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "github-api-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Admin"

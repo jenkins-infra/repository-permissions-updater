@@ -7,9 +7,11 @@ paths:
   - "org/jenkins-ci/plugins/email-ext"
   - "org/jvnet/hudson/plugins/email-ext"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "slide_o_mix"
+  - ldap: "slide_o_mix"
+  - github: "slide"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "email-ext-plugin Developers"

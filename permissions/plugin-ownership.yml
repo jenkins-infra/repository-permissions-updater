@@ -7,5 +7,8 @@ issues:
 paths:
   - "com/synopsys/jenkinsci/ownership"
 developers:
-  - "oleg_nenashev"
-  - "mPokornyETM"
+  - ldap: "oleg_nenashev"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - github: "oleg-nenashev"
+repository_team: "ownership-plugin Developers"

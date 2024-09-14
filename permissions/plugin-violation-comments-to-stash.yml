@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/violation-comments-to-stash"
 developers:
-  - "tomasbjerre"
+  - ldap: "tomasbjerre"
+    github: "tomasbjerre"
+repository_team: "violation-comments-to-stash-plugin Developers"

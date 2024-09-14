@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/testcomplete11-xunit"
 developers:
-  - "mgaert"
+  - ldap: "mgaert"
+    github: "mgaert"
+repository_team: "testcomplete11-xunit-plugin Developers"

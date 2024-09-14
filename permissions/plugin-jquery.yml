@@ -6,7 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jquery"
 developers:
-  - "kohsuke"
+  - ldap: "kohsuke"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "jquery-plugin Developers"

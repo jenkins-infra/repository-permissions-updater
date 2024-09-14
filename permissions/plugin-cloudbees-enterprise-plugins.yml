@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloudbees-enterprise-plugins"
 developers:
-  - "jglick"
+  - ldap: "jglick"

@@ -5,4 +5,6 @@ issues:
   - jira: '17554'  # uptime-plugin
 paths:
   - "org/jenkins-ci/plugins/uptime"
-developers: []
+developers:
+  - github: "chrismair"
+repository_team: "uptime-plugin Developers"

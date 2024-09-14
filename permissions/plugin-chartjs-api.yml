@@ -2,8 +2,12 @@
 name: "chartjs-api"
 github: &GH "jenkinsci/chartjs-api-plugin"
 paths:
-- "io/jenkins/plugins/chartjs-api"
+  - "io/jenkins/plugins/chartjs-api"
 developers:
-- "judovana"
+  - ldap: "judovana"
+    github: "judovana"
+  - github: "RadekCap"
+  - github: "zzambers"
 issues:
   - github: *GH
+repository_team: "chartjs-api-plugin Developers"

@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/sonyericsson/hudson/plugins/gerrit/gerrit-trigger"
 developers:
-  - "rsandell"
-  - "olivergondza"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "olivergondza"
+  - github: "orjanpercy"
+repository_team: "gerrit-trigger-plugin Developers"

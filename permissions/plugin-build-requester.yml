@@ -3,4 +3,4 @@ name: "build-requester"
 paths:
   - "com/redhat/jenkins/plugins/build-requester"
 developers:
-  - "vdedik"
+  - ldap: "vdedik"

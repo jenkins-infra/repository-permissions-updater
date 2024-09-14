@@ -2,10 +2,13 @@
 name: "harbor"
 github: &GH "jenkinsci/harbor-plugin"
 paths:
-- "io/jenkins/plugins/harbor"
+  - "io/jenkins/plugins/harbor"
 cd:
-  enabled: true
+    enabled: true
 developers:
-- "cnhttpd"
+  - ldap: "cnhttpd"
+  - github: "identifysun"
+  - github: "cumtzhangqijie"
 issues:
   - github: *GH
+repository_team: "harbor-plugin Developers"

@@ -8,7 +8,10 @@ paths:
   - "io/jenkins/plugin-modernizer/plugin-modernizer-cli"
   - "io/jenkins/plugin-modernizer/plugin-modernizer-core"
 developers:
-  - "poddingue"
-  - "jonesbusy"
+  - ldap: "poddingue"
+  - ldap: "jonesbusy"
 cd:
-  enabled: true
+    enabled: true
+additional_github_teams:
+  - team: "plugin-modernizer-tool developers"
+    role: "Admin"

@@ -5,4 +5,7 @@ issues:
   - jira: '15923'  # skip-certificate-check-plugin
 paths:
   - "org/jenkins-ci/plugins/skip-certificate-check"
-developers: []
+developers:
+  - github: "kohsuke"
+  - github: "MarkEWaite"
+repository_team: "skip-certificate-check-plugin Developers"

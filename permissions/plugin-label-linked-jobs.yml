@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/label-linked-jobs"
 developers:
-  - "dominiquebrice"
-  - "surenpi"
+  - ldap: "dominiquebrice"
+    github: "dominiquebrice"
+  - ldap: "surenpi"
+  - github: "jenkinsadmin"
+  - github: "LinuxSuRen"
+repository_team: "label-linked-jobs-plugin Developers"

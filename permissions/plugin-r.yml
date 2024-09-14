@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/biouno/r/r"
 developers:
-  - "kinow"
+  - ldap: "kinow"
+    github: "kinow"
+repository_team: "r-plugin Developers"

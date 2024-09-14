@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/gprbuild"
 developers:
-  - "FeBrex"
+  - ldap: "FeBrex"
+    github: "FeBrex"
+repository_team: "gprbuild-plugin Developers"

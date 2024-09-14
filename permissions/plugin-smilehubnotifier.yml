@@ -4,6 +4,8 @@ github: &GH "jenkinsci/smilehubnotifier-plugin"
 paths:
   - "io/jenkins/plugins/smilehubnotifier"
 developers:
-  - "ngoctran_ntq"
+  - ldap: "ngoctran_ntq"
+  - github: "hieule2ntq"
 issues:
   - github: *GH
+repository_team: "smilehubnotifier-plugin Developers"

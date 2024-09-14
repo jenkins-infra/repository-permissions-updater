@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/ruby-plugins/rvm"
 developers:
-  - "eitoball"
+  - ldap: "eitoball"
+    github: "eitoball"
+  - github: "kohsuke"
+repository_team: "rvm-plugin Developers"

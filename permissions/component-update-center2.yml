@@ -4,4 +4,4 @@ github: "jenkins-infra/update-center2"
 paths:
   - "org/jenkins-ci/update-center2"
 developers:
-  - "danielbeck"
+  - ldap: "danielbeck"

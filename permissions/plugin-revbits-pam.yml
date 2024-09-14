@@ -2,8 +2,10 @@
 name: "revbits-pam"
 github: &GH "jenkinsci/revbits-pam-plugin"
 paths:
-- "io/jenkins/plugins/revbits-pam"
+  - "io/jenkins/plugins/revbits-pam"
 developers:
-- "revbits"
+  - ldap: "revbits"
+  - github: "RevBits"
 issues:
   - github: *GH
+repository_team: "revbits-pam-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/kotlin/kotlin-v1-stdlib-jdk8"
 developers:
-  - "jetersen"
+  - ldap: "jetersen"
+    github: "jetersen"
+repository_team: "kotlin-v1-stdlib-jdk8-plugin Developers"

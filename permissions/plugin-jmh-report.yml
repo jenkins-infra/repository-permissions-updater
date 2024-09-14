@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/morethan/jenkins/jmh-report"
 developers:
-  - "oae"
+  - ldap: "oae"
+  - github: "jzillmann"
+repository_team: "jmh-report-plugin Developers"

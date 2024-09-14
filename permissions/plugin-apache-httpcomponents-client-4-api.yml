@@ -6,16 +6,24 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/apache-httpcomponents-client-4-api"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "oleg_nenashev"
-  - "dnusbaum"
-  - "mramonleon"
-  - "carroll"
-  - "teilo"
-  - "rsandell"
-  - "olamy"
-  - "markewaite"
+  - ldap: "oleg_nenashev"
+  - ldap: "dnusbaum"
+  - ldap: "mramonleon"
+  - ldap: "carroll"
+  - ldap: "teilo"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+  - github: "jtnord"
+  - github: "dwnusbaum"
+  - github: "oleg-nenashev"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "apache-httpcomponents-client-4-api-plugin Developers"

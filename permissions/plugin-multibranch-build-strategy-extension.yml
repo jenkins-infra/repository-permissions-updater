@@ -6,7 +6,11 @@ issues:
 paths:
   - "igalg/jenkins/plugins/multibranch-build-strategy-extension"
 developers:
-  - "igalg"
-  - "legall_benoit"
+  - ldap: "igalg"
+    github: "igalg"
+  - ldap: "legall_benoit"
+  - github: "FrogDevelopper"
+  - github: "avihuly"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "multibranch-build-strategy-extension-plugin Developers"

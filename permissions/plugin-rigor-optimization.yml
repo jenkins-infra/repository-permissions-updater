@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rigor-optimization"
 developers:
-  - "wcmonty"
+  - ldap: "wcmonty"
+  - github: "marktisham"
+repository_team: "rigor-optimization-plugin Developers"

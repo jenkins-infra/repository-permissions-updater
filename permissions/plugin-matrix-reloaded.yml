@@ -6,4 +6,7 @@ issues:
 paths:
   - "net/praqma/matrix-reloaded"
 developers:
-  - "madsnielsen"
+  - ldap: "madsnielsen"
+additional_github_teams:
+  - team: "Matrix-Reloaded-Plugin Developers"
+    role: "Admin"

@@ -2,8 +2,12 @@
 name: "report-diff"
 github: &GH "jenkinsci/report-diff-plugin"
 paths:
-- "io/jenkins/plugins/report-diff"
+  - "io/jenkins/plugins/report-diff"
 developers:
-- "judovana"
+  - ldap: "judovana"
+    github: "judovana"
+  - github: "RadekCap"
+  - github: "zzambers"
 issues:
   - github: *GH
+repository_team: "report-diff-plugin Developers"

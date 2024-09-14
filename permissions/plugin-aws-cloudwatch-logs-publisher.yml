@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aws-cloudwatch-logs-publisher"
 developers:
-  - "elifarley"
+  - ldap: "elifarley"
+    github: "elifarley"
+repository_team: "aws-cloudwatch-logs-publisher-plugin Developers"

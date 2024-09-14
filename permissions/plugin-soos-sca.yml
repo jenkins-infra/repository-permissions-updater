@@ -4,8 +4,13 @@ github: &GH "jenkinsci/soos-sca-plugin"
 paths:
   - "io/soos/soos-sca"
 developers:
-  - "soos_integrations"
+  - ldap: "soos_integrations"
+  - github: "SOOS-Pchen"
+  - github: "SOOS-JJennings"
+  - github: "SOOS-JAlvarez"
+  - github: "SOOS-MMalony"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "soos-sca-plugin Developers"

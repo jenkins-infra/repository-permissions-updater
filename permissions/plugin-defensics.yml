@@ -6,6 +6,10 @@ issues:
 paths:
   - "com/synopsys/defensics"
 developers:
-  - "defensics_oss"
-  - "synhal"
-  - "synomtv"
+  - ldap: "defensics_oss"
+  - ldap: "synhal"
+  - ldap: "synomtv"
+  - github: "snps-halkoaho"
+  - github: "defensics-oss"
+  - github: "snps-mtv"
+repository_team: "defensics-plugin Developers"

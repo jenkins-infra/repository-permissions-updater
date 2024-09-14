@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/view-cloner"
 developers:
-  - "agukov"
+  - ldap: "agukov"
+  - github: "Agukov"
+repository_team: "view-cloner-plugin Developers"

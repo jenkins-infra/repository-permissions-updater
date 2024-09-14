@@ -6,14 +6,16 @@ issues:
 paths:
   - "com/redgate/plugins/redgatesqlci/redgate-sql-ci"
 developers:
-  - "chrisheppell"
-  - "jasoncrease"
-  - "petergerrard"
-  - "lubosmichalic"
-  - "danielpottenger"
-  - "diogoduarterg"
-  - "jackdewinter"
-  - "markan"
+  - ldap: "chrisheppell"
+  - ldap: "jasoncrease"
+  - ldap: "petergerrard"
+  - ldap: "lubosmichalic"
+  - ldap: "danielpottenger"
+  - ldap: "diogoduarterg"
+  - ldap: "jackdewinter"
+  - ldap: "markan"
+  - github: "JasonCrease"
 security:
-  contacts:
-    jira: redgate_security
+    contacts:
+        jira: redgate_security
+repository_team: "redgate-sql-ci-plugin Developers"

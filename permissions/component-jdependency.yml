@@ -4,6 +4,8 @@ github: "jenkinsci/jdependency"
 paths:
   - "io/jenkins/org/vafer/jdependency"
 developers:
-  - "rsandell"
-  - "svanoort"
-  - "abayer"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "svanoort"
+  - ldap: "abayer"
+repository_team: "jdependency Developers"

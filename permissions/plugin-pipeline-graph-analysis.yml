@@ -6,16 +6,24 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-graph-analysis"
 developers:
-  - "svanoort"
-  - "abayer"
-  - "dnusbaum"
-  - "jglick"
-  - "rsandell"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "dnusbaum"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "kshultz"
+  - github: "dwnusbaum"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pipeline-graph-analysis-plugin Developers"

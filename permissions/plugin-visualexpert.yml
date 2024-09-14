@@ -4,6 +4,8 @@ github: &GH "jenkinsci/visualexpert-plugin"
 paths:
   - "io/jenkins/plugins/visualexpert"
 developers:
-  - "devnovalys"
+  - ldap: "devnovalys"
+  - github: "DevNovalys"
 issues:
   - github: *GH
+repository_team: "visualexpert-plugin Developers"

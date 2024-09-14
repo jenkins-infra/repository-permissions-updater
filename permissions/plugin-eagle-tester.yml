@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/mobileenerlytics/eagle/tester/eagle-tester"
 developers:
-  - "mobileenerlytics"
+  - ldap: "mobileenerlytics"
+  - github: "mobile-enerlytics"
+repository_team: "eagle-tester-plugin Developers"

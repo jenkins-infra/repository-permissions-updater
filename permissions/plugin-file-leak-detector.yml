@@ -6,6 +6,11 @@ issues:
 paths:
   - "com/cloudbees/jenkins/plugins/file-leak-detector"
 developers:
-  - "basil"
-  - "jglick"
-  - "dnusbaum"
+  - ldap: "basil"
+    github: "basil"
+  - ldap: "jglick"
+  - ldap: "dnusbaum"
+  - github: "kohsuke"
+  - github: "dwnusbaum"
+  - github: "jeffret-b"
+repository_team: "file-leak-detector-plugin Developers"

@@ -6,9 +6,12 @@ issues:
 paths:
   - "io/jenkins/plugins/dark-theme"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "timja"
-  - "oleg_nenashev"
-  - "notmyfault"
-  - "janfaracik"
+  - ldap: "timja"
+  - ldap: "oleg_nenashev"
+  - ldap: "notmyfault"
+  - ldap: "janfaracik"
+additional_github_teams:
+  - team: "dark-theme Developers"
+    role: "Admin"

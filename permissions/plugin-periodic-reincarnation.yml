@@ -7,6 +7,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/periodic-reincarnation"
 developers:
-  - "boev"
-  - "stefanbrausch"
-  - "jochenafuerbacher"
+  - ldap: "boev"
+  - ldap: "stefanbrausch"
+  - ldap: "jochenafuerbacher"
+additional_github_teams:
+  - team: "logfilesizechecker-plugin Developers"
+    role: "Admin"

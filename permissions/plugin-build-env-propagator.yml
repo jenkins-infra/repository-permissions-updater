@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-env-propagator"
 developers:
-  - "vivek"
+  - ldap: "vivek"

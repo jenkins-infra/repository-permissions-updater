@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hue-light"
 developers:
-  - "mmore"
+  - ldap: "mmore"
+  - github: "MMore"
+repository_team: "hue-light-plugin Developers"

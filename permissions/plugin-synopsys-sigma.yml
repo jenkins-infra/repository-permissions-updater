@@ -4,9 +4,11 @@ github: "jenkinsci/synopsys-sigma-plugin"
 issues:
   - jira: '28822'
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 paths:
   - "io/jenkins/plugins/synopsys-sigma"
 developers:
-  - "sboyd"
+  - ldap: "sboyd"
+  - github: "sboyd-synopsys"
+repository_team: "synopsys-sigma-plugin Developers"

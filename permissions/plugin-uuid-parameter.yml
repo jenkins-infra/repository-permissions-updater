@@ -4,6 +4,9 @@ github: &GH "jenkinsci/uuid-parameter-plugin"
 paths:
   - "io/jenkins/plugins/uuid-parameter"
 developers:
-  - "amehina"
+  - ldap: "amehina"
+    github: "amehina"
+  - github: "benluft"
 issues:
   - github: *GH
+repository_team: "uuid-parameter-plugin Developers"

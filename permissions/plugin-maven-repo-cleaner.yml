@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/maven-repo-cleaner"
 developers:
-  - "olamy"
+  - ldap: "olamy"
+    github: "olamy"
+repository_team: "maven-repo-cleaner-plugin Developers"

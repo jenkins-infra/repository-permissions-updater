@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/radargun-reporting"
 developers:
-  - "abar"
+  - ldap: "abar"
+  - github: "AlexanderBarbie"
+repository_team: "radargun-reporting-plugin Developers"

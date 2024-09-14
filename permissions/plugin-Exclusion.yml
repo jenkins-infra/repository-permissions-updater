@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/Exclusion"
 developers:
-  - "anthonyroux"
+  - ldap: "anthonyroux"
+    github: "anthonyroux"
+repository_team: "exclusion-plugin Developers"

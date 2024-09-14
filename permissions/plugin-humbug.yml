@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/humbug"
 developers:
-  - "wdaher"
-  - "butchyyyy"
+  - ldap: "wdaher"
+  - ldap: "butchyyyy"
+    github: "butchyyyy"
+repository_team: "humbug-plugin Developers"

@@ -4,10 +4,23 @@ github: "jenkinsci/configuration-as-code-plugin"
 paths:
   - "io/jenkins/configuration-as-code/integrations"
 developers:
-  - "praqma"
-  - "jetersen"
-  - "oleg_nenashev"
-  - "timja"
+  - ldap: "praqma"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - ldap: "oleg_nenashev"
+  - ldap: "timja"
+    github: "timja"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
+  - github: "buep"
+  - github: "oleg-nenashev"
+  - github: "ewelinawilkosz"
 security:
-  contacts:
-    jira: "jetersen"
+    contacts:
+        jira: "jetersen"
+repository_team: "configuration-as-code-plugin Developers"
+additional_github_teams:
+  - team: "jcasc-compatibility-reviewers"
+    role: "Read"
+  - team: "configuration-as-code-devtools-project-team"
+    role: "Triage"

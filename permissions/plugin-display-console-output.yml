@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/display-console-output"
 developers:
-  - "lyenliang"
+  - ldap: "lyenliang"
+    github: "lyenliang"
+repository_team: "display-console-output-plugin Developers"

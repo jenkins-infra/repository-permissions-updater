@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/javatest-report"
   - "org/jvnet/hudson/plugins/javatest-report"
 developers:
-  - "lvotypkova"
+  - ldap: "lvotypkova"
+repository_team: "javatest-report-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/dtkit-api"
 developers:
-  - "nfalco"
+  - ldap: "nfalco"
+  - github: "nfalco79"
+repository_team: "dtkit-plugin Developers"

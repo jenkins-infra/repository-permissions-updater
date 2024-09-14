@@ -4,4 +4,6 @@ github: "jenkinsci/http-post-plugin"
 paths:
   - "org/jenkins-ci/plugins/http-post"
 developers:
-  - "christianbecker"
+  - ldap: "christianbecker"
+  - github: "ChristianKatzmann"
+repository_team: "http-post-plugin Developers"

@@ -4,6 +4,9 @@ github: "jenkinsci/testcomplete-plugin"
 paths:
   - "org/jenkins-ci/plugins/TestComplete"
 developers:
-  - "igor_filin"
-  - "rinconedgar"
-  - "pday_sb"
+  - ldap: "igor_filin"
+  - ldap: "rinconedgar"
+    github: "rinconedgar"
+  - ldap: "pday_sb"
+  - github: "Igor-Filin"
+repository_team: "testcomplete-plugin Developers"

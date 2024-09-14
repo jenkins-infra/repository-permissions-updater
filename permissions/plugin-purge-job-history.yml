@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/purge-job-history"
 developers:
-  - "aytuncbeken"
+  - ldap: "aytuncbeken"
+    github: "aytuncbeken"
 security:
-  contacts:
-    jira: "aytuncbeken"
+    contacts:
+        jira: "aytuncbeken"
+repository_team: "purge-job-history-plugin Developers"

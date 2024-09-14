@@ -4,7 +4,10 @@ github: "jenkinsci/lib-fips-bundle-test"
 paths:
   - "io/jenkins/test/fips/lib-fips-bundle-test"
 developers:
-  - "teilo"
-  - "olamy"
+  - ldap: "teilo"
+  - ldap: "olamy"
+    github: "olamy"
+  - github: "jtnord"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "lib-fips-bundle-test Developers"

@@ -6,8 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hidden-parameter"
 developers:
-  - "yangli"
-  - "madsjakobsen"
-  - "jonesbusy"
+  - ldap: "yangli"
+  - ldap: "madsjakobsen"
+    github: "madsjakobsen"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+  - github: "wy-scm"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "hidden-parameter-plugin Developers"

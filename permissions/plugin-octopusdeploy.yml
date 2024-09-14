@@ -6,4 +6,6 @@ issues:
 paths:
   - "hudson/plugins/octopusdeploy/octopusdeploy"
 developers:
-  - "octopusdeploy"
+  - ldap: "octopusdeploy"
+  - github: "badriance"
+repository_team: "octopusdeploy-plugin Developers"

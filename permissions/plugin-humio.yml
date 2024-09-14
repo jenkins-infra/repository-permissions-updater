@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/humio"
 developers:
-  - "anagrius"
+  - ldap: "anagrius"
+    github: "anagrius"
+  - github: "pmech"
+repository_team: "humio-plugin Developers"

@@ -3,4 +3,4 @@ name: "servlet-api"
 paths:
   - "javax/servlet/servlet-api"
 developers:
-  - "teilo"
+  - ldap: "teilo"

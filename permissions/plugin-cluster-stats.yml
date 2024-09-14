@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/zeroturnaround/cluster-stats"
 developers:
-  - "toomasr"
+  - ldap: "toomasr"
+additional_github_teams:
+  - team: "liverebel-deploy-plugin Developers"
+    role: "Admin"

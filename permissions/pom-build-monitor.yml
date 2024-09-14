@@ -4,6 +4,8 @@ github: "jenkinsci/build-monitor-plugin"
 paths:
   - "org/jenkins-ci/plugins/build-monitor"
 developers:
-  - "janmolak"
+  - ldap: "janmolak"
+  - github: "jan-molak"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "build-monitor-plugin Developers"

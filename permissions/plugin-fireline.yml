@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/plugin/fireline"
 developers:
-  - "weihao"
-  - "qtest"
+  - ldap: "weihao"
+  - ldap: "qtest"
+  - github: "AnneWei"
+repository_team: "fireline-plugin Developers"

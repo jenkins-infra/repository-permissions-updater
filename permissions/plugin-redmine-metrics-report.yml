@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/redmine-metrics-report"
 developers:
-  - "bestoak"
+  - ldap: "bestoak"
+    github: "bestoak"
+repository_team: "redmine-metrics-report-plugin Developers"

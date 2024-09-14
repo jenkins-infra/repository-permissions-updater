@@ -2,10 +2,16 @@
 name: "digicert-software-trust-gpg-sign"
 github: &GH "jenkinsci/digicert-software-trust-gpg-sign-plugin"
 paths:
-- "io/jenkins/plugins/digicert-software-trust-gpg-sign"
+  - "io/jenkins/plugins/digicert-software-trust-gpg-sign"
 developers:
-- "vmummadi"
+  - ldap: "vmummadi"
+  - github: "rameshdhulipalla"
+  - github: "sagarDigicert"
+  - github: "vinay-mummadi-digicert"
+  - github: "Siddharth-Srinivas"
+  - github: "raeesa-digicert"
 issues:
   - jira: 29131
 cd:
-  enabled: true
+    enabled: true
+repository_team: "digicert-software-trust-gpg-sign-plugin Developers"

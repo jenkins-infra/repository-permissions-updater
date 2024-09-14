@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/jquery3-api"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "jquery3-api-plugin Developers"

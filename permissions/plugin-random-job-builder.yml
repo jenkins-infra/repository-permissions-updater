@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/random-job-builder"
 developers:
-  - "svanoort"
+  - ldap: "svanoort"

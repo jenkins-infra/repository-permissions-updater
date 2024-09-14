@@ -7,4 +7,7 @@ issues:
 paths:
   - "de/taimos/pipeline-aws"
 developers:
-  - "hoegertn"
+  - ldap: "hoegertn"
+    github: "hoegertn"
+  - github: "tylersouthwick"
+repository_team: "pipeline-aws-plugin Developers"

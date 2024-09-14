@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/indellient/habitat"
 developers:
-  - "skylerto"
+  - ldap: "skylerto"
+    github: "skylerto"
+repository_team: "habitat-plugin Developers"

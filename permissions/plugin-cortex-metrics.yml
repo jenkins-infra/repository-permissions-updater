@@ -4,9 +4,11 @@ github: &GH "jenkinsci/cortex-metrics-plugin"
 paths:
   - "io/jenkins/plugins/cortex-metrics"
 developers:
-  - "bksaville"
+  - ldap: "bksaville"
+  - github: "bluesliverx"
 issues:
   - github: *GH
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "cortex-metrics-plugin Developers"

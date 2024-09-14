@@ -8,4 +8,6 @@ paths:
   - "org/jenkinsci/plugins/doclinks"
   - "org/jvnet/hudson/plugins/doclinks"
 developers:
-  - "ikedam"
+  - ldap: "ikedam"
+    github: "ikedam"
+repository_team: "doclinks-plugin Developers"

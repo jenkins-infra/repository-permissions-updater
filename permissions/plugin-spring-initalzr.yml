@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/spring-initalzr"
 developers:
-  - "migger"
+  - ldap: "migger"
+    github: "migger"
+repository_team: "spring-initalzr-plugin Developers"

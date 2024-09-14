@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vss"
 developers: []
+repository_team: "vss-plugin Developers"

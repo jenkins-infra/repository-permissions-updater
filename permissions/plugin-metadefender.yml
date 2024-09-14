@@ -4,6 +4,8 @@ github: &GH "jenkinsci/metadefender-plugin"
 paths:
   - "io/jenkins/plugins/metadefender"
 developers:
-  - "vlam"
+  - ldap: "vlam"
+  - github: "vlam0120"
 issues:
   - github: *GH
+repository_team: "metadefender-plugin Developers"

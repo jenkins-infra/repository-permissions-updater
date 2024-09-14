@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-dependency-walker"
 developers:
-  - "estarter"
+  - ldap: "estarter"
+    github: "estarter"
+repository_team: "pipeline-dependency-walker-plugin Developers"

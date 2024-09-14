@@ -6,4 +6,5 @@ issues:
 paths:
   - "jenkins/repository"
 developers:
-  - "magnayn"
+  - ldap: "magnayn"
+repository_team: "maven-repository-plugin Developers"

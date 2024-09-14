@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/dotcommonitor-loadview"
 developers:
-  - "dotcommonitor"
+  - ldap: "dotcommonitor"
+  - github: "jenkinsadmin"
+  - github: "dotcom-monitor"
+repository_team: "dotcommonitor-loadview-plugin Developers"

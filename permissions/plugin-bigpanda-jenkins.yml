@@ -4,13 +4,17 @@ github: "jenkinsci/bigpanda-plugin"
 paths:
   - "org/jenkins-ci/plugins/bigpanda-jenkins"
 developers:
-  - "jguereca"
-  - "robstemen"
-  - "jcardozo"
-  - "ccrist"
-  - "goodwinjeremyr"
-  - "shikhag"
-  - "pbaker"
-  - "lukej7"
+  - ldap: "jguereca"
+  - ldap: "robstemen"
+  - ldap: "jcardozo"
+  - ldap: "ccrist"
+  - ldap: "goodwinjeremyr"
+  - ldap: "shikhag"
+  - ldap: "pbaker"
+  - ldap: "lukej7"
+    github: "lukej7"
+  - github: "WaffleStudios"
+  - github: "julioguereca"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "bigpanda-plugin Developers"

@@ -4,8 +4,10 @@ github: &GH "jenkinsci/compressed_files_viewer-plugin"
 paths:
   - "io/jenkins/plugins/compressed_files_viewer"
 developers:
-  - "ahmed_s"
+  - ldap: "ahmed_s"
+  - github: "Ahmed-Sellami"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "compressed_files_viewer-plugin Developers"

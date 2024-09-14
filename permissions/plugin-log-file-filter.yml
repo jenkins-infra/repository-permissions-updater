@@ -6,7 +6,10 @@ issues:
 paths:
   - "com/tsystems/sbs/log-file-filter"
 developers:
-  - "carlescapdevila"
-  - "andreasmandel"
+  - ldap: "carlescapdevila"
+  - ldap: "andreasmandel"
+  - github: "amandel"
+  - github: "CarlesCapdevila"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "log-file-filter-plugin Developers"

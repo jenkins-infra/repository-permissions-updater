@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/polarion"
 developers: []
+repository_team: "polarion-plugin Developers"

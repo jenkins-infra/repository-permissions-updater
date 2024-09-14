@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-metrics"
 developers:
-  - "ydubreuil"
-  - "px3"
+  - ldap: "ydubreuil"
+    github: "ydubreuil"
+  - ldap: "px3"
+  - github: "javamllama"
+  - github: "opx3"
+repository_team: "build-metrics-plugin Developers"

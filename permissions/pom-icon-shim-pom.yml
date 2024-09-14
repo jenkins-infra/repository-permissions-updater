@@ -4,3 +4,6 @@ github: "jenkinsci/icon-shim-plugin"
 paths:
   - "org/jenkins-ci/plugins/icon-shim/icon-shim-pom"
 developers: [] # archived
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

@@ -6,4 +6,8 @@ issues:
 paths:
   - "jenkinsci/unreliable-slave-plugin"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+repository_team: "unreliable-slave-plugin Developers"
+additional_github_teams:
+  - team: "computer-queue-plugin Developers"
+    role: "Admin"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/job-import-plugin"
 developers:
-  - "escoem"
+  - ldap: "escoem"
+    github: "escoem"
+  - github: "demarey"
+repository_team: "job-import-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/concordionpresenter"
 developers: []
+repository_team: "concordionpresenter-plugin Developers"

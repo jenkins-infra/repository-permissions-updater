@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cygpath"
 developers: []
+repository_team: "cygpath-plugin Developers"

@@ -7,7 +7,9 @@ paths:
   - "org/jenkins-ci/plugins/analysis-model-api"
   - "io/jenkins/plugins/analysis-model-api"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "analysis-model-api-plugin Developers"

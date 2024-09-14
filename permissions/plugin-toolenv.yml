@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/toolenv"
 developers:
-  - "skundrik"
+  - ldap: "skundrik"
+    github: "skundrik"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "toolenv-plugin Developers"

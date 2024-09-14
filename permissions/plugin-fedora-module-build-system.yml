@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fedora-module-build-system"
 developers:
-  - "scoheb"
+  - ldap: "scoheb"
+    github: "scoheb"
+repository_team: "fedora-module-build-system-plugin Developers"

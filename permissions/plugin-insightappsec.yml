@@ -6,4 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/insightappsec"
 developers:
-  - "ias_developer"
+  - ldap: "ias_developer"
+  - github: "cmayne-r7"
+  - github: "sleibo-r7"
+  - github: "shegartyr7"
+  - github: "emcanearney-r7"
+  - github: "r-powell-r7"
+repository_team: "insightappsec-plugin Developers"

@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hockeyapp"
 developers:
-  - "brantone"
-  - "dkochetkov"
-  - "ohoeltke"
-  - "mezpahlan"
+  - ldap: "brantone"
+  - ldap: "dkochetkov"
+  - ldap: "ohoeltke"
+    github: "ohoeltke"
+  - ldap: "mezpahlan"
+  - github: "denis-kochetkov"
+repository_team: "hockeyapp-plugin Developers"

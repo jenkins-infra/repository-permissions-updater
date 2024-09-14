@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/testabilityexplorer"
 developers: []
+repository_team: "testabilityexplorer-plugin Developers"

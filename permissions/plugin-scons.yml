@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/thalesgroup/jenkins-ci/plugins/scons"
 developers: []
+repository_team: "scons-plugin Developers"

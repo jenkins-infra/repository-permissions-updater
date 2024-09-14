@@ -5,4 +5,6 @@ issues:
   - jira: '17820'  # concurrent-login-plugin
 paths:
   - "hudson/plugins/concurrent_login/concurrent-login-plugin"
-developers: []
+developers:
+  - github: "blogfein"
+repository_team: "concurrent-login-plugin Developers"

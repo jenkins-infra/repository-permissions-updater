@@ -4,5 +4,7 @@ github: "jenkinsci/docker-traceability-plugin"
 paths:
   - "org/jenkins-ci/plugins/docker-traceability-api"
 developers:
-  - "oleg_nenashev"
-  - "ataylor"
+  - ldap: "oleg_nenashev"
+  - ldap: "ataylor"
+  - github: "alexanderrtaylor"
+repository_team: "docker-traceability-plugin Developers"

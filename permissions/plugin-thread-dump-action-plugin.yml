@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/thread-dump-action-plugin"
 developers: []
+repository_team: "thread-dump-action-plugin Developers"

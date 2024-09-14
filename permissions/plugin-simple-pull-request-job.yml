@@ -6,4 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/simple-pull-request-job"
 developers:
-  - "gautamabhishek46"
+  - ldap: "gautamabhishek46"
+    github: "gautamabhishek46"
+  - github: "martinda"
+  - github: "grandvizier"
+  - github: "pvtuan10"
+  - github: "kwhetstone"
+repository_team: "simple-pull-request-job-plugin Developers"

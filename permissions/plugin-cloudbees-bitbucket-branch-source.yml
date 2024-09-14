@@ -7,17 +7,26 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloudbees-bitbucket-branch-source"
 developers:
-  - "abayer"
-  - "amuniz"
-  - "bitwiseman"
-  - "carroll"
-  - "dnusbaum"
-  - "rsandell"
-  - "svanoort"
-  - "jtaboada"
-  - "lifeofguenter"
+  - ldap: "abayer"
+  - ldap: "amuniz"
+    github: "amuniz"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "carroll"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "svanoort"
+  - ldap: "jtaboada"
+  - ldap: "lifeofguenter"
+    github: "lifeofguenter"
+  - github: "dwnusbaum"
+  - github: "jetersen"
+  - github: "joseblas"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "bitbucket-branch-source-plugin Developers"

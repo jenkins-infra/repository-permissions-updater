@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/SBuild"
 developers:
-  - "tobiasroeser"
+  - ldap: "tobiasroeser"
+  - github: "lefou"
+repository_team: "sbuild-plugin Developers"

@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/perfecto"
 developers:
-  - "perfectojenkins"
-  - "genesisthomas"
+  - ldap: "perfectojenkins"
+  - ldap: "genesisthomas"
+    github: "genesisthomas"
+  - github: "dushyantans"
+repository_team: "perfecto-plugin Developers"

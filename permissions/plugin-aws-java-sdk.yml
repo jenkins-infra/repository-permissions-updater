@@ -7,11 +7,16 @@ paths:
   - "org/jenkins-ci/plugins/aws-java-sdk"
   - "org/jenkins-ci/plugins/aws-java-sdk/aws-java-sdk-*"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "andresrc"
-  - "vlatombe"
-  - "@cloudbees-developers"
+  - ldap: "andresrc"
+  - ldap: "vlatombe"
+  - ldap: "@cloudbees-developers"
+  - github: "Vlatombe"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "aws-java-sdk-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Admin"

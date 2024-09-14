@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/prisma-cloud-iac-scan"
 developers:
-  - "shiftleftiacscan"
+  - ldap: "shiftleftiacscan"
+  - github: "jaydeeps-sacumen"
+  - github: "yatin-panw"
+repository_team: "prisma-cloud-iac-scan-plugin Developers"

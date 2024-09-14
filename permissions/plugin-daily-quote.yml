@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/daily-quote"
 developers: []
+repository_team: "daily-quote-plugin Developers"

@@ -6,12 +6,27 @@ issues:
 paths:
   - "org/jenkinsci/plugins/pipeline-model-declarative-agent"
 developers:
-  - "abayer"
-  - "oleg_nenashev"
-  - "rsandell"
-  - "bitwiseman"
-  - "dnusbaum"
-  - "carroll"
+  - ldap: "abayer"
+  - ldap: "oleg_nenashev"
+  - ldap: "rsandell"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "dnusbaum"
+  - ldap: "carroll"
+  - github: "olamy"
+  - github: "batmat"
+  - github: "jtnord"
+  - github: "raul-arabaolaza"
+  - github: "dwnusbaum"
+  - github: "HRMPW"
+  - github: "joseblas"
+  - github: "PaddyOH"
+  - github: "kshultzCB"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "pipeline-model-definition-plugin Developers"
+additional_github_teams:
+  - team: "declarative-rfc-reviewers"
+    role: "Read"

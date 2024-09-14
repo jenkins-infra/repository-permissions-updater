@@ -6,6 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/markdown-formatter"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+repository_team: "markdown-formatter-plugin Developers"

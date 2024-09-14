@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/clamav"
 developers:
-  - "sogabe"
+  - ldap: "sogabe"

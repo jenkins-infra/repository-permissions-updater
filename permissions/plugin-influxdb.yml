@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/influxdb"
 developers:
-  - "aleksisimell"
+  - ldap: "aleksisimell"
+  - github: "asimell"
+repository_team: "influxdb-plugin Developers"

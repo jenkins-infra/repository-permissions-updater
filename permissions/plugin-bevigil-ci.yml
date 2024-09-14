@@ -2,11 +2,14 @@
 name: "bevigil-ci"
 github: &GH "jenkinsci/bevigil-ci-plugin"
 cd:
-  enabled: true
+    enabled: true
 paths:
-- "io/jenkins/plugins/bevigil-ci"
+  - "io/jenkins/plugins/bevigil-ci"
 developers:
-- "ashikka"
-- "bevigil"
+  - ldap: "ashikka"
+    github: "ashikka"
+  - ldap: "bevigil"
+  - github: "Bevigil"
 issues:
   - github: *GH
+repository_team: "bevigil-ci-plugin Developers"

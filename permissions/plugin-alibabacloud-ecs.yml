@@ -6,6 +6,9 @@ issues:
 paths:
   - "com/alibabacloud/jenkins/alibabacloud-ecs"
 developers:
-  - "kunlun"
-  - "xhpy2009"
-  - "xrf"
+  - ldap: "kunlun"
+  - ldap: "xhpy2009"
+  - ldap: "xrf"
+  - github: "DavyJones2010"
+  - github: "zhongwandong"
+repository_team: "alibabacloud-ecs-plugin Developers"

@@ -7,9 +7,14 @@ issues:
 paths:
   - "io/jenkins/plugins/jaxb"
 developers:
-  - "kohsuke"
-  - "oleg_nenashev"
-  - "batmat"
+  - ldap: "kohsuke"
+  - ldap: "oleg_nenashev"
+  - ldap: "batmat"
+    github: "batmat"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "jaxb-plugin Developers"
+additional_github_teams:
+  - team: "Java11 support"
+    role: "Read"

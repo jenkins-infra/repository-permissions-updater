@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/mentor/questa/vrm/jenkins/mentor-questa-vrm"
 developers:
-  - "questa_vrm"
+  - ldap: "questa_vrm"
+  - github: "ramymagdy"
+  - github: "mennatallah-amer"
+repository_team: "mentor-questa-vrm-plugin Developers"

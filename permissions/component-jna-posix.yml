@@ -4,4 +4,6 @@ github: "jenkinsci/jna-posix"
 paths:
   - "org/jruby/ext/posix/jna-posix"
 developers:
-  - "rodrigc"
+  - ldap: "rodrigc"
+  - github: "daniel-beck"
+repository_team: "jna-posix Developers"

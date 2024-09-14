@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/persistent-build-queue-plugin"
 developers: []
+repository_team: "persistent-build-queue-plugin Developers"

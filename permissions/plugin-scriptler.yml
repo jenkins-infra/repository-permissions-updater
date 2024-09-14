@@ -7,6 +7,9 @@ paths:
   - "org/jenkins-ci/plugins/scriptler"
   - "org/jvnet/hudson/plugins/scriptler"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "mtughan"
+  - ldap: "mtughan"
+    github: "mtughan"
+  - github: "imod"
+repository_team: "scriptler-plugin Developers"

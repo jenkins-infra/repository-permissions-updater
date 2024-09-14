@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/openid4java"
 developers: []
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "openid4java-plugin Developers"

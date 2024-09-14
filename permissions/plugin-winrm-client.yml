@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/spcow/plugins/winrm-client"
 developers:
-  - "pskumar448"
+  - ldap: "pskumar448"
+    github: "pskumar448"
+repository_team: "winrm-client-plugin Developers"

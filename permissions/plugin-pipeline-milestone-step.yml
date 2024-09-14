@@ -6,16 +6,25 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-milestone-step"
 developers:
-  - "amuniz"
-  - "batmat"
-  - "svanoort"
-  - "jglick"
-  - "abayer"
-  - "dnusbaum"
-  - "rsandell"
-  - "carroll"
+  - ldap: "amuniz"
+    github: "amuniz"
+  - ldap: "batmat"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - github: "dwnusbaum"
+  - github: "bitwiseman"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pipeline-milestone-step-plugin Developers"

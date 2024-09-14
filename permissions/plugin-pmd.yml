@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/pmd"
 developers: []
+repository_team: "pmd-plugin Developers"

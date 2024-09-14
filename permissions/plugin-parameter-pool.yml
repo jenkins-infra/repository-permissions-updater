@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/parameter-pool"
 developers:
-  - "damienbiggs"
+  - ldap: "damienbiggs"
+    github: "damienbiggs"
+repository_team: "parameter-pool-plugin Developers"

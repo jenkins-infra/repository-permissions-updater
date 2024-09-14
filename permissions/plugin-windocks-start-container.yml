@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/windocks-start-container"
 developers:
-  - "windocks"
+  - ldap: "windocks"
+  - github: "rameshpa"
+  - github: "windocks-github"
+repository_team: "windocks-start-container-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rapid7-insightvm-container-assessment"
 developers:
-  - "rapid7"
+  - ldap: "rapid7"
+  - github: "gschneider-r7"
+  - github: "cdoughty-r7"
+repository_team: "rapid7-insightvm-container-assessment-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/maxxton/microdocs-integration"
 developers:
-  - "steven166"
+  - ldap: "steven166"
+    github: "steven166"
+repository_team: "microdocs-integration-plugin Developers"

@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/sitemonitor"
 developers:
-  - "onuba"
+  - ldap: "onuba"
+    github: "onuba"
+  - github: "cliffano"
+  - github: "prithishchanda"
+repository_team: "sitemonitor-plugin Developers"

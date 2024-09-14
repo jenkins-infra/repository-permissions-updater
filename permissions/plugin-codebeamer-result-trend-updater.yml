@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/codebeamer-result-trend-updater"
 developers:
-  - "intland_support"
+  - ldap: "intland_support"
+  - github: "balazstarint"
+repository_team: "codebeamer-result-trend-updater-plugin Developers"

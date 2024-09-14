@@ -6,5 +6,8 @@ issues:
 paths:
   - "net/praqma/drmemory-plugin"
 developers:
-  - "madsnielsen"
-  - "praqma"
+  - ldap: "madsnielsen"
+  - ldap: "praqma"
+  - github: "wolfgarnet"
+  - github: "MadsNielsen"
+repository_team: "drmemory-plugin Developers"

@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/yaml-project"
 developers:
-  - "astroilov"
-  - "mattmoor"
+  - ldap: "astroilov"
+    github: "astroilov"
+  - ldap: "mattmoor"
+  - github: "jenkinsadmin"
+repository_team: "yaml-project-plugin Developers"

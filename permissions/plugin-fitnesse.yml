@@ -6,8 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fitnesse"
 developers:
-  - "antoine_aumjaud"
-  - "lessonz"
-  - "CSLTech"
-  - "jaruzafa"
-  - "jruzafa"
+  - ldap: "antoine_aumjaud"
+  - ldap: "lessonz"
+    github: "lessonz"
+  - ldap: "CSLTech"
+    github: "CSLTech"
+  - ldap: "jaruzafa"
+    github: "jaruzafa"
+  - ldap: "jruzafa"
+  - github: "antoine-aumjaud"
+repository_team: "fitnesse-plugin Developers"

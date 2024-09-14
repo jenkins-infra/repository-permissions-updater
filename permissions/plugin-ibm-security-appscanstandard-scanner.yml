@@ -6,4 +6,6 @@ issues:
 paths:
   - "appscanstandard-integration/ibm-security-appscanstandard-scanner"
 developers:
-  - "tlopespt"
+  - ldap: "tlopespt"
+  - github: "tlopesPT"
+repository_team: "ibm-security-appscanstandard-scanner-plugin Developers"

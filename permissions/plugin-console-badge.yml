@@ -6,5 +6,8 @@ issues:
 paths:
   - "me/noroutine/jenkins/plugin/console-badge"
 developers:
-  - "oleksii"
-  - "mPokornyETM"
+  - ldap: "oleksii"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - github: "noroutine"
+repository_team: "console-badge-plugin Developers"

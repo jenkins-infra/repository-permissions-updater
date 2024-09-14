@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/youtrack-plugin"
 developers:
-  - "erikzielke"
+  - ldap: "erikzielke"
+    github: "erikzielke"
+repository_team: "youtrack-plugin Developers"

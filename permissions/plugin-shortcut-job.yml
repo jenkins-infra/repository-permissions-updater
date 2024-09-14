@@ -4,6 +4,8 @@ github: &GH "jenkinsci/shortcut-job-plugin"
 paths:
   - "io/jenkins/plugins/shortcut-job"
 developers:
-  - "mlasevich"
+  - ldap: "mlasevich"
+    github: "mlasevich"
 issues:
   - github: *GH
+repository_team: "shortcut-job-plugin Developers"

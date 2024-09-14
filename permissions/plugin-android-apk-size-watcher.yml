@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/android-apk-size-watcher"
 developers:
-  - "xgleich1"
+  - ldap: "xgleich1"
+    github: "xgleich1"
+repository_team: "android-apk-size-watcher-plugin Developers"

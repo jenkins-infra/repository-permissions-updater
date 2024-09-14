@@ -2,10 +2,12 @@
 name: "provar-automation"
 github: &GH "jenkinsci/provar-automation-plugin"
 paths:
-- "io/jenkins/plugins/provar-automation"
+  - "io/jenkins/plugins/provar-automation"
 developers:
-- "mrdailey99"
+  - ldap: "mrdailey99"
+    github: "mrdailey99"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "provar-automation-plugin Developers"

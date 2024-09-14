@@ -4,4 +4,7 @@ github: "jenkinsci/extensibility-api"
 paths:
   - "com/cloudbees/extensibility"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

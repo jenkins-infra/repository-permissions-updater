@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/generic-environment-filters"
 developers:
-  - "danielbeck"
+  - ldap: "danielbeck"
+  - github: "daniel-beck"
+repository_team: "generic-environment-filters-plugin Developers"

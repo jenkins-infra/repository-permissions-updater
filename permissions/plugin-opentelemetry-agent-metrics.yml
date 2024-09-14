@@ -2,8 +2,10 @@
 name: "opentelemetry-agent-metrics"
 github: &GH "jenkinsci/opentelemetry-agent-metrics-plugin"
 paths:
-- "io/jenkins/plugins/opentelemetry-agent-metrics"
+  - "io/jenkins/plugins/opentelemetry-agent-metrics"
 developers:
-- "christophe_kamphaus_jemmic"
+  - ldap: "christophe_kamphaus_jemmic"
+  - github: "christophe-kamphaus-jemmic"
 issues:
   - github: *GH
+repository_team: "opentelemetry-agent-metrics-plugin Developers"

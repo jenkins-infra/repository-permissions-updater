@@ -2,10 +2,12 @@
 name: "cyberchief-security-scanner"
 github: &GH "jenkinsci/cyberchief-security-scanner-plugin"
 paths:
-- "io/jenkins/plugins/cyberchief-security-scanner"
+  - "io/jenkins/plugins/cyberchief-security-scanner"
 developers:
-- "ziontavera"
+  - ldap: "ziontavera"
+    github: "ziontavera"
 issues:
   - jira: 29321
 cd:
-  enabled: true
+    enabled: true
+repository_team: "cyberchief-security-scanner-plugin Developers"

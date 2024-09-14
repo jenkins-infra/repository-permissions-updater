@@ -4,9 +4,13 @@ github: &GH "jenkinsci/compuware-topaz-for-enterprise-data-plugin"
 paths:
   - "com/compuware/jenkins/compuware-topaz-for-enterprise-data"
 developers:
-  - "cpwr_jenkins"
+  - ldap: "cpwr_jenkins"
+  - github: "vzamoragbmc"
+  - github: "vijaysanchetibmc"
+  - github: "nvadar"
 issues:
   - github: *GH
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "compuware-topaz-for-enterprise-data-plugin Developers"

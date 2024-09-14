@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/weibo"
 developers:
-  - "surenpi"
+  - ldap: "surenpi"
+  - github: "LinuxSuRen"
+  - github: "jiafu1115"
+repository_team: "weibo-plugin Developers"

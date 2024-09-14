@@ -4,4 +4,6 @@ github: "jenkinsci/perforce-plugin"
 paths:
   - "org/jvnet/hudson/plugins/perforce"
 developers:
-  - "rpetti"
+  - ldap: "rpetti"
+  - github: "oleg-nenashev"
+repository_team: "perforce-plugin Developers"

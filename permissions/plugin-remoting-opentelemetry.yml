@@ -4,12 +4,18 @@ github: &GH "jenkinsci/remoting-opentelemetry-plugin"
 paths:
   - "io/jenkins/plugins/remoting-opentelemetry*"
 developers:
-  - "aki7m"
-  - "oleg_nenashev"
-  - "cleclerc"
-  - "stellargo"
+  - ldap: "aki7m"
+  - ldap: "oleg_nenashev"
+  - ldap: "cleclerc"
+  - ldap: "stellargo"
+    github: "stellargo"
+  - github: "cyrille-leclerc"
+  - github: "oleg-nenashev"
+  - github: "darshank15"
+  - github: "Aki-7"
 issues:
   - github: *GH
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "remoting-opentelemetry-plugin Developers"

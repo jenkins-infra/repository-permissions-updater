@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/php-builtin-web-server"
 developers:
-  - "fengtan"
+  - ldap: "fengtan"
+    github: "fengtan"
+repository_team: "php-builtin-web-server-plugin Developers"

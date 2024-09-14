@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nodesharing/node-sharing-executor"
 developers:
-  - "scoheb"
-  - "pajasoft"
-  - "olivergondza"
+  - ldap: "scoheb"
+  - ldap: "pajasoft"
+  - ldap: "olivergondza"
+additional_github_teams:
+  - team: "foreman-node-sharing-plugin Developers"
+    role: "Admin"

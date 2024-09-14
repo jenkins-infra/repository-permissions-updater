@@ -4,3 +4,6 @@ github: "jenkinsci/uithemes-plugin"
 paths:
   - "org/jenkins-ci/plugins/uithemes/uithemes-processor"
 developers: [] # archived
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

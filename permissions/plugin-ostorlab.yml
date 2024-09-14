@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/ostorlab"
 developers:
-  - "aminemesb"
+  - ldap: "aminemesb"
+  - github: "amine3"
+repository_team: "ostorlab-plugin Developers"

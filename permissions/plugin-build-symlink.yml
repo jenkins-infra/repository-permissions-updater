@@ -6,5 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/build-symlink"
 developers:
-  - "jglick"
-  - "wfollonier"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "wfollonier"
+repository_team: "build-symlink-plugin Developers"

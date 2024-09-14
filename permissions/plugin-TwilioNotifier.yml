@@ -5,4 +5,6 @@ issues:
   - jira: '17437'  # twilionotifier-plugin
 paths:
   - "com/twilio/jenkins/TwilioNotifier"
-developers: []
+developers:
+  - github: "ChristerF"
+repository_team: "twilio-notifier-plugin Developers"

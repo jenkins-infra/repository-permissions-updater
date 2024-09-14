@@ -6,5 +6,8 @@ issues:
 paths:
   - "eu/markov/jenkins/plugin/mvnmeta/maven-metadata-plugin"
 developers:
-  - "gesh"
-  - "marcrohlfs"
+  - ldap: "gesh"
+  - ldap: "marcrohlfs"
+    github: "marcrohlfs"
+  - github: "markov"
+repository_team: "maven-metadata-plugin Developers"

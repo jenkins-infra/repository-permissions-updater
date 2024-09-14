@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/external-workspace-manager"
 developers:
-  - "alexsomai"
-  - "oleg_nenashev"
+  - ldap: "alexsomai"
+    github: "alexsomai"
+  - ldap: "oleg_nenashev"
+  - github: "martinda"
+repository_team: "external-workspace-manager-plugin Developers"

@@ -4,9 +4,11 @@ github: &GH "jenkinsci/javax-mail-api-plugin"
 paths:
   - "io/jenkins/plugins/javax-mail-api"
 developers:
-  - "basil"
+  - ldap: "basil"
+    github: "basil"
 issues:
   - jira: 28833
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "javax-mail-api-plugin Developers"

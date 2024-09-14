@@ -6,5 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/integrity-plugin"
 developers:
-  - "cdsouza"
-  - "integrity_jenkins_plugin"
+  - ldap: "cdsouza"
+  - ldap: "integrity_jenkins_plugin"
+  - github: "cletusdsouza"
+  - github: "anuragsen"
+  - github: "vlambat"
+  - github: "anksinghal"
+repository_team: "integrity-plugin Developers"

@@ -7,4 +7,6 @@ issues:
 paths:
   - "io/jenkins/plugins/concurrent-step"
 developers:
-  - "topikachu"
+  - ldap: "topikachu"
+    github: "topikachu"
+repository_team: "concurrent-step-plugin Developers"

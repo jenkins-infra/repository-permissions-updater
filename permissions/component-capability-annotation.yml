@@ -4,5 +4,7 @@ github: "jenkinsci/capability-annotation"
 paths:
   - "io/jenkins/blueocean/rest/annotation/capability-annotation"
 developers:
-  - "vivek"
-  - "michaelneale"
+  - ldap: "vivek"
+    github: "vivek"
+  - ldap: "michaelneale"
+repository_team: "capability-annotation Developers"

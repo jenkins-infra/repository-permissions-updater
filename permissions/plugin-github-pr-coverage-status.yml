@@ -7,5 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/github-pr-coverage-status"
 developers:
-  - "terma"
-  - "dmotpan"
+  - ldap: "terma"
+    github: "terma"
+  - ldap: "dmotpan"
+repository_team: "github-pr-coverage-status-plugin Developers"

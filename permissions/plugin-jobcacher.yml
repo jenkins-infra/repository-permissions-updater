@@ -6,7 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jobcacher"
 developers:
-  - "repolevedavaj"
-  - "jonesbusy"
+  - ldap: "repolevedavaj"
+    github: "repolevedavaj"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+  - github: "petehayes"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "jobcacher-plugin Developers"

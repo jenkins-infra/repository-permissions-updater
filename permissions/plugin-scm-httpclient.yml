@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/meowlomo/jenkins/scm-httpclient"
 developers:
-  - "richchen"
+  - ldap: "richchen"
+  - github: "meowlomoDevelopment"
+repository_team: "scm-httpclient-plugin Developers"

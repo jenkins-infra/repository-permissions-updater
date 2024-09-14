@@ -6,4 +6,6 @@ issues:
 paths:
   - "jp/ikedam/jenkins/plugins/groovy-label-assignment"
 developers:
-  - "ikedam"
+  - ldap: "ikedam"
+    github: "ikedam"
+repository_team: "groovy-label-assignment-plugin Developers"

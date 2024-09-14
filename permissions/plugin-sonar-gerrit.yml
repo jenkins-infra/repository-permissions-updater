@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sonar-gerrit"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "reda_alaoui"
+  - ldap: "reda_alaoui"
+  - github: "aquarellian"
+  - github: "reda-alaoui"
+repository_team: "sonar-gerrit-plugin Developers"

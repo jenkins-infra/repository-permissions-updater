@@ -6,7 +6,12 @@ issues:
 paths:
   - "org/overops/plugins/overops-query"
 developers:
-  - "joe99000"
-  - "emizell"
-  - "daverted"
-  - "ccaspanello"
+  - ldap: "joe99000"
+  - ldap: "emizell"
+  - ldap: "daverted"
+  - ldap: "ccaspanello"
+  - github: "JoeOffenberg"
+repository_team: "overops-query-plugin Developers"
+additional_github_teams:
+  - team: "Code Reviewers"
+    role: "Read"

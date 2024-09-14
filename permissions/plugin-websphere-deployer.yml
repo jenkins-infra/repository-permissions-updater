@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/websphere-deployer"
 developers:
-  - "gpeters"
+  - ldap: "gpeters"
+  - github: "billmanhillman"
+repository_team: "websphere-deployer-plugin Developers"

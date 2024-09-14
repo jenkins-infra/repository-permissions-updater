@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/monitoring"
 developers:
-  - "evernat"
-  - "kohsuke"
+  - ldap: "evernat"
+    github: "evernat"
+  - ldap: "kohsuke"
+repository_team: "monitoring-plugin Developers"

@@ -4,8 +4,12 @@ github: &GH "jenkinsci/slsa-plugin"
 paths:
   - "io/jenkins/plugins/slsa"
 developers:
-  - "netomi"
+  - ldap: "netomi"
+    github: "netomi"
+  - github: "mbarbero"
+  - github: "fredg02"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "slsa-plugin Developers"

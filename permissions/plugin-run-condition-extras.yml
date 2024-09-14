@@ -7,4 +7,4 @@ paths:
   - "com/synopsys/arc/jenkinsci/plugins/run-condition-extras"
   - "org/jenkins-ci/plugins/run-condition-extras"
 developers:
-  - "oleg_nenashev"
+  - ldap: "oleg_nenashev"

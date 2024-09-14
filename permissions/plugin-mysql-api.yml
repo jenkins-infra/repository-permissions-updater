@@ -6,6 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/mysql-api"
 developers:
-  - "cleclerc"
+  - ldap: "cleclerc"
+  - github: "cyrille-leclerc"
+  - github: "jonesbusy"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "mysql-api-plugin Developers"

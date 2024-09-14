@@ -6,17 +6,26 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-input-step"
 developers:
-  - "jglick"
-  - "svanoort"
-  - "abayer"
-  - "dnusbaum"
-  - "rsandell"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
-  - "teilo"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "kshultz"
+  - ldap: "teilo"
+  - github: "jtnord"
+  - github: "dwnusbaum"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pipeline-input-step-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/appswithlove/updraft/updraft-publisher"
 developers:
-  - "appswithlove"
+  - ldap: "appswithlove"
+  - github: "yannickpulver"
+  - github: "jenkinsadmin"
+repository_team: "updraft-publisher-plugin Developers"

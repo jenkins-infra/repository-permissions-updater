@@ -6,16 +6,23 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sysdig-secure"
 developers:
-  - "alfredlandrum"
-  - "sysdig"
-  - "jequals5"
-  - "sethmccombs"
-  - "nestorsalceda"
-  - "airadier"
-  - "ndsistsys"
-  - "marcuzzuu"
-  - "denz"
-  - "tembleking"
+  - ldap: "alfredlandrum"
+  - ldap: "sysdig"
+  - ldap: "jequals5"
+  - ldap: "sethmccombs"
+  - ldap: "nestorsalceda"
+    github: "nestorsalceda"
+  - ldap: "airadier"
+  - ldap: "ndsistsys"
+    github: "ndsistsys"
+  - ldap: "marcuzzuu"
+    github: "marcuzzuu"
+  - ldap: "denz"
+  - ldap: "tembleking"
+    github: "tembleking"
+  - github: "omerazr"
+  - github: "d-enz"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "sysdig-secure-plugin Developers"

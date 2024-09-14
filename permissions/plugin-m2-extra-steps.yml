@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/m2-extra-steps"
   - "org/jvnet/hudson/plugins/m2-extra-steps"
 developers: []
+repository_team: "m2-extra-steps-plugin Developers"

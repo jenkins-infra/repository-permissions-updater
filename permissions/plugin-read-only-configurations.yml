@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/read-only-configurations"
 developers:
-  - "lvotypkova"
+  - ldap: "lvotypkova"
+repository_team: "read-only-configurations-plugin Developers"
+additional_github_teams:
+  - team: "computer-queue-plugin Developers"
+    role: "Admin"

@@ -4,4 +4,7 @@ github: "jenkinsci/testflo-for-jira-test-management-automation-plugin"
 paths:
   - "io/jenkins/plugins/testflo-for-jira-test-management-automation"
 developers:
-  - "deviniti"
+  - ldap: "deviniti"
+additional_github_teams:
+  - team: "testflo-test-results-publisher-plugin-developers"
+    role: "Maintain"

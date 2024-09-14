@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/adq/jenkins/xml-job-to-job-dsl"
 developers:
-  - "alandoni"
+  - ldap: "alandoni"
+    github: "alandoni"
+repository_team: "xml-job-to-job-dsl-plugin Developers"

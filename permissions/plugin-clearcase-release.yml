@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/clearcase-release"
 developers: []
+repository_team: "clearcase-release-plugin Developers"

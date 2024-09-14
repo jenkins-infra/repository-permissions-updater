@@ -6,4 +6,7 @@ issues:
 paths:
   - "jp/ikedam/jenkins/plugins/update-sites-manager"
 developers:
-  - "ikedam"
+  - ldap: "ikedam"
+additional_github_teams:
+  - team: "update-sites-manager Developers"
+    role: "Admin"

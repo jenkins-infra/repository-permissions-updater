@@ -4,8 +4,10 @@ github: &GH "jenkinsci/azure-cosmosdb-plugin"
 paths:
   - "io/jenkins/plugins/azure-cosmosdb"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "timja"
+  - ldap: "timja"
+    github: "timja"
 issues:
   - github: *GH
+repository_team: "azure-cosmosdb-plugin Developers"

@@ -5,4 +5,7 @@ issues:
   - jira: '15842'  # cloudbees-deployer-plugin
 paths:
   - "org/jenkins-ci/plugins/cloudbees-deployer-plugin"
-developers: []
+developers:
+  - github: "olamy"
+  - github: "kohsuke"
+repository_team: "cloudbees-deployer-plugin Developers"

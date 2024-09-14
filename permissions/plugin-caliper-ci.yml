@@ -5,4 +5,6 @@ issues:
   - github: *gh
 paths:
   - "com/brianfromoregon/caliper-ci"
-developers: []
+developers:
+  - github: "brianfromoregon"
+repository_team: "caliper-ci-plugin Developers"

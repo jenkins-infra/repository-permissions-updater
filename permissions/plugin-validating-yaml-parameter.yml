@@ -4,8 +4,10 @@ github: &GH "jenkinsci/validating-yaml-parameter-plugin"
 paths:
   - "io/jenkins/plugins/validating-yaml-parameter"
 developers:
-  - "cesan3"
+  - ldap: "cesan3"
+    github: "cesan3"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "validating-yaml-parameter-plugin Developers"

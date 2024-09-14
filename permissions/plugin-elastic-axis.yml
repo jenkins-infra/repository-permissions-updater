@@ -6,7 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/elastic-axis"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "taksan"
-  - "markewaite"
+  - ldap: "taksan"
+    github: "taksan"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+  - github: "beothorn"
+repository_team: "elastic-axis-plugin Developers"

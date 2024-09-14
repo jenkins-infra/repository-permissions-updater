@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/git-userContent"
 developers:
-  - "kohsuke"
+  - ldap: "kohsuke"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "nl/arnom/jenkins/fast-track"
 developers:
-  - "arnom"
+  - ldap: "arnom"
+  - github: "itavero"
+repository_team: "fast-track-plugin Developers"

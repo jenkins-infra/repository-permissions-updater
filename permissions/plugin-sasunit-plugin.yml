@@ -4,4 +4,7 @@ github: "jenkinsci/sasunit-plugin"
 paths:
   - "org/jenkins-ci/plugins/sasunit-plugin"
 developers:
-  - "hmsanalyticalsoftware"
+  - ldap: "hmsanalyticalsoftware"
+  - github: "jenkinsadmin"
+  - github: "HMSAnalyticalSoftware"
+repository_team: "sasunit-plugin Developers"

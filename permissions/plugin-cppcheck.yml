@@ -7,5 +7,9 @@ paths:
   - "com/thalesgroup/jenkins-ci/plugins/cppcheck"
   - "org/jenkins-ci/plugins/cppcheck"
 developers:
-  - "mixalturek"
-  - "marcosteffan"
+  - ldap: "mixalturek"
+    github: "mixalturek"
+  - ldap: "marcosteffan"
+    github: "marcosteffan"
+  - github: "iwonbigbro"
+repository_team: "cppcheck-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/test-results-aggregator"
 developers:
-  - "socrates"
+  - ldap: "socrates"
+  - github: "sdrss"
+repository_team: "test-results-aggregator-plugin Developers"

@@ -7,9 +7,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/parallel-test-executor"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "vlatombe"
-  - "wolfs"
-  - "abayer"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "vlatombe"
+  - ldap: "wolfs"
+  - ldap: "abayer"
+  - github: "Vlatombe"
+  - github: "jenkinsadmin"
+repository_team: "parallel-test-executor-plugin Developers"

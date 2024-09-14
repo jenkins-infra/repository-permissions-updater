@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ironmq-notifier"
 developers:
-  - "mikecaspar"
+  - ldap: "mikecaspar"
+  - github: "MikeCaspar"
+repository_team: "ironmq-notifier-plugin Developers"

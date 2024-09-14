@@ -6,5 +6,10 @@ issues:
 paths:
   - "com/mesosphere/velocity/marathon"
 developers:
-  - "titosand"
-  - "colinmsphere"
+  - ldap: "titosand"
+    github: "titosand"
+  - ldap: "colinmsphere"
+  - github: "sschneid"
+  - github: "ssk2"
+  - github: "colin-msphere"
+repository_team: "marathon-plugin Developers"

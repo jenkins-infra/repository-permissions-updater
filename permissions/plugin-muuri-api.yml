@@ -4,6 +4,8 @@ github: &GH "jenkinsci/muuri-api-plugin"
 paths:
   - "io/jenkins/plugins/muuri-api"
 developers:
-  - "simonsymhoven"
+  - ldap: "simonsymhoven"
+    github: "simonsymhoven"
 issues:
   - github: *GH
+repository_team: "muuri-api-plugin Developers"

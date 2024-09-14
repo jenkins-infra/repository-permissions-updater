@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-gitstatuswrapper"
 developers:
-  - "hello_woof"
+  - ldap: "hello_woof"
+  - github: "hello-woof"
+repository_team: "pipeline-gitstatuswrapper-plugin Developers"

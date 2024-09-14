@@ -7,11 +7,13 @@ paths:
   - "org/jenkins-ci/plugins/dashboard-view"
   - "org/jvnet/hudson/plugins/dashboard-view"
 developers:
-  - "olivergondza"
-  - "tgr"
-  - "vandyev"
+  - ldap: "olivergondza"
+  - ldap: "tgr"
+  - ldap: "vandyev"
+  - github: "TobiX"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "dashboard-view-plugin Developers"

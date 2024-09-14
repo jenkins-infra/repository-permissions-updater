@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/sonyericsson/hudson/plugins/multi-slave-config-plugin/multi-slave-config-plugin"
 developers:
-  - "rsandell"
+  - ldap: "rsandell"
+  - github: "fredrikpersson"
+  - github: "orjanpercy"
+repository_team: "multi-slave-config-plugin Developers"

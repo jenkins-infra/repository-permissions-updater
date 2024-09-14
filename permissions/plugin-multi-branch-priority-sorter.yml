@@ -7,4 +7,6 @@ issues:
 paths:
   - "io/jenkins/plugins/multi-branch-priority-sorter"
 developers:
-  - "surenpi"
+  - ldap: "surenpi"
+  - github: "LinuxSuRen"
+repository_team: "multi-branch-priority-sorter-plugin Developers"

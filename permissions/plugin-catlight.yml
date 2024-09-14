@@ -2,11 +2,14 @@
 name: "catlight"
 github: &GH "jenkinsci/catlight-plugin"
 paths:
-- "io/jenkins/plugins/catlight"
+  - "io/jenkins/plugins/catlight"
 developers:
-- "alexk"
-- "catlight"
+  - ldap: "alexk"
+  - ldap: "catlight"
+  - github: "aplex"
+  - github: "catlightio"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "catlight-plugin Developers"

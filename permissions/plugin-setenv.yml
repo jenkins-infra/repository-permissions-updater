@@ -4,3 +4,4 @@ github: "jenkinsci/setenv-plugin"
 paths:
   - "org/jenkins-ci/plugins/setenv"
 developers: []
+repository_team: "setenv-plugin Developers"

@@ -6,8 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/shelve-project-plugin"
 developers:
-  - "bpatterson"
-  - "pierrebtz"
+  - ldap: "bpatterson"
+  - ldap: "pierrebtz"
+  - github: "PierreBtz"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "shelve-project-plugin Developers"
+additional_github_teams:
+  - team: "shelve-project-plugin-plugin Developers"
+    role: "Write"

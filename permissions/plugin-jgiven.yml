@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jgiven"
 developers:
-  - "wolfs"
-  - "janschaefer"
+  - ldap: "wolfs"
+  - ldap: "janschaefer"
+    github: "janschaefer"
+repository_team: "jgiven-plugin Developers"

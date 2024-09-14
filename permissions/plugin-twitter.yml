@@ -5,4 +5,6 @@ issues:
   - jira: '15584'  # twitter-plugin
 paths:
   - "org/jenkins-ci/plugins/twitter"
-developers: []
+developers:
+  - github: "kmaehashi"
+repository_team: "twitter-plugin Developers"

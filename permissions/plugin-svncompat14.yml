@@ -7,5 +7,6 @@ paths:
   - "org/jvnet/hudson/plugins/svncompat14"
 developers: []
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "svncompat14-plugin Developers"

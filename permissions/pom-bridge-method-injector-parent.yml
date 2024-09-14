@@ -4,4 +4,7 @@ github: "jenkinsci/bridge-method-injector"
 paths:
   - "com/infradna/tool/bridge-method-injector-parent"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

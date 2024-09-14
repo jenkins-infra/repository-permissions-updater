@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/stackify-deployment-recorder"
 developers:
-  - "emartin"
+  - ldap: "emartin"
+  - github: "eric-martin"
+repository_team: "stackify-deployment-recorder-plugin Developers"

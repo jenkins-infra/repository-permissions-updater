@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/cisco/step/jenkins/plugins/people-redirector"
 developers: []
+repository_team: "people-redirector-plugin Developers"

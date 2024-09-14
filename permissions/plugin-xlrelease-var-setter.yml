@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/arkea/satd/xlrelease-var-setter"
 developers:
-  - "obeautier"
+  - ldap: "obeautier"
+  - github: "raclepoulpe"
+repository_team: "xlrelease-var-setter-plugin Developers"

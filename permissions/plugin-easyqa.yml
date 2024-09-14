@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/geteasyqa/easyqa"
 developers:
-  - "yana_gusti"
+  - ldap: "yana_gusti"
+  - github: "yana-gusti"
+repository_team: "easyqa-plugin Developers"

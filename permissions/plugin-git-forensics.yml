@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/git-forensics"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
+repository_team: "git-forensics-plugin Developers"

@@ -6,6 +6,9 @@ issues:
 paths:
   - "com/cloudbees/plugins/build-flow-plugin"
 developers:
-  - "dnozay"
-  - "rodrigc"
-  - "teilo"
+  - ldap: "dnozay"
+    github: "dnozay"
+  - ldap: "rodrigc"
+  - ldap: "teilo"
+  - github: "dbaeli"
+repository_team: "build-flow-plugin Developers"

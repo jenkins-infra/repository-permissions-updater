@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/testquality-updater"
 developers:
-  - "jbpitts"
+  - ldap: "jbpitts"
+    github: "jbpitts"
+repository_team: "testquality-updater-plugin Developers"

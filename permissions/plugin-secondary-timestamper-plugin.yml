@@ -4,4 +4,6 @@ github: "jenkinsci/secondary-timestamper-plugin"
 paths:
   - "org/jenkins-ci/plugins/secondary-timestamper-plugin"
 developers:
-  - "michael1010"
+  - ldap: "michael1010"
+    github: "michael1010"
+repository_team: "secondary-timestamper-plugin Developers"

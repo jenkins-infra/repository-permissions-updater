@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/newrelic-insights"
 developers:
-  - "tiny_dancer"
+  - ldap: "tiny_dancer"
+  - github: "tiny-dancer"
+repository_team: "newrelic-insights-plugin Developers"

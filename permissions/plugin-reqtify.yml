@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/reqtify"
 developers:
-  - "NKR8"
-  - "rpl17_alt"
+  - ldap: "NKR8"
+  - ldap: "rpl17_alt"
+  - github: "NavnathKumbhar"
+  - github: "rpl17-alt"
+repository_team: "reqtify-plugin Developers"

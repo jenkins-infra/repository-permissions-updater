@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sqlplus-script-runner"
 developers:
-  - "boaglio"
+  - ldap: "boaglio"
+    github: "boaglio"
+repository_team: "sqlplus-script-runner-plugin Developers"

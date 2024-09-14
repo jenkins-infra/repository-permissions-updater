@@ -7,4 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/exclusive-execution"
   - "org/jvnet/hudson/plugins/exclusive-execution"
 developers:
-  - "fmiguelez"
+  - ldap: "fmiguelez"
+    github: "fmiguelez"
+repository_team: "exclusive-execution-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mdt-deployment"
 developers:
-  - "rgroult"
+  - ldap: "rgroult"
+    github: "rgroult"
+repository_team: "mdt-deployment-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ez-templates"
 developers:
-  - "drekbour"
+  - ldap: "drekbour"
+    github: "drekbour"
+repository_team: "ez-templates-plugin Developers"

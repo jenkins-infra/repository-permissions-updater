@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/quayio-trigger"
 developers:
-  - "sirot"
+  - ldap: "sirot"
+  - github: "jcsirot"
+repository_team: "quayio-trigger-plugin Developers"

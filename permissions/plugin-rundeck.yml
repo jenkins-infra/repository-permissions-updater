@@ -6,5 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rundeck"
 developers:
-  - "gschueler"
-  - "ltoledo"
+  - ldap: "gschueler"
+    github: "gschueler"
+  - ldap: "ltoledo"
+  - github: "vbehar"
+  - github: "abohne"
+  - github: "mbidewell"
+repository_team: "rundeck-plugin Developers"

@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/axis/system/jenkins/plugins/downstream/downstream-build-cache"
 developers:
-  - "gustafl"
-  - "jons"
+  - ldap: "gustafl"
+  - ldap: "jons"
+  - github: "GLundh"
+  - github: "jonsten"
+repository_team: "downstream-build-cache-plugin Developers"

@@ -6,5 +6,7 @@ issues:
 paths:
   - "com/splunk/splunkins/splunk-devops"
 developers:
-  - "fengxx"
-  - "srv_splunk_devops_uploader"
+  - ldap: "fengxx"
+    github: "fengxx"
+  - ldap: "srv_splunk_devops_uploader"
+repository_team: "splunk-devops-plugin Developers"
