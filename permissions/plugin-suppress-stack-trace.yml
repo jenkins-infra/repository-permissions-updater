@@ -6,20 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/suppress-stack-trace"
 developers:
-  - ldap: "jglick"
-    github: "jglick"
-  - ldap: "recena"
-  - ldap: "batmat"
-    github: "batmat"
-  - ldap: "egutierrez"
-  - ldap: "fcojfernandez"
-    github: "fcojfernandez"
-  - ldap: "mramonleon"
-  - ldap: "rsandell"
-    github: "rsandell"
-  - github: "jenkinsadmin"
-  - github: "varyvol"
-  - github: "MRamonLeon"
+  - "jglick"
+  - "recena"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
 security:
     contacts:
         jira: "cloudbees_security_members"

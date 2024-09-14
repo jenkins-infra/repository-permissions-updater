@@ -6,6 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/ui/jquery-detached"
 developers:
+<<<<<<< HEAD
   - ldap: "batmat"
     github: "batmat"
   - ldap: "egutierrez"
@@ -18,6 +19,12 @@ developers:
   - github: "fqueiruga"
   - github: "varyvol"
   - github: "MRamonLeon"
+=======
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "rsandell"
+>>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

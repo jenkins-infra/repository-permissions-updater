@@ -6,18 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/ui/ace-editor"
 developers:
-  - ldap: "batmat"
-    github: "batmat"
-  - ldap: "egutierrez"
-  - ldap: "fcojfernandez"
-    github: "fcojfernandez"
-  - ldap: "mramonleon"
-  - ldap: "rsandell"
-    github: "rsandell"
-  - github: "jenkinsadmin"
-  - github: "fqueiruga"
-  - github: "varyvol"
-  - github: "MRamonLeon"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "mramonleon"
+  - "rsandell"
 security:
     contacts:
         jira: "cloudbees_security_members"

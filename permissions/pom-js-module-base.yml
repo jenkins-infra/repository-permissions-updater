@@ -4,16 +4,9 @@ github: "jenkinsci/js-libs"
 paths:
   - "org/jenkins-ci/ui/jenkins-js-libs"
 developers:
-  - ldap: "batmat"
-    github: "batmat"
-  - ldap: "mramonleon"
-  - ldap: "rsandell"
-    github: "rsandell"
-  - github: "jenkinsadmin"
-  - github: "fqueiruga"
-  - github: "varyvol"
-  - github: "MRamonLeon"
-  - github: "fcojfernandez"
+  - "batmat"
+  - "mramonleon"
+  - "rsandell"
 security:
     contacts:
         jira: "cloudbees_security_members"

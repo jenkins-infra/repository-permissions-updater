@@ -8,6 +8,7 @@ paths:
   - "org/jenkinsci/plugins/git"
   - "org/jvnet/hudson/plugins/git"
 developers:
+<<<<<<< HEAD
   - ldap: "markewaite"
   - ldap: "mramonleon"
   - ldap: "olamy"
@@ -16,6 +17,11 @@ developers:
     github: "rsandell"
   - github: "MarkEWaite"
   - github: "fcojfernandez"
+=======
+  - "markewaite"
+  - "olamy"
+  - "rsandell"
+>>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

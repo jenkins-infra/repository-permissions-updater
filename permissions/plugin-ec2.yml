@@ -6,6 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ec2"
 developers:
+<<<<<<< HEAD
   - ldap: "thoulen"
     github: "thoulen"
   - ldap: "julienduchesne"
@@ -22,6 +23,13 @@ developers:
   - github: "jvz"
   - github: "MRamonLeon"
   - github: "res0nance"
+=======
+  - "thoulen"
+  - "julienduchesne"
+  - "fcojfernandez"
+  - "raihaan"
+  - "froblesmartin"
+>>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
 security:
     contacts:
         jira: "cloudbees_security_members"

@@ -8,6 +8,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/msbuild"
 developers:
+<<<<<<< HEAD
   - ldap: "mramonleon"
   - ldap: "batmat"
     github: "batmat"
@@ -25,3 +26,12 @@ developers:
   - github: "MRamonLeon"
   - github: "car-roll"
 repository_team: "msbuild-plugin Developers"
+=======
+  - "batmat"
+  - "rsandell"
+  - "bitwiseman"
+  - "carroll"
+  - "olamy"
+  - "poddingue"
+  - "tilalx"
+>>>>>>> d81a0ad94972e3ec16d71918e7a6d7a87683bbde
