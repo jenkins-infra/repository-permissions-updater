@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fail-the-build-plugin"
 developers:
-  - "abdelatifaitbara"
+  - ldap: "abdelatifaitbara"
+  - github: "AbdelatifAitBara"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "fail-the-build-plugin Developers"

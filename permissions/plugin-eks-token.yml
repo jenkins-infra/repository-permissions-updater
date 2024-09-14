@@ -4,6 +4,8 @@ github: &GH "jenkinsci/eks-token-plugin"
 paths:
   - "io/jenkins/plugins/eks-token"
 developers:
-  - "topikachu"
+  - ldap: "topikachu"
+    github: "topikachu"
 issues:
   - github: *GH
+repository_team: "eks-token-plugin Developers"

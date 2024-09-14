@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/jdepend"
   - "org/jvnet/hudson/plugins/jdepend"
 developers:
-  - "oleg_nenashev"
+  - ldap: "oleg_nenashev"
+repository_team: "jdepend-plugin Developers"

@@ -7,4 +7,6 @@ paths:
   - "com/cwctravel/script-scm"
   - "org/jenkins-ci/plugins/script-scm"
 developers:
-  - "vimil"
+  - ldap: "vimil"
+    github: "vimil"
+repository_team: "script-scm-plugin Developers"

@@ -7,6 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/uipath-automation-package"
 developers:
-  - "ganeshborle"
-  - "al3xanndru"
-  - "cristiancotovanu"
+  - ldap: "ganeshborle"
+    github: "ganeshborle"
+  - ldap: "al3xanndru"
+  - ldap: "cristiancotovanu"
+  - github: "AlvinStanescu"
+  - github: "rajeevuipath"
+repository_team: "uipath-automation-package-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "RPD/bmc-rpd"
 developers:
-  - "aivaniuk"
+  - ldap: "aivaniuk"
+    github: "aivaniuk"
+repository_team: "bmc-rpd-plugin Developers"

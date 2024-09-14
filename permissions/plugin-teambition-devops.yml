@@ -2,8 +2,10 @@
 name: "teambition-devops"
 github: &GH "jenkinsci/teambition-devops-plugin"
 paths:
-- "io/jenkins/plugins/teambition-devops"
+  - "io/jenkins/plugins/teambition-devops"
 developers:
-- "gqlhappy11"
+  - ldap: "gqlhappy11"
+    github: "gqlhappy11"
 issues:
   - github: *GH
+repository_team: "teambition-devops-plugin Developers"

@@ -4,10 +4,13 @@ github: &GH "jenkinsci/wetest-automation-plugin"
 paths:
   - "io/jenkins/plugins/wetest-automation"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 issues:
   - github: *GH
 developers:
-  - "HEZI0427"
-  - "WeTestQuality"
+  - ldap: "HEZI0427"
+    github: "HEZI0427"
+  - ldap: "WeTestQuality"
+  - github: "sergiotian"
+repository_team: "wetest-automation-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/mig82/folder-properties"
 developers:
-  - "mig82"
+  - ldap: "mig82"
+    github: "mig82"
+repository_team: "folder-properties-plugin Developers"

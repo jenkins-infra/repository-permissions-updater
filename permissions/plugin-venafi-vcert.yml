@@ -6,5 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/venafi-vcert"
 developers:
-  - "honglilai"
-  - "arnold79"
+  - ldap: "honglilai"
+  - ldap: "arnold79"
+  - github: "FooBarWidget"
+  - github: "sanhi"
+  - github: "avwsolutions"
+repository_team: "venafi-vcert-plugin Developers"

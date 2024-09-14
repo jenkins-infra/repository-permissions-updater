@@ -6,19 +6,32 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/workflow/workflow-job"
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "abayer"
-  - "svanoort"
-  - "dnusbaum"
-  - "rsandell"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
-  - "jtaboada"
-  - "olamy"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "kshultz"
+  - ldap: "jtaboada"
+  - ldap: "olamy"
+    github: "olamy"
+  - github: "dwnusbaum"
+  - github: "joseblas"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "workflow-job-plugin Developers"
+additional_github_teams:
+  - team: "SIG: UX"
+    role: "Read"

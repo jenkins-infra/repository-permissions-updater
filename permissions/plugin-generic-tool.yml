@@ -4,6 +4,8 @@ github: &GH "jenkinsci/generic-tool-plugin"
 paths:
   - "io/jenkins/plugins/generic-tool"
 developers:
-  - "danielbeck"
+  - ldap: "danielbeck"
+  - github: "daniel-beck"
 issues:
   - github: *GH
+repository_team: "generic-tool-plugin Developers"

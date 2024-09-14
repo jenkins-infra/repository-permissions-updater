@@ -6,8 +6,15 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-commons"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 developers:
-  - "zooopx"
-  - "timja"
+  - ldap: "zooopx"
+  - ldap: "timja"
+    github: "timja"
+  - github: "allxiao"
+  - github: "ArchangelSDY"
+  - github: "zackliu"
+  - github: "chenkennt"
+  - github: "juniwang"
+repository_team: "azure-commons-plugin Developers"

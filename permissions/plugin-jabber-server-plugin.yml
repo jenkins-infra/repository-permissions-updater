@@ -7,4 +7,6 @@ issues:
 paths:
   - "de/e-nexus/jabber-server-plugin"
 developers:
-  - "peter_rader"
+  - ldap: "peter_rader"
+  - github: "enexusde"
+repository_team: "jabber-server-plugin Developers"

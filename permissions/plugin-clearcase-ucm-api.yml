@@ -6,8 +6,12 @@ issues:
 paths:
   - "net/praqma/clearcase-ucm-api"
 developers:
-  - "praqma"
-  - "atombrella"
+  - ldap: "praqma"
+  - ldap: "atombrella"
+    github: "atombrella"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "clearcase-ucm-api-plugin Developers"

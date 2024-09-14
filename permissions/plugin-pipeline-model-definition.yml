@@ -6,19 +6,34 @@ issues:
 paths:
   - "org/jenkinsci/plugins/pipeline-model-definition"
 developers:
-  - "abayer"
-  - "oleg_nenashev"
-  - "rsandell"
-  - "svanoort"
-  - "bitwiseman"
-  - "dnusbaum"
-  - "carroll"
-  - "teilo"
-  - "olamy"
-  - "batmat"
-  - "rarabaolaza"
+  - ldap: "abayer"
+  - ldap: "oleg_nenashev"
+  - ldap: "rsandell"
+  - ldap: "svanoort"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "dnusbaum"
+  - ldap: "carroll"
+  - ldap: "teilo"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "rarabaolaza"
+  - github: "jtnord"
+  - github: "raul-arabaolaza"
+  - github: "dwnusbaum"
+  - github: "HRMPW"
+  - github: "joseblas"
+  - github: "PaddyOH"
+  - github: "kshultzCB"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pipeline-model-definition-plugin Developers"
+additional_github_teams:
+  - team: "declarative-rfc-reviewers"
+    role: "Read"

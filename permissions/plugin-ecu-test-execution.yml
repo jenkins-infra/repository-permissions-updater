@@ -6,4 +6,8 @@ issues:
 paths:
   - "de/tracetronic/jenkins/plugins/ecu-test-execution"
 developers:
-  - "tracetronic"
+  - ldap: "tracetronic"
+  - github: "TT-S3-D1"
+  - github: "MartinGroscheTT"
+  - github: "TT-CX-User"
+repository_team: "ecu-test-execution-plugin Developers"

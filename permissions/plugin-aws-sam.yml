@@ -7,4 +7,7 @@ issues:
 paths:
   - "io/jenkins/plugins/aws-sam"
 developers:
-  - "aws_sae_jenkinsio"
+  - ldap: "aws_sae_jenkinsio"
+  - github: "aahung"
+  - github: "SimonCMoore"
+repository_team: "aws-sam-plugin Developers"

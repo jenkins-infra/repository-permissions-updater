@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/neoload-jenkins-plugin"
 developers:
-  - "neotyspluginsupport"
+  - ldap: "neotyspluginsupport"
+  - github: "NeotysPluginSupport"
+repository_team: "neoload-plugin Developers"

@@ -6,10 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mock-security-realm"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "rarabaolaza"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "rarabaolaza"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "mock-security-realm-plugin Developers"

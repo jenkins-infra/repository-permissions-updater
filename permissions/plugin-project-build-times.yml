@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/project-build-times"
 developers:
-  - "therhino04"
+  - ldap: "therhino04"
+  - github: "TheRhino04"
+repository_team: "project-build-times-plugin Developers"

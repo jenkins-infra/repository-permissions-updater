@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/gcr-scanner"
 developers:
-  - "wilkhu90"
+  - ldap: "wilkhu90"
+  - github: "Wilkhu90"
+repository_team: "gcr-scanner-plugin Developers"

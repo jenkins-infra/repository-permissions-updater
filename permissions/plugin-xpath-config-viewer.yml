@@ -5,4 +5,6 @@ issues:
   - jira: '17546'  # xpath-config-viewer-plugin
 paths:
   - "org/jenkins-ci/plugins/xpath-config-viewer"
-developers: []
+developers:
+  - github: "ffromm"
+repository_team: "xpath-config-viewer-plugin Developers"

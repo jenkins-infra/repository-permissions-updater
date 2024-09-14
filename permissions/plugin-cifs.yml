@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/cifs"
   - "org/jvnet/hudson/plugins/cifs"
 developers: []
+repository_team: "cifs-plugin Developers"

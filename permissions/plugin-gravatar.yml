@@ -8,7 +8,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gravatar"
 developers:
-  - "cappuccino"
-  - "viceice"
+  - ldap: "cappuccino"
+  - ldap: "viceice"
+    github: "viceice"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "gravatar-plugin Developers"

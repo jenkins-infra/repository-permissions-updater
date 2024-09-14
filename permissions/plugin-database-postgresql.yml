@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/database-postgresql"
 developers:
-  - "timja"
+  - ldap: "timja"
+    github: "timja"
+  - github: "davidvanlaatum"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "database-postgresql-plugin Developers"

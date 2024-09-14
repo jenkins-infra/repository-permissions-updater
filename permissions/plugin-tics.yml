@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/tics"
 developers:
-  - "tiobe"
+  - ldap: "tiobe"
+  - github: "dreniers"
+  - github: "sole6"
+repository_team: "tics-plugin Developers"

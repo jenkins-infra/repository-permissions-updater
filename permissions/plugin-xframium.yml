@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/xframium"
 developers:
-  - "xframium"
+  - ldap: "xframium"
+    github: "xframium"
+  - github: "allengeary"
+repository_team: "xframium-plugin Developers"

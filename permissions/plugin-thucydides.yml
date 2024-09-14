@@ -5,4 +5,6 @@ issues:
   - jira: '17607'  # thucydides-plugin
 paths:
   - "net/thucydides/jenkins/thucydides"
-developers: []
+developers:
+  - github: "hwellmann"
+repository_team: "thucydides-plugin Developers"

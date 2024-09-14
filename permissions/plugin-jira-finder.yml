@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jira-finder"
 developers:
-  - "jholusa"
+  - ldap: "jholusa"
+  - github: "Holmistr"
+repository_team: "jira-finder-plugin Developers"

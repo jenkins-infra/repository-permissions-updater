@@ -6,4 +6,12 @@ issues:
 paths:
   - "org/cloudsmith/hammer/jenkins/stackhammer"
   - "org/jenkins-ci/plugins/stackhammer"
-developers: []
+developers:
+  - github: "mitchsonies"
+  - github: "khussey"
+  - github: "thallgren"
+  - github: "kbrezina"
+  - github: "mruzicka"
+  - github: "fhrbek"
+  - github: "hlindberg"
+repository_team: "stackhammer-plugin Developers"

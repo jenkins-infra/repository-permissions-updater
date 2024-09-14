@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/meliora-testlab"
 developers:
-  - "meliora"
+  - ldap: "meliora"
+    github: "meliora"
+repository_team: "meliora-testlab-plugin Developers"

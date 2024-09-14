@@ -4,4 +4,4 @@ github: "jenkinsci/json-lib"
 paths:
   - "org/kohsuke/stapler/json-lib"
 developers:
-  - "@core"
+  - ldap: "@core"

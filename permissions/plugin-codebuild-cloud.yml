@@ -2,10 +2,12 @@
 name: "codebuild-cloud"
 github: &GH "jenkinsci/codebuild-cloud-plugin"
 paths:
-- "io/jenkins/plugins/codebuild-cloud"
+  - "io/jenkins/plugins/codebuild-cloud"
 developers:
-- "carpnick2"
+  - ldap: "carpnick2"
+  - github: "carpnick"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "codebuild-cloud-plugin Developers"

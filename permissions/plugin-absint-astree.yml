@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/absint-astree"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jherter"
-  - "absint"
+  - ldap: "jherter"
+    github: "jherter"
+  - ldap: "absint"
+  - github: "christoph-cullmann"
+repository_team: "absint-astree-plugin Developers"

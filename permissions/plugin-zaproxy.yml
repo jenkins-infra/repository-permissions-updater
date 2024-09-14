@@ -6,5 +6,8 @@ issues:
 paths:
   - "fr/novia/zaproxy"
 developers:
-  - "johannol"
-  - "ludovicroucoux"
+  - ldap: "johannol"
+    github: "johannol"
+  - ldap: "ludovicroucoux"
+  - github: "JordanGS"
+repository_team: "zaproxy-plugin Developers"

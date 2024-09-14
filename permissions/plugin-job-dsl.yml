@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/job-dsl"
 developers:
-  - "basil"
-  - "daspilker"
-  - "jamietanna"
+  - ldap: "basil"
+  - ldap: "daspilker"
+    github: "daspilker"
+  - ldap: "jamietanna"
+    github: "jamietanna"
+  - github: "andrewharmellaw"
+repository_team: "job-dsl-plugin Developers"

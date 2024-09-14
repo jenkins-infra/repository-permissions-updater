@@ -7,4 +7,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ruby-runtime"
 developers:
-  - "eitoball"
+  - ldap: "eitoball"
+    github: "eitoball"
+  - github: "cowboyd"
+  - github: "yyuu"
+  - github: "cthulhu-bot"
+repository_team: "jenkins.rb Developers"

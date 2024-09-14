@@ -4,4 +4,7 @@ github: "jenkinsci/lib-process-utils"
 paths:
   - "org/jenkins-ci/process-utils"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

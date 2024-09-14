@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/parallels/parallels-desktop"
 developers:
-  - "romankulikov"
+  - ldap: "romankulikov"
+    github: "romankulikov"
+repository_team: "parallels-desktop-plugin Developers"

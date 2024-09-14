@@ -6,8 +6,14 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/clearcase-ucm-plugin"
 developers:
-  - "madsnielsen"
-  - "atombrella"
-  - "praqma"
+  - ldap: "madsnielsen"
+  - ldap: "atombrella"
+    github: "atombrella"
+  - ldap: "praqma"
+  - github: "wolfgarnet"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
+  - github: "buep"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "clearcase-ucm-plugin Developers"

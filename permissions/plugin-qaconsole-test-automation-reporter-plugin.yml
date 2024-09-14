@@ -6,4 +6,5 @@ issues:
 paths:
   - "com/qaconsole/qaconsole-test-automation-reporter-plugin"
 developers:
-  - "best4test_com"
+  - ldap: "best4test_com"
+repository_team: "qaconsole-test-automation-reporter-plugin Developers"

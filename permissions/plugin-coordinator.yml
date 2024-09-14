@@ -6,4 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/coordinator"
 developers:
-  - "ace_jl_han"
+  - ldap: "ace_jl_han"
+  - github: "kymair"
+  - github: "ace-han"
+  - github: "eric-han"
+repository_team: "coordinator-plugin Developers"
+additional_github_teams:
+  - team: "Translators"
+    role: "Read"

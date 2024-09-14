@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/inkysea/vmware/vra/vmware-vrealize-automation-plugin"
 developers:
-  - "inkysea"
+  - ldap: "inkysea"
+    github: "inkysea"
+repository_team: "vmware-vrealize-automation-plugin Developers"

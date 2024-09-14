@@ -6,5 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/tricentis-ci"
 developers:
-  - "tricentis"
-  - "sergey_oplavin"
+  - ldap: "tricentis"
+  - ldap: "sergey_oplavin"
+  - github: "sergey-oplavin"
+repository_team: "tricentis-ci-plugin Developers"

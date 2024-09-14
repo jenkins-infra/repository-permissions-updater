@@ -6,7 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/benchmark-evaluator"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "lehmann_fabian"
-  - "martingrambow"
+  - ldap: "lehmann_fabian"
+  - ldap: "martingrambow"
+    github: "martingrambow"
+  - github: "Lehmann-Fabian"
+repository_team: "benchmark-evaluator-plugin Developers"

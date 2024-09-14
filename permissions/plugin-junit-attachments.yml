@@ -8,8 +8,11 @@ paths:
   - "org/jenkins-ci/plugins/junit-attachments"
   - "org/jvnet/hudson/plugins/junit-attachments"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "abayer"
-  - "jglick"
-  - "jonesbusy"
+  - ldap: "abayer"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+repository_team: "junit-attachments-plugin Developers"

@@ -6,7 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-vm-agents"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "zooopx"
-  - "timja"
+  - ldap: "zooopx"
+  - ldap: "timja"
+    github: "timja"
+  - github: "mmitche"
+  - github: "arroyc"
+repository_team: "azure-vm-agents-plugin Developers"

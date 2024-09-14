@@ -7,5 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/templating-engine"
 developers:
-  - "sterrana"
-  - "cokieffebah"
+  - ldap: "sterrana"
+  - ldap: "cokieffebah"
+    github: "cokieffebah"
+  - github: "kottoson"
+  - github: "boydj"
+  - github: "steven-terrana"
+repository_team: "templating-engine-plugin Developers"

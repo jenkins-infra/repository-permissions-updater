@@ -6,9 +6,17 @@ issues:
 paths:
   - "com/coravy/hudson/plugins/github/github"
 developers:
-  - "integer"
-  - "lanwen"
-  - "oleg_nenashev"
+  - ldap: "integer"
+  - ldap: "lanwen"
+    github: "lanwen"
+  - ldap: "oleg_nenashev"
+  - github: "KostyaSha"
+  - github: "oleg-nenashev"
+  - github: "dummy-lanwen-bot"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "github-plugin Developers"
+additional_github_teams:
+  - team: "github-plugin-owners"
+    role: "Admin"

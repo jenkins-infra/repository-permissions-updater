@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/ftppublisher"
 developers: []
+repository_team: "ftppublisher-plugin Developers"

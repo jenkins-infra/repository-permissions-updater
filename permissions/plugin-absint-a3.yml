@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/absint-a3"
 developers:
-  - "absint"
+  - ldap: "absint"
+  - github: "christoph-cullmann"
+  - github: "chuemb"
+repository_team: "absint-a3-plugin Developers"

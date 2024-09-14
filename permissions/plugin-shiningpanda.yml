@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/shiningpanda"
 developers:
-  - "mansion"
+  - ldap: "mansion"
+  - github: "omansion"
+  - github: "atabary"
+repository_team: "shiningpanda-plugin Developers"

@@ -4,12 +4,20 @@ github: "jenkinsci/lib-durable-task"
 paths:
   - "io/jenkins/plugins/lib-durable-task"
 developers:
-  - "carroll"
-  - "dnusbaum"
-  - "bitwiseman"
-  - "rsandell"
-  - "teilo"
-  - "batmat"
-  - "olamy"
+  - ldap: "carroll"
+  - ldap: "dnusbaum"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "teilo"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "olamy"
+  - github: "jtnord"
+  - github: "dwnusbaum"
+  - github: "MRamonLeon"
+  - github: "car-roll"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "lib-durable-task Developers"

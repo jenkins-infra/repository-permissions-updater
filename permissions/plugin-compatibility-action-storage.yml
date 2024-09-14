@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/compatibility-action-storage"
 developers:
-  - "madsnielsen"
+  - ldap: "madsnielsen"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
+repository_team: "compatibility-action-storage-plugin Developers"

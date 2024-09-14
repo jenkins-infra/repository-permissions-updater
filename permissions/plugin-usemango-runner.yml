@@ -6,8 +6,10 @@ issues:
 paths:
   - "it/infuse/jenkins/usemango-runner"
 developers:
-  - "ian_bisset"
-  - "jumpalongjim"
-  - "psiingh"
-  - "SubodhBorkar"
-  - "techtrash"
+  - ldap: "ian_bisset"
+  - ldap: "jumpalongjim"
+  - ldap: "psiingh"
+  - ldap: "SubodhBorkar"
+  - ldap: "techtrash"
+  - github: "ianbisset"
+repository_team: "usemango-runner-plugin Developers"

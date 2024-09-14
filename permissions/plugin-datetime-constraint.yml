@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/datetime-constraint"
 developers:
-  - "jouda_hidri"
+  - ldap: "jouda_hidri"
+  - github: "Jouda-Hidri"
+repository_team: "datetime-constraint-plugin Developers"

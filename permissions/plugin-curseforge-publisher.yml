@@ -6,4 +6,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/curseforge-publisher"
 developers:
-  - "r04r"
+  - ldap: "r04r"
+repository_team: "curseforge-publisher-plugin Developers"

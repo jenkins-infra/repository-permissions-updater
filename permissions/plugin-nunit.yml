@@ -7,8 +7,11 @@ paths:
   - "org/jenkins-ci/plugins/nunit"
   - "org/jvnet/hudson/plugins/nunit"
 developers:
-  - "kinow"
-  - "smorita"
-  - "jonesbusy"
+  - ldap: "kinow"
+  - ldap: "smorita"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+  - github: "s-morita-being"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "nunit-plugin Developers"

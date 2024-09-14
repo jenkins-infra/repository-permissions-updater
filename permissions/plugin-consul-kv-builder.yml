@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/consul-kv-builder"
 developers:
-  - "jimmyraywv"
+  - ldap: "jimmyraywv"
+    github: "jimmyraywv"
+repository_team: "consul-kv-builder-plugin Developers"

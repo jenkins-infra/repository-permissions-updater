@@ -6,4 +6,6 @@ issues:
 paths:
   - "javagh/jenkins/mashup-portlets-plugin"
 developers:
-  - "ghenzler"
+  - ldap: "ghenzler"
+    github: "ghenzler"
+repository_team: "mashup-portlets-plugin Developers"

@@ -6,8 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gitea"
 developers:
-  - "lafriks"
-  - "justusbunsi"
+  - ldap: "lafriks"
+    github: "lafriks"
+  - ldap: "justusbunsi"
+    github: "justusbunsi"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "gitea-plugin Developers"

@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/disable-github-multibranch-status"
 developers:
-  - "bksaville"
+  - ldap: "bksaville"
+  - github: "bluesliverx"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "disable-github-multibranch-status-plugin Developers"

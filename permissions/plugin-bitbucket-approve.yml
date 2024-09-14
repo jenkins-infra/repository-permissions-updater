@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bitbucket-approve"
 developers:
-  - "bhurling"
+  - ldap: "bhurling"
+  - github: "ChristianKatzmann"
+repository_team: "bitbucket-approve-plugin Developers"

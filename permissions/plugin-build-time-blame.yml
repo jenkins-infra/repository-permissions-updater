@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-time-blame"
 developers:
-  - "ltegtmeier"
+  - ldap: "ltegtmeier"
+  - github: "LTegtmeier"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "build-time-blame-plugin Developers"

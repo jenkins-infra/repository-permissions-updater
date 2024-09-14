@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rpmsign-plugin"
 developers:
-  - "mtizzoni"
+  - ldap: "mtizzoni"
+  - github: "elibus"
+repository_team: "rpmsign-plugin Developers"

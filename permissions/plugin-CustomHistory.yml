@@ -6,4 +6,6 @@ issues:
 paths:
   - "CustomHistory/CustomHistory"
   - "org/jenkins-ci/plugins/CustomHistory"
-developers: []
+developers:
+  - github: "ryg-"
+repository_team: "custom-history-plugin Developers"

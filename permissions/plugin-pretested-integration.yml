@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pretested-integration"
 developers:
-  - "madsnielsen"
-  - "praqma"
+  - ldap: "madsnielsen"
+  - ldap: "praqma"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
+  - github: "buep"
+repository_team: "pretested-integration-plugin Developers"

@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nodelabelparameter"
 developers:
-  - "imod"
-  - "markewaite"
+  - ldap: "imod"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+repository_team: "nodelabelparameter-plugin Developers"

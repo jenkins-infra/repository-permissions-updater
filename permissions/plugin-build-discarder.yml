@@ -6,8 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/build-discarder"
 developers:
-  - "orjan"
-  - "ilana"
-  - "akessoj71"
+  - ldap: "orjan"
+    github: "orjan"
+  - ldap: "ilana"
+  - ldap: "akessoj71"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "build-discarder-plugin Developers"

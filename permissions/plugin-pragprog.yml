@@ -3,4 +3,4 @@ name: "pragprog"
 paths:
   - "org/jenkins-ci/plugins/pragprog"
 developers:
-  - "torsten"
+  - ldap: "torsten"

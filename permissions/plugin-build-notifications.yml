@@ -8,4 +8,6 @@ paths:
   # the Jenkins security team about SECURITY-2333
   - "tools/devnull/build-notifications-releaseblock"
 developers:
-  - "ataxexe"
+  - ldap: "ataxexe"
+    github: "ataxexe"
+repository_team: "build-notifications-plugin Developers"

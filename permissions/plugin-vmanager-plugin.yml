@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vmanager-plugin"
 developers:
-  - "tyanai"
+  - ldap: "tyanai"
+    github: "tyanai"
+repository_team: "vmanager-plugin Developers"

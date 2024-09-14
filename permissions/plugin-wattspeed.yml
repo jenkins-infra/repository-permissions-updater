@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/wattspeed"
 developers:
-  - "wattspeed"
+  - ldap: "wattspeed"
+  - github: "andreizet"
+repository_team: "wattspeed-plugin Developers"

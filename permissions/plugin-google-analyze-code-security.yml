@@ -2,11 +2,13 @@
 name: "google-analyze-code-security"
 github: &GH "jenkinsci/google-analyze-code-security-plugin"
 paths:
-- "io/jenkins/plugins/google-analyze-code-security"
+  - "io/jenkins/plugins/google-analyze-code-security"
 developers:
-- "sanyam803"
-- "adishagarwal"
+  - ldap: "sanyam803"
+    github: "sanyam803"
+  - ldap: "adishagarwal"
 issues:
   - jira: 29324
 cd:
-  enabled: true
+    enabled: true
+repository_team: "google-analyze-code-security-plugin Developers"

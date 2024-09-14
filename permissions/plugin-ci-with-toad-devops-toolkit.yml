@@ -6,5 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/ci-with-toad-devops-toolkit"
 developers:
-  - "hamermike"
-  - "kevinmdalton"
+  - ldap: "hamermike"
+    github: "hamermike"
+  - ldap: "kevinmdalton"
+repository_team: "ci-with-toad-devops-toolkit-plugin Developers"

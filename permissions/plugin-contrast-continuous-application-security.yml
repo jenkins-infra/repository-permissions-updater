@@ -7,6 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/contrast-continuous-application-security"
 developers:
-  - "bryanateoan"
-  - "cgperez"
-  - "NoahContrast"
+  - ldap: "bryanateoan"
+  - ldap: "cgperez"
+    github: "cgperez"
+  - ldap: "NoahContrast"
+    github: "NoahContrast"
+  - github: "aliaandersen"
+repository_team: "contrast-continuous-application-security-plugin Developers"

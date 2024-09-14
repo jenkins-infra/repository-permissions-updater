@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/codefresh"
 developers:
-  - "antweiss"
+  - ldap: "antweiss"
+    github: "antweiss"
+repository_team: "codefresh-plugin Developers"

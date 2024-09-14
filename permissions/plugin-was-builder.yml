@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/was-builder"
 developers: []
+repository_team: "was-builder-plugin Developers"

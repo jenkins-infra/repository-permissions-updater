@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/tracking-git"
 developers:
-  - "deanaldinger"
+  - ldap: "deanaldinger"
+  - github: "daldinger"
+repository_team: "tracking-git-plugin Developers"

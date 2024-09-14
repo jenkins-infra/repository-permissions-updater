@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pollscm"
 developers:
-  - "markewaite"
-  - "vlatombe"
+  - ldap: "markewaite"
+  - ldap: "vlatombe"
+  - github: "MarkEWaite"
+  - github: "Vlatombe"
+repository_team: "pollscm-plugin Developers"

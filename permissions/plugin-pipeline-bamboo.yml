@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/logmein/pipeline-bamboo"
 developers:
-  - "kflavin"
+  - ldap: "kflavin"
+    github: "kflavin"
+repository_team: "pipeline-bamboo-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/mtvi/plateng/hudson/ldapemail"
 developers: []
+repository_team: "ldapemail-plugin Developers"

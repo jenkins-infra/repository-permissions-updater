@@ -7,4 +7,6 @@ issues:
 paths:
   - "pl/damianszczepanik/build-history-manager"
 developers:
-  - "dszczepanik"
+  - ldap: "dszczepanik"
+  - github: "damianszczepanik"
+repository_team: "build-history-manager-plugin Developers"

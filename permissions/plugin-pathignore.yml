@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/ruby-plugins/pathignore"
 developers: []
+repository_team: "pathignore-plugin Developers"

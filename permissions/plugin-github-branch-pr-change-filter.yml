@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/github-branch-pr-change-filter"
 developers:
-  - "mmcculloh"
+  - ldap: "mmcculloh"
+  - github: "MarkMcCulloh"
+  - github: "mmcculloh-dms"
+repository_team: "github-branch-pr-change-filter-plugin Developers"

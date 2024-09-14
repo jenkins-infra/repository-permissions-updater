@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkinsci/plugins/openjdk_native/openJDK-native-plugin"
 developers:
-  - "vjuranek"
+  - ldap: "vjuranek"
+    github: "vjuranek"
+repository_team: "openJDK-native-plugin Developers"

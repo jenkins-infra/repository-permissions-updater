@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/flexteam"
 developers: []
+repository_team: "flexteam-plugin Developers"

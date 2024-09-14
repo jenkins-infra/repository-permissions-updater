@@ -7,6 +7,10 @@ issues:
 paths:
   - "com/soasta/jenkins/cloudtest"
 developers:
-  - "elitecoder"
-  - "ltyler"
-  - "msolnit"
+  - ldap: "elitecoder"
+  - ldap: "ltyler"
+  - ldap: "msolnit"
+  - github: "atosteson"
+  - github: "dbekel"
+  - github: "soasta-ltyler"
+repository_team: "cloudtest-plugin Developers"

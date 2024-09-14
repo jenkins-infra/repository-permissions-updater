@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/elasticsearch-query"
 developers:
-  - "mikee805"
+  - ldap: "mikee805"
+    github: "mikee805"
+repository_team: "elasticsearch-query-plugin Developers"

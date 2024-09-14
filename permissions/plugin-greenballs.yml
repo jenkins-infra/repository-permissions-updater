@@ -8,5 +8,7 @@ paths:
   - "org/jenkins-ci/plugins/greenballs"
   - "org/jvnet/hudson/plugins/greenballs"
 developers:
-  - "asgeirn"
-  - "nfalco"
+  - ldap: "asgeirn"
+  - ldap: "nfalco"
+  - github: "nfalco79"
+repository_team: "greenballs-plugin Developers"

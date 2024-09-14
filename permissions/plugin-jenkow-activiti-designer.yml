@@ -5,4 +5,6 @@ issues:
   - jira: '17468'  # jenkow-activiti-designer
 paths:
   - "com/cisco/step/jenkins/plugins/jenkow-activiti-designer"
-developers: []
+developers:
+  - github: "chikkala"
+repository_team: "jenkow-plugin Developers"

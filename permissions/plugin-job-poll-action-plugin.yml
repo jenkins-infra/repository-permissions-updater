@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/job-poll-action-plugin"
 developers: []
+repository_team: "job-poll-action-plugin Developers"

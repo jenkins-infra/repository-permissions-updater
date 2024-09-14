@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/preSCMbuildstep"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pre-scm-buildstep-plugin Developers"

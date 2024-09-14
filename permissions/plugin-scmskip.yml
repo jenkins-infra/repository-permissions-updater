@@ -6,7 +6,10 @@ issues:
 paths:
   - "net/plavcak/jenkins/scmskip"
 developers:
-  - "plavc"
-  - "zbynek"
+  - ldap: "plavc"
+    github: "plavc"
+  - ldap: "zbynek"
+    github: "zbynek"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "scmskip-plugin Developers"

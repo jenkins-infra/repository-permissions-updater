@@ -6,4 +6,15 @@ issues:
 paths:
   - "com/qualys/plugins/qualys-cs"
 developers:
-  - "qualys"
+  - ldap: "qualys"
+  - github: "jenkinsadmin"
+  - github: "pmgupte"
+  - github: "qualys-plugins"
+  - github: "mbachhav18"
+  - github: "aditya-qualys"
+  - github: "hgoyalqualys"
+  - github: "Bhagyashri-Sapnar"
+repository_team: "qualys-cs-plugin Developers"
+additional_github_teams:
+  - team: "qualys Developers"
+    role: "Admin"

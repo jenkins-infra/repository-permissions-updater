@@ -7,5 +7,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/depgraph-view"
 developers:
-  - "wolfs"
-  - "ggrazioli"
+  - ldap: "wolfs"
+  - ldap: "ggrazioli"
+  - github: "guidograzioli"
+  - github: "jenkinsadmin"
+repository_team: "depgraph-view-plugin Developers"

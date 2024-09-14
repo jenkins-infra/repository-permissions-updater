@@ -7,5 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-slave-plugin"
 developers:
-  - "snallami"
-  - "clguiman"
+  - ldap: "snallami"
+  - ldap: "clguiman"
+  - github: "fmartelli"
+  - github: "HuanhuanSunMSFT"
+  - github: "rcarun"
+  - github: "arroyc"
+repository_team: "azure-slave-plugin Developers"

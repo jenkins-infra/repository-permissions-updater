@@ -7,5 +7,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/kubernetes-cli"
 developers:
-  - "max_laverse"
-  - "sirstrahd"
+  - ldap: "max_laverse"
+  - ldap: "sirstrahd"
+    github: "sirstrahd"
+  - github: "maxlaverse"
+repository_team: "kubernetes-cli-plugin Developers"

@@ -7,5 +7,13 @@ issues:
 paths:
   - "ru/yandex/qatools/allure/allure-jenkins-plugin"
 developers:
-  - "eroshenkoam"
-  - "pupssman"
+  - ldap: "eroshenkoam"
+    github: "eroshenkoam"
+  - ldap: "pupssman"
+    github: "pupssman"
+  - github: "vania-pooh"
+  - github: "mavlyutov"
+  - github: "baev"
+  - github: "qatools-ci"
+  - github: "dchr"
+repository_team: "allure-plugin Developers"

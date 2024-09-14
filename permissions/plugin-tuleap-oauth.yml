@@ -6,8 +6,13 @@ issues:
 paths:
   - "io/jenkins/plugins/tuleap-oauth"
 developers:
-  - "erwyn"
-  - "crobinson"
+  - ldap: "erwyn"
+  - ldap: "crobinson"
+  - github: "Erwyn"
+  - github: "vaceletm"
+  - github: "LeSuisse"
+  - github: "robinsoc"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "tuleap-oauth-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ansible-tower"
 developers:
-  - "johnwestcottiv"
+  - ldap: "johnwestcottiv"
+  - github: "john-westcott-iv"
+repository_team: "ansible-tower-plugin Developers"

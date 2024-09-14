@@ -2,10 +2,16 @@
 name: "digicert-software-trust-code-sign"
 github: &GH "jenkinsci/digicert-software-trust-code-sign-plugin"
 paths:
-- "io/jenkins/plugins/digicert-software-trust-code-sign"
+  - "io/jenkins/plugins/digicert-software-trust-code-sign"
 developers:
-- "vmummadi"
+  - ldap: "vmummadi"
+  - github: "rameshdhulipalla"
+  - github: "sagarDigicert"
+  - github: "vinay-mummadi-digicert"
+  - github: "Siddharth-Srinivas"
+  - github: "raeesa-digicert"
 issues:
   - jira: 29130
 cd:
-  enabled: true
+    enabled: true
+repository_team: "digicert-software-trust-code-sign-plugin Developers"

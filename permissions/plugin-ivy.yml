@@ -8,4 +8,6 @@ paths:
   - "org/jenkins-ci/plugins/ivy"
   - "org/jvnet/hudson/plugins/ivy"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+repository_team: "ivy-plugin Developers"

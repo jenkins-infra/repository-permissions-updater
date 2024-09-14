@@ -6,4 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/job-node-stalker"
 developers:
-  - "daspilker"
+  - ldap: "daspilker"
+    github: "daspilker"
+  - github: "fneves"
+  - github: "Sargemck"
+  - github: "fneves-datalex"
+repository_team: "job-node-stalker-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-giphy-api"
 developers:
-  - "aviadlevy"
+  - ldap: "aviadlevy"
+    github: "aviadlevy"
+repository_team: "pipeline-giphy-api-plugin Developers"

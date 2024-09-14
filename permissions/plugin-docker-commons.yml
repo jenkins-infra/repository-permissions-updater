@@ -6,13 +6,16 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/docker-commons"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "oleg_nenashev"
-  - "rsandell"
-  - "dnusbaum"
+  - ldap: "jglick"
+  - ldap: "kohsuke"
+    github: "kohsuke"
+  - ldap: "oleg_nenashev"
+  - ldap: "rsandell"
+  - ldap: "dnusbaum"
+  - github: "dwnusbaum"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "docker-commons-plugin Developers"

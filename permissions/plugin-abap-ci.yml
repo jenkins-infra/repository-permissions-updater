@@ -6,5 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/abap-ci"
 developers:
-  - "andau"
-  - "wozjac"
+  - ldap: "andau"
+    github: "andau"
+  - ldap: "wozjac"
+repository_team: "abap-ci-plugin Developers"

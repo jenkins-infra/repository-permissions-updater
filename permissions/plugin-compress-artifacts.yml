@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/compress-artifacts"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "olivergondza"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "olivergondza"
+repository_team: "compress-artifacts-plugin Developers"

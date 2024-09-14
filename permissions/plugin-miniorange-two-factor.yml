@@ -2,8 +2,10 @@
 name: "miniorange-two-factor"
 github: &GH "jenkinsci/miniorange-two-factor-plugin"
 paths:
-- "io/jenkins/plugins/miniorange-two-factor"
+  - "io/jenkins/plugins/miniorange-two-factor"
 developers:
-- "miniorange"
+  - ldap: "miniorange"
+  - github: "miniOrangeDev"
 issues:
   - jira: 29220
+repository_team: "miniorange-two-factor-plugin Developers"

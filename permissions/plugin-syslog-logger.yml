@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/syslog-logger"
 developers:
-  - "cleclerc"
+  - ldap: "cleclerc"
+  - github: "cyrille-leclerc"
+repository_team: "syslog-logger-plugin Developers"

@@ -4,4 +4,6 @@ github: "jenkinsci/coverage-model"
 paths:
   - "edu/hm/hafner/coverage-model"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
+repository_team: "coverage-model Developers"

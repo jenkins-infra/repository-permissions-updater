@@ -7,5 +7,7 @@ issues:
 paths:
   - "io/jenkins/plugins/bitbucket-push-and-pull-request"
 developers:
-  - "cdelmonte"
-  - "macghriogair"
+  - ldap: "cdelmonte"
+  - ldap: "macghriogair"
+  - github: "cdelmonte-zg"
+repository_team: "bitbucket-push-and-pull-request-plugin Developers"

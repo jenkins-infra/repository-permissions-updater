@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ftp-rename"
 developers:
-  - "bruno_cantisano"
+  - ldap: "bruno_cantisano"
+  - github: "brunocantisano"
+repository_team: "ftp-rename-plugin Developers"

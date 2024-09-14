@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/strawboss"
 developers:
-  - "morgandev"
+  - ldap: "morgandev"
+  - github: "sco11morgan"
+repository_team: "strawboss-plugin Developers"

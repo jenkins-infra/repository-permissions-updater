@@ -7,5 +7,7 @@ issues:
 paths:
   - "biz/neustar/jenkins/plugins/packer"
 developers:
-  - "jdamick"
-  - "jglick"
+  - ldap: "jdamick"
+  - ldap: "jglick"
+    github: "jglick"
+repository_team: "packer-plugin Developers"

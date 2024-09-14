@@ -6,4 +6,10 @@ issues:
 paths:
   - "com/thycotic/thycotic-vault"
 developers:
-  - "thycotic_dsv"
+  - ldap: "thycotic_dsv"
+  - github: "4killo"
+  - github: "hansboder"
+repository_team: "thycotic-vault-plugin Developers"
+additional_github_teams:
+  - team: "thycotic-devops-secrets-vault-plugin Developers"
+    role: "Admin"

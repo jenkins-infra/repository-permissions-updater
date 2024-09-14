@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-with-parameters"
 developers:
-  - "sugonyak_ivan"
+  - ldap: "sugonyak_ivan"
+  - github: "mcupak"
+  - github: "KeeganRoth"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "build-with-parameters-plugin Developers"

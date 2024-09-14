@@ -2,10 +2,12 @@
 name: "finite-state-binary-scan"
 github: &GH "jenkinsci/finite-state-binary-scan-plugin"
 cd:
-  enabled: true
+    enabled: true
 paths:
-- "io/jenkins/plugins/finite-state-binary-scan"
+  - "io/jenkins/plugins/finite-state-binary-scan"
 developers:
-- "finitestateinc"
+  - ldap: "finitestateinc"
+  - github: "cpfarherFinitestate"
 issues:
   - github: *GH
+repository_team: "finite-state-binary-scan-plugin Developers"

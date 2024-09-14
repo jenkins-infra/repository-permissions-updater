@@ -7,6 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fogbugz"
 developers:
-  - "bubenkoff"
-  - "maikelwever"
-  - "pliljenberg"
+  - ldap: "bubenkoff"
+    github: "bubenkoff"
+  - ldap: "maikelwever"
+  - ldap: "pliljenberg"
+  - github: "markon"
+  - github: "DZittersteyn"
+repository_team: "fogbugz-plugin Developers"

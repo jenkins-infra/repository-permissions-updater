@@ -5,8 +5,10 @@ paths:
   - "org/jenkins-ci/trilead-ssh2"
   - "org/jvnet/hudson/trilead-ssh2"
 developers:
-  - "kohsuke"
-  - "mc1arke"
-  - "ifernandezcalvo"
+  - ldap: "kohsuke"
+  - ldap: "mc1arke"
+  - ldap: "ifernandezcalvo"
+  - github: "kuisathaverat"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "trilead-ssh2 Developers"

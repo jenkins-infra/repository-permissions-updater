@@ -4,8 +4,10 @@ github: &GH "jenkinsci/bitbucket-pullrequests-filter-plugin"
 paths:
   - "io/jenkins/plugins/bitbucket-pullrequests-filter"
 developers:
-  - "nuh"
+  - ldap: "nuh"
+  - github: "Nuh"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "bitbucket-pullrequests-filter-plugin Developers"

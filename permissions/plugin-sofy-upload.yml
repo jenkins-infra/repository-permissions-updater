@@ -4,6 +4,8 @@ github: &GH "jenkinsci/sofy-upload-plugin"
 paths:
   - "io/jenkins/plugins/sofy-upload"
 developers:
-  - "sofy_official"
+  - ldap: "sofy_official"
+  - github: "SOFYDEVELOPER"
 issues:
   - jira: 28632
+repository_team: "sofy-upload-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/multiselect-parameter"
 developers:
-  - "swesteme"
+  - ldap: "swesteme"
+    github: "swesteme"
+repository_team: "multiselect-parameter-plugin Developers"

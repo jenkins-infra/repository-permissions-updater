@@ -2,11 +2,15 @@
 name: "yandex-cloud-workers"
 github: &GH "jenkinsci/yandex-cloud-workers-plugin"
 paths:
-- "io/jenkins/plugins/yandex-cloud-workers"
+  - "io/jenkins/plugins/yandex-cloud-workers"
 developers:
-- "ademenev"
-- "sbondarev"
-- "th3ch3shir3cat"
-- "petrovich"
+  - ldap: "ademenev"
+  - ldap: "sbondarev"
+  - ldap: "th3ch3shir3cat"
+  - ldap: "petrovich"
+  - github: "Th3Ch3shir3Cat"
+  - github: "demenevai"
+  - github: "sam-bondarev"
 issues:
   - github: *GH
+repository_team: "yandex-cloud-workers-plugin Developers"

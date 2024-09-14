@@ -5,4 +5,11 @@ issues:
   - jira: '16036'  # lingr-plugin
 paths:
   - "org/jenkins-ci/plugins/lingr-plugin"
-developers: []
+developers:
+  - github: "ikikko"
+  - github: "kohsuke"
+  - github: "masanobuimai"
+  - github: "cactusman"
+  - github: "kiy0taka"
+  - github: "ssogabe"
+repository_team: "lingr-plugin Developers"

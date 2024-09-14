@@ -6,5 +6,8 @@ issues:
 paths:
   - "hudson/plugins/sloccount/sloccount"
 developers:
-  - "mixalturek"
-  - "imarinkov"
+  - ldap: "mixalturek"
+    github: "mixalturek"
+  - ldap: "imarinkov"
+  - github: "ivaivalous"
+repository_team: "sloccount-plugin Developers"

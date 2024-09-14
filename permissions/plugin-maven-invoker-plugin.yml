@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/maven-invoker-plugin"
 developers:
-  - "olamy"
+  - ldap: "olamy"

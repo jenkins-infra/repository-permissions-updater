@@ -6,14 +6,22 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/external-monitor-job"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "recena"
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "rsandell"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "recena"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - github: "kohsuke"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "external-monitor-job-plugin Developers"

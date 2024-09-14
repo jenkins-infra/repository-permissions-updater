@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rhnpush-plugin"
 developers:
-  - "mtizzoni"
+  - ldap: "mtizzoni"
+  - github: "elibus"
+repository_team: "rhnpush-plugin Developers"

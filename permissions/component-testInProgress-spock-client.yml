@@ -3,4 +3,4 @@ name: "testInProgress-spock-client"
 paths:
   - "org/imaginea/jenkins/plugins/testInProgress-spock-client"
 developers:
-  - "menonvarun"
+  - ldap: "menonvarun"

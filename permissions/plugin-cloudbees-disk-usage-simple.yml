@@ -6,9 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloudbees-disk-usage-simple"
 developers:
-  - "aheritier"
-  - "recena"
-  - "ydubreuil"
-  - "pierrebtz"
+  - ldap: "aheritier"
+    github: "aheritier"
+  - ldap: "recena"
+  - ldap: "ydubreuil"
+    github: "ydubreuil"
+  - ldap: "pierrebtz"
+  - github: "PierreBtz"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "cloudbees-disk-usage-simple-plugin Developers"

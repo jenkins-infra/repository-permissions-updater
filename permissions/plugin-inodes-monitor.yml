@@ -6,7 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/inodes-monitor"
 developers:
-  - "batmat"
-  - "janasrikanth"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "janasrikanth"
+    github: "janasrikanth"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "inodes-monitor-plugin Developers"

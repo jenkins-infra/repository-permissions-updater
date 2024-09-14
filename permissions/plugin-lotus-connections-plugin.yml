@@ -6,4 +6,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/lotus-connections-plugin"
 developers:
-  - "philrumble"
+  - ldap: "philrumble"
+repository_team: "lotus-connections-plugin Developers"

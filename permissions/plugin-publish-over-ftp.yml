@@ -7,4 +7,8 @@ paths:
   - "org/jenkins-ci/plugins/publish-over-ftp"
   - "org/jvnet/hudson/plugins/publish-over-ftp"
 developers:
-  - "gmcdonald"
+  - ldap: "gmcdonald"
+    github: "gmcdonald"
+  - github: "bap2000"
+  - github: "lwhsu"
+repository_team: "publish-over-ftp-plugin Developers"

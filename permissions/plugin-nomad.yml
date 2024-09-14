@@ -7,10 +7,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nomad"
 developers:
-  - "iverberk"
-  - "antweiss"
-  - "phedoreanu"
-  - "j3t"
+  - ldap: "iverberk"
+  - ldap: "antweiss"
+  - ldap: "phedoreanu"
+  - ldap: "j3t"
+    github: "j3t"
+  - github: "multani"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "nomad-plugin Developers"

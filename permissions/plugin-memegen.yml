@@ -6,4 +6,6 @@ issues:
 paths:
   - "hudson/plugins/memegen/memegen"
 developers:
-  - "joonty"
+  - ldap: "joonty"
+    github: "joonty"
+repository_team: "memegen-plugin Developers"

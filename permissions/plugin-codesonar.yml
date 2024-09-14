@@ -6,6 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/codesonar"
 developers:
-  - "madsnielsen"
-  - "praqma"
-  - "gt_dbechtold"
+  - ldap: "madsnielsen"
+  - ldap: "praqma"
+  - ldap: "gt_dbechtold"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
+  - github: "buep"
+  - github: "gt-dbechtold"
+repository_team: "codesonar-plugin Developers"

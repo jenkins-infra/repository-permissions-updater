@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/keycloak"
 developers:
-  - "mrmateo"
+  - ldap: "mrmateo"
+    github: "mrmateo"
+  - github: "mnadeem"
+  - github: "devlauer"
+repository_team: "keycloak-plugin Developers"

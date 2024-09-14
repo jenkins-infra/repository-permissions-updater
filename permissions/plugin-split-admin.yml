@@ -6,8 +6,11 @@ issues:
 paths:
   - "io/split/jenkins/plugins/split-admin"
 developers:
-  - "bilal_split"
-  - "patricioe"
+  - ldap: "bilal_split"
+  - ldap: "patricioe"
+    github: "patricioe"
+  - github: "chillaq"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "split-admin-plugin Developers"

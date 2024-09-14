@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/main/ui-samples-plugin"
 developers:
-  - "@core"
-  - "@ux"
+  - ldap: "@core"
+  - ldap: "@ux"
+additional_github_teams:
+  - team: "SIG: UX"
+    role: "Admin"

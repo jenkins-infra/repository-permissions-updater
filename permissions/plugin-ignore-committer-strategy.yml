@@ -6,4 +6,7 @@ issues:
 paths:
   - "au/com/versent/jenkins/plugins/ignore-committer-strategy"
 developers:
-  - "bb3rn4rd"
+  - ldap: "bb3rn4rd"
+  - github: "b-b3rn4rd"
+  - github: "mcleane"
+repository_team: "ignore-committer-strategy-plugin Developers"

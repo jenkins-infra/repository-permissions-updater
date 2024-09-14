@@ -5,4 +5,8 @@ issues:
   - github: *gh
 paths:
   - "ru/yandex/jenkins/plugins/compound-slaves/compound-slaves"
-developers: []
+developers:
+  - github: "mavlyutov"
+  - github: "pupssman"
+  - github: "dchr"
+repository_team: "compound-slaves-plugin Developers"

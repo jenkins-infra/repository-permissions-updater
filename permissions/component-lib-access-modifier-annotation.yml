@@ -4,4 +4,9 @@ github: "jenkinsci/lib-access-modifier"
 paths:
   - "org/kohsuke/access-modifier-annotation"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "access-modifier Developers"
+    role: "Admin"
+  - team: "Core"
+    role: "Admin"

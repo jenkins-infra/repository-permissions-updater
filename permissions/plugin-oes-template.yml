@@ -4,8 +4,10 @@ github: &GH "jenkinsci/oes-template-plugin"
 paths:
   - "cn/opsbox/jenkinsci/plugins/oes-template"
 developers:
-  - "seanly"
+  - ldap: "seanly"
+    github: "seanly"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "oes-template-plugin Developers"

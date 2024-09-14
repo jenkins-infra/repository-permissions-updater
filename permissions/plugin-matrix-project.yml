@@ -6,13 +6,18 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/matrix-project"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "amuniz"
-  - "oleg_nenashev"
-  - "olivergondza"
-  - "batmat"
-  - "rsandell"
+  - ldap: "amuniz"
+    github: "amuniz"
+  - ldap: "oleg_nenashev"
+  - ldap: "olivergondza"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "matrix-project-plugin Developers"

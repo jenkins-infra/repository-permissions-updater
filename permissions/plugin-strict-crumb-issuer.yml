@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/strict-crumb-issuer"
 developers:
-  - "@security"
+  - ldap: "@security"
+  - github: "daniel-beck"
+  - github: "Wadeck"
+  - github: "Kevin-CB"
+repository_team: "strict-crumb-issuer-plugin Developers"

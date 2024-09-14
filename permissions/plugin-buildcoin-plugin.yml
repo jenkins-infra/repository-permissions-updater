@@ -5,4 +5,6 @@ issues:
   - jira: '17501'  # buildcoin-plugin
 paths:
   - "com/buildcoin/plugins/jenkins/buildcoin-plugin"
-developers: []
+developers:
+  - github: "19flr"
+repository_team: "buildcoin-plugin Developers"

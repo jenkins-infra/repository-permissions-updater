@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/applitools-eyes"
 developers:
-  - "applitools"
+  - ldap: "applitools"
+  - github: "danielputerman"
+repository_team: "applitools-eyes-plugin Developers"

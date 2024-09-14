@@ -6,5 +6,7 @@ issues:
 paths:
   - "info/bluefloyd/jenkins/jenkins-jira-issue-updater"
 developers:
-  - "isparkes"
-  - "laszlomiklosik"
+  - ldap: "isparkes"
+  - ldap: "laszlomiklosik"
+    github: "laszlomiklosik"
+repository_team: "jira-issue-updater-plugin Developers"

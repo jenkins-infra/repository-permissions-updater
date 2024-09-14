@@ -4,7 +4,10 @@ github: &GH "jenkinsci/cloudevents-plugin"
 paths:
   - "io/jenkins/plugins/cloudevents"
 developers:
-  - "waveywaves"
-  - "shruti_chaturvedi"
+  - ldap: "waveywaves"
+    github: "waveywaves"
+  - ldap: "shruti_chaturvedi"
+  - github: "ShrutiC-git"
 issues:
   - github: *GH
+repository_team: "cloudevents-plugin Developers"

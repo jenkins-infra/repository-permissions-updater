@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/beagle-security"
 developers:
-  - "rejah"
+  - ldap: "rejah"
+  - github: "rejahrehim"
+repository_team: "beagle-security-plugin Developers"

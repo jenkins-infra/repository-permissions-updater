@@ -2,14 +2,17 @@
 name: "jjwt-api"
 github: &gh "jenkinsci/jjwt-api-plugin"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *gh
 paths:
   - "io/jenkins/plugins/jjwt-api"
 developers:
-  - "jglick"
-  - "bitwiseman"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "jjwt-api-plugin Developers"

@@ -6,6 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/design-library"
 developers:
-  - "@ux"
+  - ldap: "@ux"
 cd:
-  enabled: true
+    enabled: true
+additional_github_teams:
+  - team: "SIG: UX"
+    role: "Admin"

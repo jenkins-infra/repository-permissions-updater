@@ -2,11 +2,14 @@
 name: "opentelemetry-api"
 github: &GH "jenkinsci/opentelemetry-api-plugin"
 paths:
-- "io/jenkins/plugins/opentelemetry-api"
+  - "io/jenkins/plugins/opentelemetry-api"
 developers:
-- "cleclerc"
-- "ifernandezcalvo"
+  - ldap: "cleclerc"
+  - ldap: "ifernandezcalvo"
+  - github: "cyrille-leclerc"
+  - github: "kuisathaverat"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *GH
+repository_team: "opentelemetry-api-plugin Developers"

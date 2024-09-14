@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ion-deployer-plugin"
 developers: []
+repository_team: "ion-deployer-plugin Developers"

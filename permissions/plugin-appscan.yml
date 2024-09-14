@@ -4,4 +4,7 @@ github: "jenkinsci/appscan-plugin"
 paths:
   - "com/hcl/security/appscan"
 developers:
-  - "mattmurp"
+  - ldap: "mattmurp"
+additional_github_teams:
+  - team: "ibm-asoc-plugin Developers"
+    role: "Admin"

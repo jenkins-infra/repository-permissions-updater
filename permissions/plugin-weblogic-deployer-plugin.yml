@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/weblogic-deployer-plugin"
 developers:
-  - "raphc"
+  - ldap: "raphc"
+  - github: "RaphC"
+repository_team: "weblogic-deployer-plugin Developers"

@@ -7,4 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/disk-usage"
   - "org/jvnet/hudson/plugins/disk-usage"
 developers:
-  - "froque"
+  - ldap: "froque"
+    github: "froque"
+repository_team: "disk-usage-plugin Developers"

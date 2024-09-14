@@ -6,6 +6,11 @@ issues:
 paths:
   - "io/jenkins/plugins/folder-auth"
 developers:
-  - "abhyudaya"
-  - "oleg_nenashev"
-  - "runzexia"
+  - ldap: "abhyudaya"
+  - ldap: "oleg_nenashev"
+  - ldap: "runzexia"
+    github: "runzexia"
+  - github: "oleg-nenashev"
+  - github: "AbhyudayaSharma"
+  - github: "Supun94"
+repository_team: "folder-auth-plugin Developers"

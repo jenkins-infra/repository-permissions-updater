@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/switchfly/gitlab-merge-request-jenkins"
 developers:
-  - "timols"
+  - ldap: "timols"
+    github: "timols"
+repository_team: "gitlab-merge-request-builder-plugin Developers"

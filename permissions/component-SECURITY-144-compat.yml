@@ -4,5 +4,5 @@ github: "jenkinsci/SECURITY-144-compat"
 paths:
   - "org/jenkins-ci/SECURITY-144-compat"
 developers:
-  - "jglick"
-  - "kohsuke"
+  - ldap: "jglick"
+  - ldap: "kohsuke"

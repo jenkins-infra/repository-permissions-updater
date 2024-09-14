@@ -2,10 +2,12 @@
 name: "bmc-cfa"
 github: &GH "jenkinsci/bmc-cfa-plugin"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "com/bmc/ims/bmc-cfa"
 developers:
-  - "mcohen"
+  - ldap: "mcohen"
+  - github: "mcohen11"
 issues:
   - github: *GH
+repository_team: "bmc-cfa-plugin Developers"

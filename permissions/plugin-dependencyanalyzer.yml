@@ -7,4 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/dependencyanalyzer"
   - "org/jvnet/hudson/plugins/dependencyanalyzer"
 developers:
-  - "ejouvin"
+  - ldap: "ejouvin"
+    github: "ejouvin"
+repository_team: "dependency-analyzer-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/crossbrowsertesting"
 developers:
-  - "crossbrowsertesting"
+  - ldap: "crossbrowsertesting"
+  - github: "tonetheman"
+  - github: "mike-seagull"
+repository_team: "crossbrowsertesting-plugin Developers"

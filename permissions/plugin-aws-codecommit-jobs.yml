@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aws-codecommit-jobs"
 developers:
-  - "sjeandeaux"
+  - ldap: "sjeandeaux"
+    github: "sjeandeaux"
+repository_team: "aws-codecommit-jobs-plugin Developers"

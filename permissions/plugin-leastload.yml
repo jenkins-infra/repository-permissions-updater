@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/leastload"
 developers:
-  - "bstick12"
+  - ldap: "bstick12"
+    github: "bstick12"
+repository_team: "leastload-plugin Developers"

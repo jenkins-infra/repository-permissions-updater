@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/saferestart"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+repository_team: "saferestart-plugin Developers"

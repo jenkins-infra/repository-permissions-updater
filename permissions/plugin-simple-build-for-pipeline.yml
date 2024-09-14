@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/simple-build-for-pipeline"
 developers:
-  - "michaelneale"
+  - ldap: "michaelneale"
+    github: "michaelneale"
+repository_team: "simple-build-for-pipeline-plugin Developers"

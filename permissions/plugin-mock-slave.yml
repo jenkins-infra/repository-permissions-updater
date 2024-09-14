@@ -2,11 +2,14 @@
 name: "mock-slave"
 github: "jenkinsci/mock-slave-plugin"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - jira: '17334' # mock-slave-plugin
 paths:
   - "org/jenkinci/plugins/mock-slave"
   - "org/jenkins-ci/plugins/mock-slave"
 developers:
-  - "jglick"
+  - ldap: "jglick"
+    github: "jglick"
+  - github: "jenkinsadmin"
+repository_team: "mock-slave-plugin Developers"

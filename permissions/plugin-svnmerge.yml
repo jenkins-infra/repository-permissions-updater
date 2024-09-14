@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/svnmerge"
 developers:
-  - "hugueschabot"
-  - "gmcdonald"
+  - ldap: "hugueschabot"
+    github: "hugueschabot"
+  - ldap: "gmcdonald"
+    github: "gmcdonald"
+repository_team: "svnmerge-plugin Developers"

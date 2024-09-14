@@ -6,4 +6,8 @@ issues:
 paths:
   - "io/relution/jenkins/scm-sqs"
 developers:
-  - "mway_solutions"
+  - ldap: "mway_solutions"
+  - github: "stefanjauker"
+  - github: "axelhodler"
+  - github: "mpfeiffermway"
+repository_team: "scm-sqs-plugin Developers"

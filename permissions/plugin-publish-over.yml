@@ -4,4 +4,7 @@ github: "jenkinsci/publish-over-plugin"
 paths:
   - "org/jenkins-ci/plugins/publish-over"
 developers:
-  - "gmcdonald"
+  - ldap: "gmcdonald"
+    github: "gmcdonald"
+  - github: "bap2000"
+repository_team: "publish-over-plugin Developers"

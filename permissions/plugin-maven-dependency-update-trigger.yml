@@ -7,3 +7,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/maven-dependency-update-trigger"
 developers: []
+repository_team: "maven-dependency-update-trigger-plugin Developers"

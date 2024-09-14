@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jquery-ui"
 developers: []
+repository_team: "jquery-ui-plugin Developers"

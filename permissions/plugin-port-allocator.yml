@@ -7,5 +7,9 @@ paths:
   - "org/jenkins-ci/plugins/port-allocator"
   - "org/jvnet/hudson/plugins/port-allocator"
 developers:
-  - "markewaite"
-  - "mPokornyETM"
+  - ldap: "markewaite"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - github: "MarkEWaite"
+  - github: "andresrc"
+repository_team: "port-allocator-plugin Developers"

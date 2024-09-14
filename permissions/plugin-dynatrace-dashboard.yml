@@ -7,5 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/dynatrace-dashboard"
 developers:
-  - "dynatrace"
-  - "wgottesheim"
+  - ldap: "dynatrace"
+  - ldap: "wgottesheim"
+    github: "wgottesheim"
+  - github: "wbachnik"
+  - github: "oleg-nenashev"
+  - github: "knecel"
+repository_team: "dynatrace-plugin Developers"

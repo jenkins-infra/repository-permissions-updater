@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bitbucket-scm-filter-aged-refs"
 developers:
-  - "tgr"
+  - ldap: "tgr"
+  - github: "TobiX"
+  - github: "askalski85"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "scm-filter-aged-refs-plugin Developers"

@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/validating-string-parameter"
 developers:
-  - "vlatombe"
-  - "raihaan"
+  - ldap: "vlatombe"
+  - ldap: "raihaan"
+  - github: "res0nance"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "validating-string-parameter-plugin Developers"

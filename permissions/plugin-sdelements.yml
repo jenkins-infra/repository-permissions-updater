@@ -6,4 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/sdelements"
 developers:
-  - "securitycompass"
+  - ldap: "securitycompass"
+  - github: "funkaoshi"
+  - github: "geoffwhittington"
+  - github: "RouganStriker"
+repository_team: "sdelements-plugin Developers"

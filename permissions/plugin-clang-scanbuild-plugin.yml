@@ -6,4 +6,6 @@ issues:
 paths:
   - "jenkins/plugins/clangscanbuild/clang-scanbuild-plugin"
 developers:
-  - "rodrigc"
+  - ldap: "rodrigc"
+  - github: "daniel-beck"
+repository_team: "clang-scanbuild-plugin Developers"

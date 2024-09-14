@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/tomfolga/maven-info"
 developers:
-  - "emenaceb"
-  - "olamy"
+  - ldap: "emenaceb"
+    github: "emenaceb"
+  - ldap: "olamy"
+repository_team: "maven-info-plugin Developers"

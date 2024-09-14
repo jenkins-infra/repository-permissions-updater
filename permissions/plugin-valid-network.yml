@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/valid-network"
 developers:
-  - "dima"
+  - ldap: "dima"
+  - github: "dimabru"
+repository_team: "valid-network-plugin Developers"

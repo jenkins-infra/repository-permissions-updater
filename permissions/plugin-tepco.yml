@@ -5,4 +5,6 @@ issues:
   - jira: '16086'  # tepco-plugin
 paths:
   - "org/jenkins-ci/plugins/tepco"
-developers: []
+developers:
+  - github: "kiy0taka"
+repository_team: "tepco-plugin Developers"

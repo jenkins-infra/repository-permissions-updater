@@ -5,10 +5,14 @@ issues:
   - github: *gh
   - jira: '17535'  # stashnotifier-plugin
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "org/jenkins-ci/plugins/stashNotifier"
 developers:
-  - "gruetter"
-  - "scaytrase"
-  - "sghill"
+  - ldap: "gruetter"
+    github: "gruetter"
+  - ldap: "scaytrase"
+    github: "scaytrase"
+  - ldap: "sghill"
+    github: "sghill"
+repository_team: "stashnotifier-plugin Developers"

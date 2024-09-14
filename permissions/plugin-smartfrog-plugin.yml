@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/smartfrog-plugin"
 developers:
-  - "lvotypkova"
-  - "vjuranek"
+  - ldap: "lvotypkova"
+  - ldap: "vjuranek"
+    github: "vjuranek"
+  - github: "rhusar"
+repository_team: "smartfrog-plugin Developers"

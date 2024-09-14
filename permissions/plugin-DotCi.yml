@@ -6,6 +6,6 @@ issues:
 paths:
   - "com/groupon/jenkins-ci/plugins/DotCi"
 developers:
-  - "surya548"
-  - "suryagaddipati"
-  - "vvitayau"
+  - ldap: "surya548"
+  - ldap: "suryagaddipati"
+  - ldap: "vvitayau"

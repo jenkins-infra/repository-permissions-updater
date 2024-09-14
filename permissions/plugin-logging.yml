@@ -6,4 +6,8 @@ issues:
 paths:
   - "net/praqma/logging"
 developers:
-  - "madsnielsen"
+  - ldap: "madsnielsen"
+  - github: "wolfgarnet"
+  - github: "MadsNielsen"
+  - github: "buep"
+repository_team: "logging-plugin Developers"

@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/dbCharts"
   - "org/jvnet/hudson/plugins/dbCharts"
 developers: []
+repository_team: "dbCharts-plugin Developers"

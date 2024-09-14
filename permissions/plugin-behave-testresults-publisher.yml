@@ -6,4 +6,4 @@ issues:
 paths:
   - "net/jenkins/behave-testresults-publisher"
 developers:
-  - "chaitanyachannella"
+  - ldap: "chaitanyachannella"

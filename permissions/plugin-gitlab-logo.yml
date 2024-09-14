@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gitlab-logo"
 developers:
-  - "sue445"
+  - ldap: "sue445"
+    github: "sue445"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "gitlab-logo-plugin Developers"

@@ -6,14 +6,19 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-api"
 developers:
-  - "abayer"
-  - "dnusbaum"
-  - "jglick"
-  - "rsandell"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
-  - "olamy"
+  - ldap: "abayer"
+  - ldap: "dnusbaum"
+  - ldap: "jglick"
+  - ldap: "rsandell"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+  - ldap: "kshultz"
+  - ldap: "olamy"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+additional_github_teams:
+  - team: "declarative-pipeline-migration-assistant-plugin-developers"
+    role: "Admin"
+  - team: "convert-to-declarative Developers"
+    role: "Admin"

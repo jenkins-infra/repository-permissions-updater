@@ -4,4 +4,7 @@ github: "jenkinsci/analysis-pom-plugin"
 paths:
   - "org/jvnet/hudson/plugins/analysis-pom"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
+  - github: "amuniz"
+repository_team: "analysis-pom-plugin Developers"

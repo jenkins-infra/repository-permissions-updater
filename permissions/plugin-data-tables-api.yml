@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/data-tables-api"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "data-tables-api-plugin Developers"

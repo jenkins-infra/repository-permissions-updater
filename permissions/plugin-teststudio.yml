@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/teststudio"
 developers:
-  - "deyan_kalinov"
+  - ldap: "deyan_kalinov"
+  - github: "dkalinov"
+repository_team: "teststudio-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "jp/ikedam/jenkins/plugins/extensible-choice-parameter"
 developers:
-  - "ikedam"
+  - ldap: "ikedam"
+    github: "ikedam"
+repository_team: "extensible-choice-parameter-plugin Developers"

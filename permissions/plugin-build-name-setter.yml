@@ -7,4 +7,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-name-setter"
 developers:
-  - "dszczepanik"
+  - ldap: "dszczepanik"
+  - github: "kohsuke"
+  - github: "Le0Michine"
+  - github: "oleg-nenashev"
+  - github: "damianszczepanik"
+repository_team: "build-name-setter-plugin Developers"

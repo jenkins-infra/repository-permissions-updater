@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/label-verifier"
 developers:
-  - "oleg_nenashev"
-  - "markewaite"
+  - ldap: "oleg_nenashev"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "label-verifier-plugin Developers"

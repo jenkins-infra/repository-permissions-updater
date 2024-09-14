@@ -5,4 +5,6 @@ issues:
   - jira: '16021'  # simpleupdatesite-plugin
 paths:
   - "org/jenkins-ci/plugins/simpleupdatesite"
-developers: []
+developers:
+  - github: "junoyoon"
+repository_team: "simpleupdatesite-plugin Developers"

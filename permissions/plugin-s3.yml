@@ -6,17 +6,29 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/s3"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "dmbeer"
-  - "jimilian"
-  - "thoulen"
-  - "jequals5"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "alecharp"
-  - "batmat"
-  - "rsandell"
+  - ldap: "dmbeer"
+  - ldap: "jimilian"
+  - ldap: "thoulen"
+    github: "thoulen"
+  - ldap: "jequals5"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "alecharp"
+    github: "alecharp"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - github: "dougm"
+  - github: "scgilardi"
+  - github: "d6y"
+  - github: "Jimilian"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "s3-plugin Developers"

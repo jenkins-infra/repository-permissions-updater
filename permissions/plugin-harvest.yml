@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/harvest"
 developers:
-  - "abedwards"
+  - ldap: "abedwards"
+  - github: "abedwardsw"
+repository_team: "harvest-plugin Developers"

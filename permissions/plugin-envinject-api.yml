@@ -6,7 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/envinject-api"
 developers:
-  - "oleg_nenashev"
-  - "notmyfault"
+  - ldap: "oleg_nenashev"
+  - ldap: "notmyfault"
+  - github: "oleg-nenashev"
+  - github: "NotMyFault"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "envinject-api-plugin Developers"
+additional_github_teams:
+  - team: "envinject-plugin Developers"
+    role: "Admin"

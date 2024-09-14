@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/queue-cleanup"
 developers:
-  - "olivergondza"
-  - "runzexia"
+  - ldap: "olivergondza"
+  - ldap: "runzexia"
+    github: "runzexia"
+  - github: "vjuranek"
+repository_team: "queue-cleanup-plugin Developers"

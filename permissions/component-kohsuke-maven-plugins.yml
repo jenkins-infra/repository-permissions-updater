@@ -5,4 +5,4 @@ paths:
   - "org/jvnet"
   - "org/kohsuke"
 developers:
-  - "@core"
+  - ldap: "@core"

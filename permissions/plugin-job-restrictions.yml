@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/synopsys/arc/jenkinsci/plugins/job-restrictions"
 developers:
-  - "oleg_nenashev"
+  - ldap: "oleg_nenashev"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+repository_team: "job-restrictions-plugin Developers"

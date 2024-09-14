@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/openmake/deployhub"
 developers:
-  - "sbtaylor15"
-  - "philgibbs"
+  - ldap: "sbtaylor15"
+  - ldap: "philgibbs"
+additional_github_teams:
+  - team: "deploy-hub-plugin Developers"
+    role: "Admin"

@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pangolin-testrail-connector"
 developers:
-  - "agiletestware"
-  - "sergey_oplavin"
+  - ldap: "agiletestware"
+  - ldap: "sergey_oplavin"
+  - github: "sergey-oplavin"
+  - github: "araza82"
+  - github: "aymanBA92"
+repository_team: "pangolin-testrail-connector-plugin Developers"

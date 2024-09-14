@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/nirmata"
 developers:
-  - "dtoledo"
+  - ldap: "dtoledo"
+  - github: "sameerkhan2k1"
+repository_team: "nirmata-plugin Developers"

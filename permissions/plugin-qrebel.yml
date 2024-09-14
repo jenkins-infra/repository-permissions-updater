@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/qrebel"
 developers:
-  - "vasilyt"
-  - "mastap"
+  - ldap: "vasilyt"
+  - ldap: "mastap"
+  - github: "MastaP"
+  - github: "reshordling"
+repository_team: "qrebel-plugin Developers"

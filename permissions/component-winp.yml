@@ -4,4 +4,7 @@ github: "jenkinsci/winp"
 paths:
   - "org/jvnet/winp/winp"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

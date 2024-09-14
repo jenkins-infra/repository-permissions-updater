@@ -4,4 +4,6 @@ github: "jenkinsci/mber-plugin"
 paths:
   - "org/jenkins-ci/plugins/mber"
 developers:
-  - "onefrankguy"
+  - ldap: "onefrankguy"
+    github: "onefrankguy"
+repository_team: "mber-plugin Developers"

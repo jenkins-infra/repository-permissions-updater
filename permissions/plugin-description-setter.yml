@@ -7,7 +7,11 @@ paths:
   - "org/jenkins-ci/plugins/description-setter"
   - "org/jvnet/hudson/plugins/description-setter"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "markewaite"
-  - "michael1010"
+  - ldap: "markewaite"
+  - ldap: "michael1010"
+    github: "michael1010"
+  - github: "MarkEWaite"
+  - github: "pjanouse"
+repository_team: "description-setter-plugin Developers"

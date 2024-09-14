@@ -6,13 +6,24 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ec2"
 developers:
-  - "thoulen"
-  - "julienduchesne"
-  - "fcojfernandez"
-  - "raihaan"
-  - "froblesmartin"
+  - ldap: "thoulen"
+    github: "thoulen"
+  - ldap: "julienduchesne"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "raihaan"
+  - ldap: "froblesmartin"
+    github: "froblesmartin"
+  - github: "bitter"
+  - github: "adphillips"
+  - github: "emilyselwood"
+  - github: "mwhudson"
+  - github: "jvz"
+  - github: "MRamonLeon"
+  - github: "res0nance"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "ec2-plugin Developers"

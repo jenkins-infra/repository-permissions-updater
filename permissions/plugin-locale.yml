@@ -7,7 +7,9 @@ paths:
   - "org/jvnet/hudson/plugins/locale"
   - "io/jenkins/plugins/locale"
 developers:
-  - "oleg_nenashev"
-  - "jonesbusy"
+  - ldap: "oleg_nenashev"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "locale-plugin Developers"

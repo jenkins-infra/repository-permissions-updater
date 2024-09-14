@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/distTest"
 developers: []
+repository_team: "distTest-plugin Developers"

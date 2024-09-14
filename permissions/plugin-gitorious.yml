@@ -5,4 +5,6 @@ issues:
   - jira: '17440'  # gitorious-plugin
 paths:
   - "org/jenkins-ci/plugins/gitorious"
-developers: []
+developers:
+  - github: "kohsuke"
+repository_team: "gitorious-plugin Developers"

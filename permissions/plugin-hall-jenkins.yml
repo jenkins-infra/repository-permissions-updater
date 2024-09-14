@@ -5,4 +5,6 @@ issues:
   - jira: '18050'  # hall-jenkins
 paths:
   - "com/companyline/hall/jenkins/hall-jenkins"
-developers: []
+developers:
+  - github: "andyland"
+repository_team: "hall-plugin Developers"

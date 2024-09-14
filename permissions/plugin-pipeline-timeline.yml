@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/pipeline-timeline"
 developers:
-  - "tophat"
-  - "mcataford"
+  - ldap: "tophat"
+  - ldap: "mcataford"
+    github: "mcataford"
+  - github: "brandonbaksh"
+repository_team: "pipeline-timeline-plugin Developers"

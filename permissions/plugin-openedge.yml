@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/openedge"
 developers:
-  - "gquerret"
+  - ldap: "gquerret"
+    github: "gquerret"
+repository_team: "openedge-plugin Developers"

@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/exam"
 developers:
-  - "MicroNovaAG"
-  - "tomasch"
+  - ldap: "MicroNovaAG"
+    github: "MicroNovaAG"
+  - ldap: "tomasch"
+  - github: "tomasch3034"
+repository_team: "exam-plugin Developers"

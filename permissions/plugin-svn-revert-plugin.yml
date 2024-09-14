@@ -5,6 +5,9 @@ issues:
   - jira: '16921'  # svn-revert-plugin
 paths:
   - "org/jenkins-ci/plugins/svn-revert-plugin"
-developers: []
+developers:
+  - github: "davidparsson"
+  - github: "ki82"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "svn-revert-plugin Developers"

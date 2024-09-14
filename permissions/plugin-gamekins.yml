@@ -4,6 +4,8 @@ github: &GH "jenkinsci/gamekins-plugin"
 paths:
   - "org/gamekins/gamekins"
 developers:
-  - "straubin"
+  - ldap: "straubin"
+  - github: "PhilippStraubinger"
 issues:
   - github: *GH
+repository_team: "gamekins-plugin Developers"

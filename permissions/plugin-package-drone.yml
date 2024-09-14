@@ -3,4 +3,4 @@ name: "package-drone"
 paths:
   - "de/dentrassi/pm/jenkins/package-drone"
 developers:
-  - "ctron"
+  - ldap: "ctron"

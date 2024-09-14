@@ -6,12 +6,16 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/variant"
 developers:
-  - "kohsuke"
-  - "andresrc"
-  - "batmat"
-  - "jetersen"
+  - ldap: "kohsuke"
+    github: "kohsuke"
+  - ldap: "andresrc"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "jetersen"
+    github: "jetersen"
 cd:
-  enabled: true
+    enabled: true
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "variant-plugin Developers"

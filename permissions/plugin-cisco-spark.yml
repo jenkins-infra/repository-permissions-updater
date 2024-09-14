@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cisco-spark"
 developers:
-  - "fujian"
+  - ldap: "fujian"
+  - github: "jiafu1115"
+repository_team: "cisco-spark-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/tuxdroid"
 developers: []
+repository_team: "tuxdroid-plugin Developers"

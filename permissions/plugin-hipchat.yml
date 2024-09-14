@@ -7,5 +7,8 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/hipchat"
 developers:
-  - "aldaris"
-  - "darrinholst"
+  - ldap: "aldaris"
+    github: "aldaris"
+  - ldap: "darrinholst"
+  - github: "jlewallen"
+repository_team: "hipchat-plugin Developers"

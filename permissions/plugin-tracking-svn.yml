@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/tracking-svn"
 developers: []
+repository_team: "tracking-svn-plugin Developers"

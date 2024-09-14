@@ -3,4 +3,4 @@ name: "github-pullrequest"
 paths:
   - "org/jenkins-ci/plugins/github-pullrequest"
 developers:
-  - "integer"
+  - ldap: "integer"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/catalogic/ecxjenkins/catalogic-ecx"
 developers:
-  - "neethapai"
+  - ldap: "neethapai"
+    github: "neethapai"
+repository_team: "catalogic-ecx-plugin Developers"

@@ -6,3 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/collabnet-automic-deploy"
 developers: []
+additional_github_teams:
+  - team: "collabnet-uc4-deploy-plugin Developers"
+    role: "Admin"

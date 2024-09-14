@@ -6,7 +6,10 @@ issues:
 paths:
   - "com/datatheorem/mobileappsecurity/jenkins/plugin/datatheorem-mobile-app-security"
 developers:
-  - "magneto_marc"
-  - "nabla_c0d3"
-  - "alexis_pierru"
-  - "tsileo"
+  - ldap: "magneto_marc"
+  - ldap: "nabla_c0d3"
+  - ldap: "alexis_pierru"
+  - ldap: "tsileo"
+  - github: "superlama"
+  - github: "marc-tranzer"
+repository_team: "datatheorem-mobile-app-security-plugin Developers"

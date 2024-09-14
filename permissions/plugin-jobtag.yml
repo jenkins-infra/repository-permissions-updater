@@ -4,8 +4,10 @@ github: &GH "jenkinsci/jobtag-plugin"
 paths:
   - "io/jenkins/plugins/jobtag"
 developers:
-  - "nistal97"
+  - ldap: "nistal97"
+    github: "nistal97"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *GH
+repository_team: "jobtag-plugin Developers"

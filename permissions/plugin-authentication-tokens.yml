@@ -6,15 +6,25 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/authentication-tokens"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "alecharp"
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "rsandell"
-  - "jglick"
-  - "teilo"
+  - ldap: "alecharp"
+    github: "alecharp"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "teilo"
+  - github: "stephenc"
+  - github: "jtnord"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "authentication-tokens-plugin Developers"

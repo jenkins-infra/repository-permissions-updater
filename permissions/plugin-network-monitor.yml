@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/network-monitor"
 developers: []
+repository_team: "network-monitor-plugin Developers"

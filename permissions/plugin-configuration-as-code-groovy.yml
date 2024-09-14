@@ -6,5 +6,11 @@ issues:
 paths:
   - "io/jenkins/plugins/configuration-as-code-groovy"
 developers:
-  - "szandala"
-  - "jetersen"
+  - ldap: "szandala"
+    github: "szandala"
+  - ldap: "jetersen"
+    github: "jetersen"
+repository_team: "configuration-as-code-groovy-plugin Developers"
+additional_github_teams:
+  - team: "jcasc-compatibility-reviewers"
+    role: "Read"

@@ -6,4 +6,4 @@ issues:
 paths:
   - "com/github/mjdetullio/jenkins/plugins/multi-branch-project-plugin"
 developers:
-  - "mjdetullio"
+  - ldap: "mjdetullio"

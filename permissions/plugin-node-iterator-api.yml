@@ -6,13 +6,21 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/node-iterator-api"
 developers:
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "rsandell"
-  - "teilo"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "teilo"
+  - github: "jtnord"
+  - github: "alecharp"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "node-iterator-api-plugin Developers"

@@ -5,4 +5,6 @@ issues:
   - jira: '17562'  # crittercism-dsym-plugin
 paths:
   - "org/jenkins-ci/plugins/crittercism-dsym"
-developers: []
+developers:
+  - github: "mhassanpur"
+repository_team: "crittercism-dsym-plugin Developers"

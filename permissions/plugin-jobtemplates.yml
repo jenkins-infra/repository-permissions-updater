@@ -7,3 +7,6 @@ issues:
 paths:
   - "com/unitedinternet/jenkins/plugins/jobtemplates/jobtemplates"
 developers: []
+additional_github_teams:
+  - team: "logfilesizechecker-plugin Developers"
+    role: "Admin"

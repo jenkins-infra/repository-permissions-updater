@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/locked-files-report"
 developers: []
+repository_team: "locked-files-report-plugin Developers"

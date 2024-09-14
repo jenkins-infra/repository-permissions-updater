@@ -6,4 +6,6 @@ issues:
 paths:
   - "cprice404/pipeline-classpath"
 developers:
-  - "cprice404"
+  - ldap: "cprice404"
+    github: "cprice404"
+repository_team: "pipeline-classpath-step-plugin Developers"

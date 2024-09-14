@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mypeople"
 developers:
-  - "linugee"
+  - ldap: "linugee"
+  - github: "anyone-can-test"
+repository_team: "mypeople-plugin Developers"

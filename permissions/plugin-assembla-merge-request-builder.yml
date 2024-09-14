@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/assembla-merge-request-builder"
 developers:
-  - "paveld"
+  - ldap: "paveld"
+  - github: "pavel-d"
+repository_team: "assembla-merge-request-builder-plugin Developers"

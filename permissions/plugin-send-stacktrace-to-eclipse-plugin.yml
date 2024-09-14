@@ -4,4 +4,6 @@ github: "jenkinsci/send-stacktrace-to-eclipse-plugin"
 paths:
   - "org/jenkins-ci/plugins/send-stacktrace-to-eclipse-plugin"
 developers:
-  - "cbos"
+  - ldap: "cbos"
+    github: "cbos"
+repository_team: "send-stacktrace-to-eclipse-plugin Developers"

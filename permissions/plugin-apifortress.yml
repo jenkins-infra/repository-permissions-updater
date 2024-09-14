@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/apifortress/jenkins/apifortress"
 developers:
-  - "theirish81"
+  - ldap: "theirish81"
+    github: "theirish81"
+  - github: "apifortress"
+repository_team: "apifortress-plugin Developers"

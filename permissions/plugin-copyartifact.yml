@@ -7,13 +7,18 @@ paths:
   - "org/jenkins-ci/plugins/copyartifact"
   - "org/jvnet/hudson/plugins/copyartifact"
 developers:
-  - "ikedam"
-  - "wolfs"
-  - "markewaite"
-  - "allancth"
-  - "mPokornyETM"
+  - ldap: "ikedam"
+    github: "ikedam"
+  - ldap: "wolfs"
+  - ldap: "markewaite"
+  - ldap: "allancth"
+    github: "allancth"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - github: "MarkEWaite"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "copyartifact-plugin Developers"

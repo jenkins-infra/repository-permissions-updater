@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/icedq/ci/plugin/icedq"
 developers:
-  - "toranainc"
+  - ldap: "toranainc"
+    github: "toranainc"
+repository_team: "icedq-plugin Developers"

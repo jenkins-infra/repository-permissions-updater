@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/installshield"
 developers:
-  - "bambas"
+  - ldap: "bambas"
+  - github: "conyx"
+repository_team: "installshield-plugin Developers"

@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/lifx-notifier"
 developers:
-  - "michaelneale"
-  - "vgaidarji"
+  - ldap: "michaelneale"
+    github: "michaelneale"
+  - ldap: "vgaidarji"
+    github: "vgaidarji"
+  - github: "stephenc"
+repository_team: "lifx-notifier-plugin Developers"

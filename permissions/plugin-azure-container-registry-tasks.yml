@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-container-registry-tasks"
 developers:
-  - "zooopx"
+  - ldap: "zooopx"
+  - github: "gavinfish"
+  - github: "yuwzho"
+  - github: "yungezz"
+repository_team: "azure-container-registry-tasks-plugin Developers"

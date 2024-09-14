@@ -6,6 +6,8 @@ issues:
 paths:
   - "de/jamba/hudson/plugin/wsclean/hudson-wsclean-plugin"
 developers:
-  - "aheritier"
-  - "pjdarton"
-  - "mPokornyETM"
+  - ldap: "aheritier"
+  - ldap: "pjdarton"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+repository_team: "wsclean-plugin Developers"

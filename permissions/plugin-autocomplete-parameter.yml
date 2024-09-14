@@ -7,5 +7,7 @@ paths:
 # Block creation of new releases. If you want to release the plugin, contact the Jenkins security team about SECURITY-3157
   - "org/jenkins-ci/plugins/autocomplete-parameter-releaseblock"
 developers:
-  - "taksan"
-  - "takeuchi"
+  - ldap: "taksan"
+    github: "taksan"
+  - ldap: "takeuchi"
+repository_team: "autocomplete-parameter-plugin Developers"

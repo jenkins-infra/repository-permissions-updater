@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/ruby-plugins/git-notes"
 developers: []
+repository_team: "git-notes-plugin Developers"

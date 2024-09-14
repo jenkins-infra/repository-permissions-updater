@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nodejs"
 developers:
-  - "nfalco"
+  - ldap: "nfalco"
+  - github: "cliffano"
+  - github: "nfalco79"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "nodejs-plugin Developers"

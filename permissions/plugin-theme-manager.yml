@@ -8,6 +8,8 @@ issues:
 paths:
   - "io/jenkins/plugins/theme-manager"
 developers:
-  - "timja"
+  - ldap: "timja"
+    github: "timja"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "theme-manager-plugin Developers"

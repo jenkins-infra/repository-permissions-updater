@@ -2,11 +2,14 @@
 name: "secone-security"
 github: &GH "jenkinsci/secone-security-plugin"
 paths:
-- "io/jenkins/plugins/secone-security"
+  - "io/jenkins/plugins/secone-security"
 developers:
-- "rahuldarekar"
-- "saurabhthatte_sec1"
+  - ldap: "rahuldarekar"
+  - ldap: "saurabhthatte_sec1"
+  - github: "saurabhthatte007"
+  - github: "rahuldarekar222"
 issues:
   - jira: 29323
 cd:
-  enabled: true
+    enabled: true
+repository_team: "secone-security-plugin Developers"

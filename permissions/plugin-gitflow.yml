@@ -6,4 +6,6 @@ issues:
 paths:
   - "de/silpion/jenkins/plugins/gitflow"
 developers:
-  - "marcrohlfs"
+  - ldap: "marcrohlfs"
+    github: "marcrohlfs"
+repository_team: "gitflow-plugin Developers"

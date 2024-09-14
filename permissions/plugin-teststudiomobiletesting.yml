@@ -4,4 +4,7 @@ github: "jenkinsci/teststudiomobiletesting-plugin"
 paths:
   - "org/jenkins-ci/plugins/teststudiomobiletesting"
 developers:
-  - "deyan_kalinov"
+  - ldap: "deyan_kalinov"
+additional_github_teams:
+  - team: "mobiletesting-plugin Developers"
+    role: "Admin"

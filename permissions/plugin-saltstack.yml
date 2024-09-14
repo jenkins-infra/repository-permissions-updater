@@ -7,4 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/saltstack"
 developers:
-  - "mchugh19"
+  - ldap: "mchugh19"
+    github: "mchugh19"
+  - github: "jenkinsadmin"
+repository_team: "saltstack-plugin Developers"

@@ -4,8 +4,10 @@ github: &GH "jenkinsci/zscaler-iac-scan-plugin"
 paths:
   - "io/jenkins/plugins/zscaler-iac-scan"
 developers:
-  - "chandar_dayakar"
-  - "jragula"
-  - "aparnasaripaka"
+  - ldap: "chandar_dayakar"
+  - ldap: "jragula"
+  - ldap: "aparnasaripaka"
+  - github: "jragula-zs"
 issues:
   - github: *GH
+repository_team: "zscaler-iac-scan-plugin Developers"

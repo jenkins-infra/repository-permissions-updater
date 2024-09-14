@@ -2,13 +2,16 @@
 name: "performance"
 github: "jenkinsci/performance-plugin"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - jira: '15803'  # performance-plugin
 paths:
   - "org/jenkins-ci/plugins/performance"
   - "org/jvnet/hudson/plugins/performance"
 developers:
-  - "manolo"
-  - "artem_fedorov"
-  - "a_st"
+  - ldap: "manolo"
+  - ldap: "artem_fedorov"
+  - ldap: "a_st"
+  - github: "a-st"
+  - github: "undera"
+repository_team: "performance-plugin Developers"

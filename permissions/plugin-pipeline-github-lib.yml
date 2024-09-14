@@ -6,13 +6,19 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-github-lib"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "abayer"
-  - "dnusbaum"
-  - "rsandell"
-  - "svanoort"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - github: "dwnusbaum"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "pipeline-github-lib-plugin Developers"

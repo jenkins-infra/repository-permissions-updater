@@ -4,4 +4,8 @@ github: "jenkinsci/workplace-plugin"
 paths:
   - "jenkins/plugins/elanceodesk/workplace-notifier"
 developers:
-  - "sameerelance"
+  - ldap: "sameerelance"
+  - github: "jenkinsadmin"
+  - github: "agustinpersson"
+  - github: "sameerElance"
+repository_team: "workplace-plugin Developers"

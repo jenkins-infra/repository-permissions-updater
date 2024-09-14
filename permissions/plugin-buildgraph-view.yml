@@ -7,4 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/buildgraph-view"
 developers:
-  - "pskumar448"
+  - ldap: "pskumar448"
+additional_github_teams:
+  - team: "buildgraph-view Developers"
+    role: "Admin"

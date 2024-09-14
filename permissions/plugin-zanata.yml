@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/zanata"
 developers:
-  - "yushao"
-  - "huangp"
-  - "seanf"
+  - ldap: "yushao"
+  - ldap: "huangp"
+  - ldap: "seanf"
+  - github: "yu-shao-gm"
+repository_team: "zanata-plugin Developers"

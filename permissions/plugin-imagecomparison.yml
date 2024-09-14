@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/imagecomparison"
 developers:
-  - "tbaum"
+  - ldap: "tbaum"
+  - github: "dtbaum"
+repository_team: "imagecomparison-plugin Developers"

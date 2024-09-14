@@ -6,21 +6,32 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloudbees-folder"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "oleg_nenashev"
-  - "recena"
-  - "dnusbaum"
-  - "rsandell"
-  - "fcojfernandez"
-  - "alecharp"
-  - "batmat"
-  - "bitwiseman"
-  - "carroll"
-  - "olamy"
-  - "teilo"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "oleg_nenashev"
+  - ldap: "recena"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "alecharp"
+    github: "alecharp"
+  - ldap: "batmat"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "carroll"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "teilo"
+  - github: "jtnord"
+  - github: "dwnusbaum"
+  - github: "MRamonLeon"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "cloudbees-folder-plugin Developers"

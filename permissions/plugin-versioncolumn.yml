@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/versioncolumn"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "batmat"
-  - "markewaite"
+  - ldap: "batmat"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+repository_team: "versioncolumn-plugin Developers"

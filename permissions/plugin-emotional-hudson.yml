@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/emotional-hudson"
 developers: []
+repository_team: "emotional-hudson-plugin Developers"

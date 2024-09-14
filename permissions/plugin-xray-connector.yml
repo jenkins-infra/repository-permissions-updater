@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/xray-connector"
 developers:
-  - "xpandit"
-  - "xrayjenkins"
+  - ldap: "xpandit"
+  - ldap: "xrayjenkins"
+  - github: "bitcoder"
+  - github: "dipeca"
+repository_team: "xray-connector-plugin Developers"

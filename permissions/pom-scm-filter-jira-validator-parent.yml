@@ -4,4 +4,9 @@ github: "jenkinsci/scm-filter-jira-validator-plugin"
 paths:
   - "org/jenkins-ci/plugins/scm-filter-jira-validator-parent"
 developers:
-  - "askalski85"
+  - ldap: "askalski85"
+    github: "askalski85"
+repository_team: "scm-filter-jira-validator-plugin Developers"
+additional_github_teams:
+  - team: "branch-source-jira-validator-traits-plugin Developers"
+    role: "Admin"

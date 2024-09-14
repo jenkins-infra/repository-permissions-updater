@@ -6,4 +6,6 @@ issues:
 paths:
   - "by/dev/madhead/doktor/doktor"
 developers:
-  - "madhead"
+  - ldap: "madhead"
+    github: "madhead"
+repository_team: "doktor-plugin Developers"

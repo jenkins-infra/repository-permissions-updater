@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/content-replace"
 developers:
-  - "moxun"
+  - ldap: "moxun"
+  - github: "moxun1639"
+repository_team: "content-replace-plugin Developers"

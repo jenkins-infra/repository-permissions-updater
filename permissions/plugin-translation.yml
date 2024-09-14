@@ -6,6 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/translation"
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "recena"
+  - ldap: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "recena"
+repository_team: "translation-plugin Developers"

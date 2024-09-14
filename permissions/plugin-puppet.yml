@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/puppet"
 developers:
-  - "kohsuke"
+  - ldap: "kohsuke"
+    github: "kohsuke"
+  - github: "fbelzunc"
+repository_team: "puppet-plugin Developers"

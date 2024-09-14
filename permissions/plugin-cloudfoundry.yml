@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloudfoundry"
 developers:
-  - "williamg"
-  - "olamy"
-  - "sworisbreathing"
+  - ldap: "williamg"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "sworisbreathing"
+    github: "sworisbreathing"
+  - github: "WGautier"
+repository_team: "cloudfoundry-plugin Developers"

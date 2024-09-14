@@ -7,4 +7,7 @@ paths:
   - "org/jenkins-ci/plugins/play-autotest-plugin"
   - "org/jvnet/hudson/plugins/play-autotest-plugin"
 developers:
-  - "rafaelrezend"
+  - ldap: "rafaelrezend"
+    github: "rafaelrezend"
+  - github: "ikeike443"
+repository_team: "play-plugin Developers"

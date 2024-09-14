@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloudbees-devoptics-enabler"
 developers:
-  - "jordanglassman"
+  - ldap: "jordanglassman"
+    github: "jordanglassman"
+  - github: "tfennelly"
+repository_team: "cloudbees-devoptics-enabler-plugin Developers"

@@ -6,6 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cerberus-testing"
 developers:
-  - "nicodeur"
-  - "vertigo17"
-  - "gotier"
+  - ldap: "nicodeur"
+    github: "nicodeur"
+  - ldap: "vertigo17"
+    github: "vertigo17"
+  - ldap: "gotier"
+  - github: "abourdon"
+  - github: "bcivel"
+repository_team: "cerberus-testing-plugin Developers"

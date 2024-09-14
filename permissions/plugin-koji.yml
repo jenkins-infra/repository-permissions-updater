@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/koji"
 developers:
-  - "orrc"
-  - "vtunka"
+  - ldap: "orrc"
+  - ldap: "vtunka"
+    github: "vtunka"
+repository_team: "koji-plugin Developers"

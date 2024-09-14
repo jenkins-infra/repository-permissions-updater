@@ -2,10 +2,12 @@
 name: "mariadb-api"
 github: &GH "jenkinsci/mariadb-api-plugin"
 paths:
-- "io/jenkins/plugins/mariadb-api"
+  - "io/jenkins/plugins/mariadb-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "mariadb-api-plugin Developers"

@@ -4,9 +4,12 @@ github: &GH "jenkinsci/huaweicloud-ecs-plugin"
 paths:
   - "io/jenkins/plugins/huaweicloud-ecs"
 developers:
-  - "xwz_qmxx"
-  - "zengchen1024"
+  - ldap: "xwz_qmxx"
+  - ldap: "zengchen1024"
+    github: "zengchen1024"
+  - github: "xwz123"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "huaweicloud-ecs-plugin Developers"

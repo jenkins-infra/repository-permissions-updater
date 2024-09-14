@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-cli"
 developers:
-  - "torosent"
+  - ldap: "torosent"
+    github: "torosent"
+repository_team: "azure-cli-plugin Developers"

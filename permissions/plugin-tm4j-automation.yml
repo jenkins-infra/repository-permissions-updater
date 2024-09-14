@@ -6,4 +6,8 @@ issues:
 paths:
   - "com/adaptavist/tm4j-automation"
 developers:
-  - "vpelizza"
+  - ldap: "vpelizza"
+  - github: "otaviomedeiros"
+  - github: "pelizza"
+  - github: "chicofaccin"
+repository_team: "tm4j-automation-plugin Developers"

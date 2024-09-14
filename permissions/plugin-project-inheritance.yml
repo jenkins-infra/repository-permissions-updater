@@ -3,4 +3,4 @@ name: "project-inheritance"
 paths:
   - "hudson/plugins/project-inheritance"
 developers:
-  - "mhschroe"
+  - ldap: "mhschroe"

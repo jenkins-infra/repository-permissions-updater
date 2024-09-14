@@ -5,4 +5,6 @@ issues:
   - jira: '17663'  # call-remote-job-plugin
 paths:
   - "org/ukiuni/callOtherJenkins/call-remote-job-plugin"
-developers: []
+developers:
+  - github: "ukiuni"
+repository_team: "call-remote-job-plugin Developers"

@@ -7,6 +7,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/prometheus"
 developers:
-  - "waschndolos"
+  - ldap: "waschndolos"
+  - github: "lsjostro"
+  - github: "Waschndolos"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "prometheus-plugin Developers"

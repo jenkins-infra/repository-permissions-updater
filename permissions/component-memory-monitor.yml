@@ -4,4 +4,8 @@ github: "jenkinsci/extras-memory-monitor"
 paths:
   - "org/jenkins-ci/memory-monitor"
 developers:
-  - "@core"
+  - ldap: "@core"
+repository_team: "extras-memory-monitor Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

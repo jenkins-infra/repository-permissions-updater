@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/persistent-parameter"
 developers:
-  - "greg2001"
+  - ldap: "greg2001"
+    github: "greg2001"
+repository_team: "persistent-parameter-plugin Developers"

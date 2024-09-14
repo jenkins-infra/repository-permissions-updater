@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/zephyr-for-jira-test-management"
 developers:
-  - "zeedeveloper"
-  - "mohanzephyr"
+  - ldap: "zeedeveloper"
+    github: "zeedeveloper"
+  - ldap: "mohanzephyr"
+  - github: "sxm20"
+  - github: "mohan-zephyr"
+repository_team: "zephyr-for-jira-test-management-plugin Developers"

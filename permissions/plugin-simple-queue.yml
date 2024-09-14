@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/simple-queue"
 developers:
-  - "otradovec"
-  - "judovana"
+  - ldap: "otradovec"
+    github: "otradovec"
+  - ldap: "judovana"
+    github: "judovana"
+repository_team: "simple-queue-plugin Developers"

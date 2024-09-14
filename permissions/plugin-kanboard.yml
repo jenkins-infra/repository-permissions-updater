@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/kanboard"
 developers:
-  - "mably"
+  - ldap: "mably"
+additional_github_teams:
+  - team: "kanboard-publisher-plugin Developers"
+    role: "Admin"

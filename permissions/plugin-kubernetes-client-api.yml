@@ -6,15 +6,22 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/kubernetes-client-api"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "csanchez"
-  - "vlatombe"
-  - "jglick"
-  - "teilo"
-  - "agentgonzo"
-  - "kylecronin"
-  - "@cloudbees-developers"
+  - ldap: "csanchez"
+  - ldap: "vlatombe"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "teilo"
+  - ldap: "agentgonzo"
+  - ldap: "kylecronin"
+  - ldap: "@cloudbees-developers"
+  - github: "Vlatombe"
+  - github: "jtnord"
+  - github: "amuniz"
+  - github: "cronik"
+  - github: "timothydowney"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "kubernetes-client-api-plugin Developers"

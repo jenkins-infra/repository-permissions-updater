@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/slack-uploader"
 developers:
-  - "masterlittle"
+  - ldap: "masterlittle"
+    github: "masterlittle"
+repository_team: "slack-uploader-plugin Developers"

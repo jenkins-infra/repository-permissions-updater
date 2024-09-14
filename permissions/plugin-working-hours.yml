@@ -7,4 +7,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/working-hours"
 developers:
-  - "jeffpearce"
+  - ldap: "jeffpearce"
+repository_team: "working-hours-plugin Developers"

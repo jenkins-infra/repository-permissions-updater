@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/python"
 developers:
-  - "jhasse"
+  - ldap: "jhasse"
+    github: "jhasse"
+repository_team: "python-plugin Developers"

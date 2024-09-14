@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/hsts-filter-plugin"
 developers: []
 cd:
-  enabled: true
+    enabled: true
+repository_team: "hsts-filter-plugin Developers"

@@ -6,8 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/teamconcert-git"
 developers:
-  - "lvaikunt"
-  - "davidjwriter"
-  - "sbabno"
-  - "nitinjirawal"
-  - "sahilkmansuriibm"
+  - ldap: "lvaikunt"
+    github: "lvaikunt"
+  - ldap: "davidjwriter"
+  - ldap: "sbabno"
+  - ldap: "nitinjirawal"
+  - ldap: "sahilkmansuriibm"
+    github: "sahilkmansuriibm"
+  - github: "clkkishore"
+repository_team: "teamconcert-git-plugin Developers"

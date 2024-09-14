@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/html5-notifier-plugin"
 developers: []
+repository_team: "html5-notifier-plugin Developers"

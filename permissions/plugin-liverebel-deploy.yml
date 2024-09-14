@@ -5,4 +5,9 @@ issues:
   - jira: '15975'  # liverebel-deploy-plugin
 paths:
   - "org/jenkins-ci/plugins/liverebel-deploy"
-developers: []
+developers:
+  - github: "toomasr"
+  - github: "glebsts"
+  - github: "DracoAter"
+  - github: "mirkozt"
+repository_team: "liverebel-deploy-plugin Developers"

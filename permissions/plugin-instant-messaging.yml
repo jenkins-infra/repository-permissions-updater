@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/instant-messaging"
 developers:
-  - "kutzi"
-  - "jimklimov"
+  - ldap: "kutzi"
+  - ldap: "jimklimov"
+    github: "jimklimov"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "instant-messaging-plugin Developers"

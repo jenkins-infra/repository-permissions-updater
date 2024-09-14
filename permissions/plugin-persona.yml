@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/persona"
 developers: []
+repository_team: "persona-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/joeo/plugins/influxdb-query"
 developers:
-  - "joe99000"
+  - ldap: "joe99000"
+  - github: "JoeOffenberg"
+repository_team: "influxdb-query-plugin Developers"

@@ -6,7 +6,11 @@ issues:
 paths:
   - "com/ibm/devops/urbancode-velocity"
 developers:
-  - "aberkIBM"
-  - "urbancode_velocity"
-  - "crjenkins89"
-  - "anthill"
+  - ldap: "aberkIBM"
+    github: "aberkIBM"
+  - ldap: "urbancode_velocity"
+  - ldap: "crjenkins89"
+    github: "crjenkins89"
+  - ldap: "anthill"
+  - github: "aboe026"
+repository_team: "urbancode-velocity-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/webhook-eventsource"
 developers:
-  - "surenpi"
+  - ldap: "surenpi"
+  - github: "LinuxSuRen"
+repository_team: "webhook-eventsource-plugin Developers"

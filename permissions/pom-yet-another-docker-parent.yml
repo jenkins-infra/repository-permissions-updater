@@ -3,4 +3,4 @@ name: "yet-another-docker-parent"
 paths:
   - "com/github/kostyasha/yet-another-docker/yet-another-docker-parent"
 developers:
-  - "integer"
+  - ldap: "integer"

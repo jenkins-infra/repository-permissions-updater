@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/artifact-repository-parameter"
 developers:
-  - "fkh"
+  - ldap: "fkh"
+  - github: "frieder"
+repository_team: "artifact-repository-parameter-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/appdynamics-dashboard"
 developers:
-  - "mdonkers"
+  - ldap: "mdonkers"
+additional_github_teams:
+  - team: "codecentric-appdynamics-plugin Developers"
+    role: "Admin"

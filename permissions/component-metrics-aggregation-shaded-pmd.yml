@@ -4,4 +4,7 @@ github: "jenkinsci/metrics-aggregation-plugin"
 paths:
   - "io/jenkins/plugins/metrics-aggregation-shaded-pmd"
 developers:
-  - "andipabst"
+  - ldap: "andipabst"
+    github: "andipabst"
+  - github: "jenkinsadmin"
+repository_team: "metrics-aggregation-plugin Developers"

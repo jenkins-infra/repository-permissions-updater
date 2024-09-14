@@ -4,14 +4,21 @@ github: &GH "jenkinsci/oidc-provider-plugin"
 paths:
   - "io/jenkins/plugins/oidc-provider"
 developers:
-  - "jglick"
-  - "escoem"
-  - "fcojfernandez"
-  - "@cloudbees-developers"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "escoem"
+    github: "escoem"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "@cloudbees-developers"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *GH
+repository_team: "oidc-provider-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Admin"

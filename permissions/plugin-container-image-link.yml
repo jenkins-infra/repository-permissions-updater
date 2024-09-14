@@ -4,8 +4,10 @@ github: &GH "jenkinsci/container-image-link-plugin"
 paths:
   - "io/jenkins/plugins/container-image-link"
 developers:
-  - "gabocuadros"
+  - ldap: "gabocuadros"
+  - github: "gabo89"
 issues:
   - jira: 28921
 cd:
-  enabled: true
+    enabled: true
+repository_team: "container-image-link-plugin Developers"

@@ -7,9 +7,17 @@ issues:
 paths:
   - "io/jenkins/plugins/audit-log"
 developers:
-  - "jvz"
-  - "lathasekar"
-  - "mide"
+  - ldap: "jvz"
+    github: "jvz"
+  - ldap: "lathasekar"
+  - ldap: "mide"
+  - github: "bitwiseman"
+  - github: "davidolorundare"
+  - github: "Lathaguna"
+  - github: "jeffret-b"
+  - github: "gayathrirajendar"
+  - github: "aarthira"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "audit-log-plugin Developers"

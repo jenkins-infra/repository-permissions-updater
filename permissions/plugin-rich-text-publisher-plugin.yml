@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rich-text-publisher-plugin"
 developers:
-  - "masterhard"
+  - ldap: "masterhard"
+    github: "masterhard"
+repository_team: "rich-text-publisher-plugin Developers"

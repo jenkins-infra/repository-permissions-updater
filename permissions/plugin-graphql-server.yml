@@ -6,3 +6,4 @@ issues:
 paths:
   - "io/jenkins/plugins/graphql-server"
 developers: []
+repository_team: "graphql-server-plugin Developers"

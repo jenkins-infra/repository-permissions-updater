@@ -2,8 +2,12 @@
 name: "report-generic-chart-column"
 github: &GH "jenkinsci/report-generic-chart-column-plugin"
 paths:
-- "io/jenkins/plugins/report-generic-chart-column"
+  - "io/jenkins/plugins/report-generic-chart-column"
 developers:
-- "judovana"
+  - ldap: "judovana"
+    github: "judovana"
+  - github: "RadekCap"
+  - github: "zzambers"
 issues:
   - github: *GH
+repository_team: "report-generic-chart-column-plugin Developers"

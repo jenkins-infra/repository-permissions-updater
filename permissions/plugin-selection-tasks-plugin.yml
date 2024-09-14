@@ -5,4 +5,6 @@ issues:
   - jira: '16054'  # selection-tasks-plugin
 paths:
   - "org/jvnet/hudson/plugins/selection-tasks-plugin"
-developers: []
+developers:
+  - github: "nzhelyakov"
+repository_team: "selection-tasks-plugin Developers"

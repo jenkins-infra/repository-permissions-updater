@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cucumber-slack-notifier"
 developers:
-  - "garethjevans"
-  - "ffrangipane"
-  - "alecharp"
+  - ldap: "garethjevans"
+    github: "garethjevans"
+  - ldap: "ffrangipane"
+  - ldap: "alecharp"
+    github: "alecharp"
+  - github: "foxhound91"
+repository_team: "cucumber-slack-notifier-plugin Developers"

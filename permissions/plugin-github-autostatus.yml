@@ -7,4 +7,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/github-autostatus"
 developers:
-  - "jeffpearce"
+  - ldap: "jeffpearce"
+repository_team: "github-autostatus-plugin Developers"

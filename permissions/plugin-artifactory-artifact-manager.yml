@@ -2,10 +2,12 @@
 name: "artifactory-artifact-manager"
 github: &GH "jenkinsci/artifactory-artifact-manager-plugin"
 paths:
-- "io/jenkins/plugins/artifactory-artifact-manager"
+  - "io/jenkins/plugins/artifactory-artifact-manager"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "artifactory-artifact-manager-plugin Developers"

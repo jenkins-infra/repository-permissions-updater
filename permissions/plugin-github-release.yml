@@ -2,10 +2,12 @@
 name: "github-release"
 github: &GH "jenkinsci/github-release-plugin"
 paths:
-- "io/jenkins/plugins/github-release"
+  - "io/jenkins/plugins/github-release"
 developers:
-- "jcustenborder"
+  - ldap: "jcustenborder"
+    github: "jcustenborder"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "github-release-plugin Developers"

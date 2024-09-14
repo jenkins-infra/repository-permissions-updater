@@ -6,4 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/eggplant-plugin"
 developers:
-  - "iantestplant"
+  - ldap: "iantestplant"
+    github: "iantestplant"
+  - github: "JonathanOSX"
+  - github: "allenfisher"
+  - github: "ryantestplant"
+repository_team: "eggplant-plugin Developers"

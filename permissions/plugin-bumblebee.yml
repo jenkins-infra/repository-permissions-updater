@@ -4,4 +4,6 @@ github: "jenkinsci/bumblebee-plugin"
 paths:
   - "org/jenkins-ci/plugins/bumblebee"
 developers:
-  - "agiletestware"
+  - ldap: "agiletestware"
+  - github: "aymanBA92"
+repository_team: "bumblebee-plugin Developers"

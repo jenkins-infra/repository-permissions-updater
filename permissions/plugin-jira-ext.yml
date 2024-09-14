@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jira-ext"
 developers:
-  - "dalvizu"
+  - ldap: "dalvizu"
+    github: "dalvizu"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "jira-ext-plugin Developers"

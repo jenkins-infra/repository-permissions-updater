@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/osf-builder-suite-for-sfcc-run-job"
 developers:
-  - "danechitoaie"
+  - ldap: "danechitoaie"
+    github: "danechitoaie"
+  - github: "jenkinsadmin"
+repository_team: "osf-builder-suite-for-sfcc-run-job-plugin Developers"

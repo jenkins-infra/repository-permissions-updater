@@ -2,10 +2,12 @@
 name: "matrix-communication"
 github: &GH "jenkinsci/matrix-communication-plugin"
 paths:
-- "io/jenkins/plugins/matrix-communication"
+  - "io/jenkins/plugins/matrix-communication"
 developers:
-- "reda_alaoui"
+  - ldap: "reda_alaoui"
+  - github: "reda-alaoui"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "matrix-communication-plugin Developers"

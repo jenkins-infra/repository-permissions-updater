@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/testinium/jenkins/testinium"
 developers:
-  - "erhangullu"
-  - "erdoganonur"
+  - ldap: "erhangullu"
+  - ldap: "erdoganonur"
+    github: "erdoganonur"
+  - github: "egullusahabt"
+repository_team: "testinium-plugin Developers"

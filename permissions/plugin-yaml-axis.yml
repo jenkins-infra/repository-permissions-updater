@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/yaml-axis"
 developers:
-  - "sue445"
+  - ldap: "sue445"
+    github: "sue445"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "yaml-axis-plugin Developers"

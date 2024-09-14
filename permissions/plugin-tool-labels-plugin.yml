@@ -3,5 +3,5 @@ name: "tool-labels-plugin"
 paths:
   - "org/jenkins-ci/plugins/tool-labels-plugin"
 developers:
-  - "kazssym"
-  - "mPokornyETM"
+  - ldap: "kazssym"
+  - ldap: "mPokornyETM"

@@ -2,10 +2,13 @@
 name: "amazon-inspector-image-scanner"
 github: &GH "jenkinsci/amazon-inspector-image-scanner-plugin"
 paths:
-- "io/jenkins/plugins/amazon-inspector-image-scanner"
+  - "io/jenkins/plugins/amazon-inspector-image-scanner"
 developers:
-- "inspector_opensource"
+  - ldap: "inspector_opensource"
+  - github: "cjbaco"
+  - github: "waltwilo"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "amazon-inspector-image-scanner-plugin Developers"

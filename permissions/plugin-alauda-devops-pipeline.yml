@@ -6,6 +6,9 @@ issues:
 paths:
   - "com/alauda/jenkins/plugins/alauda-devops-pipeline"
 developers:
-  - "surenpi"
-  - "danielfbm"
-  - "chengjingtao"
+  - ldap: "surenpi"
+  - ldap: "danielfbm"
+    github: "danielfbm"
+  - ldap: "chengjingtao"
+  - github: "LinuxSuRen"
+repository_team: "alauda-devops-pipeline-plugin Developers"

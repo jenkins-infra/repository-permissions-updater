@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/aws-beanstalk-releaser"
 developers:
-  - "visiontech"
+  - ldap: "visiontech"
+  - github: "VisiontechGitHub"
+repository_team: "aws-beanstalk-releaser-plugin Developers"

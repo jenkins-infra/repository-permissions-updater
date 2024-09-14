@@ -6,4 +6,6 @@ issues:
 paths:
   - "jenkins/plugins/mqtt-notification-plugin"
 developers:
-  - "gareth_western"
+  - ldap: "gareth_western"
+  - github: "gdubya"
+repository_team: "mqtt-notification-plugin Developers"

@@ -7,5 +7,7 @@ issues:
 paths:
   - "net/masterthought/jenkins/cucumber-reports"
 developers:
-  - "dszczepanik"
-  - "kingsleyh"
+  - ldap: "dszczepanik"
+  - ldap: "kingsleyh"
+  - github: "damianszczepanik"
+repository_team: "cucumber-reports-plugin Developers"

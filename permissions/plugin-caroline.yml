@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/caroline"
 developers: []
+repository_team: "caroline-plugin Developers"

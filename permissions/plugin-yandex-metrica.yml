@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/yandex-metrica"
 developers:
-  - "vbauer"
+  - ldap: "vbauer"
+    github: "vbauer"
+repository_team: "yandex-metrica-plugin Developers"

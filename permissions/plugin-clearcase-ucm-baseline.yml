@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/clearcase-ucm-baseline"
 developers: []
+repository_team: "clearcase-ucm-baseline-plugin Developers"

@@ -6,12 +6,17 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ldap"
 developers:
-  - "andresrc"
-  - "kohsuke"
-  - "rsandell"
-  - "@cloudbees-developers"
+  - ldap: "andresrc"
+  - ldap: "kohsuke"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "@cloudbees-developers"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "ldap-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Write"

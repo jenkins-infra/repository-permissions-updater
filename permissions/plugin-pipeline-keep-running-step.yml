@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/pipeline-keep-running-step"
 developers:
-  - "hummerstudio"
+  - ldap: "hummerstudio"
+    github: "hummerstudio"
+repository_team: "pipeline-keep-running-step-plugin Developers"

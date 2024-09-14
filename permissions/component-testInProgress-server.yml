@@ -4,4 +4,7 @@ github: "jenkinsci/testInProgress-plugin"
 paths:
   - "org/jenkins-ci/plugins/testInProgress-server"
 developers:
-  - "cchabanois"
+  - ldap: "cchabanois"
+    github: "cchabanois"
+  - github: "menonvarun"
+repository_team: "testInProgress-plugin Developers"

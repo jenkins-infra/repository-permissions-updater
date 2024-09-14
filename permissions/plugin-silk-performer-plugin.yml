@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/silk-performer-plugin"
 developers:
-  - "silk"
-  - "mihai_virag"
+  - ldap: "silk"
+  - ldap: "mihai_virag"
+  - github: "SilkPerformer"
+repository_team: "silk-performer-plugin Developers"

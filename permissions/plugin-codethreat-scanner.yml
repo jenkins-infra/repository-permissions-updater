@@ -2,11 +2,13 @@
 name: "codethreat-scanner"
 github: &GH "jenkinsci/codethreat-scanner-plugin"
 paths:
-- "io/jenkins/plugins/codethreat-scanner"
+  - "io/jenkins/plugins/codethreat-scanner"
 developers:
-  - "codethreat"
-  - "thyldrm"
+  - ldap: "codethreat"
+  - ldap: "thyldrm"
+    github: "thyldrm"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "codethreat-scanner-plugin Developers"

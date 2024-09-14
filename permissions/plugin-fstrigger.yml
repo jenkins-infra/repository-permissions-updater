@@ -7,5 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fstrigger"
 developers:
-  - "gbois"
-  - "stealthdj"
+  - ldap: "gbois"
+  - ldap: "stealthdj"
+  - github: "TonyNoble"
+repository_team: "fstrigger-plugin Developers"

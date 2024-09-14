@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/rad-builder"
 developers: []
+repository_team: "rad-builder-plugin Developers"

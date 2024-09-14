@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/arkea/satd/stoplightio-report"
 developers:
-  - "ntiss"
+  - ldap: "ntiss"
+    github: "ntiss"
+repository_team: "stoplightio-report-plugin Developers"

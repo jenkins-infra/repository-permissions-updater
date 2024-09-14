@@ -4,6 +4,8 @@ github: &GH "jenkinsci/neuro-cucumber-plugin"
 paths:
   - "io/jenkins/plugins/neuro-cucumber"
 developers:
-  - "neuro_support"
+  - ldap: "neuro_support"
+  - github: "neuro-support"
 issues:
   - github: *GH
+repository_team: "neuro-cucumber-plugin Developers"

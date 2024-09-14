@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/dbforge-devops-automation-for-sqlserver"
 developers:
-  - "devart"
+  - ldap: "devart"
+  - github: "JordanS22"
+repository_team: "dbforge-devops-automation-for-sqlserver-plugin Developers"

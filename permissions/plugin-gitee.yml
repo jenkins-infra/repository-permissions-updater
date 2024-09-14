@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gitee"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "yashin"
-  - "markewaite"
+  - ldap: "yashin"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+  - github: "yashin-luo"
+repository_team: "gitee-plugin Developers"

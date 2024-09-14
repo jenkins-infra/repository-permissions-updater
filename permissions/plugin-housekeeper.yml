@@ -4,4 +4,7 @@ github: "jenkinsci/housekeeper-plugin"
 paths:
   - "org/jenkins-ci/plugins/housekeeper"
 developers:
-  - "scarytom"
+  - ldap: "scarytom"
+    github: "scarytom"
+  - github: "jenkinsadmin"
+repository_team: "housekeeper-plugin Developers"

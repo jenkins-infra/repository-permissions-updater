@@ -4,13 +4,17 @@ github: &GH "jenkinsci/commons-lang3-api-plugin"
 paths:
   - "io/jenkins/plugins/commons-lang3-api"
 developers:
-  - "nhojpatrick"
-  - "timja"
-  - "markewaite"
+  - ldap: "nhojpatrick"
+    github: "nhojpatrick"
+  - ldap: "timja"
+    github: "timja"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "commons-lang3-api-plugin Developers"

@@ -6,16 +6,25 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jsch"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "zregvart"
-  - "ljader"
-  - "oleg_nenashev"
-  - "dnusbaum"
-  - "teilo"
-  - "carroll"
-  - "rsandell"
-  - "olamy"
+  - ldap: "zregvart"
+    github: "zregvart"
+  - ldap: "ljader"
+    github: "ljader"
+  - ldap: "oleg_nenashev"
+  - ldap: "dnusbaum"
+  - ldap: "teilo"
+  - ldap: "carroll"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "olamy"
+    github: "olamy"
+  - github: "jtnord"
+  - github: "dwnusbaum"
+  - github: "oleg-nenashev"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "jsch-plugin Developers"

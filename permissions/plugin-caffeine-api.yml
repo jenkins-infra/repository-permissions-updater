@@ -4,16 +4,25 @@ github: &GH "jenkinsci/caffeine-api-plugin"
 paths:
   - "io/jenkins/plugins/caffeine-api"
 developers:
-  - "teilo"
-  - "rsandell"
-  - "carroll"
-  - "olamy"
-  - "alecharp"
-  - "bitwiseman"
+  - ldap: "teilo"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "alecharp"
+    github: "alecharp"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - github: "batmat"
+  - github: "jtnord"
+  - github: "MRamonLeon"
+  - github: "car-roll"
 issues:
   - jira: 28622
 cd:
-  enabled: true
+    enabled: true
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "caffeine-api-plugin Developers"

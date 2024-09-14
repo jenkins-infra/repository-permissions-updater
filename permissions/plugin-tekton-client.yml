@@ -2,12 +2,15 @@
 name: "tekton-client"
 github: &gh "jenkinsci/tekton-client-plugin"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 issues:
   - github: *gh
 paths:
   - "org/waveywaves/jenkins/plugins/tekton-client"
 developers:
-  - "waveywaves"
-  - "garethjevans"
+  - ldap: "waveywaves"
+    github: "waveywaves"
+  - ldap: "garethjevans"
+    github: "garethjevans"
+repository_team: "tekton-client-plugin Developers"

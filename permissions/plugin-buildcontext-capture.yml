@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/buildcontext-capture"
 developers: []
+repository_team: "buildcontext-capture-plugin Developers"

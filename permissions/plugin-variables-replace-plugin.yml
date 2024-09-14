@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/jeeday/jenkins/variables-replace-plugin"
 developers:
-  - "jeeday"
+  - ldap: "jeeday"
+  - github: "jeandonaldroselin"
+repository_team: "variables-replace-plugin Developers"

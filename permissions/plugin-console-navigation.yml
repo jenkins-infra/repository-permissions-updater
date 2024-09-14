@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/console-navigation"
 developers:
-  - "bnova_stefan"
+  - ldap: "bnova_stefan"
+  - github: "bnova-stefan"
+repository_team: "console-navigation-plugin Developers"

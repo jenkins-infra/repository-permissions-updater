@@ -7,7 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-chat-notification"
 developers:
-  - "cnaik"
-  - "thiagoc"
+  - ldap: "cnaik"
+  - ldap: "thiagoc"
+  - github: "Ryudo302"
+  - github: "chiragnaik"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "google-chat-notification-plugin Developers"

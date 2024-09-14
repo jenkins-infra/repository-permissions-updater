@@ -4,4 +4,6 @@ github: "jenkinsci/ui-test-capture-plugin"
 paths:
   - "org/jenkins-ci/plugins/ui-test-capture"
 developers:
-  - "vbathke"
+  - ldap: "vbathke"
+    github: "vbathke"
+repository_team: "ui-test-capture-plugin Developers"

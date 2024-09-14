@@ -6,4 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/changes-since-last-success"
 developers:
-  - stealthdj
+  - ldap: "stealthdj"
+  - github: "TonyNoble"
+repository_team: "changes-since-last-success-plugin Developers"
+additional_github_teams:
+  - team: "changes-since-last-success Developers"
+    role: "Admin"

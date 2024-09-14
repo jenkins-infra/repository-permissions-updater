@@ -6,5 +6,13 @@ issues:
 paths:
   - "com/veracode/jenkins/veracode-scan"
 developers:
-  - "dennisgu"
-  - "sbuhary"
+  - ldap: "dennisgu"
+  - ldap: "sbuhary"
+    github: "sbuhary"
+  - github: "jenkinsadmin"
+  - github: "dhabolt"
+  - github: "karenlynch"
+  - github: "mathurpranjal"
+  - github: "kkyiu"
+  - github: "dennisgu1"
+repository_team: "veracode-scan-plugin Developers"

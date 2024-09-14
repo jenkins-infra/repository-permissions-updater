@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/chef-identity"
 developers:
-  - "tfitch"
+  - ldap: "tfitch"

@@ -4,11 +4,16 @@ github: &GH "jenkinsci/eggplant-runner-plugin"
 paths:
   - "io/jenkins/plugins/eggplant-runner"
 developers:
-  - "pohkheng"
-  - "poasungoh"
-  - "tingwcho"
-  - "curveenk"
+  - ldap: "pohkheng"
+  - ldap: "poasungoh"
+    github: "poasungoh"
+  - ldap: "tingwcho"
+  - ldap: "curveenk"
+    github: "curveenk"
+  - github: "tingweichoo"
+  - github: "pohkheng2"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "eggplant-runner-plugin Developers"

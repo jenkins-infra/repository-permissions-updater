@@ -7,4 +7,7 @@ issues:
 paths:
   - "com/urbancode/ds/jenkins/plugins/sra-deploy"
 developers:
-  - "tpayne"
+  - ldap: "tpayne"
+  - github: "jenkinsadmin"
+  - github: "kabbyasov"
+repository_team: "sra-deploy-plugin Developers"

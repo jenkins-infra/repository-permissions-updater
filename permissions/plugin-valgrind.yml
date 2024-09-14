@@ -7,4 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/valgrind"
   - "org/jenkinsci/plugins/valgrind/valgrind"
 developers:
-  - "existence"
+  - ldap: "existence"
+  - github: "eXistence"
+repository_team: "valgrind-plugin Developers"

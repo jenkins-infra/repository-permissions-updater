@@ -6,7 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/tuleap-git-branch-source"
 developers:
-  - "vaceletm"
-  - "crobinson"
-  - "tgerbet_enalean"
-  - "erwyn"
+  - ldap: "vaceletm"
+    github: "vaceletm"
+  - ldap: "crobinson"
+  - ldap: "tgerbet_enalean"
+  - ldap: "erwyn"
+  - github: "LeSuisse"
+  - github: "robinsoc"
+repository_team: "tuleap-git-branch-source-plugin Developers"

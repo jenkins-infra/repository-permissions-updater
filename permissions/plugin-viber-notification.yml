@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/viber-notification"
 developers:
-  - "vpuranik"
+  - ldap: "vpuranik"
+  - github: "vinaypuranik"
+repository_team: "viber-notification-plugin Developers"

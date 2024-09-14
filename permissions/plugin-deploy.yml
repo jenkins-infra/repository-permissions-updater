@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/deploy"
 developers:
-  - "jansohn"
+  - ldap: "jansohn"
+    github: "jansohn"
+  - github: "devkiela"
+  - github: "frekele"
+repository_team: "deploy-plugin Developers"

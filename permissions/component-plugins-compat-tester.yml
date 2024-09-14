@@ -4,13 +4,24 @@ github: "jenkinsci/plugin-compat-tester"
 paths:
   - "org/jenkins-ci/tests/plugins-compat-tester-cli"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "kwhetstone"
-  - "jglick"
-  - "andresrc"
-  - "rarabaolaza"
-  - "oleg_nenashev"
-  - "imontero"
-  - "teilo"
-  - "markewaite"
+  - ldap: "kwhetstone"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "andresrc"
+  - ldap: "rarabaolaza"
+  - ldap: "oleg_nenashev"
+  - ldap: "imontero"
+  - ldap: "teilo"
+  - ldap: "markewaite"
+  - github: "jtnord"
+  - github: "imonteroperez"
+  - github: "raul-arabaolaza"
+  - github: "oleg-nenashev"
+  - github: "varyvol"
+  - github: "bmunozm"
+repository_team: "plugin-compat-tester Developers"
+additional_github_teams:
+  - team: "DockerHub Admins"
+    role: "Admin"

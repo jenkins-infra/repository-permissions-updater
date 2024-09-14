@@ -6,6 +6,11 @@ issues:
 paths:
   - "com/cloudbees/jenkins/plugins/mansion-cloud"
 developers:
-  - "michaelneale"
-  - "recampbell"
-  - "ydubreuil"
+  - ldap: "michaelneale"
+  - ldap: "recampbell"
+  - ldap: "ydubreuil"
+    github: "ydubreuil"
+  - github: "kohsuke"
+  - github: "KostyaSha"
+  - github: "daniel-beck"
+repository_team: "mansion-cloud-plugin Developers"

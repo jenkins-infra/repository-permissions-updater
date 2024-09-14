@@ -3,4 +3,4 @@ name: "github-integration-parent"
 paths:
   - "org/jenkins-ci/plugins/github-integration-parent"
 developers:
-  - "integer"
+  - ldap: "integer"

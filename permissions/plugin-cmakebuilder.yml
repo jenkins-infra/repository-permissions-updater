@@ -7,4 +7,8 @@ paths:
   - "hudson/plugins/cmake/cmakebuilder"
   - "org/jenkins-ci/plugins/cmakebuilder"
 developers:
-  - "15knots"
+  - ldap: "15knots"
+    github: "15knots"
+  - github: "jonnyro"
+  - github: "daniel-beck"
+repository_team: "cmakebuilder-plugin Developers"

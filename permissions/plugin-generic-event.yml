@@ -4,8 +4,11 @@ github: &GH "jenkinsci/generic-event-plugin"
 paths:
   - "io/jenkins/plugins/generic-event"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "johnniang"
+  - ldap: "johnniang"
+  - github: "LinuxSuRen"
+  - github: "JohnNiang"
 issues:
   - github: *GH
+repository_team: "generic-event-plugin Developers"

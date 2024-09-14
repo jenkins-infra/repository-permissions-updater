@@ -6,13 +6,19 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cloudbees-jenkins-advisor"
 developers:
-  - "owood"
-  - "kwhetstone"
-  - "kohsuke"
-  - "aheritier"
-  - "pierrebtz"
+  - ldap: "owood"
+  - ldap: "kwhetstone"
+  - ldap: "kohsuke"
+  - ldap: "aheritier"
+    github: "aheritier"
+  - ldap: "pierrebtz"
+  - github: "PierreBtz"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "cloudbees-jenkins-advisor-plugin Developers"
+additional_github_teams:
+  - team: "cloudbees-advisor-plugin Developers"
+    role: "Admin"

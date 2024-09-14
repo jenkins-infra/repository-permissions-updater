@@ -4,4 +4,6 @@ github: "jenkinsci/zapper-plugin"
 paths:
   - "org/jenkins-ci/plugins/zapper"
 developers:
-  - "adedayo"
+  - ldap: "adedayo"
+    github: "adedayo"
+repository_team: "zapper-plugin Developers"

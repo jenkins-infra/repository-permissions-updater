@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-source-plugin"
 developers:
-  - "astroilov"
-  - "gunan"
-  - "tcnghia"
-  - "viglesias"
+  - ldap: "astroilov"
+  - ldap: "gunan"
+  - ldap: "tcnghia"
+  - ldap: "viglesias"
+  - github: "viglesiasce"
+repository_team: "google-source-plugin Developers"

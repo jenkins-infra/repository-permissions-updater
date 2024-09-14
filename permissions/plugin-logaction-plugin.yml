@@ -6,3 +6,4 @@ issues:
 paths:
   - "de/fspengler/hudson/plugin/logaction-plugin"
 developers: []
+repository_team: "logaction-plugin Developers"

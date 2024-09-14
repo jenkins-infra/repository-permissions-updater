@@ -7,7 +7,9 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/platformlabeler"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "markewaite"
-  - "timja"
+  - ldap: "markewaite"
+  - ldap: "timja"
+  - github: "MarkEWaite"
+repository_team: "platformlabeler-plugin Developers"

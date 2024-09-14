@@ -2,12 +2,15 @@
 name: "global-yaml-properties"
 github: &GH "jenkinsci/global-yaml-properties-plugin"
 paths:
-- "io/jenkins/plugins/global-yaml-properties"
+  - "io/jenkins/plugins/global-yaml-properties"
 developers:
-- "vladyslav_kovalov"
-- "berezhinskiy"
-- "dimagr"
+  - ldap: "vladyslav_kovalov"
+  - ldap: "berezhinskiy"
+    github: "berezhinskiy"
+  - ldap: "dimagr"
+  - github: "KovalovVladislav"
 issues:
   - jira: 29132
 cd:
-  enabled: true
+    enabled: true
+repository_team: "global-yaml-properties-plugin Developers"

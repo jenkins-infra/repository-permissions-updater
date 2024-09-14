@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/Parameterized-Remote-Trigger"
 developers:
-  - "kutzi"
-  - "morficus"
-  - "cashlalala"
+  - ldap: "kutzi"
+  - ldap: "morficus"
+    github: "morficus"
+  - ldap: "cashlalala"
+    github: "cashlalala"
+  - github: "TonyNoble"
+repository_team: "parameterized-remote-trigger-plugin Developers"

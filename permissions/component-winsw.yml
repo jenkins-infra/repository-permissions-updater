@@ -3,5 +3,5 @@ name: "winsw"
 paths:
   - "com/sun/winsw/winsw"
 developers:
-  - "oleg_nenashev"
-  - "kohsuke"
+  - ldap: "oleg_nenashev"
+  - ldap: "kohsuke"

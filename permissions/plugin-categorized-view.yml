@@ -7,6 +7,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/categorized-view"
 developers:
-  - "taksan"
-  - "takeuchi"
-  - "mPokornyETM"
+  - ldap: "taksan"
+  - ldap: "takeuchi"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+repository_team: "categorized-view-plugin Developers"
+additional_github_teams:
+  - team: "elastic-axis-plugin Developers"
+    role: "Admin"

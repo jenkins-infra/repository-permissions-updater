@@ -7,9 +7,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jenkins-multijob-plugin"
 developers:
-  - "hagzag"
-  - "yorammi"
-  - "cohencil"
-  - "victor_yousician"
+  - ldap: "hagzag"
+    github: "hagzag"
+  - ldap: "yorammi"
+    github: "yorammi"
+  - ldap: "cohencil"
+  - ldap: "victor_yousician"
+  - github: "balakine"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "jenkins-multijob-plugin Developers"

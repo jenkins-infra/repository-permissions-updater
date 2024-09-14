@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/zintow/dingding-json-pusher"
 developers:
-  - "huijian_zintow"
+  - ldap: "huijian_zintow"
+  - github: "Zintow"
+repository_team: "dingding-json-pusher-plugin Developers"

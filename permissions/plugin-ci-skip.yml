@@ -5,4 +5,6 @@ issues:
   - jira: '18323'  # ci-skip-plugin
 paths:
   - "org/jenkins-ci/ruby-plugins/ci-skip"
-developers: []
+developers:
+  - github: "banyan"
+repository_team: "ci-skip-plugin Developers"

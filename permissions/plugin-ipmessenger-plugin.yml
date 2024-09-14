@@ -5,4 +5,6 @@ issues:
   - jira: '17587'  # ipmessenger-plugin
 paths:
   - "org/jenkins-ci/plugins/ipmessenger-plugin"
-developers: []
+developers:
+  - github: "nabedge"
+repository_team: "ipmessenger-plugin Developers"

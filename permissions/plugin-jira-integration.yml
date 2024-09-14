@@ -2,10 +2,12 @@
 name: "jira-integration"
 github: &GH "jenkinsci/jira-integration-plugin"
 paths:
-- "io/jenkins/plugins/jira-integration"
+  - "io/jenkins/plugins/jira-integration"
 developers:
-- "markrekveld"
+  - ldap: "markrekveld"
+    github: "markrekveld"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "jira-integration-plugin Developers"

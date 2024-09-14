@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/assertthat-bdd-jira"
 developers:
-  - "glib_briia"
+  - ldap: "glib_briia"
+  - github: "glibas"
+repository_team: "assertthat-bdd-jira-plugin Developers"

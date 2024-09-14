@@ -4,8 +4,11 @@ github: &GH "jenkinsci/checkmarx-ast-scanner-plugin"
 paths:
   - "com/checkmarx/jenkins/checkmarx-ast-scanner"
 developers:
-  - "pedrolopecx"
+  - ldap: "pedrolopecx"
+  - github: "pedrompflopes"
+  - github: "diogopcx"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "checkmarx-ast-scanner-plugin Developers"

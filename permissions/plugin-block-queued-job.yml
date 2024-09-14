@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/block-queued-job"
 developers:
-  - "integer"
+  - ldap: "integer"
+  - github: "KostyaSha"
+  - github: "alina-karpovich"
+repository_team: "block-queued-job-plugin Developers"

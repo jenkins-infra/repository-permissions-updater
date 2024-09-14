@@ -6,6 +6,11 @@ issues:
 paths:
   - "com/qasymphony/ci/jenkins/qtest"
 developers:
-  - "s_lachner"
-  - "pjaladi21"
-  - "qasymphony"
+  - ldap: "s_lachner"
+  - ldap: "pjaladi21"
+    github: "pjaladi21"
+  - ldap: "qasymphony"
+  - github: "Slestac"
+  - github: "qasdev"
+  - github: "ole-ya"
+repository_team: "qtest-plugin Developers"

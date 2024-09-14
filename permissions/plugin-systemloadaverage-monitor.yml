@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/systemloadaverage-monitor"
 developers:
-  - "stefanbrausch"
+  - ldap: "stefanbrausch"
+    github: "stefanbrausch"
+repository_team: "systemloadaverage-monitor-plugin Developers"

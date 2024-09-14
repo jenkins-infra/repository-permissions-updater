@@ -6,5 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/tuleap-api"
 developers:
-  - "erwyn"
-  - "crobinson"
+  - ldap: "erwyn"
+  - ldap: "crobinson"
+  - github: "Erwyn"
+  - github: "vaceletm"
+  - github: "LeSuisse"
+  - github: "robinsoc"
+repository_team: "tuleap-api-plugin Developers"

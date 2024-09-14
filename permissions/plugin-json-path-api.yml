@@ -2,10 +2,12 @@
 name: "json-path-api"
 github: &GH "jenkinsci/json-path-api-plugin"
 paths:
-- "io/jenkins/plugins/json-path-api"
+  - "io/jenkins/plugins/json-path-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "json-path-api-plugin Developers"

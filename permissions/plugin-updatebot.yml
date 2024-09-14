@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/updatebot"
 developers:
-  - "jstrachan"
-  - "jrawlings"
-  - "fabric8cd"
+  - ldap: "jstrachan"
+    github: "jstrachan"
+  - ldap: "jrawlings"
+  - ldap: "fabric8cd"
+  - github: "rawlingsj"
+repository_team: "updatebot-plugin Developers"

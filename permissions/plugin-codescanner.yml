@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/codescanner"
 developers: []
+repository_team: "codescanner-plugin Developers"

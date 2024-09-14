@@ -2,11 +2,13 @@
 name: "quali-torque"
 github: &GH "jenkinsci/quali-torque-plugin"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "io/jenkins/plugins/quali-torque"
 developers:
-  - "sasha_quali"
-  - "quali_integrations"
+  - ldap: "sasha_quali"
+  - ldap: "quali_integrations"
+  - github: "ddovbii"
 issues:
   - github: *GH
+repository_team: "quali-torque-plugin Developers"

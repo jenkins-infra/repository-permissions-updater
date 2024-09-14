@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/matrixtieparent"
 developers: []
+repository_team: "matrixtieparent-plugin Developers"

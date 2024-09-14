@@ -7,6 +7,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fortify"
 developers:
-  - "akaryakina"
-  - "youngspark"
-  - "hiro0824"
+  - ldap: "akaryakina"
+    github: "akaryakina"
+  - ldap: "youngspark"
+  - ldap: "hiro0824"
+    github: "hiro0824"
+  - github: "young-s-park"
+repository_team: "fortify-plugin Developers"

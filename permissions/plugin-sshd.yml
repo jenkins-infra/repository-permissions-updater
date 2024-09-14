@@ -6,12 +6,19 @@ issues:
 paths:
   - "org/jenkins-ci/modules/sshd"
 developers:
-  - "ifernandezcalvo"
-  - "jvz"
-  - "oleg_nenashev"
-  - "timja"
+  - ldap: "ifernandezcalvo"
+  - ldap: "jvz"
+  - ldap: "oleg_nenashev"
+  - ldap: "timja"
+  - github: "kuisathaverat"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "sshd-plugin Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Write"
+  - team: "sshd-module Developers"
+    role: "Admin"

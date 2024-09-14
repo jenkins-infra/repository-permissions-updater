@@ -4,4 +4,6 @@ github: "jenkinsci/pipeline-editor-plugin"
 paths:
   - "org/jenkins-ci/plugins/pipeline-editor"
 developers:
-  - "michaelneale"
+  - ldap: "michaelneale"
+    github: "michaelneale"
+repository_team: "pipeline-editor-plugin Developers"

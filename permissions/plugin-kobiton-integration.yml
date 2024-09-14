@@ -2,11 +2,14 @@
 name: "kobiton-integration"
 github: &GH "jenkinsci/kobiton-integration-plugin"
 paths:
-- "io/jenkins/plugins/kobiton-integration"
+  - "io/jenkins/plugins/kobiton-integration"
 developers:
-- "kobiton"
-- "huytunguyen"
+  - ldap: "kobiton"
+  - ldap: "huytunguyen"
+  - github: "pqnga"
+  - github: "huytunguyenn"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "kobiton-integration-plugin Developers"

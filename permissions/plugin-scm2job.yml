@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/scm2job"
 developers:
-  - "stefanbrausch"
+  - ldap: "stefanbrausch"

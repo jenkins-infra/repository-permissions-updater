@@ -6,14 +6,22 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/git-server"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "rsandell"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+    github: "kohsuke"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "git-server-plugin Developers"

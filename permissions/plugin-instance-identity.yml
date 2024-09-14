@@ -6,9 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/modules/instance-identity"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "@core"
+  - ldap: "@core"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

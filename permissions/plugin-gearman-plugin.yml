@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gearman-plugin"
 developers:
-  - "hashar"
+  - ldap: "hashar"
+    github: "hashar"
+  - github: "zaro0508"
+repository_team: "gearman-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/quamotion-cloud"
 developers:
-  - "bartsaintgermain"
+  - ldap: "bartsaintgermain"
+    github: "bartsaintgermain"
+repository_team: "quamotion-cloud-plugin Developers"

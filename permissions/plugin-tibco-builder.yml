@@ -5,4 +5,6 @@ issues:
   - jira: '18154'  # tibco-builder-plugin
 paths:
   - "org/jenkins-ci/plugins/tibco-builder"
-developers: []
+developers:
+  - github: "federicopastore"
+repository_team: "tibco-builder-plugin Developers"

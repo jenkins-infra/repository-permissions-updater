@@ -4,4 +4,7 @@ github: "jenkinsci/jelly"
 paths:
   - "org/jvnet/hudson/commons-jelly-tags-define"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

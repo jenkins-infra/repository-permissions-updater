@@ -6,3 +6,6 @@ issues:
 paths:
   - "hudson/plugins/excludeMatrixParent/excludeMatrixParent"
 developers: []
+additional_github_teams:
+  - team: "exclude-matrix-parent Developers"
+    role: "Admin"

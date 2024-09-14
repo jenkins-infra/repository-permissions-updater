@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/arestocats"
 developers:
-  - "qacwnfq"
+  - ldap: "qacwnfq"

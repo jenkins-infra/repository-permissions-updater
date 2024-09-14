@@ -2,13 +2,15 @@
 name: "apache-httpcomponents-client-5-api"
 github: &GH "jenkinsci/apache-httpcomponents-client-5-api-plugin"
 paths:
-- "io/jenkins/plugins/apache-httpcomponents-client-5-api"
+  - "io/jenkins/plugins/apache-httpcomponents-client-5-api"
 developers:
-- "strangelookingnerd"
+  - ldap: "strangelookingnerd"
+    github: "strangelookingnerd"
 issues:
   - github: *GH
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "apache-httpcomponents-client-5-api-plugin Developers"

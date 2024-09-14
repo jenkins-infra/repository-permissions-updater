@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nutanix-calm"
 developers:
-  - "nutanix_calm"
+  - ldap: "nutanix_calm"
+  - github: "Suryadhulipudi"
+  - github: "HSDeshpande"
+repository_team: "nutanix-calm-plugin Developers"

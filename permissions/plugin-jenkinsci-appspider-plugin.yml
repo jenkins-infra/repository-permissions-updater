@@ -6,5 +6,9 @@ issues:
 paths:
   - "com/rapid7/jenkinsci-appspider-plugin"
 developers:
-  - "rgrimley"
-  - "tmoreland"
+  - ldap: "rgrimley"
+  - ldap: "tmoreland"
+  - github: "nbugash-r7"
+  - github: "rgrimley-r7"
+  - github: "tmoreland-r7"
+repository_team: "appspider-build-scanner-plugin Developers"

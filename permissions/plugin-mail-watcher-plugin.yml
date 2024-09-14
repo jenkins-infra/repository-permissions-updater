@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mail-watcher-plugin"
 developers:
-  - "olivergondza"
-  - "stefan_spieker"
+  - ldap: "olivergondza"
+  - ldap: "stefan_spieker"
+  - github: "StefanSpieker"
+repository_team: "mail-watcher-plugin Developers"

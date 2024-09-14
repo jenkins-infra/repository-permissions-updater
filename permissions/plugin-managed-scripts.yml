@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkinsci/plugins/managed-scripts"
 developers:
-  - "imod"
-  - "gbigenios"
+  - ldap: "imod"
+    github: "imod"
+  - ldap: "gbigenios"
+    github: "gbigenios"
+  - github: "domruf"
+repository_team: "managed-scripts-plugin Developers"

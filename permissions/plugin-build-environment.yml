@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-environment"
 developers:
-  - "stefanbrausch"
+  - ldap: "stefanbrausch"
+additional_github_teams:
+  - team: "logfilesizechecker-plugin Developers"
+    role: "Admin"

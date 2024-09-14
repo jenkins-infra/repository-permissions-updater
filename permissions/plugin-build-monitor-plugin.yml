@@ -7,7 +7,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-monitor-plugin"
 developers:
-  - "janmolak"
-  - "dcendents"
+  - ldap: "janmolak"
+  - ldap: "dcendents"
+  - github: "jan-molak"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "build-monitor-plugin Developers"

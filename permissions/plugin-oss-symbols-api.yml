@@ -2,10 +2,12 @@
 name: "oss-symbols-api"
 github: &GH "jenkinsci/oss-symbols-api-plugin"
 paths:
-- "io/jenkins/plugins/oss-symbols-api"
+  - "io/jenkins/plugins/oss-symbols-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *GH
+repository_team: "oss-symbols-api-plugin Developers"

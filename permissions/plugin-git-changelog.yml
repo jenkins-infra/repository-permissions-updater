@@ -7,4 +7,9 @@ issues:
 paths:
   - "de/wellnerbou/jenkins/git-changelog"
 developers:
-  - "tomasbjerre"
+  - ldap: "tomasbjerre"
+  - github: "paulwellnerbou"
+repository_team: "git-changelog-plugin Developers"
+additional_github_teams:
+  - team: "git-changelog-plugin contributors"
+    role: "Admin"

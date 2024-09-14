@@ -6,8 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/parameterized-scheduler"
 developers:
-  - "batmat"
-  - "colourmeamused"
-  - "raihaan"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "colourmeamused"
+    github: "colourmeamused"
+  - ldap: "raihaan"
+  - github: "res0nance"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "parameterized-scheduler-plugin Developers"

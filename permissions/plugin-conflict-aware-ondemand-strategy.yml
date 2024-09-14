@@ -4,8 +4,10 @@ github: &GH "jenkinsci/conflict-aware-ondemand-strategy-plugin"
 paths:
   - "io/jenkins/plugins/conflict-aware-ondemand-strategy"
 developers:
-  - "jimklimov"
+  - ldap: "jimklimov"
+    github: "jimklimov"
 issues:
   - jira: 28838
 cd:
-  enabled: true
+    enabled: true
+repository_team: "conflict-aware-ondemand-strategy-plugin Developers"

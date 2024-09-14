@@ -6,5 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/flaky-test-handler"
 developers:
-  - "svenjost"
-  - "vtintillier"
+  - ldap: "svenjost"
+  - ldap: "vtintillier"
+    github: "vtintillier"
+  - github: "mythsunwind"
+  - github: "scpeters"
+repository_team: "flaky-test-handler-plugin Developers"
+additional_github_teams:
+  - team: "flaky-test-handler Developers"
+    role: "Write"

@@ -6,5 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/repo"
 developers:
-  - "rsandell"
-  - "typz"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "typz"
+  - github: "aep"
+  - github: "bjarkef"
+  - github: "francoisferrand"
+repository_team: "repo-plugin Developers"

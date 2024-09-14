@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/next-build-number"
 developers:
-  - "akom"
+  - ldap: "akom"
+  - github: "akomakom"
+repository_team: "next-build-number-plugin Developers"

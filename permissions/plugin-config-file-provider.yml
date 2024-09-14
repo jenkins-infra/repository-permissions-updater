@@ -6,14 +6,21 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/config-file-provider"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "imod"
-  - "egutierrez"
-  - "alecharp"
-  - "batmat"
-  - "rsandell"
-  - "jm_meessen"
+  - ldap: "imod"
+  - ldap: "egutierrez"
+  - ldap: "alecharp"
+    github: "alecharp"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "jm_meessen"
+  - github: "jmMeessen"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "config-file-provider-plugin Developers"

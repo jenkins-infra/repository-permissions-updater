@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pagerduty"
 developers:
-  - "alexanderlz"
+  - ldap: "alexanderlz"
+    github: "alexanderlz"
+repository_team: "pagerduty-plugin Developers"

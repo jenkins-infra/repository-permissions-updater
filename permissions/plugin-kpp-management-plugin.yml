@@ -7,4 +7,5 @@ paths:
   - "sic/software/kpp-management-plugin"
 developers: []
 cd:
-  enabled: true
+    enabled: true
+repository_team: "kpp-management-plugin Developers"

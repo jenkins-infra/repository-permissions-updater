@@ -6,4 +6,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/distfork"
 developers:
-  - "teilo"
+  - ldap: "teilo"
+repository_team: "distfork-plugin Developers"

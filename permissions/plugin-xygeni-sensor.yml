@@ -2,9 +2,13 @@
 name: "xygeni-sensor"
 github: &GH "jenkinsci/xygeni-sensor-plugin"
 paths:
-- "io/jenkins/plugins/xygeni-sensor"
+  - "io/jenkins/plugins/xygeni-sensor"
 developers:
-- "luis_rodriguez"
-- "vdlr"
+  - ldap: "luis_rodriguez"
+  - ldap: "vdlr"
+    github: "vdlr"
+  - github: "Garcel"
+  - github: "fcarnicero"
 issues:
   - github: *GH
+repository_team: "xygeni-sensor-plugin Developers"

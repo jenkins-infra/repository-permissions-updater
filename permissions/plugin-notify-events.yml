@@ -6,4 +6,6 @@ issues:
 paths:
   - "events/notify/notify-events"
 developers:
-  - "mear"
+  - ldap: "mear"
+  - github: "matrozov"
+repository_team: "notify-events-plugin Developers"

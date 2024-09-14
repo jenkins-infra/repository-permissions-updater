@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cisco-spark-notifier"
 developers:
-  - "taylorp36"
+  - ldap: "taylorp36"
+  - github: "t-patt"
+repository_team: "cisco-spark-notifier-plugin Developers"

@@ -6,7 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/warnings-ng"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "abayer"
+  - github: "uhafner"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "warnings-ng-plugin Developers"

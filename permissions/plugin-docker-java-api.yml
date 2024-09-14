@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/docker-java-api"
 developers:
-  - "ydubreuil"
-  - "ericcitaire"
+  - ldap: "ydubreuil"
+    github: "ydubreuil"
+  - ldap: "ericcitaire"
+    github: "ericcitaire"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "docker-java-api-plugin Developers"

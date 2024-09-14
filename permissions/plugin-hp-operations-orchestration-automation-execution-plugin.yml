@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hp-operations-orchestration-automation-execution-plugin"
 developers:
-  - "franky4ro"
+  - ldap: "franky4ro"
+  - github: "hpsa"
+  - github: "danalbu"
+  - github: "remusgolgot"
+repository_team: "hp-operations-orchestration-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/shared-objects"
 developers: []
+repository_team: "shared-objects-plugin Developers"

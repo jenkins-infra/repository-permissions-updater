@@ -6,5 +6,9 @@ issues:
 paths:
   - "sh/hyper/plugins/hyper-slaves"
 developers:
-  - "xjimmyshcn"
-  - "xlgao"
+  - ldap: "xjimmyshcn"
+  - ldap: "xlgao"
+  - github: "xlgao-zju"
+  - github: "Jimmy-Xu"
+  - github: "YaoZengzeng"
+repository_team: "hyper-slaves-plugin Developers"

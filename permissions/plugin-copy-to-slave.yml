@@ -7,4 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/copy-to-slave"
   - "org/jvnet/hudson/plugins/copy-to-slave"
 developers:
-  - "svvivek"
+  - ldap: "svvivek"
+  - github: "sshelomentsev"
+repository_team: "copy-to-slave-plugin Developers"

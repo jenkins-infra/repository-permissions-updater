@@ -3,4 +3,7 @@ name: "keep-slave-disconnected"
 github: "jenkinsci/keep-slave-disconnected-plugin"
 paths:
   - "org/jenkins-ci/plugins/keep-slave-disconnected"
-developers: []
+developers:
+  - github: "jenkinsadmin"
+  - github: "daniel-beck"
+repository_team: "keep-slave-disconnected-plugin Developers"

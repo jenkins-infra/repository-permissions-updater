@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aws-batch"
 developers:
-  - "nfultz"
+  - ldap: "nfultz"
+    github: "nfultz"
+repository_team: "aws-batch-plugin Developers"

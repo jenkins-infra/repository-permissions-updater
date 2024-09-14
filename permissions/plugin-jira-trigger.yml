@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jira-trigger"
 developers:
-  - "ceilfors"
+  - ldap: "ceilfors"
+    github: "ceilfors"
+repository_team: "jira-trigger-plugin Developers"

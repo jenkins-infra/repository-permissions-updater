@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/hoiio/jenkins/sms"
 developers: []
+repository_team: "sms-plugin Developers"

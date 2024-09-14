@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bitkeeper"
 developers:
-  - "mdonohue"
+  - ldap: "mdonohue"
+    github: "mdonohue"
+repository_team: "bitkeeper-plugin Developers"

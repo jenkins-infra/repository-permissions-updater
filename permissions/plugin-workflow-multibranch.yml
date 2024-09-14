@@ -6,19 +6,28 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/workflow/workflow-multibranch"
 developers:
-  - "jglick"
-  - "recena"
-  - "abayer"
-  - "svanoort"
-  - "dnusbaum"
-  - "rsandell"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
-  - "jtaboada"
-  - "teilo"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "recena"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "kshultz"
+  - ldap: "jtaboada"
+  - ldap: "teilo"
+  - github: "jtnord"
+  - github: "dwnusbaum"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "workflow-multibranch-plugin Developers"

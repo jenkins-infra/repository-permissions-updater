@@ -6,7 +6,13 @@ issues:
 paths:
   - "org/jvnet/hudson/tools/versionnumber"
 developers:
-  - "bahadir"
-  - "rosberglinhares"
-  - "markewaite"
-  - "poddingue"
+  - ldap: "bahadir"
+  - ldap: "rosberglinhares"
+    github: "rosberglinhares"
+  - ldap: "markewaite"
+  - ldap: "poddingue"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "DenizThatMenace"
+  - github: "jmMeessen"
+repository_team: "versionnumber-plugin Developers"

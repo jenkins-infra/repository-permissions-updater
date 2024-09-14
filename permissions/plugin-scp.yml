@@ -6,4 +6,6 @@ issues:
   - github: *gh
 paths:
   - "org/jvnet/hudson/plugins/scp"
-developers: [] # archived
+developers:    # archived
+  - github: "andresrc"
+repository_team: "scp-plugin Developers"

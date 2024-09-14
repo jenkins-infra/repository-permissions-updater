@@ -5,4 +5,7 @@ paths:
   - "com/infradna/tool"
   - "com/infradna/tool/bridge-method-injector"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

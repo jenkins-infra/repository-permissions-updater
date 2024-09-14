@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mattermost"
 developers:
-  - "jovandeginste"
+  - ldap: "jovandeginste"
+    github: "jovandeginste"
+repository_team: "mattermost-plugin Developers"

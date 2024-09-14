@@ -6,9 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/mstestrunner"
 developers:
-  - "armfergom"
-  - "batmat"
-  - "ido_ran"
+  - ldap: "armfergom"
+  - ldap: "batmat"
+  - ldap: "ido_ran"
+  - github: "ido-ran"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "mstestrunner-plugin Developers"

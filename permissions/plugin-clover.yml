@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/clover"
 developers:
-  - "mparfianowicz"
-  - "marekparf"
+  - ldap: "mparfianowicz"
+  - ldap: "marekparf"
+  - github: "glewandowski"
+  - github: "marek-parfianowicz"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "clover-plugin Developers"

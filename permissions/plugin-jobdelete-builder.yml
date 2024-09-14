@@ -4,4 +4,4 @@ github: "jenkinsci/jobdelete-builder-plugin"
 paths:
   - "org/jenkins-ci/plugins/jobdelete-builder"
 developers:
-  - "sona_tar"
+  - ldap: "sona_tar"

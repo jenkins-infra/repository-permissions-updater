@@ -6,5 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/byteguard-build-actions"
 developers:
-  - "khushboo"
-  - "victor9000"
+  - ldap: "khushboo"
+  - ldap: "victor9000"
+  - github: "Khushboo-Baheti"
+repository_team: "byteguard-build-actions-plugin Developers"

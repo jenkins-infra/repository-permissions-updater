@@ -6,8 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/xvnc"
 developers:
-  - "andresrc"
-  - "jglick"
-  - "levsa"
-  - "olivergondza"
-  - "rsandell"
+  - ldap: "andresrc"
+  - ldap: "jglick"
+  - ldap: "levsa"
+    github: "levsa"
+  - ldap: "olivergondza"
+  - ldap: "rsandell"
+repository_team: "xvnc-plugin Developers"

@@ -6,14 +6,17 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/javadoc"
 developers:
-  - "jglick"
-  - "batmat"
-  - "markewaite"
-  - "oleg_nenashev"
-  - "olivergondza"
-  - "olamy"
+  - ldap: "jglick"
+  - ldap: "batmat"
+  - ldap: "markewaite"
+  - ldap: "oleg_nenashev"
+  - ldap: "olivergondza"
+  - ldap: "olamy"
+  - github: "kohsuke"
+  - github: "MarkEWaite"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "javadoc-plugin Developers"

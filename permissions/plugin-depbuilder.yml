@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/depbuilder"
 developers:
-  - "rsl"
+  - ldap: "rsl"
+  - github: "RoyalSloth"
+repository_team: "depbuilder-plugin Developers"

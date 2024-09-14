@@ -2,8 +2,10 @@
 name: "people-view"
 github: &GH "jenkinsci/people-view-plugin"
 paths:
-- "io/jenkins/plugins/people-view"
+  - "io/jenkins/plugins/people-view"
 developers:
-- "danielbeck"
+  - ldap: "danielbeck"
+  - github: "daniel-beck"
 issues:
   - jira: '29420' # people-view-plugin
+repository_team: "people-view-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/metrics-datadog"
 developers:
-  - "mpapo"
+  - ldap: "mpapo"
+  - github: "mpailloncy"
+repository_team: "metrics-datadog-plugin Developers"

@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cctray-xml"
 developers:
-  - "rahulsom"
+  - ldap: "rahulsom"
+    github: "rahulsom"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "cctray-xml-plugin Developers"

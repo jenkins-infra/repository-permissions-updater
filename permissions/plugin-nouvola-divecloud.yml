@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/nouvola-divecloud"
 developers:
-  - "smacarthur"
+  - ldap: "smacarthur"
+  - github: "smacarth"
+  - github: "prossaro"
+repository_team: "nouvola-divecloud-plugin Developers"

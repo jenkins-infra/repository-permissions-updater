@@ -4,4 +4,8 @@ github: "jenkinsci/analysis-model"
 paths:
   - "edu/hm/hafner/analysis-model"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
+  - github: "jenkinsadmin"
+  - github: "chr42"
+repository_team: "analysis-model Developers"

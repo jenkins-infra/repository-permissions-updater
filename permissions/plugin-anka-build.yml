@@ -6,9 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/anka-build"
 developers:
-  - "asafgurveertu"
-  - "nivkeidan"
-  - "arturmelanchyk"
+  - ldap: "asafgurveertu"
+  - ldap: "nivkeidan"
+  - ldap: "arturmelanchyk"
+    github: "arturmelanchyk"
+  - github: "asafg6"
 security:
-  contacts:
-    jira: "arturmelanchyk"
+    contacts:
+        jira: "arturmelanchyk"
+repository_team: "anka-build-plugin Developers"

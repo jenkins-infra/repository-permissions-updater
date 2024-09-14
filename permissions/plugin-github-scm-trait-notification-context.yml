@@ -4,9 +4,12 @@ github: "jenkinsci/github-scm-trait-notification-context-plugin"
 issues:
   - jira: '23429'  # github-scm-trait-notification-context-plugin
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "org/jenkins-ci/plugins/github-scm-trait-notification-context"
 developers:
-  - "stevenfoster"
-  - "l3ender"
+  - ldap: "stevenfoster"
+  - ldap: "l3ender"
+    github: "l3ender"
+  - github: "steven-foster"
+repository_team: "github-scm-trait-notification-context-plugin Developers"

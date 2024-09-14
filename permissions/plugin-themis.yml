@@ -6,4 +6,7 @@ issues:
 paths:
   - org/jenkins-ci/plugins/themis
 developers:
-  - cteyton
+  - ldap: "cteyton"
+    github: "cteyton"
+  - github: "alightgoesout"
+repository_team: "themis-plugin Developers"

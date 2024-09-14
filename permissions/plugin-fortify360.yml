@@ -5,4 +5,6 @@ issues:
   - jira: '15742'  # fortify360-plugin
 paths:
   - "org/jvnet/hudson/plugins/fortify360/fortify360"
-developers: []
+developers:
+  - github: "akaryakina"
+repository_team: "fortify360-plugin Developers"

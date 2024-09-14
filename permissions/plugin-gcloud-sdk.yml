@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/byclosure/jenkins/plugins/gcloud-sdk"
 developers:
-  - "jrluis"
-  - "jhansche"
+  - ldap: "jrluis"
+    github: "jrluis"
+  - ldap: "jhansche"
+    github: "jhansche"
+repository_team: "gcloud-sdk-plugin Developers"

@@ -4,5 +4,10 @@ github: "jenkinsci/codedx-plugin"
 paths:
   - "org/jenkins-ci/plugins/codedx"
 developers:
-  - "bobbyf_synopsys"
-  - "tylerc_synopsys"
+  - ldap: "bobbyf_synopsys"
+  - ldap: "tylerc_synopsys"
+  - github: "dylemma"
+  - github: "baffles"
+  - github: "KenProle"
+  - github: "phillip-elliott"
+repository_team: "codedx-plugin Developers"

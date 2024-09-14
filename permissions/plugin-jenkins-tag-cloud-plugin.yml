@@ -5,4 +5,6 @@ issues:
   - jira: '17484'  # jenkins-tag-cloud-plugin
 paths:
   - "org/jenkins-ci/plugins/jenkins-tag-cloud-plugin"
-developers: []
+developers:
+  - github: "cvanes"
+repository_team: "tag-cloud-plugin Developers"

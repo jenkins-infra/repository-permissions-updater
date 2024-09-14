@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/flexdeploy"
 developers:
-  - "bhoffman20"
-  - "flexagon9"
+  - ldap: "bhoffman20"
+    github: "bhoffman20"
+  - ldap: "flexagon9"
+    github: "flexagon9"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "flexdeploy-plugin Developers"

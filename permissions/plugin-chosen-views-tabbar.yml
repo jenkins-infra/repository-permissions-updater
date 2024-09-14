@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/chosen-views-tabbar"
 developers:
-  - "taksan"
+  - ldap: "taksan"
+additional_github_teams:
+  - team: "elastic-axis-plugin Developers"
+    role: "Admin"

@@ -2,10 +2,12 @@
 name: "peass-ci"
 github: &GH "jenkinsci/peass-ci-plugin"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "de/peass/peass-ci"
 developers:
-  - "dagere"
+  - ldap: "dagere"
+  - github: "DaGeRe"
 issues:
   - github: *GH
+repository_team: "peass-ci-plugin Developers"

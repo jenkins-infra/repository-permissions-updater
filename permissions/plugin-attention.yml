@@ -3,4 +3,4 @@ name: "attention"
 paths:
   - "org/jenkins-ci/plugins/attention"
 developers:
-  - "hanabishi"
+  - ldap: "hanabishi"

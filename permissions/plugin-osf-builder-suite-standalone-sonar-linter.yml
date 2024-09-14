@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/osf-builder-suite-standalone-sonar-linter"
 developers:
-  - "danechitoaie"
+  - ldap: "danechitoaie"
+    github: "danechitoaie"
+repository_team: "osf-builder-suite-standalone-sonar-linter-plugin Developers"

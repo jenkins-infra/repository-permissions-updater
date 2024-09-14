@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/extreme-feedback"
 developers:
-  - "dvaske"
+  - ldap: "dvaske"
+    github: "dvaske"
+  - github: "knupouls"
+  - github: "emanuelez"
+repository_team: "extreme-feedback-plugin Developers"

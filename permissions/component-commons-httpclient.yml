@@ -4,4 +4,7 @@ github: "jenkinsci/lib-commons-httpclient"
 paths:
   - "commons-httpclient/commons-httpclient"
 developers:
-  - "@core"
+  - ldap: "@core"
+additional_github_teams:
+  - team: "Core"
+    role: "Write"

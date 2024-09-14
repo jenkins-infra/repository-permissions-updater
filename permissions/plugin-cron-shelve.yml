@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cron-shelve"
 developers:
-  - "itow0001"
+  - ldap: "itow0001"
+    github: "itow0001"
+repository_team: "cron-shelve-plugin Developers"

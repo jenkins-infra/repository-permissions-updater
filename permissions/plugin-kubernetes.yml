@@ -6,17 +6,27 @@ issues:
 paths:
   - "org/csanchez/jenkins/plugins/kubernetes"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "csanchez"
-  - "vlatombe"
-  - "jglick"
-  - "jequals5"
-  - "@cloudbees-developers"
-  - "amuniz"
-  - "kerogers"
-  - "aneveux"
-  - "ajard"
+  - ldap: "csanchez"
+  - ldap: "vlatombe"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "jequals5"
+  - ldap: "@cloudbees-developers"
+  - ldap: "amuniz"
+    github: "amuniz"
+  - ldap: "kerogers"
+  - ldap: "aneveux"
+    github: "aneveux"
+  - ldap: "ajard"
+  - github: "carlossg"
+  - github: "marvinthepa"
+  - github: "Vlatombe"
+  - github: "iocanel"
+  - github: "aHenryJard"
+  - github: "kerogers-cloudbees"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "kubernetes-plugin Developers"

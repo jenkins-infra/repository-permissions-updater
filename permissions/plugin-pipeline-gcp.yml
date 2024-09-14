@@ -6,6 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/pipeline-gcp"
 developers:
-  - "enigo"
+  - ldap: "enigo"
+  - github: "Enigo"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pipeline-gcp-plugin Developers"

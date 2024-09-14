@@ -6,7 +6,14 @@ issues:
 paths:
   - "com/amazonaws/aws-codebuild"
 developers:
-  - "subinataws"
-  - "johnhankataw"
-  - "taoyong"
-  - "leobaran_aws"
+  - ldap: "subinataws"
+    github: "subinataws"
+  - ldap: "johnhankataw"
+  - ldap: "taoyong"
+  - ldap: "leobaran_aws"
+  - github: "josephvusich"
+  - github: "johnhankataws"
+  - github: "taoyong-ty-zz"
+  - github: "leoherran-aws"
+  - github: "vgamz"
+repository_team: "aws-codebuild-plugin Developers"

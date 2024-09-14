@@ -6,5 +6,9 @@ issues:
 paths:
   - "com/loadium/jenkins/loadium"
 developers:
-  - "loadium"
-  - "erhangullu"
+  - ldap: "loadium"
+  - ldap: "erhangullu"
+  - github: "egullusahabt"
+  - github: "canb0Testinium"
+  - github: "selcuksozuer"
+repository_team: "loadium-plugin Developers"

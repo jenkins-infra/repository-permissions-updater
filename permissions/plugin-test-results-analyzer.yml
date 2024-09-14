@@ -6,6 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/test-results-analyzer"
 developers:
-  - "menonvarun"
-  - "poddingue"
-  - "mPokornyETM"
+  - ldap: "menonvarun"
+    github: "menonvarun"
+  - ldap: "poddingue"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "jmMeessen"
+repository_team: "test-results-analyzer-plugin Developers"

@@ -6,5 +6,9 @@ issues:
 paths:
   - "hudson/plugins/sctmexecutor/SCTMExecutor"
 developers:
-  - "tofuatjava"
-  - "silk"
+  - ldap: "tofuatjava"
+    github: "tofuatjava"
+  - ldap: "silk"
+  - github: "tofuatgit"
+  - github: "donkaes"
+repository_team: "SCTMExecutor-plugin Developers"

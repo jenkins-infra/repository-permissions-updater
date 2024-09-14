@@ -6,4 +6,6 @@ issues:
 paths:
   - "ws/albors/countjobs-viewstabbar"
 developers:
-  - "ialbors"
+  - ldap: "ialbors"
+    github: "ialbors"
+repository_team: "countjobs-viewstabbar-plugin Developers"

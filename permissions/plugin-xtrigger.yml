@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/xtrigger"
 developers:
-  - "stealthdj"
+  - ldap: "stealthdj"
+  - github: "TonyNoble"
+repository_team: "xtrigger-plugin Developers"

@@ -3,4 +3,4 @@ name: "package-parameter"
 paths:
   - "com/viviquity/jenkins/package-parameter"
 developers:
-  - "d3clan"
+  - ldap: "d3clan"

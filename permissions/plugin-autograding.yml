@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/autograding"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
+  - github: "jenkinsadmin"
+repository_team: "autograding-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/block-build-final-project"
 developers:
-  - "chadrosenquist"
+  - ldap: "chadrosenquist"
+    github: "chadrosenquist"
+repository_team: "block-build-final-project-plugin Developers"

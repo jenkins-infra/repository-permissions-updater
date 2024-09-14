@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/jprt"
   - "org/jvnet/hudson/plugins/jprt"
 developers: []
+repository_team: "jprt-plugin Developers"

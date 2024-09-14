@@ -2,11 +2,16 @@
 name: "machine-learning"
 github: "jenkinsci/machine-learning-plugin"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 issues:
   - jira: '27242'  # machine-learning-plugin
 paths:
   - "io/jenkins/plugins/machine-learning"
 developers:
-  - "loghijiaha"
+  - ldap: "loghijiaha"
+    github: "loghijiaha"
+  - github: "kinow"
+  - github: "imoutsatsos"
+  - github: "shivaylamba"
+repository_team: "machine-learning-plugin Developers"

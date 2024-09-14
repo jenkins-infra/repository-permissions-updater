@@ -3,5 +3,5 @@ name: "gradle-jpi-plugin"
 paths:
   - "org/jenkins-ci/tools/gradle-jpi-plugin"
 developers:
-  - "daspilker"
-  - "sghill"
+  - ldap: "daspilker"
+  - ldap: "sghill"

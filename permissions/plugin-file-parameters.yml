@@ -2,11 +2,13 @@
 name: "file-parameters"
 github: &gh "jenkinsci/file-parameters-plugin"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - github: *gh
 paths:
   - "io/jenkins/plugins/file-parameters"
 developers:
-  - "jglick"
-  - "olamy"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "olamy"
+repository_team: "file-parameters-plugin Developers"

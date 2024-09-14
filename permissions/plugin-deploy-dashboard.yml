@@ -6,7 +6,12 @@ issues:
 paths:
   - "io/jenkins/plugins/deploy-dashboard"
 developers:
-  - "vetal2409"
-  - "namecheap_jenkins"
-  - "StyleT"
-  - "yuriypuchkov"
+  - ldap: "vetal2409"
+    github: "vetal2409"
+  - ldap: "namecheap_jenkins"
+  - ldap: "StyleT"
+    github: "StyleT"
+  - ldap: "yuriypuchkov"
+  - github: "panpuchkov"
+  - github: "oleh-momot"
+repository_team: "deploy-dashboard-plugin Developers"

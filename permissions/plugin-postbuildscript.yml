@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/postbuildscript"
 developers:
-  - "gbois"
-  - "dheid"
+  - ldap: "gbois"
+  - ldap: "dheid"
+    github: "dheid"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "postbuildscript-plugin Developers"

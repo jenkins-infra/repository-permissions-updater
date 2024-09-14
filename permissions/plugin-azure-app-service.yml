@@ -6,4 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-app-service"
 developers:
-  - "zooopx"
+  - ldap: "zooopx"
+  - github: "allxiao"
+  - github: "ArchangelSDY"
+  - github: "zackliu"
+  - github: "chenkennt"
+  - github: "juniwang"
+repository_team: "azure-app-service-plugin Developers"

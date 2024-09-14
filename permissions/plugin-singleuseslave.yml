@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/ruby-plugins/singleuseslave"
 developers:
-  - "claytononeill"
+  - ldap: "claytononeill"

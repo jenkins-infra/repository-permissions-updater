@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/appray"
 developers:
-  - "marci_appray"
-  - "jayzsolt"
+  - ldap: "marci_appray"
+  - ldap: "jayzsolt"
+    github: "jayzsolt"
+  - github: "martonilles"
+repository_team: "appray-plugin Developers"

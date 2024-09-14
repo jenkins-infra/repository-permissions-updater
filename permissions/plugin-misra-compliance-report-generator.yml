@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/misra-compliance-report-generator"
 developers:
-  - "oyvindlr"
+  - ldap: "oyvindlr"
+    github: "oyvindlr"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "misra-compliance-report-generator-plugin Developers"

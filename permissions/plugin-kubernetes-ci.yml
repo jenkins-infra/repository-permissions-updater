@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/elasticbox/jenkins-ci/plugins/kubernetes-ci"
 developers:
-  - "gsanchezu"
+  - ldap: "gsanchezu"
+    github: "gsanchezu"
+  - github: "oserna3"
+repository_team: "kubernetes-ci-plugin Developers"

@@ -6,6 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/global-build-stats"
 developers:
-  - "victor_yousician"
+  - ldap: "victor_yousician"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "jmMeessen"
+  - github: "balakine"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "global-build-stats-plugin Developers"

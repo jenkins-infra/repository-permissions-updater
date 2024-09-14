@@ -6,20 +6,29 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/junit"
 developers:
-  - "abayer"
-  - "andresrc"
-  - "jglick"
-  - "kohsuke"
-  - "olivergondza"
-  - "wolfs"
-  - "dnusbaum"
-  - "batmat"
-  - "egutierrez"
-  - "fcojfernandez"
-  - "rsandell"
-  - "timja"
+  - ldap: "abayer"
+  - ldap: "andresrc"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "olivergondza"
+  - ldap: "wolfs"
+  - ldap: "dnusbaum"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "timja"
+    github: "timja"
+  - github: "dwnusbaum"
+  - github: "varyvol"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "junit-plugin Developers"

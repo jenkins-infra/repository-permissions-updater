@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/ascentialtest-cmd-line"
 developers:
-  - "zeenyxsupport"
+  - ldap: "zeenyxsupport"
+  - github: "blesuer"
+repository_team: "ascentialtest-cmd-line-plugin Developers"

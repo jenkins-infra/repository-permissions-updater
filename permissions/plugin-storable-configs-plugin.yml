@@ -5,4 +5,6 @@ issues:
   - jira: '16003'  # storable-configs-plugin
 paths:
   - "org/jvnet/hudson/plugins/storable-configs-plugin"
-developers: []
+developers:
+  - github: "nzhelyakov"
+repository_team: "storable-configs-plugin Developers"

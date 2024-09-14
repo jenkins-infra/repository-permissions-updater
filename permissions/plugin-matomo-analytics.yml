@@ -2,10 +2,12 @@
 name: "matomo-analytics"
 github: &GH "jenkinsci/matomo-analytics-plugin"
 paths:
-- "io/jenkins/plugins/matomo-analytics"
+  - "io/jenkins/plugins/matomo-analytics"
 developers:
-- "atai"
+  - ldap: "atai"
+    github: "atai"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "matomo-analytics-plugin Developers"

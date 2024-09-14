@@ -4,5 +4,7 @@ github: "jenkinsci/packagecloud-plugin"
 paths:
   - "org/jenkins-ci/plugins/packagecloud"
 developers:
-  - "jdamato"
-  - "capotej"
+  - ldap: "jdamato"
+  - ldap: "capotej"
+  - github: "ice799"
+repository_team: "packagecloud-plugin Developers"

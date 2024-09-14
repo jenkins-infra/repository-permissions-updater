@@ -4,11 +4,13 @@ github: &GH "jenkinsci/commons-text-api-plugin"
 paths:
   - "io/jenkins/plugins/commons-text-api"
 developers:
-  - "sghill"
+  - ldap: "sghill"
+    github: "sghill"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "commons-text-api-plugin Developers"

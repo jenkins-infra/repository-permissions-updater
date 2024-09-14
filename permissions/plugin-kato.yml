@@ -6,4 +6,5 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/kato"
 developers:
-  - "jlarky"
+  - ldap: "jlarky"
+repository_team: "kato-plugin Developers"

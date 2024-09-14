@@ -6,11 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/handy-uri-templates-2-api"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jetersen"
-  - "dnusbaum"
-  - "bitwiseman"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - ldap: "dnusbaum"
+  - ldap: "bitwiseman"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "handy-uri-templates-2-api-plugin Developers"

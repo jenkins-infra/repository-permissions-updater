@@ -7,4 +7,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/kubernetes-cd"
 developers:
-  - "zooopx"
+  - ldap: "zooopx"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "allxiao"
+  - github: "ArchangelSDY"
+  - github: "jmMeessen"
+  - github: "zackliu"
+  - github: "chenkennt"
+  - github: "juniwang"
+repository_team: "kubernetes-cd-plugin Developers"

@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jackson-databind"
 developers:
-  - "oleg_nenashev"
-  - "dnusbaum"
-  - "jvz"
+  - ldap: "oleg_nenashev"
+  - ldap: "dnusbaum"
+  - ldap: "jvz"
+    github: "jvz"
+  - github: "dwnusbaum"
+repository_team: "jackson-databind-plugin Developers"

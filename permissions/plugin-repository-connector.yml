@@ -7,5 +7,8 @@ paths:
   - "org/jenkins-ci/plugins/repository-connector"
   - "org/jvnet/hudson/plugins/repository-connector"
 developers:
-  - "mikee805"
-  - "jgangemi"
+  - ldap: "mikee805"
+  - ldap: "jgangemi"
+    github: "jgangemi"
+  - github: "imod"
+repository_team: "repository-connector-plugin Developers"

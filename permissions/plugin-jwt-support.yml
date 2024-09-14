@@ -6,7 +6,12 @@ issues:
 paths:
   - "io/jenkins/plugins/jwt-support"
 developers:
-  - "teilo"
-  - "agentgonzo"
-  - "vivek"
-  - "tscherler"
+  - ldap: "teilo"
+  - ldap: "agentgonzo"
+    github: "agentgonzo"
+  - ldap: "vivek"
+    github: "vivek"
+  - ldap: "tscherler"
+  - github: "jtnord"
+  - github: "scherler"
+repository_team: "jwt-support-plugin Developers"

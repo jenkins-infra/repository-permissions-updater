@@ -3,5 +3,5 @@ name: "groovy-events-listener-plugin-master"
 paths:
   - "org/jenkins-ci/plugins/groovy-events-listener-plugin-master"
 developers:
-  - "jequals5"
-  - "raymondwu"
+  - ldap: "jequals5"
+  - ldap: "raymondwu"

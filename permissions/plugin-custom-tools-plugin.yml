@@ -6,6 +6,9 @@ issues:
 paths:
   - "com/cloudbees/jenkins/plugins/custom-tools-plugin"
 developers:
-  - "oleg_nenashev"
-  - "rhernandezm"
-  - "mPokornyETM"
+  - ldap: "oleg_nenashev"
+  - ldap: "rhernandezm"
+  - ldap: "mPokornyETM"
+additional_github_teams:
+  - team: "customtools-plugin Developers"
+    role: "Admin"

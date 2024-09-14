@@ -6,5 +6,10 @@ issues:
 paths:
   - "net/praqma/memory-map"
 developers:
-  - "madsnielsen"
-  - "praqma"
+  - ldap: "madsnielsen"
+  - ldap: "praqma"
+  - github: "wolfgarnet"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
+  - github: "buep"
+repository_team: "memory-map-plugin Developers"

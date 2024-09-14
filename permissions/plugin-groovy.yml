@@ -4,9 +4,12 @@ github: "jenkinsci/groovy-plugin"
 issues:
   - jira: '15549' # groovy-plugin
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "org/jenkins-ci/plugins/groovy"
   - "org/jvnet/hudson/plugins/groovy"
 developers:
-  - "jglick"
+  - ldap: "jglick"
+    github: "jglick"
+  - github: "abayer"
+repository_team: "groovy-plugin Developers"

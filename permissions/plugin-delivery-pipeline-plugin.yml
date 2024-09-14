@@ -6,5 +6,8 @@ issues:
 paths:
   - "se/diabol/jenkins/pipeline/delivery-pipeline-plugin"
 developers:
-  - "rzanner"
-  - "gsoffredini"
+  - ldap: "rzanner"
+    github: "rzanner"
+  - ldap: "gsoffredini"
+  - github: "gianluca-soffredini"
+repository_team: "delivery-pipeline-plugin Developers"

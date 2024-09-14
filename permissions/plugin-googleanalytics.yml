@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/googleanalytics"
 developers: []
+repository_team: "googleanalytics-plugin Developers"

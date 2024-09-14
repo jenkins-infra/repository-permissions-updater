@@ -4,6 +4,8 @@ github: &GH "jenkinsci/npm-yarn-wrapper-steps-plugin"
 paths:
   - "io/jenkins/plugins/npm-yarn-wrapper-steps"
 developers:
-  - "jameslafferty"
+  - ldap: "jameslafferty"
+    github: "jameslafferty"
 issues:
   - github: *GH
+repository_team: "npm-yarn-wrapper-steps-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "igalg/jenkins/plugins/multibranch-scan-webhook-trigger"
 developers:
-  - "igalg"
+  - ldap: "igalg"
+    github: "igalg"
+  - github: "avihuly"
+repository_team: "multibranch-scan-webhook-trigger-plugin Developers"

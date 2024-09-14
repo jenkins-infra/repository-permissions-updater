@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/breachlock-dast"
 developers:
-  - "mitchelk_breachlock"
+  - ldap: "mitchelk_breachlock"
+  - github: "security-breachlock"
+repository_team: "breachlock-dast-plugin Developers"

@@ -6,6 +6,9 @@ issues:
 paths:
   - "com/parasoft/parasoft-findings"
 developers:
-  - "jacekmarzecparasoft"
-  - "benken_parasoft"
-  - "yshiparasoft"
+  - ldap: "jacekmarzecparasoft"
+    github: "jacekmarzecparasoft"
+  - ldap: "benken_parasoft"
+  - ldap: "yshiparasoft"
+  - github: "yshi-parasoft"
+repository_team: "parasoft-findings-plugin Developers"

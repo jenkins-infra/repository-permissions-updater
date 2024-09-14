@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/etas/jenkins/plugins/text-file-operations"
 developers:
-  - "sankethpb"
+  - ldap: "sankethpb"
+    github: "sankethpb"
+repository_team: "text-file-operations-plugin Developers"

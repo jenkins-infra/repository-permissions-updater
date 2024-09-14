@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkinsci/plugins/spoonscript/spoonscript"
 developers:
-  - "mateusz"
+  - ldap: "mateusz"
+  - github: "pmateusz"
+repository_team: "spoonscript-plugin Developers"

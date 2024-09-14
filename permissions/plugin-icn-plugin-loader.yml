@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/icn-plugin-loader"
 developers:
-  - "gdelory"
+  - ldap: "gdelory"
+    github: "gdelory"
+repository_team: "icn-plugin-loader-plugin Developers"

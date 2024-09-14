@@ -7,11 +7,19 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/embeddable-build-status"
 developers:
-  - "christiangalsterer"
-  - "darinpope"
-  - "jglick"
-  - "markewaite"
-  - "mgedmin"
-  - "thomas_dee"
+  - ldap: "christiangalsterer"
+    github: "christiangalsterer"
+  - ldap: "darinpope"
+    github: "darinpope"
+  - ldap: "jglick"
+  - ldap: "markewaite"
+  - ldap: "mgedmin"
+    github: "mgedmin"
+  - ldap: "thomas_dee"
+  - github: "kohsuke"
+  - github: "MarkEWaite"
+  - github: "amuniz"
+  - github: "thomas-dee"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "embeddable-build-status-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/customized-build-message"
 developers:
-  - "cashlalala"
+  - ldap: "cashlalala"
+    github: "cashlalala"
+repository_team: "customized-build-message-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aliyun-container-service-deploy"
 developers:
-  - "aliyun_containerservice"
+  - ldap: "aliyun_containerservice"
+  - github: "qinyujia"
+repository_team: "aliyun-container-service-deploy-plugin Developers"

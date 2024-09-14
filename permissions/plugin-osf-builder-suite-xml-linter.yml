@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/osf-builder-suite-xml-linter"
 developers:
-  - "danechitoaie"
+  - ldap: "danechitoaie"
+    github: "danechitoaie"
+repository_team: "osf-builder-suite-xml-linter-plugin Developers"

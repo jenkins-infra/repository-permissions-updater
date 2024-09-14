@@ -6,4 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/macstadium-orka"
 developers:
-  - "ispasov"
+  - ldap: "ispasov"
+    github: "ispasov"
+  - github: "radeva"
+  - github: "Tmoss11"
+repository_team: "macstadium-orka-plugin Developers"

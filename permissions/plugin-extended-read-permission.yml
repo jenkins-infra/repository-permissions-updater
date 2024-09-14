@@ -7,7 +7,9 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/extended-read-permission"
 developers:
-  - "batmat"
-  - "oleg_nenashev"
+  - ldap: "batmat"
+  - ldap: "oleg_nenashev"
+  - github: "oleg-nenashev"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "extended-read-permission-plugin Developers"

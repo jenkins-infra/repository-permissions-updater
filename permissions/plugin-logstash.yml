@@ -6,7 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/logstash"
 developers:
-  - "rgerard"
-  - "jbochenski"
+  - ldap: "rgerard"
+  - ldap: "jbochenski"
+  - github: "jakub-bochenski"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "logstash-plugin Developers"
+additional_github_teams:
+  - team: "jenkins-logstash-plugin Developers"
+    role: "Admin"

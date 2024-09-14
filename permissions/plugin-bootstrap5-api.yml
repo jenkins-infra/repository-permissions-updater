@@ -4,9 +4,11 @@ github: &GH "jenkinsci/bootstrap5-api-plugin"
 paths:
   - "io/jenkins/plugins/bootstrap5-api"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
 issues:
   - jira: 28620
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "bootstrap5-api-plugin Developers"

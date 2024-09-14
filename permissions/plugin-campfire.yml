@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/campfire"
 developers: []
+repository_team: "campfire-plugin Developers"

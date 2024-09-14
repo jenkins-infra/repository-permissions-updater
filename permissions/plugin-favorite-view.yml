@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/favorite-view"
 developers:
-  - "mPokornyETM"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "favorite-view-plugin Developers"

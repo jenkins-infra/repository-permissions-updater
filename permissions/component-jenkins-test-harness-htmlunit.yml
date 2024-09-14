@@ -2,8 +2,18 @@
 name: "jenkins-test-harness-htmlunit"
 github: "jenkinsci/jenkins-test-harness-htmlunit"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "org/jenkins-ci/main/jenkins-test-harness-htmlunit"
 developers:
-  - "@core"
+  - ldap: "@core"
+  - github: "jglick"
+  - github: "stephenc"
+  - github: "andresrc"
+  - github: "uhafner"
+  - github: "oleg-nenashev"
+  - github: "timja"
+repository_team: "jenkins-test-harness-htmlunit Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

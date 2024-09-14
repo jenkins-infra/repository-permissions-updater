@@ -6,5 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jclouds-jenkins"
 developers:
-  - "mikefero"
-  - "felfert"
+  - ldap: "mikefero"
+    github: "mikefero"
+  - ldap: "felfert"
+    github: "felfert"
+  - github: "jeblair"
+  - github: "mavlyutov"
+repository_team: "jclouds-plugin Developers"

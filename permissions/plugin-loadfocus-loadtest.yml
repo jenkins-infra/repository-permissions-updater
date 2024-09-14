@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/loadfocus/loadfocus-loadtest"
 developers:
-  - "loadfocus"
+  - ldap: "loadfocus"
+  - github: "loadfocuscom"
+repository_team: "loadfocus-loadtest-plugin Developers"

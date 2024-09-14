@@ -2,10 +2,12 @@
 name: "pipeline-agent-build-history"
 github: &GH "jenkinsci/pipeline-agent-build-history-plugin"
 paths:
-- "io/jenkins/plugins/pipeline-agent-build-history"
+  - "io/jenkins/plugins/pipeline-agent-build-history"
 developers:
-- "mawinter69"
+  - ldap: "mawinter69"
+    github: "mawinter69"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "pipeline-agent-build-history-plugin Developers"

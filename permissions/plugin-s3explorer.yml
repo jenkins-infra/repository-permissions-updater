@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/s3explorer"
 developers:
-  - "ngocson2vn"
+  - ldap: "ngocson2vn"
+    github: "ngocson2vn"
+  - github: "jenkinsadmin"
+repository_team: "s3explorer-plugin Developers"

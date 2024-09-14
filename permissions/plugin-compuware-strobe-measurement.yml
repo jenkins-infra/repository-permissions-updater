@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/compuware/jenkins/compuware-strobe-measurement"
 developers:
-  - "cpwr_jenkins"
+  - ldap: "cpwr_jenkins"
+  - github: "VinceCapodanno"
+  - github: "vzamoragbmc"
+repository_team: "compuware-strobe-measurement-plugin Developers"

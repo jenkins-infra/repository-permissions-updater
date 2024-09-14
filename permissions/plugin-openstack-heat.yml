@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/openstack-heat"
 developers:
-  - "methodes_arkea"
+  - ldap: "methodes_arkea"
+  - github: "herviou"
+  - github: "draoullig"
+  - github: "CMArkea"
+repository_team: "openstack-heat-plugin Developers"

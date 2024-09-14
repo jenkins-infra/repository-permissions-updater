@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/veracode-scanner"
 developers:
-  - "mbockus"
+  - ldap: "mbockus"
+    github: "mbockus"
+repository_team: "veracode-scanner-plugin Developers"

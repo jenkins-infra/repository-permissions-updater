@@ -7,4 +7,8 @@ paths:
   - "jenkins/ci/plugins/backup/backup-interrupt-plugin"
 developers: []
 cd:
-  enabled: true
+    enabled: true
+repository_team: "backup-jobs-plugin Developers"
+additional_github_teams:
+  - team: "computer-queue-plugin Developers"
+    role: "Admin"

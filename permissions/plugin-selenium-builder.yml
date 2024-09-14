@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/selenium-builder"
 developers:
-  - "rossrowe"
+  - ldap: "rossrowe"
+    github: "rossrowe"
+repository_team: "selenium-builder-plugin Developers"

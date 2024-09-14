@@ -5,4 +5,7 @@ paths:
   - "com/ibm/ibm-application-security"
   - "com/hcl/security/ibm-application-security"
 developers:
-  - "mattmurp"
+  - ldap: "mattmurp"
+additional_github_teams:
+  - team: "ibm-asoc-plugin Developers"
+    role: "Admin"

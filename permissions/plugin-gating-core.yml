@@ -4,4 +4,7 @@ github: "jenkinsci/gating-core-plugin"
 paths:
   - "io/jenkins/plugins/gating-core"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+    github: "olivergondza"
+  - github: "pjanouse"
+repository_team: "gating-core-plugin Developers"

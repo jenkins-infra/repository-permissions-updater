@@ -4,6 +4,8 @@ github: &GH "jenkinsci/wsap-plugin"
 paths:
   - "io/jenkinsci/security/wsap"
 developers:
-  - "yvtq8k3n"
+  - ldap: "yvtq8k3n"
+  - github: "Yvtq8K3n"
 issues:
   - github: *GH
+repository_team: "wsap-plugin Developers"

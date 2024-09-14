@@ -6,6 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/forticwp-cicd"
 developers:
-  - "forticontainer"
+  - ldap: "forticontainer"
 cd:
-  enabled: true
+    enabled: true

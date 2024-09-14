@@ -5,4 +5,6 @@ issues:
   - jira: '15963'  # skype-notifier-plugin
 paths:
   - "org/jenkins-ci/plugins/skype-notifier"
-developers: []
+developers:
+  - github: "h0nIg"
+repository_team: "skype-im-plugin Developers"

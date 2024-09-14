@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/tikalk/hudson/plugins/notification"
 developers:
-  - "hagzag"
-  - "cohencil"
+  - ldap: "hagzag"
+    github: "hagzag"
+  - ldap: "cohencil"
+  - github: "wannessels"
+repository_team: "notification-plugin Developers"

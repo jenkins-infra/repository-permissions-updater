@@ -7,13 +7,18 @@ issues:
 paths:
   - "io/jenkins/plugins/gitlab-branch-source"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "baymac"
-  - "jequals5"
-  - "justinharringa"
-  - "jetersen"
-  - "surenpi"
+  - ldap: "baymac"
+    github: "baymac"
+  - ldap: "jequals5"
+  - ldap: "justinharringa"
+    github: "justinharringa"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - ldap: "surenpi"
+  - github: "LinuxSuRen"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "gitlab-branch-source-plugin Developers"

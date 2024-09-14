@@ -2,16 +2,20 @@
 name: "extended-choice-parameter"
 github: &GH jenkinsci/extended-choice-parameter-plugin
 cd:
-  enabled: true
+    enabled: true
 issues:
-  - github: *GH # The preferred issue tracker
+  - github: *GH
+                # The preferred issue tracker
   - jira: '16004'  # extended-choice-parameter-plugin
     report: false
 paths:
   - "org/jenkins-ci/plugins/extended-choice-parameter"
 developers:
-  - "vimil"
-  - "chas"
+  - ldap: "vimil"
+    github: "vimil"
+  - ldap: "chas"
+  - github: "chonton"
 security:
-  contacts:
-    jira: chas
+    contacts:
+        jira: chas
+repository_team: "extended-choice-parameter-plugin Developers"

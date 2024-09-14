@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aws-parameter-store"
 developers:
-  - "rikturnbull"
+  - ldap: "rikturnbull"
+    github: "rikturnbull"
+repository_team: "aws-parameter-store-plugin Developers"

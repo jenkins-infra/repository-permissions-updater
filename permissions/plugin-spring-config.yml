@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/spring-config"
 developers:
-  - "topikachu"
+  - ldap: "topikachu"
+    github: "topikachu"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "spring-config-plugin Developers"

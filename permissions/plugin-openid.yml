@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/openid"
 developers:
-  - "panicking"
+  - ldap: "panicking"
+    github: "panicking"
+  - github: "Wadeck"
+repository_team: "openid-plugin Developers"

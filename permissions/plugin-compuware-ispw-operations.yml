@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/compuware/jenkins/compuware-ispw-operations"
 developers:
-  - "cpwr_jenkins"
+  - ldap: "cpwr_jenkins"
+  - github: "zhouqr2000"
+  - github: "vzamoragbmc"
+repository_team: "compuware-ispw-operations-plugin Developers"

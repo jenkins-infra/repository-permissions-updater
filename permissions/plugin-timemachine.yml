@@ -6,4 +6,5 @@ github: jenkinsci/timemachine-plugin
 paths:
   - "io/jenkins/plugins/timemachine"
 developers:
-  - "ndeloof"
+  - ldap: "ndeloof"
+repository_team: "timemachine-plugin Developers"

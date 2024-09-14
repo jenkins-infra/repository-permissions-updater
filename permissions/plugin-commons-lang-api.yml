@@ -4,6 +4,8 @@ github: &GH "jenkinsci/commons-lang-api-plugin"
 paths:
   - "io/jenkins/plugins/commons-lang-api"
 developers:
-  - "nhojpatrick"
+  - ldap: "nhojpatrick"
+    github: "nhojpatrick"
 issues:
   - github: *GH
+repository_team: "commons-lang-api-plugin Developers"

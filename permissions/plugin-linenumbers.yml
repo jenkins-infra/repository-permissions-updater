@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/linenumbers"
 developers:
-  - "vlatombe"
+  - ldap: "vlatombe"

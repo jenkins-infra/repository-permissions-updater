@@ -7,5 +7,8 @@ paths:
   - "me/automationdomination/threadfix"
   - "org/jenkins-ci/plugins/threadfix"
 developers:
-  - "automationdomination"
-  - "cbaek"
+  - ldap: "automationdomination"
+  - ldap: "cbaek"
+  - github: "xolian"
+  - github: "christopher-baek"
+repository_team: "threadfix-plugin Developers"

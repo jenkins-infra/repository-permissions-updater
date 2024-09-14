@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/plugin-usage-plugin"
 developers:
-  - "chrissy25"
-  - "michallaskowski"
-  - "froque"
+  - ldap: "chrissy25"
+    github: "chrissy25"
+  - ldap: "michallaskowski"
+    github: "michallaskowski"
+  - ldap: "froque"
+    github: "froque"
+repository_team: "plugin-usage-plugin Developers"

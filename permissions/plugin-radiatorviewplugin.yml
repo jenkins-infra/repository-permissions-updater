@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/radiatorviewplugin"
 developers:
-  - "batmat"
-  - "david_resnick"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "david_resnick"
+  - github: "david-resnick"
+repository_team: "radiatorview-plugin Developers"

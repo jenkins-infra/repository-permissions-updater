@@ -6,6 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/custom-build-properties"
 developers:
-  - "shasait"
+  - ldap: "shasait"
+    github: "shasait"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "custom-build-properties-plugin Developers"

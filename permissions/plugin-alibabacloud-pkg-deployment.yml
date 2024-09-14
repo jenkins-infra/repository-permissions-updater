@@ -2,11 +2,14 @@
 name: "alibabacloud-pkg-deployment"
 github: &GH "jenkinsci/alibabacloud-pkg-deployment-plugin"
 paths:
-- "io/jenkins/plugins/alibabacloud-pkg-deployment"
+  - "io/jenkins/plugins/alibabacloud-pkg-deployment"
 developers:
-- "fuliu_zln"
-- "pistol_gao"
-- "xiaoxiaoerke"
-- "jenkinstest_yu"
+  - ldap: "fuliu_zln"
+  - ldap: "pistol_gao"
+  - ldap: "xiaoxiaoerke"
+  - ldap: "jenkinstest_yu"
+  - github: "pistol-gao"
+  - github: "fuliu-zln"
 issues:
   - jira: 29128
+repository_team: "alibabacloud-pkg-deployment-plugin Developers"

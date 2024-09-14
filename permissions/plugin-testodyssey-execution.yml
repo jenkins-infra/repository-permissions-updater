@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/ekatechserv/testodyssey-execution"
 developers:
-  - "ekateam"
+  - ldap: "ekateam"
+    github: "ekateam"
+repository_team: "testodyssey-execution-plugin Developers"

@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-npm"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "timdowney"
-  - "jonesbusy"
+  - ldap: "timdowney"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+  - github: "timothydowney"
+repository_team: "pipeline-npm-plugin Developers"

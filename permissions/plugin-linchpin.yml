@@ -6,4 +6,11 @@ issues:
 paths:
   - "io/jenkins/plugins/linchpin"
 developers:
-  - "avielyosef"
+  - ldap: "avielyosef"
+  - github: "Avielyo10"
+repository_team: "linchpin-plugin Developers"
+additional_github_teams:
+  - team: "Translators"
+    role: "Read"
+  - team: "Code Reviewers"
+    role: "Read"

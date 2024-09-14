@@ -6,8 +6,11 @@ issues:
 paths:
   - "com/synopsys/arc/jenkinsci/dynamic-search-view"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 developers:
-  - "oleg_nenashev"
-  - "kmartens27"
+  - ldap: "oleg_nenashev"
+  - ldap: "kmartens27"
+    github: "kmartens27"
+  - github: "ksenia-nenasheva"
+repository_team: "dynamic-search-view-plugin Developers"

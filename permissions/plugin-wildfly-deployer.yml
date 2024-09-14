@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/wildfly-deployer"
 developers:
-  - "ddilling"
+  - ldap: "ddilling"
+  - github: "dandillingham"
+repository_team: "wildfly-deployer-plugin Developers"

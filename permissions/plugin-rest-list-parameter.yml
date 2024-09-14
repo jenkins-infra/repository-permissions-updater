@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/rest-list-parameter"
 developers:
-  - "h1dden_da3m0n"
+  - ldap: "h1dden_da3m0n"
+  - github: "h1dden-da3m0n"
+  - github: "k3rnelpan1c-dev"
+repository_team: "rest-list-parameter-plugin Developers"

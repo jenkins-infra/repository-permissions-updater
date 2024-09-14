@@ -6,11 +6,16 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ant"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "armfergom"
-  - "jglick"
-  - "fcojfernandez"
+  - ldap: "armfergom"
+    github: "armfergom"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - github: "kohsuke"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "ant-plugin Developers"

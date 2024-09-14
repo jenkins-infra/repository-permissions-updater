@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/simple-parameterized-builds-report"
 developers:
-  - "nullin"
+  - ldap: "nullin"
+    github: "nullin"
+repository_team: "simple-parameterized-builds-report-plugin Developers"

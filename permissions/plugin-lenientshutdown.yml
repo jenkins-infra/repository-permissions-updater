@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/sonymobile/jenkins/plugins/lenientshutdown/lenientshutdown"
 developers:
-  - "rsandell"
+  - ldap: "rsandell"
+  - github: "fredrikpersson"
+repository_team: "lenient-shutdown-plugin Developers"

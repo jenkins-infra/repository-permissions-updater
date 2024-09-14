@@ -6,16 +6,22 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aqua-security-scanner"
 developers:
-  - "oranmoshai"
-  - "aqua_maintainers"
-  - "ppandrangi"
-  - "ank13"
-  - "prakhar_jenkins"
-  - "srinivas0731"
-  - "koppularajender"
-  - "rajinikanthj"
-  - "devaquasec"
-  - "nsreenivas0731"
+  - ldap: "oranmoshai"
+    github: "oranmoshai"
+  - ldap: "aqua_maintainers"
+  - ldap: "ppandrangi"
+    github: "ppandrangi"
+  - ldap: "ank13"
+  - ldap: "prakhar_jenkins"
+  - ldap: "srinivas0731"
+  - ldap: "koppularajender"
+  - ldap: "rajinikanthj"
+  - ldap: "devaquasec"
+  - ldap: "nsreenivas0731"
+    github: "nsreenivas0731"
+  - github: "jerbia"
+  - github: "KoppulaRajender"
 security:
-  contacts:
-    jira: aqua_maintainers
+    contacts:
+        jira: aqua_maintainers
+repository_team: "aqua-security-scanner-plugin Developers"

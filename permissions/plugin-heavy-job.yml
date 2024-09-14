@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/heavy-job"
 developers: []
+repository_team: "heavy-job-plugin Developers"

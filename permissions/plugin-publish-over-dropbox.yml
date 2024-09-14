@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/publish-over-dropbox"
 developers:
-  - "rcgroot"
+  - ldap: "rcgroot"
+    github: "rcgroot"
+repository_team: "publish-over-dropbox-plugin Developers"

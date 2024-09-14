@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/inedo/buildmaster/inedo-buildmaster"
 developers:
-  - "andrewsumner"
+  - ldap: "andrewsumner"
+additional_github_teams:
+  - team: "buildmaster-plugin Developers"
+    role: "Admin"

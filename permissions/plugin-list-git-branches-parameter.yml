@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/list-git-branches-parameter"
 developers:
-  - "huangsuoyuan"
+  - ldap: "huangsuoyuan"
+additional_github_teams:
+  - team: "list-git-branches-plugin Developers"
+    role: "Admin"

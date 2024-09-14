@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jenkinslint"
 developers:
-  - "v2v"
+  - ldap: "v2v"

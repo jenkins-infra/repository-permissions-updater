@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/readonly-parameters"
 developers:
-  - "yangli"
+  - ldap: "yangli"

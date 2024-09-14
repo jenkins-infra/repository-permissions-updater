@@ -6,5 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/frugal-testing"
 developers:
-  - "frugaltesting"
-  - "jakshatdesai"
+  - ldap: "frugaltesting"
+  - ldap: "jakshatdesai"
+  - github: "Jakshat-Desai"
+  - github: "nileshladda"
+  - github: "FrugalTest"
+repository_team: "frugal-testing-plugin Developers"

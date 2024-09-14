@@ -2,8 +2,10 @@
 name: "loadmance"
 github: &GH "jenkinsci/loadmance-plugin"
 paths:
-- "io/jenkins/plugins/loadmance"
+  - "io/jenkins/plugins/loadmance"
 developers:
-- "aktoluna"
+  - ldap: "aktoluna"
+    github: "aktoluna"
 issues:
   - github: *GH
+repository_team: "loadmance-plugin Developers"

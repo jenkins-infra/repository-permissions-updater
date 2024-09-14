@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/artifact-diff-plugin"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"

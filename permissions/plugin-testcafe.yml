@@ -6,4 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/testcafe"
 developers:
-  - "wentwrong"
+  - ldap: "wentwrong"
+  - github: "kirovboris"
+  - github: "AndreyBelym"
+  - github: "VasilyStrelyaev"
+repository_team: "testcafe-plugin Developers"

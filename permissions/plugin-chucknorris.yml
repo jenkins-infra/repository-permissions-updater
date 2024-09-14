@@ -6,8 +6,12 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/chucknorris"
 developers:
-  - "batmat"
-  - "oleg_nenashev"
-  - "mPokornyETM"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "oleg_nenashev"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - github: "cliffano"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "chucknorris-plugin Developers"

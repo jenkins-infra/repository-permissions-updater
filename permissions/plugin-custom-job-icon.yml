@@ -5,4 +5,6 @@ issues:
   - jira: '17323'  # custom-job-icon-plugin
 paths:
   - "org/jenkins-ci/plugins/custom-job-icon"
-developers: []
+developers:
+  - github: "jcsirot"
+repository_team: "custom-job-icon-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/aws-lambda-cloud"
 developers:
-  - "jlm029"
+  - ldap: "jlm029"
+  - github: "jlamande"
+repository_team: "aws-lambda-cloud-plugin Developers"

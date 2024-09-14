@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/japex"
 developers: []
+repository_team: "japex-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/composer-security-checker"
 developers:
-  - "easylo"
+  - ldap: "easylo"
+    github: "easylo"
+repository_team: "composer-security-checker-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/growl"
 developers: []
+repository_team: "growl-plugin Developers"

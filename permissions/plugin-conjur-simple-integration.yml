@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/conjur-simple-integration"
 developers:
-  - "mcamposv"
+  - ldap: "mcamposv"
+    github: "mcamposv"
+repository_team: "conjur-simple-integration-plugin Developers"

@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/buildtriggerbadge"
 developers:
-  - "batmat"
+  - ldap: "batmat"
+    github: "batmat"
+  - github: "mpailloncy"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "buildtriggerbadge-plugin Developers"

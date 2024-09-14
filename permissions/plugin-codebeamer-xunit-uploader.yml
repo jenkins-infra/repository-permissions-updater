@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/codebeamer-xunit-uploader"
 developers:
-  - "intland_support"
+  - ldap: "intland_support"
+  - github: "intlandsupport"
+repository_team: "codebeamer-xunit-uploader-plugin Developers"

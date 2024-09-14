@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ssh2easy"
 developers:
-  - "jerrycai"
+  - ldap: "jerrycai"
+  - github: "JerryCai"
+repository_team: "ssh2easy-plugin Developers"

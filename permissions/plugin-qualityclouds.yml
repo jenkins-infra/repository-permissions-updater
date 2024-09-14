@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/qualityclouds"
 developers:
-  - "saleig"
+  - ldap: "saleig"
+  - github: "ignacio-qc"
+repository_team: "qualityclouds-plugin Developers"

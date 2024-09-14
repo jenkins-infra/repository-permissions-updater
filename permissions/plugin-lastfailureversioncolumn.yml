@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/lastfailureversioncolumn"
 developers: []
+repository_team: "lastfailureversioncolumn-plugin Developers"

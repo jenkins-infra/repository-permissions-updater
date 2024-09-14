@@ -6,6 +6,9 @@ issues:
 paths:
   - "com/sonyericsson/jenkins/plugins/bfa/build-failure-analyzer"
 developers:
-  - "orjanpercy"
-  - "rsandell"
-  - "t_westling"
+  - ldap: "orjanpercy"
+    github: "orjanpercy"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "t_westling"
+repository_team: "build-failure-analyzer-plugin Developers"

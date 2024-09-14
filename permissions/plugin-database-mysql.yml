@@ -6,7 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/database-mysql"
 developers:
-  - "davidvanlaatum"
-  - "timja"
+  - ldap: "davidvanlaatum"
+    github: "davidvanlaatum"
+  - ldap: "timja"
+    github: "timja"
+  - github: "kohsuke"
+  - github: "jonesbusy"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "database-mysql-plugin Developers"

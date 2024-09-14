@@ -5,4 +5,7 @@ issues:
   - jira: '17605'  # jenkins-testswarm-plugin
 paths:
   - "com/javaclimber/jenkins/testswarmplugin/jenkins-testswarm-plugin"
-developers: []
+developers:
+  - github: "MattLud"
+  - github: "kevinnilson"
+repository_team: "testswarm-plugin Developers"

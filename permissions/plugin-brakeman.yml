@@ -8,4 +8,5 @@ paths:
   - "org/jenkins-ci/plugins/brakeman"
   - "org/jvnet/hudson/plugins/brakeman"
 developers:
-  - "presidentbeef"
+  - ldap: "presidentbeef"
+repository_team: "brakeman-plugin Developers"

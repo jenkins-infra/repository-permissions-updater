@@ -4,13 +4,20 @@ github: &GH "jenkinsci/autify-plugin"
 paths:
   - "io/jenkins/plugins/autify"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "riywo"
-  - "nate_autify"
-  - "hgsgtk"
-  - "mtsmfm"
-  - "kensei_autify"
-  - "henchiyb"
+  - ldap: "riywo"
+    github: "riywo"
+  - ldap: "nate_autify"
+  - ldap: "hgsgtk"
+    github: "hgsgtk"
+  - ldap: "mtsmfm"
+    github: "mtsmfm"
+  - ldap: "kensei_autify"
+  - ldap: "henchiyb"
+    github: "henchiyb"
+  - github: "4ydx"
+  - github: "Yarimizu14"
 issues:
   - github: *GH
+repository_team: "autify-plugin Developers"

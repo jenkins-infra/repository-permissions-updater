@@ -7,4 +7,10 @@ paths:
   # Block creation of new releases. If you want to release the plugin, contact
   # the Jenkins security team about SECURITY-2739
   - "com/technicolor/elOyente-releaseblocker"
-developers: []
+developers:
+  - github: "vanderhallenf"
+  - github: "dejakke"
+  - github: "pardogonzalezj"
+  - github: "isabelFD"
+  - github: "dnnsjcbs"
+repository_team: "eloyente-plugin Developers"

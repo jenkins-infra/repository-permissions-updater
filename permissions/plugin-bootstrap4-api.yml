@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/bootstrap4-api"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "bootstrap4-api-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bart"
 developers:
-  - "timotyzemp"
+  - ldap: "timotyzemp"
+  - github: "tzemp"
+repository_team: "bart-plugin Developers"

@@ -6,6 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/kubesphere-token-auth"
 developers:
-  - "shaowenchen"
-  - "zhuxiaoyang"
-  - "surenpi"
+  - ldap: "shaowenchen"
+    github: "shaowenchen"
+  - ldap: "zhuxiaoyang"
+  - ldap: "surenpi"
+  - github: "LinuxSuRen"
+repository_team: "kubesphere-token-auth-plugin Developers"

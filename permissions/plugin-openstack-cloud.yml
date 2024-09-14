@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/openstack-cloud"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+    github: "olivergondza"
+repository_team: "openstack-cloud-plugin Developers"

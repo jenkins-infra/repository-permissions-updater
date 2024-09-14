@@ -4,9 +4,11 @@ github: &GH "jenkinsci/prism-api-plugin"
 paths:
   - "io/jenkins/plugins/prism-api"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
 issues:
   - jira: 28824
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "prism-api-plugin Developers"

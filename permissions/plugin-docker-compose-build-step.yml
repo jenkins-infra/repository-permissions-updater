@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/docker-compose-build-step"
 developers:
-  - "jgalego"
+  - ldap: "jgalego"
+  - github: "JGalego"
+repository_team: "docker-compose-build-step-plugin Developers"

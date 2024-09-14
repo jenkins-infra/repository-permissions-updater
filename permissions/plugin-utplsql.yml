@@ -7,4 +7,5 @@ paths:
   - "hudson/plugins/utplsql/utplsql"
   - "org/jenkins-ci/plugins/utplsql"
 developers:
-  - "kusemuckl"
+  - ldap: "kusemuckl"
+repository_team: "utplsql-plugin Developers"

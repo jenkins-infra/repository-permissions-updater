@@ -6,3 +6,4 @@ issues:
 paths:
   - "com/thalesgroup/hudson/plugins/sourcemonitor"
 developers: []
+repository_team: "sourcemonitor-plugin Developers"

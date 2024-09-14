@@ -5,4 +5,6 @@ issues:
   - jira: '15686'  # jboss-plugin
 paths:
   - "org/jenkins-ci/plugins/jboss"
-developers: []
+developers:
+  - github: "dbuos"
+repository_team: "jboss-plugin Developers"

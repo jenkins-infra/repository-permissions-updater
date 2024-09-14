@@ -6,7 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/h2-api"
 developers:
-  - "cleclerc"
-  - "timja"
+  - ldap: "cleclerc"
+  - ldap: "timja"
+    github: "timja"
+  - github: "cyrille-leclerc"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "h2-api-plugin Developers"

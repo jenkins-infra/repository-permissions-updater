@@ -2,10 +2,12 @@
 name: "devops-portal"
 github: &GH "jenkinsci/devops-portal-plugin"
 paths:
-- "io/jenkins/plugins/devops-portal"
+  - "io/jenkins/plugins/devops-portal"
 developers:
-- "rbello"
+  - ldap: "rbello"
+    github: "rbello"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "devops-portal-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/job-fan-in"
 developers:
-  - "lonkaryogeshr"
+  - ldap: "lonkaryogeshr"
+  - github: "yogeshlonkar"
+repository_team: "job-fan-in-plugin Developers"

@@ -6,9 +6,18 @@ issues:
 paths:
   - "io/jenkins/plugins/jenkins-infra-test"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "timja"
-  - "olblak"
-  - "jglick"
-  - "markewaite"
+  - ldap: "timja"
+  - ldap: "olblak"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "markewaite"
+  - github: "MarkEWaite"
+  - github: "dduportal"
+  - github: "NotMyFault"
+  - github: "lemeurherve"
+repository_team: "jenkins-infra-test-plugin Developers"
+additional_github_teams:
+  - team: "infra-test-plugin Developers"
+    role: "Admin"

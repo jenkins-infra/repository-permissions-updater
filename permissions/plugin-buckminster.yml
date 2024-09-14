@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/buckminster"
   - "org/jvnet/hudson/plugins/buckminster"
 developers: []
+repository_team: "buckminster-plugin Developers"

@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/fedoraproject/jenkins/plugins/copr"
 developers:
-  - "msrb"
+  - ldap: "msrb"

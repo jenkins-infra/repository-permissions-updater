@@ -6,4 +6,6 @@ issues:
 paths:
   - "trends/cucumber-trends-report"
 developers:
-  - "thanhqle"
+  - ldap: "thanhqle"
+    github: "thanhqle"
+repository_team: "cucumber-trend-report-plugin Developers"

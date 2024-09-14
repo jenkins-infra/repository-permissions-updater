@@ -4,4 +4,7 @@ github: "jenkinsci/itms-for-jira-plugin"
 paths:
   - "io/jenkins/plugins/itms-for-jira"
 developers:
-  - "itms"
+  - ldap: "itms"
+additional_github_teams:
+  - team: "itms-junit-report-publisher-plugin Developers"
+    role: "Admin"

@@ -2,9 +2,12 @@
 name: "appdome-build-2secure"
 github: &GH "jenkinsci/appdome-build-2secure-plugin"
 paths:
-- "io/jenkins/plugins/appdome-build-2secure"
+  - "io/jenkins/plugins/appdome-build-2secure"
 developers:
-- "idanhauser"
-- "avie"
+  - ldap: "idanhauser"
+    github: "idanhauser"
+  - ldap: "avie"
+  - github: "avi112211"
 issues:
   - github: *GH
+repository_team: "appdome-build-2secure-plugin Developers"

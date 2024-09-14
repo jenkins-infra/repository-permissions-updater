@@ -6,4 +6,6 @@ issues:
 paths:
   - "suryagaddipati/codeclimate-plugin"
 developers:
-  - "surya548"
+  - ldap: "surya548"
+  - github: "suryagaddipati"
+repository_team: "codeclimate-plugin Developers"

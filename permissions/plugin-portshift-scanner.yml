@@ -4,7 +4,10 @@ github: "jenkinsci/securecn-scanner-plugin"
 paths:
   - "io/jenkins/plugins/portshift-scanner"
 developers:
-  - "portshift"
-  - "d_neduva"
+  - ldap: "portshift"
+  - ldap: "d_neduva"
 cd:
-  enabled: true
+    enabled: true
+additional_github_teams:
+  - team: "portshift-ci-plugin Developers"
+    role: "Admin"

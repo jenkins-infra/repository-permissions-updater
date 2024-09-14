@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/experitest-cloud"
 developers:
-  - "phuonghqh"
-  - "daniel_akua"
-  - "arielexperitest"
+  - ldap: "phuonghqh"
+  - ldap: "daniel_akua"
+  - ldap: "arielexperitest"
+  - github: "phuonghuynh"
+  - github: "omerExperitest"
+repository_team: "experitest-cloud-plugin Developers"

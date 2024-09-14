@@ -7,4 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/poll-mailbox-trigger-plugin"
 developers:
-  - "nickg"
+  - ldap: "nickg"
+  - github: "nickgrealy"
+  - github: "ecolyx"
+repository_team: "poll-mailbox-trigger-plugin Developers"

@@ -6,4 +6,8 @@ issues:
 paths:
   - "testdroid/testdroid-run-in-cloud"
 developers:
-  - "bitbar"
+  - ldap: "bitbar"
+  - github: "spedepekka"
+  - github: "szprutamich"
+  - github: "aknackiron"
+repository_team: "testdroid-run-in-cloud-plugin Developers"

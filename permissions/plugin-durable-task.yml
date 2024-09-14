@@ -6,20 +6,30 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/durable-task"
 developers:
-  - "jglick"
-  - "kohsuke"
-  - "svanoort"
-  - "abayer"
-  - "dnusbaum"
-  - "rsandell"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
-  - "teilo"
-  - "batmat"
-  - "olamy"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "svanoort"
+    github: "svanoort"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "dnusbaum"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+  - ldap: "kshultz"
+  - ldap: "teilo"
+  - ldap: "batmat"
+  - ldap: "olamy"
+    github: "olamy"
+  - github: "jtnord"
+  - github: "raul-arabaolaza"
+  - github: "dwnusbaum"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "durable-task-plugin Developers"

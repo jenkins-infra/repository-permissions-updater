@@ -6,4 +6,9 @@ issues:
 paths:
   - "org/tanaguru/jenkins/tanaguru"
 developers:
-  - "tanaguru"
+  - ldap: "tanaguru"
+  - github: "fhalna"
+  - github: "tgrandguillotte"
+  - github: "rcharre"
+  - github: "edaconceicao"
+repository_team: "tanaguru-plugin Developers"

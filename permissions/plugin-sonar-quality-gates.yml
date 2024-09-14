@@ -6,6 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sonar-quality-gates"
 developers:
-  - "arkanjoms"
+  - ldap: "arkanjoms"
+    github: "arkanjoms"
+  - github: "IvanaSh"
+  - github: "dpd90"
+  - github: "egrozdani"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "sonar-quality-gates-plugin Developers"

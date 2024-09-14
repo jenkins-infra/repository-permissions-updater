@@ -6,4 +6,8 @@ issues:
 paths:
   - "com/datical/integration/jenkins/datical-db-plugin"
 developers:
-  - "r2datical"
+  - ldap: "r2datical"
+  - github: "SteveDonie"
+  - github: "wwillard7800"
+  - github: "r2-lf"
+repository_team: "datical-db-plugin Developers"

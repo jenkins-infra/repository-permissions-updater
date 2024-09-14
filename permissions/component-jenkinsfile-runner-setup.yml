@@ -4,6 +4,10 @@ github: "jenkinsci/jenkinsfile-runner"
 paths:
   - "io/jenkins/jenkinsfile-runner/setup"
 developers:
-  - "oleg_nenashev"
-  - "egutierrez"
-  - "fcojfernandez"
+  - ldap: "oleg_nenashev"
+  - ldap: "egutierrez"
+  - ldap: "fcojfernandez"
+    github: "fcojfernandez"
+  - github: "oleg-nenashev"
+  - github: "varyvol"
+repository_team: "jenkinsfile-runner Developers"

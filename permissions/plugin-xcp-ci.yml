@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/viltgroup/xcp/jenkins/xcp-ci"
 developers:
-  - "joaori"
+  - ldap: "joaori"
+    github: "joaori"
+repository_team: "xcp-ci-plugin Developers"

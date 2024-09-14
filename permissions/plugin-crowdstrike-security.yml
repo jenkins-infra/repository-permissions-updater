@@ -2,10 +2,14 @@
 name: "crowdstrike-security"
 github: &GH "jenkinsci/crowdstrike-security-plugin"
 paths:
-- "io/jenkins/plugins/crowdstrike-security"
+  - "io/jenkins/plugins/crowdstrike-security"
 developers:
-- "crwd_etatarevic"
-- "crwdsmullz"
-- "crwdlemos"
+  - ldap: "crwd_etatarevic"
+  - ldap: "crwdsmullz"
+    github: "crwdsmullz"
+  - ldap: "crwdlemos"
+    github: "crwdlemos"
+  - github: "crwd-etatarevic"
 issues:
   - github: *GH
+repository_team: "crowdstrike-security-plugin Developers"

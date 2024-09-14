@@ -2,11 +2,16 @@
 name: "pipeline-maven-database"
 github: "jenkinsci/pipeline-maven-plugin"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "org/jenkins-ci/plugins/pipeline-maven-database"
 developers:
-  - "alobato"
-  - "cleclerc"
-  - "aheritier"
-  - "bguerin"
+  - ldap: "alobato"
+  - ldap: "cleclerc"
+  - ldap: "aheritier"
+    github: "aheritier"
+  - ldap: "bguerin"
+    github: "bguerin"
+  - github: "olamy"
+  - github: "alvarolobato"
+repository_team: "pipeline-maven-plugin Developers"

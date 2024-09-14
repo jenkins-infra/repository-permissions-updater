@@ -2,15 +2,21 @@
 name: "github-oauth"
 github: "jenkinsci/github-oauth-plugin"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - jira: '15900'  # github-oauth-plugin
 paths:
   - "org/jenkins-ci/plugins/github-oauth"
 developers:
-  - "kohsuke"
-  - "krzwrd"
-  - "sag47"
-  - "scurvy"
-  - "skottler"
-  - "surya548"
+  - ldap: "kohsuke"
+  - ldap: "krzwrd"
+  - ldap: "sag47"
+  - ldap: "scurvy"
+  - ldap: "skottler"
+    github: "skottler"
+  - ldap: "surya548"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "samrocketman"
+  - github: "scurvydoggo"
+repository_team: "github-oauth-plugin Developers"

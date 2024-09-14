@@ -7,9 +7,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-timeout"
 developers:
-  - "ikedam"
-  - "oleg_nenashev"
-  - "krisstern"
+  - ldap: "ikedam"
+    github: "ikedam"
+  - ldap: "oleg_nenashev"
+  - ldap: "krisstern"
+    github: "krisstern"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "build-timeout-plugin Developers"

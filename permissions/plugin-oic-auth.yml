@@ -7,9 +7,16 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/oic-auth"
 developers:
-  - "mbischoff"
-  - "surenpi"
-  - "mdoubez"
-  - "@cloudbees-developers"
+  - ldap: "mbischoff"
+  - ldap: "surenpi"
+  - ldap: "mdoubez"
+  - ldap: "@cloudbees-developers"
+  - github: "LinuxSuRen"
+  - github: "michael-doubez"
+  - github: "mjmbischoff"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "oic-auth-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Admin"

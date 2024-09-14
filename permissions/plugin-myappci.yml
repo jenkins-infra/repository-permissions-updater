@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/myappci"
 developers:
-  - "carstenmuellerlemberg"
+  - ldap: "carstenmuellerlemberg"
+  - github: "myappci"
 security:
-  contacts:
-    jira: carstenmuellerlemberg
+    contacts:
+        jira: carstenmuellerlemberg
+repository_team: "myappci-plugin Developers"

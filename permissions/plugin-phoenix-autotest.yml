@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/surenpi/jenkins/phoenix-autotest"
 developers:
-  - "surenpi"
+  - ldap: "surenpi"
+  - github: "LinuxSuRen"
+repository_team: "phoenix-autotest-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/convertigo/jenkins/plugins/convertigo-mobile-platform"
 developers:
-  - "opicciotto"
+  - ldap: "opicciotto"
+    github: "opicciotto"
+repository_team: "convertigo-mobile-platform-plugin Developers"

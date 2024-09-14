@@ -4,8 +4,11 @@ github: &GH "jenkinsci/sqlserver-api-plugin"
 paths:
   - "io/jenkins/plugins/sqlserver-api"
 developers:
-  - "cnhttpd"
+  - ldap: "cnhttpd"
+  - github: "jonesbusy"
+  - github: "identifysun"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "sqlserver-api-plugin Developers"

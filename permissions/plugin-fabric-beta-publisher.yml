@@ -7,4 +7,6 @@ issues:
 paths:
   - "egor-n/fabric-beta-publisher"
 developers:
-  - "egor"
+  - ldap: "egor"
+  - github: "egor-n"
+repository_team: "fabric-beta-publisher-plugin Developers"

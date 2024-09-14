@@ -2,15 +2,25 @@
 name: "gcp-java-sdk"
 github: &GH "jenkinsci/gcp-java-sdk-plugin"
 paths:
-- "io/jenkins/plugins/gcp-java-sdk"
-- "io/jenkins/plugins/gcp-java-sdk-*"
+  - "io/jenkins/plugins/gcp-java-sdk"
+  - "io/jenkins/plugins/gcp-java-sdk-*"
 developers:
-- "aneveux"
-- "@cloudbees-developers"
+  - ldap: "aneveux"
+    github: "aneveux"
+  - ldap: "@cloudbees-developers"
+  - github: "jeromepochat"
+  - github: "amuniz"
+  - github: "twasyl"
+  - github: "Wadeck"
+  - github: "Pldi23"
 cd:
-  enabled: true
+    enabled: true
 issues:
   - jira: 29222
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "gcp-java-sdk-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Maintain"

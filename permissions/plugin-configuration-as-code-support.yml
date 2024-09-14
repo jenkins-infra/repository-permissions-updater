@@ -7,8 +7,21 @@ issues:
 paths:
   - "io/jenkins/configuration-as-code/configuration-as-code-support"
 developers:
-  - "praqma"
-  - "jetersen"
+  - ldap: "praqma"
+  - ldap: "jetersen"
+    github: "jetersen"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
+  - github: "buep"
+  - github: "oleg-nenashev"
+  - github: "timja"
+  - github: "ewelinawilkosz"
 security:
-  contacts:
-    jira: "jetersen"
+    contacts:
+        jira: "jetersen"
+repository_team: "configuration-as-code-plugin Developers"
+additional_github_teams:
+  - team: "configuration-as-code-devtools-project-team"
+    role: "Triage"
+  - team: "jcasc-compatibility-reviewers"
+    role: "Read"

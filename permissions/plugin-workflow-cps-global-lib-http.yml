@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/amadeus/jenkins/plugins/workflow-cps-global-lib-http"
 developers:
-  - "fabricepipart1a"
+  - ldap: "fabricepipart1a"
+    github: "fabricepipart1a"
+  - github: "clairegallesio1a"
+repository_team: "workflow-cps-global-lib-http-plugin Developers"

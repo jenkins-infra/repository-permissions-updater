@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bitbucket-filter-project-trait"
 developers:
-  - "michelzanini"
+  - ldap: "michelzanini"
+    github: "michelzanini"
+repository_team: "bitbucket-filter-project-trait-plugin Developers"

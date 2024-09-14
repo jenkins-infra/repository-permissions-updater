@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/redeploy-rancher2-workload"
 developers:
-  - "feg545"
+  - ldap: "feg545"
+    github: "feg545"
+  - github: "jenkinsadmin"
+repository_team: "redeploy-rancher2-workload-plugin Developers"

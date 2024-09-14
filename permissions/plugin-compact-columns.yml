@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/compact-columns"
 developers:
-  - "tgr"
+  - ldap: "tgr"
+  - github: "TobiX"
+  - github: "jglick"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "compact-columns-plugin Developers"

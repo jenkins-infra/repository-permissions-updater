@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/wallarm-fast"
 developers:
-  - "mkirichenko"
+  - ldap: "mkirichenko"
+  - github: "SuperKmar"
+repository_team: "wallarm-fast-plugin Developers"

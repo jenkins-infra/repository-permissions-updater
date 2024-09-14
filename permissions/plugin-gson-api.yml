@@ -2,10 +2,12 @@
 name: "gson-api"
 github: &GH "jenkinsci/gson-api-plugin"
 paths:
-- "io/jenkins/plugins/gson-api"
+  - "io/jenkins/plugins/gson-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "gson-api-plugin Developers"

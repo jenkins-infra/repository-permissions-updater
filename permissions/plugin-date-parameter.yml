@@ -7,4 +7,6 @@ issues:
 paths:
   - "me/leejay/jenkins/date-parameter"
 developers:
-  - "leejaycoke"
+  - ldap: "leejaycoke"
+    github: "leejaycoke"
+repository_team: "date-parameter-plugin Developers"

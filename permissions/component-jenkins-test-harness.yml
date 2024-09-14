@@ -2,8 +2,17 @@
 name: "jenkins-test-harness"
 github: "jenkinsci/jenkins-test-harness"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "org/jenkins-ci/main/jenkins-test-harness"
 developers:
-  - "@core"
+  - ldap: "@core"
+  - github: "timja"
+repository_team: "jenkins-test-harness Developers"
+additional_github_teams:
+  - team: "Core PR Reviewers"
+    role: "Triage"
+  - team: "Core"
+    role: "Admin"
+  - team: "Code Reviewers"
+    role: "Read"

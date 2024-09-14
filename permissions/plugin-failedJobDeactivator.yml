@@ -6,4 +6,6 @@ issues:
 paths:
   - "de/einsundeins/jenkins/plugins/failedjobdeactivator/failedJobDeactivator"
 developers:
-  - "jochenafuerbacher"
+  - ldap: "jochenafuerbacher"
+  - github: "Jochen-A-Fuerbacher"
+repository_team: "failedjobdeactivator-plugin Developers"

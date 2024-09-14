@@ -6,9 +6,12 @@ issues:
 paths:
   - "com/sonyericsson/hudson/plugins/rebuild/rebuild"
 developers:
-  - "hagzag"
-  - "ragesh_nair"
-  - "rsandell"
-  - "gustafl"
+  - ldap: "hagzag"
+    github: "hagzag"
+  - ldap: "ragesh_nair"
+  - ldap: "rsandell"
+  - ldap: "gustafl"
+  - github: "orjanpercy"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "rebuild-plugin Developers"

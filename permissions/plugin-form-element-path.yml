@@ -6,9 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/form-element-path"
 developers:
-  - "olivergondza"
-  - "vlatombe"
-  - "jglick"
+  - ldap: "olivergondza"
+  - ldap: "vlatombe"
+  - ldap: "jglick"
+    github: "jglick"
+  - github: "kohsuke"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "form-element-path-plugin Developers"

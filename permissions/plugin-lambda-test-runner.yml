@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/lambda-test-runner"
 developers:
-  - "ipastusiak"
+  - ldap: "ipastusiak"
+  - github: "automatictester"
+repository_team: "lambda-test-runner-plugin Developers"

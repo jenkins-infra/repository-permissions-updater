@@ -6,4 +6,4 @@ issues:
 paths:
   - "tech/andrey/jenkins/mission-control-view"
 developers:
-  - "ashevtsov"
+  - ldap: "ashevtsov"

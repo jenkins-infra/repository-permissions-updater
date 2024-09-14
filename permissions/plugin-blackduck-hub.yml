@@ -6,6 +6,10 @@ issues:
 paths:
   - "com/blackducksoftware/integration/blackduck-hub"
 developers:
-  - "jrichard"
-  - "akamen"
-  - "bdsoss"
+  - ldap: "jrichard"
+  - ldap: "akamen"
+  - ldap: "bdsoss"
+  - github: "ekerwin"
+  - github: "stavvy-akamen"
+  - github: "psantos1113"
+repository_team: "blackduck-hub-plugin Developers"

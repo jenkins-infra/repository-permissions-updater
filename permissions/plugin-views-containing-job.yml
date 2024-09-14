@@ -6,5 +6,9 @@ issues:
 paths:
   - "com/oneandone/access/views-containing-job"
 developers:
-  - "jochenafuerbacher"
-  - "stefanbrausch"
+  - ldap: "jochenafuerbacher"
+  - ldap: "stefanbrausch"
+    github: "stefanbrausch"
+  - github: "Jochen-A-Fuerbacher"
+  - github: "jochengietzen"
+repository_team: "views-containing-job-plugin Developers"

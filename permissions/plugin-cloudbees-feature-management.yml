@@ -2,11 +2,14 @@
 name: "cloudbees-feature-management"
 github: &GH "jenkinsci/cloudbees-feature-management-plugin"
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "io/jenkins/plugins/cloudbees-feature-management"
 developers:
-  - "tfennelly"
-  - "agentgonzo"
+  - ldap: "tfennelly"
+    github: "tfennelly"
+  - ldap: "agentgonzo"
+    github: "agentgonzo"
 issues:
   - github: *GH
+repository_team: "cloudbees-feature-management-plugin Developers"

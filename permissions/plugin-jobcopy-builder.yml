@@ -6,4 +6,6 @@ issues:
 paths:
   - "jp/ikedam/jenkins/plugins/jobcopy-builder"
 developers:
-  - "ikedam"
+  - ldap: "ikedam"
+    github: "ikedam"
+repository_team: "jobcopy-builder-plugin Developers"

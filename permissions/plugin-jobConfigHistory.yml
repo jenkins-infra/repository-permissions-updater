@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jobConfigHistory"
 developers:
-  - "stefan_spieker"
+  - ldap: "stefan_spieker"
 cd:
-  enabled: true
+    enabled: true
+additional_github_teams:
+  - team: "jobConfigHistory-plugin Developers"
+    role: "Admin"

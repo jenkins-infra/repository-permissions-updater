@@ -6,5 +6,11 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jx-pipelines"
 developers:
-  - "jstrachan"
-  - "jenkinsxbot"
+  - ldap: "jstrachan"
+    github: "jstrachan"
+  - ldap: "jenkinsxbot"
+  - github: "abayer"
+  - github: "rajdavies"
+  - github: "rawlingsj"
+  - github: "jenkins-x-bot"
+repository_team: "jx-pipelines-plugin Developers"

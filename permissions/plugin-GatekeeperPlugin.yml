@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/paylogic/GatekeeperPlugin"
 developers:
-  - "bubenkoff"
-  - "maikelwever"
+  - ldap: "bubenkoff"
+    github: "bubenkoff"
+  - ldap: "maikelwever"
+  - github: "markon"
+  - github: "DZittersteyn"
+repository_team: "gatekeeper-plugin Developers"

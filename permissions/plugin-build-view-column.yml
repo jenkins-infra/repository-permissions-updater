@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-view-column"
 developers:
-  - "jglick"
+  - ldap: "jglick"

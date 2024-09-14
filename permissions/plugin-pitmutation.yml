@@ -6,5 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pitmutation"
 developers:
-  - "edwardk"
-  - "gigasproule"
+  - ldap: "edwardk"
+  - ldap: "gigasproule"
+  - github: "ekimber"
+  - github: "nespera"
+  - github: "gigaSproule"
+  - github: "edwardwe7"
+repository_team: "pitmutation-plugin Developers"

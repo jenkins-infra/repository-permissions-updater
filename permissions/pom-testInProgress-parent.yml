@@ -3,4 +3,4 @@ name: "testInProgress-parent"
 paths:
   - "org/jenkins-ci/plugins/testInProgress-parent"
 developers:
-  - "menonvarun"
+  - ldap: "menonvarun"

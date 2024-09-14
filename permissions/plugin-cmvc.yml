@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cmvc"
 developers: []
+repository_team: "cmvc-plugin Developers"

@@ -7,6 +7,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/perfpublisher"
 developers:
-  - "eschava"
-  - "langers2k"
-  - "mPokornyETM"
+  - ldap: "eschava"
+    github: "eschava"
+  - ldap: "langers2k"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+repository_team: "perfpublisher-plugin Developers"

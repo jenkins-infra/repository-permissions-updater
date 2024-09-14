@@ -5,4 +5,7 @@ issues:
   - jira: '16826'  # testopia-plugin
 paths:
   - "jenkins/plugins/testopia/testopia"
-developers: []
+developers:
+  - github: "kinow"
+  - github: "tooh"
+repository_team: "testopia-plugin Developers"

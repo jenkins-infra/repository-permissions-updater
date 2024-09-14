@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/pwauth"
 developers: []
+repository_team: "pwauth-plugin Developers"

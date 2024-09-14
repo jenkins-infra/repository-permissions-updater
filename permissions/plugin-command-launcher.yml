@@ -6,10 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/command-launcher"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "oleg_nenashev"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "oleg_nenashev"
+  - github: "oleg-nenashev"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "command-launcher-plugin Developers"

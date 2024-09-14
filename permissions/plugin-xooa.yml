@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/xooa"
 developers:
-  - "vinay_bagul"
+  - ldap: "vinay_bagul"
+  - github: "rajatxooa"
 security:
-  contacts:
-    jira: vinay_bagul
+    contacts:
+        jira: vinay_bagul
+repository_team: "xooa-plugin Developers"

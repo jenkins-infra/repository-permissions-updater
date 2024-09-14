@@ -6,4 +6,6 @@ issues:
 paths:
   - "br/com/ingenieux/jenkins/plugins/awseb-deployment-plugin"
 developers:
-  - "aldrinleal"
+  - ldap: "aldrinleal"
+    github: "aldrinleal"
+repository_team: "awseb-deployment-plugin Developers"

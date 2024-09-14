@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/literate"
 developers:
-  - "jglick"
+  - ldap: "jglick"

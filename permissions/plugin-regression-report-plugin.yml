@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/regression-report-plugin"
 developers:
-  - "eller86"
+  - ldap: "eller86"
+  - github: "KengoTODA"
+repository_team: "regression-report-plugin Developers"

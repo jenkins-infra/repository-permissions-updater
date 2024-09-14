@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/global-pre-script"
 developers:
-  - "orekaria"
+  - ldap: "orekaria"
+  - github: "jenkinsadmin"
+  - github: "Orekaria"
+repository_team: "global-pre-script-plugin Developers"

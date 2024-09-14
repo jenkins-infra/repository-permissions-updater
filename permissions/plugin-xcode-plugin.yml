@@ -6,8 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/xcode-plugin"
 developers:
-  - "lacostej"
-  - "aheritier"
-  - "kazuhidet"
+  - ldap: "lacostej"
+  - ldap: "aheritier"
+    github: "aheritier"
+  - ldap: "kazuhidet"
+    github: "kazuhidet"
+  - github: "waltflanagan"
+  - github: "Brantone"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "xcode-plugin Developers"

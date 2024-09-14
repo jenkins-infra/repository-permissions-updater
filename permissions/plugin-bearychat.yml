@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bearychat"
 developers:
-  - "yuanbohan"
-  - "shonenada"
+  - ldap: "yuanbohan"
+    github: "yuanbohan"
+  - ldap: "shonenada"
+    github: "shonenada"
+  - github: "otbzi"
+repository_team: "bearychat-plugin Developers"

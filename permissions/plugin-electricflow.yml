@@ -6,6 +6,14 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/electricflow"
 developers:
-  - "efpluginsdev"
-  - "flowpluginteam"
-  - "c_jkirishnan"
+  - ldap: "efpluginsdev"
+  - ldap: "flowpluginteam"
+  - ldap: "c_jkirishnan"
+  - github: "vpalaiya"
+  - github: "justnoxx"
+  - github: "imago-storm"
+  - github: "colathurv"
+repository_team: "electricflow-plugin Developers"
+additional_github_teams:
+  - team: "CloudBees CD Plugin Developers"
+    role: "Admin"

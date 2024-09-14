@@ -7,6 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sumologic-publisher"
 developers:
-  - "devennorton"
-  - "sour0205"
-  - "SumoApps"
+  - ldap: "devennorton"
+  - ldap: "sour0205"
+  - ldap: "SumoApps"

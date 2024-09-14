@@ -2,10 +2,12 @@
 name: "ctrf-json"
 github: &GH "jenkinsci/ctrf-json-plugin"
 paths:
-- "io/jenkins/plugins/ctrf-json"
+  - "io/jenkins/plugins/ctrf-json"
 developers:
-- "ma11hewthomas"
+  - ldap: "ma11hewthomas"
+  - github: "Ma11hewThomas"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "ctrf-json-plugin Developers"

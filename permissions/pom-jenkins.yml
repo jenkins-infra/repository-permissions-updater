@@ -4,4 +4,9 @@ github: "jenkinsci/pom"
 paths:
   - "org/jenkins-ci/jenkins"
 developers:
-  - "@core"
+  - ldap: "@core"
+  - github: "timja"
+repository_team: "pom Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Write"

@@ -6,12 +6,18 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/metrics"
 developers:
-  - "kohsuke"
-  - "sbadger"
-  - "alecharp"
-  - "@cloudbees-developers"
+  - ldap: "kohsuke"
+  - ldap: "sbadger"
+  - ldap: "alecharp"
+    github: "alecharp"
+  - ldap: "@cloudbees-developers"
+  - github: "MRamonLeon"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "metrics-plugin Developers"
+additional_github_teams:
+  - team: "company-cloudbees-developers"
+    role: "Write"

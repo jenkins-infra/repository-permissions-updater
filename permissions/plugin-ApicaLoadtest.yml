@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/apica/ApicaLoadtest"
 developers:
-  - "andrasnemes"
+  - ldap: "andrasnemes"
+    github: "andrasnemes"
+repository_team: "apica-loadtest-plugin Developers"

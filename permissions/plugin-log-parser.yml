@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/log-parser"
 developers:
-  - "mreinhardt"
-  - "recena"
+  - ldap: "mreinhardt"
+  - ldap: "recena"
+  - github: "jborghi"
+  - github: "hypery2k"
+repository_team: "log-parser-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/wso2id-oauth"
 developers:
-  - "mohamedelhabib"
+  - ldap: "mohamedelhabib"
+  - github: "mohamed-el-habib"
+  - github: "rdespres-digitas"
+repository_team: "wso2id-oauth-plugin Developers"

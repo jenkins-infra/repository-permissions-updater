@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/shared-workspace"
 developers:
-  - "vestnik"
+  - ldap: "vestnik"
+  - github: "VestniK"
+  - github: "sapone"
+repository_team: "shared-workspace-plugin Developers"

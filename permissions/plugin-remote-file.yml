@@ -7,7 +7,9 @@ issues:
 paths:
   - "io/jenkins/plugins/remote-file"
 developers:
-  - "aytuncbeken"
+  - ldap: "aytuncbeken"
+    github: "aytuncbeken"
 security:
-  contacts:
-    jira: "aytuncbeken"
+    contacts:
+        jira: "aytuncbeken"
+repository_team: "remote-file-plugin Developers"

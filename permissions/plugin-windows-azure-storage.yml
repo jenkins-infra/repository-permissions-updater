@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/windows-azure-storage"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "zooopx"
-  - "timja"
+  - ldap: "zooopx"
+  - ldap: "timja"
+additional_github_teams:
+  - team: "windows-azure-storage-plugin Developers"
+    role: "Admin"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/android-lint"
 developers:
-  - "orrc"
+  - ldap: "orrc"
+    github: "orrc"
+repository_team: "android-lint-plugin Developers"

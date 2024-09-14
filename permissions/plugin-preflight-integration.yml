@@ -6,5 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/preflight-integration"
 developers:
-  - "moosebay"
-  - "huseyin"
+  - ldap: "moosebay"
+    github: "moosebay"
+  - ldap: "huseyin"
+repository_team: "preflight-integration-plugin Developers"

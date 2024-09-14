@@ -6,7 +6,10 @@ issues:
 paths:
   - "com/openshift/jenkins/openshift-pipeline"
 developers:
-  - "@openshift-developers"
+  - ldap: "@openshift-developers"
+  - github: "akram"
+  - github: "gabemontero"
 security:
-  contacts:
-    jira: "coreydaley"
+    contacts:
+        jira: "coreydaley"
+repository_team: "openshift-pipeline-plugin Developers"

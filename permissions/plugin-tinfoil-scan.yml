@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/tinfoilsecurity/plugins/tinfoil-scan"
 developers:
-  - "bsedat"
-  - "shanewilton"
+  - ldap: "bsedat"
+  - ldap: "shanewilton"
+additional_github_teams:
+  - team: "tinfoil-security-plugin Developers"
+    role: "Admin"

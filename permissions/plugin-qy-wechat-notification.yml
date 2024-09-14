@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/qy-wechat-notification"
 developers:
-  - "xiaoj313"
+  - ldap: "xiaoj313"
+  - github: "itwake"
+repository_team: "qy-wechat-notification-plugin Developers"

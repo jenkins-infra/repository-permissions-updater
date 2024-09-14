@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/environment-variable-page-decoration"
 developers:
-  - "tvon"
+  - ldap: "tvon"
+    github: "tvon"
+repository_team: "environment-variable-page-decoration-plugin Developers"

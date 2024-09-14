@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/boot-clj"
 developers:
-  - "joelws"
+  - ldap: "joelws"
+  - github: "jw-s"
+repository_team: "boot-clj-plugin Developers"

@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/coding-webhook"
 developers:
-  - "tsl0922"
-  - "wusisu"
+  - ldap: "tsl0922"
+    github: "tsl0922"
+  - ldap: "wusisu"
+repository_team: "coding-webhook-plugin Developers"

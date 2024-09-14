@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/radargun"
 developers:
-  - "vjuranek"
-  - "diegolovison"
-  - "amanukya"
+  - ldap: "vjuranek"
+    github: "vjuranek"
+  - ldap: "diegolovison"
+    github: "diegolovison"
+  - ldap: "amanukya"
+  - github: "andyuk1986"
+repository_team: "radargun-plugin Developers"

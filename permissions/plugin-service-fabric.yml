@@ -6,4 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/service-fabric"
 developers:
-  - "azsf_msft"
+  - ldap: "azsf_msft"
+  - github: "allxiao"
+  - github: "sayantancs"
+  - github: "chenkennt"
+  - github: "raunakpandya"
+repository_team: "service-fabric-plugin Developers"

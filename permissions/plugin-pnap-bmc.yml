@@ -2,8 +2,10 @@
 name: "pnap-bmc"
 github: &GH "jenkinsci/pnap-bmc-plugin"
 paths:
-- "io/jenkins/plugins/pnap-bmc"
+  - "io/jenkins/plugins/pnap-bmc"
 developers:
-- "pajuga"
+  - ldap: "pajuga"
+    github: "pajuga"
 issues:
   - github: *GH
+repository_team: "pnap-bmc-plugin Developers"

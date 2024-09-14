@@ -4,4 +4,5 @@ github: "jenkinsci/instant-messaging-parent-plugin"
 paths:
   - "org/jvnet/hudson/plugins/instant-messaging-parent"
 developers:
-  - "kutzi"
+  - ldap: "kutzi"
+repository_team: "instant-messaging-parent-plugin Developers"

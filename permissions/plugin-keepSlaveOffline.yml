@@ -6,3 +6,6 @@ issues:
 paths:
   - "hudson/plugins/keepSlaveOffline/keepSlaveOffline"
 developers: []
+additional_github_teams:
+  - team: "keep-slave-offline Developers"
+    role: "Admin"

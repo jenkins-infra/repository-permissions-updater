@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/Matrix-sorter-plugin"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+  - github: "lvotypko"
+repository_team: "Matrix-sorter-plugin Developers"

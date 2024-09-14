@@ -6,6 +6,8 @@ issues:
 paths:
   - "nz/co/jammehcow/discord-notifier"
 developers:
-  - "kocproz"
+  - ldap: "kocproz"
+  - github: "KocproZ"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "discord-notifier-plugin Developers"

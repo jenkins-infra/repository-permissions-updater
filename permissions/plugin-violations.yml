@@ -9,4 +9,6 @@ paths:
   - "org/jenkins-ci/plugins/violations-releaseblocker"
   - "org/jvnet/hudson/plugins/violations-releaseblocker"
 developers:
-  - "tomasbjerre"
+  - ldap: "tomasbjerre"
+    github: "tomasbjerre"
+repository_team: "violations-plugin Developers"

@@ -7,5 +7,6 @@ paths:
   - "org/jvnet/hudson/plugins/statusmonitor"
 developers: []
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "statusmonitor-plugin Developers"

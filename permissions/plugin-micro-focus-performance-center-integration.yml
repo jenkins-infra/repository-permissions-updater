@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/micro-focus-performance-center-integration"
 developers:
-  - "danieldanan"
-  - "bemh"
-  - "danieldananm"
+  - ldap: "danieldanan"
+    github: "danieldanan"
+  - ldap: "bemh"
+  - ldap: "danieldananm"
+  - github: "bamh"
+repository_team: "micro-focus-performance-center-integration-plugin Developers"

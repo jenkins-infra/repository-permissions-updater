@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/backup"
 developers:
-  - "jm_meessen"
-  - "poddingue"
+  - ldap: "jm_meessen"
+  - ldap: "poddingue"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "jmMeessen"
+repository_team: "backup-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/random-string-parameter"
 developers: []
+repository_team: "random-string-parameter-plugin Developers"

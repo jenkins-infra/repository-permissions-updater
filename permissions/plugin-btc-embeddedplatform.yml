@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/btc/ep/btc-embeddedplatform"
 developers:
-  - "thabokrick"
+  - ldap: "thabokrick"
+  - github: "thabok"
+repository_team: "btc-embeddedplatform-plugin Developers"

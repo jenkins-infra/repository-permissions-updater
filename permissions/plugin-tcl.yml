@@ -5,4 +5,6 @@ issues:
   - jira: '17572'  # tcl-plugin
 paths:
   - "org/jenkins-ci/plugins/tcl"
-developers: []
+developers:
+  - github: "oleg-nenashev"
+repository_team: "tcl-plugin Developers"

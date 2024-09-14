@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/seed"
 developers:
-  - "damien_coraboeuf"
+  - ldap: "damien_coraboeuf"
+  - github: "dcoraboeuf"
+repository_team: "seed-plugin Developers"

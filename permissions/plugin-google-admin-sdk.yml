@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/google-admin-sdk"
 developers:
-  - "yacut"
+  - ldap: "yacut"
+    github: "yacut"
+  - github: "krystianity"
+repository_team: "google-admin-sdk-plugin Developers"

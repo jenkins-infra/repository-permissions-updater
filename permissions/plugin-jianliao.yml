@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jianliao"
 developers:
-  - "jianliao"
+  - ldap: "jianliao"
+  - github: "NLMartian"
+repository_team: "jianliao-plugin Developers"

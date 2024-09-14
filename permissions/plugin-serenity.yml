@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/serenity"
 developers:
-  - "michael_couck"
+  - ldap: "michael_couck"
+  - github: "michaelcouck"
+repository_team: "serenity-plugin Developers"

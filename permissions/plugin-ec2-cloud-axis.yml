@@ -7,3 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ec2-cloud-axis"
 developers: []
+additional_github_teams:
+  - team: "elastic-axis-plugin Developers"
+    role: "Admin"

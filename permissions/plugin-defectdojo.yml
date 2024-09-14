@@ -2,10 +2,12 @@
 name: "defectdojo"
 github: &GH "jenkinsci/defectdojo-plugin"
 paths:
-- "io/jenkins/plugins/defectdojo"
+  - "io/jenkins/plugins/defectdojo"
 developers:
-- "eu_david"
+  - ldap: "eu_david"
+  - github: "eu-david"
 issues:
   - jira: 29421
 cd:
-  enabled: true
+    enabled: true
+repository_team: "defectdojo-plugin Developers"

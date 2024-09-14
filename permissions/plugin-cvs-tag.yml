@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cvs-tag"
 developers: []
+repository_team: "cvs-tag-plugin Developers"

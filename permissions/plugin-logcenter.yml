@@ -4,6 +4,6 @@ github: &GH "jenkinsci/logcenter-plugin"
 paths:
   - "io/jenkins/plugins/logcenter"
 developers:
-  - "xykong"
+  - ldap: "xykong"
 issues:
   - github: *GH

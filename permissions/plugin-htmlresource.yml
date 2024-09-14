@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/htmlresource"
 developers:
-  - "vimil"
+  - ldap: "vimil"
+    github: "vimil"
+repository_team: "htmlresource-plugin Developers"

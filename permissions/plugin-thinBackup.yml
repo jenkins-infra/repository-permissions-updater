@@ -6,6 +6,10 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/thinBackup"
 developers:
-  - "tofuatjava"
-  - "jeffpearce"
-  - "stefan_spieker"
+  - ldap: "tofuatjava"
+    github: "tofuatjava"
+  - ldap: "jeffpearce"
+  - ldap: "stefan_spieker"
+  - github: "tofuatgit"
+  - github: "StefanSpieker"
+repository_team: "thin-backup-plugin Developers"

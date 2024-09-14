@@ -6,13 +6,15 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ssh-slaves"
 developers:
-  - "andresrc"
-  - "jglick"
-  - "kohsuke"
-  - "oleg_nenashev"
-  - "ifernandezcalvo"
+  - ldap: "andresrc"
+  - ldap: "jglick"
+  - ldap: "kohsuke"
+  - ldap: "oleg_nenashev"
+  - ldap: "ifernandezcalvo"
+  - github: "kuisathaverat"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "ssh-agents-plugin Developers"

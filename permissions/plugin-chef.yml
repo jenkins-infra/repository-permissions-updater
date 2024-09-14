@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/ruby-plugins/chef"
 developers:
-  - "melezhik"
+  - ldap: "melezhik"
+    github: "melezhik"
+repository_team: "chef-plugin Developers"

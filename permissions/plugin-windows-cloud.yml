@@ -6,4 +6,8 @@ issues:
 paths:
   - "fr/edf/jenkins/plugins/windows-cloud"
 developers:
-  - "mat1e"
+  - ldap: "mat1e"
+    github: "mat1e"
+  - github: "Aelotmani"
+  - github: "feirychris"
+repository_team: "windows-cloud-plugin Developers"

@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/rm5248/debian-pbuilder"
 developers:
-  - "rm5248"
+  - ldap: "rm5248"
+    github: "rm5248"
+repository_team: "debian-pbuilder-plugin Developers"

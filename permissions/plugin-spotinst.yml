@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/spotinst"
 developers:
-  - "spotinst"
+  - ldap: "spotinst"
+  - github: "ohadmuch"
+  - github: "adivos"
+  - github: "nadavnaor"
+repository_team: "spotinst-plugin Developers"

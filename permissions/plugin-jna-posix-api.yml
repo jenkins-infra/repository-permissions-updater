@@ -6,3 +6,4 @@ issues:
 paths:
   - "io/jenkins/plugins/jna-posix-api"
 developers: []
+repository_team: "jna-posix-api-plugin Developers"

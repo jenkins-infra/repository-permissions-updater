@@ -4,6 +4,8 @@ github: &GH "jenkinsci/csp-plugin"
 paths:
   - "io/jenkins/plugins/csp"
 developers:
-  - "danielbeck"
+  - ldap: "danielbeck"
+  - github: "daniel-beck"
 issues:
   - jira: 28623
+repository_team: "csp-plugin Developers"

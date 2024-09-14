@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/axis/system/jenkins/plugins/downstream/yet-another-build-visualizer"
 developers:
-  - "gustafl"
-  - "jons"
+  - ldap: "gustafl"
+  - ldap: "jons"
+  - github: "GLundh"
+  - github: "jonsten"
+repository_team: "yet-another-build-visualizer-plugin Developers"

@@ -6,5 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-publisher"
 developers:
-  - "olivergondza"
-  - "vjuranek"
+  - ldap: "olivergondza"
+  - ldap: "vjuranek"
+repository_team: "build-publisher-plugin Developers"

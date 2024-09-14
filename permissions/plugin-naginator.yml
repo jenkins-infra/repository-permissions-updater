@@ -4,11 +4,16 @@ github: "jenkinsci/naginator-plugin"
 issues:
   - jira: '15560'  # naginator-plugin
 cd:
-  enabled: true
+    enabled: true
 paths:
   - "org/jenkins-ci/plugins/naginator"
 developers:
-  - "galunto"
-  - "ikedam"
-  - "integer"
-  - "sghill"
+  - ldap: "galunto"
+    github: "galunto"
+  - ldap: "ikedam"
+    github: "ikedam"
+  - ldap: "integer"
+  - ldap: "sghill"
+    github: "sghill"
+  - github: "KostyaSha"
+repository_team: "naginator-plugin Developers"

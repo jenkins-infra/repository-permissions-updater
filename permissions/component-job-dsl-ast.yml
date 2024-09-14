@@ -3,6 +3,6 @@ name: "job-dsl-ast"
 paths:
   - "org/jenkins-ci/plugins/job-dsl-ast"
 developers:
-  - "basil"
-  - "daspilker"
-  - "jamietanna"
+  - ldap: "basil"
+  - ldap: "daspilker"
+  - ldap: "jamietanna"

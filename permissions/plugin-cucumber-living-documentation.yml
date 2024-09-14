@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cucumber-living-documentation"
 developers:
-  - "rmpestano"
+  - ldap: "rmpestano"
+    github: "rmpestano"
+repository_team: "cucumber-living-documentation-plugin Developers"

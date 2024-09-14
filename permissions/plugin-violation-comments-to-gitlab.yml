@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/violation-comments-to-gitlab"
 developers:
-  - "tomasbjerre"
+  - ldap: "tomasbjerre"
+    github: "tomasbjerre"
+repository_team: "violation-comments-to-gitlab-plugin Developers"

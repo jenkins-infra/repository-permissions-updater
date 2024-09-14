@@ -7,5 +7,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/selenium"
 developers:
-  - "darkrift"
-  - "mobrockers"
+  - ldap: "darkrift"
+    github: "darkrift"
+  - ldap: "mobrockers"
+  - github: "kinow"
+repository_team: "selenium-plugin Developers"

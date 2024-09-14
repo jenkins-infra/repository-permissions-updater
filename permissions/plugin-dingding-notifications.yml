@@ -7,5 +7,8 @@ issues:
 paths:
   - "io/jenkins/plugins/dingding-notifications"
 developers:
-  - "liuweigl"
-  - "bobdu"
+  - ldap: "liuweigl"
+  - ldap: "bobdu"
+additional_github_teams:
+  - team: "dingding-notifications-plugin Developers"
+    role: "Admin"

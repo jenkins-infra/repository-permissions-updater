@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/inline-pipeline"
 developers:
-  - "danielbeck"
+  - ldap: "danielbeck"
+  - github: "daniel-beck"
+repository_team: "inline-pipeline-plugin Developers"

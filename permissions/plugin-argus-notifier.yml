@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/argus-notifier"
 developers:
-  - "justinharringa"
+  - ldap: "justinharringa"
+    github: "justinharringa"
+repository_team: "argus-notifier-plugin Developers"

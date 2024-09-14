@@ -6,5 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/global-post-script"
 developers:
-  - "orctom"
-  - "abie_in"
+  - ldap: "orctom"
+  - ldap: "abie_in"
+  - github: "mhmdabdh"
+repository_team: "global-post-script-plugin Developers"

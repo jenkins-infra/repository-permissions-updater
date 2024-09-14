@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/postbuild-task"
 developers:
-  - "madsnielsen"
-  - "praqma"
-  - "timja"
+  - ldap: "madsnielsen"
+  - ldap: "praqma"
+  - ldap: "timja"
+    github: "timja"
+  - github: "MadsNielsen"
+repository_team: "postbuild-task-plugin Developers"

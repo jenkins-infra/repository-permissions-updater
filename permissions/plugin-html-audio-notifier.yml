@@ -5,4 +5,6 @@ issues:
   - jira: '16068'  # html-audio-notifier-plugin
 paths:
   - "jenkins/plugins/htmlaudio/html-audio-notifier"
-developers: []
+developers:
+  - github: "larshvile"
+repository_team: "html-audio-notifier-plugin Developers"

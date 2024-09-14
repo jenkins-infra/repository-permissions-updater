@@ -4,4 +4,6 @@ github: "jenkinsci/kotlin-plugin-pom"
 paths:
   - "org/jenkins-ci/plugins/kotlin-plugin"
 developers:
-  - "jetersen"
+  - ldap: "jetersen"
+    github: "jetersen"
+repository_team: "kotlin-plugin-pom Developers"

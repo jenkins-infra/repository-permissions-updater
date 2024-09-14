@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/icq-notification"
 developers:
-  - "nolequen"
+  - ldap: "nolequen"
+    github: "nolequen"
+repository_team: "icq-notification-plugin Developers"

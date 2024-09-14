@@ -6,7 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/stash-pullrequest-builder"
 developers:
-  - "nemccarthy"
-  - "jbochenski"
-  - "jimklimov"
-  - "robertoffmoura"
+  - ldap: "nemccarthy"
+    github: "nemccarthy"
+  - ldap: "jbochenski"
+  - ldap: "jimklimov"
+    github: "jimklimov"
+  - ldap: "robertoffmoura"
+    github: "robertoffmoura"
+  - github: "jakub-bochenski"
+repository_team: "stash-pullrequest-builder-plugin Developers"

@@ -4,9 +4,11 @@ github: &GH "jenkinsci/apimap-plugin"
 paths:
   - "io/jenkins/plugins/apimap"
 developers:
-  - "msulland"
+  - ldap: "msulland"
+    github: "msulland"
 issues:
   - github: *GH
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "apimap-plugin Developers"

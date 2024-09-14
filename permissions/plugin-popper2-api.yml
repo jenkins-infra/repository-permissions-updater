@@ -4,9 +4,11 @@ github: &GH "jenkinsci/popper2-api-plugin"
 paths:
   - "io/jenkins/plugins/popper2-api"
 developers:
-  - "drulli"
+  - ldap: "drulli"
+  - github: "uhafner"
 issues:
   - jira: 28621
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "popper2-api-plugin Developers"

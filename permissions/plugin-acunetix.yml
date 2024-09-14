@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/acunetix/acunetix"
 developers:
-  - "acunetix"
+  - ldap: "acunetix"
+  - github: "Acunetix"
+repository_team: "acunetix-plugin Developers"

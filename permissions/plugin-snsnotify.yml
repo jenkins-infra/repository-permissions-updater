@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/snsnotify"
 developers:
-  - "nikos"
+  - ldap: "nikos"
+    github: "nikos"
+repository_team: "snsnotify-plugin Developers"

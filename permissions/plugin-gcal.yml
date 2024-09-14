@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/gcal"
 developers: []
+repository_team: "gcal-plugin Developers"

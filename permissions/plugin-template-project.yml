@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/template-project"
 developers:
-  - "brantone"
-  - "ctapobep"
+  - ldap: "brantone"
+  - ldap: "ctapobep"
+    github: "ctapobep"
+  - github: "Brantone"
+repository_team: "template-project-plugin Developers"

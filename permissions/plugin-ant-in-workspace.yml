@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ant-in-workspace"
 developers:
-  - "phreakadelle"
+  - ldap: "phreakadelle"
+    github: "phreakadelle"
+repository_team: "ant-in-workspace-plugin Developers"

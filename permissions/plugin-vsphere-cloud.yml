@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vsphere-cloud"
 developers:
-  - "jswager"
-  - "jswager1"
-  - "pjdarton"
+  - ldap: "jswager"
+  - ldap: "jswager1"
+  - ldap: "pjdarton"
+    github: "pjdarton"
+  - github: "elordahl"
+repository_team: "vsphere-cloud-plugin Developers"

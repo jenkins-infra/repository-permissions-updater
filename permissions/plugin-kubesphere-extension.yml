@@ -6,7 +6,11 @@ issues:
 paths:
   - "io/jenkins/kubesphere/plugins/kubesphere-extension"
 developers:
-  - "shaowenchen"
-  - "runzexia"
-  - "zhuxiaoyang"
-  - "surenpi"
+  - ldap: "shaowenchen"
+  - ldap: "runzexia"
+    github: "runzexia"
+  - ldap: "zhuxiaoyang"
+  - ldap: "surenpi"
+  - github: "jenkinsadmin"
+  - github: "LinuxSuRen"
+repository_team: "kubesphere-extension-plugin Developers"

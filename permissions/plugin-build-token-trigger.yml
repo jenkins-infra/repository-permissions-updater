@@ -5,4 +5,6 @@ issues:
   - jira: '23535'  # build-token-trigger-plugin
 paths:
   - "org/jenkins-ci/plugins/build-token-trigger"
-developers: []
+developers:
+  - github: "stephenc"
+repository_team: "build-token-trigger-plugin Developers"

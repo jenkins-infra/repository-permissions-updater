@@ -2,10 +2,12 @@
 name: "jobcacher-artifactory-storage"
 github: &GH "jenkinsci/jobcacher-artifactory-storage-plugin"
 paths:
-- "io/jenkins/plugins/jobcacher-artifactory-storage"
+  - "io/jenkins/plugins/jobcacher-artifactory-storage"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "jobcacher-artifactory-storage-plugin Developers"

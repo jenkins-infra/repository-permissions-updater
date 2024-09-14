@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/applatix/jenkins/applatix"
 developers:
-  - "applatix_jenkins"
+  - ldap: "applatix_jenkins"
+  - github: "edlee2121"
+  - github: "mukulikak"
+repository_team: "applatix-plugin Developers"

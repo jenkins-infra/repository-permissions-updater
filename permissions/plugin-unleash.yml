@@ -7,6 +7,8 @@ paths:
   - "com/itemis/jenkins/plugins/unleash"
   - "io/jenkins/plugins/unleash"
 developers:
-  - "mhoffrog"
+  - ldap: "mhoffrog"
+    github: "mhoffrog"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "unleash-plugin Developers"

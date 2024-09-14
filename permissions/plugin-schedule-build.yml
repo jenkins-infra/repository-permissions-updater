@@ -6,9 +6,15 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/schedule-build"
 developers:
-  - "anderl86"
-  - "pingunaut"
-  - "markewaite"
-  - "darinpope"
+  - ldap: "anderl86"
+    github: "anderl86"
+  - ldap: "pingunaut"
+  - ldap: "markewaite"
+  - ldap: "darinpope"
+    github: "darinpope"
+  - github: "MarkEWaite"
+  - github: "martinspielmann"
+  - github: "MarkusStrand"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "schedule-build-plugin Developers"

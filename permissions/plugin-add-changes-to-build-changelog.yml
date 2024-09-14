@@ -2,10 +2,12 @@
 name: "add-changes-to-build-changelog"
 github: &GH "jenkinsci/add-changes-to-build-changelog-plugin"
 paths:
-- "io/jenkins/plugins/add-changes-to-build-changelog"
+  - "io/jenkins/plugins/add-changes-to-build-changelog"
 developers:
-- "shingo_d"
+  - ldap: "shingo_d"
+  - github: "danielomoto"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "add-changes-to-build-changelog-plugin Developers"

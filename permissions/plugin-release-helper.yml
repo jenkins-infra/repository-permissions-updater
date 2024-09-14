@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/release-helper"
 developers:
-  - "novatec"
+  - ldap: "novatec"
+  - github: "JonasKunz"
+repository_team: "release-helper-plugin Developers"

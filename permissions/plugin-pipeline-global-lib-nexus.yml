@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/roylenferink/jenkins/plugins/pipeline-global-lib-nexus"
 developers:
-  - "rlenferink"
+  - ldap: "rlenferink"
+    github: "rlenferink"
+  - github: "jenkinsadmin"
+repository_team: "pipeline-global-lib-nexus-plugin Developers"

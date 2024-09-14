@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vncviewer"
 developers:
-  - "tbaum"
+  - ldap: "tbaum"
+  - github: "dtbaum"
+repository_team: "vncviewer-plugin Developers"

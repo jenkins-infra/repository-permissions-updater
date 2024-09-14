@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jcaptcha-plugin"
 developers: []
+repository_team: "jcaptcha-plugin Developers"

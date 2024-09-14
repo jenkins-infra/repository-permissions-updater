@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/log-command"
 developers:
-  - "ialbors"
+  - ldap: "ialbors"
+    github: "ialbors"
+repository_team: "log-command-plugin Developers"

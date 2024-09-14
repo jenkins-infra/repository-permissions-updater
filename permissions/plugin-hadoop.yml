@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/hadoop"
 developers: []
+repository_team: "hadoop-plugin Developers"

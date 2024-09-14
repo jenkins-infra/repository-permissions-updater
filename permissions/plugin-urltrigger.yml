@@ -7,5 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/urltrigger"
 developers:
-  - "gbois"
-  - "stealthdj"
+  - ldap: "gbois"
+  - ldap: "stealthdj"
+  - github: "TonyNoble"
+repository_team: "urltrigger-plugin Developers"

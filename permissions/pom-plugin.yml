@@ -5,4 +5,10 @@ paths:
   - "org/jenkins-ci/plugins/plugin"
   - "org/jvnet/hudson/plugins/plugin"
 developers:
-  - "@core"
+  - ldap: "@core"
+  - github: "andresrc"
+  - github: "timja"
+repository_team: "plugin-pom Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Write"

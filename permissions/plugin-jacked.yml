@@ -2,8 +2,10 @@
 name: "jacked"
 github: &GH "jenkinsci/jacked-plugin"
 paths:
-- "io/jenkins/plugins/jacked"
+  - "io/jenkins/plugins/jacked"
 developers:
-- "sairen_carbonetes"
+  - ldap: "sairen_carbonetes"
+  - github: "sairenchristianbuerano"
 issues:
   - github: *GH
+repository_team: "jacked-plugin Developers"

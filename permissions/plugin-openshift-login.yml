@@ -6,9 +6,18 @@ issues:
 paths:
   - "org/openshift/jenkins/openshift-login"
 developers:
-  - "@openshift-developers"
+  - ldap: "@openshift-developers"
+  - github: "smarterclayton"
+  - github: "gabemontero"
+  - github: "bparees"
+  - github: "jkhelil"
+  - github: "divyansh42"
+  - github: "apoorvajagtap"
+  - github: "ayushsatyam146"
+  - github: "mbharatk"
 security:
-  contacts:
-    jira: "coreydaley"
+    contacts:
+        jira: "coreydaley"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "openshift-login-plugin Developers"

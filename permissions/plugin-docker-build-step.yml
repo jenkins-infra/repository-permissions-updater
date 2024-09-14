@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/docker-build-step"
 developers:
-  - "vjuranek"
+  - ldap: "vjuranek"
+    github: "vjuranek"
+  - github: "albers"
+repository_team: "docker-build-step-plugin Developers"

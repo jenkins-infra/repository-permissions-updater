@@ -7,4 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/multi-module-tests-publisher"
 developers:
-  - "vimil"
+  - ldap: "vimil"
+additional_github_teams:
+  - team: "script-scm-plugin Developers"
+    role: "Admin"

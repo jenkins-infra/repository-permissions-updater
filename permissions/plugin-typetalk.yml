@@ -6,7 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/typetalk"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "ikikko"
-  - "yasuyuki_baba"
+  - ldap: "ikikko"
+    github: "ikikko"
+  - ldap: "yasuyuki_baba"
+  - github: "yasuyuki-baba"
+repository_team: "typetalk-plugin Developers"

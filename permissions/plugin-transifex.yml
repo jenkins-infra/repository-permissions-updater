@@ -5,4 +5,6 @@ issues:
   - jira: '18139'  # transifex-plugin
 paths:
   - "com/gurkensalat/jenkins-ci/plugins/transifex"
-developers: []
+developers:
+  - github: "hakan42"
+repository_team: "transifex-plugin Developers"

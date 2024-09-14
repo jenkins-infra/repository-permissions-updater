@@ -7,5 +7,8 @@ paths:
   - "org/jenkins-ci/plugins/one-shot-executor"
 developers: []
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+additional_github_teams:
+  - team: "one-shot-executor-plugin"
+    role: "Write"

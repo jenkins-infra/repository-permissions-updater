@@ -6,8 +6,10 @@ issues:
 paths:
   - "io/jenkins/plugins/uleska"
 developers:
-  - "gavinf17"
-  - "garyarobinson"
-  - "tomjshore"
+  - ldap: "gavinf17"
+  - ldap: "garyarobinson"
+  - ldap: "tomjshore"
+    github: "tomjshore"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "uleska-plugin Developers"

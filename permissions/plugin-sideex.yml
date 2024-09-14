@@ -6,7 +6,11 @@ issues:
 paths:
   - "io/jenkins/plugins/sideex"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 developers:
-  - "sideexteam"
+  - ldap: "sideexteam"
+  - github: "shinjielee"
+  - github: "kiam123"
+  - github: "bobcode99"
+repository_team: "sideex-plugin Developers"

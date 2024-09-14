@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/incapptic/plugins/incapptic-connect-uploader"
 developers:
-  - "incapptic_connect"
+  - ldap: "incapptic_connect"
+  - github: "tjurkiewicz"
+repository_team: "incapptic-connect-uploader-plugin Developers"

@@ -6,3 +6,4 @@ issues:
 paths:
   - "io/jenkins/plugins/lighthouse-report"
 developers: []
+repository_team: "lighthouse-report-plugin Developers"

@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/xfpanel"
 developers:
-  - "tblue468"
-  - "tomaszbech"
+  - ldap: "tblue468"
+  - ldap: "tomaszbech"
+    github: "tomaszbech"
+  - github: "Tblue"
+  - github: "Jonux"
+repository_team: "xfpanel-plugin Developers"

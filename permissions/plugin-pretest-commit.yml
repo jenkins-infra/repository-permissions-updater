@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pretest-commit"
 developers:
-  - "madsnielsen"
+  - ldap: "madsnielsen"
+  - github: "ReleasePraqma"
+  - github: "MadsNielsen"
+  - github: "buep"
+repository_team: "pretested-integration-plugin Developers"

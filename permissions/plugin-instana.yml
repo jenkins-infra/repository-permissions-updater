@@ -6,6 +6,12 @@ issues:
 paths:
   - "com/instana/jenkins/plugins/instana"
 developers:
-  - "EWachnowezki"
-  - "cedricziel"
-  - "timoinstana"
+  - ldap: "EWachnowezki"
+    github: "EWachnowezki"
+  - ldap: "cedricziel"
+  - ldap: "timoinstana"
+    github: "timoinstana"
+  - github: "codepitbull"
+  - github: "schmidtl"
+  - github: "Dalje-et"
+repository_team: "instana-plugin Developers"

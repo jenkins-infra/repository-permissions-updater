@@ -6,3 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/chrome-frame-plugin"
 developers: []
+repository_team: "chrome-frame-plugin Developers"

@@ -6,7 +6,9 @@ issues:
 paths:
   - "fr/edf/jenkins/plugins/mac"
 developers:
-  - "mat1e"
+  - ldap: "mat1e"
+    github: "mat1e"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "mac-plugin Developers"

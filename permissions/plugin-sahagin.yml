@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sahagin"
 developers:
-  - "nozomiito"
+  - ldap: "nozomiito"
+  - github: "ssogabe"
+  - github: "NozomiIto"
+repository_team: "sahagin-plugin Developers"

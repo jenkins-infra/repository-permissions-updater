@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/vectorcast-execution"
 developers:
-  - "rmkeeble"
-  - "chris_overend"
-  - "nbelliot"
+  - ldap: "rmkeeble"
+  - ldap: "chris_overend"
+  - ldap: "nbelliot"
+  - github: "richardmkeeble"
+  - github: "chris-overend"
+repository_team: "vectorcast-execution-plugin Developers"

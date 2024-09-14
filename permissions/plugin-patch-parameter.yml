@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/patch-parameter"
 developers:
-  - "kohsuke"
+  - ldap: "kohsuke"
+    github: "kohsuke"
+  - github: "spark404"
+repository_team: "patch-parameter-plugin Developers"

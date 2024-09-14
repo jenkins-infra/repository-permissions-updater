@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/kiuwanJenkinsPlugin"
 developers:
-  - "jptejela"
-  - "kwjsalado"
-  - "gsimmross"
-  - "alexey_s_kwn"
+  - ldap: "jptejela"
+  - ldap: "kwjsalado"
+  - ldap: "gsimmross"
+  - ldap: "alexey_s_kwn"
+  - github: "jsalado"
+repository_team: "kiuwan-plugin Developers"

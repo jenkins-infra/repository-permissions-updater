@@ -7,3 +7,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/rrod"
 developers: []
+repository_team: "rrod-plugin Developers"

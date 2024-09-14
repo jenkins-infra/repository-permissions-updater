@@ -4,4 +4,4 @@ github: "jenkinsci/short-workspace-path-plugin"
 paths:
   - "org/jenkins-ci/plugins/short-workspace-path"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"

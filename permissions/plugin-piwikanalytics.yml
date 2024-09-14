@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/piwikanalytics"
 developers:
-  - "cfurmaniak"
+  - ldap: "cfurmaniak"
+  - github: "looztra"
+repository_team: "piwikanalytics-plugin Developers"

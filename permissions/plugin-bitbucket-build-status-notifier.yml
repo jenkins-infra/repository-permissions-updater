@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/bitbucket-build-status-notifier"
 developers:
-  - "flagbit"
+  - ldap: "flagbit"
+  - github: "amansilla"
+repository_team: "bitbucket-build-status-notifier-plugin Developers"

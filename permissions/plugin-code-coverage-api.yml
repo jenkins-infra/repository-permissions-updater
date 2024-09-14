@@ -7,7 +7,13 @@ issues:
 paths:
   - "io/jenkins/plugins/code-coverage-api"
 developers:
-  - "cizezsy"
-  - "asavanchuk"
-  - "drulli"
-  - "timja"
+  - ldap: "cizezsy"
+    github: "cizezsy"
+  - ldap: "asavanchuk"
+  - ldap: "drulli"
+  - ldap: "timja"
+    github: "timja"
+  - github: "uhafner"
+  - github: "christ66"
+  - github: "Supun94"
+repository_team: "code-coverage-api-plugin Developers"

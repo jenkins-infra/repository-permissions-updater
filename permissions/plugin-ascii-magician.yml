@@ -2,9 +2,11 @@
 name: "ascii-magician"
 github: &GH "jenkinsci/ascii-magician-plugin"
 paths:
-- "io/jenkins/plugins/ascii-magician"
+  - "io/jenkins/plugins/ascii-magician"
 developers:
-- "kadkoda"
-- "ilay_goldman"
+  - ldap: "kadkoda"
+  - ldap: "ilay_goldman"
+  - github: "yakirk"
 issues:
   - github: *GH
+repository_team: "ascii-magician-plugin Developers"

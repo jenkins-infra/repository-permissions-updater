@@ -7,8 +7,11 @@ paths:
   - "org/jenkins-ci/plugins/testng-plugin"
   - "org/jvnet/hudson/plugins/testng-plugin"
 developers:
-  - "nullin"
-  - "markewaite"
-  - "darinpope"
+  - ldap: "nullin"
+  - ldap: "markewaite"
+  - ldap: "darinpope"
+    github: "darinpope"
+  - github: "MarkEWaite"
 cd:
-  enabled: true
+    enabled: true
+repository_team: "testng-plugin-plugin Developers"

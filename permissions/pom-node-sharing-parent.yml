@@ -3,6 +3,6 @@ name: "node-sharing-parent"
 paths:
   - "org/jenkins-ci/plugins/nodesharing/node-sharing-parent"
 developers:
-  - "scoheb"
-  - "pajasoft"
-  - "olivergondza"
+  - ldap: "scoheb"
+  - ldap: "pajasoft"
+  - ldap: "olivergondza"

@@ -6,13 +6,22 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/conditional-buildstep"
 developers:
-  - "imod"
-  - "oleg_nenashev"
-  - "carroll"
-  - "olamy"
-  - "teilo"
-  - "rarabaolaza"
-  - "markewaite"
+  - ldap: "imod"
+    github: "imod"
+  - ldap: "oleg_nenashev"
+  - ldap: "carroll"
+  - ldap: "olamy"
+    github: "olamy"
+  - ldap: "teilo"
+  - ldap: "rarabaolaza"
+  - ldap: "markewaite"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "jtnord"
+  - github: "raul-arabaolaza"
+  - github: "jmMeessen"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "conditional-buildstep-plugin Developers"

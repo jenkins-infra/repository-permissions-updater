@@ -6,7 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/artifactdeployer"
 developers:
-  - "alecharp"
-  - "gbois"
-  - "seanturner83"
-  - "mPokornyETM"
+  - ldap: "alecharp"
+  - ldap: "gbois"
+  - ldap: "seanturner83"
+    github: "seanturner83"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "jmMeessen"
+repository_team: "artifactdeployer-plugin Developers"

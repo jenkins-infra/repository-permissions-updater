@@ -4,8 +4,10 @@ github: &GH "jenkinsci/build-history-metrics-plugin"
 paths:
   - "org/jenkins-ci/plugins/build-history-metrics-plugin"
 developers:
-  - "mcgin"
+  - ldap: "mcgin"
+    github: "mcgin"
 issues:
   - github: *GH
 cd:
-  enabled: true
+    enabled: true
+repository_team: "build-history-metrics-plugin Developers"

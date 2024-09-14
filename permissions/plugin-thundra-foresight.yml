@@ -4,9 +4,12 @@ github: &GH "jenkinsci/thundra-foresight-plugin"
 paths:
   - "io/jenkins/plugins/thundra-foresight"
 developers:
-  - "thundraio"
+  - ldap: "thundraio"
+  - github: "suleymanbarman"
+  - github: "rwxdash"
 issues:
   - github: *GH
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
+repository_team: "thundra-foresight-plugin Developers"

@@ -6,5 +6,8 @@ issues:
 paths:
   - "com/xebialabs/xlt/ci/xltestview-plugin"
 developers:
-  - "amolenaar"
-  - "klaren"
+  - ldap: "amolenaar"
+  - ldap: "klaren"
+additional_github_teams:
+  - team: "deployit-plugin Developers"
+    role: "Admin"

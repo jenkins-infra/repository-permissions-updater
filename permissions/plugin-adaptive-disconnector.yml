@@ -6,4 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/adaptive-disconnector"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+additional_github_teams:
+  - team: "mail-watcher-plugin Developers"
+    role: "Admin"

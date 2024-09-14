@@ -6,17 +6,28 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/scm-api"
 cd:
-  enabled: true
+    enabled: true
 developers:
-  - "jglick"
-  - "recena"
-  - "abayer"
-  - "svanoort"
-  - "rsandell"
-  - "dnusbaum"
-  - "carroll"
-  - "bitwiseman"
-  - "kshultz"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "recena"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "svanoort"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "dnusbaum"
+  - ldap: "carroll"
+  - ldap: "bitwiseman"
+    github: "bitwiseman"
+  - ldap: "kshultz"
+  - github: "olamy"
+  - github: "jtnord"
+  - github: "alecharp"
+  - github: "dwnusbaum"
+  - github: "MRamonLeon"
+  - github: "car-roll"
 security:
-  contacts:
-    jira: "cloudbees_security_members"
+    contacts:
+        jira: "cloudbees_security_members"
+repository_team: "scm-api-plugin Developers"

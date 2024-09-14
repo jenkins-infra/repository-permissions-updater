@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/waptpro"
 developers:
-  - "waptpro"
+  - ldap: "waptpro"
+  - github: "AndreyEfimcev"
+repository_team: "waptpro-plugin Developers"

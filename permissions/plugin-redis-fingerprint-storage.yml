@@ -6,6 +6,11 @@ issues:
 paths:
   - "io/jenkins/plugins/redis-fingerprint-storage"
 developers:
-  - "stellargo"
-  - "oleg_nenashev"
-  - "ma3oxuct"
+  - ldap: "stellargo"
+    github: "stellargo"
+  - ldap: "oleg_nenashev"
+  - ldap: "ma3oxuct"
+  - github: "afalko"
+  - github: "oleg-nenashev"
+  - github: "mikecirioli"
+repository_team: "redis-fingerprint-storage-plugin Developers"

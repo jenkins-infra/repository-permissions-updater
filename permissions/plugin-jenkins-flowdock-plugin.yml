@@ -7,5 +7,9 @@ issues:
 paths:
   - "com/flowdock/jenkins/jenkins-flowdock-plugin"
 developers:
-  - "anttipitkanen"
-  - "arcivanov"
+  - ldap: "anttipitkanen"
+    github: "anttipitkanen"
+  - ldap: "arcivanov"
+  - github: "lautis"
+  - github: "OsQu"
+repository_team: "flowdock-plugin Developers"

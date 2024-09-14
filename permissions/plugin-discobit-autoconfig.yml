@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/v3rticle/oss/discobit-autoconfig"
 developers:
-  - "jenssaade"
+  - ldap: "jenssaade"
+    github: "jenssaade"
+repository_team: "discobit-autoconfig-plugin Developers"

@@ -6,4 +6,7 @@ issues:
 paths:
   - "com/tupilabs/image_gallery/image-gallery"
 developers:
-  - "kinow"
+  - ldap: "kinow"
+    github: "kinow"
+  - github: "darkrift"
+repository_team: "image-gallery-plugin Developers"

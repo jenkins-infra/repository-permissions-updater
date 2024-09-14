@@ -5,4 +5,6 @@ issues:
   - jira: '15959'  # avatar-plugin
 paths:
   - "net/hurstfrost/jenkins/avatar"
-developers: []
+developers:
+  - github: "cafebabe"
+repository_team: "avatar-plugin Developers"

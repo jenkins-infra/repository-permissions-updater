@@ -6,5 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/calendar-view"
 developers:
-  - "svenschoenung"
-  - "malice00"
+  - ldap: "svenschoenung"
+    github: "svenschoenung"
+  - ldap: "malice00"
+    github: "malice00"
+repository_team: "calendar-view-plugin Developers"

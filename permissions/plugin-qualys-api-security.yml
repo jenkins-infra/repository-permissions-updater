@@ -6,4 +6,13 @@ issues:
 paths:
   - "com/qualys/plugins/qualys-api-security"
 developers:
-  - "qualys"
+  - ldap: "qualys"
+  - github: "pmgupte"
+  - github: "nikita-bedmutha"
+  - github: "gwaghmare"
+  - github: "qualys-plugins"
+  - github: "aphatangade"
+repository_team: "qualys-api-security-plugin Developers"
+additional_github_teams:
+  - team: "qualys Developers"
+    role: "Admin"

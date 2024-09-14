@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/acunetix-360-scan"
 developers:
-  - "acunetix360"
+  - ldap: "acunetix360"
+  - github: "acunetix360dev"
+repository_team: "acunetix-360-scan-plugin Developers"

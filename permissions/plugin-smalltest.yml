@@ -6,4 +6,6 @@ issues:
 paths:
   - "com/smalltest/smalltest"
 developers:
-  - "smalltest"
+  - ldap: "smalltest"
+  - github: "SmallTestHQ"
+repository_team: "smalltest-plugin Developers"

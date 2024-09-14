@@ -2,10 +2,12 @@
 name: "infisical"
 github: &GH "jenkinsci/infisical-plugin"
 paths:
-- "io/jenkins/plugins/infisical"
+  - "io/jenkins/plugins/infisical"
 developers:
-- "danielhougaard"
+  - ldap: "danielhougaard"
+  - github: "DanielHougaard"
 issues:
   - jira: 29423
 cd:
-  enabled: true
+    enabled: true
+repository_team: "infisical-plugin Developers"

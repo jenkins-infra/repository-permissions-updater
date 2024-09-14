@@ -6,5 +6,10 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/gitlab-oauth"
 developers:
-  - "elhabib_med"
-  - "krisstern"
+  - ldap: "elhabib_med"
+  - ldap: "krisstern"
+    github: "krisstern"
+  - github: "gounthar"
+  - github: "MarkEWaite"
+  - github: "mohamed-el-habib"
+repository_team: "gitlab-oauth-plugin Developers"

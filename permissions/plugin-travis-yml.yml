@@ -7,5 +7,8 @@ issues:
 paths:
   - "org/jenkins-ci/ruby-plugins/travis-yml"
 developers:
-  - "ikasam_a"
-  - "kanekotic"
+  - ldap: "ikasam_a"
+  - ldap: "kanekotic"
+  - github: "masaki"
+  - github: "alvarolorentedev"
+repository_team: "travis-yml-plugin Developers"

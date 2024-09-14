@@ -4,4 +4,10 @@ github: "jenkinsci/lib-shared-resources"
 paths:
   - "io/jenkins/lib/shared-resources"
 developers:
-  - "@core"
+  - ldap: "@core"
+  - github: "basil"
+  - github: "NotMyFault"
+repository_team: "lib-shared-resources Developers"
+additional_github_teams:
+  - team: "Core"
+    role: "Admin"

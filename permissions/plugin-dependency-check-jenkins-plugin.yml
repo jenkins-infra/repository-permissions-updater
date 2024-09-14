@@ -6,5 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/dependency-check-jenkins-plugin"
 developers:
-  - "danile42"
-  - "nfalco"
+  - ldap: "danile42"
+    github: "danile42"
+  - ldap: "nfalco"
+  - github: "jeremylong"
+  - github: "nfalco79"
+repository_team: "dependency-check-plugin Developers"

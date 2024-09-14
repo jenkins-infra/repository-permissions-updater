@@ -6,7 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/hashicorp-vault-pipeline"
 cd:
-  enabled: true
-  exclusive: false
+    enabled: true
+    exclusive: false
 developers:
-  - "philmadden"
+  - ldap: "philmadden"
+  - github: "philmadden83"
+repository_team: "hashicorp-vault-pipeline-plugin Developers"

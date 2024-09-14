@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/pipeline-huaweicloud-plugin"
 developers:
-  - "zhongjun2"
+  - ldap: "zhongjun2"
+    github: "zhongjun2"
+repository_team: "pipeline-huaweicloud-plugin Developers"
