@@ -13,3 +13,6 @@ developers:
   - "@cloudbees-developers"
 cd:
   enabled: true
+security:
+  contacts:
+    jira: "cloudbees_security_members"
