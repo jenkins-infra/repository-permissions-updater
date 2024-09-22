@@ -4,8 +4,7 @@ github: &GH "jenkinsci/loadrunner-cloud-plugin"
 paths:
   - "io/jenkins/plugins/loadrunner-cloud"
 developers:
-  - "weisun10"
-  - "xiaoyuan_qi"
+  - "loadrunnercloud_pe"
 issues:
   - github: *GH
 cd:
