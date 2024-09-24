@@ -7,3 +7,5 @@ developers:
 - "cpottiers"
 issues:
   - jira: 29520
+cd:
+  enabled: true
