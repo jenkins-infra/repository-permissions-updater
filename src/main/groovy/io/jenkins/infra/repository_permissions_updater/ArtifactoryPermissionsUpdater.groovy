@@ -173,21 +173,25 @@ class ArtifactoryPermissionsUpdater {
 
             if (definition.issues) {
                 if (definition.github) {
-                    issueTrackersByPlugin.put(definition.name, definition.issues.collect { tracker ->
-                        if (tracker.isJira() || tracker.isGitHubIssues()) {
-                            def ret = [type: tracker.getType(), reference: tracker.getReference()]
-                            def viewUrl = tracker.getViewUrl()
-                            if (viewUrl) {
-                                ret += [ viewUrl: viewUrl ]
+                    ArrayList<String> names = new ArrayList(Arrays.asList(definition.getExtraNames()))
+                    names.add(definition.name)
+                    for (String name: names) {
+                        issueTrackersByPlugin.put(name, definition.issues.collect { tracker ->
+                            if (tracker.isJira() || tracker.isGitHubIssues()) {
+                                def ret = [type: tracker.getType(), reference: tracker.getReference()]
+                                def viewUrl = tracker.getViewUrl()
+                                if (viewUrl) {
+                                    ret += [viewUrl: viewUrl]
+                                }
+                                def reportUrl = tracker.getReportUrl()
+                                if (reportUrl) {
+                                    ret += [reportUrl: reportUrl]
+                                }
+                                return ret
                             }
-                            def reportUrl = tracker.getReportUrl()
-                            if (reportUrl) {
-                                ret += [ reportUrl: reportUrl ]
-                            }
-                            return ret
-                        }
-                        return null
-                    }.findAll { it != null })
+                            return null
+                        }.findAll { it != null })
+                    }
                 } else {
                     throw new Exception("Issue trackers ('issues') support requires GitHub repository ('github')")
                 }
@@ -195,21 +199,23 @@ class ArtifactoryPermissionsUpdater {
 
             String artifactId = definition.name
             for (String path : definition.paths) {
-                if (path.substring(path.lastIndexOf('/') + 1) != artifactId) {
+                String lastPathElement = path.substring(path.lastIndexOf('/') + 1)
+                if (lastPathElement != artifactId && !lastPathElement.contains("*")) {
                     // We could throw an exception here, but we actively abuse this for unusually structured components
-                    LOGGER.log(Level.WARNING, "Unexpected path: " + path + " for artifact ID: " + artifactId)
+                    if (lastPathElement.endsWith("-releaseblocker") || lastPathElement.endsWith("-releaseblock")) {
+                        LOGGER.log(Level.INFO, "Release blocked for artifact ID: " + artifactId)
+                    } else {
+                        LOGGER.log(Level.WARNING, "Unexpected path: " + path + " for artifact ID: " + artifactId)
+                    }
                 }
                 String groupId = path.substring(0, path.lastIndexOf('/')).replace('/', '.')
-
-                String key = groupId + ":" + artifactId
-
-                if (maintainersByComponent.containsKey(key)) {
-                    LOGGER.log(Level.WARNING, "Duplicate maintainers entry for component: " + key)
+                if (lastPathElement.contains("*")) {
+                    for (String name: definition.getExtraNames()) {
+                        addMaintainers(maintainersByComponent, groupId + ":" +  name, definition)
+                    }
+                } else {
+                    addMaintainers(maintainersByComponent, groupId + ":" +  artifactId, definition)
                 }
-                // A potential issue with this implementation is that groupId changes will result in lack of maintainer information for the old groupId.
-                // In practice this will probably not be a problem when path changes here and subsequent release are close enough in time.
-                // Alternatively, always keep the old groupId around for a while.
-                maintainersByComponent.computeIfAbsent(key, { _ -> new ArrayList<>(Arrays.asList(definition.developers)) })
             }
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
@@ -356,6 +362,16 @@ class ArtifactoryPermissionsUpdater {
     private static void reportChecksApiDetails(String errorMessage, String details) {
         new File('checks-title.txt').text = errorMessage
         new File('checks-details.txt').text = details
+    }
+
+    private static void addMaintainers(HashMap<String, List<String>> maintainersByComponent, String key, Definition definition) {
+        if (maintainersByComponent.containsKey(key)) {
+            LOGGER.log(Level.WARNING, "Duplicate maintainers entry for component: " + key)
+        }
+        // A potential issue with this implementation is that groupId changes will result in lack of maintainer information for the old groupId.
+        // In practice this will probably not be a problem when path changes here and subsequent release are close enough in time.
+        // Alternatively, always keep the old groupId around for a while.
+        maintainersByComponent.computeIfAbsent(key, { _ -> new ArrayList<>(Arrays.asList(definition.developers)) })
     }
 
     /**

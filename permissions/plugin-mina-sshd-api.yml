@@ -3,6 +3,11 @@ name: "mina-sshd-api"
 github: &GH "jenkinsci/mina-sshd-api-plugin"
 paths:
   - "io/jenkins/plugins/mina-sshd-api/mina-sshd-api-*"
+extraNames:
+  - "mina-sshd-api-common"
+  - "mina-sshd-api-core"
+  - "mina-sshd-api-scp"
+  - "mina-sshd-api-sftp"
 cd:
   enabled: true
 developers:

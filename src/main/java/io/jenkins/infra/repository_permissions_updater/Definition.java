@@ -123,6 +123,7 @@ public class Definition {
     private String[] paths = new String[0];
     private String[] developers = new String[0];
     private IssueTracker[] issues = new IssueTracker[0];
+    private String[] extraNames = new String[0];
 
     private String github;
 
@@ -151,6 +152,14 @@ public class Definition {
 
     public void setPaths(String[] paths) {
         this.paths = paths.clone();
+    }
+
+    public void setExtraNames(String[] extraNames) {
+        this.extraNames = extraNames.clone();
+    }
+
+    public String[] getExtraNames() {
+        return extraNames.clone();
     }
 
     public IssueTracker[] getIssues() {

@@ -4,6 +4,9 @@ github: &GH "jenkinsci/gcp-java-sdk-plugin"
 paths:
 - "io/jenkins/plugins/gcp-java-sdk"
 - "io/jenkins/plugins/gcp-java-sdk-*"
+extraNames:
+- gcp-java-sdk-auth
+- gcp-java-sdk-storage
 developers:
 - "aneveux"
 - "@cloudbees-developers"
