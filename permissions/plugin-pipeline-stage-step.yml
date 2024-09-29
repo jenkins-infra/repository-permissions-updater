@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/pipeline-stage-step"
 developers:
   - "jglick"
-  - "svanoort"
   - "abayer"
   - "dnusbaum"
   - "rsandell"
