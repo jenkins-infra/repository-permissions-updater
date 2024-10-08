@@ -9,6 +9,7 @@ org.json:json;io.jenkins.plugins:json-api
 com.jayway.jsonpath:json-path;io.jenkins.plugins:json-path-api
 com.google.code.gson:gson;io.jenkins.plugins:gson-api
 com.fasterxml.jackson.core:jackson-core;org.jenkins-ci.plugins:jackson2-api
+com.fasterxml.jackson.core:jackson-databind;org.jenkins-ci.plugins:jackson2-api
 org.yaml:snakeyaml;io.jenkins.plugins:snakeyaml-api
 com.sun.xml.bind:jaxb-impl;io.jenkins.plugins:jaxb
 
