@@ -7,3 +7,5 @@ developers:
 - "strangelookingnerd"
 issues:
   - github: *GH
+cd:
+  enabled: true
