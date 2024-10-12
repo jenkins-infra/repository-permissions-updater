@@ -124,6 +124,7 @@ public class Definition {
     private String[] developers = new String[0];
     private IssueTracker[] issues = new IssueTracker[0];
     private String[] extraNames = new String[0];
+    private boolean releaseBlocked;
 
     private String github;
 
@@ -184,6 +185,14 @@ public class Definition {
 
     public void setSecurity(Security security) {
         this.security = security;
+    }
+
+    public boolean isReleaseBlocked() {
+        return releaseBlocked;
+    }
+
+    public void setReleaseBlocked(boolean releaseBlocked) {
+        this.releaseBlocked = releaseBlocked;
     }
 
     public String getGithub() {

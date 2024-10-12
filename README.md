@@ -36,6 +36,8 @@ Each file contains the following in [YAML format](https://en.wikipedia.org/wiki/
 - A `name` (typically mirrored in the file name), this is also the `artifactId` of the Maven artifact.
 - A `github` field indicating the GitHub organization and repository which is expected to produce these artifacts.
 - A set of paths, usually just one. These correspond to the full Maven coordinates (`groupId` and `artifactId`) used for the artifact. Since Jenkins plugins can change group IDs and are still considered the same artifact, multiple entries are possible.
+- Optional `releaseBlocked` flag. When set to true, 
+ artifact(s) described in this file cannot be pushed to Artifactory.
 - A set of user names (Jenkins community user accounts in LDAP, the same as used for wiki and JIRA) allowed to upload this artifact to Artifactory. This set can be empty, which means nobody is currently allowed to upload the plugin in question (except Artifactory admins). This can happen for plugins that haven't seen releases in several years, or permission cleanups.
 
 Example file:
@@ -85,6 +87,14 @@ You may also edit the `github` component, if you wish to rename the repository.
 Changing the `paths` or modifying the `<artifactId>` in the plugin `pom.xml` is highly discouraged.  
 Modifying the path will break any Maven dependencies from other plugins.
 Altering the `artifactId` means changing the identifier by which the Jenkins plugin manager differentiates one plugin from others, and will cause chaos for users who have already installed it under the old name.
+
+### Multiple plugins in single configuration file
+
+If multiple closely related plugins are located in the same GitHub repository,
+have the same maintainer and the same issue tracker, they can use a single configuration file.
+To define multiple plugins in a single file, please
+- add an entry to `paths` that includes a `*` character, this path has to match the paths of all included plugins, but should not be too generic.
+- add a new property `extraNames`, it should contain the list of names of all the plugins managed by this configuration file other than the main plugin defined by `name`.
 
 Managing Continuous Delivery (JEP-229 CD)
 -----------------------------------------
@@ -199,6 +209,8 @@ Each issue tracker entry will have the following keys:
 The list is sorted in descending order of preference.
 The first issue tracker in the list with a `reportUrl` should be presented as the primary (or only) option for reporting issues.
 Further issue trackers are mostly provided as a reference, e.g. when listing existing issues, although a different issue tracker with `reportUrl` can be linked if users provide a preference for a specific kind of issue tracker.
+
+## Multiple
 
 Usage
 -----
