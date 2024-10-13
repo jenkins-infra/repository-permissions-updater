@@ -93,6 +93,7 @@ If multiple closely related plugins are located in the same GitHub repository, h
 To define multiple plugins in a single file, please do the following:
 - Add an entry to `paths` that includes a `*` character, this path has to match the paths of all included plugins, but should not be too generic.
 - Add a new property `extraNames`, it should contain the list of names of all the plugins managed by this configuration file other than the main plugin defined by `name`.
+ All these names must start with the name of the main plugin, followed by `-`.
 
 Managing Continuous Delivery (JEP-229 CD)
 -----------------------------------------
