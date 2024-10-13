@@ -108,7 +108,6 @@ class ArtifactoryPermissionsUpdater {
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
      */
     private static void generateApiPayloads(File yamlSourceDirectory, File apiOutputDir) throws IOException {
-        Yaml yaml = new Yaml(new Constructor(Definition.class, new LoaderOptions()))
 
         if (!yamlSourceDirectory.exists()) {
             throw new IOException("Directory ${DEFINITIONS_DIR} does not exist")
@@ -117,7 +116,12 @@ class ArtifactoryPermissionsUpdater {
         if (apiOutputDir.exists()) {
             throw new IOException(apiOutputDir.path + " already exists")
         }
+        doGenerateApiPayloads(yamlSourceDirectory, apiOutputDir, ArtifactoryAPI.getInstance())
+    }
 
+    protected static void doGenerateApiPayloads(File yamlSourceDirectory, File apiOutputDir,
+                                                  ArtifactoryAPI artifactoryAPI) {
+        Yaml yaml = new Yaml(new Constructor(Definition.class, new LoaderOptions()))
         Map<String, Set<TeamDefinition>> teamsByName = loadTeams()
 
         Map<String, Set<String>> pathsByGithub = new TreeMap<>()
@@ -213,7 +217,7 @@ class ArtifactoryPermissionsUpdater {
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
 
-            String jsonName = ArtifactoryAPI.getInstance().toGeneratedPermissionTargetName(fileBaseName)
+            String jsonName = artifactoryAPI.toGeneratedPermissionTargetName(fileBaseName)
             File outputFile = new File(new File(apiOutputDir, 'permissions'), jsonName + '.json')
             JsonBuilder json = new JsonBuilder()
 
@@ -304,7 +308,7 @@ class ArtifactoryPermissionsUpdater {
                             users [:]
                         }
                         if (definition.cd?.enabled) {
-                            groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
+                            groups([(artifactoryAPI.toGeneratedGroupName(definition.github)): ["w", "n"]])
                         } else {
                             groups([:])
                         }
@@ -319,7 +323,7 @@ class ArtifactoryPermissionsUpdater {
         }
 
         cdEnabledComponentsByGitHub.each { githubRepo, components ->
-            def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName(githubRepo)
+            def groupName = artifactoryAPI.toGeneratedGroupName(githubRepo)
             File outputFile = new File(new File(apiOutputDir, 'groups'), groupName + '.json')
             JsonBuilder json = new JsonBuilder()
 
