@@ -89,11 +89,10 @@ Altering the `artifactId` means changing the identifier by which the Jenkins plu
 
 ### Multiple plugins in single configuration file
 
-If multiple closely related plugins are located in the same GitHub repository,
-have the same maintainer and the same issue tracker, they can use a single configuration file.
-To define multiple plugins in a single file, please
-- add an entry to `paths` that includes a `*` character, this path has to match the paths of all included plugins, but should not be too generic.
-- add a new property `extraNames`, it should contain the list of names of all the plugins managed by this configuration file other than the main plugin defined by `name`.
+If multiple closely related plugins are located in the same GitHub repository, have the same maintainer and the same issue tracker, they can use a single configuration file.
+To define multiple plugins in a single file, please do the following:
+- Add an entry to `paths` that includes a `*` character, this path has to match the paths of all included plugins, but should not be too generic.
+- Add a new property `extraNames`, it should contain the list of names of all the plugins managed by this configuration file other than the main plugin defined by `name`.
 
 Managing Continuous Delivery (JEP-229 CD)
 -----------------------------------------
