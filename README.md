@@ -209,8 +209,6 @@ The list is sorted in descending order of preference.
 The first issue tracker in the list with a `reportUrl` should be presented as the primary (or only) option for reporting issues.
 Further issue trackers are mostly provided as a reference, e.g. when listing existing issues, although a different issue tracker with `reportUrl` can be linked if users provide a preference for a specific kind of issue tracker.
 
-## Multiple
-
 Usage
 -----
 
