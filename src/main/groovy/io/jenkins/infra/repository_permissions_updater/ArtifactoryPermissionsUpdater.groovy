@@ -108,7 +108,6 @@ class ArtifactoryPermissionsUpdater {
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
      */
     private static void generateApiPayloads(File yamlSourceDirectory, File apiOutputDir) throws IOException {
-        Yaml yaml = new Yaml(new Constructor(Definition.class, new LoaderOptions()))
 
         if (!yamlSourceDirectory.exists()) {
             throw new IOException("Directory ${DEFINITIONS_DIR} does not exist")
@@ -117,7 +116,12 @@ class ArtifactoryPermissionsUpdater {
         if (apiOutputDir.exists()) {
             throw new IOException(apiOutputDir.path + " already exists")
         }
+        doGenerateApiPayloads(yamlSourceDirectory, apiOutputDir, ArtifactoryAPI.getInstance())
+    }
 
+    protected static void doGenerateApiPayloads(File yamlSourceDirectory, File apiOutputDir,
+                                                  ArtifactoryAPI artifactoryAPI) {
+        Yaml yaml = new Yaml(new Constructor(Definition.class, new LoaderOptions()))
         Map<String, Set<TeamDefinition>> teamsByName = loadTeams()
 
         Map<String, Set<String>> pathsByGithub = new TreeMap<>()
@@ -142,13 +146,10 @@ class ArtifactoryPermissionsUpdater {
             }
 
             if (definition.github) {
-                Set<String> paths = pathsByGithub[definition.github]
-                if (!paths) {
-                    paths = new TreeSet()
-                    pathsByGithub[definition.github] = paths
+                if (!definition.releaseBlocked) {
+                    Set<String> paths = pathsByGithub.withDefault {_ -> new TreeSet()}[definition.github]
+                    paths.addAll(definition.paths)
                 }
-                paths.addAll(definition.paths)
-
                 if (definition.cd && definition.getCd().enabled) {
                     if (!definition.github.matches('(jenkinsci)/.+')) {
                         throw new Exception("CD is only supported when the GitHub repository is in @jenkinsci")
@@ -202,11 +203,7 @@ class ArtifactoryPermissionsUpdater {
                 String lastPathElement = path.substring(path.lastIndexOf('/') + 1)
                 if (lastPathElement != artifactId && !lastPathElement.contains("*")) {
                     // We could throw an exception here, but we actively abuse this for unusually structured components
-                    if (lastPathElement.endsWith("-releaseblocker") || lastPathElement.endsWith("-releaseblock")) {
-                        LOGGER.log(Level.INFO, "Release blocked for artifact ID: " + artifactId)
-                    } else {
-                        LOGGER.log(Level.WARNING, "Unexpected path: " + path + " for artifact ID: " + artifactId)
-                    }
+                    LOGGER.log(Level.WARNING, "Unexpected path: " + path + " for artifact ID: " + artifactId)
                 }
                 String groupId = path.substring(0, path.lastIndexOf('/')).replace('/', '.')
                 if (lastPathElement.contains("*")) {
@@ -220,14 +217,14 @@ class ArtifactoryPermissionsUpdater {
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
 
-            String jsonName = ArtifactoryAPI.getInstance().toGeneratedPermissionTargetName(fileBaseName)
+            String jsonName = artifactoryAPI.toGeneratedPermissionTargetName(fileBaseName)
             File outputFile = new File(new File(apiOutputDir, 'permissions'), jsonName + '.json')
             JsonBuilder json = new JsonBuilder()
 
 
             json {
                 name jsonName
-                includesPattern definition.paths.collect { path ->
+                includesPattern definition.releaseBlocked ? 'blocked' : definition.paths.collect { path ->
                     [
                             path + '/*/' + definition.name + '-*',
                             path + '/*/maven-metadata.xml', // used for SNAPSHOTs
@@ -311,7 +308,7 @@ class ArtifactoryPermissionsUpdater {
                             users [:]
                         }
                         if (definition.cd?.enabled) {
-                            groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
+                            groups([(artifactoryAPI.toGeneratedGroupName(definition.github)): ["w", "n"]])
                         } else {
                             groups([:])
                         }
@@ -326,7 +323,7 @@ class ArtifactoryPermissionsUpdater {
         }
 
         cdEnabledComponentsByGitHub.each { githubRepo, components ->
-            def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName(githubRepo)
+            def groupName = artifactoryAPI.toGeneratedGroupName(githubRepo)
             File outputFile = new File(new File(apiOutputDir, 'groups'), groupName + '.json')
             JsonBuilder json = new JsonBuilder()
 
