@@ -36,8 +36,7 @@ Each file contains the following in [YAML format](https://en.wikipedia.org/wiki/
 - A `name` (typically mirrored in the file name), this is also the `artifactId` of the Maven artifact.
 - A `github` field indicating the GitHub organization and repository which is expected to produce these artifacts.
 - A set of paths, usually just one. These correspond to the full Maven coordinates (`groupId` and `artifactId`) used for the artifact. Since Jenkins plugins can change group IDs and are still considered the same artifact, multiple entries are possible.
-- Optional `releaseBlocked` flag. When set to true, 
- artifact(s) described in this file cannot be pushed to Artifactory.
+- Optional `releaseBlocked` flag. When set to true, artifact(s) described in this file cannot be pushed to Artifactory. This is only used in rare circumstances, e.g., by the Jenkins security team if plugin code contains unreleased security issues.
 - A set of user names (Jenkins community user accounts in LDAP, the same as used for wiki and JIRA) allowed to upload this artifact to Artifactory. This set can be empty, which means nobody is currently allowed to upload the plugin in question (except Artifactory admins). This can happen for plugins that haven't seen releases in several years, or permission cleanups.
 
 Example file:
