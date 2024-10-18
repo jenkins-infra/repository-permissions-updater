@@ -4,8 +4,7 @@ github: "jenkinsci/protecode-sc-plugin"
 issues:
   - jira: '21659'  # protecode-sc-plugin
 paths:
-  - "com/synopsys/protecode-sc"
+  - "com/blackducksoftware/protecode-sc"
 developers:
   - "mattisii"
-  - "rukkanen"
   - "phietala"
