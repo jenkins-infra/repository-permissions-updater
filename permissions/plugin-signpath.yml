@@ -12,3 +12,5 @@ developers:
 - "volodymyr_bobko"
 issues:
   - jira: 28629
+cd:
+  enabled: true
