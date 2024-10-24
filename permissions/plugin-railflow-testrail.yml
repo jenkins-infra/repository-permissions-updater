@@ -7,3 +7,5 @@ developers:
 - "railflow"
 issues:
   - jira: 29524
+cd:
+  enabled: true
