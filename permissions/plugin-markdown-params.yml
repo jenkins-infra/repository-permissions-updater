@@ -7,3 +7,5 @@ developers:
 - "jesusnoseq"
 issues:
   - github: *GH
+cd:
+  enabled: true
