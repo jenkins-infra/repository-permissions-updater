@@ -7,3 +7,5 @@ developers:
 - "kmart"
 issues:
   - github: *GH
+cd:
+  enabled: true
