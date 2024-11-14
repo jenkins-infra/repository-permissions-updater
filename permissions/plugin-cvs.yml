@@ -9,7 +9,6 @@ paths:
 cd:
   enabled: true
 developers:
-  - "basil"
   - "mc1arke"
   - "kohsuke"
   - "jglick"
