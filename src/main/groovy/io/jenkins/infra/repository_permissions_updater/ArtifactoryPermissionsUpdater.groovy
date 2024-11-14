@@ -151,7 +151,7 @@ class ArtifactoryPermissionsUpdater {
                     paths.addAll(definition.paths)
                 }
                 if (definition.cd && definition.getCd().enabled) {
-                    if (!definition.github.matches('(jenkinsci)/.+')) {
+                    if (!definition.github.matches('(jenkinsci|jenkins-infra)/.+')) {
                         throw new Exception("CD is only supported when the GitHub repository is in @jenkinsci")
                     }
                     if (definition.developers.length > 0) {
