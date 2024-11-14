@@ -1,9 +1,12 @@
 ---
 name: "job-restrictions"
 github: "jenkinsci/job-restrictions-plugin"
+cd:
+  enabled: true
 issues:
   - jira: '18044'  # job-restrictions-plugin
 paths:
   - "com/synopsys/arc/jenkinsci/plugins/job-restrictions"
 developers:
   - "oleg_nenashev"
+  - "mpokornyetm"

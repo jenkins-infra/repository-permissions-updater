@@ -1,0 +1,11 @@
+---
+name: "disable-job-button"
+github: &GH "jenkinsci/disable-job-button-plugin"
+paths:
+- "io/jenkins/plugins/disable-job-button"
+developers:
+- "danielbeck"
+issues:
+  - github: *GH
+cd:
+  enabled: true

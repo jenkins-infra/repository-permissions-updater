@@ -5,6 +5,8 @@ issues:
   - jira: '24727'  # benchmark-evaluator-plugin
 paths:
   - "io/jenkins/plugins/benchmark-evaluator"
+cd:
+  enabled: true
 developers:
   - "lehmann_fabian"
   - "martingrambow"

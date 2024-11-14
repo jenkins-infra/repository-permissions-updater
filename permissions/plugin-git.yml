@@ -9,7 +9,6 @@ paths:
   - "org/jvnet/hudson/plugins/git"
 developers:
   - "markewaite"
-  - "mramonleon"
   - "olamy"
   - "rsandell"
 security:

@@ -15,6 +15,7 @@ developers:
   - "ndsistsys"
   - "marcuzzuu"
   - "denz"
+  - "tembleking"
 cd:
   enabled: true
   exclusive: false

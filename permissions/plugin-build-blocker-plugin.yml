@@ -10,4 +10,3 @@ developers:
   - "dmone"
 cd:
   enabled: true
-  exclusive: true

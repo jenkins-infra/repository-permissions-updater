@@ -8,7 +8,6 @@ paths:
   - "org/jenkinsci/plugins/git-client"
 developers:
   - "markewaite"
-  - "mramonleon"
   - "olamy"
   - "rsandell"
 security:

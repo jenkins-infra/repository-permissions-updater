@@ -5,6 +5,7 @@ import groovy.io.FileType
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import io.jenkins.lib.support_log_formatter.SupportLogFormatter
+import org.yaml.snakeyaml.LoaderOptions
 import org.yaml.snakeyaml.Yaml
 import org.yaml.snakeyaml.error.YAMLException;
 import org.yaml.snakeyaml.constructor.Constructor
@@ -48,7 +49,7 @@ class ArtifactoryPermissionsUpdater {
      * Always returns non null.
      */
     private static Map<String, Set<TeamDefinition>>  loadTeams() {
-        Yaml yaml = new Yaml(new Constructor(TeamDefinition.class))
+        Yaml yaml = new Yaml(new Constructor(TeamDefinition.class, new LoaderOptions()))
         File teamsDir = new File('teams/')
 
         Set<TeamDefinition> teams = [] as Set
@@ -107,7 +108,6 @@ class ArtifactoryPermissionsUpdater {
      * Take the YAML permission definitions and convert them to Artifactory permissions API payloads.
      */
     private static void generateApiPayloads(File yamlSourceDirectory, File apiOutputDir) throws IOException {
-        Yaml yaml = new Yaml(new Constructor(Definition.class))
 
         if (!yamlSourceDirectory.exists()) {
             throw new IOException("Directory ${DEFINITIONS_DIR} does not exist")
@@ -116,11 +116,16 @@ class ArtifactoryPermissionsUpdater {
         if (apiOutputDir.exists()) {
             throw new IOException(apiOutputDir.path + " already exists")
         }
+        doGenerateApiPayloads(yamlSourceDirectory, apiOutputDir, ArtifactoryAPI.getInstance())
+    }
 
+    protected static void doGenerateApiPayloads(File yamlSourceDirectory, File apiOutputDir,
+                                                  ArtifactoryAPI artifactoryAPI) {
+        Yaml yaml = new Yaml(new Constructor(Definition.class, new LoaderOptions()))
         Map<String, Set<TeamDefinition>> teamsByName = loadTeams()
 
-        Map<String, Set<String>> pathsByGithub = new TreeMap()
-        Map<String, List> issueTrackersByPlugin = new TreeMap()
+        Map<String, Set<String>> pathsByGithub = new TreeMap<>()
+        Map<String, List> issueTrackersByPlugin = new TreeMap<>()
         Map<String, List<Definition>> cdEnabledComponentsByGitHub = new TreeMap<>()
         Map<String, List<String>> maintainersByComponent = new HashMap<>()
 
@@ -141,13 +146,10 @@ class ArtifactoryPermissionsUpdater {
             }
 
             if (definition.github) {
-                Set<String> paths = pathsByGithub[definition.github]
-                if (!paths) {
-                    paths = new TreeSet()
-                    pathsByGithub[definition.github] = paths
+                if (!definition.releaseBlocked) {
+                    Set<String> paths = pathsByGithub.withDefault {_ -> new TreeSet()}[definition.github]
+                    paths.addAll(definition.paths)
                 }
-                paths.addAll(definition.paths)
-
                 if (definition.cd && definition.getCd().enabled) {
                     if (!definition.github.matches('(jenkinsci)/.+')) {
                         throw new Exception("CD is only supported when the GitHub repository is in @jenkinsci")
@@ -172,21 +174,25 @@ class ArtifactoryPermissionsUpdater {
 
             if (definition.issues) {
                 if (definition.github) {
-                    issueTrackersByPlugin.put(definition.name, definition.issues.collect { tracker ->
-                        if (tracker.isJira() || tracker.isGitHubIssues()) {
-                            def ret = [type: tracker.getType(), reference: tracker.getReference()]
-                            def viewUrl = tracker.getViewUrl(JiraAPI.getInstance())
-                            if (viewUrl) {
-                                ret += [ viewUrl: viewUrl ]
+                    ArrayList<String> names = new ArrayList(Arrays.asList(definition.getExtraNames()))
+                    names.add(definition.name)
+                    for (String name: names) {
+                        issueTrackersByPlugin.put(name, definition.issues.collect { tracker ->
+                            if (tracker.isJira() || tracker.isGitHubIssues()) {
+                                def ret = [type: tracker.getType(), reference: tracker.getReference()]
+                                def viewUrl = tracker.getViewUrl()
+                                if (viewUrl) {
+                                    ret += [viewUrl: viewUrl]
+                                }
+                                def reportUrl = tracker.getReportUrl()
+                                if (reportUrl) {
+                                    ret += [reportUrl: reportUrl]
+                                }
+                                return ret
                             }
-                            def reportUrl = tracker.getReportUrl(JiraAPI.getInstance())
-                            if (reportUrl) {
-                                ret += [ reportUrl: reportUrl ]
-                            }
-                            return ret
-                        }
-                        return null
-                    }.findAll { it != null })
+                            return null
+                        }.findAll { it != null })
+                    }
                 } else {
                     throw new Exception("Issue trackers ('issues') support requires GitHub repository ('github')")
                 }
@@ -194,33 +200,31 @@ class ArtifactoryPermissionsUpdater {
 
             String artifactId = definition.name
             for (String path : definition.paths) {
-                if (path.substring(path.lastIndexOf('/') + 1) != artifactId) {
+                String lastPathElement = path.substring(path.lastIndexOf('/') + 1)
+                if (lastPathElement != artifactId && !lastPathElement.contains("*")) {
                     // We could throw an exception here, but we actively abuse this for unusually structured components
                     LOGGER.log(Level.WARNING, "Unexpected path: " + path + " for artifact ID: " + artifactId)
                 }
                 String groupId = path.substring(0, path.lastIndexOf('/')).replace('/', '.')
-
-                String key = groupId + ":" + artifactId
-
-                if (maintainersByComponent.containsKey(key)) {
-                    LOGGER.log(Level.WARNING, "Duplicate maintainers entry for component: " + key)
+                if (lastPathElement.contains("*")) {
+                    for (String name: definition.getExtraNames()) {
+                        addMaintainers(maintainersByComponent, groupId + ":" +  name, definition)
+                    }
+                } else {
+                    addMaintainers(maintainersByComponent, groupId + ":" +  artifactId, definition)
                 }
-                // A potential issue with this implementation is that groupId changes will result in lack of maintainer information for the old groupId.
-                // In practice this will probably not be a problem when path changes here and subsequent release are close enough in time.
-                // Alternatively, always keep the old groupId around for a while.
-                maintainersByComponent.computeIfAbsent(key, { _ -> new ArrayList<>(Arrays.asList(definition.developers)) })
             }
 
             String fileBaseName = file.name.replaceAll('\\.ya?ml$', '')
 
-            String jsonName = ArtifactoryAPI.getInstance().toGeneratedPermissionTargetName(fileBaseName)
+            String jsonName = artifactoryAPI.toGeneratedPermissionTargetName(fileBaseName)
             File outputFile = new File(new File(apiOutputDir, 'permissions'), jsonName + '.json')
             JsonBuilder json = new JsonBuilder()
 
 
             json {
                 name jsonName
-                includesPattern definition.paths.collect { path ->
+                includesPattern definition.releaseBlocked ? 'blocked' : definition.paths.collect { path ->
                     [
                             path + '/*/' + definition.name + '-*',
                             path + '/*/maven-metadata.xml', // used for SNAPSHOTs
@@ -242,7 +246,7 @@ class ArtifactoryPermissionsUpdater {
                         if (!definition.cd?.exclusive) {
                             users definition.developers.collectEntries { developer ->
                                 def existsInArtifactory = KnownUsers.existsInArtifactory(developer)
-                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
+                                def existsInJira = KnownUsers.existsInJira(developer)
 
                                 if (!existsInArtifactory && !existsInJira) {
                                     reportChecksApiDetails(developer + " needs to log in to Artifactory and Jira",
@@ -286,7 +290,7 @@ class ArtifactoryPermissionsUpdater {
                             }
                         } else {
                             definition.developers.each { developer ->
-                                def existsInJira = KnownUsers.existsInJira(developer) || JiraAPI.getInstance().isUserPresent(developer)
+                                def existsInJira = KnownUsers.existsInJira(developer)
 
                                 if (!existsInJira) {
                                     reportChecksApiDetails(developer + " needs to log in to Jira",
@@ -304,7 +308,7 @@ class ArtifactoryPermissionsUpdater {
                             users [:]
                         }
                         if (definition.cd?.enabled) {
-                            groups([(ArtifactoryAPI.getInstance().toGeneratedGroupName(definition.github)): ["w", "n"]])
+                            groups([(artifactoryAPI.toGeneratedGroupName(definition.github)): ["w", "n"]])
                         } else {
                             groups([:])
                         }
@@ -319,7 +323,7 @@ class ArtifactoryPermissionsUpdater {
         }
 
         cdEnabledComponentsByGitHub.each { githubRepo, components ->
-            def groupName = ArtifactoryAPI.getInstance().toGeneratedGroupName(githubRepo)
+            def groupName = artifactoryAPI.toGeneratedGroupName(githubRepo)
             File outputFile = new File(new File(apiOutputDir, 'groups'), groupName + '.json')
             JsonBuilder json = new JsonBuilder()
 
@@ -355,6 +359,16 @@ class ArtifactoryPermissionsUpdater {
     private static void reportChecksApiDetails(String errorMessage, String details) {
         new File('checks-title.txt').text = errorMessage
         new File('checks-details.txt').text = details
+    }
+
+    private static void addMaintainers(HashMap<String, List<String>> maintainersByComponent, String key, Definition definition) {
+        if (maintainersByComponent.containsKey(key)) {
+            LOGGER.log(Level.WARNING, "Duplicate maintainers entry for component: " + key)
+        }
+        // A potential issue with this implementation is that groupId changes will result in lack of maintainer information for the old groupId.
+        // In practice this will probably not be a problem when path changes here and subsequent release are close enough in time.
+        // Alternatively, always keep the old groupId around for a while.
+        maintainersByComponent.computeIfAbsent(key, { _ -> new ArrayList<>(Arrays.asList(definition.developers)) })
     }
 
     /**

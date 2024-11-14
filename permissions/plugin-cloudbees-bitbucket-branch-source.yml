@@ -13,9 +13,9 @@ developers:
   - "carroll"
   - "dnusbaum"
   - "rsandell"
-  - "svanoort"
   - "jtaboada"
   - "lifeofguenter"
+  - "nfalco"
 security:
   contacts:
     jira: "cloudbees_security_members"

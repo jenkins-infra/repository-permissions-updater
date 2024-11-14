@@ -2,6 +2,7 @@ package io.jenkins.infra.repository_permissions_updater;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.URI;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Set;
@@ -14,13 +15,13 @@ public class KnownUsers {
     private static final String ARTIFACTORY_USER_NAMES_URL = System.getProperty("artifactoryUserNamesJsonListUrl", "https://reports.jenkins.io/artifactory-ldap-users-report.json");
     private static final String JIRA_USER_NAMES_URL = System.getProperty("jiraUserNamesJsonListUrl", "https://reports.jenkins.io/jira-users-report.json");
 
-    private static Set<String> knownArtifactoryUsers = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
-    private static Set<String> knownJiraUsers = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
+    private static final Set<String> knownArtifactoryUsers = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
+    private static final Set<String> knownJiraUsers = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
 
     static {
         try {
-            knownArtifactoryUsers.addAll(parseJson(new URL(ARTIFACTORY_USER_NAMES_URL)));
-            knownJiraUsers.addAll(parseJson(new URL(JIRA_USER_NAMES_URL)));
+            knownArtifactoryUsers.addAll(parseJson(URI.create(ARTIFACTORY_USER_NAMES_URL).toURL()));
+            knownJiraUsers.addAll(parseJson(URI.create(JIRA_USER_NAMES_URL).toURL()));
         } catch (IOException e) {
             e.printStackTrace();
         }

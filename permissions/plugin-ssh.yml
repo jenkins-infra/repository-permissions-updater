@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/ssh"
   - "org/jvnet/hudson/plugins/ssh"
 developers:
+  - "basil"
   - "edmund_wagner"
   - "ljader"

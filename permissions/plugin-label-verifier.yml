@@ -7,3 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/label-verifier"
 developers:
   - "oleg_nenashev"
+  - "markewaite"
+cd:
+  enabled: true
