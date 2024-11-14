@@ -5,7 +5,6 @@ paths:
   - "io/jenkins/plugins/signpath"
 developers:
 - "psavoie_signpath"
-- "ugsp"
 - "swenig_signpath"
 - "fabianschmied"
 - "drauch"
