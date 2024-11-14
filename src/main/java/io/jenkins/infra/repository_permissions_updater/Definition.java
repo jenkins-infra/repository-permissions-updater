@@ -2,6 +2,8 @@ package io.jenkins.infra.repository_permissions_updater;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
+import java.text.MessageFormat;
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -200,5 +202,12 @@ public class Definition {
             return github;
         }
         return null;
+    }
+
+    @Override
+    public String toString() {
+        return MessageFormat
+                .format("Definition'{'name=''{0}'', paths={1}, developers={2}, issues={3}, extraNames={4}, releaseBlocked={5}, github=''{6}'', cd={7}, security={8}'}'",
+                        name, Arrays.toString(paths), Arrays.toString(developers), Arrays.toString(issues), Arrays.toString(extraNames), releaseBlocked, github, cd, security);
     }
 }
