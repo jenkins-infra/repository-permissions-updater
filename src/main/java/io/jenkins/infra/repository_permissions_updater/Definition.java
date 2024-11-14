@@ -2,6 +2,8 @@ package io.jenkins.infra.repository_permissions_updater;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
+import java.text.MessageFormat;
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -55,7 +57,7 @@ public class Definition {
             if (github == null) {
                 return false;
             }
-            if (!github.startsWith("jenkinsci/")) {
+            if (!(github.startsWith("jenkinsci/") || github.startsWith("jenkins-infra/"))) {
                 LOGGER.log(Level.INFO, "Unexpected GitHub repo for issue tracker, skipping: " + jira);
                 return false;
             }
@@ -196,7 +198,7 @@ public class Definition {
     }
 
     public String getGithub() {
-        if (github != null && github.startsWith("jenkinsci/")) {
+        if (github != null && (github.startsWith("jenkinsci/") || github.startsWith("jenkins-infra/"))) {
             return github;
         }
         return null;
