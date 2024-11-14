@@ -16,14 +16,36 @@ public class Definition {
     public static class CD {
         public boolean enabled;
         public boolean exclusive = true;
+
+        @Override
+        public String toString() {
+            return "CD{" +
+                    "enabled=" + enabled +
+                    ", exclusive=" + exclusive +
+                    '}';
+        }
     }
 
     public static class Security {
         public SecurityContacts contacts;
+
+        @Override
+        public String toString() {
+            return "Security{" +
+                    "contacts=" + contacts +
+                    '}';
+        }
     }
 
     public static class SecurityContacts {
         public String jira;
+
+        @Override
+        public String toString() {
+            return "SecurityContacts{" +
+                    "jira='" + jira + '\'' +
+                    '}';
+        }
     }
 
     /**
@@ -118,6 +140,15 @@ public class Definition {
                 return "github";
             }
             throw new IllegalStateException("Invalid issue tracker: " + github + " / " + jira);
+        }
+
+        @Override
+        public String toString() {
+            return "IssueTracker{" +
+                    "jira='" + jira + '\'' +
+                    ", github='" + github + '\'' +
+                    ", report=" + report +
+                    '}';
         }
     }
 
