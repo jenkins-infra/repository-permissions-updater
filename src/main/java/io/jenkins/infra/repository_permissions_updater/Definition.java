@@ -16,36 +16,14 @@ public class Definition {
     public static class CD {
         public boolean enabled;
         public boolean exclusive = true;
-
-        @Override
-        public String toString() {
-            return "CD{" +
-                    "enabled=" + enabled +
-                    ", exclusive=" + exclusive +
-                    '}';
-        }
     }
 
     public static class Security {
         public SecurityContacts contacts;
-
-        @Override
-        public String toString() {
-            return "Security{" +
-                    "contacts=" + contacts +
-                    '}';
-        }
     }
 
     public static class SecurityContacts {
         public String jira;
-
-        @Override
-        public String toString() {
-            return "SecurityContacts{" +
-                    "jira='" + jira + '\'' +
-                    '}';
-        }
     }
 
     /**
@@ -79,7 +57,7 @@ public class Definition {
             if (github == null) {
                 return false;
             }
-            if (!github.startsWith("jenkinsci/")) {
+            if (!(github.startsWith("jenkinsci/") || github.startsWith("jenkins-infra/"))) {
                 LOGGER.log(Level.INFO, "Unexpected GitHub repo for issue tracker, skipping: " + jira);
                 return false;
             }
@@ -140,15 +118,6 @@ public class Definition {
                 return "github";
             }
             throw new IllegalStateException("Invalid issue tracker: " + github + " / " + jira);
-        }
-
-        @Override
-        public String toString() {
-            return "IssueTracker{" +
-                    "jira='" + jira + '\'' +
-                    ", github='" + github + '\'' +
-                    ", report=" + report +
-                    '}';
         }
     }
 
@@ -229,16 +198,9 @@ public class Definition {
     }
 
     public String getGithub() {
-        if (github != null && github.startsWith("jenkinsci/")) {
+        if (github != null && (github.startsWith("jenkinsci/") || github.startsWith("jenkins-infra/"))) {
             return github;
         }
         return null;
-    }
-
-    @Override
-    public String toString() {
-        return MessageFormat
-                .format("Definition'{'name=''{0}'', paths={1}, developers={2}, issues={3}, extraNames={4}, releaseBlocked={5}, github=''{6}'', cd={7}, security={8}'}'",
-                        name, Arrays.toString(paths), Arrays.toString(developers), Arrays.toString(issues), Arrays.toString(extraNames), releaseBlocked, github, cd, security);
     }
 }

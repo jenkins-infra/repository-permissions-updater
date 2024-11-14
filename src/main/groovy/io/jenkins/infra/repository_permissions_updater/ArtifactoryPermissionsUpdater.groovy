@@ -168,7 +168,6 @@ class ArtifactoryPermissionsUpdater {
                 }
             } else {
                 if (definition.cd && definition.getCd().enabled) {
-                    LOGGER.severe(definition.toString())
                     throw new Exception("Cannot have CD ('cd') enabled without specifying GitHub repository ('github'), for component: " + definition.name)
                 }
             }
