@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/leastload"
 developers:
   - "bstick12"
+  - "hashar"
