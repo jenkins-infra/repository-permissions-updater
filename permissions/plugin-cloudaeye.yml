@@ -1,0 +1,9 @@
+---
+name: "cloudaeye"
+github: &GH "jenkinsci/cloudaeye-plugin"
+paths:
+- "io/jenkins/plugins/cloudaeye"
+developers:
+- "cloudaeye"
+issues:
+  - github: *GH
