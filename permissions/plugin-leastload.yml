@@ -8,3 +8,5 @@ paths:
 developers:
   - "bstick12"
   - "hashar"
+cd:
+  enabled: true
