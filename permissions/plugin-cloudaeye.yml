@@ -7,3 +7,5 @@ developers:
 - "cloudaeye"
 issues:
   - github: *GH
+cd:
+  enabled: true
