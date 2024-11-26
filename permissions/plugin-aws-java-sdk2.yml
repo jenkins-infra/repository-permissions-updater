@@ -36,4 +36,4 @@ issues:
   - jira: 29620
 security:
   contacts:
-    jira: basil
+    jira: "cloudbees_security_members"
