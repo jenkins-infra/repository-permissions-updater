@@ -31,7 +31,8 @@ extraNames:
   - aws-java-sdk2-sts
 cd:
   enabled: true
-developers: []
+developers:
+  - "basil"
 issues:
   - jira: 29620
 security:
