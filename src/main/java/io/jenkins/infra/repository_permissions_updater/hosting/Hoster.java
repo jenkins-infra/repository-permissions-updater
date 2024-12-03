@@ -31,6 +31,7 @@ import org.kohsuke.github.GHTeam;
 import org.kohsuke.github.GHTeamBuilder;
 import org.kohsuke.github.GHUser;
 import org.kohsuke.github.GitHub;
+import org.kohsuke.github.HttpException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -155,6 +156,10 @@ public class Hoster {
         }
     }
 
+    private void renameRepository(GHRepository r, String newName) throws IOException {
+        r.renameTo(newName);
+    }
+
     boolean forkGitHub(String owner, String repo, String newName, List<String> maintainers, boolean useGHIssues) {
         boolean result = false;
         try {
@@ -205,7 +210,17 @@ public class Hoster {
                     throw e;
             }
             if (newName != null) {
-                r.renameTo(newName);
+                for (int i = 0; i < 5; i++) {
+                    try {
+                        r.renameTo(newName);
+                        break;
+                    } catch (HttpException e) {
+                        if (e.getResponseCode() == 422) {
+                            Thread.sleep(1000);
+                            renameRepository(r, newName);
+                        }
+                    }
+                }
 
                 r = null;
                 for (int i = 0; r == null && i < 5; i++) {
