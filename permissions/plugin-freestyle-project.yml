@@ -5,5 +5,6 @@ paths:
 - "io/jenkins/plugins/freestyle-project"
 developers:
 - "slide_o_mix"
+- "@core"
 issues:
   - jira: 29621
