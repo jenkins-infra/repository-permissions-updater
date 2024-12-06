@@ -5,9 +5,8 @@ paths:
 - "io/jenkins/plugins/cloudaeye"
 developers:
 - "cloudaeye"
-- "bhavyalatha26"
-- "PiyushKumar11"
-- "nazrul-cloudaeye"
+- "nazrul"
+- "piyush_1"
 issues:
   - github: *GH
 cd:
