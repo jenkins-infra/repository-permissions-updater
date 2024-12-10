@@ -1,12 +1,10 @@
 ---
-name: "plugin-modernizer-tool"
+name: "plugin-modernizer-pom"
 github: &GH "jenkins-infra/plugin-modernizer-tool"
 issues:
   - github: *GH
 paths:
   - "io/jenkins/plugin-modernizer/plugin-modernizer-pom"
-  - "io/jenkins/plugin-modernizer/plugin-modernizer-cli"
-  - "io/jenkins/plugin-modernizer/plugin-modernizer-core"
 developers:
   - "poddingue"
   - "jonesbusy"
