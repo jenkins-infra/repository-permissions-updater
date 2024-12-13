@@ -1,8 +1,8 @@
 ---
-name: "blackduck-security-scan"
-github: &GH "jenkinsci/blackduck-security-scan-plugin"
+name: "black-duck-security-scan"
+github: &GH "jenkinsci/black-duck-security-scan-plugin"
 paths:
-- "io/jenkins/plugins/blackduck-security-scan"
+- "io/jenkins/plugins/black-duck-security-scan"
 developers:
 - "zaman_akib"
 - "jahid1209"
