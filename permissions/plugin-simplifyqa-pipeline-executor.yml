@@ -4,6 +4,6 @@ github: &GH "jenkinsci/simplifyqa-pipeline-executor-plugin"
 paths:
 - "io/jenkins/plugins/simplifyqa-pipeline-executor"
 developers:
-- "Simplify3x"
+- "simplifyadmin"
 issues:
   - github: *GH
