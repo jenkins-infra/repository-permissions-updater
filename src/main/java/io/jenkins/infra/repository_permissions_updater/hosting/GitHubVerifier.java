@@ -22,26 +22,29 @@ public class GitHubVerifier implements Verifier {
         String forkFrom = request.getRepositoryUrl();
         List<String> users = request.getGithubUsers();
 
-        if (users != null && !users.isEmpty()) {
-            List<String> invalidUsers = new ArrayList<>();
-            for (String user : users) {
-                if (StringUtils.isBlank(user)) {
-                    continue;
-                }
-
-                try {
-                    GHUser ghUser = github.getUser(user.trim());
-                    if (ghUser == null || !ghUser.getType().equalsIgnoreCase("user")) {
+        if (users != null) {
+            users = users.stream().filter(it -> !it.trim().isEmpty()).toList();
+            if (!users.isEmpty()) {
+                List<String> invalidUsers = new ArrayList<>();
+                for (String user : users) {
+                    try {
+                        GHUser ghUser = github.getUser(user.trim());
+                        if (ghUser == null || !ghUser.getType().equalsIgnoreCase("user")) {
+                            invalidUsers.add(user.trim());
+                        }
+                    } catch (IOException e) {
                         invalidUsers.add(user.trim());
                     }
-                } catch(IOException e) {
-                    invalidUsers.add(user.trim());
                 }
-            }
 
-            if (invalidUsers.size() > 0) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The following usernames in 'GitHub Users to Authorize as Committers' are not valid GitHub usernames or are Organizations: %s", String.join(",", invalidUsers)));
+                if (!invalidUsers.isEmpty()) {
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The following usernames in 'GitHub Users to Authorize as Committers' are not valid GitHub usernames or are Organizations: %s", String.join(",", invalidUsers)));
+                }
+            } else {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The Github users list is empty. Please specify at least one user."));
             }
+        } else {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The Github users list is empty. Please specify at least one user."));
         }
 
         if (StringUtils.isNotBlank(forkFrom)) {
