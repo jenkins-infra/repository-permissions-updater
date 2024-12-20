@@ -89,8 +89,8 @@ public class HostingChecker {
                     .append("\nHosting team members can host this request with `/hosting host`");
         }
 
-        LOGGER.info(msg.toString());
         if (!debug) {
+            LOGGER.info(msg.toString());
             GitHub github = GitHub.connect();
             GHIssue issue = github.getRepository(HOSTING_REPO_SLUG).getIssue(issueID);
             issue.comment(msg.toString());

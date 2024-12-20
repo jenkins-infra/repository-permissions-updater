@@ -22,24 +22,20 @@ public class GitHubVerifier implements Verifier {
         String forkFrom = request.getRepositoryUrl();
         List<String> users = request.getGithubUsers();
 
-        if (users != null && !users.isEmpty()) {
+        if (!users.isEmpty()) {
             List<String> invalidUsers = new ArrayList<>();
             for (String user : users) {
-                if (StringUtils.isBlank(user)) {
-                    continue;
-                }
-
                 try {
                     GHUser ghUser = github.getUser(user.trim());
                     if (ghUser == null || !ghUser.getType().equalsIgnoreCase("user")) {
                         invalidUsers.add(user.trim());
                     }
-                } catch(IOException e) {
+                } catch (IOException e) {
                     invalidUsers.add(user.trim());
                 }
             }
 
-            if (invalidUsers.size() > 0) {
+            if (!invalidUsers.isEmpty()) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The following usernames in 'GitHub Users to Authorize as Committers' are not valid GitHub usernames or are Organizations: %s", String.join(",", invalidUsers)));
             }
         }
