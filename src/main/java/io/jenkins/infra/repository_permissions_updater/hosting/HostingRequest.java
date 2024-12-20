@@ -27,8 +27,8 @@ public class HostingRequest {
     ) {
         this.repositoryUrl = repositoryUrl;
         this.newRepoName = newRepoName;
-        this.githubUsers = Collections.unmodifiableList(githubUsers);
-        this.jenkinsProjectUsers = Collections.unmodifiableList(jenkinsProjectUsers);
+        this.githubUsers = Collections.unmodifiableList(trimList(githubUsers));
+        this.jenkinsProjectUsers = Collections.unmodifiableList(trimList(jenkinsProjectUsers));
         this.issueTracker = issueTracker;
     }
 
@@ -58,5 +58,10 @@ public class HostingRequest {
         public static IssueTracker fromString(String string) {
             return string.toLowerCase(Locale.ROOT).contains("git") ? GITHUB : JIRA;
         }
+    }
+
+    private List<String> trimList(List<String> users) {
+        return users.stream().filter(it -> !it.trim().isEmpty()).toList();
+
     }
 }
