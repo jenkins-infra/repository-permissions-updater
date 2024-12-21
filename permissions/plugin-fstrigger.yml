@@ -7,5 +7,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fstrigger"
 developers:
-  - "gbois"
   - "stealthdj"

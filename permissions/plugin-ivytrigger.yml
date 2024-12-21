@@ -6,6 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ivytrigger"
 developers:
-  - "gbois"
-  - "bbergquist"
   - "stealthdj"
