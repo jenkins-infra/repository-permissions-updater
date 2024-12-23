@@ -1,0 +1,9 @@
+---
+name: "zohoqengine"
+github: &GH "jenkinsci/zohoqengine-plugin"
+paths:
+- "io/jenkins/plugins/zohoqengine"
+developers:
+- "zohoqengine"
+issues:
+  - jira: 29721
