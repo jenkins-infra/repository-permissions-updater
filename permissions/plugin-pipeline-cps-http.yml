@@ -7,3 +7,4 @@ paths:
   - "io/jenkins/plugins/pipeline-cps-http"
 developers:
   - "julienduchesne"
+  - "jonesbusy"
