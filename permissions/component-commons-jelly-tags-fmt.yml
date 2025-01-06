@@ -1,0 +1,7 @@
+---
+name: "commons-jelly-tags-fmt"
+github: "jenkinsci/jelly"
+paths:
+  - "org/jenkins-ci/commons-jelly-tags-fmt"
+developers:
+  - "@core"
