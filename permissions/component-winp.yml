@@ -5,3 +5,4 @@ paths:
   - "org/jvnet/winp/winp"
 developers:
   - "@core"
+  - "slide_o_mix"
