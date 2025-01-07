@@ -7,3 +7,6 @@ developers:
 - "zohoqengine"
 issues:
   - jira: 29721
+cd:
+  enabled: true
+  
