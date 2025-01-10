@@ -184,7 +184,7 @@ class ArtifactoryPermissionsUpdater {
                                 if (viewUrl) {
                                     ret += [viewUrl: viewUrl]
                                 }
-                                def reportUrl = tracker.getReportUrl()
+                                def reportUrl = tracker.getReportUrl(name)
                                 if (reportUrl) {
                                     ret += [reportUrl: reportUrl]
                                 }
