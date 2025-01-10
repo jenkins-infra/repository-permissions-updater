@@ -2,8 +2,6 @@ package io.jenkins.infra.repository_permissions_updater;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
-import java.text.MessageFormat;
-import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -82,12 +80,12 @@ public class Definition {
             throw new IllegalStateException("Invalid issue tracker: " + github + " / " + jira);
         }
 
-        public String getReportUrl() {
+        public String getReportUrl(String pluginId) {
             if (!report) {
                 return null;
             }
             if (isJira()) {
-                return "https://www.jenkins.io/participate/report-issue/redirect/#" + jira;
+                return "https://www.jenkins.io/participate/report-issue/redirect/#" + jira + "/" + pluginId;
             }
             if (isGitHubIssues()) {
                 return "https://github.com/" + github + "/issues/new/choose"; // The 'choose' URL works even when there are no issue templates
