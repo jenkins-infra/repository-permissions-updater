@@ -8,5 +8,6 @@ cd:
 developers:
 - "blucas_hl"
 - "travis_hiddenlayer"
+- "adrummond_hl"
 issues:
   - github: *GH
