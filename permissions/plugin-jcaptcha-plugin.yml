@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/jcaptcha-plugin"
 developers:
   - "jonesbusy"
+cd:
+  enabled: true
