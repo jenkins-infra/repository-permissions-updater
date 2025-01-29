@@ -1,0 +1,9 @@
+---
+name: "wiz-scanner"
+github: &GH "jenkinsci/wiz-scanner-plugin"
+paths:
+- "io/jenkins/plugins/wiz-scanner"
+developers:
+- "wizdeploy"
+issues:
+  - github: *GH
