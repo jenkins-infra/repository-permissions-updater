@@ -9,6 +9,7 @@ extraNames:
   - aws-java-sdk2-autoscaling
   - aws-java-sdk2-cloudformation
   - aws-java-sdk2-cloudfront
+  - aws-java-sdk2-cloudwatch
   - aws-java-sdk2-cloudwatchlogs
   - aws-java-sdk2-codebuild
   - aws-java-sdk2-codedeploy

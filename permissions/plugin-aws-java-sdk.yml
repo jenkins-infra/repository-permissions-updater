@@ -11,6 +11,7 @@ extraNames:
   - aws-java-sdk-autoscaling
   - aws-java-sdk-cloudformation
   - aws-java-sdk-cloudfront
+  - aws-java-sdk-cloudwatch
   - aws-java-sdk-codebuild
   - aws-java-sdk-codedeploy
   - aws-java-sdk-ec2
