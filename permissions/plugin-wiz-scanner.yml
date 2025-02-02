@@ -7,3 +7,5 @@ developers:
 - "wizdeploy"
 issues:
   - github: *GH
+cd:
+  enabled: true
