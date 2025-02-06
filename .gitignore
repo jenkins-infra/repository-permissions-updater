@@ -19,3 +19,6 @@ lib/
 # NetBeans
 nb-configuration.xml
 nbactions-*.xml
+
+# macOS
+.DS_Store
