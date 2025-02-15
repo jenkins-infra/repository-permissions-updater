@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/jira-steps"
 developers:
   - "nrayapati"
+  - "stuartrowe"
 cd:
   enabled: true
