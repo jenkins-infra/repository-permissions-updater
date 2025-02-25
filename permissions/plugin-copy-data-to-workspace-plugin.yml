@@ -4,7 +4,7 @@ github: jenkinsci/copy-data-to-workspace-plugin
 issues:
   - jira: '15957'  # copy-data-to-workspace-plugin
 paths:
-  - "org/jvnet/hudson/plugins/copy-data-to-workspace-plugin"  # Legacy path for backward compatibility
-  - "org/jenkins-ci/plugins/copy-data-to-workspace-plugin"    # New path for current version
+  - "org/jvnet/hudson/plugins/copy-data-to-workspace-plugin"
+  - "org/jenkins-ci/plugins/copy-data-to-workspace-plugin"
 developers:
   - "jimmyleo"
