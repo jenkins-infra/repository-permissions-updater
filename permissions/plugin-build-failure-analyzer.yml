@@ -5,6 +5,8 @@ issues:
   - jira: '17224'  # build-failure-analyzer-plugin
 paths:
   - "com/sonyericsson/jenkins/plugins/bfa/build-failure-analyzer"
+cd:
+  enabled: true
 developers:
   - "rsandell"
   - "t_westling"
