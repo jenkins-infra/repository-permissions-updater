@@ -5,8 +5,6 @@ issues:
   - jira: '27120'  # declarative-pipeline-migration-assistant-plugin
 paths:
   - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-api"
-cd:
-  enabled: true
 developers:
   - "abayer"
   - "dnusbaum"
