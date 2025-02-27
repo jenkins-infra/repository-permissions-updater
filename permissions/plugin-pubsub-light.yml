@@ -5,8 +5,6 @@ issues:
   - jira: '23040'  # pubsub-light-plugin
 paths:
   - "org/jenkins-ci/plugins/pubsub-light"
-cd:
-  enabled: true
 developers:
   - "michaelneale"
   - "vivek"
