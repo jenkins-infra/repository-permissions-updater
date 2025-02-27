@@ -6,8 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/htmlpublisher"
   - "org/jvnet/hudson/plugins/htmlpublisher"
-cd:
-  enabled: true
 developers:
   - "mcrooney"
   - "r2b2_nz"
