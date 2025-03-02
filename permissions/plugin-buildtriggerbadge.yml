@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/buildtriggerbadge"
 developers:
   - "batmat"
+  - "kylecronin"
 cd:
   enabled: true
