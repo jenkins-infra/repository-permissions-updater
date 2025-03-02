@@ -6,6 +6,8 @@ issues:
 paths:
   - "hudson/queueSorter/PrioritySorter"
   - "org/jenkins-ci/plugins/PrioritySorter"
+cd:
+  enabled: true
 developers:
   - "emsa23"
   - "oleg_nenashev"
