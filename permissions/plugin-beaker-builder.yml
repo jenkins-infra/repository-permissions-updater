@@ -6,5 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/beaker-builder"
 developers:
-  - "olivergondza"
   - "vjuranek"

@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/implied-labels"
 developers:
-  - "olivergondza"
   - "markewaite"
 cd:
   enabled: true
