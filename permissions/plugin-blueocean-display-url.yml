@@ -5,6 +5,8 @@ issues:
   - jira: '21827'  # blueocean-display-url-plugin
 paths:
   - "org/jenkins-ci/plugins/blueocean-display-url"
+cd:
+  enabled: true
 developers:
   - "michaelneale"
   - "vivek"
