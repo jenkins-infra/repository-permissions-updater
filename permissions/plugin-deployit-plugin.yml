@@ -7,11 +7,8 @@ paths:
   - "com/xebialabs/deployit/ci/deployit-plugin"
 developers:
   - "bdevic"
-  - "fellipeavanci"
   - "isaacsatish"
   - "balaji_digital_ai"
-  - "surendarsuyamprakasam"
-  - "sgaikwad"
-  - "ankur_soni"
   - "vrushnim"
   - "nvaddey"
+  - "vishwarya"
