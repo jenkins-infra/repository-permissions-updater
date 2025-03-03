@@ -7,4 +7,3 @@ paths:
   - "org/jenkins-ci/plugins/resource-disposer"
 developers:
   - "basil"
-  - "olivergondza"

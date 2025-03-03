@@ -8,6 +8,5 @@ paths:
   - "org/jvnet/hudson/plugins/ws-cleanup"
 developers:
   - "basil"
-  - "olivergondza"
   - "vjuranek"
   - "pajasoft"
