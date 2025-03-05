@@ -33,7 +33,6 @@ extraNames:
 cd:
   enabled: true
 developers:
-  - "basil"
   - "@cloudbees-developers"
 issues:
   - jira: 29620
