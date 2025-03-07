@@ -8,3 +8,4 @@ paths:
   - "org/jenkins-ci/plugins/openstack-cloud"
 developers:
   - "olivergondza"
+  - "simonelbaz"
