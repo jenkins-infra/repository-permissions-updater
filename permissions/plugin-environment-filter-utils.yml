@@ -6,4 +6,4 @@ issues:
 paths:
   - "io/jenkins/plugins/environment-filter-utils"
 developers:
-  - "danielbeck"
+  - "@security"
