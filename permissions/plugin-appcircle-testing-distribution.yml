@@ -2,9 +2,11 @@
 name: "appcircle-testing-distribution"
 github: &GH "jenkinsci/appcircle-testing-distribution-plugin"
 paths:
-- "io/jenkins/plugins/appcircle-testing-distribution"
+  - "io/jenkins/plugins/appcircle-testing-distribution"
 developers:
-- "guvenkaranfil"
-- "appcircle"
+  - "guvenkaranfil"
+  - "appcircleio"
 issues:
   - github: *GH
+cd:
+  enabled: true
