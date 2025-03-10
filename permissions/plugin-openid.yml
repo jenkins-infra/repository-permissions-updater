@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/openid"
 developers:
   - "panicking"
+cd:
+  enabled: true
