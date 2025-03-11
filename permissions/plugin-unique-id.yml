@@ -13,6 +13,7 @@ developers:
   - "recampbell"
   - "oleg_nenashev"
   - "teilo"
+  - "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"
