@@ -172,9 +172,8 @@ public class Hoster {
       + errorMessage
       + "\n\nSomeone from the hosting team will look into this as soon as possible.\n"
       + "Sorry for the inconvenience!";
-
+      issue.comment(msg);
     }
-
 
     private boolean renameRepository(GHRepository r, String newName) throws IOException {
         r.renameTo(newName);
