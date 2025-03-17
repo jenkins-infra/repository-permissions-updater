@@ -7,3 +7,5 @@ developers:
 - "basil"
 issues:
   - jira: 29424
+cd:
+  enabled: true
