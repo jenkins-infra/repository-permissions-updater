@@ -1,0 +1,9 @@
+---
+name: "ibmi-steps"
+github: &GH "jenkinsci/ibmi-steps-plugin"
+paths:
+- "io/jenkins/plugins/ibmi-steps"
+developers:
+- "sebjulliand"
+issues:
+  - github: *GH
