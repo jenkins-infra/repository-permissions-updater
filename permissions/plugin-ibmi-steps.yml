@@ -2,8 +2,10 @@
 name: "ibmi-steps"
 github: &GH "jenkinsci/ibmi-steps-plugin"
 paths:
-- "io/jenkins/plugins/ibmi-steps"
+  - "io/jenkins/plugins/ibmi-steps"
 developers:
-- "sebjulliand"
+  - "sebjulliand"
 issues:
   - github: *GH
+cd:
+  enabled: true
