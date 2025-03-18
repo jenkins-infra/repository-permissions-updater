@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
 import org.kohsuke.github.GHContent;
 import org.kohsuke.github.GHLicense;
+import org.kohsuke.github.GHOrganization;
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GHUser;
 import org.kohsuke.github.GitHub;
@@ -22,13 +23,18 @@ public class GitHubVerifier implements Verifier {
         String forkFrom = request.getRepositoryUrl();
         List<String> users = request.getGithubUsers();
 
+        final GHOrganization jenkinsciOrg = github.getOrganization("jenkinsci");
+
         if (!users.isEmpty()) {
             List<String> invalidUsers = new ArrayList<>();
+            final ArrayList<String> usersRequiringInvites = new ArrayList<>();
             for (String user : users) {
                 try {
                     GHUser ghUser = github.getUser(user.trim());
                     if (ghUser == null || !ghUser.getType().equalsIgnoreCase("user")) {
                         invalidUsers.add(user.trim());
+                    } else if(!ghUser.isMemberOf(jenkinsciOrg)) {
+                        usersRequiringInvites.add(user.trim());
                     }
                 } catch (IOException e) {
                     invalidUsers.add(user.trim());
@@ -37,6 +43,9 @@ public class GitHubVerifier implements Verifier {
 
             if (!invalidUsers.isEmpty()) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The following usernames in 'GitHub Users to Authorize as Committers' are not valid GitHub usernames or are Organizations: %s", String.join(",", invalidUsers)));
+            }
+            if (!usersRequiringInvites.isEmpty()) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED,  "The following usernames are not in the `jenkinsci` organization and needs to be invited: %s", String.join(",", usersRequiringInvites)));
             }
         }
 
