@@ -5,6 +5,7 @@ paths:
 - "io/jenkins/plugins/github-release"
 developers:
 - "jcustenborder"
+- "brettnel"
 issues:
   - github: *GH
 cd:
