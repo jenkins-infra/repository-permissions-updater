@@ -9,14 +9,19 @@ import java.io.StringReader;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
+import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.maven.model.Dependency;
+import org.apache.maven.model.DependencyManagement;
 import org.apache.maven.model.License;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.Parent;
@@ -38,7 +43,7 @@ public class MavenVerifier implements BuildSystemVerifier {
     private static final int MAX_LENGTH_OF_ARTIFACT_ID = 37;
     private static final Logger LOGGER = LoggerFactory.getLogger(MavenVerifier.class);
 
-    public static final Version LOWEST_PARENT_POM_VERSION = new Version(4, 85);
+    public static final Version LOWEST_PARENT_POM_VERSION = new Version(4, 88);
     public static final Version PARENT_POM_WITH_JENKINS_VERSION = new Version(2);
 
     public static final String INVALID_POM = "The pom.xml file in the root of the origin repository is not valid";
@@ -79,6 +84,9 @@ public class MavenVerifier implements BuildSystemVerifier {
                             checkPluginRepositories(model, hostingIssues);
                             checkSoftwareConfigurationManagementField(model, hostingIssues);
                             checkDependencies(model, hostingIssues);
+                            checkDependencyManagement(model, hostingIssues);
+                            checkDevelopersTag(model, hostingIssues);
+                            checkProperties(model, hostingIssues);
                         } catch(Exception e) {
                             LOGGER.error("Failed looking at pom.xml", e);
                             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
@@ -220,20 +228,27 @@ public class MavenVerifier implements BuildSystemVerifier {
                     }
 
                     if(parentVersion.compareTo(PARENT_POM_WITH_JENKINS_VERSION) >= 0) {
-                        Version jenkinsVersion = null;
-                        if(model.getProperties().containsKey("jenkins.version")) {
-                            jenkinsVersion = new Version(model.getProperties().get("jenkins.version").toString());
+                        JenkinsVersion jenkinsVersion = getJenkinsVersion(model);
+
+                        if (jenkinsVersion == null) {
+                            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Your pom.xml is missing the property `jenkins.version`. Take a look at the [baseline recommendations](https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/#currently-recommended-versions)."));
                         }
 
-                        if(jenkinsVersion != null && jenkinsVersion.compareTo(LOWEST_JENKINS_VERSION) < 0) {
+                        if(jenkinsVersion != null && jenkinsVersion.jenkinsVersion().compareTo(LOWEST_JENKINS_VERSION) < 0) {
                             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Your baseline specified does not meet the minimum Jenkins version required, please update `<jenkins.version>%s</jenkins.version>` to at least %s in your pom.xml. Take a look at the [baseline recommendations](https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/#currently-recommended-versions).",
-                                    jenkinsVersion, LOWEST_JENKINS_VERSION));
+                                    jenkinsVersion.jenkinsVersion(), LOWEST_JENKINS_VERSION));
                         }
                     }
                 }
             }
         } catch(Exception e) {
             LOGGER.error("Error trying to access the <parent> information", e);
+        }
+    }
+
+    private void checkDevelopersTag(Model model, HashSet<VerificationMessage> hostingIssues) {
+        if (!model.getDevelopers().isEmpty()) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Please remove the `developers` tag from your pom.xml. This information is fetched from this repository on the update site."));
         }
     }
 
@@ -295,6 +310,59 @@ public class MavenVerifier implements BuildSystemVerifier {
             }
         }
     }
+
+    private void checkDependencyManagement(Model model, HashSet<VerificationMessage> hostingIssues) {
+        boolean hasPluginDependency = model.getDependencies().stream().anyMatch(d ->
+                d.getGroupId().startsWith("org.jenkins-ci") ||
+                        d.getGroupId().startsWith("io.jenkins") ||
+                        d.getGroupId().equals("org.jenkinsci.plugins") ||
+                        d.getGroupId().equals("org.jvnet.hudson.plugins")
+        );
+        DependencyManagement depManagement = model.getDependencyManagement();
+        Optional<Dependency> bom = depManagement.getDependencies().stream().filter(d ->
+                d.getGroupId().equals("io.jenkins.tools.bom") &&
+                        d.getArtifactId().startsWith("bom-")
+        ).findFirst();
+        if (hasPluginDependency && bom.isEmpty()) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "You're using one or more Jenkins plugins without making use of the bom. " +
+                    "Please check if those plugin dependencies are covered by the bom and if yes add a corresponding dependencyManagement section to your pom.xml and remove the version for those dependencies." +
+                    " See [here](https://www.jenkins.io/doc/developer/plugin-development/dependency-management/#jenkins-plugin-bom) for details."));
+        }
+        if (hasPluginDependency && bom.isPresent()) {
+            model.getDependencies().stream().filter(d -> d.getGroupId().startsWith("org.jenkins-ci") ||
+                    d.getGroupId().startsWith("io.jenkins") ||
+                    d.getGroupId().equals("org.jenkinsci.plugins") ||
+                    d.getGroupId().equals("org.jvnet.hudson.plugins")).forEach(d -> {
+                if (d.getVersion() != null) {
+                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.INFO, "Please check if the dependency `%s:%s` is covered by the bom. If yes then the version should be removed.", d.getGroupId(), d.getArtifactId()));
+                }
+            });
+        }
+        JenkinsVersion jenkinsVersion = getJenkinsVersion(model);
+        if (bom.isPresent() && jenkinsVersion != null) {
+            Dependency b = bom.get();
+            String artifactId = b.getArtifactId();
+            artifactId  = artifactId.replace("${jenkins.baseline}", jenkinsVersion.baseline());
+            String expected = "bom-" + jenkinsVersion.baseline() + ".x";
+            if (!expected.equals(artifactId)) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The artifactId `%s` of the bom is not in sync with the jenkins baseline version `%s`", artifactId, jenkinsVersion.baseline()));
+            }
+            if (!model.getProperties().containsKey("jenkins.baseline")) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "When using the bom, make sure to also set the property `jenkins.baseline` and use this property in `jenkins.version` and the artifactId of the bom."));
+            }
+        }
+    }
+
+    private void checkProperties(Model model, HashSet<VerificationMessage> hostingIssues) {
+        Properties props = model.getProperties();
+        List<String> illegalProps = Arrays.asList("java.level", "maven.compiler.source", "maven.compiler.target");
+        illegalProps.forEach(p -> {
+            if (props.containsKey(p)) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Please remove the property `%s` from the pom.xml. It is already defined via the parent pom.", p));
+            }
+        });
+    }
+
     private void checkDependencies(Model model, HashSet<VerificationMessage> hostingIssues) {
         Map<String, String> bd = getBannedDependencies();
         model.getDependencies().forEach(d -> {
@@ -321,7 +389,7 @@ public class MavenVerifier implements BuildSystemVerifier {
             String line = reader.readLine();
             while (line != null) {
                 line = line.trim();
-                if (!line.startsWith("#") && line.length() > 0) {
+                if (!line.startsWith("#") && !line.isEmpty()) {
                     String[] parts = line.split(";", 2);
                     if (parts.length < 2) {
                         continue;
@@ -334,5 +402,26 @@ public class MavenVerifier implements BuildSystemVerifier {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private JenkinsVersion getJenkinsVersion(Model model) {
+        Properties props = model.getProperties();
+        if (props.containsKey("jenkins.version")) {
+            String baseline = props.getProperty("jenkins.baseline");
+            String version = props.getProperty("jenkins.version");
+            if (baseline != null && version.contains("${jenkins.baseline}")) {
+                version = version.replace("${jenkins.baseline}", baseline);
+            } else {
+                Matcher m = Pattern.compile("(\\d\\.\\d+)(|\\.\\d)").matcher(version);
+                if (m.matches()) {
+                    baseline = m.group(1);
+                }
+            }
+            return new JenkinsVersion(baseline, new Version(version));
+        }
+        return null;
+    }
+
+    private record JenkinsVersion(String baseline, Version jenkinsVersion) {
     }
 }
