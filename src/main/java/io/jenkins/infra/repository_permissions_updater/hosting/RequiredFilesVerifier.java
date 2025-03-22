@@ -3,6 +3,7 @@ package io.jenkins.infra.repository_permissions_updater.hosting;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.HashSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -46,9 +47,10 @@ public class RequiredFilesVerifier implements Verifier {
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `.github/CODEOWNERS`. Please add this file containing the line: `" + expected + "`"));
             return;
         }
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read()));
-        if (bufferedReader.lines().noneMatch(line -> line.equals(expected))) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.github/CODEOWNERS` doesn't contain the expected line `" + expected + "`"));
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
+            if (bufferedReader.lines().noneMatch(line -> line.equals(expected))) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.github/CODEOWNERS` doesn't contain the expected line `" + expected + "`"));
+            }
         }
     }
 
@@ -60,9 +62,10 @@ public class RequiredFilesVerifier implements Verifier {
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing `Jenkinsfile`. Please add a Jenkinsfile to your repo so it can be built on ci.jenkins.io. A suitable version can downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile)"));
             return;
         }
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read()));
-        if (bufferedReader.lines().noneMatch(line -> line.startsWith("buildPlugin("))) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It seems your `Jenkinsfile` is not calling `buildPlugin`. "));
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
+            if (bufferedReader.lines().noneMatch(line -> line.startsWith("buildPlugin("))) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It seems your `Jenkinsfile` is not calling `buildPlugin`. "));
+            }
         }
     }
 
