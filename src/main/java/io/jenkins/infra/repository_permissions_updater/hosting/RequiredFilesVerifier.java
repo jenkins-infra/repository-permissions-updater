@@ -34,6 +34,7 @@ public class RequiredFilesVerifier implements Verifier {
                 checkJenkinsfile(repo, hostingIssues);
                 checkSecurityScan(repo, hostingIssues);
                 checkCodeOwners(repo, hostingIssues, forkTo);
+                checkGitignore(repo, hostingIssues);
             }
         }
     }
@@ -59,7 +60,7 @@ public class RequiredFilesVerifier implements Verifier {
         try {
             file = repo.getFileContent("Jenkinsfile");
         } catch (GHFileNotFoundException e) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing `Jenkinsfile`. Please add a Jenkinsfile to your repo so it can be built on ci.jenkins.io. A suitable version can downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile)"));
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `Jenkinsfile`. Please add a Jenkinsfile to your repo so it can be built on ci.jenkins.io. A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile)"));
             return;
         }
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
@@ -69,12 +70,26 @@ public class RequiredFilesVerifier implements Verifier {
         }
     }
 
+    private void checkGitignore(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
+        GHContent file = null;
+        try {
+            file = repo.getFileContent(".gitignore");
+        } catch (GHFileNotFoundException e) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `.gitignore`. Please add a `.gitignore` to help keep your git repo lean. A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile)"));
+            return;
+        }
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
+            if (bufferedReader.lines().noneMatch(line -> line.equals("target") || line.equals("work") || line.equals("target/") || line.equals("work/") )) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.gitignore` doesn't exclude `target` and `work`. Please add these lines so that you don't check-in these directories by accident."));
+            }
+        }
+    }
 
     private void checkSecurityScan(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
         if (fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yml") &&
                 fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yaml")) {
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `.github/workflows/jenkins-security-scan.yml`. This file helps to keep your plugin conform to security standards defined by the Jenkins project." +
-                    " You can download it from [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/workflows/jenkins-security-scan.yml)"));
+                    " A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/workflows/jenkins-security-scan.yml)"));
         }
     }
 
