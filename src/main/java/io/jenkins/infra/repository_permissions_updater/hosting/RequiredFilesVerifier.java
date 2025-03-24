@@ -35,6 +35,7 @@ public class RequiredFilesVerifier implements Verifier {
                 checkSecurityScan(repo, hostingIssues);
                 checkCodeOwners(repo, hostingIssues, forkTo);
                 checkGitignore(repo, hostingIssues);
+                checkDependabot(repo, hostingIssues);
             }
         }
     }
@@ -90,6 +91,14 @@ public class RequiredFilesVerifier implements Verifier {
                 fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yaml")) {
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `.github/workflows/jenkins-security-scan.yml`. This file helps to keep your plugin conform to security standards defined by the Jenkins project." +
                     " A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/workflows/jenkins-security-scan.yml)"));
+        }
+    }
+
+    private void checkDependabot(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
+        if (fileNotExistsInRepo(repo, ".github/dependabot.yml") &&
+                fileNotExistsInRepo(repo, ".github/dependabot.yaml")) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `.github/dependabot.yml`. This file helps to keep your plugin dependencies up-to-date." +
+                    " A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/dependabot.yml)"));
         }
     }
 
