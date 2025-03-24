@@ -27,7 +27,7 @@ public class HostingChecker {
 
     public static final String INVALID_FORK_FROM = "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
-    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 440, 3);
+    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 479, 3);
 
     public static void main(String[] args) throws IOException {
         new HostingChecker().checkRequest(Integer.parseInt(args[0]));
@@ -45,6 +45,7 @@ public class HostingChecker {
         verifications.add(Triplet.with("Maven", new MavenVerifier(), new FileExistsConditionChecker("pom.xml")));
         verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
         verifications.add(Triplet.with("Jelly", new JellyVerifier(), null));
+        verifications.add(Triplet.with("RequiredFiles", new RequiredFilesVerifier(), null));
 
         final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
