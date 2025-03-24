@@ -79,7 +79,7 @@ public class RequiredFilesVerifier implements Verifier {
             return;
         }
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
-            if (bufferedReader.lines().noneMatch(line -> line.equals("target") || line.equals("work") || line.equals("target/") || line.equals("work/") )) {
+            if (bufferedReader.lines().noneMatch(line -> line.equals("target") || line.equals("work") || line.equals("target/") || line.equals("work/") || line.equals("/target/") || line.equals("/work/"))) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.gitignore` doesn't exclude `target` and `work`. Please add these lines so that you don't check-in these directories by accident."));
             }
         }
