@@ -1,5 +1,6 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -443,6 +444,7 @@ public class MavenVerifier implements BuildSystemVerifier {
     private record JenkinsVersion(String baseline, Version jenkinsVersion) {
     }
 
+    @SuppressFBWarnings("URLCONNECTION_SSRF_FD")
     private Set<String> getManagedDependenciesFromBom(String artifactId, String bomVersion) {
         try {
             String pomUrl = BOM_ROOT_URL + artifactId + "/" + bomVersion + "/" + artifactId + "-" + bomVersion + ".pom";
@@ -477,6 +479,7 @@ public class MavenVerifier implements BuildSystemVerifier {
         return builder.toString();
     }
 
+    @SuppressFBWarnings("URLCONNECTION_SSRF_FD")
     private String getLatestBomVersion(String artifactId) {
         try {
             String metadataUrl = BOM_ROOT_URL + artifactId + "/maven-metadata.xml";
