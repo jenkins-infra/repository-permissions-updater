@@ -347,9 +347,6 @@ public class MavenVerifier implements BuildSystemVerifier {
             if (!expected.equals(artifactId)) {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The artifactId `%s` of the bom is not in sync with the jenkins baseline version `%s`", artifactId, jenkinsVersion.baseline()));
             }
-            if (!model.getProperties().containsKey("jenkins.baseline")) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "When using the bom, make sure to also set the property `jenkins.baseline` and use this property in `jenkins.version` and the artifactId of the bom."));
-            }
         }
     }
 
@@ -361,6 +358,9 @@ public class MavenVerifier implements BuildSystemVerifier {
                 hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Please remove the property `%s` from the pom.xml. It is already defined via the parent pom.", p));
             }
         });
+        if (!props.containsKey("jenkins.baseline")) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Please define the property `jenkins.baseline` and use this property in `<jenkins.version>${jenkins.baseline}.3</jenkins.version>` and the artifactId of the bom."));
+        }
     }
 
     private void checkDependencies(Model model, HashSet<VerificationMessage> hostingIssues) {
