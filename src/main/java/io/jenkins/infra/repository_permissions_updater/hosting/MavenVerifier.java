@@ -1,5 +1,6 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -8,8 +9,10 @@ import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -17,9 +20,12 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Properties;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.maven.artifact.repository.metadata.Metadata;
+import org.apache.maven.artifact.repository.metadata.io.xpp3.MetadataXpp3Reader;
 import org.apache.maven.model.Dependency;
 import org.apache.maven.model.DependencyManagement;
 import org.apache.maven.model.License;
@@ -39,6 +45,7 @@ import static io.jenkins.infra.repository_permissions_updater.hosting.HostingChe
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 public class MavenVerifier implements BuildSystemVerifier {
+    private static final String BOM_ROOT_URL = "https://repo.jenkins-ci.org/artifactory/public/io/jenkins/tools/bom/";
     private static final int MAX_LENGTH_OF_GROUP_ID_PLUS_ARTIFACT_ID = 100;
     private static final int MAX_LENGTH_OF_ARTIFACT_ID = 37;
     private static final Logger LOGGER = LoggerFactory.getLogger(MavenVerifier.class);
@@ -312,40 +319,52 @@ public class MavenVerifier implements BuildSystemVerifier {
     }
 
     private void checkDependencyManagement(Model model, HashSet<VerificationMessage> hostingIssues) {
-        boolean hasPluginDependency = model.getDependencies().stream().anyMatch(d ->
-                d.getGroupId().startsWith("org.jenkins-ci") ||
-                        d.getGroupId().startsWith("io.jenkins") ||
-                        d.getGroupId().equals("org.jenkinsci.plugins") ||
-                        d.getGroupId().equals("org.jvnet.hudson.plugins")
-        );
-        DependencyManagement depManagement = model.getDependencyManagement();
-        Optional<Dependency> bom = depManagement.getDependencies().stream().filter(d ->
-                d.getGroupId().equals("io.jenkins.tools.bom") &&
-                        d.getArtifactId().startsWith("bom-")
-        ).findFirst();
-        if (hasPluginDependency && bom.isEmpty()) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "You're using one or more Jenkins plugins without making use of the bom. " +
-                    "Please check if those plugin dependencies are covered by the bom and if yes add a corresponding dependencyManagement section to your pom.xml and remove the version for those dependencies." +
-                    " See [here](https://www.jenkins.io/doc/developer/plugin-development/dependency-management/#jenkins-plugin-bom) for details."));
-        }
-        if (hasPluginDependency && bom.isPresent()) {
-            model.getDependencies().stream().filter(d -> d.getGroupId().startsWith("org.jenkins-ci") ||
-                    d.getGroupId().startsWith("io.jenkins") ||
-                    d.getGroupId().equals("org.jenkinsci.plugins") ||
-                    d.getGroupId().equals("org.jvnet.hudson.plugins")).forEach(d -> {
-                if (d.getVersion() != null) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.INFO, "Please check if the dependency `%s:%s` is covered by the bom. If yes then the version should be removed.", d.getGroupId(), d.getArtifactId()));
-                }
-            });
-        }
         JenkinsVersion jenkinsVersion = getJenkinsVersion(model);
-        if (bom.isPresent() && jenkinsVersion != null) {
-            Dependency b = bom.get();
-            String artifactId = b.getArtifactId();
-            artifactId  = artifactId.replace("${jenkins.baseline}", jenkinsVersion.baseline());
-            String expected = "bom-" + jenkinsVersion.baseline() + ".x";
-            if (!expected.equals(artifactId)) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The artifactId `%s` of the bom is not in sync with the jenkins baseline version `%s`", artifactId, jenkinsVersion.baseline()));
+        if (jenkinsVersion != null) {
+            HashSet<VerificationMessage> dependencyManagementIssues = new HashSet<>();
+            DependencyManagement depManagement = model.getDependencyManagement();
+            Optional<Dependency> bom = Optional.empty();
+            if (depManagement != null) {
+                bom = depManagement.getDependencies().stream().filter(d ->
+                        d.getGroupId().equals("io.jenkins.tools.bom") &&
+                                d.getArtifactId().startsWith("bom-")
+                ).findFirst();
+            }
+            Set<String> managedDependencies;
+            String bomArtifactId = "bom-" + jenkinsVersion.baseline() + ".x";
+            String latestReleasedBom = getLatestBomVersion(bomArtifactId);
+            if (latestReleasedBom  != null) {
+                managedDependencies = getManagedDependenciesFromBom(bomArtifactId, latestReleasedBom);
+            } else {
+                managedDependencies = Collections.emptySet();
+            }
+            List<Dependency> pluginDependencies = model.getDependencies().stream().filter(d -> managedDependencies.contains(getDependencyAsString(d, false))).toList();
+            if (!pluginDependencies.isEmpty() && bom.isEmpty()) {
+                dependencyManagementIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "You're using one or more Jenkins plugins without making use of the bom. " +
+                        "Please add a corresponding dependencyManagement section to your pom.xml and remove the version for those dependencies." +
+                        " See [here](https://www.jenkins.io/doc/developer/plugin-development/dependency-management/#jenkins-plugin-bom) for details."));
+            }
+            if (bom.isPresent()) {
+                Dependency dep = bom.get();
+                if (latestReleasedBom != null && !latestReleasedBom.equals(dep.getVersion())) {
+                    dependencyManagementIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The bom version `%s` of `%s` should be updated to the latest version `%s`", dep.getVersion(), dep.getArtifactId(), latestReleasedBom));
+                }
+                String artifactId = dep.getArtifactId();
+                artifactId  = artifactId.replace("${jenkins.baseline}", jenkinsVersion.baseline());
+                String expected = "bom-" + jenkinsVersion.baseline() + ".x";
+                if (!expected.equals(artifactId)) {
+                    dependencyManagementIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The artifactId `%s` of the bom is not in sync with the jenkins baseline version `%s`", artifactId, jenkinsVersion.baseline()));
+                }
+            }
+            if (latestReleasedBom  != null) {
+                pluginDependencies.forEach(d -> {
+                    if (d.getVersion() != null) {
+                        dependencyManagementIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The dependency `%s` is covered by the bom. The version should be removed.", getDependencyAsString(d, true)));
+                    }
+                });
+            }
+            if (!dependencyManagementIssues.isEmpty()) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, dependencyManagementIssues, "The following issues have been identified related to plugin dependency management:"));
             }
         }
     }
@@ -423,5 +442,54 @@ public class MavenVerifier implements BuildSystemVerifier {
     }
 
     private record JenkinsVersion(String baseline, Version jenkinsVersion) {
+    }
+
+    @SuppressFBWarnings("URLCONNECTION_SSRF_FD")
+    private Set<String> getManagedDependenciesFromBom(String artifactId, String bomVersion) {
+        try {
+            String pomUrl = BOM_ROOT_URL + artifactId + "/" + bomVersion + "/" + artifactId + "-" + bomVersion + ".pom";
+            Set<String> dependencies = new HashSet<>();
+            URL url = new URI(pomUrl).toURL();
+            MavenXpp3Reader reader = new MavenXpp3Reader();
+            Model model = reader.read(url.openStream());
+            DependencyManagement dependencyManagement = model.getDependencyManagement();
+            dependencyManagement.getDependencies().forEach(d -> {
+                if ("pom".equals(d.getType()) && d.getArtifactId().startsWith("bom-")) {
+                    dependencies.addAll(getManagedDependenciesFromBom(d.getArtifactId(), bomVersion));
+                } else {
+                    dependencies.add(getDependencyAsString(d, false));
+                }
+            });
+            return dependencies;
+        } catch (XmlPullParserException | URISyntaxException | IOException e) {
+            LOGGER.warn("Failed to read bom pom");
+        }
+        return Collections.emptySet();
+    }
+
+    private String getDependencyAsString(Dependency d, boolean includeVersion) {
+        StringBuilder builder = new StringBuilder();
+        builder.append(d.getGroupId()).append(":").append(d.getArtifactId());
+        if (includeVersion && d.getVersion() != null) {
+            builder.append(":").append(d.getVersion());
+        }
+        if (d.getClassifier() != null) {
+            builder.append(":").append(d.getClassifier());
+        }
+        return builder.toString();
+    }
+
+    @SuppressFBWarnings("URLCONNECTION_SSRF_FD")
+    private String getLatestBomVersion(String artifactId) {
+        try {
+            String metadataUrl = BOM_ROOT_URL + artifactId + "/maven-metadata.xml";
+            URL url = new URI(metadataUrl).toURL();
+            MetadataXpp3Reader reader = new MetadataXpp3Reader();
+            Metadata metadata = reader.read(url.openStream());
+            return metadata.getVersioning().getLatest();
+        } catch (XmlPullParserException | URISyntaxException | IOException e) {
+            LOGGER.warn("Failed to read maven metadata");
+        }
+        return null;
     }
 }

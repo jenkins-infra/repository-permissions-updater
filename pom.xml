@@ -80,6 +80,7 @@
         <main.class>io.jenkins.infra.repository_permissions_updater.ArtifactoryPermissionsUpdater</main.class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
+        <maven.version>3.9.9</maven.version>
     </properties>
 
     <dependencyManagement>
@@ -206,7 +207,12 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-model</artifactId>
-            <version>3.9.9</version>
+            <version>${maven.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-repository-metadata</artifactId>
+            <version>${maven.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
