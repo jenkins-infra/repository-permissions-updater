@@ -1,0 +1,9 @@
+---
+name: "global-pipeline-parameters"
+github: &GH "jenkinsci/global-pipeline-parameters-plugin"
+paths:
+- "io/jenkins/plugins/global-pipeline-parameters"
+developers:
+- "reffum"
+issues:
+  - jira: 29723
