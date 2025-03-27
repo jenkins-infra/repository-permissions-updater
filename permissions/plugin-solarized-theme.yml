@@ -2,8 +2,10 @@
 name: "solarized-theme"
 github: "jenkinsci/solarized-theme-plugin"
 issues:
-  - jira: '27720'  # solarized-theme-plugin
+  - github: *GH
 paths:
   - "io/jenkins/plugins/solarized-theme"
 developers:
   - "janfaracik"
+cd:
+  enabled: true
