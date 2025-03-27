@@ -1,6 +1,6 @@
 ---
 name: "solarized-theme"
-github: "jenkinsci/solarized-theme-plugin"
+github: &GH "jenkinsci/solarized-theme-plugin"
 issues:
   - github: *GH
 paths:
