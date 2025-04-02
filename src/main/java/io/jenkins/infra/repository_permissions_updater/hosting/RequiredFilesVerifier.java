@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.HashSet;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
@@ -79,8 +80,12 @@ public class RequiredFilesVerifier implements Verifier {
             return;
         }
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
-            if (bufferedReader.lines().noneMatch(line -> line.equals("target") || line.equals("work") || line.equals("target/") || line.equals("work/") || line.equals("/target/") || line.equals("/work/"))) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.gitignore` doesn't exclude `target` and `work`. Please add these lines so that you don't check-in these directories by accident."));
+            List<String> lines = bufferedReader.lines().toList();
+            if (lines.stream().noneMatch(line -> line.equals("target") || line.equals("target/") || line.equals("/target/"))) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.gitignore` doesn't exclude `target`. Please add a line so that you don't check-in this directory by accident."));
+            }
+            if (lines.stream().noneMatch(line -> line.equals("work") || line.equals("work/") || line.equals("/work/"))) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.gitignore` doesn't exclude `work`. Please add a line so that you don't check-in this directory by accident."));
             }
         }
     }
