@@ -3,6 +3,8 @@ name: "global-pipeline-parameters"
 github: &GH "jenkinsci/global-pipeline-parameters-plugin"
 paths:
 - "io/jenkins/plugins/global-pipeline-parameters"
+cd:
+  enabled: true
 developers:
 - "reffum"
 issues:
