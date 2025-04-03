@@ -35,7 +35,7 @@ public class RequiredFilesVerifier implements Verifier {
                 checkSecurityScan(repo, hostingIssues);
                 checkCodeOwners(repo, hostingIssues, forkTo);
                 checkGitignore(repo, hostingIssues);
-                checkDependabot(repo, hostingIssues);
+                checkDependencyBot(repo, hostingIssues);
             }
         }
     }
@@ -94,11 +94,17 @@ public class RequiredFilesVerifier implements Verifier {
         }
     }
 
-    private void checkDependabot(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    private void checkDependencyBot(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
         if (fileNotExistsInRepo(repo, ".github/dependabot.yml") &&
-                fileNotExistsInRepo(repo, ".github/dependabot.yaml")) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `.github/dependabot.yml`. This file helps to keep your plugin dependencies up-to-date." +
-                    " A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/dependabot.yml)"));
+                fileNotExistsInRepo(repo, ".github/dependabot.yaml") &&
+                fileNotExistsInRepo(repo, "renovate.json") &&
+                fileNotExistsInRepo(repo, ".github/renovate.json") &&
+                fileNotExistsInRepo(repo, ".github/workflows/updatecli.yml") &&
+                fileNotExistsInRepo(repo, ".github/workflows/updatecli.yaml")
+        ) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "No files found related to automatically updating the plugin dependencies. " +
+                    "Please ensure that you have dependabot, renovate or updatecli configured in the repo. " +
+                    "A suitable version for dependabot can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/dependabot.yml)"));
         }
     }
 
