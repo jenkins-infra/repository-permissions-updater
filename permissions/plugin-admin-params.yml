@@ -1,0 +1,9 @@
+---
+name: "admin-params"
+github: &GH "jenkinsci/admin-params-plugin"
+paths:
+- "io/jenkins/plugins/admin-params"
+developers:
+- "tunahansezen"
+issues:
+  - github: *GH
