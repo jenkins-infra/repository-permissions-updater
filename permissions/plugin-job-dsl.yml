@@ -7,4 +7,3 @@ paths:
   - "org/jenkins-ci/plugins/job-dsl"
 developers:
   - "basil"
-  - "jamietanna"
