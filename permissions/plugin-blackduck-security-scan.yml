@@ -11,3 +11,5 @@ developers:
 - "ashahrior"
 issues:
   - github: *GH
+cd:
+  enabled: true
