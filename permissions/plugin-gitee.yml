@@ -8,4 +8,6 @@ paths:
 cd:
   enabled: true
 developers:
+  - "yashin"
+  - "markewaite"
   - "puffy1215"
