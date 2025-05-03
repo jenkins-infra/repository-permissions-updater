@@ -1,0 +1,11 @@
+---
+name: "mariadb-api"
+github: &GH "jenkinsci/mariadb-api-plugin"
+paths:
+- "io/jenkins/plugins/mariadb-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

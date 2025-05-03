@@ -5,5 +5,7 @@ issues:
   - jira: '17512'  # extensible-choice-parameter-plugin
 paths:
   - "jp/ikedam/jenkins/plugins/extensible-choice-parameter"
+cd:
+  enabled: true
 developers:
   - "ikedam"

@@ -4,6 +4,4 @@ github: "jenkinsci/lib-process-utils"
 paths:
   - "org/jenkins-ci/process-utils"
 developers:
-  - "basil"
-  - "kohsuke"
-  - "olivergondza"
+  - "@core"

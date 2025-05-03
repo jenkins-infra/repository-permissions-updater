@@ -6,6 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/git-parameter"
   - "org/jenkins-ci/tools/git-parameter"
+cd:
+  enabled: true
 developers:
+  - "markewaite"
   - "klimas7"
   - "ngiger"

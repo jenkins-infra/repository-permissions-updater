@@ -1,0 +1,11 @@
+---
+name: "infisical"
+github: &GH "jenkinsci/infisical-plugin"
+paths:
+- "io/jenkins/plugins/infisical"
+developers:
+- "danielhougaard"
+issues:
+  - jira: 29423
+cd:
+  enabled: true

@@ -1,0 +1,11 @@
+---
+name: "oras-java-api"
+github: &GH "jenkinsci/oras-java-api-plugin"
+paths:
+- "io/jenkins/plugins/oras-java-api"
+cd:
+  enabled: true
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH

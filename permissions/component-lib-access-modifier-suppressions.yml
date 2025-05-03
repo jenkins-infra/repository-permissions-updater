@@ -1,5 +1,5 @@
 ---
-name: "access-modifier"
+name: "access-modifier-suppressions"
 github: "jenkinsci/lib-access-modifier"
 paths:
   - "org/kohsuke/access-modifier-suppressions"

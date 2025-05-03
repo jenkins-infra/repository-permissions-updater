@@ -10,3 +10,4 @@ developers:
   - "atombrella"
 cd:
   enabled: true
+  exclusive: false

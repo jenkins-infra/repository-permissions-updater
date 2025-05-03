@@ -1,0 +1,12 @@
+---
+name: "secone-sca-sast-security-scanner"
+github: &GH "jenkinsci/secone-sca-sast-security-scanner-plugin"
+paths:
+- "io/jenkins/plugins/secone-sca-sast-security-scanner"
+developers:
+- "rahuldarekar"
+- "saurabhthatte_sec1"
+issues:
+  - jira: 29523
+cd:
+  enabled: true

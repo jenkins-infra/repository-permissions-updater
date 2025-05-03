@@ -4,6 +4,7 @@ github: &gh "jenkinsci/bitbucket-branch-source-plugin"
 issues:
   - jira: '21428'  # bitbucket-branch-source-plugin
   - github: *gh
+    report: false
 paths:
   - "org/jenkins-ci/plugins/cloudbees-bitbucket-branch-source"
 developers:
@@ -13,11 +14,9 @@ developers:
   - "carroll"
   - "dnusbaum"
   - "rsandell"
-  - "svanoort"
   - "jtaboada"
   - "lifeofguenter"
+  - "nfalco"
 security:
   contacts:
     jira: "cloudbees_security_members"
-cd:
-  enabled: true

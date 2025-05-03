@@ -4,8 +4,11 @@ github: "jenkinsci/log-cli-plugin"
 cd:
   enabled: true
 issues:
-  - jira: '23228'  # log-cli-plugin
+  - jira: '23228' # log-cli-plugin
 paths:
   - "org/jenkins-ci/plugins/log-cli"
 developers:
   - "jglick"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

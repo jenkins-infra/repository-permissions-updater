@@ -5,5 +5,4 @@ issues:
   - jira: '22220'  # display-console-output-plugin
 paths:
   - "org/jenkins-ci/plugins/display-console-output"
-developers:
-  - "lyenliang"
+developers: []

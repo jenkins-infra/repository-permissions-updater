@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/dashboard-view"
   - "org/jvnet/hudson/plugins/dashboard-view"
 developers:
-  - "olivergondza"
   - "tgr"
   - "vandyev"
 security:

@@ -5,4 +5,7 @@ issues:
   - jira: '15957'  # copy-data-to-workspace-plugin
 paths:
   - "org/jvnet/hudson/plugins/copy-data-to-workspace-plugin"
-developers: []
+cd:
+  enabled: true
+developers:
+  - "jimmyleo"

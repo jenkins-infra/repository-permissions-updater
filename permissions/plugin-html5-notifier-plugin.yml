@@ -5,5 +5,4 @@ issues:
   - jira: '15951'  # html5-notifier-plugin
 paths:
   - "org/jenkins-ci/plugins/html5-notifier-plugin"
-developers:
-  - "halkeye"
+developers: []

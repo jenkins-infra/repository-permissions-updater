@@ -7,6 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/proc-cleaner-plugin"
   - "org/jenkinsci/plugins/proccleaner/proc-cleaner-plugin"
 developers:
-  - "olivergondza"
   - "vjuranek"
   - "pajasoft"

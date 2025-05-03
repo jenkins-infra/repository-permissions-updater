@@ -6,12 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/active-directory"
 developers:
+  - "basil"
   - "fbelzunc"
   - "kohsuke"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"
-  - "mramonleon"
   - "rsandell"
   - "carroll"
   - "teilo"

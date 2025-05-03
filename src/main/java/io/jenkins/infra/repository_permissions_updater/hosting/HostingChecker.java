@@ -27,7 +27,7 @@ public class HostingChecker {
 
     public static final String INVALID_FORK_FROM = "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
-    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 387, 3);
+    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 479, 3);
 
     public static void main(String[] args) throws IOException {
         new HostingChecker().checkRequest(Integer.parseInt(args[0]));
@@ -44,6 +44,8 @@ public class HostingChecker {
         verifications.add(Triplet.with("GitHub", new GitHubVerifier(), null));
         verifications.add(Triplet.with("Maven", new MavenVerifier(), new FileExistsConditionChecker("pom.xml")));
         verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
+        verifications.add(Triplet.with("Jelly", new JellyVerifier(), null));
+        verifications.add(Triplet.with("RequiredFiles", new RequiredFilesVerifier(), null));
 
         final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
@@ -88,8 +90,8 @@ public class HostingChecker {
                     .append("\nHosting team members can host this request with `/hosting host`");
         }
 
-        LOGGER.info(msg.toString());
         if (!debug) {
+            LOGGER.info(msg.toString());
             GitHub github = GitHub.connect();
             GHIssue issue = github.getRepository(HOSTING_REPO_SLUG).getIssue(issueID);
             issue.comment(msg.toString());
@@ -110,9 +112,9 @@ public class HostingChecker {
     private void appendIssues(StringBuilder msg, Set<VerificationMessage> issues, int level) {
         for (VerificationMessage issue : issues.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList())) {
             if (level == 1) {
-                msg.append(String.format("%s %s %s: %s%n", StringUtils.repeat("*", level), issue.getSeverity().getColor(), issue.getSeverity().getMessage(), issue.getMessage()));
+                msg.append("%s %s %s: %s%n".formatted(StringUtils.repeat("*", level), issue.getSeverity().getColor(), issue.getSeverity().getMessage(), issue.getMessage()));
             } else {
-                msg.append(String.format("%s %s%n", StringUtils.repeat("*", level), issue.getMessage()));
+                msg.append("%s %s%n".formatted(StringUtils.repeat("*", level), issue.getMessage()));
             }
 
             if (issue.getSubItems() != null) {

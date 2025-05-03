@@ -1,0 +1,7 @@
+---
+name: "websocket-jetty12-ee9"
+github: "jenkinsci/jenkins"
+paths:
+  - "org/jenkins-ci/main/websocket-jetty12-ee9"
+developers:
+  - "releasebot"

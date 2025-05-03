@@ -1,8 +1,10 @@
 ---
 name: "build-user-vars-plugin"
-github: "jenkinsci/build-user-vars-plugin"
+github: &gh "jenkinsci/build-user-vars-plugin"
 issues:
+  - github: *gh
   - jira: '17477'  # build-user-vars-plugin
+    report: false
 paths:
   - "org/jenkins-ci/plugins/build-user-vars-plugin"
 developers:
@@ -10,3 +12,5 @@ developers:
   - "clifford_jenkins"
   - "oleg_nenashev"
   - "zedasvacas"
+cd:
+  enabled: true

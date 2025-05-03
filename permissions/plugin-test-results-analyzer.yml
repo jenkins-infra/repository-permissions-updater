@@ -5,6 +5,9 @@ issues:
   - jira: '19327'  # test-results-analyzer-plugin
 paths:
   - "org/jenkins-ci/plugins/test-results-analyzer"
+cd:
+  enabled: true
 developers:
   - "menonvarun"
   - "poddingue"
+  - "mPokornyETM"

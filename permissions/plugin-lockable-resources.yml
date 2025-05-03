@@ -4,7 +4,6 @@ github: &gh "jenkinsci/lockable-resources-plugin"
 cd:
   enabled: true
 issues:
-  - jira: '18222'  # lockable-resources-plugin
   - github: *gh
 paths:
   - "org/6wind/jenkins/lockable-resources"

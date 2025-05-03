@@ -1,0 +1,11 @@
+---
+name: "flyway-api"
+github: &GH "jenkinsci/flyway-api-plugin"
+paths:
+- "io/jenkins/plugins/flyway-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

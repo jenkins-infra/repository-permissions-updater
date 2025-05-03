@@ -9,12 +9,13 @@ developers:
   - "ikedam"
   - "kwhetstone"
   - "oleg_nenashev"
-  - "olivergondza"
-  - "svanoort"
   - "wolfs"
   - "olamy"
   - "markewaite"
   - "poddingue"
+  - "jondaley"
+cd:
+  enabled: true
 security:
   contacts:
     jira: "cloudbees_security_members"

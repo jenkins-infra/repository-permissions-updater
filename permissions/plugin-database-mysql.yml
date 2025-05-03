@@ -8,3 +8,5 @@ paths:
 developers:
   - "davidvanlaatum"
   - "timja"
+cd:
+  enabled: true

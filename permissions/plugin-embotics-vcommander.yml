@@ -5,5 +5,6 @@ paths:
   - "io/jenkins/plugins/embotics-vcommander"
 cd:
   enabled: true
+  exclusive: false
 developers:
   - "commanderjenkinsplugin"

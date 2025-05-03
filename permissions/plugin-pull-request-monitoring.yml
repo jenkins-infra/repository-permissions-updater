@@ -5,5 +5,9 @@ paths:
   - "io/jenkins/plugins/pull-request-monitoring"
 developers:
   - "simonsymhoven"
+  - "mPokornyETM"
+  - "drulli"
 issues:
-  - github: *GH
+  - jira: '29720' # pull-request-monitoring-plugin
+cd:
+  enabled: true

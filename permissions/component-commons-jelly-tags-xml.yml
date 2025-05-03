@@ -1,0 +1,7 @@
+---
+name: "commons-jelly-tags-xml"
+github: "jenkinsci/jelly"
+paths:
+  - "org/jenkins-ci/commons-jelly-tags-xml"
+developers:
+  - "@core"

@@ -8,6 +8,6 @@ paths:
 cd:
   enabled: true
 developers:
-  - "jonesbusy"
   - "sirot"
   - "escoem"
+  - "lcarilla"

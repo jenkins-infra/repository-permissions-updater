@@ -5,6 +5,8 @@ issues:
   - jira: '16010'  # postbuild-task-plugin
 paths:
   - "org/jvnet/hudson/plugins/postbuild-task"
+cd:
+  enabled: true
 developers:
   - "madsnielsen"
   - "praqma"

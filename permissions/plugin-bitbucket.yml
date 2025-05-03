@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/bitbucket"
 developers:
   - "tzach_solomon"
+  - "panicking"
 cd:
   enabled: true

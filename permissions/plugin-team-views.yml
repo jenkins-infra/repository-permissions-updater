@@ -3,7 +3,8 @@ name: "team-views"
 github: &GH "jenkinsci/team-views-plugin"
 issues:
   - github: *GH
-paths:
 # Block creation of new releases. If you want to release the plugin, contact the Jenkins security team about SECURITY-1649
-  - "com/sonymobile/jenkins/plugins/teamviews/team-views-releaseblock"
+releaseBlocked: true
+paths:
+  - "com/sonymobile/jenkins/plugins/teamviews/team-views"
 developers: []

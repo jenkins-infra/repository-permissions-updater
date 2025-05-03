@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/port-allocator"
   - "org/jvnet/hudson/plugins/port-allocator"
+cd:
+  enabled: true
 developers:
   - "markewaite"
+  - "mPokornyETM"

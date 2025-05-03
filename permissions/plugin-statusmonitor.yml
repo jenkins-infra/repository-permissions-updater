@@ -5,7 +5,9 @@ issues:
   - jira: '15617'  # statusmonitor-plugin
 paths:
   - "org/jvnet/hudson/plugins/statusmonitor"
-developers: []
-#CD blocked for lack of maintainers
-#cd:
-#  enabled: true
+  - "io/jenkins/plugins/statusmonitor"
+developers:
+  - "mawinter69"
+cd:
+  enabled: true
+  exclusive: false

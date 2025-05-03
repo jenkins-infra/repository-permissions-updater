@@ -8,3 +8,5 @@ paths:
   - "me/leejay/jenkins/date-parameter"
 developers:
   - "leejaycoke"
+cd:
+  enabled: true

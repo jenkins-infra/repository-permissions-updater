@@ -6,4 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/inline-pipeline"
 developers:
-  - "danielbeck"
+  - "@security"

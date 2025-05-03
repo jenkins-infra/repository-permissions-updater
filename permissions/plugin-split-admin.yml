@@ -10,3 +10,4 @@ developers:
   - "patricioe"
 cd:
   enabled: true
+  exclusive: false

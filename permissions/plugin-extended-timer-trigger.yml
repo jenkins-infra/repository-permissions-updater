@@ -1,0 +1,11 @@
+---
+name: "extended-timer-trigger"
+github: &GH "jenkinsci/extended-timer-trigger-plugin"
+paths:
+- "io/jenkins/plugins/extended-timer-trigger"
+developers:
+- "mawinter69"
+issues:
+  - github: *GH
+cd:
+  enabled: true
