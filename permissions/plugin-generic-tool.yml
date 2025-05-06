@@ -7,3 +7,5 @@ developers:
   - "@security"
 issues:
   - github: *GH
+cd:
+  enabled: true
