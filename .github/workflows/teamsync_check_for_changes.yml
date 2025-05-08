@@ -1,0 +1,40 @@
+name: teamSync check for changes
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check-permissions:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+          fetch-depth: 0
+      
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'adopt'
+        
+    - name: Build project
+      run: mvn clean install
+      
+    - name: Check for yml changes
+      id: files
+      run: |
+        FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'permissions/*.yml' | xargs echo)
+        if [[ -z "$FILES" ]]; then
+          echo "No changes detected in permissions files."
+        else
+          echo "Changes detected. Processing..."
+          java -jar target/github_team_sync.jar $FILES
+        fi
+      env:
+        GITHUB_OAUTH: ${{ secrets.TEMP_TEAMSYNC_PAT }}
