@@ -2,8 +2,11 @@
 name: "appcircle-enterprise-store"
 github: &GH "jenkinsci/appcircle-enterprise-store-plugin"
 paths:
-- "io/jenkins/plugins/appcircle-enterprise-store"
+  - "io/jenkins/plugins/appcircle-enterprise-store"
 developers:
-- "appcircle"
+  - "appcircleio"
+  - "guvenkaranfil"
 issues:
   - github: *GH
+cd:
+  enabled: true
