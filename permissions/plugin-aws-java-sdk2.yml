@@ -29,6 +29,7 @@ extraNames:
   - aws-java-sdk2-sns
   - aws-java-sdk2-sqs
   - aws-java-sdk2-ssm
+  - aws-java-sdk2-sso
   - aws-java-sdk2-sts
 cd:
   enabled: true
