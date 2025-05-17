@@ -1,0 +1,11 @@
+---
+name: "chocolate-theme"
+github: &GH "jenkinsci/chocolate-theme-plugin"
+paths:
+- "io/jenkins/plugins/chocolate-theme"
+cd:
+  enabled: true
+developers:
+- "janfaracik"
+issues:
+  - github: *GH
