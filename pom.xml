@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.jenkins-ci</groupId>
         <artifactId>jenkins</artifactId>
-        <version>1.123</version>
+        <version>1.128</version>
         <relativePath />
     </parent>
 
@@ -30,7 +30,7 @@
             <plugin><!-- run unit test in src/test/java -->
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
-                <version>4.0.1</version>
+                <version>4.2.0</version>
                 <!-- version specified in grandparent pom -->
                 <executions>
                     <execution>
@@ -80,6 +80,7 @@
         <main.class>io.jenkins.infra.repository_permissions_updater.ArtifactoryPermissionsUpdater</main.class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
+        <maven.version>3.9.9</maven.version>
     </properties>
 
     <dependencyManagement>
@@ -90,7 +91,7 @@
             <dependency>
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
-                <version>1.17.1</version>
+                <version>1.18.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -139,7 +140,7 @@
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
-            <version>2.3</version>
+            <version>2.4</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
@@ -171,7 +172,7 @@
         <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs-annotations</artifactId>
-            <version>4.8.6</version>
+            <version>4.9.3</version>
         </dependency>
         <dependency>
             <groupId>eu.neilalexander</groupId>
@@ -196,7 +197,7 @@
         <dependency>
             <groupId>org.kohsuke</groupId>
             <artifactId>github-api</artifactId>
-            <version>1.319</version>
+            <version>1.327</version>
         </dependency>
         <dependency>
             <groupId>org.javatuples</groupId>
@@ -206,7 +207,12 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-model</artifactId>
-            <version>3.9.9</version>
+            <version>${maven.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-repository-metadata</artifactId>
+            <version>${maven.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

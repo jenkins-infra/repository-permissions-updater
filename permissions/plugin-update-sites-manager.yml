@@ -8,3 +8,5 @@ paths:
 developers:
   - "ikedam"
   - "slide_o_mix"
+cd:
+  enabled: true

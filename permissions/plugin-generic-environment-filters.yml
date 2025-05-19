@@ -6,4 +6,4 @@ issues:
 paths:
   - "io/jenkins/plugins/generic-environment-filters"
 developers:
-  - "danielbeck"
+  - "@security"

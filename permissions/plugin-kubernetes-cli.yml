@@ -3,9 +3,11 @@ name: "kubernetes-cli"
 github: &gh "jenkinsci/kubernetes-cli-plugin"
 issues:
   - github: *gh
-  - jira: '23233'  # kubernetes-cli-plugin
+  - jira: "23233" # kubernetes-cli-plugin
 paths:
   - "org/jenkins-ci/plugins/kubernetes-cli"
 developers:
   - "max_laverse"
   - "sirstrahd"
+cd:
+  enabled: true

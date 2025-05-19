@@ -68,25 +68,31 @@ public class Hoster {
             String forkTo = hostingRequest.getNewRepoName();
 
             if (StringUtils.isBlank(forkFrom) || StringUtils.isBlank(forkTo) || users.isEmpty()) {
-                LOGGER.info("Could not retrieve information (or information does not exist) from the Hosting request");
+                String msg = "Could not retrieve information (or information does not exist) from the Hosting request";
+                LOGGER.info(msg);
+                reportHostingFailure(issueID, msg);
                 return;
             }
 
             // Parse forkFrom in order to determine original repo owner and repo name
             Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
             if (m.matches()) {
-                if (!forkGitHub(m.group(1), m.group(2), forkTo, users, issueTrackerChoice == IssueTracker.GITHUB)) {
+                if (!forkGitHub(issueID, m.group(1), m.group(2), forkTo, users, issueTrackerChoice == IssueTracker.GITHUB)) {
                     LOGGER.error("Hosting request failed to fork repository on Github");
                     return;
                 }
             } else {
-                LOGGER.error("ERROR: Cannot parse the source repo: " + forkFrom);
+                String msg = "ERROR: Cannot parse the source repo: " + forkFrom;
+                LOGGER.error(msg);
+                reportHostingFailure(issueID, msg);
                 return;
             }
 
             // create the JIRA component
             if (issueTrackerChoice == IssueTracker.JIRA && !createComponent(forkTo, defaultAssignee)) {
-                LOGGER.error("Hosting request failed to create component " + forkTo + " in JIRA");
+                String msg = "Hosting request failed to create component " + forkTo + " in JIRA";
+                LOGGER.error(msg);
+                reportHostingFailure(issueID, msg);
                 return;
             }
 
@@ -106,7 +112,10 @@ public class Hoster {
 
             String prUrl = createUploadPermissionPR(issueID, forkTo, users, hostingRequest.getJenkinsProjectUsers(), issueTrackerChoice == IssueTracker.GITHUB, componentId);
             if (StringUtils.isBlank(prUrl)) {
-                LOGGER.error("Could not create upload permission pull request");
+                String msg = "Could not create upload permission pull request";
+                LOGGER.error(msg);
+                reportHostingFailure(issueID, msg);
+                return;
             }
 
             String prDescription = "";
@@ -131,7 +140,7 @@ public class Hoster {
                     + issueTrackerText
                     + prDescription
                     + "\n\nPlease [delete your original repository](" + forkFrom + "/settings?confirm_delete=yes) (if there are no other forks), under 'Danger Zone', so that the jenkinsci organization repository "
-                    + "is the definitive source for the code. If there are other forks, please contact GitHub support to make the jenkinsci repo the root of the fork network (mention that Jenkins approval was given in support request 569994). "
+                    + "is the definitive source for the code. If there are other forks, then use the 'Leave fork network' action in the 'Danger Zone' on the settings page of your new jenkinsci repository. "
                     + "Also, please make sure you properly follow the [documentation on documenting your plugin](https://jenkins.io/doc/developer/publishing/documentation/) "
                     + "so that your plugin is correctly documented. \n\n"
                     + "You will also need to do the following in order to push changes and release your plugin: \n\n"
@@ -156,11 +165,22 @@ public class Hoster {
         }
     }
 
-    private void renameRepository(GHRepository r, String newName) throws IOException {
-        r.renameTo(newName);
+    private void reportHostingFailure(int issueID, String errorMessage) throws IOException {
+      GitHub github = GitHub.connect();
+      GHIssue issue = github.getRepository(HOSTING_REPO_SLUG).getIssue(issueID);
+      String msg = "Hosting request failed,\n\n"
+      + errorMessage
+      + "\n\nSomeone from the hosting team will look into this as soon as possible.\n"
+      + "Sorry for the inconvenience!";
+      issue.comment(msg);
     }
 
-    boolean forkGitHub(String owner, String repo, String newName, List<String> maintainers, boolean useGHIssues) {
+    private boolean renameRepository(GHRepository r, String newName) throws IOException {
+        r.renameTo(newName);
+        return true;
+    }
+
+    boolean forkGitHub(int issueID, String owner, String repo, String newName, List<String> maintainers, boolean useGHIssues) {
         boolean result = false;
         try {
 
@@ -168,7 +188,9 @@ public class Hoster {
             GHOrganization org = github.getOrganization(TARGET_ORG_NAME);
             GHRepository check = org.getRepository(newName);
             if (check != null) {
-                LOGGER.error("Repository with name " + newName + " already exists in " + TARGET_ORG_NAME);
+                String msg = "Repository with name " + newName + " already exists in " + TARGET_ORG_NAME;
+                LOGGER.error(msg);
+                reportHostingFailure(issueID, msg);
                 return false;
             }
 
@@ -177,7 +199,9 @@ public class Hoster {
             // we just want to make sure we don't fork to a current repository name.
             check = org.getRepository(repo);
             if (check != null && check.getName().equalsIgnoreCase(repo)) {
-                LOGGER.error("Repository " + repo + " can't be forked, an existing repository with that name already exists in " + TARGET_ORG_NAME);
+                String msg = "Repository " + repo + " can't be forked, an existing repository with that name already exists in " + TARGET_ORG_NAME;
+                LOGGER.error(msg);
+                reportHostingFailure(issueID, msg);
                 return false;
             }
 
@@ -186,11 +210,13 @@ public class Hoster {
             GHUser user = github.getUser(owner);
             if (user == null) {
                 LOGGER.warn("No such user: " + owner);
+                reportHostingFailure(issueID, "No such user: " + owner);
                 return false;
             }
             GHRepository orig = user.getRepository(repo);
             if (orig == null) {
                 LOGGER.warn("No such repository: " + repo);
+                reportHostingFailure(issueID, "No such repository: " + repo);
                 return false;
             }
 
@@ -210,16 +236,22 @@ public class Hoster {
                     throw e;
             }
             if (newName != null) {
+                boolean renameResult = false;
                 for (int i = 0; i < 5; i++) {
                     try {
-                        r.renameTo(newName);
+                        renameResult = renameRepository(r, newName);
                         break;
                     } catch (HttpException e) {
+                        LOGGER.warn("Failed to rename repository from " + repo + " to " +  newName, e);
                         if (e.getResponseCode() == 422) {
-                            Thread.sleep(1000);
-                            renameRepository(r, newName);
+                            Thread.sleep(2000);
+                        } else {
+                          throw new IOException("Failed to rename repository from " + repo + " to " +  newName + ":", e);
                         }
                     }
+                }
+                if (!renameResult) {
+                  throw new IOException("Failed to rename repository from " + repo + " to " +  newName + " after 5 tries.");
                 }
 
                 r = null;
@@ -252,6 +284,11 @@ public class Hoster {
             result = true;
         } catch (InterruptedException | IOException e) {
             LOGGER.error("Failed to fork a repository: ", e);
+            try {
+              reportHostingFailure(issueID, e.getMessage());
+            } catch (IOException ioe) {
+              LOGGER.warn("Failed to send failure message to the hosting request", ioe);
+            }
         }
 
         return result;

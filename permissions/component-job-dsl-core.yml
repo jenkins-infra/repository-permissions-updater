@@ -5,5 +5,4 @@ paths:
   - "org/jenkinsci/plugins/job-dsl-core"
 developers:
   - "basil"
-  - "daspilker"
   - "jamietanna"
