@@ -9,3 +9,5 @@ paths:
 developers:
   - "olivergondza"
   - "simonelbaz"
+cd:
+  enabled: true
