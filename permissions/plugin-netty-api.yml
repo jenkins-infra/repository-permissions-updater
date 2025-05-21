@@ -1,0 +1,9 @@
+---
+name: "netty-api"
+github: &GH "jenkinsci/netty-api-plugin"
+paths:
+- "io/jenkins/plugins/netty-api"
+developers:
+- "rsandell"
+issues:
+  - jira: 29724
