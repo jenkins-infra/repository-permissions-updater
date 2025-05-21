@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/inline-pipeline"
 developers:
   - "@security"
+cd:
+  enabled: true
