@@ -7,7 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/build-timeout"
 developers:
-  - "ikedam"
   - "oleg_nenashev"
   - "krisstern"
 security:
