@@ -8,3 +8,5 @@ paths:
 developers:
   - "uday"
   - "panicking"
+cd:
+  enabled: true
