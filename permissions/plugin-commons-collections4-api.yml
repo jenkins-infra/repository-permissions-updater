@@ -7,3 +7,6 @@ developers:
 - "warden"
 issues:
   - github: *GH
+cd:
+  enabled: true
+
