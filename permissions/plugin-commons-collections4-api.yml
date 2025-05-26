@@ -1,0 +1,9 @@
+---
+name: "commons-collections4-api"
+github: &GH "jenkinsci/commons-collections4-api-plugin"
+paths:
+- "io/jenkins/plugins/commons-collections4-api"
+developers:
+- "warden"
+issues:
+  - github: *GH
