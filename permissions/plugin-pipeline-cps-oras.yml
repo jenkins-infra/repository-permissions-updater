@@ -6,4 +6,6 @@ paths:
 developers:
 - "jonesbusy"
 issues:
-  - jira: 29725
+  - github: *GH
+cd:
+  enabled: true
