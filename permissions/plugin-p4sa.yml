@@ -1,0 +1,9 @@
+---
+name: "p4sa"
+github: &GH "jenkinsci/p4sa-plugin"
+paths:
+- "io/jenkins/plugins/p4sa"
+developers:
+- "michael_baron"
+issues:
+  - github: *GH
