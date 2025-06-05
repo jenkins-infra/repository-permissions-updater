@@ -1,0 +1,10 @@
+---
+name: "zscan-upload"
+github: &GH "jenkinsci/zscan-upload-plugin"
+paths:
+- "io/jenkins/plugins/zscan-upload"
+developers:
+- "legalalien"
+- "oliver_williams"
+issues:
+  - jira: 29726
