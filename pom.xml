@@ -67,8 +67,30 @@
                         <phase>package</phase>
                         <configuration>
                             <descriptors>
-                                <descriptor>src/assembly.xml</descriptor>
+                                <descriptor>src/assembly/assembly.xml</descriptor>
                             </descriptors>
+                        </configuration>
+                    </execution>
+                    <execution> <!-- GitHub TeamSync -->
+                        <id>GitHub TeamSync</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/assembly/teamSync.xml</descriptor>
+                            </descriptors>
+                            <archive>
+                                <manifest>
+                                    <mainClass>io.jenkins.infra.repository_permissions_updater.github_team_sync.TeamSyncExecutor</mainClass>
+                                </manifest>
+                            </archive>
+                            <descriptorRefs>
+                                <descriptorRef>jar-with-dependencies</descriptorRef>
+                            </descriptorRefs>
+                            <finalName>github_team_sync</finalName>
+                            <appendAssemblyId>false</appendAssemblyId>
                         </configuration>
                     </execution>
                 </executions>
@@ -239,6 +261,12 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.13.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

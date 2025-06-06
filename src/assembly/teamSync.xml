@@ -1,0 +1,17 @@
+<assembly>
+    <id>GitHub TeamSync</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>target/classes/</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>io/jenkins/infra/repository_permissions_updater/github_team_sync/*.class
+                </include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>

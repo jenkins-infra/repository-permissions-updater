@@ -1,0 +1,22 @@
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>dir</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>target/classes/</directory>
+            <outputDirectory>/</outputDirectory>
+            <excludes>
+                <exclude>io/jenkins/infra/repository_permissions_updater/github_team_sync/*.class
+                </exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <scope>runtime</scope>
+        </dependencySet>
+    </dependencySets>
+</assembly>
