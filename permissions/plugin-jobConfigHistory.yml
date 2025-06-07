@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/jobConfigHistory"
 developers:
   - "stefan_spieker"
+  - "felfert"
 cd:
   enabled: true
