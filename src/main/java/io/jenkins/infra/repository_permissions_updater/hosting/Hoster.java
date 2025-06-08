@@ -55,7 +55,7 @@ public class Hoster {
     }
 
     private void run(int issueID) {
-        LOGGER.info("Approving hosting request " + issueID);
+        LOGGER.info("Approving hosting request {}", issueID);
 
         JiraRestClient client = null;
         try {
@@ -109,7 +109,7 @@ public class Hoster {
                     }
                 }
             } catch (IOException | TimeoutException | ExecutionException | InterruptedException ex) {
-                LOGGER.error("Could not get component ID for " + forkTo + " component in Jira");
+                LOGGER.error("Could not get component ID for {} component in Jira", forkTo);
                 componentId = "";
             }
 
@@ -172,7 +172,7 @@ public class Hoster {
 
             LOGGER.info("Hosting setup complete");
         } catch (IOException e) {
-            LOGGER.error("Failed setting up hosting for " + issueID + ". ", e);
+            LOGGER.error("Failed setting up hosting for {}. ", issueID, e);
         } finally {
             if (!JiraHelper.close(client)) {
                 LOGGER.warn("Failed to close JIRA client, possible leaked file descriptors");
@@ -223,17 +223,17 @@ public class Hoster {
                 return false;
             }
 
-            LOGGER.info("Forking " + repo);
+            LOGGER.info("Forking {}", repo);
 
             GHUser user = github.getUser(owner);
             if (user == null) {
-                LOGGER.warn("No such user: " + owner);
+                LOGGER.warn("No such user: {}", owner);
                 reportHostingFailure(issueID, "No such user: " + owner);
                 return false;
             }
             GHRepository orig = user.getRepository(repo);
             if (orig == null) {
-                LOGGER.warn("No such repository: " + repo);
+                LOGGER.warn("No such repository: {}", repo);
                 reportHostingFailure(issueID, "No such repository: " + repo);
                 return false;
             }
@@ -244,8 +244,7 @@ public class Hoster {
             } catch (IOException e) {
                 // we started seeing 500 errors, presumably due to time out.
                 // give it a bit of time, and see if the repository is there
-                LOGGER.info(
-                        "GitHub reported that it failed to fork " + owner + "/" + repo + ". But we aren't trusting");
+                LOGGER.info("GitHub reported that it failed to fork {}/{}. But we aren't trusting", owner, repo);
                 r = null;
                 for (int i = 0; r == null && i < 5; i++) {
                     Thread.sleep(1000);
@@ -260,7 +259,7 @@ public class Hoster {
                         renameResult = renameRepository(r, newName);
                         break;
                     } catch (HttpException e) {
-                        LOGGER.warn("Failed to rename repository from " + repo + " to " + newName, e);
+                        LOGGER.warn("Failed to rename repository from {} to {}", repo, newName, e);
                         if (e.getResponseCode() == 422) {
                             Thread.sleep(2000);
                         } else {
@@ -291,12 +290,12 @@ public class Hoster {
                         github, org, r, maintainers.isEmpty() ? singletonList(user.getName()) : maintainers);
             } catch (IOException e) {
                 // if 'user' is an org, the above command would fail
-                LOGGER.warn("Failed to add " + user + " to the new repository. Maybe an org?: " + e.getMessage());
+                LOGGER.warn("Failed to add {} to the new repository. Maybe an org?: {}", user, e.getMessage());
                 // fall through
             }
             setupRepository(r, useGHIssues);
 
-            LOGGER.info("Created https://github.com/" + TARGET_ORG_NAME + "/" + (newName != null ? newName : repo));
+            LOGGER.info("Created https://github.com/{}/{}", TARGET_ORG_NAME, newName != null ? newName : repo);
 
             // remove all the existing teams
             for (GHTeam team : legacyTeams) team.remove(r);
@@ -401,7 +400,7 @@ public class Hoster {
 
                 String artifactPath = getArtifactPath(github, forkTo);
                 if (StringUtils.isBlank(artifactPath)) {
-                    LOGGER.info("Could not resolve artifact path for " + forkTo);
+                    LOGGER.info("Could not resolve artifact path for {}", forkTo);
                     return null;
                 }
 
@@ -454,7 +453,7 @@ public class Hoster {
                 GHPullRequest pr = repo.createPullRequest(
                         "Add upload permissions for " + forkTo, branchName, repo.getDefaultBranch(), prText);
                 prUrl = pr.getHtmlUrl().toString();
-                LOGGER.info("Created PR for repository permissions updater: " + prUrl);
+                LOGGER.info("Created PR for repository permissions updater: {}", prUrl);
             } catch (Exception e) {
                 LOGGER.error("Error creating PR", e);
             }
@@ -510,7 +509,7 @@ public class Hoster {
             final Promise<Component> createComponent = componentClient.createComponent(
                     JIRA_PROJECT, new ComponentInput(subcomponent, "subcomponent", owner, AssigneeType.COMPONENT_LEAD));
             final Component component = JiraHelper.wait(createComponent);
-            LOGGER.info("New component created. URL is " + component.getSelf().toURL());
+            LOGGER.info("New component created. URL is {}", component.getSelf().toURL());
             result = true;
         } catch (Exception e) {
             LOGGER.error("Failed to create a new component: ", e);

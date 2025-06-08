@@ -55,7 +55,7 @@ public class HostingChecker {
                 boolean runIt =
                         verifier.getValue2() == null || verifier.getValue2().checkCondition(hostingRequest);
                 if (runIt) {
-                    LOGGER.info("Running verification '" + verifier.getValue0() + "'");
+                    LOGGER.info("Running verification '{}'", verifier.getValue0());
                     verifier.getValue1().verify(hostingRequest, hostingIssues);
                 }
 
@@ -63,7 +63,7 @@ public class HostingChecker {
                     hasBuildSystem |= ((BuildSystemVerifier) verifier.getValue1()).hasBuildFile(hostingRequest);
                 }
             } catch (Exception e) {
-                LOGGER.error("Error running verification '" + verifier.getValue0(), e);
+                LOGGER.error("Error running verification {}", verifier.getValue0(), e);
             }
         }
 
@@ -71,7 +71,7 @@ public class HostingChecker {
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "No pom.xml detected."));
         }
 
-        LOGGER.info("Done checking hosting for " + issueID + ", found " + hostingIssues.size() + " issues");
+        LOGGER.info("Done checking hosting for {}, found {} issues", issueID, hostingIssues.size());
 
         StringBuilder msg = new StringBuilder("Hello from your friendly Jenkins Hosting Checker\n\n");
         LOGGER.info("Checking if there were errors");
@@ -107,8 +107,7 @@ public class HostingChecker {
                 issue.addLabels("hosting-request", "needs-fix");
             }
         } else {
-            LOGGER.info("Here are the results of the checking:");
-            LOGGER.info(msg.toString());
+            LOGGER.info("Here are the results of the checking: {}", msg.toString());
         }
     }
 
