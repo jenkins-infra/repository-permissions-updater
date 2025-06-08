@@ -41,7 +41,7 @@ class GitHubImpl extends GitHubAPI {
 
     @Override
     @CheckForNull
-    @SuppressFBWarnings({"SE_NO_SERIALVERSIONID", "URLCONNECTION_SSRF_FD"})
+    @SuppressFBWarnings("URLCONNECTION_SSRF_FD")
     public GitHubPublicKey getRepositoryPublicKey(String repositoryName) throws IOException {
         LOGGER.log(Level.INFO, "GET call to retrieve public key for {0}", new Object[]{repositoryName});
         URL url = URI.create(String.format(githubPublicKeyUrl, repositoryName)).toURL();
@@ -90,7 +90,7 @@ class GitHubImpl extends GitHubAPI {
     }
 
     @Override
-    @SuppressFBWarnings({"SE_NO_SERIALVERSIONID", "URLCONNECTION_SSRF_FD"})
+    @SuppressFBWarnings({"URLCONNECTION_SSRF_FD", "VA_FORMAT_STRING_USES_NEWLINE"})
     public void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) throws IOException {
         LOGGER.log(Level.INFO, "Create/update the secret {0} for {1} encrypted with key {2}", new Object[]{name, repositoryName, keyId});
         URL url = URI.create(String.format(githubSecrectUrl, repositoryName, name)).toURL();
