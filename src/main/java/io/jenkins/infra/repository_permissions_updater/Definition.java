@@ -1,14 +1,10 @@
 package io.jenkins.infra.repository_permissions_updater;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@SuppressFBWarnings({
-    "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
-    "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"
-})
+@SuppressFBWarnings({"URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD", "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"})
 public class Definition {
 
     public static class CD {
@@ -62,7 +58,8 @@ public class Definition {
             return true;
         }
 
-        @SuppressFBWarnings(value = "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+        @SuppressFBWarnings(
+                value = "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
                 justification = "All calls are guarded by jira null check in isJira()")
         private void assertJiraIdFormatValid() {
             if (!jira.matches("[0-9]+")) {
@@ -88,7 +85,8 @@ public class Definition {
                 return "https://www.jenkins.io/participate/report-issue/redirect/#" + jira + "/" + pluginId;
             }
             if (isGitHubIssues()) {
-                return "https://github.com/" + github + "/issues/new/choose"; // The 'choose' URL works even when there are no issue templates
+                return "https://github.com/" + github
+                        + "/issues/new/choose"; // The 'choose' URL works even when there are no issue templates
             }
             throw new IllegalStateException("Invalid issue tracker: " + github + " / " + jira);
         }

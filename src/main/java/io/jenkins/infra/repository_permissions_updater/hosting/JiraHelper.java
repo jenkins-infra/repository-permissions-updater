@@ -1,5 +1,9 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.JIRA_PASSWORD;
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.JIRA_URL;
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.JIRA_USERNAME;
+
 import com.atlassian.jira.rest.client.api.JiraRestClient;
 import com.atlassian.jira.rest.client.api.domain.BasicComponent;
 import com.atlassian.jira.rest.client.api.domain.Project;
@@ -11,15 +15,11 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.JIRA_PASSWORD;
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.JIRA_URL;
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.JIRA_USERNAME;
-
 public class JiraHelper {
 
     static JiraRestClient createJiraClient() {
-        return new AsynchronousJiraRestClientFactory().createWithBasicHttpAuthentication(
-                URI.create(JIRA_URL), JIRA_USERNAME, JIRA_PASSWORD);
+        return new AsynchronousJiraRestClientFactory()
+                .createWithBasicHttpAuthentication(URI.create(JIRA_URL), JIRA_USERNAME, JIRA_PASSWORD);
     }
 
     static boolean close(JiraRestClient client) {
@@ -42,8 +42,7 @@ public class JiraHelper {
      * @throws ExecutionException Execution failure
      * @throws TimeoutException Timeout
      */
-    static <T> T wait(Promise<T> promise)
-            throws InterruptedException, ExecutionException, TimeoutException {
+    static <T> T wait(Promise<T> promise) throws InterruptedException, ExecutionException, TimeoutException {
         return promise.get(30, TimeUnit.SECONDS);
     }
 
@@ -57,5 +56,4 @@ public class JiraHelper {
         }
         throw new IOException("Unable to find component " + componentName + " in the " + projectId + " issue tracker");
     }
-
 }

@@ -1,5 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import static java.util.regex.Pattern.CASE_INSENSITIVE;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,8 +16,6 @@ import org.kohsuke.github.GHFileNotFoundException;
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GitHub;
 
-import static java.util.regex.Pattern.CASE_INSENSITIVE;
-
 public class RequiredFilesVerifier implements Verifier {
 
     @Override
@@ -26,8 +26,9 @@ public class RequiredFilesVerifier implements Verifier {
         String forkTo = request.getNewRepoName();
 
         if (StringUtils.isNotBlank(forkFrom)) {
-            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
-            if(m.matches()) {
+            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE)
+                    .matcher(forkFrom);
+            if (m.matches()) {
                 String owner = m.group(1);
                 String repoName = m.group(2);
 
@@ -41,18 +42,24 @@ public class RequiredFilesVerifier implements Verifier {
         }
     }
 
-    private void checkCodeOwners(GHRepository repo, HashSet<VerificationMessage> hostingIssues, String forkTo) throws IOException {
+    private void checkCodeOwners(GHRepository repo, HashSet<VerificationMessage> hostingIssues, String forkTo)
+            throws IOException {
         String expected = "* @jenkinsci/" + forkTo + "-developers";
         GHContent file = null;
         try {
             file = repo.getFileContent(".github/CODEOWNERS");
         } catch (GHFileNotFoundException e) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `.github/CODEOWNERS`. Please add this file containing the line: `" + expected + "`"));
+            hostingIssues.add(new VerificationMessage(
+                    VerificationMessage.Severity.REQUIRED,
+                    "Missing file `.github/CODEOWNERS`. Please add this file containing the line: `" + expected + "`"));
             return;
         }
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
+        try (BufferedReader bufferedReader =
+                new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
             if (bufferedReader.lines().noneMatch(line -> line.equals(expected))) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.github/CODEOWNERS` doesn't contain the expected line `" + expected + "`"));
+                hostingIssues.add(new VerificationMessage(
+                        VerificationMessage.Severity.REQUIRED,
+                        "The file `.github/CODEOWNERS` doesn't contain the expected line `" + expected + "`"));
             }
         }
     }
@@ -62,12 +69,18 @@ public class RequiredFilesVerifier implements Verifier {
         try {
             file = repo.getFileContent("Jenkinsfile");
         } catch (GHFileNotFoundException e) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `Jenkinsfile`. Please add a Jenkinsfile to your repo so it can be built on ci.jenkins.io. A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile)"));
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "Missing file `Jenkinsfile`. Please add a Jenkinsfile to your repo so it can be built on ci.jenkins.io. A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile)"));
             return;
         }
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
+        try (BufferedReader bufferedReader =
+                new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
             if (bufferedReader.lines().noneMatch(line -> line.startsWith("buildPlugin("))) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "It seems your `Jenkinsfile` is not calling `buildPlugin`. "));
+                hostingIssues.add(new VerificationMessage(
+                        VerificationMessage.Severity.REQUIRED,
+                        "It seems your `Jenkinsfile` is not calling `buildPlugin`. "));
             }
         }
     }
@@ -77,39 +90,56 @@ public class RequiredFilesVerifier implements Verifier {
         try {
             file = repo.getFileContent(".gitignore");
         } catch (GHFileNotFoundException e) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `.gitignore`. Please add a `.gitignore` to help keep your git repo lean. A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/gitignore)"));
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "Missing file `.gitignore`. Please add a `.gitignore` to help keep your git repo lean. A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/gitignore)"));
             return;
         }
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
+        try (BufferedReader bufferedReader =
+                new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
             List<String> lines = bufferedReader.lines().toList();
-            if (lines.stream().noneMatch(line -> line.equals("target") || line.equals("target/") || line.equals("/target/"))) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.gitignore` doesn't exclude `target`. Please add a line so that you don't check-in this directory by accident."));
+            if (lines.stream()
+                    .noneMatch(line -> line.equals("target") || line.equals("target/") || line.equals("/target/"))) {
+                hostingIssues.add(
+                        new VerificationMessage(
+                                VerificationMessage.Severity.REQUIRED,
+                                "The file `.gitignore` doesn't exclude `target`. Please add a line so that you don't check-in this directory by accident."));
             }
-            if (lines.stream().noneMatch(line -> line.equals("work") || line.equals("work/") || line.equals("/work/"))) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "The file `.gitignore` doesn't exclude `work`. Please add a line so that you don't check-in this directory by accident."));
+            if (lines.stream()
+                    .noneMatch(line -> line.equals("work") || line.equals("work/") || line.equals("/work/"))) {
+                hostingIssues.add(
+                        new VerificationMessage(
+                                VerificationMessage.Severity.REQUIRED,
+                                "The file `.gitignore` doesn't exclude `work`. Please add a line so that you don't check-in this directory by accident."));
             }
         }
     }
 
     private void checkSecurityScan(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
-        if (fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yml") &&
-                fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yaml")) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Missing file `.github/workflows/jenkins-security-scan.yml`. This file helps to keep your plugin conform to security standards defined by the Jenkins project." +
-                    " A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/workflows/jenkins-security-scan.yml)"));
+        if (fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yml")
+                && fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yaml")) {
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "Missing file `.github/workflows/jenkins-security-scan.yml`. This file helps to keep your plugin conform to security standards defined by the Jenkins project."
+                                    + " A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/workflows/jenkins-security-scan.yml)"));
         }
     }
 
     private void checkDependencyBot(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
-        if (fileNotExistsInRepo(repo, ".github/dependabot.yml") &&
-                fileNotExistsInRepo(repo, ".github/dependabot.yaml") &&
-                fileNotExistsInRepo(repo, "renovate.json") &&
-                fileNotExistsInRepo(repo, ".github/renovate.json") &&
-                fileNotExistsInRepo(repo, ".github/workflows/updatecli.yml") &&
-                fileNotExistsInRepo(repo, ".github/workflows/updatecli.yaml")
-        ) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, "No files found related to automatically updating the plugin dependencies. " +
-                    "Please ensure that you have dependabot, renovate or updatecli configured in the repo. " +
-                    "A suitable version for dependabot can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/dependabot.yml)"));
+        if (fileNotExistsInRepo(repo, ".github/dependabot.yml")
+                && fileNotExistsInRepo(repo, ".github/dependabot.yaml")
+                && fileNotExistsInRepo(repo, "renovate.json")
+                && fileNotExistsInRepo(repo, ".github/renovate.json")
+                && fileNotExistsInRepo(repo, ".github/workflows/updatecli.yml")
+                && fileNotExistsInRepo(repo, ".github/workflows/updatecli.yaml")) {
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "No files found related to automatically updating the plugin dependencies. "
+                                    + "Please ensure that you have dependabot, renovate or updatecli configured in the repo. "
+                                    + "A suitable version for dependabot can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/dependabot.yml)"));
         }
     }
 

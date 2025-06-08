@@ -33,26 +33,35 @@ public class JellyVerifier implements Verifier {
     private static final Logger LOGGER = LoggerFactory.getLogger(JellyVerifier.class);
     private static final String INLINE_STYLE = "The jelly file %s contains an inline `<style>` tag";
     private static final String INLINE_SCRIPT = "The jelly file %s contains a `<script>` tag with inline javascript.";
-    private static final String INLINE_SCRIPT_METHOD = "The jelly file %s potentially uses inline javascript attribute `%s`";
-    private static final String INLINE_TAGLIB_ONCLICK_METHOD = "The jelly file %s potentially uses the `onclick` attribute of a jelly taglib";
-    private static final String LEGACY_CHECK_URL = "The jelly file %s makes use of the legacy `checkUrl` form without using `checkDependsOn`";
-    private static final String CSP_HELP = "One or more usages of inline javascript tags, style tags or event handlers have been identified. See " +
-            "https://www.jenkins.io/doc/developer/security/csp/ for more information how to make your jelly files CSP compliant";
+    private static final String INLINE_SCRIPT_METHOD =
+            "The jelly file %s potentially uses inline javascript attribute `%s`";
+    private static final String INLINE_TAGLIB_ONCLICK_METHOD =
+            "The jelly file %s potentially uses the `onclick` attribute of a jelly taglib";
+    private static final String LEGACY_CHECK_URL =
+            "The jelly file %s makes use of the legacy `checkUrl` form without using `checkDependsOn`";
+    private static final String CSP_HELP =
+            "One or more usages of inline javascript tags, style tags or event handlers have been identified. See "
+                    + "https://www.jenkins.io/doc/developer/security/csp/ for more information how to make your jelly files CSP compliant";
 
     @Override
     public void verify(HostingRequest issue, HashSet<VerificationMessage> hostingIssues) throws IOException {
         GitHub github = GitHub.connect();
         String forkFrom = issue.getRepositoryUrl();
         if (StringUtils.isNotBlank(forkFrom)) {
-            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
+            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE)
+                    .matcher(forkFrom);
             if (m.matches()) {
                 String owner = m.group(1);
                 String repoName = m.group(2);
 
                 GHContentSearchBuilder search = github.searchContent();
-                PagedSearchIterable<GHContent> list = search.q(".jelly").in("path").repo(owner + "/" + repoName).list();
+                PagedSearchIterable<GHContent> list = search.q(".jelly")
+                        .in("path")
+                        .repo(owner + "/" + repoName)
+                        .list();
                 List<GHContent> jellyFiles = list.toList().stream()
-                        .filter(item -> item.getPath().endsWith(".jelly") && item.getPath().startsWith("src/main/resources/"))
+                        .filter(item -> item.getPath().endsWith(".jelly")
+                                && item.getPath().startsWith("src/main/resources/"))
                         .toList();
 
                 DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -60,7 +69,7 @@ public class JellyVerifier implements Verifier {
                 try {
                     dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
                     DocumentBuilder db = dbf.newDocumentBuilder();
-                    for (GHContent jellyFile: jellyFiles) {
+                    for (GHContent jellyFile : jellyFiles) {
                         InputStream is = jellyFile.read();
                         try {
                             Document doc = db.parse(is);
@@ -96,16 +105,20 @@ public class JellyVerifier implements Verifier {
         for (int i = 0; i < scriptElements.getLength(); i++) {
             Node e = scriptElements.item(i);
             Attr typeAttribute = (Attr) e.getAttributes().getNamedItem("type");
-            if (e.getAttributes().getNamedItem("src") == null && (typeAttribute == null ||
-                    !"application/json".equals(typeAttribute.getValue().toLowerCase(Locale.US)))) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INLINE_SCRIPT, jellyPath));
+            if (e.getAttributes().getNamedItem("src") == null
+                    && (typeAttribute == null
+                            || !"application/json"
+                                    .equals(typeAttribute.getValue().toLowerCase(Locale.US)))) {
+                hostingIssues.add(
+                        new VerificationMessage(VerificationMessage.Severity.REQUIRED, INLINE_SCRIPT, jellyPath));
                 return true;
             }
         }
         return false;
     }
 
-    static boolean checkJavaScriptAttributes(Element root, HashSet<VerificationMessage> hostingIssues, String jellyPath) {
+    static boolean checkJavaScriptAttributes(
+            Element root, HashSet<VerificationMessage> hostingIssues, String jellyPath) {
         NodeList allElements = root.getElementsByTagName("*");
         boolean hasIssues = false;
         for (int i = 0; i < allElements.getLength(); i++) {
@@ -116,11 +129,13 @@ public class JellyVerifier implements Verifier {
             Attr checkUrl = (Attr) e.getAttributes().getNamedItem("checkUrl");
             Attr checkDependsOn = (Attr) e.getAttributes().getNamedItem("checkDependsOn");
             if (checkUrl != null && checkDependsOn == null) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, LEGACY_CHECK_URL, jellyPath));
+                hostingIssues.add(
+                        new VerificationMessage(VerificationMessage.Severity.REQUIRED, LEGACY_CHECK_URL, jellyPath));
                 hasIssues = true;
             }
             if (onclick != null && e.getNamespaceURI() != null) {
-                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, INLINE_TAGLIB_ONCLICK_METHOD, jellyPath));
+                hostingIssues.add(new VerificationMessage(
+                        VerificationMessage.Severity.WARNING, INLINE_TAGLIB_ONCLICK_METHOD, jellyPath));
                 hasIssues = true;
                 continue;
             }
@@ -129,7 +144,8 @@ public class JellyVerifier implements Verifier {
                 for (int j = 0; j < attributes.getLength(); j++) {
                     Attr attr = (Attr) attributes.item(j);
                     if (attr.getNodeName().startsWith("on")) {
-                        hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, INLINE_SCRIPT_METHOD, jellyPath, attr.getName()));
+                        hostingIssues.add(new VerificationMessage(
+                                VerificationMessage.Severity.WARNING, INLINE_SCRIPT_METHOD, jellyPath, attr.getName()));
                         hasIssues = true;
                     }
                 }
@@ -137,5 +153,4 @@ public class JellyVerifier implements Verifier {
         }
         return hasIssues;
     }
-
 }

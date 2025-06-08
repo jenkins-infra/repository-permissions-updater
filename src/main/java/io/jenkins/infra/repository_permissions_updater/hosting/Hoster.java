@@ -1,5 +1,15 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_NAME;
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_SLUG;
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.INFRA_ORGANIZATION;
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.JIRA_PROJECT;
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.TARGET_ORG_NAME;
+import static java.util.Collections.emptyList;
+import static java.util.Collections.singletonList;
+import static java.util.regex.Pattern.CASE_INSENSITIVE;
+import static java.util.stream.Collectors.joining;
+
 import com.atlassian.jira.rest.client.api.ComponentRestClient;
 import com.atlassian.jira.rest.client.api.JiraRestClient;
 import com.atlassian.jira.rest.client.api.domain.AssigneeType;
@@ -36,16 +46,6 @@ import org.kohsuke.github.HttpException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_NAME;
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_SLUG;
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.INFRA_ORGANIZATION;
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.JIRA_PROJECT;
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.TARGET_ORG_NAME;
-import static java.util.Collections.emptyList;
-import static java.util.Collections.singletonList;
-import static java.util.regex.Pattern.CASE_INSENSITIVE;
-import static java.util.stream.Collectors.joining;
-
 public class Hoster {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Hoster.class);
@@ -76,9 +76,11 @@ public class Hoster {
             }
 
             // Parse forkFrom in order to determine original repo owner and repo name
-            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
+            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE)
+                    .matcher(forkFrom);
             if (m.matches()) {
-                if (!forkGitHub(issueID, m.group(1), m.group(2), forkTo, users, issueTrackerChoice == IssueTracker.GITHUB)) {
+                if (!forkGitHub(
+                        issueID, m.group(1), m.group(2), forkTo, users, issueTrackerChoice == IssueTracker.GITHUB)) {
                     LOGGER.error("Hosting request failed to fork repository on Github");
                     return;
                 }
@@ -111,7 +113,13 @@ public class Hoster {
                 componentId = "";
             }
 
-            String prUrl = createUploadPermissionPR(issueID, forkTo, users, hostingRequest.getJenkinsProjectUsers(), issueTrackerChoice == IssueTracker.GITHUB, componentId);
+            String prUrl = createUploadPermissionPR(
+                    issueID,
+                    forkTo,
+                    users,
+                    hostingRequest.getJenkinsProjectUsers(),
+                    issueTrackerChoice == IssueTracker.GITHUB,
+                    componentId);
             if (StringUtils.isBlank(prUrl)) {
                 String msg = "Could not create upload permission pull request";
                 LOGGER.error(msg);
@@ -122,17 +130,21 @@ public class Hoster {
             String prDescription = "";
             String repoPermissionsActionText = "Create PR for upload permissions";
             if (!StringUtils.isBlank(prUrl)) {
-                prDescription = "\n\nA [pull request](" + prUrl + ") has been created against the repository permissions updater to "
+                prDescription = "\n\nA [pull request](" + prUrl
+                        + ") has been created against the repository permissions updater to "
                         + "setup release permissions. Additional users can be added by modifying the created file.";
                 repoPermissionsActionText = "Add additional users for upload permissions, if needed";
             }
 
             String issueTrackerText;
             if (issueTrackerChoice == IssueTracker.JIRA) {
-                issueTrackerText = "\n\nA Jira component named [" + forkTo + "](https://issues.jenkins.io/issues/?jql=project+%3D+JENKINS+AND+component+%3D+ " + forkTo + ")" + 
-                        "has also been created with " + defaultAssignee + " as the default assignee for issues.";
+                issueTrackerText = "\n\nA Jira component named [" + forkTo
+                        + "](https://issues.jenkins.io/issues/?jql=project+%3D+JENKINS+AND+component+%3D+ " + forkTo
+                        + ")" + "has also been created with " + defaultAssignee
+                        + " as the default assignee for issues.";
             } else {
-                issueTrackerText = "\n\nGitHub issues has been selected for issue tracking and was enabled for the forked repo.";
+                issueTrackerText =
+                        "\n\nGitHub issues has been selected for issue tracking and was enabled for the forked repo.";
             }
 
             // update the issue with information on next steps
@@ -140,13 +152,15 @@ public class Hoster {
                     + "https://github.com/jenkinsci/" + forkTo
                     + issueTrackerText
                     + prDescription
-                    + "\n\nPlease [delete your original repository](" + forkFrom + "/settings?confirm_delete=yes) (if there are no other forks), under 'Danger Zone', so that the jenkinsci organization repository "
+                    + "\n\nPlease [delete your original repository](" + forkFrom
+                    + "/settings?confirm_delete=yes) (if there are no other forks), under 'Danger Zone', so that the jenkinsci organization repository "
                     + "is the definitive source for the code. If there are other forks, then use the 'Leave fork network' action in the 'Danger Zone' on the settings page of your new jenkinsci repository. "
                     + "Also, please make sure you properly follow the [documentation on documenting your plugin](https://jenkins.io/doc/developer/publishing/documentation/) "
                     + "so that your plugin is correctly documented. \n\n"
                     + "You will also need to do the following in order to push changes and release your plugin: \n\n"
                     + "* [Accept the invitation to the Jenkins CI Org on Github](https://github.com/jenkinsci)\n"
-                    + "* [" + repoPermissionsActionText + "](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)\n"
+                    + "* [" + repoPermissionsActionText
+                    + "](https://github.com/jenkins-infra/repository-permissions-updater/#requesting-permissions)\n"
                     + "* [Releasing your plugin](https://jenkins.io/doc/developer/publishing/releasing/)"
                     + "\n\nWelcome aboard!";
 
@@ -167,13 +181,13 @@ public class Hoster {
     }
 
     private void reportHostingFailure(int issueID, String errorMessage) throws IOException {
-      GitHub github = GitHub.connect();
-      GHIssue issue = github.getRepository(HOSTING_REPO_SLUG).getIssue(issueID);
-      String msg = "Hosting request failed,\n\n"
-      + errorMessage
-      + "\n\nSomeone from the hosting team will look into this as soon as possible.\n"
-      + "Sorry for the inconvenience!";
-      issue.comment(msg);
+        GitHub github = GitHub.connect();
+        GHIssue issue = github.getRepository(HOSTING_REPO_SLUG).getIssue(issueID);
+        String msg = "Hosting request failed,\n\n"
+                + errorMessage
+                + "\n\nSomeone from the hosting team will look into this as soon as possible.\n"
+                + "Sorry for the inconvenience!";
+        issue.comment(msg);
     }
 
     private boolean renameRepository(GHRepository r, String newName) throws IOException {
@@ -181,7 +195,8 @@ public class Hoster {
         return true;
     }
 
-    boolean forkGitHub(int issueID, String owner, String repo, String newName, List<String> maintainers, boolean useGHIssues) {
+    boolean forkGitHub(
+            int issueID, String owner, String repo, String newName, List<String> maintainers, boolean useGHIssues) {
         boolean result = false;
         try {
 
@@ -200,7 +215,9 @@ public class Hoster {
             // we just want to make sure we don't fork to a current repository name.
             check = org.getRepository(repo);
             if (check != null && check.getName().equalsIgnoreCase(repo)) {
-                String msg = "Repository " + repo + " can't be forked, an existing repository with that name already exists in " + TARGET_ORG_NAME;
+                String msg = "Repository " + repo
+                        + " can't be forked, an existing repository with that name already exists in "
+                        + TARGET_ORG_NAME;
                 LOGGER.error(msg);
                 reportHostingFailure(issueID, msg);
                 return false;
@@ -227,14 +244,14 @@ public class Hoster {
             } catch (IOException e) {
                 // we started seeing 500 errors, presumably due to time out.
                 // give it a bit of time, and see if the repository is there
-                LOGGER.info("GitHub reported that it failed to fork " + owner + "/" + repo + ". But we aren't trusting");
+                LOGGER.info(
+                        "GitHub reported that it failed to fork " + owner + "/" + repo + ". But we aren't trusting");
                 r = null;
                 for (int i = 0; r == null && i < 5; i++) {
                     Thread.sleep(1000);
                     r = org.getRepository(repo);
                 }
-                if (r == null)
-                    throw e;
+                if (r == null) throw e;
             }
             if (newName != null) {
                 boolean renameResult = false;
@@ -243,16 +260,18 @@ public class Hoster {
                         renameResult = renameRepository(r, newName);
                         break;
                     } catch (HttpException e) {
-                        LOGGER.warn("Failed to rename repository from " + repo + " to " +  newName, e);
+                        LOGGER.warn("Failed to rename repository from " + repo + " to " + newName, e);
                         if (e.getResponseCode() == 422) {
                             Thread.sleep(2000);
                         } else {
-                          throw new IOException("Failed to rename repository from " + repo + " to " +  newName + ":", e);
+                            throw new IOException(
+                                    "Failed to rename repository from " + repo + " to " + newName + ":", e);
                         }
                     }
                 }
                 if (!renameResult) {
-                  throw new IOException("Failed to rename repository from " + repo + " to " +  newName + " after 5 tries.");
+                    throw new IOException(
+                            "Failed to rename repository from " + repo + " to " + newName + " after 5 tries.");
                 }
 
                 r = null;
@@ -268,7 +287,8 @@ public class Hoster {
             Set<GHTeam> legacyTeams = r.getTeams();
 
             try {
-                getOrCreateRepoLocalTeam(github, org, r, maintainers.isEmpty() ? singletonList(user.getName()) : maintainers);
+                getOrCreateRepoLocalTeam(
+                        github, org, r, maintainers.isEmpty() ? singletonList(user.getName()) : maintainers);
             } catch (IOException e) {
                 // if 'user' is an org, the above command would fail
                 LOGGER.warn("Failed to add " + user + " to the new repository. Maybe an org?: " + e.getMessage());
@@ -279,16 +299,15 @@ public class Hoster {
             LOGGER.info("Created https://github.com/" + TARGET_ORG_NAME + "/" + (newName != null ? newName : repo));
 
             // remove all the existing teams
-            for (GHTeam team : legacyTeams)
-                team.remove(r);
+            for (GHTeam team : legacyTeams) team.remove(r);
 
             result = true;
         } catch (InterruptedException | IOException e) {
             LOGGER.error("Failed to fork a repository: ", e);
             try {
-              reportHostingFailure(issueID, e.getMessage());
+                reportHostingFailure(issueID, e.getMessage());
             } catch (IOException ioe) {
-              LOGGER.warn("Failed to send failure message to the hosting request", ioe);
+                LOGGER.warn("Failed to send failure message to the hosting request", ioe);
             }
         }
 
@@ -307,7 +326,8 @@ public class Hoster {
     /**
      * Creates a repository local team, and grants access to the repository.
      */
-    private static GHTeam getOrCreateRepoLocalTeam(GitHub github, GHOrganization org, GHRepository r, List<String> githubUsers) throws IOException {
+    private static GHTeam getOrCreateRepoLocalTeam(
+            GitHub github, GHOrganization org, GHRepository r, List<String> githubUsers) throws IOException {
         String teamName = r.getName() + " Developers";
         GHTeam t = org.getTeams().get(teamName);
         if (t == null) {
@@ -330,7 +350,10 @@ public class Hoster {
             team.remove(github.getMyself());
         }
 
-        t.add(r, GHOrganization.Permission.ADMIN); // make team an admin on the given repository, always do in case the config is wrong
+        t.add(
+                r,
+                GHOrganization.Permission
+                        .ADMIN); // make team an admin on the given repository, always do in case the config is wrong
         return t;
     }
 
@@ -355,7 +378,13 @@ public class Hoster {
     }
 
     @SuppressFBWarnings(value = "VA_FORMAT_STRING_USES_NEWLINE", justification = "TODO needs triage")
-    String createUploadPermissionPR(int issueId, String forkTo, List<String> ghUsers, List<String> releaseUsers, boolean useGHIssues, String jiraComponentId) {
+    String createUploadPermissionPR(
+            int issueId,
+            String forkTo,
+            List<String> ghUsers,
+            List<String> releaseUsers,
+            boolean useGHIssues,
+            String jiraComponentId) {
         String prUrl = "";
         boolean isPlugin = forkTo.endsWith("-plugin");
         if (isPlugin) {
@@ -377,18 +406,18 @@ public class Hoster {
                 }
 
                 if (!repo.getBranches().containsKey(branchName)) {
-                    repo.createRef("refs/heads/" + branchName, repo.getBranch("master").getSHA1());
+                    repo.createRef(
+                            "refs/heads/" + branchName, repo.getBranch("master").getSHA1());
                 }
 
                 GHContentBuilder builder = repo.createContent();
                 builder = builder.branch(branchName).message("Adding upload permissions file for " + forkTo);
                 String name = forkTo.replace("-plugin", "");
-                String content = "---\n" +
-                        "name: \"" + name + "\"\n" +
-                        "github: &GH \"" + TARGET_ORG_NAME + "/" + forkTo + "\"\n" +
-                        "paths:\n" +
-                        "- \"" + artifactPath + "\"\n" +
-                        "developers:\n";
+                String content = "---\n" + "name: \""
+                        + name + "\"\n" + "github: &GH \""
+                        + TARGET_ORG_NAME + "/" + forkTo + "\"\n" + "paths:\n"
+                        + "- \""
+                        + artifactPath + "\"\n" + "developers:\n";
                 StringBuilder developerBuilder = new StringBuilder();
                 for (String u : releaseUsers) {
                     developerBuilder.append("- \"").append(u).append("\"\n");
@@ -402,9 +431,12 @@ public class Hoster {
                     content += "  - jira: " + jiraComponentId + "\n";
                 }
 
-                builder.content(content).path("permissions/plugin-" + forkTo.replace("-plugin", "") + ".yml").commit();
+                builder.content(content)
+                        .path("permissions/plugin-" + forkTo.replace("-plugin", "") + ".yml")
+                        .commit();
 
-                String prText = """
+                String prText =
+                        """
                         Hello from your friendly Jenkins Hosting Bot!
                         This is an automatically created PR for:
                         - #%s
@@ -412,11 +444,15 @@ public class Hoster {
                         The user(s) listed in the permissions file may not have logged in to Artifactory yet, check the PR status.
                         To check again, hosting team members will retrigger the build using Checks area or by closing and reopening the PR.
                         cc %s
-                        """.formatted(
-                        issueId, TARGET_ORG_NAME,
-                        forkTo, ghUsers.stream().map(u -> "@" + u).collect(joining(", ")));
+                        """
+                                .formatted(
+                                        issueId,
+                                        TARGET_ORG_NAME,
+                                        forkTo,
+                                        ghUsers.stream().map(u -> "@" + u).collect(joining(", ")));
 
-                GHPullRequest pr = repo.createPullRequest("Add upload permissions for " + forkTo, branchName, repo.getDefaultBranch(), prText);
+                GHPullRequest pr = repo.createPullRequest(
+                        "Add upload permissions for " + forkTo, branchName, repo.getDefaultBranch(), prText);
                 prUrl = pr.getHtmlUrl().toString();
                 LOGGER.info("Created PR for repository permissions updater: " + prUrl);
             } catch (Exception e) {
@@ -463,16 +499,16 @@ public class Hoster {
     }
 
     private boolean createComponent(String subcomponent, String owner) {
-        LOGGER.info("Adding a new JIRA subcomponent %s to the %s project, owned by %s".formatted(
-                subcomponent, JIRA_PROJECT, owner));
+        LOGGER.info("Adding a new JIRA subcomponent %s to the %s project, owned by %s"
+                .formatted(subcomponent, JIRA_PROJECT, owner));
 
         boolean result = false;
         JiraRestClient client = null;
         try {
             client = JiraHelper.createJiraClient();
             final ComponentRestClient componentClient = client.getComponentClient();
-            final Promise<Component> createComponent = componentClient.createComponent(JIRA_PROJECT,
-                    new ComponentInput(subcomponent, "subcomponent", owner, AssigneeType.COMPONENT_LEAD));
+            final Promise<Component> createComponent = componentClient.createComponent(
+                    JIRA_PROJECT, new ComponentInput(subcomponent, "subcomponent", owner, AssigneeType.COMPONENT_LEAD));
             final Component component = JiraHelper.wait(createComponent);
             LOGGER.info("New component created. URL is " + component.getSelf().toURL());
             result = true;
@@ -487,5 +523,4 @@ public class Hoster {
 
         return result;
     }
-
 }
