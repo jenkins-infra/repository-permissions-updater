@@ -6,6 +6,7 @@ import com.atlassian.jira.rest.client.api.domain.AssigneeType;
 import com.atlassian.jira.rest.client.api.domain.BasicComponent;
 import com.atlassian.jira.rest.client.api.domain.Component;
 import com.atlassian.jira.rest.client.api.domain.input.ComponentInput;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import io.atlassian.util.concurrent.Promise;
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingRequest.IssueTracker;
 import java.io.IOException;
@@ -353,6 +354,7 @@ public class Hoster {
         };
     }
 
+    @SuppressFBWarnings(value = "VA_FORMAT_STRING_USES_NEWLINE", justification = "TODO needs triage")
     String createUploadPermissionPR(int issueId, String forkTo, List<String> ghUsers, List<String> releaseUsers, boolean useGHIssues, String jiraComponentId) {
         String prUrl = "";
         boolean isPlugin = forkTo.endsWith("-plugin");
