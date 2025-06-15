@@ -3,6 +3,8 @@ name: "declarative-pipeline-migration-assistant-parent"
 github: "jenkinsci/declarative-pipeline-migration-assistant-plugin"
 paths:
   - "org/jenkins-ci/plugins/to-declarative/declarative-pipeline-migration-assistant-parent"
+cd:
+  enabled: true
 developers:
   - "abayer"
   - "dnusbaum"
