@@ -15,4 +15,3 @@ security:
     jira: "cloudbees_security_members"
 cd:
   enabled: true
-  exclusive: false

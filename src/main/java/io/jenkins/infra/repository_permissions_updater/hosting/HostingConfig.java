@@ -11,8 +11,7 @@ public final class HostingConfig {
     static final String JIRA_PASSWORD = System.getenv("JIRA_PASSWORD");
     static final String JIRA_PROJECT;
 
-    private HostingConfig() {
-    }
+    private HostingConfig() {}
 
     static {
         String orgOverride = System.getenv("ORG_NAME");

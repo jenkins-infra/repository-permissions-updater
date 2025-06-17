@@ -1,0 +1,11 @@
+---
+name: "shared-library-version-override"
+github: &GH "jenkinsci/shared-library-version-override-plugin"
+paths:
+- "io/jenkins/plugins/shared-library-version-override"
+developers:
+- "cpottiers"
+issues:
+  - jira: 29520
+cd:
+  enabled: true

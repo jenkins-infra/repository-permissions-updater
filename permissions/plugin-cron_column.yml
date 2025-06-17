@@ -5,6 +5,8 @@ issues:
   - jira: '16061'  # cron_column-plugin
 paths:
   - "org/jenkins-ci/plugins/cron_column"
+cd:
+  enabled: true
 developers:
   - "jglick"
   - "markewaite"

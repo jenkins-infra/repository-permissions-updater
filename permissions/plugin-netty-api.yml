@@ -1,0 +1,15 @@
+---
+name: "netty-api"
+github: &GH "jenkinsci/netty-api-plugin"
+paths:
+- "io/jenkins/plugins/netty-api"
+cd:
+  enabled: true
+developers:
+- "rsandell"
+- "@cloudbees-developers"
+issues:
+  - jira: 29724
+security:
+  contacts:
+    jira: "cloudbees_security_members"  

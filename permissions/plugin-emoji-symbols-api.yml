@@ -1,0 +1,11 @@
+---
+name: "emoji-symbols-api"
+github: &GH "jenkinsci/emoji-symbols-api-plugin"
+paths:
+- "io/jenkins/plugins/emoji-symbols-api"
+developers:
+- "strangelookingnerd"
+issues:
+  - github: *GH
+cd:
+  enabled: true

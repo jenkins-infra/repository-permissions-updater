@@ -1,0 +1,9 @@
+---
+name: "simplifyqa-pipeline-executor"
+github: &GH "jenkinsci/simplifyqa-pipeline-executor-plugin"
+paths:
+- "io/jenkins/plugins/simplifyqa-pipeline-executor"
+developers:
+- "simplifyadmin"
+issues:
+  - github: *GH

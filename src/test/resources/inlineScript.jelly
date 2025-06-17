@@ -1,0 +1,6 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core">
+      <script>
+        console.log("Hello Worls")
+      </script>
+</j:jelly>

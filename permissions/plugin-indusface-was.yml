@@ -1,0 +1,11 @@
+---
+name: "indusface-was"
+github: &GH "jenkinsci/indusface-was-plugin"
+paths:
+- "io/jenkins/plugins/indusface-was"
+developers:
+- "indusface_jenkins_plugin"
+issues:
+  - jira: 29722
+cd:
+  enabled: true

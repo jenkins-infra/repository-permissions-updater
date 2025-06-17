@@ -5,5 +5,7 @@ issues:
   - jira: '15897'  # job-import-plugin
 paths:
   - "org/jenkins-ci/plugins/job-import-plugin"
+cd:
+  enabled: true
 developers:
   - "escoem"

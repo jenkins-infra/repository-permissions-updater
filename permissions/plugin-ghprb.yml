@@ -7,9 +7,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ghprb"
 developers:
-  - "bjoernhaeuser"
   - "bpatterson"
   - "jpwku"
   - "papajulio"
-  - "sag47"
-  - "olivergondza"
+  - "krisstern"

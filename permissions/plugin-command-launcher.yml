@@ -10,7 +10,6 @@ cd:
 developers:
   - "jglick"
   - "oleg_nenashev"
-  - "mramonleon"
 security:
   contacts:
     jira: "cloudbees_security_members"

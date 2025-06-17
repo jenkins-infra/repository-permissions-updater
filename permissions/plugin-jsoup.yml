@@ -1,8 +1,11 @@
 ---
 name: "jsoup"
-github: "jenkinsci/jsoup-plugin"
+github: &GH "jenkinsci/jsoup-plugin"
 issues:
-  - jira: '17559'  # jsoup-plugin
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/jsoup"
-developers: []
+developers:
+  - "jonesbusy"
+cd:
+  enabled: true

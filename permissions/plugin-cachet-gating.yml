@@ -8,6 +8,5 @@ paths:
   - "org/jenkins-ci/plugins/cachet-gating"
 developers:
   - "ggallen"
-  - "olivergondza"
   - "scoheb"
   - "avielyosef"

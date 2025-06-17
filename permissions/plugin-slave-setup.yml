@@ -5,6 +5,8 @@ issues:
   - jira: '15929'  # slave-setup-plugin
 paths:
   - "org/jenkins-ci/plugins/slave-setup"
+cd:
+  enabled: true
 developers:
   - "peppe"
   - "wolfs"

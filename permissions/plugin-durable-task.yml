@@ -8,7 +8,6 @@ paths:
 developers:
   - "jglick"
   - "kohsuke"
-  - "svanoort"
   - "abayer"
   - "dnusbaum"
   - "rsandell"
@@ -18,7 +17,6 @@ developers:
   - "teilo"
   - "batmat"
   - "olamy"
-  - "mramonleon"
 security:
   contacts:
     jira: "cloudbees_security_members"

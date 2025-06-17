@@ -7,4 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/build-timestamp"
 developers:
   - "orctom"
-
+  - "markewaite"
+  - "xdead_manx"

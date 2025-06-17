@@ -7,6 +7,9 @@ paths:
   - "org/jenkins-ci/plugins/gatling"
 developers:
   - "slandelle"
+  - "vedanthvasudev"
+# SECURITY-3588
+releaseBlocked: true
 cd:
   enabled: true
   exclusive: false

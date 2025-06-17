@@ -6,7 +6,8 @@ paths:
 developers:
   - "simonsymhoven"
   - "mPokornyETM"
+  - "drulli"
 issues:
-  - github: *GH
+  - jira: '29720' # pull-request-monitoring-plugin
 cd:
   enabled: true

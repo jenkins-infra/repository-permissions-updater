@@ -6,15 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/parameterized-trigger"
 developers:
-  - "ikedam"
   - "kwhetstone"
   - "oleg_nenashev"
-  - "olivergondza"
-  - "svanoort"
   - "wolfs"
   - "olamy"
   - "markewaite"
   - "poddingue"
+  - "jondaley"
 cd:
   enabled: true
 security:

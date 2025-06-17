@@ -3,8 +3,7 @@ name: "editable-choice"
 github: &GH "jenkinsci/editable-choice-plugin"
 paths:
   - "io/jenkins/plugins/editable-choice"
-developers:
-  - "ikedam"
+developers: []
 issues:
   - jira: 28633
 cd:

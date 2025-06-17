@@ -4,6 +4,6 @@ github: &GH "jenkinsci/opentelemetry-agent-metrics-plugin"
 paths:
 - "io/jenkins/plugins/opentelemetry-agent-metrics"
 developers:
-- "christophe_kamphaus_jemmic"
+- "christophe_kamphaus"
 issues:
   - github: *GH

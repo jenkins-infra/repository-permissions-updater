@@ -1,10 +1,10 @@
 package io.jenkins.infra.repository_permissions_updater.helper;
 
-import java.net.URL;
-import java.net.URLStreamHandlerFactory;
-
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+
+import java.net.URL;
+import java.net.URLStreamHandlerFactory;
 
 /**
  * This class manage the handling of fake url for URL creation
@@ -27,7 +27,6 @@ public sealed interface URLHelper permits URLHelper.URLHelperImpl {
      * @return singleton instance of the {@link URLStreamHandlerFactory}
      */
     URLStreamHandlerFactory getURLStreamHandlerFactory();
-
 
     final class URLHelperImpl implements URLHelper {
         private HttpUrlStreamHandler httpUrlStreamHandler;
@@ -61,6 +60,4 @@ public sealed interface URLHelper permits URLHelper.URLHelperImpl {
             return INSTANCE;
         }
     }
-
-
 }

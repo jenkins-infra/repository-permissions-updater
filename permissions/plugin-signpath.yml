@@ -5,10 +5,10 @@ paths:
   - "io/jenkins/plugins/signpath"
 developers:
 - "psavoie_signpath"
-- "ugsp"
 - "swenig_signpath"
-- "fabianschmied"
 - "drauch"
-- "volodymyr_bobko"
+- "tahacmd"
 issues:
   - jira: 28629
+cd:
+  enabled: true

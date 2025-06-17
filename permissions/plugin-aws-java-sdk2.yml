@@ -1,0 +1,43 @@
+---
+name: "aws-java-sdk2"
+github: &GH "jenkinsci/aws-java-sdk2-plugin"
+paths:
+  - "io/jenkins/plugins/aws-java-sdk2"
+  - "io/jenkins/plugins/aws-java-sdk2/aws-java-sdk2-*"
+extraNames:
+  - aws-java-sdk2-apigateway
+  - aws-java-sdk2-autoscaling
+  - aws-java-sdk2-cloudformation
+  - aws-java-sdk2-cloudfront
+  - aws-java-sdk2-cloudwatch
+  - aws-java-sdk2-cloudwatchlogs
+  - aws-java-sdk2-codebuild
+  - aws-java-sdk2-codedeploy
+  - aws-java-sdk2-core
+  - aws-java-sdk2-ec2
+  - aws-java-sdk2-ecr
+  - aws-java-sdk2-ecs
+  - aws-java-sdk2-efs
+  - aws-java-sdk2-elasticbeanstalk
+  - aws-java-sdk2-elasticloadbalancingv2
+  - aws-java-sdk2-iam
+  - aws-java-sdk2-kinesis
+  - aws-java-sdk2-lambda
+  - aws-java-sdk2-netty-nio-client
+  - aws-java-sdk2-organizations
+  - aws-java-sdk2-s3
+  - aws-java-sdk2-secretsmanager
+  - aws-java-sdk2-sns
+  - aws-java-sdk2-sqs
+  - aws-java-sdk2-ssm
+  - aws-java-sdk2-sso
+  - aws-java-sdk2-sts
+cd:
+  enabled: true
+developers:
+  - "@cloudbees-developers"
+issues:
+  - jira: 29620
+security:
+  contacts:
+    jira: "cloudbees_security_members"

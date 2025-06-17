@@ -3,5 +3,5 @@ name: "job-dsl-parent"
 paths:
   - "org/jenkins-ci/plugins/job-dsl-parent"
 developers:
-  - "daspilker"
+  - "basil"
   - "jamietanna"

@@ -1,0 +1,11 @@
+---
+name: "s3-jobcacher-storage"
+github: &GH "jenkinsci/s3-jobcacher-storage-plugin"
+paths:
+- "io/jenkins/plugins/s3-jobcacher-storage"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

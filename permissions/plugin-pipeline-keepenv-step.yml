@@ -6,4 +6,4 @@ issues:
 paths:
   - "io/jenkins/plugins/pipeline-keepenv-step"
 developers:
-  - "danielbeck"
+  - "@security"

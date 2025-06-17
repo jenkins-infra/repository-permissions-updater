@@ -14,6 +14,7 @@ public class HostingRequest {
      * e.g. your-cool-plugin
      */
     private final String newRepoName;
+
     private final List<String> githubUsers;
     private final List<String> jenkinsProjectUsers;
     private final IssueTracker issueTracker;
@@ -23,12 +24,11 @@ public class HostingRequest {
             String newRepoName,
             List<String> githubUsers,
             List<String> jenkinsProjectUsers,
-            IssueTracker issueTracker
-    ) {
+            IssueTracker issueTracker) {
         this.repositoryUrl = repositoryUrl;
         this.newRepoName = newRepoName;
-        this.githubUsers = Collections.unmodifiableList(githubUsers);
-        this.jenkinsProjectUsers = Collections.unmodifiableList(jenkinsProjectUsers);
+        this.githubUsers = Collections.unmodifiableList(trimList(githubUsers));
+        this.jenkinsProjectUsers = Collections.unmodifiableList(trimList(jenkinsProjectUsers));
         this.issueTracker = issueTracker;
     }
 
@@ -53,10 +53,15 @@ public class HostingRequest {
     }
 
     public enum IssueTracker {
-        GITHUB, JIRA;
+        GITHUB,
+        JIRA;
 
         public static IssueTracker fromString(String string) {
             return string.toLowerCase(Locale.ROOT).contains("git") ? GITHUB : JIRA;
         }
+    }
+
+    private List<String> trimList(List<String> users) {
+        return users.stream().filter(it -> !it.trim().isEmpty()).toList();
     }
 }
