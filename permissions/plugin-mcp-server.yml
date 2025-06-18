@@ -7,3 +7,5 @@ developers:
 - "topikachu"
 issues:
   - github: *GH
+cd:
+  enabled: true
