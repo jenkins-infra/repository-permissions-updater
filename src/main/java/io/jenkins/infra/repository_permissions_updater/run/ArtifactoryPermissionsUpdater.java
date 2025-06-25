@@ -274,7 +274,7 @@ public class ArtifactoryPermissionsUpdater {
                                         .collect(Collectors.toList()));
                     }
                 } else {
-                    throw new Exception("Issue trackers ('issues') support requires GitHub repository ('github')");
+                    throw new RuntimeException("Issue trackers ('issues') support requires GitHub repository ('github')");
                 }
             }
 
