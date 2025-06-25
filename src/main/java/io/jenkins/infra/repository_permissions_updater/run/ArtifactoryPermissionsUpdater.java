@@ -191,7 +191,7 @@ public class ArtifactoryPermissionsUpdater {
             Definition definition;
 
             try {
-                definition = yaml.loadAs(new FileReader(file), Definition.class);
+                definition = yaml.loadAs(Files.newBufferedReader(file.toPath(), StandardCharsets.UTF_8), Definition.class);
 
                 enrichTeams(definition, teamsByName);
 
@@ -258,7 +258,7 @@ public class ArtifactoryPermissionsUpdater {
             String artifactId = definition.getName();
             for (String path : definition.getPaths()) {
                 String lastPathElement = path.substring(path.lastIndexOf('/') + 1);
-                if (lastPathElement != artifactId && !lastPathElement.contains("*")) {
+                if (!lastPathElement.equals(artifactId) && !lastPathElement.contains("*")) {
                     // We could throw an exception here, but we actively abuse this for unusually structured components
                     LOGGER.log(Level.WARNING, "Unexpected path: " + path + " for artifact ID: " + artifactId);
                 }
@@ -360,7 +360,7 @@ public class ArtifactoryPermissionsUpdater {
         }
         for (File teamFile : teamFiles) {
             try {
-                TeamDefinition newTeam = yaml.loadAs(new FileReader(teamFile), TeamDefinition.class);
+                TeamDefinition newTeam = yaml.loadAs(Files.newBufferedReader(teamFile.toPath(), StandardCharsets.UTF_8), TeamDefinition.class);
                 teams.add(newTeam);
 
                 String expectedName = NEW_TEAM_FILE_NAME.formatted(newTeam.getName());
