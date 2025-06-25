@@ -22,7 +22,7 @@
   </scm>
 
   <properties>
-    <main.class>io.jenkins.infra.repository_permissions_updater.ArtifactoryPermissionsUpdater</main.class>
+    <main.class>io.jenkins.infra.repository_permissions_updater.run.ArtifactoryPermissionsUpdater</main.class>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>21</maven.compiler.release>
     <maven.version>3.9.10</maven.version>
