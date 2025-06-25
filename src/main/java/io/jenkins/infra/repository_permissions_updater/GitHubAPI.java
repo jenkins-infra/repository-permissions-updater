@@ -46,7 +46,8 @@ public abstract class GitHubAPI {
      * @param encryptedSecret the encrypted, base64 encoded secret value
      * @param repositoryName the repository name
      */
-    public abstract void createOrUpdateRepositorySecret(String name, String encryptedSecret, String repositoryName, String keyId) throws IOException;
+    public abstract void createOrUpdateRepositorySecret(
+            String name, String encryptedSecret, String repositoryName, String keyId) throws IOException;
 
     public static synchronized GitHubAPI getInstance() {
         if (INSTANCE == null) {

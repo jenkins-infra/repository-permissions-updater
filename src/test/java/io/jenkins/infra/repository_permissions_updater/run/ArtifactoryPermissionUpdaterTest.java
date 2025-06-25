@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 import com.google.gson.Gson;
 import edu.umd.cs.findbugs.annotations.NonNull;
 import io.jenkins.infra.repository_permissions_updater.ArtifactoryAPI;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
