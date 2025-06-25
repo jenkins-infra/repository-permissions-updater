@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -274,7 +275,12 @@ public class ArtifactoryPermissionsUpdater {
             String fileBaseName = file.getName().replaceAll("\\.ya?ml$", "");
 
             String jsonName = artifactoryAPI.toGeneratedPermissionTargetName(fileBaseName);
-            File outputFile = new File(new File(apiOutputDir, "permissions"), jsonName + ".json");
+            Path apiOutputDirPath = apiOutputDir.toPath();
+            Path permissions = apiOutputDirPath.resolve("permissions");
+            if (!Files.exists(permissions)) {
+                Files.createDirectories(permissions);
+            }
+            Path outputFilePath = permissions.resolve("%s.json".formatted(jsonName));
             PermissionJson permission = new PermissionJson(
                     jsonName,
                     definition.isReleaseBlocked() ? "blocked" : Arrays.stream(definition.getPaths())
@@ -293,23 +299,29 @@ public class ArtifactoryPermissionsUpdater {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             String pretty = gson.toJson(permission);
 
-            outputFile.getParentFile().mkdirs();
-            Files.writeString(outputFile.toPath(), pretty, StandardCharsets.UTF_8);
+            Files.writeString(outputFilePath, pretty, StandardCharsets.UTF_8);
         }
 
         cdEnabledComponentsByGitHub.forEach((githubRepo, components) -> {
             String groupName = artifactoryAPI.toGeneratedGroupName(githubRepo);
-            File outputFile = new File(new File(apiOutputDir, "groups"), groupName + ".json");
+            Path apiOutputDirPath = apiOutputDir.toPath();
+            Path groups = apiOutputDirPath.resolve("groups");
+            if (!Files.exists(groups)) {
+                try {
+                    Files.createDirectories(groups);
+                } catch (IOException e) {
+                    throw new UncheckedIOException("Failed to create directory for groups: " + groups, e);
+                }
+            }
+            Path outputFilePath = groups.resolve("%s.json".formatted(groupName));
             record Group(String name, String description) {}
             Group group = new Group(groupName, "CD group with permissions to deploy from " + githubRepo);
 
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-            outputFile.getParentFile().mkdirs();
             try {
-                gson.toJson(group, Files.newBufferedWriter(outputFile.toPath(), StandardCharsets.UTF_8));
+                gson.toJson(group, Files.newBufferedWriter(outputFilePath, StandardCharsets.UTF_8));
             } catch (IOException e) {
-                throw new UncheckedIOException("Failed to write group JSON to " + outputFile.getAbsolutePath(), e);
+                throw new UncheckedIOException("Failed to write group JSON to " + outputFilePath, e);
             }
         });
 
@@ -523,8 +535,9 @@ public class ArtifactoryPermissionsUpdater {
             LOGGER.log(Level.INFO, "Discovered %d %ss".formatted(objects.size(), kind));
 
             objects.forEach(object -> {
-                File jsonFile = new File(payloadsDir, object + ".json");
-                if (!jsonFile.exists()) {
+                Path payloadsDirPath = payloadsDir.toPath();
+                Path payloadPath = payloadsDirPath.resolve("%s.json".formatted(object));
+                if (!Files.exists(payloadPath)) {
                     LOGGER.log(Level.INFO, "%s %s has no corresponding file, deleting...".formatted(capitalize(kind), object));
                     try {
                         deleter.accept(object);
