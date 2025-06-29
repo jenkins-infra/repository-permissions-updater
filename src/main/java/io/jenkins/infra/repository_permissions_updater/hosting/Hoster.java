@@ -320,6 +320,11 @@ public class Hoster {
         r.enableIssueTracker(useGHIssues);
         r.enableWiki(false);
         r.setHomepage("https://plugins.jenkins.io/" + r.getName().replace("-plugin", "") + "/");
+        r.createAutolink()
+                .withKeyPrefix("JENKINS-")
+                .withUrlTemplate("https://issues.jenkins.io/browse/JENKINS-<num>")
+                .withIsAlphanumeric(false)
+                .create();
     }
 
     /**
