@@ -7,5 +7,4 @@ paths:
   - "hudson/plugins/dimensionsscm"
   - "org/jenkins-ci/plugins/dimensionsscm"
 developers:
-  - "dconneely"
-  - "praymond"
+  - "RichardMMMM"
