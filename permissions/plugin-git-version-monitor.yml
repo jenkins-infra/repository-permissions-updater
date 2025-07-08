@@ -1,0 +1,9 @@
+---
+name: "git-version-monitor"
+github: &GH "jenkinsci/git-version-monitor-plugin"
+paths:
+- "io/jenkins/plugins/git-version-monitor"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
