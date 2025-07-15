@@ -210,7 +210,7 @@
         <!-- run unit test in src/test/java -->
         <groupId>org.codehaus.gmavenplus</groupId>
         <artifactId>gmavenplus-plugin</artifactId>
-        <version>4.2.0</version>
+        <version>4.2.1</version>
         <dependencies>
           <dependency>
             <groupId>org.codehaus.groovy</groupId>
