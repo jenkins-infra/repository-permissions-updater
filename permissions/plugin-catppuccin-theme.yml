@@ -1,0 +1,10 @@
+---
+name: "catppuccin-theme"
+github: &GH "jenkinsci/catppuccin-theme-plugin"
+paths:
+- "io/jenkins/plugins/catppuccin-theme"
+developers:
+- "lewisbirks"
+- "janfaracik"
+issues:
+  - github: *GH
