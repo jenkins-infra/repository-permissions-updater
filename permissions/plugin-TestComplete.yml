@@ -4,6 +4,7 @@ github: "jenkinsci/testcomplete-plugin"
 paths:
   - "org/jenkins-ci/plugins/TestComplete"
 developers:
-  - "igor_filin"
+  - "sb_devops"
   - "rinconedgar"
-  - "pday_sb"
+  - "mrunkle_sb"
+  - "yamini_sethu"
