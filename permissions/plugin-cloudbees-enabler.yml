@@ -6,11 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/cloudbees-enabler"
 developers:
-  - "carroll"
-  - "dnusbaum"
-  - "olamy"
-  - "vlatombe"
-  - "fcojfernandez"
+  - "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"
