@@ -1,0 +1,9 @@
+---
+name: "json-parameter"
+github: &GH "jenkinsci/json-parameter-plugin"
+paths:
+- "io/jenkins/plugins/json-parameter"
+developers:
+- "cyanbaz"
+issues:
+  - github: *GH
