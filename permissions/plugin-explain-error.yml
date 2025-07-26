@@ -7,3 +7,5 @@ developers:
 - "xianpeng"
 issues:
   - github: *GH
+cd:
+  enabled: true
