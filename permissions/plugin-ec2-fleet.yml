@@ -18,3 +18,5 @@ developers:
   - "banvinee"
   - "ggburris"
   - "butter1484"
+cd:
+  enabled: true
