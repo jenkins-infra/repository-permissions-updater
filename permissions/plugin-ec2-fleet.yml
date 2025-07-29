@@ -20,4 +20,3 @@ developers:
   - "butter1484"
 cd:
   enabled: true
-  exclusive: false
