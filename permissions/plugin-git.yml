@@ -7,6 +7,7 @@ paths:
   - "org/jenkins-ci/plugins/git"
   - "org/jenkinsci/plugins/git"
   - "org/jvnet/hudson/plugins/git"
+community-plugin-maintainers: false
 developers:
   - "markewaite"
   - "olamy"

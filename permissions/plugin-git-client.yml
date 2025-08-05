@@ -6,6 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/git-client"
   - "org/jenkinsci/plugins/git-client"
+community-plugin-maintainers: false
 developers:
   - "markewaite"
   - "olamy"
