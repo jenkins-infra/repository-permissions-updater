@@ -7,3 +7,5 @@ paths:
   - "io/jenkins/plugins/generic-environment-filters"
 developers:
   - "@security"
+cd:
+  enabled: true
