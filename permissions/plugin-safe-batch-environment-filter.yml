@@ -7,3 +7,5 @@ developers:
   - "@security"
 issues:
   - jira: 28827
+cd:
+  enabled: true
