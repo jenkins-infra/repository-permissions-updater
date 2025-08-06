@@ -6,6 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/kryptowire"
 developers:
-  - "bschulte-kryptowire"
-  - "kw-nkiourtis"
-  - "mbertelsen-kryptowire"
+  - "bschulte3"
+  - "nkiourtis_quokka"
+  - "mbertelsen_quokka"
