@@ -7,7 +7,12 @@ paths:
   - "org/jenkins-ci/plugins/matlab"
 developers:
   - "acampbel"
-  - "mw-hrastega" 
+  - "Vahila"  
+  - "davidbuzinski"
+  - "mw-hrastega"
+  - "mw-kapilg"
+  - "mcafaro"
+  - "sameagen-MW"  
   - "tsharmaMW"
 cd:
   enabled: true
