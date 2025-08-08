@@ -5,3 +5,5 @@ paths:
   - "org/jvnet/hudson/plugins/analysis-pom"
 developers:
   - "drulli"
+cd:
+  enabled: true
