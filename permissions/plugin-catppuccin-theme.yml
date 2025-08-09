@@ -8,5 +8,6 @@ cd:
 developers:
 - "lewisbirks"
 - "janfaracik"
+- "catppuccin"
 issues:
   - github: *GH
