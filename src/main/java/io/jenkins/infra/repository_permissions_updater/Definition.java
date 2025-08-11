@@ -123,6 +123,7 @@ public class Definition {
     private IssueTracker[] issues = new IssueTracker[0];
     private String[] extraNames = new String[0];
     private boolean releaseBlocked;
+    private boolean communityPluginMaintainers;
 
     private String github;
 
@@ -191,6 +192,14 @@ public class Definition {
 
     public void setReleaseBlocked(boolean releaseBlocked) {
         this.releaseBlocked = releaseBlocked;
+    }
+
+    public boolean isCommunityPluginMaintainers() {
+        return communityPluginMaintainers;
+    }
+
+    public void setCommunityPluginMaintainers(boolean communityPluginMaintainers) {
+        this.communityPluginMaintainers = communityPluginMaintainers;
     }
 
     public String getGithub() {
