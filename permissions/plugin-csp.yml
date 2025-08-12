@@ -7,3 +7,4 @@ developers:
   - "@security"
 issues:
   - github: *GH
+communityPluginMaintainers: false

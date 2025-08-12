@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/matrix-auth"
 developers:
   - "danielbeck"
+communityPluginMaintainers: false
