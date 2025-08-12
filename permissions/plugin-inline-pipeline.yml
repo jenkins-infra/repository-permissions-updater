@@ -11,3 +11,4 @@ developers:
   - "@security"
 cd:
   enabled: true
+communityPluginMaintainers: false
