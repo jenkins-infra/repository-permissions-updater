@@ -8,3 +8,5 @@ developers:
 issues:
   - github: *GH
 communityPluginMaintainers: false
+cd:
+  enabled: true
