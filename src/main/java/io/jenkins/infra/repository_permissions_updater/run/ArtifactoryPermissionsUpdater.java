@@ -94,6 +94,10 @@ public class ArtifactoryPermissionsUpdater {
          * Any problems here are logged to allow troubleshooting.
          */
         var groupsJsonDir = new File(ARTIFACTORY_API_DIR, "groups");
+        if (!groupsJsonDir.mkdir()) {
+            LOGGER.severe("Failed to create groups directory");
+            throw new IOException("Failed to create groups directory: " + groupsJsonDir.getAbsolutePath());
+        }
         submitArtifactoryObjects(groupsJsonDir, "group", artifactoryApi::createOrReplaceGroup);
         removeExtraArtifactoryObjects(
                 groupsJsonDir, "group", artifactoryApi::listGeneratedGroups, artifactoryApi::deleteGroup);
@@ -102,6 +106,11 @@ public class ArtifactoryPermissionsUpdater {
          * Any problems here are logged to allow troubleshooting.
          */
         var permissionTargetsJsonDir = new File(ARTIFACTORY_API_DIR, "permissions");
+        if (!permissionTargetsJsonDir.mkdir()) {
+            LOGGER.severe("Failed to create permission targets directory");
+            throw new IOException(
+                    "Failed to create permission targets directory: " + permissionTargetsJsonDir.getAbsolutePath());
+        }
         submitArtifactoryObjects(
                 permissionTargetsJsonDir, "permission target", artifactoryApi::createOrReplacePermissionTarget);
         removeExtraArtifactoryObjects(
@@ -352,7 +361,11 @@ public class ArtifactoryPermissionsUpdater {
         var githubIndex = new GsonBuilder().setPrettyPrinting().create().toJson(pathsByGithub);
         Files.writeString(new File(apiOutputDir, "github.index.json").toPath(), githubIndex, StandardCharsets.UTF_8);
 
-        var issuesIndex = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create().toJson(issueTrackersByPlugin);
+        var issuesIndex = new GsonBuilder()
+                .setPrettyPrinting()
+                .disableHtmlEscaping()
+                .create()
+                .toJson(issueTrackersByPlugin);
         Files.writeString(new File(apiOutputDir, "issues.index.json").toPath(), issuesIndex, StandardCharsets.UTF_8);
 
         var cdRepos = new GsonBuilder()
