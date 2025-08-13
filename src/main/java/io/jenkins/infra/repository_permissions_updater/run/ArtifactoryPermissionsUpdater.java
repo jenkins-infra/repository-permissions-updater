@@ -106,11 +106,6 @@ public class ArtifactoryPermissionsUpdater {
          * Any problems here are logged to allow troubleshooting.
          */
         var permissionTargetsJsonDir = new File(ARTIFACTORY_API_DIR, "permissions");
-        if (!permissionTargetsJsonDir.mkdir()) {
-            LOGGER.severe("Failed to create permission targets directory");
-            throw new IOException(
-                    "Failed to create permission targets directory: " + permissionTargetsJsonDir.getAbsolutePath());
-        }
         submitArtifactoryObjects(
                 permissionTargetsJsonDir, "permission target", artifactoryApi::createOrReplacePermissionTarget);
         removeExtraArtifactoryObjects(
