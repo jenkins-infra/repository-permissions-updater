@@ -94,9 +94,9 @@ public class ArtifactoryPermissionsUpdater {
          * Any problems here are logged to allow troubleshooting.
          */
         var groupsJsonDir = new File(ARTIFACTORY_API_DIR, "groups");
-        if (!groupsJsonDir.mkdir()) {
-            LOGGER.severe("Failed to create groups directory");
-            throw new IOException("Failed to create groups directory: " + groupsJsonDir.getAbsolutePath());
+        if (!groupsJsonDir.exists()) {
+            LOGGER.log(Level.WARNING, "Groups directory does not exist: {0}, skipping group submission", groupsJsonDir);
+            return;
         }
         submitArtifactoryObjects(groupsJsonDir, "group", artifactoryApi::createOrReplaceGroup);
         removeExtraArtifactoryObjects(
@@ -106,6 +106,13 @@ public class ArtifactoryPermissionsUpdater {
          * Any problems here are logged to allow troubleshooting.
          */
         var permissionTargetsJsonDir = new File(ARTIFACTORY_API_DIR, "permissions");
+        if (!permissionTargetsJsonDir.exists()) {
+            LOGGER.log(
+                    Level.WARNING,
+                    "Permission targets directory does not exist: %s, skipping permission target submission"
+                            .formatted(permissionTargetsJsonDir));
+            return;
+        }
         submitArtifactoryObjects(
                 permissionTargetsJsonDir, "permission target", artifactoryApi::createOrReplacePermissionTarget);
         removeExtraArtifactoryObjects(
@@ -237,6 +244,7 @@ public class ArtifactoryPermissionsUpdater {
                                 "CD-enabled component '%s' in repository '%s'"
                                         .formatted(definition.getName(), definition.getGithub()));
                         definitions.add(definition);
+                        cdEnabledComponentsByGitHub.put(definition.getGithub(), definitions);
                     } else {
                         LOGGER.log(
                                 Level.INFO,
@@ -330,6 +338,8 @@ public class ArtifactoryPermissionsUpdater {
             Files.writeString(outputFilePath, pretty, StandardCharsets.UTF_8);
         }
 
+        record Group(String name, String description) {}
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
         cdEnabledComponentsByGitHub.forEach((githubRepo, components) -> {
             String groupName = artifactoryAPI.toGeneratedGroupName(githubRepo);
             Path apiOutputDirPath = apiOutputDir.toPath();
@@ -342,12 +352,10 @@ public class ArtifactoryPermissionsUpdater {
                 }
             }
             Path outputFilePath = groups.resolve("%s.json".formatted(groupName));
-            record Group(String name, String description) {}
             Group group = new Group(groupName, "CD group with permissions to deploy from " + githubRepo);
 
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            try {
-                gson.toJson(group, Files.newBufferedWriter(outputFilePath, StandardCharsets.UTF_8));
+            try (var writer = Files.newBufferedWriter(outputFilePath, StandardCharsets.UTF_8)) {
+                gson.toJson(group, writer);
             } catch (IOException e) {
                 throw new UncheckedIOException("Failed to write group JSON to " + outputFilePath, e);
             }
