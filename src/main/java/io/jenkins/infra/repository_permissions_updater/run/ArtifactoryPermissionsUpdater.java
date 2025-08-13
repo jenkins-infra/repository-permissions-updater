@@ -253,25 +253,24 @@ public class ArtifactoryPermissionsUpdater {
                     ArrayList<String> names = new ArrayList<>(Arrays.asList(definition.getExtraNames()));
                     names.add(definition.getName());
                     for (String name : names) {
-                        issueTrackersByPlugin.put(
-                                name,
-                                Arrays.stream(definition.getIssues())
-                                        .filter(tracker -> tracker.isJira() || tracker.isGitHubIssues())
-                                        .map(tracker -> {
-                                            var ret = new HashMap<String, Object>();
-                                            ret.put("type", tracker.getType());
-                                            ret.put("reference", tracker.getReference());
-                                            var viewUrl = tracker.getViewUrl();
-                                            if (viewUrl != null) {
-                                                ret.put("viewUrl", viewUrl);
-                                            }
-                                            var reportUrl = tracker.getReportUrl(name);
-                                            if (reportUrl != null) {
-                                                ret.put("reportUrl", reportUrl);
-                                            }
-                                            return ret;
-                                        })
-                                        .collect(Collectors.toList()));
+                        List<HashMap<String, Object>> issuesList = Arrays.stream(definition.getIssues())
+                                .filter(tracker -> tracker.isJira() || tracker.isGitHubIssues())
+                                .map(tracker -> {
+                                    var ret = new HashMap<String, Object>();
+                                    ret.put("type", tracker.getType());
+                                    ret.put("reference", tracker.getReference());
+                                    var viewUrl = tracker.getViewUrl();
+                                    if (viewUrl != null) {
+                                        ret.put("viewUrl", viewUrl);
+                                    }
+                                    var reportUrl = tracker.getReportUrl(name);
+                                    if (reportUrl != null) {
+                                        ret.put("reportUrl", reportUrl);
+                                    }
+                                    return ret;
+                                })
+                                .collect(Collectors.toList());
+                        if (!issuesList.isEmpty()) issueTrackersByPlugin.put(name, issuesList);
                     }
                 } else {
                     LOGGER.severe("Issue trackers ('issues') support requires GitHub repository ('github')");
@@ -353,7 +352,7 @@ public class ArtifactoryPermissionsUpdater {
         var githubIndex = new GsonBuilder().setPrettyPrinting().create().toJson(pathsByGithub);
         Files.writeString(new File(apiOutputDir, "github.index.json").toPath(), githubIndex, StandardCharsets.UTF_8);
 
-        var issuesIndex = new GsonBuilder().setPrettyPrinting().create().toJson(issueTrackersByPlugin);
+        var issuesIndex = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create().toJson(issueTrackersByPlugin);
         Files.writeString(new File(apiOutputDir, "issues.index.json").toPath(), issuesIndex, StandardCharsets.UTF_8);
 
         var cdRepos = new GsonBuilder()
