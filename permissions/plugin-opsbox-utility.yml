@@ -1,0 +1,11 @@
+---
+name: "opsbox-utility"
+github: &GH "jenkinsci/opsbox-utility-plugin"
+paths:
+- "io/jenkins/plugins/opsbox-utility"
+developers:
+- "seanly"
+issues:
+  - jira: 29728
+cd:
+  enabled: true

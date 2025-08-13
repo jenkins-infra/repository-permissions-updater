@@ -8,3 +8,5 @@ paths:
 developers:
   - "restjohn"
   - "panicking"
+cd:
+  enabled: true

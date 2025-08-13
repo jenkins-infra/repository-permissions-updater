@@ -1,0 +1,11 @@
+---
+name: "kubernetes-ephemeral-container"
+github: &GH "jenkinsci/kubernetes-ephemeral-container-plugin"
+paths:
+- "io/jenkins/plugins/kubernetes-ephemeral-container"
+developers:
+- "kylecronin"
+issues:
+  - github: *GH
+cd:
+  enabled: true

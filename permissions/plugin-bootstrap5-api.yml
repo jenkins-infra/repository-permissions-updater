@@ -1,6 +1,6 @@
 ---
 name: "bootstrap5-api"
-github: &GH "jenkinsci/bootstrap5-api-plugin"
+github: "jenkinsci/bootstrap5-api-plugin"
 paths:
   - "io/jenkins/plugins/bootstrap5-api"
 developers:
@@ -10,3 +10,5 @@ issues:
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true

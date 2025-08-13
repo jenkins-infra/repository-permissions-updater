@@ -7,3 +7,4 @@ developers:
 - "danielbeck"
 issues:
   - jira: '29420' # people-view-plugin
+communityPluginMaintainers: false

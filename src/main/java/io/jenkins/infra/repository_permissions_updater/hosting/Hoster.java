@@ -139,9 +139,9 @@ public class Hoster {
             String issueTrackerText;
             if (issueTrackerChoice == IssueTracker.JIRA) {
                 issueTrackerText = "\n\nA Jira component named [" + forkTo
-                        + "](https://issues.jenkins.io/issues/?jql=project+%3D+JENKINS+AND+component+%3D+ " + forkTo
-                        + ")" + "has also been created with " + defaultAssignee
-                        + " as the default assignee for issues.";
+                        + "](https://issues.jenkins.io/issues/?jql=project+%3D+JENKINS+AND+component+%3D+" + forkTo
+                        + ")" + " has also been created with `" + defaultAssignee
+                        + "` as the default assignee for issues.";
             } else {
                 issueTrackerText =
                         "\n\nGitHub issues has been selected for issue tracking and was enabled for the forked repo.";
@@ -320,6 +320,11 @@ public class Hoster {
         r.enableIssueTracker(useGHIssues);
         r.enableWiki(false);
         r.setHomepage("https://plugins.jenkins.io/" + r.getName().replace("-plugin", "") + "/");
+        r.createAutolink()
+                .withKeyPrefix("JENKINS-")
+                .withUrlTemplate("https://issues.jenkins.io/browse/JENKINS-<num>")
+                .withIsAlphanumeric(false)
+                .create();
     }
 
     /**
