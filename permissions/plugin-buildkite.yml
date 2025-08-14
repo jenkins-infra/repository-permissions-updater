@@ -5,6 +5,7 @@ paths:
 - "io/jenkins/plugins/buildkite"
 developers:
 - "isaacsu_buildkite"
+- "owenmehegan"
 cd:
   enabled: true
 issues:
