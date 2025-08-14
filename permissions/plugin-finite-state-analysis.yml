@@ -1,0 +1,9 @@
+---
+name: "finite-state-analysis"
+github: &GH "jenkinsci/finite-state-analysis-plugin"
+paths:
+- "io/jenkins/plugins/finite-state-analysis"
+developers:
+- "finitestateinc"
+issues:
+  - github: *GH
