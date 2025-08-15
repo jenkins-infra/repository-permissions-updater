@@ -6,3 +6,5 @@ paths:
   - "org/jenkins-ci/tools/maven-hpi-plugin"
 developers:
   - "@core"
+cd:
+  enabled: true
