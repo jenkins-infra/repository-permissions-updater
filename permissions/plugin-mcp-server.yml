@@ -5,6 +5,7 @@ paths:
 - "io/jenkins/plugins/mcp-server"
 developers:
 - "topikachu"
+- "olamy"
 issues:
   - github: *GH
 cd:
