@@ -7,4 +7,6 @@ paths:
   - "io/jenkins/plugins/localization-support"
 developers:
   - "danielbeck"
+cd:
+  enabled: true
 communityPluginMaintainers: false
