@@ -1,0 +1,9 @@
+---
+name: "mergify"
+github: &GH "jenkinsci/mergify-plugin"
+paths:
+- "io/jenkins/plugins/mergify"
+developers:
+- "sileht"
+issues:
+  - github: *GH
