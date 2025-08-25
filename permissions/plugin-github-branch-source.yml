@@ -16,6 +16,7 @@ developers:
   - "kshultz"
   - "jtaboada"
   - "olamy"
+  - "jpochat"
 security:
   contacts:
     jira: "cloudbees_security_members"
