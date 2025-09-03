@@ -50,7 +50,7 @@ public class MavenVerifier implements BuildSystemVerifier {
     private static final int MAX_LENGTH_OF_ARTIFACT_ID = 37;
     private static final Logger LOGGER = LoggerFactory.getLogger(MavenVerifier.class);
 
-    public static final Version LOWEST_PARENT_POM_VERSION = new Version(5, 9);
+    public static final Version LOWEST_PARENT_POM_VERSION = new Version(5, 24);
     public static final Version PARENT_POM_WITH_JENKINS_VERSION = new Version(2);
 
     public static final String INVALID_POM = "The pom.xml file in the root of the origin repository is not valid";
@@ -493,6 +493,14 @@ public class MavenVerifier implements BuildSystemVerifier {
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
                             "Please define the property `jenkins.baseline` and use this property in `<jenkins.version>${jenkins.baseline}.3</jenkins.version>` and the artifactId of the bom."));
+        }
+        if (!props.containsKey("hpi.strictBundledArtifacts")
+                || !props.getProperty("hpi.strictBundledArtifacts").equals("true")) {
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "Please define the property `hpi.strictBundledArtifacts` and set it to `true`. This should help prevent accidental library bundling when adding and updating dependencies."
+                                    + "See [Bundling third-party libraries](https://www.jenkins.io/doc/developer/plugin-development/dependencies-and-class-loading/#bundling-third-party-libraries)."));
         }
     }
 
