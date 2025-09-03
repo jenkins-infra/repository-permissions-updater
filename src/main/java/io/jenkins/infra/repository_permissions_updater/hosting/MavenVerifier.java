@@ -501,12 +501,6 @@ public class MavenVerifier implements BuildSystemVerifier {
                             VerificationMessage.Severity.REQUIRED,
                             "Please define the property `hpi.strictBundledArtifacts` and set it to `true`. This should help prevent accidental library bundling when adding and updating dependencies."));
         }
-        if (!props.containsKey("hpi.bundledArtifacts")) {
-            hostingIssues.add(
-                    new VerificationMessage(
-                            VerificationMessage.Severity.REQUIRED,
-                            "Please define the property `hpi.bundledArtifacts`. If your plugin does not bundle any dependencies, please set it to an empty list: `<hpi.bundledArtifacts></hpi.bundledArtifacts>`."));
-        }
     }
 
     private void checkDependencies(Model model, HashSet<VerificationMessage> hostingIssues) {
