@@ -4,7 +4,6 @@ org.apache.commons:commons-lang;io.jenkins.plugins:commons-lang3-api
 org.apache.commons:commons-text;io.jenkins.plugins:commons-text-api
 org.apache.commons:commons-compress;io.jenkins.plugins:commons-compress-api
 org.apache.commons:commons-math3;io.jenkins.plugins:commons-math3-api
-org.apache.commons:commons-collections4;io.jenkins.plugins:commons-collections4-api
 
 org.json:json;io.jenkins.plugins:json-api
 com.jayway.jsonpath:json-path;io.jenkins.plugins:json-path-api
