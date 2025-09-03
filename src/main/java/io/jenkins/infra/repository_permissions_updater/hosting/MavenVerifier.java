@@ -499,7 +499,8 @@ public class MavenVerifier implements BuildSystemVerifier {
             hostingIssues.add(
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
-                            "Please define the property `hpi.strictBundledArtifacts` and set it to `true`. This should help prevent accidental library bundling when adding and updating dependencies."));
+                            "Please define the property `hpi.strictBundledArtifacts` and set it to `true`. This should help prevent accidental library bundling when adding and updating dependencies." +
+                                    "See [Bundling third-party libraries](https://www.jenkins.io/doc/developer/plugin-development/dependencies-and-class-loading/#bundling-third-party-libraries)."));
         }
     }
 
