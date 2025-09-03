@@ -494,7 +494,8 @@ public class MavenVerifier implements BuildSystemVerifier {
                             VerificationMessage.Severity.REQUIRED,
                             "Please define the property `jenkins.baseline` and use this property in `<jenkins.version>${jenkins.baseline}.3</jenkins.version>` and the artifactId of the bom."));
         }
-        if (!props.containsKey("hpi.strictBundledArtifacts") || !props.getProperty("hpi.strictBundledArtifacts").equals("true")) {
+        if (!props.containsKey("hpi.strictBundledArtifacts")
+                || !props.getProperty("hpi.strictBundledArtifacts").equals("true")) {
             hostingIssues.add(
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
