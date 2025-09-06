@@ -1,6 +1,6 @@
 package io.jenkins.infra.repository_permissions_updater;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.google.gson.Gson;
 import edu.umd.cs.findbugs.annotations.NonNull;
@@ -12,15 +12,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
-public class ArtifactoryPermissionUpdaterTest {
+class ArtifactoryPermissionUpdaterTest {
 
     private static File payloads;
 
-    @BeforeClass
-    public static void preparePayloads() throws IOException {
+    @BeforeAll
+    static void preparePayloads() throws IOException {
         File permissions = Files.createTempDirectory("permissions").toFile();
         permissions.deleteOnExit();
         payloads = Files.createTempDirectory("json").toFile();
@@ -31,7 +31,7 @@ public class ArtifactoryPermissionUpdaterTest {
     }
 
     @Test
-    public void shouldMatchIncludePattern() throws IOException {
+    void shouldMatchIncludePattern() throws IOException {
         Map<String, Object> map = new HashMap<>();
         map = parseJson(map, "permissions", "generatedv2-plugin-delphix.json");
         assertEquals(
@@ -48,7 +48,7 @@ public class ArtifactoryPermissionUpdaterTest {
     }
 
     @Test
-    public void shouldListMaintainers() throws IOException {
+    void shouldListMaintainers() throws IOException {
         Map<String, List<String>> map = new HashMap<>();
         map = parseJson(map, "maintainers.index.json");
         List<String> keys = map.keySet().stream().sorted().collect(Collectors.toList());
