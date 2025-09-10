@@ -1,0 +1,9 @@
+---
+name: "jakarta-xml-bind-api"
+github: &GH "jenkinsci/jakarta-xml-bind-api-plugin"
+paths:
+- "io/jenkins/plugins/jakarta-xml-bind-api"
+developers:
+- "basil"
+issues:
+  - jira: 29732
