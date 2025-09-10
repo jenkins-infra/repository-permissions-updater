@@ -108,7 +108,7 @@ class GitHubImpl extends GitHubAPI {
         int responseCode = 0;
         int attemptNumber = 1;
         int maxAttempts = 3;
-        while (responseCode != HttpURLConnection.HTTP_NO_CONTENT) {
+        while (!(responseCode == HttpURLConnection.HTTP_NO_CONTENT || responseCode == HttpURLConnection.HTTP_CREATED)) {
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
             // The GitHub API doesn't do an auth challenge
@@ -124,7 +124,7 @@ class GitHubImpl extends GitHubAPI {
             }
             responseCode = conn.getResponseCode();
 
-            if (responseCode != HttpURLConnection.HTTP_NO_CONTENT) {
+            if (responseCode != HttpURLConnection.HTTP_NO_CONTENT && responseCode != HttpURLConnection.HTTP_CREATED) {
                 if (attemptNumber == maxAttempts) {
                     LOGGER.log(
                             Level.WARNING,
@@ -137,9 +137,10 @@ class GitHubImpl extends GitHubAPI {
                 } catch (InterruptedException e) {
                     throw new IOException("Interrupted for GitHub", e);
                 }
-                LOGGER.log(Level.INFO, "Retrying create/update secret {0} for {1} attempt {2}/{3}", new Object[] {
-                    name, repositoryName, attemptNumber, maxAttempts
-                });
+                LOGGER.log(
+                        Level.INFO,
+                        "Retrying create/update secret {0} for {1} attempt {2}/{3}, code: {4}",
+                        new Object[] {name, repositoryName, attemptNumber, maxAttempts, responseCode});
                 attemptNumber++;
             }
         }
