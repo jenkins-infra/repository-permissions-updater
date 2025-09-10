@@ -258,7 +258,7 @@ public class Hoster {
                         renameResult = renameRepository(r, newName);
                         break;
                     } catch (HttpException e) {
-                        LOGGER.warn("Failed to rename repository from {} to {}", repo, newName, e);
+                        LOGGER.warn("Failed to rename repository from {} to {}", repo, newName);
                         if (e.getResponseCode() == 422) {
                             Thread.sleep(2000);
                         } else {
@@ -267,6 +267,7 @@ public class Hoster {
                         }
                     }
                 }
+                LOGGER.info("Renamed repository from {} to {}", repo, newName);
                 if (!renameResult) {
                     throw new IOException(
                             "Failed to rename repository from " + repo + " to " + newName + " after 5 tries.");
