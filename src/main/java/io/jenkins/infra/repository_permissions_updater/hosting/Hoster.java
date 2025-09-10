@@ -29,7 +29,6 @@ import java.util.concurrent.TimeoutException;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.kohsuke.github.GHContent;
@@ -240,10 +239,10 @@ public class Hoster {
 
             GHRepository r;
             try {
-                r = orig.forkTo(org);
+                r = orig.createFork().organization(org).create();
             } catch (IOException e) {
                 // we started seeing 500 errors, presumably due to time out.
-                // give it a bit of time, and see if the repository is there
+                // give it a bit of time and see if the repository is there
                 LOGGER.info("GitHub reported that it failed to fork {}/{}. But we aren't trusting", owner, repo);
                 r = null;
                 for (int i = 0; r == null && i < 5; i++) {
@@ -259,7 +258,7 @@ public class Hoster {
                         renameResult = renameRepository(r, newName);
                         break;
                     } catch (HttpException e) {
-                        LOGGER.warn("Failed to rename repository from {} to {}", repo, newName, e);
+                        LOGGER.warn("Failed to rename repository from {} to {}", repo, newName);
                         if (e.getResponseCode() == 422) {
                             Thread.sleep(2000);
                         } else {
@@ -268,6 +267,7 @@ public class Hoster {
                         }
                     }
                 }
+                LOGGER.info("Renamed repository from {} to {}", repo, newName);
                 if (!renameResult) {
                     throw new IOException(
                             "Failed to rename repository from " + repo + " to " + newName + " after 5 tries.");
@@ -339,9 +339,9 @@ public class Hoster {
             List<String> maintainers = emptyList();
             if (!githubUsers.isEmpty()) {
                 maintainers = githubUsers.stream()
-                        // in order to be added as a maintainer of a team you have to be a member of the org already
+                        // to be added as a maintainer of a team, you have to be a member of the org already
                         .filter(user -> isMemberOfOrg(github, org, user))
-                        .collect(Collectors.toList());
+                        .toList();
                 ghCreateTeamBuilder = ghCreateTeamBuilder.maintainers(maintainers.toArray(new String[0]));
             }
             t = ghCreateTeamBuilder.create();
@@ -350,14 +350,12 @@ public class Hoster {
             usersNotInMaintainers.removeAll(maintainers);
             final GHTeam team = t;
             usersNotInMaintainers.forEach(addUserToTeam(github, team));
-            // github automatically adds the user to the team who created the team, we don't want that
+            // GitHub automatically adds the user to the team who created the team, we don't want that
             team.remove(github.getMyself());
         }
 
-        t.add(
-                r,
-                GHOrganization.Permission
-                        .ADMIN); // make team an admin on the given repository, always do in case the config is wrong
+        // make team an admin on the given repository, always do in case the config is wrong
+        t.add(r, GHOrganization.RepositoryRole.from(GHOrganization.Permission.ADMIN));
         return t;
     }
 
