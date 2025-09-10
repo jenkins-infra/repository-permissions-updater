@@ -1,7 +1,11 @@
 ---
 name: "misc-info-tools"
-github: "jenkinsci/misc-info-tools-plugin"
+github: &GH "jenkinsci/misc-info-tools-plugin"
 paths:
-  - "org/jenkins-ci/plugins/misc-info-tools"
+- "io/jenkins/plugins/misc-info-tools"
 developers:
-  - "akalinux"
+- "akalinux"
+issues:
+  - jira: 29731
+cd:
+  enabled: true
