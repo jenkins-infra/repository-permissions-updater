@@ -7,3 +7,5 @@ developers:
 - "akalinux"
 issues:
   - jira: 29731
+cd:
+  enabled: true
