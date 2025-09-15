@@ -3,5 +3,4 @@ name: "websocket-spi"
 github: "jenkinsci/jenkins"
 paths:
   - "org/jenkins-ci/main/websocket-spi"
-developers:
-  - "releasebot"
+developers: []

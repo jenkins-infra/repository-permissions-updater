@@ -3,5 +3,4 @@ name: "jenkins-core"
 github: "jenkinsci/jenkins"
 paths:
   - "org/jenkins-ci/main/jenkins-core"
-developers:
-  - "releasebot"
+developers: []
