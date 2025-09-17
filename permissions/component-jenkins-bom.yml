@@ -3,4 +3,5 @@ name: "jenkins-bom"
 github: "jenkinsci/jenkins"
 paths:
   - "org/jenkins-ci/main/jenkins-bom"
-developers: []
+developers:
+  - "releasebot"
