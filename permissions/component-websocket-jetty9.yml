@@ -3,4 +3,5 @@ name: "websocket-jetty9"
 github: "jenkinsci/jenkins"
 paths:
   - "org/jenkins-ci/main/websocket-jetty9"
-developers: []
+developers:
+  - "releasebot"
