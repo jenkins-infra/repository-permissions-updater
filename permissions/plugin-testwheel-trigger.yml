@@ -1,9 +1,13 @@
 ---
 name: "testwheel-trigger"
-github: "jenkinsci/testwheel-trigger-plugin"
+github: &GH "jenkinsci/testwheel-trigger-plugin"
 paths:
   - "io/jenkins/plugins/testwheel-trigger"
 developers:
+  - "baskerGanesan"
   - "prakashp1987"
+  - "PradeepaVijayamirtharaj"
+issues:
+  - github: *GH
 cd:
   enabled: true
