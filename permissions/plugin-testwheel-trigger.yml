@@ -4,10 +4,9 @@ github: &GH "jenkinsci/testwheel-trigger-plugin"
 paths:
   - "io/jenkins/plugins/testwheel-trigger"
 developers:
-  - "baskerGanesan"
   - "prakashp1987"
-  - "PradeepaVijayamirtharaj"
+cd:
+  enabled: true  
 issues:
   - github: *GH
-cd:
-  enabled: true
+
