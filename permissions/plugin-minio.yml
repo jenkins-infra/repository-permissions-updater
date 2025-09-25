@@ -11,4 +11,3 @@ developers:
   - "yijiangw"
 cd:
   enabled: true
-  exclusive: false

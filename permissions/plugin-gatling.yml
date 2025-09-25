@@ -10,4 +10,3 @@ developers:
   - "vedanthvasudev"
 cd:
   enabled: true
-  exclusive: false
