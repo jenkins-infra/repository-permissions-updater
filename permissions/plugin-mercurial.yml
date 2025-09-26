@@ -9,7 +9,6 @@ paths:
 cd:
   enabled: true
 developers:
-  - "jglick"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"
