@@ -7,3 +7,5 @@ developers:
 - "alikdolg"
 issues:
   - jira: 29727
+cd:
+  enabled: true
