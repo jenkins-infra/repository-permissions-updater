@@ -325,6 +325,11 @@ public class Hoster {
                 .withUrlTemplate("https://issues.jenkins.io/browse/JENKINS-<num>")
                 .withIsAlphanumeric(false)
                 .create();
+        r.createAutolink()
+                .withKeyPrefix("SECURITY-")
+                .withUrlTemplate("https://jenkins.io/security/issue/SECURITY-<num>")
+                .withIsAlphanumeric(false)
+                .create();
     }
 
     /**
