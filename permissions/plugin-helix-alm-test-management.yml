@@ -6,5 +6,6 @@ paths:
 developers:
 - "vincentp"
 - "perforce_pjackson"
+- "jonathan_alley"
 issues:
   - github: *GH
