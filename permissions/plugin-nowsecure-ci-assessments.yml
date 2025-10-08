@@ -1,0 +1,9 @@
+---
+name: "nowsecure-ci-assessments"
+github: &GH "jenkinsci/nowsecure-ci-assessments-plugin"
+paths:
+- "io/jenkins/plugins/nowsecure-ci-assessments"
+developers:
+- "NoraTheNarwhal"
+issues:
+  - github: *GH
