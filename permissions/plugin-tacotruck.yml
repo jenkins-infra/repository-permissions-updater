@@ -1,0 +1,10 @@
+---
+name: "tacotruck"
+github: &GH "jenkinsci/tacotruck-plugin"
+paths:
+- "io/jenkins/plugins/tacotruck"
+developers:
+- "chetannn"
+- "testfiestaops"
+issues:
+  - github: *GH
