@@ -12,6 +12,7 @@ developers:
   - "oleg_nenashev"
   - "batmat"
   - "rsandell"
+  - "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"
