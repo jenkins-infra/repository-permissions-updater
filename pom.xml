@@ -26,6 +26,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>21</maven.compiler.release>
     <maven.version>3.9.11</maven.version>
+    <plexus.interpolation.version>1.28</plexus.interpolation.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
 
@@ -134,6 +135,11 @@
       <artifactId>groovy-all</artifactId>
       <version>2.5.22</version>
       <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.plexus</groupId>
+      <artifactId>plexus-interpolation</artifactId>
+      <version>${plexus.interpolation.version}</version>
     </dependency>
     <dependency>
       <groupId>org.javatuples</groupId>

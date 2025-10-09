@@ -36,6 +36,8 @@ import org.apache.maven.model.Model;
 import org.apache.maven.model.Parent;
 import org.apache.maven.model.Repository;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
+import org.codehaus.plexus.interpolation.MapBasedValueSource;
+import org.codehaus.plexus.interpolation.RegexBasedInterpolator;
 import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
 import org.kohsuke.github.GHContent;
 import org.kohsuke.github.GHFileNotFoundException;
@@ -550,18 +552,22 @@ public class MavenVerifier implements BuildSystemVerifier {
 
     private JenkinsVersion getJenkinsVersion(Model model) {
         Properties props = model.getProperties();
+        RegexBasedInterpolator interpolator = new RegexBasedInterpolator();
+        interpolator.addValueSource(new MapBasedValueSource(props));
         if (props.containsKey("jenkins.version")) {
-            String baseline = props.getProperty("jenkins.baseline");
-            String version = props.getProperty("jenkins.version");
-            if (baseline != null && version.contains("${jenkins.baseline}")) {
-                version = version.replace("${jenkins.baseline}", baseline);
-            } else {
-                Matcher m = Pattern.compile("(\\d\\.\\d+)(|\\.\\d)").matcher(version);
-                if (m.matches()) {
-                    baseline = m.group(1);
+            try {
+                String version = interpolator.interpolate(props.getProperty("jenkins.version"));
+                String baseline = interpolator.interpolate(props.getProperty("jenkins.baseline"));
+                if (baseline == null) {
+                    Matcher m = Pattern.compile("(\\d\\.\\d+)(|\\.\\d)").matcher(version);
+                    if (m.matches()) {
+                        baseline = m.group(1);
+                    }
                 }
+                return new JenkinsVersion(baseline, new Version(version));
+            } catch (Exception e) {
+                LOGGER.warn("Failed to interpolate jenkins.version", e);
             }
-            return new JenkinsVersion(baseline, new Version(version));
         }
         return null;
     }
