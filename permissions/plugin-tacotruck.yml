@@ -8,3 +8,5 @@ developers:
 - "testfiestaops"
 issues:
   - github: *GH
+cd:
+  enabled: true
