@@ -8,3 +8,5 @@ developers:
 - "alecharp"
 issues:
   - jira: 29733
+cd:
+  enabled: true
