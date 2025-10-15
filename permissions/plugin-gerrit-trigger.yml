@@ -5,5 +5,7 @@ issues:
   - jira: '15731'  # gerrit-trigger-plugin
 paths:
   - "com/sonyericsson/hudson/plugins/gerrit/gerrit-trigger"
+cd:
+  enabled: true
 developers:
   - "rsandell"
