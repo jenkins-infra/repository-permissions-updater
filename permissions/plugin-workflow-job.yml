@@ -9,13 +9,14 @@ developers:
   - "jglick"
   - "kohsuke"
   - "abayer"
-  - "dnusbaum"
   - "rsandell"
+  - "dnusbaum"
   - "carroll"
   - "bitwiseman"
   - "kshultz"
   - "jtaboada"
   - "olamy"
+  - "timja"
 security:
   contacts:
     jira: "cloudbees_security_members"
