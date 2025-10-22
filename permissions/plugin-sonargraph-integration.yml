@@ -5,6 +5,8 @@ issues:
   - jira: '21430'  # sonargraph-integration-plugin
 paths:
   - "org/jenkins-ci/plugins/sonargraph-integration"
+cd:
+  enabled: true
 developers:
   - "andreashoyerh2m"
   - "builderh2m"
