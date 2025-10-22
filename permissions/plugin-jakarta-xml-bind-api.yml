@@ -7,5 +7,9 @@ paths:
 - "io/jenkins/plugins/jakarta-xml-bind-api"
 developers:
 - "basil"
+- "@cloudbees-developers"
 issues:
   - jira: 29732
+security:
+  contacts:
+    jira: "cloudbees_security_members"
