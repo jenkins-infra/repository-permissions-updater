@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/jakarta-activation-api"
 developers:
   - "basil"
+  - "markewaite"
 issues:
   - jira: 28835
 security:
