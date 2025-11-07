@@ -12,6 +12,7 @@ developers:
   - "kohsuke"
   - "oleg_nenashev"
   - "batmat"
+  - "markewaite"
 security:
   contacts:
     jira: "cloudbees_security_members"
