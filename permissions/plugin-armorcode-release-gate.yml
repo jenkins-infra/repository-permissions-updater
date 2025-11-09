@@ -5,5 +5,7 @@ paths:
 - "io/jenkins/plugins/armorcode-release-gate"
 developers:
 - "deepanshurawat"
+cd:
+  enabled: true
 issues:
   - jira: 29820
