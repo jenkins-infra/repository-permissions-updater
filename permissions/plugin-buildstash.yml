@@ -7,3 +7,5 @@ developers:
 - "r0bbie"
 issues:
   - github: *GH
+cd:
+  enabled: true
