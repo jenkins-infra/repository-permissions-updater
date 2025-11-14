@@ -7,4 +7,5 @@ paths:
   - "jp/ikedam/jenkins/plugins/extensible-choice-parameter"
 cd:
   enabled: true
-developers: []
+developers:
+  - "markewaite"
