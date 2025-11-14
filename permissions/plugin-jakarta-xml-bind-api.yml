@@ -8,5 +8,9 @@ paths:
 developers:
 - "basil"
 - "markewaite"
+- "@cloudbees-developers"
 issues:
   - jira: 29732
+security:
+  contacts:
+    jira: "cloudbees_security_members"

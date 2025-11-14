@@ -1,0 +1,11 @@
+---
+name: "buildstash"
+github: &GH "jenkinsci/buildstash-plugin"
+paths:
+- "io/jenkins/plugins/buildstash"
+developers:
+- "r0bbie"
+issues:
+  - github: *GH
+cd:
+  enabled: true
