@@ -12,6 +12,3 @@ developers:
   - "egutierrez"
   - "fcojfernandez"
   - "rsandell"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
