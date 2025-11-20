@@ -1,7 +1,11 @@
-# Diversion SCM Plugin
-# See https://github.com/jenkinsci/diversion-scm-plugin
-
+---
 name: "diversion-scm"
-github: "jenkinsci/diversion-scm-plugin"
+github: &GH "jenkinsci/diversion-scm-plugin"
+paths:
+- "io/jenkins/plugins/diversion-scm"
+developers:
+- "ibain"
+issues:
+  - github: *GH
 cd:
   enabled: true
