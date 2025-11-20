@@ -7,3 +7,5 @@ developers:
 - "ibain"
 issues:
   - github: *GH
+cd:
+  enabled: true
