@@ -1,0 +1,7 @@
+# Diversion SCM Plugin
+# See https://github.com/jenkinsci/diversion-scm-plugin
+
+name: "diversion-scm"
+github: "jenkinsci/diversion-scm-plugin"
+cd:
+  enabled: true
