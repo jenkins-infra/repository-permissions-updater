@@ -22,6 +22,7 @@ public final class HostingRequestParser {
     private static final String ISSUE_TRACKER = "Issue tracker";
     private static final String GITHUB_USERS = "GitHub users to have commit permission";
     private static final String JENKINS_PROJECT_USERS = "Jenkins project users to have release permission";
+    private static final String AUTOMATIC_RELEASES = "Plugin releases via Github Actions";
 
     private HostingRequestParser() {}
 
@@ -44,7 +45,9 @@ public final class HostingRequestParser {
                         .map(user -> user.replace("@", ""))
                         .collect(Collectors.toList()),
                 fields.get(JENKINS_PROJECT_USERS).asList(),
-                IssueTracker.fromString(fields.get(ISSUE_TRACKER).asString()));
+                IssueTracker.fromString(fields.get(ISSUE_TRACKER).asString()),
+                fields.get(AUTOMATIC_RELEASES) != null
+                        && fields.get(AUTOMATIC_RELEASES).asString().equalsIgnoreCase("yes"));
     }
 
     static Map<String, Field> convert(String content) {
