@@ -61,10 +61,10 @@ body:
       required: true
   - type: dropdown
     attributes:
-      label: Plugin releases via Github Actions
-      description: Whether to enable automatic releases. See https://www.jenkins.io/doc/developer/publishing/releasing-cd/ for more information.
+      label: Automated release via GitHub Actions (recommended)
+      description: See https://www.jenkins.io/doc/developer/publishing/releasing-cd/ for more information.
       options:
-        - "No"
         - "Yes"
+        - "No"
     validations:
       required: true

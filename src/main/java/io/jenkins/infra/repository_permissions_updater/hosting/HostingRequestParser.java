@@ -22,7 +22,7 @@ public final class HostingRequestParser {
     private static final String ISSUE_TRACKER = "Issue tracker";
     private static final String GITHUB_USERS = "GitHub users to have commit permission";
     private static final String JENKINS_PROJECT_USERS = "Jenkins project users to have release permission";
-    private static final String AUTOMATIC_RELEASES = "Plugin releases via Github Actions";
+    private static final String AUTOMATIC_RELEASES = "Automated release via GitHub Actions (recommended)";
 
     private HostingRequestParser() {}
 
