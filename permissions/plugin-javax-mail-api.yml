@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/javax-mail-api"
 developers:
   - "basil"
+  - "markewaite"
 issues:
   - jira: 28833
 security:

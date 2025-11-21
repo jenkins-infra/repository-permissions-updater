@@ -7,6 +7,7 @@ paths:
 - "io/jenkins/plugins/jakarta-xml-bind-api"
 developers:
 - "basil"
+- "markewaite"
 - "@cloudbees-developers"
 issues:
   - jira: 29732
