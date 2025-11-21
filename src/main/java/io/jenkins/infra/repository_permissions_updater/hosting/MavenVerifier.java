@@ -101,6 +101,9 @@ public class MavenVerifier implements BuildSystemVerifier {
                             checkDependencyManagement(model, hostingIssues);
                             checkDevelopersTag(model, hostingIssues);
                             checkProperties(model, hostingIssues);
+                            if (issue.isEnableCD()) {
+                                checkAutomaticReleasesSettings(model, hostingIssues);
+                            }
                         } catch (Exception e) {
                             LOGGER.error("Failed looking at pom.xml", e);
                             hostingIssues.add(
@@ -122,6 +125,21 @@ public class MavenVerifier implements BuildSystemVerifier {
     @Override
     public boolean hasBuildFile(HostingRequest issue) throws IOException {
         return HostingChecker.fileExistsInRepo(issue, "pom.xml");
+    }
+
+    private void checkAutomaticReleasesSettings(Model model, HashSet<VerificationMessage> hostingIssues) {
+        Properties props = model.getProperties();
+        if (!props.containsKey("changelist") || !props.getProperty("changelist").equals("999999-SNAPSHOT")) {
+            hostingIssues.add(new VerificationMessage(
+                    VerificationMessage.Severity.REQUIRED,
+                    "The property `changelist` must be defined and set to `999999-SNAPSHOT` when CD is enabled."));
+        }
+        String version = model.getVersion();
+        if (!version.contains("${changelist}")) {
+            hostingIssues.add(new VerificationMessage(
+                    VerificationMessage.Severity.REQUIRED,
+                    "The version in the pom.xml must contain `${changelist}` when CD is enabled."));
+        }
     }
 
     private void checkArtifactId(Model model, String forkTo, HashSet<VerificationMessage> hostingIssues) {
@@ -420,6 +438,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                                 && d.getArtifactId().startsWith("bom-"))
                         .findFirst();
             }
+
             Set<String> managedDependencies;
             String bomArtifactId = "bom-" + jenkinsVersion.baseline() + ".x";
             String latestReleasedBom = getLatestBomVersion(bomArtifactId);
@@ -558,7 +577,7 @@ public class MavenVerifier implements BuildSystemVerifier {
             try {
                 String version = interpolator.interpolate(props.getProperty("jenkins.version"));
                 String baseline = interpolator.interpolate(props.getProperty("jenkins.baseline"));
-                if (baseline == null) {
+                if (baseline == null || baseline.isBlank()) {
                     Matcher m = Pattern.compile("(\\d\\.\\d+)(|\\.\\d)").matcher(version);
                     if (m.matches()) {
                         baseline = m.group(1);

@@ -18,18 +18,21 @@ public class HostingRequest {
     private final List<String> githubUsers;
     private final List<String> jenkinsProjectUsers;
     private final IssueTracker issueTracker;
+    private final boolean enableCD;
 
     public HostingRequest(
             String repositoryUrl,
             String newRepoName,
             List<String> githubUsers,
             List<String> jenkinsProjectUsers,
-            IssueTracker issueTracker) {
+            IssueTracker issueTracker,
+            boolean enableCD) {
         this.repositoryUrl = repositoryUrl;
         this.newRepoName = newRepoName;
         this.githubUsers = Collections.unmodifiableList(trimList(githubUsers));
         this.jenkinsProjectUsers = Collections.unmodifiableList(trimList(jenkinsProjectUsers));
         this.issueTracker = issueTracker;
+        this.enableCD = enableCD;
     }
 
     public String getRepositoryUrl() {
@@ -50,6 +53,10 @@ public class HostingRequest {
 
     public IssueTracker getIssueTracker() {
         return issueTracker;
+    }
+
+    public boolean isEnableCD() {
+        return enableCD;
     }
 
     public enum IssueTracker {

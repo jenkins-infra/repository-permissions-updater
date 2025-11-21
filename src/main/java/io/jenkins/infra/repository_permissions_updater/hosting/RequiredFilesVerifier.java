@@ -38,6 +38,9 @@ public class RequiredFilesVerifier implements Verifier {
                 checkCodeOwners(repo, hostingIssues, forkTo);
                 checkGitignore(repo, hostingIssues);
                 checkDependencyBot(repo, hostingIssues);
+                if (request.isEnableCD()) {
+                    checkFilesForCD(repo, hostingIssues);
+                }
             }
         }
     }
@@ -140,6 +143,58 @@ public class RequiredFilesVerifier implements Verifier {
                             "No files found related to automatically updating the plugin dependencies. "
                                     + "Please ensure that you have dependabot, renovate or updatecli configured in the repo. "
                                     + "A suitable version for dependabot can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/.github/dependabot.yml)"));
+        }
+    }
+
+    private void checkFilesForCD(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
+
+        if (fileNotExistsInRepo(repo, ".mvn/extensions.xml")) {
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "Missing file `.mvn/extensions.xml`. This file is required when CD is enabled. "
+                                    + "A suitable version can be downloaded [here](https://raw.githubusercontent.com/jenkinsci/archetypes/refs/heads/master/common-files/.mvn/extensions.xml)"));
+        }
+        if (fileNotExistsInRepo(repo, ".github/workflows/cd.yaml")
+                && fileNotExistsInRepo(repo, ".github/workflows/cd.yml")) {
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "Missing file `.github/workflows/cd.yaml`. This file is required when CD is enabled. "
+                                    + "A suitable version can be downloaded [here](https://raw.githubusercontent.com/jenkinsci/.github/master/workflow-templates/cd.yaml"));
+        }
+        if (!fileNotExistsInRepo(repo, ".github/release-drafter.yml")
+                || !fileNotExistsInRepo(repo, ".github/release-drafter.yaml")) {
+            hostingIssues.add(new VerificationMessage(
+                    VerificationMessage.Severity.REQUIRED,
+                    "The file `.github/release-drafter.y*ml` should be removed when CD is enabled."));
+        }
+        if (!fileNotExistsInRepo(repo, ".github/workflows/release-drafter.yml")
+                || !fileNotExistsInRepo(repo, ".github/workflows/release-drafter.yaml")) {
+            hostingIssues.add(new VerificationMessage(
+                    VerificationMessage.Severity.REQUIRED,
+                    "The file `.github/workflows/release-drafter.y*ml` should be removed when CD is enabled."));
+        }
+        GHContent file = null;
+        String expected = "-Dchangelist.format=%d.v%s";
+        try {
+            file = repo.getFileContent(".mvn/maven.config");
+            try (BufferedReader bufferedReader =
+                    new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
+                if (bufferedReader.lines().noneMatch(line -> line.equals(expected))) {
+                    hostingIssues.add(new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "The file `.mvn/maven.config` doesn't contain the expected line `"
+                                    + expected.replaceAll("%", "%%") + "`"));
+                }
+            }
+
+        } catch (GHFileNotFoundException e) {
+            hostingIssues.add(new VerificationMessage(
+                    VerificationMessage.Severity.REQUIRED,
+                    "Missing file `.mvn/config`. This file is required when CD is enabled. "
+                            + "Download [maven.config](https://raw.githubusercontent.com/jenkinsci/archetypes/refs/heads/master/common-files/.mvn/maven.config) "
+                            + "and add the line: `" + expected.replaceAll("%", "%%") + "`"));
         }
     }
 

@@ -64,6 +64,7 @@ public class Hoster {
             String forkFrom = hostingRequest.getRepositoryUrl();
             List<String> users = hostingRequest.getGithubUsers();
             IssueTracker issueTrackerChoice = hostingRequest.getIssueTracker();
+            boolean enableCD = hostingRequest.isEnableCD();
 
             String forkTo = hostingRequest.getNewRepoName();
 
@@ -118,7 +119,8 @@ public class Hoster {
                     users,
                     hostingRequest.getJenkinsProjectUsers(),
                     issueTrackerChoice == IssueTracker.GITHUB,
-                    componentId);
+                    componentId,
+                    enableCD);
             if (StringUtils.isBlank(prUrl)) {
                 String msg = "Could not create upload permission pull request";
                 LOGGER.error(msg);
@@ -391,7 +393,8 @@ public class Hoster {
             List<String> ghUsers,
             List<String> releaseUsers,
             boolean useGHIssues,
-            String jiraComponentId) {
+            String jiraComponentId,
+            boolean enableCD) {
         String prUrl = "";
         boolean isPlugin = forkTo.endsWith("-plugin");
         if (isPlugin) {
@@ -436,6 +439,10 @@ public class Hoster {
                     content += "  - github: *GH\n";
                 } else if (StringUtils.isNotEmpty(jiraComponentId)) {
                     content += "  - jira: " + jiraComponentId + "\n";
+                }
+
+                if (enableCD) {
+                    content += "cd:\n  enabled: true\n";
                 }
 
                 builder.content(content)

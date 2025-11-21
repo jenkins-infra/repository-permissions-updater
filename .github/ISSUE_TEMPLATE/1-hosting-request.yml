@@ -59,3 +59,12 @@ body:
         - "GitHub issues"
     validations:
       required: true
+  - type: dropdown
+    attributes:
+      label: Automated release via GitHub Actions (recommended)
+      description: See https://www.jenkins.io/doc/developer/publishing/releasing-cd/ for more information.
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
