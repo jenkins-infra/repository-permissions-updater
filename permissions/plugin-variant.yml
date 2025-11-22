@@ -10,6 +10,7 @@ developers:
   - "andresrc"
   - "batmat"
   - "jetersen"
+  - "markewaite"
 cd:
   enabled: true
 security:
