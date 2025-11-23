@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/jersey2-api"
 developers:
   - "@cloudbees-developers"
+  - "markewaite"
 security:
   contacts:
     jira: "cloudbees_security_members"
