@@ -11,6 +11,3 @@ developers:
   - "batmat"
   - "teilo"
   - "olamy"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
