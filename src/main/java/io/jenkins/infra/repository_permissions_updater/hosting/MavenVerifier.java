@@ -1,6 +1,8 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker.LOWEST_JENKINS_VERSION;
+import static io.jenkins.infra.repository_permissions_updater.hosting.Requirements.LOWEST_JENKINS_VERSION;
+import static io.jenkins.infra.repository_permissions_updater.hosting.Requirements.LOWEST_PARENT_POM_VERSION;
+import static io.jenkins.infra.repository_permissions_updater.hosting.Requirements.PARENT_POM_WITH_JENKINS_VERSION;
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
@@ -51,9 +53,6 @@ public class MavenVerifier implements BuildSystemVerifier {
     private static final int MAX_LENGTH_OF_GROUP_ID_PLUS_ARTIFACT_ID = 100;
     private static final int MAX_LENGTH_OF_ARTIFACT_ID = 37;
     private static final Logger LOGGER = LoggerFactory.getLogger(MavenVerifier.class);
-
-    public static final Version LOWEST_PARENT_POM_VERSION = new Version(5, 28);
-    public static final Version PARENT_POM_WITH_JENKINS_VERSION = new Version(2);
 
     public static final String INVALID_POM = "The pom.xml file in the root of the origin repository is not valid";
     public static final String SPECIFY_LICENSE =

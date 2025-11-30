@@ -1,5 +1,6 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import static io.jenkins.infra.repository_permissions_updater.hosting.Requirements.ALLOWED_JDK_VERSIONS;
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 import groovy.lang.GroovyClassLoader;
@@ -41,8 +42,6 @@ import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GitHub;
 
 public class RequiredFilesVerifier implements Verifier {
-
-    private static final List<Integer> ALLOWED_JDK_VERSIONS = List.of(21, 25);
 
     @Override
     public void verify(HostingRequest request, HashSet<VerificationMessage> hostingIssues) throws IOException {
@@ -372,7 +371,7 @@ public class RequiredFilesVerifier implements Verifier {
                 }
             }
 
-        } catch (Exception e) {
+        } catch (IOException e) {
             hostingIssues.add(
                     new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Could not parse Jenkinsfile."));
         }
