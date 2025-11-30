@@ -1,6 +1,6 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker.LOWEST_JENKINS_VERSION;
+import static io.jenkins.infra.repository_permissions_updater.hosting.Requirements.LOWEST_JENKINS_VERSION;
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 import java.io.IOException;
