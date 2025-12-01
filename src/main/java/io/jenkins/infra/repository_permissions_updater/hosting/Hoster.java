@@ -449,8 +449,7 @@ public class Hoster {
                         .path("permissions/plugin-" + forkTo.replace("-plugin", "") + ".yml")
                         .commit();
 
-                String prText =
-                        """
+                String prText = """
                         Hello from your friendly Jenkins Hosting Bot!
                         This is an automatically created PR for:
                         - #%s
@@ -458,12 +457,11 @@ public class Hoster {
                         The user(s) listed in the permissions file may not have logged in to Artifactory yet, check the PR status.
                         To check again, hosting team members will retrigger the build using Checks area or by closing and reopening the PR.
                         cc %s
-                        """
-                                .formatted(
-                                        issueId,
-                                        TARGET_ORG_NAME,
-                                        forkTo,
-                                        ghUsers.stream().map(u -> "@" + u).collect(joining(", ")));
+                        """.formatted(
+                                issueId,
+                                TARGET_ORG_NAME,
+                                forkTo,
+                                ghUsers.stream().map(u -> "@" + u).collect(joining(", ")));
 
                 GHPullRequest pr = repo.createPullRequest(
                         "Add upload permissions for " + forkTo, branchName, repo.getDefaultBranch(), prText);

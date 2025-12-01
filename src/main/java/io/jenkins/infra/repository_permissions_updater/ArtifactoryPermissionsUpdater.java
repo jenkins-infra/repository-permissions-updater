@@ -308,48 +308,39 @@ public final class ArtifactoryPermissionsUpdater {
                         boolean inJira = KnownUsers.existsInJira(dev);
 
                         if (!inArtifactory && !inJira) {
-                            reportChecksApiDetails(
-                                    dev + " needs to log in to Artifactory and Jira",
-                                    """
+                            reportChecksApiDetails(dev + " needs to log in to Artifactory and Jira", """
                                     %s needs to log in to [Artifactory](https://repo.jenkins-ci.org/) and [Jira](https://issues.jenkins.io/).
 
                                     We resync our Artifactory and Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
                                     The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
 
                                     Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
-                                    """
-                                            .formatted(dev)
-                                            .stripIndent());
+                                    """.formatted(dev)
+                                    .stripIndent());
                             throw new IllegalStateException("User name not known to Artifactory and Jira: " + dev);
                         }
                         if (!inArtifactory) {
-                            reportChecksApiDetails(
-                                    dev + " needs to log in to Artifactory",
-                                    """
+                            reportChecksApiDetails(dev + " needs to log in to Artifactory", """
                                     %s needs to log in to [Artifactory](https://repo.jenkins-ci.org/).
 
                                     We resync our Artifactory user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
                                     The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
 
                                     Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
-                                    """
-                                            .formatted(dev)
-                                            .stripIndent());
+                                    """.formatted(dev)
+                                    .stripIndent());
                             throw new IllegalStateException("User name not known to Artifactory: " + dev);
                         }
                         if (!inJira) {
-                            reportChecksApiDetails(
-                                    dev + " needs to log in to Jira",
-                                    """
+                            reportChecksApiDetails(dev + " needs to log in to Jira", """
                                     %s needs to log in to [Jira](https://issues.jenkins.io/)
 
                                     We resync our Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
                                     The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
 
                                     Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
-                                    """
-                                            .formatted(dev)
-                                            .stripIndent());
+                                    """.formatted(dev)
+                                    .stripIndent());
                             throw new IllegalStateException("User name not known to Jira: " + dev);
                         }
 
@@ -361,18 +352,15 @@ public final class ArtifactoryPermissionsUpdater {
                 } else {
                     for (String dev : definition.getDevelopers()) {
                         if (!KnownUsers.existsInJira(dev)) {
-                            reportChecksApiDetails(
-                                    dev + " needs to log in to Jira",
-                                    """
+                            reportChecksApiDetails(dev + " needs to log in to Jira", """
                                     %s needs to log in to [Jira](https://issues.jenkins.io/)
 
                                     We resync our Jira user list every 2 hours, so you will need to wait some time before rebuilding your pull request.
                                     The easiest way to trigger a rebuild is to close your pull request, wait a few seconds and then reopen it.
 
                                     Alternatively the hosting team can re-trigger it if you post a comment saying you have now logged in.
-                                    """
-                                            .formatted(dev)
-                                            .stripIndent());
+                                    """.formatted(dev)
+                                    .stripIndent());
                             throw new IllegalStateException("User name not known to Jira: " + dev);
                         }
                     }
