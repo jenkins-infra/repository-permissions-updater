@@ -28,8 +28,7 @@ class GitHubImpl extends GitHubAPI {
             .encodeToString((GITHUB_USERNAME + ":" + GITHUB_PASSWORD).getBytes(StandardCharsets.UTF_8));
     private static final String GITHUB_BASIC_AUTH_HEADER = "Basic %s";
     private static final Gson gson = new Gson();
-    private static final String GITHUB_JSON_TEMPLATE =
-            """
+    private static final String GITHUB_JSON_TEMPLATE = """
             {"encrypted_value":"%s","key_id":"%s"}
             """;
 
