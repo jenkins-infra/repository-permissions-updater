@@ -26,7 +26,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>21</maven.compiler.release>
     <maven.version>3.9.11</maven.version>
-    <plexus.interpolation.version>1.28</plexus.interpolation.version>
+    <plexus.interpolation.version>1.29</plexus.interpolation.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
 
