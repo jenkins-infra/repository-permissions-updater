@@ -33,7 +33,7 @@ jobs:
               comment_id: context.payload.comment.id,
               content: "+1",
             });
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           ref: 'master'
       - uses: actions/setup-java@v5
