@@ -1,0 +1,9 @@
+---
+name: "notifer"
+github: &GH "jenkinsci/notifer-plugin"
+paths:
+- "io/jenkins/plugins/notifer"
+developers:
+- "ibarkowski"
+issues:
+  - github: *GH
