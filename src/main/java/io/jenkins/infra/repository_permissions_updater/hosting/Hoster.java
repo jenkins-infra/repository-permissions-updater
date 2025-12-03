@@ -49,11 +49,7 @@ public class Hoster {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Hoster.class);
 
-    public static void main(String[] args) {
-        new Hoster().run(Integer.parseInt(args[0]));
-    }
-
-    private void run(int issueID) {
+    public void run(int issueID) {
         LOGGER.info("Approving hosting request {}", issueID);
 
         JiraRestClient client = null;
