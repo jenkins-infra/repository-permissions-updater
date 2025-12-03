@@ -45,7 +45,7 @@ jobs:
         run: mvn -B package -Dspotbugs.skip
       - name: Run hoster
         run: |
-          java -cp target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar io.jenkins.infra.repository_permissions_updater.hosting.Hoster ${{ github.event.issue.number }}
+          java -jar target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar host ${{ github.event.issue.number }}
         env:
           GITHUB_OAUTH: ${{ secrets.HOSTING_PAT }}
           JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}

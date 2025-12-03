@@ -21,6 +21,6 @@ jobs:
         run: mvn -B package -Dspotbugs.skip
       - name: Run hosting checker
         run: |
-          java -cp target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker ${{ github.event.issue.number }}
+          java -jar target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar check-hosting ${{ github.event.issue.number }}
         env:
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}

@@ -28,10 +28,6 @@ public class HostingChecker {
     public static final String INVALID_FORK_FROM =
             "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
-    public static void main(String[] args) throws IOException {
-        new HostingChecker().checkRequest(Integer.parseInt(args[0]));
-    }
-
     public void checkRequest(int issueID) throws IOException {
         boolean hasBuildSystem = false;
         HashSet<VerificationMessage> hostingIssues = new HashSet<>();
