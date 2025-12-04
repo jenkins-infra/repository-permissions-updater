@@ -7,7 +7,6 @@ paths:
   - "com/cloudbees/jenkins/plugins/amazon-ecr"
 developers:
   - "aheritier"
-  - "ifernandezcalvo"
   - "tgr"
 cd:
   enabled: true
