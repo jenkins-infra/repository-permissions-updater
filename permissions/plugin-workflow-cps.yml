@@ -2,7 +2,7 @@
 name: "workflow-cps"
 github: "jenkinsci/workflow-cps-plugin"
 issues:
-  - jira: '21713'  # workflow-cps-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/workflow/workflow-cps"
 developers:
