@@ -1,6 +1,6 @@
 ---
 name: "workflow-cps"
-github: "jenkinsci/workflow-cps-plugin"
+github: &gh "jenkinsci/workflow-cps-plugin"
 issues:
   - github: *gh
 paths:
