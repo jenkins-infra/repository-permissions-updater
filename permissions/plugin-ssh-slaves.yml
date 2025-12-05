@@ -11,6 +11,7 @@ developers:
   - "kohsuke"
   - "oleg_nenashev"
   - "ifernandezcalvo"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"
