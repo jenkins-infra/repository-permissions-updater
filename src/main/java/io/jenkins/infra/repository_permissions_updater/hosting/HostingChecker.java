@@ -35,7 +35,7 @@ public class HostingChecker {
         boolean debug = System.getProperty("debugHosting", "false").equalsIgnoreCase("true");
 
         ArrayList<Triplet<String, Verifier, ConditionChecker>> verifications = new ArrayList<>();
-        verifications.add(Triplet.with("Jira", new HostingFieldVerifier(), null));
+        verifications.add(Triplet.with("Request", new HostingFieldVerifier(), null));
         verifications.add(Triplet.with("GitHub", new GitHubVerifier(), null));
         verifications.add(Triplet.with("Maven", new MavenVerifier(), new FileExistsConditionChecker("pom.xml")));
         verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
