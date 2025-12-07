@@ -1,8 +1,8 @@
 ---
 name: "clearcase"
-github: "jenkinsci/clearcase-plugin"
+github: &gh "jenkinsci/clearcase-plugin"
 issues:
-  - jira: '15503'  # clearcase-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/clearcase"
   - "org/jvnet/hudson/plugins/clearcase"
