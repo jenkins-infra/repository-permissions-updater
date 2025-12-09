@@ -145,8 +145,7 @@ public class MavenVerifier implements BuildSystemVerifier {
         try {
             if (StringUtils.isBlank(forkTo)) {
                 hostingIssues.add(new VerificationMessage(
-                        VerificationMessage.Severity.REQUIRED,
-                        "Missing value in Jira for 'New Repository Name' field"));
+                        VerificationMessage.Severity.REQUIRED, "Missing value for 'New Repository Name' field"));
             }
 
             String groupId = model.getGroupId();

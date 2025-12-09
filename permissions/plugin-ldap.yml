@@ -1,8 +1,8 @@
 ---
 name: "ldap"
-github: "jenkinsci/ldap-plugin"
+github: &gh "jenkinsci/ldap-plugin"
 issues:
-  - jira: '17122'  # ldap-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/ldap"
 developers:
