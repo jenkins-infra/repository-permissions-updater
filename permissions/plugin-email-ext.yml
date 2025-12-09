@@ -1,8 +1,8 @@
 ---
 name: "email-ext"
-github: "jenkinsci/email-ext-plugin"
+github: &gh "jenkinsci/email-ext-plugin"
 issues:
-  - jira: '15538'  # email-ext-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/email-ext"
   - "org/jvnet/hudson/plugins/email-ext"
