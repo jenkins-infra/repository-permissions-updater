@@ -1,8 +1,8 @@
 ---
 name: "xunit"
-github: "jenkinsci/xunit-plugin"
+github: &gh "jenkinsci/xunit-plugin"
 issues:
-  - jira: '15636'  # xunit-plugin
+  - github: *gh
 paths:
   - "com/thalesgroup/jenkins-ci/plugins/xunit"
   - "org/jenkins-ci/plugins/xunit"
