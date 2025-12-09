@@ -1,8 +1,8 @@
 ---
 name: "branch-api"
-github: "jenkinsci/branch-api-plugin"
+github: &gh "jenkinsci/branch-api-plugin"
 issues:
-  - jira: '18621'  # branch-api-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/branch-api"
 cd:
