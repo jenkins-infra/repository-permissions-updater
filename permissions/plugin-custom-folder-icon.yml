@@ -6,5 +6,7 @@ issues:
   - jira: '27920'  # custom-folder-icon-plugin
 paths:
   - "io/jenkins/plugins/custom-folder-icon"
+cd:
+  enabled: true
 developers:
   - strangelookingnerd
