@@ -9,8 +9,5 @@ paths:
 developers:
   - "tgr"
   - "vandyev"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
 cd:
   enabled: true
