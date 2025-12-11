@@ -3,7 +3,6 @@ name: "slack"
 github: &gh "jenkinsci/slack-plugin"
 issues:
   - github: *gh
-  - jira: '18321'  # slack-plugin
 paths:
   - "org/jenkins-ci/plugins/slack"
 cd:
