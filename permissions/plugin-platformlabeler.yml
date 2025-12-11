@@ -2,7 +2,6 @@
 name: "platformlabeler"
 github: &gh "jenkinsci/platformlabeler-plugin"
 issues:
-  - jira: '15650'  # platformlabeler-plugin
   - github: *gh
 paths:
   - "org/jvnet/hudson/plugins/platformlabeler"
