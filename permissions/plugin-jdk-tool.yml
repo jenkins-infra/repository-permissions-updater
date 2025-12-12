@@ -1,8 +1,8 @@
 ---
 name: "jdk-tool"
-github: "jenkinsci/jdk-tool-plugin"
+github: &gh "jenkinsci/jdk-tool-plugin"
 issues:
-  - jira: '23529'  # jdk-tool-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/jdk-tool"
 cd:
