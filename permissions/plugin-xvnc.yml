@@ -1,8 +1,8 @@
 ---
 name: "xvnc"
-github: "jenkinsci/xvnc-plugin"
+github: &gh "jenkinsci/xvnc-plugin"
 issues:
-  - jira: '15588'  # xvnc-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/xvnc"
 developers:

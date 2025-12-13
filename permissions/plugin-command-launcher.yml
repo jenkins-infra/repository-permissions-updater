@@ -1,8 +1,8 @@
 ---
 name: "command-launcher"
-github: "jenkinsci/command-launcher-plugin"
+github: &gh "jenkinsci/command-launcher-plugin"
 issues:
-  - jira: '23169'  # command-launcher-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/command-launcher"
 cd:
