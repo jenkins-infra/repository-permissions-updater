@@ -5,5 +5,4 @@ issues:
   - jira: '18125'  # literate
 paths:
   - "org/jenkins-ci/plugins/literate"
-developers:
-  - "jglick"
+developers: []

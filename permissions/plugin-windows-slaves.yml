@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/windows-slaves"
 developers:
   - "andresrc"
-  - "jglick"
   - "oleg_nenashev"
   - "rsandell"
   - "teilo"
