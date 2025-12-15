@@ -1,8 +1,8 @@
 ---
 name: "cron_column"
-github: "jenkinsci/cron_column-plugin"
+github: &gh "jenkinsci/cron_column-plugin"
 issues:
-  - jira: '16061'  # cron_column-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/cron_column"
 cd:
