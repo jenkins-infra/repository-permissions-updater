@@ -2,7 +2,6 @@
 name: "gitlab-branch-source"
 github: &gh "jenkinsci/gitlab-branch-source-plugin"
 issues:
-  - jira: '21980'  # gitlab-branch-source-plugin
   - github: *gh
 paths:
   - "io/jenkins/plugins/gitlab-branch-source"
