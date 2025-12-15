@@ -5,5 +5,4 @@ issues:
   - jira: '15945'  # xframe-filter-plugin
 paths:
   - "org/jenkins-ci/plugins/xframe-filter-plugin"
-developers:
-  - "jglick"
+developers: []
