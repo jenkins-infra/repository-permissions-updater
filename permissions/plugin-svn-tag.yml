@@ -6,5 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/svn-tag"
 developers:
-  - "jglick"
   - "oleg_nenashev"

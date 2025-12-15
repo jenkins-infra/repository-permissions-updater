@@ -5,5 +5,4 @@ issues:
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/literate"
-developers:
-  - "jglick"
+developers: []

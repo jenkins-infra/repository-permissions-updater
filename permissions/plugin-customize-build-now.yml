@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/customize-build-now"
 developers:
-  - "jglick"
   - "uday"
   - "mawinter69"
 cd:
