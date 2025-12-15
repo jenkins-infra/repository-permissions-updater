@@ -1,8 +1,8 @@
 ---
 name: "literate"
-github: &gh "jenkinsci/literate-plugin"
+github: "jenkinsci/literate-plugin"
 issues:
-  - github: *gh
+  - jira: '18125'  # literate
 paths:
   - "org/jenkins-ci/plugins/literate"
 developers: []

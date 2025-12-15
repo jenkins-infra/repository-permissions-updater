@@ -1,8 +1,8 @@
 ---
 name: "build-view-column"
-github: &gh "jenkinsci/build-view-column-plugin"
+github: "jenkinsci/build-view-column-plugin"
 issues:
-  - github: *gh
+  - jira: '17625'  # build-view-column-plugin
 paths:
   - "org/jenkins-ci/plugins/build-view-column"
 developers: []

@@ -1,8 +1,8 @@
 ---
 name: "compress-artifacts"
-github: &gh "jenkinsci/compress-artifacts-plugin"
+github: "jenkinsci/compress-artifacts-plugin"
 issues:
-  - github: *gh
+  - jira: '18040'  # compress-artifacts-plugin
 paths:
   - "org/jenkins-ci/plugins/compress-artifacts"
 cd:
