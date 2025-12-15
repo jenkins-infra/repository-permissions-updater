@@ -28,10 +28,6 @@ public class HostingChecker {
     public static final String INVALID_FORK_FROM =
             "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
-    public static void main(String[] args) throws IOException {
-        new HostingChecker().checkRequest(Integer.parseInt(args[0]));
-    }
-
     public void checkRequest(int issueID) throws IOException {
         boolean hasBuildSystem = false;
         HashSet<VerificationMessage> hostingIssues = new HashSet<>();
@@ -39,7 +35,7 @@ public class HostingChecker {
         boolean debug = System.getProperty("debugHosting", "false").equalsIgnoreCase("true");
 
         ArrayList<Triplet<String, Verifier, ConditionChecker>> verifications = new ArrayList<>();
-        verifications.add(Triplet.with("Jira", new HostingFieldVerifier(), null));
+        verifications.add(Triplet.with("Request", new HostingFieldVerifier(), null));
         verifications.add(Triplet.with("GitHub", new GitHubVerifier(), null));
         verifications.add(Triplet.with("Maven", new MavenVerifier(), new FileExistsConditionChecker("pom.xml")));
         verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
