@@ -1,10 +1,9 @@
 ---
 name: "gravatar"
-github: &GH "jenkinsci/gravatar-plugin"
+github: &gh "&GH jenkinsci/gravatar-plugin"
 issues:
   - github: *GH
-  - jira: '16137'  # gravatar-plugin
-    report: false
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/gravatar"
 developers:
