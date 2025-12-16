@@ -1,8 +1,7 @@
 ---
 name: "scoring-load-balancer"
-github: &gh "&GH jenkinsci/scoring-load-balancer-plugin"
+github: &gh "jenkinsci/scoring-load-balancer-plugin"
 issues:
-  - github: *GH
   - github: *gh
 paths:
   - "jp/ikedam/jenkins/plugins/scoring-load-balancer"

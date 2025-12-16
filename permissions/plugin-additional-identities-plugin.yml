@@ -1,8 +1,7 @@
 ---
 name: "additional-identities-plugin"
-github: &gh "&GH jenkinsci/additional-identities-plugin"
+github: &gh "jenkinsci/additional-identities-plugin"
 issues:
-  - github: *GH
   - github: *gh
 paths:
   - "com/cloudbees/jenkins/plugins/additional-identities-plugin"
