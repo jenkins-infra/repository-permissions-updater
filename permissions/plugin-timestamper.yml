@@ -1,8 +1,8 @@
 ---
 name: "timestamper"
-github: "jenkinsci/timestamper-plugin"
+github: &gh "jenkinsci/timestamper-plugin"
 issues:
-  - jira: '15749'  # timestamper-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/timestamper"
   - "org/jvnet/hudson/plugins/timestamper"
