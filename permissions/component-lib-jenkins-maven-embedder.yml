@@ -4,7 +4,6 @@ github: "jenkinsci/lib-jenkins-maven-embedder"
 paths:
   - "org/jenkins-ci/lib/lib-jenkins-maven-embedder"
 developers:
-  - "jglick"
   - "abayer"
   - "oleg_nenashev"
   - "batmat"

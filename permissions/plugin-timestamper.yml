@@ -10,6 +10,3 @@ developers:
   - "basil"
   - "stevengbrown"
   - "markewaite"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
