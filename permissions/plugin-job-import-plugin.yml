@@ -1,8 +1,8 @@
 ---
 name: "job-import-plugin"
-github: "jenkinsci/job-import-plugin"
+github: &gh "jenkinsci/job-import-plugin"
 issues:
-  - jira: '15897'  # job-import-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/job-import-plugin"
 cd:
