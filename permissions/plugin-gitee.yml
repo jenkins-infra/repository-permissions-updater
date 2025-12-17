@@ -1,8 +1,8 @@
 ---
 name: "gitee"
-github: &gh "jenkinsci/gitee-plugin"
+github: "jenkinsci/gitee-plugin"
 issues:
-  - github: *gh
+  - jira: '23941'  # gitee-plugin
 paths:
   - "org/jenkins-ci/plugins/gitee"
 cd:
