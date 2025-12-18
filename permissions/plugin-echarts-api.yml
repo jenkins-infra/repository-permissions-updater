@@ -1,8 +1,8 @@
 ---
 name: "echarts-api"
-github: "jenkinsci/echarts-api-plugin"
+github: &gh "jenkinsci/echarts-api-plugin"
 issues:
-  - jira: '26331'  # echarts-api-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/echarts-api"
 developers:

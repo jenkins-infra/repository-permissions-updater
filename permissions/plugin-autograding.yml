@@ -1,8 +1,8 @@
 ---
 name: "autograding"
-github: "jenkinsci/autograding-plugin"
+github: &gh "jenkinsci/autograding-plugin"
 issues:
-  - jira: '27127'  # autograding-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/autograding"
 developers:

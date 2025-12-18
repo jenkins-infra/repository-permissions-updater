@@ -1,8 +1,8 @@
 ---
 name: "font-awesome-api"
-github: "jenkinsci/font-awesome-api-plugin"
+github: &gh "jenkinsci/font-awesome-api-plugin"
 issues:
-  - jira: '26326'  # font-awesome-api-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/font-awesome-api"
 developers:

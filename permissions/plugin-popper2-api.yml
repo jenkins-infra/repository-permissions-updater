@@ -6,4 +6,4 @@ paths:
 developers:
   - "drulli"
 issues:
-  - jira: 28621
+  - github: *GH
