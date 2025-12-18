@@ -1,0 +1,16 @@
+---
+name: "jersey3-api"
+github: &GH "jenkinsci/jersey3-api-plugin"
+paths:
+- "io/jenkins/plugins/jersey3-api"
+developers:
+- "basil"
+- "alecharp"
+- "@cloudbees-developers"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+issues:
+  - jira: 29733
+cd:
+  enabled: true

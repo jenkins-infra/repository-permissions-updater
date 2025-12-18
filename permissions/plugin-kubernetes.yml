@@ -1,8 +1,8 @@
 ---
 name: "kubernetes"
-github: "jenkinsci/kubernetes-plugin"
+github: &gh "jenkinsci/kubernetes-plugin"
 issues:
-  - jira: '20639'  # kubernetes-plugin
+  - github: *gh
 paths:
   - "org/csanchez/jenkins/plugins/kubernetes"
 cd:
@@ -16,7 +16,6 @@ developers:
   - "amuniz"
   - "kerogers"
   - "aneveux"
-  - "ajard"
 security:
   contacts:
     jira: "cloudbees_security_members"

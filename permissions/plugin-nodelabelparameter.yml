@@ -1,10 +1,12 @@
 ---
 name: "nodelabelparameter"
-github: "jenkinsci/nodelabelparameter-plugin"
+github: &gh "jenkinsci/nodelabelparameter-plugin"
 issues:
-  - jira: '15873'  # nodelabelparameter-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/nodelabelparameter"
+cd:
+  enabled: true
 developers:
   - "imod"
   - "markewaite"

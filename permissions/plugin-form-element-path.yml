@@ -6,9 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/form-element-path"
 developers:
-  - "olivergondza"
   - "vlatombe"
-  - "jglick"
 security:
   contacts:
     jira: "cloudbees_security_members"

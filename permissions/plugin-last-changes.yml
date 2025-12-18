@@ -6,5 +6,7 @@ issues:
   - jira: '21666'  # last-changes-plugin
 paths:
   - "org/jenkins-ci/plugins/last-changes"
+cd:
+  enabled: true
 developers:
   - "rmpestano"

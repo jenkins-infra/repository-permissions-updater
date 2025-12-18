@@ -1,8 +1,11 @@
 ---
 name: "skip-certificate-check"
-github: "jenkinsci/skip-certificate-check-plugin"
+github: &gh "jenkinsci/skip-certificate-check-plugin"
 issues:
-  - jira: '15923'  # skip-certificate-check-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/skip-certificate-check"
-developers: []
+cd:
+  enabled: true
+developers:
+  - "markewaite"

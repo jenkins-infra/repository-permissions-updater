@@ -5,5 +5,4 @@ paths:
   - "io/jenkins/org/vafer/jdependency"
 developers:
   - "rsandell"
-  - "svanoort"
   - "abayer"

@@ -5,6 +5,8 @@ issues:
   - jira: '20820'  # purge-job-history-plugin
 paths:
   - "org/jenkins-ci/plugins/purge-job-history"
+cd:
+  enabled: true
 developers:
   - "aytuncbeken"
 security:

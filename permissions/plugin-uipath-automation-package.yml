@@ -6,6 +6,11 @@ issues:
   - jira: '25125'  # uipath-automation-package-plugin
 paths:
   - "org/jenkins-ci/plugins/uipath-automation-package"
+cd:
+  enabled: true
 developers:
   - "ganeshborle"
   - "al3xanndru"
+  - "cristiancotovanu"
+  - "andreidinca"
+  - "leonard_apostoaie"

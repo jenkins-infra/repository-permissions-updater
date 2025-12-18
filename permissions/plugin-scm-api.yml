@@ -11,12 +11,12 @@ developers:
   - "jglick"
   - "recena"
   - "abayer"
-  - "svanoort"
   - "rsandell"
   - "dnusbaum"
   - "carroll"
   - "bitwiseman"
   - "kshultz"
+  - "timja"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -7,5 +7,6 @@ cd:
   enabled: true
 developers:
   - "mauroatlevo"
+  - "amangupta_20"
 issues:
   - github: *GH

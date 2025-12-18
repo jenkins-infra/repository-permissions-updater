@@ -1,11 +1,12 @@
 ---
 name: "build-failure-analyzer"
-github: "jenkinsci/build-failure-analyzer-plugin"
+github: &gh "jenkinsci/build-failure-analyzer-plugin"
 issues:
-  - jira: '17224'  # build-failure-analyzer-plugin
+  - github: *gh
 paths:
   - "com/sonyericsson/jenkins/plugins/bfa/build-failure-analyzer"
+cd:
+  enabled: true
 developers:
-  - "orjanpercy"
   - "rsandell"
   - "t_westling"

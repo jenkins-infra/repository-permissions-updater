@@ -117,8 +117,7 @@ public class Version implements Comparable {
         }
 
         Version other = (Version) object;
-        return (major == other.major) && (minor == other.minor)
-                && (micro == other.micro);
+        return (major == other.major) && (minor == other.minor) && (micro == other.micro);
     }
 
     public int compareTo(Object object) {

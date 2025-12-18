@@ -1,0 +1,15 @@
+---
+name: "opentelemetry-api"
+github: &GH "jenkinsci/opentelemetry-api-plugin"
+paths:
+- "io/jenkins/plugins/opentelemetry-api"
+developers:
+- "cleclerc"
+- "ifernandezcalvo"
+cd:
+  enabled: true
+issues:
+  - github: *GH
+security:
+  contacts:
+    jira: "cloudbees_security_members"

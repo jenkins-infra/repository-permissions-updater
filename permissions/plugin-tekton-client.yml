@@ -3,6 +3,7 @@ name: "tekton-client"
 github: &gh "jenkinsci/tekton-client-plugin"
 cd:
   enabled: true
+  exclusive: false
 issues:
   - github: *gh
 paths:

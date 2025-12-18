@@ -1,10 +1,11 @@
 ---
 name: "jobConfigHistory"
-github: "jenkinsci/job-config-history-plugin"
+github: &gh "jenkinsci/job-config-history-plugin"
 issues:
-  - jira: '15683'  # jobconfighistory-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/jobConfigHistory"
-developers: []
+developers:
+  - "stefan_spieker"
 cd:
   enabled: true

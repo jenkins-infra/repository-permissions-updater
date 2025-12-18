@@ -1,0 +1,33 @@
+# Define each banned dependency as "<groupid>:<artifactid>;<alternative-groupid>:<alternative-artifacid>[;<comment>]"
+org.apache.commons:commons-lang3;io.jenkins.plugins:commons-lang3-api
+org.apache.commons:commons-lang;io.jenkins.plugins:commons-lang3-api
+org.apache.commons:commons-text;io.jenkins.plugins:commons-text-api
+org.apache.commons:commons-compress;io.jenkins.plugins:commons-compress-api
+org.apache.commons:commons-math3;io.jenkins.plugins:commons-math3-api
+
+org.json:json;io.jenkins.plugins:json-api
+com.jayway.jsonpath:json-path;io.jenkins.plugins:json-path-api
+com.google.code.gson:gson;io.jenkins.plugins:gson-api
+com.fasterxml.jackson.core:jackson-core;org.jenkins-ci.plugins:jackson2-api
+com.fasterxml.jackson.core:jackson-databind;org.jenkins-ci.plugins:jackson2-api
+org.yaml:snakeyaml;io.jenkins.plugins:snakeyaml-api
+com.sun.xml.bind:jaxb-impl;io.jenkins.plugins:jaxb
+
+joda-time:joda-time;io.jenkins.plugins:joda-time-api
+org.ow2.asm:asm;io.jenkins.plugins:asm-api
+net.bytebuddy:byte-buddy;io.jenkins.plugins:byte-buddy-api
+com.github.ben-manes.caffeine:caffeine;io.jenkins.plugins:caffeine-api
+com.github.mwiede:jsch;org.jenkins-ci.plugins:jsch
+org.bouncycastle:bcpkix-jdk18on;org.jenkins-ci.plugins:bouncycastle-api
+org.bouncycastle:bcprov-jdk18on;org.jenkins-ci.plugins:bouncycastle-api
+org.bouncycastle:bcutil-jdk18on;org.jenkins-ci.plugins:bouncycastle-api
+
+
+org.apache.httpcomponents:httpclient;org.jenkins-ci.plugins:apache-httpcomponents-client-4-api
+org.apache.httpcomponents.client5:httpclient5;io.jenkins.plugins:apache-httpcomponents-client-5-api
+com.squareup.okhttp3:okhttp;io.jenkins.plugins:okhttp-api
+
+jakarta.activation:jakarta.activation-api;io.jenkins.plugins:jakarta-activation-api
+jakarta.mail:jakarta.mail-api;io.jenkins.plugins:jakarta-mail-api
+com.sun.activation:javax.activation;io.jenkins.plugins:javax-activation-api;Consider switching from javax.activation to jakarta.activation and using io.jenkins.plugins:jakarta-activation-api
+com.sun.mail:javax.mail;io.jenkins.plugins:javax-mail-api;Consider switching from javax.mail to jakarta.mail and using io.jenkins.plugins:jakarta-activation-api

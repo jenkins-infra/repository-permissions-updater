@@ -8,5 +8,6 @@ paths:
 developers:
   - "batmat"
   - "oleg_nenashev"
+  - "mPokornyETM"
 cd:
   enabled: true

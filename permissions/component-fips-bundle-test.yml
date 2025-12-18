@@ -1,0 +1,10 @@
+---
+name: "fips-bundle-test"
+github: "jenkinsci/lib-fips-bundle-test"
+paths:
+  - "io/jenkins/test/fips/fips-bundle-test"
+developers:
+  - "teilo"
+  - "olamy"
+cd:
+  enabled: true

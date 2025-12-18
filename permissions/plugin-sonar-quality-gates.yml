@@ -7,3 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/sonar-quality-gates"
 developers:
   - "arkanjoms"
+  - "kirk_fitz"
+cd:
+  enabled: true

@@ -1,0 +1,10 @@
+---
+name: "commons-compress-api"
+github: &GH "jenkinsci/commons-compress-api-plugin"
+paths:
+- "io/jenkins/plugins/commons-compress-api"
+developers:
+- "basil"
+- "markewaite"
+issues:
+  - jira: 29424

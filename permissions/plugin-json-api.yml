@@ -1,0 +1,11 @@
+---
+name: "json-api"
+github: &GH "jenkinsci/json-api-plugin"
+paths:
+- "io/jenkins/plugins/json-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

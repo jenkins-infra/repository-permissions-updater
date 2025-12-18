@@ -1,17 +1,17 @@
 ---
 name: "active-directory"
-github: "jenkinsci/active-directory-plugin"
+github: &gh "jenkinsci/active-directory-plugin"
 issues:
-  - jira: '15526'  # active-directory-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/active-directory"
 developers:
+  - "basil"
   - "fbelzunc"
   - "kohsuke"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"
-  - "mramonleon"
   - "rsandell"
   - "carroll"
   - "teilo"

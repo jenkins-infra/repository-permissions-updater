@@ -1,0 +1,10 @@
+---
+name: "log-flow-visualizer"
+github: &GH "jenkinsci/log-flow-visualizer-plugin"
+paths:
+- "io/jenkins/plugins/log-flow-visualizer"
+developers:
+- "thavlice"
+- "judovana"
+issues:
+  - jira: 29522

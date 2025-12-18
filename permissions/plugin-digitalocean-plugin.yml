@@ -2,10 +2,14 @@
 name: "digitalocean-plugin"
 github: "jenkinsci/digitalocean-plugin"
 issues:
+  - github: 'jenkinsci/digitalocean-plugin' # The preferred issue tracker
   - jira: '18831'  # digitalocean-plugin
+    report: false # No new issues should be reported here
+cd:
+  enabled: true
 paths:
   - "com/dubture/jenkins/digitalocean-plugin"
 developers:
-  - "halkeye"
-  - "anpieber"
-  - "pulse00"
+  - speedythesnail
+  - halkeye
+  - khayyamsaleem

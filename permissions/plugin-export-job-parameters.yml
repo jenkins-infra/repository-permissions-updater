@@ -1,0 +1,11 @@
+---
+name: "export-job-parameters"
+github: &GH "jenkinsci/export-job-parameters-plugin"
+paths:
+- "io/jenkins/plugins/export-job-parameters"
+developers:
+- "barelelbaz"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -9,3 +9,4 @@ developers:
   - "canuck1987"
 cd:
   enabled: true
+  exclusive: false

@@ -5,6 +5,8 @@ issues:
   - jira: '21725'  # kerberos-sso-plugin
 paths:
   - "com/sonymobile/jenkins/plugins/kerberos-sso/kerberos-sso"
+cd:
+  enabled: true
 developers:
   - "rsandell"
   - "t_westling"

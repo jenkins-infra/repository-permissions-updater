@@ -3,7 +3,6 @@ name: "theme-manager"
 github: &gh "jenkinsci/theme-manager-plugin"
 issues:
   - github: *gh
-  - jira: '27322'  # theme-manager-plugin
 paths:
   - "io/jenkins/plugins/theme-manager"
 developers:

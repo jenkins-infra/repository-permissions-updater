@@ -1,0 +1,11 @@
+---
+name: "plain-text-console-link"
+github: &GH "jenkinsci/plain-text-console-link-plugin"
+paths:
+- "io/jenkins/plugins/plain-text-console-link"
+developers:
+- "mawinter69"
+issues:
+  - github: *GH
+cd:
+  enabled: true

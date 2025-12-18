@@ -8,3 +8,4 @@ paths:
   - "io/jenkins/plugins/dingding-notifications"
 developers:
   - "liuweigl"
+  - "bobdu"

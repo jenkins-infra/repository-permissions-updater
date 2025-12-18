@@ -1,9 +1,12 @@
 ---
 name: "label-verifier"
-github: "jenkinsci/label-verifier-plugin"
+github: &gh "jenkinsci/label-verifier-plugin"
 issues:
-  - jira: '16009'  # label-verifier-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/label-verifier"
 developers:
   - "oleg_nenashev"
+  - "markewaite"
+cd:
+  enabled: true

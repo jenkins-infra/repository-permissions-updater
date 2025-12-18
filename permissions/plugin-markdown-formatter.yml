@@ -1,12 +1,11 @@
 ---
 name: "markdown-formatter"
-github: "jenkinsci/markdown-formatter-plugin"
+github: &gh "jenkinsci/markdown-formatter-plugin"
 issues:
-  - jira: '28320'  # markdown-formatter-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/markdown-formatter"
 cd:
   enabled: true
 developers:
-  - "halkeye"
   - "markewaite"

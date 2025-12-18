@@ -8,3 +8,5 @@ paths:
   - "org/jenkins-ci/plugins/prometheus"
 developers:
   - "waschndolos"
+cd:
+  enabled: true

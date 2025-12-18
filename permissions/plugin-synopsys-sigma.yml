@@ -5,6 +5,7 @@ issues:
   - jira: '28822'
 cd:
   enabled: true
+  exclusive: false
 paths:
   - "io/jenkins/plugins/synopsys-sigma"
 developers:

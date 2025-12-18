@@ -1,20 +1,20 @@
 ---
 name: "parameterized-trigger"
-github: "jenkinsci/parameterized-trigger-plugin"
+github: &gh "jenkinsci/parameterized-trigger-plugin"
 issues:
-  - jira: '15592'  # parameterized-trigger-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/parameterized-trigger"
 developers:
-  - "ikedam"
   - "kwhetstone"
   - "oleg_nenashev"
-  - "olivergondza"
-  - "svanoort"
   - "wolfs"
   - "olamy"
   - "markewaite"
   - "poddingue"
+  - "jondaley"
+cd:
+  enabled: true
 security:
   contacts:
     jira: "cloudbees_security_members"

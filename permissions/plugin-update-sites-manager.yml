@@ -6,4 +6,6 @@ issues:
 paths:
   - "jp/ikedam/jenkins/plugins/update-sites-manager"
 developers:
-  - "ikedam"
+  - "slide_o_mix"
+cd:
+  enabled: true

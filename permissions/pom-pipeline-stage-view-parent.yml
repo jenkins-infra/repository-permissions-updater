@@ -4,10 +4,8 @@ github: "jenkinsci/pipeline-stage-view-plugin"
 paths:
   - "org/jenkins-ci/plugins/pipeline-stage-view/parent-pom"
 developers:
-  - "svanoort"
   - "abayer"
   - "dnusbaum"
-  - "jglick"
   - "rsandell"
   - "carroll"
   - "bitwiseman"

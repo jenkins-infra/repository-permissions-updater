@@ -1,0 +1,9 @@
+---
+name: "teambition-devops"
+github: &GH "jenkinsci/teambition-devops-plugin"
+paths:
+- "io/jenkins/plugins/teambition-devops"
+developers:
+- "gqlhappy11"
+issues:
+  - github: *GH

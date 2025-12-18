@@ -6,6 +6,5 @@ issues:
 paths:
   - "jenkins/ci/plugins/backup/backup-interrupt-plugin"
 developers: []
-#CD blocked for lack of maintainers
-#cd:
-#  enabled: true
+cd:
+  enabled: true

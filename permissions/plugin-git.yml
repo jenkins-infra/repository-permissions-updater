@@ -1,15 +1,15 @@
 ---
 name: "git"
-github: "jenkinsci/git-plugin"
+github: &gh "jenkinsci/git-plugin"
 issues:
-  - jira: '15543'  # git-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/git"
   - "org/jenkinsci/plugins/git"
   - "org/jvnet/hudson/plugins/git"
+communityPluginMaintainers: false
 developers:
   - "markewaite"
-  - "mramonleon"
   - "olamy"
   - "rsandell"
 security:

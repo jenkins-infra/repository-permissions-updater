@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/jakarta-mail-api"
 developers:
   - "basil"
+  - "markewaite"
 issues:
   - jira: 28831
 security:

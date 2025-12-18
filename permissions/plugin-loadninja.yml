@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/loadninja"
 developers:
-  - "ctalaverq"
+  - "mrunkle_sb"
+  - "yamini_sethu"
+  - "loadninja"

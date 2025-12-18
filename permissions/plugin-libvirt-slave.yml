@@ -1,6 +1,6 @@
 ---
 name: "libvirt-slave"
-github: "jenkinsci/libvirt-slave-plugin"
+github: "jenkinsci/libvirt-agent-plugin"
 issues:
   - jira: '15985'  # libvirt-slave-plugin
 paths:
@@ -12,3 +12,4 @@ developers:
   - "gkr"
   - "magnayn"
   - "bgermann"
+  - "m_jeanson"

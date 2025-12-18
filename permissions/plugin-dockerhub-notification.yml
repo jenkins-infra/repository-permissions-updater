@@ -5,6 +5,8 @@ issues:
   - jira: '20627'  # dockerhub-notification-plugin
 paths:
   - "org/jenkins-ci/plugins/dockerhub-notification"
+cd:
+  enabled: true
 developers:
   - "rsandell"
   - "@cloudbees-developers"

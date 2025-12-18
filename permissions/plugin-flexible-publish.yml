@@ -5,5 +5,4 @@ issues:
   - jira: '16130'  # flexible-publish-plugin
 paths:
   - "org/jenkins-ci/plugins/flexible-publish"
-developers:
-  - "ikedam"
+developers: []

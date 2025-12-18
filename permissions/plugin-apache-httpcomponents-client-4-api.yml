@@ -1,8 +1,8 @@
 ---
 name: "apache-httpcomponents-client-4-api"
-github: "jenkinsci/apache-httpcomponents-client-4-api-plugin"
+github: &gh "jenkinsci/apache-httpcomponents-client-4-api-plugin"
 issues:
-  - jira: '23052'  # apache-httpcomponents-client-4-api-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/apache-httpcomponents-client-4-api"
 cd:
@@ -10,7 +10,6 @@ cd:
 developers:
   - "oleg_nenashev"
   - "dnusbaum"
-  - "mramonleon"
   - "carroll"
   - "teilo"
   - "rsandell"

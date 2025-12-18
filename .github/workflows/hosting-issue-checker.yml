@@ -9,18 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.event.issue.labels.*.name, 'hosting-request')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: 'master'
-      - uses: actions/setup-java@v3
+      - uses: actions/setup-java@v5
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
-          java-version: '11'
+          java-version: '21'
           cache: 'maven'
       - name: Build with Maven
         run: mvn -B package -Dspotbugs.skip
       - name: Run hosting checker
         run: |
-          java -cp target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker ${{ github.event.issue.number }}
+          java -jar target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar check-hosting ${{ github.event.issue.number }}
         env:
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}

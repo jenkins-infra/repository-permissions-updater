@@ -1,0 +1,12 @@
+---
+name: "secone-security"
+github: &GH "jenkinsci/secone-security-plugin"
+paths:
+- "io/jenkins/plugins/secone-security"
+developers:
+- "rahuldarekar"
+- "saurabhthatte_sec1"
+issues:
+  - jira: 29323
+cd:
+  enabled: true

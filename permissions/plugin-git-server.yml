@@ -8,13 +8,8 @@ paths:
 cd:
   enabled: true
 developers:
-  - "jglick"
   - "kohsuke"
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"
-  - "mramonleon"
   - "rsandell"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

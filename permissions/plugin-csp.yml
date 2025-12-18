@@ -4,6 +4,9 @@ github: &GH "jenkinsci/csp-plugin"
 paths:
   - "io/jenkins/plugins/csp"
 developers:
-  - "danielbeck"
+  - "@security"
 issues:
-  - jira: 28623
+  - github: *GH
+communityPluginMaintainers: false
+cd:
+  enabled: true

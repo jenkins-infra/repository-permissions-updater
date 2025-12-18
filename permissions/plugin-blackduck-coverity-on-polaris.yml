@@ -1,0 +1,11 @@
+---
+name: "blackduck-coverity-on-polaris"
+github: &GH "jenkinsci/blackduck-coverity-on-polaris-plugin"
+paths:
+- "io/jenkins/plugins/blackduck-coverity-on-polaris"
+developers:
+- "zaman_akib"
+- "saraf"
+- "bdsoss"
+issues:
+  - github: *GH

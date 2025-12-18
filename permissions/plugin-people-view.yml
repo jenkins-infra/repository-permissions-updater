@@ -1,0 +1,12 @@
+---
+name: "people-view"
+github: &GH "jenkinsci/people-view-plugin"
+paths:
+- "io/jenkins/plugins/people-view"
+developers:
+- "danielbeck"
+issues:
+  - jira: '29420' # people-view-plugin
+cd:
+  enabled: true
+communityPluginMaintainers: false

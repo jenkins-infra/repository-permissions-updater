@@ -6,6 +6,30 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/aws-java-sdk"
   - "org/jenkins-ci/plugins/aws-java-sdk/aws-java-sdk-*"
+extraNames:
+  - aws-java-sdk-api-gateway
+  - aws-java-sdk-autoscaling
+  - aws-java-sdk-cloudformation
+  - aws-java-sdk-cloudfront
+  - aws-java-sdk-cloudwatch
+  - aws-java-sdk-codebuild
+  - aws-java-sdk-codedeploy
+  - aws-java-sdk-ec2
+  - aws-java-sdk-ecr
+  - aws-java-sdk-ecs
+  - aws-java-sdk-efs
+  - aws-java-sdk-elasticbeanstalk
+  - aws-java-sdk-elasticloadbalancingv2
+  - aws-java-sdk-iam
+  - aws-java-sdk-kinesis
+  - aws-java-sdk-lambda
+  - aws-java-sdk-logs
+  - aws-java-sdk-minimal
+  - aws-java-sdk-organizations
+  - aws-java-sdk-secretsmanager
+  - aws-java-sdk-sns
+  - aws-java-sdk-sqs
+  - aws-java-sdk-ssm
 cd:
   enabled: true
 developers:

@@ -1,10 +1,11 @@
 ---
 name: "gerrit-trigger"
-github: "jenkinsci/gerrit-trigger-plugin"
+github: &gh "jenkinsci/gerrit-trigger-plugin"
 issues:
-  - jira: '15731'  # gerrit-trigger-plugin
+  - github: *gh
 paths:
   - "com/sonyericsson/hudson/plugins/gerrit/gerrit-trigger"
+cd:
+  enabled: true
 developers:
   - "rsandell"
-  - "olivergondza"

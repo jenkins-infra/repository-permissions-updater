@@ -7,10 +7,10 @@ paths:
   - "org/jenkins-ci/plugins/copyartifact"
   - "org/jvnet/hudson/plugins/copyartifact"
 developers:
-  - "ikedam"
   - "wolfs"
   - "markewaite"
   - "allancth"
+  - "mPokornyETM"
 security:
   contacts:
     jira: "cloudbees_security_members"

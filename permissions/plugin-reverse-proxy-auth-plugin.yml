@@ -5,9 +5,10 @@ issues:
   - jira: '15999'  # reverse-proxy-auth-plugin
 paths:
   - "org/jenkins-ci/plugins/reverse-proxy-auth-plugin"
+cd:
+  enabled: true
 developers:
   - "wilder_rodrigues"
   - "oleg_nenashev"
-  - "jglick"
   - "sboardwell"
   - "rdalton"

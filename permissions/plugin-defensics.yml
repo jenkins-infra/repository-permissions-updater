@@ -4,7 +4,7 @@ github: "jenkinsci/defensics-plugin"
 issues:
   - jira: '27252'  # defensics-plugin
 paths:
-  - "com/synopsys/defensics"
+  - "io/jenkins/plugins/defensics"
 developers:
   - "defensics_oss"
   - "synhal"

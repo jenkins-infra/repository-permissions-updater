@@ -9,8 +9,4 @@ developers:
   - "batmat"
   - "egutierrez"
   - "fcojfernandez"
-  - "mramonleon"
   - "rsandell"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

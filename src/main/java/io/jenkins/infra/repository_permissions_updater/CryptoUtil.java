@@ -1,13 +1,12 @@
 package io.jenkins.infra.repository_permissions_updater;
 
-import edu.umd.cs.findbugs.annotations.NonNull;
-import org.kocakosm.jblake2.Blake2b;
+import static com.neilalexander.jnacl.crypto.curve25519xsalsa20poly1305.*;
 
+import edu.umd.cs.findbugs.annotations.NonNull;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Base64;
-
-import static com.neilalexander.jnacl.crypto.curve25519xsalsa20poly1305.*;
+import org.kocakosm.jblake2.Blake2b;
 
 public class CryptoUtil {
 
@@ -42,11 +41,18 @@ public class CryptoUtil {
         System.arraycopy(plainTextBytes, 0, buf, crypto_secretbox_ZEROBYTES, plainTextBytes.length);
         crypto_box(buf, buf, nonce, publicKeyBytes, ephemeralPrivateKeyBytes);
 
-        final byte[] cipherTextResult = Arrays.copyOf(ephemeralPublicKeyBytes, buf.length + crypto_secretbox_BOXZEROBYTES);
-        System.arraycopy(buf, crypto_secretbox_BOXZEROBYTES, cipherTextResult, crypto_secretbox_PUBLICKEYBYTES,
+        final byte[] cipherTextResult =
+                Arrays.copyOf(ephemeralPublicKeyBytes, buf.length + crypto_secretbox_BOXZEROBYTES);
+        System.arraycopy(
+                buf,
+                crypto_secretbox_BOXZEROBYTES,
+                cipherTextResult,
+                crypto_secretbox_PUBLICKEYBYTES,
                 plainTextBytes.length + crypto_secretbox_BOXZEROBYTES);
         return Base64.getEncoder().encodeToString(cipherTextResult);
     }
 
-    private CryptoUtil() { /* prevent instantiation */ }
+    private CryptoUtil() {
+        /* prevent instantiation */
+    }
 }

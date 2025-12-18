@@ -8,9 +8,9 @@ paths:
   - "org/jenkins-ci/plugins/cobertura"
   - "org/jvnet/hudson/plugins/cobertura"
 developers:
-  - "olivergondza"
   - "tamini"
   - "mbarrien"
   - "schristou"
   - "jeffpearce"
   - "cizezsy"
+  - "drulli"

@@ -8,3 +8,5 @@ paths:
 developers:
   - "ffromm"
   - "dmone"
+cd:
+  enabled: true

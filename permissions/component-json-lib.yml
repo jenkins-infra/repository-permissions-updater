@@ -1,0 +1,7 @@
+---
+name: "json-lib"
+github: "jenkinsci/json-lib"
+paths:
+  - "org/kohsuke/stapler/json-lib"
+developers:
+  - "@core"

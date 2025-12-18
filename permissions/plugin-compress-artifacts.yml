@@ -7,6 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/compress-artifacts"
 cd:
   enabled: true
-developers:
-  - "jglick"
-  - "olivergondza"
+developers: []

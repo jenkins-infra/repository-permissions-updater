@@ -7,3 +7,6 @@ paths:
   - "hudson/plugins/filesystem_scm/filesystem_scm"
 developers:
   - oleg_nenashev
+  - guymeron
+cd:
+  enabled: true

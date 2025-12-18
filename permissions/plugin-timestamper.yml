@@ -9,6 +9,4 @@ paths:
 developers:
   - "basil"
   - "stevengbrown"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
+  - "markewaite"

@@ -9,3 +9,4 @@ issues:
   - github: *GH
 cd:
   enabled: true
+  exclusive: false

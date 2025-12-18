@@ -1,12 +1,12 @@
 ---
-cd:
-  enabled: true
 name: "versioncolumn"
-github: "jenkinsci/versioncolumn-plugin"
+github: &gh "jenkinsci/versioncolumn-plugin"
 issues:
-  - jira: '15927'  # versioncolumn-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/versioncolumn"
+cd:
+  enabled: true
 developers:
   - "batmat"
   - "markewaite"

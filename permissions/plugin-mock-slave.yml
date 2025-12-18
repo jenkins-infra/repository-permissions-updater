@@ -4,7 +4,7 @@ github: "jenkinsci/mock-slave-plugin"
 cd:
   enabled: true
 issues:
-  - jira: '17334'  # mock-slave-plugin
+  - jira: '17334' # mock-slave-plugin
 paths:
   - "org/jenkinci/plugins/mock-slave"
   - "org/jenkins-ci/plugins/mock-slave"

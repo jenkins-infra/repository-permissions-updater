@@ -1,0 +1,11 @@
+---
+name: "jetbrains-space"
+github: &GH "jenkinsci/jetbrains-space-plugin"
+paths:
+- "io/jenkins/plugins/jetbrains-space"
+developers:
+- "kiryushin_andrey"
+issues:
+  - github: *GH
+cd:
+  enabled: true

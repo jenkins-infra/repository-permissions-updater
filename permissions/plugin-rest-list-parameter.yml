@@ -5,5 +5,8 @@ issues:
   - github: *gh
 paths:
   - "io/jenkins/plugins/rest-list-parameter"
+cd:
+  enabled: true
 developers:
   - "h1dden_da3m0n"
+  - "mymarche"

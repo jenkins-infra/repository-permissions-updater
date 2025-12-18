@@ -1,15 +1,14 @@
 ---
 name: "github-branch-source"
-github: "jenkinsci/github-branch-source-plugin"
+github: &gh "jenkinsci/github-branch-source-plugin"
 issues:
-  - jira: '20858'  # github-branch-source-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/github-branch-source"
 developers:
   - "jglick"
   - "recena"
   - "abayer"
-  - "svanoort"
   - "rsandell"
   - "dnusbaum"
   - "carroll"
@@ -17,6 +16,7 @@ developers:
   - "kshultz"
   - "jtaboada"
   - "olamy"
+  - "jpochat"
 security:
   contacts:
     jira: "cloudbees_security_members"

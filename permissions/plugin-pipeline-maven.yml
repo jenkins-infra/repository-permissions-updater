@@ -1,10 +1,10 @@
 ---
 name: "pipeline-maven"
-github: "jenkinsci/pipeline-maven-plugin"
+github: &gh "jenkinsci/pipeline-maven-plugin"
 cd:
   enabled: true
 issues:
-  - jira: '21669'  # pipeline-maven-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/pipeline-maven"
 developers:
@@ -12,6 +12,7 @@ developers:
   - "cleclerc"
   - "aheritier"
   - "bguerin"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

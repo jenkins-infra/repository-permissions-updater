@@ -1,0 +1,13 @@
+---
+name: "hiddenlayer-model-scanner"
+github: &GH "jenkinsci/hiddenlayer-model-scanner-plugin"
+paths:
+- "io/jenkins/plugins/hiddenlayer-model-scanner"
+cd:
+  enabled: true
+developers:
+- "blucas_hl"
+- "travis_hiddenlayer"
+- "adrummond_hl"
+issues:
+  - github: *GH

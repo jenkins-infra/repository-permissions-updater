@@ -1,0 +1,11 @@
+---
+name: "finite-state-third-party-upload"
+github: &GH "jenkinsci/finite-state-third-party-upload-plugin"
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/finite-state-third-party-upload"
+developers:
+- "finitestateinc"
+issues:
+  - github: *GH

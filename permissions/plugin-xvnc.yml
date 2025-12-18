@@ -7,7 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/xvnc"
 developers:
   - "andresrc"
-  - "jglick"
   - "levsa"
-  - "olivergondza"
   - "rsandell"

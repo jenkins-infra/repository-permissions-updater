@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/zephyr-enterprise-test-management"
 developers:
-  - "zeedeveloper"
-  - "mohanzephyr"
-  - "pv_smartbear"
-  - "t25garg"
+  - "smartbearashutosh"
+  - "ashwanikrsh"
+  - "akanksha_smartbear"

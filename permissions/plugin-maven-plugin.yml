@@ -7,11 +7,10 @@ paths:
   - "org/jenkins-ci/main/maven-plugin"
   - "org/jvnet/hudson/main/maven-plugin"
 developers:
+  - "basil"
   - "integer"
-  - "jglick"
   - "kohsuke"
   - "olamy"
-  - "olivergondza"
   - "aheritier"
   - "jtaboada"
 security:

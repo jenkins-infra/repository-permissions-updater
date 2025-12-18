@@ -2,17 +2,16 @@
 name: "jaxb"
 github: &gh "jenkinsci/jaxb-plugin"
 issues:
-  - jira: '24725'  # jaxb-plugin
   - github: *gh
 paths:
   - "io/jenkins/plugins/jaxb"
+cd:
+  enabled: true
 developers:
-  - "basil"
   - "kohsuke"
   - "oleg_nenashev"
   - "batmat"
+  - "markewaite"
 security:
   contacts:
     jira: "cloudbees_security_members"
-cd:
-  enabled: true

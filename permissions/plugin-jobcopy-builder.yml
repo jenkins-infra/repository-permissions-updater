@@ -5,5 +5,4 @@ issues:
   - jira: '17506'  # jobcopy-builder-plugin
 paths:
   - "jp/ikedam/jenkins/plugins/jobcopy-builder"
-developers:
-  - "ikedam"
+developers: []

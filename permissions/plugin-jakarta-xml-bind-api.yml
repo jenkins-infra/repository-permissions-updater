@@ -1,0 +1,16 @@
+---
+name: "jakarta-xml-bind-api"
+github: &GH "jenkinsci/jakarta-xml-bind-api-plugin"
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/jakarta-xml-bind-api"
+developers:
+- "basil"
+- "markewaite"
+- "@cloudbees-developers"
+issues:
+  - jira: 29732
+security:
+  contacts:
+    jira: "cloudbees_security_members"

@@ -2,7 +2,6 @@ package io.jenkins.infra.repository_permissions_updater.hosting;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Locale;
 
 public class HostingRequest {
 
@@ -14,22 +13,22 @@ public class HostingRequest {
      * e.g. your-cool-plugin
      */
     private final String newRepoName;
+
     private final List<String> githubUsers;
     private final List<String> jenkinsProjectUsers;
-    private final IssueTracker issueTracker;
+    private final boolean enableCD;
 
     public HostingRequest(
             String repositoryUrl,
             String newRepoName,
             List<String> githubUsers,
             List<String> jenkinsProjectUsers,
-            IssueTracker issueTracker
-    ) {
+            boolean enableCD) {
         this.repositoryUrl = repositoryUrl;
         this.newRepoName = newRepoName;
-        this.githubUsers = Collections.unmodifiableList(githubUsers);
-        this.jenkinsProjectUsers = Collections.unmodifiableList(jenkinsProjectUsers);
-        this.issueTracker = issueTracker;
+        this.githubUsers = Collections.unmodifiableList(trimList(githubUsers));
+        this.jenkinsProjectUsers = Collections.unmodifiableList(trimList(jenkinsProjectUsers));
+        this.enableCD = enableCD;
     }
 
     public String getRepositoryUrl() {
@@ -48,15 +47,11 @@ public class HostingRequest {
         return jenkinsProjectUsers;
     }
 
-    public IssueTracker getIssueTracker() {
-        return issueTracker;
+    public boolean isEnableCD() {
+        return enableCD;
     }
 
-    public enum IssueTracker {
-        GITHUB, JIRA;
-
-        public static IssueTracker fromString(String string) {
-            return string.toLowerCase(Locale.ROOT).contains("git") ? GITHUB : JIRA;
-        }
+    private List<String> trimList(List<String> users) {
+        return users.stream().filter(it -> !it.trim().isEmpty()).toList();
     }
 }

@@ -1,9 +1,11 @@
 ---
 name: "jnr-posix-api"
-github: "jenkinsci/jnr-posix-api-plugin"
+github: &GH "jenkinsci/jnr-posix-api-plugin"
 issues:
-  - jira: '23822'  # jnr-posix-api-plugin
+  - github: *GH
 paths:
   - "io/jenkins/plugins/jnr-posix-api"
 developers:
-  - "basil"
+  - "jonesbusy"
+cd:
+  enabled: true

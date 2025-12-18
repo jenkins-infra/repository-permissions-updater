@@ -1,6 +1,8 @@
 ---
 name: "manage-permission"
 github: "jenkinsci/manage-permission-plugin"
+cd:
+  enabled: true
 issues:
   - jira: '27241'  # manage-permission-plugin
 paths:
@@ -10,4 +12,3 @@ developers:
   - "mikecirioli"
   - "ealvarez"
   - "amuniz"
-  - "ajard"

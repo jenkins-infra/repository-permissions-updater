@@ -12,3 +12,4 @@ developers:
   - "mide"
 cd:
   enabled: true
+  exclusive: false

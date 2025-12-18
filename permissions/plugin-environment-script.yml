@@ -7,3 +7,5 @@ paths:
   - "com/lookout/jenkins/environment-script"
 developers:
   - "dawidmalina"
+cd:
+  enabled: true

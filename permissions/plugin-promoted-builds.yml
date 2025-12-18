@@ -1,8 +1,8 @@
 ---
 name: "promoted-builds"
-github: "jenkinsci/promoted-builds-plugin"
+github: &gh "jenkinsci/promoted-builds-plugin"
 issues:
-  - jira: '15567'  # promoted-builds-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/promoted-builds"
   - "org/jvnet/hudson/plugins/promoted-builds"

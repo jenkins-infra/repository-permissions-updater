@@ -1,6 +1,8 @@
 ---
 name: "categorized-view"
 github: &gh "jenkinsci/categorized-view-plugin"
+cd:
+  enabled: true
 issues:
   - jira: '17638'  # categorized-view-plugin
   - github: *gh
@@ -9,3 +11,5 @@ paths:
 developers:
   - "taksan"
   - "takeuchi"
+  - "mPokornyETM"
+  - "phonicura"

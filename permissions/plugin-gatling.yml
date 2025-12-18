@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/gatling"
 developers:
   - "slandelle"
+  - "vedanthvasudev"
 cd:
   enabled: true

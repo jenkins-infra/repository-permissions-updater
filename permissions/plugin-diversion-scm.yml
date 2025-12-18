@@ -1,0 +1,11 @@
+---
+name: "diversion-scm"
+github: &GH "jenkinsci/diversion-scm-plugin"
+paths:
+- "io/jenkins/plugins/diversion-scm"
+developers:
+- "ibain"
+issues:
+  - github: *GH
+cd:
+  enabled: true

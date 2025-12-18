@@ -7,3 +7,6 @@ paths:
   - "io/jenkins/plugins/misra-compliance-report-generator"
 developers:
   - "oyvindlr"
+cd:
+  enabled: true
+  exclusive: false

@@ -6,7 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/cvs"
   - "org/jvnet/hudson/plugins/cvs"
+cd:
+  enabled: true
 developers:
   - "mc1arke"
   - "kohsuke"
-  - "jglick"

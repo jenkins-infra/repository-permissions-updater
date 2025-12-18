@@ -7,14 +7,12 @@ paths:
   - "org/jenkins-ci/plugins/windows-slaves"
 developers:
   - "andresrc"
-  - "jglick"
   - "oleg_nenashev"
   - "rsandell"
   - "teilo"
   - "carroll"
   - "bitwiseman"
   - "olamy"
-  - "mramonleon"
   - "poddingue"
 security:
   contacts:

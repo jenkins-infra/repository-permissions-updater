@@ -1,0 +1,11 @@
+---
+name: "railflow-testrail"
+github: &GH "jenkinsci/railflow-testrail-plugin"
+paths:
+- "io/jenkins/plugins/railflow-testrail"
+developers:
+- "railflow"
+issues:
+  - jira: 29524
+cd:
+  enabled: true

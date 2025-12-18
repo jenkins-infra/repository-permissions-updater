@@ -23,7 +23,7 @@ jobs:
     if: needs.validate.outputs.actor_in_hosting_team == 'true'
     steps:
       - name: Ack
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           script: |
             const {owner, repo} = context.issue
@@ -33,19 +33,19 @@ jobs:
               comment_id: context.payload.comment.id,
               content: "+1",
             });
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: 'master'
-      - uses: actions/setup-java@v3
+      - uses: actions/setup-java@v5
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
-          java-version: '11'
+          java-version: '21'
           cache: 'maven'
       - name: Build with Maven
         run: mvn -B package -Dspotbugs.skip
       - name: Run hoster
         run: |
-          java -cp target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar io.jenkins.infra.repository_permissions_updater.hosting.Hoster ${{ github.event.issue.number }}
+          java -jar target/repository-permissions-updater-1.0-SNAPSHOT-bin/repository-permissions-updater-1.0-SNAPSHOT.jar host ${{ github.event.issue.number }}
         env:
           GITHUB_OAUTH: ${{ secrets.HOSTING_PAT }}
           JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}

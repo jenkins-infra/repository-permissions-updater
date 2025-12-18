@@ -5,4 +5,5 @@ cd:
   enabled: true
 paths:
   - "org/kohsuke/stapler/stapler*"
-developers: []
+developers:
+  - "@core"

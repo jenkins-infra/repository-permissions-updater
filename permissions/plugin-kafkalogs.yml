@@ -9,3 +9,4 @@ developers:
   - "trevorlinton"
 cd:
   enabled: true
+  exclusive: false

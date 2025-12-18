@@ -1,0 +1,16 @@
+---
+name: "blackduck-security-scan"
+github: &GH "jenkinsci/blackduck-security-scan-plugin"
+paths:
+- "io/jenkins/plugins/blackduck-security-scan"
+developers:
+- "zaman_akib"
+- "jahid1209"
+- "maksud_rahman"
+- "gouravjblackduck"
+- "ashahrior"
+- "lokeshbd"
+issues:
+  - github: *GH
+cd:
+  enabled: true

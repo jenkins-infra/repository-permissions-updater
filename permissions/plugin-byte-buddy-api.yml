@@ -1,0 +1,11 @@
+---
+name: "byte-buddy-api"
+github: &GH "jenkinsci/byte-buddy-api-plugin"
+paths:
+- "io/jenkins/plugins/byte-buddy-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -1,10 +1,10 @@
 ---
 name: "resource-disposer"
-github: "jenkinsci/resource-disposer-plugin"
+github: &gh "jenkinsci/resource-disposer-plugin"
 issues:
-  - jira: '22820'  # resource-disposer-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/resource-disposer"
 developers:
   - "basil"
-  - "olivergondza"
+  - "markewaite"

@@ -1,14 +1,14 @@
 ---
 name: "git-client"
-github: "jenkinsci/git-client-plugin"
+github: &gh "jenkinsci/git-client-plugin"
 issues:
-  - jira: '17423'  # git-client-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/git-client"
   - "org/jenkinsci/plugins/git-client"
+communityPluginMaintainers: false
 developers:
   - "markewaite"
-  - "mramonleon"
   - "olamy"
   - "rsandell"
 security:
