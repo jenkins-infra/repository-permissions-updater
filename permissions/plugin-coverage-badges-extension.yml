@@ -1,0 +1,11 @@
+---
+name: "coverage-badges-extension"
+github: &GH "jenkinsci/coverage-badges-extension-plugin"
+paths:
+- "io/jenkins/plugins/coverage-badges-extension"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -1,9 +1,11 @@
 ---
 name: "saferestart"
-github: "jenkinsci/saferestart-plugin"
+github: &gh "jenkinsci/saferestart-plugin"
 issues:
-  - jira: '16072'  # saferestart-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/saferestart"
 developers:
   - "markewaite"
+cd:
+  enabled: true

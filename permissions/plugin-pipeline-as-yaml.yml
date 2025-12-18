@@ -9,3 +9,6 @@ paths:
 developers:
   - "aytuncbeken"
   - "oleg_nenashev"
+  - "slide_o_mix"
+cd:
+  enabled: true

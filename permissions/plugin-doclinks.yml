@@ -7,5 +7,4 @@ issues:
 paths:
   - "org/jenkinsci/plugins/doclinks"
   - "org/jvnet/hudson/plugins/doclinks"
-developers:
-  - "ikedam"
+developers: []

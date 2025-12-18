@@ -6,9 +6,9 @@ issues:
 paths:
   - "io/jenkins/plugins/cloudbees-enabler"
 developers:
-  - "bitwiseman"
-  - "carroll"
-  - "dnusbaum"
-  - "jtaboada"
-  - "olamy"
-  - "vlatombe"
+  - "@cloudbees-developers"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

@@ -36,6 +36,7 @@ Each file contains the following in [YAML format](https://en.wikipedia.org/wiki/
 - A `name` (typically mirrored in the file name), this is also the `artifactId` of the Maven artifact.
 - A `github` field indicating the GitHub organization and repository which is expected to produce these artifacts.
 - A set of paths, usually just one. These correspond to the full Maven coordinates (`groupId` and `artifactId`) used for the artifact. Since Jenkins plugins can change group IDs and are still considered the same artifact, multiple entries are possible.
+- Optional `releaseBlocked` flag. When set to true, artifact(s) described in this file cannot be pushed to Artifactory. This is only used in rare circumstances, e.g., by the Jenkins security team if plugin code contains unreleased security issues.
 - A set of user names (Jenkins community user accounts in LDAP, the same as used for wiki and JIRA) allowed to upload this artifact to Artifactory. This set can be empty, which means nobody is currently allowed to upload the plugin in question (except Artifactory admins). This can happen for plugins that haven't seen releases in several years, or permission cleanups.
 
 Example file:
@@ -52,7 +53,7 @@ developers:
 
 * `p4` (lines 2 and 5): `artifactId`
 * `p4-plugin` (line 3): GitHub repository name
-* `org/jenkins-ci` (line 5): `groupId` (with slashes replacing periods)
+* `org/jenkins-ci/plugins` (line 5): `groupId` (with slashes replacing periods)
 * `p4paul` (line 7): Jenkins community account user name
 
 ### Adding a new plugin
@@ -80,11 +81,19 @@ A plugin can theoretically be replaced by a new one with a different ID, but thi
 If the plugin _hasn't_ been released yet, you can just rename and edit the existing permissions file, changing the `name` component.
 You may also edit the `github` component, if you wish to rename the repository.
 
-### Changing a plugin's `groupId`
+### Changing a plugin's `artifactId`
 
 Changing the `paths` or modifying the `<artifactId>` in the plugin `pom.xml` is highly discouraged.  
 Modifying the path will break any Maven dependencies from other plugins.
 Altering the `artifactId` means changing the identifier by which the Jenkins plugin manager differentiates one plugin from others, and will cause chaos for users who have already installed it under the old name.
+
+### Multiple plugins in single configuration file
+
+If multiple closely related plugins are located in the same GitHub repository, have the same maintainer and the same issue tracker, they can use a single configuration file.
+To define multiple plugins in a single file, please do the following:
+- Add an entry to `paths` that includes a `*` character, this path has to match the paths of all included plugins, but should not be too generic.
+- Add a new property `extraNames`, it should contain the list of names of all the plugins managed by this configuration file other than the main plugin defined by `name`.
+ All these names must start with the name of the main plugin, followed by `-`.
 
 Managing Continuous Delivery (JEP-229 CD)
 -----------------------------------------
@@ -98,12 +107,28 @@ cd:
   enabled: true
 ```
 
+For this to work, there needs to be at least one developers listed.
+If the list of developers is empty or missing entirely (e.g., after the last maintainer steps down), no new releases can be published through JEP-229 CD.
+
 **IMPORTANT:**
 When using JEP-229 CD, [every committer to your repository](https://www.jenkins.io/doc/developer/publishing/source-code-hosting/) can create new releases by merging pull requests.
 As a result, the list of maintainer accounts maintained in your plugin's YAML file is no longer the single reference on who can publish new releases.
 Be sure to check [which users have commit access](https://www.jenkins.io/doc/developer/publishing/source-code-hosting/) to your repository and remove any that are unexpected before enabling CD, as well as any unexpected [deploy keys](https://docs.github.com/en/developers/overview/managing-deploy-keys).
 Additionally, the users listed in this repository still serve as the contacts for security issues and plugin/component governance questions.
+For that reason, CD permissions are also only granted to components with at least one maintainer.
 In particular, the Jenkins security team will _not_ make an effort to reach out to GitHub committers when maintainers (and security contacts, see below) are unresponsive before [announcing vulnerabilities without a fix](https://www.jenkins.io/security/plugins/#unresolved).
+
+### Exclusively using JEP-229 CD
+
+By default, enabling JEP-229 CD enables it _exclusively;_ i.e., the listed users will not be able to create new releases, but they remain contacts for security issues and plugin/component governance questions.
+
+It is also possible to disable exclusive JEP-229 CD, in which case both users with commit access _and_ the listed users will be able to create new releases, with the listed users remaining contacts for security issues and plugin/component governance questions:
+
+```yaml
+cd:
+  enabled: true
+  exclusive: false
+```
 
 
 Managing Security Process
@@ -150,9 +175,11 @@ A complete example with two trackers:
 ```yaml
 issues:
   - github: 'jenkinsci/configuration-as-code-plugin' # The preferred issue tracker
-  - jira: 'configuration-as-code-plugin' # A secondary issue tracker is the Jira component 'configuration-as-code-plugin'
+  - jira: '23170' # A secondary issue tracker is the Jira component id 23170 for 'configuration-as-code-plugin'
     report: false # No new issues should be reported here
 ```
+
+Jira component id can be found at: https://issues.jenkins.io/rest/api/2/project/JENKINS/components
 
 When GitHub Issues is used, there would be some duplicated content in the file (between `github` and `issues` entries) which can be resolved by using a YAML reference.
 Example:
@@ -185,9 +212,20 @@ Further issue trackers are mostly provided as a reference, e.g. when listing exi
 Usage
 -----
 
-To see how to run this tool to synchronize Artifactory permission targets with the definitions in this repository, see `Jenkinsfile`.
+This tool provides a unified CLI with subcommands. See `Jenkinsfile` for the `sync` command and GitHub Actions workflows for hosting commands.
 
-The following Java system properties can be used to customize the tool's behavior:
+Available commands:
+```bash
+RPU_CLI="java -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar"
+
+$RPU_CLI sync
+$RPU_CLI check-hosting <issue-id>
+$RPU_CLI host <issue-id>
+```
+
+### Configuration
+
+The following Java system properties can be used to customize the behavior of the `sync` command:
 
 * `dryRun` - Set to `true` to generate the API payloads without submitting them. No modifications will be executed.
 * `development` - Set to `true` during tool development to ensure production data is not overridden. This will have the following effects:
@@ -206,7 +244,13 @@ The following Java system properties can be used to customize the tool's behavio
 * `jiraUserNamesJsonListUrl` - URL to a list containing known Jira user names of (potential) maintainers.
   This is essentially a workaround to reduce the number of individual user lookups via Jira API.
 
-It expected the following environment variables to be set:
+The following Java system properties can be used for the `check-hosting` command:
+
+* `debugHosting` - Set to `true` to enable debug mode.
+
+### Environment Variables
+
+The following environment variables are expected to be set:
 
 - `ARTIFACTORY_USERNAME` - Admin user name for Artifactory
 - `ARTIFACTORY_PASSWORD` - Corresponding admin password (or API key) for Artifactory admin user

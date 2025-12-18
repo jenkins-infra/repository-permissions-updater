@@ -1,15 +1,14 @@
 ---
 name: "pipeline-model-definition"
-github: "jenkinsci/pipeline-model-definition-plugin"
+github: &gh "jenkinsci/pipeline-model-definition-plugin"
 issues:
-  - jira: '21706'  # pipeline-model-definition-plugin
+  - github: *gh
 paths:
   - "org/jenkinsci/plugins/pipeline-model-definition"
 developers:
   - "abayer"
   - "oleg_nenashev"
   - "rsandell"
-  - "svanoort"
   - "bitwiseman"
   - "dnusbaum"
   - "carroll"

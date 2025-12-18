@@ -7,5 +7,6 @@ paths:
   - "io/jenkins/plugins/sideex"
 cd:
   enabled: true
+  exclusive: false
 developers:
   - "sideexteam"

@@ -1,8 +1,8 @@
 ---
 name: "ant"
-github: "jenkinsci/ant-plugin"
+github: &gh "jenkinsci/ant-plugin"
 issues:
-  - jira: '15488'  # ant-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/ant"
 cd:
@@ -11,6 +11,4 @@ developers:
   - "armfergom"
   - "jglick"
   - "fcojfernandez"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
+  - "markewaite"

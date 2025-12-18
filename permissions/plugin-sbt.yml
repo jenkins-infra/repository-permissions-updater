@@ -6,7 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/sbt"
   - "org/jvnet/hudson/plugins/sbt"
-developers: []
-#CD blocked for lack of maintainers
-#cd:
-#  enabled: true
+developers:
+  - "froque"
+cd:
+  enabled: true

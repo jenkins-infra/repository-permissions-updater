@@ -5,6 +5,7 @@ paths:
   - "io/jenkins/plugins/gitea-checks"
 developers:
   - "flozzone"
+  - "viceice"
 issues:
   - github: *GH
 cd:

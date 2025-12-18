@@ -7,6 +7,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/accurev"
 developers:
-  - "poojavishal"
-  - "abmohantyj"
+  - "anuragkiran"
   - "prattal"

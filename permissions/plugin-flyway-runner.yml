@@ -1,9 +1,12 @@
 ---
 name: "flyway-runner"
-github: "jenkinsci/flyway-runner-plugin"
+github: &GH "jenkinsci/flyway-runner-plugin"
 issues:
-  - jira: '21439'  # flyway-runner-plugin
+  - github: *GH
 paths:
   - "sp/sd/flyway-runner"
 developers:
   - "pskumar448"
+  - "jonesbusy"
+cd:
+  enabled: true

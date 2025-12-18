@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/publish-over-ssh"
   - "org/jvnet/hudson/plugins/publish-over-ssh"
+cd:
+  enabled: true
 developers:
   - "gmcdonald"
   - "olamy"

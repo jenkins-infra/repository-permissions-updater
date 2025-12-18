@@ -10,10 +10,11 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
     private final Severity severity;
     private HashSet<VerificationMessage> subItems;
 
-    public VerificationMessage(Severity severity, HashSet<VerificationMessage> subItems, String format, Object... args) {
+    public VerificationMessage(
+            Severity severity, HashSet<VerificationMessage> subItems, String format, Object... args) {
         this.severity = severity;
         this.subItems = subItems;
-        message = String.format(format, args);
+        message = format.formatted(args);
     }
 
     public VerificationMessage(Severity severity, String format, Object... args) {
@@ -27,9 +28,9 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
                 return left.size() - right.size();
             }
 
-            if(!left.containsAll(right)) {
+            if (!left.containsAll(right)) {
                 return -1;
-            } else if(!right.containsAll(left)) {
+            } else if (!right.containsAll(left)) {
                 return 1;
             }
             return 0;
@@ -43,8 +44,8 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
 
     @Override
     public boolean equals(Object other) {
-        if(other instanceof VerificationMessage) {
-            return compareTo((VerificationMessage)other) == 0;
+        if (other instanceof VerificationMessage verificationMessage) {
+            return compareTo(verificationMessage) == 0;
         }
         return false;
     }
@@ -52,10 +53,10 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
     @Override
     public int hashCode() {
         int hashCode = severity.hashCode();
-        if(message != null) {
+        if (message != null) {
             hashCode += message.hashCode();
         }
-        if(subItems != null) {
+        if (subItems != null) {
             hashCode += subItems.hashCode();
         }
         return hashCode;
@@ -98,7 +99,7 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
     }
 
     public Set<VerificationMessage> getSubItems() {
-        if(subItems == null) {
+        if (subItems == null) {
             subItems = new HashSet<>();
         }
         return Collections.unmodifiableSet(subItems);
@@ -106,6 +107,6 @@ public class VerificationMessage implements Comparable<VerificationMessage> {
 
     @Override
     public String toString() {
-        return String.format("%s: %s", severity.getMessage(), message);
+        return "%s: %s".formatted(severity.getMessage(), message);
     }
 }

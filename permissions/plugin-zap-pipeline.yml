@@ -5,6 +5,7 @@ issues:
   - github: *gh
 cd:
   enabled: true
+  exclusive: false
 paths:
   - "com/vrondakis/zap/zap-pipeline"
 developers:

@@ -7,3 +7,5 @@ paths:
   - "io/jenkins/plugins/git-forensics"
 developers:
   - "drulli"
+cd:
+  enabled: true

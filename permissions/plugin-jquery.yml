@@ -6,7 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/jquery"
 developers:
+  - "basil"
   - "kohsuke"
+  - "markewaite"
 security:
   contacts:
     jira: "cloudbees_security_members"

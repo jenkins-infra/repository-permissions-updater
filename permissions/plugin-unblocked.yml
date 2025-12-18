@@ -1,0 +1,11 @@
+---
+name: "unblocked"
+github: &GH "jenkinsci/unblocked-plugin"
+paths:
+- "io/jenkins/plugins/unblocked"
+developers:
+- "martin_ncs"
+issues:
+  - github: *GH
+cd:
+  enabled: true

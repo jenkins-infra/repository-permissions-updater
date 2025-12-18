@@ -7,6 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/multiple-scms"
 developers:
   - "elksson"
-  - "jglick"
   - "jimklimov"
   - "rodrigc"

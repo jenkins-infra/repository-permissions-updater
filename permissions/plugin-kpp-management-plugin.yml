@@ -6,6 +6,5 @@ issues:
 paths:
   - "sic/software/kpp-management-plugin"
 developers: []
-#CD blocked for lack of maintainers
-#cd:
-#  enabled: true
+cd:
+  enabled: true

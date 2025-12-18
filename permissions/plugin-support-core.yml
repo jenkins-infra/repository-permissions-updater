@@ -1,8 +1,8 @@
 ---
 name: "support-core"
-github: "jenkinsci/support-core-plugin"
+github: &gh "jenkinsci/support-core-plugin"
 issues:
-  - jira: '18146'  # support-core-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/support-core"
 developers:
@@ -14,7 +14,6 @@ developers:
   - "escoem"
   - "dnusbaum"
   - "egutierrez"
-  - "mramonleon"
   - "allan_burdajewicz"
 security:
   contacts:

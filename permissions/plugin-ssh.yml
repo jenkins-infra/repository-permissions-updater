@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/ssh"
   - "org/jvnet/hudson/plugins/ssh"
+cd:
+  enabled: true
 developers:
   - "edmund_wagner"
   - "ljader"

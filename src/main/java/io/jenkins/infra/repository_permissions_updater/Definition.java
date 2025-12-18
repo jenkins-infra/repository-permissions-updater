@@ -1,7 +1,6 @@
 package io.jenkins.infra.repository_permissions_updater;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -10,6 +9,7 @@ public class Definition {
 
     public static class CD {
         public boolean enabled;
+        public boolean exclusive = true;
     }
 
     public static class Security {
@@ -27,10 +27,6 @@ public class Definition {
      * Some invalid input may result in both returning {@code false}, in that case other methods will throw exceptions.
      */
     public static class IssueTracker {
-        public interface JiraComponentSource {
-            String getComponentId(String componentName);
-        }
-
         private static final Logger LOGGER = Logger.getLogger(IssueTracker.class.getName());
 
         public String jira;
@@ -45,6 +41,9 @@ public class Definition {
                 LOGGER.log(Level.INFO, "Unexpected Jira component name, skipping: " + jira);
                 return false;
             }
+
+            assertJiraIdFormatValid();
+
             return true;
         }
 
@@ -52,33 +51,25 @@ public class Definition {
             if (github == null) {
                 return false;
             }
-            if (!github.startsWith("jenkinsci/")) {
+            if (!(github.startsWith("jenkinsci/") || github.startsWith("jenkins-infra/"))) {
                 LOGGER.log(Level.INFO, "Unexpected GitHub repo for issue tracker, skipping: " + jira);
                 return false;
             }
             return true;
         }
 
-        private String loadComponentId(JiraComponentSource source) {
-            String jiraComponentId = jira;
+        @SuppressFBWarnings(
+                value = "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+                justification = "All calls are guarded by jira null check in isJira()")
+        private void assertJiraIdFormatValid() {
             if (!jira.matches("[0-9]+")) {
-                // CreateIssueDetails needs the numeric Jira component ID
-                jiraComponentId = source.getComponentId(jira);
-                if (jiraComponentId == null) {
-                    LOGGER.warning("Failed to determine Jira component ID for '" + jira + "', the component may not exist");
-                    return null;
-                }
+                throw new IllegalArgumentException("Jira component ID must be numeric, but got: " + jira);
             }
-            return jiraComponentId;
         }
 
-        public String getViewUrl(JiraComponentSource source) {
+        public String getViewUrl() {
             if (isJira()) {
-                final String id = loadComponentId(source);
-                if (id != null) {
-                    return "https://issues.jenkins.io/issues/?jql=component=" + id;
-                }
-                return null;
+                return "https://issues.jenkins.io/issues/?jql=component=" + jira;
             }
             if (isGitHubIssues()) {
                 return "https://github.com/" + github + "/issues";
@@ -86,19 +77,16 @@ public class Definition {
             throw new IllegalStateException("Invalid issue tracker: " + github + " / " + jira);
         }
 
-        public String getReportUrl(JiraComponentSource source) {
+        public String getReportUrl(String pluginId) {
             if (!report) {
                 return null;
             }
             if (isJira()) {
-                final String id = loadComponentId(source);
-                if (id != null) {
-                    return "https://www.jenkins.io/participate/report-issue/redirect/#" + id;
-                }
-                return null;
+                return "https://www.jenkins.io/participate/report-issue/redirect/#" + jira + "/" + pluginId;
             }
             if (isGitHubIssues()) {
-                return "https://github.com/" + github + "/issues/new/choose"; // The 'choose' URL works even when there are no issue templates
+                return "https://github.com/" + github
+                        + "/issues/new/choose"; // The 'choose' URL works even when there are no issue templates
             }
             throw new IllegalStateException("Invalid issue tracker: " + github + " / " + jira);
         }
@@ -133,6 +121,9 @@ public class Definition {
     private String[] paths = new String[0];
     private String[] developers = new String[0];
     private IssueTracker[] issues = new IssueTracker[0];
+    private String[] extraNames = new String[0];
+    private boolean releaseBlocked;
+    private boolean communityPluginMaintainers;
 
     private String github;
 
@@ -163,6 +154,14 @@ public class Definition {
         this.paths = paths.clone();
     }
 
+    public void setExtraNames(String[] extraNames) {
+        this.extraNames = extraNames.clone();
+    }
+
+    public String[] getExtraNames() {
+        return extraNames.clone();
+    }
+
     public IssueTracker[] getIssues() {
         return issues.clone();
     }
@@ -187,8 +186,24 @@ public class Definition {
         this.security = security;
     }
 
+    public boolean isReleaseBlocked() {
+        return releaseBlocked;
+    }
+
+    public void setReleaseBlocked(boolean releaseBlocked) {
+        this.releaseBlocked = releaseBlocked;
+    }
+
+    public boolean isCommunityPluginMaintainers() {
+        return communityPluginMaintainers;
+    }
+
+    public void setCommunityPluginMaintainers(boolean communityPluginMaintainers) {
+        this.communityPluginMaintainers = communityPluginMaintainers;
+    }
+
     public String getGithub() {
-        if (github != null && github.startsWith("jenkinsci/")) {
+        if (github != null && (github.startsWith("jenkinsci/") || github.startsWith("jenkins-infra/"))) {
             return github;
         }
         return null;

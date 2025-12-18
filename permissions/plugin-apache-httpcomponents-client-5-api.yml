@@ -7,3 +7,8 @@ developers:
 - "strangelookingnerd"
 issues:
   - github: *GH
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

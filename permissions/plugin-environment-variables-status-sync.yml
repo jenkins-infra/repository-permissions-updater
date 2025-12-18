@@ -1,0 +1,9 @@
+---
+name: "environment-variables-status-sync"
+github: &GH "jenkinsci/environment-variables-status-sync-plugin"
+paths:
+- "io/jenkins/plugins/environment-variables-status-sync"
+developers:
+- "thomson_519"
+issues:
+  - jira: 29521

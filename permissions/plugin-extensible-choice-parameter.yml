@@ -1,9 +1,11 @@
 ---
 name: "extensible-choice-parameter"
-github: "jenkinsci/extensible-choice-parameter-plugin"
+github: &gh "jenkinsci/extensible-choice-parameter-plugin"
 issues:
-  - jira: '17512'  # extensible-choice-parameter-plugin
+  - github: *gh
 paths:
   - "jp/ikedam/jenkins/plugins/extensible-choice-parameter"
+cd:
+  enabled: true
 developers:
-  - "ikedam"
+  - "markewaite"

@@ -5,6 +5,7 @@ paths:
   - "org/jenkins-ci/plugins/build-history-metrics-plugin"
 developers:
   - "mcgin"
+  - "jonesbusy"
 issues:
   - github: *GH
 cd:

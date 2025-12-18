@@ -10,7 +10,6 @@ cd:
   enabled: true
 developers:
   - "svenschoenung"
-  - "jglick"
   - "@cloudbees-developers"
 security:
   contacts:

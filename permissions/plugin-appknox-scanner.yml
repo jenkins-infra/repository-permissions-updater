@@ -1,0 +1,9 @@
+---
+name: "appknox-scanner"
+github: &GH "jenkinsci/appknox-scanner-plugin"
+paths:
+- "io/jenkins/plugins/appknox-scanner"
+developers:
+- "ginilpg"
+issues:
+  - github: *GH

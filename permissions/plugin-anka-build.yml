@@ -6,8 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/anka-build"
 developers:
-  - "asafgurveertu"
-  - "nivkeidan"
+  - "norsegaud"
+  - "arturmelanchyk"
 security:
   contacts:
-    jira: "nivkeidan"
+    jira: "arturmelanchyk"

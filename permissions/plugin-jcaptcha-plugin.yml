@@ -5,4 +5,7 @@ issues:
   - jira: '15861'  # jcaptcha-plugin
 paths:
   - "org/jenkins-ci/plugins/jcaptcha-plugin"
-developers: []
+developers:
+  - "jonesbusy"
+cd:
+  enabled: true

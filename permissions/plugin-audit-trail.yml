@@ -7,7 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/audit-trail"
 developers:
   - "cleclerc"
-  - "olivergondza"
   - "tsek"
   - "pierrebtz"
 cd:

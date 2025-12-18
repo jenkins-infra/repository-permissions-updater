@@ -12,7 +12,6 @@ developers:
   - "abayer"
   - "dnusbaum"
   - "rsandell"
-  - "svanoort"
 security:
   contacts:
     jira: "cloudbees_security_members"

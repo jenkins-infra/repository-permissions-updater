@@ -1,0 +1,11 @@
+---
+name: "ctrf-json"
+github: &GH "jenkinsci/ctrf-json-plugin"
+paths:
+- "io/jenkins/plugins/ctrf-json"
+developers:
+- "ma11hewthomas"
+issues:
+  - github: *GH
+cd:
+  enabled: true

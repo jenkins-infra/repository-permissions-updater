@@ -1,9 +1,14 @@
 ---
 name: "inline-pipeline"
-github: "jenkinsci/inline-pipeline-plugin"
+github: &GH "jenkinsci/inline-pipeline-plugin"
 issues:
   - jira: '24824'  # inline-pipeline-plugin
+    report: false
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/inline-pipeline"
 developers:
-  - "danielbeck"
+  - "@security"
+cd:
+  enabled: true
+communityPluginMaintainers: false

@@ -1,0 +1,9 @@
+---
+name: "black-duck-sigma"
+github: &GH "jenkinsci/black-duck-sigma-plugin"
+paths:
+- "io/jenkins/plugins/black-duck-sigma"
+developers:
+- "sboyd"
+issues:
+  - github: *GH

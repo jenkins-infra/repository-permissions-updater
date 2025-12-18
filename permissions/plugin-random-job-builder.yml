@@ -5,5 +5,4 @@ issues:
   - jira: '18832'  # random-job-builder-plugin
 paths:
   - "org/jenkins-ci/plugins/random-job-builder"
-developers:
-  - "svanoort"
+developers: []

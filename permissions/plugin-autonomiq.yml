@@ -3,6 +3,7 @@ name: "autonomiq"
 github: "jenkinsci/autonomiq-plugin"
 cd:
   enabled: true
+  exclusive: false
 paths:
   - "io/jenkins/plugins/autonomiq"
 developers:

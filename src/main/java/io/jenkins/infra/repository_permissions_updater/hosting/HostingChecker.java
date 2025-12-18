@@ -1,5 +1,8 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_SLUG;
+import static java.util.regex.Pattern.CASE_INSENSITIVE;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -18,20 +21,12 @@ import org.kohsuke.github.GitHub;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static io.jenkins.infra.repository_permissions_updater.hosting.HostingConfig.HOSTING_REPO_SLUG;
-import static java.util.regex.Pattern.CASE_INSENSITIVE;
-
 public class HostingChecker {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HostingChecker.class);
 
-    public static final String INVALID_FORK_FROM = "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
-
-    public static final Version LOWEST_JENKINS_VERSION = new Version(2, 387, 3);
-
-    public static void main(String[] args) throws IOException {
-        new HostingChecker().checkRequest(Integer.parseInt(args[0]));
-    }
+    public static final String INVALID_FORK_FROM =
+            "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
     public void checkRequest(int issueID) throws IOException {
         boolean hasBuildSystem = false;
@@ -40,18 +35,21 @@ public class HostingChecker {
         boolean debug = System.getProperty("debugHosting", "false").equalsIgnoreCase("true");
 
         ArrayList<Triplet<String, Verifier, ConditionChecker>> verifications = new ArrayList<>();
-        verifications.add(Triplet.with("Jira", new HostingFieldVerifier(), null));
+        verifications.add(Triplet.with("Request", new HostingFieldVerifier(), null));
         verifications.add(Triplet.with("GitHub", new GitHubVerifier(), null));
         verifications.add(Triplet.with("Maven", new MavenVerifier(), new FileExistsConditionChecker("pom.xml")));
         verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
+        verifications.add(Triplet.with("Jelly", new JellyVerifier(), null));
+        verifications.add(Triplet.with("RequiredFiles", new RequiredFilesVerifier(), null));
 
         final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
         for (Triplet<String, Verifier, ConditionChecker> verifier : verifications) {
             try {
-                boolean runIt = verifier.getValue2() == null || verifier.getValue2().checkCondition(hostingRequest);
+                boolean runIt =
+                        verifier.getValue2() == null || verifier.getValue2().checkCondition(hostingRequest);
                 if (runIt) {
-                    LOGGER.info("Running verification '" + verifier.getValue0() + "'");
+                    LOGGER.info("Running verification '{}'", verifier.getValue0());
                     verifier.getValue1().verify(hostingRequest, hostingIssues);
                 }
 
@@ -59,7 +57,7 @@ public class HostingChecker {
                     hasBuildSystem |= ((BuildSystemVerifier) verifier.getValue1()).hasBuildFile(hostingRequest);
                 }
             } catch (Exception e) {
-                LOGGER.error("Error running verification '" + verifier.getValue0(), e);
+                LOGGER.error("Error running verification {}", verifier.getValue0(), e);
             }
         }
 
@@ -67,7 +65,7 @@ public class HostingChecker {
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "No pom.xml detected."));
         }
 
-        LOGGER.info("Done checking hosting for " + issueID + ", found " + hostingIssues.size() + " issues");
+        LOGGER.info("Done checking hosting for {}, found {} issues", issueID, hostingIssues.size());
 
         StringBuilder msg = new StringBuilder("Hello from your friendly Jenkins Hosting Checker\n\n");
         LOGGER.info("Checking if there were errors");
@@ -78,18 +76,19 @@ public class HostingChecker {
                     + "or Info are just recommendations and will not stall the hosting process.\n");
             LOGGER.info("Appending issues to msg");
             appendIssues(msg, hostingIssues, 1);
-            msg.append("\nYou can re-trigger a check by editing your hosting request or by commenting `/hosting re-check`");
+            msg.append(
+                    "\nYou can re-trigger a check by editing your hosting request or by commenting `/hosting re-check`");
         } else {
             msg.append("It looks like you have everything in order for your hosting request. "
-                    + "A member of the [Jenkins hosting team](https://www.jenkins.io/project/teams/hosting/#members-of-the-hosting-team) "
-                    + "will check over things that I am not able to check"
-                    + "(code review, README content, etc) and process the request as quickly as possible. "
-                    + "Thank you for your patience.\n")
+                            + "A member of the [Jenkins hosting team](https://www.jenkins.io/project/teams/hosting/#members-of-the-hosting-team) "
+                            + "will check over things that I am not able to check"
+                            + "(code review, README content, etc) and process the request as quickly as possible. "
+                            + "Thank you for your patience.\n")
                     .append("\nHosting team members can host this request with `/hosting host`");
         }
 
-        LOGGER.info(msg.toString());
         if (!debug) {
+            LOGGER.info(msg.toString());
             GitHub github = GitHub.connect();
             GHIssue issue = github.getRepository(HOSTING_REPO_SLUG).getIssue(issueID);
             issue.comment(msg.toString());
@@ -102,17 +101,22 @@ public class HostingChecker {
                 issue.addLabels("hosting-request", "needs-fix");
             }
         } else {
-            LOGGER.info("Here are the results of the checking:");
-            LOGGER.info(msg.toString());
+            LOGGER.info("Here are the results of the checking: {}", msg.toString());
         }
     }
 
     private void appendIssues(StringBuilder msg, Set<VerificationMessage> issues, int level) {
-        for (VerificationMessage issue : issues.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList())) {
+        for (VerificationMessage issue :
+                issues.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList())) {
             if (level == 1) {
-                msg.append(String.format("%s %s %s: %s%n", StringUtils.repeat("*", level), issue.getSeverity().getColor(), issue.getSeverity().getMessage(), issue.getMessage()));
+                msg.append("%s %s %s: %s%n"
+                        .formatted(
+                                StringUtils.repeat("*", level),
+                                issue.getSeverity().getColor(),
+                                issue.getSeverity().getMessage(),
+                                issue.getMessage()));
             } else {
-                msg.append(String.format("%s %s%n", StringUtils.repeat("*", level), issue.getMessage()));
+                msg.append("%s %s%n".formatted(StringUtils.repeat("*", level), issue.getMessage()));
             }
 
             if (issue.getSubItems() != null) {
@@ -126,7 +130,8 @@ public class HostingChecker {
         GitHub github = GitHub.connect();
         String forkFrom = issue.getRepositoryUrl();
         if (StringUtils.isNotBlank(forkFrom)) {
-            Matcher m = Pattern.compile("https://github\\.com/(\\S+)/(\\S+)", CASE_INSENSITIVE).matcher(forkFrom);
+            Matcher m = Pattern.compile("https://github\\.com/(\\S+)/(\\S+)", CASE_INSENSITIVE)
+                    .matcher(forkFrom);
             if (m.matches()) {
                 String owner = m.group(1);
                 String repoName = m.group(2);

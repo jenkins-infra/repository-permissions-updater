@@ -5,7 +5,6 @@ paths:
   - "org/jenkins-ci/ui/jenkins-js-libs"
 developers:
   - "batmat"
-  - "mramonleon"
   - "rsandell"
 security:
   contacts:

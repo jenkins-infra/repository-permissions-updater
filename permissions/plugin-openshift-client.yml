@@ -9,6 +9,6 @@ developers:
   - "@openshift-developers"
 security:
   contacts:
-    jira: "coreydaley"
+    jira: "prdhamdh"
 cd:
   enabled: true

@@ -9,3 +9,4 @@ developers:
   - "mat1e"
 cd:
   enabled: true
+  exclusive: false

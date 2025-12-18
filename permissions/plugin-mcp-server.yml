@@ -1,0 +1,15 @@
+---
+name: "mcp-server"
+github: &GH "jenkinsci/mcp-server-plugin"
+paths:
+- "io/jenkins/plugins/mcp-server"
+developers:
+- "topikachu"
+- "olamy"
+issues:
+  - github: *GH
+cd:
+  enabled: true
+security:
+  contacts:
+    jira: "cloudbees_security_members"

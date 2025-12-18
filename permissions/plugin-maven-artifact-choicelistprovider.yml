@@ -6,5 +6,7 @@ issues:
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/maven-artifact-choicelistprovider"
+cd:
+  enabled: true
 developers:
   - "phreakadelle"

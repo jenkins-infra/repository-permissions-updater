@@ -1,22 +1,22 @@
 ---
 name: "workflow-job"
-github: "jenkinsci/workflow-job-plugin"
+github: &gh "jenkinsci/workflow-job-plugin"
 issues:
-  - jira: '21716'  # workflow-job-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/workflow/workflow-job"
 developers:
   - "jglick"
   - "kohsuke"
   - "abayer"
-  - "svanoort"
-  - "dnusbaum"
   - "rsandell"
+  - "dnusbaum"
   - "carroll"
   - "bitwiseman"
   - "kshultz"
   - "jtaboada"
   - "olamy"
+  - "timja"
 security:
   contacts:
     jira: "cloudbees_security_members"

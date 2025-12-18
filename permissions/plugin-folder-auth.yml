@@ -5,6 +5,8 @@ issues:
   - jira: '25627'  # folder-auth-plugin
 paths:
   - "io/jenkins/plugins/folder-auth"
+cd:
+  enabled: true
 developers:
   - "abhyudaya"
   - "oleg_nenashev"

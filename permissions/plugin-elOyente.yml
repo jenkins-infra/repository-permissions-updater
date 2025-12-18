@@ -3,8 +3,9 @@ name: "elOyente"
 github: "jenkinsci/eloyente-plugin"
 issues:
   - jira: '17504'  # eloyente-plugin
+# Block creation of new releases. If you want to release the plugin, contact
+# the Jenkins security team about SECURITY-2739
+releaseBlocked: true
 paths:
-  # Block creation of new releases. If you want to release the plugin, contact
-  # the Jenkins security team about SECURITY-2739
-  - "com/technicolor/elOyente-releaseblocker"
+  - "com/technicolor/elOyente"
 developers: []

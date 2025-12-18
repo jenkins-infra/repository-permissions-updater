@@ -1,0 +1,9 @@
+---
+name: "zerothreat-dast-scanner"
+github: &GH "jenkinsci/zerothreat-dast-scanner-plugin"
+paths:
+- "io/jenkins/plugins/zerothreat-dast-scanner"
+developers:
+- "ajayojha"
+issues:
+  - github: *GH

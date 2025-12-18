@@ -1,0 +1,11 @@
+---
+name: "flatpickr-api"
+github: &GH "jenkinsci/flatpickr-api-plugin"
+paths:
+- "io/jenkins/plugins/flatpickr-api"
+developers:
+- "mawinter69"
+issues:
+  - github: *GH
+cd:
+  enabled: true

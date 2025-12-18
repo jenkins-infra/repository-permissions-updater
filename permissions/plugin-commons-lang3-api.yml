@@ -6,6 +6,7 @@ paths:
 developers:
   - "nhojpatrick"
   - "timja"
+  - "markewaite"
 issues:
   - github: *GH
 cd:

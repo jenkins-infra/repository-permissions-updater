@@ -3,9 +3,10 @@ name: "autocomplete-parameter"
 github: &GH "jenkinsci/autocomplete-parameter-plugin"
 issues:
   - github: *GH
-paths:
 # Block creation of new releases. If you want to release the plugin, contact the Jenkins security team about SECURITY-3157
-  - "org/jenkins-ci/plugins/autocomplete-parameter-releaseblock"
+releaseBlocked: true
+paths:
+  - "org/jenkins-ci/plugins/autocomplete-parameter"
 developers:
   - "taksan"
   - "takeuchi"

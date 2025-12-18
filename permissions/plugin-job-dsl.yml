@@ -1,10 +1,10 @@
 ---
 name: "job-dsl"
-github: "jenkinsci/job-dsl-plugin"
+github: &gh "jenkinsci/job-dsl-plugin"
 issues:
-  - jira: '16720'  # job-dsl-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/job-dsl"
 developers:
-  - "daspilker"
-  - "jamietanna"
+  - "basil"
+  - "markewaite"

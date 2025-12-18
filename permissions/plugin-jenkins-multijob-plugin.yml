@@ -1,6 +1,6 @@
 ---
 name: "jenkins-multijob-plugin"
-github: &gh "jenkinsci/tikal-multijob-plugin"
+github: &gh "jenkinsci/jenkins-multijob-plugin"
 issues:
   - jira: '16545'  # multijob-plugin
   - github: *gh
@@ -10,5 +10,6 @@ developers:
   - "hagzag"
   - "yorammi"
   - "cohencil"
+  - "victor_yousician"
 cd:
   enabled: true

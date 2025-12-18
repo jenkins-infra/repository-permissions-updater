@@ -7,6 +7,5 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/envfile"
 developers: []
-#CD blocked for lack of maintainers
-#cd:
-#  enabled: true
+cd:
+  enabled: true

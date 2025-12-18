@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core">
+  <script id="theme-manager-theme" type="application/json">{ "id": "myid" }</script>
+</j:jelly>

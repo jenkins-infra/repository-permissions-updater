@@ -7,3 +7,5 @@ paths:
   - "io/jenkins/plugins/coverage"
 developers:
   - "drulli"
+cd:
+  enabled: true

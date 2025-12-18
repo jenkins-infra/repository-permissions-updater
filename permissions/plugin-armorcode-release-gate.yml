@@ -1,0 +1,12 @@
+---
+name: "armorcode-release-gate"
+github: &GH "jenkinsci/armorcode-release-gate-plugin"
+paths:
+- "io/jenkins/plugins/armorcode-release-gate"
+developers:
+- "deepanshurawat"
+- "mayankpruthi"
+cd:
+  enabled: true
+issues:
+  - jira: 29820

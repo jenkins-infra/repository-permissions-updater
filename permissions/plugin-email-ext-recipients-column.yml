@@ -1,8 +1,8 @@
 ---
 name: "email-ext-recipients-column"
-github: "jenkinsci/email-ext-recipients-column-plugin"
+github: &gh "jenkinsci/email-ext-recipients-column-plugin"
 issues:
-  - jira: '17617'  # email-ext-recipients-column-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/email-ext-recipients-column"
 developers:
