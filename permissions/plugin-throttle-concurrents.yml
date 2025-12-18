@@ -1,8 +1,8 @@
 ---
 name: "throttle-concurrents"
-github: "jenkinsci/throttle-concurrent-builds-plugin"
+github: &gh "jenkinsci/throttle-concurrent-builds-plugin"
 issues:
-  - jira: '15745'  # throttle-concurrent-builds-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/throttle-concurrents"
   - "org/jvnet/hudson/plugins/throttle-concurrents"
