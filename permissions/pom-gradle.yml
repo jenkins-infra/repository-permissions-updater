@@ -12,3 +12,5 @@ developers:
   - "sflorea"
   - "welandaz"
   - "atual"
+cd:
+  enabled: true
