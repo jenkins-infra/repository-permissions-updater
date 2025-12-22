@@ -73,5 +73,5 @@ jobs:
               owner,
               repo,
               issue_number: context.issue.number,
-              body: `@${context.actor} you are not permitted to run this command. The hosting team hosts the repository, once it's ready.`,
+              body: `@${context.actor} only the hosting team can use this command to hosts the repository, once it's ready.`,
             });
