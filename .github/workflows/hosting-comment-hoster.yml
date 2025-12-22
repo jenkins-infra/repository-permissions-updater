@@ -50,3 +50,28 @@ jobs:
           GITHUB_OAUTH: ${{ secrets.HOSTING_PAT }}
           JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+  hosting-denied:
+    runs-on: ubuntu-latest
+    needs: [validate]
+    if: needs.validate.outputs.actor_in_hosting_team != 'true'
+    steps:
+      - name: React `-1` and post denial comment
+        uses: actions/github-script@v8
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.issue;
+            const comment_id = context.payload.comment.id;
+            github.rest.reactions.createForIssueComment({
+              owner,
+              repo,
+              comment_id,
+              content: '-1',
+            });
+
+            github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: context.issue.number,
+              body: `@${context.actor} you are not permitted to run this command. The hosting team hosts the repository, once it's ready.`,
+            });
