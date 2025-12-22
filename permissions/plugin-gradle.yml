@@ -7,14 +7,12 @@ paths:
   - "com/zenika/jenkins-ci/plugins/gradle"
   - "org/jenkins-ci/plugins/gradle"
 developers:
-  - "gbois"
   - "wolfs"
   - "avenderov"
   - "facewindu"
   - "guylabs"
   - "sflorea"
   - "welandaz"
-  - "atual"
 security:
   contacts:
     jira: "cloudbees_security_members"
