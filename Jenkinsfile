@@ -1,3 +1,5 @@
+@Library('pipeline-library@pull/974/head') _
+
 def props = [
         buildDiscarder(logRotator(numToKeepStr: '10'))
 ]
@@ -88,7 +90,7 @@ node('maven-21 || (java&&linux)') {
                 archiveArtifacts 'json/*.json'
                 if (infra.isTrusted()) {
                     dir('json') {
-                        publishReports ([ 'issues.index.json', 'maintainers.index.json', 'github.index.json' ])
+                        publishReports ([ 'issues.index.json', 'maintainers.index.json', 'github.index.json' ], [useWorkloadIdentity: true])
                     }
                 }
             }
