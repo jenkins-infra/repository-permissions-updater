@@ -1,8 +1,8 @@
 ---
 name: "postgresql-api"
-github: "jenkinsci/postgresql-api-plugin"
+github: &gh "jenkinsci/postgresql-api-plugin"
 issues:
-  - jira: '25426'  # postgresql-api-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/postgresql-api"
 developers:
