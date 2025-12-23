@@ -498,7 +498,8 @@ public class MavenVerifier implements BuildSystemVerifier {
 
     private void checkProperties(Model model, HashSet<VerificationMessage> hostingIssues) {
         Properties props = model.getProperties();
-        List<String> illegalProps = Arrays.asList("java.level", "maven.compiler.source", "maven.compiler.target");
+        List<String> illegalProps =
+                Arrays.asList("java.level", "maven.compiler.source", "maven.compiler.target", "maven.compiler.release");
         illegalProps.forEach(p -> {
             if (props.containsKey(p)) {
                 hostingIssues.add(new VerificationMessage(
