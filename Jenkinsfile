@@ -88,7 +88,7 @@ node('maven-21 || (java&&linux)') {
                 archiveArtifacts 'json/*.json'
                 if (infra.isTrusted()) {
                     dir('json') {
-                        publishReports ([ 'issues.index.json', 'maintainers.index.json', 'github.index.json' ])
+                        publishReports ([ 'issues.index.json', 'maintainers.index.json', 'github.index.json' ], [useWorkloadIdentity: true])
                     }
                 }
             }
