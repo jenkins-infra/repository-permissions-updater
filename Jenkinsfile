@@ -1,5 +1,3 @@
-@Library('pipeline-library@pull/974/head') _
-
 def props = [
         buildDiscarder(logRotator(numToKeepStr: '10'))
 ]
