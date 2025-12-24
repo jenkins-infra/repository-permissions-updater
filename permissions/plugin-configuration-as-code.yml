@@ -16,5 +16,3 @@ cd:
   enabled: true
 issues:
   - github: *GH
-  - jira: 23170  # configuration-as-code-plugin
-    report: false

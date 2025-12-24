@@ -1,8 +1,8 @@
 ---
 name: "database-mysql"
-github: "jenkinsci/database-mysql-plugin"
+github: &gh "jenkinsci/database-mysql-plugin"
 issues:
-  - jira: '17550'  # database-mysql-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/database-mysql"
 developers:
