@@ -1,8 +1,8 @@
 ---
 name: "build-pipeline-plugin"
-github: "jenkinsci/build-pipeline-plugin"
+github: &gh "jenkinsci/build-pipeline-plugin"
 issues:
-  - jira: '15962'  # build-pipeline-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/build-pipeline-plugin"
 developers:
