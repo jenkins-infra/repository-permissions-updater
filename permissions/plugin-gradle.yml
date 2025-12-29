@@ -13,8 +13,5 @@ developers:
   - "guylabs"
   - "sflorea"
   - "welandaz"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
 cd:
   enabled: true
