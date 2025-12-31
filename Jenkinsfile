@@ -27,69 +27,65 @@ props += pipelineTriggers(triggers)
 
 properties(props)
 
-// Temporary until maven-21 agents are available on trusted.ci
-node('maven-21 || (java&&linux)') {
-    // Temporary until maven-21 agents are available on trusted.ci
-    withEnv(['JAVA_HOME=/opt/jdk-21','PATH+JDK21=/opt/jdk-21/bin']) {
-        try {
-            stage ('Clean') {
-                deleteDir()
-                sh 'ls -lah'
-            }
+node('maven-25 ') {
+    try {
+        stage('Clean') {
+            deleteDir()
+            sh 'ls -lah'
+        }
 
-            stage ('Checkout') {
-                checkout scm
-            }
+        stage('Checkout') {
+            checkout scm
+        }
 
-            stage ('Build') {
-                sh "mvn -U -B -ntp clean verify"
-            }
+        stage('Build') {
+            sh "mvn -U -B -ntp clean verify"
+        }
 
-            stage ('Run') {
-                def javaArgs = ' -DdefinitionsDir=$PWD/permissions' +
-                            ' -DartifactoryApiTempDir=$PWD/json' +
-                            ' -DartifactoryUserNamesJsonListUrl=https://reports.jenkins.io/artifactory-ldap-users-report.json' +
-                            ' -Djava.util.logging.SimpleFormatter.format="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n"' +
-                            ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar' +
-                            ' sync'
+        stage('Run') {
+            def javaArgs = ' -DdefinitionsDir=$PWD/permissions' +
+                    ' -DartifactoryApiTempDir=$PWD/json' +
+                    ' -DartifactoryUserNamesJsonListUrl=https://reports.jenkins.io/artifactory-ldap-users-report.json' +
+                    ' -Djava.util.logging.SimpleFormatter.format="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n"' +
+                    ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar' +
+                    ' sync'
 
 
-                if (dryRun) {
-                    try {
-                      sh 'java -DdryRun=true' + javaArgs
-                    } catch(ignored) {
-                        if (fileExists('checks-title.txt')) {
-                            def title = readFile file: 'checks-title.txt', encoding: 'utf-8'
-                            def summary = readFile file:'checks-details.txt', encoding:  'utf-8'
-                            publishChecks conclusion: 'ACTION_REQUIRED',
-                                    name: 'Validation',
+            if (dryRun) {
+                try {
+                    sh 'java -DdryRun=true' + javaArgs
+                } catch (ignored) {
+                    if (fileExists('checks-title.txt')) {
+                        def title = readFile file: 'checks-title.txt', encoding: 'utf-8'
+                        def summary = readFile file: 'checks-details.txt', encoding: 'utf-8'
+                        publishChecks conclusion: 'ACTION_REQUIRED',
+                                name: 'Validation',
                                 summary: summary,
                                 title: title
-                        }
-                        throw ignored
                     }
-                    publishChecks conclusion: 'SUCCESS',
-                            name: 'Validation',
-                            title: 'All checks passed'
-                } else {
-                    withCredentials([
-                            string(credentialsId: 'artifactoryAdminToken', variable: 'ARTIFACTORY_TOKEN'),
-                            usernamePassword(credentialsId: 'jenkins-infra-bot-github-token', passwordVariable: 'GITHUB_TOKEN', usernameVariable: 'GITHUB_USERNAME')
-                    ]) {
-                        retry(conditions: [agent(), nonresumable()], count: 2) {
-                            sh 'java ' + javaArgs
-                        }
+                    throw ignored
+                }
+                publishChecks conclusion: 'SUCCESS',
+                        name: 'Validation',
+                        title: 'All checks passed'
+            } else {
+                withCredentials([
+                        string(credentialsId: 'artifactoryAdminToken', variable: 'ARTIFACTORY_TOKEN'),
+                        usernamePassword(credentialsId: 'jenkins-infra-bot-github-token', passwordVariable: 'GITHUB_TOKEN', usernameVariable: 'GITHUB_USERNAME')
+                ]) {
+                    retry(conditions: [agent(), nonresumable()], count: 2) {
+                        sh 'java ' + javaArgs
                     }
                 }
             }
-        } finally {
-            stage ('Archive') {
-                archiveArtifacts 'permissions/*.yml'
-                archiveArtifacts 'json/*.json'
-                if (infra.isTrusted()) {
-                    dir('json') {
-                        publishReports ([ 'issues.index.json', 'maintainers.index.json', 'github.index.json' ], [useWorkloadIdentity: true])
-                    }
+        }
+    } finally {
+        stage('Archive') {
+            archiveArtifacts 'permissions/*.yml'
+            archiveArtifacts 'json/*.json'
+            if (infra.isTrusted()) {
+                dir('json') {
+                    publishReports(['issues.index.json', 'maintainers.index.json', 'github.index.json'], [useWorkloadIdentity: true])
                 }
             }
         }
