@@ -12,6 +12,11 @@ This repository contains both the definitions for Artifactory upload permissions
 
 **Note:** These permissions are specifically for _uploading_ artifacts to the Jenkins project's Maven repository. It is independent of GitHub repository permissions. You may have one without the other. Typically, you'll either have both, or just the GitHub repository access.
 
+Prerequisites
+-------------
+
+This project requires **Java 21 or newer** to build locally. If an older Java version is used, the build will fail early due to enforced version checks.
+
 Requesting Permissions
 ----------------------
 
