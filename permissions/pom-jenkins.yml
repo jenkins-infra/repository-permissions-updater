@@ -3,5 +3,7 @@ name: "jenkins"
 github: "jenkinsci/pom"
 paths:
   - "org/jenkins-ci/jenkins"
+cd:
+  enabled: true
 developers:
   - "@core"
