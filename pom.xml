@@ -25,7 +25,7 @@
     <main.class>io.jenkins.infra.repository_permissions_updater.cli.RepositoryPermissionsUpdaterCLI</main.class>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>25</maven.compiler.release>
-    <maven.version>3.9.11</maven.version>
+    <maven.version>3.9.12</maven.version>
     <plexus.interpolation.version>1.29</plexus.interpolation.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
