@@ -1,8 +1,8 @@
 ---
 name: "jquery3-api"
-github: "jenkinsci/jquery3-api-plugin"
+github: &gh "jenkinsci/jquery3-api-plugin"
 issues:
-  - jira: '26329'  # jquery3-api-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/jquery3-api"
 developers:
