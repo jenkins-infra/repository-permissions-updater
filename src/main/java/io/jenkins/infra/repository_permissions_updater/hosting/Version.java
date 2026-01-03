@@ -1,146 +1,107 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
-import java.util.NoSuchElementException;
-import java.util.StringTokenizer;
+public record Version(int major, String suffix) implements Comparable<Version> {
 
-public class Version implements Comparable {
+    public static final Version EMPTY = new Version(0);
 
-    private final int major;
-    private final int minor;
-    private final int micro;
-    private static final String SEPARATOR = ".";
-
-    public static final Version EMPTY = new Version(0, 0, 0);
-
-    public Version(int major, int minor, int micro) {
-        this.major = major;
-        this.minor = minor;
-        this.micro = micro;
-        validate();
-    }
-
-    public Version(int major) {
-        this(major, -1, -1);
-    }
-
-    public Version(int major, int minor) {
-        this(major, minor, -1);
-    }
-
-    public Version(String version) {
-        int major;
-        int minor = -1;
-        int micro = -1;
-
-        try {
-            StringTokenizer st = new StringTokenizer(version, SEPARATOR, true);
-            major = Integer.parseInt(st.nextToken());
-
-            if (st.hasMoreTokens()) {
-                st.nextToken(); // consume delimiter
-                minor = Integer.parseInt(st.nextToken());
-
-                if (st.hasMoreTokens()) {
-                    st.nextToken(); // consume delimiter
-                    micro = Integer.parseInt(st.nextToken());
-
-                    if (st.hasMoreTokens()) {
-                        throw new IllegalArgumentException("invalid format");
-                    }
-                }
-            }
-        } catch (NoSuchElementException e) {
-            throw new IllegalArgumentException("invalid format");
-        }
-
-        this.major = major;
-        this.minor = minor;
-        this.micro = micro;
-        validate();
-    }
-
-    private void validate() {
+    public Version {
         if (major < 0) {
             throw new IllegalArgumentException("negative major");
         }
-
-        if (minor < 0 && micro >= 0) {
-            throw new IllegalArgumentException("negative minor with micro provided");
+        if (suffix != null && suffix.isEmpty()) {
+            suffix = null;
         }
+    }
+
+    public Version(int major) {
+        this(major, (String) null);
+    }
+
+    public Version(int major, int minor) {
+        this(major, Integer.toString(minor));
+    }
+
+    public Version(int major, int minor, int micro) {
+        this(major, minor + "." + micro);
+    }
+
+    public Version(String version) {
+        if (version == null) {
+            throw new IllegalArgumentException("version is null");
+        }
+        String v = version.trim();
+        if (v.isEmpty()) {
+            throw new IllegalArgumentException("version is empty");
+        }
+        int dot = v.indexOf('.');
+        int parsedMajor;
+        String parsedSuffix;
+        if (dot < 0) {
+            parsedMajor = Integer.parseInt(v);
+            parsedSuffix = null;
+        } else {
+            parsedMajor = Integer.parseInt(v.substring(0, dot));
+            String rest = v.substring(dot + 1);
+            if (rest.isEmpty()) {
+                parsedSuffix = null;
+            } else {
+                parsedSuffix = rest;
+            }
+        }
+        this(parsedMajor, parsedSuffix);
     }
 
     public static Version parse(String version) {
         if (version == null) {
             return EMPTY;
         }
-
-        version = version.trim();
-        if (version.length() == 0) {
+        String v = version.trim();
+        if (v.isEmpty()) {
             return EMPTY;
         }
-
-        return new Version(version);
+        return new Version(v);
     }
 
-    public int getMajor() {
-        return major;
-    }
-
-    public int getMinor() {
-        return Math.max(minor, 0);
-    }
-
-    public int getMicro() {
-        return Math.max(micro, 0);
-    }
-
+    @Override
     public String toString() {
-        if (major >= 0 && minor >= 0 && micro < 0) {
-            return major + SEPARATOR + minor;
-        } else if (major >= 0 && minor < 0) {
-            return "" + major;
-        }
-        return major + SEPARATOR + minor + SEPARATOR + micro;
+        return suffix == null ? Integer.toString(major) : major + "." + suffix;
     }
 
-    public int hashCode() {
-        return (major << 24) + (minor << 16) + (micro << 8);
-    }
-
-    public boolean equals(Object object) {
-        if (object == this) {
-            return true;
-        }
-
-        if (!(object instanceof Version)) {
-            return false;
-        }
-
-        Version other = (Version) object;
-        return (major == other.major) && (minor == other.minor) && (micro == other.micro);
-    }
-
-    public int compareTo(Object object) {
-        if (object == this) {
+    @Override
+    public int compareTo(Version other) {
+        if (other == this) {
             return 0;
         }
-
-        int localMinor = Math.max(minor, 0);
-        int localMicro = Math.max(micro, 0);
-
-        Version other = (Version) object;
-
-        int result = major - other.major;
-        if (result != 0) {
-            return result;
+        int r = Integer.compare(this.major, other.major);
+        if (r != 0) {
+            return r;
         }
-
-        result = localMinor - other.getMinor();
-        if (result != 0) {
-            return result;
+        if (this.suffix == null && other.suffix == null) {
+            return 0;
         }
+        if (this.suffix == null) {
+            return -1;
+        }
+        if (other.suffix == null) {
+            return 1;
+        }
+        return compareSuffix(this.suffix, other.suffix);
+    }
 
-        result = localMicro - other.getMicro();
-        return result;
+    private static int compareSuffix(String a, String b) {
+        Integer na = parseIntOrNull(a);
+        Integer nb = parseIntOrNull(b);
+        if (na != null && nb != null) {
+            return Integer.compare(na, nb);
+        }
+        return a.compareTo(b);
+    }
+
+    private static Integer parseIntOrNull(String s) {
+        try {
+            return Integer.parseInt(s);
+        } catch (NumberFormatException e) {
+            return null;
+        }
     }
 }
