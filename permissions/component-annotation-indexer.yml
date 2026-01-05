@@ -5,3 +5,5 @@ paths:
   - "org/jenkins-ci/annotation-indexer"
 developers:
   - "@core"
+cd:
+  enabled: true
