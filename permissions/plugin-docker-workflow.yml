@@ -15,6 +15,3 @@ developers:
   - "carroll"
   - "rsandell"
   - "jpochat"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
