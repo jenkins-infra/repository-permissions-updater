@@ -7,7 +7,7 @@ developers:
   - "basil"
   - "markewaite"
 issues:
-  - jira: 28835
+  - github: *GH
 security:
   contacts:
     jira: "cloudbees_security_members"
