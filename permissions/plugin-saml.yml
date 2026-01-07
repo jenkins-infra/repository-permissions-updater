@@ -10,7 +10,6 @@ developers:
   - "chengas123"
   - "mdonohue"
   - "sbower"
-  - "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"
