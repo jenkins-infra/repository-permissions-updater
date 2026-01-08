@@ -15,6 +15,7 @@ developers:
   - "dnusbaum"
   - "egutierrez"
   - "allan_burdajewicz"
+  - "@cloudbees-developers"
 security:
   contacts:
     jira: "cloudbees_security_members"
