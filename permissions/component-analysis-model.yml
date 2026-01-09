@@ -1,6 +1,8 @@
 ---
 name: "analysis-model"
-github: "jenkinsci/analysis-model"
+github: &gh "jenkinsci/analysis-model"
+issues:
+  - github: *gh
 paths:
   - "edu/hm/hafner/analysis-model"
 developers:
