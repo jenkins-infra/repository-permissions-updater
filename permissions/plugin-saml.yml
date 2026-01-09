@@ -1,8 +1,8 @@
 ---
 name: "saml"
-github: "jenkinsci/saml-plugin"
+github: &gh "jenkinsci/saml-plugin"
 issues:
-  - jira: '20321'  # saml-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/saml"
 developers:
