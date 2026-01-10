@@ -7,4 +7,4 @@ developers:
 - "basil"
 - "markewaite"
 issues:
-  - jira: 29424
+  - github: *GH

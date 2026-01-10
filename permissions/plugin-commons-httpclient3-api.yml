@@ -6,4 +6,4 @@ paths:
 developers:
   - "markewaite"
 issues:
-  - jira: 29120
+  - github: *GH

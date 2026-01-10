@@ -10,7 +10,7 @@ developers:
 - "markewaite"
 - "@cloudbees-developers"
 issues:
-  - jira: 29732
+  - github: *GH
 security:
   contacts:
     jira: "cloudbees_security_members"
