@@ -522,6 +522,13 @@ public class MavenVerifier implements BuildSystemVerifier {
                             "Please define the property `hpi.strictBundledArtifacts` and set it to `true`. This should help prevent accidental library bundling when adding and updating dependencies."
                                     + "See [Bundling third-party libraries](https://www.jenkins.io/doc/developer/plugin-development/dependencies-and-class-loading/#bundling-third-party-libraries)."));
         }
+        if (!props.containsKey("ban-commons-lang-2.skip")
+                || !props.getProperty("ban-commons-lang-2.skip").equals("false")) {
+            hostingIssues.add(new VerificationMessage(
+                    VerificationMessage.Severity.REQUIRED,
+                    "Please define the property `ban-commons-lang-2.skips` and set it to `false`. This should help prevent accidental usage of the deprecated commons-lang-2 library that is "
+                            + "included in core."));
+        }
     }
 
     private void checkDependencies(Model model, HashSet<VerificationMessage> hostingIssues) {
