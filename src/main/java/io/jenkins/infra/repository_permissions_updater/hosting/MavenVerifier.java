@@ -526,7 +526,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                 || !props.getProperty("ban-commons-lang-2.skip").equals("false")) {
             hostingIssues.add(new VerificationMessage(
                     VerificationMessage.Severity.REQUIRED,
-                    "Please define the property `ban-commons-lang-2.skips` and set it to `false`. This should help prevent accidental usage of the deprecated commons-lang-2 library that is "
+                    "Please define the property `ban-commons-lang-2.skip` and set it to `false`. This should help prevent accidental usage of the deprecated commons-lang-2 library that is "
                             + "included in core."));
         }
     }
