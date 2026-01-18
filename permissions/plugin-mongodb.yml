@@ -5,4 +5,5 @@ issues:
   - jira: '16007'  # mongodb-plugin
 paths:
   - "org/jenkins-ci/plugins/mongodb"
-developers: []
+developers:
+  - "markewaite"
