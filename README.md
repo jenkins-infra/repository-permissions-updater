@@ -190,6 +190,21 @@ issues:
   - github: *GH # Use the reference
 ```
 
+### Migrating from Jira to GitHub issue trackers
+
+Send a pull request to this repository removing the Jira reference and changing it to GitHub.
+
+A maintainer / Jenkins infra team member will then be able to perform the migration on your behalf.
+
+A script is provided to automate the required file change and open a draft pull request:
+
+```
+./bin/migrate-to-github.sh permissions/plugin-slack.yml
+
+# Multiple files can be done at once:
+./bin/migrate-to-github.sh permissions/plugin-slack.yml permissions/plugin-dark-theme.yml 
+```
+
 ### Consuming Issue Trackers
 
 A file `issues.index.json` is generated when the tool is executed, containing a map from component names to a list of issue trackers.
