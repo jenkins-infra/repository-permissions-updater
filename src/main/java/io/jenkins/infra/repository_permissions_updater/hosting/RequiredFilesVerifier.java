@@ -210,7 +210,7 @@ public class RequiredFilesVerifier implements Verifier {
         } catch (GHFileNotFoundException e) {
             hostingIssues.add(new VerificationMessage(
                     VerificationMessage.Severity.REQUIRED,
-                    "Missing file `.mvn/config`. This file is required when CD is enabled. "
+                    "Missing file `.mvn/maven.config`. This file is required when CD is enabled. "
                             + "Download [maven.config](https://raw.githubusercontent.com/jenkinsci/archetypes/refs/heads/master/common-files/.mvn/maven.config) "
                             + "and add the line: `" + expected.replaceAll("%", "%%") + "`"));
         }
