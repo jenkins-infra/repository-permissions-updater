@@ -1,0 +1,7 @@
+---
+name: "swarm-agents-cloud"
+github: "jenkinsci/swarm-agents-cloud-plugin"
+paths:
+- "io/jenkins/plugins/swarm-agents-cloud"
+developers:
+- "aronmav"
