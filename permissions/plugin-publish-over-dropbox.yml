@@ -7,3 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/publish-over-dropbox"
 developers:
   - "rcgroot"
+  - "panicking"
+cd:
+  enabled: true
