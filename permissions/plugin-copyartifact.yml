@@ -1,8 +1,8 @@
 ---
 name: "copyartifact"
-github: "jenkinsci/copyartifact-plugin"
+github: &gh "jenkinsci/copyartifact-plugin"
 issues:
-  - jira: '15692'  # copyartifact-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/copyartifact"
   - "org/jvnet/hudson/plugins/copyartifact"
