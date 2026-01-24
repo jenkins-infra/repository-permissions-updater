@@ -1,8 +1,8 @@
 ---
 name: "cmakebuilder"
-github: "jenkinsci/cmakebuilder-plugin"
+github: &gh "jenkinsci/cmakebuilder-plugin"
 issues:
-  - jira: '15966'  # cmakebuilder-plugin
+  - github: *gh
 paths:
   - "hudson/plugins/cmake/cmakebuilder"
   - "org/jenkins-ci/plugins/cmakebuilder"
