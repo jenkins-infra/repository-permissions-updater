@@ -1,0 +1,7 @@
+---
+name: "build-env-search"
+github: "jenkinsci/build-env-search-plugin"
+paths:
+  - "io/jenkins/plugins/build-env-search"
+developers:
+  - "elevne"
