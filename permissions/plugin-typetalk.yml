@@ -10,3 +10,5 @@ cd:
 developers:
   - "ikikko"
   - "yasuyuki_baba"
+deprecated: true
+reason: "The Typetalk service was terminated in December 2025. This plugin is no longer functional and is no longer maintained."
