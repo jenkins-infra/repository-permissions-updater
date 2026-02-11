@@ -4,5 +4,6 @@ paths:
   - "org/jenkins-ci/plugins/job-dsl-ast"
 developers:
   - "basil"
-  - "daspilker"
-  - "jamietanna"
+  - "markewaite"
+cd:
+  enabled: true

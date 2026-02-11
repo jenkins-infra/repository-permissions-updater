@@ -5,4 +5,6 @@ paths:
   - "org/jenkinsci/plugins/job-dsl-core"
 developers:
   - "basil"
-  - "jamietanna"
+  - "markewaite"
+cd:
+  enabled: true
