@@ -5,6 +5,10 @@ issues:
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/job-dsl"
+  - "org/jenkins-ci/plugins/job-dsl-ast"
+  - "org/jenkins-ci/plugins/job-dsl-parent"
+  - "org/jenkins-ci/plugins/job-dsl-core"
+  - "org/jenkinsci/plugins/job-dsl-core"
 developers:
   - "basil"
   - "markewaite"
