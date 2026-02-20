@@ -1,8 +1,8 @@
 ---
 name: "figlet-buildstep"
-github: "jenkinsci/figlet-buildstep-plugin"
+github: &gh "jenkinsci/figlet-buildstep-plugin"
 issues:
-  - jira: '18758'  # figlet-buildstep-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/figlet-buildstep"
 developers:

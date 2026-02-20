@@ -1,8 +1,8 @@
 ---
 name: "change-assembly-version-plugin"
-github: "jenkinsci/change-assembly-version-plugin"
+github: &gh "jenkinsci/change-assembly-version-plugin"
 issues:
-  - jira: '19020'  # change-assembly-version-plugin
+  - github: *gh
 paths:
   - "org/jenkinsci/plugins/change-assembly-version-plugin"
 developers:
