@@ -1,0 +1,11 @@
+---
+name: "entra-oauth"
+github: &GH "jenkinsci/entra-oauth-plugin"
+paths:
+- "io/jenkins/plugins/entra-oauth"
+developers:
+- "slide_o_mix"
+issues:
+  - github: *GH
+cd:
+  enabled: true
