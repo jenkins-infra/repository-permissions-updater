@@ -1,6 +1,7 @@
 ---
 name: "authorize-project"
 github: "jenkinsci/authorize-project-plugin"
+# Plugin adoption - andreahlert
 issues:
   - jira: '18155'  # authorize-project-plugin
 paths:
