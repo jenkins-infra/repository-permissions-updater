@@ -1,0 +1,11 @@
+---
+name: "explain-error"
+github: &GH "jenkinsci/explain-error-plugin"
+paths:
+- "io/jenkins/plugins/explain-error"
+developers:
+- "xianpeng"
+issues:
+  - github: *GH
+cd:
+  enabled: true

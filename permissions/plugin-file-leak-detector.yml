@@ -7,5 +7,4 @@ paths:
   - "com/cloudbees/jenkins/plugins/file-leak-detector"
 developers:
   - "basil"
-  - "jglick"
   - "dnusbaum"

@@ -1,8 +1,8 @@
 ---
 name: "build-timestamp"
-github: "jenkinsci/build-timestamp-plugin"
+github: &gh "jenkinsci/build-timestamp-plugin"
 issues:
-  - jira: '21120'  # build-timestamp-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/build-timestamp"
 developers:

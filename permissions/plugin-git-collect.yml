@@ -1,0 +1,11 @@
+---
+name: "git-collect"
+github: &GH "jenkinsci/git-collect-plugin"
+paths:
+- "io/jenkins/plugins/git-collect"
+developers:
+- "panicking"
+issues:
+  - github: *GH
+cd:
+  enabled: true

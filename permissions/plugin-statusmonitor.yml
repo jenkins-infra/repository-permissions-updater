@@ -1,8 +1,8 @@
 ---
 name: "statusmonitor"
-github: "jenkinsci/statusmonitor-plugin"
+github: &gh "jenkinsci/statusmonitor-plugin"
 issues:
-  - jira: '15617'  # statusmonitor-plugin
+  - github: *gh
 paths:
   - "org/jvnet/hudson/plugins/statusmonitor"
   - "io/jenkins/plugins/statusmonitor"
@@ -10,4 +10,3 @@ developers:
   - "mawinter69"
 cd:
   enabled: true
-  exclusive: false

@@ -5,3 +5,5 @@ paths:
   - "org/jenkins-ci/jenkins"
 developers:
   - "@core"
+cd:
+  enabled: true

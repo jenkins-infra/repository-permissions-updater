@@ -1,0 +1,11 @@
+---
+name: "oidc-backchannel-logout"
+github: &GH "jenkinsci/oidc-backchannel-logout-plugin"
+paths:
+- "io/jenkins/plugins/oidc-backchannel-logout"
+developers:
+- "omidiyanto"
+issues:
+  - github: *GH
+cd:
+  enabled: true

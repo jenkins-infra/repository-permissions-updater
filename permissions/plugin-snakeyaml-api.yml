@@ -2,7 +2,6 @@
 name: "snakeyaml-api"
 github: &gh "jenkinsci/snakeyaml-api-plugin"
 issues:
-  - jira: '27125'  # snakeyaml-plugin
   - github: *gh
 paths:
   - "io/jenkins/plugins/snakeyaml-api"

@@ -1,8 +1,8 @@
 ---
 name: "role-strategy"
-github: "jenkinsci/role-strategy-plugin"
+github: &gh "jenkinsci/role-strategy-plugin"
 issues:
-  - jira: '15758'  # role-strategy-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/role-strategy"
   - "org/jvnet/hudson/plugins/role-strategy"

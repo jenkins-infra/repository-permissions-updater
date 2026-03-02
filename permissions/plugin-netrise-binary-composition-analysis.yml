@@ -1,0 +1,9 @@
+---
+name: "netrise-binary-composition-analysis"
+github: &GH "jenkinsci/netrise-binary-composition-analysis-plugin"
+paths:
+- "io/jenkins/plugins/netrise-binary-composition-analysis"
+developers:
+- "afeddersen"
+issues:
+  - jira: 29729

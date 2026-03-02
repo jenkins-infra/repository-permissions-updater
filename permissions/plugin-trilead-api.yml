@@ -1,13 +1,14 @@
 ---
 name: "trilead-api"
-github: "jenkinsci/trilead-api-plugin"
+github: &gh "jenkinsci/trilead-api-plugin"
 issues:
-  - jira: '22324'  # trilead-api-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/trilead-api"
 developers:
   - "mc1arke"
-  - "ifernandezcalvo"
+  - "markewaite"
+  - "olamy"
 security:
   contacts:
     jira: "cloudbees_security_members"

@@ -1,8 +1,8 @@
 ---
 name: "ignore-committer-strategy"
-github: "jenkinsci/ignore-committer-strategy-plugin"
+github: &gh "jenkinsci/ignore-committer-strategy-plugin"
 issues:
-  - jira: '23428'
+  - github: *gh
 paths:
   - "au/com/versent/jenkins/plugins/ignore-committer-strategy"
 cd:

@@ -1,0 +1,11 @@
+---
+name: "gitlab-checks"
+github: &GH "jenkinsci/gitlab-checks-plugin"
+paths:
+- "io/jenkins/plugins/gitlab-checks"
+developers:
+- "novakov"
+issues:
+  - github: *GH
+cd:
+  enabled: true

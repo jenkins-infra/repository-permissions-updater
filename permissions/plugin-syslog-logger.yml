@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/syslog-logger"
 developers:
   - "cleclerc"
+  - "mpokornyetm"

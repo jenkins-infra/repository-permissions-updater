@@ -4,8 +4,10 @@ github: &gh "jenkinsci/allure-plugin"
 issues:
   - github: *gh
   - jira: '18926'  # allure-plugin
+    report: false
 paths:
   - "ru/yandex/qatools/allure/allure-jenkins-plugin"
+  - "org/allurereport/jenkins"
 developers:
   - "eroshenkoam"
-  - "pupssman"
+  - "baev"

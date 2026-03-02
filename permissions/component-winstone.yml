@@ -3,5 +3,7 @@ name: "winstone"
 github: "jenkinsci/winstone"
 paths:
   - "org/jenkins-ci/winstone"
+cd:
+  enabled: true
 developers:
   - "@core"

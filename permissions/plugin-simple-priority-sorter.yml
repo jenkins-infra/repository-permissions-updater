@@ -1,0 +1,11 @@
+---
+name: "simple-priority-sorter"
+github: &GH "jenkinsci/simple-priority-sorter-plugin"
+paths:
+- "io/jenkins/plugins/simple-priority-sorter"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -1,8 +1,8 @@
 ---
 name: "database-postgresql"
-github: "jenkinsci/database-postgresql-plugin"
+github: &gh "jenkinsci/database-postgresql-plugin"
 issues:
-  - jira: '17471'  # database-postgresql-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/database-postgresql"
 developers:

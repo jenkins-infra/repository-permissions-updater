@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/bitbucket-filter-project-trait"
 developers:
   - "michelzanini"
+cd:
+  enabled: true

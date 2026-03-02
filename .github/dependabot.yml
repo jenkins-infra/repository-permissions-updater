@@ -10,9 +10,6 @@ updates:
       - dependency-name: "com.atlassian.plugins:atlassian-plugins-core"
       - dependency-name: "ch.qos.logback:logback-classic"
       - dependency-name: "org.springframework:spring-beans"
-      # Starting with 6.x, Spring requires Java 17 at a minimum.
-      - dependency-name: "org.springframework:spring-core"
-        versions: [">=6.0.0"]
   - package-ecosystem: github-actions
     directory: /
     schedule:

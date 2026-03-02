@@ -1,9 +1,14 @@
 ---
 name: "coverage"
-github: "jenkinsci/coverage-plugin"
+github: &gh "jenkinsci/coverage-plugin"
 issues:
-  - jira: '29223'  # coverage-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/coverage"
 developers:
   - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

@@ -1,7 +1,11 @@
 ---
 name: "analysis-pom"
-github: "jenkinsci/analysis-pom-plugin"
+github: &gh "jenkinsci/analysis-pom-plugin"
+issues:
+  - github: *gh
 paths:
   - "org/jvnet/hudson/plugins/analysis-pom"
 developers:
   - "drulli"
+cd:
+  enabled: true

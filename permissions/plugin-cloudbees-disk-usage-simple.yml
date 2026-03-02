@@ -1,8 +1,8 @@
 ---
 name: "cloudbees-disk-usage-simple"
-github: "jenkinsci/cloudbees-disk-usage-simple-plugin"
+github: &gh "jenkinsci/cloudbees-disk-usage-simple-plugin"
 issues:
-  - jira: '20652'  # cloudbees-disk-usage-simple-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/cloudbees-disk-usage-simple"
 developers:
@@ -10,5 +10,6 @@ developers:
   - "recena"
   - "ydubreuil"
   - "pierrebtz"
+  - "markewaite"
 cd:
   enabled: true

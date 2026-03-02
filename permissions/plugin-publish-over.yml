@@ -5,3 +5,5 @@ paths:
   - "org/jenkins-ci/plugins/publish-over"
 developers:
   - "gmcdonald"
+cd:
+  enabled: true

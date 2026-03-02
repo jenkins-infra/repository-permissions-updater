@@ -1,12 +1,14 @@
 ---
 name: "prism-api"
-github: &GH "jenkinsci/prism-api-plugin"
+github: &gh "jenkinsci/prism-api-plugin"
 paths:
   - "io/jenkins/plugins/prism-api"
 developers:
   - "drulli"
 issues:
-  - jira: 28824
+  - github: *gh
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true

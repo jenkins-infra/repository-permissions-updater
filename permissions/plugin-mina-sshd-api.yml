@@ -14,7 +14,7 @@ developers:
   - "jglick"
   - "allan_burdajewicz"
 issues:
-  - jira: 28925
+  - github: *GH
 security:
   contacts:
     jira: "cloudbees_security_members"

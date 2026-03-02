@@ -1,0 +1,11 @@
+---
+name: "emergency-stop-pipelines"
+github: &GH "jenkinsci/emergency-stop-pipelines-plugin"
+paths:
+- "io/jenkins/plugins/emergency-stop-pipelines"
+developers:
+- "nikos445"
+issues:
+  - github: *GH
+cd:
+  enabled: true

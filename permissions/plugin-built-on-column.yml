@@ -1,8 +1,8 @@
 ---
 name: "built-on-column"
-github: "jenkinsci/built-on-column-plugin"
+github: &gh "jenkinsci/built-on-column-plugin"
 issues:
-  - jira: '16001'  # built-on-column-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/built-on-column"
 developers:

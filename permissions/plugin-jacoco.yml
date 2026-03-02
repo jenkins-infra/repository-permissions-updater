@@ -9,6 +9,3 @@ developers:
   - "centic"
   - "ognjenb"
   - "drulli"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

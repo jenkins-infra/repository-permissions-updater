@@ -8,6 +8,7 @@ paths:
 developers:
   - "basil"
   - "kohsuke"
+  - "markewaite"
 security:
   contacts:
     jira: "cloudbees_security_members"

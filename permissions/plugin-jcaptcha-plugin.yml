@@ -1,8 +1,8 @@
 ---
 name: "jcaptcha-plugin"
-github: "jenkinsci/jcaptcha-plugin"
+github: &GH "jenkinsci/jcaptcha-plugin"
 issues:
-  - jira: '15861'  # jcaptcha-plugin
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/jcaptcha-plugin"
 developers:

@@ -1,0 +1,11 @@
+---
+name: "vigilnz-security"
+github: &GH "jenkinsci/vigilnz-security-plugin"
+paths:
+- "io/jenkins/plugins/vigilnz-security"
+developers:
+- "Susenthiran"
+issues:
+  - github: *GH
+cd:
+  enabled: true

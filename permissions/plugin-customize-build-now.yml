@@ -1,12 +1,11 @@
 ---
 name: "customize-build-now"
-github: "jenkinsci/customize-build-now-plugin"
+github: &gh "jenkinsci/customize-build-now-plugin"
 issues:
-  - jira: '20026'  # customize-build-now-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/customize-build-now"
 developers:
-  - "jglick"
   - "uday"
   - "mawinter69"
 cd:
