@@ -9,3 +9,6 @@ developers:
   - "chrissy25"
   - "michallaskowski"
   - "froque"
+cd:
+  enabled: true
+

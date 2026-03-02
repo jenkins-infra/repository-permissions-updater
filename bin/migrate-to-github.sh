@@ -162,7 +162,7 @@ if [ ${#processed[@]} -gt 0 ]; then
     fi
 
     git checkout master
-    git pull
+    git pull --no-rebase
     git checkout -b "$branch_name"
     
     # Add all processed files

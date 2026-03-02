@@ -1,8 +1,8 @@
 ---
 name: "update-sites-manager"
-github: "jenkinsci/update-sites-manager-plugin"
+github: &gh "jenkinsci/update-sites-manager-plugin"
 issues:
-  - jira: '17576'  # update-sites-manager-plugin
+  - github: *gh
 paths:
   - "jp/ikedam/jenkins/plugins/update-sites-manager"
 developers:
