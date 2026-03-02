@@ -5,4 +5,6 @@ issues:
   - jira: '18155'  # authorize-project-plugin
 paths:
   - "org/jenkins-ci/plugins/authorize-project"
+cd:
+  enabled: true
 developers: []
