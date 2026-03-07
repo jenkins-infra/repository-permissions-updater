@@ -1,0 +1,11 @@
+---
+name: "ompass-2fa"
+github: &GH "jenkinsci/ompass-2fa-plugin"
+paths:
+- "io/jenkins/plugins/ompass-2fa"
+developers:
+- "oms"
+issues:
+  - github: *GH
+cd:
+  enabled: true
