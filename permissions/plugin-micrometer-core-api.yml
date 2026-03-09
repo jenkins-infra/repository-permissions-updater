@@ -1,0 +1,11 @@
+---
+name: "micrometer-core-api"
+github: &GH "jenkinsci/micrometer-core-api-plugin"
+paths:
+- "io/jenkins/plugins/micrometer-core-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true
