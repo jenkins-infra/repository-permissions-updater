@@ -8,3 +8,4 @@ paths:
   - "org/jenkins-ci/plugins/github-autostatus"
 developers:
   - "jeffpearce"
+  - "jimklimov"
