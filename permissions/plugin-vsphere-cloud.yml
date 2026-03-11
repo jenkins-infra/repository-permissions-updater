@@ -5,5 +5,7 @@ issues:
   - jira: '16104'  # vsphere-cloud-plugin
 paths:
   - "org/jenkins-ci/plugins/vsphere-cloud"
+cd:
+  enabled: true
 developers:
   - "jimklimov"
