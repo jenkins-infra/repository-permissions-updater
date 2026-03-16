@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/antisamy-markup-formatter"
 developers:
-  - "jglick"
   - "schristou"
   - "batmat"
   - "egutierrez"
