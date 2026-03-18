@@ -1,0 +1,11 @@
+---
+name: "chinese-workday"
+github: &GH "jenkinsci/chinese-workday-plugin"
+paths:
+- "io/jenkins/plugins/chinese-workday"
+developers:
+- "donhui"
+issues:
+  - github: *GH
+cd:
+  enabled: true
