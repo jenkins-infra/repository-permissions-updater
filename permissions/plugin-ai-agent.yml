@@ -1,0 +1,11 @@
+---
+name: "ai-agent"
+github: &GH "jenkinsci/ai-agent-plugin"
+paths:
+- "io/jenkins/plugins/ai-agent"
+developers:
+- "bvolpato"
+issues:
+  - github: *GH
+cd:
+  enabled: true
