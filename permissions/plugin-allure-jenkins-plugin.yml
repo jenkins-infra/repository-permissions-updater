@@ -11,3 +11,5 @@ paths:
 developers:
   - "eroshenkoam"
   - "baev"
+cd:
+  enabled: true
