@@ -1,8 +1,8 @@
 ---
 name: "chucknorris"
-github: "jenkinsci/chucknorris-plugin"
+github: &gh "jenkinsci/chucknorris-plugin"
 issues:
-  - jira: '15956'  # chucknorris-plugin
+  - github: *gh
 paths:
   - "org/jvnet/hudson/plugins/chucknorris"
 developers:
