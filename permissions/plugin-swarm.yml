@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/swarm"
   - "org/jvnet/hudson/plugins/swarm"
+cd:
+  enabled: true
 developers:
   - "basil"
   - "mindjiver"
