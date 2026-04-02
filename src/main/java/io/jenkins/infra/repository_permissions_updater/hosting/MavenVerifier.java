@@ -457,8 +457,22 @@ public class MavenVerifier implements BuildSystemVerifier {
                                         + " See [here](https://www.jenkins.io/doc/developer/plugin-development/dependency-management/#jenkins-plugin-bom) for details."));
             }
             if (bom.isPresent()) {
+                Properties props = model.getProperties();
+                RegexBasedInterpolator interpolator = new RegexBasedInterpolator();
+                interpolator.addValueSource(new MapBasedValueSource(props));
+
                 Dependency dep = bom.get();
-                if (latestReleasedBom != null && !latestReleasedBom.equals(dep.getVersion())) {
+                String version = dep.getVersion();
+                try {
+                    version = interpolator.interpolate(version);
+                } catch (Exception e) {
+                    LOGGER.error("Error interpolating bom version", e);
+                    dependencyManagementIssues.add(new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "There was an error trying to interpolate the bom version `%s`. Please make sure that all properties used in the version are defined and can be interpolated correctly.",
+                            dep.getVersion()));
+                }
+                if (latestReleasedBom != null && !latestReleasedBom.equals(version)) {
                     dependencyManagementIssues.add(new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
                             "The bom version `%s` of `%s` should be updated to the latest version `%s`",
