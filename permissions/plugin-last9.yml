@@ -1,0 +1,9 @@
+---
+name: "last9"
+github: "last9/last9-jenkins-plugin"
+issues:
+  - github: "last9/last9-jenkins-plugin"
+paths:
+  - "io/last9/jenkins/plugins/last9"
+developers:
+  - "prathamesh_sonpatki"
