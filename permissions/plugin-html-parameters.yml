@@ -1,0 +1,11 @@
+---
+name: "html-parameters"
+github: &GH "jenkinsci/html-parameters-plugin"
+paths:
+- "io/jenkins/plugins/html-parameters"
+developers:
+- "ivankovalenko73"
+issues:
+  - github: *GH
+cd:
+  enabled: true
