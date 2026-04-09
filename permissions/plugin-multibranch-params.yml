@@ -1,0 +1,11 @@
+---
+name: "multibranch-params"
+github: &GH "jenkinsci/multibranch-params-plugin"
+paths:
+- "io/jenkins/plugins/multibranch-params"
+developers:
+- "krzysztofkrzeslak"
+issues:
+  - github: *GH
+cd:
+  enabled: true
