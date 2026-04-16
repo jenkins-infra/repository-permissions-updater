@@ -543,6 +543,13 @@ public class MavenVerifier implements BuildSystemVerifier {
                     "Please define the property `ban-commons-lang-2.skip` and set it to `false`. This should help prevent accidental usage of the deprecated commons-lang-2 library that is "
                             + "included in core."));
         }
+        if (!props.containsKey("ban-deprecated-stapler.skip")
+                || !props.getProperty("ban-deprecated-stapler.skip").equals("false")) {
+            hostingIssues.add(new VerificationMessage(
+                    VerificationMessage.Severity.REQUIRED,
+                    "Please define the property `ban-deprecated-stapler.skip` and set it to `false`. This should help prevent usage of deprecated stapler and javax.servlet classes."
+                            + " included in core."));
+        }
     }
 
     private void checkDependencies(Model model, HashSet<VerificationMessage> hostingIssues) {
