@@ -1,0 +1,11 @@
+---
+name: "dynamic-view-filter"
+github: &GH "jenkinsci/dynamic-view-filter-plugin"
+paths:
+- "io/jenkins/plugins/dynamic-view-filter"
+developers:
+- "adityajalkhare"
+issues:
+  - github: *GH
+cd:
+  enabled: true
