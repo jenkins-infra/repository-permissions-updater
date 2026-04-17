@@ -1,0 +1,11 @@
+---
+name: "github-actions-cloud"
+github: &GH "jenkinsci/github-actions-cloud-plugin"
+paths:
+- "io/jenkins/plugins/github-actions-cloud"
+developers:
+- "gdams"
+issues:
+  - github: *GH
+cd:
+  enabled: true
