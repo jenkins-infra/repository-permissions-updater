@@ -1,6 +1,6 @@
 ---
 name: "publish-over-cifs"
-github: "jenkinsci/publish-over-cifs-plugin"
+github: &gh "jenkinsci/publish-over-cifs-plugin"
 issues:
   - github: *gh
 paths:
