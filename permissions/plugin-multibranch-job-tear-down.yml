@@ -7,3 +7,4 @@ paths:
   - "com/fuzzpro/jenkins-plugins/multibranch-job-tear-down"
 developers:
   - "fuzzcaguilar"
+  - "clemstoquart"
