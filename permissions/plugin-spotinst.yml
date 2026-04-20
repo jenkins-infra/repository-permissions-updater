@@ -7,3 +7,7 @@ paths:
   - "org/jenkins-ci/plugins/spotinst"
 developers:
   - "spotinst"
+  - "bela-flexspot"
+maintainers:
+  - "spotinst"
+  - "bela-flexspot"
