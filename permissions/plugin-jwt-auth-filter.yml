@@ -1,0 +1,11 @@
+---
+name: "jwt-auth-filter"
+github: &GH "jenkinsci/jwt-auth-filter-plugin"
+paths:
+- "io/jenkins/plugins/jwt-auth-filter"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true
