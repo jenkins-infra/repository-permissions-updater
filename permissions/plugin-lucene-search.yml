@@ -9,5 +9,6 @@ paths:
 developers:
   - "markch"
   - "tdraebing"
+  - "panicking"
 cd:
   enabled: true
