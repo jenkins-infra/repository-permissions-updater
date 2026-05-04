@@ -7,5 +7,6 @@ paths:
   - "nz/co/jammehcow/discord-notifier"
 developers:
   - "kocproz"
+  - "markewaite"
 cd:
   enabled: true
