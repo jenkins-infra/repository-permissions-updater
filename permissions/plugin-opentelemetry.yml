@@ -6,6 +6,7 @@ paths:
 developers:
   - "cleclerc"
   - "v2v"
+  - "krisstern"
 issues:
   - github: *GH
 cd:
