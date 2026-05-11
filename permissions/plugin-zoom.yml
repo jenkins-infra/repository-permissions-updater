@@ -8,3 +8,5 @@ paths:
 developers:
   - "zoom_us"
   - "markewaite"
+cd:
+  enabled: true
