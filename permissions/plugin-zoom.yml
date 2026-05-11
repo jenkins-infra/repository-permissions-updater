@@ -1,8 +1,8 @@
 ---
 name: "zoom"
-github: "jenkinsci/zoom-plugin"
+github: &gh "jenkinsci/zoom-plugin"
 issues:
-  - jira: '25025'  # zoom-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/zoom"
 developers:
