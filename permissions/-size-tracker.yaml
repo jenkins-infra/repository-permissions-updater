@@ -1,0 +1,9 @@
+---
+name: "apk-size-tracker"
+displayName: "APK Size Tracker"
+description: "Tracks APK/IPA build sizes and displays ECharts trend charts with diff comparison."
+labels: ["apk", "ipa", "size-tracker", "echarts", "mobile"]
+scm:
+  url: "https://github.com/QAwangyang/apk-size-tracker-plugin.git"
+maintainers:
+  - "QAwangyang"
