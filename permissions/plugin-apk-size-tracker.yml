@@ -4,4 +4,4 @@ github: "QAwangyang/apk-size-tracker-plugin"
 paths:
   - "io/jenkins/plugins/apk-size-tracker"
 developers:
-  - "QAwangyang"
+  - "qawangyang"
