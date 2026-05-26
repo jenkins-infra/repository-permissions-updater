@@ -87,6 +87,9 @@ node('maven-25 ') {
                 dir('json') {
                     publishReports(['issues.index.json', 'maintainers.index.json', 'github.index.json'], [useWorkloadIdentity: true])
                 }
+                stage ('Publish build report') {
+                    publishBuildStatusReport()
+                }
             }
         }
     }
