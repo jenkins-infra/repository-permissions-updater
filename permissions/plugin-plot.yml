@@ -1,8 +1,8 @@
 ---
 name: "plot"
-github: "jenkinsci/plot-plugin"
+github: &gh "jenkinsci/plot-plugin"
 issues:
-  - jira: '15564'  # plot-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/plot"
 developers:

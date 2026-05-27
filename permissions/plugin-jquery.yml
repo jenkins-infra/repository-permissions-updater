@@ -1,8 +1,8 @@
 ---
 name: "jquery"
-github: "jenkinsci/jquery-plugin"
+github: &gh "jenkinsci/jquery-plugin"
 issues:
-  - jira: '16017'  # jquery-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/jquery"
 developers:
