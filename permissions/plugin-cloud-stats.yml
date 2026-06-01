@@ -7,5 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/cloud-stats"
 developers:
   - "markewaite"
+  - "pnag90"
 cd:
   enabled: true
