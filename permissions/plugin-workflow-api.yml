@@ -1,8 +1,8 @@
 ---
 name: "workflow-api"
-github: "jenkinsci/workflow-api-plugin"
+github: &GH "jenkinsci/workflow-api-plugin"
 issues:
-  - jira: '21711'  # workflow-api-plugin
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/workflow/workflow-api"
 developers:
