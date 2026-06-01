@@ -1,0 +1,11 @@
+---
+name: "artifact-image-preview"
+github: &GH "jenkinsci/artifact-image-preview-plugin"
+paths:
+- "io/jenkins/plugins/artifact-image-preview"
+developers:
+- "popingalex"
+issues:
+  - github: *GH
+cd:
+  enabled: true
