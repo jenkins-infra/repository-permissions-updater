@@ -193,10 +193,7 @@ issues:
 ### Migrating from Jira to GitHub issue trackers
 
 Send a pull request to this repository removing the Jira reference and changing it to GitHub.
-
-A maintainer / Jenkins infra team member will then be able to perform the migration on your behalf.
-
-A script is provided to automate the required file change and open a draft pull request:
+Use this script to automate the required file change and open a draft pull request:
 
 ```
 ./bin/migrate-to-github.sh permissions/plugin-slack.yml
@@ -204,6 +201,8 @@ A script is provided to automate the required file change and open a draft pull 
 # Multiple files can be done at once:
 ./bin/migrate-to-github.sh permissions/plugin-slack.yml permissions/plugin-dark-theme.yml 
 ```
+
+A maintainer / Jenkins infra team member will then be able to perform the migration on your behalf.
 
 ### Consuming Issue Trackers
 
