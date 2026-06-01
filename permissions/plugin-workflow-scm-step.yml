@@ -1,8 +1,8 @@
 ---
 name: "workflow-scm-step"
-github: "jenkinsci/workflow-scm-step-plugin"
+github: &GH "jenkinsci/workflow-scm-step-plugin"
 issues:
-  - jira: '21717'  # workflow-scm-step-plugin
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/workflow/workflow-scm-step"
 developers:
