@@ -18,6 +18,3 @@ developers:
   - "bitwiseman"
   - "olamy"
   - "tscherler"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
