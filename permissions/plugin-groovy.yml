@@ -1,8 +1,8 @@
 ---
 name: "groovy"
-github: "jenkinsci/groovy-plugin"
+github: &gh "jenkinsci/groovy-plugin"
 issues:
-  - jira: '15549' # groovy-plugin
+  - github: *gh
 cd:
   enabled: true
 paths:

@@ -1,8 +1,8 @@
 ---
 name: "aws-global-configuration"
-github: "jenkinsci/aws-global-configuration-plugin"
+github: &gh "jenkinsci/aws-global-configuration-plugin"
 issues:
-  - jira: '23929'  # aws-global-configuration-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/aws-global-configuration"
 cd:
