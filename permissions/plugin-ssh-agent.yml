@@ -1,8 +1,8 @@
 ---
 name: "ssh-agent"
-github: "jenkinsci/ssh-agent-plugin"
+github: &gh "jenkinsci/ssh-agent-plugin"
 issues:
-  - jira: '17509'  # ssh-agent-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/ssh-agent"
 cd:

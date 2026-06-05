@@ -1,8 +1,8 @@
 ---
 name: "authentication-tokens"
-github: "jenkinsci/authentication-tokens-plugin"
+github: &gh "jenkinsci/authentication-tokens-plugin"
 issues:
-  - jira: '20323'  # authentication-tokens-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/authentication-tokens"
 cd:
