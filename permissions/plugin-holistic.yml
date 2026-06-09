@@ -1,0 +1,11 @@
+---
+name: "holistic"
+github: &GH "jenkinsci/holistic-plugin"
+paths:
+- "io/jenkins/plugins/holistic"
+developers:
+- "anashassari"
+issues:
+  - github: *GH
+cd:
+  enabled: true
