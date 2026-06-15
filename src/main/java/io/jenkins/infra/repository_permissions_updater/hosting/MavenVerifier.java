@@ -571,6 +571,13 @@ public class MavenVerifier implements BuildSystemVerifier {
                     "Please define the property `ban-deprecated-stapler.skip` and set it to `false`. This should help prevent usage of deprecated stapler and javax.servlet classes."
                             + " included in core."));
         }
+        if (!props.containsKey("ban-junit4-imports.skip")
+                || !props.getProperty("ban-junit4-imports.skip").equals("false")) {
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "Please define the property `ban-junit4-imports.skip` and set it to `false`. This should help prevent usage of deprecated junit 4 classes."));
+        }
     }
 
     private void checkDependencies(Model model, HashSet<VerificationMessage> hostingIssues) {
