@@ -8,7 +8,7 @@ paths:
 developers:
   - "norsegaud"
   - "arturmelanchyk"
-  - "github-service-user-veertu"
+  - "veertu_service_user"
 security:
   contacts:
     jira: "arturmelanchyk"
