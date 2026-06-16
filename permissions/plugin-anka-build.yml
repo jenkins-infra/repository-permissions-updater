@@ -8,6 +8,7 @@ paths:
 developers:
   - "norsegaud"
   - "arturmelanchyk"
+  - "veertu_service_user"
 security:
   contacts:
     jira: "arturmelanchyk"
