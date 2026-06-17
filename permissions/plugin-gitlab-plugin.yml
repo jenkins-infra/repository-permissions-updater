@@ -6,6 +6,8 @@ issues:
 paths:
   - "com/dabsquared/gitlab-plugin"
   - "org/jenkins-ci/plugins/gitlab-plugin"
+cd:
+  enabled: true
 developers:
   - "elbidouilleur"  # jenkins.io/jira Username MaximeMazet Github username
   - "markewaite"
