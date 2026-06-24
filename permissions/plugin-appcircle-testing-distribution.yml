@@ -4,7 +4,9 @@ github: &GH "jenkinsci/appcircle-testing-distribution-plugin"
 paths:
 - "io/jenkins/plugins/appcircle-testing-distribution"
 developers:
-- "guvenkaranfil"
+- "BrkYld"
 - "appcircle"
+cd:
+  enabled: true
 issues:
   - github: *GH
