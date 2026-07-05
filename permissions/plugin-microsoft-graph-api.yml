@@ -1,0 +1,11 @@
+---
+name: "microsoft-graph-api"
+github: &GH "jenkinsci/microsoft-graph-api-plugin"
+paths:
+- "io/jenkins/plugins/microsoft-graph-api"
+developers:
+- "timja"
+issues:
+  - github: *GH
+cd:
+  enabled: true
