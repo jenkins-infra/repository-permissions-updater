@@ -5,8 +5,8 @@ paths:
 - "io/jenkins/plugins/armorcode-release-gate"
 developers:
 - "deepanshurawat"
-- "mayankpruthi"
 - "vaibhav_rawat"
+- "mayankpruthi"
 cd:
   enabled: true
 issues:
