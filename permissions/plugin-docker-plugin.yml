@@ -2,6 +2,7 @@
 name: "docker-plugin"
 github: &gh "jenkinsci/docker-plugin"
 issues:
+  - jira: '18724'  # docker-plugin
   - github: *gh
 paths:
   - "com/nirima/docker-plugin"
