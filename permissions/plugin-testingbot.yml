@@ -7,3 +7,4 @@ paths:
   - "testingbot/testingbot"
 developers:
   - "testingbot"
+  - "jochen_testingbot"
