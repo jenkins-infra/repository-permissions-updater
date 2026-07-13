@@ -1,0 +1,11 @@
+---
+name: "z-bom"
+github: &GH "jenkinsci/z-bom-plugin"
+paths:
+- "io/jenkins/plugins/z-bom"
+developers:
+- "hykim0227"
+issues:
+  - github: *GH
+cd:
+  enabled: true
