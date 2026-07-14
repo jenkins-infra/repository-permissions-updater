@@ -15,6 +15,7 @@ developers:
   - "egutierrez"
   - "fcojfernandez"
   - "rsandell"
+  - "ogulcan"
 security:
   contacts:
     jira: "cloudbees_security_members"
