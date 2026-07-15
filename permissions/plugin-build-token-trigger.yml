@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/build-token-trigger"
 developers:
   - "zerlinpi"
+cd:
+  enabled: true
