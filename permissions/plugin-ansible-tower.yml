@@ -5,6 +5,8 @@ issues:
   - jira: '23177'  # ansible-tower-plugin
 paths:
   - "org/jenkins-ci/plugins/ansible-tower"
+cd:
+  enabled: true
 developers:
   - "johnwestcottiv"
   - "nupinto"
