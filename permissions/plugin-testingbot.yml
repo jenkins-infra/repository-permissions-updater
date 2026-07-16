@@ -5,6 +5,8 @@ issues:
   - jira: '17570'  # testingbot-plugin
 paths:
   - "testingbot/testingbot"
+cd:
+  enabled: true
 developers:
   - "testingbot"
   - "jochen_testingbot"
