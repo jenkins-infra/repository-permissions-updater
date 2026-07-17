@@ -6,5 +6,4 @@ issues:
 paths:
   - "com/checkmarx/jenkins/checkmarx"
 developers:
-  - "sternlir"
   - "cxadmin"
