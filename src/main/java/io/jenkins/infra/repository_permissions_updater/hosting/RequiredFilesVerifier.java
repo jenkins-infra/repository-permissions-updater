@@ -377,7 +377,10 @@ public class RequiredFilesVerifier implements Verifier {
                 }
             }
 
-        } catch (IOException | GroovyRuntimeException e) {
+        } catch (IOException e) {
+            hostingIssues.add(
+                    new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Could not read Jenkinsfile."));
+        } catch (GroovyRuntimeException e) {
             hostingIssues.add(
                     new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Could not parse Jenkinsfile."));
         }
