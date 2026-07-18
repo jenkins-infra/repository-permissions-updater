@@ -11,5 +11,6 @@ public class RequirementsTest {
         String suffix = Requirements.LOWEST_PARENT_POM_VERSION.suffix();
         String[] segments = suffix.split("\\.");
         assertThat(segments.length).isEqualTo(2);
+        assertThat(segments[0]).containsOnlyDigits();
     }
 }
