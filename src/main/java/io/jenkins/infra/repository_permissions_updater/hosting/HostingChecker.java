@@ -35,12 +35,13 @@ public class HostingChecker {
         boolean debug = System.getProperty("debugHosting", "false").equalsIgnoreCase("true");
 
         ArrayList<Triplet<String, Verifier, ConditionChecker>> verifications = new ArrayList<>();
-        verifications.add(Triplet.with("Request", new HostingFieldVerifier(), null));
-        verifications.add(Triplet.with("GitHub", new GitHubVerifier(), null));
-        verifications.add(Triplet.with("Maven", new MavenVerifier(), new FileExistsConditionChecker("pom.xml")));
-        verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(), null));
-        verifications.add(Triplet.with("Jelly", new JellyVerifier(), null));
-        verifications.add(Triplet.with("RequiredFiles", new RequiredFilesVerifier(), null));
+        verifications.add(Triplet.with("Request", new HostingFieldVerifier(hostingIssues), null));
+        verifications.add(Triplet.with("GitHub", new GitHubVerifier(hostingIssues), null));
+        verifications.add(
+                Triplet.with("Maven", new MavenVerifier(hostingIssues), new FileExistsConditionChecker("pom.xml")));
+        verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(hostingIssues), null));
+        verifications.add(Triplet.with("Jelly", new JellyVerifier(hostingIssues), null));
+        verifications.add(Triplet.with("RequiredFiles", new RequiredFilesVerifier(hostingIssues), null));
 
         final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
 
@@ -50,7 +51,7 @@ public class HostingChecker {
                         verifier.getValue2() == null || verifier.getValue2().checkCondition(hostingRequest);
                 if (runIt) {
                     LOGGER.info("Running verification '{}'", verifier.getValue0());
-                    verifier.getValue1().verify(hostingRequest, hostingIssues);
+                    verifier.getValue1().verify(hostingRequest);
                 }
 
                 if (verifier.getValue1() instanceof BuildSystemVerifier) {

@@ -9,8 +9,14 @@ import org.apache.commons.lang3.StringUtils;
 
 public class JenkinsProjectUserVerifier implements Verifier {
 
+    private final HashSet<VerificationMessage> hostingIssues;
+
+    public JenkinsProjectUserVerifier(HashSet<VerificationMessage> hostingIssues) {
+        this.hostingIssues = hostingIssues;
+    }
+
     @Override
-    public void verify(HostingRequest request, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    public void verify(HostingRequest request) throws IOException {
 
         List<String> jenkinsProjectUsers = request.getJenkinsProjectUsers();
         if (!jenkinsProjectUsers.isEmpty()) {

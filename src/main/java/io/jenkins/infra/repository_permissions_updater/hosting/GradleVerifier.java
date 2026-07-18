@@ -78,8 +78,14 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
     private String forkTo;
     private String forkFrom;
 
+    private final HashSet<VerificationMessage> hostingIssues;
+
+    public GradleVerifier(HashSet<VerificationMessage> hostingIssues) {
+        this.hostingIssues = hostingIssues;
+    }
+
     @Override
-    public void verify(HostingRequest issue, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    public void verify(HostingRequest issue) throws IOException {
         GitHub github = GitHub.connect();
         forkFrom = issue.getRepositoryUrl();
         forkTo = issue.getNewRepoName();
@@ -111,25 +117,22 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
                                     if (mc.getMethodAsString().equals("plugins")) {
                                         // make sure we get the correct version of the gradle jpi plugin
                                         checkPluginVersion(
-                                                ((ArgumentListExpression) mc.getArguments()).getExpression(0),
-                                                hostingIssues);
+                                                ((ArgumentListExpression) mc.getArguments()).getExpression(0));
                                     } else if (mc.getMethodAsString().equals("repositories")) {
                                         // verify that any references to repo.jenkins-ci.org are correct
                                         checkRepositories(
-                                                ((ArgumentListExpression) mc.getArguments()).getExpression(0),
-                                                hostingIssues);
+                                                ((ArgumentListExpression) mc.getArguments()).getExpression(0));
                                     } else if (mc.getMethodAsString().equals("jenkinsPlugin")) {
                                         // verify the things that will make it into the pom.xml that is published
                                         checkJenkinsPlugin(
-                                                ((ArgumentListExpression) mc.getArguments()).getExpression(0),
-                                                hostingIssues);
+                                                ((ArgumentListExpression) mc.getArguments()).getExpression(0));
                                     }
                                 } else if (e instanceof BinaryExpression be) {
                                     VariableExpression v = (VariableExpression) be.getLeftExpression();
                                     if (v.getName().equals("group")) {
-                                        checkGroup(be.getRightExpression(), hostingIssues);
+                                        checkGroup(be.getRightExpression());
                                     } else if (v.getName().equals("targetCompatibility")) {
-                                        checkTargetCompatibility(be.getRightExpression(), hostingIssues);
+                                        checkTargetCompatibility(be.getRightExpression());
                                     }
                                 }
                             }
@@ -241,7 +244,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         return res;
     }
 
-    private void checkPluginVersion(Expression plugins, HashSet<VerificationMessage> hostingIssues) {
+    private void checkPluginVersion(Expression plugins) {
         if (plugins instanceof ClosureExpression c) {
             for (Statement st : ((BlockStatement) c.getCode()).getStatements()) {
                 Expression e = ((ExpressionStatement) st).getExpression();
@@ -277,7 +280,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         }
     }
 
-    private void checkRepositories(Expression repositories, HashSet<VerificationMessage> hostingIssues) {
+    private void checkRepositories(Expression repositories) {
         if (repositories instanceof ClosureExpression c) {
             for (Statement st : ((BlockStatement) c.getCode()).getStatements()) {
                 Expression e = ((ExpressionStatement) st).getExpression();
@@ -315,7 +318,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         }
     }
 
-    private void checkJenkinsPlugin(Expression jenkinsPlugin, HashSet<VerificationMessage> hostingIssues) {
+    private void checkJenkinsPlugin(Expression jenkinsPlugin) {
         if (jenkinsPlugin instanceof ClosureExpression c) {
             for (Statement st : ((BlockStatement) c.getCode()).getStatements()) {
                 ExpressionStatement s = (ExpressionStatement) st;
@@ -326,23 +329,23 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
                                 VerificationMessage.Severity.REQUIRED,
                                 "`coreVersion` is deprecated, please use `jenkinsVersion`"));
                     } else if (be.getLeftExpression().getText().equals("jenkinsVersion")) {
-                        checkJenkinsVersion(be.getRightExpression(), hostingIssues);
+                        checkJenkinsVersion(be.getRightExpression());
                     } else if (be.getLeftExpression().getText().equals("shortName")) {
-                        checkShortName(be.getRightExpression(), hostingIssues);
+                        checkShortName(be.getRightExpression());
                     } else if (be.getLeftExpression().getText().equals("displayName")) {
-                        checkDisplayName(be.getRightExpression(), hostingIssues);
+                        checkDisplayName(be.getRightExpression());
                     }
                 } else if (s.getExpression() instanceof MethodCallExpression) {
                     MethodCallExpression mc = (MethodCallExpression) s.getExpression();
                     if (mc.getMethodAsString().equals("licenses")) {
-                        checkLicenses(((ArgumentListExpression) mc.getArguments()).getExpression(0), hostingIssues);
+                        checkLicenses(((ArgumentListExpression) mc.getArguments()).getExpression(0));
                     }
                 }
             }
         }
     }
 
-    private void checkGroup(Expression e, HashSet<VerificationMessage> hostingIssues) {
+    private void checkGroup(Expression e) {
         if (e instanceof ConstantExpression) {
             String groupId = e.getText();
             if (StringUtils.isBlank(groupId)) {
@@ -359,7 +362,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         }
     }
 
-    private void checkTargetCompatibility(Expression e, HashSet<VerificationMessage> hostingIssues) {
+    private void checkTargetCompatibility(Expression e) {
         if (e instanceof ConstantExpression) {
             Version targetCompatVersion = new Version(e.getText());
             if (targetCompatVersion.compareTo(JAVA_COMPATIBILITY_VERSION) != 0) {
@@ -371,7 +374,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         }
     }
 
-    private void checkLicenses(Expression e, HashSet<VerificationMessage> hostingIssues) {
+    private void checkLicenses(Expression e) {
         if (e instanceof ClosureExpression c) {
             for (Statement st : ((BlockStatement) c.getCode()).getStatements()) {
                 e = ((ExpressionStatement) st).getExpression();
@@ -397,7 +400,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         }
     }
 
-    private void checkJenkinsVersion(Expression e, HashSet<VerificationMessage> hostingIssues) {
+    private void checkJenkinsVersion(Expression e) {
         if (e instanceof ConstantExpression) {
             Version jenkinsVersion = new Version(e.getText());
             if (jenkinsVersion.compareTo(LOWEST_JENKINS_VERSION) < 0) {
@@ -413,7 +416,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         }
     }
 
-    private void checkShortName(Expression e, HashSet<VerificationMessage> hostingIssues) {
+    private void checkShortName(Expression e) {
         if (e instanceof ConstantExpression) {
             String shortName = e.getText();
             if (StringUtils.isNotBlank(shortName)) {
@@ -447,7 +450,7 @@ public class GradleVerifier extends CodeVisitorSupport implements BuildSystemVer
         }
     }
 
-    private void checkDisplayName(Expression e, HashSet<VerificationMessage> hostingIssues) {
+    private void checkDisplayName(Expression e) {
         if (e instanceof ConstantExpression) {
             String name = e.getText();
             if (StringUtils.isNotBlank(name)) {

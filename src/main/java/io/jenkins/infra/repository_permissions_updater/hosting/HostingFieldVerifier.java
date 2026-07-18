@@ -8,8 +8,14 @@ import org.apache.commons.lang3.StringUtils;
 
 public class HostingFieldVerifier implements Verifier {
 
+    private final HashSet<VerificationMessage> hostingIssues;
+
+    public HostingFieldVerifier(HashSet<VerificationMessage> hostingIssues) {
+        this.hostingIssues = hostingIssues;
+    }
+
     @Override
-    public void verify(HostingRequest issue, HashSet<VerificationMessage> hostingIssues) {
+    public void verify(HostingRequest issue) {
         String forkTo = issue.getNewRepoName();
         String forkFrom = issue.getRepositoryUrl();
         List<String> users = issue.getGithubUsers();

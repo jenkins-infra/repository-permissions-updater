@@ -22,8 +22,14 @@ public class GitHubVerifier implements Verifier {
             "It was detected that you have files in the `%s` folder or that you had in the past files in that folder. "
                     + "Please remove the `target` folder and also rewrite the git history to never have contained any files in the `%s` folder.";
 
+    private final HashSet<VerificationMessage> hostingIssues;
+
+    public GitHubVerifier(HashSet<VerificationMessage> hostingIssues) {
+        this.hostingIssues = hostingIssues;
+    }
+
     @Override
-    public void verify(HostingRequest request, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    public void verify(HostingRequest request) throws IOException {
         GitHub github = GitHub.connect();
         String forkFrom = request.getRepositoryUrl();
         List<String> users = request.getGithubUsers();
@@ -83,11 +89,11 @@ public class GitHubVerifier implements Verifier {
                 }
 
                 if (repo != null) {
-                    checkReadme(repo, hostingIssues);
-                    checkLicense(repo, hostingIssues);
-                    checkForkedFromJenkinsCi(repo, hostingIssues, forkFrom);
-                    checkForkedIntoJenkinsCi(repo, hostingIssues, forkFrom);
-                    checkUnwantedFiles(repo, hostingIssues);
+                    checkReadme(repo);
+                    checkLicense(repo);
+                    checkForkedFromJenkinsCi(repo, forkFrom);
+                    checkForkedIntoJenkinsCi(repo, forkFrom);
+                    checkUnwantedFiles(repo);
                 }
             } else {
                 hostingIssues.add(new VerificationMessage(
@@ -96,8 +102,7 @@ public class GitHubVerifier implements Verifier {
         }
     }
 
-    private void checkForkedIntoJenkinsCi(
-            GHRepository repo, HashSet<VerificationMessage> hostingIssues, String forkFrom) {
+    private void checkForkedIntoJenkinsCi(GHRepository repo, String forkFrom) {
         // now need to check if there are any forks INTO jenkinsci already from this repo
         try {
             List<String> badForks = new ArrayList<>();
@@ -107,7 +112,7 @@ public class GitHubVerifier implements Verifier {
                 }
             }
 
-            if (badForks.size() > 0) {
+            if (!badForks.isEmpty()) {
                 hostingIssues.add(new VerificationMessage(
                         VerificationMessage.Severity.REQUIRED,
                         "Repository '%s' already has the following forks in the jenkinsci org: %s",
@@ -119,8 +124,7 @@ public class GitHubVerifier implements Verifier {
         }
     }
 
-    private void checkForkedFromJenkinsCi(
-            GHRepository repo, HashSet<VerificationMessage> hostingIssues, String forkFrom) {
+    private void checkForkedFromJenkinsCi(GHRepository repo, String forkFrom) {
         // check if the repo was originally forked from jenkinsci
         try {
             GHRepository parent = repo.getParent();
@@ -135,7 +139,7 @@ public class GitHubVerifier implements Verifier {
         }
     }
 
-    private void checkLicense(GHRepository repo, HashSet<VerificationMessage> hostingIssues) {
+    private void checkLicense(GHRepository repo) {
         try {
             GHLicense license = repo.getLicense();
             if (license == null) {
@@ -152,7 +156,7 @@ public class GitHubVerifier implements Verifier {
         }
     }
 
-    private void checkReadme(GHRepository repo, HashSet<VerificationMessage> hostingIssues) {
+    private void checkReadme(GHRepository repo) {
         try {
             GHContent readme = repo.getReadme();
             if (readme == null) {
@@ -169,7 +173,7 @@ public class GitHubVerifier implements Verifier {
         }
     }
 
-    private void checkUnwantedFiles(GHRepository repo, HashSet<VerificationMessage> hostingIssues) {
+    private void checkUnwantedFiles(GHRepository repo) {
         boolean foundTargetFolder = false;
         boolean foundWorkFolder = false;
         for (GHCommit commit : repo.listCommits()) {
