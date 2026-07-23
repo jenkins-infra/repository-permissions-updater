@@ -1,7 +1,12 @@
 ---
 name: "h2-api"
-github: "jenkinsci/h2-api-plugin"
+github: &gh "jenkinsci/h2-api-plugin"
+issues:
+  - github: *gh
 paths:
-- "io/jenkins/plugins/h2-api"
+  - "io/jenkins/plugins/h2-api"
 developers:
-- "cleclerc"
+  - "cleclerc"
+  - "timja"
+cd:
+  enabled: true

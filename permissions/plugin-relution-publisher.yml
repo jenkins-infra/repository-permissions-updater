@@ -1,7 +1,9 @@
 ---
 name: "relution-publisher"
-github: "jenkinsci/relution-plugin"
+github: "jenkinsci/relution-publisher-plugin"
+issues:
+  - jira: '18126'  # relution-publisher-plugin
 paths:
-- "org/jenkins-ci/plugins/relution-publisher"
+  - "org/jenkins-ci/plugins/relution-publisher"
 developers:
-- "mway_solutions"
+  - "mway_solutions"

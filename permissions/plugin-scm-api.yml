@@ -1,19 +1,22 @@
 ---
 name: "scm-api"
-github: "jenkinsci/scm-api-plugin"
+github: &gh "jenkinsci/scm-api-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/scm-api"
+  - "org/jenkins-ci/plugins/scm-api"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "recena"
-- "stephenconnolly"
-- "abayer"
-- "svanoort"
-- "rsandell"
-- "dnusbaum"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "jglick"
+  - "recena"
+  - "abayer"
+  - "rsandell"
+  - "dnusbaum"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "timja"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

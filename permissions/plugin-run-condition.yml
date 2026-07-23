@@ -1,7 +1,18 @@
 ---
 name: "run-condition"
-github: "jenkinsci/run-condition-plugin"
+github: &gh "jenkinsci/run-condition-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/run-condition"
+  - "org/jenkins-ci/plugins/run-condition"
 developers:
-- "imod"
+  - "imod"
+  - "timja"
+  - "markewaite"
+  - "poddingue"
+  - "zack_aayush"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

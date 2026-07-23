@@ -1,0 +1,10 @@
+---
+name: "metrics-aggregation"
+github: &gh "jenkinsci/metrics-aggregation-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/metrics-aggregation"
+developers:
+  - "andipabst"
+  - "drulli"

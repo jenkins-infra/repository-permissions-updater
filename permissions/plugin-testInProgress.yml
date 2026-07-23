@@ -1,8 +1,10 @@
 ---
 name: "testInProgress"
 github: "jenkinsci/testInProgress-plugin"
+issues:
+  - jira: '17325'  # testInProgress-plugin
 paths:
-- "org/jenkins-ci/plugins/testInProgress"
+  - "org/jenkins-ci/plugins/testInProgress"
 developers:
-- "cchabanois"
-- "menonvarun"
+  - "cchabanois"
+  - "menonvarun"

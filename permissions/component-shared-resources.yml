@@ -1,0 +1,7 @@
+---
+name: "shared-resources"
+github: "jenkinsci/lib-shared-resources"
+paths:
+  - "io/jenkins/lib/shared-resources"
+developers:
+  - "@core"

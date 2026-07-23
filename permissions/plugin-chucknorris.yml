@@ -1,7 +1,14 @@
 ---
 name: "chucknorris"
-github: "jenkinsci/chucknorris-plugin"
+github: &gh "jenkinsci/chucknorris-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jvnet/hudson/plugins/chucknorris"
+  - "org/jvnet/hudson/plugins/chucknorris"
 developers:
-- "batmat"
+  - "batmat"
+  - "oleg_nenashev"
+  - "mPokornyETM"
+  - "darinpope"
+cd:
+  enabled: true

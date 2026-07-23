@@ -1,8 +1,15 @@
 ---
 name: "command-launcher"
-github: "jenkinsci/command-launcher-plugin"
+github: &gh "jenkinsci/command-launcher-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/command-launcher"
+  - "org/jenkins-ci/plugins/command-launcher"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "oleg_nenashev"
+  - "jglick"
+  - "oleg_nenashev"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

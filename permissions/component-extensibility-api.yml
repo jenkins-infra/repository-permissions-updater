@@ -1,0 +1,7 @@
+---
+name: "extensibility"
+github: "jenkinsci/extensibility-api"
+paths:
+  - "com/cloudbees/extensibility"
+developers:
+  - "@core"

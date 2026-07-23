@@ -2,7 +2,7 @@
 name: "diskcheck"
 github: "jenkinsci/diskcheck-plugin"
 paths:
-- "com/cloudera/diskrecycler/diskcheck"
-- "org/jenkins-ci/plugins/diskcheck"
+  - "com/cloudera/diskrecycler/diskcheck"
+  - "org/jenkins-ci/plugins/diskcheck"
 developers:
-- "mthakkar"
+  - "mthakkar"

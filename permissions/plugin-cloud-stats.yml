@@ -1,7 +1,12 @@
 ---
 name: "cloud-stats"
-github: "jenkinsci/cloud-stats-plugin"
+github: &gh "jenkinsci/cloud-stats-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/cloud-stats"
+  - "org/jenkins-ci/plugins/cloud-stats"
 developers:
-- "olivergondza"
+  - "markewaite"
+  - "pnag90"
+cd:
+  enabled: true

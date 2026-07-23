@@ -1,0 +1,13 @@
+---
+name: "catppuccin-theme"
+github: &GH "jenkinsci/catppuccin-theme-plugin"
+paths:
+- "io/jenkins/plugins/catppuccin-theme"
+cd:
+  enabled: true
+developers:
+- "lewisbirks"
+- "janfaracik"
+- "catppuccin"
+issues:
+  - github: *GH

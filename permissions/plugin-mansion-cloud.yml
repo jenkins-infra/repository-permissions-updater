@@ -1,10 +1,11 @@
 ---
 name: "mansion-cloud"
 github: "jenkinsci/mansion-cloud-plugin"
+issues:
+  - jira: '18748'  # mansion-cloud-plugin
 paths:
-- "com/cloudbees/jenkins/plugins/mansion-cloud"
+  - "com/cloudbees/jenkins/plugins/mansion-cloud"
 developers:
-- "michaelneale"
-- "recampbell"
-- "stephenconnolly"
-- "ydubreuil"
+  - "michaelneale"
+  - "recampbell"
+  - "ydubreuil"

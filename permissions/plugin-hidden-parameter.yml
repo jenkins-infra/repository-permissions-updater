@@ -1,7 +1,13 @@
 ---
 name: "hidden-parameter"
-github: "jenkinsci/hidden-parameter-plugin"
+github: &GH "jenkinsci/hidden-parameter-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/hidden-parameter"
+  - "org/jenkins-ci/plugins/hidden-parameter"
 developers:
-- "yangli"
+  - "yangli"
+  - "madsjakobsen"
+  - "jonesbusy"
+cd:
+  enabled: true

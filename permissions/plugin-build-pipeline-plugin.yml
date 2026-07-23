@@ -1,10 +1,13 @@
 ---
 name: "build-pipeline-plugin"
-github: "jenkinsci/build-pipeline-plugin"
+github: &gh "jenkinsci/build-pipeline-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/build-pipeline-plugin"
+  - "org/jenkins-ci/plugins/build-pipeline-plugin"
 developers:
-- "dalvizu"
-- "geoffbullen"
-- "integer"
-- "recena"
+  - "dalvizu"
+  - "geoffbullen"
+  - "integer"
+  - "recena"
+  - "markewaite"

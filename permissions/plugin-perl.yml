@@ -1,5 +1,5 @@
 ---
 name: "perl"
 paths:
-- "org/jenkins-ci/ruby-plugins/perl"
+  - "org/jenkins-ci/ruby-plugins/perl"
 developers: []

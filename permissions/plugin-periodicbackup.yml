@@ -1,8 +1,10 @@
 ---
 name: "periodicbackup"
 github: "jenkinsci/periodicbackup-plugin"
+issues:
+  - jira: '16092'  # periodicbackup-plugin
 paths:
-- "org/jenkins-ci/plugins/periodicbackup"
+  - "org/jenkins-ci/plugins/periodicbackup"
 developers:
-- oleg_nenashev
-
+  - "oleg_nenashev"
+  - "johno"

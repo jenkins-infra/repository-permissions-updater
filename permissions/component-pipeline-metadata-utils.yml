@@ -1,7 +1,9 @@
 ---
 name: "pipeline-metadata-utils"
 paths:
-- "org/jenkins-ci/infra/pipeline-metadata-utils"
+  - "org/jenkins-ci/infra/pipeline-metadata-utils"
 developers:
-- "abayer"
-- "kwhetstone"
+  - "abayer"
+  - "kwhetstone"
+  - "jm_meessen"
+  - "markewaite"

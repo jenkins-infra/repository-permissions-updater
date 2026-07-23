@@ -1,0 +1,39 @@
+name: '🐛 Bug report'
+labels: 'bug'
+description: Create a bug report to help us improve
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never report security issues on GitHub or other public channels (Gitter/Twitter/etc.)**
+        Follow these instruction to report security issues: https://www.jenkins.io/security/#reporting-vulnerabilities
+  - type: textarea
+    attributes:
+      label: Reproduction steps
+      description: |
+        Write bullet-point reproduction steps.
+      placeholder: |
+        1. Step 1: ...
+        2. Step 2: ...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected Results
+      description: What was your expected result?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Actual Results
+      description: What was the actual result?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: You can provide additional context below.

@@ -1,0 +1,12 @@
+---
+name: "popper-api"
+github: &gh "jenkinsci/popper-api-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/popper-api"
+developers:
+  - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

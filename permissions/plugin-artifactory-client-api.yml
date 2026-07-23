@@ -1,0 +1,11 @@
+---
+name: "artifactory-client-api"
+github: &GH "jenkinsci/artifactory-client-api-plugin"
+paths:
+- "io/jenkins/plugins/artifactory-client-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

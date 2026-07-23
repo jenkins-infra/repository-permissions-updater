@@ -1,6 +1,11 @@
 ---
 name: "jcaptcha-plugin"
-github: "jenkinsci/jcaptcha-plugin"
+github: &GH "jenkinsci/jcaptcha-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/jcaptcha-plugin"
-developers: []
+  - "org/jenkins-ci/plugins/jcaptcha-plugin"
+developers:
+  - "jonesbusy"
+cd:
+  enabled: true

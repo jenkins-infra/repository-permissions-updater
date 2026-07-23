@@ -1,0 +1,9 @@
+---
+name: "qualys-iac-security"
+github: &GH "jenkinsci/qualys-iac-security-plugin"
+paths:
+- "io/jenkins/plugins/qualys-iac-security"
+developers:
+- "qualys"
+issues:
+  - github: *GH

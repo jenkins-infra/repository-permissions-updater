@@ -1,12 +1,18 @@
 ---
 name: "variant"
-github: "jenkinsci/variant-plugin"
+github: &gh "jenkinsci/variant-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/variant"
+  - "org/jenkins-ci/plugins/variant"
 developers:
-- "kohsuke"
-- "andresrc"
-- "batmat"
+  - "kohsuke"
+  - "andresrc"
+  - "batmat"
+  - "jetersen"
+  - "markewaite"
+cd:
+  enabled: true
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"

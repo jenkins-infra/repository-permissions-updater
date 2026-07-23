@@ -1,7 +1,12 @@
 ---
 name: "envinject"
-github: "jenkinsci/envinject-plugin"
+github: &gh "jenkinsci/envinject-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/envinject"
+  - "org/jenkins-ci/plugins/envinject"
 developers:
-- "oleg_nenashev"
+  - "oleg_nenashev"
+  - "notmyfault"
+cd:
+  enabled: true

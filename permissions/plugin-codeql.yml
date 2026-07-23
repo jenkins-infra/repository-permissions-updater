@@ -1,0 +1,12 @@
+---
+name: "codeql"
+github: &GH "jenkinsci/codeql-plugin"
+cd:
+  enabled: true
+  exclusive: false
+paths:
+  - "io/jenkins/plugins/codeql"
+developers:
+  - "issc29"
+issues:
+  - github: *GH

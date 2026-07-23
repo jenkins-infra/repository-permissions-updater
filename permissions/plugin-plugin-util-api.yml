@@ -1,0 +1,14 @@
+---
+name: "plugin-util-api"
+github: &gh "jenkinsci/plugin-util-api-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/plugin-util-api"
+developers:
+  - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

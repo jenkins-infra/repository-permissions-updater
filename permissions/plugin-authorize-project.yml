@@ -1,7 +1,11 @@
 ---
 name: "authorize-project"
-github: "jenkinsci/authorize-project-plugin"
+github: &gh "jenkinsci/authorize-project-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/authorize-project"
+  - "org/jenkins-ci/plugins/authorize-project"
+cd:
+  enabled: true
 developers:
-- "ikedam"
+  - "andreahlert"

@@ -1,0 +1,12 @@
+---
+name: "material-theme"
+github: &gh "jenkinsci/material-theme-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/material-theme"
+developers:
+  - "canuck1987"
+cd:
+  enabled: true
+  exclusive: false

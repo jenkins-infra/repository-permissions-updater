@@ -1,7 +1,11 @@
 ---
 name: "implied-labels"
-github: "jenkinsci/implied-labels-plugin"
+github: &gh "jenkinsci/implied-labels-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/implied-labels"
+  - "org/jenkins-ci/plugins/implied-labels"
 developers:
-- "olivergondza"
+  - "markewaite"
+cd:
+  enabled: true

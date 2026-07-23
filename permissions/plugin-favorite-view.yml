@@ -1,6 +1,12 @@
 ---
 name: "favorite-view"
-github: "jenkinsci/favorite-view-plugin"
+github: &gh "jenkinsci/favorite-view-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/favorite-view"
-developers: []
+  - "org/jenkins-ci/plugins/favorite-view"
+developers:
+  - "mPokornyETM"
+  - "mawinter69"
+cd:
+  enabled: true

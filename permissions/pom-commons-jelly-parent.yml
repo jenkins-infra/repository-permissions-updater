@@ -1,0 +1,7 @@
+---
+name: "commons-jelly-parent"
+github: "jenkinsci/jelly"
+paths:
+  - "org/jenkins-ci/commons-jelly-parent"
+developers:
+  - "@core"

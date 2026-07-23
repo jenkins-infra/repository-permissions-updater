@@ -1,0 +1,8 @@
+---
+name: "bridge-method-injector"
+github: "jenkinsci/bridge-method-injector"
+paths:
+  - "com/infradna/tool"
+  - "com/infradna/tool/bridge-method-injector"
+developers:
+  - "@core"

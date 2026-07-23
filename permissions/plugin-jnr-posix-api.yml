@@ -1,5 +1,11 @@
+---
 name: "jnr-posix-api"
-github: "jenkinsci/jnr-posix-api-plugin"
+github: &GH "jenkinsci/jnr-posix-api-plugin"
+issues:
+  - github: *GH
 paths:
-- "io/jenkins/plugins/jnr-posix-api"
-developers: []
+  - "io/jenkins/plugins/jnr-posix-api"
+developers:
+  - "jonesbusy"
+cd:
+  enabled: true

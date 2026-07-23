@@ -1,7 +1,8 @@
 ---
 name: "warnings"
-github: "jenkinsci/warnings-plugin"
+github: &gh "jenkinsci/warnings-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jvnet/hudson/plugins/warnings"
-developers:
-- "drulli"
+  - "org/jvnet/hudson/plugins/warnings"
+developers: []

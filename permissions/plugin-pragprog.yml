@@ -1,6 +1,6 @@
 ---
 name: "pragprog"
 paths:
-- "org/jenkins-ci/plugins/pragprog"
+  - "org/jenkins-ci/plugins/pragprog"
 developers:
-- "torsten"
+  - "torsten"

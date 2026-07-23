@@ -1,0 +1,9 @@
+---
+name: "report-diff"
+github: &GH "jenkinsci/report-diff-plugin"
+paths:
+- "io/jenkins/plugins/report-diff"
+developers:
+- "judovana"
+issues:
+  - github: *GH

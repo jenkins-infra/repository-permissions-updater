@@ -1,0 +1,9 @@
+---
+name: "s3explorer"
+github: &GH "jenkinsci/s3explorer-plugin"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/plugins/s3explorer"
+developers:
+  - "ngocson2vn"

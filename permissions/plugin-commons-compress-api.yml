@@ -1,0 +1,12 @@
+---
+name: "commons-compress-api"
+github: &GH "jenkinsci/commons-compress-api-plugin"
+paths:
+- "io/jenkins/plugins/commons-compress-api"
+developers:
+- "basil"
+- "markewaite"
+issues:
+  - github: *GH
+cd:
+  enabled: true

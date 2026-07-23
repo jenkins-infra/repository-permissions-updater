@@ -1,7 +1,14 @@
 ---
 name: "badge"
-github: "jenkinsci/badge-plugin"
+github: &gh "jenkinsci/badge-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/badge"
+  - "org/jenkins-ci/plugins/badge"
+cd:
+  enabled: true
 developers:
-- "bakito"
+  - "bakito"
+  - "mPokornyETM"
+  - "strangelookingnerd"
+  - "markewaite"

@@ -1,0 +1,11 @@
+---
+name: "markdown-params"
+github: &GH "jenkinsci/markdown-params-plugin"
+paths:
+- "io/jenkins/plugins/markdown-params"
+developers:
+- "jesusnoseq"
+issues:
+  - github: *GH
+cd:
+  enabled: true

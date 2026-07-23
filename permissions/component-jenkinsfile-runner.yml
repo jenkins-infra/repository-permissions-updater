@@ -2,8 +2,8 @@
 name: "jenkinsfile-runner"
 github: "jenkinsci/jenkinsfile-runner"
 paths:
-- "io/jenkins/jenkinsfile-runner/jenkinsfile-runner"
+  - "io/jenkins/jenkinsfile-runner/jenkinsfile-runner"
 developers:
-- "oleg_nenashev"
-- "egutierrez"
-- "fcojfernandez"
+  - "oleg_nenashev"
+  - "egutierrez"
+  - "fcojfernandez"

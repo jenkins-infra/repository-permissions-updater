@@ -1,0 +1,11 @@
+---
+name: "jersey2-api"
+github: &GH "jenkinsci/jersey2-api-plugin"
+paths:
+  - "io/jenkins/plugins/jersey2-api"
+developers:
+  - "markewaite"
+issues:
+  - github: *GH
+cd:
+  enabled: true

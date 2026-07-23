@@ -1,7 +1,9 @@
 ---
 name: "adaptive-disconnector"
 github: "jenkinsci/adaptive-disconnector-plugin"
+issues:
+  - jira: '18745'  # adaptive-disconnector-plugin
 paths:
-- "org/jenkins-ci/plugins/adaptive-disconnector"
+  - "org/jenkins-ci/plugins/adaptive-disconnector"
 developers:
-- "olivergondza"
+  - "olivergondza"

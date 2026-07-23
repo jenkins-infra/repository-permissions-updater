@@ -1,0 +1,7 @@
+---
+name: "commons-jelly-tags-define"
+github: "jenkinsci/jelly"
+paths:
+  - "org/jvnet/hudson/commons-jelly-tags-define"
+developers:
+  - "@core"

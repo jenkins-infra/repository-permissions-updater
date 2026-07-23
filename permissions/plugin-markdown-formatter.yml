@@ -1,0 +1,11 @@
+---
+name: "markdown-formatter"
+github: &gh "jenkinsci/markdown-formatter-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/markdown-formatter"
+cd:
+  enabled: true
+developers:
+  - "markewaite"

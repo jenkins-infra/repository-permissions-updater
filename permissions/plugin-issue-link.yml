@@ -1,6 +1,6 @@
 ---
 name: "issue-link"
 paths:
-- "org/jenkins-ci/plugins/issue-link"
+  - "org/jenkins-ci/plugins/issue-link"
 developers:
-- "patbos"
+  - "patbos"

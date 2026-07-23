@@ -2,7 +2,7 @@
 name: "jira-scraper"
 github: "jenkinsci/lib-jira-scraper"
 paths:
-- "org/jenkins-ci/jira-scraper"
+  - "org/jenkins-ci/jira-scraper"
 developers:
-- "kohsuke"
-- "oleg_nenashev"
+  - "kohsuke"
+  - "oleg_nenashev"

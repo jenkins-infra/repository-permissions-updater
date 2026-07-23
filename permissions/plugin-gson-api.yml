@@ -1,0 +1,11 @@
+---
+name: "gson-api"
+github: &GH "jenkinsci/gson-api-plugin"
+paths:
+- "io/jenkins/plugins/gson-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

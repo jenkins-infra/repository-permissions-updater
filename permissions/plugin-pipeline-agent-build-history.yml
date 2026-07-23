@@ -1,0 +1,11 @@
+---
+name: "pipeline-agent-build-history"
+github: &GH "jenkinsci/pipeline-agent-build-history-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-agent-build-history"
+developers:
+- "mawinter69"
+issues:
+  - github: *GH
+cd:
+  enabled: true

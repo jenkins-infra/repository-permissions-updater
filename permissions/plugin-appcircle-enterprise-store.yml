@@ -1,0 +1,11 @@
+---
+name: "appcircle-enterprise-store"
+github: &GH "jenkinsci/appcircle-enterprise-app-store-plugin"
+paths:
+- "io/jenkins/plugins/appcircle-enterprise-store"
+developers:
+- "appcircle"
+cd:
+  enabled: true
+issues:
+  - github: *GH

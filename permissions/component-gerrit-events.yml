@@ -1,6 +1,6 @@
 ---
 name: "gerrit-events"
 paths:
-- "com/sonyericsson/hudson/plugins/gerrit/gerrit-events"
+  - "com/sonyericsson/hudson/plugins/gerrit/gerrit-events"
 developers:
-- "rsandell"
+  - "rsandell"

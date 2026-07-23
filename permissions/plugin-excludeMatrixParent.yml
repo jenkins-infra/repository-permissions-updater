@@ -1,6 +1,11 @@
 ---
 name: "excludeMatrixParent"
-github: "jenkinsci/exclude-matrix-parent"
+github: "jenkinsci/exclude-matrix-parent-plugin"
+issues:
+  - jira: '16057'  # excludematrixparent-plugin
 paths:
-- "hudson/plugins/excludeMatrixParent/excludeMatrixParent"
-developers: []
+  - "hudson/plugins/excludeMatrixParent/excludeMatrixParent"
+cd:
+  enabled: true
+developers:
+  - "m_jeanson"

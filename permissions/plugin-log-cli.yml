@@ -1,8 +1,14 @@
 ---
 name: "log-cli"
-github: "jenkinsci/log-cli-plugin"
+github: &GH "jenkinsci/log-cli-plugin"
+cd:
+  enabled: true
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/log-cli"
+  - "org/jenkins-ci/plugins/log-cli"
 developers:
-- "jglick"
-- "jglick_bot"
+  - "jglick"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

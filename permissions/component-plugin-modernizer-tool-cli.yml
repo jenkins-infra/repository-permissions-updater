@@ -1,0 +1,12 @@
+---
+name: "plugin-modernizer-cli"
+github: &GH "jenkins-infra/plugin-modernizer-tool"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/plugin-modernizer/plugin-modernizer-cli"
+developers:
+  - "poddingue"
+  - "jonesbusy"
+cd:
+  enabled: true

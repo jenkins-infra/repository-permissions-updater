@@ -1,11 +1,14 @@
 ---
 name: "purge-job-history"
 github: "jenkinsci/purge-job-history-plugin"
+issues:
+  - jira: '20820'  # purge-job-history-plugin
 paths:
-- "org/jenkins-ci/plugins/purge-job-history"
+  - "org/jenkins-ci/plugins/purge-job-history"
+cd:
+  enabled: true
 developers:
-- "stephenconnolly"
-- "aytuncbeken"
+  - "aytuncbeken"
 security:
   contacts:
     jira: "aytuncbeken"

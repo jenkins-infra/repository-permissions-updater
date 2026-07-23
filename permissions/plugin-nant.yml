@@ -1,6 +1,10 @@
 ---
 name: "nant"
 github: "jenkinsci/nant-plugin"
+issues:
+  - jira: '15561'  # nant-plugin
 paths:
-- "org/jenkins-ci/plugins/nant"
+  - "org/jenkins-ci/plugins/nant"
 developers: []
+cd:
+  enabled: true

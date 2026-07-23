@@ -1,0 +1,11 @@
+---
+name: "gitea-checks"
+github: &GH "jenkinsci/gitea-checks-plugin"
+paths:
+  - "io/jenkins/plugins/gitea-checks"
+developers:
+  - "viceice"
+issues:
+  - github: *GH
+cd:
+  enabled: true

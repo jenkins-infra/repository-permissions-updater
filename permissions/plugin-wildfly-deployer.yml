@@ -1,7 +1,9 @@
 ---
 name: "wildfly-deployer"
 github: "jenkinsci/wildfly-deployer-plugin"
+issues:
+  - jira: '20857'  # wildfly-deployer-plugin
 paths:
-- "org/jenkins-ci/plugins/wildfly-deployer"
+  - "org/jenkins-ci/plugins/wildfly-deployer"
 developers:
-- "ddilling"
+  - "ddilling"

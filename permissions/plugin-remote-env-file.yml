@@ -1,0 +1,11 @@
+---
+name: "remote-env-file"
+github: &GH "jenkinsci/remote-env-file-plugin"
+paths:
+- "io/jenkins/plugins/remote-env-file"
+developers:
+- "thelsby"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -1,0 +1,11 @@
+---
+name: "queueredirector"
+github: &GH "jenkinsci/queueredirector-plugin"
+paths:
+- "io/jenkins/plugins/queueredirector"
+developers:
+- "kmart"
+issues:
+  - github: *GH
+cd:
+  enabled: true

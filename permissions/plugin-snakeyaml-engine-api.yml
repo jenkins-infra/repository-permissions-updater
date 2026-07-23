@@ -1,0 +1,11 @@
+---
+name: "snakeyaml-engine-api"
+github: &GH "jenkinsci/snakeyaml-engine-api-plugin"
+paths:
+- "io/jenkins/plugins/snakeyaml-engine-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

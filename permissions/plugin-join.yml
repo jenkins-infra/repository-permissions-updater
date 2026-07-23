@@ -1,7 +1,9 @@
 ---
 name: "join"
 github: "jenkinsci/join-plugin"
+issues:
+  - jira: '15635'  # join-plugin
 paths:
-- "org/jenkins-ci/plugins/join"
+  - "org/jenkins-ci/plugins/join"
 developers:
-- "mdonohue"
+  - "mdonohue"

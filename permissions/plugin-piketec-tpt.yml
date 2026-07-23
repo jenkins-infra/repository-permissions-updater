@@ -2,6 +2,6 @@
 name: "piketec-tpt"
 github: "jenkinsci/piketec-tpt-plugin"
 paths:
-- "com/piketec/jenkins/plugins/piketec-tpt"
+  - "com/piketec/jenkins/plugins/piketec-tpt"
 developers:
-- "piketec"
+  - "piketec"

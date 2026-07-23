@@ -1,8 +1,10 @@
 ---
 name: "chatwork"
 github: "jenkinsci/chatwork-plugin"
+issues:
+  - jira: '18161'  # chatwork-plugin
 paths:
-- "com/vexus2/jenkins/chatwork/chatwork"
-- "org/jenkins-ci/plugins/chatwork"
+  - "com/vexus2/jenkins/chatwork/chatwork"
+  - "org/jenkins-ci/plugins/chatwork"
 developers:
-- "sue445"
+  - "sue445"

@@ -1,0 +1,9 @@
+---
+name: "build-monitor"
+github: "jenkinsci/build-monitor-plugin"
+paths:
+  - "org/jenkins-ci/plugins/build-monitor"
+developers:
+  - "janmolak"
+cd:
+  enabled: true

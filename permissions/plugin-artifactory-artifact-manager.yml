@@ -1,0 +1,11 @@
+---
+name: "artifactory-artifact-manager"
+github: &GH "jenkinsci/artifactory-artifact-manager-plugin"
+paths:
+- "io/jenkins/plugins/artifactory-artifact-manager"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

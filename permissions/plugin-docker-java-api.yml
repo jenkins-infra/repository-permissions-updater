@@ -1,7 +1,13 @@
 ---
 name: "docker-java-api"
-github: "jenkinsci/docker-java-api-plugin"
+github: &gh "jenkinsci/docker-java-api-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/docker-java-api"
+  - "org/jenkins-ci/plugins/docker-java-api"
 developers:
-- "ydubreuil"
+  - "ydubreuil"
+  - "ericcitaire"
+  - "markewaite"
+cd:
+  enabled: true

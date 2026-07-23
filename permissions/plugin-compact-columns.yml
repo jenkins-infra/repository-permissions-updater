@@ -1,7 +1,11 @@
 ---
 name: "compact-columns"
-github: "jenkinsci/compact-columns-plugin"
+github: &gh "jenkinsci/compact-columns-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/compact-columns"
-- "org/jvnet/hudson/plugins/compact-columns"
-developers: []
+  - "org/jenkins-ci/plugins/compact-columns"
+developers:
+  - "tgr"
+cd:
+  enabled: true

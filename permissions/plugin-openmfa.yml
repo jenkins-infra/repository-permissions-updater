@@ -1,0 +1,11 @@
+---
+name: "openmfa"
+github: &GH "jenkinsci/openmfa-plugin"
+paths:
+- "io/jenkins/plugins/openmfa"
+developers:
+- "hexlianine"
+issues:
+  - github: *GH
+cd:
+  enabled: true

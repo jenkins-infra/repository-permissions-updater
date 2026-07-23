@@ -1,0 +1,7 @@
+---
+name: "access-modifier-checker"
+github: "jenkinsci/lib-access-modifier"
+paths:
+  - "org/kohsuke/access-modifier-checker"
+developers:
+  - "@core"

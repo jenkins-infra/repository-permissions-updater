@@ -1,7 +1,7 @@
 ---
 name: "workflow-pom"
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-pom"
+  - "org/jenkins-ci/plugins/workflow/workflow-pom"
 developers:
-- "jglick"
-- "kohsuke"
+  - "jglick"
+  - "kohsuke"

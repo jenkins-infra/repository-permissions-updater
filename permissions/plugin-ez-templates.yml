@@ -1,7 +1,9 @@
 ---
 name: "ez-templates"
 github: "jenkinsci/ez-templates-plugin"
+issues:
+  - jira: '20651'  # ez-templates-plugin
 paths:
-- "org/jenkins-ci/plugins/ez-templates"
+  - "org/jenkins-ci/plugins/ez-templates"
 developers:
-- "drekbour"
+  - "drekbour"

@@ -1,16 +1,20 @@
 ---
 name: "blueocean-core-js"
-github: "jenkinsci/blueocean-plugin"
+github: &gh "jenkinsci/blueocean-plugin"
+issues:
+  - github: *gh
 paths:
-- "io/jenkins/blueocean/blueocean-core-js"
+  - "io/jenkins/blueocean/blueocean-core-js"
 developers:
-- "michaelneale"
-- "vivek"
-- "tfennelly"
-- "kzantow"
-- "davidbees"
-- "halkeye"
-- "tscherler"
-security:
-  contacts:
-    jira: "blueocean_security_members"
+  - "michaelneale"
+  - "vivek"
+  - "kzantow"
+  - "davidbees"
+  - "richbg"
+  - "carroll"
+  - "dnusbaum"
+  - "jtaboada"
+  - "kshultz"
+  - "bitwiseman"
+  - "olamy"
+  - "tscherler"

@@ -1,0 +1,15 @@
+---
+name: "signpath"
+github: &GH "jenkinsci/signpath-plugin"
+paths:
+  - "io/jenkins/plugins/signpath"
+developers:
+- "psavoie_signpath"
+- "swenig_signpath"
+- "drauch"
+- "tahacmd"
+- "salehahmadi"
+issues:
+  - jira: 28629
+cd:
+  enabled: true

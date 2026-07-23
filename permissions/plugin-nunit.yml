@@ -1,9 +1,14 @@
 ---
 name: "nunit"
-github: "jenkinsci/nunit-plugin"
+github: &GH "jenkinsci/nunit-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/nunit"
-- "org/jvnet/hudson/plugins/nunit"
+  - "org/jenkins-ci/plugins/nunit"
+  - "org/jvnet/hudson/plugins/nunit"
 developers:
-- "kinow"
-- "slide_o_mix"
+  - "kinow"
+  - "smorita"
+  - "jonesbusy"
+cd:
+  enabled: true

@@ -1,19 +1,23 @@
 ---
 name: "support-core"
-github: "jenkinsci/support-core-plugin"
+github: &gh "jenkinsci/support-core-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/support-core"
+  - "org/jenkins-ci/plugins/support-core"
 developers:
-- "jglick"
-- "kohsuke"
-- "schristou"
-- "stephenconnolly"
-- "batmat"
-- "owood"
-- "escoem"
-- "dnusbaum"
-- "egutierrez"
-- "mramonleon"
+  - "jglick"
+  - "kohsuke"
+  - "schristou"
+  - "batmat"
+  - "owood"
+  - "escoem"
+  - "dnusbaum"
+  - "egutierrez"
+  - "allan_burdajewicz"
+  - "@cloudbees-developers"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

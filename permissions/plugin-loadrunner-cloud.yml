@@ -1,0 +1,11 @@
+---
+name: "loadrunner-cloud"
+github: &GH "jenkinsci/loadrunner-cloud-plugin"
+paths:
+  - "io/jenkins/plugins/loadrunner-cloud"
+developers:
+  - "loadrunnercloud_pe"
+issues:
+  - github: *GH
+cd:
+  enabled: true

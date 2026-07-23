@@ -1,0 +1,11 @@
+---
+name: "solarized-theme"
+github: &GH "jenkinsci/solarized-theme-plugin"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/plugins/solarized-theme"
+developers:
+  - "janfaracik"
+cd:
+  enabled: true

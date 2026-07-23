@@ -1,11 +1,13 @@
 ---
 name: "dashboard-view"
-github: "jenkinsci/dashboard-view-plugin"
+github: &gh "jenkinsci/dashboard-view-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/dashboard-view"
-- "org/jvnet/hudson/plugins/dashboard-view"
+  - "org/jenkins-ci/plugins/dashboard-view"
+  - "org/jvnet/hudson/plugins/dashboard-view"
 developers:
-- "olivergondza"
-- "stephenconnolly"
-- "tgr"
-- "vandyev"
+  - "tgr"
+  - "vandyev"
+cd:
+  enabled: true

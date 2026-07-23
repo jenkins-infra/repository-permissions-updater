@@ -1,17 +1,21 @@
 ---
 name: "pipeline-build-step"
-github: "jenkinsci/pipeline-build-step-plugin"
+github: &GH "jenkinsci/pipeline-build-step-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/pipeline-build-step"
+  - "org/jenkins-ci/plugins/pipeline-build-step"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "jglick"
+  - "abayer"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "olamy"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

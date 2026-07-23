@@ -1,0 +1,12 @@
+---
+name: "alibabacloud-pkg-deployment"
+github: &GH "jenkinsci/alibabacloud-pkg-deployment-plugin"
+paths:
+- "io/jenkins/plugins/alibabacloud-pkg-deployment"
+developers:
+- "fuliu_zln"
+- "pistol_gao"
+- "xiaoxiaoerke"
+- "jenkinstest_yu"
+issues:
+  - jira: 29128

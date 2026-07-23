@@ -1,6 +1,11 @@
 ---
 name: "exclusive-label-plugin"
-github: "jenkinsci/exclusive-labels-plugin"
+github: &GH "jenkinsci/exclusive-labels-plugin"
+issues:
+  - github: *GH
 paths:
-- "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
-developers: []
+  - "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
+developers:
+- "jonesbusy"
+cd:
+  enabled: true

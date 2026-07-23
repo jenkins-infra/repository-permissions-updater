@@ -1,8 +1,10 @@
 ---
 name: "build-symlink"
-github: "jenkinsci/build-symlink-plugin"
+github: &gh "jenkinsci/build-symlink-plugin"
+issues:
+  - github: *gh
 paths:
-- "io/jenkins/plugins/build-symlink"
+  - "io/jenkins/plugins/build-symlink"
 developers:
-- "jglick"
-- "wfollonier"
+  - "jglick"
+  - "wfollonier"

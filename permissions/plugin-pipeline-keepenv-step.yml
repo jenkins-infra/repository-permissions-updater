@@ -1,0 +1,12 @@
+---
+name: "pipeline-keepenv-step"
+github: &GH "jenkinsci/pipeline-keepenv-step-plugin"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/plugins/pipeline-keepenv-step"
+developers:
+  - "@security"
+cd:
+  enabled: true
+communityPluginMaintainers: false

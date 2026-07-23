@@ -1,0 +1,11 @@
+---
+name: "akeyless"
+github: &GH "jenkinsci/akeyless-plugin"
+paths:
+- "io/jenkins/plugins/akeyless"
+developers:
+- "alikdolg"
+issues:
+  - jira: 29727
+cd:
+  enabled: true

@@ -2,7 +2,7 @@
 name: "capability-annotation"
 github: "jenkinsci/capability-annotation"
 paths:
-- "io/jenkins/blueocean/rest/annotation/capability-annotation"
+  - "io/jenkins/blueocean/rest/annotation/capability-annotation"
 developers:
-- "vivek"
-- "michaelneale"
+  - "vivek"
+  - "michaelneale"

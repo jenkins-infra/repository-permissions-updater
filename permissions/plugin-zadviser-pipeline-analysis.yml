@@ -1,0 +1,9 @@
+---
+name: "zadviser-pipeline-analysis"
+github: &GH "jenkinsci/zadviser-pipeline-analysis-plugin"
+paths:
+- "io/jenkins/plugins/zadviser-pipeline-analysis"
+developers:
+- "tdp17"
+issues:
+  - github: *GH

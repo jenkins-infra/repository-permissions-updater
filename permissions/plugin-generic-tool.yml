@@ -1,0 +1,12 @@
+---
+name: "generic-tool"
+github: &GH "jenkinsci/generic-tool-plugin"
+paths:
+  - "io/jenkins/plugins/generic-tool"
+developers:
+  - "@security"
+issues:
+  - github: *GH
+cd:
+  enabled: true
+communityPluginMaintainers: false

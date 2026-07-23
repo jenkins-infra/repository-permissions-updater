@@ -1,20 +1,22 @@
 ---
 name: "structs"
-github: "jenkinsci/structs-plugin"
+github: &gh "jenkinsci/structs-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/structs"
+  - "org/jenkins-ci/plugins/structs"
 developers:
-- "jglick"
-- "kohsuke"
-- "oleg_nenashev"
-- "stephenconnolly"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "jglick"
+  - "kohsuke"
+  - "oleg_nenashev"
+  - "abayer"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
 security:
   contacts:
-    jira: "foundation_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

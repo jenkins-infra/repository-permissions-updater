@@ -2,7 +2,7 @@
 name: "performance-signature-parent-pom"
 github: "jenkinsci/performance-signature-dynatrace-plugin"
 paths:
-- "de/tsystems/mms/apm/performance-signature-parent-pom"
+  - "de/tsystems/mms/apm/performance-signature-parent-pom"
 developers:
-- "rpionke"
-- "robkuehn"
+  - "rpionke"
+  - "robkuehn"

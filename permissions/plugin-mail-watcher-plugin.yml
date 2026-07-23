@@ -1,7 +1,9 @@
 ---
 name: "mail-watcher-plugin"
 github: "jenkinsci/mail-watcher-plugin"
+issues:
+  - jira: '17450'  # mail-watcher-plugin
 paths:
-- "org/jenkins-ci/plugins/mail-watcher-plugin"
+  - "org/jenkins-ci/plugins/mail-watcher-plugin"
 developers:
-- "olivergondza"
+  - "stefan_spieker"

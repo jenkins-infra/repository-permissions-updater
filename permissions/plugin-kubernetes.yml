@@ -1,9 +1,21 @@
 ---
 name: "kubernetes"
-github: "jenkinsci/kubernetes-plugin"
+github: &gh "jenkinsci/kubernetes-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/csanchez/jenkins/plugins/kubernetes"
+  - "org/csanchez/jenkins/plugins/kubernetes"
+cd:
+  enabled: true
 developers:
-- "csanchez"
-- "vlatombe"
-- "jglick"
+  - "csanchez"
+  - "vlatombe"
+  - "jglick"
+  - "jequals5"
+  - "@cloudbees-developers"
+  - "amuniz"
+  - "kerogers"
+  - "aneveux"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

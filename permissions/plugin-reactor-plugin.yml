@@ -1,6 +1,6 @@
 ---
 name: "reactor-plugin"
 paths:
-- "com/nirima/reactor-plugin"
+  - "com/nirima/reactor-plugin"
 developers:
-- "magnayn"
+  - "magnayn"

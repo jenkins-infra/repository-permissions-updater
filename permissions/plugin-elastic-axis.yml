@@ -1,7 +1,12 @@
 ---
 name: "elastic-axis"
-github: "jenkinsci/elastic-axis-plugin"
+github: &gh "jenkinsci/elastic-axis-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/elastic-axis"
+  - "org/jenkins-ci/plugins/elastic-axis"
+cd:
+  enabled: true
 developers:
-- "taksan"
+  - "taksan"
+  - "markewaite"

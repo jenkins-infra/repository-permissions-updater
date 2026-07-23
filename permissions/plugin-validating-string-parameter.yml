@@ -1,7 +1,12 @@
 ---
 name: "validating-string-parameter"
+github: jenkinsci/validating-string-parameter-plugin
+issues:
+  - jira: '15707'  # validating-string-parameter-plugin
 paths:
-- "org/jenkins-ci/plugins/validating-string-parameter"
+  - "org/jenkins-ci/plugins/validating-string-parameter"
 developers:
-- "vlatombe"
-- "slide_o_mix"
+  - "vlatombe"
+  - "raihaan"
+cd:
+  enabled: true

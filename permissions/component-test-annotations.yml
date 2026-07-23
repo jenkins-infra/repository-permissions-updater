@@ -2,8 +2,9 @@
 name: "test-annotations"
 github: "jenkinsci/lib-test-annotations"
 paths:
-- "org/jenkins-ci/test-annotations"
-- "org/jvnet/hudson/test-annotations"
+  - "org/jenkins-ci/test-annotations"
+  - "org/jvnet/hudson/test-annotations"
+cd:
+  enabled: true
 developers:
-- "kohsuke"
-- "olivergondza"
+  - "@core"

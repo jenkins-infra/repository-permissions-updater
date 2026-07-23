@@ -1,15 +1,17 @@
 ---
 name: "pipeline-model-declarative-agent"
-github: "jenkinsci/pipeline-model-definition-plugin"
+github: &GH "jenkinsci/pipeline-model-definition-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkinsci/plugins/pipeline-model-declarative-agent"
+  - "org/jenkinsci/plugins/pipeline-model-declarative-agent"
 developers:
-- "abayer"
-- "oleg_nenashev"
-- "stephenconnolly"
-- "rsandell"
-- "bitwiseman"
-- "dnusbaum"
+  - "abayer"
+  - "oleg_nenashev"
+  - "rsandell"
+  - "bitwiseman"
+  - "dnusbaum"
+  - "carroll"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

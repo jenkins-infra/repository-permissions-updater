@@ -1,0 +1,12 @@
+---
+name: "resources-ai-chatbot"
+github: &GH "jenkinsci/resources-ai-chatbot-plugin"
+paths:
+- "io/jenkins/plugins/resources-ai-chatbot"
+developers:
+- "cnu1812"
+- "krisstern"
+cd:
+  enabled: true
+issues:
+  - github: *GH

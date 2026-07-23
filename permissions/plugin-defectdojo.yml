@@ -1,0 +1,11 @@
+---
+name: "defectdojo"
+github: &GH "jenkinsci/defectdojo-plugin"
+paths:
+- "io/jenkins/plugins/defectdojo"
+developers:
+- "eu_david"
+issues:
+  - jira: 29421
+cd:
+  enabled: true

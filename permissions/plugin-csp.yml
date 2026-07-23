@@ -1,0 +1,12 @@
+---
+name: "csp"
+github: &GH "jenkinsci/csp-plugin"
+paths:
+  - "io/jenkins/plugins/csp"
+developers:
+  - "@security"
+issues:
+  - github: *GH
+communityPluginMaintainers: false
+cd:
+  enabled: true

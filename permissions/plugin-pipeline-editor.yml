@@ -2,6 +2,6 @@
 name: "pipeline-editor"
 github: "jenkinsci/pipeline-editor-plugin"
 paths:
-- "org/jenkins-ci/plugins/pipeline-editor"
+  - "org/jenkins-ci/plugins/pipeline-editor"
 developers:
-- "michaelneale"
+  - "michaelneale"

@@ -1,5 +1,6 @@
-# generated directory, not to be committed/pushed
+# generated files, not to be committed/pushed
 json/
+checks-*.txt
 
 # Apache Maven
 target/
@@ -18,3 +19,6 @@ lib/
 # NetBeans
 nb-configuration.xml
 nbactions-*.xml
+
+# macOS
+.DS_Store

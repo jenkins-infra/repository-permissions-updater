@@ -1,0 +1,14 @@
+---
+name: "echarts-api"
+github: &gh "jenkinsci/echarts-api-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/echarts-api"
+developers:
+  - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

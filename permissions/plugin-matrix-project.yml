@@ -1,10 +1,14 @@
 ---
 name: "matrix-project"
-github: "jenkinsci/matrix-project-plugin"
+github: &gh "jenkinsci/matrix-project-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/matrix-project"
+  - "org/jenkins-ci/plugins/matrix-project"
+cd:
+  enabled: true
 developers:
-- "amuniz"
-- "jglick"
-- "oleg_nenashev"
-- "olivergondza"
+  - "amuniz"
+  - "oleg_nenashev"
+  - "batmat"
+  - "rsandell"

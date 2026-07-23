@@ -1,5 +1,5 @@
 ---
 name: "cucumber"
 paths:
-- "org/jenkins-ci/ruby-plugins/cucumber"
+  - "org/jenkins-ci/ruby-plugins/cucumber"
 developers: []

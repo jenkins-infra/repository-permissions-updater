@@ -1,18 +1,24 @@
 ---
 name: "durable-task"
-github: "jenkinsci/durable-task-plugin"
+github: &gh "jenkinsci/durable-task-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/durable-task"
+  - "org/jenkins-ci/plugins/durable-task"
 developers:
-- "jglick"
-- "kohsuke"
-- "svanoort"
-- "abayer"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "teilo"
+  - "batmat"
+  - "olamy"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

@@ -1,7 +1,12 @@
 ---
 name: "build-with-parameters"
-github: "jenkinsci/build-with-parameters-plugin"
+github: &gh "jenkinsci/build-with-parameters-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/build-with-parameters"
+  - "org/jenkins-ci/plugins/build-with-parameters"
 developers:
-- "sugonyak_ivan"
+  - "sugonyak_ivan"
+  - "markewaite"
+cd:
+  enabled: true

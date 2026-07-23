@@ -1,8 +1,13 @@
 ---
 name: "extended-read-permission"
-github: "jenkinsci/extended-read-permission-plugin"
+github: &gh "jenkinsci/extended-read-permission-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jvnet/hudson/plugins/extended-read-permission"
+  - "org/jvnet/hudson/plugins/extended-read-permission"
 developers:
-- "batmat"
-- "oleg_nenashev"
+  - "batmat"
+  - "oleg_nenashev"
+  - "jonesbusy"
+cd:
+  enabled: true

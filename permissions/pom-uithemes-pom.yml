@@ -2,6 +2,5 @@
 name: "uithemes-pom"
 github: "jenkinsci/uithemes-plugin"
 paths:
-- "org/jenkins-ci/plugins/uithemes/uithemes-pom"
-developers:
-- "tfennelly"
+  - "org/jenkins-ci/plugins/uithemes/uithemes-pom"
+developers: [] # archived

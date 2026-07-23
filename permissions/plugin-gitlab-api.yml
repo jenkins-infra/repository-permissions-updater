@@ -1,11 +1,16 @@
 ---
 name: "gitlab-api"
-github: "jenkinsci/gitlab-api-plugin"
+github: &gh "jenkinsci/gitlab-api-plugin"
+issues:
+  - github: *gh
 paths:
-- "io/jenkins/plugins/gitlab-api"
+  - "io/jenkins/plugins/gitlab-api"
+cd:
+  enabled: true
 developers:
-- "baymac"
-- "surenpi"
-- "casz"
-- "jeffpearce"
-- "justinharringa"
+  - "baymac"
+  - "surenpi"
+  - "jetersen"
+  - "jeffpearce"
+  - "justinharringa"
+  - "markewaite"

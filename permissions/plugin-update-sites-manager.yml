@@ -1,7 +1,11 @@
 ---
 name: "update-sites-manager"
-github: "jenkinsci/update-sites-manager-plugin"
+github: &gh "jenkinsci/update-sites-manager-plugin"
+issues:
+  - github: *gh
 paths:
-- "jp/ikedam/jenkins/plugins/update-sites-manager"
+  - "jp/ikedam/jenkins/plugins/update-sites-manager"
 developers:
-- "ikedam"
+  - "slide_o_mix"
+cd:
+  enabled: true

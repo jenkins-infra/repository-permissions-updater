@@ -1,11 +1,15 @@
 ---
 name: "swarm"
-github: "jenkinsci/swarm-plugin"
+github: &GH "jenkinsci/swarm-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/swarm"
-- "org/jvnet/hudson/plugins/swarm"
+  - "org/jenkins-ci/plugins/swarm"
+  - "org/jvnet/hudson/plugins/swarm"
+cd:
+  enabled: true
 developers:
-- "basil"
-- "drulli"
-- "mindjiver"
-- "oleg_nenashev"
+  - "basil"
+  - "mindjiver"
+  - "oleg_nenashev"
+  - "@cloudbees-developers"

@@ -1,8 +1,14 @@
 ---
 name: "suppress-stack-trace"
-github: "jenkinsci/suppress-stack-trace-plugin"
+github: &gh "jenkinsci/suppress-stack-trace-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/suppress-stack-trace"
+  - "org/jenkins-ci/plugins/suppress-stack-trace"
 developers:
-- "jglick"
-- "recena"
+  - "jglick"
+  - "recena"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "rsandell"

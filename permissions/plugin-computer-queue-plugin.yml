@@ -1,7 +1,13 @@
 ---
 name: "computer-queue-plugin"
 github: "jenkinsci/computer-queue-plugin"
+issues:
+  - jira: '17463'  # computer-queue-plugin
 paths:
-- "jenkins/ci/plugins/computerqueue/computer-queue-plugin"
+  - "jenkins/ci/plugins/computerqueue/computer-queue-plugin"
 developers:
-- "olivergondza"
+  - "olivergondza"
+  - "mawinter69"
+cd:
+  enabled: true
+

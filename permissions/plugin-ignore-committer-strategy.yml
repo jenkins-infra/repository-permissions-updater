@@ -1,6 +1,12 @@
 ---
 name: "ignore-committer-strategy"
+github: &gh "jenkinsci/ignore-committer-strategy-plugin"
+issues:
+  - github: *gh
 paths:
-- "au/com/versent/jenkins/plugins/ignore-committer-strategy"
+  - "au/com/versent/jenkins/plugins/ignore-committer-strategy"
+cd:
+  enabled: true
 developers:
-- "bb3rn4rd"
+  - "bb3rn4rd"
+  - "markewaite"

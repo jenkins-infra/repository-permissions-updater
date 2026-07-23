@@ -1,6 +1,9 @@
 ---
 name: "createjobadvanced"
 github: "jenkinsci/createjobadvanced-plugin"
+issues:
+  - jira: '15737'  # createjobadvanced-plugin
 paths:
-- "org/jenkins-ci/plugins/createjobadvanced"
-developers: []
+  - "org/jenkins-ci/plugins/createjobadvanced"
+developers:
+  - "microscotch"

@@ -1,10 +1,16 @@
 ---
 name: "git-client"
-github: "jenkinsci/git-client-plugin"
+github: &gh "jenkinsci/git-client-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/git-client"
-- "org/jenkinsci/plugins/git-client"
+  - "org/jenkins-ci/plugins/git-client"
+  - "org/jenkinsci/plugins/git-client"
+communityPluginMaintainers: false
 developers:
-- "markewaite"
-- "rsandell"
-- "fcojfernandez"
+  - "markewaite"
+  - "olamy"
+  - "rsandell"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

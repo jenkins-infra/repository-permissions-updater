@@ -1,6 +1,6 @@
 ---
 name: "commit-message-trigger-plugin"
 paths:
-- "org/jenkins-ci/ruby-plugins/commit-message-trigger-plugin"
+  - "org/jenkins-ci/ruby-plugins/commit-message-trigger-plugin"
 developers:
-- "wiseloren"
+  - "wiseloren"

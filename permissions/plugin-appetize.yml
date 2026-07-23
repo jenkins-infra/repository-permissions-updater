@@ -2,6 +2,6 @@
 name: "appetize"
 github: "jenkinsci/appetize-plugin"
 paths:
-- "org/jenkins-ci/plugins/appetize"
+  - "org/jenkins-ci/plugins/appetize"
 developers:
-- "weiyin"
+  - "weiyin"

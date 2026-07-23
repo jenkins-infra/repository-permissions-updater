@@ -2,6 +2,6 @@
 name: "instant-messaging-parent"
 github: "jenkinsci/instant-messaging-parent-plugin"
 paths:
-- "org/jvnet/hudson/plugins/instant-messaging-parent"
+  - "org/jvnet/hudson/plugins/instant-messaging-parent"
 developers:
-- "kutzi"
+  - "kutzi"

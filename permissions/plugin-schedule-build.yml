@@ -1,8 +1,14 @@
 ---
 name: "schedule-build"
-github: "jenkinsci/schedule-build-plugin"
+github: &gh "jenkinsci/schedule-build-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/schedule-build"
+  - "org/jenkins-ci/plugins/schedule-build"
 developers:
-- "anderl86"
-- "pingunaut"
+  - "anderl86"
+  - "pingunaut"
+  - "markewaite"
+  - "darinpope"
+cd:
+  enabled: true

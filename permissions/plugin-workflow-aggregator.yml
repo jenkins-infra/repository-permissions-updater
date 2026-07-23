@@ -1,19 +1,22 @@
 ---
 name: "workflow-aggregator"
-github: "jenkinsci/workflow-aggregator-plugin"
+github: &gh "jenkinsci/workflow-aggregator-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/workflow/workflow-aggregator"
+  - "org/jenkins-ci/plugins/workflow/workflow-aggregator"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "kohsuke"
-- "abayer"
-- "svanoort"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
-- "jtaboada"
+  - "jglick"
+  - "kohsuke"
+  - "abayer"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "jtaboada"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"

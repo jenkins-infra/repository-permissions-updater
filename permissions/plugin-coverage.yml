@@ -1,0 +1,14 @@
+---
+name: "coverage"
+github: &gh "jenkinsci/coverage-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/coverage"
+developers:
+  - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

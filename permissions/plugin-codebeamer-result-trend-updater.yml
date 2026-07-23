@@ -1,7 +1,9 @@
 ---
 name: "codebeamer-result-trend-updater"
 github: "jenkinsci/codebeamer-result-trend-updater-plugin"
+issues:
+  - jira: '20843'  # codebeamer-result-trend-updater-plugin
 paths:
-- "org/jenkins-ci/plugins/codebeamer-result-trend-updater"
+  - "org/jenkins-ci/plugins/codebeamer-result-trend-updater"
 developers:
-- "intland_support"
+  - "intland_support"

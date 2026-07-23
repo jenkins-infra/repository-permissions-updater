@@ -1,7 +1,14 @@
 ---
 name: "forensics-api"
-github: "jenkinsci/forensics-api-plugin"
+github: &gh "jenkinsci/forensics-api-plugin"
+issues:
+  - github: *gh
 paths:
-- "io/jenkins/plugins/forensics-api"
+  - "io/jenkins/plugins/forensics-api"
 developers:
-- "drulli"
+  - "drulli"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

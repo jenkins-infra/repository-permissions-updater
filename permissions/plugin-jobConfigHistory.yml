@@ -1,9 +1,11 @@
 ---
 name: "jobConfigHistory"
-github: "jenkinsci/jobConfigHistory-plugin"
+github: &gh "jenkinsci/job-config-history-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/jobConfigHistory"
-- "org/jvnet/hudson/plugins/jobConfigHistory"
+  - "org/jenkins-ci/plugins/jobConfigHistory"
 developers:
-- "jochenafuerbacher"
-- "stefanbrausch"
+  - "stefan_spieker"
+cd:
+  enabled: true

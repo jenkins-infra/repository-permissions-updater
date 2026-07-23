@@ -2,8 +2,8 @@
 name: "maven-interceptor"
 github: "jenkinsci/maven-interceptors"
 paths:
-- "org/jenkins-ci/main/maven/maven-interceptor"
+  - "org/jenkins-ci/main/maven/maven-interceptor"
 developers:
-- "kutzi"
-- "olamy"
-- "aheritier"
+  - "kutzi"
+  - "olamy"
+  - "aheritier"

@@ -1,9 +1,14 @@
 ---
 name: "ant"
-github: "jenkinsci/ant-plugin"
+github: &gh "jenkinsci/ant-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/ant"
+  - "org/jenkins-ci/plugins/ant"
+cd:
+  enabled: true
 developers:
-- "armfergom"
-- "jglick"
-- "fcojfernandez"
+  - "armfergom"
+  - "jglick"
+  - "fcojfernandez"
+  - "markewaite"

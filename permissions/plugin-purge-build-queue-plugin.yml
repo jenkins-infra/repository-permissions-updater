@@ -1,6 +1,11 @@
 ---
 name: "purge-build-queue-plugin"
-github: "jenkinsci/purge-build-queue-plugin"
+github: &gh "jenkinsci/purge-build-queue-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/purge-build-queue-plugin"
-developers: []
+  - "org/jenkins-ci/plugins/purge-build-queue-plugin"
+developers:
+  - "notmyfault"
+cd:
+  enabled: true

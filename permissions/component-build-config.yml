@@ -1,6 +1,6 @@
 ---
 name: "build-config"
 paths:
-- "com/sonyericsson/hudson/plugins/gerrit/build-config"
+  - "com/sonyericsson/hudson/plugins/gerrit/build-config"
 developers:
-- "rsandell"
+  - "rsandell"

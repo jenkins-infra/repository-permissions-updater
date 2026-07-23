@@ -1,12 +1,17 @@
 ---
 name: "docker-workflow"
-github: "jenkinsci/docker-workflow-plugin"
+github: &gh "jenkinsci/docker-workflow-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/docker-workflow"
+  - "org/jenkins-ci/plugins/docker-workflow"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "oleg_nenashev"
-- "abayer"
-- "esmalling"
-- "svanoort"
-- "dnusbaum"
+  - "jglick"
+  - "oleg_nenashev"
+  - "abayer"
+  - "dnusbaum"
+  - "carroll"
+  - "rsandell"
+  - "jpochat"

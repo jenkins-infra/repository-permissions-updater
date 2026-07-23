@@ -1,9 +1,14 @@
 ---
 name: "git-parameter"
-github: "jenkinsci/git-parameter-plugin"
+github: &gh "jenkinsci/git-parameter-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/git-parameter"
-- "org/jenkins-ci/tools/git-parameter"
+  - "org/jenkins-ci/plugins/git-parameter"
+  - "org/jenkins-ci/tools/git-parameter"
+cd:
+  enabled: true
 developers:
-- "klimas7"
-- "ngiger"
+  - "markewaite"
+  - "klimas7"
+  - "ngiger"

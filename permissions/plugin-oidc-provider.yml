@@ -1,0 +1,17 @@
+---
+name: "oidc-provider"
+github: &GH "jenkinsci/oidc-provider-plugin"
+paths:
+  - "io/jenkins/plugins/oidc-provider"
+developers:
+  - "jglick"
+  - "escoem"
+  - "fcojfernandez"
+  - "@cloudbees-developers"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true
+issues:
+  - github: *GH

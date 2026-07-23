@@ -1,7 +1,11 @@
 ---
 name: "groovy-postbuild"
-github: "jenkinsci/groovy-postbuild-plugin"
+github: &gh "jenkinsci/groovy-postbuild-plugin"
+cd:
+  enabled: true
+issues:
+  - github: *gh
 paths:
-- "org/jvnet/hudson/plugins/groovy-postbuild"
+  - "org/jvnet/hudson/plugins/groovy-postbuild"
 developers:
-- "ikedam"
+  - "markewaite"

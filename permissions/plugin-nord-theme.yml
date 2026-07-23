@@ -1,0 +1,9 @@
+---
+name: "nord-theme"
+github: &GH "jenkinsci/nord-theme-plugin"
+paths:
+- "io/jenkins/plugins/nord-theme"
+developers:
+- "basil"
+issues:
+  - jira: 29730

@@ -2,6 +2,6 @@
 name: "send-stacktrace-to-eclipse-plugin"
 github: "jenkinsci/send-stacktrace-to-eclipse-plugin"
 paths:
-- "org/jenkins-ci/plugins/send-stacktrace-to-eclipse-plugin"
+  - "org/jenkins-ci/plugins/send-stacktrace-to-eclipse-plugin"
 developers:
-- "cbos"
+  - "cbos"

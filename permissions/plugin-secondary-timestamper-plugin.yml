@@ -2,6 +2,6 @@
 name: "secondary-timestamper-plugin"
 github: "jenkinsci/secondary-timestamper-plugin"
 paths:
-- "org/jenkins-ci/plugins/secondary-timestamper-plugin"
+  - "org/jenkins-ci/plugins/secondary-timestamper-plugin"
 developers:
-- "michael1010"
+  - "michael1010"

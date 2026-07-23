@@ -1,0 +1,17 @@
+---
+name: "snakeyaml-api"
+github: &gh "jenkinsci/snakeyaml-api-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/snakeyaml-api"
+developers:
+  - "escoem"
+  - "timja"
+  - "jetersen"
+  - "amuniz"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

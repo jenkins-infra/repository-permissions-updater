@@ -1,0 +1,13 @@
+---
+name: "cloudaeye"
+github: &GH "jenkinsci/cloudaeye-plugin"
+paths:
+- "io/jenkins/plugins/cloudaeye"
+developers:
+- "cloudaeye"
+- "nazrul"
+- "piyush_1"
+issues:
+  - github: *GH
+cd:
+  enabled: true

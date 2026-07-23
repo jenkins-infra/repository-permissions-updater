@@ -1,8 +1,15 @@
 ---
 name: "mock-security-realm"
-github: "jenkinsci/mock-security-realm-plugin"
+github: &gh "jenkinsci/mock-security-realm-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/mock-security-realm"
+  - "org/jenkins-ci/plugins/mock-security-realm"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "stephenconnolly"
+  - "jglick"
+  - "rarabaolaza"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

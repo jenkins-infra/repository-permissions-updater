@@ -1,8 +1,14 @@
 ---
 name: "jquery"
-github: "jenkinsci/jquery-plugin"
+github: &gh "jenkinsci/jquery-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/jquery"
+  - "org/jenkins-ci/plugins/jquery"
 developers:
-- "basil"
-- "kohsuke"
+  - "basil"
+  - "kohsuke"
+  - "markewaite"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

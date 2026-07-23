@@ -1,7 +1,9 @@
 ---
 name: "bitbucket-build-status-notifier"
 github: "jenkinsci/bitbucket-build-status-notifier-plugin"
+issues:
+  - jira: '21138'  # bitbucket-build-status-notifier-plugin
 paths:
-- "org/jenkins-ci/plugins/bitbucket-build-status-notifier"
+  - "org/jenkins-ci/plugins/bitbucket-build-status-notifier"
 developers:
-- "flagbit"
+  - "flagbit"

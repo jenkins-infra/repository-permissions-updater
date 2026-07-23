@@ -1,7 +1,9 @@
 ---
 name: "apprenda"
 github: "jenkinsci/apprenda-plugin"
+issues:
+  - jira: '23451'  # apprenda-plugin
 paths:
-- "org/jenkins-ci/plugins/apprenda"
+  - "org/jenkins-ci/plugins/apprenda"
 developers:
-- "apprenda"
+  - "apprenda"

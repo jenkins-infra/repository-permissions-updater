@@ -1,0 +1,11 @@
+---
+name: "woodstox-core-api"
+github: &GH "jenkinsci/woodstox-core-api-plugin"
+paths:
+- "io/jenkins/plugins/woodstox-core-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -1,8 +1,13 @@
 ---
 name: "postbuild-task"
-github: "jenkinsci/postbuild-task-plugin"
+github: &gh "jenkinsci/postbuild-task-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jvnet/hudson/plugins/postbuild-task"
+  - "org/jvnet/hudson/plugins/postbuild-task"
+cd:
+  enabled: true
 developers:
-- "madsnielsen"
-- "praqma" 
+  - "madsnielsen"
+  - "praqma"
+  - "timja"

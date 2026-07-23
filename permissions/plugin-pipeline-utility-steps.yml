@@ -1,7 +1,11 @@
 ---
 name: "pipeline-utility-steps"
-github: "jenkinsci/pipeline-utility-steps-plugin"
+github: &gh "jenkinsci/pipeline-utility-steps-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/pipeline-utility-steps"
+  - "org/jenkins-ci/plugins/pipeline-utility-steps"
+cd:
+  enabled: true
 developers:
-- "rsandell"
+  - "rsandell"

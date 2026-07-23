@@ -1,8 +1,8 @@
 ---
 name: "DotCi-Plugins-Starter-Pack"
 paths:
-- "com/groupon/jenkins-ci/plugins/DotCi-Plugins-Starter-Pack"
+  - "com/groupon/jenkins-ci/plugins/DotCi-Plugins-Starter-Pack"
 developers:
-- "surya548"
-- "suryagaddipati"
-- "vvitayau"
+  - "surya548"
+  - "suryagaddipati"
+  - "vvitayau"

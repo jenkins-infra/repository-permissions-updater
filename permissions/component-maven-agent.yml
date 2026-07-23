@@ -2,8 +2,8 @@
 name: "maven-agent"
 github: "jenkinsci/maven-interceptors"
 paths:
-- "org/jenkins-ci/main/maven/maven-agent"
+  - "org/jenkins-ci/main/maven/maven-agent"
 developers:
-- "kutzi"
-- "olamy"
-- "aheritier"
+  - "kutzi"
+  - "olamy"
+  - "aheritier"

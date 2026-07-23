@@ -1,5 +1,5 @@
 ---
 name: "heroku-jenkins-plugin"
 paths:
-- "com/heroku/heroku-jenkins-plugin"
+  - "com/heroku/heroku-jenkins-plugin"
 developers: []

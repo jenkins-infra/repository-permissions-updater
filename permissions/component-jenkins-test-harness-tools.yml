@@ -2,6 +2,6 @@
 name: "jenkins-test-harness-tools"
 github: "jenkinsci/jenkins-test-harness-tools"
 paths:
-- "org/jenkins-ci/main/jenkins-test-harness-tools"
+  - "org/jenkins-ci/main/jenkins-test-harness-tools"
 developers:
-- "jglick"
+  - "jglick"

@@ -1,7 +1,12 @@
 ---
 name: "job-import-plugin"
-github: "jenkinsci/job-import-plugin"
+github: &gh "jenkinsci/job-import-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/job-import-plugin"
+  - "org/jenkins-ci/plugins/job-import-plugin"
+cd:
+  enabled: true
 developers:
-- "escoem"
+  - "escoem"
+  - "markewaite"

@@ -1,7 +1,12 @@
 ---
 name: "database-mysql"
-github: "jenkinsci/database-mysql-plugin"
+github: &gh "jenkinsci/database-mysql-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/database-mysql"
+  - "org/jenkins-ci/plugins/database-mysql"
 developers:
-- "davidvanlaatum"
+  - "davidvanlaatum"
+  - "timja"
+cd:
+  enabled: true

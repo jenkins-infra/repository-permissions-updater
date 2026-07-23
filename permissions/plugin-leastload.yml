@@ -1,7 +1,13 @@
 ---
 name: "leastload"
 github: "jenkinsci/leastload-plugin"
+issues:
+  - jira: '17653'  # leastload-plugin
 paths:
-- "org/jenkins-ci/plugins/leastload"
+  - "org/jenkins-ci/plugins/leastload"
 developers:
-- "bstick12"
+  - "bstick12"
+  - "hashar"
+  - "sag47"
+cd:
+  enabled: true

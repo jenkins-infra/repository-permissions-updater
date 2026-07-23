@@ -1,0 +1,15 @@
+---
+name: "jackson-annotations2-api"
+github: &GH "jenkinsci/jackson-annotations2-api-plugin"
+paths:
+- "io/jenkins/plugins/jackson-annotations2-api"
+developers:
+- "jonesbusy"
+- "markewaite"
+issues:
+  - github: *GH
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

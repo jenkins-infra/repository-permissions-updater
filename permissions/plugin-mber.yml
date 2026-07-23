@@ -2,6 +2,6 @@
 name: "mber"
 github: "jenkinsci/mber-plugin"
 paths:
-- "org/jenkins-ci/plugins/mber"
+  - "org/jenkins-ci/plugins/mber"
 developers:
-- "onefrankguy"
+  - "onefrankguy"

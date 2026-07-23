@@ -1,7 +1,10 @@
 ---
 name: "pollscm"
-github: "jenkinsci/pollscm-plugin"
+github: &gh "jenkinsci/pollscm-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/pollscm"
+  - "org/jenkins-ci/plugins/pollscm"
 developers:
-- "vlatombe"
+  - "markewaite"
+  - "vlatombe"

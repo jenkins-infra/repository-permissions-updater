@@ -1,7 +1,12 @@
 ---
 name: "folder-properties"
-github: "jenkinsci/folder-properties-plugin"
+github: &gh "jenkinsci/folder-properties-plugin"
+issues:
+  - github: *gh
 paths:
-- "com/mig82/folder-properties"
+  - "com/mig82/folder-properties"
+cd:
+  enabled: true
 developers:
-- "mig82"
+  - "mig82"
+  - "markewaite"

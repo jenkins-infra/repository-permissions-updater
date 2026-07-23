@@ -1,0 +1,12 @@
+---
+name: "safe-batch-environment-filter"
+github: &GH "jenkinsci/safe-batch-environment-filter-plugin"
+paths:
+  - "io/jenkins/plugins/safe-batch-environment-filter"
+developers:
+  - "@security"
+issues:
+  - github: *GH
+cd:
+  enabled: true
+communityPluginMaintainers: false

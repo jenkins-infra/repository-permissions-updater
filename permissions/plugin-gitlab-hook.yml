@@ -1,8 +1,11 @@
 ---
 name: "gitlab-hook"
-github: "jenkinsci/gitlab-hook-plugin"
+github: &gh "jenkinsci/gitlab-hook-plugin"
+issues:
+  - jira: '17597'  # gitlab-hook-plugin
+  - github: *gh
 paths:
-- "org/jenkins-ci/ruby-plugins/gitlab-hook"
+  - "org/jenkins-ci/ruby-plugins/gitlab-hook"
 developers:
-- "elvanja"
-- "javiplx"
+  - "elvanja"
+  - "javiplx"

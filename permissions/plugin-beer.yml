@@ -1,6 +1,11 @@
 ---
 name: "beer"
-github: "jenkinsci/beer-plugin"
+github: &gh "jenkinsci/beer-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/beer"
-developers: []
+  - "org/jenkins-ci/plugins/beer"
+developers:
+  - "timja"
+cd:
+  enabled: true

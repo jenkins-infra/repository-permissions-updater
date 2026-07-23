@@ -2,6 +2,6 @@
 name: "zapper"
 github: "jenkinsci/zapper-plugin"
 paths:
-- "org/jenkins-ci/plugins/zapper"
+  - "org/jenkins-ci/plugins/zapper"
 developers:
-- "adedayo"
+  - "adedayo"

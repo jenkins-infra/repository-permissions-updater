@@ -1,7 +1,9 @@
 ---
 name: "uno-choice"
-github: "jenkinsci/active-choices-plugin"
+github: &gh "jenkinsci/active-choices-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/biouno/uno-choice"
+  - "org/biouno/uno-choice"
 developers:
-- "kinow"
+  - "kinow"

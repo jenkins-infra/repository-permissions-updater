@@ -1,7 +1,11 @@
 ---
 name: "thinBackup"
 github: "jenkinsci/thin-backup-plugin"
+issues:
+  - jira: '15780'  # thinbackup-plugin
 paths:
-- "org/jvnet/hudson/plugins/thinBackup"
-developers: 
-- "tofuatjava"
+  - "org/jvnet/hudson/plugins/thinBackup"
+developers:
+  - "tofuatjava"
+  - "jeffpearce"
+  - "stefan_spieker"

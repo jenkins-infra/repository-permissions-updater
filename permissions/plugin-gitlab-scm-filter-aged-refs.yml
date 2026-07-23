@@ -1,0 +1,11 @@
+---
+name: "gitlab-scm-filter-aged-refs"
+github: &gh "jenkinsci/scm-filter-aged-refs-plugin"
+issues:
+  - github: *gh
+paths:
+  - "org/jenkins-ci/plugins/gitlab-scm-filter-aged-refs"
+developers:
+  - "tgr"
+cd:
+  enabled: true

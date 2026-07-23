@@ -1,0 +1,9 @@
+---
+name: "xcode-cloud-for-pipeline"
+github: &GH "jenkinsci/xcode-cloud-for-pipeline-plugin"
+paths:
+- "io/jenkins/plugins/xcode-cloud-for-pipeline"
+developers:
+- "lucas_im"
+issues:
+  - jira: 29126

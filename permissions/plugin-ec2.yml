@@ -1,11 +1,18 @@
 ---
 name: "ec2"
-github: "jenkinsci/ec2-plugin"
+github: &gh "jenkinsci/ec2-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/ec2"
+  - "org/jenkins-ci/plugins/ec2"
 developers:
-- "thoulen"
-- "julienduchesne"
-- "jvz"
-- "fcojfernandez"
-- "raihaan"
+  - "thoulen"
+  - "julienduchesne"
+  - "@cloudbees-developers"
+  - "raihaan"
+  - "froblesmartin"
+security:
+  contacts:
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

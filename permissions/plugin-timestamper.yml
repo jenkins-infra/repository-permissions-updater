@@ -1,9 +1,12 @@
 ---
 name: "timestamper"
-github: "jenkinsci/timestamper-plugin"
+github: &gh "jenkinsci/timestamper-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/timestamper"
-- "org/jvnet/hudson/plugins/timestamper"
+  - "org/jenkins-ci/plugins/timestamper"
+  - "org/jvnet/hudson/plugins/timestamper"
 developers:
-- "stevengbrown"
-- "jglick"
+  - "basil"
+  - "stevengbrown"
+  - "markewaite"

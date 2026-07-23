@@ -1,6 +1,9 @@
 ---
 name: "discard-old-build"
-github: "jenkinsci/discard-old-build-plugin"
+github: &gh "jenkinsci/discard-old-build-plugin"
+issues:
+  - github: *gh
 paths:
-- "jp/shiftinc/jenkins/plugins/discard-old-build"
-developers: []
+  - "jp/shiftinc/jenkins/plugins/discard-old-build"
+developers:
+  - "markewaite"

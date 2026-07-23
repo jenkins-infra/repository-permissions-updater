@@ -1,6 +1,6 @@
 ---
 name: "event-announcer"
 paths:
-- "org/jenkins-ci/plugins/event-announcer"
+  - "org/jenkins-ci/plugins/event-announcer"
 developers:
-- "toumorokoshi"
+  - "toumorokoshi"

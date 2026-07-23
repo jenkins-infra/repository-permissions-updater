@@ -1,7 +1,9 @@
 ---
 name: "azure-event-grid-notifier"
 github: "jenkinsci/azure-event-grid-notifier-plugin"
+issues:
+  - jira: '23057'  # azure-event-grid-notifier-plugin
 paths:
-- "org/jenkins-ci/plugins/azure-event-grid-notifier"
+  - "org/jenkins-ci/plugins/azure-event-grid-notifier"
 developers:
-- "torosent"
+  - "torosent"

@@ -1,9 +1,21 @@
 ---
 name: "mercurial"
-github: "jenkinsci/mercurial-plugin"
+github: &gh "jenkinsci/mercurial-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/mercurial"
-- "org/jvnet/hudson/plugins/mercurial"
+  - "org/jenkins-ci/plugins/mercurial"
+  - "org/jvnet/hudson/plugins/mercurial"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "stephenconnolly"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "rsandell"
+  - "dnusbaum"
+  - "markewaite"
+  - "poddingue"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

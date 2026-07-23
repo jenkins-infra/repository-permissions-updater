@@ -1,9 +1,23 @@
 ---
 name: "active-directory"
-github: "jenkinsci/active-directory-plugin"
+github: &gh "jenkinsci/active-directory-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/active-directory"
+  - "org/jenkins-ci/plugins/active-directory"
 developers:
-- "fbelzunc"
-- "kohsuke"
-- "stephenconnolly"
+  - "basil"
+  - "fbelzunc"
+  - "kohsuke"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "rsandell"
+  - "carroll"
+  - "teilo"
+  - "rarabaolaza"
+cd:
+  enabled: true
+security:
+  contacts:
+    jira: "cloudbees_security_members"

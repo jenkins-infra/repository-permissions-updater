@@ -1,0 +1,9 @@
+---
+name: "report-jtreg"
+github: &GH "jenkinsci/report-jtreg-plugin"
+paths:
+- "io/jenkins/plugins/report-jtreg"
+developers:
+- "judovana"
+issues:
+  - github: *GH

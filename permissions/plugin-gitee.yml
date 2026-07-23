@@ -1,7 +1,13 @@
 ---
 name: "gitee"
-github: "jenkinsci/gitee-plugin"
+github: &gh "jenkinsci/gitee-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/gitee"
+  - "org/jenkins-ci/plugins/gitee"
+cd:
+  enabled: true
 developers:
-- "yashin"
+  - "yashin"
+  - "markewaite"
+  - "puffy1215"

@@ -1,0 +1,13 @@
+---
+name: "user-guide-ai-chatbot"
+github: &GH "jenkinsci/user-guide-ai-chatbot-plugin"
+paths:
+- "io/jenkins/plugins/user-guide-ai-chatbot"
+developers:
+- "krisstern"
+- "shivaylamba"
+- "chiruu12"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -1,17 +1,21 @@
 ---
 name: "pipeline-input-step"
-github: "jenkinsci/pipeline-input-step-plugin"
+github: &GH "jenkinsci/pipeline-input-step-plugin"
+issues:
+  - github: *GH
 paths:
-- "org/jenkins-ci/plugins/pipeline-input-step"
+  - "org/jenkins-ci/plugins/pipeline-input-step"
 developers:
-- "jglick"
-- "svanoort"
-- "abayer"
-- "dnusbaum"
-- "rsandell"
-- "carroll"
-- "bitwiseman"
-- "kshultz"
+  - "jglick"
+  - "abayer"
+  - "dnusbaum"
+  - "rsandell"
+  - "carroll"
+  - "bitwiseman"
+  - "kshultz"
+  - "teilo"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true

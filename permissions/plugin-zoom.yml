@@ -1,7 +1,12 @@
 ---
 name: "zoom"
-github: "jenkinsci/zoom-plugin"
+github: &gh "jenkinsci/zoom-plugin"
+issues:
+  - github: *gh
 paths:
-- "io/jenkins/plugins/zoom"
+  - "io/jenkins/plugins/zoom"
 developers:
-- "zoom_us"
+  - "zoom_us"
+  - "markewaite"
+cd:
+  enabled: true

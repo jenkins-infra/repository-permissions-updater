@@ -1,8 +1,10 @@
 ---
 name: "marathon"
 github: "jenkinsci/marathon-plugin"
+issues:
+  - jira: '21625'  # marathon-plugin
 paths:
-- "com/mesosphere/velocity/marathon"
+  - "com/mesosphere/velocity/marathon"
 developers:
-- "titosand"
-- "colinmsphere"
+  - "titosand"
+  - "colinmsphere"

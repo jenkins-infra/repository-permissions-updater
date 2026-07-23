@@ -1,7 +1,7 @@
 ---
 name: "DotCi-DockerPublish"
 paths:
-- "com/groupon/jenkins-ci/plugins/DotCi-DockerPublish"
+  - "com/groupon/jenkins-ci/plugins/DotCi-DockerPublish"
 developers:
-- "hristoast"
-- "vvitayau"
+  - "hristoast"
+  - "vvitayau"

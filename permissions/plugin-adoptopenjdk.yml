@@ -1,7 +1,12 @@
 ---
 name: "adoptopenjdk"
-github: "jenkinsci/adoptopenjdk-plugin"
+github: &gh "jenkinsci/adoptopenjdk-plugin"
+issues:
+  - github: *gh
 paths:
-- "io/jenkins/plugins/adoptopenjdk"
+  - "io/jenkins/plugins/adoptopenjdk"
 developers:
-- "mmchr"
+  - "mmchr"
+  - "markewaite"
+cd:
+  enabled: true

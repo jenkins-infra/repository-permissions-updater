@@ -1,13 +1,17 @@
 ---
 name: "git"
-github: "jenkinsci/git-plugin"
+github: &gh "jenkinsci/git-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/git"
-- "org/jenkinsci/plugins/git"
-- "org/jvnet/hudson/plugins/git"
+  - "org/jenkins-ci/plugins/git"
+  - "org/jenkinsci/plugins/git"
+  - "org/jvnet/hudson/plugins/git"
+communityPluginMaintainers: false
 developers:
-- "jglick"
-- "markewaite"
-- "stephenconnolly"
-- "rsandell"
-- "fcojfernandez"
+  - "markewaite"
+  - "olamy"
+  - "rsandell"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

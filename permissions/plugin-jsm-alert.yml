@@ -1,0 +1,11 @@
+---
+name: "jsm-alert"
+github: &GH "jenkinsci/jsm-alert-plugin"
+paths:
+- "io/jenkins/plugins/jsm-alert"
+developers:
+- "jsm_alert_plugin"
+issues:
+  - github: *GH
+cd:
+  enabled: true

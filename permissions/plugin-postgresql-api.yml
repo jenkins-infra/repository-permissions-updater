@@ -1,7 +1,12 @@
 ---
 name: "postgresql-api"
-github: "jenkinsci/postgresql-api-plugin"
+github: &gh "jenkinsci/postgresql-api-plugin"
+issues:
+  - github: *gh
 paths:
-- "io/jenkins/plugins/postgresql-api"
+  - "io/jenkins/plugins/postgresql-api"
 developers:
-- "cleclerc"
+  - "cleclerc"
+  - "timja"
+cd:
+  enabled: true

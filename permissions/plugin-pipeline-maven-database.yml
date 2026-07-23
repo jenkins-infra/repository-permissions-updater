@@ -1,0 +1,12 @@
+---
+name: "pipeline-maven-database"
+github: "jenkinsci/pipeline-maven-plugin"
+cd:
+  enabled: true
+paths:
+  - "org/jenkins-ci/plugins/pipeline-maven-database"
+developers:
+  - "alobato"
+  - "cleclerc"
+  - "aheritier"
+  - "bguerin"

@@ -2,9 +2,8 @@
 name: "winstone"
 github: "jenkinsci/winstone"
 paths:
-- "org/jenkins-ci/winstone"
+  - "org/jenkins-ci/winstone"
+cd:
+  enabled: true
 developers:
-- "jglick"
-- "kohsuke"
-- "oleg_nenashev"
-- "olamy"
+  - "@core"

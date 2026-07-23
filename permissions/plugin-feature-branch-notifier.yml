@@ -1,6 +1,6 @@
 ---
 name: "feature-branch-notifier"
 paths:
-- "org/jenkins-ci/plugins/feature-branch-notifier"
+  - "org/jenkins-ci/plugins/feature-branch-notifier"
 developers:
-- "tonis_pool"
+  - "tonis_pool"

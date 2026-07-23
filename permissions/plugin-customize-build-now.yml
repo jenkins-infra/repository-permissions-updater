@@ -1,8 +1,12 @@
 ---
 name: "customize-build-now"
-github: "jenkinsci/customize-build-now-plugin"
+github: &gh "jenkinsci/customize-build-now-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/customize-build-now"
+  - "org/jenkins-ci/plugins/customize-build-now"
 developers:
-- "jglick"
-- "uday"
+  - "uday"
+  - "mawinter69"
+cd:
+  enabled: true

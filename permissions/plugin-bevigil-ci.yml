@@ -1,0 +1,12 @@
+---
+name: "bevigil-ci"
+github: &GH "jenkinsci/bevigil-ci-plugin"
+cd:
+  enabled: true
+paths:
+- "io/jenkins/plugins/bevigil-ci"
+developers:
+- "ashikka"
+- "bevigil"
+issues:
+  - github: *GH

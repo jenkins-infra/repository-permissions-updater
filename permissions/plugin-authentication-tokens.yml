@@ -1,7 +1,20 @@
 ---
 name: "authentication-tokens"
-github: "jenkinsci/authentication-tokens-plugin"
+github: &gh "jenkinsci/authentication-tokens-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/authentication-tokens"
+  - "org/jenkins-ci/plugins/authentication-tokens"
+cd:
+  enabled: true
 developers:
-- "stephenconnolly"
+  - "alecharp"
+  - "batmat"
+  - "egutierrez"
+  - "fcojfernandez"
+  - "rsandell"
+  - "jglick"
+  - "teilo"
+security:
+  contacts:
+    jira: "cloudbees_security_members"

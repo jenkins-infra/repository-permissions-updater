@@ -1,0 +1,11 @@
+---
+name: "jspecify-api"
+github: &GH "jenkinsci/jspecify-api-plugin"
+paths:
+- "io/jenkins/plugins/jspecify-api"
+cd:
+  enabled: true
+developers:
+- "sghill"
+issues:
+  - github: *GH

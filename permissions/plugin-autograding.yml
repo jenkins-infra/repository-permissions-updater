@@ -1,0 +1,9 @@
+---
+name: "autograding"
+github: &gh "jenkinsci/autograding-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/autograding"
+developers:
+  - "drulli"

@@ -1,7 +1,11 @@
 ---
 name: "device-watcher"
-github: "jenkinsci/device-watcher-plugin"
+github: &gh "jenkinsci/device-watcher-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkins-ci/plugins/device-watcher"
+  - "org/jenkins-ci/plugins/device-watcher"
 developers:
-- "sonicwind"
+  - "janasrikanth"
+cd:
+  enabled: true

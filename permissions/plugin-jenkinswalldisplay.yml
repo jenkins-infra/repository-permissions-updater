@@ -1,7 +1,9 @@
 ---
 name: "jenkinswalldisplay"
 github: "jenkinsci/walldisplay-plugin"
+issues:
+  - jira: '16045'  # jenkinswalldisplay-plugin
 paths:
-- "org/jenkins-ci/plugins/jenkinswalldisplay"
+  - "org/jenkins-ci/plugins/jenkinswalldisplay"
 developers:
-- "pelle"
+  - "pelle"

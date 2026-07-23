@@ -1,0 +1,11 @@
+---
+name: "jobcacher-oras-storage"
+github: &GH "jenkinsci/jobcacher-oras-storage-plugin"
+paths:
+- "io/jenkins/plugins/jobcacher-oras-storage"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

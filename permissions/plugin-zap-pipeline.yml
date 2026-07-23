@@ -1,7 +1,13 @@
 ---
 name: "zap-pipeline"
-github: "jenkinsci/zap-pipeline-plugin"
+github: &gh "jenkinsci/zap-pipeline-plugin"
+issues:
+  - github: *gh
+cd:
+  enabled: true
+  exclusive: false
 paths:
-- "com/vrondakis/zap/zap-pipeline"
+  - "com/vrondakis/zap/zap-pipeline"
 developers:
-- "vrondakis"
+  - "vrondakis"
+  - "cuda_shardy"

@@ -1,0 +1,11 @@
+---
+name: "jobcacher-artifactory-storage"
+github: &GH "jenkinsci/jobcacher-artifactory-storage-plugin"
+paths:
+- "io/jenkins/plugins/jobcacher-artifactory-storage"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

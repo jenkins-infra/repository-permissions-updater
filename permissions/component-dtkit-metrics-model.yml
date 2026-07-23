@@ -2,7 +2,7 @@
 name: "dtkit-metrics-model"
 github: "jenkinsci/libdtkit"
 paths:
-- "org/jenkins-ci/lib/dtkit/dtkit-metrics-model"
+  - "org/jenkins-ci/lib/dtkit/dtkit-metrics-model"
 developers:
-- "gbois"
-- "nfalco"
+  - "gbois"
+  - "nfalco"

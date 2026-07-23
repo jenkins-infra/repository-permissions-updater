@@ -1,0 +1,13 @@
+---
+name: "javax-activation-api"
+github: &GH "jenkinsci/javax-activation-api-plugin"
+paths:
+  - "io/jenkins/plugins/javax-activation-api"
+developers:
+  - "basil"
+  - "markewaite"
+issues:
+  - github: *GH
+security:
+  contacts:
+    jira: "cloudbees_security_members"

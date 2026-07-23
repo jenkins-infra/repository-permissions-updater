@@ -1,7 +1,9 @@
 ---
 name: "rabbitmq-publisher"
 github: "jenkinsci/rabbitmq-publisher-plugin"
+issues:
+  - jira: '23541'  # rabbitmq-publisher-plugin
 paths:
-- "org/jenkins-ci/plugins/rabbitmq-publisher"
+  - "org/jenkins-ci/plugins/rabbitmq-publisher"
 developers:
-- "legall_benoit"
+  - "legall_benoit"

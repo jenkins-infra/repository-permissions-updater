@@ -1,16 +1,23 @@
 ---
 name: "pipeline-model-definition"
-github: "jenkinsci/pipeline-model-definition-plugin"
+github: &gh "jenkinsci/pipeline-model-definition-plugin"
+issues:
+  - github: *gh
 paths:
-- "org/jenkinsci/plugins/pipeline-model-definition"
+  - "org/jenkinsci/plugins/pipeline-model-definition"
 developers:
-- "abayer"
-- "oleg_nenashev"
-- "stephenconnolly"
-- "rsandell"
-- "svanoort"
-- "bitwiseman"
-- "dnusbaum"
+  - "abayer"
+  - "oleg_nenashev"
+  - "rsandell"
+  - "bitwiseman"
+  - "dnusbaum"
+  - "carroll"
+  - "teilo"
+  - "olamy"
+  - "batmat"
+  - "rarabaolaza"
 security:
   contacts:
-    jira: "pipeline_security_members"
+    jira: "cloudbees_security_members"
+cd:
+  enabled: true
