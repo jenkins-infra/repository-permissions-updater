@@ -1,8 +1,8 @@
 ---
 name: "matrix-auth"
-github: "jenkinsci/matrix-auth-plugin"
+github: &gh "jenkinsci/matrix-auth-plugin"
 issues:
-  - jira: '18131'  # matrix-auth-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/matrix-auth"
 developers:
