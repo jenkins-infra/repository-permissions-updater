@@ -14,6 +14,3 @@ developers:
   - "bitwiseman"
   - "olamy"
   - "poddingue"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

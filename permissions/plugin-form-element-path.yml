@@ -7,6 +7,3 @@ paths:
   - "org/jenkins-ci/plugins/form-element-path"
 developers:
   - "vlatombe"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

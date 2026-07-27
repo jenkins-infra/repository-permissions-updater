@@ -6,6 +6,3 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/one-shot-executor"
 developers: []
-security:
-  contacts:
-    jira: "cloudbees_security_members"
