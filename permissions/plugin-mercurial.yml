@@ -16,6 +16,3 @@ developers:
   - "dnusbaum"
   - "markewaite"
   - "poddingue"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

@@ -11,8 +11,5 @@ developers:
   - "markewaite"
   - "poddingue"
   - "zack_aayush"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
 cd:
   enabled: true
