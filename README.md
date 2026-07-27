@@ -20,6 +20,14 @@ Requesting Permissions
 To request upload permissions to an artifact (typically a plugin), [file a PR](https://help.github.com/articles/creating-a-pull-request/) editing the appropriate YAML file, and provide a reference that shows you have commit permissions, or have an existing committer to the plugin comment on your PR, approving it.
 See [this page](https://jenkins.io/doc/developer/plugin-governance/managing-permissions/) for more information.
 
+### Adoption requests and the `authorized unless rejected` label
+
+When a PR is labeled `authorized unless rejected`, it means the request has been authorized and will proceed unless an existing maintainer explicitly objects.
+An automated reminder comment is posted on the PR if 14 days pass without the PR being merged or closed.
+The 14-day timer is measured from the most recent time the label was applied; removing and re-adding the label resets the timer.
+The reminder is sent at most once per label application.
+If you are a maintainer of the affected plugin and wish to object, please comment on the pull request.
+
 Managing Permissions
 --------------------
 
