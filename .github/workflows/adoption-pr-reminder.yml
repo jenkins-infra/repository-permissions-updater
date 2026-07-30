@@ -19,13 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     if: >
       github.event_name == 'pull_request_target' &&
-      github.event.label.name == 'authorized unless rejected'
+      github.event.label.name == 'adoption-request'
     steps:
       - name: Remove reminder marker if present
         uses: actions/github-script@v8
         with:
           script: |
-            const REMINDER_LABEL = 'authorized-unless-rejected-reminded';
+            const REMINDER_LABEL = 'adoption-request-reminded';
             const prNumber = context.payload.pull_request.number;
             try {
               await github.rest.issues.removeLabel({
@@ -52,8 +52,8 @@ jobs:
         uses: actions/github-script@v8
         with:
           script: |
-            const MAIN_LABEL = 'authorized unless rejected';
-            const REMINDER_LABEL = 'authorized-unless-rejected-reminded';
+            const MAIN_LABEL = 'adoption-request';
+            const REMINDER_LABEL = 'adoption-request-reminded';
             const THRESHOLD_DAYS = 14;
 
             // Ensure the reminder marker label exists in the repository
@@ -131,7 +131,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: prNumber,
-                body: `This pull request has had the \`${MAIN_LABEL}\` label for over ${THRESHOLD_DAYS} days.\n\nIf you are a maintainer of the affected plugin and wish to object to this change, please comment on this pull request.`,
+                body: 'At least 2 weeks have passed since the adoption request was made. The hosting team will now proceed with the adoption process if there have been no objections.'
               });
               core.info(`PR #${prNumber}: posted reminder comment`);
 
