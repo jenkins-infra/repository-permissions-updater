@@ -62,6 +62,10 @@ jobs:
         with:
           repository: ${{ steps.extract-repo.outputs.repo }}
 
+      - name: Capture plugin repository commit SHA
+        id: plugin-sha
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
       - name: Set up Java
         uses: actions/setup-java@v5.6.0
         with:
@@ -125,7 +129,7 @@ jobs:
             const DOC_BASE = 'https://github.com/jenkins-infra/jenkins-codeql/blob/main/src/';
 
             const sarif = JSON.parse(fs.readFileSync('jenkins-security-scan.sarif', 'utf8'));
-            const repoRef = sarif.runs?.[0]?.versionControlProvenance?.[0]?.revisionId || 'HEAD';
+            const repoRef = sarif.runs?.[0]?.versionControlProvenance?.[0]?.revisionId || '${{ steps.plugin-sha.outputs.sha }}';
 
             // Group results by ruleId
             const byRule = new Map();
@@ -161,13 +165,13 @@ jobs:
                   : '';
                 const findingItems = findings.map(f => {
                   const summary = f.githubLink ? `<a href="${f.githubLink}">${f.linkLabel}</a>` : f.linkLabel;
-                  return `<details><summary>${summary}</summary>\n\n\`\`\`\n${f.message}\n\`\`\`\n\n</details>`;
+                  return `<details><summary>${summary}</summary>\n\n\`${f.message}\`\n\n</details>`;
                 });
                 sections.push(`## ${title}\n\n${docLine}\n\n${findingItems.join('\n')}`);
               }
               body = `### Jenkins Security Scan\n\nThe Jenkins Security Scan discovered ${totalCount} finding(s) 🔍.\n\nFor every identified issue, please do one of the following:\n\n- Implement the recommended fix to address the issue.\n- If you think it's a false positive, suppress the warning directly within the code.\n- Alternative, you write an explanation here about why you think it's irrelevant. That will require a manual review, leading to a slower process.\n\nAfter addressing the findings through one of the above methods:\n\n- If all modifications have been made to the code, please initiate a new security scan by triggering the \`/request-security-scan\` command.\n- If there are any unresolved findings (those not corrected or suppressed), request a review from the Jenkins security team by using the \`/audit-review\` command.\n\n---\n\n${sections.join('\n\n')}`;
             } else {
-              body = `### Jenkins Security Scan\n\nThe security scan of [${repoUrl}](${repoUrl}) found no issues.`;
+              body = `### Jenkins Security Scan\n\nThe security scan of [${repoUrl}](${repoUrl}) did not find anything dangerous with your plugin, congratulations! 🎉`;
             }
 
             await github.rest.issues.createComment({ owner, repo, issue_number: issueNumber, body });
