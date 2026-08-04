@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/deploy"
 developers:
   - "jansohn"
+cd:
+  enabled: true
