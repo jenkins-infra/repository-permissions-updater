@@ -5,6 +5,8 @@ issues:
   - github: *gh
 paths:
   - "org/jenkinsci/plugins/change-assembly-version-plugin"
+cd:
+  enabled: true
 developers:
   - "lkobus"
   - "slide_o_mix"
