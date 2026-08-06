@@ -43,8 +43,14 @@ public class JellyVerifier implements Verifier {
             "One or more usages of inline javascript tags, style tags or event handlers have been identified. See "
                     + "https://www.jenkins.io/doc/developer/security/csp/ for more information how to make your jelly files CSP compliant";
 
+    private final HashSet<VerificationMessage> hostingIssues;
+
+    public JellyVerifier(HashSet<VerificationMessage> hostingIssues) {
+        this.hostingIssues = hostingIssues;
+    }
+
     @Override
-    public void verify(HostingRequest issue, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    public void verify(HostingRequest issue) throws IOException {
         GitHub github = GitHub.connect();
         String forkFrom = issue.getRepositoryUrl();
         if (StringUtils.isNotBlank(forkFrom)) {

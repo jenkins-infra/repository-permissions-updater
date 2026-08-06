@@ -1,0 +1,11 @@
+---
+name: "appcircle-publish"
+github: &GH "jenkinsci/appcircle-publish-plugin"
+paths:
+- "io/jenkins/plugins/appcircle-publish"
+developers:
+- "appcircle"
+issues:
+  - github: *GH
+cd:
+  enabled: true

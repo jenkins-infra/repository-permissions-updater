@@ -15,6 +15,3 @@ developers:
   - "jondaley"
 cd:
   enabled: true
-security:
-  contacts:
-    jira: "cloudbees_security_members"

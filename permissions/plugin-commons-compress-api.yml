@@ -8,3 +8,5 @@ developers:
 - "markewaite"
 issues:
   - github: *GH
+cd:
+  enabled: true

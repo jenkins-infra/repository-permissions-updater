@@ -1,0 +1,11 @@
+---
+name: "proxmox-cloud"
+github: &GH "jenkinsci/proxmox-cloud-plugin"
+paths:
+- "io/jenkins/plugins/proxmox-cloud"
+developers:
+- "ajcarter"
+issues:
+  - github: *GH
+cd:
+  enabled: true

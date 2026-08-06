@@ -38,5 +38,3 @@ In case of changes requested by the hosting team, an open PR facilitates future 
 - [ ] Check that the `$pluginId Developers` team has `Admin` permissions while granting the access.
 - [ ] In the case of plugin adoption, ensure that the Jenkins Jira default assignee is either removed or changed to the new maintainer.
 - [ ] If security contacts are changed (this includes add/remove), ping the security officer (currently `@Wadeck`) in this pull request. If an email contact is changed, wait for approval from the security officer.
-
-There are [IRC Bot commands](https://jenkins.io/projects/infrastructure/ircbot/#issue-tracker-management) for it.

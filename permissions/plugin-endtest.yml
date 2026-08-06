@@ -1,0 +1,11 @@
+---
+name: "endtest"
+github: &GH "jenkinsci/endtest-plugin"
+paths:
+- "io/jenkins/plugins/endtest"
+developers:
+- "liviulupei"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -1,0 +1,11 @@
+---
+name: "nimbus-jose-jwt-api"
+github: &GH "jenkinsci/nimbus-jose-jwt-api-plugin"
+paths:
+- "io/jenkins/plugins/nimbus-jose-jwt-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

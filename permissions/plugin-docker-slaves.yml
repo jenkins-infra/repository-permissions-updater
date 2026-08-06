@@ -7,3 +7,5 @@ paths:
   - "io/jenkins/plugins/docker-slaves"
 developers:
   - "ydubreuil"
+cd:
+  enabled: true

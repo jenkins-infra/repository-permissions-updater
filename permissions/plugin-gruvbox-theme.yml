@@ -1,0 +1,11 @@
+---
+name: "gruvbox-theme"
+github: &GH "jenkinsci/gruvbox-theme-plugin"
+paths:
+- "io/jenkins/plugins/gruvbox-theme"
+developers:
+- "joke_vanoijen"
+issues:
+  - github: *GH
+cd:
+  enabled: true

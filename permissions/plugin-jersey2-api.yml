@@ -6,6 +6,6 @@ paths:
 developers:
   - "markewaite"
 issues:
-  - jira: 28832
+  - github: *GH
 cd:
   enabled: true

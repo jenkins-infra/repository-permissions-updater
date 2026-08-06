@@ -7,7 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/robot"
   - "org/jvnet/hudson/plugins/robot"
 developers:
-  - "jpiironen"
   - "aleksisimell"
   - "tattoo"
-  - "hifi"

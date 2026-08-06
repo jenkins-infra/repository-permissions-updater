@@ -5,7 +5,7 @@ paths:
 - "io/jenkins/plugins/opentelemetry-api"
 developers:
 - "cleclerc"
-- "ifernandezcalvo"
+- "krisstern"
 cd:
   enabled: true
 issues:

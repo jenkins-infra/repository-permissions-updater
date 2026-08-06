@@ -1,8 +1,8 @@
 ---
 name: "docker-commons"
-github: "jenkinsci/docker-commons-plugin"
+github: &gh "jenkinsci/docker-commons-plugin"
 issues:
-  - jira: '20628'  # docker-commons-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/docker-commons"
 cd:

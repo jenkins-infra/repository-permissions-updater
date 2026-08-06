@@ -1,0 +1,11 @@
+---
+name: "vmanager-charts"
+github: &GH "jenkinsci/vmanager-charts-plugin"
+paths:
+- "io/jenkins/plugins/vmanager-charts"
+developers:
+- "tyanai"
+issues:
+  - github: *GH
+cd:
+  enabled: true

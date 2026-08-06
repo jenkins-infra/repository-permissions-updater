@@ -4,6 +4,7 @@ import static io.jenkins.infra.repository_permissions_updater.hosting.Requiremen
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 import groovy.lang.GroovyClassLoader;
+import groovy.lang.GroovyRuntimeException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -43,8 +44,14 @@ import org.kohsuke.github.GitHub;
 
 public class RequiredFilesVerifier implements Verifier {
 
+    private final HashSet<VerificationMessage> hostingIssues;
+
+    public RequiredFilesVerifier(HashSet<VerificationMessage> hostingIssues) {
+        this.hostingIssues = hostingIssues;
+    }
+
     @Override
-    public void verify(HostingRequest request, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    public void verify(HostingRequest request) throws IOException {
 
         GitHub github = GitHub.connect();
         String forkFrom = request.getRepositoryUrl();
@@ -58,20 +65,19 @@ public class RequiredFilesVerifier implements Verifier {
                 String repoName = m.group(2);
 
                 GHRepository repo = github.getRepository(owner + "/" + repoName);
-                checkJenkinsfile(repo, hostingIssues);
-                checkSecurityScan(repo, hostingIssues);
-                checkCodeOwners(repo, hostingIssues, forkTo);
-                checkGitignore(repo, hostingIssues);
-                checkDependencyBot(repo, hostingIssues);
+                checkJenkinsfile(repo);
+                checkSecurityScan(repo);
+                checkCodeOwners(repo, forkTo);
+                checkGitignore(repo);
+                checkDependencyBot(repo);
                 if (request.isEnableCD()) {
-                    checkFilesForCD(repo, hostingIssues);
+                    checkFilesForCD(repo);
                 }
             }
         }
     }
 
-    private void checkCodeOwners(GHRepository repo, HashSet<VerificationMessage> hostingIssues, String forkTo)
-            throws IOException {
+    private void checkCodeOwners(GHRepository repo, String forkTo) throws IOException {
         String expected = "* @jenkinsci/" + forkTo + "-developers";
         GHContent file = null;
         try {
@@ -92,7 +98,7 @@ public class RequiredFilesVerifier implements Verifier {
         }
     }
 
-    private void checkJenkinsfile(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    private void checkJenkinsfile(GHRepository repo) throws IOException {
         GHContent file = null;
         try {
             file = repo.getFileContent("Jenkinsfile");
@@ -103,10 +109,10 @@ public class RequiredFilesVerifier implements Verifier {
                             "Missing file `Jenkinsfile`. Please add a Jenkinsfile to your repo so it can be built on ci.jenkins.io. A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile)"));
             return;
         }
-        validateJenkinsFile(file, hostingIssues);
+        validateJenkinsFile(file);
     }
 
-    private void checkGitignore(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    private void checkGitignore(GHRepository repo) throws IOException {
         GHContent file = null;
         try {
             file = repo.getFileContent(".gitignore");
@@ -137,7 +143,7 @@ public class RequiredFilesVerifier implements Verifier {
         }
     }
 
-    private void checkSecurityScan(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    private void checkSecurityScan(GHRepository repo) throws IOException {
         if (fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yml")
                 && fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yaml")) {
             hostingIssues.add(
@@ -148,7 +154,7 @@ public class RequiredFilesVerifier implements Verifier {
         }
     }
 
-    private void checkDependencyBot(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    private void checkDependencyBot(GHRepository repo) throws IOException {
         if (fileNotExistsInRepo(repo, ".github/dependabot.yml")
                 && fileNotExistsInRepo(repo, ".github/dependabot.yaml")
                 && fileNotExistsInRepo(repo, "renovate.json")
@@ -164,7 +170,7 @@ public class RequiredFilesVerifier implements Verifier {
         }
     }
 
-    private void checkFilesForCD(GHRepository repo, HashSet<VerificationMessage> hostingIssues) throws IOException {
+    private void checkFilesForCD(GHRepository repo) throws IOException {
 
         if (fileNotExistsInRepo(repo, ".mvn/extensions.xml")) {
             hostingIssues.add(
@@ -217,7 +223,7 @@ public class RequiredFilesVerifier implements Verifier {
     }
 
     @SuppressWarnings("unchecked")
-    public static void validateJenkinsFile(GHContent file, HashSet<VerificationMessage> hostingIssues) {
+    public void validateJenkinsFile(GHContent file) {
         try {
             GroovyClassLoader loader = new GroovyClassLoader();
             CompilerConfiguration config = new CompilerConfiguration();
@@ -372,6 +378,9 @@ public class RequiredFilesVerifier implements Verifier {
             }
 
         } catch (IOException e) {
+            hostingIssues.add(
+                    new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Could not read Jenkinsfile."));
+        } catch (GroovyRuntimeException e) {
             hostingIssues.add(
                     new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Could not parse Jenkinsfile."));
         }

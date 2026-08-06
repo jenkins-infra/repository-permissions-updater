@@ -1,0 +1,11 @@
+---
+name: "config-splice"
+github: &GH "jenkinsci/config-splice-plugin"
+paths:
+- "io/jenkins/plugins/config-splice"
+developers:
+- "sssousa"
+issues:
+  - github: *GH
+cd:
+  enabled: true

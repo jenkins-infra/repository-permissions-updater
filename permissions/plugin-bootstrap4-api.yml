@@ -7,6 +7,3 @@ paths:
   - "io/jenkins/plugins/bootstrap4-api"
 developers:
   - "drulli"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

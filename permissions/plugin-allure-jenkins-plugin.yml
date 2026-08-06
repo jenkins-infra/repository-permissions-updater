@@ -7,7 +7,8 @@ issues:
     report: false
 paths:
   - "ru/yandex/qatools/allure/allure-jenkins-plugin"
-  - "org/allurereport/jenkins"
+  - "org/allurereport/jenkins/allure-jenkins-plugin"
 developers:
   - "eroshenkoam"
   - "baev"
+

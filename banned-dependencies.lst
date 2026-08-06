@@ -12,6 +12,7 @@ com.fasterxml.jackson.core:jackson-core;org.jenkins-ci.plugins:jackson2-api
 com.fasterxml.jackson.core:jackson-databind;org.jenkins-ci.plugins:jackson2-api
 org.yaml:snakeyaml;io.jenkins.plugins:snakeyaml-api
 com.sun.xml.bind:jaxb-impl;io.jenkins.plugins:jaxb
+org.jsoup:jsoup;org.jenkins-ci.plugins:jsoup
 
 joda-time:joda-time;io.jenkins.plugins:joda-time-api
 org.ow2.asm:asm;io.jenkins.plugins:asm-api

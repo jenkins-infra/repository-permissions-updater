@@ -5,12 +5,9 @@ paths:
   - "io/jenkins/plugins/opentelemetry"
 developers:
   - "cleclerc"
-  - "ifernandezcalvo"
   - "v2v"
+  - "krisstern"
 issues:
   - github: *GH
 cd:
   enabled: true
-security:
-  contacts:
-    jira: "cloudbees_security_members"

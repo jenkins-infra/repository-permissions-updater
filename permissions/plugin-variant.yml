@@ -1,8 +1,8 @@
 ---
 name: "variant"
-github: "jenkinsci/variant-plugin"
+github: &gh "jenkinsci/variant-plugin"
 issues:
-  - jira: '21930'  # variant-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/variant"
 developers:

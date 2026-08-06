@@ -19,6 +19,3 @@ developers:
   - "olamy"
   - "tscherler"
   - "jpochat"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

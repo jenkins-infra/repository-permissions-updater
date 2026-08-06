@@ -6,11 +6,6 @@ paths:
 cd:
   enabled: true
 developers:
-  - "riywo"
-  - "nate_autify"
-  - "hgsgtk"
-  - "mtsmfm"
-  - "kensei_autify"
-  - "henchiyb"
+  - "austinried_autify"
 issues:
   - github: *GH
