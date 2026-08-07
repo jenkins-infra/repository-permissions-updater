@@ -10,3 +10,5 @@ developers:
   - "jm_meessen"
   - "markewaite"
   - "poddingue"
+cd:
+  enabled: true
