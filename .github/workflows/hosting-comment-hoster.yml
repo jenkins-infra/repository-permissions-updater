@@ -23,7 +23,7 @@ jobs:
     if: needs.validate.outputs.actor_in_hosting_team == 'true'
     steps:
       - name: Ack
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const {owner, repo} = context.issue
@@ -56,7 +56,7 @@ jobs:
     if: needs.validate.outputs.actor_in_hosting_team != 'true'
     steps:
       - name: React `-1` and post denial comment
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
