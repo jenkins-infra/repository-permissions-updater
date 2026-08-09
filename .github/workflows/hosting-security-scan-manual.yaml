@@ -100,21 +100,20 @@ jobs:
             const issueNumber = ${{ inputs.issue_number }};
             const { owner, repo } = context.repo;
 
-            const CHECKS = {
-              'jenkins/callable-without-role-check':          { title: 'Remoting: Unsafe Callable',                                                       doc: 'BadRoleCheck.md' },
-              'jenkins/credentials-fill-without-permission-check': { title: 'Jenkins: Missing permission check on a form fill web method with credentials lookup', doc: 'CredentialsEnumeration.md' },
-              'jenkins/file-from-rest-of-path':               { title: 'Use of StaplerRequest#getRestOfPath to construct a file path',                    doc: 'FileFromRestOfPath.md' },
-              'jenkins/has-permission-return-value-ignored':  { title: 'Result of hasPermission call is ignored',                                          doc: 'HasPermissionReturnIgnored.md' },
-              'jenkins/plaintext-storage':                    { title: 'Jenkins: Plaintext password storage',                                              doc: 'PlaintextPasswordStorage.md' },
-              'jenkins/unsafe-calls':                         { title: 'Jenkins: Generally unsafe method calls',                                           doc: 'UnsafeCalls.md' },
-              'jenkins/unsafe-classes':                       { title: 'Jenkins: Potentially unsafe classes',                                              doc: 'UnsafeClassUses.md' },
-              'jenkins/no-permission-check':                  { title: 'Stapler: Missing permission check',                                                doc: 'WebMethodMissingPermissionCheck.md' },
-              'jenkins/csrf':                                 { title: 'Stapler: Missing POST/RequirePOST annotation',                                     doc: 'WebMethodMissingPostAnnotation.md' },
-            };
-            const DOC_BASE = 'https://github.com/jenkins-infra/jenkins-codeql/blob/main/src/';
-
             const sarif = JSON.parse(fs.readFileSync('jenkins-security-scan.sarif', 'utf8'));
             const repoRef = sarif.runs?.[0]?.versionControlProvenance?.[0]?.revisionId || '${{ steps.plugin-sha.outputs.sha }}';
+
+            const ruleMap = new Map();
+            for (const run of (sarif.runs || [])) {
+              for (const ext of (run.tool?.extensions || [])) {
+                for (const rule of (ext.rules || [])) {
+                  ruleMap.set(rule.id, {
+                    title: rule.shortDescription?.text || rule.id,
+                    helpMarkdown: rule.help?.markdown || '',
+                  });
+                }
+              }
+            }
 
             // Group results by ruleId
             const byRule = new Map();
@@ -142,17 +141,16 @@ jobs:
               const totalCount = [...byRule.values()].reduce((sum, arr) => sum + arr.length, 0);
               const sections = [];
               for (const [ruleId, findings] of byRule) {
-                const check = CHECKS[ruleId];
-                const title = check?.title || ruleId;
-                const docUrl = check ? DOC_BASE + check.doc : null;
-                const docLine = docUrl
-                  ? `You can find detailed information about this finding [here](${docUrl}).`
+                const rule = ruleMap.get(ruleId);
+                const title = rule?.title || ruleId;
+                const helpSection = rule?.helpMarkdown
+                  ? `<details><summary>About this finding</summary>\n\n${rule.helpMarkdown}\n\n</details>`
                   : '';
                 const findingItems = findings.map(f => {
                   const summary = f.githubLink ? `<a href="${f.githubLink}">${f.linkLabel}</a>` : f.linkLabel;
                   return `<details><summary>${summary}</summary>\n\n\`\`\`\n${f.message}\n\`\`\`\n\n</details>`;
                 });
-                sections.push(`## ${title}\n\n${docLine}\n\n${findingItems.join('\n')}`);
+                sections.push(`## ${title}\n\n${helpSection}\n\n${findingItems.join('\n')}`);
               }
               body = `### Jenkins Security Scan\n\nThe Jenkins Security Scan discovered ${totalCount} finding(s) 🔍.\n\nFor every identified issue, please do one of the following:\n\n- Implement the recommended fix to address the issue.\n- If you think it's a false positive, suppress the warning directly within the code.\n- Alternative, you write an explanation here about why you think it's irrelevant. That will require a manual review, leading to a slower process.\n\nAfter addressing the findings through one of the above methods:\n\n- If all modifications have been made to the code, please initiate a new security scan by triggering the \`/request-security-scan\` command.\n- If there are any unresolved findings (those not corrected or suppressed), request a review from the Jenkins security team by using the \`/audit-review\` command.\n\n---\n\n${sections.join('\n\n')}`;
             } else {
