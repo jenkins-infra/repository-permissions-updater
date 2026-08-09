@@ -5,5 +5,7 @@ issues:
   - jira: '27422'  # agent-server-parameter-plugin
 paths:
   - "io/jenkins/plugins/agent-server-parameter"
+cd:
+  enabled: true
 developers:
   - "bluersw"
