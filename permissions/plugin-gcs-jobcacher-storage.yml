@@ -1,0 +1,11 @@
+---
+name: "gcs-jobcacher-storage"
+github: &GH "jenkinsci/gcs-jobcacher-storage-plugin"
+paths:
+- "io/jenkins/plugins/gcs-jobcacher-storage"
+developers:
+- "drfaust92"
+issues:
+  - github: *GH
+cd:
+  enabled: true
