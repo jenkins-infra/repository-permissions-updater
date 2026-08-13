@@ -7,9 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/fortify-on-demand-uploader"
 developers:
-  - "makropod"
   - "c0d3m0nky"
-  - "aishkotni"
-  - "ciuppinho"
   - "vpasupathi"
-  - "ankit2995"
+  - "amoghng7"
