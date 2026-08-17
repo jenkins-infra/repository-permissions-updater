@@ -1,0 +1,11 @@
+---
+name: "gitlab-repository-refs-parameter"
+github: &GH "jenkinsci/gitlab-repository-refs-parameter-plugin"
+paths:
+- "io/jenkins/plugins/gitlab-repository-refs-parameter"
+developers:
+- "mlinops"
+issues:
+  - github: *GH
+cd:
+  enabled: true
