@@ -4,7 +4,7 @@ github: &GH "jenkinsci/freestyle-project-plugin"
 paths:
 - "io/jenkins/plugins/freestyle-project"
 cd:
-  enabled
+  enabled: true
 developers:
 - "slide_o_mix"
 - "@core"
