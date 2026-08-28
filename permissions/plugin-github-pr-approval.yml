@@ -1,0 +1,11 @@
+---
+name: "github-pr-approval"
+github: &gh "jenkinsci/github-pr-approval-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/github-pr-approval"
+developers:
+  - "olamy"
+cd:
+  enabled: true
