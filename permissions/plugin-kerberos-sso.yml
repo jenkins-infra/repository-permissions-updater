@@ -10,3 +10,7 @@ cd:
 developers:
   - "rsandell"
   - "t_westling"
+  - "kitos9112"
+security:
+  contacts:
+    jira: "kitos9112"
