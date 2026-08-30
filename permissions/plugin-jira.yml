@@ -1,6 +1,8 @@
 ---
 name: "jira"
 github: &gh "jenkinsci/jira-plugin"
+cd:
+  enabled: true
 issues:
   - github: *gh
 paths:
