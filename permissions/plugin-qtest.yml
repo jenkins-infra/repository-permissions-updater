@@ -9,3 +9,5 @@ developers:
   - "s_lachner"
   - "mhammami"
   - "qasymphony"
+cd:
+  enabled: true
