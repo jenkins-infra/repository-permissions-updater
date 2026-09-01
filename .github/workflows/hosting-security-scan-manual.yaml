@@ -59,7 +59,7 @@ jobs:
           cache: maven
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v4.37.3
+        uses: github/codeql-action/init@v4.37.9
         with:
           languages: java
           config: |
@@ -70,11 +70,11 @@ jobs:
             - codeql/java-queries:AlertSuppressionAnnotations.ql
 
       - name: Autobuild
-        uses: github/codeql-action/autobuild@v4.37.3
+        uses: github/codeql-action/autobuild@v4.37.9
 
       - name: Run CodeQL
         id: generate-sarif
-        uses: github/codeql-action/analyze@v4.37.3
+        uses: github/codeql-action/analyze@v4.37.9
         with:
           category: Jenkins Security Scan
           upload: never
