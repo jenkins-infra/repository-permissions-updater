@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Extract repository URL from issue
         id: extract-repo
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const issue = await github.rest.issues.get({
@@ -92,7 +92,7 @@ jobs:
 
       - name: Post results to issue
         if: steps.generate-sarif.outcome == 'success'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
@@ -174,7 +174,7 @@ jobs:
 
       - name: Post scan failure to issue
         if: steps.generate-sarif.outcome != 'success'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const repoUrl = '${{ steps.extract-repo.outputs.repo-url }}';
