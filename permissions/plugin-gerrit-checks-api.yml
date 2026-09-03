@@ -6,6 +6,7 @@ paths:
 developers:
 - "tdraebing"
 - "lucamilanesio"
+- "panicking"
 issues:
   - github: *GH
 cd:

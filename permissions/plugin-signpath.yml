@@ -6,8 +6,8 @@ paths:
 developers:
 - "psavoie_signpath"
 - "swenig_signpath"
-- "fabianschmied"
 - "drauch"
+- "tahacmd"
 issues:
   - jira: 28629
 cd:

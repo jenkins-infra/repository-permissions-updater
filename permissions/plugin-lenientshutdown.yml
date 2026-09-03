@@ -5,5 +5,7 @@ issues:
   - jira: '19229'  # lenientshutdown-plugin
 paths:
   - "com/sonymobile/jenkins/plugins/lenientshutdown/lenientshutdown"
+cd:
+  enabled: true
 developers:
   - "rsandell"

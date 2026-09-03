@@ -6,5 +6,7 @@ paths:
 developers:
 - "cnu1812"
 - "krisstern"
+cd:
+  enabled: true
 issues:
   - github: *GH

@@ -5,4 +5,7 @@ issues:
   - jira: '16057'  # excludematrixparent-plugin
 paths:
   - "hudson/plugins/excludeMatrixParent/excludeMatrixParent"
-developers: []
+cd:
+  enabled: true
+developers:
+  - "m_jeanson"

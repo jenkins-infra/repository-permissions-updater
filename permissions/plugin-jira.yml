@@ -1,6 +1,8 @@
 ---
 name: "jira"
 github: &gh "jenkinsci/jira-plugin"
+cd:
+  enabled: true
 issues:
   - github: *gh
 paths:
@@ -9,6 +11,3 @@ paths:
 developers:
   - "warden"
   - "olamy"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

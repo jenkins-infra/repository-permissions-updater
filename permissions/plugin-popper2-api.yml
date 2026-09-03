@@ -6,7 +6,4 @@ paths:
 developers:
   - "drulli"
 issues:
-  - jira: 28621
-security:
-  contacts:
-    jira: "cloudbees_security_members"
+  - github: *GH

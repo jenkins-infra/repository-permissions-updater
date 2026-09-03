@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/visual-basic-6"
 developers:
   - "froque"
+cd:
+  enabled: true

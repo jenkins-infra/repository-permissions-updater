@@ -1,8 +1,8 @@
 ---
 name: "database-h2"
-github: "jenkinsci/database-h2-plugin"
+github: &gh "jenkinsci/database-h2-plugin"
 issues:
-  - jira: '17445'  # database-h2-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/database-h2"
 developers:

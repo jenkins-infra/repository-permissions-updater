@@ -9,6 +9,5 @@ paths:
   - "org/jenkins-ci/plugins/naginator"
 developers:
   - "galunto"
-  - "ikedam"
   - "integer"
   - "sghill"

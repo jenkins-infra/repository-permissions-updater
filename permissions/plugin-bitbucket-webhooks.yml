@@ -1,0 +1,9 @@
+---
+name: "bitbucket-webhooks"
+github: &GH "jenkinsci/bitbucket-webhooks-plugin"
+paths:
+- "io/jenkins/plugins/bitbucket-webhooks"
+developers:
+- "nfalco"
+issues:
+  - jira: 29734

@@ -1,0 +1,11 @@
+---
+name: "active-jobs-filter"
+github: &GH "jenkinsci/active-jobs-filter-plugin"
+paths:
+- "io/jenkins/plugins/active-jobs-filter"
+developers:
+- "ollehu"
+issues:
+  - github: *GH
+cd:
+  enabled: true

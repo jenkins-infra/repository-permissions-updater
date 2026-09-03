@@ -1,0 +1,9 @@
+---
+name: "koji-scm"
+github: &GH "jenkinsci/koji-scm-plugin"
+paths:
+- "io/jenkins/plugins/koji-scm-parent"
+developers:
+- "judovana"
+issues:
+  - github: *GH

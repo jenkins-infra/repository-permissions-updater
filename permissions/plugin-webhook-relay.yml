@@ -1,0 +1,11 @@
+---
+name: "webhook-relay"
+github: &GH "jenkinsci/webhook-relay-plugin"
+paths:
+- "io/jenkins/plugins/webhook-relay"
+developers:
+- "rusenask"
+issues:
+  - github: *GH
+cd:
+  enabled: true

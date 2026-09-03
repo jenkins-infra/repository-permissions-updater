@@ -1,0 +1,11 @@
+---
+name: "parallels-devops"
+github: &GH "jenkinsci/parallels-devops-plugin"
+paths:
+- "io/jenkins/plugins/parallels-devops"
+developers:
+- "parallels_devops"
+issues:
+  - github: *GH
+cd:
+  enabled: true

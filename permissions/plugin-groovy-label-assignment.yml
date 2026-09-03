@@ -5,5 +5,4 @@ issues:
   - jira: '17655'  # groovy-label-assignment-plugin
 paths:
   - "jp/ikedam/jenkins/plugins/groovy-label-assignment"
-developers:
-  - "ikedam"
+developers: []

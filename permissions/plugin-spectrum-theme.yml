@@ -1,0 +1,11 @@
+---
+name: "spectrum-theme"
+github: &GH "jenkinsci/spectrum-theme-plugin"
+paths:
+- "io/jenkins/plugins/spectrum-theme"
+developers:
+- "donhui"
+issues:
+  - github: *GH
+cd:
+  enabled: true

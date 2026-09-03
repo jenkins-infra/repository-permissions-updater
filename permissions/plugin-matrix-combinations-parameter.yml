@@ -6,5 +6,4 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/matrix-combinations-parameter"
 developers:
-  - "ikedam"
   - "omer727"

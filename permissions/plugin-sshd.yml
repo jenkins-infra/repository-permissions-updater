@@ -6,7 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/modules/sshd"
 developers:
-  - "ifernandezcalvo"
   - "jvz"
   - "oleg_nenashev"
   - "timja"

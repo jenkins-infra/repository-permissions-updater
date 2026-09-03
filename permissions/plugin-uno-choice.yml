@@ -1,8 +1,8 @@
 ---
 name: "uno-choice"
-github: "jenkinsci/active-choices-plugin"
+github: &gh "jenkinsci/active-choices-plugin"
 issues:
-  - jira: '20520'  # active-choices-plugin
+  - github: *gh
 paths:
   - "org/biouno/uno-choice"
 developers:

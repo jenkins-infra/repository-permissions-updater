@@ -1,0 +1,11 @@
+---
+name: "pipeline-dora-metrics"
+github: &GH "jenkinsci/pipeline-dora-metrics-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-dora-metrics"
+developers:
+- "bisman"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -5,5 +5,8 @@ paths:
 - "io/jenkins/plugins/commons-compress-api"
 developers:
 - "basil"
+- "markewaite"
 issues:
-  - jira: 29424
+  - github: *GH
+cd:
+  enabled: true

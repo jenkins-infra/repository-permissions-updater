@@ -1,0 +1,11 @@
+---
+name: "failure-provenance"
+github: &GH "jenkinsci/failure-provenance-plugin"
+paths:
+- "io/jenkins/plugins/failure-provenance"
+developers:
+- "shripal"
+issues:
+  - github: *GH
+cd:
+  enabled: true

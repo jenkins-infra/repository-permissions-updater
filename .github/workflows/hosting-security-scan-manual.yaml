@@ -1,0 +1,186 @@
+name: Hosting Security Scan (Manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number to scan and post results to'
+        required: true
+        type: number
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract repository URL from issue
+        id: extract-repo
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const issue = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ inputs.issue_number }},
+            });
+            const body = issue.data.body || '';
+            const match = body.match(/### Repository URL\s+(\S+)/);
+            if (!match) {
+              core.setFailed('Could not find Repository URL in issue body');
+              return;
+            }
+            const url = match[1];
+            const repoMatch = url.match(/https:\/\/github\.com\/([^\/]+)\/([^\/]+)/);
+            if (!repoMatch) {
+              core.setFailed(`Repository URL '${url}' is not a valid GitHub repository URL`);
+              return;
+            }
+            core.setOutput('repo-url', url);
+            core.setOutput('repo', `${repoMatch[1]}/${repoMatch[2]}`);
+
+      - name: Check out plugin repository
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ steps.extract-repo.outputs.repo }}
+
+      - name: Capture plugin repository commit SHA
+        id: plugin-sha
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Java
+        uses: actions/setup-java@v5.6.0
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: maven
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v4.37.9
+        with:
+          languages: java
+          config: |
+            disable-default-queries: true
+            packs:
+            - jenkins-infra/jenkins-codeql@0.0.3
+            - codeql/java-queries:AlertSuppression.ql
+            - codeql/java-queries:AlertSuppressionAnnotations.ql
+
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v4.37.9
+
+      - name: Run CodeQL
+        id: generate-sarif
+        uses: github/codeql-action/analyze@v4.37.9
+        with:
+          category: Jenkins Security Scan
+          upload: never
+
+      - name: Process SARIF
+        run: |
+          jq 'setpath(path(.runs[].tool.driver.name); "Jenkins Security Scan") | setpath(path(.runs[].tool.driver.organization); "Jenkins Project") | del(.runs[].results[] | select( .suppressions | length != 0 ))' ../results/java.sarif > jenkins-security-scan.sarif
+          mv -v ../results/java.sarif .
+
+      - name: Archive SARIF
+        uses: actions/upload-artifact@v7
+        with:
+          path: '*.sarif'
+          name: Jenkins Security Scan SARIF
+
+      - name: Post results to issue
+        if: steps.generate-sarif.outcome == 'success'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const fs = require('fs');
+            const repoUrl = '${{ steps.extract-repo.outputs.repo-url }}';
+            const issueNumber = ${{ inputs.issue_number }};
+            const { owner, repo } = context.repo;
+
+            const sarif = JSON.parse(fs.readFileSync('jenkins-security-scan.sarif', 'utf8'));
+            const repoRef = sarif.runs?.[0]?.versionControlProvenance?.[0]?.revisionId || '${{ steps.plugin-sha.outputs.sha }}';
+
+            const ruleMap = new Map();
+            for (const run of (sarif.runs || [])) {
+              for (const ext of (run.tool?.extensions || [])) {
+                for (const rule of (ext.rules || [])) {
+                  ruleMap.set(rule.id, {
+                    title: rule.shortDescription?.text || rule.id,
+                    helpMarkdown: rule.help?.markdown || '',
+                  });
+                }
+              }
+            }
+
+            // Group results by ruleId
+            const byRule = new Map();
+            for (const run of (sarif.runs || [])) {
+              for (const result of (run.results || [])) {
+                const ruleId = result.ruleId || 'unknown';
+                if (!byRule.has(ruleId)) byRule.set(ruleId, []);
+                const location = result.locations?.[0]?.physicalLocation;
+                const filePath = location?.artifactLocation?.uri?.replace(/^src:\/\//, '') || '';
+                const line = location?.region?.startLine;
+                const githubLink = filePath
+                  ? `${repoUrl}/blob/${repoRef}/${filePath}` + (line ? `#L${line}` : '')
+                  : null;
+                const fileName = filePath.split('/').pop() || filePath;
+                const linkLabel = fileName + (line ? `#${line}` : '');
+                const message = result.message?.text || '';
+                byRule.get(ruleId).push({ linkLabel, githubLink, message });
+              }
+            }
+
+            const hasFindings = byRule.size > 0;
+
+            let body;
+            if (hasFindings) {
+              const totalCount = [...byRule.values()].reduce((sum, arr) => sum + arr.length, 0);
+              const sections = [];
+              for (const [ruleId, findings] of byRule) {
+                const rule = ruleMap.get(ruleId);
+                const title = rule?.title || ruleId;
+                const helpSection = rule?.helpMarkdown
+                  ? `<details><summary>About this finding</summary>\n\n${rule.helpMarkdown}\n\n</details>`
+                  : '';
+                const findingItems = findings.map(f => {
+                  const summary = f.githubLink ? `<a href="${f.githubLink}">${f.linkLabel}</a>` : f.linkLabel;
+                  return `<details><summary>${summary}</summary>\n\n\`\`\`\n${f.message}\n\`\`\`\n\n</details>`;
+                });
+                sections.push(`## ${title}\n\n${helpSection}\n\n${findingItems.join('\n')}`);
+              }
+              body = `### Jenkins Security Scan\n\nThe Jenkins Security Scan discovered ${totalCount} finding(s) 🔍.\n\nFor every identified issue, please do one of the following:\n\n- Implement the recommended fix to address the issue.\n- If you think it's a false positive, suppress the warning directly within the code.\n- Alternative, you write an explanation here about why you think it's irrelevant. That will require a manual review, leading to a slower process.\n\nAfter addressing the findings through one of the above methods:\n\n- If all modifications have been made to the code, please initiate a new security scan by triggering the \`/request-security-scan\` command.\n- If there are any unresolved findings (those not corrected or suppressed), request a review from the Jenkins security team by using the \`/audit-review\` command.\n\n---\n\n${sections.join('\n\n')}`;
+            } else {
+              body = `### Jenkins Security Scan\n\nThe security scan of [${repoUrl}](${repoUrl}) did not find anything dangerous with your plugin, congratulations! 🎉`;
+            }
+
+            await github.rest.issues.createComment({ owner, repo, issue_number: issueNumber, body });
+
+            const addLabel = hasFindings ? 'security-audit-needs-correction' : 'security-audit-done';
+            const removeLabel = hasFindings ? 'security-audit-done' : 'security-audit-needs-correction';
+
+            await github.rest.issues.addLabels({ owner, repo, issue_number: issueNumber, labels: [addLabel] });
+
+            for (const name of [removeLabel, 'security-audit-todo']) {
+              try {
+                await github.rest.issues.removeLabel({ owner, repo, issue_number: issueNumber, name });
+              } catch (e) {
+                if (e.status !== 404) throw e;
+              }
+            }
+
+      - name: Post scan failure to issue
+        if: steps.generate-sarif.outcome != 'success'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const repoUrl = '${{ steps.extract-repo.outputs.repo-url }}';
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ inputs.issue_number }},
+              body: `### Jenkins Security Scan\n\nThe security scan of [${repoUrl}](${repoUrl}) encountered an error. Please check the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.`,
+            });

@@ -1,0 +1,11 @@
+---
+name: "smart-retry"
+github: &GH "jenkinsci/smart-retry-plugin"
+paths:
+- "io/jenkins/plugins/smart-retry"
+developers:
+- "donhui"
+issues:
+  - github: *GH
+cd:
+  enabled: true

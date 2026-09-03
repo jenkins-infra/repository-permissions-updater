@@ -5,8 +5,9 @@ paths:
   - "io/jenkins/plugins/javax-mail-api"
 developers:
   - "basil"
+  - "markewaite"
 issues:
-  - jira: 28833
+  - github: *GH
 security:
   contacts:
     jira: "cloudbees_security_members"

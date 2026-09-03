@@ -1,0 +1,11 @@
+---
+name: "auditflow"
+github: &GH "jenkinsci/auditflow-plugin"
+paths:
+- "io/jenkins/plugins/auditflow"
+developers:
+- "HarryJ"
+issues:
+  - github: *GH
+cd:
+  enabled: true

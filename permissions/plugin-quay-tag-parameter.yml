@@ -1,0 +1,11 @@
+---
+name: "quay-tag-parameter"
+github: &GH "jenkinsci/quay-tag-parameter-plugin"
+paths:
+- "io/jenkins/plugins/quay-tag-parameter"
+developers:
+- "mohitsalvi"
+issues:
+  - github: *GH
+cd:
+  enabled: true

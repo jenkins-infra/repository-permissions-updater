@@ -1,8 +1,8 @@
 ---
 name: "mailer"
-github: "jenkinsci/mailer-plugin"
+github: &gh "jenkinsci/mailer-plugin"
 issues:
-  - jira: '17522'  # mailer-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/mailer"
 cd:

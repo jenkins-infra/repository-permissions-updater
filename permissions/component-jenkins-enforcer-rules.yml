@@ -1,0 +1,11 @@
+---
+name: "jenkins-enforcer-rules"
+github: &GH "jenkinsci/jenkins-enforcer-rules"
+issues:
+  - github: *GH
+paths:
+  - "io/jenkins/tools/maven/jenkins-enforcer-rules"
+cd:
+  enabled: true
+developers:
+  - "@core"

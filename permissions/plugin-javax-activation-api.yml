@@ -5,8 +5,9 @@ paths:
   - "io/jenkins/plugins/javax-activation-api"
 developers:
   - "basil"
+  - "markewaite"
 issues:
-  - jira: 28834
+  - github: *GH
 security:
   contacts:
     jira: "cloudbees_security_members"

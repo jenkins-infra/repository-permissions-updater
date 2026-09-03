@@ -9,3 +9,6 @@ paths:
 developers:
   - "oleg_nenashev"
   - "mPokornyETM"
+  - "atai"
+cd:
+  enabled: true

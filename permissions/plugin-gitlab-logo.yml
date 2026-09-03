@@ -9,4 +9,3 @@ developers:
   - "sue445"
 cd:
   enabled: true
-  exclusive: false

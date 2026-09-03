@@ -4,7 +4,10 @@ github: "jenkinsci/swarm-plugin"
 paths:
   - "org/jenkins-ci/plugins/swarm-client"
   - "org/jvnet/hudson/plugins/swarm-client"
+cd:
+  enabled: true
 developers:
   - "basil"
   - "mindjiver"
   - "oleg_nenashev"
+  - "@cloudbees-developers"

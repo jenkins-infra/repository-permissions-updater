@@ -1,8 +1,8 @@
 ---
 name: "mock-security-realm"
-github: "jenkinsci/mock-security-realm-plugin"
+github: &gh "jenkinsci/mock-security-realm-plugin"
 issues:
-  - jira: '17121'  # mock-security-realm-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/mock-security-realm"
 cd:

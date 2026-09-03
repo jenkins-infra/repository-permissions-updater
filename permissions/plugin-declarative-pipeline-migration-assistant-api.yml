@@ -8,7 +8,6 @@ paths:
 developers:
   - "abayer"
   - "dnusbaum"
-  - "jglick"
   - "rsandell"
   - "carroll"
   - "bitwiseman"
@@ -17,3 +16,5 @@ developers:
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true

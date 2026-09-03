@@ -13,6 +13,3 @@ developers:
   - "olamy"
   - "aheritier"
   - "jtaboada"
-security:
-  contacts:
-    jira: "cloudbees_security_members"

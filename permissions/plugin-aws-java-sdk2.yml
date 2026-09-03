@@ -23,6 +23,7 @@ extraNames:
   - aws-java-sdk2-iam
   - aws-java-sdk2-kinesis
   - aws-java-sdk2-lambda
+  - aws-java-sdk2-netty-nio-client
   - aws-java-sdk2-organizations
   - aws-java-sdk2-s3
   - aws-java-sdk2-secretsmanager

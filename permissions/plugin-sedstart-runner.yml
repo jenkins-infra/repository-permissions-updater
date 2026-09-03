@@ -1,0 +1,11 @@
+---
+name: "sedstart-runner"
+github: &GH "jenkinsci/sedstart-runner-plugin"
+paths:
+- "io/jenkins/plugins/sedstart-runner"
+developers:
+- "sedstart"
+issues:
+  - github: *GH
+cd:
+  enabled: true

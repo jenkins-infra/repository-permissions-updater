@@ -1,0 +1,11 @@
+---
+name: "forgeai-pipeline-intelligence"
+github: &GH "jenkinsci/forgeai-pipeline-intelligence-plugin"
+paths:
+- "io/jenkins/plugins/forgeai-pipeline-intelligence"
+developers:
+- "saurabh_oss"
+issues:
+  - github: *GH
+cd:
+  enabled: true

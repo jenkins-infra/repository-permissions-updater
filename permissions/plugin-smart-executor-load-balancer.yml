@@ -1,0 +1,11 @@
+---
+name: "smart-executor-load-balancer"
+github: &GH "jenkinsci/smart-executor-load-balancer-plugin"
+paths:
+- "io/jenkins/plugins/smart-executor-load-balancer"
+developers:
+- "ravisalamani"
+issues:
+  - github: *GH
+cd:
+  enabled: true

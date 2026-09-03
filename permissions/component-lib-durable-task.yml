@@ -11,5 +11,6 @@ developers:
   - "teilo"
   - "batmat"
   - "olamy"
+  - "jglick"
 cd:
   enabled: true

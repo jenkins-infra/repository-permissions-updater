@@ -1,0 +1,146 @@
+name: Adoption PR reminder
+
+on:
+  pull_request_target:
+    types:
+      - labeled
+      - unlabeled
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  reset-reminder-marker:
+    name: Reset reminder marker on label change
+    runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'pull_request_target' &&
+      github.event.label.name == 'adoption-request'
+    steps:
+      - name: Remove reminder marker if present
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const REMINDER_LABEL = 'adoption-request-reminded';
+            const prNumber = context.payload.pull_request.number;
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                name: REMINDER_LABEL,
+              });
+              core.info(`Removed reminder marker from PR #${prNumber}`);
+            } catch (e) {
+              if (e.status === 404) {
+                core.info(`Reminder marker not present on PR #${prNumber}, nothing to remove`);
+              } else {
+                throw e;
+              }
+            }
+
+  send-reminders:
+    name: Send reminders for aging PRs
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Check and notify PRs past the 14-day threshold
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const MAIN_LABEL = 'adoption-request';
+            const REMINDER_LABEL = 'adoption-request-reminded';
+            const THRESHOLD_DAYS = 14;
+
+            // Ensure the reminder marker label exists in the repository
+            try {
+              await github.rest.issues.getLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: REMINDER_LABEL,
+              });
+            } catch (e) {
+              if (e.status === 404) {
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: REMINDER_LABEL,
+                  color: 'ededed',
+                  description: 'Automated reminder has been sent for this adoption PR',
+                });
+                core.info(`Created label '${REMINDER_LABEL}'`);
+              } else {
+                throw e;
+              }
+            }
+
+            // List all open PRs that carry the main label
+            const items = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: MAIN_LABEL,
+              per_page: 100,
+            });
+
+            const prs = items.filter(item => !!item.pull_request);
+            core.info(`Found ${prs.length} open PR(s) with label '${MAIN_LABEL}'`);
+
+            for (const pr of prs) {
+              const prNumber = pr.number;
+
+              // Skip PRs that have already received a reminder
+              if (pr.labels.some(l => l.name === REMINDER_LABEL)) {
+                core.info(`PR #${prNumber}: already reminded, skipping`);
+                continue;
+              }
+
+              // Fetch the PR timeline to find the most recent label-add event
+              const timeline = await github.paginate(github.rest.issues.listEventsForTimeline, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                per_page: 100,
+              });
+
+              const labelEvents = timeline
+                .filter(e => e.event === 'labeled' && e.label?.name === MAIN_LABEL)
+                .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+              if (labelEvents.length === 0) {
+                core.info(`PR #${prNumber}: no label event found in timeline, skipping`);
+                continue;
+              }
+
+              const latestLabelTime = new Date(labelEvents[0].created_at);
+              const daysSinceLabel = (Date.now() - latestLabelTime.getTime()) / (1000 * 60 * 60 * 24);
+
+              core.info(`PR #${prNumber}: label applied ${daysSinceLabel.toFixed(1)} days ago`);
+
+              if (daysSinceLabel < THRESHOLD_DAYS) {
+                core.info(`PR #${prNumber}: not yet ${THRESHOLD_DAYS} days old, skipping`);
+                continue;
+              }
+
+              // Post the reminder comment
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: 'At least 2 weeks have passed since the adoption request was made. The hosting team will now proceed with the adoption process if there have been no objections.'
+              });
+              core.info(`PR #${prNumber}: posted reminder comment`);
+
+              // Add the reminder marker label to prevent duplicate notifications
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                labels: [REMINDER_LABEL],
+              });
+              core.info(`PR #${prNumber}: added reminder marker label`);
+            }

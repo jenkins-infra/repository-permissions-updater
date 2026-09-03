@@ -6,13 +6,8 @@ public final class HostingConfig {
     static final String INFRA_ORGANIZATION;
     static final String HOSTING_REPO_SLUG;
     static final String HOSTING_REPO_NAME = "repository-permissions-updater";
-    static final String JIRA_URL = "https://issues.jenkins.io";
-    static final String JIRA_USERNAME = System.getenv("JIRA_USERNAME");
-    static final String JIRA_PASSWORD = System.getenv("JIRA_PASSWORD");
-    static final String JIRA_PROJECT;
 
-    private HostingConfig() {
-    }
+    private HostingConfig() {}
 
     static {
         String orgOverride = System.getenv("ORG_NAME");
@@ -21,8 +16,5 @@ public final class HostingConfig {
 
         String targetOrgOverride = System.getenv("TARGET_ORG_NAME");
         TARGET_ORG_NAME = targetOrgOverride != null ? targetOrgOverride : "jenkinsci";
-
-        String projectOverride = System.getenv("JIRA_PROJECT_NAME");
-        JIRA_PROJECT = projectOverride != null ? projectOverride : "JENKINS";
     }
 }

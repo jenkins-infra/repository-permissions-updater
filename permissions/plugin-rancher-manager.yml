@@ -1,0 +1,11 @@
+---
+name: "rancher-manager"
+github: &GH "jenkinsci/rancher-manager-plugin"
+paths:
+- "io/jenkins/plugins/rancher-manager"
+developers:
+- "mlinops"
+issues:
+  - github: *GH
+cd:
+  enabled: true

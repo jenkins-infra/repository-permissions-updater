@@ -3,5 +3,7 @@ name: "support-log-formatter"
 github: "jenkinsci/lib-support-log-formatter"
 paths:
   - "io/jenkins/lib/support-log-formatter"
+cd:
+  enabled: true
 developers:
   - "@core"

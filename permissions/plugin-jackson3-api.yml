@@ -1,0 +1,11 @@
+---
+name: "jackson3-api"
+github: &GH "jenkinsci/jackson3-api-plugin"
+paths:
+- "io/jenkins/plugins/jackson3-api"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -1,0 +1,11 @@
+---
+name: "anchorectl-warnings"
+github: &GH "jenkinsci/anchorectl-warnings-plugin"
+paths:
+- "io/jenkins/plugins/anchorectl-warnings"
+developers:
+- "Sopuru"
+issues:
+  - github: *GH
+cd:
+  enabled: true

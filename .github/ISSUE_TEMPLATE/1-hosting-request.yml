@@ -52,10 +52,10 @@ body:
       required: true
   - type: dropdown
     attributes:
-      label: Issue tracker
-      description: Which issue tracker to use. Issues for this component can be tracked on issues.jenkins.io in a component in the JENKINS project, or in the GitHub repository using GitHub issues. Using both at the same time is discouraged.
+      label: Automated release via GitHub Actions (recommended)
+      description: See https://www.jenkins.io/doc/developer/publishing/releasing-cd/ for more information.
       options:
-        - "Jira"
-        - "GitHub issues"
+        - "Yes"
+        - "No"
     validations:
       required: true

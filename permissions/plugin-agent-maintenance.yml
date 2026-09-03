@@ -6,6 +6,6 @@ paths:
 developers:
   - "mawinter69"
 issues:
-  - jira: 28837
+  - github: *GH
 cd:
   enabled: true

@@ -7,3 +7,7 @@ paths:
   - "jenkins/ci/plugins/computerqueue/computer-queue-plugin"
 developers:
   - "olivergondza"
+  - "mawinter69"
+cd:
+  enabled: true
+

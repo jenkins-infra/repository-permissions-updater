@@ -1,0 +1,11 @@
+---
+name: "oras-parameters"
+github: &GH "jenkinsci/oras-parameters-plugin"
+paths:
+- "io/jenkins/plugins/oras-parameters"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

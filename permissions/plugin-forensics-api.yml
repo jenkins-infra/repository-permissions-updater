@@ -1,8 +1,8 @@
 ---
 name: "forensics-api"
-github: "jenkinsci/forensics-api-plugin"
+github: &gh "jenkinsci/forensics-api-plugin"
 issues:
-  - jira: '25439'  # forensics-api-plugin
+  - github: *gh
 paths:
   - "io/jenkins/plugins/forensics-api"
 developers:
@@ -10,3 +10,5 @@ developers:
 security:
   contacts:
     jira: "cloudbees_security_members"
+cd:
+  enabled: true

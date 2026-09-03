@@ -16,3 +16,5 @@ developers:
   - "mkobit"
   - "dnusbaum"
   - "tszmytka"
+cd:
+  enabled: true

@@ -1,0 +1,11 @@
+---
+name: "multibranch-filter"
+github: &GH "jenkinsci/multibranch-filter-plugin"
+paths:
+- "io/jenkins/plugins/multibranch-filter"
+developers:
+- "ollehu"
+issues:
+  - github: *GH
+cd:
+  enabled: true

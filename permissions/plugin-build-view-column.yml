@@ -5,5 +5,4 @@ issues:
   - jira: '17625'  # build-view-column-plugin
 paths:
   - "org/jenkins-ci/plugins/build-view-column"
-developers:
-  - "jglick"
+developers: []

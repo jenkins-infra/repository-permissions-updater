@@ -1,0 +1,9 @@
+---
+name: "jenkins-gradle-convention"
+github: &gh "jenkinsci/gradle-convention-plugin"
+issues:
+  - github: *gh
+paths:
+  - "io/jenkins/plugins/gradle-convention-plugin"
+developers:
+  - "aaravmahajanofficial"

@@ -1,0 +1,14 @@
+---
+name: "gradle"
+github: "jenkinsci/gradle-plugin"
+paths:
+  - "org/jenkins-ci/plugins/gradle-pom"
+developers:
+  - "wolfs"
+  - "avenderov"
+  - "facewindu"
+  - "guylabs"
+  - "sflorea"
+  - "welandaz"
+cd:
+  enabled: true

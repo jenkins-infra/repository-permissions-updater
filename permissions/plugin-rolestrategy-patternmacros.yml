@@ -1,0 +1,11 @@
+---
+name: "rolestrategy-patternmacros"
+github: &GH "jenkinsci/rolestrategy-patternmacros-plugin"
+paths:
+- "io/jenkins/plugins/rolestrategy-patternmacros"
+developers:
+- "joppino"
+issues:
+  - github: *GH
+cd:
+  enabled: true

@@ -1,0 +1,11 @@
+---
+name: "editor-search"
+github: &GH "jenkinsci/editor-search-plugin"
+paths:
+- "io/jenkins/plugins/editor-search"
+developers:
+- "amarkdotdev"
+issues:
+  - github: *GH
+cd:
+  enabled: true

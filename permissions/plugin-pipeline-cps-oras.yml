@@ -1,0 +1,11 @@
+---
+name: "pipeline-cps-oras"
+github: &GH "jenkinsci/pipeline-cps-oras-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-cps-oras"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true

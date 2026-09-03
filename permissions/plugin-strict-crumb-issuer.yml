@@ -7,3 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/strict-crumb-issuer"
 developers:
   - "@security"
+cd:
+  enabled: true
+communityPluginMaintainers: false

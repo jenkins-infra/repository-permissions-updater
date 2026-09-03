@@ -1,8 +1,8 @@
 ---
 name: "clone-workspace-scm"
-github: "jenkinsci/jenkins-clone-workspace-scm-plugin"
+github: &gh "jenkinsci/jenkins-clone-workspace-scm-plugin"
 issues:
-  - jira: '16060'  # clone-workspace-scm-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/clone-workspace-scm"
   - "org/jvnet/hudson/plugins/clone-workspace-scm"

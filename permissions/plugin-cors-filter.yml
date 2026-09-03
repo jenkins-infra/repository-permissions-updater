@@ -7,3 +7,6 @@ paths:
   - "org/jenkins-ci/plugins/cors-filter"
 developers:
   - "uday"
+  - "panicking"
+cd:
+  enabled: true

@@ -1,0 +1,11 @@
+---
+name: "pipeline-lib-oras"
+github: &GH "jenkinsci/pipeline-lib-oras-plugin"
+paths:
+- "io/jenkins/plugins/pipeline-lib-oras"
+cd:
+  enabled: true
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH

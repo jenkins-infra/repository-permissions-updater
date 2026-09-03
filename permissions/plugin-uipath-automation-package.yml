@@ -8,8 +8,9 @@ paths:
   - "org/jenkins-ci/plugins/uipath-automation-package"
 cd:
   enabled: true
-  exclusive: false
 developers:
   - "ganeshborle"
   - "al3xanndru"
   - "cristiancotovanu"
+  - "andreidinca"
+  - "leonard_apostoaie"
