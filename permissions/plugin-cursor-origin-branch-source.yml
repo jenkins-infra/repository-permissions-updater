@@ -1,0 +1,12 @@
+---
+name: "cursor-origin-branch-source"
+github: &GH "jenkinsci/cursor-origin-branch-source-plugin"
+paths:
+- "io/jenkins/plugins/cursor-origin-branch-source"
+developers:
+- "teilo"
+- "jglick"
+issues:
+  - github: *GH
+cd:
+  enabled: true
