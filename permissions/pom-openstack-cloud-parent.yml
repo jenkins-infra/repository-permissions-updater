@@ -4,3 +4,5 @@ paths:
   - "org/jenkins-ci/plugins/openstack-cloud-parent"
 developers:
   - "olivergondza"
+  - "simonelbaz"
+  - "krisstern"
