@@ -6,4 +6,6 @@ issues:
 paths:
   - "io/jenkins/plugins/lighthouse-report"
 developers:
- - "zbynek"
+  - "zbynek"
+cd:
+  enabled: true
