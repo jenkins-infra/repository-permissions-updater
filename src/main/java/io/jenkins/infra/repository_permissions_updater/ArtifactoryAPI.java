@@ -369,7 +369,7 @@ public abstract class ArtifactoryAPI {
                 int code = response.statusCode();
                 String body = response.body();
                 if (code < 200 || code > 399) {
-                    LOGGER.log(Level.INFO, "{0} request to {1} returned error: HTTP {2} {3}", new Object[] {
+                    LOGGER.log(Level.SEVERE, "{0} request to {1} returned error: HTTP {2} {3}", new Object[] {
                         verb, url, code, body
                     });
                 } else {
