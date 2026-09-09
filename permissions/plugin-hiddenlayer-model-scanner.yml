@@ -8,5 +8,6 @@ cd:
 developers:
 - "mlharper_hl"
 - "adrummond_hl"
+- "sagrawal_hl"
 issues:
   - github: *GH
