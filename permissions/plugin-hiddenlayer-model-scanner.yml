@@ -6,8 +6,9 @@ paths:
 cd:
   enabled: true
 developers:
-- "blucas_hl"
-- "travis_hiddenlayer"
+- "mlharper_hl"
 - "adrummond_hl"
+- "sagrawal_hl"
+- "nhalpern_hl"
 issues:
   - github: *GH
