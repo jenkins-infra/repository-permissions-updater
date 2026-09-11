@@ -139,6 +139,75 @@ cd:
 ```
 
 
+Managing GitHub Permissions (experimental)
+-------------------------------------------
+
+RPU is gaining the ability to also manage GitHub repository/team access as code, in addition to Artifactory
+upload permissions. This is a new, **opt-in, report-only** feature: nothing changes for a component unless its
+YAML file explicitly enables it, and even then, RPU currently only *reports* what it would change — it does
+not yet add or remove anyone from any GitHub team.
+
+See [docs/rollout-of-github-permissions-sync.md](docs/rollout-of-github-permissions-sync.md) for the staged adoption plan across the 2000+ repos in the org and how GitHub
+API usage is kept bounded as adoption grows.
+
+### Why report-only, and why it's opt-in
+
+The `jenkinsci` organization has 2000+ repositories and ~2600 teams, so a mistake in an automated
+reconciliation could lock maintainers out of their own repositories at scale. To manage that risk:
+
+- A component (or cross-repository team) is only touched by this feature once its YAML file sets
+  `manageGithubPermissions: true` (or, for `teams/*.yml`, `manageGithubTeam: true`). Everything else is left
+  completely alone, so adoption can be gradual.
+- The tool currently only *computes and reports* a diff (who would be added/removed per GitHub team) to
+  `json/github-permissions-diff.json`, published alongside the other index reports. Actually adding/removing
+  GitHub team members is a deferred follow-up, to be enabled only after this report has been reviewed over a
+  bake-in period.
+- Just like Artifactory sync, any live call to the GitHub API for this feature **only happens in the trusted,
+  post-merge run** — never in PR builds. PR builds intentionally run without any credentials (since PRs can
+  come from forks), and there is no GitHub credential that is both genuinely read-only *and* safe to hand to
+  untrusted, credential-free PR builds (a fine-grained PAT or GitHub App key is still a secret; anonymous
+  reads are rate-limited to 60 requests/hour and don't reliably expose private team membership). PR builds
+  only perform static YAML validation (schema/format checks) of the fields below — no network calls.
+
+### The `developers` list
+
+Each entry in `developers` (in both `permissions/*.yml` and `teams/*.yml`) can be either:
+
+- a plain string — a Jenkins community (LDAP) id, exactly as before; used for Artifactory permissions. If a
+  component opts into GitHub permissions management, a plain string entry is also assumed to be that
+  person's GitHub login (true for the vast majority of Jenkins contributors).
+- a mapping with **both** `ldap` and `github` keys — ties that developer's LDAP id to their GitHub login
+  1-to-1, e.g. `{ldap: jglick, github: jglick}`. Use this form when the two ids differ, so the GitHub login
+  used for permissions management is explicit rather than assumed. Both keys are required when using this
+  form. The two forms can be freely mixed in the same list.
+
+### YAML fields
+
+In a component's `permissions/*.yml` file:
+
+```yaml
+developers:
+  - ldap: "jglick"
+    github: "jglick"
+manageGithubPermissions: true    # opt-in: without this, GitHub logins above and the fields below are ignored
+repositoryTeam: "custom-name"    # optional: overrides the default "<repo> Developers" team name
+additionalGithubTeams:            # grants existing cross-repo teams (teams/*.yml) access to this repo
+  - name: "cloudbees-developers"
+    role: "push"                  # one of: pull, triage, push, maintain, admin
+```
+
+In a cross-repository `teams/*.yml` file:
+
+```yaml
+name: "cloudbees-developers"
+developers:
+  - ldap: "existing-ldap-id"
+    github: "existing-github-id"
+manageGithubTeam: true
+```
+
+
+
 Managing Security Process
 -------------------------
 

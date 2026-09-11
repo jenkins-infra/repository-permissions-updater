@@ -35,6 +35,7 @@ import java.util.logging.ConsoleHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.yaml.snakeyaml.LoaderOptions;
@@ -74,8 +75,15 @@ public final class ArtifactoryPermissionsUpdater {
      * Always returns non null.
      */
     private static Map<String, Set<TeamDefinition>> loadTeams() throws IOException {
+        return loadTeams(new File("teams/"));
+    }
+
+    /**
+     * Loads all teams from the given folder.
+     * Always returns non null.
+     */
+    static Map<String, Set<TeamDefinition>> loadTeams(File teamsDir) throws IOException {
         Yaml yaml = new Yaml(new Constructor(TeamDefinition.class, new LoaderOptions()));
-        File teamsDir = new File("teams/");
 
         Map<String, Set<TeamDefinition>> teams = new HashMap<>();
 
@@ -102,12 +110,15 @@ public final class ArtifactoryPermissionsUpdater {
      * Checks if any developer has its name starting with `@`.
      * In which case, for `@some-team` it will replace it with the developers
      * listed for the team whose name equals `some-team` under the teams/ directory.
+     * <p>
+     * Operates on the raw {@code developers} entries (see {@link Definition#getDevelopers()}) so that any
+     * {@code {ldap, github}} mapping entries (not just plain LDAP id strings) survive expansion unchanged.
      */
     private static void expandTeams(Definition definition, Map<String, Set<TeamDefinition>> teamsByName) {
-        Set<String> expandedDevelopers = new TreeSet<>();
+        Map<String, Object> expandedByLdapId = new TreeMap<>();
 
-        for (String developerName : definition.getDevelopers()) {
-            if (developerName.startsWith("@")) {
+        for (Object developerEntry : definition.getDevelopers()) {
+            if (developerEntry instanceof String developerName && developerName.startsWith("@")) {
                 String teamName = developerName.substring(1);
                 Set<TeamDefinition> teamDevs = teamsByName.get(teamName);
                 if (teamDevs == null) {
@@ -124,12 +135,110 @@ public final class ArtifactoryPermissionsUpdater {
                             .flatMap(Stream::of)
                             .collect(Collectors.toList())
                 });
-                teamDevs.forEach(t -> expandedDevelopers.addAll(List.of(t.getDevelopers())));
+                for (TeamDefinition teamDev : teamDevs) {
+                    for (Object teamEntry : teamDev.getDevelopers()) {
+                        expandedByLdapId.putIfAbsent(DeveloperEntries.extractLdapId(teamEntry), teamEntry);
+                    }
+                }
             } else {
-                expandedDevelopers.add(developerName);
+                expandedByLdapId.putIfAbsent(DeveloperEntries.extractLdapId(developerEntry), developerEntry);
             }
         }
-        definition.setDevelopers(expandedDevelopers.toArray(new String[0]));
+        definition.setDevelopers(expandedByLdapId.values().toArray());
+    }
+
+    /**
+     * The set of GitHub repository permission roles accepted for {@link Definition.AdditionalGitHubTeam#role}.
+     * @see <a href="https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization">GitHub repository roles</a>
+     */
+    private static final Set<String> VALID_GITHUB_ROLES = Set.of("pull", "triage", "push", "maintain", "admin");
+
+    private static final Pattern GITHUB_USERNAME_PATTERN = Pattern.compile("[a-zA-Z0-9-]+");
+
+    /**
+     * Validates the shape of the polymorphic {@code developers} list, regardless of whether GitHub
+     * permissions management is enabled: every entry must be either a plain string (a Jenkins community/LDAP
+     * id) or a mapping with exactly the {@code ldap} and {@code github} keys, both non-blank, the latter
+     * looking like a valid GitHub login. Also rejects a {@code {ldap, github}} mapping entry whose {@code
+     * ldap}/{@code github} duplicates another entry. Plain-string entries are not checked for duplicates
+     * against each other, to preserve the pre-existing (silently deduplicated at {@code @team} expansion
+     * time) tolerance for accidental repeats in legacy data.
+     */
+    private static void validateDeveloperEntries(String fileName, Object[] developers) {
+        Set<String> seenLdapIds = new HashSet<>();
+        Set<String> seenGithubLogins = new HashSet<>();
+        for (Object entry : developers) {
+            if (entry instanceof String ldapId) {
+                if (ldapId.isBlank()) {
+                    throw new IllegalArgumentException("developers entry must not be blank in " + fileName);
+                }
+                if (!ldapId.startsWith("@")) {
+                    seenLdapIds.add(ldapId);
+                }
+            } else if (entry instanceof Map<?, ?> map) {
+                Set<String> keys = new HashSet<>();
+                map.keySet().forEach(k -> keys.add(String.valueOf(k)));
+                if (!keys.equals(Set.of("ldap", "github"))) {
+                    throw new IllegalArgumentException(
+                            "developers entry using the {ldap, github} mapping form must specify exactly "
+                                    + "both 'ldap' and 'github' in " + fileName + ", but got: " + keys);
+                }
+                String ldapId = String.valueOf(map.get("ldap"));
+                String githubLogin = String.valueOf(map.get("github"));
+                if (ldapId.isBlank()) {
+                    throw new IllegalArgumentException("developers entry has a blank 'ldap' in " + fileName);
+                }
+                if (githubLogin.isBlank()
+                        || !GITHUB_USERNAME_PATTERN.matcher(githubLogin).matches()) {
+                    throw new IllegalArgumentException("developers entry has an invalid GitHub user name '"
+                            + githubLogin + "' for '" + ldapId + "' in " + fileName);
+                }
+                if (!seenLdapIds.add(ldapId)) {
+                    throw new IllegalArgumentException("Duplicate developer '" + ldapId + "' in " + fileName);
+                }
+                if (!seenGithubLogins.add(githubLogin)) {
+                    throw new IllegalArgumentException(
+                            "Duplicate GitHub user name '" + githubLogin + "' in " + fileName);
+                }
+            } else {
+                throw new IllegalArgumentException("Invalid developers entry in " + fileName + ": " + entry);
+            }
+        }
+    }
+
+    /**
+     * Performs static (no network access) validation of the GitHub permissions management fields
+     * ({@code repositoryTeam}, {@code additionalGithubTeams}, {@code manageGithubPermissions}) on a
+     * {@link Definition}. Failures here are fatal so PR builds fail fast, mirroring the validation already
+     * performed for the Artifactory-related fields. No GitHub API calls are made from here, so this runs
+     * safely even in credential-free PR/dry-run builds.
+     */
+    private static void validateGithubPermissionsFields(
+            File file, Definition definition, Map<String, Set<TeamDefinition>> teamsByName) {
+        if (!definition.isManageGithubPermissions()) {
+            // Feature is opt-in per component; skip validation of the related (unused) fields entirely.
+            return;
+        }
+
+        if (definition.getGithub() == null) {
+            throw new IllegalArgumentException(
+                    "manageGithubPermissions requires a GitHub repository ('github') in " + file.getName());
+        }
+
+        for (Definition.AdditionalGitHubTeam additionalTeam : definition.getAdditionalGithubTeams()) {
+            if (additionalTeam.name == null || additionalTeam.name.isBlank()) {
+                throw new IllegalArgumentException(
+                        "additionalGithubTeams entry is missing 'name' in " + file.getName());
+            }
+            if (!teamsByName.containsKey(additionalTeam.name)) {
+                throw new IllegalArgumentException("additionalGithubTeams references unknown team '"
+                        + additionalTeam.name + "' (no teams/" + additionalTeam.name + ".yml) in " + file.getName());
+            }
+            if (additionalTeam.role == null || !VALID_GITHUB_ROLES.contains(additionalTeam.role)) {
+                throw new IllegalArgumentException("additionalGithubTeams entry for '" + additionalTeam.name
+                        + "' has invalid 'role' (must be one of " + VALID_GITHUB_ROLES + ") in " + file.getName());
+            }
+        }
     }
 
     /**
@@ -153,6 +262,11 @@ public final class ArtifactoryPermissionsUpdater {
             File yamlSourceDirectory, File apiOutputDir, ArtifactoryAPI artifactoryAPI) throws IOException {
         Yaml yaml = new Yaml(new Constructor(Definition.class, new LoaderOptions()));
         Map<String, Set<TeamDefinition>> teamsByName = loadTeams();
+        for (Set<TeamDefinition> teamDefinitions : teamsByName.values()) {
+            for (TeamDefinition team : teamDefinitions) {
+                validateDeveloperEntries(team.getName() + ".yml", team.getDevelopers());
+            }
+        }
 
         Map<String, Set<String>> pathsByGithub = new TreeMap<>();
         Map<String, List<Map<String, String>>> issueTrackersByPlugin = new TreeMap<>();
@@ -171,7 +285,9 @@ public final class ArtifactoryPermissionsUpdater {
             try (InputStream is = Files.newInputStream(file.toPath())) {
                 definition = yaml.loadAs(is, Definition.class);
 
+                validateDeveloperEntries(file.getName(), definition.getDevelopers());
                 expandTeams(definition, teamsByName);
+                validateGithubPermissionsFields(file, definition, teamsByName);
 
             } catch (Exception e) {
                 throw new IOException("Failed to read " + file.getName(), e);
@@ -188,7 +304,7 @@ public final class ArtifactoryPermissionsUpdater {
                         throw new IllegalArgumentException(
                                 "CD is only supported when the GitHub repository is in @jenkinsci");
                     }
-                    if (definition.getDevelopers().length > 0) {
+                    if (definition.getDeveloperIds().length > 0) {
                         List<Definition> definitions = cdEnabledComponentsByGitHub.get(definition.getGithub());
                         if (definitions == null || definitions.isEmpty()) {
                             definitions = new ArrayList<>();
@@ -294,7 +410,7 @@ public final class ArtifactoryPermissionsUpdater {
             JsonObject usersJson = new JsonObject();
             JsonObject groupsJson = new JsonObject();
 
-            if (definition.getDevelopers().length == 0) {
+            if (definition.getDeveloperIds().length == 0) {
                 if (definition.getCd() != null && definition.getCd().enabled) {
                     LOGGER.log(
                             Level.INFO,
@@ -303,7 +419,7 @@ public final class ArtifactoryPermissionsUpdater {
                 }
             } else {
                 if (definition.getCd() == null || !definition.getCd().exclusive) {
-                    for (String dev : definition.getDevelopers()) {
+                    for (String dev : definition.getDeveloperIds()) {
                         boolean inArtifactory = KnownUsers.existsInArtifactory(dev);
                         boolean inJira = KnownUsers.existsInJira(dev);
 
@@ -350,7 +466,7 @@ public final class ArtifactoryPermissionsUpdater {
                         usersJson.add(dev.toLowerCase(Locale.US), rights);
                     }
                 } else {
-                    for (String dev : definition.getDevelopers()) {
+                    for (String dev : definition.getDeveloperIds()) {
                         if (!KnownUsers.existsInJira(dev)) {
                             reportChecksApiDetails(dev + " needs to log in to Jira", """
                                     %s needs to log in to [Jira](https://issues.jenkins.io/)
@@ -367,7 +483,7 @@ public final class ArtifactoryPermissionsUpdater {
                 }
             }
 
-            if (definition.getCd() != null && definition.getCd().enabled && definition.getDevelopers().length != 0) {
+            if (definition.getCd() != null && definition.getCd().enabled && definition.getDeveloperIds().length != 0) {
                 JsonArray rights = new JsonArray();
                 rights.add("w");
                 rights.add("n");
@@ -445,7 +561,7 @@ public final class ArtifactoryPermissionsUpdater {
         // In practice this will probably not be a problem when path changes here and subsequent release are close
         // enough in time.
         // Alternatively, always keep the old groupId around for a while.
-        maintainersByComponent.computeIfAbsent(key, unused -> List.of(definition.getDevelopers()));
+        maintainersByComponent.computeIfAbsent(key, unused -> List.of(definition.getDeveloperIds()));
     }
 
     /**
@@ -630,6 +746,24 @@ public final class ArtifactoryPermissionsUpdater {
          * For all CD-enabled GitHub repositories, obtain a token from Artifactory and attach it to a GH repo as secret.
          */
         generateTokens(new File(ARTIFACTORY_API_DIR, "cd.index.json"));
+
+        /*
+         * Report-only: compute the diff between desired GitHub team membership (opted-in components/teams
+         * only) and actual GitHub team membership, and write it to a JSON report. No GitHub team membership
+         * is added or removed by this step; it exists purely to let the hosting team review the effect of
+         * managing GitHub permissions before any reconciliation is implemented. Since this requires live,
+         * authenticated GitHub API calls, it never runs in dry-run/PR builds (which run without credentials).
+         */
+        if (!DRY_RUN_MODE) {
+            try {
+                GitHubPermissionsSyncer.generateDiffReport(
+                        DEFINITIONS_DIR,
+                        new File("teams/"),
+                        new File(ARTIFACTORY_API_DIR, "github-permissions-diff.json"));
+            } catch (Exception ex) {
+                LOGGER.log(Level.WARNING, "Failed to generate GitHub permissions diff report", ex);
+            }
+        }
     }
 
     private static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.getName());
