@@ -90,6 +90,34 @@ class GitHubPermissionsSyncerTest {
     }
 
     @Test
+    void gitHubOnlyEntryAppliesToDesiredStateWithoutAnLdapId() throws IOException {
+        File permissions = Files.createTempDirectory("permissions").toFile();
+        permissions.deleteOnExit();
+        Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - "alice"
+                  - github: "no-ldap-user"
+                manageGitHubPermissions: true
+                """);
+        File teams = Files.createTempDirectory("teams").toFile();
+        teams.deleteOnExit();
+
+        StubGitHubTeamsAPI stub = new StubGitHubTeamsAPI(Map.of("example-plugin-developers", Set.of()));
+        GitHubTeamsAPI.INSTANCE = stub;
+
+        File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
+        new GitHubPermissionsSyncer(true).sync(permissions, teams, report);
+
+        JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
+        JsonObject team = json.getAsJsonObject("example-plugin-developers");
+        assertEquals(
+                "[\"alice\",\"no-ldap-user\"]", team.getAsJsonArray("toAdd").toString());
+    }
+
+    @Test
     void unmanagedComponentIsNotIncludedInReport() throws IOException {
         File permissions = Files.createTempDirectory("permissions").toFile();
         permissions.deleteOnExit();

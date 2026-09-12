@@ -120,7 +120,7 @@ public final class ArtifactoryPermissionsUpdater {
      * {@code {ldap, github}} mapping entries (not just plain LDAP id strings) survive expansion unchanged.
      */
     private static void expandTeams(Definition definition, Map<String, Set<TeamDefinition>> teamsByName) {
-        Map<String, Object> expandedByLdapId = new TreeMap<>();
+        Map<String, Object> expandedByKey = new TreeMap<>();
 
         for (Object developerEntry : definition.getDevelopers()) {
             if (developerEntry instanceof String developerName && developerName.startsWith("@")) {
@@ -142,14 +142,14 @@ public final class ArtifactoryPermissionsUpdater {
                 });
                 for (TeamDefinition teamDev : teamDevs) {
                     for (Object teamEntry : teamDev.getDevelopers()) {
-                        expandedByLdapId.putIfAbsent(DeveloperEntries.extractLdapId(teamEntry), teamEntry);
+                        expandedByKey.putIfAbsent(DeveloperEntries.extractDedupKey(teamEntry), teamEntry);
                     }
                 }
             } else {
-                expandedByLdapId.putIfAbsent(DeveloperEntries.extractLdapId(developerEntry), developerEntry);
+                expandedByKey.putIfAbsent(DeveloperEntries.extractDedupKey(developerEntry), developerEntry);
             }
         }
-        definition.setDevelopers(expandedByLdapId.values().toArray());
+        definition.setDevelopers(expandedByKey.values().toArray());
     }
 
     /**
@@ -163,11 +163,12 @@ public final class ArtifactoryPermissionsUpdater {
     /**
      * Validates the shape of the polymorphic {@code developers} list, regardless of whether GitHub
      * permissions management is enabled: every entry must be either a plain string (a Jenkins community/LDAP
-     * id) or a mapping with exactly the {@code ldap} and {@code github} keys, both non-blank, the latter
-     * looking like a valid GitHub login. Also rejects a {@code {ldap, github}} mapping entry whose {@code
-     * ldap}/{@code github} duplicates another entry. Plain-string entries are not checked for duplicates
-     * against each other, to preserve the pre-existing (silently deduplicated at {@code @team} expansion
-     * time) tolerance for accidental repeats in legacy data.
+     * id), a mapping with exactly the {@code ldap} and {@code github} keys, or a mapping with only a
+     * {@code github} key (a developer with no Jenkins community/LDAP account, GitHub-only), all non-blank,
+     * GitHub logins format-checked. Also rejects a mapping entry whose {@code ldap}/{@code github}
+     * duplicates another entry. Plain-string entries are not checked for duplicates against each other, to
+     * preserve the pre-existing (silently deduplicated at {@code @team} expansion time) tolerance for
+     * accidental repeats in legacy data.
      */
     private static void validateDeveloperEntries(String fileName, Object[] developers) {
         Set<String> seenLdapIds = new HashSet<>();
@@ -183,22 +184,24 @@ public final class ArtifactoryPermissionsUpdater {
             } else if (entry instanceof Map<?, ?> map) {
                 Set<String> keys = new HashSet<>();
                 map.keySet().forEach(k -> keys.add(String.valueOf(k)));
-                if (!keys.equals(Set.of("ldap", "github"))) {
+                if (!keys.equals(Set.of("ldap", "github")) && !keys.equals(Set.of("github"))) {
                     throw new IllegalArgumentException(
-                            "developers entry using the {ldap, github} mapping form must specify exactly "
-                                    + "both 'ldap' and 'github' in " + fileName + ", but got: " + keys);
+                            "developers entry using the mapping form must specify either both 'ldap' and "
+                                    + "'github', or just 'github' (for a developer with no Jenkins "
+                                    + "community/LDAP account), in " + fileName + ", but got: " + keys);
                 }
-                String ldapId = String.valueOf(map.get("ldap"));
+                boolean hasLdap = keys.contains("ldap");
+                String ldapId = hasLdap ? String.valueOf(map.get("ldap")) : null;
                 String githubLogin = String.valueOf(map.get("github"));
-                if (ldapId.isBlank()) {
+                if (hasLdap && ldapId.isBlank()) {
                     throw new IllegalArgumentException("developers entry has a blank 'ldap' in " + fileName);
                 }
                 if (githubLogin.isBlank()
                         || !GITHUB_USERNAME_PATTERN.matcher(githubLogin).matches()) {
                     throw new IllegalArgumentException("developers entry has an invalid GitHub user name '"
-                            + githubLogin + "' for '" + ldapId + "' in " + fileName);
+                            + githubLogin + "'" + (hasLdap ? " for '" + ldapId + "'" : "") + " in " + fileName);
                 }
-                if (!seenLdapIds.add(ldapId)) {
+                if (hasLdap && !seenLdapIds.add(ldapId)) {
                     throw new IllegalArgumentException("Duplicate developer '" + ldapId + "' in " + fileName);
                 }
                 if (!seenGitHubLogins.add(githubLogin)) {

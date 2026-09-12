@@ -106,7 +106,7 @@ class GitHubPermissionsValidationTest {
                   - ldap: "timja"
                 manageGitHubPermissions: true
                 """));
-        assertContainsCause(ex, "must specify exactly both 'ldap' and 'github'");
+        assertContainsCause(ex, "must specify either both 'ldap' and 'github'");
     }
 
     @Test
@@ -121,7 +121,20 @@ class GitHubPermissionsValidationTest {
                     extra: "nope"
                 manageGitHubPermissions: true
                 """));
-        assertContainsCause(ex, "must specify exactly both 'ldap' and 'github'");
+        assertContainsCause(ex, "must specify either both 'ldap' and 'github'");
+    }
+
+    @Test
+    void gitHubOnlyDeveloperEntryIsAccepted() throws IOException {
+        generate("""
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - "timja"
+                  - github: "someuser-with-no-ldap"
+                manageGitHubPermissions: true
+                """);
     }
 
     @Test

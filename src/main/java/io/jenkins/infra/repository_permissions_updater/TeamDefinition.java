@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater;
 
 import java.util.Map;
+import java.util.Set;
 
 public class TeamDefinition {
 
@@ -8,9 +9,11 @@ public class TeamDefinition {
 
     /**
      * Each entry is either a plain string (legacy format: a Jenkins community/LDAP id, used for Artifactory
-     * permissions), or a mapping with both {@code ldap} and {@code github} keys (new format: ties an LDAP id
-     * to a GitHub login 1-to-1), so the two can differ when needed. See {@link #getDevelopers()} and
-     * {@link #getGitHubUsernames()}.
+     * permissions), a mapping with both {@code ldap} and {@code github} keys (ties an LDAP id to a GitHub
+     * login 1-to-1, so the two can differ when needed), or a mapping with only a {@code github} key (a
+     * developer with a GitHub login but no Jenkins community/LDAP account -- GitHub permissions management
+     * only, useful for backfill). See {@link #getDevelopers()}, {@link #getGitHubUsernames()}, and
+     * {@link #getGitHubOnlyUsernames()}.
      */
     private Object[] developers = new Object[0];
 
@@ -61,5 +64,14 @@ public class TeamDefinition {
      */
     public Map<String, String> getGitHubUsernames() {
         return DeveloperEntries.extractGitHubUsernames(developers);
+    }
+
+    /**
+     * Returns the GitHub login for each {@link #developers} entry declared using the GitHub-only mapping
+     * form ({@code {github: ...}}, no {@code ldap} key) -- developers with a GitHub login but no Jenkins
+     * community (LDAP) account, so they never appear in {@link #getDeveloperIds()}.
+     */
+    public Set<String> getGitHubOnlyUsernames() {
+        return DeveloperEntries.extractGitHubOnlyLogins(developers);
     }
 }

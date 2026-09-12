@@ -193,10 +193,13 @@ public final class GitHubPermissionsSyncer {
         for (Map.Entry<String, TeamDiff> entry : diffsBySlug.entrySet()) {
             String slug = entry.getKey();
             TeamDiff diff = entry.getValue();
+            List<String> addedLogins = new ArrayList<>();
+            List<String> removedLogins = new ArrayList<>();
             for (String login : diff.toAdd()) {
                 try {
                     api.addTeamMember(diff.organization(), slug, login);
                     added++;
+                    addedLogins.add(login);
                 } catch (IOException e) {
                     failures++;
                     String message = "Failed to add " + login + " to " + diff.organization() + "/" + slug;
@@ -208,12 +211,18 @@ public final class GitHubPermissionsSyncer {
                 try {
                     api.removeTeamMember(diff.organization(), slug, login);
                     removed++;
+                    removedLogins.add(login);
                 } catch (IOException e) {
                     failures++;
                     String message = "Failed to remove " + login + " from " + diff.organization() + "/" + slug;
                     diff.errors().add(message + ": " + e.getMessage());
                     LOGGER.log(Level.WARNING, message, e);
                 }
+            }
+            if (!addedLogins.isEmpty() || !removedLogins.isEmpty()) {
+                LOGGER.log(Level.INFO, "GitHub permissions sync: {0}/{1}: added {2}, removed {3}", new Object[] {
+                    diff.organization(), slug, addedLogins, removedLogins
+                });
             }
         }
         LOGGER.log(
@@ -233,6 +242,7 @@ public final class GitHubPermissionsSyncer {
                     continue;
                 }
                 Set<String> logins = resolveGitHubLogins(team.getDeveloperIds(), team.getGitHubUsernames());
+                logins.addAll(team.getGitHubOnlyUsernames());
                 if (logins.isEmpty()) {
                     continue;
                 }
@@ -274,6 +284,7 @@ public final class GitHubPermissionsSyncer {
             String teamName = repositoryTeam != null ? repositoryTeam : repoName + " Developers";
 
             Set<String> logins = resolveGitHubLogins(definition.getDeveloperIds(), definition.getGitHubUsernames());
+            logins.addAll(definition.getGitHubOnlyUsernames());
             mergeDesired(desiredByTeamSlug, slugify(teamName), organization, logins);
         }
 

@@ -3,6 +3,7 @@ package io.jenkins.infra.repository_permissions_updater;
 import edu.umd.cs.findbugs.annotations.CheckForNull;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.Map;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -133,9 +134,11 @@ public class Definition {
 
     /**
      * Each entry is either a plain string (legacy format: a Jenkins community/LDAP id, used for Artifactory
-     * permissions), or a mapping with both {@code ldap} and {@code github} keys (new format: ties an LDAP id
-     * to a GitHub login 1-to-1, e.g. {@code {ldap: jglick, github: jglick}}), so the two can differ when
-     * needed. See {@link #getDeveloperIds()} and {@link #getGitHubUsernames()}.
+     * permissions), a mapping with both {@code ldap} and {@code github} keys (ties an LDAP id to a GitHub
+     * login 1-to-1, e.g. {@code {ldap: jglick, github: jglick}}, so the two can differ when needed), or a
+     * mapping with only a {@code github} key (a developer with a GitHub login but no Jenkins community/LDAP
+     * account, e.g. {@code {github: someuser}} -- GitHub permissions management only, useful for backfill).
+     * See {@link #getDeveloperIds()}, {@link #getGitHubUsernames()}, and {@link #getGitHubOnlyUsernames()}.
      */
     private Object[] developers = new Object[0];
 
@@ -246,6 +249,16 @@ public class Definition {
      */
     public Map<String, String> getGitHubUsernames() {
         return DeveloperEntries.extractGitHubUsernames(developers);
+    }
+
+    /**
+     * Returns the GitHub login for each {@link #developers} entry declared using the GitHub-only mapping
+     * form ({@code {github: ...}}, no {@code ldap} key) -- developers with a GitHub login but no Jenkins
+     * community (LDAP) account, so they never appear in {@link #getDeveloperIds()}. Useful for backfilling
+     * existing GitHub team membership that hasn't yet been (or won't be) tied to an LDAP account.
+     */
+    public Set<String> getGitHubOnlyUsernames() {
+        return DeveloperEntries.extractGitHubOnlyLogins(developers);
     }
 
     @CheckForNull

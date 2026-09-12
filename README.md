@@ -186,7 +186,15 @@ Each entry in `developers` (in both `permissions/*.yml` and `teams/*.yml`) can b
 - a mapping with **both** `ldap` and `github` keys — ties that developer's LDAP id to their GitHub login
   1-to-1, e.g. `{ldap: jglick, github: jglick}`. Use this form when the two ids differ, so the GitHub login
   used for permissions management is explicit rather than assumed. Both keys are required when using this
-  form. The two forms can be freely mixed in the same list.
+  form.
+- a mapping with **only** a `github` key, e.g. `{github: someuser}` — a developer with a GitHub login but no
+  Jenkins community (LDAP) account at all. Only relevant for GitHub permissions management (never contributes
+  to Artifactory permissions, since there's no LDAP id to grant them). Useful when backfilling
+  `manageGitHubPermissions`/`manageGitHubTeam` for a component that already has GitHub collaborators/team
+  members with no obvious LDAP mapping: merge the ones you can confidently tie to an LDAP id as `{ldap,
+  github}`, and add everyone else as GitHub-only entries so existing access is preserved without guessing.
+
+All three forms can be freely mixed in the same list.
 
 ### YAML fields
 
