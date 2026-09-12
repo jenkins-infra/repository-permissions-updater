@@ -56,20 +56,14 @@ public final class ArtifactoryPermissionsUpdater {
     private static final File ARTIFACTORY_API_DIR = new File(System.getProperty("artifactoryApiTempDir", "./json"));
 
     /**
-     * If enabled, will not send PUT/DELETE requests to Artifactory, only GET (i.e. not modifying).
+     * Whether this instance is running in dry-run mode: if enabled, will not send PUT/DELETE requests to
+     * Artifactory, only GET (i.e. not modifying), and does not generate CD tokens.
      */
-    private static final boolean DRY_RUN_MODE = Boolean.getBoolean("dryRun");
+    private final boolean dryRunMode;
 
-    /**
-     * Independent of {@link #DRY_RUN_MODE}: controls whether GitHub permissions management (for components
-     * that have opted in via {@code manageGitHubPermissions}/{@code manageGitHubTeam}) actually mutates
-     * GitHub team membership, or only computes and logs/reports the diff. Defaults to {@code true} (safe,
-     * report-only) so this stays report-only until deliberately turned off, e.g. via
-     * {@code -DgithubPermissionsDryRun=false}. Has no effect when {@link #DRY_RUN_MODE} is {@code true},
-     * since GitHub permissions sync doesn't run in dry-run/PR builds at all (no credentials).
-     */
-    private static final boolean GITHUB_PERMISSIONS_DRY_RUN =
-            Boolean.parseBoolean(System.getProperty("githubPermissionsDryRun", "true"));
+    public ArtifactoryPermissionsUpdater(boolean dryRunMode) {
+        this.dryRunMode = dryRunMode;
+    }
 
     /**
      * Set to true during development to prevent collisions with production behavior:
@@ -656,7 +650,7 @@ public final class ArtifactoryPermissionsUpdater {
      *
      * @param githubReposForCdIndex JSON file containing a list of GitHub repo names in the format 'orgname/reponame'
      */
-    private static void generateTokens(File githubReposForCdIndex) throws IOException {
+    private void generateTokens(File githubReposForCdIndex) throws IOException {
         JsonArray repos;
         try (BufferedReader br = Files.newBufferedReader(githubReposForCdIndex.toPath())) {
             repos = new Gson().fromJson(br, JsonArray.class);
@@ -672,7 +666,7 @@ public final class ArtifactoryPermissionsUpdater {
 
             String token;
             try {
-                if (DRY_RUN_MODE) {
+                if (dryRunMode) {
                     LOGGER.log(
                             Level.INFO,
                             "Skipped creation of token for GitHub repo: ''{0}'', Artifactory user: ''{1}'', group name: ''{2}'', valid for {3} seconds",
@@ -715,14 +709,14 @@ public final class ArtifactoryPermissionsUpdater {
         }
     }
 
-    public static void syncPermissions() throws IOException {
+    public void syncPermissions() throws IOException {
         for (Handler h : Logger.getLogger("").getHandlers()) {
             if (h instanceof ConsoleHandler) {
                 ((ConsoleHandler) h).setFormatter(new SupportLogFormatter());
             }
         }
 
-        if (DRY_RUN_MODE) {
+        if (dryRunMode) {
             LOGGER.log(Level.INFO, "Running in dry run mode");
         }
         ArtifactoryAPI artifactory = ArtifactoryAPI.getInstance();
@@ -757,27 +751,6 @@ public final class ArtifactoryPermissionsUpdater {
          * For all CD-enabled GitHub repositories, obtain a token from Artifactory and attach it to a GH repo as secret.
          */
         generateTokens(new File(ARTIFACTORY_API_DIR, "cd.index.json"));
-
-        /*
-         * Reconcile GitHub team membership for all opted-in components/teams (manageGitHubPermissions /
-         * manageGitHubTeam), writing a JSON diff report either way. Whether this actually mutates GitHub or
-         * only computes and logs/reports the diff is controlled independently by the
-         * "githubPermissionsDryRun" system property (default true, i.e. safe/report-only until explicitly
-         * turned off) -- see GitHubPermissionsSyncer's class javadoc. Since this requires live, authenticated
-         * GitHub API calls even in dry-run mode (to read current membership), it never runs in dry-run/PR
-         * builds (which run without credentials) -- that's the separate, coarser DRY_RUN_MODE gate below.
-         */
-        if (!DRY_RUN_MODE) {
-            try {
-                GitHubPermissionsSyncer.generateDiffReport(
-                        DEFINITIONS_DIR,
-                        new File("teams/"),
-                        new File(ARTIFACTORY_API_DIR, "github-permissions-diff.json"),
-                        GITHUB_PERMISSIONS_DRY_RUN);
-            } catch (Exception ex) {
-                LOGGER.log(Level.WARNING, "Failed to sync GitHub permissions", ex);
-            }
-        }
     }
 
     private static final Logger LOGGER = Logger.getLogger(ArtifactoryPermissionsUpdater.class.getName());

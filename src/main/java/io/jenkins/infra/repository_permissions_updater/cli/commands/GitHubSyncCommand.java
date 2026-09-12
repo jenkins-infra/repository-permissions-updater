@@ -48,7 +48,7 @@ public class GitHubSyncCommand implements Callable<Integer> {
             throw new IOException("Failed to create output directory " + parent.getPath());
         }
 
-        GitHubPermissionsSyncer.generateDiffReport(definitionsDir, teamsDir, reportFile, dryRun);
+        new GitHubPermissionsSyncer(dryRun).sync(definitionsDir, teamsDir, reportFile);
         System.out.println("Wrote GitHub permissions diff report to " + reportFile.getPath()
                 + (dryRun ? " (dry-run, nothing applied)" : " (applied changes to GitHub)"));
         return 0;

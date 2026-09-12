@@ -49,7 +49,7 @@ class GitHubPermissionsSyncerTest {
         GitHubTeamsAPI.INSTANCE = stub;
 
         File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
-        GitHubPermissionsSyncer.generateDiffReport(permissions, teams, report);
+        new GitHubPermissionsSyncer(true).sync(permissions, teams, report);
 
         assertEquals("jenkinsci", stub.lastOrganization);
         assertEquals(Set.of("example-plugin-developers"), stub.lastTeamSlugs);
@@ -82,7 +82,7 @@ class GitHubPermissionsSyncerTest {
         GitHubTeamsAPI.INSTANCE = stub;
 
         File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
-        GitHubPermissionsSyncer.generateDiffReport(permissions, teams, report);
+        new GitHubPermissionsSyncer(true).sync(permissions, teams, report);
 
         JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
         JsonObject team = json.getAsJsonObject("example-plugin-developers");
@@ -107,7 +107,7 @@ class GitHubPermissionsSyncerTest {
         GitHubTeamsAPI.INSTANCE = stub;
 
         File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
-        GitHubPermissionsSyncer.generateDiffReport(permissions, teams, report);
+        new GitHubPermissionsSyncer(true).sync(permissions, teams, report);
 
         assertTrue(stub.fetchCalls == 0, "Should not call the GitHub API when nothing has opted in");
         JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
@@ -134,7 +134,7 @@ class GitHubPermissionsSyncerTest {
         GitHubTeamsAPI.INSTANCE = stub;
 
         File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
-        GitHubPermissionsSyncer.generateDiffReport(permissions, teams, report, true);
+        new GitHubPermissionsSyncer(true).sync(permissions, teams, report);
 
         assertTrue(stub.added.isEmpty(), "Dry-run must not add anyone");
         assertTrue(stub.removed.isEmpty(), "Dry-run must not remove anyone");
@@ -166,7 +166,7 @@ class GitHubPermissionsSyncerTest {
         GitHubTeamsAPI.INSTANCE = stub;
 
         File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
-        GitHubPermissionsSyncer.generateDiffReport(permissions, teams, report, false);
+        new GitHubPermissionsSyncer(false).sync(permissions, teams, report);
 
         assertEquals(List.of("example-plugin-developers:alice"), stub.added);
         assertEquals(List.of("example-plugin-developers:carol"), stub.removed);
@@ -199,7 +199,7 @@ class GitHubPermissionsSyncerTest {
         GitHubTeamsAPI.INSTANCE = stub;
 
         File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
-        GitHubPermissionsSyncer.generateDiffReport(permissions, teams, report, false);
+        new GitHubPermissionsSyncer(false).sync(permissions, teams, report);
 
         // "alice" (add) and "carol" (remove) fail; "dave" (remove) still succeeds despite those failures.
         assertTrue(stub.added.isEmpty());
@@ -208,6 +208,57 @@ class GitHubPermissionsSyncerTest {
         JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
         JsonObject team = json.getAsJsonObject("example-plugin-developers");
         assertEquals(2, team.getAsJsonArray("errors").size());
+    }
+
+    @Test
+    void writeReportFalseSkipsReportButStillApplies() throws IOException {
+        File permissions = Files.createTempDirectory("permissions").toFile();
+        permissions.deleteOnExit();
+        Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - "alice"
+                  - "bob"
+                manageGitHubPermissions: true
+                """);
+        File teams = Files.createTempDirectory("teams").toFile();
+        teams.deleteOnExit();
+
+        StubGitHubTeamsAPI stub = new StubGitHubTeamsAPI(Map.of("example-plugin-developers", Set.of("bob", "carol")));
+        GitHubTeamsAPI.INSTANCE = stub;
+
+        // No report file is passed (and none should be needed) since writeReport is false.
+        new GitHubPermissionsSyncer(false).sync(permissions, teams, null, false);
+
+        assertEquals(List.of("example-plugin-developers:alice"), stub.added);
+        assertEquals(List.of("example-plugin-developers:carol"), stub.removed);
+    }
+
+    @Test
+    void writeReportFalseSkipsReportInDryRunToo() throws IOException {
+        File permissions = Files.createTempDirectory("permissions").toFile();
+        permissions.deleteOnExit();
+        Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - "alice"
+                  - "bob"
+                manageGitHubPermissions: true
+                """);
+        File teams = Files.createTempDirectory("teams").toFile();
+        teams.deleteOnExit();
+
+        StubGitHubTeamsAPI stub = new StubGitHubTeamsAPI(Map.of("example-plugin-developers", Set.of("bob", "carol")));
+        GitHubTeamsAPI.INSTANCE = stub;
+
+        new GitHubPermissionsSyncer(true).sync(permissions, teams, null, false);
+
+        assertTrue(stub.added.isEmpty(), "Dry-run must not add anyone even when the report is skipped");
+        assertTrue(stub.removed.isEmpty(), "Dry-run must not remove anyone even when the report is skipped");
     }
 
     @Test
