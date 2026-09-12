@@ -4,10 +4,58 @@ This document describes how GitHub team/repository permissions management (see t
 Permissions" section of [README.md](README.md)) will actually be rolled out across the `jenkinsci` org
 (2000+ repositories, ~2600 teams), and how the design keeps GitHub API usage bounded as adoption grows.
 
-Everything below builds on what's already merged: an opt-in schema (`manageGithubPermissions` /
-`manageGithubTeam`), static (network-free) YAML validation on every PR, and a **report-only** diff generator
+Everything below builds on what's already merged: an opt-in schema (`manageGitHubPermissions` /
+`manageGitHubTeam`), static (network-free) YAML validation on every PR, and a **report-only** diff generator
 (`GitHubPermissionsSyncer`) that runs once every ~2 hours on trusted.ci and publishes
 `json/github-permissions-diff.json`. No GitHub team membership is mutated today.
+
+## Why not Terraform (or another general-purpose IaC tool)?
+
+Terraform (with the `integrations/github` provider) is the obvious "codify GitHub as infrastructure"
+answer, and jenkins-infra already uses Terraform elsewhere, so it's worth explaining explicitly why this
+project doesn't adopt it for GitHub team/repo permissions. This isn't about credentials/trust boundaries —
+Terraform can follow the same `plan` on PR / `apply` on trusted post-merge split RPU already uses. The
+deciding factor is **performance at this specific scale (2000+ repos, ~2600 teams)**, where Terraform's
+execution model is a poor match:
+
+- **Terraform refreshes its entire managed state before every plan, not just what changed.** By default,
+  `terraform plan`/`apply` re-reads the current state of *every* resource under management to detect drift,
+  regardless of how small the underlying config change is. A single-line YAML edit to one plugin's
+  `developers` list would still trigger a full read of every other opted-in repo/team's current GitHub state
+  in the same run. `-target` can narrow this, but Hashicorp documents it as an exceptional/debugging flag,
+  not something to build a routine CI pipeline on — and computing a safe target list per PR is itself extra
+  engineering with no upstream support. RPU's diff generator, by contrast, only ever reads the specific teams
+  whose YAML is present in `permissions/`/`teams/` — cost scales with the opted-in set, not with "everything
+  Terraform happens to have in state."
+- **The GitHub Terraform provider is REST-based (built on `go-github`), not GraphQL, and doesn't batch.**
+  Resources like team membership are generally one API call per resource (or per team, for set-based
+  membership resources) during refresh — there's no built-in equivalent to the alias-batched GraphQL query
+  this project's `GitHubTeamsAPIImpl` uses to fetch up to 50 teams' full membership in a **single** HTTP
+  request. At full adoption (~2600 teams), that's the difference between roughly 52 requests per run (RPU,
+  see [Scaling](#scaling-to-2000-repos-minimizing-api-calls)) and on the order of thousands of individual
+  REST calls per full-state refresh with the stock provider — a ~50x+ difference in API cost for the same
+  read, before even counting writes.
+- **That refresh cost is paid on every run, including the trusted cron that runs every ~2 hours regardless of
+  whether anything changed.** A few thousand REST calls per refresh, times 12 runs/day, would consume a
+  meaningful fraction of GitHub's primary rate limit purely on drift-detection overhead — compared to RPU's
+  bounded ~52 requests/run (~624/day at full adoption), which leaves over an order of magnitude of headroom
+  with no further optimization needed.
+- **State size and plan/apply wall-clock time grow linearly with total managed resources, not with what
+  changed.** Modelling per-team membership as individual Terraform resources across thousands of repos means
+  the state file, and the time to refresh/diff/serialize it, keeps growing as adoption approaches 100% —
+  even for a run triggered by one small PR. RPU has no persisted state to grow: each run computes a diff
+  transiently from a live GraphQL read and a git-diff of the changed YAML, so its cost is a function of the
+  opted-in set size, not accumulated historical state.
+- **Getting Terraform to batch the way this project needs would mean writing a custom provider/data source
+  anyway** — at which point the actual GraphQL-batching engineering work (the part that makes this scale to
+  2000+ repos) is identical to what's already built in `GitHubTeamsAPIImpl`; Terraform would only be adding a
+  state-management and HCL layer on top of that same code, without a performance benefit to justify it.
+
+This isn't a rejection of Terraform in general — it remains a good fit where jenkins-infra already uses it
+(e.g. provisioning cloud infrastructure, where resource counts don't scale with "one file per external
+contributor" and full-state refreshes are cheap because there simply isn't that much to refresh). It's
+specifically the wrong tool for reconciling thousands of small, high-churn GitHub team-membership resources
+on a tight API budget.
 
 ## Goals for this phase
 
@@ -19,7 +67,7 @@ Everything below builds on what's already merged: an opt-in schema (`manageGithu
 
 ## Stage 0 — Pilot (in progress)
 
-- `permissions/plugin-slack.yml` is opted in (`manageGithubPermissions: true`) as the first pilot.
+- `permissions/plugin-slack.yml` is opted in (`manageGitHubPermissions: true`) as the first pilot.
 - Every trusted run computes and publishes a diff for this one repo/team. No mutations.
 - Hosting team reviews `json/github-permissions-diff.json` manually for a couple of weeks to confirm:
   - the desired vs. actual computation matches reality (spot-check against the GitHub UI),
@@ -44,7 +92,7 @@ Manually editing 2000+ YAML files is not viable. Before broad adoption we need a
 1. Reads `https://reports.jenkins.io/github-jenkinsci-permissions-report.json` (existing GitHub↔LDAP mapping
    report) plus the current `permissions/*.yml`/`teams/*.yml` developer lists.
 2. For each file, proposes:
-   - `manageGithubPermissions: true` (or `manageGithubTeam: true` for `teams/*.yml`),
+   - `manageGitHubPermissions: true` (or `manageGitHubTeam: true` for `teams/*.yml`),
    - upgrading plain-string `developers` entries to `{ldap, github}` mappings only where the report shows a
      GitHub login that **differs** from the LDAP id (leaving matching entries as plain strings, since the
      sync already assumes `ldap == github` by default — see README).
@@ -59,12 +107,19 @@ This is a scripted, supervised, one-time batch job — not something that runs u
 
 Once the diff report has been trustworthy across Stage 1/2 for a sustained period:
 
-1. Implement the write path (`GHTeam#add`/`GHTeam#remove` via the existing kohsuke `github-api` client,
-   reusing the same bot token already used for repo creation/hosting — no new credential).
-2. Ship it **behind a second, separate opt-in flag** (e.g. `syncGithubPermissions: true`, distinct from
-   `manageGithubPermissions`), so every repo that's currently only getting a report must explicitly
-   re-opt-in to writes. This avoids silently turning report-only repos into write-enabled ones the moment the
-   code ships.
+1. **Done.** The write path is implemented: `GitHubTeamsAPIImpl#addTeamMember`/`#removeTeamMember` call the
+   GitHub REST API (`PUT`/`DELETE /orgs/{org}/teams/{team}/memberships/{login}`, always role `member`, never
+   `maintainer`), reusing the existing bot token already used for repo creation/hosting — no new credential.
+2. Rather than a **second** opt-in YAML flag, `manageGitHubPermissions`/`manageGitHubTeam` directly mean
+   "actively manage (i.e. reconcile) this component's/team's GitHub membership" — there is only one YAML
+   opt-in flag. Whether a given trusted run actually *applies* the computed diff, or only computes and
+   reports/logs it, is controlled independently by the `githubPermissionsDryRun` system property passed to
+   the trusted run (`-DgithubPermissionsDryRun=true|false`), which **defaults to `true`** (safe/report-only).
+   This means every currently-opted-in repo can be re-verified end-to-end (real reads, real diff, real
+   report) with zero write risk, right up until the org deliberately flips `githubPermissionsDryRun=false`
+   for the trusted run — at which point *all* currently opted-in repos start being reconciled for real, not
+   just newly-added ones. This is simpler than a second flag and avoids repos silently drifting between
+   "reported on" and "actually managed" states independent of their own YAML.
 3. Safety guards before any write is issued:
    - removing the **last** member of a team is allowed and expected — an adopted/orphaned plugin can
      legitimately end up with zero maintainers (e.g. the previous maintainer stepped away and `developers`
@@ -74,16 +129,23 @@ Once the diff report has been trustworthy across Stage 1/2 for a sustained perio
      derived directly from the YAML in the merged commit, so a large removal simply reflects a large,
      reviewed change to `developers`; there's no separate "unexpected" state to guard against beyond normal
      PR review.
-   - every mutation is logged with before/after state; the diff report remains the audit trail.
-4. Re-run Stage 0/1 style pilot (small set first, e.g. `plugin-slack`) with writes enabled before wider
-   rollout, watching closely for a few cycles.
-5. Roll out to the Stage 2 batch, then broaden opt-in over time as plugin maintainers/hosting team choose to
-   adopt it — this remains **opt-in per repo indefinitely**, there is no planned "flip everyone over" cutover.
+   - a mutation failure for one login/team (e.g. a login that no longer exists, or a team that was deleted)
+     is caught per-mutation, logged, and recorded in that team's `errors` in the JSON report — it does not
+     abort reconciliation of any other opted-in team/login in the same run.
+   - every mutation is logged; the diff report (which also records `dryRun` and any `errors`) remains the
+     audit trail.
+4. Before flipping `githubPermissionsDryRun=false` for the first time, re-review the current diff report for
+   every already-opted-in repo (starting with the Stage 0 pilot, `plugin-slack`) to confirm it still looks
+   as expected, then flip the flag and watch closely for a few cycles.
+5. Broaden opt-in over time as plugin maintainers/hosting team choose to adopt it — this remains **opt-in per
+   repo indefinitely** via `manageGitHubPermissions`/`manageGitHubTeam`; there is no planned "flip everyone
+   over" cutover. `githubPermissionsDryRun`, once disabled, applies to all opted-in repos uniformly — it is a
+   single global switch for the trusted run, not a per-repo setting.
 
 ## Stage 4 — Steady state
 
-- Adoption grows organically as maintainers add `manageGithubPermissions`/`syncGithubPermissions` to their
-  `permissions/*.yml` (new plugins can opt in from day one via the hosting request template).
+- Adoption grows organically as maintainers add `manageGitHubPermissions`/`manageGitHubTeam` to their
+  `permissions/*.yml`/`teams/*.yml` (new plugins can opt in from day one via the hosting request template).
 - Hosting team spot-checks the diff report periodically; alerts (see below) catch anomalies between checks.
 - The manual GitHub-permissions request issue template
   (`.github/ISSUE_TEMPLATE/5-github-permissions.yml`) is updated to point maintainers at self-service YAML
@@ -95,7 +157,7 @@ The design keeps GitHub API usage roughly proportional to the **opted-in set**, 
 each run's call count low even as that set grows:
 
 - **Opt-in scope, not org-wide scans.** `GitHubPermissionsSyncer` only queries teams/repos where
-  `manageGithubPermissions`/`manageGithubTeam` is `true`. A repo that hasn't opted in costs zero GitHub API
+  `manageGitHubPermissions`/`manageGitHubTeam` is `true`. A repo that hasn't opted in costs zero GitHub API
   calls. This is the single biggest lever — the org has ~2600 teams total, but only opted-in teams are ever
   queried.
 - **GraphQL batching via aliased sub-queries.** `GitHubTeamsAPIImpl` doesn't do one REST call per team.
@@ -158,7 +220,7 @@ already accounts for the 2000+ repo scale.
 ## Explicitly out of scope for this rollout
 
 - CLI commands for developer search/removal (jenkins-infra/repository-permissions-updater#4755/#4759) — separate effort.
-- Repo-level (non-team) permission diffing for `additionalGithubTeams` role grants — diff report currently
+- Repo-level (non-team) permission diffing for `additionalGitHubTeams` role grants — diff report currently
   only reconciles team *membership*, not repo-to-team permission-level grants; follow-up once membership
   sync is proven out.
 - Any org-wide, non-opt-in scan or migration — adoption is and remains per-repo opt-in.

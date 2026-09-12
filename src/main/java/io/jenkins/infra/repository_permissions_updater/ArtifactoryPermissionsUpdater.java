@@ -61,6 +61,17 @@ public final class ArtifactoryPermissionsUpdater {
     private static final boolean DRY_RUN_MODE = Boolean.getBoolean("dryRun");
 
     /**
+     * Independent of {@link #DRY_RUN_MODE}: controls whether GitHub permissions management (for components
+     * that have opted in via {@code manageGitHubPermissions}/{@code manageGitHubTeam}) actually mutates
+     * GitHub team membership, or only computes and logs/reports the diff. Defaults to {@code true} (safe,
+     * report-only) so this stays report-only until deliberately turned off, e.g. via
+     * {@code -DgithubPermissionsDryRun=false}. Has no effect when {@link #DRY_RUN_MODE} is {@code true},
+     * since GitHub permissions sync doesn't run in dry-run/PR builds at all (no credentials).
+     */
+    private static final boolean GITHUB_PERMISSIONS_DRY_RUN =
+            Boolean.parseBoolean(System.getProperty("githubPermissionsDryRun", "true"));
+
+    /**
      * Set to true during development to prevent collisions with production behavior:
      *
      * - Different prefixes for groups and permission targets in {@link ArtifactoryAPI}.
@@ -166,7 +177,7 @@ public final class ArtifactoryPermissionsUpdater {
      */
     private static void validateDeveloperEntries(String fileName, Object[] developers) {
         Set<String> seenLdapIds = new HashSet<>();
-        Set<String> seenGithubLogins = new HashSet<>();
+        Set<String> seenGitHubLogins = new HashSet<>();
         for (Object entry : developers) {
             if (entry instanceof String ldapId) {
                 if (ldapId.isBlank()) {
@@ -196,7 +207,7 @@ public final class ArtifactoryPermissionsUpdater {
                 if (!seenLdapIds.add(ldapId)) {
                     throw new IllegalArgumentException("Duplicate developer '" + ldapId + "' in " + fileName);
                 }
-                if (!seenGithubLogins.add(githubLogin)) {
+                if (!seenGitHubLogins.add(githubLogin)) {
                     throw new IllegalArgumentException(
                             "Duplicate GitHub user name '" + githubLogin + "' in " + fileName);
                 }
@@ -208,34 +219,34 @@ public final class ArtifactoryPermissionsUpdater {
 
     /**
      * Performs static (no network access) validation of the GitHub permissions management fields
-     * ({@code repositoryTeam}, {@code additionalGithubTeams}, {@code manageGithubPermissions}) on a
+     * ({@code repositoryTeam}, {@code additionalGitHubTeams}, {@code manageGitHubPermissions}) on a
      * {@link Definition}. Failures here are fatal so PR builds fail fast, mirroring the validation already
      * performed for the Artifactory-related fields. No GitHub API calls are made from here, so this runs
      * safely even in credential-free PR/dry-run builds.
      */
-    private static void validateGithubPermissionsFields(
+    private static void validateGitHubPermissionsFields(
             File file, Definition definition, Map<String, Set<TeamDefinition>> teamsByName) {
-        if (!definition.isManageGithubPermissions()) {
+        if (!definition.isManageGitHubPermissions()) {
             // Feature is opt-in per component; skip validation of the related (unused) fields entirely.
             return;
         }
 
         if (definition.getGithub() == null) {
             throw new IllegalArgumentException(
-                    "manageGithubPermissions requires a GitHub repository ('github') in " + file.getName());
+                    "manageGitHubPermissions requires a GitHub repository ('github') in " + file.getName());
         }
 
-        for (Definition.AdditionalGitHubTeam additionalTeam : definition.getAdditionalGithubTeams()) {
+        for (Definition.AdditionalGitHubTeam additionalTeam : definition.getAdditionalGitHubTeams()) {
             if (additionalTeam.name == null || additionalTeam.name.isBlank()) {
                 throw new IllegalArgumentException(
-                        "additionalGithubTeams entry is missing 'name' in " + file.getName());
+                        "additionalGitHubTeams entry is missing 'name' in " + file.getName());
             }
             if (!teamsByName.containsKey(additionalTeam.name)) {
-                throw new IllegalArgumentException("additionalGithubTeams references unknown team '"
+                throw new IllegalArgumentException("additionalGitHubTeams references unknown team '"
                         + additionalTeam.name + "' (no teams/" + additionalTeam.name + ".yml) in " + file.getName());
             }
             if (additionalTeam.role == null || !VALID_GITHUB_ROLES.contains(additionalTeam.role)) {
-                throw new IllegalArgumentException("additionalGithubTeams entry for '" + additionalTeam.name
+                throw new IllegalArgumentException("additionalGitHubTeams entry for '" + additionalTeam.name
                         + "' has invalid 'role' (must be one of " + VALID_GITHUB_ROLES + ") in " + file.getName());
             }
         }
@@ -268,7 +279,7 @@ public final class ArtifactoryPermissionsUpdater {
             }
         }
 
-        Map<String, Set<String>> pathsByGithub = new TreeMap<>();
+        Map<String, Set<String>> pathsByGitHub = new TreeMap<>();
         Map<String, List<Map<String, String>>> issueTrackersByPlugin = new TreeMap<>();
         Map<String, List<Definition>> cdEnabledComponentsByGitHub = new TreeMap<>();
         Map<String, List<String>> maintainersByComponent = new HashMap<>();
@@ -287,7 +298,7 @@ public final class ArtifactoryPermissionsUpdater {
 
                 validateDeveloperEntries(file.getName(), definition.getDevelopers());
                 expandTeams(definition, teamsByName);
-                validateGithubPermissionsFields(file, definition, teamsByName);
+                validateGitHubPermissionsFields(file, definition, teamsByName);
 
             } catch (Exception e) {
                 throw new IOException("Failed to read " + file.getName(), e);
@@ -296,7 +307,7 @@ public final class ArtifactoryPermissionsUpdater {
             if (definition.getGithub() != null) {
                 if (!definition.isReleaseBlocked()) {
                     Set<String> paths =
-                            pathsByGithub.computeIfAbsent(definition.getGithub(), unused -> new TreeSet<>());
+                            pathsByGitHub.computeIfAbsent(definition.getGithub(), unused -> new TreeSet<>());
                     paths.addAll(List.of(definition.getPaths()));
                 }
                 if (definition.getCd() != null && definition.getCd().enabled) {
@@ -519,7 +530,7 @@ public final class ArtifactoryPermissionsUpdater {
             }
         }
 
-        writePrettyJson(apiOutputDir.toPath().resolve("github.index.json"), pathsByGithub, gson);
+        writePrettyJson(apiOutputDir.toPath().resolve("github.index.json"), pathsByGitHub, gson);
         writePrettyJson(apiOutputDir.toPath().resolve("issues.index.json"), issueTrackersByPlugin, gson);
         writePrettyJson(
                 apiOutputDir.toPath().resolve("cd.index.json"),
@@ -748,20 +759,23 @@ public final class ArtifactoryPermissionsUpdater {
         generateTokens(new File(ARTIFACTORY_API_DIR, "cd.index.json"));
 
         /*
-         * Report-only: compute the diff between desired GitHub team membership (opted-in components/teams
-         * only) and actual GitHub team membership, and write it to a JSON report. No GitHub team membership
-         * is added or removed by this step; it exists purely to let the hosting team review the effect of
-         * managing GitHub permissions before any reconciliation is implemented. Since this requires live,
-         * authenticated GitHub API calls, it never runs in dry-run/PR builds (which run without credentials).
+         * Reconcile GitHub team membership for all opted-in components/teams (manageGitHubPermissions /
+         * manageGitHubTeam), writing a JSON diff report either way. Whether this actually mutates GitHub or
+         * only computes and logs/reports the diff is controlled independently by the
+         * "githubPermissionsDryRun" system property (default true, i.e. safe/report-only until explicitly
+         * turned off) -- see GitHubPermissionsSyncer's class javadoc. Since this requires live, authenticated
+         * GitHub API calls even in dry-run mode (to read current membership), it never runs in dry-run/PR
+         * builds (which run without credentials) -- that's the separate, coarser DRY_RUN_MODE gate below.
          */
         if (!DRY_RUN_MODE) {
             try {
                 GitHubPermissionsSyncer.generateDiffReport(
                         DEFINITIONS_DIR,
                         new File("teams/"),
-                        new File(ARTIFACTORY_API_DIR, "github-permissions-diff.json"));
+                        new File(ARTIFACTORY_API_DIR, "github-permissions-diff.json"),
+                        GITHUB_PERMISSIONS_DRY_RUN);
             } catch (Exception ex) {
-                LOGGER.log(Level.WARNING, "Failed to generate GitHub permissions diff report", ex);
+                LOGGER.log(Level.WARNING, "Failed to sync GitHub permissions", ex);
             }
         }
     }

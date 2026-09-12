@@ -5,6 +5,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import edu.umd.cs.findbugs.annotations.NonNull;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,15 +25,17 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 /**
- * Fetches current GitHub team membership using the GraphQL API, batching many teams into as few requests as
+ * Reads current GitHub team membership using the GraphQL API, batching many teams into as few requests as
  * possible (via query aliases) to stay well within rate limits even when the managed set grows into the
- * thousands of teams. Based on the bulk-query approach prototyped at
- * https://gist.github.com/halkeye/c1e8348c8ac4cf8d476376b43df2bf6e
+ * thousands of teams (based on the bulk-query approach prototyped at
+ * https://gist.github.com/halkeye/c1e8348c8ac4cf8d476376b43df2bf6e), and applies membership changes
+ * (add/remove) via the REST API, which is what GitHub exposes for team membership mutations.
  */
 class GitHubTeamsAPIImpl extends GitHubTeamsAPI {
     private static final Logger LOGGER = Logger.getLogger(GitHubTeamsAPIImpl.class.getName());
 
     private static final String GITHUB_GRAPHQL_URL = "https://api.github.com/graphql";
+    private static final String GITHUB_REST_URL = "https://api.github.com";
     private static final String GITHUB_TOKEN = System.getenv("GITHUB_TOKEN");
 
     /** Number of teams queried (via aliased sub-queries) per GraphQL request. */
@@ -59,6 +62,25 @@ class GitHubTeamsAPIImpl extends GitHubTeamsAPI {
             result.putIfAbsent(slug, Set.of());
         }
         return result;
+    }
+
+    @Override
+    public void addTeamMember(@NonNull String organization, @NonNull String teamSlug, @NonNull String login)
+            throws IOException {
+        JsonObject body = new JsonObject();
+        // Always "member", never "maintainer" - this project only ever manages membership, not team admin rights.
+        body.addProperty("role", "member");
+        restRequest("PUT", membershipUrl(organization, teamSlug, login), body.toString());
+    }
+
+    @Override
+    public void removeTeamMember(@NonNull String organization, @NonNull String teamSlug, @NonNull String login)
+            throws IOException {
+        restRequest("DELETE", membershipUrl(organization, teamSlug, login), null);
+    }
+
+    private static String membershipUrl(String organization, String teamSlug, String login) {
+        return GITHUB_REST_URL + "/orgs/" + organization + "/teams/" + teamSlug + "/memberships/" + login;
     }
 
     private Map<String, Set<String>> fetchBatch(String organization, List<String> slugs) throws IOException {
@@ -158,6 +180,57 @@ class GitHubTeamsAPIImpl extends GitHubTeamsAPI {
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 throw new IOException("Interrupted while retrying GitHub GraphQL request", e);
+            }
+        }
+        throw lastError;
+    }
+
+    /**
+     * Issues a REST API request (used for team membership mutations, which GitHub does not expose via
+     * GraphQL), retrying transient failures the same way {@link #postGraphQl(String)} does.
+     *
+     * @param method HTTP method, e.g. {@code "PUT"}/{@code "DELETE"}
+     * @param url full request URL
+     * @param jsonBody request body to send, or {@code null} for a request with no body (e.g. DELETE)
+     */
+    @SuppressFBWarnings(
+            value = "URLCONNECTION_SSRF_FD",
+            justification = "url is built from the constant GitHub REST API host plus already-validated"
+                    + " organization/teamSlug/login segments, not arbitrary user input.")
+    private void restRequest(String method, String url, String jsonBody) throws IOException {
+        int attemptNumber = 1;
+        int maxAttempts = 3;
+        IOException lastError = null;
+        while (attemptNumber <= maxAttempts) {
+            HttpURLConnection conn = (HttpURLConnection) URI.create(url).toURL().openConnection();
+            conn.setRequestProperty("Authorization", "Bearer " + GITHUB_TOKEN);
+            conn.setRequestProperty("Accept", "application/vnd.github+json");
+            conn.setRequestMethod(method);
+
+            if (jsonBody != null) {
+                conn.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+                conn.setDoOutput(true);
+                try (OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream(), StandardCharsets.UTF_8)) {
+                    osw.write(jsonBody);
+                }
+            }
+
+            int responseCode = conn.getResponseCode();
+            if (responseCode >= 200 && responseCode < 300) {
+                conn.disconnect();
+                return;
+            }
+
+            lastError = new IOException(method + " " + url + " failed with response code " + responseCode);
+            LOGGER.log(Level.WARNING, "Attempt {0}/{1} of {2} {3} failed with code {4}", new Object[] {
+                attemptNumber, maxAttempts, method, url, responseCode
+            });
+            attemptNumber++;
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                throw new IOException("Interrupted while retrying GitHub REST request", e);
             }
         }
         throw lastError;

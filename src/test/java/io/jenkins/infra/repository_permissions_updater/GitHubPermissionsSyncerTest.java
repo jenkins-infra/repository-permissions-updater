@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.google.gson.Gson;
@@ -9,14 +10,17 @@ import edu.umd.cs.findbugs.annotations.NonNull;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * Tests the report-only GitHub permissions diff generation: desired state (from opted-in YAML) vs. actual
- * state (mocked GitHub API), with no live network access and no mutation of any kind.
+ * Tests GitHub permissions diff generation and application: desired state (from opted-in YAML) vs. actual
+ * state (mocked GitHub API), with no live network access. Covers both dry-run (report-only, no mutation) and
+ * apply (dryRun=false, mutates via the mocked API) modes.
  */
 class GitHubPermissionsSyncerTest {
 
@@ -36,7 +40,7 @@ class GitHubPermissionsSyncerTest {
                 developers:
                   - "alice"
                   - "bob"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """);
         File teams = Files.createTempDirectory("teams").toFile();
         teams.deleteOnExit();
@@ -58,7 +62,7 @@ class GitHubPermissionsSyncerTest {
     }
 
     @Test
-    void ldapGithubMappingEntryAppliesToDesiredState() throws IOException {
+    void ldapGitHubMappingEntryAppliesToDesiredState() throws IOException {
         File permissions = Files.createTempDirectory("permissions").toFile();
         permissions.deleteOnExit();
         Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
@@ -69,7 +73,7 @@ class GitHubPermissionsSyncerTest {
                   - "alice"
                   - ldap: "someldapid"
                     github: "bob-gh"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """);
         File teams = Files.createTempDirectory("teams").toFile();
         teams.deleteOnExit();
@@ -111,7 +115,103 @@ class GitHubPermissionsSyncerTest {
     }
 
     @Test
-    void slugifyMatchesGithubTeamSlugConvention() {
+    void dryRunDoesNotMutateAnything() throws IOException {
+        File permissions = Files.createTempDirectory("permissions").toFile();
+        permissions.deleteOnExit();
+        Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - "alice"
+                  - "bob"
+                manageGitHubPermissions: true
+                """);
+        File teams = Files.createTempDirectory("teams").toFile();
+        teams.deleteOnExit();
+
+        StubGitHubTeamsAPI stub = new StubGitHubTeamsAPI(Map.of("example-plugin-developers", Set.of("bob", "carol")));
+        GitHubTeamsAPI.INSTANCE = stub;
+
+        File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
+        GitHubPermissionsSyncer.generateDiffReport(permissions, teams, report, true);
+
+        assertTrue(stub.added.isEmpty(), "Dry-run must not add anyone");
+        assertTrue(stub.removed.isEmpty(), "Dry-run must not remove anyone");
+
+        JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
+        JsonObject team = json.getAsJsonObject("example-plugin-developers");
+        assertTrue(team.get("dryRun").getAsBoolean());
+        assertEquals("[\"alice\"]", team.getAsJsonArray("toAdd").toString());
+        assertEquals("[\"carol\"]", team.getAsJsonArray("toRemove").toString());
+    }
+
+    @Test
+    void applyingDiffAddsAndRemovesMembersViaApi() throws IOException {
+        File permissions = Files.createTempDirectory("permissions").toFile();
+        permissions.deleteOnExit();
+        Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - "alice"
+                  - "bob"
+                manageGitHubPermissions: true
+                """);
+        File teams = Files.createTempDirectory("teams").toFile();
+        teams.deleteOnExit();
+
+        StubGitHubTeamsAPI stub = new StubGitHubTeamsAPI(Map.of("example-plugin-developers", Set.of("bob", "carol")));
+        GitHubTeamsAPI.INSTANCE = stub;
+
+        File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
+        GitHubPermissionsSyncer.generateDiffReport(permissions, teams, report, false);
+
+        assertEquals(List.of("example-plugin-developers:alice"), stub.added);
+        assertEquals(List.of("example-plugin-developers:carol"), stub.removed);
+
+        JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
+        JsonObject team = json.getAsJsonObject("example-plugin-developers");
+        assertFalse(team.get("dryRun").getAsBoolean());
+        assertFalse(team.has("errors"), "No errors expected when every mutation succeeds");
+    }
+
+    @Test
+    void applyFailuresAreLoggedInReportButDoNotStopOtherMutations() throws IOException {
+        File permissions = Files.createTempDirectory("permissions").toFile();
+        permissions.deleteOnExit();
+        Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - "alice"
+                  - "bob"
+                manageGitHubPermissions: true
+                """);
+        File teams = Files.createTempDirectory("teams").toFile();
+        teams.deleteOnExit();
+
+        StubGitHubTeamsAPI stub =
+                new StubGitHubTeamsAPI(Map.of("example-plugin-developers", Set.of("bob", "carol", "dave")));
+        stub.loginsToFailOn = Set.of("alice", "carol");
+        GitHubTeamsAPI.INSTANCE = stub;
+
+        File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
+        GitHubPermissionsSyncer.generateDiffReport(permissions, teams, report, false);
+
+        // "alice" (add) and "carol" (remove) fail; "dave" (remove) still succeeds despite those failures.
+        assertTrue(stub.added.isEmpty());
+        assertEquals(List.of("example-plugin-developers:dave"), stub.removed);
+
+        JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
+        JsonObject team = json.getAsJsonObject("example-plugin-developers");
+        assertEquals(2, team.getAsJsonArray("errors").size());
+    }
+
+    @Test
+    void slugifyMatchesGitHubTeamSlugConvention() {
         assertEquals("example-plugin-developers", GitHubPermissionsSyncer.slugify("example-plugin Developers"));
         assertEquals("core", GitHubPermissionsSyncer.slugify("core"));
     }
@@ -121,6 +221,9 @@ class GitHubPermissionsSyncerTest {
         String lastOrganization;
         Set<String> lastTeamSlugs;
         int fetchCalls;
+        final List<String> added = new ArrayList<>();
+        final List<String> removed = new ArrayList<>();
+        Set<String> loginsToFailOn = Set.of();
 
         StubGitHubTeamsAPI(Map<String, Set<String>> membersBySlug) {
             this.membersBySlug = membersBySlug;
@@ -133,6 +236,24 @@ class GitHubPermissionsSyncerTest {
             lastOrganization = organization;
             lastTeamSlugs = teamSlugs;
             return membersBySlug;
+        }
+
+        @Override
+        public void addTeamMember(@NonNull String organization, @NonNull String teamSlug, @NonNull String login)
+                throws IOException {
+            if (loginsToFailOn.contains(login)) {
+                throw new IOException("simulated failure adding " + login);
+            }
+            added.add(teamSlug + ":" + login);
+        }
+
+        @Override
+        public void removeTeamMember(@NonNull String organization, @NonNull String teamSlug, @NonNull String login)
+                throws IOException {
+            if (loginsToFailOn.contains(login)) {
+                throw new IOException("simulated failure removing " + login);
+            }
+            removed.add(teamSlug + ":" + login);
         }
     }
 }

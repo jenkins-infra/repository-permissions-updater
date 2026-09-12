@@ -135,7 +135,7 @@ public class Definition {
      * Each entry is either a plain string (legacy format: a Jenkins community/LDAP id, used for Artifactory
      * permissions), or a mapping with both {@code ldap} and {@code github} keys (new format: ties an LDAP id
      * to a GitHub login 1-to-1, e.g. {@code {ldap: jglick, github: jglick}}), so the two can differ when
-     * needed. See {@link #getDeveloperIds()} and {@link #getGithubUsernames()}.
+     * needed. See {@link #getDeveloperIds()} and {@link #getGitHubUsernames()}.
      */
     private Object[] developers = new Object[0];
 
@@ -148,11 +148,11 @@ public class Definition {
 
     /**
      * Opt-in flag: if {@code true}, RPU will reconcile GitHub team membership for this component's
-     * repository, using {@link #developers} (see {@link #getGithubUsernames()} for how GitHub logins are
-     * resolved) plus {@link #additionalGithubTeams}. Defaults to {@code false} so existing components are
+     * repository, using {@link #developers} (see {@link #getGitHubUsernames()} for how GitHub logins are
+     * resolved) plus {@link #additionalGitHubTeams}. Defaults to {@code false} so existing components are
      * unaffected until they explicitly opt in.
      */
-    private boolean manageGithubPermissions;
+    private boolean manageGitHubPermissions;
 
     /**
      * Overrides the default GitHub team name (otherwise derived as {@code "<repo> Developers"}) used to
@@ -164,7 +164,7 @@ public class Definition {
      * Additional, cross-repository GitHub teams (defined in {@code teams/*.yml}) to grant access to this
      * component's repository, and at what role.
      */
-    private AdditionalGitHubTeam[] additionalGithubTeams = new AdditionalGitHubTeam[0];
+    private AdditionalGitHubTeam[] additionalGitHubTeams = new AdditionalGitHubTeam[0];
 
     public CD getCd() {
         return cd;
@@ -231,12 +231,12 @@ public class Definition {
         this.github = github;
     }
 
-    public boolean isManageGithubPermissions() {
-        return manageGithubPermissions;
+    public boolean isManageGitHubPermissions() {
+        return manageGitHubPermissions;
     }
 
-    public void setManageGithubPermissions(boolean manageGithubPermissions) {
-        this.manageGithubPermissions = manageGithubPermissions;
+    public void setManageGitHubPermissions(boolean manageGitHubPermissions) {
+        this.manageGitHubPermissions = manageGitHubPermissions;
     }
 
     /**
@@ -244,8 +244,8 @@ public class Definition {
      * {@code {ldap, github}} mapping form, keyed by that entry's LDAP id. Entries declared as a plain string
      * are not included here -- callers should treat the LDAP id itself as the GitHub login for those.
      */
-    public Map<String, String> getGithubUsernames() {
-        return DeveloperEntries.extractGithubUsernames(developers);
+    public Map<String, String> getGitHubUsernames() {
+        return DeveloperEntries.extractGitHubUsernames(developers);
     }
 
     @CheckForNull
@@ -257,12 +257,12 @@ public class Definition {
         this.repositoryTeam = repositoryTeam;
     }
 
-    public AdditionalGitHubTeam[] getAdditionalGithubTeams() {
-        return additionalGithubTeams.clone();
+    public AdditionalGitHubTeam[] getAdditionalGitHubTeams() {
+        return additionalGitHubTeams.clone();
     }
 
-    public void setAdditionalGithubTeams(AdditionalGitHubTeam[] additionalGithubTeams) {
-        this.additionalGithubTeams = additionalGithubTeams.clone();
+    public void setAdditionalGitHubTeams(AdditionalGitHubTeam[] additionalGitHubTeams) {
+        this.additionalGitHubTeams = additionalGitHubTeams.clone();
     }
 
     public void setSecurity(Security security) {

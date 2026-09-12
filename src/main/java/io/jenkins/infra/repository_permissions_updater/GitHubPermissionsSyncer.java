@@ -10,7 +10,10 @@ import java.io.InputStream;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
@@ -25,16 +28,20 @@ import org.yaml.snakeyaml.constructor.Constructor;
 
 /**
  * Computes the difference between the desired GitHub team membership (declared in YAML, for components that
- * have opted in via {@code manageGithubPermissions}/{@code manageGithubTeam}) and the actual membership
- * currently on GitHub, and writes it to a JSON report.
+ * have opted in via {@code manageGitHubPermissions}/{@code manageGitHubTeam}) and the actual membership
+ * currently on GitHub, writes it to a JSON report, and -- unless running in dry-run mode -- applies it by
+ * adding/removing the affected members.
  * <p>
- * This is deliberately <b>report-only</b>: no GitHub team membership is ever added or removed by this class.
- * The report is meant to be reviewed by the hosting team during a bake-in period before any reconciliation
- * (actual add/remove of members) is implemented as a follow-up.
+ * Dry-run is controlled independently of the opt-in YAML flag, via the {@code dryRun} parameter (wired to
+ * the {@code githubPermissionsDryRun} system property by callers): {@code manageGitHubPermissions: true} /
+ * {@code manageGitHubTeam: true} means "this component/team's GitHub membership should be managed by RPU",
+ * while the dry-run flag independently controls whether that management actually mutates GitHub or only
+ * computes and logs/reports what it would do. This lets the trusted run exercise the real read+diff+apply
+ * code path safely (with real credentials, against real teams) before switching dry-run off.
  * <p>
- * Only runs against the opt-in managed set (never the whole org), and only ever executes in the trusted,
- * post-merge run -- see the project README for why PR/dry-run builds cannot safely make any live GitHub API
- * calls for this feature.
+ * Only ever executes in the trusted, post-merge run -- see the project README for why PR/dry-run builds
+ * cannot safely make any live GitHub API calls for this feature at all (a distinct, coarser gate than the
+ * dry-run flag described above, which only matters once already inside the trusted run).
  */
 public final class GitHubPermissionsSyncer {
 
@@ -63,13 +70,30 @@ public final class GitHubPermissionsSyncer {
 
     /**
      * Computes the desired vs. actual GitHub team membership diff for all opted-in components and teams,
-     * and writes it as JSON to {@code reportFile}.
+     * and writes it as JSON to {@code reportFile}. Equivalent to {@code generateDiffReport(definitionsDir,
+     * teamsDir, reportFile, true)} -- i.e. dry-run, never mutates anything. Kept for callers/tests that only
+     * ever want the report-only behavior.
      *
      * @param definitionsDir directory containing component YAML definitions (see {@link Definition})
      * @param teamsDir directory containing cross-repository team YAML definitions (see {@link TeamDefinition})
      * @param reportFile file to write the JSON diff report to
      */
     public static void generateDiffReport(File definitionsDir, File teamsDir, File reportFile) throws IOException {
+        generateDiffReport(definitionsDir, teamsDir, reportFile, true);
+    }
+
+    /**
+     * Computes the desired vs. actual GitHub team membership diff for all opted-in components and teams,
+     * writes it as JSON to {@code reportFile}, and, unless {@code dryRun} is {@code true}, applies it by
+     * adding/removing the affected members on GitHub.
+     *
+     * @param definitionsDir directory containing component YAML definitions (see {@link Definition})
+     * @param teamsDir directory containing cross-repository team YAML definitions (see {@link TeamDefinition})
+     * @param reportFile file to write the JSON diff report to
+     * @param dryRun if {@code true}, only compute and report/log the diff; if {@code false}, also apply it
+     */
+    public static void generateDiffReport(File definitionsDir, File teamsDir, File reportFile, boolean dryRun)
+            throws IOException {
         Map<String, Set<TeamDefinition>> teamsByName = ArtifactoryPermissionsUpdater.loadTeams(teamsDir);
         Map<String, DesiredTeam> desiredByTeamSlug = computeDesiredState(definitionsDir, teamsByName);
 
@@ -77,8 +101,8 @@ public final class GitHubPermissionsSyncer {
             LOGGER.log(
                     Level.INFO,
                     "No components have opted into GitHub permissions management "
-                            + "(manageGithubPermissions/manageGithubTeam); nothing to report");
-            writeReport(reportFile, Map.of());
+                            + "(manageGitHubPermissions/manageGitHubTeam); nothing to do");
+            writeReport(reportFile, Map.of(), dryRun);
             return;
         }
 
@@ -108,7 +132,77 @@ public final class GitHubPermissionsSyncer {
             diffsBySlug.put(slug, new TeamDiff(desired.organization, toAdd, toRemove));
         }
 
-        writeReport(reportFile, diffsBySlug);
+        if (dryRun) {
+            logDryRun(diffsBySlug);
+        } else {
+            applyDiffs(diffsBySlug);
+        }
+
+        writeReport(reportFile, diffsBySlug, dryRun);
+    }
+
+    /**
+     * Logs a summary of what would be changed, without touching GitHub. Used when {@code dryRun} is
+     * {@code true}, so the trusted run's read+diff logic can be exercised safely before enabling apply.
+     */
+    private static void logDryRun(Map<String, TeamDiff> diffsBySlug) {
+        int toAdd = diffsBySlug.values().stream()
+                .mapToInt(diff -> diff.toAdd().size())
+                .sum();
+        int toRemove = diffsBySlug.values().stream()
+                .mapToInt(diff -> diff.toRemove().size())
+                .sum();
+        if (toAdd == 0 && toRemove == 0) {
+            return;
+        }
+        LOGGER.log(
+                Level.INFO,
+                "GitHub permissions sync dry-run: would add {0} and remove {1} membership(s) across {2}"
+                        + " team(s); no changes applied (set githubPermissionsDryRun=false to apply)",
+                new Object[] {toAdd, toRemove, diffsBySlug.size()});
+    }
+
+    /**
+     * Applies the computed diff: adds/removes the affected members via {@link GitHubTeamsAPI}. Failures for
+     * an individual membership change are logged and recorded on that team's {@link TeamDiff#errors()} (so
+     * they show up in the JSON report), but do not stop the run -- one bad membership change (e.g. a login
+     * that no longer exists) shouldn't block reconciling every other opted-in team.
+     */
+    private static void applyDiffs(Map<String, TeamDiff> diffsBySlug) {
+        GitHubTeamsAPI api = GitHubTeamsAPI.getInstance();
+        int added = 0;
+        int removed = 0;
+        int failures = 0;
+        for (Map.Entry<String, TeamDiff> entry : diffsBySlug.entrySet()) {
+            String slug = entry.getKey();
+            TeamDiff diff = entry.getValue();
+            for (String login : diff.toAdd()) {
+                try {
+                    api.addTeamMember(diff.organization(), slug, login);
+                    added++;
+                } catch (IOException e) {
+                    failures++;
+                    String message = "Failed to add " + login + " to " + diff.organization() + "/" + slug;
+                    diff.errors().add(message + ": " + e.getMessage());
+                    LOGGER.log(Level.WARNING, message, e);
+                }
+            }
+            for (String login : diff.toRemove()) {
+                try {
+                    api.removeTeamMember(diff.organization(), slug, login);
+                    removed++;
+                } catch (IOException e) {
+                    failures++;
+                    String message = "Failed to remove " + login + " from " + diff.organization() + "/" + slug;
+                    diff.errors().add(message + ": " + e.getMessage());
+                    LOGGER.log(Level.WARNING, message, e);
+                }
+            }
+        }
+        LOGGER.log(
+                Level.INFO,
+                "GitHub permissions sync: added {0}, removed {1} membership(s) across {2} team(s), {3}" + " failure(s)",
+                new Object[] {added, removed, diffsBySlug.size(), failures});
     }
 
     private static Map<String, DesiredTeam> computeDesiredState(
@@ -118,10 +212,10 @@ public final class GitHubPermissionsSyncer {
         // Cross-repository teams (teams/*.yml) that have opted in.
         for (Set<TeamDefinition> definitions : teamsByName.values()) {
             for (TeamDefinition team : definitions) {
-                if (!team.isManageGithubTeam()) {
+                if (!team.isManageGitHubTeam()) {
                     continue;
                 }
-                Set<String> logins = resolveGithubLogins(team.getDeveloperIds(), team.getGithubUsernames());
+                Set<String> logins = resolveGitHubLogins(team.getDeveloperIds(), team.getGitHubUsernames());
                 if (logins.isEmpty()) {
                     continue;
                 }
@@ -145,7 +239,7 @@ public final class GitHubPermissionsSyncer {
                 continue;
             }
 
-            if (!definition.isManageGithubPermissions()) {
+            if (!definition.isManageGitHubPermissions()) {
                 continue;
             }
             String repo = definition.getGithub();
@@ -153,7 +247,7 @@ public final class GitHubPermissionsSyncer {
                 // Already rejected by ArtifactoryPermissionsUpdater's static validation; be defensive here too.
                 LOGGER.log(
                         Level.WARNING,
-                        "Skipping {0}: manageGithubPermissions requires a GitHub repository",
+                        "Skipping {0}: manageGitHubPermissions requires a GitHub repository",
                         file.getName());
                 continue;
             }
@@ -162,7 +256,7 @@ public final class GitHubPermissionsSyncer {
             String repositoryTeam = definition.getRepositoryTeam();
             String teamName = repositoryTeam != null ? repositoryTeam : repoName + " Developers";
 
-            Set<String> logins = resolveGithubLogins(definition.getDeveloperIds(), definition.getGithubUsernames());
+            Set<String> logins = resolveGitHubLogins(definition.getDeveloperIds(), definition.getGitHubUsernames());
             mergeDesired(desiredByTeamSlug, slugify(teamName), organization, logins);
         }
 
@@ -178,10 +272,10 @@ public final class GitHubPermissionsSyncer {
     /**
      * Resolves the desired GitHub login for each entry in {@code developers}: by default, a developer's
      * Jenkins community (LDAP) id is assumed to also be their GitHub login; {@code githubUsernameOverrides}
-     * (an LDAP id -&gt; GitHub login map, see {@link Definition#getGithubUsernames()}/
-     * {@link TeamDefinition#getGithubUsernames()}) can override this for the rare case where they differ.
+     * (an LDAP id -&gt; GitHub login map, see {@link Definition#getGitHubUsernames()}/
+     * {@link TeamDefinition#getGitHubUsernames()}) can override this for the rare case where they differ.
      */
-    static Set<String> resolveGithubLogins(String[] developers, Map<String, String> githubUsernameOverrides) {
+    static Set<String> resolveGitHubLogins(String[] developers, Map<String, String> githubUsernameOverrides) {
         Set<String> logins = new TreeSet<>();
         for (String developer : developers) {
             if (developer == null || developer.isBlank()) {
@@ -205,17 +299,32 @@ public final class GitHubPermissionsSyncer {
         return slug.replaceAll("^-+|-+$", "");
     }
 
-    private record TeamDiff(String organization, Set<String> toAdd, Set<String> toRemove) {}
+    /**
+     * One team's diff for this run: which logins should be added/removed to reconcile desired vs. actual
+     * state, and (populated only when applying, i.e. not dry-run) any per-membership-change errors
+     * encountered -- kept mutable (a plain {@link ArrayList}) so {@link #applyDiffs(Map)} can record
+     * failures against the same {@code TeamDiff} instance that gets serialized into the report.
+     */
+    private record TeamDiff(String organization, Set<String> toAdd, Set<String> toRemove, List<String> errors) {
+        TeamDiff(String organization, Set<String> toAdd, Set<String> toRemove) {
+            this(organization, toAdd, toRemove, new ArrayList<>());
+        }
+    }
 
-    private static void writeReport(File reportFile, Map<String, TeamDiff> diffsBySlug) throws IOException {
+    private static void writeReport(File reportFile, Map<String, TeamDiff> diffsBySlug, boolean dryRun)
+            throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
         JsonObject root = new JsonObject();
         for (Map.Entry<String, TeamDiff> entry : diffsBySlug.entrySet()) {
             TeamDiff diff = entry.getValue();
             JsonObject teamJson = new JsonObject();
             teamJson.addProperty("organization", diff.organization());
+            teamJson.addProperty("dryRun", dryRun);
             teamJson.add("toAdd", toJsonArray(diff.toAdd()));
             teamJson.add("toRemove", toJsonArray(diff.toRemove()));
+            if (!diff.errors().isEmpty()) {
+                teamJson.add("errors", toJsonArray(diff.errors()));
+            }
             root.add(entry.getKey(), teamJson);
         }
 
@@ -230,7 +339,7 @@ public final class GitHubPermissionsSyncer {
         });
     }
 
-    private static JsonArray toJsonArray(Set<String> values) {
+    private static JsonArray toJsonArray(Collection<String> values) {
         JsonArray array = new JsonArray();
         values.forEach(array::add);
         return array;

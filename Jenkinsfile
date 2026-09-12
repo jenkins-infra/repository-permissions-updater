@@ -46,6 +46,11 @@ node('maven-25 ') {
             def javaArgs = ' -DdefinitionsDir=$PWD/permissions' +
                     ' -DartifactoryApiTempDir=$PWD/json' +
                     ' -DartifactoryUserNamesJsonListUrl=https://reports.jenkins.io/artifactory-ldap-users-report.json' +
+                    // Controls whether opted-in (manageGitHubPermissions/manageGitHubTeam) GitHub team
+                    // membership is actually reconciled (false) or only computed/reported (true, the safe
+                    // default). Kept explicit here for visibility; flip to false only once the diff report
+                    // has been reviewed. See docs/rollout-of-github-permissions-sync.md.
+                    ' -DgithubPermissionsDryRun=true' +
                     ' -Djava.util.logging.SimpleFormatter.format="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s: %5$s%6$s%n"' +
                     ' -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar' +
                     ' sync'

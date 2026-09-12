@@ -15,11 +15,11 @@ import org.junit.jupiter.api.Test;
 /**
  * Tests the static (network-free) validation of the {@code developers} list's polymorphic entry shapes
  * (plain LDAP id strings, or {@code {ldap, github}} mappings) as well as the GitHub permissions management
- * fields ({@code manageGithubPermissions}, {@code repositoryTeam}, {@code additionalGithubTeams}). These
+ * fields ({@code manageGitHubPermissions}, {@code repositoryTeam}, {@code additionalGitHubTeams}). These
  * fields are opt-in and must not affect components that don't use them, and validation must not require any
  * GitHub API access so it stays safe for credential-free PR builds.
  */
-class GithubPermissionsValidationTest {
+class GitHubPermissionsValidationTest {
 
     private static File writeDefinition(String yaml) throws IOException {
         File permissions = Files.createTempDirectory("permissions").toFile();
@@ -37,7 +37,7 @@ class GithubPermissionsValidationTest {
     }
 
     @Test
-    void unmanagedComponentIgnoresGithubFields() {
+    void unmanagedComponentIgnoresGitHubFields() {
         assertDoesNotThrow(() -> generate("""
                 ---
                 name: "example"
@@ -45,11 +45,11 @@ class GithubPermissionsValidationTest {
     }
 
     @Test
-    void managedComponentRequiresGithubRepo() {
+    void managedComponentRequiresGitHubRepo() {
         IOException ex = assertThrows(IOException.class, () -> generate("""
                 ---
                 name: "example"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """));
         assertContainsCause(ex, "requires a GitHub repository");
     }
@@ -63,27 +63,27 @@ class GithubPermissionsValidationTest {
                 developers:
                   - ldap: "timja"
                     github: "timja-gh"
-                manageGithubPermissions: true
-                additionalGithubTeams:
+                manageGitHubPermissions: true
+                additionalGitHubTeams:
                   - name: "core"
                     role: "push"
                 """));
     }
 
     @Test
-    void legacyPlainStringDevelopersAreUsedAsGithubLoginsByDefault() {
+    void legacyPlainStringDevelopersAreUsedAsGitHubLoginsByDefault() {
         assertDoesNotThrow(() -> generate("""
                 ---
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
                   - "timja"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """));
     }
 
     @Test
-    void mixOfLegacyStringsAndLdapGithubMappingsIsAllowed() {
+    void mixOfLegacyStringsAndLdapGitHubMappingsIsAllowed() {
         assertDoesNotThrow(() -> generate("""
                 ---
                 name: "example"
@@ -92,19 +92,19 @@ class GithubPermissionsValidationTest {
                   - "timja"
                   - ldap: "jetersen"
                     github: "jetersen"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """));
     }
 
     @Test
-    void developerMappingMustSpecifyBothLdapAndGithub() {
+    void developerMappingMustSpecifyBothLdapAndGitHub() {
         IOException ex = assertThrows(IOException.class, () -> generate("""
                 ---
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
                   - ldap: "timja"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """));
         assertContainsCause(ex, "must specify exactly both 'ldap' and 'github'");
     }
@@ -119,7 +119,7 @@ class GithubPermissionsValidationTest {
                   - ldap: "timja"
                     github: "timja"
                     extra: "nope"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """));
         assertContainsCause(ex, "must specify exactly both 'ldap' and 'github'");
     }
@@ -134,13 +134,13 @@ class GithubPermissionsValidationTest {
                   - "timja"
                   - ldap: "timja"
                     github: "timja"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """));
         assertContainsCause(ex, "Duplicate developer");
     }
 
     @Test
-    void duplicateGithubLoginsAreRejected() {
+    void duplicateGitHubLoginsAreRejected() {
         IOException ex = assertThrows(IOException.class, () -> generate("""
                 ---
                 name: "example"
@@ -150,13 +150,13 @@ class GithubPermissionsValidationTest {
                     github: "shared-gh"
                   - ldap: "userb"
                     github: "shared-gh"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """));
         assertContainsCause(ex, "Duplicate GitHub user name");
     }
 
     @Test
-    void invalidGithubUsernameIsRejected() {
+    void invalidGitHubUsernameIsRejected() {
         IOException ex = assertThrows(IOException.class, () -> generate("""
                 ---
                 name: "example"
@@ -164,7 +164,7 @@ class GithubPermissionsValidationTest {
                 developers:
                   - ldap: "timja"
                     github: "not a valid name!"
-                manageGithubPermissions: true
+                manageGitHubPermissions: true
                 """));
         assertContainsCause(ex, "invalid GitHub user name");
     }
@@ -175,8 +175,8 @@ class GithubPermissionsValidationTest {
                 ---
                 name: "example"
                 github: "jenkinsci/example-plugin"
-                manageGithubPermissions: true
-                additionalGithubTeams:
+                manageGitHubPermissions: true
+                additionalGitHubTeams:
                   - name: "does-not-exist"
                     role: "push"
                 """));
@@ -189,8 +189,8 @@ class GithubPermissionsValidationTest {
                 ---
                 name: "example"
                 github: "jenkinsci/example-plugin"
-                manageGithubPermissions: true
-                additionalGithubTeams:
+                manageGitHubPermissions: true
+                additionalGitHubTeams:
                   - name: "core"
                     role: "owner"
                 """));

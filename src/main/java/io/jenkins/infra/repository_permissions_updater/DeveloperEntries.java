@@ -52,7 +52,7 @@ final class DeveloperEntries {
      * every developer should fall back to treating the LDAP id as the GitHub login when it's absent from this
      * map.
      */
-    static Map<String, String> extractGithubUsernames(Object[] developers) {
+    static Map<String, String> extractGitHubUsernames(Object[] developers) {
         Map<String, String> logins = new LinkedHashMap<>();
         for (Object entry : developers) {
             if (entry instanceof Map<?, ?> map) {
