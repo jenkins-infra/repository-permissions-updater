@@ -139,6 +139,134 @@ cd:
 ```
 
 
+Managing GitHub Permissions (experimental)
+-------------------------------------------
+
+RPU is gaining the ability to also manage GitHub repository/team access as code, in addition to Artifactory
+upload permissions. This is a new, **opt-in** feature: nothing changes for a component unless its YAML file
+explicitly enables it.
+
+See [docs/rollout-of-github-permissions-sync.md](docs/rollout-of-github-permissions-sync.md) for the staged adoption plan across the 2000+ repos in the org and how GitHub
+API usage is kept bounded as adoption grows.
+
+### Why it's opt-in, and how writes are gated
+
+The `jenkinsci` organization has 2000+ repositories and ~2600 teams, so a mistake in an automated
+reconciliation could lock maintainers out of their own repositories at scale. To manage that risk:
+
+- A component (or cross-repository team) is only touched by this feature once its YAML file sets
+  `manageGitHubPermissions: true` (or, for `teams/*.yml`, `manageGitHubTeam: true`). Everything else is left
+  completely alone, so adoption can be gradual. Setting this flag means RPU actively reconciles that
+  component's/team's GitHub membership to match its `developers` list — it is not merely a reporting toggle.
+- Whether a run actually *applies* those changes, or only computes and logs/reports them, is controlled
+  independently by the `githubPermissionsDryRun` system property (`-DgithubPermissionsDryRun=...`), which
+  **defaults to `true`** (safe/report-only) until explicitly set to `false`. This lets the org run the full
+  read+diff pipeline against real GitHub data for a bake-in period, with zero risk of a write, before
+  anyone deliberately flips the switch to start applying changes. Either way, the computed diff (including
+  whether it was applied) is written to `json/github-permissions-diff.json`, published alongside the other
+  index reports.
+- Removing the last member of a team is allowed and is not treated as a special/blocked case: org owners can
+  always restore access regardless of member count, so there's no lockout risk that needs guarding against.
+- A mutation failure for one login/team (e.g. a login that no longer exists) is logged and recorded in that
+  team's `errors` in the report, but does not abort reconciliation of any other opted-in team in the same run.
+- Just like Artifactory sync, any live call to the GitHub API for this feature **only happens in the trusted,
+  post-merge run** — never in PR builds. PR builds intentionally run without any credentials (since PRs can
+  come from forks), and there is no GitHub credential that is both genuinely read-only *and* safe to hand to
+  untrusted, credential-free PR builds (a fine-grained PAT or GitHub App key is still a secret; anonymous
+  reads are rate-limited to 60 requests/hour and don't reliably expose private team membership). PR builds
+  only perform static YAML validation (schema/format checks) of the fields below — no network calls.
+
+### The `developers` list
+
+Each entry in `developers` (in both `permissions/*.yml` and `teams/*.yml`) can be either:
+
+- a plain string — a Jenkins community (LDAP) id, exactly as before; used for Artifactory permissions. If a
+  component opts into GitHub permissions management, a plain string entry is also assumed to be that
+  person's GitHub login (true for the vast majority of Jenkins contributors).
+- a mapping with **both** `ldap` and `github` keys — ties that developer's LDAP id to their GitHub login
+  1-to-1, e.g. `{ldap: jglick, github: jglick}`. Use this form when the two ids differ, so the GitHub login
+  used for permissions management is explicit rather than assumed. Both keys are required when using this
+  form.
+- a mapping with **only** a `github` key, e.g. `{github: someuser}` — a developer with a GitHub login but no
+  Jenkins community (LDAP) account at all. Only relevant for GitHub permissions management (never contributes
+  to Artifactory permissions, since there's no LDAP id to grant them). Useful when backfilling
+  `manageGitHubPermissions`/`manageGitHubTeam` for a component that already has GitHub collaborators/team
+  members with no obvious LDAP mapping: merge the ones you can confidently tie to an LDAP id as `{ldap,
+  github}`, and add everyone else as GitHub-only entries so existing access is preserved without guessing.
+
+All three forms can be freely mixed in the same list.
+
+### YAML fields
+
+In a component's `permissions/*.yml` file:
+
+```yaml
+developers:
+  - ldap: "jglick"
+    github: "jglick"
+manageGitHubPermissions: true    # opt-in: without this, GitHub logins above and the fields below are ignored
+repositoryTeam: "custom-name"    # optional: overrides the default "<repo> Developers" team name
+additionalGitHubTeams:            # grants existing cross-repo teams (teams/*.yml) access to this repo
+  - name: "cloudbees-developers"
+    role: "push"                  # one of: pull, triage, push, maintain, admin
+```
+
+In a cross-repository `teams/*.yml` file:
+
+```yaml
+name: "cloudbees-developers"
+developers:
+  - ldap: "existing-ldap-id"
+    github: "existing-github-id"
+manageGitHubTeam: true
+```
+
+### Testing the diff report locally, for one component
+
+The `github-sync` CLI command computes the same diff `sync` produces, but on its own — it never touches
+Artifactory, so it doesn't need `ARTIFACTORY_TOKEN` at all. This makes it convenient to test
+`manageGitHubPermissions`/`manageGitHubTeam` changes for a single component in isolation:
+
+```shell
+# GITHUB_TOKEN needs read access to the relevant team(s) - e.g. an org member's token with the read:org scope.
+# It additionally needs write (admin:org) access if you disable dry-run below and want to actually apply changes.
+export GITHUB_TOKEN=...
+
+# Point definitionsDir at a directory containing just the file(s) you want to test, e.g.:
+mkdir -p /tmp/rpu-test/permissions /tmp/rpu-test/teams
+cp permissions/plugin-slack.yml /tmp/rpu-test/permissions/
+
+java -DdefinitionsDir=/tmp/rpu-test/permissions \
+     -DteamsDir=/tmp/rpu-test/teams \
+     -DgithubDiffOutput=/tmp/rpu-test/github-permissions-diff.json \
+     -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar \
+     github-sync
+
+cat /tmp/rpu-test/github-permissions-diff.json
+```
+
+By default (`githubPermissionsDryRun` unset, or explicitly `-DgithubPermissionsDryRun=true`), this only
+computes and reports the diff — nothing is added or removed on GitHub. To actually apply the reported
+changes, pass `-DgithubPermissionsDryRun=false`:
+
+```shell
+java -DdefinitionsDir=/tmp/rpu-test/permissions \
+     -DteamsDir=/tmp/rpu-test/teams \
+     -DgithubDiffOutput=/tmp/rpu-test/github-permissions-diff.json \
+     -DgithubPermissionsDryRun=false \
+     -jar target/repository-permissions-updater-*-bin/repository-permissions-updater-*.jar \
+     github-sync
+```
+
+Since the sync only ever considers components/teams that have opted in
+(`manageGitHubPermissions`/`manageGitHubTeam: true`), you don't strictly need to copy files out — running
+`github-sync` directly against the real `permissions`/`teams` directories (the defaults if `-D...Dir` is
+omitted) is equally safe and only reports on whichever components have currently opted in; copying a single
+file out is just a convenient way to be certain you're looking at exactly one component's report while
+testing.
+
+
+
 Managing Security Process
 -------------------------
 

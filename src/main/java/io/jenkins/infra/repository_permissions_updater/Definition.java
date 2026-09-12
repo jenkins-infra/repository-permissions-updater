@@ -1,10 +1,13 @@
 package io.jenkins.infra.repository_permissions_updater;
 
+import edu.umd.cs.findbugs.annotations.CheckForNull;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import java.util.Map;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@SuppressFBWarnings("UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD")
+@SuppressFBWarnings({"UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD", "UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"})
 public class Definition {
 
     public static class CD {
@@ -14,6 +17,15 @@ public class Definition {
 
     public static class Security {
         public SecurityContacts contacts;
+    }
+
+    /**
+     * Grants an existing cross-repository GitHub team (as defined in {@code teams/*.yml}) access to this
+     * component's GitHub repository, at the specified GitHub permission role.
+     */
+    public static class AdditionalGitHubTeam {
+        public String name;
+        public String role;
     }
 
     public static class SecurityContacts {
@@ -119,13 +131,43 @@ public class Definition {
 
     private String name = "";
     private String[] paths = new String[0];
-    private String[] developers = new String[0];
+
+    /**
+     * Each entry is either a plain string (legacy format: a Jenkins community/LDAP id, used for Artifactory
+     * permissions), a mapping with both {@code ldap} and {@code github} keys (ties an LDAP id to a GitHub
+     * login 1-to-1, e.g. {@code {ldap: jglick, github: jglick}}, so the two can differ when needed), or a
+     * mapping with only a {@code github} key (a developer with a GitHub login but no Jenkins community/LDAP
+     * account, e.g. {@code {github: someuser}} -- GitHub permissions management only, useful for backfill).
+     * See {@link #getDeveloperIds()}, {@link #getGitHubUsernames()}, and {@link #getGitHubOnlyUsernames()}.
+     */
+    private Object[] developers = new Object[0];
+
     private IssueTracker[] issues = new IssueTracker[0];
     private String[] extraNames = new String[0];
     private boolean releaseBlocked;
     private boolean communityPluginMaintainers;
 
     private String github;
+
+    /**
+     * Opt-in flag: if {@code true}, RPU will reconcile GitHub team membership for this component's
+     * repository, using {@link #developers} (see {@link #getGitHubUsernames()} for how GitHub logins are
+     * resolved) plus {@link #additionalGitHubTeams}. Defaults to {@code false} so existing components are
+     * unaffected until they explicitly opt in.
+     */
+    private boolean manageGitHubPermissions;
+
+    /**
+     * Overrides the default GitHub team name (otherwise derived as {@code "<repo> Developers"}) used to
+     * grant {@link #developers} access to this component's repository.
+     */
+    private String repositoryTeam;
+
+    /**
+     * Additional, cross-repository GitHub teams (defined in {@code teams/*.yml}) to grant access to this
+     * component's repository, and at what role.
+     */
+    private AdditionalGitHubTeam[] additionalGitHubTeams = new AdditionalGitHubTeam[0];
 
     public CD getCd() {
         return cd;
@@ -170,16 +212,70 @@ public class Definition {
         this.issues = paths.clone();
     }
 
-    public String[] getDevelopers() {
+    public Object[] getDevelopers() {
         return developers.clone();
     }
 
-    public void setDevelopers(String[] developers) {
+    public void setDevelopers(Object[] developers) {
         this.developers = developers.clone();
+    }
+
+    /**
+     * Returns the Jenkins community (LDAP) id for every {@link #developers} entry, in order: a plain string
+     * entry (legacy format) is returned as-is, and a {@code {ldap, github}} mapping entry (new format)
+     * contributes its {@code ldap} value. Most Artifactory-related code should use this rather than
+     * {@link #getDevelopers()}.
+     */
+    public String[] getDeveloperIds() {
+        return DeveloperEntries.toLdapIds(developers);
     }
 
     public void setGithub(String github) {
         this.github = github;
+    }
+
+    public boolean isManageGitHubPermissions() {
+        return manageGitHubPermissions;
+    }
+
+    public void setManageGitHubPermissions(boolean manageGitHubPermissions) {
+        this.manageGitHubPermissions = manageGitHubPermissions;
+    }
+
+    /**
+     * Returns the GitHub login to use for each {@link #developers} entry declared using the
+     * {@code {ldap, github}} mapping form, keyed by that entry's LDAP id. Entries declared as a plain string
+     * are not included here -- callers should treat the LDAP id itself as the GitHub login for those.
+     */
+    public Map<String, String> getGitHubUsernames() {
+        return DeveloperEntries.extractGitHubUsernames(developers);
+    }
+
+    /**
+     * Returns the GitHub login for each {@link #developers} entry declared using the GitHub-only mapping
+     * form ({@code {github: ...}}, no {@code ldap} key) -- developers with a GitHub login but no Jenkins
+     * community (LDAP) account, so they never appear in {@link #getDeveloperIds()}. Useful for backfilling
+     * existing GitHub team membership that hasn't yet been (or won't be) tied to an LDAP account.
+     */
+    public Set<String> getGitHubOnlyUsernames() {
+        return DeveloperEntries.extractGitHubOnlyLogins(developers);
+    }
+
+    @CheckForNull
+    public String getRepositoryTeam() {
+        return repositoryTeam;
+    }
+
+    public void setRepositoryTeam(String repositoryTeam) {
+        this.repositoryTeam = repositoryTeam;
+    }
+
+    public AdditionalGitHubTeam[] getAdditionalGitHubTeams() {
+        return additionalGitHubTeams.clone();
+    }
+
+    public void setAdditionalGitHubTeams(AdditionalGitHubTeam[] additionalGitHubTeams) {
+        this.additionalGitHubTeams = additionalGitHubTeams.clone();
     }
 
     public void setSecurity(Security security) {
