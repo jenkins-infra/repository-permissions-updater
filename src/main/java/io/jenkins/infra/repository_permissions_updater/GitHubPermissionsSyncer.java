@@ -248,9 +248,6 @@ public final class GitHubPermissionsSyncer {
                 Set<String> logins = resolveGitHubLogins(
                         team.getDeveloperIds(), team.getGitHubUsernames(), team.getLdapOnlyDeveloperIds());
                 logins.addAll(team.getGitHubOnlyUsernames());
-                if (logins.isEmpty()) {
-                    continue;
-                }
                 mergeDesired(desiredByTeamSlug, slugify(team.getName()), DEFAULT_ORGANIZATION, logins);
             }
         }
