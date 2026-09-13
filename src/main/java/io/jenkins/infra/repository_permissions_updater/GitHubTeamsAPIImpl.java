@@ -213,6 +213,8 @@ class GitHubTeamsAPIImpl extends GitHubTeamsAPI {
             conn.setRequestProperty("Authorization", "Bearer " + GITHUB_TOKEN);
             conn.setRequestProperty("Accept", "application/vnd.github+json");
             conn.setRequestMethod(method);
+            conn.setReadTimeout(30_000);
+            conn.setConnectTimeout(30_000);
 
             if (jsonBody != null) {
                 conn.setRequestProperty("Content-Type", "application/json; charset=utf-8");
