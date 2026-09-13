@@ -8,6 +8,21 @@ List the GitHub usernames of the users who should have commit permissions below:
 - `@username1`
 - `@username2`
 
+- [ ] I've enabled `manageGitHubPermissions: true` and adapted the developers entry to the new required format.
+
+<!-- Required format for any new changes to permissions
+```yaml
+developers:
+  - ldap: "jonny"
+    github: "jonny-1234"
+manageGitHubPermissions: true
+```
+
+Note:
+* GitHub entries must be exhaustive once enabled, anyone not listed will lose access
+* LDAP only accounts can be specified with just an ldap entry
+-->
+
 This is needed in order to cut releases of the plugin or component.
 
 If you are modifying the release permission of your plugin or component, fill out the following checklist:
