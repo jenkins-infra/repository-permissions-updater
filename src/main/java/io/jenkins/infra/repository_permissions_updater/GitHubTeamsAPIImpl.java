@@ -103,6 +103,9 @@ class GitHubTeamsAPIImpl extends GitHubTeamsAPI {
         String query = "query { organization(login: " + gsonString(organization) + ") {\n" + subQueries + "} }";
 
         JsonObject response = postGraphQl(query);
+        if (response.has("errors")) {
+            throw new IOException("GitHub GraphQL response contained errors: " + response.get("errors"));
+        }
         Map<String, Set<String>> membersBySlug = new HashMap<>();
 
         JsonObject data = response.getAsJsonObject("data");
@@ -124,6 +127,7 @@ class GitHubTeamsAPIImpl extends GitHubTeamsAPI {
             JsonObject team = teamElement.getAsJsonObject();
             JsonObject membersObj = team.getAsJsonObject("members");
             int totalCount = membersObj.get("totalCount").getAsInt();
+            // TODO unlikely in practice but if a team has over 100 people this needs pagination support
             if (totalCount > MAX_MEMBERS_PER_TEAM) {
                 LOGGER.log(
                         Level.WARNING,
@@ -156,6 +160,8 @@ class GitHubTeamsAPIImpl extends GitHubTeamsAPI {
             conn.setRequestProperty("Accept", "application/vnd.github+json");
             conn.setRequestProperty("Content-Type", "application/json; charset=utf-8");
             conn.setRequestMethod("POST");
+            conn.setReadTimeout(30_000);
+            conn.setConnectTimeout(30_000);
             conn.setDoOutput(true);
 
             try (OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream(), StandardCharsets.UTF_8)) {
