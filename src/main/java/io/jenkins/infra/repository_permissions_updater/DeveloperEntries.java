@@ -121,7 +121,7 @@ final class DeveloperEntries {
         Set<String> logins = new LinkedHashSet<>();
         for (Object entry : developers) {
             if (entry instanceof Map<?, ?> map && map.get("ldap") == null && map.get("github") != null) {
-                logins.add(map.get("github").toString());
+                logins.add(map.get("github").toString().toLowerCase(java.util.Locale.ROOT));
             }
         }
         return logins;
