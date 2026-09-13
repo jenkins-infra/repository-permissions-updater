@@ -10,9 +10,10 @@ public class TeamDefinition {
     /**
      * Each entry is either a plain string (legacy format: a Jenkins community/LDAP id, used for Artifactory
      * permissions), a mapping with both {@code ldap} and {@code github} keys (ties an LDAP id to a GitHub
-     * login 1-to-1, so the two can differ when needed), or a mapping with only a {@code github} key (a
+     * login 1-to-1, so the two can differ when needed), a mapping with only a {@code github} key (a
      * developer with a GitHub login but no Jenkins community/LDAP account -- GitHub permissions management
-     * only, useful for backfill). See {@link #getDevelopers()}, {@link #getGitHubUsernames()}, and
+     * only, useful for backfill), or a mapping with only a {@code team} key (a reference to another
+     * cross-repository team). See {@link #getDevelopers()}, {@link #getGitHubUsernames()}, and
      * {@link #getGitHubOnlyUsernames()}.
      */
     private Object[] developers = new Object[0];
@@ -73,5 +74,14 @@ public class TeamDefinition {
      */
     public Set<String> getGitHubOnlyUsernames() {
         return DeveloperEntries.extractGitHubOnlyLogins(developers);
+    }
+
+    /**
+     * Returns the LDAP id for each {@link #developers} entry declared using the LDAP-only mapping form
+     * ({@code {ldap: ...}}, no {@code github} key) -- developers explicitly excluded from GitHub permissions
+     * management (see {@link Definition#getLdapOnlyDeveloperIds()} for details).
+     */
+    public Set<String> getLdapOnlyDeveloperIds() {
+        return DeveloperEntries.extractLdapOnlyIds(developers);
     }
 }

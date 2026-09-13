@@ -180,9 +180,11 @@ reconciliation could lock maintainers out of their own repositories at scale. To
 
 Each entry in `developers` (in both `permissions/*.yml` and `teams/*.yml`) can be either:
 
-- a plain string — a Jenkins community (LDAP) id, exactly as before; used for Artifactory permissions. If a
-  component opts into GitHub permissions management, a plain string entry is also assumed to be that
-  person's GitHub login (true for the vast majority of Jenkins contributors).
+- a plain string — a Jenkins community (LDAP) id, exactly as before; used for Artifactory permissions. Only
+  supported when GitHub permissions management is **not** enabled (see below). A plain string starting with
+  `@` (e.g. `"@core"`) is a legacy reference to a cross-repository `teams/*.yml` team, expanded to that
+  team's own `developers` entries; also only supported when GitHub permissions management is not enabled --
+  use the typed `{team: ...}` form below instead once it is.
 - a mapping with **both** `ldap` and `github` keys — ties that developer's LDAP id to their GitHub login
   1-to-1, e.g. `{ldap: jglick, github: jglick}`. Use this form when the two ids differ, so the GitHub login
   used for permissions management is explicit rather than assumed. Both keys are required when using this
@@ -193,8 +195,23 @@ Each entry in `developers` (in both `permissions/*.yml` and `teams/*.yml`) can b
   `manageGitHubPermissions`/`manageGitHubTeam` for a component that already has GitHub collaborators/team
   members with no obvious LDAP mapping: merge the ones you can confidently tie to an LDAP id as `{ldap,
   github}`, and add everyone else as GitHub-only entries so existing access is preserved without guessing.
+- a mapping with **only** an `ldap` key, e.g. `{ldap: someuser}` — the opposite case: a developer who should
+  be excluded from GitHub permissions management entirely (e.g. because their LDAP id isn't a real GitHub
+  login, belongs to someone else on GitHub, or they simply shouldn't be granted GitHub team access). Still
+  used for Artifactory permissions as normal.
+- a mapping with **only** a `team` key, e.g. `{team: cloudbees-developers}` — an explicit, typed reference to
+  a cross-repository `teams/*.yml` team, expanded (recursively, so a referenced team can itself reference
+  further teams) into that team's own `developers` entries. This is the typed equivalent of the legacy
+  `"@team-name"` string reference, and -- unlike that legacy form -- remains usable once
+  `manageGitHubPermissions`/`manageGitHubTeam` has banned plain-string entries. The referenced team name is
+  validated to exist (statically, no GitHub API access), and a cyclic chain of team references is rejected.
 
-All three forms can be freely mixed in the same list.
+**Once `manageGitHubPermissions`/`manageGitHubTeam` is enabled, plain-string entries (including `"@team-name"`
+references) are no longer allowed at all** — every developer must use one of the mapping forms above (use
+`{team: ...}` in place of `"@team-name"`), so it's explicit (never implicitly assumed) how each developer
+maps to GitHub. This is enforced by static (no GitHub API access) validation, so it fails fast on PRs.
+
+All five forms can be freely mixed in the same list.
 
 ### YAML fields
 
@@ -235,6 +252,10 @@ export GITHUB_TOKEN=...
 # Point definitionsDir at a directory containing just the file(s) you want to test, e.g.:
 mkdir -p /tmp/rpu-test/permissions /tmp/rpu-test/teams
 cp permissions/plugin-slack.yml /tmp/rpu-test/permissions/
+# If the file(s) you copied reference a team (e.g. `{team: "core"}` or legacy `"@core"` in `developers`),
+# also copy every `teams/*.yml` file that ends up referenced (including transitively, for team-of-teams),
+# or validation will fail with "developers entry references unknown team '...'":
+cp teams/core.yml /tmp/rpu-test/teams/
 
 java -DdefinitionsDir=/tmp/rpu-test/permissions \
      -DteamsDir=/tmp/rpu-test/teams \

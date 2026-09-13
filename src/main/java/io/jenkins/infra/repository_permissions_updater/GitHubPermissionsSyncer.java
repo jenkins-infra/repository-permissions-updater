@@ -241,7 +241,12 @@ public final class GitHubPermissionsSyncer {
                 if (!team.isManageGitHubTeam()) {
                     continue;
                 }
-                Set<String> logins = resolveGitHubLogins(team.getDeveloperIds(), team.getGitHubUsernames());
+                ArtifactoryPermissionsUpdater.validateDeveloperEntries(
+                        team.getName() + ".yml", team.getDevelopers(), true, teamsByName);
+                team.setDevelopers(DeveloperEntries.expandTeamReferences(
+                        team.getName() + ".yml", team.getDevelopers(), teamsByName));
+                Set<String> logins = resolveGitHubLogins(
+                        team.getDeveloperIds(), team.getGitHubUsernames(), team.getLdapOnlyDeveloperIds());
                 logins.addAll(team.getGitHubOnlyUsernames());
                 if (logins.isEmpty()) {
                     continue;
@@ -269,6 +274,10 @@ public final class GitHubPermissionsSyncer {
             if (!definition.isManageGitHubPermissions()) {
                 continue;
             }
+            ArtifactoryPermissionsUpdater.validateDeveloperEntries(
+                    file.getName(), definition.getDevelopers(), true, teamsByName);
+            definition.setDevelopers(
+                    DeveloperEntries.expandTeamReferences(file.getName(), definition.getDevelopers(), teamsByName));
             String repo = definition.getGithub();
             if (repo == null) {
                 // Already rejected by ArtifactoryPermissionsUpdater's static validation; be defensive here too.
@@ -283,7 +292,10 @@ public final class GitHubPermissionsSyncer {
             String repositoryTeam = definition.getRepositoryTeam();
             String teamName = repositoryTeam != null ? repositoryTeam : repoName + " Developers";
 
-            Set<String> logins = resolveGitHubLogins(definition.getDeveloperIds(), definition.getGitHubUsernames());
+            Set<String> logins = resolveGitHubLogins(
+                    definition.getDeveloperIds(),
+                    definition.getGitHubUsernames(),
+                    definition.getLdapOnlyDeveloperIds());
             logins.addAll(definition.getGitHubOnlyUsernames());
             mergeDesired(desiredByTeamSlug, slugify(teamName), organization, logins);
         }
@@ -301,16 +313,27 @@ public final class GitHubPermissionsSyncer {
      * Resolves the desired GitHub login for each entry in {@code developers}: by default, a developer's
      * Jenkins community (LDAP) id is assumed to also be their GitHub login; {@code githubUsernameOverrides}
      * (an LDAP id -&gt; GitHub login map, see {@link Definition#getGitHubUsernames()}/
-     * {@link TeamDefinition#getGitHubUsernames()}) can override this for the rare case where they differ.
+     * {@link TeamDefinition#getGitHubUsernames()}) can override this for the rare case where they differ, and
+     * {@code excludedFromDefault} (LDAP ids declared via the LDAP-only mapping form, see
+     * {@link Definition#getLdapOnlyDeveloperIds()}/{@link TeamDefinition#getLdapOnlyDeveloperIds()}) opts a
+     * developer out of that default assumption entirely, so they're never granted a GitHub login they didn't
+     * explicitly ask for.
      */
-    static Set<String> resolveGitHubLogins(String[] developers, Map<String, String> githubUsernameOverrides) {
+    static Set<String> resolveGitHubLogins(
+            String[] developers, Map<String, String> githubUsernameOverrides, Set<String> excludedFromDefault) {
         Set<String> logins = new TreeSet<>();
         for (String developer : developers) {
             if (developer == null || developer.isBlank()) {
                 continue;
             }
-            String login = githubUsernameOverrides.getOrDefault(developer, developer);
-            if (login != null && !login.isBlank()) {
+            String login = githubUsernameOverrides.get(developer);
+            if (login == null) {
+                if (excludedFromDefault.contains(developer)) {
+                    continue;
+                }
+                login = developer;
+            }
+            if (!login.isBlank()) {
                 logins.add(login);
             }
         }

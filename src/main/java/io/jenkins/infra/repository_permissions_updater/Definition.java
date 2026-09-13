@@ -133,12 +133,16 @@ public class Definition {
     private String[] paths = new String[0];
 
     /**
-     * Each entry is either a plain string (legacy format: a Jenkins community/LDAP id, used for Artifactory
-     * permissions), a mapping with both {@code ldap} and {@code github} keys (ties an LDAP id to a GitHub
-     * login 1-to-1, e.g. {@code {ldap: jglick, github: jglick}}, so the two can differ when needed), or a
-     * mapping with only a {@code github} key (a developer with a GitHub login but no Jenkins community/LDAP
-     * account, e.g. {@code {github: someuser}} -- GitHub permissions management only, useful for backfill).
-     * See {@link #getDeveloperIds()}, {@link #getGitHubUsernames()}, and {@link #getGitHubOnlyUsernames()}.
+     * Each entry is either a plain string (legacy format: a Jenkins community/LDAP id, or a
+     * {@code "@team-name"} team reference, used for Artifactory permissions), a mapping with both
+     * {@code ldap} and {@code github} keys (ties an LDAP id to a GitHub login 1-to-1, e.g.
+     * {@code {ldap: jglick, github: jglick}}, so the two can differ when needed), a mapping with only a
+     * {@code github} key (a developer with a GitHub login but no Jenkins community/LDAP account, e.g.
+     * {@code {github: someuser}} -- GitHub permissions management only, useful for backfill), or a mapping
+     * with only a {@code team} key (e.g. {@code {team: cloudbees-developers}} -- the typed equivalent of
+     * {@code "@team-name"}, usable even once plain-string entries are banned by
+     * {@code manageGitHubPermissions}). See {@link #getDeveloperIds()}, {@link #getGitHubUsernames()}, and
+     * {@link #getGitHubOnlyUsernames()}.
      */
     private Object[] developers = new Object[0];
 
@@ -259,6 +263,16 @@ public class Definition {
      */
     public Set<String> getGitHubOnlyUsernames() {
         return DeveloperEntries.extractGitHubOnlyLogins(developers);
+    }
+
+    /**
+     * Returns the LDAP id for each {@link #developers} entry declared using the LDAP-only mapping form
+     * ({@code {ldap: ...}}, no {@code github} key) -- developers explicitly excluded from GitHub permissions
+     * management. Callers resolving GitHub logins should skip these rather than falling back to assuming
+     * the LDAP id doubles as the GitHub login.
+     */
+    public Set<String> getLdapOnlyDeveloperIds() {
+        return DeveloperEntries.extractLdapOnlyIds(developers);
     }
 
     @CheckForNull

@@ -38,8 +38,10 @@ class GitHubPermissionsSyncerTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "alice"
-                  - "bob"
+                  - ldap: "alice"
+                    github: "alice"
+                  - ldap: "bob"
+                    github: "bob"
                 manageGitHubPermissions: true
                 """);
         File teams = Files.createTempDirectory("teams").toFile();
@@ -70,7 +72,8 @@ class GitHubPermissionsSyncerTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "alice"
+                  - ldap: "alice"
+                    github: "alice"
                   - ldap: "someldapid"
                     github: "bob-gh"
                 manageGitHubPermissions: true
@@ -98,7 +101,8 @@ class GitHubPermissionsSyncerTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "alice"
+                  - ldap: "alice"
+                    github: "alice"
                   - github: "no-ldap-user"
                 manageGitHubPermissions: true
                 """);
@@ -115,6 +119,71 @@ class GitHubPermissionsSyncerTest {
         JsonObject team = json.getAsJsonObject("example-plugin-developers");
         assertEquals(
                 "[\"alice\",\"no-ldap-user\"]", team.getAsJsonArray("toAdd").toString());
+    }
+
+    @Test
+    void ldapOnlyEntryIsExcludedFromDesiredStateEvenThoughItLooksLikeAGitHubLogin() throws IOException {
+        File permissions = Files.createTempDirectory("permissions").toFile();
+        permissions.deleteOnExit();
+        Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - ldap: "alice"
+                    github: "alice"
+                  - ldap: "not-a-github-user"
+                manageGitHubPermissions: true
+                """);
+        File teams = Files.createTempDirectory("teams").toFile();
+        teams.deleteOnExit();
+
+        StubGitHubTeamsAPI stub = new StubGitHubTeamsAPI(Map.of("example-plugin-developers", Set.of()));
+        GitHubTeamsAPI.INSTANCE = stub;
+
+        File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
+        new GitHubPermissionsSyncer(true).sync(permissions, teams, report);
+
+        JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
+        JsonObject team = json.getAsJsonObject("example-plugin-developers");
+        assertEquals("[\"alice\"]", team.getAsJsonArray("toAdd").toString());
+    }
+
+    @Test
+    void teamReferenceEntryExpandsToReferencedTeamsGitHubLogins() throws IOException {
+        File permissions = Files.createTempDirectory("permissions").toFile();
+        permissions.deleteOnExit();
+        Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - ldap: "alice"
+                    github: "alice"
+                  - team: "core"
+                manageGitHubPermissions: true
+                """);
+        File teams = Files.createTempDirectory("teams").toFile();
+        teams.deleteOnExit();
+        Files.writeString(new File(teams, "core.yml").toPath(), """
+                ---
+                name: "core"
+                developers:
+                  - "bob"
+                  - ldap: "carol"
+                    github: "carol-gh"
+                """);
+
+        StubGitHubTeamsAPI stub = new StubGitHubTeamsAPI(Map.of("example-plugin-developers", Set.of()));
+        GitHubTeamsAPI.INSTANCE = stub;
+
+        File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
+        new GitHubPermissionsSyncer(true).sync(permissions, teams, report);
+
+        JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
+        JsonObject team = json.getAsJsonObject("example-plugin-developers");
+        assertEquals(
+                "[\"alice\",\"bob\",\"carol-gh\"]", team.getAsJsonArray("toAdd").toString());
     }
 
     @Test
@@ -151,8 +220,10 @@ class GitHubPermissionsSyncerTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "alice"
-                  - "bob"
+                  - ldap: "alice"
+                    github: "alice"
+                  - ldap: "bob"
+                    github: "bob"
                 manageGitHubPermissions: true
                 """);
         File teams = Files.createTempDirectory("teams").toFile();
@@ -183,8 +254,10 @@ class GitHubPermissionsSyncerTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "alice"
-                  - "bob"
+                  - ldap: "alice"
+                    github: "alice"
+                  - ldap: "bob"
+                    github: "bob"
                 manageGitHubPermissions: true
                 """);
         File teams = Files.createTempDirectory("teams").toFile();
@@ -214,8 +287,10 @@ class GitHubPermissionsSyncerTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "alice"
-                  - "bob"
+                  - ldap: "alice"
+                    github: "alice"
+                  - ldap: "bob"
+                    github: "bob"
                 manageGitHubPermissions: true
                 """);
         File teams = Files.createTempDirectory("teams").toFile();
@@ -247,8 +322,10 @@ class GitHubPermissionsSyncerTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "alice"
-                  - "bob"
+                  - ldap: "alice"
+                    github: "alice"
+                  - ldap: "bob"
+                    github: "bob"
                 manageGitHubPermissions: true
                 """);
         File teams = Files.createTempDirectory("teams").toFile();
@@ -273,8 +350,10 @@ class GitHubPermissionsSyncerTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "alice"
-                  - "bob"
+                  - ldap: "alice"
+                    github: "alice"
+                  - ldap: "bob"
+                    github: "bob"
                 manageGitHubPermissions: true
                 """);
         File teams = Files.createTempDirectory("teams").toFile();

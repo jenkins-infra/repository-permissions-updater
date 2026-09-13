@@ -16,7 +16,17 @@ import java.util.Set;
  *     (opt-in) GitHub permissions management feature; or</li>
  *     <li>a mapping with only a {@code github} key (no {@code ldap}): a developer with a GitHub login but no
  *     Jenkins community (LDAP) account, used for GitHub permissions management only. Useful for backfilling
- *     existing GitHub team membership that hasn't yet been (or never will be) tied to an LDAP account.</li>
+ *     existing GitHub team membership that hasn't yet been (or never will be) tied to an LDAP account; or</li>
+ *     <li>a mapping with only an {@code ldap} key (no {@code github}): a developer who should be excluded
+ *     from GitHub permissions management entirely -- unlike a plain string, their LDAP id is <em>not</em>
+ *     assumed to also be their GitHub login. Useful when someone's LDAP id happens to look like a GitHub
+ *     login that either doesn't belong to them or shouldn't be granted GitHub access; or</li>
+ *     <li>a mapping with only a {@code team} key, e.g. {@code {team: "cloudbees-developers"}}: an explicit,
+ *     typed reference to a cross-repository {@code teams/*.yml} team, expanded (recursively, since a
+ *     referenced team's own {@code developers} may itself contain team references) into that team's
+ *     {@code developers} entries. This is the typed equivalent of the legacy {@code "@team-name"}
+ *     plain-string reference, usable even once {@code manageGitHubPermissions}/{@code manageGitHubTeam} has
+ *     banned plain-string entries.</li>
  * </ul>
  */
 final class DeveloperEntries {
@@ -115,5 +125,86 @@ final class DeveloperEntries {
             }
         }
         return logins;
+    }
+
+    /**
+     * Extracts the LDAP id from every LDAP-only mapping entry ({@code {ldap: ...}}, no {@code github} key)
+     * in {@code developers}: developers explicitly excluded from GitHub permissions management. Callers
+     * resolving a developer's GitHub login should skip any LDAP id found here rather than falling back to
+     * assuming the LDAP id doubles as the GitHub login (the default for plain-string entries).
+     */
+    static Set<String> extractLdapOnlyIds(Object[] developers) {
+        Set<String> ids = new LinkedHashSet<>();
+        for (Object entry : developers) {
+            if (entry instanceof Map<?, ?> map && map.get("ldap") != null && map.get("github") == null) {
+                ids.add(map.get("ldap").toString());
+            }
+        }
+        return ids;
+    }
+
+    /**
+     * Returns the team name referenced by a single {@code developers} entry, if it is a team reference --
+     * either the legacy {@code "@team-name"} plain-string form, or the explicit {@code {team: "team-name"}}
+     * mapping form (the typed equivalent, usable even once {@code manageGitHubPermissions}/
+     * {@code manageGitHubTeam} has banned plain-string entries) -- or {@code null} if the entry is not a
+     * team reference.
+     */
+    static String extractTeamReferenceName(Object entry) {
+        if (entry instanceof String s && s.startsWith("@")) {
+            return s.substring(1);
+        }
+        if (entry instanceof Map<?, ?> map && map.size() == 1 && map.containsKey("team")) {
+            Object team = map.get("team");
+            return team == null ? null : team.toString();
+        }
+        return null;
+    }
+
+    /**
+     * Recursively expands every team-reference entry ({@code "@team-name"} or {@code {team: "team-name"}})
+     * in {@code developers} into the referenced {@code teams/*.yml} team's own {@code developers} entries
+     * (which may themselves contain further team references, expanded in turn), deduplicating by
+     * {@link #extractDedupKey(Object)} (first occurrence wins). Detects and rejects cyclic team references.
+     * Non-team-reference entries (plain strings, {@code {ldap, github}}/{@code {github}}/{@code {ldap}}
+     * mappings) pass through unchanged.
+     *
+     * @param contextName a human-readable name (e.g. the source file name) used only for error messages.
+     */
+    static Object[] expandTeamReferences(
+            String contextName, Object[] developers, Map<String, Set<TeamDefinition>> teamsByName) {
+        Map<String, Object> expandedByKey = new LinkedHashMap<>();
+        expandInto(contextName, developers, teamsByName, new LinkedHashSet<>(), expandedByKey);
+        return expandedByKey.values().toArray();
+    }
+
+    private static void expandInto(
+            String contextName,
+            Object[] developers,
+            Map<String, Set<TeamDefinition>> teamsByName,
+            Set<String> visiting,
+            Map<String, Object> expandedByKey) {
+        for (Object entry : developers) {
+            String teamName = extractTeamReferenceName(entry);
+            if (teamName == null) {
+                expandedByKey.putIfAbsent(extractDedupKey(entry), entry);
+                continue;
+            }
+            if (!visiting.add(teamName)) {
+                throw new IllegalArgumentException("Cyclic team reference to '" + teamName
+                        + "' detected while expanding developers for " + contextName);
+            }
+            Set<TeamDefinition> teamDevs = teamsByName.get(teamName);
+            if (teamDevs == null) {
+                throw new IllegalArgumentException("Team " + teamName + " not found!");
+            }
+            if (teamDevs.isEmpty()) {
+                throw new IllegalArgumentException("Team " + teamName + " is empty?!");
+            }
+            for (TeamDefinition teamDev : teamDevs) {
+                expandInto(contextName, teamDev.getDevelopers(), teamsByName, visiting, expandedByKey);
+            }
+            visiting.remove(teamName);
+        }
     }
 }

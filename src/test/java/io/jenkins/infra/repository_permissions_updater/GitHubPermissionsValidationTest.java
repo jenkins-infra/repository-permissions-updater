@@ -71,8 +71,8 @@ class GitHubPermissionsValidationTest {
     }
 
     @Test
-    void legacyPlainStringDevelopersAreUsedAsGitHubLoginsByDefault() {
-        assertDoesNotThrow(() -> generate("""
+    void plainStringDeveloperEntryIsRejectedWhenGitHubManaged() {
+        IOException ex = assertThrows(IOException.class, () -> generate("""
                 ---
                 name: "example"
                 github: "jenkinsci/example-plugin"
@@ -80,11 +80,12 @@ class GitHubPermissionsValidationTest {
                   - "timja"
                 manageGitHubPermissions: true
                 """));
+        assertContainsCause(ex, "must use the {ldap, github}, {github}, {ldap}, or {team} mapping form");
     }
 
     @Test
-    void mixOfLegacyStringsAndLdapGitHubMappingsIsAllowed() {
-        assertDoesNotThrow(() -> generate("""
+    void mixOfLegacyStringsAndLdapGitHubMappingsIsRejectedWhenGitHubManaged() {
+        IOException ex = assertThrows(IOException.class, () -> generate("""
                 ---
                 name: "example"
                 github: "jenkinsci/example-plugin"
@@ -94,19 +95,32 @@ class GitHubPermissionsValidationTest {
                     github: "jetersen"
                 manageGitHubPermissions: true
                 """));
+        assertContainsCause(ex, "must use the {ldap, github}, {github}, {ldap}, or {team} mapping form");
     }
 
     @Test
-    void developerMappingMustSpecifyBothLdapAndGitHub() {
-        IOException ex = assertThrows(IOException.class, () -> generate("""
+    void plainStringDeveloperEntryIsStillAllowedWhenGitHubIsNotManaged() {
+        assertDoesNotThrow(() -> generate("""
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - "timja"
+                """));
+    }
+
+    @Test
+    void ldapOnlyDeveloperEntryIsAccepted() throws IOException {
+        generate("""
                 ---
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
                   - ldap: "timja"
+                    github: "timja"
+                  - ldap: "jetersen"
                 manageGitHubPermissions: true
-                """));
-        assertContainsCause(ex, "must specify either both 'ldap' and 'github'");
+                """);
     }
 
     @Test
@@ -131,7 +145,8 @@ class GitHubPermissionsValidationTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "timja"
+                  - ldap: "timja"
+                    github: "timja"
                   - github: "someuser-with-no-ldap"
                 manageGitHubPermissions: true
                 """);
@@ -144,12 +159,13 @@ class GitHubPermissionsValidationTest {
                 name: "example"
                 github: "jenkinsci/example-plugin"
                 developers:
-                  - "timja"
+                  - ldap: "timja"
+                    github: "timja-other"
                   - ldap: "timja"
                     github: "timja"
                 manageGitHubPermissions: true
                 """));
-        assertContainsCause(ex, "Duplicate developer");
+        assertContainsCause(ex, "Duplicate ldap entry");
     }
 
     @Test
@@ -180,6 +196,35 @@ class GitHubPermissionsValidationTest {
                 manageGitHubPermissions: true
                 """));
         assertContainsCause(ex, "invalid GitHub user name");
+    }
+
+    @Test
+    void teamReferenceEntryIsAcceptedWhenGitHubManaged() {
+        assertDoesNotThrow(() -> generate("""
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - ldap: "timja"
+                    github: "timja"
+                  - team: "core"
+                manageGitHubPermissions: true
+                """));
+    }
+
+    @Test
+    void teamReferenceToUnknownTeamIsRejected() {
+        IOException ex = assertThrows(IOException.class, () -> generate("""
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - ldap: "timja"
+                    github: "timja"
+                  - team: "does-not-exist-team"
+                manageGitHubPermissions: true
+                """));
+        assertContainsCause(ex, "references unknown team");
     }
 
     @Test

@@ -120,36 +120,8 @@ public final class ArtifactoryPermissionsUpdater {
      * {@code {ldap, github}} mapping entries (not just plain LDAP id strings) survive expansion unchanged.
      */
     private static void expandTeams(Definition definition, Map<String, Set<TeamDefinition>> teamsByName) {
-        Map<String, Object> expandedByKey = new TreeMap<>();
-
-        for (Object developerEntry : definition.getDevelopers()) {
-            if (developerEntry instanceof String developerName && developerName.startsWith("@")) {
-                String teamName = developerName.substring(1);
-                Set<TeamDefinition> teamDevs = teamsByName.get(teamName);
-                if (teamDevs == null) {
-                    throw new IllegalArgumentException("Team " + teamName + " not found!");
-                }
-                if (teamDevs.isEmpty()) {
-                    throw new IllegalArgumentException("Team " + teamName + " is empty?!");
-                }
-                LOGGER.log(Level.INFO, "[{0}]: replacing {1} with {2}", new Object[] {
-                    definition.getName(),
-                    developerName,
-                    teamDevs.stream()
-                            .map(TeamDefinition::getDevelopers)
-                            .flatMap(Stream::of)
-                            .collect(Collectors.toList())
-                });
-                for (TeamDefinition teamDev : teamDevs) {
-                    for (Object teamEntry : teamDev.getDevelopers()) {
-                        expandedByKey.putIfAbsent(DeveloperEntries.extractDedupKey(teamEntry), teamEntry);
-                    }
-                }
-            } else {
-                expandedByKey.putIfAbsent(DeveloperEntries.extractDedupKey(developerEntry), developerEntry);
-            }
-        }
-        definition.setDevelopers(expandedByKey.values().toArray());
+        definition.setDevelopers(
+                DeveloperEntries.expandTeamReferences(definition.getName(), definition.getDevelopers(), teamsByName));
     }
 
     /**
@@ -161,16 +133,28 @@ public final class ArtifactoryPermissionsUpdater {
     private static final Pattern GITHUB_USERNAME_PATTERN = Pattern.compile("[a-zA-Z0-9-]+");
 
     /**
-     * Validates the shape of the polymorphic {@code developers} list, regardless of whether GitHub
-     * permissions management is enabled: every entry must be either a plain string (a Jenkins community/LDAP
-     * id), a mapping with exactly the {@code ldap} and {@code github} keys, or a mapping with only a
-     * {@code github} key (a developer with no Jenkins community/LDAP account, GitHub-only), all non-blank,
-     * GitHub logins format-checked. Also rejects a mapping entry whose {@code ldap}/{@code github}
-     * duplicates another entry. Plain-string entries are not checked for duplicates against each other, to
-     * preserve the pre-existing (silently deduplicated at {@code @team} expansion time) tolerance for
-     * accidental repeats in legacy data.
+     * Validates the shape of the polymorphic {@code developers} list: every entry must be either a plain
+     * string (a Jenkins community/LDAP id, or a legacy {@code "@team-name"} team reference), a mapping with
+     * exactly the {@code ldap} and {@code github} keys, a mapping with only a {@code github} key (a
+     * developer with no Jenkins community/LDAP account, GitHub-only), a mapping with only an {@code ldap}
+     * key (a developer who should be excluded from GitHub permissions management, e.g. because their LDAP id
+     * doesn't also happen to be their GitHub login and there simply is no GitHub login for them to manage),
+     * or a mapping with only a {@code team} key (an explicit, typed reference to a cross-repository
+     * {@code teams/*.yml} team -- the typed equivalent of {@code "@team-name"}), all non-blank, GitHub logins
+     * format-checked, team references checked against {@code teamsByName}. Also rejects a mapping entry
+     * whose {@code ldap}/{@code github} duplicates another entry. Plain-string entries are not checked for
+     * duplicates against each other, to preserve the pre-existing (silently deduplicated at team-reference
+     * expansion time) tolerance for accidental repeats in legacy data.
+     * <p>
+     * When {@code githubManaged} is {@code true} (i.e. {@code manageGitHubPermissions}/
+     * {@code manageGitHubTeam} is enabled), plain-string entries are rejected outright -- every developer
+     * must use one of the explicit mapping forms above, so it's unambiguous (rather than implicitly assumed)
+     * whether/how each developer is meant to be reflected in GitHub team membership. This also sidesteps
+     * {@code "@team-name"} references silently being treated as literal (bogus) logins, since only the typed
+     * {@code {team: "team-name"}} form is expanded for GitHub permissions management purposes.
      */
-    private static void validateDeveloperEntries(String fileName, Object[] developers) {
+    static void validateDeveloperEntries(
+            String fileName, Object[] developers, boolean githubManaged, Map<String, Set<TeamDefinition>> teamsByName) {
         Set<String> seenLdapIds = new HashSet<>();
         Set<String> seenGitHubLogins = new HashSet<>();
         for (Object entry : developers) {
@@ -178,35 +162,62 @@ public final class ArtifactoryPermissionsUpdater {
                 if (ldapId.isBlank()) {
                     throw new IllegalArgumentException("developers entry must not be blank in " + fileName);
                 }
+                if (githubManaged) {
+                    throw new IllegalArgumentException("developers entry '" + ldapId + "' in " + fileName
+                            + " must use the {ldap, github}, {github}, {ldap}, or {team} mapping form once "
+                            + "manageGitHubPermissions/manageGitHubTeam is enabled -- plain string entries "
+                            + "are not supported for GitHub-managed components/teams");
+                }
                 if (!ldapId.startsWith("@")) {
                     seenLdapIds.add(ldapId);
                 }
             } else if (entry instanceof Map<?, ?> map) {
                 Set<String> keys = new HashSet<>();
                 map.keySet().forEach(k -> keys.add(String.valueOf(k)));
-                if (!keys.equals(Set.of("ldap", "github")) && !keys.equals(Set.of("github"))) {
+                if (keys.equals(Set.of("team"))) {
+                    Object teamNameValue = map.get("team");
+                    String teamName = teamNameValue == null ? null : teamNameValue.toString();
+                    if (teamName == null || teamName.isBlank()) {
+                        throw new IllegalArgumentException("developers entry has a blank 'team' in " + fileName);
+                    }
+                    if (teamsByName != null && !teamsByName.containsKey(teamName)) {
+                        throw new IllegalArgumentException(
+                                "developers entry references unknown team '" + teamName + "' in " + fileName);
+                    }
+                    continue;
+                }
+                if (!keys.equals(Set.of("ldap", "github"))
+                        && !keys.equals(Set.of("github"))
+                        && !keys.equals(Set.of("ldap"))) {
                     throw new IllegalArgumentException(
                             "developers entry using the mapping form must specify either both 'ldap' and "
-                                    + "'github', or just 'github' (for a developer with no Jenkins "
-                                    + "community/LDAP account), in " + fileName + ", but got: " + keys);
+                                    + "'github', just 'github' (for a developer with no Jenkins "
+                                    + "community/LDAP account), just 'ldap' (for a developer excluded from "
+                                    + "GitHub permissions management), or just 'team' (for a reference to a "
+                                    + "cross-repository team), in " + fileName + ", but got: " + keys);
                 }
                 boolean hasLdap = keys.contains("ldap");
-                String ldapId = hasLdap ? String.valueOf(map.get("ldap")) : null;
-                String githubLogin = String.valueOf(map.get("github"));
-                if (hasLdap && ldapId.isBlank()) {
-                    throw new IllegalArgumentException("developers entry has a blank 'ldap' in " + fileName);
+                boolean hasGitHub = keys.contains("github");
+                if (hasLdap) {
+                    String ldapId = String.valueOf(map.get("ldap"));
+                    if (ldapId.isBlank()) {
+                        throw new IllegalArgumentException("developers entry has a blank 'ldap' in " + fileName);
+                    }
+                    if (!seenLdapIds.add(ldapId)) {
+                        throw new IllegalArgumentException("Duplicate ldap entry '" + ldapId + "' in " + fileName);
+                    }
                 }
-                if (githubLogin.isBlank()
-                        || !GITHUB_USERNAME_PATTERN.matcher(githubLogin).matches()) {
-                    throw new IllegalArgumentException("developers entry has an invalid GitHub user name '"
-                            + githubLogin + "'" + (hasLdap ? " for '" + ldapId + "'" : "") + " in " + fileName);
-                }
-                if (hasLdap && !seenLdapIds.add(ldapId)) {
-                    throw new IllegalArgumentException("Duplicate developer '" + ldapId + "' in " + fileName);
-                }
-                if (!seenGitHubLogins.add(githubLogin)) {
-                    throw new IllegalArgumentException(
-                            "Duplicate GitHub user name '" + githubLogin + "' in " + fileName);
+                if (hasGitHub) {
+                    String githubLogin = String.valueOf(map.get("github"));
+                    if (githubLogin.isBlank()
+                            || !GITHUB_USERNAME_PATTERN.matcher(githubLogin).matches()) {
+                        throw new IllegalArgumentException("developers entry has an invalid GitHub user name '"
+                                + githubLogin + "' in " + fileName);
+                    }
+                    if (!seenGitHubLogins.add(githubLogin)) {
+                        throw new IllegalArgumentException(
+                                "Duplicate GitHub user name '" + githubLogin + "' in " + fileName);
+                    }
                 }
             } else {
                 throw new IllegalArgumentException("Invalid developers entry in " + fileName + ": " + entry);
@@ -272,7 +283,8 @@ public final class ArtifactoryPermissionsUpdater {
         Map<String, Set<TeamDefinition>> teamsByName = loadTeams();
         for (Set<TeamDefinition> teamDefinitions : teamsByName.values()) {
             for (TeamDefinition team : teamDefinitions) {
-                validateDeveloperEntries(team.getName() + ".yml", team.getDevelopers());
+                validateDeveloperEntries(
+                        team.getName() + ".yml", team.getDevelopers(), team.isManageGitHubTeam(), teamsByName);
             }
         }
 
@@ -293,7 +305,11 @@ public final class ArtifactoryPermissionsUpdater {
             try (InputStream is = Files.newInputStream(file.toPath())) {
                 definition = yaml.loadAs(is, Definition.class);
 
-                validateDeveloperEntries(file.getName(), definition.getDevelopers());
+                validateDeveloperEntries(
+                        file.getName(),
+                        definition.getDevelopers(),
+                        definition.isManageGitHubPermissions(),
+                        teamsByName);
                 expandTeams(definition, teamsByName);
                 validateGitHubPermissionsFields(file, definition, teamsByName);
 
