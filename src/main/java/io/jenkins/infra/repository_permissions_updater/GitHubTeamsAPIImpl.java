@@ -17,6 +17,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -133,7 +134,7 @@ class GitHubTeamsAPIImpl extends GitHubTeamsAPI {
             JsonArray nodes = membersObj.getAsJsonArray("nodes");
             Set<String> logins = new TreeSet<>();
             for (JsonElement node : nodes) {
-                logins.add(node.getAsJsonObject().get("login").getAsString());
+                logins.add(node.getAsJsonObject().get("login").getAsString().toLowerCase(Locale.ROOT));
             }
             membersBySlug.put(entry.getValue(), logins);
         }

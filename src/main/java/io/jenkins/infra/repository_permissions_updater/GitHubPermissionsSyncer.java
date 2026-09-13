@@ -323,15 +323,16 @@ public final class GitHubPermissionsSyncer {
             if (developer == null || developer.isBlank()) {
                 continue;
             }
-            String login = githubUsernameOverrides.get(developer);
+            String normalisedDeveloper = developer.toLowerCase(Locale.ROOT);
+            String login = githubUsernameOverrides.get(normalisedDeveloper);
             if (login == null) {
-                if (excludedFromDefault.contains(developer)) {
+                if (excludedFromDefault.contains(normalisedDeveloper)) {
                     continue;
                 }
-                login = developer;
+                login = normalisedDeveloper;
             }
             if (!login.isBlank()) {
-                logins.add(login);
+                logins.add(login.toLowerCase(Locale.ROOT));
             }
         }
         return logins;

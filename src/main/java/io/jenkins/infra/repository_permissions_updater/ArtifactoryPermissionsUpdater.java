@@ -199,8 +199,8 @@ public final class ArtifactoryPermissionsUpdater {
                 boolean hasLdap = keys.contains("ldap");
                 boolean hasGitHub = keys.contains("github");
                 if (hasLdap) {
-                    String ldapId = String.valueOf(map.get("ldap"));
-                    if (ldapId.isBlank()) {
+                    Object ldapValue = map.get("ldap");
+                    if (!(ldapValue instanceof String ldapId) || ldapId.isBlank()) {
                         throw new IllegalArgumentException("developers entry has a blank 'ldap' in " + fileName);
                     }
                     if (!seenLdapIds.add(ldapId)) {
@@ -242,6 +242,11 @@ public final class ArtifactoryPermissionsUpdater {
         if (definition.getGithub() == null) {
             throw new IllegalArgumentException(
                     "manageGitHubPermissions requires a GitHub repository ('github') in " + file.getName());
+        }
+
+        String repositoryTeam = definition.getRepositoryTeam();
+        if (repositoryTeam != null && repositoryTeam.isBlank()) {
+            throw new IllegalArgumentException("repositoryTeam must not be blank in " + file.getName());
         }
 
         for (Definition.AdditionalGitHubTeam additionalTeam : definition.getAdditionalGitHubTeams()) {

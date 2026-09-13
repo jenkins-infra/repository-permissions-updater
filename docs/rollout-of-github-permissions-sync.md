@@ -1,7 +1,7 @@
 # Rollout plan: GitHub permissions management via RPU
 
 This document describes how GitHub team/repository permissions management (see the "Managing GitHub
-Permissions" section of [README.md](README.md)) will actually be rolled out across the `jenkinsci` org
+Permissions" section of [../README.md](README.md)) will actually be rolled out across the `jenkinsci` org
 (2000+ repositories, ~2600 teams), and how the design keeps GitHub API usage bounded as adoption grows.
 
 Everything below builds on what's already merged: an opt-in schema (`manageGitHubPermissions` /
