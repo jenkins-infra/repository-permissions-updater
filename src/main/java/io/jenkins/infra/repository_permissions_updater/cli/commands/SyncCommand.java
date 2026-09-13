@@ -32,7 +32,7 @@ public class SyncCommand implements Callable<Integer> {
      * builds at all (no credentials).
      */
     private static final boolean GITHUB_PERMISSIONS_DRY_RUN =
-            Boolean.parseBoolean(System.getProperty("githubPermissionsDryRun", "true"));
+            !"false".equalsIgnoreCase(System.getProperty("githubPermissionsDryRun", "false"));
 
     @Override
     public Integer call() throws Exception {

@@ -41,7 +41,7 @@ public class GitHubSyncCommand implements Callable<Integer> {
         File definitionsDir = new File(System.getProperty("definitionsDir", "./permissions"));
         File teamsDir = new File(System.getProperty("teamsDir", "./teams"));
         File reportFile = new File(System.getProperty("githubDiffOutput", "./json/github-permissions-diff.json"));
-        boolean dryRun = Boolean.parseBoolean(System.getProperty("githubPermissionsDryRun", "true"));
+        boolean dryRun = !"false".equalsIgnoreCase(System.getProperty("githubPermissionsDryRun", "false"));
 
         File parent = reportFile.getParentFile();
         if (parent != null && !parent.isDirectory() && !parent.mkdirs()) {
