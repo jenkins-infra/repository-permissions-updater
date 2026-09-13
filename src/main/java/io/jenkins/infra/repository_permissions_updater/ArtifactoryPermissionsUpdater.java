@@ -208,11 +208,12 @@ public final class ArtifactoryPermissionsUpdater {
                     }
                 }
                 if (hasGitHub) {
-                    String githubLogin = String.valueOf(map.get("github"));
-                    if (githubLogin.isBlank()
+                    Object githubValue = map.get("github");
+                    if (!(githubValue instanceof String githubLogin)
+                            || githubLogin.isBlank()
                             || !GITHUB_USERNAME_PATTERN.matcher(githubLogin).matches()) {
                         throw new IllegalArgumentException("developers entry has an invalid GitHub user name '"
-                                + githubLogin + "' in " + fileName);
+                                + githubValue + "' in " + fileName);
                     }
                     if (!seenGitHubLogins.add(githubLogin)) {
                         throw new IllegalArgumentException(
