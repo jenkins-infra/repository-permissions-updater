@@ -415,27 +415,26 @@ public final class ArtifactoryPermissionsUpdater {
             perm.addProperty("name", jsonName);
 
             // includes / excludes
+            JsonArray includePatterns = new JsonArray();
             if (definition.isReleaseBlocked()) {
-                perm.addProperty("includesPattern", "blocked");
+                includePatterns.add("blocked");
             } else {
-                List<String> patterns = new ArrayList<>();
                 for (String path : definition.getPaths()) {
-                    patterns.add(path + "/*/" + definition.getName() + "-*");
-                    patterns.add(path + "/*/maven-metadata.xml");
-                    patterns.add(path + "/*/maven-metadata.xml.*");
-                    patterns.add(path + "/maven-metadata.xml");
-                    patterns.add(path + "/maven-metadata.xml.*");
+                    includePatterns.add(path + "/*/" + definition.getName() + "-*");
+                    includePatterns.add(path + "/*/maven-metadata.xml");
+                    includePatterns.add(path + "/*/maven-metadata.xml.*");
+                    includePatterns.add(path + "/maven-metadata.xml");
+                    includePatterns.add(path + "/maven-metadata.xml.*");
                 }
-                perm.addProperty("includesPattern", String.join(",", patterns));
             }
-            perm.addProperty("excludesPattern", "");
 
-            JsonArray repos = new JsonArray();
-            repos.add("snapshots");
-            if (!DEVELOPMENT) {
-                repos.add("releases");
+            JsonObject targets = new JsonObject();
+            for (String repo : DEVELOPMENT ? List.of("snapshots") : List.of("snapshots", "releases")) {
+                JsonObject target = new JsonObject();
+                target.add("include_patterns", includePatterns.deepCopy());
+                target.add("exclude_patterns", new JsonArray());
+                targets.add(repo, target);
             }
-            perm.add("repositories", repos);
 
             JsonObject usersJson = new JsonObject();
             JsonObject groupsJson = new JsonObject();
@@ -491,8 +490,8 @@ public final class ArtifactoryPermissionsUpdater {
                         }
 
                         JsonArray rights = new JsonArray();
-                        rights.add("w");
-                        rights.add("n");
+                        rights.add("WRITE");
+                        rights.add("ANNOTATE");
                         usersJson.add(dev.toLowerCase(Locale.US), rights);
                     }
                 } else {
@@ -515,15 +514,22 @@ public final class ArtifactoryPermissionsUpdater {
 
             if (definition.getCd() != null && definition.getCd().enabled && definition.getDeveloperIds().length != 0) {
                 JsonArray rights = new JsonArray();
-                rights.add("w");
-                rights.add("n");
+                rights.add("WRITE");
+                rights.add("ANNOTATE");
                 groupsJson.add(artifactoryAPI.toGeneratedGroupName(definition.getGithub()), rights);
             }
 
-            JsonObject principals = new JsonObject();
-            principals.add("users", usersJson);
-            principals.add("groups", groupsJson);
-            perm.add("principals", principals);
+            JsonObject actions = new JsonObject();
+            actions.add("users", usersJson);
+            actions.add("groups", groupsJson);
+
+            JsonObject artifactResource = new JsonObject();
+            artifactResource.add("actions", actions);
+            artifactResource.add("targets", targets);
+
+            JsonObject resources = new JsonObject();
+            resources.add("artifact", artifactResource);
+            perm.add("resources", resources);
 
             Path permFile = apiOutputDir.toPath().resolve("permissions").resolve(jsonName + ".json");
             Files.createDirectories(permFile.getParent());

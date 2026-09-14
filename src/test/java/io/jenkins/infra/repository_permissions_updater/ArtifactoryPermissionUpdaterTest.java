@@ -3,6 +3,7 @@ package io.jenkins.infra.repository_permissions_updater;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import edu.umd.cs.findbugs.annotations.NonNull;
 import java.io.File;
 import java.io.IOException;
@@ -12,6 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -32,19 +34,29 @@ class ArtifactoryPermissionUpdaterTest {
 
     @Test
     void shouldMatchIncludePattern() throws IOException {
-        Map<String, Object> map = new HashMap<>();
-        map = parseJson(map, "permissions", "generatedv2-plugin-delphix.json");
+        JsonObject perm = new JsonObject();
+        perm = parseJson(perm, "permissions", "generatedv2-plugin-delphix.json");
+        JsonObject snapshotsTarget = perm.getAsJsonObject("resources")
+                .getAsJsonObject("artifact")
+                .getAsJsonObject("targets")
+                .getAsJsonObject("snapshots");
+        List<String> includePatterns = StreamSupport.stream(
+                        snapshotsTarget.getAsJsonArray("include_patterns").spliterator(), false)
+                .map(e -> e.getAsString())
+                .collect(Collectors.toList());
         assertEquals(
-                "org/jenkins-ci/plugins/delphix/*/delphix-*," + "org/jenkins-ci/plugins/delphix/*/maven-metadata.xml,"
-                        + "org/jenkins-ci/plugins/delphix/*/maven-metadata.xml.*,"
-                        + "org/jenkins-ci/plugins/delphix/maven-metadata.xml,"
-                        + "org/jenkins-ci/plugins/delphix/maven-metadata.xml.*,"
-                        + "org/jenkins-ci/plugins/delphix-*/*/delphix-*,"
-                        + "org/jenkins-ci/plugins/delphix-*/*/maven-metadata.xml,"
-                        + "org/jenkins-ci/plugins/delphix-*/*/maven-metadata.xml.*,"
-                        + "org/jenkins-ci/plugins/delphix-*/maven-metadata.xml,"
-                        + "org/jenkins-ci/plugins/delphix-*/maven-metadata.xml.*",
-                map.get("includesPattern"));
+                List.of(
+                        "org/jenkins-ci/plugins/delphix/*/delphix-*",
+                        "org/jenkins-ci/plugins/delphix/*/maven-metadata.xml",
+                        "org/jenkins-ci/plugins/delphix/*/maven-metadata.xml.*",
+                        "org/jenkins-ci/plugins/delphix/maven-metadata.xml",
+                        "org/jenkins-ci/plugins/delphix/maven-metadata.xml.*",
+                        "org/jenkins-ci/plugins/delphix-*/*/delphix-*",
+                        "org/jenkins-ci/plugins/delphix-*/*/maven-metadata.xml",
+                        "org/jenkins-ci/plugins/delphix-*/*/maven-metadata.xml.*",
+                        "org/jenkins-ci/plugins/delphix-*/maven-metadata.xml",
+                        "org/jenkins-ci/plugins/delphix-*/maven-metadata.xml.*"),
+                includePatterns);
     }
 
     @Test
