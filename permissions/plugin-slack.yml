@@ -8,5 +8,8 @@ paths:
 cd:
   enabled: true
 developers:
-  - "timja"
-  - "jetersen"
+  - ldap: "timja"
+    github: "timja"
+  - ldap: "jetersen"
+    github: "jetersen"
+manageGitHubPermissions: true
