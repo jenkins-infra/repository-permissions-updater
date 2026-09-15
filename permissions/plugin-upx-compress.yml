@@ -1,0 +1,11 @@
+---
+name: "upx-compress"
+github: &GH "jenkinsci/upx-compress-plugin"
+paths:
+- "io/jenkins/plugins/upx-compress"
+developers:
+- "lgcastellucci"
+issues:
+  - github: *GH
+cd:
+  enabled: true
