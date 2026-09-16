@@ -1,0 +1,11 @@
+---
+name: "oras-scm"
+github: &GH "jenkinsci/oras-scm-plugin"
+paths:
+- "io/jenkins/plugins/oras-scm"
+developers:
+- "jonesbusy"
+issues:
+  - github: *GH
+cd:
+  enabled: true
