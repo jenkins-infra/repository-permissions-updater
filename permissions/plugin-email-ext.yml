@@ -9,7 +9,9 @@ paths:
 cd:
   enabled: true
 developers:
-  - "slide_o_mix"
+  - ldap: "krisstern"
+    github: "krisstern"
 security:
   contacts:
     jira: "cloudbees_security_members"
+manageGitHubPermissions: true
