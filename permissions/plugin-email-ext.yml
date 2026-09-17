@@ -9,7 +9,9 @@ paths:
 cd:
   enabled: true
 developers:
-  - "krisstern"
+  - ldap: "krisstern"
+    github: "krisstern"
 security:
   contacts:
     jira: "cloudbees_security_members"
+manageGitHubPermissions: true
