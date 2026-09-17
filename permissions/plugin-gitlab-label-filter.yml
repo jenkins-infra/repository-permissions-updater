@@ -1,0 +1,11 @@
+---
+name: "gitlab-label-filter"
+github: &GH "jenkinsci/gitlab-label-filter-plugin"
+paths:
+- "io/jenkins/plugins/gitlab-label-filter"
+developers:
+- "barakvalzer"
+issues:
+  - github: *GH
+cd:
+  enabled: true
