@@ -9,7 +9,7 @@ paths:
 cd:
   enabled: true
 developers:
-  - "slide_o_mix"
+  - "krisstern"
 security:
   contacts:
     jira: "cloudbees_security_members"
