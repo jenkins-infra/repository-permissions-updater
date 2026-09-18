@@ -1,8 +1,8 @@
 ---
 name: "xcode-plugin"
-github: "jenkinsci/xcode-plugin"
+github: &gh "jenkinsci/xcode-plugin"
 issues:
-  - jira: '16124'  # xcode-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/xcode-plugin"
 developers:
