@@ -6,9 +6,7 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/xcode-plugin"
 developers:
-  - "lacostej"
-  - "aheritier"
-  - "kazuhidet"
   - "flabrie"
+manageGitHubPermissions: true
 cd:
   enabled: true
