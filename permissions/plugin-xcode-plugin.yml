@@ -7,7 +7,7 @@ paths:
   - "org/jenkins-ci/plugins/xcode-plugin"
 developers:
   - ldap: "flabrie"
-	github: "flabrie"
+    github: "flabrie"
 manageGitHubPermissions: true
 cd:
   enabled: true
