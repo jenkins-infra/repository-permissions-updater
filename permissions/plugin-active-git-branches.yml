@@ -1,0 +1,11 @@
+---
+name: "active-git-branches"
+github: &GH "jenkinsci/active-git-branches-plugin"
+paths:
+- "io/jenkins/plugins/active-git-branches"
+developers:
+- "liujicheng"
+issues:
+  - github: *GH
+cd:
+  enabled: true
