@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-app-service"
 developers:
-  - "markewaite"
-  - "zooopx"
+  - ldap: "markewaite"
+    github: "markewaite"
+  - ldap: "zooopx"
+    github: "xuzhang3"
+manageGitHubPermissions: true
