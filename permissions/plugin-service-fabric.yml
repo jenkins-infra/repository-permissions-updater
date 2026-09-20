@@ -7,3 +7,4 @@ paths:
   - "org/jenkins-ci/plugins/service-fabric"
 developers:
   - "azsf_msft"
+  - "markewaite"
