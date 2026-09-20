@@ -6,4 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-function"
 developers:
-  - "zooopx"
+  - ldap: "markewaite"
+    github: "markewaite"
+  - ldap: "zooopx"
+    github: "xuzhang3"
+manageGitHubPermissions: true
