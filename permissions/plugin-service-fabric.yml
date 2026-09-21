@@ -8,6 +8,4 @@ paths:
 developers:
   - ldap: "azsf_msft"
     github: "dragav"
-  - ldap: "markewaite"
-    github: "markewaite"
 manageGitHubPermissions: true
