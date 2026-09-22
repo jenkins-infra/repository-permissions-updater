@@ -1,0 +1,11 @@
+---
+name: "interactive-ci"
+github: &GH "jenkinsci/interactive-ci-plugin"
+paths:
+- "io/jenkins/plugins/interactive-ci"
+developers:
+- "darniss"
+issues:
+  - github: *GH
+cd:
+  enabled: true
