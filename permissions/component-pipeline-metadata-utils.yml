@@ -3,6 +3,7 @@ name: "pipeline-metadata-utils"
 paths:
   - "org/jenkins-ci/infra/pipeline-metadata-utils"
 developers:
-  - ldap: "markewaite"
-    github: "markewaite"
-manageGitHubPermissions: true
+  - "abayer"
+  - "kwhetstone"
+  - "jm_meessen"
+  - "markewaite"
