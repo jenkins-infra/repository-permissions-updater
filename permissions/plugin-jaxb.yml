@@ -8,10 +8,15 @@ paths:
 cd:
   enabled: true
 developers:
-  - "kohsuke"
-  - "oleg_nenashev"
-  - "batmat"
-  - "markewaite"
+  - ldap: "kohsuke"
+  - ldap: "oleg_nenashev"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "markewaite"
+    github: "markewaite"
+  - ldap: "sekator778"
+    github: "Sekator778"
 security:
   contacts:
     jira: "cloudbees_security_members"
+manageGitHubPermissions: true
