@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/implied-labels"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true
 cd:
   enabled: true

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/flexible-publish"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true
