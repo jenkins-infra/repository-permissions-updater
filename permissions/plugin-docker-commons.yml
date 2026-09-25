@@ -13,6 +13,3 @@ developers:
   - "oleg_nenashev"
   - "rsandell"
   - "dnusbaum"
-security:
-  contacts:
-    jira: "cloudbees_security_members"
