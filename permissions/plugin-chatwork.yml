@@ -7,4 +7,8 @@ paths:
   - "com/vexus2/jenkins/chatwork/chatwork"
   - "org/jenkins-ci/plugins/chatwork"
 developers:
-  - "sue445"
+  - ldap: "sue445"
+    github: "sue445"
+manageGitHubPermissions: true
+cd:
+  enabled: true
