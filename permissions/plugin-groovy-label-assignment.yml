@@ -10,5 +10,6 @@ cd:
 developers:
   - ldap: "kitos9112"
     github: "kitos9112"
-  - "arnoxit"
+  - ldap: "covilk"
+    github: "arnoxit"
 manageGitHubPermissions: true
