@@ -1,0 +1,11 @@
+---
+name: "pushplus"
+github: &GH "jenkinsci/pushplus-plugin"
+paths:
+- "io/jenkins/plugins/pushplus"
+developers:
+- "pcstx"
+issues:
+  - github: *GH
+cd:
+  enabled: true

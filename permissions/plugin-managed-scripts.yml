@@ -1,10 +1,13 @@
 ---
 name: "managed-scripts"
-github: "jenkinsci/managed-scripts-plugin"
+github: &gh "jenkinsci/managed-scripts-plugin"
 issues:
-  - jira: '16139'  # managed-scripts-plugin
+  - github: *gh
 paths:
   - "org/jenkinsci/plugins/managed-scripts"
 developers:
-  - "imod"
-  - "gbigenios"
+  - ldap: "flabrie"
+    github: "flabrie"
+manageGitHubPermissions: true
+cd:
+  enabled: true

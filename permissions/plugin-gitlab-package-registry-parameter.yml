@@ -1,0 +1,11 @@
+---
+name: "gitlab-package-registry-parameter"
+github: &GH "jenkinsci/gitlab-package-registry-parameter-plugin"
+paths:
+- "io/jenkins/plugins/gitlab-package-registry-parameter"
+developers:
+- "mlinops"
+issues:
+  - github: *GH
+cd:
+  enabled: true

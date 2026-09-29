@@ -6,7 +6,12 @@ paths:
 cd:
   enabled: true
 developers:
-  - "timja"
-  - "janfaracik"
+  - ldap: "timja"
+    github: "timja"
+  - ldap: "janfaracik"
+    github: "janfaracik"
+  - github: "lewisbirks"
 issues:
   - github: *GH
+
+manageGitHubPermissions: true

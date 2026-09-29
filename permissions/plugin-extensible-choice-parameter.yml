@@ -8,4 +8,6 @@ paths:
 cd:
   enabled: true
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true

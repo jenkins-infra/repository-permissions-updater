@@ -4,6 +4,8 @@ github: &GH "jenkinsci/commons-httpclient3-api-plugin"
 paths:
 - "io/jenkins/plugins/commons-httpclient3-api"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true
 issues:
   - github: *GH

@@ -7,3 +7,5 @@ paths:
   - "jenkins/plugins/mqtt-notification-plugin"
 developers:
   - "gareth_western"
+cd:
+  enabled: true

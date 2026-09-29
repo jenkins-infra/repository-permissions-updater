@@ -6,4 +6,6 @@ issues:
 paths:
   - "jp/shiftinc/jenkins/plugins/discard-old-build"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true

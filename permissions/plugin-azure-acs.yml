@@ -7,4 +7,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/azure-acs"
 developers:
-  - "zooopx"
+  - ldap: "zooopx"
+    github: "xuzhang3"
+manageGitHubPermissions: true

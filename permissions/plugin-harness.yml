@@ -1,0 +1,11 @@
+---
+name: "harness"
+github: &GH "jenkinsci/harness-plugin"
+paths:
+- "io/jenkins/plugins/harness"
+developers:
+- "cashwinichourasia"
+- "shivagowda"
+- "sameeksha_harness"
+issues:
+  - github: *GH

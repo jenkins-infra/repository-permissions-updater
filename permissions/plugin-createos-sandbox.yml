@@ -1,0 +1,11 @@
+---
+name: "createos-sandbox"
+github: &GH "jenkinsci/createos-sandbox-plugin"
+paths:
+- "io/jenkins/plugins/createos-sandbox"
+developers:
+- "pratikbin"
+issues:
+  - github: *GH
+cd:
+  enabled: true

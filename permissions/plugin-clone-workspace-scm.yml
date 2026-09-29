@@ -7,6 +7,8 @@ paths:
   - "org/jenkins-ci/plugins/clone-workspace-scm"
   - "org/jvnet/hudson/plugins/clone-workspace-scm"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true
 cd:
   enabled: true

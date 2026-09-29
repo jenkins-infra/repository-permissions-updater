@@ -1,0 +1,11 @@
+---
+name: "portainer"
+github: &GH "jenkinsci/portainer-plugin"
+paths:
+- "io/jenkins/plugins/portainer"
+developers:
+- "mlinops"
+issues:
+  - github: *GH
+cd:
+  enabled: true

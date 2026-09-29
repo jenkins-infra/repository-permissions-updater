@@ -1,0 +1,11 @@
+---
+name: "tabs-parameter"
+github: &GH "jenkinsci/tabs-parameter-plugin"
+paths:
+- "io/jenkins/plugins/tabs-parameter"
+developers:
+- "yanck"
+issues:
+  - github: *GH
+cd:
+  enabled: true

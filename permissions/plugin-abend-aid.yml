@@ -1,0 +1,9 @@
+---
+name: "abend-aid"
+github: &GH "jenkinsci/abend-aid-plugin"
+paths:
+- "io/jenkins/plugins/abend-aid"
+developers:
+- "tyler_havener"
+issues:
+  - github: *GH

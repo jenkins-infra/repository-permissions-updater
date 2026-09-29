@@ -1,0 +1,11 @@
+---
+name: "jtm"
+github: &GH "jenkinsci/jtm-plugin"
+paths:
+- "io/jenkins/plugins/jtm"
+developers:
+- "0if0"
+issues:
+  - github: *GH
+cd:
+  enabled: true

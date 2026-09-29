@@ -5,4 +5,9 @@ issues:
   - jira: '17655'  # groovy-label-assignment-plugin
 paths:
   - "jp/ikedam/jenkins/plugins/groovy-label-assignment"
-developers: []
+cd:
+  enabled: true
+developers:
+  - ldap: "kitos9112"
+    github: "kitos9112"
+manageGitHubPermissions: true

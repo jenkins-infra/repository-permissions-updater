@@ -1,0 +1,11 @@
+---
+name: "executors-monitor"
+github: &GH "jenkinsci/executors-monitor-plugin"
+paths:
+- "io/jenkins/plugins/executors-monitor"
+developers:
+- "jimklimov"
+issues:
+  - github: *GH
+cd:
+  enabled: true

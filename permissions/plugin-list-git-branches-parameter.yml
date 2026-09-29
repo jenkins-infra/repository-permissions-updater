@@ -5,5 +5,8 @@ issues:
   - jira: '24641'  # list-git-branches-parameter-plugin
 paths:
   - "org/jenkins-ci/plugins/list-git-branches-parameter"
+cd:
+  enabled: true
 developers:
   - "huangsuoyuan"
+  - "timja"

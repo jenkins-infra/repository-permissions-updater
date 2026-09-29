@@ -1,0 +1,11 @@
+---
+name: "gitlab-registry-image-parameter"
+github: &GH "jenkinsci/gitlab-registry-image-parameter-plugin"
+paths:
+- "io/jenkins/plugins/gitlab-registry-image-parameter"
+developers:
+- "mlinops"
+issues:
+  - github: *GH
+cd:
+  enabled: true

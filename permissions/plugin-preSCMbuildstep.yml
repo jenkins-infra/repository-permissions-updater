@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/preSCMbuildstep"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true
 cd:
   enabled: true

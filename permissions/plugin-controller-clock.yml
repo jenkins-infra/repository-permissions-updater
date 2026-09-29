@@ -1,0 +1,11 @@
+---
+name: "controller-clock"
+github: &GH "jenkinsci/controller-clock-plugin"
+paths:
+- "io/jenkins/plugins/controller-clock"
+developers:
+- "rj_anish_choudhary"
+issues:
+  - github: *GH
+cd:
+  enabled: true

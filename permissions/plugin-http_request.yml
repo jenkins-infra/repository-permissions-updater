@@ -5,9 +5,12 @@ issues:
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/http_request"
+cd:
+  enabled: true
 developers:
   - "janario"
   - "markewaite"
+  - "leduchieu_101"
   - "oleg_nenashev"
   - "sandi2382"
   - "ralnoc"

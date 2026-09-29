@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/JDK_Parameter_Plugin"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true

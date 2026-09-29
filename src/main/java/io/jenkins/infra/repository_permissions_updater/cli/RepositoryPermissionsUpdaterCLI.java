@@ -1,6 +1,7 @@
 package io.jenkins.infra.repository_permissions_updater.cli;
 
 import io.jenkins.infra.repository_permissions_updater.cli.commands.CheckHostingCommand;
+import io.jenkins.infra.repository_permissions_updater.cli.commands.GitHubSyncCommand;
 import io.jenkins.infra.repository_permissions_updater.cli.commands.HostCommand;
 import io.jenkins.infra.repository_permissions_updater.cli.commands.SyncCommand;
 import picocli.CommandLine;
@@ -15,7 +16,7 @@ import picocli.CommandLine.Command;
         description = "Repository Permissions Updater - Manage Jenkins plugin permissions",
         mixinStandardHelpOptions = true,
         version = "1.0-SNAPSHOT",
-        subcommands = {SyncCommand.class, CheckHostingCommand.class, HostCommand.class})
+        subcommands = {SyncCommand.class, CheckHostingCommand.class, HostCommand.class, GitHubSyncCommand.class})
 public class RepositoryPermissionsUpdaterCLI implements Runnable {
 
     public static void main(String[] args) {
