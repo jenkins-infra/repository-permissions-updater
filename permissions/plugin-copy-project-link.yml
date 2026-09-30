@@ -6,6 +6,7 @@ issues:
 paths:
   - "hudson/plugins/copyProjectLink/copy-project-link"
   - "org/jenkins-ci/plugins/copy-project-link"
-developers: []
+developers: 
+  - "AbdulRepo54"
 cd:
   enabled: true

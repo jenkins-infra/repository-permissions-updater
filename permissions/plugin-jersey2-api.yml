@@ -4,7 +4,9 @@ github: &GH "jenkinsci/jersey2-api-plugin"
 paths:
   - "io/jenkins/plugins/jersey2-api"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

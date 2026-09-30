@@ -1,0 +1,11 @@
+---
+name: "tdoms"
+github: &GH "jenkinsci/tdoms-plugin"
+paths:
+- "io/jenkins/plugins/tdoms"
+developers:
+- "wimjongman"
+issues:
+  - github: *GH
+cd:
+  enabled: true

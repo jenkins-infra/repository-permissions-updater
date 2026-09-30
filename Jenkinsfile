@@ -85,7 +85,9 @@ node('maven-25 ') {
             archiveArtifacts 'json/*.json'
             if (infra.isTrusted()) {
                 dir('json') {
-                    publishReports(['issues.index.json', 'maintainers.index.json', 'github.index.json'], [useWorkloadIdentity: true])
+                    publishReports(
+                            ['issues.index.json', 'maintainers.index.json', 'github.index.json', 'github-permissions-diff.json'],
+                            [useWorkloadIdentity: true])
                 }
                 stage ('Publish build report') {
                     publishBuildStatusReport()

@@ -5,4 +5,7 @@ issues:
   - jira: '21730'  # chaos-butler-plugin
 paths:
   - "org/jenkins-ci/plugins/chaos-butler"
-developers: []
+developers:
+  - "ayyYoSam"
+cd:
+  enabled: true

@@ -32,3 +32,10 @@ jakarta.activation:jakarta.activation-api;io.jenkins.plugins:jakarta-activation-
 jakarta.mail:jakarta.mail-api;io.jenkins.plugins:jakarta-mail-api
 com.sun.activation:javax.activation;io.jenkins.plugins:javax-activation-api;Consider switching from javax.activation to jakarta.activation and using io.jenkins.plugins:jakarta-activation-api
 com.sun.mail:javax.mail;io.jenkins.plugins:javax-mail-api;Consider switching from javax.mail to jakarta.mail and using io.jenkins.plugins:jakarta-activation-api
+
+org.xerial:sqlite-jdbc;org.jenkins-ci.plugins:database-sqlite
+org.postgresql:postgresql;io.jenkins.plugins:postgresql-api
+org.mariadb.jdbc:mariadb-java-client;io.jenkins.plugins:mariadb-api
+com.mysql:mysql-connector-j;io.jenkins.plugins:mysql-api
+com.h2database:h2;io.jenkins.plugins:h2-api
+com.microsoft.sqlserver:mssql-jdbc;io.jenkins.plugins:sqlserver-api

@@ -22,7 +22,7 @@ jobs:
       github.event.label.name == 'adoption-request'
     steps:
       - name: Remove reminder marker if present
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const REMINDER_LABEL = 'adoption-request-reminded';
@@ -49,7 +49,7 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     steps:
       - name: Check and notify PRs past the 14-day threshold
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const MAIN_LABEL = 'adoption-request';

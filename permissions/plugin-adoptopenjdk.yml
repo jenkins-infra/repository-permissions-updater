@@ -6,7 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/adoptopenjdk"
 developers:
-  - "mmchr"
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true
 cd:
   enabled: true

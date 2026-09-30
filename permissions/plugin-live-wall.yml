@@ -1,0 +1,11 @@
+---
+name: "live-wall"
+github: &GH "jenkinsci/live-wall-plugin"
+paths:
+- "io/jenkins/plugins/live-wall"
+developers:
+- "eduardocerqueira"
+issues:
+  - github: *GH
+cd:
+  enabled: true

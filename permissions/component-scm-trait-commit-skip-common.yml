@@ -1,0 +1,7 @@
+---
+name: "scm-trait-commit-skip-common"
+github: "jenkinsci/scm-trait-commit-skip-plugin"
+paths:
+  - "org/jenkins-ci/plugins/scm-trait-commit-skip-common"
+developers:
+  - "askalski85"

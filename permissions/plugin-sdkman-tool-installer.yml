@@ -1,0 +1,11 @@
+---
+name: "sdkman-tool-installer"
+github: &GH "jenkinsci/sdkman-tool-installer-plugin"
+paths:
+- "io/jenkins/plugins/sdkman-tool-installer"
+developers:
+- "tanktarta"
+issues:
+  - github: *GH
+cd:
+  enabled: true

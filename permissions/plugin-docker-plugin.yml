@@ -9,9 +9,8 @@ paths:
 cd:
   enabled: true
 developers:
-  - "integer"
-  - "magnayn"
-  - "pjdarton"
-  - "markewaite"
-  - "poddingue"
-  - "krisstern"
+  - ldap: "krisstern"
+    github: "krisstern"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true

@@ -6,4 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/built-on-column"
 developers:
-  - "markewaite"
+  - ldap: "markewaite"
+    github: "markewaite"
+manageGitHubPermissions: true

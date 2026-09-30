@@ -1,0 +1,11 @@
+---
+name: "build-change-investigator"
+github: &GH "jenkinsci/build-change-investigator-plugin"
+paths:
+- "io/jenkins/plugins/build-change-investigator"
+developers:
+- "azeemsidd3"
+issues:
+  - github: *GH
+cd:
+  enabled: true

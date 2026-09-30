@@ -1,6 +1,11 @@
 ---
 name: "openstack-cloud-parent"
+github: "jenkinsci/openstack-cloud-plugin"
+cd:
+  enabled: true
 paths:
   - "org/jenkins-ci/plugins/openstack-cloud-parent"
 developers:
   - "olivergondza"
+  - "simonelbaz"
+  - "krisstern"
