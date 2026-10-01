@@ -2,7 +2,9 @@
 name: "delivery-pipeline-plugin"
 github: &GH "jenkinsci/delivery-pipeline-plugin"
 issues:
-  - github: *GH
+  - github: *GH   # The preferred issue tracker
+  - jira: '18134' # delivery-pipeline-plugin
+    report: false # No new issues should be reported here
 paths:
   - "se/diabol/jenkins/pipeline/delivery-pipeline-plugin"
 developers:
