@@ -1,0 +1,11 @@
+---
+name: "dracula-theme"
+github: &GH "jenkinsci/dracula-theme-plugin"
+paths:
+- "io/jenkins/plugins/dracula-theme"
+developers:
+- "swink"
+issues:
+  - github: *GH
+cd:
+  enabled: true
