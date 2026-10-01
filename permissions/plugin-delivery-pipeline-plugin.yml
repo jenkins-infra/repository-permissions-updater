@@ -8,3 +8,5 @@ paths:
 developers:
   - "rzanner"
   - "gsoffredini"
+cd:
+  enabled: true
