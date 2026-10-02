@@ -7,3 +7,5 @@ paths:
   - "com/loadfocus/loadfocus-jmeter-load-testing-integration"
 developers:
   - "loadfocus"
+cd:
+  enabled: true
