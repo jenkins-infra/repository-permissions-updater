@@ -1,10 +1,12 @@
 ---
 name: "delivery-pipeline-plugin"
-github: &gh "jenkinsci/delivery-pipeline-plugin"
+github: &GH "jenkinsci/delivery-pipeline-plugin"
 issues:
-  - jira: '18134' # delivery-pipeline-plugin
+  - github: *GH
 paths:
   - "se/diabol/jenkins/pipeline/delivery-pipeline-plugin"
 developers:
   - "rzanner"
   - "gsoffredini"
+cd:
+  enabled: true
