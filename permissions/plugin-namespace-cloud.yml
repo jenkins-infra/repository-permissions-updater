@@ -1,0 +1,11 @@
+---
+name: "namespace-cloud"
+github: &GH "jenkinsci/namespace-cloud-plugin"
+paths:
+- "io/jenkins/plugins/namespace-cloud"
+developers:
+- "sobhe_higaze"
+issues:
+  - github: *GH
+cd:
+  enabled: true
