@@ -1,0 +1,11 @@
+---
+name: "xml-editor"
+github: &GH "jenkinsci/xml-editor-plugin"
+paths:
+- "io/jenkins/plugins/xml-editor"
+developers:
+- "atozzi_dev"
+issues:
+  - github: *GH
+cd:
+  enabled: true
