@@ -1,0 +1,11 @@
+---
+name: "specs-monitor"
+github: &GH "jenkinsci/specs-monitor-plugin"
+paths:
+- "io/jenkins/plugins/specs-monitor"
+developers:
+- "jasperdrescher"
+issues:
+  - github: *GH
+cd:
+  enabled: true
