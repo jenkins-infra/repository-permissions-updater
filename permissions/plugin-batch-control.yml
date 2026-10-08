@@ -1,0 +1,11 @@
+---
+name: "batch-control"
+github: &GH "jenkinsci/batch-control-plugin"
+paths:
+- "io/jenkins/plugins/batch-control"
+developers:
+- "yong_goose"
+issues:
+  - github: *GH
+cd:
+  enabled: true
