@@ -1,10 +1,17 @@
 ---
 name: "repo"
-github: "jenkinsci/repo-plugin"
+github: &gh "jenkinsci/repo-plugin"
 issues:
-  - jira: '16077'  # repo-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/repo"
+cd:
+  enabled: true
 developers:
-  - "rsandell"
-  - "typz"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "typz"
+    github: "francoisferrand"
+  - ldap: "victor_yousician"
+    github: "balakine"
+manageGitHubPermissions: true
