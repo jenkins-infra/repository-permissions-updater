@@ -13,3 +13,5 @@ developers:
   - ldap: "markewaite"
     github: "markewaite"
 manageGitHubPermissions: true
+cd:
+  enabled: true
