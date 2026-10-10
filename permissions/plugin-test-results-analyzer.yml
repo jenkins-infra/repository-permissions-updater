@@ -14,5 +14,7 @@ developers:
     github: "MarkEWaite"
   - ldap: "timja"
     github: "timja"
-    
+  - ldap: "poddingue"
+    github: "gounthar"
+
 manageGitHubPermissions: true
