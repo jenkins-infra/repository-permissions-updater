@@ -1,6 +1,6 @@
 ---
 name: "file-leak-detector"
-github: "jenkinsci/file-leak-detector-plugin"
+github: &gh "jenkinsci/file-leak-detector-plugin"
 issues:
   - github: *gh
 paths:
