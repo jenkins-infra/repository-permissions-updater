@@ -1,8 +1,8 @@
 ---
 name: "file-leak-detector"
-github: "jenkinsci/file-leak-detector-plugin"
+github: &gh "jenkinsci/file-leak-detector-plugin"
 issues:
-  - jira: '17595'  # file-leak-detector-plugin
+  - github: *gh
 paths:
   - "com/cloudbees/jenkins/plugins/file-leak-detector"
 developers:
@@ -13,3 +13,5 @@ developers:
   - ldap: "markewaite"
     github: "markewaite"
 manageGitHubPermissions: true
+cd:
+  enabled: true
