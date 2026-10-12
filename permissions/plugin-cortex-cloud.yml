@@ -1,0 +1,11 @@
+---
+name: "cortex-cloud"
+github: &GH "jenkinsci/cortex-cloud-plugin"
+paths:
+- "io/jenkins/plugins/cortex-cloud"
+developers:
+- "shahar_eshet"
+issues:
+  - github: *GH
+cd:
+  enabled: true
