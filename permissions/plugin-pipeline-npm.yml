@@ -5,7 +5,7 @@ issues:
   - github: *GH
 paths:
   - "org/jenkins-ci/plugins/pipeline-npm"
+developers: []
+manageGitHubPermissions: true
 cd:
   enabled: true
-developers:
-  - "timdowney"
