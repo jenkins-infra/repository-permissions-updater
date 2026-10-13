@@ -4,7 +4,9 @@ github: &GH "jenkinsci/jobcacher-oras-storage-plugin"
 paths:
 - "io/jenkins/plugins/jobcacher-oras-storage"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

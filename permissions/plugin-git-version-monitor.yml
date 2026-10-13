@@ -6,6 +6,8 @@ paths:
 cd:
   enabled: true
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH

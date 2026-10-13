@@ -4,7 +4,9 @@ github: &GH "jenkinsci/database-mariadb-plugin"
 paths:
 - "io/jenkins/plugins/database-mariadb"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

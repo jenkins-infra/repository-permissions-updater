@@ -4,7 +4,9 @@ github: &GH "jenkinsci/commons-math3-api-plugin"
 paths:
 - "io/jenkins/plugins/commons-math3-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 cd:
   enabled: true
 issues:

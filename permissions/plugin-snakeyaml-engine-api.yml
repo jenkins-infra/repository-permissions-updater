@@ -4,7 +4,9 @@ github: &GH "jenkinsci/snakeyaml-engine-api-plugin"
 paths:
 - "io/jenkins/plugins/snakeyaml-engine-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

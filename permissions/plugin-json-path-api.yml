@@ -4,7 +4,9 @@ github: &GH "jenkinsci/json-path-api-plugin"
 paths:
 - "io/jenkins/plugins/json-path-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

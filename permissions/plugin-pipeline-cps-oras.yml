@@ -4,7 +4,9 @@ github: &GH "jenkinsci/pipeline-cps-oras-plugin"
 paths:
 - "io/jenkins/plugins/pipeline-cps-oras"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

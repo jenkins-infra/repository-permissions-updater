@@ -6,6 +6,8 @@ issues:
 paths:
   - "jenkins/ci/plugins/exclusive/label/exclusive-label-plugin"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 cd:
   enabled: true

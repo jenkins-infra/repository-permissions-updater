@@ -4,7 +4,9 @@ github: &GH "jenkinsci/oras-parameters-plugin"
 paths:
 - "io/jenkins/plugins/oras-parameters"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

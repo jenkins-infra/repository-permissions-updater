@@ -6,6 +6,8 @@ issues:
 paths:
   - "io/jenkins/plugins/jnr-posix-api"
 developers:
-  - "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 cd:
   enabled: true

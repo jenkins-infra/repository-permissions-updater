@@ -4,7 +4,9 @@ github: &GH "jenkinsci/nimbus-jose-jwt-api-plugin"
 paths:
 - "io/jenkins/plugins/nimbus-jose-jwt-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:
