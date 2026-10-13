@@ -10,5 +10,8 @@ paths:
 cd:
   enabled: true
 developers:
-  - "abayer"
-  - "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+  - ldap: "timja"
+    github: "timja"
+manageGitHubPermissions: true
