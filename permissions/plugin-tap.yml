@@ -6,5 +6,8 @@ issues:
 paths:
   - "org/tap4j/tap"
 developers:
-  - "kinow"
-  - "judovana"
+  - ldap: "kinow"
+    github: "kinow"
+  - ldap: "judovana"
+    github: "judovana"
+manageGitHubPermissions: true
