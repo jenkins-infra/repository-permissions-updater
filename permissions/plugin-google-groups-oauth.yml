@@ -1,0 +1,11 @@
+---
+name: "google-groups-oauth"
+github: &GH "jenkinsci/google-groups-oauth-plugin"
+paths:
+- "io/jenkins/plugins/google-groups-oauth"
+developers:
+- "tlmanz"
+issues:
+  - github: *GH
+cd:
+  enabled: true
