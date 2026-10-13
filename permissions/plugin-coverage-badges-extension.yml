@@ -4,7 +4,9 @@ github: &GH "jenkinsci/coverage-badges-extension-plugin"
 paths:
 - "io/jenkins/plugins/coverage-badges-extension"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

@@ -4,7 +4,9 @@ github: &GH "jenkinsci/oras-artifact-manager-plugin"
 paths:
 - "io/jenkins/plugins/oras-artifact-manager"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

@@ -4,7 +4,9 @@ github: &GH "jenkinsci/jwt-auth-filter-plugin"
 paths:
 - "io/jenkins/plugins/jwt-auth-filter"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

@@ -4,7 +4,9 @@ github: &GH "jenkinsci/simple-priority-sorter-plugin"
 paths:
 - "io/jenkins/plugins/simple-priority-sorter"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

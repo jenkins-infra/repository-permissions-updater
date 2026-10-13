@@ -4,7 +4,9 @@ github: &GH "jenkinsci/woodstox-core-api-plugin"
 paths:
 - "io/jenkins/plugins/woodstox-core-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

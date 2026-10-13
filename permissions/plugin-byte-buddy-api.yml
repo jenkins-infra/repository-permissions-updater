@@ -4,7 +4,9 @@ github: &GH "jenkinsci/byte-buddy-api-plugin"
 paths:
 - "io/jenkins/plugins/byte-buddy-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

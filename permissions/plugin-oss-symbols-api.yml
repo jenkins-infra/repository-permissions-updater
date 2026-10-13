@@ -4,7 +4,9 @@ github: &GH "jenkinsci/oss-symbols-api-plugin"
 paths:
 - "io/jenkins/plugins/oss-symbols-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 cd:
   enabled: true
 issues:

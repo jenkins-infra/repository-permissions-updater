@@ -4,7 +4,9 @@ github: &GH "jenkinsci/gson-api-plugin"
 paths:
 - "io/jenkins/plugins/gson-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

@@ -4,7 +4,9 @@ github: &GH "jenkinsci/artifactory-client-api-plugin"
 paths:
 - "io/jenkins/plugins/artifactory-client-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

@@ -4,7 +4,9 @@ github: &GH "jenkinsci/jobcacher-artifactory-storage-plugin"
 paths:
 - "io/jenkins/plugins/jobcacher-artifactory-storage"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

@@ -4,7 +4,9 @@ github: &GH "jenkinsci/micrometer-core-api-plugin"
 paths:
 - "io/jenkins/plugins/micrometer-core-api"
 developers:
-- "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:

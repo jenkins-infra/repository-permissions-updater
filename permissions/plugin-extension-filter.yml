@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/extension-filter"
 developers:
-  - "jonesbusy"
+  - ldap: "jonesbusy"
+    github: "jonesbusy"
+manageGitHubPermissions: true
 cd:
   enabled: true
