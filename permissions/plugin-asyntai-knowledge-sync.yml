@@ -1,0 +1,11 @@
+---
+name: "asyntai-knowledge-sync"
+github: &GH "jenkinsci/asyntai-knowledge-sync-plugin"
+paths:
+- "io/jenkins/plugins/asyntai-knowledge-sync"
+developers:
+- "asyntai"
+issues:
+  - github: *GH
+cd:
+  enabled: true
