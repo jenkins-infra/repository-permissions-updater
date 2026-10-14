@@ -1,8 +1,12 @@
 ---
 name: "daily-quote"
-github: "jenkinsci/daily-quote-plugin"
+github: &gh "jenkinsci/daily-quote-plugin"
 issues:
-  - jira: '18160'  # daily-quote-plugin
+  - github: *gh
 paths:
   - "org/jenkins-ci/plugins/daily-quote"
-developers: []
+developers:
+  - ldap: "dejan2609"
+    github: "dejan2609"
+manageGitHubPermissions: true
+
