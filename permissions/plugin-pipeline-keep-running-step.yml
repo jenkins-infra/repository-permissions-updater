@@ -7,3 +7,5 @@ paths:
   - "io/jenkins/plugins/pipeline-keep-running-step"
 developers:
   - "hummerstudio"
+cd:
+  enabled: true
