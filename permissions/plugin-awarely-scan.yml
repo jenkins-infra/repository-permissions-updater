@@ -1,0 +1,11 @@
+---
+name: "awarely-scan"
+github: &GH "jenkinsci/awarely-scan-plugin"
+paths:
+- "io/jenkins/plugins/awarely-scan"
+developers:
+- "awarely_ro"
+issues:
+  - github: *GH
+cd:
+  enabled: true
