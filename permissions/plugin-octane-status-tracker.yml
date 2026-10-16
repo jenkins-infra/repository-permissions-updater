@@ -1,0 +1,11 @@
+---
+name: "octane-status-tracker"
+github: &GH "jenkinsci/octane-status-tracker-plugin"
+paths:
+- "io/jenkins/plugins/octane-status-tracker"
+developers:
+- "embiti"
+issues:
+  - github: *GH
+cd:
+  enabled: true
