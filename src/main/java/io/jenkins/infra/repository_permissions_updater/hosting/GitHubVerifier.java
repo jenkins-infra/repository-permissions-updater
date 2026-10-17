@@ -38,6 +38,7 @@ public class GitHubVerifier implements Verifier {
             List<String> invalidUsers = new ArrayList<>();
             for (String user : users) {
                 try {
+                    user = user.replace("@", "");
                     GHUser ghUser = github.getUser(user.trim());
                     if (ghUser == null || !ghUser.getType().equalsIgnoreCase("user")) {
                         invalidUsers.add(user.trim());

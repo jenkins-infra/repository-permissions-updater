@@ -39,10 +39,6 @@ public class JenkinsProjectUserVerifier implements Verifier {
                         "The following usernames in 'Jenkins project users to have release permission' need to log into [Jira](https://issues.jenkins.io): %s (reports are re-synced hourly, wait to re-check for a bit after logging in)",
                         missingInJira));
             }
-        } else {
-            hostingIssues.add(new VerificationMessage(
-                    VerificationMessage.Severity.REQUIRED,
-                    "The Jenkins project users list is empty. Please specify at least one user."));
         }
     }
 }

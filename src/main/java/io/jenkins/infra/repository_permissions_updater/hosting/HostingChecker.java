@@ -43,7 +43,7 @@ public class HostingChecker {
         verifications.add(Triplet.with("Jelly", new JellyVerifier(hostingIssues), null));
         verifications.add(Triplet.with("RequiredFiles", new RequiredFilesVerifier(hostingIssues), null));
 
-        final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
+        final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID, hostingIssues);
 
         for (Triplet<String, Verifier, ConditionChecker> verifier : verifications) {
             try {
@@ -76,7 +76,7 @@ public class HostingChecker {
                     + "approved until these issues are corrected. Issues marked with Warning "
                     + "or Info are just recommendations and will not stall the hosting process.\n");
             LOGGER.info("Appending issues to msg");
-            appendIssues(msg, hostingIssues, 1);
+            appendIssues(msg, hostingIssues, 0);
             msg.append(
                     "\nYou can re-trigger a check by editing your hosting request or by commenting `/hosting re-check`");
         } else {
@@ -109,15 +109,15 @@ public class HostingChecker {
     private void appendIssues(StringBuilder msg, Set<VerificationMessage> issues, int level) {
         for (VerificationMessage issue :
                 issues.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList())) {
-            if (level == 1) {
+            if (level == 0) {
                 msg.append("%s %s %s: %s%n"
                         .formatted(
-                                StringUtils.repeat("*", level),
+                                "-",
                                 issue.getSeverity().getColor(),
                                 issue.getSeverity().getMessage(),
                                 issue.getMessage()));
             } else {
-                msg.append("%s %s%n".formatted(StringUtils.repeat("*", level), issue.getMessage()));
+                msg.append("%s %s%n".formatted(StringUtils.repeat(" ", level * 2) + "-", issue.getMessage()));
             }
 
             if (issue.getSubItems() != null) {
