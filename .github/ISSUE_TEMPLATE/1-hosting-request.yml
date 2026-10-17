@@ -31,23 +31,16 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: GitHub users to have commit permission
-      placeholder: |
-        @user1
-        @user2
-        @user3
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Jenkins project users to have release permission
+      label: GitHub and Jenkins project users
       description: |
-        The Jenkins project has it's own identity system, users can sign up at https://accounts.jenkins.io. All users *must* sign in to [Jira](https://issues.jenkins.io) and [Artifactory](https://repo.jenkins-ci.org/).
-        The user(s) listed must NOT be mentioned. The Jenkins identity system account name is handled independently of the GitHub user handle.
+        Define the users that should get GitHub repository access and Jenkins project release permissions. Put GitHub and the corresponding Jenkins project user on the same line. The GitHub user must be prefixed with an `@` symbol, and the Jenkins project user must be listed as is.
+        You can first write the GitHub user and then the Jenkins project user, or vice versa. You can also write only one of them, if certain users should not have both permissions. At least one GitHub and one Jenkins project user must be listed.
+        The Jenkins project has its own identity system, users can sign up at https://accounts.jenkins.io. All users *must* sign in to [Jira](https://issues.jenkins.io). Sign in to [Artifactory](https://repo.jenkins-ci.org/) is required when automated releases are disabled.
       placeholder: |
-        user1
-        user2
-        user3
+        @githubuser1 jirauser1
+        @githubuser2
+        jirauser3
+        jirauser4 @githubuser4
     validations:
       required: true
   - type: dropdown

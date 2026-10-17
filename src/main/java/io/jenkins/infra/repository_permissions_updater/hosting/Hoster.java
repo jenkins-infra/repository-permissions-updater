@@ -14,12 +14,14 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.jspecify.annotations.NonNull;
 import org.kohsuke.github.GHContent;
 import org.kohsuke.github.GHContentBuilder;
 import org.kohsuke.github.GHIssue;
@@ -38,11 +40,18 @@ public class Hoster {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Hoster.class);
 
+    private final boolean debug;
+
+    public Hoster() {
+        debug = System.getProperty("debugHosting", "false").equalsIgnoreCase("true");
+    }
+
     public void run(int issueID) {
         LOGGER.info("Approving hosting request {}", issueID);
 
         try {
-            final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
+
+            final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID, null);
 
             String forkFrom = hostingRequest.getRepositoryUrl();
             List<String> users = hostingRequest.getGithubUsers();
@@ -61,7 +70,7 @@ public class Hoster {
             Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE)
                     .matcher(forkFrom);
             if (m.matches()) {
-                if (!forkGitHub(issueID, m.group(1), m.group(2), forkTo, users)) {
+                if (!debug && !forkGitHub(issueID, m.group(1), m.group(2), forkTo, users)) {
                     LOGGER.error("Hosting request failed to fork repository on Github");
                     return;
                 }
@@ -72,8 +81,7 @@ public class Hoster {
                 return;
             }
 
-            String prUrl =
-                    createUploadPermissionPR(issueID, forkTo, users, hostingRequest.getJenkinsProjectUsers(), enableCD);
+            String prUrl = createUploadPermissionPR(issueID, forkTo, hostingRequest, enableCD);
             if (StringUtils.isBlank(prUrl)) {
                 String msg = "Could not create upload permission pull request";
                 LOGGER.error(msg);
@@ -111,10 +119,14 @@ public class Hoster {
                     + "\n\nWelcome aboard!";
 
             // add comment
-            GitHub github = GitHub.connect();
-            GHIssue issue = github.getRepository(HOSTING_REPO_SLUG).getIssue(issueID);
-            issue.comment(msg);
-            issue.close();
+            if (!debug) {
+                GitHub github = GitHub.connect();
+                GHIssue issue = github.getRepository(HOSTING_REPO_SLUG).getIssue(issueID);
+                issue.comment(msg);
+                issue.close();
+            } else {
+                LOGGER.info("Debug mode enabled, not updating issue with message: {}", msg);
+            }
 
             LOGGER.info("Hosting setup complete");
         } catch (IOException e) {
@@ -129,6 +141,10 @@ public class Hoster {
                 + errorMessage
                 + "\n\nSomeone from the hosting team will look into this as soon as possible.\n"
                 + "Sorry for the inconvenience!";
+        if (debug) {
+            LOGGER.info("Debug mode enabled, not updating issue with message: {}", msg);
+            return;
+        }
         issue.comment(msg);
     }
 
@@ -327,14 +343,15 @@ public class Hoster {
     }
 
     @SuppressFBWarnings(value = "VA_FORMAT_STRING_USES_NEWLINE", justification = "TODO needs triage")
-    String createUploadPermissionPR(
-            int issueId, String forkTo, List<String> ghUsers, List<String> releaseUsers, boolean enableCD) {
+    String createUploadPermissionPR(int issueId, String forkTo, HostingRequest hostingRequest, boolean enableCD) {
         String prUrl = "";
         boolean isPlugin = forkTo.endsWith("-plugin");
+        List<String> releaseUsers = hostingRequest.getJenkinsProjectUsers();
+        List<String> ghUsers = hostingRequest.getGithubUsers();
         if (isPlugin) {
             String branchName = "hosting-" + forkTo + "-permissions";
             try {
-                if (releaseUsers.isEmpty()) {
+                if (hostingRequest.getJenkinsProjectUsers().isEmpty()) {
                     LOGGER.info("No users defined for release permissions, will not create PR");
                     return null;
                 }
@@ -343,41 +360,52 @@ public class Hoster {
                 GHOrganization org = github.getOrganization(INFRA_ORGANIZATION);
                 GHRepository repo = org.getRepository(HOSTING_REPO_NAME);
 
-                String artifactPath = getArtifactPath(github, forkTo);
+                String artifactPath = getArtifactPath(github, forkTo, hostingRequest);
                 if (StringUtils.isBlank(artifactPath)) {
                     LOGGER.info("Could not resolve artifact path for {}", forkTo);
                     return null;
                 }
 
-                if (!repo.getBranches().containsKey(branchName)) {
+                if (!debug && !repo.getBranches().containsKey(branchName)) {
                     repo.createRef(
                             "refs/heads/" + branchName, repo.getBranch("master").getSHA1());
                 }
 
                 GHContentBuilder builder = repo.createContent();
-                builder = builder.branch(branchName).message("Adding upload permissions file for " + forkTo);
+                if (!debug) {
+                    builder = builder.branch(branchName).message("Adding upload permissions file for " + forkTo);
+                }
                 String name = forkTo.replace("-plugin", "");
-                String content = "---\n" + "name: \""
-                        + name + "\"\n" + "github: &GH \""
-                        + TARGET_ORG_NAME + "/" + forkTo + "\"\n" + "paths:\n"
-                        + "- \""
-                        + artifactPath + "\"\n" + "developers:\n";
-                StringBuilder developerBuilder = new StringBuilder();
-                for (String u : releaseUsers) {
-                    developerBuilder.append("- \"").append(u).append("\"\n");
+                String developers = getDevelopers(
+                        hostingRequest.isManageGitHubPermissions(),
+                        hostingRequest.getGithubJenkinsProjectUsers(),
+                        releaseUsers);
+                String content = """
+                        ---
+                        name: "%s"
+                        github: &GH "%s/%s"
+                        paths:
+                        - "%s"
+                        developers:
+                        %s
+                        issues:
+                          - github: *GH
+                        %s
+                        """.formatted(
+                                name,
+                                TARGET_ORG_NAME,
+                                forkTo,
+                                artifactPath,
+                                developers,
+                                enableCD ? "cd:\n  enabled: true" : "");
+
+                if (!debug) {
+                    builder.content(content)
+                            .path("permissions/plugin-" + forkTo.replace("-plugin", "") + ".yml")
+                            .commit();
+                } else {
+                    LOGGER.info("Debug mode enabled, not creating PR content file with content: {}", content);
                 }
-                content += developerBuilder.toString();
-
-                content += "issues:\n";
-                content += "  - github: *GH\n";
-
-                if (enableCD) {
-                    content += "cd:\n  enabled: true\n";
-                }
-
-                builder.content(content)
-                        .path("permissions/plugin-" + forkTo.replace("-plugin", "") + ".yml")
-                        .commit();
 
                 String prText = """
                         Hello from your friendly Jenkins Hosting Bot!
@@ -393,9 +421,13 @@ public class Hoster {
                                 forkTo,
                                 ghUsers.stream().map(u -> "@" + u).collect(joining(", ")));
 
-                GHPullRequest pr = repo.createPullRequest(
-                        "Add upload permissions for " + forkTo, branchName, repo.getDefaultBranch(), prText);
-                prUrl = pr.getHtmlUrl().toString();
+                if (!debug) {
+                    GHPullRequest pr = repo.createPullRequest(
+                            "Add upload permissions for " + forkTo, branchName, repo.getDefaultBranch(), prText);
+                    prUrl = pr.getHtmlUrl().toString();
+                } else {
+                    prUrl = "DEBUG_MODE_PR_URL";
+                }
                 LOGGER.info("Created PR for repository permissions updater: {}", prUrl);
             } catch (Exception e) {
                 LOGGER.error("Error creating PR", e);
@@ -407,11 +439,56 @@ public class Hoster {
         return prUrl;
     }
 
-    private static String getArtifactPath(GitHub github, String forkTo) throws IOException {
+    static @NonNull String getDevelopers(
+            boolean isManageGitHubPermissions,
+            List<Map<String, String>> githubJenkinsProjectUsers,
+            List<String> releaseUsers) {
+        String developers;
+        if (isManageGitHubPermissions) {
+            StringBuilder devbuilder = new StringBuilder();
+            githubJenkinsProjectUsers.forEach(entry -> {
+                devbuilder.append("  - ");
+                if (entry.containsKey("ldap")) {
+                    devbuilder.append("ldap: \"").append(entry.get("ldap")).append("\"");
+                    if (entry.containsKey("github")) {
+                        devbuilder
+                                .append("\n    github: \"")
+                                .append(entry.get("github").replace("@", ""))
+                                .append("\"");
+                    }
+                } else if (entry.containsKey("github")) {
+                    devbuilder
+                            .append("github: \"")
+                            .append(entry.get("github").replace("@", ""))
+                            .append("\"");
+                }
+                devbuilder.append("\n");
+            });
+            devbuilder.append("manageGitHubPermissions: true");
+            developers = devbuilder.toString();
+        } else {
+            developers = releaseUsers.stream().map(u -> "  - \"" + u + "\"").collect(joining("\n"));
+        }
+        return developers.stripTrailing();
+    }
+
+    private String getArtifactPath(GitHub github, String forkTo, HostingRequest hostingRequest) throws IOException {
         String res = "";
 
         GHOrganization org = github.getOrganization(TARGET_ORG_NAME);
         GHRepository fork = org.getRepository(forkTo);
+        if (debug) {
+            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE)
+                    .matcher(hostingRequest.getRepositoryUrl());
+            if (m.matches()) {
+                String owner = m.group(1);
+                String repoName = m.group(2);
+
+                fork = github.getRepository(owner + "/" + repoName);
+            } else {
+                return null;
+            }
+        }
 
         if (fork == null) {
             return null;
