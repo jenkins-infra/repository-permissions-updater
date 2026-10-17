@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.util.HashSet;
 import java.util.Locale;
+import java.util.Map;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -34,40 +35,134 @@ public class JellyVerifier implements Verifier {
             "One or more usages of inline javascript tags, style tags or event handlers have been identified. See "
                     + "https://www.jenkins.io/doc/developer/security/csp/ for more information how to make your jelly files CSP compliant";
 
-    private final HashSet<VerificationMessage> hostingIssues;
-    private final RepositoryCheckout checkout;
+    static final String CHECK_METHOD_POST =
+            "The following jelly files set `checkMethod=\"post\"`. POST is the default for form validation, so this can be removed, "
+                    + "and it is not supported by all tags (e.g. `c:select`):";
+    static final String REPEATABLE_WITHOUT_DELETE =
+            "The following jelly files use `f:repeatable` without a `f:repeatableDeleteButton`, so users cannot remove entries. "
+                    + "If the order matters, also set the `header` attribute to allow reordering entries with drag and drop:";
+    static final String CREDENTIALS_WITHOUT_SELECT =
+            "The following jelly files ask for a credentials ID in a text box or a plain select. "
+                    + "Use `<c:select/>` from the credentials plugin and implement `doFill...Items` with `StandardListBoxModel` so users can select from the available credentials:";
 
-    public JellyVerifier(HashSet<VerificationMessage> hostingIssues, RepositoryCheckout checkout) {
+    private static final String FORM_TAGLIB = "/lib/form";
+    private static final String CREDENTIALS_TAGLIB = "/lib/credentials";
+
+    private final HashSet<VerificationMessage> hostingIssues;
+    private final RepositoryFiles files;
+
+    public JellyVerifier(HashSet<VerificationMessage> hostingIssues, RepositoryFiles files) {
         this.hostingIssues = hostingIssues;
-        this.checkout = checkout;
+        this.files = files;
     }
 
     @Override
     public void verify(HostingRequest issue) throws IOException {
+        Map<String, String> jellyFiles =
+                files.matching(path -> path.endsWith(".jelly") && path.startsWith("src/main/resources/"));
+
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         dbf.setNamespaceAware(true);
         try {
             dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
             DocumentBuilder db = dbf.newDocumentBuilder();
-            for (String jellyFile : checkout.findFiles("src/main/resources", ".jelly")) {
-                String url = checkout.fileUrl(jellyFile);
-                try (StringReader contents =
-                        new StringReader(checkout.read(jellyFile).orElseThrow())) {
-                    Document doc = db.parse(new InputSource(contents));
+            HashSet<VerificationMessage> checkMethodPost = new HashSet<>();
+            HashSet<VerificationMessage> repeatableWithoutDelete = new HashSet<>();
+            HashSet<VerificationMessage> credentialsWithoutSelect = new HashSet<>();
+            for (Map.Entry<String, String> jellyFile : jellyFiles.entrySet()) {
+                String link = files.link(jellyFile.getKey(), 0);
+                try {
+                    Document doc = db.parse(new InputSource(new StringReader(jellyFile.getValue())));
                     Element root = doc.getDocumentElement();
-                    boolean hasIssues = checkStyleElement(root, hostingIssues, url);
-                    hasIssues |= checkScriptElement(root, hostingIssues, url);
-                    hasIssues |= checkJavaScriptAttributes(root, hostingIssues, url);
+                    boolean hasIssues = checkStyleElement(root, hostingIssues, link);
+                    hasIssues |= checkScriptElement(root, hostingIssues, link);
+                    hasIssues |= checkJavaScriptAttributes(root, hostingIssues, link);
                     if (hasIssues) {
                         hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.INFO, CSP_HELP));
                     }
+                    if (hasCheckMethodPost(root)) {
+                        checkMethodPost.add(new VerificationMessage(VerificationMessage.Severity.INFO, "%s", link));
+                    }
+                    if (hasRepeatableWithoutDeleteButton(root)) {
+                        repeatableWithoutDelete.add(
+                                new VerificationMessage(VerificationMessage.Severity.INFO, "%s", link));
+                    }
+                    if (hasCredentialsFieldWithoutCredentialsSelect(root)) {
+                        credentialsWithoutSelect.add(
+                                new VerificationMessage(VerificationMessage.Severity.INFO, "%s", link));
+                    }
                 } catch (SAXException e) {
-                    LOGGER.warn("Failed to parse jelly {}", jellyFile);
+                    LOGGER.warn("Failed to parse jelly {}", jellyFile.getKey());
                 }
             }
+            addWithSubItems(VerificationMessage.Severity.INFO, CHECK_METHOD_POST, checkMethodPost);
+            addWithSubItems(VerificationMessage.Severity.WARNING, REPEATABLE_WITHOUT_DELETE, repeatableWithoutDelete);
+            addWithSubItems(VerificationMessage.Severity.WARNING, CREDENTIALS_WITHOUT_SELECT, credentialsWithoutSelect);
         } catch (ParserConfigurationException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private void addWithSubItems(
+            VerificationMessage.Severity severity, String message, HashSet<VerificationMessage> findings) {
+        if (!findings.isEmpty()) {
+            hostingIssues.add(new VerificationMessage(severity, findings, "%s", message));
+        }
+    }
+
+    /**
+     * {@code checkMethod="post"} is the default, and not supported on all tags.
+     */
+    static boolean hasCheckMethodPost(Element root) {
+        NodeList allElements = root.getElementsByTagName("*");
+        for (int i = 0; i < allElements.getLength(); i++) {
+            Element e = (Element) allElements.item(i);
+            if ("post".equalsIgnoreCase(e.getAttribute("checkMethod"))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Without {@code f:repeatableDeleteButton} users can add entries to an {@code f:repeatable} but not remove them.
+     */
+    static boolean hasRepeatableWithoutDeleteButton(Element root) {
+        NodeList repeatables = root.getElementsByTagNameNS(FORM_TAGLIB, "repeatable");
+        for (int i = 0; i < repeatables.getLength(); i++) {
+            Element repeatable = (Element) repeatables.item(i);
+            if (repeatable
+                            .getElementsByTagNameNS(FORM_TAGLIB, "repeatableDeleteButton")
+                            .getLength()
+                    == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Fields for credentials IDs should let users select from the available credentials with {@code c:select}.
+     */
+    static boolean hasCredentialsFieldWithoutCredentialsSelect(Element root) {
+        NodeList entries = root.getElementsByTagNameNS(FORM_TAGLIB, "entry");
+        for (int i = 0; i < entries.getLength(); i++) {
+            Element entry = (Element) entries.item(i);
+            if (!entry.getAttribute("field").toLowerCase(Locale.US).matches(".*credentials?id.*")) {
+                continue;
+            }
+            boolean credentialsSelect =
+                    entry.getElementsByTagNameNS(CREDENTIALS_TAGLIB, "select").getLength() > 0;
+            boolean otherInput = entry.getElementsByTagNameNS(FORM_TAGLIB, "textbox")
+                                    .getLength()
+                            > 0
+                    || entry.getElementsByTagNameNS(FORM_TAGLIB, "select").getLength() > 0
+                    || entry.getElementsByTagNameNS(FORM_TAGLIB, "password").getLength() > 0;
+            if (otherInput && !credentialsSelect) {
+                return true;
+            }
+        }
+        return false;
     }
 
     static boolean checkStyleElement(Element root, HashSet<VerificationMessage> hostingIssues, String jellyPath) {

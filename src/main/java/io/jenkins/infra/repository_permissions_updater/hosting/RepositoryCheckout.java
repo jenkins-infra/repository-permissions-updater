@@ -127,13 +127,22 @@ public final class RepositoryCheckout implements AutoCloseable {
         if (dir == null || !Files.isDirectory(dir, LinkOption.NOFOLLOW_LINKS)) {
             return List.of();
         }
+        Path gitDir = root.resolve(".git");
         try (Stream<Path> paths = Files.walk(dir)) {
-            return paths.filter(p -> Files.isRegularFile(p, LinkOption.NOFOLLOW_LINKS))
+            return paths.filter(p -> !p.startsWith(gitDir))
+                    .filter(p -> Files.isRegularFile(p, LinkOption.NOFOLLOW_LINKS))
                     .filter(p -> p.getFileName().toString().endsWith(suffix))
                     .map(p -> root.relativize(p).toString().replace('\\', '/'))
                     .sorted()
                     .toList();
         }
+    }
+
+    /**
+     * @return the size in bytes of the given file on the default branch, or 0 if there is no such file
+     */
+    public long size(String path) throws IOException {
+        return isFile(path) ? Files.size(resolve(path)) : 0;
     }
 
     Path root() {

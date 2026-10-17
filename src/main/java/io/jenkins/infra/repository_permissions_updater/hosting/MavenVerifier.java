@@ -35,6 +35,7 @@ import org.apache.maven.model.DependencyManagement;
 import org.apache.maven.model.License;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.Parent;
+import org.apache.maven.model.Plugin;
 import org.apache.maven.model.Repository;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import org.codehaus.plexus.interpolation.InterpolationException;
@@ -46,6 +47,13 @@ import org.slf4j.LoggerFactory;
 
 public class MavenVerifier implements BuildSystemVerifier {
     private static final String BOM_ROOT_URL = "https://repo.jenkins-ci.org/artifactory/public/io/jenkins/tools/bom/";
+    private static final String REPO_ROOT_URL = "https://repo.jenkins-ci.org/public/";
+    private static final Set<String> COMPILE_ONLY_ANNOTATIONS = Set.of(
+            "com.google.errorprone:error_prone_annotations",
+            "com.google.code.findbugs:jsr305",
+            "org.jetbrains:annotations",
+            "org.checkerframework:checker-qual",
+            "com.google.j2objc:j2objc-annotations");
     private static final int MAX_LENGTH_OF_GROUP_ID_PLUS_ARTIFACT_ID = 100;
     private static final int MAX_LENGTH_OF_ARTIFACT_ID = 37;
     private static final Logger LOGGER = LoggerFactory.getLogger(MavenVerifier.class);
@@ -59,6 +67,17 @@ public class MavenVerifier implements BuildSystemVerifier {
 
     public static final String DEPENDENCY_SHOULD_USE_API_PLUGIN =
             "The dependency `%s` should be replaced with a dependency to the api plugin `%s` %s";
+    public static final String COMPILE_ONLY_ANNOTATION =
+            "The dependency `%s` contains annotations that are only needed at compile time. Add `<scope>provided</scope>` so it is not bundled in the plugin.";
+    public static final String REDUNDANT_DEPENDENCIES =
+            "The following dependencies are already provided and can be removed from the pom.xml:";
+    public static final String REDUNDANT_BUILD_PLUGINS =
+            "The following build plugins are already configured by the parent pom:";
+    public static final String BUNDLED_ARTIFACTS =
+            "The following libraries listed in `hpi.bundledArtifacts` should not be bundled in the plugin. "
+                    + "Add an `<exclusion>` for them to the dependency that brings them in:";
+    public static final String UNUSED_BOM =
+            "None of the dependencies are managed by the bom, so the `<dependencyManagement>` section can be removed.";
     private final HashSet<VerificationMessage> hostingIssues;
     private final RepositoryCheckout checkout;
 
@@ -82,7 +101,10 @@ public class MavenVerifier implements BuildSystemVerifier {
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
             return;
         }
+        verifyModel(model, issue);
+    }
 
+    void verifyModel(Model model, HostingRequest issue) {
         try {
             checkArtifactId(model, issue.getNewRepoName());
             checkParentInfoAndJenkinsVersion(model);
@@ -93,6 +115,8 @@ public class MavenVerifier implements BuildSystemVerifier {
             checkPluginRepositories(model);
             checkSoftwareConfigurationManagementField(model);
             checkDependencies(model);
+            checkCompileOnlyAnnotations(model);
+            checkProvidedByParentOrCore(model);
             checkDependencyManagement(model);
             checkDevelopersTag(model);
             checkProperties(model);
@@ -470,6 +494,9 @@ public class MavenVerifier implements BuildSystemVerifier {
             List<Dependency> pluginDependencies = model.getDependencies().stream()
                     .filter(d -> managedDependencies.contains(getDependencyAsString(d, false)))
                     .toList();
+            if (pluginDependencies.isEmpty() && bom.isPresent() && !managedDependencies.isEmpty()) {
+                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.INFO, UNUSED_BOM));
+            }
             if (!pluginDependencies.isEmpty() && bom.isEmpty()) {
                 dependencyManagementIssues.add(
                         new VerificationMessage(
@@ -605,6 +632,169 @@ public class MavenVerifier implements BuildSystemVerifier {
                         VerificationMessage.Severity.REQUIRED, DEPENDENCY_SHOULD_USE_API_PLUGIN, dep, alt[0], comment));
             }
         });
+    }
+
+    private void checkCompileOnlyAnnotations(Model model) {
+        for (Dependency d : model.getDependencies()) {
+            String dep = d.getGroupId() + ":" + d.getArtifactId();
+            if (isBundled(d) && COMPILE_ONLY_ANNOTATIONS.contains(dep)) {
+                hostingIssues.add(
+                        new VerificationMessage(VerificationMessage.Severity.WARNING, COMPILE_ONLY_ANNOTATION, dep));
+            }
+        }
+    }
+
+    private static boolean isBundled(Dependency d) {
+        return d.getScope() == null
+                || d.getScope().equals("compile")
+                || d.getScope().equals("runtime");
+    }
+
+    private void checkProvidedByParentOrCore(Model model) {
+        Parent parent = model.getParent();
+        if (parent == null
+                || !"org.jenkins-ci.plugins".equals(parent.getGroupId())
+                || !"plugin".equals(parent.getArtifactId())
+                || StringUtils.isBlank(parent.getVersion())) {
+            return;
+        }
+        Model parentModel = readPom(REPO_ROOT_URL + "org/jenkins-ci/plugins/plugin/" + parent.getVersion() + "/plugin-"
+                + parent.getVersion() + ".pom");
+        if (parentModel == null) {
+            return;
+        }
+        Set<String> coreDependencies = Collections.emptySet();
+        JenkinsVersion jenkinsVersion = getJenkinsVersion(model);
+        if (jenkinsVersion != null) {
+            String version = jenkinsVersion.jenkinsVersion().toString();
+            coreDependencies = bundledDependencies(readPom(REPO_ROOT_URL + "org/jenkins-ci/main/jenkins-core/" + version
+                    + "/jenkins-core-" + version + ".pom"));
+        }
+        Set<String> harnessDependencies = Collections.emptySet();
+        String harnessVersion = parentModel.getProperties().getProperty("jenkins-test-harness.version");
+        if (harnessVersion != null) {
+            harnessDependencies =
+                    bundledDependencies(readPom(REPO_ROOT_URL + "org/jenkins-ci/main/jenkins-test-harness/"
+                            + harnessVersion + "/jenkins-test-harness-" + harnessVersion + ".pom"));
+        }
+        Set<String> parentDependencies = new HashSet<>();
+        parentModel.getDependencies().forEach(d -> parentDependencies.add(d.getGroupId() + ":" + d.getArtifactId()));
+        checkRedundantDependencies(model, parentDependencies, coreDependencies, harnessDependencies);
+        checkBundledArtifacts(model, coreDependencies);
+        checkRedundantBuildPlugins(model, parentModel);
+    }
+
+    void checkRedundantDependencies(
+            Model model,
+            Set<String> parentDependencies,
+            Set<String> coreDependencies,
+            Set<String> harnessDependencies) {
+        Set<String> banned = getBannedDependencies().keySet();
+        HashSet<VerificationMessage> redundant = new HashSet<>();
+        for (Dependency d : model.getDependencies()) {
+            String dep = d.getGroupId() + ":" + d.getArtifactId();
+            if (banned.contains(dep)) {
+                // reported with the api plugin to use instead
+                continue;
+            }
+            if (parentDependencies.contains(dep)) {
+                redundant.add(new VerificationMessage(
+                        VerificationMessage.Severity.INFO, "`%s` is already added by the parent pom", dep));
+            } else if (coreDependencies.contains(dep)) {
+                redundant.add(new VerificationMessage(
+                        VerificationMessage.Severity.INFO, "`%s` is provided by Jenkins core", dep));
+            } else if ("test".equals(d.getScope()) && harnessDependencies.contains(dep)) {
+                redundant.add(new VerificationMessage(
+                        VerificationMessage.Severity.INFO,
+                        "`%s` is already added as test dependency by `jenkins-test-harness`",
+                        dep));
+            }
+        }
+        if (!redundant.isEmpty()) {
+            hostingIssues.add(
+                    new VerificationMessage(VerificationMessage.Severity.WARNING, redundant, REDUNDANT_DEPENDENCIES));
+        }
+    }
+
+    /**
+     * Libraries that come in transitively and are allowed to be bundled with {@code hpi.bundledArtifacts}
+     * should not be bundled when they are provided by Jenkins core or only needed at compile time.
+     */
+    void checkBundledArtifacts(Model model, Set<String> coreDependencies) {
+        String bundledArtifacts = model.getProperties().getProperty("hpi.bundledArtifacts");
+        if (bundledArtifacts == null) {
+            return;
+        }
+        HashSet<VerificationMessage> excludable = new HashSet<>();
+        for (String artifactId : bundledArtifacts.split(",")) {
+            String suffix = ":" + artifactId.trim();
+            if (coreDependencies.stream().anyMatch(d -> d.endsWith(suffix))) {
+                excludable.add(new VerificationMessage(
+                        VerificationMessage.Severity.INFO, "`%s` is provided by Jenkins core", artifactId.trim()));
+            } else if (COMPILE_ONLY_ANNOTATIONS.stream().anyMatch(d -> d.endsWith(suffix))) {
+                excludable.add(new VerificationMessage(
+                        VerificationMessage.Severity.INFO,
+                        "`%s` contains annotations that are only needed at compile time",
+                        artifactId.trim()));
+            }
+        }
+        if (!excludable.isEmpty()) {
+            hostingIssues.add(
+                    new VerificationMessage(VerificationMessage.Severity.WARNING, excludable, BUNDLED_ARTIFACTS));
+        }
+    }
+
+    void checkRedundantBuildPlugins(Model model, Model parentModel) {
+        if (model.getBuild() == null || parentModel.getBuild() == null) {
+            return;
+        }
+        Set<String> configured = new HashSet<>();
+        parentModel.getBuild().getPlugins().forEach(p -> configured.add(p.getKey()));
+        Set<String> managed = new HashSet<>(configured);
+        if (parentModel.getBuild().getPluginManagement() != null) {
+            parentModel.getBuild().getPluginManagement().getPlugins().forEach(p -> managed.add(p.getKey()));
+        }
+        HashSet<VerificationMessage> redundant = new HashSet<>();
+        for (Plugin plugin : model.getBuild().getPlugins()) {
+            boolean customized = plugin.getConfiguration() != null
+                    || !plugin.getExecutions().isEmpty()
+                    || !plugin.getDependencies().isEmpty();
+            if (configured.contains(plugin.getKey()) && !customized) {
+                redundant.add(new VerificationMessage(
+                        VerificationMessage.Severity.INFO,
+                        "`%s` is already configured by the parent pom, remove it",
+                        plugin.getArtifactId()));
+            } else if (managed.contains(plugin.getKey()) && plugin.getVersion() != null) {
+                redundant.add(new VerificationMessage(
+                        VerificationMessage.Severity.INFO,
+                        "The version of `%s` is managed by the parent pom, remove the `<version>`",
+                        plugin.getArtifactId()));
+            }
+        }
+        if (!redundant.isEmpty()) {
+            hostingIssues.add(
+                    new VerificationMessage(VerificationMessage.Severity.WARNING, redundant, REDUNDANT_BUILD_PLUGINS));
+        }
+    }
+
+    private static Set<String> bundledDependencies(Model model) {
+        Set<String> dependencies = new HashSet<>();
+        if (model != null) {
+            model.getDependencies().stream()
+                    .filter(d -> isBundled(d) && !d.isOptional())
+                    .forEach(d -> dependencies.add(d.getGroupId() + ":" + d.getArtifactId()));
+        }
+        return dependencies;
+    }
+
+    @SuppressFBWarnings("URLCONNECTION_SSRF_FD")
+    private static Model readPom(String pomUrl) {
+        try (InputStream is = new URI(pomUrl).toURL().openStream()) {
+            return new MavenXpp3Reader().read(is);
+        } catch (XmlPullParserException | URISyntaxException | IOException e) {
+            LOGGER.warn("Failed to read {}", pomUrl);
+        }
+        return null;
     }
 
     private Map<String, String> getBannedDependencies() {

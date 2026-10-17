@@ -1,0 +1,14 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form" xmlns:c="/lib/credentials">
+  <f:entry title="URL" field="url">
+    <f:textbox checkMethod="post"/>
+  </f:entry>
+  <f:entry title="Credentials" field="credentialsId">
+    <f:textbox/>
+  </f:entry>
+  <f:entry title="Scopes">
+    <f:repeatable field="scopes">
+      <f:textbox field="name"/>
+    </f:repeatable>
+  </f:entry>
+</j:jelly>

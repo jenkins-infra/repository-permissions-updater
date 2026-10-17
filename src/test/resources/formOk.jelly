@@ -1,0 +1,15 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form" xmlns:c="/lib/credentials">
+  <f:entry title="URL" field="url">
+    <f:textbox/>
+  </f:entry>
+  <f:entry title="Credentials" field="apiTokenCredentialsId">
+    <c:select/>
+  </f:entry>
+  <f:entry title="Scopes">
+    <f:repeatable field="scopes" header="Scope">
+      <f:textbox field="name"/>
+      <f:repeatableDeleteButton/>
+    </f:repeatable>
+  </f:entry>
+</j:jelly>
