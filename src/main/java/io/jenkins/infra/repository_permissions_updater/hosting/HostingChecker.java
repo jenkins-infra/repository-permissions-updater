@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -29,42 +30,11 @@ public class HostingChecker {
             "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
     public void checkRequest(int issueID) throws IOException {
-        boolean hasBuildSystem = false;
-        HashSet<VerificationMessage> hostingIssues = new HashSet<>();
-
         boolean debug = System.getProperty("debugHosting", "false").equalsIgnoreCase("true");
 
-        ArrayList<Triplet<String, Verifier, ConditionChecker>> verifications = new ArrayList<>();
-        verifications.add(Triplet.with("Request", new HostingFieldVerifier(hostingIssues), null));
-        verifications.add(Triplet.with("GitHub", new GitHubVerifier(hostingIssues), null));
-        verifications.add(
-                Triplet.with("Maven", new MavenVerifier(hostingIssues), new FileExistsConditionChecker("pom.xml")));
-        verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(hostingIssues), null));
-        verifications.add(Triplet.with("Jelly", new JellyVerifier(hostingIssues), null));
-        verifications.add(Triplet.with("RequiredFiles", new RequiredFilesVerifier(hostingIssues), null));
-
         final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
-
-        for (Triplet<String, Verifier, ConditionChecker> verifier : verifications) {
-            try {
-                boolean runIt =
-                        verifier.getValue2() == null || verifier.getValue2().checkCondition(hostingRequest);
-                if (runIt) {
-                    LOGGER.info("Running verification '{}'", verifier.getValue0());
-                    verifier.getValue1().verify(hostingRequest);
-                }
-
-                if (verifier.getValue1() instanceof BuildSystemVerifier) {
-                    hasBuildSystem |= ((BuildSystemVerifier) verifier.getValue1()).hasBuildFile(hostingRequest);
-                }
-            } catch (Exception e) {
-                LOGGER.error("Error running verification {}", verifier.getValue0(), e);
-            }
-        }
-
-        if (!hasBuildSystem) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "No pom.xml detected."));
-        }
+        Set<VerificationMessage> hostingIssues =
+                runVerifications(hostingRequest).issues();
 
         LOGGER.info("Done checking hosting for {}, found {} issues", issueID, hostingIssues.size());
 
@@ -76,7 +46,7 @@ public class HostingChecker {
                     + "approved until these issues are corrected. Issues marked with Warning "
                     + "or Info are just recommendations and will not stall the hosting process.\n");
             LOGGER.info("Appending issues to msg");
-            appendIssues(msg, hostingIssues, 1);
+            msg.append(formatIssues(hostingIssues));
             msg.append(
                     "\nYou can re-trigger a check by editing your hosting request or by commenting `/hosting re-check`");
         } else {
@@ -106,7 +76,65 @@ public class HostingChecker {
         }
     }
 
-    private void appendIssues(StringBuilder msg, Set<VerificationMessage> issues, int level) {
+    /**
+     * Runs all hosting verifications against the given request.
+     *
+     * @return the problems found, and the names of any verifications that could not complete
+     */
+    public VerificationResult runVerifications(HostingRequest hostingRequest) {
+        boolean hasBuildSystem = false;
+        HashSet<VerificationMessage> hostingIssues = new HashSet<>();
+        List<String> failedVerifications = new ArrayList<>();
+
+        ArrayList<Triplet<String, Verifier, ConditionChecker>> verifications = new ArrayList<>();
+        verifications.add(Triplet.with("Request", new HostingFieldVerifier(hostingIssues), null));
+        verifications.add(Triplet.with("GitHub", new GitHubVerifier(hostingIssues), null));
+        verifications.add(
+                Triplet.with("Maven", new MavenVerifier(hostingIssues), new FileExistsConditionChecker("pom.xml")));
+        verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(hostingIssues), null));
+        verifications.add(Triplet.with("Jelly", new JellyVerifier(hostingIssues), null));
+        verifications.add(Triplet.with("RequiredFiles", new RequiredFilesVerifier(hostingIssues), null));
+
+        for (Triplet<String, Verifier, ConditionChecker> verifier : verifications) {
+            try {
+                boolean runIt =
+                        verifier.getValue2() == null || verifier.getValue2().checkCondition(hostingRequest);
+                if (runIt) {
+                    LOGGER.info("Running verification '{}'", verifier.getValue0());
+                    verifier.getValue1().verify(hostingRequest);
+                }
+
+                if (verifier.getValue1() instanceof BuildSystemVerifier) {
+                    hasBuildSystem |= ((BuildSystemVerifier) verifier.getValue1()).hasBuildFile(hostingRequest);
+                }
+            } catch (Exception e) {
+                LOGGER.error("Error running verification {}", verifier.getValue0(), e);
+                failedVerifications.add(verifier.getValue0());
+            }
+        }
+
+        if (!hasBuildSystem) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "No pom.xml detected."));
+        }
+        return new VerificationResult(hostingIssues, failedVerifications);
+    }
+
+    /**
+     * @param issues problems found in the hosting request
+     * @param failedVerifications names of verifications that threw an exception, so their checks did not run fully
+     */
+    public record VerificationResult(Set<VerificationMessage> issues, List<String> failedVerifications) {}
+
+    /**
+     * Formats verification results as a Markdown list, most severe first.
+     */
+    public static String formatIssues(Set<VerificationMessage> issues) {
+        StringBuilder msg = new StringBuilder();
+        appendIssues(msg, issues, 1);
+        return msg.toString();
+    }
+
+    private static void appendIssues(StringBuilder msg, Set<VerificationMessage> issues, int level) {
         for (VerificationMessage issue :
                 issues.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList())) {
             if (level == 1) {
