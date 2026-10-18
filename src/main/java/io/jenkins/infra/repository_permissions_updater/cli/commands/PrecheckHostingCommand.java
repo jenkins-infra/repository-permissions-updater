@@ -4,7 +4,6 @@ import io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker;
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingRequest;
 import io.jenkins.infra.repository_permissions_updater.hosting.VerificationMessage;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.regex.Matcher;
@@ -83,35 +82,15 @@ public class PrecheckHostingCommand implements Callable<Integer> {
                 jenkinsUsers.stream().map(String::trim).toList(),
                 enableCD);
 
-        HostingChecker.VerificationResult result = new HostingChecker().runVerifications(request);
-        List<VerificationMessage> issues = new ArrayList<>(result.issues());
-        boolean hasRequired = issues.stream().anyMatch(i -> i.getSeverity() == VerificationMessage.Severity.REQUIRED);
+        TerminalReport report = new TerminalReport(TerminalReport.colorSupported());
+        System.out.println("Running hosting checks against " + request.getRepositoryUrl());
+        HostingChecker.VerificationResult result =
+                new HostingChecker().runVerifications(request, check -> System.out.println(report.progress(check)));
+        boolean hasRequired =
+                result.issues().stream().anyMatch(i -> i.getSeverity() == VerificationMessage.Severity.REQUIRED);
 
-        StringBuilder out = new StringBuilder("\nHosting check results for ")
-                .append(request.getRepositoryUrl())
-                .append(" (new repository name: ")
-                .append(name)
-                .append(")\n\n");
-        if (issues.isEmpty()) {
-            out.append("No problems found.\n");
-        } else {
-            out.append(HostingChecker.formatIssues(result.issues()));
-        }
-        if (!result.failedVerifications().isEmpty()) {
-            out.append("\nThe following checks could not complete, see the log above: ")
-                    .append(String.join(", ", result.failedVerifications()))
-                    .append('\n');
-        }
-        out.append('\n');
-        if (hasRequired) {
-            out.append("Fix all issues marked Required before opening a hosting request.");
-        } else if (result.failedVerifications().isEmpty()) {
-            out.append("Your repository passes the automated hosting checks."
-                    + " Issues marked Warning or Info are recommendations and will not stall the hosting process.");
-        } else {
-            out.append("No Required issues were found, but not all checks completed. Fix the errors and re-run.");
-        }
-        System.out.println(out);
+        System.out.print(
+                report.render(request.getRepositoryUrl(), name, result.issues(), result.failedVerifications()));
 
         if (hasRequired) {
             return 1;

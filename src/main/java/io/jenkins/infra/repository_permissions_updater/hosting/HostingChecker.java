@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -82,6 +83,16 @@ public class HostingChecker {
      * @return the problems found, and the names of any verifications that could not complete
      */
     public VerificationResult runVerifications(HostingRequest hostingRequest) {
+        return runVerifications(hostingRequest, name -> LOGGER.info("Running verification '{}'", name));
+    }
+
+    /**
+     * Runs all hosting verifications against the given request.
+     *
+     * @param onStart called with the name of each verification as it starts
+     * @return the problems found, and the names of any verifications that could not complete
+     */
+    public VerificationResult runVerifications(HostingRequest hostingRequest, Consumer<String> onStart) {
         boolean hasBuildSystem = false;
         HashSet<VerificationMessage> hostingIssues = new HashSet<>();
         List<String> failedVerifications = new ArrayList<>();
@@ -100,7 +111,7 @@ public class HostingChecker {
                 boolean runIt =
                         verifier.getValue2() == null || verifier.getValue2().checkCondition(hostingRequest);
                 if (runIt) {
-                    LOGGER.info("Running verification '{}'", verifier.getValue0());
+                    onStart.accept(verifier.getValue0());
                     verifier.getValue1().verify(hostingRequest);
                 }
 

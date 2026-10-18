@@ -5,7 +5,7 @@
 #   ./bin/check-hosting.sh --repository-url https://github.com/your-org/your-cool-plugin \
 #       --github-user your-github-user --jenkins-user your-jenkins-account
 #
-# Run with --help for all options. Exit codes:
+# Run with --help for all options. Set VERBOSE=1 for the full log. Exit codes:
 #   0 no Required issues, 1 Required issues found, 2 missing GitHub token, 3 some checks could not complete
 set -euo pipefail
 
@@ -54,4 +54,7 @@ fi
 
 # The checks read banned-dependencies.lst relative to the working directory
 cd "$ROOT"
-exec "$JAVA" -jar "$JAR" precheck-hosting "$@"
+# Only show warnings and errors from the checker's own logging, the command prints its progress itself
+LOG_LEVEL="warn"
+[[ -n "${VERBOSE:-}" ]] && LOG_LEVEL="info"
+exec "$JAVA" -Dorg.slf4j.simpleLogger.defaultLogLevel="$LOG_LEVEL" -jar "$JAR" precheck-hosting "$@"

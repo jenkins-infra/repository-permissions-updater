@@ -46,6 +46,7 @@ cd repository-permissions-updater
 
 The first run builds the checker.
 After pulling updates to this repository, run with `REBUILD=1` to use the latest checks.
+Set `VERBOSE=1` to see the checker's full log.
 The script exits with `0` when no issues marked Required are found, and `1` when there are issues to fix.
 Fix them, push, and run it again.
 
