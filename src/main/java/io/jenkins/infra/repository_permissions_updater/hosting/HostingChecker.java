@@ -27,6 +27,9 @@ public class HostingChecker {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HostingChecker.class);
 
+    public static final String CLONE_FAILED =
+            "Could not clone %s to check its files. Make sure the repository exists and is public, then re-check.";
+
     public static final String INVALID_FORK_FROM =
             "Repository URL '%s' is not a valid GitHub repository (check that you do not have .git at the end, GitHub API doesn't support this).";
 
@@ -104,7 +107,9 @@ public class HostingChecker {
                 checkout = RepositoryCheckout.cloneGitHub(gitHubUrl.get());
             } catch (IOException e) {
                 LOGGER.error("Error cloning {}", gitHubUrl.get(), e);
-                failedVerifications.add("Clone");
+                // without a clone none of the file checks run, so this must block the request
+                hostingIssues.add(
+                        new VerificationMessage(VerificationMessage.Severity.REQUIRED, CLONE_FAILED, gitHubUrl.get()));
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 throw new IllegalStateException(e);
