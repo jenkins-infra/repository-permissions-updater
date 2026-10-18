@@ -19,14 +19,50 @@ public class HostingFieldVerifier implements Verifier {
         String forkTo = issue.getNewRepoName();
         String forkFrom = issue.getRepositoryUrl();
         List<String> users = issue.getGithubUsers();
+        List<String> ldap = issue.getJenkinsProjectUsers();
+        boolean manageGitHubPermissions = issue.isManageGitHubPermissions();
 
         // check list of users
-        if (users.isEmpty()) {
-            hostingIssues.add(new VerificationMessage(
-                    VerificationMessage.Severity.REQUIRED,
-                    "Missing list of users to authorize in 'GitHub Users to Authorize as Committers'"));
+        if (manageGitHubPermissions) {
+            if (users.isEmpty()) {
+                hostingIssues.add(new VerificationMessage(
+                        VerificationMessage.Severity.REQUIRED,
+                        "No GitHub user found in `" + HostingRequestParser.GITHUB_JENKINS_PROJECT_USERS + "`"));
+            }
+            if (ldap.isEmpty()) {
+                hostingIssues.add(new VerificationMessage(
+                        VerificationMessage.Severity.REQUIRED,
+                        "No Jenkins project user found in `" + HostingRequestParser.GITHUB_JENKINS_PROJECT_USERS
+                                + "`"));
+            }
+        } else {
+            if (users.isEmpty()) {
+                hostingIssues.add(new VerificationMessage(
+                        VerificationMessage.Severity.REQUIRED,
+                        "Missing list of users in `" + HostingRequestParser.GITHUB_USERS + "`"));
+            } else {
+                users.forEach(user -> {
+                    if (!user.startsWith("@")) {
+                        hostingIssues.add(new VerificationMessage(
+                                VerificationMessage.Severity.REQUIRED,
+                                "GitHub user `" + user + "` should start with `@`"));
+                    }
+                });
+            }
+            if (ldap.isEmpty()) {
+                hostingIssues.add(new VerificationMessage(
+                        VerificationMessage.Severity.REQUIRED,
+                        "Missing list of users in `" + HostingRequestParser.JENKINS_PROJECT_USERS + "`"));
+            } else {
+                ldap.forEach(user -> {
+                    if (user.startsWith("@")) {
+                        hostingIssues.add(new VerificationMessage(
+                                VerificationMessage.Severity.REQUIRED,
+                                "Jenkins project user `" + user + "` should not start with `@`"));
+                    }
+                });
+            }
         }
-
         if (StringUtils.isBlank(forkFrom)) {
             hostingIssues.add(new VerificationMessage(
                     VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, ""));
