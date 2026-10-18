@@ -1,23 +1,13 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
-import static java.util.regex.Pattern.CASE_INSENSITIVE;
-
 import java.io.IOException;
-import java.io.InputStream;
+import java.io.StringReader;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Locale;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import org.apache.commons.lang3.StringUtils;
-import org.kohsuke.github.GHContent;
-import org.kohsuke.github.GHContentSearchBuilder;
-import org.kohsuke.github.GitHub;
-import org.kohsuke.github.PagedSearchIterable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Attr;
@@ -26,6 +16,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 public class JellyVerifier implements Verifier {
@@ -44,56 +35,38 @@ public class JellyVerifier implements Verifier {
                     + "https://www.jenkins.io/doc/developer/security/csp/ for more information how to make your jelly files CSP compliant";
 
     private final HashSet<VerificationMessage> hostingIssues;
+    private final RepositoryCheckout checkout;
 
-    public JellyVerifier(HashSet<VerificationMessage> hostingIssues) {
+    public JellyVerifier(HashSet<VerificationMessage> hostingIssues, RepositoryCheckout checkout) {
         this.hostingIssues = hostingIssues;
+        this.checkout = checkout;
     }
 
     @Override
     public void verify(HostingRequest issue) throws IOException {
-        GitHub github = GitHub.connect();
-        String forkFrom = issue.getRepositoryUrl();
-        if (StringUtils.isNotBlank(forkFrom)) {
-            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE)
-                    .matcher(forkFrom);
-            if (m.matches()) {
-                String owner = m.group(1);
-                String repoName = m.group(2);
-
-                GHContentSearchBuilder search = github.searchContent();
-                PagedSearchIterable<GHContent> list = search.q(".jelly")
-                        .in("path")
-                        .repo(owner + "/" + repoName)
-                        .list();
-                List<GHContent> jellyFiles = list.toList().stream()
-                        .filter(item -> item.getPath().endsWith(".jelly")
-                                && item.getPath().startsWith("src/main/resources/"))
-                        .toList();
-
-                DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-                dbf.setNamespaceAware(true);
-                try {
-                    dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
-                    DocumentBuilder db = dbf.newDocumentBuilder();
-                    for (GHContent jellyFile : jellyFiles) {
-                        InputStream is = jellyFile.read();
-                        try {
-                            Document doc = db.parse(is);
-                            Element root = doc.getDocumentElement();
-                            boolean hasIssues = checkStyleElement(root, hostingIssues, jellyFile.getHtmlUrl());
-                            hasIssues |= checkScriptElement(root, hostingIssues, jellyFile.getHtmlUrl());
-                            hasIssues |= checkJavaScriptAttributes(root, hostingIssues, jellyFile.getHtmlUrl());
-                            if (hasIssues) {
-                                hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.INFO, CSP_HELP));
-                            }
-                        } catch (SAXException e) {
-                            LOGGER.warn("Failed to parse jelly {}", jellyFile.getPath());
-                        }
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        dbf.setNamespaceAware(true);
+        try {
+            dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            for (String jellyFile : checkout.findFiles("src/main/resources", ".jelly")) {
+                String url = checkout.fileUrl(jellyFile);
+                try (StringReader contents =
+                        new StringReader(checkout.read(jellyFile).orElseThrow())) {
+                    Document doc = db.parse(new InputSource(contents));
+                    Element root = doc.getDocumentElement();
+                    boolean hasIssues = checkStyleElement(root, hostingIssues, url);
+                    hasIssues |= checkScriptElement(root, hostingIssues, url);
+                    hasIssues |= checkJavaScriptAttributes(root, hostingIssues, url);
+                    if (hasIssues) {
+                        hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.INFO, CSP_HELP));
                     }
-                } catch (ParserConfigurationException e) {
-                    throw new RuntimeException(e);
+                } catch (SAXException e) {
+                    LOGGER.warn("Failed to parse jelly {}", jellyFile);
                 }
             }
+        } catch (ParserConfigurationException e) {
+            throw new RuntimeException(e);
         }
     }
 

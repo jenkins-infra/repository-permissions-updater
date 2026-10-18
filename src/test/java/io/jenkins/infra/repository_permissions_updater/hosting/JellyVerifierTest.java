@@ -1,14 +1,20 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.HashSet;
+import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
@@ -70,5 +76,32 @@ public class JellyVerifierTest {
         } catch (ParserConfigurationException | SAXException | IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Test
+    public void verifyFindsJellyFilesInCheckout(@TempDir Path dir) throws Exception {
+        TestGitRepository repo = new TestGitRepository(dir)
+                .commit(
+                        "src/main/resources/io/jenkins/Cool/config.jelly",
+                        Files.readString(Path.of("src/test/resources/inlineScript.jelly")))
+                .commit(
+                        "src/main/resources/io/jenkins/Cool/ok.jelly",
+                        Files.readString(Path.of("src/test/resources/ok.jelly")))
+                .commit(
+                        "src/test/resources/ignored.jelly",
+                        Files.readString(Path.of("src/test/resources/inlineStyle.jelly")));
+
+        try (RepositoryCheckout checkout = repo.checkout()) {
+            new JellyVerifier(hostingIssues, checkout)
+                    .verify(new HostingRequest(TestGitRepository.HTML_URL, "cool-plugin", List.of(), List.of(), false));
+        }
+
+        assertThat(hostingIssues.stream().map(VerificationMessage::getMessage))
+                .hasSize(2)
+                .anyMatch(
+                        m -> m.matches(
+                                "The jelly file https://github.com/me/cool-plugin/blob/[0-9a-f]{40}/"
+                                        + "src/main/resources/io/jenkins/Cool/config.jelly contains a `<script>` tag with inline javascript."))
+                .anyMatch(m -> m.startsWith("One or more usages of inline javascript"));
     }
 }

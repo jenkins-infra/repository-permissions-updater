@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
-import org.javatuples.Triplet;
 import org.kohsuke.github.GHContent;
 import org.kohsuke.github.GHFileNotFoundException;
 import org.kohsuke.github.GHIssue;
@@ -83,52 +83,73 @@ public class HostingChecker {
      * @return the problems found, and the names of any verifications that could not complete
      */
     public VerificationResult runVerifications(HostingRequest hostingRequest) {
-        return runVerifications(hostingRequest, name -> LOGGER.info("Running verification '{}'", name));
+        return runVerifications(hostingRequest, step -> LOGGER.info("{}", step));
     }
 
     /**
      * Runs all hosting verifications against the given request.
      *
-     * @param onStart called with the name of each verification as it starts
+     * @param onProgress called with a description of each step as it starts
      * @return the problems found, and the names of any verifications that could not complete
      */
-    public VerificationResult runVerifications(HostingRequest hostingRequest, Consumer<String> onStart) {
-        boolean hasBuildSystem = false;
+    public VerificationResult runVerifications(HostingRequest hostingRequest, Consumer<String> onProgress) {
         HashSet<VerificationMessage> hostingIssues = new HashSet<>();
         List<String> failedVerifications = new ArrayList<>();
 
-        ArrayList<Triplet<String, Verifier, ConditionChecker>> verifications = new ArrayList<>();
-        verifications.add(Triplet.with("Request", new HostingFieldVerifier(hostingIssues), null));
-        verifications.add(Triplet.with("GitHub", new GitHubVerifier(hostingIssues), null));
-        verifications.add(
-                Triplet.with("Maven", new MavenVerifier(hostingIssues), new FileExistsConditionChecker("pom.xml")));
-        verifications.add(Triplet.with("JenkinsProjectUsers", new JenkinsProjectUserVerifier(hostingIssues), null));
-        verifications.add(Triplet.with("Jelly", new JellyVerifier(hostingIssues), null));
-        verifications.add(Triplet.with("RequiredFiles", new RequiredFilesVerifier(hostingIssues), null));
-
-        for (Triplet<String, Verifier, ConditionChecker> verifier : verifications) {
+        RepositoryCheckout checkout = null;
+        Optional<String> gitHubUrl = RepositoryCheckout.gitHubUrl(hostingRequest.getRepositoryUrl());
+        if (gitHubUrl.isPresent()) {
+            onProgress.accept("Cloning " + gitHubUrl.get());
             try {
-                boolean runIt =
-                        verifier.getValue2() == null || verifier.getValue2().checkCondition(hostingRequest);
-                if (runIt) {
-                    onStart.accept(verifier.getValue0());
-                    verifier.getValue1().verify(hostingRequest);
-                }
-
-                if (verifier.getValue1() instanceof BuildSystemVerifier) {
-                    hasBuildSystem |= ((BuildSystemVerifier) verifier.getValue1()).hasBuildFile(hostingRequest);
-                }
-            } catch (Exception e) {
-                LOGGER.error("Error running verification {}", verifier.getValue0(), e);
-                failedVerifications.add(verifier.getValue0());
+                checkout = RepositoryCheckout.cloneGitHub(gitHubUrl.get());
+            } catch (IOException e) {
+                LOGGER.error("Error cloning {}", gitHubUrl.get(), e);
+                failedVerifications.add("Clone");
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                throw new IllegalStateException(e);
             }
         }
+        // an invalid repository URL is reported by the Request verification, nothing to clone in that case
 
-        if (!hasBuildSystem) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, "No pom.xml detected."));
+        try {
+            List<Verification> verifications = new ArrayList<>();
+            verifications.add(new Verification("Request", new HostingFieldVerifier(hostingIssues)));
+            verifications.add(new Verification("GitHub", new GitHubVerifier(hostingIssues)));
+            verifications.add(new Verification("JenkinsProjectUsers", new JenkinsProjectUserVerifier(hostingIssues)));
+            MavenVerifier mavenVerifier = null;
+            if (checkout != null) {
+                mavenVerifier = new MavenVerifier(hostingIssues, checkout);
+                verifications.add(new Verification("History", new GitHistoryVerifier(hostingIssues, checkout)));
+                verifications.add(new Verification("Maven", mavenVerifier));
+                verifications.add(new Verification("Jelly", new JellyVerifier(hostingIssues, checkout)));
+                verifications.add(
+                        new Verification("RequiredFiles", new RequiredFilesVerifier(hostingIssues, checkout)));
+            }
+
+            for (Verification verification : verifications) {
+                try {
+                    onProgress.accept("Checking " + verification.name());
+                    verification.verifier().verify(hostingRequest);
+                } catch (Exception e) {
+                    LOGGER.error("Error running verification {}", verification.name(), e);
+                    failedVerifications.add(verification.name());
+                }
+            }
+
+            if (mavenVerifier != null && !mavenVerifier.hasBuildFile(hostingRequest)) {
+                hostingIssues.add(
+                        new VerificationMessage(VerificationMessage.Severity.WARNING, "No pom.xml detected."));
+            }
+        } finally {
+            if (checkout != null) {
+                checkout.close();
+            }
         }
         return new VerificationResult(hostingIssues, failedVerifications);
     }
+
+    private record Verification(String name, Verifier verifier) {}
 
     /**
      * @param issues problems found in the hosting request

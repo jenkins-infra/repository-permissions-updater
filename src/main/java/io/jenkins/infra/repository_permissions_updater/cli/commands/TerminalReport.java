@@ -45,8 +45,8 @@ final class TerminalReport {
                 && !"dumb".equals(System.getenv("TERM"));
     }
 
-    String progress(String verification) {
-        return style(DIM, "  Checking " + verification + "...");
+    String progress(String step) {
+        return style(DIM, "  " + step + "...");
     }
 
     String render(
