@@ -36,9 +36,10 @@ public class HostingChecker {
     public void checkRequest(int issueID) throws IOException {
         boolean debug = System.getProperty("debugHosting", "false").equalsIgnoreCase("true");
 
-        final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID);
-        Set<VerificationMessage> hostingIssues =
-                runVerifications(hostingRequest).issues();
+        // problems with the request itself, e.g. malformed user lines
+        HashSet<VerificationMessage> hostingIssues = new HashSet<>();
+        final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID, hostingIssues);
+        hostingIssues.addAll(runVerifications(hostingRequest).issues());
 
         LOGGER.info("Done checking hosting for {}, found {} issues", issueID, hostingIssues.size());
 
@@ -167,22 +168,22 @@ public class HostingChecker {
      */
     public static String formatIssues(Set<VerificationMessage> issues) {
         StringBuilder msg = new StringBuilder();
-        appendIssues(msg, issues, 1);
+        appendIssues(msg, issues, 0);
         return msg.toString();
     }
 
     private static void appendIssues(StringBuilder msg, Set<VerificationMessage> issues, int level) {
         for (VerificationMessage issue :
                 issues.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList())) {
-            if (level == 1) {
+            if (level == 0) {
                 msg.append("%s %s %s: %s%n"
                         .formatted(
-                                StringUtils.repeat("*", level),
+                                "-",
                                 issue.getSeverity().getColor(),
                                 issue.getSeverity().getMessage(),
                                 issue.getMessage()));
             } else {
-                msg.append("%s %s%n".formatted(StringUtils.repeat("*", level), issue.getMessage()));
+                msg.append("%s %s%n".formatted(StringUtils.repeat(" ", level * 2) + "-", issue.getMessage()));
             }
 
             if (issue.getSubItems() != null) {

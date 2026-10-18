@@ -190,7 +190,8 @@ public final class RepositoryCheckout implements AutoCloseable {
             justification =
                     "No shell is involved, and the only external argument is a GitHub clone URL passed after --")
     private static String runGit(Path workingDir, String... args) throws IOException, InterruptedException {
-        List<String> command = new ArrayList<>(List.of("git"));
+        // a user's core.fsmonitor setting would start a background daemon for every temporary clone
+        List<String> command = new ArrayList<>(List.of("git", "-c", "core.fsmonitor=false"));
         command.addAll(List.of(args));
         Path outputFile = Files.createTempFile("hosting-git-", ".log");
         try {

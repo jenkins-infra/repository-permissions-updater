@@ -93,7 +93,8 @@ public class JellyVerifierTest {
 
         try (RepositoryCheckout checkout = repo.checkout()) {
             new JellyVerifier(hostingIssues, checkout)
-                    .verify(new HostingRequest(TestGitRepository.HTML_URL, "cool-plugin", List.of(), List.of(), false));
+                    .verify(new HostingRequest(
+                            TestGitRepository.HTML_URL, "cool-plugin", List.of(), List.of(), null, false));
         }
 
         assertThat(hostingIssues.stream().map(VerificationMessage::getMessage))

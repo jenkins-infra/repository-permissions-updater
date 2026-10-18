@@ -68,7 +68,7 @@ class MavenVerifierTest {
     }
 
     private static HostingRequest request() {
-        return new HostingRequest(TestGitRepository.HTML_URL, "cool-plugin", List.of("me"), List.of("me"), false);
+        return new HostingRequest(TestGitRepository.HTML_URL, "cool-plugin", List.of("me"), List.of("me"), null, false);
     }
 
     private List<String> messages() {

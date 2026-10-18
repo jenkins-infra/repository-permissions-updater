@@ -4,7 +4,9 @@ import io.jenkins.infra.repository_permissions_updater.hosting.HostingChecker;
 import io.jenkins.infra.repository_permissions_updater.hosting.HostingRequest;
 import io.jenkins.infra.repository_permissions_updater.hosting.VerificationMessage;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -76,11 +78,7 @@ public class PrecheckHostingCommand implements Callable<Integer> {
         String name = newRepositoryName != null ? newRepositoryName.trim() : repositoryName(repositoryUrl);
 
         HostingRequest request = new HostingRequest(
-                repositoryUrl.trim(),
-                name,
-                githubUsers.stream().map(u -> u.trim().replace("@", "")).toList(),
-                jenkinsUsers.stream().map(String::trim).toList(),
-                enableCD);
+                repositoryUrl.trim(), name, List.of(), List.of(), users(githubUsers, jenkinsUsers), enableCD);
 
         TerminalReport report = new TerminalReport(TerminalReport.colorSupported());
         System.out.println("Running hosting checks against " + request.getRepositoryUrl());
@@ -105,6 +103,20 @@ public class PrecheckHostingCommand implements Callable<Integer> {
         } catch (IOException e) {
             return false;
         }
+    }
+
+    /**
+     * Builds the users the way the hosting request template's "GitHub and Jenkins project users" field is parsed.
+     * Pairing a GitHub user with a Jenkins user only matters when hosting, so each is listed on its own.
+     */
+    static List<Map<String, String>> users(List<String> githubUsers, List<String> jenkinsUsers) {
+        List<Map<String, String>> users = new ArrayList<>();
+        githubUsers.stream()
+                .map(String::trim)
+                .filter(u -> !u.isEmpty())
+                .forEach(u -> users.add(Map.of("github", u.startsWith("@") ? u : "@" + u)));
+        jenkinsUsers.stream().map(String::trim).filter(u -> !u.isEmpty()).forEach(u -> users.add(Map.of("ldap", u)));
+        return users;
     }
 
     static String repositoryName(String repositoryUrl) {

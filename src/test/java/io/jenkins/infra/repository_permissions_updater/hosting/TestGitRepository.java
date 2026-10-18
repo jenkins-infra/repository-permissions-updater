@@ -33,7 +33,15 @@ final class TestGitRepository {
 
     TestGitRepository git(String... args) throws IOException, InterruptedException {
         List<String> command = new ArrayList<>(List.of(
-                "git", "-c", "user.name=Test", "-c", "user.email=test@example.org", "-c", "commit.gpgsign=false"));
+                "git",
+                "-c",
+                "user.name=Test",
+                "-c",
+                "user.email=test@example.org",
+                "-c",
+                "commit.gpgsign=false",
+                "-c",
+                "core.fsmonitor=false"));
         command.addAll(List.of(args));
         Process process = new ProcessBuilder(command)
                 .directory(dir.toFile())

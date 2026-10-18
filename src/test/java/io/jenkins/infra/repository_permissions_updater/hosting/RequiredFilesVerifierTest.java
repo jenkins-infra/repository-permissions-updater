@@ -74,7 +74,7 @@ class RequiredFilesVerifierTest {
         try (RepositoryCheckout checkout = repo.checkout()) {
             new RequiredFilesVerifier(issues, checkout)
                     .verify(new HostingRequest(
-                            TestGitRepository.HTML_URL, "cool-plugin", List.of("me"), List.of("me"), enableCD));
+                            TestGitRepository.HTML_URL, "cool-plugin", List.of("me"), List.of("me"), null, enableCD));
         }
     }
 }
