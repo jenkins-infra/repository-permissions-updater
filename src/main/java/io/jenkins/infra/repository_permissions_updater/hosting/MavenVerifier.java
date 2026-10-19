@@ -76,19 +76,22 @@ public class MavenVerifier implements BuildSystemVerifier {
     public static final String BUNDLED_ARTIFACTS =
             "The following libraries listed in `hpi.bundledArtifacts` should not be bundled in the plugin. "
                     + "Add an `<exclusion>` for them to the dependency that brings them in:";
+    public static final String UNNEEDED_STRUCTS =
+            "The dependency on `org.jenkins-ci.plugins:structs` is not needed, `@Symbol` is provided by Jenkins core. "
+                    + "Remove it unless you use other APIs from the structs plugin.";
     public static final String UNUSED_BOM =
             "None of the dependencies are managed by the bom, so the `<dependencyManagement>` section can be removed.";
     private final HashSet<VerificationMessage> hostingIssues;
-    private final RepositoryCheckout checkout;
+    private final RepositoryFiles files;
 
-    public MavenVerifier(HashSet<VerificationMessage> hostingIssues, RepositoryCheckout checkout) {
+    public MavenVerifier(HashSet<VerificationMessage> hostingIssues, RepositoryFiles files) {
         this.hostingIssues = hostingIssues;
-        this.checkout = checkout;
+        this.files = files;
     }
 
     @Override
     public void verify(HostingRequest issue) throws IOException {
-        Optional<String> pomXml = checkout.read("pom.xml");
+        Optional<String> pomXml = files.get("pom.xml");
         if (pomXml.isEmpty()) {
             // reported as "No pom.xml detected." by HostingChecker
             return;
@@ -116,6 +119,7 @@ public class MavenVerifier implements BuildSystemVerifier {
             checkSoftwareConfigurationManagementField(model);
             checkDependencies(model);
             checkCompileOnlyAnnotations(model);
+            checkStructsDependency(model);
             try {
                 checkProvidedByParentOrCore(model);
             } catch (RuntimeException e) {
@@ -156,7 +160,7 @@ public class MavenVerifier implements BuildSystemVerifier {
 
     @Override
     public boolean hasBuildFile(HostingRequest issue) {
-        return checkout.isFile("pom.xml");
+        return files.get("pom.xml").isPresent();
     }
 
     private void checkAutomaticReleasesSettings(Model model) {
@@ -646,6 +650,25 @@ public class MavenVerifier implements BuildSystemVerifier {
                 hostingIssues.add(
                         new VerificationMessage(VerificationMessage.Severity.WARNING, COMPILE_ONLY_ANNOTATION, dep));
             }
+        }
+    }
+
+    /**
+     * Plugins often depend on structs only for {@code @Symbol}, which has been in Jenkins core for a long time.
+     */
+    void checkStructsDependency(Model model) {
+        boolean dependsOnStructs = model.getDependencies().stream()
+                .anyMatch(d -> "org.jenkins-ci.plugins".equals(d.getGroupId())
+                        && "structs".equals(d.getArtifactId())
+                        && !"test".equals(d.getScope()));
+        if (!dependsOnStructs) {
+            return;
+        }
+        boolean usesStructs =
+                files.matching(p -> p.startsWith("src/main/") && SourceCodeVerifier.isSource(p)).values().stream()
+                        .anyMatch(content -> content.contains("org.jenkinsci.plugins.structs"));
+        if (!usesStructs) {
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, UNNEEDED_STRUCTS));
         }
     }
 

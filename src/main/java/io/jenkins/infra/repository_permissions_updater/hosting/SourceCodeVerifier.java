@@ -1,27 +1,19 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
 import java.io.IOException;
-import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.apache.maven.model.Model;
-import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
-import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
 
 /**
  * Checks the plugin sources for problems that hosting reviews commonly point out.
  */
 public class SourceCodeVerifier implements Verifier {
 
-    static final String UNNEEDED_STRUCTS =
-            "The dependency on `org.jenkins-ci.plugins:structs` is not needed, `@Symbol` is provided by Jenkins core. "
-                    + "Remove it unless you use other APIs from the structs plugin.";
     static final String NO_PROXY_SUPPORT =
             "The following files open HTTP connections without using the proxy configured in Jenkins. "
                     + "Use [`ProxyConfiguration.newHttpClientBuilder()`](https://javadoc.jenkins.io/hudson/ProxyConfiguration.html#newHttpClientBuilder()) "
@@ -49,7 +41,7 @@ public class SourceCodeVerifier implements Verifier {
             "The README explains how to install the plugin manually. Once hosted, users install the plugin from the plugin manager, "
                     + "so you can remove these instructions:";
 
-    private static final Pattern HTTP_CLIENT_CREATION = Pattern.compile("\\bHttpURLConnection\\b"
+    private static final Pattern HTTP_CLIENT_CREATION = Pattern.compile("\\bHttps?URLConnection\\b"
             + "|\\.openConnection\\s*\\("
             + "|\\bHttpClient\\s*\\.\\s*(newHttpClient|newBuilder)\\s*\\("
             + "|\\bHttpClients\\s*\\.\\s*create\\w*\\s*\\("
@@ -100,7 +92,6 @@ public class SourceCodeVerifier implements Verifier {
 
     @Override
     public void verify(HostingRequest request) throws IOException {
-        checkStructsDependency(files, hostingIssues);
         checkProxySupport(files, hostingIssues);
         checkJsr305Annotations(files, hostingIssues);
         checkPermissionInFillMethods(files, hostingIssues);
@@ -108,32 +99,6 @@ public class SourceCodeVerifier implements Verifier {
         checkCredentialsJelly(files, hostingIssues);
         checkHardCodedColors(files, hostingIssues);
         checkReadme(files, hostingIssues);
-    }
-
-    static void checkStructsDependency(RepositoryFiles files, HashSet<VerificationMessage> hostingIssues) {
-        Optional<String> pom = files.get("pom.xml");
-        if (pom.isEmpty()) {
-            return;
-        }
-        Model model;
-        try {
-            model = new MavenXpp3Reader().read(new StringReader(pom.get()));
-        } catch (IOException | XmlPullParserException e) {
-            // reported by MavenVerifier
-            return;
-        }
-        boolean dependsOnStructs = model.getDependencies().stream()
-                .anyMatch(d -> "org.jenkins-ci.plugins".equals(d.getGroupId())
-                        && "structs".equals(d.getArtifactId())
-                        && !"test".equals(d.getScope()));
-        if (!dependsOnStructs) {
-            return;
-        }
-        boolean usesStructs = files.matching(p -> p.startsWith("src/main/") && isSource(p)).values().stream()
-                .anyMatch(content -> content.contains("org.jenkinsci.plugins.structs"));
-        if (!usesStructs) {
-            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, UNNEEDED_STRUCTS));
-        }
     }
 
     static void checkProxySupport(RepositoryFiles files, HashSet<VerificationMessage> hostingIssues) {
@@ -315,7 +280,7 @@ public class SourceCodeVerifier implements Verifier {
         return files.matching(p -> p.startsWith("src/main/java/") && p.endsWith(".java"));
     }
 
-    private static boolean isSource(String path) {
+    static boolean isSource(String path) {
         return path.endsWith(".java") || path.endsWith(".groovy") || path.endsWith(".kt");
     }
 

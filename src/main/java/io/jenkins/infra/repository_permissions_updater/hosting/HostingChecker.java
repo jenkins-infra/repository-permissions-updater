@@ -125,19 +125,18 @@ public class HostingChecker {
             verifications.add(new Verification("JenkinsProjectUsers", new JenkinsProjectUserVerifier(hostingIssues)));
             MavenVerifier mavenVerifier = null;
             if (checkout != null) {
-                mavenVerifier = new MavenVerifier(hostingIssues, checkout);
                 verifications.add(new Verification("History", new GitHistoryVerifier(hostingIssues, checkout)));
-                verifications.add(new Verification("Maven", mavenVerifier));
                 verifications.add(
                         new Verification("RequiredFiles", new RequiredFilesVerifier(hostingIssues, checkout)));
                 try {
                     RepositoryFiles sources = RepositoryFiles.from(checkout);
+                    mavenVerifier = new MavenVerifier(hostingIssues, sources);
+                    verifications.add(new Verification("Maven", mavenVerifier));
                     verifications.add(new Verification("Jelly", new JellyVerifier(hostingIssues, sources)));
                     verifications.add(new Verification("SourceCode", new SourceCodeVerifier(hostingIssues, sources)));
                 } catch (IOException e) {
                     LOGGER.error("Error reading the sources of {}", hostingRequest.getRepositoryUrl(), e);
-                    failedVerifications.add("Jelly");
-                    failedVerifications.add("SourceCode");
+                    failedVerifications.addAll(List.of("Maven", "Jelly", "SourceCode"));
                 }
             }
 

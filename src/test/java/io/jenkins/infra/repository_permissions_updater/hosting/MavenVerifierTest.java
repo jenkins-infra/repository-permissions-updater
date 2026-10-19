@@ -8,6 +8,7 @@ import java.io.StringReader;
 import java.nio.file.Path;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 import org.apache.maven.model.Model;
@@ -40,7 +41,7 @@ class MavenVerifierTest {
                         """);
 
         try (RepositoryCheckout checkout = repo.checkout()) {
-            MavenVerifier verifier = new MavenVerifier(issues, checkout);
+            MavenVerifier verifier = new MavenVerifier(issues, RepositoryFiles.from(checkout));
             verifier.verify(request());
             assertThat(verifier.hasBuildFile(request())).isTrue();
         }
@@ -55,7 +56,7 @@ class MavenVerifierTest {
         TestGitRepository repo = new TestGitRepository(dir).commit("pom.xml", "<project>");
 
         try (RepositoryCheckout checkout = repo.checkout()) {
-            new MavenVerifier(issues, checkout).verify(request());
+            new MavenVerifier(issues, RepositoryFiles.from(checkout)).verify(request());
         }
 
         assertThat(messages()).containsExactly(MavenVerifier.INVALID_POM);
@@ -66,7 +67,7 @@ class MavenVerifierTest {
         TestGitRepository repo = new TestGitRepository(dir).commit("build.gradle", "");
 
         try (RepositoryCheckout checkout = repo.checkout()) {
-            MavenVerifier verifier = new MavenVerifier(issues, checkout);
+            MavenVerifier verifier = new MavenVerifier(issues, RepositoryFiles.from(checkout));
             verifier.verify(request());
             assertThat(verifier.hasBuildFile(request())).isFalse();
         }
@@ -189,5 +190,45 @@ class MavenVerifierTest {
         new MavenVerifier(issues, null)
                 .checkRedundantBuildPlugins(pom("<project/>"), pom("<project><build/></project>"));
         assertTrue(issues.isEmpty());
+    }
+
+    private static final String POM_WITH_STRUCTS = """
+            <project>
+              <dependencies>
+                <dependency>
+                  <groupId>org.jenkins-ci.plugins</groupId>
+                  <artifactId>structs</artifactId>
+                </dependency>
+              </dependencies>
+            </project>
+            """;
+
+    @Test
+    public void structsNotUsed() throws Exception {
+        HashSet<VerificationMessage> issues = new HashSet<>();
+        RepositoryFiles files = new RepositoryFiles(
+                TestGitRepository.HTML_URL + "/blob/abc/",
+                Map.of(
+                        "pom.xml",
+                        POM_WITH_STRUCTS,
+                        "src/main/java/a/Builder.java",
+                        "import org.jenkinsci.Symbol;\n@Symbol(\"x\") class Builder {}"));
+        new MavenVerifier(issues, files).checkStructsDependency(pom(POM_WITH_STRUCTS));
+        assertEquals(1, issues.size(), issues::toString);
+        assertEquals(MavenVerifier.UNNEEDED_STRUCTS, issues.iterator().next().getMessage());
+    }
+
+    @Test
+    public void structsUsed() throws Exception {
+        HashSet<VerificationMessage> issues = new HashSet<>();
+        RepositoryFiles files = new RepositoryFiles(
+                TestGitRepository.HTML_URL + "/blob/abc/",
+                Map.of(
+                        "pom.xml",
+                        POM_WITH_STRUCTS,
+                        "src/main/java/a/Builder.java",
+                        "import org.jenkinsci.plugins.structs.describable.DescribableModel;"));
+        new MavenVerifier(issues, files).checkStructsDependency(pom(POM_WITH_STRUCTS));
+        assertTrue(issues.isEmpty(), issues::toString);
     }
 }

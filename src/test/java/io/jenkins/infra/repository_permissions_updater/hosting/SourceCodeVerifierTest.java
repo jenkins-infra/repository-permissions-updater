@@ -13,16 +13,6 @@ import org.junit.jupiter.api.Test;
 public class SourceCodeVerifierTest {
 
     private static final String BLOB_URL = "https://github.com/owner/repo/blob/abc/";
-    private static final String POM_WITH_STRUCTS = """
-            <project>
-              <dependencies>
-                <dependency>
-                  <groupId>org.jenkins-ci.plugins</groupId>
-                  <artifactId>structs</artifactId>
-                </dependency>
-              </dependencies>
-            </project>
-            """;
 
     private HashSet<VerificationMessage> hostingIssues;
 
@@ -45,30 +35,6 @@ public class SourceCodeVerifierTest {
     }
 
     @Test
-    public void structsNotUsed() {
-        SourceCodeVerifier.checkStructsDependency(
-                files(
-                        "pom.xml",
-                        POM_WITH_STRUCTS,
-                        "src/main/java/a/Builder.java",
-                        "import org.jenkinsci.Symbol;\n@Symbol(\"x\") class Builder {}"),
-                hostingIssues);
-        assertEquals(SourceCodeVerifier.UNNEEDED_STRUCTS, single().getMessage());
-    }
-
-    @Test
-    public void structsUsed() {
-        SourceCodeVerifier.checkStructsDependency(
-                files(
-                        "pom.xml",
-                        POM_WITH_STRUCTS,
-                        "src/main/java/a/Builder.java",
-                        "import org.jenkinsci.plugins.structs.describable.DescribableModel;"),
-                hostingIssues);
-        assertTrue(hostingIssues.isEmpty());
-    }
-
-    @Test
     public void proxySupport() {
         SourceCodeVerifier.checkProxySupport(
                 files(
@@ -76,6 +42,8 @@ public class SourceCodeVerifierTest {
                         "class Client {\n  void get() {\n    HttpURLConnection c = (HttpURLConnection) url.openConnection();\n  }\n}",
                         "src/main/java/a/Download.java",
                         "import java.net.HttpURLConnection;\nclass Download {\n  void get() {\n    archive.copyFrom(new URL(downloadUrl));\n  }\n}",
+                        "src/main/java/a/Secure.java",
+                        "class Secure {\n  HttpsURLConnection connection;\n}",
                         "src/main/java/a/Good.java",
                         "class Good {\n  HttpClient c = ProxyConfiguration.newHttpClientBuilder().build();\n}",
                         "src/main/java/a/Commented.java",
@@ -86,7 +54,8 @@ public class SourceCodeVerifierTest {
         assertEquals(
                 Set.of(
                         "[Client.java#L3](" + BLOB_URL + "src/main/java/a/Client.java#L3)",
-                        "[Download.java#L4](" + BLOB_URL + "src/main/java/a/Download.java#L4)"),
+                        "[Download.java#L4](" + BLOB_URL + "src/main/java/a/Download.java#L4)",
+                        "[Secure.java#L2](" + BLOB_URL + "src/main/java/a/Secure.java#L2)"),
                 message.getSubItems().stream()
                         .map(VerificationMessage::getMessage)
                         .collect(Collectors.toSet()));
