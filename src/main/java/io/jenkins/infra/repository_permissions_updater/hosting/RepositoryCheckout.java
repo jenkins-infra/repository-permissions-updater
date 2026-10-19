@@ -109,13 +109,15 @@ public final class RepositoryCheckout implements AutoCloseable {
     }
 
     /**
-     * @return the contents of the given file on the default branch, or empty if there is no such file
+     * @return the contents of the given file on the default branch decoded as UTF-8, with invalid bytes replaced,
+     *     or empty if there is no such file
      */
     public Optional<String> read(String path) throws IOException {
         if (!isFile(path)) {
             return Optional.empty();
         }
-        return Optional.of(Files.readString(resolve(path), StandardCharsets.UTF_8));
+        // not Files.readString, which fails on files that are not valid UTF-8, e.g. ISO-8859-1 .properties files
+        return Optional.of(new String(Files.readAllBytes(resolve(path)), StandardCharsets.UTF_8));
     }
 
     /**

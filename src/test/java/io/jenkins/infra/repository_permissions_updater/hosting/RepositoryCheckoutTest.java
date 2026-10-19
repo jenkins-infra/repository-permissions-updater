@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -120,5 +121,20 @@ class RepositoryCheckoutTest {
         assertThat(RepositoryCheckout.gitHubUrl("https://github.com/me/cool-plugin/tree/main"))
                 .isEmpty();
         assertThat(RepositoryCheckout.gitHubUrl(null)).isEmpty();
+    }
+
+    @Test
+    void readsFilesThatAreNotUtf8() throws Exception {
+        TestGitRepository repo = new TestGitRepository(dir).commit("pom.xml", "<project/>");
+        Path properties = repo.dir().resolve("src/main/resources/Messages_de.properties");
+        Files.createDirectories(properties.getParent());
+        Files.write(properties, "name=Gr\u00fc\u00dfe".getBytes(StandardCharsets.ISO_8859_1));
+        repo.git("add", ".").git("commit", "--quiet", "-m", "latin-1");
+
+        try (RepositoryCheckout checkout = repo.checkout()) {
+            assertThat(checkout.read("src/main/resources/Messages_de.properties"))
+                    .hasValueSatisfying(contents -> assertThat(contents).startsWith("name=Gr"));
+            assertThat(RepositoryFiles.from(checkout).get("pom.xml")).contains("<project/>");
+        }
     }
 }

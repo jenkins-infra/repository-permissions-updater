@@ -116,7 +116,12 @@ public class MavenVerifier implements BuildSystemVerifier {
             checkSoftwareConfigurationManagementField(model);
             checkDependencies(model);
             checkCompileOnlyAnnotations(model);
-            checkProvidedByParentOrCore(model);
+            try {
+                checkProvidedByParentOrCore(model);
+            } catch (RuntimeException e) {
+                // downloads poms from repo.jenkins-ci.org, so a failure here says nothing about the plugin's pom.xml
+                LOGGER.warn("Failed to compare the pom.xml with the parent pom and Jenkins core", e);
+            }
             checkDependencyManagement(model);
             checkDevelopersTag(model);
             checkProperties(model);
