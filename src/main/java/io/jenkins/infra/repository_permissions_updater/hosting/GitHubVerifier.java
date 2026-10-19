@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
-import org.kohsuke.github.GHCommit;
 import org.kohsuke.github.GHContent;
 import org.kohsuke.github.GHLicense;
 import org.kohsuke.github.GHRepository;
@@ -17,10 +16,6 @@ import org.kohsuke.github.GHUser;
 import org.kohsuke.github.GitHub;
 
 public class GitHubVerifier implements Verifier {
-
-    private static final String UNWANTED_FILES =
-            "It was detected that you have files in the `%s` folder or that you had in the past files in that folder. "
-                    + "Please remove the `target` folder and also rewrite the git history to never have contained any files in the `%s` folder.";
 
     private final HashSet<VerificationMessage> hostingIssues;
 
@@ -94,7 +89,6 @@ public class GitHubVerifier implements Verifier {
                     checkLicense(repo);
                     checkForkedFromJenkinsCi(repo, forkFrom);
                     checkForkedIntoJenkinsCi(repo, forkFrom);
-                    checkUnwantedFiles(repo);
                 }
             } else {
                 hostingIssues.add(new VerificationMessage(
@@ -171,35 +165,6 @@ public class GitHubVerifier implements Verifier {
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
                             "Please add a readme file to your repo, GitHub provides an easy mechanism to do this from their user interface."));
-        }
-    }
-
-    private void checkUnwantedFiles(GHRepository repo) {
-        boolean foundTargetFolder = false;
-        boolean foundWorkFolder = false;
-        for (GHCommit commit : repo.listCommits()) {
-            try {
-                List<GHCommit.File> files = commit.listFiles().toList();
-                if (files.stream().anyMatch(file -> file.getFileName().startsWith("target/"))) {
-                    foundTargetFolder = true;
-                }
-                if (files.stream().anyMatch(file -> file.getFileName().startsWith("work/"))) {
-                    foundWorkFolder = true;
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            if (foundTargetFolder && foundWorkFolder) {
-                break;
-            }
-        }
-        if (foundTargetFolder) {
-            hostingIssues.add(
-                    new VerificationMessage(VerificationMessage.Severity.REQUIRED, UNWANTED_FILES, "target", "target"));
-        }
-        if (foundWorkFolder) {
-            hostingIssues.add(
-                    new VerificationMessage(VerificationMessage.Severity.REQUIRED, UNWANTED_FILES, "work", "work"));
         }
     }
 }

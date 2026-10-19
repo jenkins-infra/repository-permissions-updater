@@ -1,24 +1,17 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
 import static io.jenkins.infra.repository_permissions_updater.hosting.Requirements.ALLOWED_JDK_VERSIONS;
-import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 import groovy.lang.GroovyClassLoader;
 import groovy.lang.GroovyRuntimeException;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang3.StringUtils;
+import java.util.Optional;
 import org.codehaus.groovy.ast.ClassNode;
 import org.codehaus.groovy.ast.MethodNode;
 import org.codehaus.groovy.ast.Parameter;
@@ -37,115 +30,85 @@ import org.codehaus.groovy.ast.stmt.Statement;
 import org.codehaus.groovy.control.CompilationUnit;
 import org.codehaus.groovy.control.CompilerConfiguration;
 import org.codehaus.groovy.control.Phases;
-import org.kohsuke.github.GHContent;
-import org.kohsuke.github.GHFileNotFoundException;
-import org.kohsuke.github.GHRepository;
-import org.kohsuke.github.GitHub;
 
 public class RequiredFilesVerifier implements Verifier {
 
     private final HashSet<VerificationMessage> hostingIssues;
+    private final RepositoryCheckout checkout;
 
-    public RequiredFilesVerifier(HashSet<VerificationMessage> hostingIssues) {
+    public RequiredFilesVerifier(HashSet<VerificationMessage> hostingIssues, RepositoryCheckout checkout) {
         this.hostingIssues = hostingIssues;
+        this.checkout = checkout;
     }
 
     @Override
     public void verify(HostingRequest request) throws IOException {
-
-        GitHub github = GitHub.connect();
-        String forkFrom = request.getRepositoryUrl();
-        String forkTo = request.getNewRepoName();
-
-        if (StringUtils.isNotBlank(forkFrom)) {
-            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE)
-                    .matcher(forkFrom);
-            if (m.matches()) {
-                String owner = m.group(1);
-                String repoName = m.group(2);
-
-                GHRepository repo = github.getRepository(owner + "/" + repoName);
-                checkJenkinsfile(repo);
-                checkSecurityScan(repo);
-                checkCodeOwners(repo, forkTo);
-                checkGitignore(repo);
-                checkDependencyBot(repo);
-                if (request.isEnableCD()) {
-                    checkFilesForCD(repo);
-                }
-            }
+        checkJenkinsfile();
+        checkSecurityScan();
+        checkCodeOwners(request.getNewRepoName());
+        checkGitignore();
+        checkDependencyBot();
+        if (request.isEnableCD()) {
+            checkFilesForCD();
         }
     }
 
-    private void checkCodeOwners(GHRepository repo, String forkTo) throws IOException {
+    private void checkCodeOwners(String forkTo) throws IOException {
         String expected = "* @jenkinsci/" + forkTo + "-developers";
-        GHContent file = null;
-        try {
-            file = repo.getFileContent(".github/CODEOWNERS");
-        } catch (GHFileNotFoundException e) {
+        Optional<String> file = checkout.read(".github/CODEOWNERS");
+        if (file.isEmpty()) {
             hostingIssues.add(new VerificationMessage(
                     VerificationMessage.Severity.REQUIRED,
                     "Missing file `.github/CODEOWNERS`. Please add this file containing the line: `" + expected + "`"));
             return;
         }
-        try (BufferedReader bufferedReader =
-                new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
-            if (bufferedReader.lines().noneMatch(line -> line.equals(expected))) {
-                hostingIssues.add(new VerificationMessage(
-                        VerificationMessage.Severity.REQUIRED,
-                        "The file `.github/CODEOWNERS` doesn't contain the expected line `" + expected + "`"));
-            }
+        if (file.get().lines().noneMatch(line -> line.equals(expected))) {
+            hostingIssues.add(new VerificationMessage(
+                    VerificationMessage.Severity.REQUIRED,
+                    "The file `.github/CODEOWNERS` doesn't contain the expected line `" + expected + "`"));
         }
     }
 
-    private void checkJenkinsfile(GHRepository repo) throws IOException {
-        GHContent file = null;
-        try {
-            file = repo.getFileContent("Jenkinsfile");
-        } catch (GHFileNotFoundException e) {
+    private void checkJenkinsfile() throws IOException {
+        Optional<String> file = checkout.read("Jenkinsfile");
+        if (file.isEmpty()) {
             hostingIssues.add(
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
                             "Missing file `Jenkinsfile`. Please add a Jenkinsfile to your repo so it can be built on ci.jenkins.io. A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/Jenkinsfile)"));
             return;
         }
-        validateJenkinsFile(file);
+        validateJenkinsFile(file.get());
     }
 
-    private void checkGitignore(GHRepository repo) throws IOException {
-        GHContent file = null;
-        try {
-            file = repo.getFileContent(".gitignore");
-        } catch (GHFileNotFoundException e) {
+    private void checkGitignore() throws IOException {
+        Optional<String> file = checkout.read(".gitignore");
+        if (file.isEmpty()) {
             hostingIssues.add(
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
                             "Missing file `.gitignore`. Please add a `.gitignore` to help keep your git repo lean. A suitable version can be downloaded [here](https://github.com/jenkinsci/archetypes/blob/master/common-files/gitignore)"));
             return;
         }
-        try (BufferedReader bufferedReader =
-                new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
-            List<String> lines = bufferedReader.lines().toList();
-            if (lines.stream()
-                    .noneMatch(line -> line.equals("target") || line.equals("target/") || line.equals("/target/"))) {
-                hostingIssues.add(
-                        new VerificationMessage(
-                                VerificationMessage.Severity.REQUIRED,
-                                "The file `.gitignore` doesn't exclude `target`. Please add a line so that you don't check-in this directory by accident."));
-            }
-            if (lines.stream()
-                    .noneMatch(line -> line.equals("work") || line.equals("work/") || line.equals("/work/"))) {
-                hostingIssues.add(
-                        new VerificationMessage(
-                                VerificationMessage.Severity.REQUIRED,
-                                "The file `.gitignore` doesn't exclude `work`. Please add a line so that you don't check-in this directory by accident."));
-            }
+        List<String> lines = file.get().lines().toList();
+        if (lines.stream()
+                .noneMatch(line -> line.equals("target") || line.equals("target/") || line.equals("/target/"))) {
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "The file `.gitignore` doesn't exclude `target`. Please add a line so that you don't check-in this directory by accident."));
+        }
+        if (lines.stream().noneMatch(line -> line.equals("work") || line.equals("work/") || line.equals("/work/"))) {
+            hostingIssues.add(
+                    new VerificationMessage(
+                            VerificationMessage.Severity.REQUIRED,
+                            "The file `.gitignore` doesn't exclude `work`. Please add a line so that you don't check-in this directory by accident."));
         }
     }
 
-    private void checkSecurityScan(GHRepository repo) throws IOException {
-        if (fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yml")
-                && fileNotExistsInRepo(repo, ".github/workflows/jenkins-security-scan.yaml")) {
+    private void checkSecurityScan() {
+        if (fileNotExistsInRepo(".github/workflows/jenkins-security-scan.yml")
+                && fileNotExistsInRepo(".github/workflows/jenkins-security-scan.yaml")) {
             hostingIssues.add(
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
@@ -154,13 +117,13 @@ public class RequiredFilesVerifier implements Verifier {
         }
     }
 
-    private void checkDependencyBot(GHRepository repo) throws IOException {
-        if (fileNotExistsInRepo(repo, ".github/dependabot.yml")
-                && fileNotExistsInRepo(repo, ".github/dependabot.yaml")
-                && fileNotExistsInRepo(repo, "renovate.json")
-                && fileNotExistsInRepo(repo, ".github/renovate.json")
-                && fileNotExistsInRepo(repo, ".github/workflows/updatecli.yml")
-                && fileNotExistsInRepo(repo, ".github/workflows/updatecli.yaml")) {
+    private void checkDependencyBot() {
+        if (fileNotExistsInRepo(".github/dependabot.yml")
+                && fileNotExistsInRepo(".github/dependabot.yaml")
+                && fileNotExistsInRepo("renovate.json")
+                && fileNotExistsInRepo(".github/renovate.json")
+                && fileNotExistsInRepo(".github/workflows/updatecli.yml")
+                && fileNotExistsInRepo(".github/workflows/updatecli.yaml")) {
             hostingIssues.add(
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
@@ -170,50 +133,44 @@ public class RequiredFilesVerifier implements Verifier {
         }
     }
 
-    private void checkFilesForCD(GHRepository repo) throws IOException {
+    private void checkFilesForCD() throws IOException {
 
-        if (fileNotExistsInRepo(repo, ".mvn/extensions.xml")) {
+        if (fileNotExistsInRepo(".mvn/extensions.xml")) {
             hostingIssues.add(
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
                             "Missing file `.mvn/extensions.xml`. This file is required when CD is enabled. "
                                     + "A suitable version can be downloaded [here](https://raw.githubusercontent.com/jenkinsci/archetypes/refs/heads/master/common-files/.mvn/extensions.xml)"));
         }
-        if (fileNotExistsInRepo(repo, ".github/workflows/cd.yaml")
-                && fileNotExistsInRepo(repo, ".github/workflows/cd.yml")) {
+        if (fileNotExistsInRepo(".github/workflows/cd.yaml") && fileNotExistsInRepo(".github/workflows/cd.yml")) {
             hostingIssues.add(
                     new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
                             "Missing file `.github/workflows/cd.yaml`. This file is required when CD is enabled. "
                                     + "A suitable version can be downloaded [here](https://raw.githubusercontent.com/jenkinsci/.github/master/workflow-templates/cd.yaml"));
         }
-        if (!fileNotExistsInRepo(repo, ".github/release-drafter.yml")
-                || !fileNotExistsInRepo(repo, ".github/release-drafter.yaml")) {
+        if (!fileNotExistsInRepo(".github/release-drafter.yml")
+                || !fileNotExistsInRepo(".github/release-drafter.yaml")) {
             hostingIssues.add(new VerificationMessage(
                     VerificationMessage.Severity.REQUIRED,
                     "The file `.github/release-drafter.y*ml` should be removed when CD is enabled."));
         }
-        if (!fileNotExistsInRepo(repo, ".github/workflows/release-drafter.yml")
-                || !fileNotExistsInRepo(repo, ".github/workflows/release-drafter.yaml")) {
+        if (!fileNotExistsInRepo(".github/workflows/release-drafter.yml")
+                || !fileNotExistsInRepo(".github/workflows/release-drafter.yaml")) {
             hostingIssues.add(new VerificationMessage(
                     VerificationMessage.Severity.REQUIRED,
                     "The file `.github/workflows/release-drafter.y*ml` should be removed when CD is enabled."));
         }
-        GHContent file = null;
         String expected = "-Dchangelist.format=%d.v%s";
-        try {
-            file = repo.getFileContent(".mvn/maven.config");
-            try (BufferedReader bufferedReader =
-                    new BufferedReader(new InputStreamReader(file.read(), StandardCharsets.UTF_8))) {
-                if (bufferedReader.lines().noneMatch(line -> line.equals(expected))) {
-                    hostingIssues.add(new VerificationMessage(
-                            VerificationMessage.Severity.REQUIRED,
-                            "The file `.mvn/maven.config` doesn't contain the expected line `"
-                                    + expected.replaceAll("%", "%%") + "`"));
-                }
+        Optional<String> file = checkout.read(".mvn/maven.config");
+        if (file.isPresent()) {
+            if (file.get().lines().noneMatch(line -> line.equals(expected))) {
+                hostingIssues.add(new VerificationMessage(
+                        VerificationMessage.Severity.REQUIRED,
+                        "The file `.mvn/maven.config` doesn't contain the expected line `"
+                                + expected.replaceAll("%", "%%") + "`"));
             }
-
-        } catch (GHFileNotFoundException e) {
+        } else {
             hostingIssues.add(new VerificationMessage(
                     VerificationMessage.Severity.REQUIRED,
                     "Missing file `.mvn/maven.config`. This file is required when CD is enabled. "
@@ -223,13 +180,11 @@ public class RequiredFilesVerifier implements Verifier {
     }
 
     @SuppressWarnings("unchecked")
-    public void validateJenkinsFile(GHContent file) {
+    public void validateJenkinsFile(String script) {
         try {
             GroovyClassLoader loader = new GroovyClassLoader();
             CompilerConfiguration config = new CompilerConfiguration();
             CompilationUnit unit = new CompilationUnit(config, null, loader);
-
-            String script = IOUtils.toString(file.read(), StandardCharsets.UTF_8);
 
             unit.addSource("Script.groovy", script);
             unit.compile(Phases.SEMANTIC_ANALYSIS);
@@ -377,9 +332,6 @@ public class RequiredFilesVerifier implements Verifier {
                 }
             }
 
-        } catch (IOException e) {
-            hostingIssues.add(
-                    new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Could not read Jenkinsfile."));
         } catch (GroovyRuntimeException e) {
             hostingIssues.add(
                     new VerificationMessage(VerificationMessage.Severity.REQUIRED, "Could not parse Jenkinsfile."));
@@ -418,12 +370,7 @@ public class RequiredFilesVerifier implements Verifier {
                 "Unsupported expression type: " + expr.getClass().getSimpleName());
     }
 
-    private boolean fileNotExistsInRepo(GHRepository repo, String fileName) throws IOException {
-        try {
-            GHContent file = repo.getFileContent(fileName);
-            return file == null || !file.isFile();
-        } catch (GHFileNotFoundException e) {
-            return true;
-        }
+    private boolean fileNotExistsInRepo(String fileName) {
+        return !checkout.isFile(fileName);
     }
 }

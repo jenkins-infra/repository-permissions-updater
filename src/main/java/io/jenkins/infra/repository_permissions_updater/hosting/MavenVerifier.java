@@ -3,7 +3,6 @@ package io.jenkins.infra.repository_permissions_updater.hosting;
 import static io.jenkins.infra.repository_permissions_updater.hosting.Requirements.LOWEST_JENKINS_VERSION;
 import static io.jenkins.infra.repository_permissions_updater.hosting.Requirements.LOWEST_PARENT_POM_VERSION;
 import static io.jenkins.infra.repository_permissions_updater.hosting.Requirements.PARENT_POM_WITH_JENKINS_VERSION;
-import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.io.BufferedReader;
@@ -42,10 +41,6 @@ import org.codehaus.plexus.interpolation.InterpolationException;
 import org.codehaus.plexus.interpolation.MapBasedValueSource;
 import org.codehaus.plexus.interpolation.RegexBasedInterpolator;
 import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
-import org.kohsuke.github.GHContent;
-import org.kohsuke.github.GHFileNotFoundException;
-import org.kohsuke.github.GHRepository;
-import org.kohsuke.github.GitHub;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -58,8 +53,6 @@ public class MavenVerifier implements BuildSystemVerifier {
     public static final String INVALID_POM = "The pom.xml file in the root of the origin repository is not valid";
     public static final String SPECIFY_LICENSE =
             "Please specify a license in your pom.xml file using the &lt;licenses&gt; tag. See https://maven.apache.org/pom.html#Licenses for more information.";
-    public static final String MISSING_POM_XML =
-            "No pom.xml found in root of project, if you are using a different build system, or this is not a plugin, you can disregard this message";
 
     public static final String SHOULD_BE_IO_JENKINS_PLUGINS =
             "The &lt;groupId&gt; from the pom.xml should be `io.jenkins.plugins` instead of `%s`";
@@ -67,64 +60,49 @@ public class MavenVerifier implements BuildSystemVerifier {
     public static final String DEPENDENCY_SHOULD_USE_API_PLUGIN =
             "The dependency `%s` should be replaced with a dependency to the api plugin `%s` %s";
     private final HashSet<VerificationMessage> hostingIssues;
+    private final RepositoryCheckout checkout;
 
-    public MavenVerifier(HashSet<VerificationMessage> hostingIssues) {
+    public MavenVerifier(HashSet<VerificationMessage> hostingIssues, RepositoryCheckout checkout) {
         this.hostingIssues = hostingIssues;
+        this.checkout = checkout;
     }
 
     @Override
     public void verify(HostingRequest issue) throws IOException {
-        GitHub github = GitHub.connect();
-        String forkTo = issue.getNewRepoName();
-        String forkFrom = issue.getRepositoryUrl();
+        Optional<String> pomXml = checkout.read("pom.xml");
+        if (pomXml.isEmpty()) {
+            // reported as "No pom.xml detected." by HostingChecker
+            return;
+        }
+        Model model;
+        try (StringReader contents = new StringReader(pomXml.get())) {
+            model = new MavenXpp3Reader().read(contents);
+        } catch (XmlPullParserException | IOException e) {
+            // reading from a string, so an IOException is also a parse error, e.g. a truncated file
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
+            return;
+        }
 
-        if (StringUtils.isNotBlank(forkFrom)) {
-            Matcher m = Pattern.compile("(?:https://github\\.com/)?(\\S+)/(\\S+)", CASE_INSENSITIVE)
-                    .matcher(forkFrom);
-            if (m.matches()) {
-                String owner = m.group(1);
-                String repoName = m.group(2);
-
-                GHRepository repo = github.getRepository(owner + "/" + repoName);
-                try {
-                    GHContent pomXml = repo.getFileContent("pom.xml");
-                    if (pomXml != null && pomXml.isFile()) {
-                        InputStream contents = pomXml.read();
-                        MavenXpp3Reader reader = new MavenXpp3Reader();
-                        Model model = reader.read(contents);
-
-                        try {
-                            checkArtifactId(model, forkTo);
-                            checkParentInfoAndJenkinsVersion(model);
-                            checkName(model);
-                            checkLicenses(model);
-                            checkGroupId(model);
-                            checkRepositories(model);
-                            checkPluginRepositories(model);
-                            checkSoftwareConfigurationManagementField(model);
-                            checkDependencies(model);
-                            checkDependencyManagement(model);
-                            checkDevelopersTag(model);
-                            checkProperties(model);
-                            checkUrl(model);
-                            if (issue.isEnableCD()) {
-                                checkAutomaticReleasesSettings(model);
-                            }
-                        } catch (Exception e) {
-                            LOGGER.error("Failed looking at pom.xml", e);
-                            hostingIssues.add(
-                                    new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
-                        }
-                    }
-                } catch (GHFileNotFoundException e) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.WARNING, MISSING_POM_XML));
-                } catch (XmlPullParserException e) {
-                    hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
-                }
-            } else {
-                hostingIssues.add(new VerificationMessage(
-                        VerificationMessage.Severity.REQUIRED, HostingChecker.INVALID_FORK_FROM, forkFrom));
+        try {
+            checkArtifactId(model, issue.getNewRepoName());
+            checkParentInfoAndJenkinsVersion(model);
+            checkName(model);
+            checkLicenses(model);
+            checkGroupId(model);
+            checkRepositories(model);
+            checkPluginRepositories(model);
+            checkSoftwareConfigurationManagementField(model);
+            checkDependencies(model);
+            checkDependencyManagement(model);
+            checkDevelopersTag(model);
+            checkProperties(model);
+            checkUrl(model);
+            if (issue.isEnableCD()) {
+                checkAutomaticReleasesSettings(model);
             }
+        } catch (Exception e) {
+            LOGGER.error("Failed looking at pom.xml", e);
+            hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
         }
     }
 
@@ -148,8 +126,8 @@ public class MavenVerifier implements BuildSystemVerifier {
     }
 
     @Override
-    public boolean hasBuildFile(HostingRequest issue) throws IOException {
-        return HostingChecker.fileExistsInRepo(issue, "pom.xml");
+    public boolean hasBuildFile(HostingRequest issue) {
+        return checkout.isFile("pom.xml");
     }
 
     private void checkAutomaticReleasesSettings(Model model) {
@@ -182,7 +160,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                         VerificationMessage.Severity.REQUIRED, "Missing value for 'New Repository Name' field"));
             }
 
-            String groupId = model.getGroupId();
+            String groupId = effectiveGroupId(model);
             String artifactId = model.getArtifactId();
 
             if (StringUtils.isNotBlank(artifactId)) {
@@ -203,7 +181,7 @@ public class MavenVerifier implements BuildSystemVerifier {
                             artifactId.length()));
                 }
 
-                int lengthOfGroupIdAndArtifactId = groupId.length() + artifactId.length();
+                int lengthOfGroupIdAndArtifactId = StringUtils.length(groupId) + artifactId.length();
                 if (lengthOfGroupIdAndArtifactId >= MAX_LENGTH_OF_GROUP_ID_PLUS_ARTIFACT_ID) {
                     hostingIssues.add(new VerificationMessage(
                             VerificationMessage.Severity.REQUIRED,
@@ -236,6 +214,16 @@ public class MavenVerifier implements BuildSystemVerifier {
             LOGGER.error("Error trying to access artifactId", e);
             hostingIssues.add(new VerificationMessage(VerificationMessage.Severity.REQUIRED, INVALID_POM));
         }
+    }
+
+    /**
+     * The project's groupId, or the parent's when the project inherits it, as Maven does.
+     */
+    static String effectiveGroupId(Model model) {
+        if (StringUtils.isNotBlank(model.getGroupId())) {
+            return model.getGroupId();
+        }
+        return model.getParent() != null ? model.getParent().getGroupId() : null;
     }
 
     private void checkGroupId(Model model) {

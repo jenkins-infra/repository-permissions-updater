@@ -3,6 +3,11 @@ labels: 'hosting-request'
 description: I want to host a plugin or library in the Jenkins organization
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening this request, please [run the hosting checks locally](https://github.com/jenkins-infra/repository-permissions-updater#running-the-hosting-checks-locally) and fix any issues marked Required.
+        The same checks run automatically on this request, and it will not be reviewed until they pass.
   - type: input
     attributes:
       label: Repository URL
@@ -52,3 +57,9 @@ body:
         - "No"
     validations:
       required: true
+  - type: checkboxes
+    attributes:
+      label: Hosting checks
+      options:
+        - label: I have [run the hosting checks locally](https://github.com/jenkins-infra/repository-permissions-updater#running-the-hosting-checks-locally) against this repository and fixed all issues marked Required
+          required: true

@@ -12,6 +12,66 @@ This repository contains both the definitions for Artifactory upload permissions
 
 **Note:** These permissions are specifically for _uploading_ artifacts to the Jenkins project's Maven repository. It is independent of GitHub repository permissions. You may have one without the other. Typically, you'll either have both, or just the GitHub repository access.
 
+Requesting Hosting
+------------------
+
+To host a new plugin in the `jenkinsci` GitHub organization, open a [hosting request](https://github.com/jenkins-infra/repository-permissions-updater/issues/new?template=1-hosting-request.yml).
+See [the hosting documentation](https://www.jenkins.io/doc/developer/publishing/requesting-hosting/) for more information.
+
+The Jenkins Hosting Checker comments on every hosting request with the problems it finds, and the hosting team reviews the request once those are fixed.
+**Please run the same checks yourself before opening the request** so it can be processed without rounds of fixing and re-checking.
+
+### Running the hosting checks locally
+
+Requirements: Java 25 or newer, Maven, and a GitHub token (no scopes needed).
+If you have the [GitHub CLI](https://cli.github.com/) logged in, its token is picked up automatically; otherwise set `GITHUB_OAUTH` (or `GITHUB_TOKEN`).
+
+The checks read your repository from GitHub, so push your changes first, then:
+
+```shell
+git clone https://github.com/jenkins-infra/repository-permissions-updater.git
+cd repository-permissions-updater
+./bin/check-hosting.sh \
+  --repository-url https://github.com/your-org/your-cool-plugin \
+  --new-repository-name your-cool-plugin \
+  --github-user your-github-user \
+  --jenkins-user your-jenkins-account
+```
+
+* `--repository-url`: the repository to host, as you will enter it in the hosting request.
+* `--new-repository-name`: the name it will have in `jenkinsci`, `<artifactId>-plugin`. Defaults to the current repository name.
+* `--github-user`: GitHub users to have commit permission, comma separated or repeated.
+* `--jenkins-user`: [Jenkins community accounts](https://accounts.jenkins.io) to have release permission, comma separated or repeated.
+* `--no-cd`: add this if you will not request automated releases via GitHub Actions.
+
+The first run builds the checker.
+After pulling updates to this repository, run with `REBUILD=1` to use the latest checks.
+Set `VERBOSE=1` to see the checker's full log.
+The script exits with `0` when no issues marked Required are found, and `1` when there are issues to fix.
+Fix them, push, and run it again.
+
+### Using an AI coding agent
+
+The [`jenkins-hosting-check`](.claude/skills/jenkins-hosting-check/SKILL.md) skill teaches an AI coding agent to run the checks against your plugin and fix what they report.
+Install it as a personal skill so it is available while working in your plugin repository.
+From your clone of this repository:
+
+```shell
+# GitHub Copilot and OpenAI Codex read personal skills from ~/.agents/skills
+mkdir -p ~/.agents/skills
+ln -sfn "$PWD/.claude/skills/jenkins-hosting-check" ~/.agents/skills/jenkins-hosting-check
+
+# Claude Code reads personal skills from ~/.claude/skills
+mkdir -p ~/.claude/skills
+ln -sfn "$PWD/.claude/skills/jenkins-hosting-check" ~/.claude/skills/jenkins-hosting-check
+```
+
+The symlinks keep the skill up to date when you `git pull` this repository.
+To install a snapshot instead, replace `ln -sfn` with `cp -R`.
+Claude Code also picks up the skill automatically when run inside this repository.
+
+Then ask the agent to check that your plugin is ready to be hosted.
+
 Requesting Permissions
 ----------------------
 
@@ -391,6 +451,7 @@ RPU_CLI="java -jar target/repository-permissions-updater-*-bin/repository-permis
 
 $RPU_CLI sync
 $RPU_CLI check-hosting <issue-id>
+$RPU_CLI precheck-hosting --repository-url <url> --github-user <user> --jenkins-user <user>
 $RPU_CLI host <issue-id>
 ```
 
@@ -414,6 +475,9 @@ The following Java system properties can be used to customize the behavior of th
   If unspecified, the value will be `MAVEN_` by default, or `DEV_MAVEN_` in _development mode_.
 * `jiraUserNamesJsonListUrl` - URL to a list containing known Jira user names of (potential) maintainers.
   This is essentially a workaround to reduce the number of individual user lookups via Jira API.
+
+`precheck-hosting` runs the same checks as `check-hosting` without a hosting request issue and prints the result instead of commenting.
+`bin/check-hosting.sh` wraps it, see [Running the hosting checks locally](#running-the-hosting-checks-locally).
 
 The following Java system properties can be used for the `check-hosting` command:
 
