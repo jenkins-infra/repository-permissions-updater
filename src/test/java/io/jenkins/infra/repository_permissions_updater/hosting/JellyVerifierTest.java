@@ -65,6 +65,32 @@ public class JellyVerifierTest {
         Assertions.assertEquals(0, hostingIssues.size());
     }
 
+    @Test
+    public void formIssues() {
+        Element root = loadJelly("formIssues");
+        Assertions.assertTrue(JellyVerifier.hasCheckMethodPost(root));
+        Assertions.assertTrue(JellyVerifier.hasRepeatableWithoutDeleteButton(root));
+        Assertions.assertTrue(JellyVerifier.hasCredentialsFieldWithoutCredentialsSelect(root));
+    }
+
+    @Test
+    public void formOk() {
+        Element root = loadJelly("formOk");
+        Assertions.assertFalse(JellyVerifier.hasCheckMethodPost(root));
+        Assertions.assertFalse(JellyVerifier.hasRepeatableWithoutDeleteButton(root));
+        Assertions.assertFalse(JellyVerifier.hasCredentialsFieldWithoutCredentialsSelect(root));
+    }
+
+    @Test
+    public void repeatablePropertyWithoutDeleteButton() {
+        Assertions.assertTrue(JellyVerifier.hasRepeatableWithoutDeleteButton(loadJelly("repeatablePropertyIssues")));
+    }
+
+    @Test
+    public void repeatablePropertyWithDeleteButton() {
+        Assertions.assertFalse(JellyVerifier.hasRepeatableWithoutDeleteButton(loadJelly("repeatablePropertyOk")));
+    }
+
     private Element loadJelly(String file) {
         String fullPath = "src/test/resources/" + file + ".jelly";
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -92,7 +118,7 @@ public class JellyVerifierTest {
                         Files.readString(Path.of("src/test/resources/inlineStyle.jelly")));
 
         try (RepositoryCheckout checkout = repo.checkout()) {
-            new JellyVerifier(hostingIssues, checkout)
+            new JellyVerifier(hostingIssues, RepositoryFiles.from(checkout))
                     .verify(new HostingRequest(
                             TestGitRepository.HTML_URL, "cool-plugin", List.of(), List.of(), null, false));
         }
@@ -101,8 +127,9 @@ public class JellyVerifierTest {
                 .hasSize(2)
                 .anyMatch(
                         m -> m.matches(
-                                "The jelly file https://github.com/me/cool-plugin/blob/[0-9a-f]{40}/"
-                                        + "src/main/resources/io/jenkins/Cool/config.jelly contains a `<script>` tag with inline javascript."))
+                                "The jelly file \\[src/main/resources/io/jenkins/Cool/config.jelly]"
+                                        + "\\(https://github.com/me/cool-plugin/blob/[0-9a-f]{40}/"
+                                        + "src/main/resources/io/jenkins/Cool/config.jelly\\) contains a `<script>` tag with inline javascript."))
                 .anyMatch(m -> m.startsWith("One or more usages of inline javascript"));
     }
 }

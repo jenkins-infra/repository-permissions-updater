@@ -331,6 +331,14 @@ public class RequiredFilesVerifier implements Verifier {
                     return;
                 }
             }
+            Integer newestJdk = ALLOWED_JDK_VERSIONS.getLast();
+            if (configurations.stream().noneMatch(c -> newestJdk.equals(c.get("jdk")))) {
+                hostingIssues.add(new VerificationMessage(
+                        VerificationMessage.Severity.WARNING,
+                        "There should be at least one build configuration in the `buildPlugin` call in the Jenkinsfile that uses the newest supported Java version `%d`, e.g. `[platform: 'linux', jdk: %d]`.",
+                        newestJdk,
+                        newestJdk));
+            }
 
         } catch (GroovyRuntimeException e) {
             hostingIssues.add(

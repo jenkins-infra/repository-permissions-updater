@@ -109,13 +109,15 @@ public final class RepositoryCheckout implements AutoCloseable {
     }
 
     /**
-     * @return the contents of the given file on the default branch, or empty if there is no such file
+     * @return the contents of the given file on the default branch decoded as UTF-8, with invalid bytes replaced,
+     *     or empty if there is no such file
      */
     public Optional<String> read(String path) throws IOException {
         if (!isFile(path)) {
             return Optional.empty();
         }
-        return Optional.of(Files.readString(resolve(path), StandardCharsets.UTF_8));
+        // not Files.readString, which fails on files that are not valid UTF-8, e.g. ISO-8859-1 .properties files
+        return Optional.of(new String(Files.readAllBytes(resolve(path)), StandardCharsets.UTF_8));
     }
 
     /**
@@ -127,13 +129,22 @@ public final class RepositoryCheckout implements AutoCloseable {
         if (dir == null || !Files.isDirectory(dir, LinkOption.NOFOLLOW_LINKS)) {
             return List.of();
         }
+        Path gitDir = root.resolve(".git");
         try (Stream<Path> paths = Files.walk(dir)) {
-            return paths.filter(p -> Files.isRegularFile(p, LinkOption.NOFOLLOW_LINKS))
+            return paths.filter(p -> !p.startsWith(gitDir))
+                    .filter(p -> Files.isRegularFile(p, LinkOption.NOFOLLOW_LINKS))
                     .filter(p -> p.getFileName().toString().endsWith(suffix))
                     .map(p -> root.relativize(p).toString().replace('\\', '/'))
                     .sorted()
                     .toList();
         }
+    }
+
+    /**
+     * @return the size in bytes of the given file on the default branch, or 0 if there is no such file
+     */
+    public long size(String path) throws IOException {
+        return isFile(path) ? Files.size(resolve(path)) : 0;
     }
 
     Path root() {

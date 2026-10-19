@@ -1,6 +1,8 @@
 package io.jenkins.infra.repository_permissions_updater.hosting;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.nio.file.Path;
 import java.util.HashSet;
@@ -20,7 +22,7 @@ class RequiredFilesVerifierTest {
         TestGitRepository repo = new TestGitRepository(dir)
                 .commit(
                         "Jenkinsfile",
-                        "buildPlugin(useContainerAgent: true, configurations: [[platform: 'linux', jdk: 21]])")
+                        "buildPlugin(useContainerAgent: true, configurations: [[platform: 'linux', jdk: 25]])")
                 .commit(".github/workflows/jenkins-security-scan.yml", "")
                 .commit(".github/CODEOWNERS", "* @jenkinsci/cool-plugin-developers\n")
                 .commit(".gitignore", "target\nwork\n")
@@ -76,5 +78,31 @@ class RequiredFilesVerifierTest {
                     .verify(new HostingRequest(
                             TestGitRepository.HTML_URL, "cool-plugin", List.of("me"), List.of("me"), null, enableCD));
         }
+    }
+
+    @Test
+    public void jenkinsfileWithNewestJava() {
+        HashSet<VerificationMessage> issues = new HashSet<>();
+        new RequiredFilesVerifier(issues, null).validateJenkinsFile("""
+                        buildPlugin(useContainerAgent: true, configurations: [
+                          [platform: 'linux', jdk: 25],
+                          [platform: 'windows', jdk: 21],
+                        ])
+                        """);
+        assertTrue(issues.isEmpty(), issues::toString);
+    }
+
+    @Test
+    public void jenkinsfileWithoutNewestJava() {
+        HashSet<VerificationMessage> issues = new HashSet<>();
+        new RequiredFilesVerifier(issues, null).validateJenkinsFile("""
+                        buildPlugin(useContainerAgent: true, configurations: [
+                          [platform: 'linux', jdk: 21],
+                          [platform: 'windows', jdk: 21],
+                        ])
+                        """);
+        assertEquals(1, issues.size());
+        assertEquals(
+                VerificationMessage.Severity.WARNING, issues.iterator().next().getSeverity());
     }
 }
