@@ -3,6 +3,7 @@ package io.jenkins.infra.repository_permissions_updater.hosting;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import javax.xml.XMLConstants;
@@ -39,7 +40,7 @@ public class JellyVerifier implements Verifier {
             "The following jelly files set `checkMethod=\"post\"`. POST is the default for form validation, so this can be removed, "
                     + "and it is not supported by all tags (e.g. `c:select`):";
     static final String REPEATABLE_WITHOUT_DELETE =
-            "The following jelly files use `f:repeatable` without a `f:repeatableDeleteButton`, so users cannot remove entries. "
+            "The following jelly files use `f:repeatable` or `f:repeatableProperty` without a `f:repeatableDeleteButton` inside it, so users cannot remove entries. "
                     + "If the order matters, also set the `header` attribute to allow reordering entries with drag and drop:";
     static final String CREDENTIALS_WITHOUT_SELECT =
             "The following jelly files ask for a credentials ID in a text box or a plain select. "
@@ -125,17 +126,22 @@ public class JellyVerifier implements Verifier {
     }
 
     /**
-     * Without {@code f:repeatableDeleteButton} users can add entries to an {@code f:repeatable} but not remove them.
+     * Without {@code f:repeatableDeleteButton} users can add entries to an {@code f:repeatable} or
+     * {@code f:repeatableProperty} but not remove them.
+     * For {@code f:repeatableProperty} the button could also be in the nested type's {@code config.jelly}, but that is
+     * deprecated, the documentation of the tag says to put it inside the tag instead.
      */
     static boolean hasRepeatableWithoutDeleteButton(Element root) {
-        NodeList repeatables = root.getElementsByTagNameNS(FORM_TAGLIB, "repeatable");
-        for (int i = 0; i < repeatables.getLength(); i++) {
-            Element repeatable = (Element) repeatables.item(i);
-            if (repeatable
-                            .getElementsByTagNameNS(FORM_TAGLIB, "repeatableDeleteButton")
-                            .getLength()
-                    == 0) {
-                return true;
+        for (String tag : List.of("repeatable", "repeatableProperty")) {
+            NodeList repeatables = root.getElementsByTagNameNS(FORM_TAGLIB, tag);
+            for (int i = 0; i < repeatables.getLength(); i++) {
+                Element repeatable = (Element) repeatables.item(i);
+                if (repeatable
+                                .getElementsByTagNameNS(FORM_TAGLIB, "repeatableDeleteButton")
+                                .getLength()
+                        == 0) {
+                    return true;
+                }
             }
         }
         return false;

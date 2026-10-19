@@ -81,6 +81,16 @@ public class JellyVerifierTest {
         Assertions.assertFalse(JellyVerifier.hasCredentialsFieldWithoutCredentialsSelect(root));
     }
 
+    @Test
+    public void repeatablePropertyWithoutDeleteButton() {
+        Assertions.assertTrue(JellyVerifier.hasRepeatableWithoutDeleteButton(loadJelly("repeatablePropertyIssues")));
+    }
+
+    @Test
+    public void repeatablePropertyWithDeleteButton() {
+        Assertions.assertFalse(JellyVerifier.hasRepeatableWithoutDeleteButton(loadJelly("repeatablePropertyOk")));
+    }
+
     private Element loadJelly(String file) {
         String fullPath = "src/test/resources/" + file + ".jelly";
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
