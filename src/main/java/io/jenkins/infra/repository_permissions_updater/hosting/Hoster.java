@@ -9,8 +9,15 @@ import static java.util.Collections.singletonList;
 import static java.util.regex.Pattern.CASE_INSENSITIVE;
 import static java.util.stream.Collectors.joining;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -252,6 +259,7 @@ public class Hoster {
                 // fall through
             }
             setupRepository(r);
+            createRuleset(r);
 
             LOGGER.info("Created https://github.com/{}/{}", TARGET_ORG_NAME, newName != null ? newName : repo);
 
@@ -470,6 +478,91 @@ public class Hoster {
             developers = releaseUsers.stream().map(u -> "  - \"" + u + "\"").collect(joining("\n"));
         }
         return developers.stripTrailing();
+    }
+
+    private static final HttpClient HTTP_CLIENT = HttpClient.newHttpClient();
+
+    /**
+     * Status check context reported by ci.jenkins.io for pull request builds.
+     */
+    private static final String JENKINS_CHECK = "Jenkins";
+
+    /**
+     * GitHub App (integration) id of ci.jenkins.io, used to scope the required status check to that app.
+     */
+    private static final int JENKINS_CI_INTEGRATION_ID = 74951;
+
+    /**
+     * Creates a ruleset on the given repository covering the default branch, requiring a pull request before
+     * merging, blocking force pushes and deletions, and requiring the
+     * {@value #JENKINS_CHECK} status check from ci.jenkins.io to pass.
+     */
+    private void createRuleset(GHRepository repo) throws IOException {
+        JsonArray includedRefs = new JsonArray();
+        includedRefs.add("~DEFAULT_BRANCH");
+
+        JsonObject refName = new JsonObject();
+        refName.add("include", includedRefs);
+        refName.add("exclude", new JsonArray());
+
+        JsonObject conditions = new JsonObject();
+        conditions.add("ref_name", refName);
+
+        JsonArray rules = new JsonArray();
+        rules.add(createRulesetRule("pull_request"));
+        rules.add(createRulesetRule("non_fast_forward"));
+        rules.add(createRulesetRule("deletion"));
+        rules.add(createRequiredStatusChecksRule());
+
+        JsonObject ruleset = new JsonObject();
+        ruleset.addProperty("name", "Default branch protection");
+        ruleset.addProperty("target", "branch");
+        ruleset.addProperty("enforcement", "active");
+        ruleset.add("conditions", conditions);
+        ruleset.add("rules", rules);
+
+        String url = "https://api.github.com/repos/" + repo.getFullName() + "/rulesets";
+        HttpRequest request = HttpRequest.newBuilder(URI.create(url))
+                .header("Authorization", "Bearer " + System.getenv("GITHUB_OAUTH"))
+                .header("Accept", "application/vnd.github+json")
+                .header("X-GitHub-Api-Version", "2022-11-28")
+                .POST(HttpRequest.BodyPublishers.ofString(new Gson().toJson(ruleset), StandardCharsets.UTF_8))
+                .build();
+
+        try {
+            HttpResponse<String> response = HTTP_CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
+            if (response.statusCode() != 201) {
+                throw new IOException("Failed to create ruleset for " + repo.getFullName() + ": HTTP "
+                        + response.statusCode() + " " + response.body());
+            }
+            LOGGER.info("Created ruleset for {}", repo.getFullName());
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new IOException("Interrupted while creating ruleset for " + repo.getFullName(), e);
+        }
+    }
+
+    private static JsonObject createRulesetRule(String type) {
+        JsonObject rule = new JsonObject();
+        rule.addProperty("type", type);
+        return rule;
+    }
+
+    private static JsonObject createRequiredStatusChecksRule() {
+        JsonObject statusCheck = new JsonObject();
+        statusCheck.addProperty("context", JENKINS_CHECK);
+        statusCheck.addProperty("integration_id", JENKINS_CI_INTEGRATION_ID);
+
+        JsonArray requiredStatusChecks = new JsonArray();
+        requiredStatusChecks.add(statusCheck);
+
+        JsonObject parameters = new JsonObject();
+        parameters.add("required_status_checks", requiredStatusChecks);
+        parameters.addProperty("strict_required_status_checks_policy", false);
+
+        JsonObject rule = createRulesetRule("required_status_checks");
+        rule.add("parameters", parameters);
+        return rule;
     }
 
     private String getArtifactPath(GitHub github, String forkTo, HostingRequest hostingRequest) throws IOException {
