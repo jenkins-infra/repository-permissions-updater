@@ -5,6 +5,8 @@ issues:
   - github: *GH
 paths:
   - "ren/helloworld/upload-pgyer"
+cd:
+  enabled: true
 developers:
   - ldap: "rexshi"
     github: "shishirui"
