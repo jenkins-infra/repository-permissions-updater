@@ -485,7 +485,7 @@ public class Hoster {
     /**
      * Status check context reported by ci.jenkins.io for pull request builds.
      */
-    private static final String JENKINS_CI_PR_HEAD_STATUS_CONTEXT = "continuous-integration/jenkins/pr-head";
+    private static final String JENKINS_CI_PR_HEAD_STATUS_CONTEXT = "Jenkins";
 
     /**
      * GitHub App (integration) id of ci.jenkins.io, used to scope the required status check to that app.
