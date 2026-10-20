@@ -485,7 +485,7 @@ public class Hoster {
     /**
      * Status check context reported by ci.jenkins.io for pull request builds.
      */
-    private static final String JENKINS_CI_PR_HEAD_STATUS_CONTEXT = "Jenkins";
+    private static final String JENKINS_CHECK = "Jenkins";
 
     /**
      * GitHub App (integration) id of ci.jenkins.io, used to scope the required status check to that app.
@@ -495,7 +495,7 @@ public class Hoster {
     /**
      * Creates a ruleset on the given repository covering the default branch, requiring a pull request before
      * merging, blocking force pushes and deletions, and requiring the
-     * {@value #JENKINS_CI_PR_HEAD_STATUS_CONTEXT} status check from ci.jenkins.io to pass.
+     * {@value #JENKINS_CHECK} status check from ci.jenkins.io to pass.
      */
     private void createRuleset(GHRepository repo) throws IOException {
         JsonArray includedRefs = new JsonArray();
@@ -550,7 +550,7 @@ public class Hoster {
 
     private static JsonObject createRequiredStatusChecksRule() {
         JsonObject statusCheck = new JsonObject();
-        statusCheck.addProperty("context", JENKINS_CI_PR_HEAD_STATUS_CONTEXT);
+        statusCheck.addProperty("context", JENKINS_CHECK);
         statusCheck.addProperty("integration_id", JENKINS_CI_INTEGRATION_ID);
 
         JsonArray requiredStatusChecks = new JsonArray();
