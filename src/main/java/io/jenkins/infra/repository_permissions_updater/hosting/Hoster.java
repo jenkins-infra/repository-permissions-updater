@@ -160,8 +160,7 @@ public class Hoster {
         return true;
     }
 
-    boolean forkGitHub(
-            int issueID, String owner, String repo, String newName, List<String> maintainers) {
+    boolean forkGitHub(int issueID, String owner, String repo, String newName, List<String> maintainers) {
         boolean result = false;
         try {
 
