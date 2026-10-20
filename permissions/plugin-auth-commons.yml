@@ -1,0 +1,13 @@
+---
+name: "auth-commons"
+github: &GH "jenkinsci/auth-commons-plugin"
+paths:
+- "io/jenkins/plugins/auth-commons"
+developers:
+  - ldap: "timja"
+    github: "timja"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+cd:
+  enabled: true
