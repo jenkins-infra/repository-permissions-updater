@@ -1,0 +1,11 @@
+---
+name: "python-tool"
+github: &GH "jenkinsci/python-tool-plugin"
+paths:
+- "io/jenkins/plugins/python-tool"
+developers:
+  - "redersoft"
+issues:
+  - github: *GH
+cd:
+  enabled: true
