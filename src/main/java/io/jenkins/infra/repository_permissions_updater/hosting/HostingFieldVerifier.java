@@ -18,7 +18,7 @@ public class HostingFieldVerifier implements Verifier {
     public void verify(HostingRequest issue) {
         String forkTo = issue.getNewRepoName();
         String forkFrom = issue.getRepositoryUrl();
-        List<String> users = issue.getGithubUsers();
+        List<String> users = issue.getGithubUsers(false);
         List<String> ldap = issue.getJenkinsProjectUsers();
         boolean manageGitHubPermissions = issue.isManageGitHubPermissions();
 

@@ -43,7 +43,7 @@ class HostingRequestParserTest {
 
         assertTrue(hostingRequest.isEnableCD());
 
-        assertEquals(List.of("@timja", "@user2"), hostingRequest.getGithubUsers());
+        assertEquals(List.of("@timja", "@user2"), hostingRequest.getGithubUsers(false));
         assertEquals(List.of("timja", "user2"), hostingRequest.getJenkinsProjectUsers());
         assertTrue(hostingIssues.isEmpty());
     }
@@ -81,7 +81,7 @@ class HostingRequestParserTest {
 
         assertFalse(hostingRequest.isEnableCD());
 
-        assertEquals(Collections.singletonList("@timja"), hostingRequest.getGithubUsers());
+        assertEquals(Collections.singletonList("@timja"), hostingRequest.getGithubUsers(false));
         assertTrue(hostingRequest.getJenkinsProjectUsers().isEmpty());
         assertFalse(hostingIssues.isEmpty());
     }
@@ -119,7 +119,7 @@ class HostingRequestParserTest {
 
         assertTrue(hostingRequest.isEnableCD());
 
-        assertTrue(hostingRequest.getGithubUsers().isEmpty());
+        assertTrue(hostingRequest.getGithubUsers(false).isEmpty());
         assertEquals(Collections.singletonList("timja"), hostingRequest.getJenkinsProjectUsers());
         assertFalse(hostingIssues.isEmpty());
     }
@@ -127,24 +127,35 @@ class HostingRequestParserTest {
     @Test
     void withHostingChecksCheckbox() {
         HashSet<VerificationMessage> hostingIssues = new HashSet<>();
-        HostingRequest request = HostingRequestParser.parse(
-                "### Repository URL\n\n"
-                        + "https://github.com/timja/dummy-jenkins-plugin\n\n"
-                        + "### New Repository Name\n\n"
-                        + "dummy-plugin\n\n"
-                        + "### Description\n\n"
-                        + "A plugin\n\n"
-                        + "### GitHub and Jenkins project users\n\n"
-                        + "@timja timja\n\n"
-                        + "### Automated release via GitHub Actions (recommended)\n\n"
-                        + "Yes\n\n"
-                        + "### Hosting checks\n\n"
-                        + "- [X] I have [run the hosting checks locally](https://github.com/jenkins-infra/repository-permissions-updater#running-the-hosting-checks-locally) against this repository and fixed all issues marked Required",
-                hostingIssues);
+        HostingRequest request = HostingRequestParser.parse("""
+                ### Repository URL
+
+                https://github.com/timja/dummy-jenkins-plugin
+
+                ### New Repository Name
+
+                dummy-plugin
+
+                ### Description
+
+                A plugin
+
+                ### GitHub and Jenkins project users
+
+                @timja timja
+
+                ### Automated release via GitHub Actions (recommended)
+
+                Yes
+
+                ### Hosting checks
+
+                - [X] I have [run the hosting checks locally](https://github.com/jenkins-infra/repository-permissions-updater#running-the-hosting-checks-locally) against this repository and fixed all issues marked Required
+                """, hostingIssues);
 
         assertEquals("https://github.com/timja/dummy-jenkins-plugin", request.getRepositoryUrl());
         assertEquals("dummy-plugin", request.getNewRepoName());
-        assertEquals(Collections.singletonList("@timja"), request.getGithubUsers());
+        assertEquals(Collections.singletonList("@timja"), request.getGithubUsers(false));
         assertEquals(Collections.singletonList("timja"), request.getJenkinsProjectUsers());
         assertTrue(request.isEnableCD());
         assertTrue(hostingIssues.isEmpty(), hostingIssues::toString);

@@ -27,7 +27,7 @@ public class GitHubVerifier implements Verifier {
     public void verify(HostingRequest request) throws IOException {
         GitHub github = GitHub.connect();
         String forkFrom = request.getRepositoryUrl();
-        List<String> users = request.getGithubUsers();
+        List<String> users = request.getGithubUsers(false);
 
         if (!users.isEmpty()) {
             List<String> invalidUsers = new ArrayList<>();
@@ -47,7 +47,7 @@ public class GitHubVerifier implements Verifier {
                 hostingIssues.add(new VerificationMessage(
                         VerificationMessage.Severity.REQUIRED,
                         "The following usernames in 'GitHub Users to Authorize as Committers' are not valid GitHub usernames or are Organizations: %s",
-                        String.join(",", invalidUsers)));
+                        String.join(", ", invalidUsers)));
             }
         }
 
