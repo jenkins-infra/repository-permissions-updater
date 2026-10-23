@@ -29,6 +29,8 @@ developers:
     github: "clayburn"
   - ldap: "gfeo"
     github: "gabrielfeo"
+  - ldap: "cdsap"
+    github: "cdsap"
   - github: "gezerk"
 manageGitHubPermissions: true
 cd:
