@@ -46,12 +46,16 @@ public class HostingRequest {
     }
 
     @NonNull
-    public List<String> getGithubUsers() {
+    public List<String> getGithubUsers(boolean strip) {
         if (manageGitHubPermissions) {
             return githubJenkinsProjectUsers.stream()
                     .filter(it -> it.containsKey("github") && it.get("github").startsWith("@"))
                     .map(it -> it.get("github"))
+                    .map(it -> strip ? it.substring(1) : it)
                     .toList();
+        }
+        if (strip) {
+            return githubUsers.stream().map(it -> it.replace("@", "")).toList();
         }
         return githubUsers;
     }

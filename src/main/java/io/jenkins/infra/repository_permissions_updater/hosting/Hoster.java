@@ -61,7 +61,7 @@ public class Hoster {
             final HostingRequest hostingRequest = HostingRequestParser.retrieveAndParse(issueID, null);
 
             String forkFrom = hostingRequest.getRepositoryUrl();
-            List<String> users = hostingRequest.getGithubUsers();
+            List<String> users = hostingRequest.getGithubUsers(true);
             boolean enableCD = hostingRequest.isEnableCD();
 
             String forkTo = hostingRequest.getNewRepoName();
@@ -355,7 +355,6 @@ public class Hoster {
         String prUrl = "";
         boolean isPlugin = forkTo.endsWith("-plugin");
         List<String> releaseUsers = hostingRequest.getJenkinsProjectUsers();
-        List<String> ghUsers = hostingRequest.getGithubUsers();
         if (isPlugin) {
             String branchName = "hosting-" + forkTo + "-permissions";
             try {
@@ -415,6 +414,8 @@ public class Hoster {
                     LOGGER.info("Debug mode enabled, not creating PR content file with content: {}", content);
                 }
 
+                List<String> ghUsers = hostingRequest.getGithubUsers(false);
+
                 String prText = """
                         Hello from your friendly Jenkins Hosting Bot!
                         This is an automatically created PR for:
@@ -423,11 +424,7 @@ public class Hoster {
                         The user(s) listed in the permissions file may not have logged in to Artifactory yet, check the PR status.
                         To check again, hosting team members will retrigger the build using Checks area or by closing and reopening the PR.
                         cc %s
-                        """.formatted(
-                                issueId,
-                                TARGET_ORG_NAME,
-                                forkTo,
-                                ghUsers.stream().map(u -> "@" + u).collect(joining(", ")));
+                        """.formatted(issueId, TARGET_ORG_NAME, forkTo, String.join(", ", ghUsers));
 
                 if (!debug) {
                     GHPullRequest pr = repo.createPullRequest(
