@@ -3,6 +3,8 @@ name: "repo"
 github: &gh "jenkinsci/repo-plugin"
 issues:
   - github: *gh
+  - jira: '16077'  # repo-plugin
+    report: false
 paths:
   - "org/jenkins-ci/plugins/repo"
 cd:
