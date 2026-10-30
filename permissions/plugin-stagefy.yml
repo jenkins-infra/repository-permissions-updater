@@ -1,0 +1,13 @@
+---
+name: "stagefy"
+github: &GH "jenkinsci/stagefy-plugin"
+paths:
+- "io/jenkins/plugins/stagefy"
+developers:
+  - ldap: "benjamin_jin"
+    github: "jinrudals"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+cd:
+  enabled: true
