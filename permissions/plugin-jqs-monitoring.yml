@@ -8,5 +8,6 @@ paths:
   - "org/jenkins-ci/plugins/jqs-monitoring"
 developers:
   - "mPokornyETM"
+  - "ayyYoSam"
 cd:
   enabled: true
