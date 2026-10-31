@@ -2,11 +2,15 @@
 name: "jqs-monitoring"
 github: &gh "jenkinsci/jqs-monitoring-plugin"
 issues:
-  - jira: '17616'  # jqs-monitoring-plugin
+  - jira: '17616' # jqs-monitoring-plugin
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/jqs-monitoring"
 developers:
-  - "mPokornyETM"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - ldap: "ayyYoSam"
+    github: "nothingtosayabouthis"
+manageGitHubPermissions: true
 cd:
   enabled: true
