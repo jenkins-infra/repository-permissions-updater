@@ -1,0 +1,13 @@
+---
+name: "artifact-explorer"
+github: &GH "jenkinsci/artifact-explorer-plugin"
+paths:
+- "io/jenkins/plugins/artifact-explorer"
+developers:
+  - ldap: "redersoft"
+    github: "reder9"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+cd:
+  enabled: true
