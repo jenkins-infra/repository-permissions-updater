@@ -1,0 +1,13 @@
+---
+name: "tee-sh-steps"
+github: &GH "jenkinsci/tee-sh-steps-plugin"
+paths:
+- "io/jenkins/plugins/tee-sh-steps"
+developers:
+  - ldap: "nikolai88"
+    github: "Pymann"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+cd:
+  enabled: true
