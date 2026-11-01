@@ -1,6 +1,5 @@
 package io.jenkins.infra.repository_permissions_updater;
 
-import java.util.Map;
 import java.util.Set;
 
 public class TeamDefinition {
@@ -13,14 +12,14 @@ public class TeamDefinition {
      * login 1-to-1, so the two can differ when needed), a mapping with only a {@code github} key (a
      * developer with a GitHub login but no Jenkins community/LDAP account -- GitHub permissions management
      * only, useful for backfill), or a mapping with only a {@code team} key (a reference to another
-     * cross-repository team). See {@link #getDevelopers()}, {@link #getGitHubUsernames()}, and
-     * {@link #getGitHubOnlyUsernames()}.
+     * cross-repository team). See {@link #getDevelopers()} and
+     * {@link #getGitHubLogins()}.
      */
     private Object[] developers = new Object[0];
 
     /**
      * Opt-in flag: if {@code true}, RPU will reconcile GitHub team membership for this cross-repository
-     * team, using {@link #developers} (see {@link #getGitHubUsernames()} for how GitHub logins are
+     * team, using {@link #developers} (see {@link #getGitHubLogins()} for how GitHub logins are
      * resolved), when granted to a repository via {@link Definition.AdditionalGitHubTeam}. Defaults to
      * {@code false}.
      */
@@ -59,29 +58,11 @@ public class TeamDefinition {
     }
 
     /**
-     * Returns the GitHub login to use for each {@link #developers} entry declared using the
-     * {@code {ldap, github}} mapping form, keyed by that entry's LDAP id. Entries declared as a plain string
-     * are not included here -- callers should treat the LDAP id itself as the GitHub login for those.
+     * Returns the GitHub login for each {@link #developers} entry, resolved per entry (see
+     * {@link DeveloperEntries#extractGitHubLogins(Object[])}): an entry's {@code github} key wins, LDAP-only
+     * mapping entries are excluded, and plain string entries are assumed to double as the GitHub login.
      */
-    public Map<String, String> getGitHubUsernames() {
-        return DeveloperEntries.extractGitHubUsernames(developers);
-    }
-
-    /**
-     * Returns the GitHub login for each {@link #developers} entry declared using the GitHub-only mapping
-     * form ({@code {github: ...}}, no {@code ldap} key) -- developers with a GitHub login but no Jenkins
-     * community (LDAP) account, so they never appear in {@link #getDeveloperIds()}.
-     */
-    public Set<String> getGitHubOnlyUsernames() {
-        return DeveloperEntries.extractGitHubOnlyLogins(developers);
-    }
-
-    /**
-     * Returns the LDAP id for each {@link #developers} entry declared using the LDAP-only mapping form
-     * ({@code {ldap: ...}}, no {@code github} key) -- developers explicitly excluded from GitHub permissions
-     * management (see {@link Definition#getLdapOnlyDeveloperIds()} for details).
-     */
-    public Set<String> getLdapOnlyDeveloperIds() {
-        return DeveloperEntries.extractLdapOnlyIds(developers);
+    public Set<String> getGitHubLogins() {
+        return DeveloperEntries.extractGitHubLogins(developers);
     }
 }

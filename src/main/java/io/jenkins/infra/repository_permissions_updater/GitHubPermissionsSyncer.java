@@ -245,10 +245,7 @@ public final class GitHubPermissionsSyncer {
                         team.getName() + ".yml", team.getDevelopers(), true, teamsByName);
                 team.setDevelopers(DeveloperEntries.expandTeamReferences(
                         team.getName() + ".yml", team.getDevelopers(), teamsByName));
-                Set<String> logins = resolveGitHubLogins(
-                        team.getDeveloperIds(), team.getGitHubUsernames(), team.getLdapOnlyDeveloperIds());
-                logins.addAll(team.getGitHubOnlyUsernames());
-                mergeDesired(desiredByTeamSlug, slugify(team.getName()), DEFAULT_ORGANIZATION, logins);
+                mergeDesired(desiredByTeamSlug, slugify(team.getName()), DEFAULT_ORGANIZATION, team.getGitHubLogins());
             }
         }
 
@@ -289,12 +286,7 @@ public final class GitHubPermissionsSyncer {
             String repositoryTeam = definition.getRepositoryTeam();
             String teamName = repositoryTeam != null ? repositoryTeam : repoName + " Developers";
 
-            Set<String> logins = resolveGitHubLogins(
-                    definition.getDeveloperIds(),
-                    definition.getGitHubUsernames(),
-                    definition.getLdapOnlyDeveloperIds());
-            logins.addAll(definition.getGitHubOnlyUsernames());
-            mergeDesired(desiredByTeamSlug, slugify(teamName), organization, logins);
+            mergeDesired(desiredByTeamSlug, slugify(teamName), organization, definition.getGitHubLogins());
         }
 
         return desiredByTeamSlug;
@@ -307,44 +299,13 @@ public final class GitHubPermissionsSyncer {
     }
 
     /**
-     * Resolves the desired GitHub login for each entry in {@code developers}: by default, a developer's
-     * Jenkins community (LDAP) id is assumed to also be their GitHub login; {@code githubUsernameOverrides}
-     * (an LDAP id -&gt; GitHub login map, see {@link Definition#getGitHubUsernames()}/
-     * {@link TeamDefinition#getGitHubUsernames()}) can override this for the rare case where they differ, and
-     * {@code excludedFromDefault} (LDAP ids declared via the LDAP-only mapping form, see
-     * {@link Definition#getLdapOnlyDeveloperIds()}/{@link TeamDefinition#getLdapOnlyDeveloperIds()}) opts a
-     * developer out of that default assumption entirely, so they're never granted a GitHub login they didn't
-     * explicitly ask for.
-     */
-    static Set<String> resolveGitHubLogins(
-            String[] developers, Map<String, String> githubUsernameOverrides, Set<String> excludedFromDefault) {
-        Set<String> logins = new TreeSet<>();
-        for (String developer : developers) {
-            if (developer == null || developer.isBlank()) {
-                continue;
-            }
-            String normalisedDeveloper = developer.toLowerCase(Locale.ROOT);
-            String login = githubUsernameOverrides.get(normalisedDeveloper);
-            if (login == null) {
-                if (excludedFromDefault.contains(normalisedDeveloper)) {
-                    continue;
-                }
-                login = normalisedDeveloper;
-            }
-            if (!login.isBlank()) {
-                logins.add(login.toLowerCase(Locale.ROOT));
-            }
-        }
-        return logins;
-    }
-
-    /**
      * Converts a GitHub team display name (e.g. {@code "example-plugin Developers"}) into the slug GitHub
      * derives for it (e.g. {@code "example-plugin-developers"}): lower-cased, with runs of whitespace and
-     * other non-alphanumeric characters collapsed to single hyphens.
+     * other characters (apart from letters, digits and underscores, which GitHub keeps) collapsed to single
+     * hyphens, e.g. {@code "JDK_Parameter_Plugin-plugin Developers"} -&gt; {@code "jdk_parameter_plugin-plugin-developers"}.
      */
     static String slugify(String teamName) {
-        String slug = teamName.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9]+", "-");
+        String slug = teamName.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9_]+", "-");
         return slug.replaceAll("^-+|-+$", "");
     }
 

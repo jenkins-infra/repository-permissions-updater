@@ -93,6 +93,38 @@ class GitHubPermissionsSyncerTest {
     }
 
     @Test
+    void ldapGitHubMappingEntryWithMixedCaseLdapIdAppliesToDesiredState() throws IOException {
+        File permissions = Files.createTempDirectory("permissions").toFile();
+        permissions.deleteOnExit();
+        Files.writeString(new File(permissions, "plugin-example.yml").toPath(), """
+                ---
+                name: "example"
+                github: "jenkinsci/example-plugin"
+                developers:
+                  - ldap: "alice"
+                    github: "alice"
+                  - ldap: "ayyYoSam"
+                    github: "nothingtosayabouthis"
+                  - ldap: "MixedCaseLdapOnly"
+                manageGitHubPermissions: true
+                """);
+        File teams = Files.createTempDirectory("teams").toFile();
+        teams.deleteOnExit();
+
+        StubGitHubTeamsAPI stub = new StubGitHubTeamsAPI(Map.of("example-plugin-developers", Set.of()));
+        GitHubTeamsAPI.INSTANCE = stub;
+
+        File report = new File(Files.createTempDirectory("json").toFile(), "github-permissions-diff.json");
+        new GitHubPermissionsSyncer(true).sync(permissions, teams, report);
+
+        JsonObject json = new Gson().fromJson(Files.readString(report.toPath()), JsonObject.class);
+        JsonObject team = json.getAsJsonObject("example-plugin-developers");
+        assertEquals(
+                "[\"alice\",\"nothingtosayabouthis\"]",
+                team.getAsJsonArray("toAdd").toString());
+    }
+
+    @Test
     void gitHubOnlyEntryAppliesToDesiredStateWithoutAnLdapId() throws IOException {
         File permissions = Files.createTempDirectory("permissions").toFile();
         permissions.deleteOnExit();
@@ -372,6 +404,9 @@ class GitHubPermissionsSyncerTest {
     void slugifyMatchesGitHubTeamSlugConvention() {
         assertEquals("example-plugin-developers", GitHubPermissionsSyncer.slugify("example-plugin Developers"));
         assertEquals("core", GitHubPermissionsSyncer.slugify("core"));
+        assertEquals(
+                "jdk_parameter_plugin-plugin-developers",
+                GitHubPermissionsSyncer.slugify("JDK_Parameter_Plugin-plugin Developers"));
     }
 
     private static class StubGitHubTeamsAPI extends GitHubTeamsAPI {

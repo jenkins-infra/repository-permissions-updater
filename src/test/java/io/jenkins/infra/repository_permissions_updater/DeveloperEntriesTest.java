@@ -32,16 +32,7 @@ class DeveloperEntriesTest {
     }
 
     @Test
-    void extractGitHubOnlyLoginsReturnsOnlyGitHubOnlyEntries() {
-        Object[] developers = {
-            "alice", Map.of("ldap", "bob", "github", "bob-gh"), Map.of("github", "no-ldap-user"),
-        };
-
-        assertEquals(Set.of("no-ldap-user"), DeveloperEntries.extractGitHubOnlyLogins(developers));
-    }
-
-    @Test
-    void extractLdapOnlyIdsReturnsOnlyLdapOnlyEntries() {
+    void extractGitHubLoginsResolvesEachEntryIndependently() {
         Object[] developers = {
             "alice",
             Map.of("ldap", "bob", "github", "bob-gh"),
@@ -49,16 +40,23 @@ class DeveloperEntriesTest {
             Map.of("ldap", "excluded-from-github"),
         };
 
-        assertEquals(Set.of("excluded-from-github"), DeveloperEntries.extractLdapOnlyIds(developers));
+        assertEquals(Set.of("alice", "bob-gh", "no-ldap-user"), DeveloperEntries.extractGitHubLogins(developers));
     }
 
     @Test
-    void extractGitHubUsernamesDoesNotIncludeGitHubOnlyEntries() {
+    void extractGitHubLoginsNeverUsesLdapIdWhenGitHubLoginIsSet() {
         Object[] developers = {
-            "alice", Map.of("ldap", "bob", "github", "bob-gh"), Map.of("github", "no-ldap-user"),
+            Map.of("ldap", "ayyYoSam", "github", "nothingtosayabouthis"), Map.of("ldap", "MixedCaseLdapOnly"),
         };
 
-        assertEquals(Map.of("bob", "bob-gh"), DeveloperEntries.extractGitHubUsernames(developers));
+        assertEquals(Set.of("nothingtosayabouthis"), DeveloperEntries.extractGitHubLogins(developers));
+    }
+
+    @Test
+    void extractGitHubLoginsLowerCasesLogins() {
+        Object[] developers = {"Alice", Map.of("ldap", "bob", "github", "Bob-GH")};
+
+        assertEquals(Set.of("alice", "bob-gh"), DeveloperEntries.extractGitHubLogins(developers));
     }
 
     @Test
