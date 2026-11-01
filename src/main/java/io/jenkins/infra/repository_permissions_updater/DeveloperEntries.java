@@ -2,8 +2,10 @@ package io.jenkins.infra.repository_permissions_updater;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Shared helpers for interpreting the polymorphic {@code developers} YAML list used by both
@@ -92,55 +94,33 @@ final class DeveloperEntries {
     }
 
     /**
-     * Builds an LDAP id -&gt; GitHub login map from every {@code {ldap, github}} mapping entry in
-     * {@code developers}. Plain string entries and GitHub-only mapping entries contribute nothing here;
-     * callers that need a GitHub login for every developer should fall back to treating the LDAP id as the
-     * GitHub login when it's absent from this map.
+     * Resolves the GitHub login for every entry in {@code developers}, entry by entry, lower-cased:
+     * <ul>
+     *     <li>an entry with a {@code github} key ({@code {ldap, github}} or {@code {github}}) uses that login --
+     *     its LDAP id, if any, is never consulted;</li>
+     *     <li>an LDAP-only mapping entry ({@code {ldap}}, no {@code github}) is excluded from GitHub
+     *     permissions management and contributes nothing;</li>
+     *     <li>a plain string entry (legacy format) is assumed to be both the LDAP id and the GitHub login.</li>
+     * </ul>
+     * Team references are expected to have been expanded already (see {@link #expandTeamReferences}).
      */
-    static Map<String, String> extractGitHubUsernames(Object[] developers) {
-        Map<String, String> logins = new LinkedHashMap<>();
+    static Set<String> extractGitHubLogins(Object[] developers) {
+        Set<String> logins = new TreeSet<>();
         for (Object entry : developers) {
+            String login = null;
             if (entry instanceof Map<?, ?> map) {
-                Object ldap = map.get("ldap");
                 Object github = map.get("github");
-                if (ldap != null && github != null) {
-                    logins.put(ldap.toString(), github.toString());
+                if (github != null) {
+                    login = github.toString();
                 }
+            } else if (entry != null) {
+                login = entry.toString();
+            }
+            if (login != null && !login.isBlank()) {
+                logins.add(login.toLowerCase(Locale.ROOT));
             }
         }
         return logins;
-    }
-
-    /**
-     * Extracts the GitHub login from every GitHub-only mapping entry ({@code {github: ...}}, no
-     * {@code ldap} key) in {@code developers}. These are developers with no Jenkins community (LDAP)
-     * account, so they only ever show up here, never in {@link #toLdapIds(Object[])} or
-     * {@link #extractGitHubUsernames(Object[])}.
-     */
-    static Set<String> extractGitHubOnlyLogins(Object[] developers) {
-        Set<String> logins = new LinkedHashSet<>();
-        for (Object entry : developers) {
-            if (entry instanceof Map<?, ?> map && map.get("ldap") == null && map.get("github") != null) {
-                logins.add(map.get("github").toString().toLowerCase(java.util.Locale.ROOT));
-            }
-        }
-        return logins;
-    }
-
-    /**
-     * Extracts the LDAP id from every LDAP-only mapping entry ({@code {ldap: ...}}, no {@code github} key)
-     * in {@code developers}: developers explicitly excluded from GitHub permissions management. Callers
-     * resolving a developer's GitHub login should skip any LDAP id found here rather than falling back to
-     * assuming the LDAP id doubles as the GitHub login (the default for plain-string entries).
-     */
-    static Set<String> extractLdapOnlyIds(Object[] developers) {
-        Set<String> ids = new LinkedHashSet<>();
-        for (Object entry : developers) {
-            if (entry instanceof Map<?, ?> map && map.get("ldap") != null && map.get("github") == null) {
-                ids.add(map.get("ldap").toString());
-            }
-        }
-        return ids;
     }
 
     /**
