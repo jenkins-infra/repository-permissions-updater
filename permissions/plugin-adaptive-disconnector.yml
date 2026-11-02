@@ -6,4 +6,9 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/adaptive-disconnector"
 developers:
-  - "olivergondza"
+  - ldap: "olivergondza"
+    github: "olivergondza"
+  - ldap: "ayyYoSam"
+    github: "nothingtosayabouthis"
+cd:
+  enabled: true
