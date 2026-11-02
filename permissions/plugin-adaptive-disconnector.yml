@@ -10,3 +10,5 @@ developers:
     github: "olivergondza"
   - ldap: "ayyYoSam"
     github: "nothingtosayabouthis"
+cd:
+  enabled: true
