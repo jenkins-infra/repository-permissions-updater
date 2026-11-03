@@ -2,11 +2,17 @@
 name: "perfpublisher"
 github: &gh "jenkinsci/perfpublisher-plugin"
 issues:
-  - jira: '15662'  # perfpublisher-plugin
+  - jira: '15662' # perfpublisher-plugin
   - github: *gh
 paths:
   - "org/jenkins-ci/plugins/perfpublisher"
 developers:
-  - "eschava"
-  - "langers2k"
-  - "mPokornyETM"
+  - ldap: "eschava"
+    github: "eschava"
+  - ldap: "langers2k"
+    github: "langers2k"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - ldap: "ayyYoSam"
+    github: "nothingtosayabouthis"
+manageGitHubPermissions: true
