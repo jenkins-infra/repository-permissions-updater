@@ -10,5 +10,6 @@ developers:
     github: "olivergondza"
   - ldap: "ayyYoSam"
     github: "nothingtosayabouthis"
+manageGitHubPermissions: true
 cd:
   enabled: true
