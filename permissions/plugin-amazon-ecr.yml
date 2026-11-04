@@ -6,6 +6,8 @@ issues:
 paths:
   - "com/cloudbees/jenkins/plugins/amazon-ecr"
 developers:
-  - "cvas22"
+  - ldap: "cvas22"
+    github: "cvas22"
 cd:
   enabled: true
+manageGitHubPermissions: true
