@@ -8,11 +8,20 @@ paths:
 cd:
   enabled: true
 developers:
-  - "jglick"
-  - "oleg_nenashev"
-  - "abayer"
-  - "dnusbaum"
-  - "carroll"
-  - "rsandell"
-  - "jpochat"
-  - "cvas22"
+  - ldap: "jglick"
+    github: "jglick"
+  - ldap: "oleg_nenashev"
+    github: "oleg-nenashev"
+  - ldap: "abayer"
+    github: "abayer"
+  - ldap: "dnusbaum"
+    github: "dwnusbaum"
+  - ldap: "carroll"
+    github: "car-roll"
+  - ldap: "rsandell"
+    github: "rsandell"
+  - ldap: "jpochat"
+    github: "jeromepochat"
+  - ldap: "cvas22"
+    github: "cvas22"
+manageGitHubPermissions: true
