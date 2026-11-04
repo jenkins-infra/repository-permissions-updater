@@ -6,7 +6,6 @@ issues:
 paths:
   - "com/cloudbees/jenkins/plugins/amazon-ecr"
 developers:
-  - "aheritier"
-  - "tgr"
+  - "cvas22"
 cd:
   enabled: true
