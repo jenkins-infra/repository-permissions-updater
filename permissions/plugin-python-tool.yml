@@ -4,7 +4,9 @@ github: &GH "jenkinsci/python-tool-plugin"
 paths:
 - "io/jenkins/plugins/python-tool"
 developers:
-  - "redersoft"
+  - ldap: "redersoft"
+    github: "reder9"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:
