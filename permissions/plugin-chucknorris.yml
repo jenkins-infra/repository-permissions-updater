@@ -6,9 +6,16 @@ issues:
 paths:
   - "org/jvnet/hudson/plugins/chucknorris"
 developers:
-  - "batmat"
-  - "oleg_nenashev"
-  - "mPokornyETM"
-  - "darinpope"
+  - ldap: "batmat"
+    github: "batmat"
+  - ldap: "oleg_nenashev"
+    github: "oleg-nenashev"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - ldap: "darinpope"
+    github: "darinpope"
+  - ldap: "ayyYoSam"
+    github: "nothingtosayabouthis"
+manageGitHubPermissions: true
 cd:
   enabled: true
