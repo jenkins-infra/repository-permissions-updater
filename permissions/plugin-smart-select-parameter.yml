@@ -1,0 +1,12 @@
+---
+name: "smart-select-parameter"
+github: &GH "jenkinsci/smart-select-parameter-plugin"
+paths:
+- "io/jenkins/plugins/smart-select-parameter"
+developers:
+  - ldap: "jaychang1989"
+    github: "jaychang1989"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+
