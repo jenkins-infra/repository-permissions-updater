@@ -199,48 +199,17 @@ cd:
 ```
 
 
-Managing GitHub Permissions (experimental)
+Managing GitHub Permissions
 -------------------------------------------
 
-RPU is gaining the ability to also manage GitHub repository/team access as code, in addition to Artifactory
-upload permissions. This is a new, **opt-in** feature: nothing changes for a component unless its YAML file
-explicitly enables it.
-
-See [docs/rollout-of-github-permissions-sync.md](docs/rollout-of-github-permissions-sync.md) for the staged adoption plan across the 2000+ repos in the org and how GitHub
-API usage is kept bounded as adoption grows.
-
-### Why it's opt-in, and how writes are gated
-
-The `jenkinsci` organization has 2000+ repositories and ~2600 teams, so a mistake in an automated
-reconciliation could lock maintainers out of their own repositories at scale. To manage that risk:
-
-- A component (or cross-repository team) is only touched by this feature once its YAML file sets
-  `manageGitHubPermissions: true` (or, for `teams/*.yml`, `manageGitHubTeam: true`). Everything else is left
-  completely alone, so adoption can be gradual. Setting this flag means RPU actively reconciles that
-  component's/team's GitHub membership to match its `developers` list — it is not merely a reporting toggle.
-- Whether a run actually *applies* those changes, or only computes and logs/reports them, is controlled
-  independently by the `githubPermissionsDryRun` system property (`-DgithubPermissionsDryRun=...`), which
-  **defaults to `true`** (safe/report-only) until explicitly set to `false`. This lets the org run the full
-  read+diff pipeline against real GitHub data for a bake-in period, with zero risk of a write, before
-  anyone deliberately flips the switch to start applying changes. Either way, the computed diff (including
-  whether it was applied) is written to `json/github-permissions-diff.json`, published alongside the other
-  index reports.
-- Removing the last member of a team is allowed and is not treated as a special/blocked case: org owners can
-  always restore access regardless of member count, so there's no lockout risk that needs guarding against.
-- A mutation failure for one login/team (e.g. a login that no longer exists) is logged and recorded in that
-  team's `errors` in the report, but does not abort reconciliation of any other opted-in team in the same run.
-- Just like Artifactory sync, any live call to the GitHub API for this feature **only happens in the trusted,
-  post-merge run** — never in PR builds. PR builds intentionally run without any credentials (since PRs can
-  come from forks), and there is no GitHub credential that is both genuinely read-only *and* safe to hand to
-  untrusted, credential-free PR builds (a fine-grained PAT or GitHub App key is still a secret; anonymous
-  reads are rate-limited to 60 requests/hour and don't reliably expose private team membership). PR builds
-  only perform static YAML validation (schema/format checks) of the fields below — no network calls.
+RPU has the ability to manage GitHub repository/team access as code, in addition to Artifactory
+upload permissions. This is an **opt-in** feature while it is rolled out.
 
 ### The `developers` list
 
 Each entry in `developers` (in both `permissions/*.yml` and `teams/*.yml`) can be either:
 
-- a plain string — a Jenkins community (LDAP) id, exactly as before; used for Artifactory permissions. Only
+- a plain string — a Jenkins community (LDAP) id; used for Artifactory permissions. Only
   supported when GitHub permissions management is **not** enabled (see below). A plain string starting with
   `@` (e.g. `"@core"`) is a legacy reference to a cross-repository `teams/*.yml` team, expanded to that
   team's own `developers` entries; also only supported when GitHub permissions management is not enabled --
