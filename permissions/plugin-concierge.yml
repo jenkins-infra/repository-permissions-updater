@@ -1,0 +1,13 @@
+---
+name: "concierge"
+github: &GH "jenkinsci/concierge-plugin"
+paths:
+- "io/jenkins/plugins/concierge"
+developers:
+  - ldap: "eduardocerqueira"
+    github: "eduardocerqueira"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+cd:
+  enabled: true
