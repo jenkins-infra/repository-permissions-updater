@@ -10,3 +10,5 @@ manageGitHubPermissions: true
 issues:
   - github: *GH
 
+cd:
+  enabled: true
