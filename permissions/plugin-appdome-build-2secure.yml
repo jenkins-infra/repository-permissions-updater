@@ -6,5 +6,6 @@ paths:
 developers:
 - "idanhauser"
 - "avie"
+- "gilhartman_appdome"
 issues:
   - github: *GH
