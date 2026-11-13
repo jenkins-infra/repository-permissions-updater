@@ -4,9 +4,15 @@ github: &GH "jenkinsci/pull-request-monitoring-plugin"
 paths:
   - "io/jenkins/plugins/pull-request-monitoring"
 developers:
-  - "simonsymhoven"
-  - "mPokornyETM"
-  - "drulli"
+  - ldap: "simonsymhoven"
+    github: "simonsymhoven"
+  - ldap: "ayyYoSam"
+    github: "ayyYoSam"
+  - ldap: "drulli"
+    github: "uhafner"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+manageGitHubPermissions: true
 issues:
   - jira: '29720' # pull-request-monitoring-plugin
 cd:
