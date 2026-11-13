@@ -7,6 +7,8 @@ developers:
   - "simonsymhoven"
   - "mPokornyETM"
   - "drulli"
+  - "ayyYoSam"
+manageGitHubPermissions: true
 issues:
   - jira: '29720' # pull-request-monitoring-plugin
 cd:
