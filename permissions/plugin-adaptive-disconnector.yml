@@ -9,7 +9,7 @@ developers:
   - ldap: "olivergondza"
     github: "olivergondza"
   - ldap: "ayyYoSam"
-    github: "nothingtosayabouthis"
+    github: "ayyYoSam"
 manageGitHubPermissions: true
 cd:
   enabled: true
