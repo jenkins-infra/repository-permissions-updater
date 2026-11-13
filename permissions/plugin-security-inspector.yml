@@ -6,7 +6,12 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/security-inspector"
 developers:
-  - "ks_nenasheva"
-  - "oleg_nenashev"
+  - ldap: "ks_nenasheva"
+    github: "ksenia-nenasheva"
+  - ldap: "oleg_nenashev"
+    github: "oleg-nenashev"
+  - ldap: "ayyYoSam"
+    github: "ayyYoSam"
+manageGitHubPermissions: true
 cd:
   enabled: true
