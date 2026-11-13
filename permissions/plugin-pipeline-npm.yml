@@ -5,7 +5,9 @@ issues:
   - github: *GH
 paths:
   - "org/jenkins-ci/plugins/pipeline-npm"
-developers: []
+developers:
+  - ldap: "redersoft"
+    github: "reder9"
 manageGitHubPermissions: true
 cd:
   enabled: true
