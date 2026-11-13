@@ -1,0 +1,15 @@
+---
+name: "kubevirt-cloud"
+github: &GH "jenkinsci/kubevirt-cloud-plugin"
+paths:
+- "io/jenkins/plugins/kubevirt-cloud"
+developers:
+  - ldap: "pajasoft"
+    github: "pjanouse"
+  - ldap: "github_hareldev"
+    github: "hareldev"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+cd:
+  enabled: true
