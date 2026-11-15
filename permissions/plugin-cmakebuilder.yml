@@ -7,4 +7,10 @@ paths:
   - "hudson/plugins/cmake/cmakebuilder"
   - "org/jenkins-ci/plugins/cmakebuilder"
 developers:
-  - "15knots"
+  - ldap: "15knots"
+    github: "15knots"
+  - ldap: "redersoft"
+    github: "reder9"
+manageGitHubPermissions: true
+cd:
+  enabled: true
