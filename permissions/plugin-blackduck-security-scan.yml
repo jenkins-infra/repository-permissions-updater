@@ -4,12 +4,21 @@ github: &GH "jenkinsci/blackduck-security-scan-plugin"
 paths:
 - "io/jenkins/plugins/blackduck-security-scan"
 developers:
-- "zaman_akib"
-- "jahid1209"
-- "maksud_rahman"
-- "gouravjblackduck"
-- "ashahrior"
-- "lokeshbd"
+  - ldap: "zaman_akib"
+    github: "zaman-akib"
+  - ldap: "jahid1209"
+    github: "jahid1209"
+  - ldap: "maksud_rahman"
+    github: "maksudur-rahman-maruf"
+  - ldap: "gouravjblackduck"
+    github: "gouravjblackduck"
+  - ldap: "ashahrior"
+    github: "ashahrior"
+  - ldap: "lokeshbd"
+    github: "lokeshbd"
+  - ldap: "smohanty0804"
+    github: "smohanty0804"
+manageGitHubPermissions: true
 issues:
   - github: *GH
 cd:
