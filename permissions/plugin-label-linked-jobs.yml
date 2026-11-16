@@ -8,4 +8,10 @@ paths:
 developers:
   - "dominiquebrice"
   - "surenpi"
-  - "mPokornyETM"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - ldap: "ayyYoSam"
+    github: "ayyYoSam"
+manageGitHubPermissions: true
+cd:
+  enabled: true
