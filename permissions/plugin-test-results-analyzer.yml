@@ -16,5 +16,7 @@ developers:
     github: "timja"
   - ldap: "poddingue"
     github: "gounthar"
+  - ldap: "ayyYoSam"
+    github: "ayyYoSam"
 
 manageGitHubPermissions: true
