@@ -6,8 +6,6 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/label-linked-jobs"
 developers:
-  - "dominiquebrice"
-  - "surenpi"
   - ldap: "mPokornyETM"
     github: "mPokornyETM"
   - ldap: "ayyYoSam"
