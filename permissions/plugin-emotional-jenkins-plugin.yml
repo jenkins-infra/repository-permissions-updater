@@ -6,4 +6,13 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/emotional-jenkins-plugin"
 developers:
-  - "kiy0taka"
+  - ldap: "kiy0taka"
+    github: "kiy0taka"  
+  - ldap: "ayyYoSam"
+    github: "ayyYoSam"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+manageGitHubPermissions: true
+cd:
+  enabled: true
+
