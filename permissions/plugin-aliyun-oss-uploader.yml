@@ -6,4 +6,7 @@ issues:
 paths:
   - "io/jenkins/plugins/aliyun-oss-uploader"
 developers:
-  - "raylax"
+  - ldap: "raylax"
+    github: "raylax"
+  - github: "tzachs"
+manageGitHubPermissions: true
