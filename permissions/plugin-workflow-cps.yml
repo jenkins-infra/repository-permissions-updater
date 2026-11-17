@@ -17,6 +17,7 @@ developers:
   - "jtaboada"
   - "teilo"
   - "timja"
+  - "mikecirioli"
 security:
   contacts:
     jira: "cloudbees_security_members"
