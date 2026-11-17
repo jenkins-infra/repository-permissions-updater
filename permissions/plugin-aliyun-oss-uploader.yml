@@ -10,3 +10,6 @@ developers:
     github: "raylax"
   - github: "tzachs"
 manageGitHubPermissions: true
+cd:
+  enabled: true
+  exclusive: false
