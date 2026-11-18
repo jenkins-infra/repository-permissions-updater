@@ -16,6 +16,8 @@ developers:
     github: "darinpope"
   - ldap: "ayyYoSam"
     github: "ayyYoSam"
+  - ldap: "ambarox"
+    github: "ambarox"
 manageGitHubPermissions: true
 cd:
   enabled: true
