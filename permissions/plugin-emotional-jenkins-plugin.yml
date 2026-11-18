@@ -12,6 +12,8 @@ developers:
     github: "ayyYoSam"
   - ldap: "mPokornyETM"
     github: "mPokornyETM"
+  - ldap: "ambarox"
+    github: "ambarox"
 manageGitHubPermissions: true
 cd:
   enabled: true
