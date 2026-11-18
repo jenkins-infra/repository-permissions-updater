@@ -12,4 +12,3 @@ developers:
 manageGitHubPermissions: true
 cd:
   enabled: true
-  exclusive: false
