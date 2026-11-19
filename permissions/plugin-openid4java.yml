@@ -5,7 +5,9 @@ issues:
   - jira: '18824'  # openid4java-plugin
 paths:
   - "org/jenkins-ci/plugins/openid4java"
-developers: []
+developers:
+  - ldap: "panicking"
+    github: "panicking"
 cd:
   enabled: true
   exclusive: false
