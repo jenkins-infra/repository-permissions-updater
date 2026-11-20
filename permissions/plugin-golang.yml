@@ -7,3 +7,5 @@ paths:
   - "org/jenkins-ci/plugins/golang"
 developers:
   - "orrc"
+  - ldap: "redersoft"
+    github: "reder9"
