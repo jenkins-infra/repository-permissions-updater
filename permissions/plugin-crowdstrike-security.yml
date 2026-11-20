@@ -6,7 +6,6 @@ paths:
 developers:
 - "crwd_etatarevic"
 - "crwdlemos"
-- "crwdharshitac"
 - "crwdasarja"
 issues:
   - github: *GH
