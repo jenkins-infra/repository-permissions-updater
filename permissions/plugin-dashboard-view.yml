@@ -7,7 +7,8 @@ paths:
   - "org/jenkins-ci/plugins/dashboard-view"
   - "org/jvnet/hudson/plugins/dashboard-view"
 developers:
-  - "tgr"
-  - "vandyev"
+  - ldap: "tgr"
+    github: "TobiX"
 cd:
   enabled: true
+manageGitHubPermissions: true
