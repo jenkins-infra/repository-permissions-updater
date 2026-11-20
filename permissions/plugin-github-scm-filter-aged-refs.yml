@@ -6,6 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/github-scm-filter-aged-refs"
 developers:
-  - "tgr"
+  - ldap: "tgr"
+    github: "TobiX"
 cd:
   enabled: true
+manageGitHubPermissions: true
