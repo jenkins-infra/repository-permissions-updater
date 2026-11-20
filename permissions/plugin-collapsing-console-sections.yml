@@ -6,6 +6,15 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/collapsing-console-sections"
 developers:
-  - "oleg_nenashev"
-  - "mPokornyETM"
-  - "hashar"
+  - ldap: "oleg_nenashev"
+    github: "oleg-nenashev"
+  - ldap: "mPokornyETM"
+    github: "mPokornyETM"
+  - ldap: "hashar"
+    github: "hashar"
+  - ldap: "ayyYoSam"
+    github: "ayyYoSam"
+manageGitHubPermissions: true
+cd:
+  enabled: true
+
