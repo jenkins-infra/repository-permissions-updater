@@ -6,8 +6,6 @@ issues:
 paths:
   - "org/jenkinsci/plugins/emailext-template"
 developers:
-  - ldap: "markewaite"
-    github: "markewaite"
   - ldap: "redersoft"
     github: "reder9"
 manageGitHubPermissions: true
