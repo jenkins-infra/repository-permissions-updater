@@ -7,4 +7,10 @@ issues:
 paths:
   - "org/jenkinsci/plugins/doclinks"
   - "org/jvnet/hudson/plugins/doclinks"
-developers: []
+developers: 
+  - ldap: "ayyYoSam"
+    github: "ayyYoSam"
+manageGitHubPermissions: true
+cd:
+  enabled: true
+
