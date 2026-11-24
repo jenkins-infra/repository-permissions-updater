@@ -6,8 +6,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/saferestart"
 developers:
-  - ldap: "markewaite"
-    github: "markewaite"
+  - ldap: "redersoft"
+    github: "reder9"
 manageGitHubPermissions: true
 cd:
   enabled: true
