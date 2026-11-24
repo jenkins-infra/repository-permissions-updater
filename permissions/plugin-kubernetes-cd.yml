@@ -7,4 +7,8 @@ issues:
 paths:
   - "org/jenkins-ci/plugins/kubernetes-cd"
 developers:
-  - "zooopx"
+  - ldap: "ayyYoSam"
+    github: "ayyYoSam"
+manageGitHubPermissions: true
+cd:
+  enabled: true
