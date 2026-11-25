@@ -1,0 +1,13 @@
+---
+name: "hygiene-auditor"
+github: &GH "jenkinsci/hygiene-auditor-plugin"
+paths:
+- "io/jenkins/plugins/hygiene-auditor"
+developers:
+  - ldap: "salmanshk"
+    github: "salmandev"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+cd:
+  enabled: true
