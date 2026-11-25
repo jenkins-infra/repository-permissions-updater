@@ -1,6 +1,8 @@
 ---
 name: "jms-messaging"
 github: &gh "jenkinsci/jms-messaging-plugin"
+cd:
+  enabled: true
 issues:
   - github: *gh
   - jira: '21951'  # jms-messaging-plugin
