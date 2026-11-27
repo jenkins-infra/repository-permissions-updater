@@ -8,5 +8,6 @@ paths:
   - "org/jenkins-ci/plugins/localization-zh-cn"
 developers:
   - "surenpi"
+  - "xianpeng"
 cd:
   enabled: true
