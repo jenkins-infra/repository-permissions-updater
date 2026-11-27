@@ -7,7 +7,9 @@ paths:
   - "org/jenkins-ci/plugins/ansible-tower"
 cd:
   enabled: true
+manageGitHubPermissions: true
 developers:
-  - "johnwestcottiv"
-  - "nupinto"
-  - "longhn0710"
+  - ldap: "nupinto"
+    github: "micr0zz"
+  - ldap: "longhn0710"
+    github: "longhn0710"
