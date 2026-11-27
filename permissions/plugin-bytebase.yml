@@ -1,0 +1,13 @@
+---
+name: "bytebase"
+github: &GH "jenkinsci/bytebase-plugin"
+paths:
+- "io/jenkins/plugins/bytebase"
+developers:
+  - ldap: "longhn0710"
+    github: "longhn0710"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+cd:
+  enabled: true
