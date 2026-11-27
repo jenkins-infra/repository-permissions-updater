@@ -1,0 +1,13 @@
+---
+name: "build-stats"
+github: &GH "jenkinsci/build-stats-plugin"
+paths:
+- "io/jenkins/plugins/build-stats"
+developers:
+  - ldap: "xmulitech"
+    github: "XMuli"
+manageGitHubPermissions: true
+issues:
+  - github: *GH
+cd:
+  enabled: true
