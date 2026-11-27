@@ -1,8 +1,8 @@
 ---
 name: "ansible-tower"
-github: "jenkinsci/ansible-tower-plugin"
+github: &GH "jenkinsci/ansible-tower-plugin"
 issues:
-  - jira: '23177'  # ansible-tower-plugin
+  - github: *GH
 paths:
   - "org/jenkins-ci/plugins/ansible-tower"
 cd:
